@@ -1,0 +1,115 @@
+-- !!! THE SOURCE CODE OF THIS FILE IS PUBLIC! !!!
+-- !!! IT IS RAN IN GAME SCRIPT SECURITY, YOU CAN'T USE FLAGS! !!!
+
+-- This code is ran on RCC through RemoteCommandService.
+-- RemoteCommandService runs code as strings, but we can't just give it the `.Source` of a script
+-- because we compile everything into bytecode. Thus, we duplicate the contents of this file
+-- through a StringValue defined in default.rbxp.
+-- Interestingly, that means any comments and whatnot in here that would usually be compiled
+-- out are preserved exactly as is. That means data miners can see this cool fish: ><>
+
+-- Because this is ran on RCC, you DO NOT have access to anything from the plugin,
+-- so you cannot include any libraries or packages.
+-- This also runs in game script security, so you don't have access to things like flags either.
+-- If you need to use a flag, it's probably better to use a different key for whatever you're touching.
+-- For example, Connect to "startTrackingInstance", and change the old one to be "DEPRECATED_startTrackingInstance",
+-- then use a flag to determine which one you send.
+
+-- selene: allow(incorrect_standard_library_use)
+local RemoteCommandService = game:GetService("RemoteCommandService")
+local UniqueIdLookupService = game:GetService("UniqueIdLookupService")
+
+local connections: { RBXScriptConnection } = {}
+local trackedParents: { [Instance]: true? } = {}
+
+local DEBUG_SHOULD_LOG = false
+
+local printDebug: (...any) -> () = if DEBUG_SHOULD_LOG then print else function() end
+
+printDebug("ExplorerRemoteCommand")
+
+local function sendInstanceAddedFor(child: Instance, expectedParent: Instance)
+	-- With deferred signals, this can happen
+	if child.Parent ~= expectedParent then
+		return
+	end
+
+	printDebug("Sending childAdded", child.Name)
+
+	RemoteCommandService:SendUpdate("childAdded", {
+		parentId = UniqueIdLookupService:GetOrCreateUniqueIdRemoteCommand(expectedParent),
+		id = UniqueIdLookupService:GetOrCreateUniqueIdRemoteCommand(child),
+		className = child.ClassName,
+		name = child.Name,
+	})
+end
+
+local function isLocalOnlyChild(instance: Instance): boolean
+	-- Cameras are never replicated
+	return instance:IsA("Camera")
+end
+
+local function startTrackingInstance(instance_: unknown)
+	assert(typeof(instance_) == "Instance" or instance_ == nil, "Unexpected type provided to startTrackingInstance")
+	local instance = instance_ :: Instance? -- Luau: Bad at handling this
+
+	-- Plugin might be asking about a completely local instance
+	if instance == nil then
+		return
+	end
+
+	trackedParents[instance] = true
+
+	table.insert(
+		connections,
+		instance.ChildAdded:Connect(function(child)
+			if isLocalOnlyChild(child) then
+				return
+			end
+
+			sendInstanceAddedFor(child, instance)
+		end)
+	)
+
+	table.insert(
+		connections,
+		instance.ChildRemoved:Connect(function(child)
+			if isLocalOnlyChild(child) then
+				return
+			end
+
+			printDebug("Child removed:", child.Name)
+
+			if child.Parent == nil or not trackedParents[child.Parent] then
+				printDebug("Sending childRemoved")
+				RemoteCommandService:SendUpdate("childRemoved", {
+					id = UniqueIdLookupService:GetOrCreateUniqueIdRemoteCommand(child),
+				})
+			end
+		end)
+	)
+
+	for _, child in instance:GetChildren() do
+		if isLocalOnlyChild(child) then
+			continue
+		end
+
+		sendInstanceAddedFor(child, instance)
+	end
+end
+
+RemoteCommandService:GetReceivedUpdateSignal():Connect(function(updateType: unknown, ...: unknown)
+	printDebug("Received update from Studio", updateType, ...)
+
+	if updateType == "startTrackingInstance" then
+		startTrackingInstance(...)
+	else
+		error(`Unexpected update type: {updateType}`)
+	end
+end)
+
+RemoteCommandService:GetStoppingSignal():Connect(function()
+	for _, connection in connections do
+		connection:Disconnect()
+	end
+end)

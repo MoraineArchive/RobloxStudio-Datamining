@@ -1,0 +1,2852 @@
+[
+  {
+    "class": "Folder",
+    "name": "_Index",
+    "path": "AvatarImporter/Packages/_Index",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "actions",
+    "path": "AvatarImporter/src/actions",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "AvatarImporter",
+    "path": "AvatarImporter",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Bin",
+    "path": "AvatarImporter/Bin",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "components",
+    "path": "AvatarImporter/src/components",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "configurer",
+    "path": "AvatarImporter/src/configurer",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Cryo",
+    "path": "AvatarImporter/Packages/_Index/Cryo",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Dev",
+    "path": "AvatarImporter/Packages/Dev",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Packages",
+    "path": "AvatarImporter/Packages",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "PropMarkers",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/PropMarkers",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Reporters",
+    "path": "AvatarImporter/Packages/_Index/TestEZ/TestEZ/Reporters",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Roact",
+    "path": "AvatarImporter/Packages/_Index/Roact",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "RoactRodux",
+    "path": "AvatarImporter/Packages/_Index/RoactRodux",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Rodux-31ab8d40-3.3.0",
+    "path": "AvatarImporter/Packages/_Index/Rodux-31ab8d40-3.3.0",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Rodux-31ab8d40-4.0.0-rc.0",
+    "path": "AvatarImporter/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "src",
+    "path": "AvatarImporter/src",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "TestEZ",
+    "path": "AvatarImporter/Packages/_Index/TestEZ",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "thunks",
+    "path": "AvatarImporter/src/thunks",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "types",
+    "path": "AvatarImporter/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/types",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "utils",
+    "path": "AvatarImporter/src/utils",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Action",
+    "path": "AvatarImporter/src/actions/Action",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "657",
+      "SourceBytecodeSha256": "69aef7ab7825ca4f1e05f7dca2afaa8afe486444eca88d0c9ec5a160a43142b1",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "actions",
+    "path": "AvatarImporter/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/types/actions",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "39",
+      "SourceBytecodeSha256": "f2a0ffd601945a8994cd376d7875df37cf6d270ec9cc8256743e06bff2412f6c",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "assertDeepEqual",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/assertDeepEqual",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1199",
+      "SourceBytecodeSha256": "e1ded8e88cd71355ff77e8865052a6ac85385dff087f9d4cbe942d31ed3edfb3",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Assets",
+    "path": "AvatarImporter/src/Assets",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1059",
+      "SourceBytecodeSha256": "b1d24394148ee59bff6a9cd54d39f6087786e9d5378dca6c9677c93ec9b38bec",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "assign",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/assign",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "368",
+      "SourceBytecodeSha256": "e0012704c1f8f926e4364a41d083412bcfb10ef6a758d497cd11b338a32a913f",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "AvatarButton",
+    "path": "AvatarImporter/src/components/AvatarButton",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "7529",
+      "SourceBytecodeSha256": "f5cb210c07064c4d8c97f6d3227945c79f6a758144bc2e32aecbb5810c2fdba9",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "AvatarImporter",
+    "path": "AvatarImporter/src/components/AvatarImporter",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1866",
+      "SourceBytecodeSha256": "da740bb2fb30cfeea17c01237a95cc421b6b50f8949e57c5a12d0df012083888",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "AvatarPrompt",
+    "path": "AvatarImporter/src/components/AvatarPrompt",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "4469",
+      "SourceBytecodeSha256": "fa7f46fdbe81738929a8097c1fff9c4929cf7478c4b910e5a7d146ba351ceb61",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Binding",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/Binding",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "3571",
+      "SourceBytecodeSha256": "fe05af6fac8d3320a2660c852795e365b99752c1dd58c60dee3ab8c9e55415cc",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Change",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/PropMarkers/Change",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "527",
+      "SourceBytecodeSha256": "648fafc4c99c16cfe8334fedd778e243c10b0e688f7e03d40b971b3bbd7149ae",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "CharacterTester",
+    "path": "AvatarImporter/src/configurer/CharacterTester",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "707",
+      "SourceBytecodeSha256": "bf1044e892c5debbf6661c506e32cc7800d73b7c9d34529dbe5d238f362ca1ce",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Children",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/PropMarkers/Children",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "175",
+      "SourceBytecodeSha256": "11a52a396641aca1dcb4413064ed3577d62a970dbf7b2b6fc65a8fbfe06fd7d5",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ClosePlugin",
+    "path": "AvatarImporter/src/actions/ClosePlugin",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "296",
+      "SourceBytecodeSha256": "7b959127770666ceb7fbe931756f89cb2484a90aab352e61941aa3995b3b8588",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "combineReducers",
+    "path": "AvatarImporter/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux/combineReducers",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "218",
+      "SourceBytecodeSha256": "fa42b9a2e318dbef1ca54ff6aa99187c006f2f527d9f3efc82bab6f97386b9ef",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "combineReducers",
+    "path": "AvatarImporter/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/combineReducers",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "458",
+      "SourceBytecodeSha256": "d88f58338ec0a0fbd3393d74338c5df833447d130e0b48a444db197ba0e40f9e",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Component",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/Component",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "8717",
+      "SourceBytecodeSha256": "5b8e20467fa038eb65bdae586729ae3b84bea05da84cdd33e8dd712870e5b6d2",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ComponentLifecyclePhase",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/ComponentLifecyclePhase",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "731",
+      "SourceBytecodeSha256": "0856b379877d1d7beab4b472428b94129f3912a5a92342a27074f8b151c66a54",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Config",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/Config",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1976",
+      "SourceBytecodeSha256": "19768891666aa88c8afdf57724a46ad7e22dab1dad9b0753368cd26f11132a15",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Configurer",
+    "path": "AvatarImporter/src/configurer/Configurer",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "14946",
+      "SourceBytecodeSha256": "e7c848781b89c9d71a61476b5515c92fa865061de711bffd14db40282d4b6025",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "connect",
+    "path": "AvatarImporter/Packages/_Index/RoactRodux/RoactRodux/connect",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "5478",
+      "SourceBytecodeSha256": "e0dfff95f252d149652b773dd438f97841a6a6760ceca88af9f15dfdbeafe1d7",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Constants",
+    "path": "AvatarImporter/src/configurer/Constants",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "495",
+      "SourceBytecodeSha256": "c2704576a58ff636bfb565309165914a5bc1acea56a842075bc524cdb6bf80a7",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Constants",
+    "path": "AvatarImporter/src/Constants",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "2753",
+      "SourceBytecodeSha256": "3cde26706e8189a11f4801bea3957eacd5742dd3f0e058a22d2718ba5c2eaa1c",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Context",
+    "path": "AvatarImporter/Packages/_Index/TestEZ/TestEZ/Context",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "551",
+      "SourceBytecodeSha256": "54a728f8f2808a4b454b16887e2886b2913e5f21e545a1dc3869178cc49c1a4c",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "convertArrayToTable",
+    "path": "AvatarImporter/src/utils/convertArrayToTable",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "273",
+      "SourceBytecodeSha256": "f10baa2c0adf93f3b0f4eddb41a8025df3a5d357317d1f6403e7a486791fc947",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "createContext",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/createContext",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "2641",
+      "SourceBytecodeSha256": "8aa129d7a85f22878839257ce4531b74f373f9f6e350fe8f9913e44bb6339dc3",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "createElement",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/createElement",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1792",
+      "SourceBytecodeSha256": "815f38f4b4b07b7a011166427e7be21804a3ad4b2a54de393ca21c1e592283b2",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "createFragment",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/createFragment",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "341",
+      "SourceBytecodeSha256": "73ec0f7904faf72d1630952c06f55cc90b41ece4f8010e0d4d8496bec96d21d3",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "createReconciler",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/createReconciler",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "10965",
+      "SourceBytecodeSha256": "08b56502a2b46db0417cdf574fc6ffa16db8d08f866d3d17996b79da37396f2e",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "createReconcilerCompat",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/createReconcilerCompat",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "998",
+      "SourceBytecodeSha256": "81ffbc3ac2d678025fef9b8238a35c12924b29b052598ce9e06e54204e1bb746",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "createReducer",
+    "path": "AvatarImporter/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux/createReducer",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "176",
+      "SourceBytecodeSha256": "ec1245ae872c7ad73542003b6b8a1f7f7215b0e3e959f83072932608539586ee",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "createReducer",
+    "path": "AvatarImporter/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/createReducer",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "353",
+      "SourceBytecodeSha256": "1d82d29a48ef85785f3b139f209a6758bc2e675bda61b14a8f1828cc0027dec3",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "createRef",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/createRef",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "730",
+      "SourceBytecodeSha256": "6eea7f685d8c7b20b37fbc6b0613fa33aa3cbce2c345a32ba5763c6c21bb24e8",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "createSignal",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/createSignal",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "899",
+      "SourceBytecodeSha256": "7b2b6b0488f6a886d00621fcbff2e829a5dd5a56faaa37aa437565c5790ddbd9",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "createSpy",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/createSpy",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1812",
+      "SourceBytecodeSha256": "a83567397bd193f49e2f3cf91cc7f8c37a253754ba885c6e19aaf911de6e8bf8",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Cryo",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "291",
+      "SourceBytecodeSha256": "5bf86d781370d8499669081f2a08b31c56b39dd2aa02036086a4aecf4fa5907d",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Cryo",
+    "path": "AvatarImporter/Packages/Cryo",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "153",
+      "SourceBytecodeSha256": "11dd519ce89005ef1820a10d75d93cc60318be549eab5ae1cd6be0a8a048f461",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "CustomTextButton",
+    "path": "AvatarImporter/src/components/CustomTextButton",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "3802",
+      "SourceBytecodeSha256": "ed18fcd079d8bc3b5cd9fed19cfbe73f6c22c053fd57b1440edaa38c909742ca",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "defineLuaFlags",
+    "path": "AvatarImporter/Bin/defineLuaFlags",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "39",
+      "SourceBytecodeSha256": "7ac73047f58f68065907a5688cf8ec8d594b5e6d53742158e5fa7db74e8c234b",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "DetectType",
+    "path": "AvatarImporter/src/thunks/DetectType",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1353",
+      "SourceBytecodeSha256": "a126289463f204a84d175be95fd1f8f6304fa16b305c41508390c6b2c1b40442",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "DetectTypeWithOrigAvatarType",
+    "path": "AvatarImporter/src/thunks/DetectTypeWithOrigAvatarType",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1590",
+      "SourceBytecodeSha256": "7cb7d2ed8bd7c4660e2df2125c5d7f05e4513a065bb192d68bb2ab7f5f69f3f1",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dictionary",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/Dictionary",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "500",
+      "SourceBytecodeSha256": "e2cd4d510438031a87bf6c3e788405466c5594a435578b669f49213f5a78635e",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ElementKind",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/ElementKind",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "957",
+      "SourceBytecodeSha256": "4fa052699958839fde79cd1abc963ac7b7cbf23c1602bf5fa5b67fe3ce08ac13",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ElementUtils",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/ElementUtils",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1029",
+      "SourceBytecodeSha256": "d84d442e37c4bc2ca61158aac7fca5063624bc268fd7d4c585bd95ac5cd5c17f",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "equalObjects",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/equalObjects",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "241",
+      "SourceBytecodeSha256": "1bcc2ac4b818f34fb21c2b40ea3fd96ced9b06e9423803df08ae4c50a11991e1",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "equals",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/Dictionary/equals",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "667",
+      "SourceBytecodeSha256": "81defdd9b6e424f3fca685d26a1ee729636439897bc93a672000fc263ba4e285",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "equals",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/List/equals",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "642",
+      "SourceBytecodeSha256": "cd6e7f54a9006f4d79d30c1ac14fa62198281af67105d81edf927927998b37dd",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "equalsDeep",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/equalsDeep",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "690",
+      "SourceBytecodeSha256": "13af27cc8fb4bdf791b2266f4d55354db47b74a2b86d0f364672be205b07f712",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ErrorPrompt",
+    "path": "AvatarImporter/src/components/ErrorPrompt",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "5362",
+      "SourceBytecodeSha256": "677b2e340394b37f1e49a46ab06438154691ed19635c07acaab93ac4e372f693",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ErrorReducer",
+    "path": "AvatarImporter/src/reducers/ErrorReducer",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "505",
+      "SourceBytecodeSha256": "4bd9078da41cec1ef150c95d53d66aed6602eab1553dc90504ecce93f5421021",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Event",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/PropMarkers/Event",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "515",
+      "SourceBytecodeSha256": "e4261d396b47dfd8dcf0bc63b324c3cd67babc9d8115383fd582fab95936c1fc",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Expectation",
+    "path": "AvatarImporter/Packages/_Index/TestEZ/TestEZ/Expectation",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "5550",
+      "SourceBytecodeSha256": "50f9abcb0a3579705c071926409b6aef5ab63e49122e10f34466e6e7825db3d7",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ExpectationContext",
+    "path": "AvatarImporter/Packages/_Index/TestEZ/TestEZ/ExpectationContext",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1039",
+      "SourceBytecodeSha256": "63f51a05000a123d87b89f02e6f5c086a4b0a63cf636f778ccc9cec74f6a8d3a",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "filter",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/Dictionary/filter",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "149",
+      "SourceBytecodeSha256": "72577d2d335f4b6d1ea6336231dae2a6cabd8367013cdc3faaac34738d15c0bb",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "filter",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/List/filter",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "161",
+      "SourceBytecodeSha256": "a4ebffe46b62540e7de3b6cff50fd7d47acb10b5b0883f3c09d23a161666ea22",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "filterMap",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/List/filterMap",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "164",
+      "SourceBytecodeSha256": "8f570367741cb9638fac1edf19a3a00451bdfde9a7317fcd370ff6bfd7dacd9f",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "find",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/List/find",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "120",
+      "SourceBytecodeSha256": "30e4378c40a6e1e55345b0e80494d40e2704c3bd9161bb0bae4f1046ae9f4402",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "findWhere",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/List/findWhere",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "135",
+      "SourceBytecodeSha256": "090d6b63351e394f0bd3d07d11e74a2468784dea955b38064993248dc103dd16",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "FixedRigPositions",
+    "path": "AvatarImporter/src/configurer/FixedRigPositions",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "3944",
+      "SourceBytecodeSha256": "d52b525bede411c148771e5baeb934a99c1e01edee39caaddb0c20b38fd05c57",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "foldLeft",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/List/foldLeft",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "134",
+      "SourceBytecodeSha256": "6e8cbb291e4da8decd00a542befab0a962ab801e265ac63d15f0748573d40802",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "foldRight",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/List/foldRight",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "135",
+      "SourceBytecodeSha256": "4d6ed6f4d62aac156ac9daf5d80b1a69aa8898d46011e87cc8be58d37cb730a3",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "forwardRef",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/forwardRef",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "702",
+      "SourceBytecodeSha256": "5ee5e0452c47a15beb37085b19d2e00fed17fb2571d6cdb122497becbc3155e6",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "getDefaultInstanceProperty",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/getDefaultInstanceProperty",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "522",
+      "SourceBytecodeSha256": "280509b0059259e95a5a49ce72746b13e06eafa6b61ad187b60a9acb82a00e32",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "getLinesFromStr",
+    "path": "AvatarImporter/src/utils/getLinesFromStr",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "186",
+      "SourceBytecodeSha256": "8693c5dad5925aa448fa0ec229f75c5fb431cfa6f5b2a883158afa2cf487426a",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "getRange",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/List/getRange",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "348",
+      "SourceBytecodeSha256": "0c331f82ac4066b87a5ab37df23f396e1df6acdbc46e66ea53144bd73afa5901",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "getTextWidth",
+    "path": "AvatarImporter/src/utils/getTextWidth",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "280",
+      "SourceBytecodeSha256": "432e756de5f1e7ce14fac423fd4c619437bd9da6cea217323c051171cab54f4f",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "GlobalConfig",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/GlobalConfig",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "147",
+      "SourceBytecodeSha256": "48cbdcba923280115196766d31c74c99adf2170d33474b844326aba960a77be8",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Globals",
+    "path": "AvatarImporter/src/Globals",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "71",
+      "SourceBytecodeSha256": "aa052480510bea2fe63fe0914ebe7efd9726c653731b69c97239ef24b3e91d7f",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Import",
+    "path": "AvatarImporter/src/thunks/Import",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1415",
+      "SourceBytecodeSha256": "55a08a2837ff9442ce35243a856a27bd2d805b51a740211767c61c0ed61b4762",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ImportWithoutSceneLoad",
+    "path": "AvatarImporter/src/thunks/ImportWithoutSceneLoad",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1431",
+      "SourceBytecodeSha256": "63bef4b20f9ea6bc66f7a7afe4ca698e98329e3cb9b08b01e334a1b2b04e83fc",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "internalAssert",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/internalAssert",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "171",
+      "SourceBytecodeSha256": "2822a7a0273e4a8c494f43ac650cee4e3c885fff06f978bbe58376b5f579dde1",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "invalidSetStateMessages",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/invalidSetStateMessages",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1040",
+      "SourceBytecodeSha256": "e325f13e3ea4ab67f8273f75fe92ac8f052a7af0c165100b0ecbe9da5dbf84fd",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "isEmpty",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/isEmpty",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "125",
+      "SourceBytecodeSha256": "26d429a935287115033fe96fa54bd8a401517a05a285b76543b0d7e58750e3ff",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "join",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/Dictionary/join",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "596",
+      "SourceBytecodeSha256": "970f8b7e7b7cbf23e2e9a05474b19d552e21992f8d4853e1da17f41e6eaf1482",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "join",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/List/join",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "377",
+      "SourceBytecodeSha256": "6e3bbfd48a94f8a03ca95241694366a57a9ff6af7e039766eb493d0c9fca9b7f",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "join",
+    "path": "AvatarImporter/Packages/_Index/RoactRodux/RoactRodux/join",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "251",
+      "SourceBytecodeSha256": "7650fa7c4c56a36d2e11edfc513c67313643862b5bae0a285ca25db4814a9888",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "keys",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/Dictionary/keys",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "152",
+      "SourceBytecodeSha256": "6205980ee131d4a5bfcf7f051aaf3e98919fdd7e0e8fe487b37f19f9ce13f694",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "LifecycleHooks",
+    "path": "AvatarImporter/Packages/_Index/TestEZ/TestEZ/LifecycleHooks",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1929",
+      "SourceBytecodeSha256": "b93f358ff3eb6d373bc95ff64d29cda06de461f264a25c2d849cfb9aaf4e6dd8",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "List",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/List",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1031",
+      "SourceBytecodeSha256": "009294766fd21868914be9541ccdf8c1c467fa93e669f28b67a0503f352e34bd",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "LoadingPrompt",
+    "path": "AvatarImporter/src/components/LoadingPrompt",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1421",
+      "SourceBytecodeSha256": "63291c30a6ec44d56841f0e17c5dc9509709345abca7c57851ee72b4a742cf1f",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "loggerMiddleware",
+    "path": "AvatarImporter/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux/loggerMiddleware",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "476",
+      "SourceBytecodeSha256": "bebd5dc08a58d582cac9bb8f5c8f8b4380f3e8aeed780f77209d2e08d90fdbc7",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "loggerMiddleware",
+    "path": "AvatarImporter/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/loggerMiddleware",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "476",
+      "SourceBytecodeSha256": "8a97d8601bb39254e9c89152cbd80c494d9763559a60f50675e7970054168bc4",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Logging",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/Logging",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "2328",
+      "SourceBytecodeSha256": "0b452d1c480af63045983751f2e2eae8ac89759a2758f50dee79352581a6e250",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "makeActionCreator",
+    "path": "AvatarImporter/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux/makeActionCreator",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "735",
+      "SourceBytecodeSha256": "a322a7576b5b3d0891fc7736c7a31448686ae6b63d8d1354dc1ca52f8cf7deeb",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "makeActionCreator",
+    "path": "AvatarImporter/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/makeActionCreator",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "853",
+      "SourceBytecodeSha256": "beadcf85ba1cafce213b168ef3538ffc3b017f4574c9d3f58cba00639c68c14e",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "makeThunkMiddleware",
+    "path": "AvatarImporter/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux/makeThunkMiddleware",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "660",
+      "SourceBytecodeSha256": "35d846df77a00ecdaf5fdf2a06ef2da1b1b05e987b4f7634e15c64aa5d8c768d",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "makeThunkMiddleware",
+    "path": "AvatarImporter/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/makeThunkMiddleware",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "660",
+      "SourceBytecodeSha256": "be3c007343a8b422958baceb9dd006222e7dc4ac07adc75d1095d16851560f1c",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "map",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/Dictionary/map",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "176",
+      "SourceBytecodeSha256": "54dcc74c87e9d8646cd4a027a5b47ecd265a1ccd8229a1376aa3765439d5bd99",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "map",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/List/map",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "129",
+      "SourceBytecodeSha256": "d0dcdcc4b1ba5fa157a6941d471b9e7d521811ab5c004768aa1785f8fd722781",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "MockWrapper",
+    "path": "AvatarImporter/src/utils/MockWrapper",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "401",
+      "SourceBytecodeSha256": "9b4ca5026c02eaf2151b5ce3da1ad36813dec6959e96d0670dd554aa2dd20159",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "None",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/None",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "186",
+      "SourceBytecodeSha256": "45d53c2f1c2efc220b6cccfd713e430e182c545c88fc3021e46e251851e98c11",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "None",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/None",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "161",
+      "SourceBytecodeSha256": "f0676f70f4b2823d300bce65fe1ad9813e08758e291fbf482548fdacf88bd304",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "NoopRenderer",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/NoopRenderer",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "294",
+      "SourceBytecodeSha256": "5920e56ecf1bd492a6f50c43f52aa09937a5486c8b87f07c937e39b564d0e5c6",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "NoYield",
+    "path": "AvatarImporter/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux/NoYield",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "472",
+      "SourceBytecodeSha256": "fa0685d22000158e4eff027e4e79c27fb4aa2ea111a12b72979a4fb3ffea17ff",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "NoYield",
+    "path": "AvatarImporter/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/NoYield",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "479",
+      "SourceBytecodeSha256": "5c852c7cc634282b9c262a3923eb667a8c0e1c1bb7758e5e894d3672a620d35b",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "omit",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/Dictionary/omit",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "182",
+      "SourceBytecodeSha256": "1c4cce9e5c64885e7db8b65fe31de418e4d3b9c0c3b9ae99831ed4315cc74465",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "oneChild",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/oneChild",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "255",
+      "SourceBytecodeSha256": "a1d1a879ec6a60dcb8e0405b983782674e2f2bc4cfb6c81c38fd150e3c265650",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "PluginReducer",
+    "path": "AvatarImporter/src/reducers/PluginReducer",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1236",
+      "SourceBytecodeSha256": "d5cf66f0fbee2149bc67a0746f2f05bb2f42385af211b5e3b1e21a4c1439476b",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Portal",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/Portal",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "163",
+      "SourceBytecodeSha256": "f5d89f0ae03709c596af41de38d241c54b25487b1317cfb838b426b17602556b",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "prettyPrint",
+    "path": "AvatarImporter/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux/prettyPrint",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1024",
+      "SourceBytecodeSha256": "3d4b91244e635f9626815b2adfa9f63cb362b02c3068f215c8cdbf531811a0cb",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "prettyPrint",
+    "path": "AvatarImporter/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/prettyPrint",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1031",
+      "SourceBytecodeSha256": "2178295a58868b93f1979d22d19eda0191b319eb11b0bb70bc0ff9eea065c119",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "PureComponent",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/PureComponent",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "479",
+      "SourceBytecodeSha256": "d30b831334d1d9b34629c727cd35ff26a5a779fab352d49be0a38492246e9ddd",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "R6",
+    "path": "AvatarImporter/src/configurer/R6",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "3588",
+      "SourceBytecodeSha256": "e83554e46f02f677aeae0f4d0731065d079ea91dfbc7521ad680119e7ebb186a",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "RedirectRigPrompt",
+    "path": "AvatarImporter/src/components/RedirectRigPrompt",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "3668",
+      "SourceBytecodeSha256": "b529881e5f8b253b8b5175aa63ea2a1f1191408cd02f0a156abcc538680a9451",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "reducers",
+    "path": "AvatarImporter/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/types/reducers",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "132",
+      "SourceBytecodeSha256": "50c367d164d70faa94032d706f8668a96a9aa5989622200d5a86b5e0433e534b",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "reducers",
+    "path": "AvatarImporter/src/reducers",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "373",
+      "SourceBytecodeSha256": "f22c5bc69de9ff9e6220571f0297381aa2a1c3d8b68a6ea5b820d86069fe2192",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Ref",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/PropMarkers/Ref",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "170",
+      "SourceBytecodeSha256": "c393426096386d27c76f7ae48e54f44a48f1838c6b35d3df2afe670addd9cbf9",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "removeIndex",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/List/removeIndex",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "152",
+      "SourceBytecodeSha256": "7a812d8bbb97a9a5b7ae824ba350188f031340bc2e56daa8b613faccd8e1f36a",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "removeRange",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/List/removeRange",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "350",
+      "SourceBytecodeSha256": "ee29ddedec3f6b8a3060f1fb0d0a3bcf250f9dc62a07e46733e5926f05cd6e9e",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "removeValue",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/List/removeValue",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "156",
+      "SourceBytecodeSha256": "6b0ba775d22a7c378bf5c8cf86e3bb7b3db6eb4d1f2ec2f382c4b78183b7a139",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "replaceIndex",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/List/replaceIndex",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "263",
+      "SourceBytecodeSha256": "26dcf374cd47014c96bbd6a9638561a3da19a4d028da9c4ee8ad8dd4b48bd68c",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "reverse",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/List/reverse",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "142",
+      "SourceBytecodeSha256": "bead7ef998142b57a0c495f3453c8ba714269c570d6ad42d0d6b8389a6a2aae9",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "RigFunctions",
+    "path": "AvatarImporter/src/configurer/RigFunctions",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "11914",
+      "SourceBytecodeSha256": "c4cb5d47044ff67830030a38077a112a1be2d35fffd6e76f9d8095e9eb5a9d62",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Roact",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1687",
+      "SourceBytecodeSha256": "9dd0ec7c2c9a9184cff406d2f9e969e205a4677626679652e1f7d40f3ef32f59",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Roact",
+    "path": "AvatarImporter/Packages/_Index/RoactRodux/Roact",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "174",
+      "SourceBytecodeSha256": "ecaec0495e4f230e40a98e2550688e2d18796a1e77d69032a01c3e00a0d42013",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Roact",
+    "path": "AvatarImporter/Packages/Roact",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "154",
+      "SourceBytecodeSha256": "99fd7184f2488984d3af4e1383628438d7f6fba4cdd9a6176746ec6048af60e7",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "RoactRodux",
+    "path": "AvatarImporter/Packages/_Index/RoactRodux/RoactRodux",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "323",
+      "SourceBytecodeSha256": "e0b8f03840f5e4bdf83534f28777301973b686823147708d371ab27e480e3133",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "RoactRodux",
+    "path": "AvatarImporter/Packages/RoactRodux",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "159",
+      "SourceBytecodeSha256": "60badbdccfee5bdacb73cb5fb5b74bb20132b211764f12b2444119fa2f503538",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "RobloxRenderer",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/RobloxRenderer",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "5494",
+      "SourceBytecodeSha256": "4432225ae046e9887bdf2fba79cdc4557c7c3ae73d095bae5c193d493a0414b5",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Rodux",
+    "path": "AvatarImporter/Packages/_Index/RoactRodux/Rodux",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "202",
+      "SourceBytecodeSha256": "7c3b405604ce776e1f5d510783ec114f1682c24b613a7b3e6cccd3ceab0b4f80",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Rodux",
+    "path": "AvatarImporter/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "536",
+      "SourceBytecodeSha256": "7549ae971b09297f1a719604c2b2aa5060d1acf51a603ceda38e7a4b6a791d22",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Rodux",
+    "path": "AvatarImporter/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "762",
+      "SourceBytecodeSha256": "64035bd8c2d52d880c5d5fb43d6da29f764517d2042dde9a4b00d4f1b507b527",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Rodux",
+    "path": "AvatarImporter/Packages/Rodux",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "177",
+      "SourceBytecodeSha256": "1fd03ecef8f27c67cacb412f3d096d338c9eac2696c8017ac08c15c1c579ee12",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "SetError",
+    "path": "AvatarImporter/src/actions/SetError",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "296",
+      "SourceBytecodeSha256": "8dc16d888b86540cd642f53c97f6edb8a91da27c4233934e142efa88642a390c",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "SetOriginalAvatarType",
+    "path": "AvatarImporter/src/actions/SetOriginalAvatarType",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "281",
+      "SourceBytecodeSha256": "17d797b27c8e474f123f299dc030112a1b5323cec840036b20717f9fd38ab4b0",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "SetScreen",
+    "path": "AvatarImporter/src/actions/SetScreen",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "277",
+      "SourceBytecodeSha256": "d3ca23234eb8fb22de9fbaec54325c61a88be387eeee774bdaf7eb0fae118a28",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "setupImportedAvatar",
+    "path": "AvatarImporter/src/utils/setupImportedAvatar",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "2601",
+      "SourceBytecodeSha256": "1ed935926b59c671723e9d830d9a9dc6e7ff425fc0d999044dc3ddfb3b236439",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "shallowEqual",
+    "path": "AvatarImporter/Packages/_Index/RoactRodux/RoactRodux/shallowEqual",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "286",
+      "SourceBytecodeSha256": "50e2aef0372e6d627cb6c96d46f9882230fab93eb2f5e5bfc20b57b3713165d5",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Signal",
+    "path": "AvatarImporter/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux/Signal",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "2317",
+      "SourceBytecodeSha256": "655b2980966a61b5b25a5176fe9574b4fdd52f54db6483dd9b50fc4e303cda89",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Signal",
+    "path": "AvatarImporter/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/Signal",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "2033",
+      "SourceBytecodeSha256": "8c3932b54e89342681da740ad51f102e1b165c1b9bdc70c5c61edf54cda0bfee",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "SingleEventManager",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/SingleEventManager",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "2102",
+      "SourceBytecodeSha256": "e65514e9cc4c29afcb321ff8632e931cfac9ff03baab28b050e74f0cfb532306",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "sort",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/List/sort",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "155",
+      "SourceBytecodeSha256": "2082e8ea11a82f8ce8e98d16c86fea49aa292f5a6af981b7df21763f9d55d136",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Store",
+    "path": "AvatarImporter/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux/Store",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "4694",
+      "SourceBytecodeSha256": "667d74a18e11b91398a2b7d088f5ad379be79fa5e003451c4afbeabe8d8eb1a9",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Store",
+    "path": "AvatarImporter/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/Store",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "4270",
+      "SourceBytecodeSha256": "4068669126ccbbe98551ae086bd8227326b4f8e80d5f54b0bbb31a1ab89994ca",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "store",
+    "path": "AvatarImporter/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/types/store",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "132",
+      "SourceBytecodeSha256": "ae162487fbe9c3ff81b859d64b10686c3790c1e388cf53622633a4e8fa76655d",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "StoreContext",
+    "path": "AvatarImporter/Packages/_Index/RoactRodux/RoactRodux/StoreContext",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "166",
+      "SourceBytecodeSha256": "c4f9f4f058a6f261a6ebfde55c31dd0b6942f8baf88bc06b3222a47d027ab346",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "StoreProvider",
+    "path": "AvatarImporter/Packages/_Index/RoactRodux/RoactRodux/StoreProvider",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "758",
+      "SourceBytecodeSha256": "a7b610eb1f2d6cb86af9e643597034dac36f556d1429f34e7f0522a5cbd4f0d1",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "strict",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/strict",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "620",
+      "SourceBytecodeSha256": "ea2036738f05688b1eb855af257ccf15bc7972a6cd430d24c65d9d32f6f91e00",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Symbol",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/Symbol",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "447",
+      "SourceBytecodeSha256": "760aead2e765f6b23d474d66ecef1a33adf81dea81b2681321af2efb8378eaeb",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Symbol",
+    "path": "AvatarImporter/Packages/_Index/RoactRodux/RoactRodux/Symbol",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "622",
+      "SourceBytecodeSha256": "1ed113b3dc9b543d4d0ed3bbbe3b801c0dc07f0974a4866411700a71c15c1384",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "TeamCityReporter",
+    "path": "AvatarImporter/Packages/_Index/TestEZ/TestEZ/Reporters/TeamCityReporter",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "3503",
+      "SourceBytecodeSha256": "47638d2102a39035290cf163bf38a2b1cbfaef707b0d846ba9aa896b6784aecc",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "TestBootstrap",
+    "path": "AvatarImporter/Packages/_Index/TestEZ/TestEZ/TestBootstrap",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "2796",
+      "SourceBytecodeSha256": "a6539e8dc9b44eb165ded4887918bfc8c5d94b74b0ec812d579ec7494ccd7bdb",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "TestEnum",
+    "path": "AvatarImporter/Packages/_Index/TestEZ/TestEZ/TestEnum",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "310",
+      "SourceBytecodeSha256": "e1951de0b36a930c694ca961fe42730f7c4dba86771fb75e4ebaf7ba37a87444",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "TestEZ",
+    "path": "AvatarImporter/Packages/_Index/TestEZ/TestEZ",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "986",
+      "SourceBytecodeSha256": "07f0658f7d7abd3b67a25acf961012dc4f727ca0bcfb9f85652c20801a86df5f",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "TestEZ",
+    "path": "AvatarImporter/Packages/Dev/TestEZ",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "165",
+      "SourceBytecodeSha256": "3c4fbb9c2a051f15a326fca84e432142acfa05216bb2c237e343f7ce329041ae",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "TestPlan",
+    "path": "AvatarImporter/Packages/_Index/TestEZ/TestEZ/TestPlan",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "6187",
+      "SourceBytecodeSha256": "d539e6240d54950390ea7098a5b04debf05fb2f0fc400dfbc1c60d0ee9d5ae1b",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "TestPlanner",
+    "path": "AvatarImporter/Packages/_Index/TestEZ/TestEZ/TestPlanner",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "477",
+      "SourceBytecodeSha256": "f1019552fb0e36fbaaa3a9d88cc85b7a108c5830ad3ca01dca5d2064a6f2d4a7",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "TestResults",
+    "path": "AvatarImporter/Packages/_Index/TestEZ/TestEZ/TestResults",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1863",
+      "SourceBytecodeSha256": "ba4cd2fbc762265f11fa0178f6b30e04346f07b564c28b4b491e586c5e265017",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "TestRunner",
+    "path": "AvatarImporter/Packages/_Index/TestEZ/TestEZ/TestRunner",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "3316",
+      "SourceBytecodeSha256": "abc110592a47f83159c861b57b19322cdb94c7c302eb0c7ecd4bc370808b1040",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "TestSession",
+    "path": "AvatarImporter/Packages/_Index/TestEZ/TestEZ/TestSession",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "5027",
+      "SourceBytecodeSha256": "0f5e25fd74e25dece7d5bca40316b92374548e189d36cc98e0bbe65188f284f3",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "TextReporter",
+    "path": "AvatarImporter/Packages/_Index/TestEZ/TestEZ/Reporters/TextReporter",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "2126",
+      "SourceBytecodeSha256": "7f10dc08bdedd536ac7d341d998e6e4cd3b307853593edd8af82776bf74d9d31",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "TextReporterQuiet",
+    "path": "AvatarImporter/Packages/_Index/TestEZ/TestEZ/Reporters/TextReporterQuiet",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1835",
+      "SourceBytecodeSha256": "0f69ef91e7e4d92be0720104ac2758f45a19edc771e8f582eca406837a1e3c78",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "themeConfig",
+    "path": "AvatarImporter/src/utils/themeConfig",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "177",
+      "SourceBytecodeSha256": "b16455e981027513d44a0069673abc57b3187a76cbd8cc31829b7faa504b1c9c",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ThemeManager",
+    "path": "AvatarImporter/src/ThemeManager",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1143",
+      "SourceBytecodeSha256": "c0c6980397fa109b2387cbc304b109d796dca792c0b3d4309a9a2524fa5d8512",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "thunkMiddleware",
+    "path": "AvatarImporter/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux/thunkMiddleware",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "154",
+      "SourceBytecodeSha256": "23846b665f8689f38c0efa08ee916bf47dc6a4c7211439ffadc24b0b72117932",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "thunkMiddleware",
+    "path": "AvatarImporter/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/thunkMiddleware",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "154",
+      "SourceBytecodeSha256": "2d2303fc18dc88d7967e556ca86485b3eb9ac5760b2fc4ff4909e3f6301c2a61",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "thunks",
+    "path": "AvatarImporter/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/types/thunks",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "130",
+      "SourceBytecodeSha256": "dd71b69ea6587d4c87612190bf2e1eb94b3161f82191de396a8e3eda904f1c0f",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "TogglePlugin",
+    "path": "AvatarImporter/src/actions/TogglePlugin",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "260",
+      "SourceBytecodeSha256": "845dd0f09fe0b5bdad7febe581927ba8e821d71aa829b7965a3006255c838933",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Tooltip",
+    "path": "AvatarImporter/src/components/Tooltip",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "2785",
+      "SourceBytecodeSha256": "c5952ef408368a82f3b8daeb6f1b2205f9e3991f425e31c6590d80fcd6ca41a1",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "toSet",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/List/toSet",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "121",
+      "SourceBytecodeSha256": "cd9d3e5d9d53548a2d08337f05a7bd202c4cb2982654e3a79584e879fb3bae20",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Type",
+    "path": "AvatarImporter/Packages/_Index/Roact/Roact/Type",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1196",
+      "SourceBytecodeSha256": "d7d642e55e0180ac006b45f7a3515b48ce684626018eac44e796e7717c9ff0a6",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "types",
+    "path": "AvatarImporter/Packages/_Index/RoactRodux/RoactRodux/types",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "140",
+      "SourceBytecodeSha256": "70f59f3c26965326162f44fb4f65ab9b616a5df2c955b9ea7f929b17f39941a7",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "union",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/Dictionary/union",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "147",
+      "SourceBytecodeSha256": "1eb17a36b34d86d9a7419e4c92c0f61becea1224bb6a03fdfa7efd5f901b5e8e",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "values",
+    "path": "AvatarImporter/Packages/_Index/Cryo/Cryo/Dictionary/values",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "154",
+      "SourceBytecodeSha256": "1a82c6e234f9cf894f41da27344c1bdc9a753840ee0a4d41829bc3ae04972421",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "Script",
+    "name": "main",
+    "path": "AvatarImporter/Bin/main",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "2511",
+      "SourceBytecodeSha256": "9e5a978236d4b7f64035858b517321d7a9d06ebb164484a818e88fe53194c316",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "Script",
+    "name": "runTests",
+    "path": "AvatarImporter/Bin/runTests",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "103",
+      "SourceBytecodeSha256": "a5219295bcbe24e4e6ddde2699f98b94b6d6a4e7a1ce2a9893fc939cea0f3da7",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "StringValue",
+    "name": ".luaurc",
+    "path": "AvatarImporter/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/.luaurc",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  }
+]

@@ -1,0 +1,660 @@
+[
+  {
+    "class": "Folder",
+    "name": "Enum",
+    "path": "UIEditor/Plugin/Enum",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Flags",
+    "path": "UIEditor/Plugin/Flags",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Plugin",
+    "path": "UIEditor/Plugin",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Tests",
+    "path": "UIEditor/Plugin/Tests",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "UIEditor",
+    "path": "UIEditor",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ActionMediator",
+    "path": "UIEditor/Plugin/ActionMediator",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "2481",
+      "SourceBytecodeSha256": "454b8ed7a3506f4091c0c2050043d243cb1a0e4876b3fd1ccd7abc05d728aeb8",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "AdornmentModule",
+    "path": "UIEditor/Plugin/AdornmentModule",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "8585",
+      "SourceBytecodeSha256": "6a9ed7ef58262dc119bd04e5982bbbd90570e8e8c06efca6b61da1f7738530e7",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Analytics",
+    "path": "UIEditor/Plugin/Analytics",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "344",
+      "SourceBytecodeSha256": "d5f98f2258e941f891cc4c7b4391e1cf2fae5db0016ea75beda0cf68fca5ecc4",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Axis",
+    "path": "UIEditor/Plugin/Enum/Axis",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "82",
+      "SourceBytecodeSha256": "0a11aafe2859916ba248295c037f0d09498e92116ec5f383e59233d4a5864af9",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Convert",
+    "path": "UIEditor/Plugin/Convert",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "3187",
+      "SourceBytecodeSha256": "245430208ac6ff37e11553effe8f97a1fc5f21ed8d50dfce35b69576885783e0",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "CoreGuiManager",
+    "path": "UIEditor/Plugin/CoreGuiManager",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1310",
+      "SourceBytecodeSha256": "9af75f1a0636f587c7753ba5d7fd750198a03c13ba4ce6d34b390d5c1558b392",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Direction",
+    "path": "UIEditor/Plugin/Enum/Direction",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1537",
+      "SourceBytecodeSha256": "274bff55fe982f08cd3b3a5561b0a59c3cd4f22825f3241ba74e02257c60e42d",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "DistanceLine",
+    "path": "UIEditor/Plugin/DistanceLine",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "6618",
+      "SourceBytecodeSha256": "51f6783163c8d8f69d6d6d669fd41375bed7c8514e9fbc98b9b115bc9f3338ab",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "DistanceLinesManager",
+    "path": "UIEditor/Plugin/DistanceLinesManager",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1519",
+      "SourceBytecodeSha256": "5e5843daa6340e497a7d1b25ac379278877b9fc71405db564f36fc71b2d13823",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "DoubleClickDetector",
+    "path": "UIEditor/Plugin/DoubleClickDetector",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "210",
+      "SourceBytecodeSha256": "e33d87926b31aeb747642b49003c8641539e5b65e4308c1617b34fe75ecd89b1",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Error",
+    "path": "UIEditor/Plugin/Error",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "168",
+      "SourceBytecodeSha256": "72cb6636962b4c10de570dc2ae179f91c298e9efcd00f651d4109174990b40d1",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Extents2D",
+    "path": "UIEditor/Plugin/Extents2D",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "6368",
+      "SourceBytecodeSha256": "2fa886346ef48d2bcc8cf24f17d8a254ca23dbb6b91fe0b10f78fd304a485b8e",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "FFlag",
+    "path": "UIEditor/Plugin/FFlag",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "379",
+      "SourceBytecodeSha256": "842f0888757e244cadab6c0bdd2c47e8f25da3fc7d4f5037bf0155a17c8eef8c",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "GetFFlagUIEditorFixCrashInConvert",
+    "path": "UIEditor/Plugin/Flags/GetFFlagUIEditorFixCrashInConvert",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "210",
+      "SourceBytecodeSha256": "16cdbe91dfe90ad78fe12f2152e751d4a90f67b8c7b131c9668db43c344c300e",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "GlobalValues",
+    "path": "UIEditor/Plugin/GlobalValues",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "527",
+      "SourceBytecodeSha256": "7bced9222fde7096abd55aab620c1fe728b9c88a5e9dd8c38f5e99aa1d5f9357",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "InstanceInfo",
+    "path": "UIEditor/Plugin/InstanceInfo",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1260",
+      "SourceBytecodeSha256": "96392ebc5ab52b0d89ed1770763324091c23bbb86eedecb3b64dae600aedea48",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Log",
+    "path": "UIEditor/Plugin/Log",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "96",
+      "SourceBytecodeSha256": "d64d2df8e9275cf9d376cc2701be18d2a8e315b67697b596a752a74ef265f7ec",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "MouseIconManager",
+    "path": "UIEditor/Plugin/MouseIconManager",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "2986",
+      "SourceBytecodeSha256": "df2bba186b043e35b8b98b14e3e68a63e9c48cde6eda14de00e44e1ee52dee2e",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Move",
+    "path": "UIEditor/Plugin/Move",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "5486",
+      "SourceBytecodeSha256": "e85eb1e1123f1a580fa13ca6b05087a9f6c72caf31e2a5b637440e1a25488760",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "README",
+    "path": "UIEditor/Plugin/README",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "34",
+      "SourceBytecodeSha256": "28a3b7136e930426171fea21efb30237d120cf3531b2f37d4c9e043be7b6ae48",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "RectUtility",
+    "path": "UIEditor/Plugin/RectUtility",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "682",
+      "SourceBytecodeSha256": "f3c2683c71ecd2ef048c81cf365d45ad0880cb2e91aac5c88c8c20446f5b6388",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "RectUtilityTest",
+    "path": "UIEditor/Plugin/Tests/RectUtilityTest",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "2452",
+      "SourceBytecodeSha256": "1c171ce9aed3d6eeff5d7ddad0833799b1b573fe3763a0b317668b73ea951ca5",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Resize",
+    "path": "UIEditor/Plugin/Resize",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "17833",
+      "SourceBytecodeSha256": "85e9e86828bf76e5ea13df39522a1e835f6ff5c2b5bbfbac3d67ed4b253aeb88",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Rotate",
+    "path": "UIEditor/Plugin/Rotate",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "7235",
+      "SourceBytecodeSha256": "8ca35ee4cbca5c04eaf3ec33d428f2a120cd9b6a8eec6c2c93fdb298d7fed0c9",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "RotateUtility",
+    "path": "UIEditor/Plugin/RotateUtility",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "329",
+      "SourceBytecodeSha256": "45dadfb272615bbeb8b95e3d204fbd0f5af9c2e95f6150ed684f1d12b0c60d88",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "RotationBox",
+    "path": "UIEditor/Plugin/RotationBox",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "709",
+      "SourceBytecodeSha256": "01b3a78c2a1e99e19fd1cdfdec741a6ed518e1aad323ecc50bfb0612fa300397",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Rubberband",
+    "path": "UIEditor/Plugin/Rubberband",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "2288",
+      "SourceBytecodeSha256": "f24801c98fed4e7da651a6d281ca98f23096b5ade6cbaeac04fc16c1f43e3c2d",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Select",
+    "path": "UIEditor/Plugin/Select",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "6295",
+      "SourceBytecodeSha256": "80e1589b1975b3e40989845fcc39d92c29576655dfeadf8ef7f1264c9d5baf8e",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "SelectionManager",
+    "path": "UIEditor/Plugin/SelectionManager",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "4803",
+      "SourceBytecodeSha256": "a57afeb59656d64c5bb228ec02ec94bd2c128cb224e316f4b53d3c6e58091200",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Set",
+    "path": "UIEditor/Plugin/Set",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1497",
+      "SourceBytecodeSha256": "be99fe7180cc08d36f862f977d44a0fac93a4f0a76fe8290b42faa7f9843f0e5",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "SizeBox",
+    "path": "UIEditor/Plugin/SizeBox",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1554",
+      "SourceBytecodeSha256": "64b0f7775af70a9bd0d1efcf21d3ebb724323aafecc1231adea8ace99d5c8f4e",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "SnappingPointManager",
+    "path": "UIEditor/Plugin/SnappingPointManager",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "14093",
+      "SourceBytecodeSha256": "9663738fa6f0d926a6bb6f511e3c191cd8f40c6d81bd3f7cccb0291153b8de45",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "SnappingType",
+    "path": "UIEditor/Plugin/Enum/SnappingType",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "913",
+      "SourceBytecodeSha256": "e3976db43322a3de8663c5b8816bce31be71fdedcf84b2ffbd098801c1d08ff1",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "TextEditor",
+    "path": "UIEditor/Plugin/TextEditor",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "2455",
+      "SourceBytecodeSha256": "fbdb63a8a944c2db3ff864ebe49db55353a0e50fd0cff0ab4fa6b032fb322c1d",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "UniqueArrayMap",
+    "path": "UIEditor/Plugin/UniqueArrayMap",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "938",
+      "SourceBytecodeSha256": "66ae74e5fbcd0ad2e74a3b93368e4254804aad3338feb37627cc4db2ad2325fb",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Utility",
+    "path": "UIEditor/Plugin/Utility",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "3890",
+      "SourceBytecodeSha256": "0802915d49d42c18b21cdae5b8ca57671a3f2b4e7b0f4a0d20a3fa4012be1af1",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ValueBox",
+    "path": "UIEditor/Plugin/ValueBox",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "3026",
+      "SourceBytecodeSha256": "9332ccf872621e070f5fec597b451cafa58580e023f6399aa7e90ce5572984cc",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "Script",
+    "name": "main",
+    "path": "UIEditor/Plugin/main",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "10687",
+      "SourceBytecodeSha256": "669c43d12b7730f3a30091e5b550c47037fab46d5097a4cda845c54a11714c1b",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  }
+]

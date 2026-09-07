@@ -1,0 +1,2215 @@
+[
+  {
+    "class": "Attachment",
+    "name": "BodyBackAttachment",
+    "path": "Mannequin/UpperTorso/BodyBackAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "BodyFrontAttachment",
+    "path": "Mannequin/UpperTorso/BodyFrontAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "FaceCenterAttachment",
+    "path": "Mannequin/Head/FaceCenterAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "FaceFrontAttachment",
+    "path": "Mannequin/Head/FaceFrontAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "HairAttachment",
+    "path": "Mannequin/Head/HairAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "HatAttachment",
+    "path": "Mannequin/Head/HatAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftAnkleRigAttachment",
+    "path": "Mannequin/LeftFoot/LeftAnkleRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftAnkleRigAttachment",
+    "path": "Mannequin/LeftLowerLeg/LeftAnkleRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftCollarAttachment",
+    "path": "Mannequin/UpperTorso/LeftCollarAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftElbowRigAttachment",
+    "path": "Mannequin/LeftLowerArm/LeftElbowRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftElbowRigAttachment",
+    "path": "Mannequin/LeftUpperArm/LeftElbowRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftFootAttachment",
+    "path": "Mannequin/LeftFoot/LeftFootAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftGripAttachment",
+    "path": "Mannequin/LeftHand/LeftGripAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftHipRigAttachment",
+    "path": "Mannequin/LeftUpperLeg/LeftHipRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftHipRigAttachment",
+    "path": "Mannequin/LowerTorso/LeftHipRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftKneeRigAttachment",
+    "path": "Mannequin/LeftLowerLeg/LeftKneeRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftKneeRigAttachment",
+    "path": "Mannequin/LeftUpperLeg/LeftKneeRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftShoulderAttachment",
+    "path": "Mannequin/LeftUpperArm/LeftShoulderAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftShoulderRigAttachment",
+    "path": "Mannequin/LeftUpperArm/LeftShoulderRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftShoulderRigAttachment",
+    "path": "Mannequin/UpperTorso/LeftShoulderRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftWristRigAttachment",
+    "path": "Mannequin/LeftHand/LeftWristRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftWristRigAttachment",
+    "path": "Mannequin/LeftLowerArm/LeftWristRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "NeckAttachment",
+    "path": "Mannequin/UpperTorso/NeckAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "NeckRigAttachment",
+    "path": "Mannequin/Head/NeckRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "NeckRigAttachment",
+    "path": "Mannequin/UpperTorso/NeckRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightAnkleRigAttachment",
+    "path": "Mannequin/RightFoot/RightAnkleRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightAnkleRigAttachment",
+    "path": "Mannequin/RightLowerLeg/RightAnkleRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightCollarAttachment",
+    "path": "Mannequin/UpperTorso/RightCollarAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightElbowRigAttachment",
+    "path": "Mannequin/RightLowerArm/RightElbowRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightElbowRigAttachment",
+    "path": "Mannequin/RightUpperArm/RightElbowRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightFootAttachment",
+    "path": "Mannequin/RightFoot/RightFootAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightGripAttachment",
+    "path": "Mannequin/RightHand/RightGripAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightHipRigAttachment",
+    "path": "Mannequin/LowerTorso/RightHipRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightHipRigAttachment",
+    "path": "Mannequin/RightUpperLeg/RightHipRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightKneeRigAttachment",
+    "path": "Mannequin/RightLowerLeg/RightKneeRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightKneeRigAttachment",
+    "path": "Mannequin/RightUpperLeg/RightKneeRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightShoulderAttachment",
+    "path": "Mannequin/RightUpperArm/RightShoulderAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightShoulderRigAttachment",
+    "path": "Mannequin/RightUpperArm/RightShoulderRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightShoulderRigAttachment",
+    "path": "Mannequin/UpperTorso/RightShoulderRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightWristRigAttachment",
+    "path": "Mannequin/RightHand/RightWristRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightWristRigAttachment",
+    "path": "Mannequin/RightLowerArm/RightWristRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RootRigAttachment",
+    "path": "Mannequin/HumanoidRootPart/RootRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RootRigAttachment",
+    "path": "Mannequin/LowerTorso/RootRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "WaistBackAttachment",
+    "path": "Mannequin/LowerTorso/WaistBackAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "WaistCenterAttachment",
+    "path": "Mannequin/LowerTorso/WaistCenterAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "WaistFrontAttachment",
+    "path": "Mannequin/LowerTorso/WaistFrontAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "WaistRigAttachment",
+    "path": "Mannequin/LowerTorso/WaistRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "WaistRigAttachment",
+    "path": "Mannequin/UpperTorso/WaistRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "Head_Composited",
+    "path": "Mannequin/InitialPoses/Head_Composited",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "Head_Initial",
+    "path": "Mannequin/InitialPoses/Head_Initial",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "Head_Original",
+    "path": "Mannequin/InitialPoses/Head_Original",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "LeftFoot_Composited",
+    "path": "Mannequin/InitialPoses/LeftFoot_Composited",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "LeftFoot_Initial",
+    "path": "Mannequin/InitialPoses/LeftFoot_Initial",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "LeftFoot_Original",
+    "path": "Mannequin/InitialPoses/LeftFoot_Original",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "LeftHand_Composited",
+    "path": "Mannequin/InitialPoses/LeftHand_Composited",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "LeftHand_Initial",
+    "path": "Mannequin/InitialPoses/LeftHand_Initial",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "LeftHand_Original",
+    "path": "Mannequin/InitialPoses/LeftHand_Original",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "LeftLowerArm_Composited",
+    "path": "Mannequin/InitialPoses/LeftLowerArm_Composited",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "LeftLowerArm_Initial",
+    "path": "Mannequin/InitialPoses/LeftLowerArm_Initial",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "LeftLowerArm_Original",
+    "path": "Mannequin/InitialPoses/LeftLowerArm_Original",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "LeftLowerLeg_Composited",
+    "path": "Mannequin/InitialPoses/LeftLowerLeg_Composited",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "LeftLowerLeg_Initial",
+    "path": "Mannequin/InitialPoses/LeftLowerLeg_Initial",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "LeftLowerLeg_Original",
+    "path": "Mannequin/InitialPoses/LeftLowerLeg_Original",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "LeftUpperArm_Composited",
+    "path": "Mannequin/InitialPoses/LeftUpperArm_Composited",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "LeftUpperArm_Initial",
+    "path": "Mannequin/InitialPoses/LeftUpperArm_Initial",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "LeftUpperArm_Original",
+    "path": "Mannequin/InitialPoses/LeftUpperArm_Original",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "LeftUpperLeg_Composited",
+    "path": "Mannequin/InitialPoses/LeftUpperLeg_Composited",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "LeftUpperLeg_Initial",
+    "path": "Mannequin/InitialPoses/LeftUpperLeg_Initial",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "LeftUpperLeg_Original",
+    "path": "Mannequin/InitialPoses/LeftUpperLeg_Original",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "LowerTorso_Composited",
+    "path": "Mannequin/InitialPoses/LowerTorso_Composited",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "LowerTorso_Initial",
+    "path": "Mannequin/InitialPoses/LowerTorso_Initial",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "LowerTorso_Original",
+    "path": "Mannequin/InitialPoses/LowerTorso_Original",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "RightFoot_Composited",
+    "path": "Mannequin/InitialPoses/RightFoot_Composited",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "RightFoot_Initial",
+    "path": "Mannequin/InitialPoses/RightFoot_Initial",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "RightFoot_Original",
+    "path": "Mannequin/InitialPoses/RightFoot_Original",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "RightHand_Composited",
+    "path": "Mannequin/InitialPoses/RightHand_Composited",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "RightHand_Initial",
+    "path": "Mannequin/InitialPoses/RightHand_Initial",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "RightHand_Original",
+    "path": "Mannequin/InitialPoses/RightHand_Original",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "RightLowerArm_Composited",
+    "path": "Mannequin/InitialPoses/RightLowerArm_Composited",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "RightLowerArm_Initial",
+    "path": "Mannequin/InitialPoses/RightLowerArm_Initial",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "RightLowerArm_Original",
+    "path": "Mannequin/InitialPoses/RightLowerArm_Original",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "RightLowerLeg_Composited",
+    "path": "Mannequin/InitialPoses/RightLowerLeg_Composited",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "RightLowerLeg_Initial",
+    "path": "Mannequin/InitialPoses/RightLowerLeg_Initial",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "RightLowerLeg_Original",
+    "path": "Mannequin/InitialPoses/RightLowerLeg_Original",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "RightUpperArm_Composited",
+    "path": "Mannequin/InitialPoses/RightUpperArm_Composited",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "RightUpperArm_Initial",
+    "path": "Mannequin/InitialPoses/RightUpperArm_Initial",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "RightUpperArm_Original",
+    "path": "Mannequin/InitialPoses/RightUpperArm_Original",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "RightUpperLeg_Composited",
+    "path": "Mannequin/InitialPoses/RightUpperLeg_Composited",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "RightUpperLeg_Initial",
+    "path": "Mannequin/InitialPoses/RightUpperLeg_Initial",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "RightUpperLeg_Original",
+    "path": "Mannequin/InitialPoses/RightUpperLeg_Original",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "UpperTorso_Composited",
+    "path": "Mannequin/InitialPoses/UpperTorso_Composited",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "UpperTorso_Initial",
+    "path": "Mannequin/InitialPoses/UpperTorso_Initial",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "CFrameValue",
+    "name": "UpperTorso_Original",
+    "path": "Mannequin/InitialPoses/UpperTorso_Original",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "InitialPoses",
+    "path": "Mannequin/InitialPoses",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Humanoid",
+    "name": "Humanoid",
+    "path": "Mannequin/Humanoid",
+    "properties": {
+      "AttributesSerialize": "",
+      "DisplayName": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "Head",
+    "path": "Mannequin/Head",
+    "properties": {
+      "AttributesSerialize": "",
+      "LODData": "",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://assetdelivery.roblox.com/v1/asset/?id=6811684765",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "LeftFoot",
+    "path": "Mannequin/LeftFoot",
+    "properties": {
+      "AttributesSerialize": "",
+      "LODData": "",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://assetdelivery.roblox.com/v1/asset/?id=6811684820",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "LeftHand",
+    "path": "Mannequin/LeftHand",
+    "properties": {
+      "AttributesSerialize": "",
+      "LODData": "",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://assetdelivery.roblox.com/v1/asset/?id=6811684764",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "LeftLowerArm",
+    "path": "Mannequin/LeftLowerArm",
+    "properties": {
+      "AttributesSerialize": "",
+      "LODData": "",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://assetdelivery.roblox.com/v1/asset/?id=6811684790",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "LeftLowerLeg",
+    "path": "Mannequin/LeftLowerLeg",
+    "properties": {
+      "AttributesSerialize": "",
+      "LODData": "",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://assetdelivery.roblox.com/v1/asset/?id=6811684852",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "LeftUpperArm",
+    "path": "Mannequin/LeftUpperArm",
+    "properties": {
+      "AttributesSerialize": "",
+      "LODData": "",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://assetdelivery.roblox.com/v1/asset/?id=6811684768",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "LeftUpperLeg",
+    "path": "Mannequin/LeftUpperLeg",
+    "properties": {
+      "AttributesSerialize": "",
+      "LODData": "",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://assetdelivery.roblox.com/v1/asset/?id=6811684791",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "LowerTorso",
+    "path": "Mannequin/LowerTorso",
+    "properties": {
+      "AttributesSerialize": "",
+      "LODData": "",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://assetdelivery.roblox.com/v1/asset/?id=6811684798",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "RightFoot",
+    "path": "Mannequin/RightFoot",
+    "properties": {
+      "AttributesSerialize": "",
+      "LODData": "",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://assetdelivery.roblox.com/v1/asset/?id=6811684847",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "RightHand",
+    "path": "Mannequin/RightHand",
+    "properties": {
+      "AttributesSerialize": "",
+      "LODData": "",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://assetdelivery.roblox.com/v1/asset/?id=6811684811",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "RightLowerArm",
+    "path": "Mannequin/RightLowerArm",
+    "properties": {
+      "AttributesSerialize": "",
+      "LODData": "",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://assetdelivery.roblox.com/v1/asset/?id=6811684827",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "RightLowerLeg",
+    "path": "Mannequin/RightLowerLeg",
+    "properties": {
+      "AttributesSerialize": "",
+      "LODData": "",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://assetdelivery.roblox.com/v1/asset/?id=6811684834",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "RightUpperArm",
+    "path": "Mannequin/RightUpperArm",
+    "properties": {
+      "AttributesSerialize": "",
+      "LODData": "",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://assetdelivery.roblox.com/v1/asset/?id=6811684822",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "RightUpperLeg",
+    "path": "Mannequin/RightUpperLeg",
+    "properties": {
+      "AttributesSerialize": "",
+      "LODData": "",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://assetdelivery.roblox.com/v1/asset/?id=6811684854",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "UpperTorso",
+    "path": "Mannequin/UpperTorso",
+    "properties": {
+      "AttributesSerialize": "",
+      "LODData": "",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://assetdelivery.roblox.com/v1/asset/?id=6811684785",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Model",
+    "name": "Mannequin",
+    "path": "Mannequin",
+    "properties": {
+      "AttributesSerialize": "",
+      "ModelMeshData": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "LeftAnkle",
+    "path": "Mannequin/LeftFoot/LeftAnkle",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "LeftElbow",
+    "path": "Mannequin/LeftLowerArm/LeftElbow",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "LeftHip",
+    "path": "Mannequin/LeftUpperLeg/LeftHip",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "LeftKnee",
+    "path": "Mannequin/LeftLowerLeg/LeftKnee",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "LeftShoulder",
+    "path": "Mannequin/LeftUpperArm/LeftShoulder",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "LeftWrist",
+    "path": "Mannequin/LeftHand/LeftWrist",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "Neck",
+    "path": "Mannequin/Head/Neck",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "RightAnkle",
+    "path": "Mannequin/RightFoot/RightAnkle",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "RightElbow",
+    "path": "Mannequin/RightLowerArm/RightElbow",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "RightHip",
+    "path": "Mannequin/RightUpperLeg/RightHip",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "RightKnee",
+    "path": "Mannequin/RightLowerLeg/RightKnee",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "RightShoulder",
+    "path": "Mannequin/RightUpperArm/RightShoulder",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "RightWrist",
+    "path": "Mannequin/RightHand/RightWrist",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "Root",
+    "path": "Mannequin/LowerTorso/Root",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "Waist",
+    "path": "Mannequin/UpperTorso/Waist",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "NumberValue",
+    "name": "BodyDepthScale",
+    "path": "Mannequin/Humanoid/BodyDepthScale",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "NumberValue",
+    "name": "BodyHeightScale",
+    "path": "Mannequin/Humanoid/BodyHeightScale",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "NumberValue",
+    "name": "BodyProportionScale",
+    "path": "Mannequin/Humanoid/BodyProportionScale",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "NumberValue",
+    "name": "BodyTypeScale",
+    "path": "Mannequin/Humanoid/BodyTypeScale",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "NumberValue",
+    "name": "BodyWidthScale",
+    "path": "Mannequin/Humanoid/BodyWidthScale",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "NumberValue",
+    "name": "HeadScale",
+    "path": "Mannequin/Humanoid/HeadScale",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Part",
+    "name": "HumanoidRootPart",
+    "path": "Mannequin/HumanoidRootPart",
+    "properties": {
+      "AttributesSerialize": "",
+      "MaterialVariantSerialized": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "Mannequin/Head/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "Mannequin/LeftFoot/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "Mannequin/LeftHand/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "Mannequin/LeftLowerArm/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "Mannequin/LeftLowerLeg/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "Mannequin/LeftUpperArm/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "Mannequin/LeftUpperLeg/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "Mannequin/LowerTorso/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "Mannequin/RightFoot/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "Mannequin/RightHand/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "Mannequin/RightLowerArm/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "Mannequin/RightLowerLeg/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "Mannequin/RightUpperArm/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "Mannequin/RightUpperLeg/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "Mannequin/UpperTorso/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/Head/FaceCenterAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/Head/FaceFrontAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/Head/HairAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/Head/HatAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/Head/NeckRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/HumanoidRootPart/RootRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/LeftFoot/LeftAnkleRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/LeftFoot/LeftFootAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/LeftHand/LeftGripAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/LeftHand/LeftWristRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/LeftLowerArm/LeftElbowRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/LeftLowerArm/LeftWristRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/LeftLowerLeg/LeftAnkleRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/LeftLowerLeg/LeftKneeRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/LeftUpperArm/LeftElbowRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/LeftUpperArm/LeftShoulderAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/LeftUpperArm/LeftShoulderRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/LeftUpperLeg/LeftHipRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/LeftUpperLeg/LeftKneeRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/LowerTorso/LeftHipRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/LowerTorso/RightHipRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/LowerTorso/RootRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/LowerTorso/WaistBackAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/LowerTorso/WaistCenterAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/LowerTorso/WaistFrontAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/LowerTorso/WaistRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/RightFoot/RightAnkleRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/RightFoot/RightFootAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/RightHand/RightGripAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/RightHand/RightWristRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/RightLowerArm/RightElbowRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/RightLowerArm/RightWristRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/RightLowerLeg/RightAnkleRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/RightLowerLeg/RightKneeRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/RightUpperArm/RightElbowRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/RightUpperArm/RightShoulderAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/RightUpperArm/RightShoulderRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/RightUpperLeg/RightHipRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/RightUpperLeg/RightKneeRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/UpperTorso/BodyBackAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/UpperTorso/BodyFrontAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/UpperTorso/LeftCollarAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/UpperTorso/LeftShoulderRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/UpperTorso/NeckAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/UpperTorso/NeckRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/UpperTorso/RightCollarAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/UpperTorso/RightShoulderRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Mannequin/UpperTorso/WaistRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Mannequin/Head/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Mannequin/HumanoidRootPart/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Mannequin/LeftFoot/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Mannequin/LeftHand/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Mannequin/LeftLowerArm/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Mannequin/LeftLowerLeg/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Mannequin/LeftUpperArm/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Mannequin/LeftUpperLeg/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Mannequin/LowerTorso/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Mannequin/RightFoot/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Mannequin/RightHand/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Mannequin/RightLowerArm/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Mannequin/RightLowerLeg/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Mannequin/RightUpperArm/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Mannequin/RightUpperLeg/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Mannequin/UpperTorso/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  }
+]

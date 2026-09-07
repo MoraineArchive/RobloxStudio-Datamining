@@ -1,0 +1,3097 @@
+[
+  {
+    "class": "Attachment",
+    "name": "BodyBackAttachment",
+    "path": "AnthroRigs/AnthroNormal/UpperTorso/BodyBackAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "BodyBackAttachment",
+    "path": "AnthroRigs/AnthroSlender/UpperTorso/BodyBackAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "BodyFrontAttachment",
+    "path": "AnthroRigs/AnthroNormal/UpperTorso/BodyFrontAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "BodyFrontAttachment",
+    "path": "AnthroRigs/AnthroSlender/UpperTorso/BodyFrontAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "FaceCenterAttachment",
+    "path": "AnthroRigs/AnthroNormal/Head/FaceCenterAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "FaceCenterAttachment",
+    "path": "AnthroRigs/AnthroSlender/Head/FaceCenterAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "FaceFrontAttachment",
+    "path": "AnthroRigs/AnthroNormal/Head/FaceFrontAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "FaceFrontAttachment",
+    "path": "AnthroRigs/AnthroSlender/Head/FaceFrontAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "HairAttachment",
+    "path": "AnthroRigs/AnthroNormal/Head/HairAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "HairAttachment",
+    "path": "AnthroRigs/AnthroSlender/Head/HairAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "HatAttachment",
+    "path": "AnthroRigs/AnthroNormal/Head/HatAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "HatAttachment",
+    "path": "AnthroRigs/AnthroSlender/Head/HatAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftAnkleRigAttachment",
+    "path": "AnthroRigs/AnthroNormal/LeftFoot/LeftAnkleRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftAnkleRigAttachment",
+    "path": "AnthroRigs/AnthroNormal/LeftLowerLeg/LeftAnkleRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftAnkleRigAttachment",
+    "path": "AnthroRigs/AnthroSlender/LeftFoot/LeftAnkleRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftAnkleRigAttachment",
+    "path": "AnthroRigs/AnthroSlender/LeftLowerLeg/LeftAnkleRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftCollarAttachment",
+    "path": "AnthroRigs/AnthroNormal/UpperTorso/LeftCollarAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftCollarAttachment",
+    "path": "AnthroRigs/AnthroSlender/UpperTorso/LeftCollarAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftElbowRigAttachment",
+    "path": "AnthroRigs/AnthroNormal/LeftLowerArm/LeftElbowRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftElbowRigAttachment",
+    "path": "AnthroRigs/AnthroNormal/LeftUpperArm/LeftElbowRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftElbowRigAttachment",
+    "path": "AnthroRigs/AnthroSlender/LeftLowerArm/LeftElbowRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftElbowRigAttachment",
+    "path": "AnthroRigs/AnthroSlender/LeftUpperArm/LeftElbowRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftFootAttachment",
+    "path": "AnthroRigs/AnthroNormal/LeftFoot/LeftFootAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftFootAttachment",
+    "path": "AnthroRigs/AnthroSlender/LeftFoot/LeftFootAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftGripAttachment",
+    "path": "AnthroRigs/AnthroNormal/LeftHand/LeftGripAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftGripAttachment",
+    "path": "AnthroRigs/AnthroSlender/LeftHand/LeftGripAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftHipRigAttachment",
+    "path": "AnthroRigs/AnthroNormal/LeftUpperLeg/LeftHipRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftHipRigAttachment",
+    "path": "AnthroRigs/AnthroNormal/LowerTorso/LeftHipRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftHipRigAttachment",
+    "path": "AnthroRigs/AnthroSlender/LeftUpperLeg/LeftHipRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftHipRigAttachment",
+    "path": "AnthroRigs/AnthroSlender/LowerTorso/LeftHipRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftKneeRigAttachment",
+    "path": "AnthroRigs/AnthroNormal/LeftLowerLeg/LeftKneeRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftKneeRigAttachment",
+    "path": "AnthroRigs/AnthroNormal/LeftUpperLeg/LeftKneeRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftKneeRigAttachment",
+    "path": "AnthroRigs/AnthroSlender/LeftLowerLeg/LeftKneeRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftKneeRigAttachment",
+    "path": "AnthroRigs/AnthroSlender/LeftUpperLeg/LeftKneeRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftShoulderAttachment",
+    "path": "AnthroRigs/AnthroNormal/LeftUpperArm/LeftShoulderAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftShoulderAttachment",
+    "path": "AnthroRigs/AnthroSlender/LeftUpperArm/LeftShoulderAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftShoulderRigAttachment",
+    "path": "AnthroRigs/AnthroNormal/LeftUpperArm/LeftShoulderRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftShoulderRigAttachment",
+    "path": "AnthroRigs/AnthroNormal/UpperTorso/LeftShoulderRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftShoulderRigAttachment",
+    "path": "AnthroRigs/AnthroSlender/LeftUpperArm/LeftShoulderRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftShoulderRigAttachment",
+    "path": "AnthroRigs/AnthroSlender/UpperTorso/LeftShoulderRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftWristRigAttachment",
+    "path": "AnthroRigs/AnthroNormal/LeftHand/LeftWristRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftWristRigAttachment",
+    "path": "AnthroRigs/AnthroNormal/LeftLowerArm/LeftWristRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftWristRigAttachment",
+    "path": "AnthroRigs/AnthroSlender/LeftHand/LeftWristRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftWristRigAttachment",
+    "path": "AnthroRigs/AnthroSlender/LeftLowerArm/LeftWristRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "NeckAttachment",
+    "path": "AnthroRigs/AnthroNormal/UpperTorso/NeckAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "NeckAttachment",
+    "path": "AnthroRigs/AnthroSlender/UpperTorso/NeckAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "NeckRigAttachment",
+    "path": "AnthroRigs/AnthroNormal/Head/NeckRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "NeckRigAttachment",
+    "path": "AnthroRigs/AnthroNormal/UpperTorso/NeckRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "NeckRigAttachment",
+    "path": "AnthroRigs/AnthroSlender/Head/NeckRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "NeckRigAttachment",
+    "path": "AnthroRigs/AnthroSlender/UpperTorso/NeckRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightAnkleRigAttachment",
+    "path": "AnthroRigs/AnthroNormal/RightFoot/RightAnkleRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightAnkleRigAttachment",
+    "path": "AnthroRigs/AnthroNormal/RightLowerLeg/RightAnkleRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightAnkleRigAttachment",
+    "path": "AnthroRigs/AnthroSlender/RightFoot/RightAnkleRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightAnkleRigAttachment",
+    "path": "AnthroRigs/AnthroSlender/RightLowerLeg/RightAnkleRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightCollarAttachment",
+    "path": "AnthroRigs/AnthroNormal/UpperTorso/RightCollarAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightCollarAttachment",
+    "path": "AnthroRigs/AnthroSlender/UpperTorso/RightCollarAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightElbowRigAttachment",
+    "path": "AnthroRigs/AnthroNormal/RightLowerArm/RightElbowRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightElbowRigAttachment",
+    "path": "AnthroRigs/AnthroNormal/RightUpperArm/RightElbowRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightElbowRigAttachment",
+    "path": "AnthroRigs/AnthroSlender/RightLowerArm/RightElbowRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightElbowRigAttachment",
+    "path": "AnthroRigs/AnthroSlender/RightUpperArm/RightElbowRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightFootAttachment",
+    "path": "AnthroRigs/AnthroNormal/RightFoot/RightFootAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightFootAttachment",
+    "path": "AnthroRigs/AnthroSlender/RightFoot/RightFootAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightGripAttachment",
+    "path": "AnthroRigs/AnthroNormal/RightHand/RightGripAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightGripAttachment",
+    "path": "AnthroRigs/AnthroSlender/RightHand/RightGripAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightHipRigAttachment",
+    "path": "AnthroRigs/AnthroNormal/LowerTorso/RightHipRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightHipRigAttachment",
+    "path": "AnthroRigs/AnthroNormal/RightUpperLeg/RightHipRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightHipRigAttachment",
+    "path": "AnthroRigs/AnthroSlender/LowerTorso/RightHipRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightHipRigAttachment",
+    "path": "AnthroRigs/AnthroSlender/RightUpperLeg/RightHipRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightKneeRigAttachment",
+    "path": "AnthroRigs/AnthroNormal/RightLowerLeg/RightKneeRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightKneeRigAttachment",
+    "path": "AnthroRigs/AnthroNormal/RightUpperLeg/RightKneeRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightKneeRigAttachment",
+    "path": "AnthroRigs/AnthroSlender/RightLowerLeg/RightKneeRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightKneeRigAttachment",
+    "path": "AnthroRigs/AnthroSlender/RightUpperLeg/RightKneeRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightShoulderAttachment",
+    "path": "AnthroRigs/AnthroNormal/RightUpperArm/RightShoulderAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightShoulderAttachment",
+    "path": "AnthroRigs/AnthroSlender/RightUpperArm/RightShoulderAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightShoulderRigAttachment",
+    "path": "AnthroRigs/AnthroNormal/RightUpperArm/RightShoulderRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightShoulderRigAttachment",
+    "path": "AnthroRigs/AnthroNormal/UpperTorso/RightShoulderRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightShoulderRigAttachment",
+    "path": "AnthroRigs/AnthroSlender/RightUpperArm/RightShoulderRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightShoulderRigAttachment",
+    "path": "AnthroRigs/AnthroSlender/UpperTorso/RightShoulderRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightWristRigAttachment",
+    "path": "AnthroRigs/AnthroNormal/RightHand/RightWristRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightWristRigAttachment",
+    "path": "AnthroRigs/AnthroNormal/RightLowerArm/RightWristRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightWristRigAttachment",
+    "path": "AnthroRigs/AnthroSlender/RightHand/RightWristRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightWristRigAttachment",
+    "path": "AnthroRigs/AnthroSlender/RightLowerArm/RightWristRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RootRigAttachment",
+    "path": "AnthroRigs/AnthroNormal/HumanoidRootPart/RootRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RootRigAttachment",
+    "path": "AnthroRigs/AnthroNormal/LowerTorso/RootRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RootRigAttachment",
+    "path": "AnthroRigs/AnthroSlender/HumanoidRootPart/RootRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RootRigAttachment",
+    "path": "AnthroRigs/AnthroSlender/LowerTorso/RootRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "WaistBackAttachment",
+    "path": "AnthroRigs/AnthroNormal/LowerTorso/WaistBackAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "WaistBackAttachment",
+    "path": "AnthroRigs/AnthroSlender/LowerTorso/WaistBackAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "WaistCenterAttachment",
+    "path": "AnthroRigs/AnthroNormal/LowerTorso/WaistCenterAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "WaistCenterAttachment",
+    "path": "AnthroRigs/AnthroSlender/LowerTorso/WaistCenterAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "WaistFrontAttachment",
+    "path": "AnthroRigs/AnthroNormal/LowerTorso/WaistFrontAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "WaistFrontAttachment",
+    "path": "AnthroRigs/AnthroSlender/LowerTorso/WaistFrontAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "WaistRigAttachment",
+    "path": "AnthroRigs/AnthroNormal/LowerTorso/WaistRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "WaistRigAttachment",
+    "path": "AnthroRigs/AnthroNormal/UpperTorso/WaistRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "WaistRigAttachment",
+    "path": "AnthroRigs/AnthroSlender/LowerTorso/WaistRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "WaistRigAttachment",
+    "path": "AnthroRigs/AnthroSlender/UpperTorso/WaistRigAttachment",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Decal",
+    "name": "Face",
+    "path": "AnthroRigs/AnthroNormal/Head/Face",
+    "properties": {
+      "Tags": "",
+      "Texture": "rbxasset://textures/face.png"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Decal",
+    "name": "Face",
+    "path": "AnthroRigs/AnthroSlender/Head/Face",
+    "properties": {
+      "Tags": "",
+      "Texture": "rbxasset://textures/face.png"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "AnthroRigs",
+    "path": "AnthroRigs",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Humanoid",
+    "name": "Humanoid",
+    "path": "AnthroRigs/AnthroNormal/Humanoid",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Humanoid",
+    "name": "Humanoid",
+    "path": "AnthroRigs/AnthroSlender/Humanoid",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "Head",
+    "path": "AnthroRigs/AnthroNormal/Head",
+    "properties": {
+      "MeshID": "http://www.roblox.com/asset/?id=2545910049",
+      "MeshId": "http://www.roblox.com/asset/?id=2545910049",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "Head",
+    "path": "AnthroRigs/AnthroSlender/Head",
+    "properties": {
+      "MeshID": "http://www.roblox.com/asset/?id=2545944394",
+      "MeshId": "http://www.roblox.com/asset/?id=2545944394",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "LeftFoot",
+    "path": "AnthroRigs/AnthroNormal/LeftFoot",
+    "properties": {
+      "MeshID": "http://www.roblox.com/asset/?id=2545910212",
+      "MeshId": "http://www.roblox.com/asset/?id=2545910212",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "LeftFoot",
+    "path": "AnthroRigs/AnthroSlender/LeftFoot",
+    "properties": {
+      "MeshID": "http://www.roblox.com/asset/?id=2545944500",
+      "MeshId": "http://www.roblox.com/asset/?id=2545944500",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "LeftHand",
+    "path": "AnthroRigs/AnthroNormal/LeftHand",
+    "properties": {
+      "MeshID": "http://www.roblox.com/asset/?id=2545910138",
+      "MeshId": "http://www.roblox.com/asset/?id=2545910138",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "LeftHand",
+    "path": "AnthroRigs/AnthroSlender/LeftHand",
+    "properties": {
+      "MeshID": "http://www.roblox.com/asset/?id=2545944441",
+      "MeshId": "http://www.roblox.com/asset/?id=2545944441",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "LeftLowerArm",
+    "path": "AnthroRigs/AnthroNormal/LeftLowerArm",
+    "properties": {
+      "MeshID": "http://www.roblox.com/asset/?id=2545910166",
+      "MeshId": "http://www.roblox.com/asset/?id=2545910166",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "LeftLowerArm",
+    "path": "AnthroRigs/AnthroSlender/LeftLowerArm",
+    "properties": {
+      "MeshID": "http://www.roblox.com/asset/?id=2545944447",
+      "MeshId": "http://www.roblox.com/asset/?id=2545944447",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "LeftLowerLeg",
+    "path": "AnthroRigs/AnthroNormal/LeftLowerLeg",
+    "properties": {
+      "MeshID": "http://www.roblox.com/asset/?id=2545910222",
+      "MeshId": "http://www.roblox.com/asset/?id=2545910222",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "LeftLowerLeg",
+    "path": "AnthroRigs/AnthroSlender/LeftLowerLeg",
+    "properties": {
+      "MeshID": "http://www.roblox.com/asset/?id=2545944509",
+      "MeshId": "http://www.roblox.com/asset/?id=2545944509",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "LeftUpperArm",
+    "path": "AnthroRigs/AnthroNormal/LeftUpperArm",
+    "properties": {
+      "MeshID": "http://www.roblox.com/asset/?id=2545910173",
+      "MeshId": "http://www.roblox.com/asset/?id=2545910173",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "LeftUpperArm",
+    "path": "AnthroRigs/AnthroSlender/LeftUpperArm",
+    "properties": {
+      "MeshID": "http://www.roblox.com/asset/?id=2545944458",
+      "MeshId": "http://www.roblox.com/asset/?id=2545944458",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "LeftUpperLeg",
+    "path": "AnthroRigs/AnthroNormal/LeftUpperLeg",
+    "properties": {
+      "MeshID": "http://www.roblox.com/asset/?id=2545910251",
+      "MeshId": "http://www.roblox.com/asset/?id=2545910251",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "LeftUpperLeg",
+    "path": "AnthroRigs/AnthroSlender/LeftUpperLeg",
+    "properties": {
+      "MeshID": "http://www.roblox.com/asset/?id=2545944514",
+      "MeshId": "http://www.roblox.com/asset/?id=2545944514",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "LowerTorso",
+    "path": "AnthroRigs/AnthroNormal/LowerTorso",
+    "properties": {
+      "MeshID": "http://www.roblox.com/asset/?id=2545910284",
+      "MeshId": "http://www.roblox.com/asset/?id=2545910284",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "LowerTorso",
+    "path": "AnthroRigs/AnthroSlender/LowerTorso",
+    "properties": {
+      "MeshID": "http://www.roblox.com/asset/?id=2545944567",
+      "MeshId": "http://www.roblox.com/asset/?id=2545944567",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "RightFoot",
+    "path": "AnthroRigs/AnthroNormal/RightFoot",
+    "properties": {
+      "MeshID": "http://www.roblox.com/asset/?id=2545910261",
+      "MeshId": "http://www.roblox.com/asset/?id=2545910261",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "RightFoot",
+    "path": "AnthroRigs/AnthroSlender/RightFoot",
+    "properties": {
+      "MeshID": "http://www.roblox.com/asset/?id=2545944522",
+      "MeshId": "http://www.roblox.com/asset/?id=2545944522",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "RightHand",
+    "path": "AnthroRigs/AnthroNormal/RightHand",
+    "properties": {
+      "MeshID": "http://www.roblox.com/asset/?id=2545910179",
+      "MeshId": "http://www.roblox.com/asset/?id=2545910179",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "RightHand",
+    "path": "AnthroRigs/AnthroSlender/RightHand",
+    "properties": {
+      "MeshID": "http://www.roblox.com/asset/?id=2545944466",
+      "MeshId": "http://www.roblox.com/asset/?id=2545944466",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "RightLowerArm",
+    "path": "AnthroRigs/AnthroNormal/RightLowerArm",
+    "properties": {
+      "MeshID": "http://www.roblox.com/asset/?id=2545910187",
+      "MeshId": "http://www.roblox.com/asset/?id=2545910187",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "RightLowerArm",
+    "path": "AnthroRigs/AnthroSlender/RightLowerArm",
+    "properties": {
+      "MeshID": "http://www.roblox.com/asset/?id=2545944471",
+      "MeshId": "http://www.roblox.com/asset/?id=2545944471",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "RightLowerLeg",
+    "path": "AnthroRigs/AnthroNormal/RightLowerLeg",
+    "properties": {
+      "MeshID": "http://www.roblox.com/asset/?id=2545910269",
+      "MeshId": "http://www.roblox.com/asset/?id=2545910269",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "RightLowerLeg",
+    "path": "AnthroRigs/AnthroSlender/RightLowerLeg",
+    "properties": {
+      "MeshID": "http://www.roblox.com/asset/?id=2545944533",
+      "MeshId": "http://www.roblox.com/asset/?id=2545944533",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "RightUpperArm",
+    "path": "AnthroRigs/AnthroNormal/RightUpperArm",
+    "properties": {
+      "MeshID": "http://www.roblox.com/asset/?id=2545910199",
+      "MeshId": "http://www.roblox.com/asset/?id=2545910199",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "RightUpperArm",
+    "path": "AnthroRigs/AnthroSlender/RightUpperArm",
+    "properties": {
+      "MeshID": "http://www.roblox.com/asset/?id=2545944477",
+      "MeshId": "http://www.roblox.com/asset/?id=2545944477",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "RightUpperLeg",
+    "path": "AnthroRigs/AnthroNormal/RightUpperLeg",
+    "properties": {
+      "MeshID": "http://www.roblox.com/asset/?id=2545910278",
+      "MeshId": "http://www.roblox.com/asset/?id=2545910278",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "RightUpperLeg",
+    "path": "AnthroRigs/AnthroSlender/RightUpperLeg",
+    "properties": {
+      "MeshID": "http://www.roblox.com/asset/?id=2545944560",
+      "MeshId": "http://www.roblox.com/asset/?id=2545944560",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "UpperTorso",
+    "path": "AnthroRigs/AnthroNormal/UpperTorso",
+    "properties": {
+      "MeshID": "http://www.roblox.com/asset/?id=2545910205",
+      "MeshId": "http://www.roblox.com/asset/?id=2545910205",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "UpperTorso",
+    "path": "AnthroRigs/AnthroSlender/UpperTorso",
+    "properties": {
+      "MeshID": "http://www.roblox.com/asset/?id=2545944488",
+      "MeshId": "http://www.roblox.com/asset/?id=2545944488",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Model",
+    "name": "AnthroNormal",
+    "path": "AnthroRigs/AnthroNormal",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Model",
+    "name": "AnthroSlender",
+    "path": "AnthroRigs/AnthroSlender",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "LeftAnkle",
+    "path": "AnthroRigs/AnthroNormal/LeftFoot/LeftAnkle",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "LeftAnkle",
+    "path": "AnthroRigs/AnthroSlender/LeftFoot/LeftAnkle",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "LeftElbow",
+    "path": "AnthroRigs/AnthroNormal/LeftLowerArm/LeftElbow",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "LeftElbow",
+    "path": "AnthroRigs/AnthroSlender/LeftLowerArm/LeftElbow",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "LeftHip",
+    "path": "AnthroRigs/AnthroNormal/LeftUpperLeg/LeftHip",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "LeftHip",
+    "path": "AnthroRigs/AnthroSlender/LeftUpperLeg/LeftHip",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "LeftKnee",
+    "path": "AnthroRigs/AnthroNormal/LeftLowerLeg/LeftKnee",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "LeftKnee",
+    "path": "AnthroRigs/AnthroSlender/LeftLowerLeg/LeftKnee",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "LeftShoulder",
+    "path": "AnthroRigs/AnthroNormal/LeftUpperArm/LeftShoulder",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "LeftShoulder",
+    "path": "AnthroRigs/AnthroSlender/LeftUpperArm/LeftShoulder",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "LeftWrist",
+    "path": "AnthroRigs/AnthroNormal/LeftHand/LeftWrist",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "LeftWrist",
+    "path": "AnthroRigs/AnthroSlender/LeftHand/LeftWrist",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "Neck",
+    "path": "AnthroRigs/AnthroNormal/Head/Neck",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "Neck",
+    "path": "AnthroRigs/AnthroSlender/Head/Neck",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "RightAnkle",
+    "path": "AnthroRigs/AnthroNormal/RightFoot/RightAnkle",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "RightAnkle",
+    "path": "AnthroRigs/AnthroSlender/RightFoot/RightAnkle",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "RightElbow",
+    "path": "AnthroRigs/AnthroNormal/RightLowerArm/RightElbow",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "RightElbow",
+    "path": "AnthroRigs/AnthroSlender/RightLowerArm/RightElbow",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "RightHip",
+    "path": "AnthroRigs/AnthroNormal/RightUpperLeg/RightHip",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "RightHip",
+    "path": "AnthroRigs/AnthroSlender/RightUpperLeg/RightHip",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "RightKnee",
+    "path": "AnthroRigs/AnthroNormal/RightLowerLeg/RightKnee",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "RightKnee",
+    "path": "AnthroRigs/AnthroSlender/RightLowerLeg/RightKnee",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "RightShoulder",
+    "path": "AnthroRigs/AnthroNormal/RightUpperArm/RightShoulder",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "RightShoulder",
+    "path": "AnthroRigs/AnthroSlender/RightUpperArm/RightShoulder",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "RightWrist",
+    "path": "AnthroRigs/AnthroNormal/RightHand/RightWrist",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "RightWrist",
+    "path": "AnthroRigs/AnthroSlender/RightHand/RightWrist",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "Root",
+    "path": "AnthroRigs/AnthroNormal/LowerTorso/Root",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "Root",
+    "path": "AnthroRigs/AnthroSlender/LowerTorso/Root",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "Waist",
+    "path": "AnthroRigs/AnthroNormal/UpperTorso/Waist",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "Waist",
+    "path": "AnthroRigs/AnthroSlender/UpperTorso/Waist",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "NumberValue",
+    "name": "BodyProportionScale",
+    "path": "AnthroRigs/AnthroNormal/Humanoid/BodyProportionScale",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "NumberValue",
+    "name": "BodyProportionScale",
+    "path": "AnthroRigs/AnthroSlender/Humanoid/BodyProportionScale",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "NumberValue",
+    "name": "BodyTypeScale",
+    "path": "AnthroRigs/AnthroNormal/Humanoid/BodyTypeScale",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "NumberValue",
+    "name": "BodyTypeScale",
+    "path": "AnthroRigs/AnthroSlender/Humanoid/BodyTypeScale",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Part",
+    "name": "HumanoidRootPart",
+    "path": "AnthroRigs/AnthroNormal/HumanoidRootPart",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Part",
+    "name": "HumanoidRootPart",
+    "path": "AnthroRigs/AnthroSlender/HumanoidRootPart",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "AnthroRigs/AnthroNormal/Head/AvatarPartScaleType",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "AnthroRigs/AnthroNormal/LeftFoot/AvatarPartScaleType",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "AnthroRigs/AnthroNormal/LeftHand/AvatarPartScaleType",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "AnthroRigs/AnthroNormal/LeftLowerArm/AvatarPartScaleType",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "AnthroRigs/AnthroNormal/LeftLowerLeg/AvatarPartScaleType",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "AnthroRigs/AnthroNormal/LeftUpperArm/AvatarPartScaleType",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "AnthroRigs/AnthroNormal/LeftUpperLeg/AvatarPartScaleType",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "AnthroRigs/AnthroNormal/LowerTorso/AvatarPartScaleType",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "AnthroRigs/AnthroNormal/RightFoot/AvatarPartScaleType",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "AnthroRigs/AnthroNormal/RightHand/AvatarPartScaleType",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "AnthroRigs/AnthroNormal/RightLowerArm/AvatarPartScaleType",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "AnthroRigs/AnthroNormal/RightLowerLeg/AvatarPartScaleType",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "AnthroRigs/AnthroNormal/RightUpperArm/AvatarPartScaleType",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "AnthroRigs/AnthroNormal/RightUpperLeg/AvatarPartScaleType",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "AnthroRigs/AnthroNormal/UpperTorso/AvatarPartScaleType",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "AnthroRigs/AnthroSlender/Head/AvatarPartScaleType",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "AnthroRigs/AnthroSlender/LeftFoot/AvatarPartScaleType",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "AnthroRigs/AnthroSlender/LeftHand/AvatarPartScaleType",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "AnthroRigs/AnthroSlender/LeftLowerArm/AvatarPartScaleType",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "AnthroRigs/AnthroSlender/LeftLowerLeg/AvatarPartScaleType",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "AnthroRigs/AnthroSlender/LeftUpperArm/AvatarPartScaleType",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "AnthroRigs/AnthroSlender/LeftUpperLeg/AvatarPartScaleType",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "AnthroRigs/AnthroSlender/LowerTorso/AvatarPartScaleType",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "AnthroRigs/AnthroSlender/RightFoot/AvatarPartScaleType",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "AnthroRigs/AnthroSlender/RightHand/AvatarPartScaleType",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "AnthroRigs/AnthroSlender/RightLowerArm/AvatarPartScaleType",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "AnthroRigs/AnthroSlender/RightLowerLeg/AvatarPartScaleType",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "AnthroRigs/AnthroSlender/RightUpperArm/AvatarPartScaleType",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "AnthroRigs/AnthroSlender/RightUpperLeg/AvatarPartScaleType",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "AnthroRigs/AnthroSlender/UpperTorso/AvatarPartScaleType",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/Head/FaceCenterAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/Head/FaceFrontAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/Head/HairAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/Head/HatAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/Head/NeckRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/HumanoidRootPart/RootRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/LeftFoot/LeftAnkleRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/LeftFoot/LeftFootAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/LeftHand/LeftGripAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/LeftHand/LeftWristRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/LeftLowerArm/LeftElbowRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/LeftLowerArm/LeftWristRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/LeftLowerLeg/LeftAnkleRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/LeftLowerLeg/LeftKneeRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/LeftUpperArm/LeftElbowRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/LeftUpperArm/LeftShoulderAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/LeftUpperArm/LeftShoulderRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/LeftUpperLeg/LeftHipRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/LeftUpperLeg/LeftKneeRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/LowerTorso/LeftHipRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/LowerTorso/RightHipRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/LowerTorso/RootRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/LowerTorso/WaistBackAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/LowerTorso/WaistCenterAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/LowerTorso/WaistFrontAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/LowerTorso/WaistRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/RightFoot/RightAnkleRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/RightFoot/RightFootAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/RightHand/RightGripAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/RightHand/RightWristRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/RightLowerArm/RightElbowRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/RightLowerArm/RightWristRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/RightLowerLeg/RightAnkleRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/RightLowerLeg/RightKneeRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/RightUpperArm/RightElbowRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/RightUpperArm/RightShoulderAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/RightUpperArm/RightShoulderRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/RightUpperLeg/RightHipRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/RightUpperLeg/RightKneeRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/UpperTorso/BodyBackAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/UpperTorso/BodyFrontAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/UpperTorso/LeftCollarAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/UpperTorso/LeftShoulderRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/UpperTorso/NeckAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/UpperTorso/NeckRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/UpperTorso/RightCollarAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/UpperTorso/RightShoulderRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroNormal/UpperTorso/WaistRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/Head/FaceCenterAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/Head/FaceFrontAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/Head/HairAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/Head/HatAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/Head/NeckRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/HumanoidRootPart/RootRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/LeftFoot/LeftAnkleRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/LeftFoot/LeftFootAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/LeftHand/LeftGripAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/LeftHand/LeftWristRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/LeftLowerArm/LeftElbowRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/LeftLowerArm/LeftWristRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/LeftLowerLeg/LeftAnkleRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/LeftLowerLeg/LeftKneeRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/LeftUpperArm/LeftElbowRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/LeftUpperArm/LeftShoulderAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/LeftUpperArm/LeftShoulderRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/LeftUpperLeg/LeftHipRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/LeftUpperLeg/LeftKneeRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/LowerTorso/LeftHipRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/LowerTorso/RightHipRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/LowerTorso/RootRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/LowerTorso/WaistBackAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/LowerTorso/WaistCenterAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/LowerTorso/WaistFrontAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/LowerTorso/WaistRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/RightFoot/RightAnkleRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/RightFoot/RightFootAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/RightHand/RightGripAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/RightHand/RightWristRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/RightLowerArm/RightElbowRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/RightLowerArm/RightWristRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/RightLowerLeg/RightAnkleRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/RightLowerLeg/RightKneeRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/RightUpperArm/RightElbowRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/RightUpperArm/RightShoulderAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/RightUpperArm/RightShoulderRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/RightUpperLeg/RightHipRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/RightUpperLeg/RightKneeRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/UpperTorso/BodyBackAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/UpperTorso/BodyFrontAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/UpperTorso/LeftCollarAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/UpperTorso/LeftShoulderRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/UpperTorso/NeckAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/UpperTorso/NeckRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/UpperTorso/RightCollarAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/UpperTorso/RightShoulderRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "AnthroRigs/AnthroSlender/UpperTorso/WaistRigAttachment/OriginalPosition",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroNormal/Head/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroNormal/HumanoidRootPart/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroNormal/LeftFoot/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroNormal/LeftHand/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroNormal/LeftLowerArm/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroNormal/LeftLowerLeg/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroNormal/LeftUpperArm/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroNormal/LeftUpperLeg/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroNormal/LowerTorso/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroNormal/RightFoot/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroNormal/RightHand/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroNormal/RightLowerArm/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroNormal/RightLowerLeg/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroNormal/RightUpperArm/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroNormal/RightUpperLeg/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroNormal/UpperTorso/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroSlender/Head/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroSlender/HumanoidRootPart/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroSlender/LeftFoot/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroSlender/LeftHand/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroSlender/LeftLowerArm/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroSlender/LeftLowerLeg/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroSlender/LeftUpperArm/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroSlender/LeftUpperLeg/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroSlender/LowerTorso/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroSlender/RightFoot/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroSlender/RightHand/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroSlender/RightLowerArm/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroSlender/RightLowerLeg/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroSlender/RightUpperArm/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroSlender/RightUpperLeg/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "AnthroRigs/AnthroSlender/UpperTorso/OriginalSize",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  }
+]

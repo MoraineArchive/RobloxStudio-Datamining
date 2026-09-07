@@ -1,0 +1,19 @@
+[
+  {
+    "class": "MeshPart",
+    "name": "Pedestal",
+    "path": "Pedestal",
+    "properties": {
+      "AeroMeshData": "",
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "MeshId": "rbxassetid://13965503273",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "observationMode": "live",
+  "provenance": [
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 7281358,
+      "sha256": "96a97f388acf1f3a573e18f4d1677f1198d532ff4470462237efac15ac89c5dd",
+      "sourceType": "official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-API-Dump.json"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 8234036,
+      "sha256": "788a649955d14d827d5f6405d0b528db92fef6c6cd9b42c8defc6d40e225399b",
+      "sourceType": "official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-Full-API-Dump.json"
+    }
+  ],
+  "status": "available",
+  "summary": {
+    "classes": 911,
+    "engineRevision": 1,
+    "enums": 629,
+    "fullStatus": "available",
+    "guid": "version-9fe94fb0e9d84c25",
+    "members": 7690
+  },
+  "target": "WindowsStudio64"
+}

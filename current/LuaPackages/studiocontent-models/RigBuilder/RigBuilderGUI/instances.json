@@ -1,0 +1,509 @@
+[
+  {
+    "class": "Folder",
+    "name": "GUIs",
+    "path": "GUIs",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Frame",
+    "name": "AssetId",
+    "path": "GUIs/FBXimport/RigConfiguration/R6/AssetId",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Frame",
+    "name": "Buttons",
+    "path": "GUIs/RigTypePrompt/Frame/Buttons",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Frame",
+    "name": "CharacterMeshIDs",
+    "path": "GUIs/FBXimport/RigConfiguration/R6/CharacterMeshIDs",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Frame",
+    "name": "Divide",
+    "path": "GUIs/FBXimport/RigConfiguration/Divide",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Frame",
+    "name": "Frame",
+    "path": "GUIs/RigBuilder/Frame",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Frame",
+    "name": "Frame",
+    "path": "GUIs/RigTypePrompt/Frame",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Frame",
+    "name": "R15",
+    "path": "GUIs/FBXimport/RigConfiguration/R15",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Frame",
+    "name": "R6",
+    "path": "GUIs/FBXimport/RigConfiguration/R6",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Frame",
+    "name": "RigConfiguration",
+    "path": "GUIs/FBXimport/RigConfiguration",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Frame",
+    "name": "Slider",
+    "path": "GUIs/RigBuilder/Frame/Slider",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Frame",
+    "name": "Textboxes",
+    "path": "GUIs/FBXimport/RigConfiguration/R6/TextureIDs/Textboxes",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Frame",
+    "name": "TextboxTemplate",
+    "path": "GUIs/FBXimport/RigConfiguration/R15/TextureIDs/TextboxTemplate",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Frame",
+    "name": "TextboxTemplate",
+    "path": "GUIs/FBXimport/RigConfiguration/R6/CharacterMeshIDs/TextboxTemplate",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Frame",
+    "name": "TextureIDs",
+    "path": "GUIs/FBXimport/RigConfiguration/R15/TextureIDs",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Frame",
+    "name": "TextureIDs",
+    "path": "GUIs/FBXimport/RigConfiguration/R6/TextureIDs",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ScreenGui",
+    "name": "FBXimport",
+    "path": "GUIs/FBXimport",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ScreenGui",
+    "name": "RigBuilder",
+    "path": "GUIs/RigBuilder",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ScreenGui",
+    "name": "RigTypePrompt",
+    "path": "GUIs/RigTypePrompt",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ScrollingFrame",
+    "name": "Options",
+    "path": "GUIs/RigBuilder/Frame/Options",
+    "properties": {
+      "BottomImage": "rbxasset://textures/ui/Scroll/scroll-middle.png",
+      "MidImage": "rbxasset://textures/ui/Scroll/scroll-middle.png",
+      "Tags": "",
+      "TopImage": "rbxasset://textures/ui/Scroll/scroll-middle.png"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextBox",
+    "name": "BaseTextureId",
+    "path": "GUIs/FBXimport/RigConfiguration/R6/TextureIDs/Textboxes/BaseTextureId",
+    "properties": {
+      "PlaceholderText": "",
+      "Tags": "",
+      "Text": "<BaseTextureId>"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextBox",
+    "name": "MeshId",
+    "path": "GUIs/FBXimport/RigConfiguration/R6/CharacterMeshIDs/TextboxTemplate/MeshId",
+    "properties": {
+      "PlaceholderText": "",
+      "Tags": "",
+      "Text": "<MeshId>"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextBox",
+    "name": "OldAssetId",
+    "path": "GUIs/FBXimport/RigConfiguration/R6/AssetId/OldAssetId",
+    "properties": {
+      "PlaceholderText": "",
+      "Tags": "",
+      "Text": "<AssetId>"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextBox",
+    "name": "OverlayTextureId",
+    "path": "GUIs/FBXimport/RigConfiguration/R6/TextureIDs/Textboxes/OverlayTextureId",
+    "properties": {
+      "PlaceholderText": "",
+      "Tags": "",
+      "Text": "<OverlayTextureId>"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextBox",
+    "name": "TextureID",
+    "path": "GUIs/FBXimport/RigConfiguration/R15/TextureIDs/TextboxTemplate/TextureID",
+    "properties": {
+      "PlaceholderText": "",
+      "Tags": "",
+      "Text": "<TextureID>"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextButton",
+    "name": "Cancel",
+    "path": "GUIs/FBXimport/RigConfiguration/Cancel",
+    "properties": {
+      "Tags": "",
+      "Text": "Cancel"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextButton",
+    "name": "Close",
+    "path": "GUIs/RigBuilder/Frame/Close",
+    "properties": {
+      "Tags": "",
+      "Text": "X"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextButton",
+    "name": "Done",
+    "path": "GUIs/FBXimport/RigConfiguration/Done",
+    "properties": {
+      "Tags": "",
+      "Text": "Done"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextButton",
+    "name": "ListTemplate",
+    "path": "GUIs/RigBuilder/Frame/ListTemplate",
+    "properties": {
+      "Tags": "",
+      "Text": "Button"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextButton",
+    "name": "ProportionsClassic",
+    "path": "GUIs/RigTypePrompt/Frame/Buttons/ProportionsClassic",
+    "properties": {
+      "Tags": "",
+      "Text": "Classic"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextButton",
+    "name": "ProportionsNormal",
+    "path": "GUIs/RigTypePrompt/Frame/Buttons/ProportionsNormal",
+    "properties": {
+      "Tags": "",
+      "Text": "ProportionsNormal"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextButton",
+    "name": "ProportionsSlender",
+    "path": "GUIs/RigTypePrompt/Frame/Buttons/ProportionsSlender",
+    "properties": {
+      "Tags": "",
+      "Text": "ProportionsSlender"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextButton",
+    "name": "R15",
+    "path": "GUIs/RigBuilder/Frame/Slider/R15",
+    "properties": {
+      "Tags": "",
+      "Text": "R15"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextButton",
+    "name": "R6",
+    "path": "GUIs/RigBuilder/Frame/Slider/R6",
+    "properties": {
+      "Tags": "",
+      "Text": "R6"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextButton",
+    "name": "Select",
+    "path": "GUIs/FBXimport/RigConfiguration/Select",
+    "properties": {
+      "Tags": "",
+      "Text": "Select"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextLabel",
+    "name": "AssetIdInstructions",
+    "path": "GUIs/FBXimport/RigConfiguration/R6/AssetId/AssetIdInstructions",
+    "properties": {
+      "Tags": "",
+      "Text": "Enter Old Package AssetId"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextLabel",
+    "name": "CharacterMeshInstructions",
+    "path": "GUIs/FBXimport/RigConfiguration/R6/CharacterMeshInstructions",
+    "properties": {
+      "Tags": "",
+      "Text": "Enter Character MeshIDs"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextLabel",
+    "name": "Description",
+    "path": "GUIs/FBXimport/RigConfiguration/R15/TextureIDs/TextboxTemplate/Description",
+    "properties": {
+      "Tags": "",
+      "Text": "RightUpperLeg:"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextLabel",
+    "name": "Description",
+    "path": "GUIs/FBXimport/RigConfiguration/R6/CharacterMeshIDs/TextboxTemplate/Description",
+    "properties": {
+      "Tags": "",
+      "Text": "Right Leg:"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextLabel",
+    "name": "Instructions",
+    "path": "GUIs/FBXimport/RigConfiguration/R15/Instructions",
+    "properties": {
+      "Tags": "",
+      "Text": "Enter TextureIDs"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextLabel",
+    "name": "Slider",
+    "path": "GUIs/RigBuilder/Frame/Slider/Slider",
+    "properties": {
+      "Tags": "",
+      "Text": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextLabel",
+    "name": "SubTitle",
+    "path": "GUIs/FBXimport/RigConfiguration/R15/SubTitle",
+    "properties": {
+      "Tags": "",
+      "Text": "R15"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextLabel",
+    "name": "SubTitle",
+    "path": "GUIs/FBXimport/RigConfiguration/R6/SubTitle",
+    "properties": {
+      "Tags": "",
+      "Text": "R6"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextLabel",
+    "name": "TextureIdsInstructions",
+    "path": "GUIs/FBXimport/RigConfiguration/R6/TextureIdsInstructions",
+    "properties": {
+      "Tags": "",
+      "Text": "Enter TextureIDs"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextLabel",
+    "name": "Title",
+    "path": "GUIs/FBXimport/RigConfiguration/Title",
+    "properties": {
+      "Tags": "",
+      "Text": "Configure Imported Rig"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextLabel",
+    "name": "Title",
+    "path": "GUIs/RigBuilder/Frame/Title",
+    "properties": {
+      "Tags": "",
+      "Text": "Rig Builder"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextLabel",
+    "name": "Title",
+    "path": "GUIs/RigTypePrompt/Frame/Title",
+    "properties": {
+      "Tags": "",
+      "Text": "Rig Proportion Type"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextLabel",
+    "name": "Topbar",
+    "path": "GUIs/FBXimport/RigConfiguration/Topbar",
+    "properties": {
+      "Tags": "",
+      "Text": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextLabel",
+    "name": "Topbar",
+    "path": "GUIs/RigBuilder/Frame/Topbar",
+    "properties": {
+      "Tags": "",
+      "Text": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextLabel",
+    "name": "Topbar",
+    "path": "GUIs/RigTypePrompt/Frame/Topbar",
+    "properties": {
+      "Tags": "",
+      "Text": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextLabel",
+    "name": "Warning",
+    "path": "GUIs/FBXimport/RigConfiguration/Warning",
+    "properties": {
+      "Tags": "",
+      "Text": "Warning: Root Part Is Unanchored"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "UIListLayout",
+    "name": "UIListLayout",
+    "path": "GUIs/RigTypePrompt/Frame/Buttons/UIListLayout",
+    "properties": {
+      "Tags": ""
+    },
+    "unreadable": []
+  }
+]

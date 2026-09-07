@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "type": "baseline",
+  "upstreamChange": false,
+  "product": "Studio",
+  "target": "WindowsStudio64",
+  "observedAt": "2026-09-07T12:45:41.860Z",
+  "version": "0.737.0.7371584",
+  "guid": "version-9fe94fb0e9d84c25",
+  "datasets": [
+    "API",
+    "Build",
+    "FastVariables",
+    "LiveSettings",
+    "LuaPackages",
+    "Native",
+    "Plugins",
+    "Web"
+  ],
+  "note": "This directory represents the initial public repository baseline, not an upstream Roblox update. observedAt is the repository initialization time, not a Roblox release time."
+}

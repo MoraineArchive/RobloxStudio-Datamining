@@ -1,0 +1,44 @@
+{
+  "hashes": {
+    "FileManifest.json": "b66b896578d69208519bb5faf99429d9185f8350f5baabcbedac25dddc38dd79",
+    "Packages.json": "975ce9e8121803c3aac20c550ca0a94d09cc7b00a6f390c850718e31252cda76",
+    "metadata.json": "515387c2d46e246123650e4dfeaef4f300ca9a0b605ad4e24fbe162188304837",
+    "version.json": "56c92f886b822b43284bcc21ccda3d3f963bab990d536fc6a1028eea748223be"
+  },
+  "id": "82662ced84f157a57ff64b3551108e14e27fbfa9ef8db8db1ebfe0d00fa95da5",
+  "observationMode": "live",
+  "observedAt": "2026-09-06T17:07:18.919Z",
+  "provenance": [
+    {
+      "bytes": 103,
+      "sha256": "5bf62a99083dac94bf78432aa1f4ec98b81e700f59a6399c8ebf0fec8801545d",
+      "sourceType": "official",
+      "sourceUrl": "https://clientsettings.roblox.com/v2/client-version/WindowsStudio64"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 2524,
+      "sha256": "c25fc38563a6741934a04e73eafba96cd83dfb26786a3360988c5161dacca5a0",
+      "sourceType": "official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-rbxPkgManifest.txt"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 2134131,
+      "sha256": "e5bd52a87d53c95a6a2ebb92a2f940621f1af3fe1852f1f78052eea3b62d0a29",
+      "sourceType": "official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-rbxManifest.txt"
+    }
+  ],
+  "sequence": 2,
+  "status": "available",
+  "summary": {
+    "engineRevision": 1,
+    "guid": "version-9fe94fb0e9d84c25",
+    "manifestFiles": 18497,
+    "packages": 34,
+    "version": "0.737.0.7371584"
+  },
+  "surface": "Build",
+  "target": "WindowsStudio64"
+}

@@ -1,0 +1,39 @@
+[
+  {
+    "class": "Folder",
+    "name": "ViewSelector",
+    "path": "ViewSelector",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "LocalizationTable",
+    "name": "LocalizedStrings",
+    "path": "ViewSelector/LocalizedStrings",
+    "properties": {
+      "AttributesSerialize": "",
+      "SourceLocaleId": "en-us",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Script",
+    "name": "Main",
+    "path": "ViewSelector/Main",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "21827",
+      "SourceBytecodeSha256": "329c2f23819f67ebb664124c33ec8022074ce4382c4d94e1b516c5825de04173",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  }
+]

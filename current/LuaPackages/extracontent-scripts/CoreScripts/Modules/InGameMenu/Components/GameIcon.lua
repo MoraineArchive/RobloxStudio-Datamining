@@ -1,0 +1,111 @@
+--[[
+	A square game icon
+]]
+
+local CorePackages = game:GetService("CorePackages")
+
+local InGameMenuDependencies = require(CorePackages.Packages.InGameMenuDependencies)
+local Roact = InGameMenuDependencies.Roact
+local UIBlox = InGameMenuDependencies.UIBlox
+local t = InGameMenuDependencies.t
+local InGameMenu = script.Parent.Parent
+
+local withFoundationOrUIBloxStyle = require(CorePackages.Workspace.Packages.CoreGuiCommon).withFoundationOrUIBloxStyle
+local Images = UIBlox.App.ImageSet.Images
+local AssetImage = require(InGameMenu.Components.AssetImage)
+local ImageSetLabel = UIBlox.Core.ImageSet.ImageSetLabel
+
+local Foundation = require(CorePackages.Packages.Foundation)
+local Image = Foundation.Image
+local SharedFlags = require(CorePackages.Workspace.Packages.SharedFlags)
+local FFlagCoreUiMigrateUIBloxToFoundation = SharedFlags.FFlagCoreUiMigrateUIBloxToFoundation
+
+local getGameIconRequestSize = require(InGameMenu.Components.getGameIconRequestSize)
+
+local MAX_PLACEHOLDER_SIZE = 44
+
+local GameIcon = Roact.PureComponent:extend("GameIcon")
+
+GameIcon.validateProps = t.strictInterface({
+	gameId = t.number,
+	iconSize = t.numberMin(0),
+	layoutOrder = t.optional(t.number),
+	cornerRadius = t.optional(t.UDim),
+	Position = t.optional(t.UDim2),
+	AnchorPoint = t.optional(t.Vector2),
+})
+
+function GameIcon:render()
+	local iconSize = self.props.iconSize
+	local requestIconSize = getGameIconRequestSize(iconSize)
+	local gameId = self.props.gameId
+	local cornerRadius = self.props.cornerRadius
+
+	local iconUrl = ("rbxthumb://type=GameIcon&id=%d&w=%d&h=%d"):format(gameId, requestIconSize, requestIconSize)
+
+	--Special case for when the gameId is not available. For example developing in studio with a un-published game.
+	local isPlaceholder = gameId == 0
+
+	if isPlaceholder then
+		local placeholderIconSize = MAX_PLACEHOLDER_SIZE
+		if iconSize <= MAX_PLACEHOLDER_SIZE then
+			placeholderIconSize = iconSize
+		end
+		return withFoundationOrUIBloxStyle(function(tokens)
+			return {
+				Theme = {
+					PlaceHolder = { Color = tokens.Color.Common.Shimmer.Color3, Transparency = tokens.Color.Common.Shimmer.Transparency },
+					UIDefault = { Color = tokens.Color.Shift.Shift_200.Color3, Transparency = tokens.Color.Shift.Shift_200.Transparency },
+				},
+			}
+		end, function(style)
+			return Roact.createElement(AssetImage.Label, {
+				imageKey = "RoundedRect",
+				Size = UDim2.fromOffset(iconSize, iconSize),
+				ImageColor3 = style.Theme.PlaceHolder.Color,
+				ImageTransparency = style.Theme.PlaceHolder.Transparency,
+				LayoutOrder = self.props.layoutOrder,
+				Position = self.props.Position,
+				AnchorPoint = self.props.AnchorPoint,
+			}, {
+				PlaceholderIcon = if FFlagCoreUiMigrateUIBloxToFoundation
+					then Roact.createElement(Image, {
+						Size = UDim2.fromOffset(placeholderIconSize, placeholderIconSize),
+						Position = UDim2.fromScale(0.5, 0.5),
+						Image = "icons/imageUnavailable",
+						imageStyle = { Color3 = style.Theme.UIDefault.Color, Transparency = style.Theme.UIDefault.Transparency },
+						AnchorPoint = Vector2.new(0.5, 0.5),
+						cornerRadius = cornerRadius,
+					})
+					else Roact.createElement(ImageSetLabel, {
+						BackgroundTransparency = 1,
+						Size = UDim2.fromOffset(placeholderIconSize, placeholderIconSize),
+						Position = UDim2.fromScale(0.5, 0.5),
+						Image = Images["icons/imageUnavailable"],
+						ImageColor3 = style.Theme.UIDefault.Color,
+						ImageTransparency = style.Theme.UIDefault.Transparency,
+						AnchorPoint = Vector2.new(0.5, 0.5),
+					}, {
+						UICorner = cornerRadius and cornerRadius ~= UDim.new(0, 0) and Roact.createElement("UICorner", {
+							CornerRadius = cornerRadius,
+						}) or nil,
+					}),
+			})
+		end)
+	else
+		return Roact.createElement("ImageLabel", {
+			Image = iconUrl,
+			Size = UDim2.fromOffset(iconSize, iconSize),
+			BackgroundTransparency = 1,
+			LayoutOrder = self.props.layoutOrder,
+			Position = self.props.Position,
+			AnchorPoint = self.props.AnchorPoint,
+		}, {
+			UICorner = cornerRadius and cornerRadius ~= UDim.new(0, 0) and Roact.createElement("UICorner", {
+				CornerRadius = cornerRadius,
+			}) or nil,
+		})
+	end
+end
+
+return GameIcon

@@ -1,0 +1,154 @@
+[
+  {
+    "class": "Attachment",
+    "name": "FaceCenterAttachment",
+    "path": "Head/FaceCenterAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "FaceFrontAttachment",
+    "path": "Head/FaceFrontAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "HairAttachment",
+    "path": "Head/HairAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "HatAttachment",
+    "path": "Head/HatAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "NeckRigAttachment",
+    "path": "Head/NeckRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Decal",
+    "name": "face",
+    "path": "Head/face",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": "",
+      "Texture": "rbxasset://textures/face.png"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "Head",
+    "path": "Head",
+    "properties": {
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://assetdelivery.roblox.com/v1/asset/?id=7430070993",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Head/FaceCenterAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Head/FaceFrontAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Head/HairAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Head/HatAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Head/NeckRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Head/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "WrapTarget",
+    "name": "Head",
+    "path": "Head/Head",
+    "properties": {
+      "AttributesSerialize": "",
+      "CageMeshId": "https://assetdelivery.roblox.com/v1/asset/?id=7430071113",
+      "HSRAssetId": "https://www.roblox.com//asset/?id=13251297521",
+      "HSRData": "",
+      "HSRMeshIdData": "",
+      "Tags": "",
+      "TemporaryCageMeshId": ""
+    },
+    "unreadable": []
+  }
+]

@@ -1,0 +1,100 @@
+[
+  {
+    "class": "Folder",
+    "name": "Asset",
+    "path": "HotModuleReplacement/Bin/Asset",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Bin",
+    "path": "HotModuleReplacement/Bin",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Common",
+    "path": "HotModuleReplacement/Bin/Common",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "HotModuleReplacement",
+    "path": "HotModuleReplacement",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "defineLuaFlags",
+    "path": "HotModuleReplacement/Bin/Common/defineLuaFlags",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "266",
+      "SourceBytecodeSha256": "38ff733cfb41a124e7eb3d4fee6e649f264e76906018d18257f00ec314806eca",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "Script",
+    "name": "main",
+    "path": "HotModuleReplacement/Bin/Asset/main",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1655",
+      "SourceBytecodeSha256": "d65d9d5fa290a0a0036e53a1ae75705666e87a76b92dddbd5bbc9e1b9a613663",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "Script",
+    "name": "main",
+    "path": "HotModuleReplacement/Bin/Standalone/main",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "894",
+      "SourceBytecodeSha256": "3bb86e67b814c6158a9d3bfdb4dbb94ee2eed5dd8b73c4a7af4c3aec8240ee07",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "StandalonePluginScripts",
+    "name": "Standalone",
+    "path": "HotModuleReplacement/Bin/Standalone",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  }
+]

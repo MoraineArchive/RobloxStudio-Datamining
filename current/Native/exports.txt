@@ -1,0 +1,4 @@
+AmdPowerXpressRequestHighPerformance
+NvOptimusEnablement
+rbxAllocate
+rbxDeallocate

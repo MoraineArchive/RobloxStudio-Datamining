@@ -1,0 +1,144 @@
+[
+  {
+    "class": "Bone",
+    "name": "Bone.001",
+    "path": "WorldModel/Cone/Root/Bone.001",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Bone",
+    "name": "Bone.002",
+    "path": "WorldModel/Cone/Root/Bone.001/Bone.002",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Bone",
+    "name": "Bone.003",
+    "path": "WorldModel/Cone/Root/Bone.001/Bone.002/Bone.003",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Bone",
+    "name": "Bone.004",
+    "path": "WorldModel/Cone/Root/Bone.001/Bone.002/Bone.003/Bone.004",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Bone",
+    "name": "Bone.005",
+    "path": "WorldModel/Cone/Root/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Bone",
+    "name": "Root",
+    "path": "WorldModel/Cone/Root",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "ArrowTipDownPositiveZ",
+    "path": "WorldModel/ArrowTipDownPositiveZ",
+    "properties": {
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "LODData": "",
+      "MaterialVariantSerialized": "",
+      "MeshId": "rbxassetid://7682965280",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": [
+      "PhysicalConfigData:binary-shared-string"
+    ]
+  },
+  {
+    "class": "MeshPart",
+    "name": "Cone",
+    "path": "WorldModel/Cone",
+    "properties": {
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "LODData": "",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://assetdelivery.roblox.com/v1/asset/?id=7805659077",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": "rbxassetid://7608513838"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "UnitSelectRingXZ",
+    "path": "WorldModel/UnitSelectRingXZ",
+    "properties": {
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "LODData": "",
+      "MaterialVariantSerialized": "",
+      "MeshId": "rbxassetid://7682955196",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": [
+      "PhysicalConfigData:binary-shared-string"
+    ]
+  },
+  {
+    "class": "MeshPart",
+    "name": "UnitSelectStickDownPositiveZ",
+    "path": "WorldModel/UnitSelectStickDownPositiveZ",
+    "properties": {
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "LODData": "",
+      "MaterialVariantSerialized": "",
+      "MeshId": "rbxassetid://7682965109",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": [
+      "PhysicalConfigData:binary-shared-string"
+    ]
+  },
+  {
+    "class": "WorldModel",
+    "name": "WorldModel",
+    "path": "WorldModel",
+    "properties": {
+      "AttributesSerialize": "",
+      "ModelMeshData": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  }
+]

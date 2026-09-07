@@ -1,0 +1,1434 @@
+[
+  {
+    "class": "Folder",
+    "name": "BubbleChat",
+    "path": "Modules/Server/ClientChat/BubbleChat",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "ClientChat",
+    "path": "Modules/Server/ClientChat",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "CommandModules",
+    "path": "Modules/Server/ClientChat/DefaultClientChatModules/CommandModules",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Common",
+    "path": "Modules/Common",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "DefaultChatModules",
+    "path": "Modules/Server/ServerChat/DefaultChatModules",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "DefaultClientChatModules",
+    "path": "Modules/Server/ClientChat/DefaultClientChatModules",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "DefaultServerPlayerModules",
+    "path": "Modules/Server/ServerPlayer/DefaultServerPlayerModules",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Flags",
+    "path": "Modules/Common/Flags",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "FreeCamera",
+    "path": "Modules/Server/FreeCamera",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Hooks",
+    "path": "Modules/Common/Hooks",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "MessageCreatorModules",
+    "path": "Modules/Server/ClientChat/DefaultClientChatModules/MessageCreatorModules",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Modules",
+    "path": "Modules",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Server",
+    "path": "Modules/Server",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "ServerChat",
+    "path": "Modules/Server/ServerChat",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "ServerPlayer",
+    "path": "Modules/Server/ServerPlayer",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "ServerSound",
+    "path": "Modules/Server/ServerSound",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "UGCValidation",
+    "path": "Modules/Server/UGCValidation",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Utility",
+    "path": "Modules/Server/ServerChat/DefaultChatModules/Utility",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "VR",
+    "path": "Modules/Server/VR",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "AvatarChatConstants",
+    "path": "Modules/Common/AvatarChatConstants",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "BubbleChat",
+    "path": "Modules/Server/ClientChat/BubbleChat/BubbleChat",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ChannelsBar",
+    "path": "Modules/Server/ClientChat/ChannelsBar",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ChannelsTab",
+    "path": "Modules/Server/ClientChat/ChannelsTab",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ChatBar",
+    "path": "Modules/Server/ClientChat/ChatBar",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ChatChannel",
+    "path": "Modules/Server/ClientChat/ChatChannel",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ChatChannel",
+    "path": "Modules/Server/ServerChat/ChatChannel",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ChatCommandsTeller",
+    "path": "Modules/Server/ServerChat/DefaultChatModules/ChatCommandsTeller",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ChatConstants",
+    "path": "Modules/Server/ClientChat/DefaultClientChatModules/ChatConstants",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ChatFloodDetector",
+    "path": "Modules/Server/ServerChat/DefaultChatModules/ChatFloodDetector",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ChatInstallVerifier",
+    "path": "Modules/Server/ClientChat/ChatInstallVerifier",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ChatLocalization",
+    "path": "Modules/Server/ClientChat/DefaultClientChatModules/ChatLocalization",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ChatMain",
+    "path": "Modules/Server/ClientChat/ChatMain",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ChatMessageValidator",
+    "path": "Modules/Server/ServerChat/DefaultChatModules/ChatMessageValidator",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ChatScript",
+    "path": "Modules/Server/ClientChat/ChatScript",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ChatService",
+    "path": "Modules/Server/ServerChat/ChatService",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ChatServiceInstaller",
+    "path": "Modules/Server/ServerChat/ChatServiceInstaller",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ChatServiceRunner",
+    "path": "Modules/Server/ServerChat/ChatServiceRunner",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ChatSettings",
+    "path": "Modules/Server/ClientChat/DefaultClientChatModules/ChatSettings",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ChatWindow",
+    "path": "Modules/Server/ClientChat/ChatWindow",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ChatWindowInstaller",
+    "path": "Modules/Server/ClientChat/ChatWindowInstaller",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ClearMessages",
+    "path": "Modules/Server/ClientChat/DefaultClientChatModules/CommandModules/ClearMessages",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "CommandProcessor",
+    "path": "Modules/Server/ClientChat/CommandProcessor",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "CommonUtil",
+    "path": "Modules/Common/CommonUtil",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "CurveUtil",
+    "path": "Modules/Server/ClientChat/CurveUtil",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "DefaultChatLocalization",
+    "path": "Modules/Server/ServerChat/DefaultChatLocalization",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "DefaultChatMessage",
+    "path": "Modules/Server/ClientChat/DefaultClientChatModules/MessageCreatorModules/DefaultChatMessage",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "DeveloperConsole",
+    "path": "Modules/Server/ClientChat/DefaultClientChatModules/CommandModules/DeveloperConsole",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "DisplayNameHelpers",
+    "path": "Modules/Server/ServerChat/DefaultChatModules/Utility/DisplayNameHelpers",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "EventConnection",
+    "path": "Modules/Common/EventConnection",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ExtraDataInitializer",
+    "path": "Modules/Server/ServerChat/DefaultChatModules/ExtraDataInitializer",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "FFlagInExperienceRequestProfileSettings",
+    "path": "Modules/Common/Flags/FFlagInExperienceRequestProfileSettings",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "FFlagInExperienceUserProfileSettingsEnabled",
+    "path": "Modules/Common/Flags/FFlagInExperienceUserProfileSettingsEnabled",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "FFlagUserPresenceTokenRccCheckPermissionsLua",
+    "path": "Modules/Common/Flags/FFlagUserPresenceTokenRccCheckPermissionsLua",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "FFlagWhisperEmoteOnAvatarContextMenuWithExpChat",
+    "path": "Modules/Common/Flags/FFlagWhisperEmoteOnAvatarContextMenuWithExpChat",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "FreeCamera",
+    "path": "Modules/Server/FreeCamera/FreeCamera",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "FreeCameraIAS",
+    "path": "Modules/Server/FreeCamera/FreeCameraIAS",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "FreeCameraInstaller",
+    "path": "Modules/Server/FreeCamera/FreeCameraInstaller",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "FriendJoinNotifier",
+    "path": "Modules/Server/ServerChat/DefaultChatModules/FriendJoinNotifier",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "FStringRccInExperienceNameEnabledAllowList",
+    "path": "Modules/Common/Flags/FStringRccInExperienceNameEnabledAllowList",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "GetFFlagEnableInGameMenuDurationLogger",
+    "path": "Modules/Common/Flags/GetFFlagEnableInGameMenuDurationLogger",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "GetFFlagEnableVoiceDefaultServerScript",
+    "path": "Modules/Common/Flags/GetFFlagEnableVoiceDefaultServerScript",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "GetFFlagPlayerViewRemoteEnabled",
+    "path": "Modules/Common/Flags/GetFFlagPlayerViewRemoteEnabled",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "GetHasGuiHidingPermission.test",
+    "path": "Modules/Common/GetHasGuiHidingPermission.test",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "GetHasGuiHidingPermission",
+    "path": "Modules/Common/GetHasGuiHidingPermission",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "GetIXPServiceWrapperWaitRefactor",
+    "path": "Modules/Common/Flags/GetIXPServiceWrapperWaitRefactor",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "GetVersion",
+    "path": "Modules/Server/ClientChat/DefaultClientChatModules/CommandModules/GetVersion",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "httpRequest.test",
+    "path": "Modules/Common/httpRequest.test",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "httpRequest",
+    "path": "Modules/Common/httpRequest",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "HumanoidReadyUtil",
+    "path": "Modules/Common/HumanoidReadyUtil",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "jest.config",
+    "path": "Modules/Common/jest.config",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "LegacyThumbnailUrls",
+    "path": "Modules/Common/LegacyThumbnailUrls",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "MeCommand",
+    "path": "Modules/Server/ServerChat/DefaultChatModules/MeCommand",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "MeCommandMessage",
+    "path": "Modules/Server/ClientChat/DefaultClientChatModules/MessageCreatorModules/MeCommandMessage",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "MessageLabelCreator",
+    "path": "Modules/Server/ClientChat/MessageLabelCreator",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "MessageLogDisplay",
+    "path": "Modules/Server/ClientChat/MessageLogDisplay",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "MessageSender",
+    "path": "Modules/Server/ClientChat/MessageSender",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "MuteSpeaker",
+    "path": "Modules/Server/ServerChat/DefaultChatModules/MuteSpeaker",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ObjectPool",
+    "path": "Modules/Common/ObjectPool",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "PerfUtils.test",
+    "path": "Modules/Common/PerfUtils.test",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "PerfUtils",
+    "path": "Modules/Common/PerfUtils",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "PlayEmote",
+    "path": "Modules/Server/ClientChat/DefaultClientChatModules/CommandModules/PlayEmote",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "PlayerSettings",
+    "path": "Modules/Server/ServerPlayer/DefaultServerPlayerModules/PlayerSettings",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "PrivateMessaging",
+    "path": "Modules/Server/ServerChat/DefaultChatModules/PrivateMessaging",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "RagdollRigging",
+    "path": "Modules/Common/RagdollRigging",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ReactPerfTracker",
+    "path": "Modules/Common/ReactPerfTracker",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ReactSchedulingTracker",
+    "path": "Modules/Common/ReactSchedulingTracker",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "RemoteAllowList",
+    "path": "Modules/Server/RemoteAllowList",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "renderWithCoreScriptsStyleProvider.test",
+    "path": "Modules/Common/renderWithCoreScriptsStyleProvider.test",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "renderWithCoreScriptsStyleProvider",
+    "path": "Modules/Common/renderWithCoreScriptsStyleProvider",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "SendChatAnalytics",
+    "path": "Modules/Server/SendChatAnalytics",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ServerPlayerInstaller",
+    "path": "Modules/Server/ServerPlayer/ServerPlayerInstaller",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ServerUtil",
+    "path": "Modules/Server/ServerUtil",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "SetCoreMessage",
+    "path": "Modules/Server/ClientChat/DefaultClientChatModules/MessageCreatorModules/SetCoreMessage",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "SoundDispatcher",
+    "path": "Modules/Server/ServerSound/SoundDispatcher",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "SoundDispatcherInstaller",
+    "path": "Modules/Server/ServerSound/SoundDispatcherInstaller",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Speaker",
+    "path": "Modules/Server/ServerChat/Speaker",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "SwallowGuestChat",
+    "path": "Modules/Server/ClientChat/DefaultClientChatModules/CommandModules/SwallowGuestChat",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "SwitchChannel",
+    "path": "Modules/Server/ClientChat/DefaultClientChatModules/CommandModules/SwitchChannel",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "SystemMessage",
+    "path": "Modules/Server/ClientChat/DefaultClientChatModules/MessageCreatorModules/SystemMessage",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Team",
+    "path": "Modules/Server/ClientChat/DefaultClientChatModules/CommandModules/Team",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "TeamChat",
+    "path": "Modules/Server/ServerChat/DefaultChatModules/TeamChat",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "TransparencyTweener",
+    "path": "Modules/Server/ClientChat/TransparencyTweener",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "UGCValidationFunctionInstaller",
+    "path": "Modules/Server/UGCValidation/UGCValidationFunctionInstaller",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "UnknownMessage",
+    "path": "Modules/Server/ClientChat/DefaultClientChatModules/MessageCreatorModules/UnknownMessage",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "useLocalPlayer",
+    "path": "Modules/Common/Hooks/useLocalPlayer",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "usePlayerCurrentScreenOrientation",
+    "path": "Modules/Common/Hooks/usePlayerCurrentScreenOrientation",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "usePlayerGui",
+    "path": "Modules/Common/Hooks/usePlayerGui",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "useScreenSize",
+    "path": "Modules/Common/Hooks/useScreenSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Util",
+    "path": "Modules/Server/ClientChat/DefaultClientChatModules/CommandModules/Util",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Util",
+    "path": "Modules/Server/ClientChat/DefaultClientChatModules/MessageCreatorModules/Util",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Util",
+    "path": "Modules/Server/ServerChat/Util",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "VRAvatarGesturesServer",
+    "path": "Modules/Server/VR/VRAvatarGesturesServer",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "WelcomeMessage",
+    "path": "Modules/Server/ClientChat/DefaultClientChatModules/MessageCreatorModules/WelcomeMessage",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Whisper",
+    "path": "Modules/Server/ClientChat/DefaultClientChatModules/CommandModules/Whisper",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "WhisperMessage",
+    "path": "Modules/Server/ClientChat/DefaultClientChatModules/MessageCreatorModules/WhisperMessage",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": ".robloxrc",
+    "path": "Modules/Server/.robloxrc",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": ".robloxrc",
+    "path": "Modules/Server/ClientChat/BubbleChat/.robloxrc",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": ".robloxrc",
+    "path": "Modules/Server/ClientChat/DefaultClientChatModules/.robloxrc",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": ".robloxrc",
+    "path": "Modules/Server/ClientChat/DefaultClientChatModules/CommandModules/.robloxrc",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": ".robloxrc",
+    "path": "Modules/Server/ClientChat/DefaultClientChatModules/MessageCreatorModules/.robloxrc",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": ".robloxrc",
+    "path": "Modules/Server/FreeCamera/.robloxrc",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": ".robloxrc",
+    "path": "Modules/Server/ServerChat/.robloxrc",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": ".robloxrc",
+    "path": "Modules/Server/ServerPlayer/.robloxrc",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": ".robloxrc",
+    "path": "Modules/Server/ServerSound/.robloxrc",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  }
+]

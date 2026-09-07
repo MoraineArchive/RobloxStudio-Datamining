@@ -1,0 +1,1960 @@
+[
+  {
+    "class": "AnimationController",
+    "name": "AnimationController",
+    "path": "Character/AnimationController",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Animator",
+    "name": "Animator",
+    "path": "Character/AnimationController/Animator",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "BodyBackAttachment",
+    "path": "Character/UpperTorso/BodyBackAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "BodyFrontAttachment",
+    "path": "Character/UpperTorso/BodyFrontAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "FaceCenterAttachment",
+    "path": "Character/Head/FaceCenterAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "FaceFrontAttachment",
+    "path": "Character/Head/FaceFrontAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "HairAttachment",
+    "path": "Character/Head/HairAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "HatAttachment",
+    "path": "Character/Head/HatAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftAnkleRigAttachment",
+    "path": "Character/LeftFoot/LeftAnkleRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftAnkleRigAttachment",
+    "path": "Character/LeftLowerLeg/LeftAnkleRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftCollarAttachment",
+    "path": "Character/UpperTorso/LeftCollarAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftElbowRigAttachment",
+    "path": "Character/LeftLowerArm/LeftElbowRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftElbowRigAttachment",
+    "path": "Character/LeftUpperArm/LeftElbowRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftFootAttachment",
+    "path": "Character/LeftFoot/LeftFootAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftGripAttachment",
+    "path": "Character/LeftHand/LeftGripAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftHipRigAttachment",
+    "path": "Character/LeftUpperLeg/LeftHipRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftHipRigAttachment",
+    "path": "Character/LowerTorso/LeftHipRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftKneeRigAttachment",
+    "path": "Character/LeftLowerLeg/LeftKneeRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftKneeRigAttachment",
+    "path": "Character/LeftUpperLeg/LeftKneeRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftShoulderAttachment",
+    "path": "Character/LeftUpperArm/LeftShoulderAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftShoulderRigAttachment",
+    "path": "Character/LeftUpperArm/LeftShoulderRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftShoulderRigAttachment",
+    "path": "Character/UpperTorso/LeftShoulderRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftWristRigAttachment",
+    "path": "Character/LeftHand/LeftWristRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "LeftWristRigAttachment",
+    "path": "Character/LeftLowerArm/LeftWristRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "NeckAttachment",
+    "path": "Character/UpperTorso/NeckAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "NeckRigAttachment",
+    "path": "Character/Head/NeckRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "NeckRigAttachment",
+    "path": "Character/UpperTorso/NeckRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightAnkleRigAttachment",
+    "path": "Character/RightFoot/RightAnkleRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightAnkleRigAttachment",
+    "path": "Character/RightLowerLeg/RightAnkleRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightCollarAttachment",
+    "path": "Character/UpperTorso/RightCollarAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightElbowRigAttachment",
+    "path": "Character/RightLowerArm/RightElbowRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightElbowRigAttachment",
+    "path": "Character/RightUpperArm/RightElbowRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightFootAttachment",
+    "path": "Character/RightFoot/RightFootAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightGripAttachment",
+    "path": "Character/RightHand/RightGripAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightHipRigAttachment",
+    "path": "Character/LowerTorso/RightHipRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightHipRigAttachment",
+    "path": "Character/RightUpperLeg/RightHipRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightKneeRigAttachment",
+    "path": "Character/RightLowerLeg/RightKneeRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightKneeRigAttachment",
+    "path": "Character/RightUpperLeg/RightKneeRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightShoulderAttachment",
+    "path": "Character/RightUpperArm/RightShoulderAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightShoulderRigAttachment",
+    "path": "Character/RightUpperArm/RightShoulderRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightShoulderRigAttachment",
+    "path": "Character/UpperTorso/RightShoulderRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightWristRigAttachment",
+    "path": "Character/RightHand/RightWristRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RightWristRigAttachment",
+    "path": "Character/RightLowerArm/RightWristRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RootRigAttachment",
+    "path": "Character/HumanoidRootPart/RootRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "RootRigAttachment",
+    "path": "Character/LowerTorso/RootRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "WaistBackAttachment",
+    "path": "Character/LowerTorso/WaistBackAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "WaistCenterAttachment",
+    "path": "Character/LowerTorso/WaistCenterAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "WaistFrontAttachment",
+    "path": "Character/LowerTorso/WaistFrontAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "WaistRigAttachment",
+    "path": "Character/LowerTorso/WaistRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Attachment",
+    "name": "WaistRigAttachment",
+    "path": "Character/UpperTorso/WaistRigAttachment",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "Head",
+    "path": "Character/Head",
+    "properties": {
+      "AeroMeshData": "",
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://assetdelivery.roblox.com/v1/asset/?id=7278806860",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "LeftFoot",
+    "path": "Character/LeftFoot",
+    "properties": {
+      "AeroMeshData": "",
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://www.roblox.com/asset/?id=3575898930",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "LeftHand",
+    "path": "Character/LeftHand",
+    "properties": {
+      "AeroMeshData": "",
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://www.roblox.com/asset/?id=3575898827",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "LeftLowerArm",
+    "path": "Character/LeftLowerArm",
+    "properties": {
+      "AeroMeshData": "",
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://www.roblox.com/asset/?id=3575898824",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "LeftLowerLeg",
+    "path": "Character/LeftLowerLeg",
+    "properties": {
+      "AeroMeshData": "",
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://www.roblox.com/asset/?id=3575898961",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "LeftUpperArm",
+    "path": "Character/LeftUpperArm",
+    "properties": {
+      "AeroMeshData": "",
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://www.roblox.com/asset/?id=3575898826",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "LeftUpperLeg",
+    "path": "Character/LeftUpperLeg",
+    "properties": {
+      "AeroMeshData": "",
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://www.roblox.com/asset/?id=3575898963",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "LowerTorso",
+    "path": "Character/LowerTorso",
+    "properties": {
+      "AeroMeshData": "",
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://www.roblox.com/asset/?id=3575899033",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "RightFoot",
+    "path": "Character/RightFoot",
+    "properties": {
+      "AeroMeshData": "",
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://www.roblox.com/asset/?id=3575898968",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "RightHand",
+    "path": "Character/RightHand",
+    "properties": {
+      "AeroMeshData": "",
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://www.roblox.com/asset/?id=3575898823",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "RightLowerArm",
+    "path": "Character/RightLowerArm",
+    "properties": {
+      "AeroMeshData": "",
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://www.roblox.com/asset/?id=3575898821",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "RightLowerLeg",
+    "path": "Character/RightLowerLeg",
+    "properties": {
+      "AeroMeshData": "",
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://www.roblox.com/asset/?id=3575898998",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "RightUpperArm",
+    "path": "Character/RightUpperArm",
+    "properties": {
+      "AeroMeshData": "",
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://www.roblox.com/asset/?id=3575898879",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "RightUpperLeg",
+    "path": "Character/RightUpperLeg",
+    "properties": {
+      "AeroMeshData": "",
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://www.roblox.com/asset/?id=3575899011",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "UpperTorso",
+    "path": "Character/UpperTorso",
+    "properties": {
+      "AeroMeshData": "",
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://www.roblox.com/asset/?id=3575898880",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Model",
+    "name": "Character",
+    "path": "Character",
+    "properties": {
+      "AttributesSerialize": "",
+      "ModelMeshData": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "LeftAnkle",
+    "path": "Character/LeftFoot/LeftAnkle",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "LeftElbow",
+    "path": "Character/LeftLowerArm/LeftElbow",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "LeftHip",
+    "path": "Character/LeftUpperLeg/LeftHip",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "LeftKnee",
+    "path": "Character/LeftLowerLeg/LeftKnee",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "LeftShoulder",
+    "path": "Character/LeftUpperArm/LeftShoulder",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "LeftWrist",
+    "path": "Character/LeftHand/LeftWrist",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "Neck",
+    "path": "Character/Head/Neck",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "RightAnkle",
+    "path": "Character/RightFoot/RightAnkle",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "RightElbow",
+    "path": "Character/RightLowerArm/RightElbow",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "RightHip",
+    "path": "Character/RightUpperLeg/RightHip",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "RightKnee",
+    "path": "Character/RightLowerLeg/RightKnee",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "RightShoulder",
+    "path": "Character/RightUpperArm/RightShoulder",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "RightWrist",
+    "path": "Character/RightHand/RightWrist",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "Root",
+    "path": "Character/LowerTorso/Root",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "Waist",
+    "path": "Character/UpperTorso/Waist",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Part",
+    "name": "HumanoidRootPart",
+    "path": "Character/HumanoidRootPart",
+    "properties": {
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "Character/Head/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "Character/LeftFoot/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "Character/LeftHand/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "Character/LeftLowerArm/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "Character/LeftLowerLeg/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "Character/LeftUpperArm/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "Character/LeftUpperLeg/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "Character/LowerTorso/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "Character/RightFoot/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "Character/RightHand/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "Character/RightLowerArm/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "Character/RightLowerLeg/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "Character/RightUpperArm/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "Character/RightUpperLeg/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "Character/UpperTorso/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/Head/FaceCenterAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/Head/FaceFrontAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/Head/HairAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/Head/HatAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/Head/NeckRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/HumanoidRootPart/RootRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/LeftFoot/LeftAnkleRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/LeftFoot/LeftFootAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/LeftHand/LeftGripAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/LeftHand/LeftWristRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/LeftLowerArm/LeftElbowRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/LeftLowerArm/LeftWristRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/LeftLowerLeg/LeftAnkleRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/LeftLowerLeg/LeftKneeRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/LeftUpperArm/LeftElbowRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/LeftUpperArm/LeftShoulderAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/LeftUpperArm/LeftShoulderRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/LeftUpperLeg/LeftHipRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/LeftUpperLeg/LeftKneeRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/LowerTorso/LeftHipRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/LowerTorso/RightHipRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/LowerTorso/RootRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/LowerTorso/WaistBackAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/LowerTorso/WaistCenterAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/LowerTorso/WaistFrontAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/LowerTorso/WaistRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/RightFoot/RightAnkleRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/RightFoot/RightFootAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/RightHand/RightGripAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/RightHand/RightWristRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/RightLowerArm/RightElbowRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/RightLowerArm/RightWristRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/RightLowerLeg/RightAnkleRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/RightLowerLeg/RightKneeRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/RightUpperArm/RightElbowRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/RightUpperArm/RightShoulderAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/RightUpperArm/RightShoulderRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/RightUpperLeg/RightHipRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/RightUpperLeg/RightKneeRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/UpperTorso/BodyBackAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/UpperTorso/BodyFrontAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/UpperTorso/LeftCollarAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/UpperTorso/LeftShoulderRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/UpperTorso/NeckAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/UpperTorso/NeckRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/UpperTorso/RightCollarAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/UpperTorso/RightShoulderRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalPosition",
+    "path": "Character/UpperTorso/WaistRigAttachment/OriginalPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Character/Head/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Character/HumanoidRootPart/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Character/LeftFoot/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Character/LeftHand/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Character/LeftLowerArm/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Character/LeftLowerLeg/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Character/LeftUpperArm/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Character/LeftUpperLeg/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Character/LowerTorso/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Character/RightFoot/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Character/RightHand/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Character/RightLowerArm/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Character/RightLowerLeg/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Character/RightUpperArm/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Character/RightUpperLeg/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "Character/UpperTorso/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "WrapTarget",
+    "name": "Head",
+    "path": "Character/Head/Head",
+    "properties": {
+      "AttributesSerialize": "",
+      "CageMeshId": "https://assetdelivery.roblox.com/v1/asset/?id=7279375793",
+      "HSRAssetId": "",
+      "HSRMeshIdData": "\u0000\n7278806860\n727937579368cfa0f1f0c0bf4ccd9f1dc4aa0b50b3",
+      "Tags": "",
+      "TemporaryCageMeshId": ""
+    },
+    "unreadable": [
+      "HSRData:binary-shared-string"
+    ]
+  },
+  {
+    "class": "WrapTarget",
+    "name": "LeftFoot",
+    "path": "Character/LeftFoot/LeftFoot",
+    "properties": {
+      "AttributesSerialize": "",
+      "CageMeshId": "https://assetdelivery.roblox.com/v1/asset/?id=7279375840",
+      "HSRAssetId": "",
+      "HSRMeshIdData": "\u0000\n3575898930\n727937584039071f93a2147dd868ed6fb218422f58",
+      "Tags": "",
+      "TemporaryCageMeshId": ""
+    },
+    "unreadable": [
+      "HSRData:binary-shared-string"
+    ]
+  },
+  {
+    "class": "WrapTarget",
+    "name": "LeftHand",
+    "path": "Character/LeftHand/LeftHand",
+    "properties": {
+      "AttributesSerialize": "",
+      "CageMeshId": "https://assetdelivery.roblox.com/v1/asset/?id=7279375790",
+      "HSRAssetId": "",
+      "HSRMeshIdData": "\u0000\n3575898827\n7279375790ecd7761859281f45281892726cb08fa6",
+      "Tags": "",
+      "TemporaryCageMeshId": ""
+    },
+    "unreadable": [
+      "HSRData:binary-shared-string"
+    ]
+  },
+  {
+    "class": "WrapTarget",
+    "name": "LeftLowerArm",
+    "path": "Character/LeftLowerArm/LeftLowerArm",
+    "properties": {
+      "AttributesSerialize": "",
+      "CageMeshId": "https://assetdelivery.roblox.com/v1/asset/?id=7279375815",
+      "HSRAssetId": "",
+      "HSRMeshIdData": "\u0000\n3575898824\n7279375815c9a97e111e8cda977579269c804430c3",
+      "Tags": "",
+      "TemporaryCageMeshId": ""
+    },
+    "unreadable": [
+      "HSRData:binary-shared-string"
+    ]
+  },
+  {
+    "class": "WrapTarget",
+    "name": "LeftLowerLeg",
+    "path": "Character/LeftLowerLeg/LeftLowerLeg",
+    "properties": {
+      "AttributesSerialize": "",
+      "CageMeshId": "https://assetdelivery.roblox.com/v1/asset/?id=7279375829",
+      "HSRAssetId": "",
+      "HSRMeshIdData": "\u0000\n3575898961\n72793758297ec17209fc0d2ba01c8118e5e0413a9f",
+      "Tags": "",
+      "TemporaryCageMeshId": ""
+    },
+    "unreadable": [
+      "HSRData:binary-shared-string"
+    ]
+  },
+  {
+    "class": "WrapTarget",
+    "name": "LeftUpperArm",
+    "path": "Character/LeftUpperArm/LeftUpperArm",
+    "properties": {
+      "AttributesSerialize": "",
+      "CageMeshId": "https://assetdelivery.roblox.com/v1/asset/?id=7279375794",
+      "HSRAssetId": "",
+      "HSRMeshIdData": "\u0000\n3575898826\n72793757948bec50e8536bcd890f2cd59451829233",
+      "Tags": "",
+      "TemporaryCageMeshId": ""
+    },
+    "unreadable": [
+      "HSRData:binary-shared-string"
+    ]
+  },
+  {
+    "class": "WrapTarget",
+    "name": "LeftUpperLeg",
+    "path": "Character/LeftUpperLeg/LeftUpperLeg",
+    "properties": {
+      "AttributesSerialize": "",
+      "CageMeshId": "https://assetdelivery.roblox.com/v1/asset/?id=7279375833",
+      "HSRAssetId": "",
+      "HSRMeshIdData": "\u0000\n3575898963\n7279375833e512d1da72fb97827bc3aa9fd95dd9db",
+      "Tags": "",
+      "TemporaryCageMeshId": ""
+    },
+    "unreadable": [
+      "HSRData:binary-shared-string"
+    ]
+  },
+  {
+    "class": "WrapTarget",
+    "name": "LowerTorso",
+    "path": "Character/LowerTorso/LowerTorso",
+    "properties": {
+      "AttributesSerialize": "",
+      "CageMeshId": "https://assetdelivery.roblox.com/v1/asset/?id=7279375831",
+      "HSRAssetId": "",
+      "HSRMeshIdData": "\u0000\n3575899033\n72793758312f0982dc19c984e5c1d5cb88750700ce",
+      "Tags": "",
+      "TemporaryCageMeshId": ""
+    },
+    "unreadable": [
+      "HSRData:binary-shared-string"
+    ]
+  },
+  {
+    "class": "WrapTarget",
+    "name": "RightFoot",
+    "path": "Character/RightFoot/RightFoot",
+    "properties": {
+      "AttributesSerialize": "",
+      "CageMeshId": "https://assetdelivery.roblox.com/v1/asset/?id=7279375883",
+      "HSRAssetId": "",
+      "HSRMeshIdData": "\u0000\n3575898968\n72793758839d68eb43e04115531910b5b1b4c3378e",
+      "Tags": "",
+      "TemporaryCageMeshId": ""
+    },
+    "unreadable": [
+      "HSRData:binary-shared-string"
+    ]
+  },
+  {
+    "class": "WrapTarget",
+    "name": "RightHand",
+    "path": "Character/RightHand/RightHand",
+    "properties": {
+      "AttributesSerialize": "",
+      "CageMeshId": "https://assetdelivery.roblox.com/v1/asset/?id=7279375847",
+      "HSRAssetId": "",
+      "HSRMeshIdData": "\u0000\n3575898823\n7279375847a7e07dd8d697916b91456d4bd1002bbd",
+      "Tags": "",
+      "TemporaryCageMeshId": ""
+    },
+    "unreadable": [
+      "HSRData:binary-shared-string"
+    ]
+  },
+  {
+    "class": "WrapTarget",
+    "name": "RightLowerArm",
+    "path": "Character/RightLowerArm/RightLowerArm",
+    "properties": {
+      "AttributesSerialize": "",
+      "CageMeshId": "https://assetdelivery.roblox.com/v1/asset/?id=7279375852",
+      "HSRAssetId": "",
+      "HSRMeshIdData": "\u0000\n3575898821\n7279375852f4b06a5bd2a1543cda0a2778d01b9492",
+      "Tags": "",
+      "TemporaryCageMeshId": ""
+    },
+    "unreadable": [
+      "HSRData:binary-shared-string"
+    ]
+  },
+  {
+    "class": "WrapTarget",
+    "name": "RightLowerLeg",
+    "path": "Character/RightLowerLeg/RightLowerLeg",
+    "properties": {
+      "AttributesSerialize": "",
+      "CageMeshId": "https://assetdelivery.roblox.com/v1/asset/?id=7279375884",
+      "HSRAssetId": "",
+      "HSRMeshIdData": "\u0000\n3575898998\n7279375884ae31b5ef5b43374cf6c1f4cfedb88b5c",
+      "Tags": "",
+      "TemporaryCageMeshId": ""
+    },
+    "unreadable": [
+      "HSRData:binary-shared-string"
+    ]
+  },
+  {
+    "class": "WrapTarget",
+    "name": "RightUpperArm",
+    "path": "Character/RightUpperArm/RightUpperArm",
+    "properties": {
+      "AttributesSerialize": "",
+      "CageMeshId": "https://assetdelivery.roblox.com/v1/asset/?id=7279375844",
+      "HSRAssetId": "",
+      "HSRMeshIdData": "\u0000\n3575898879\n72793758444224cbccd300b2bb690513858b248c2e",
+      "Tags": "",
+      "TemporaryCageMeshId": ""
+    },
+    "unreadable": [
+      "HSRData:binary-shared-string"
+    ]
+  },
+  {
+    "class": "WrapTarget",
+    "name": "RightUpperLeg",
+    "path": "Character/RightUpperLeg/RightUpperLeg",
+    "properties": {
+      "AttributesSerialize": "",
+      "CageMeshId": "https://assetdelivery.roblox.com/v1/asset/?id=7279375861",
+      "HSRAssetId": "",
+      "HSRMeshIdData": "\u0000\n3575899011\n7279375861c1d6d4cd660158d23d2f1457e9115764",
+      "Tags": "",
+      "TemporaryCageMeshId": ""
+    },
+    "unreadable": [
+      "HSRData:binary-shared-string"
+    ]
+  },
+  {
+    "class": "WrapTarget",
+    "name": "UpperTorso",
+    "path": "Character/UpperTorso/UpperTorso",
+    "properties": {
+      "AttributesSerialize": "",
+      "CageMeshId": "https://assetdelivery.roblox.com/v1/asset/?id=7279375792",
+      "HSRAssetId": "",
+      "HSRMeshIdData": "\u0000\n3575898880\n727937579257b73507bea08580e439706f4b0f7bc1",
+      "Tags": "",
+      "TemporaryCageMeshId": ""
+    },
+    "unreadable": [
+      "HSRData:binary-shared-string"
+    ]
+  }
+]

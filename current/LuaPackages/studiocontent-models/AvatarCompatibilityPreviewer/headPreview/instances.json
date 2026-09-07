@@ -1,0 +1,142 @@
+[
+  {
+    "class": "AnimationController",
+    "name": "AnimationController",
+    "path": "HeadPreview/AnimationController",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Animator",
+    "name": "Animator",
+    "path": "HeadPreview/AnimationController/Animator",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "FaceControls",
+    "name": "FaceControls",
+    "path": "HeadPreview/Head/FaceControls",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "Head",
+    "path": "HeadPreview/Head",
+    "properties": {
+      "AeroMeshData": "",
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "MeshId": "https://assetdelivery.roblox.com/v1/asset/?id=13413830154",
+      "PhysicalConfigData": "CSGPHS\u0000\u0000\u0000\u0000BLOCK",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Model",
+    "name": "HeadPreview",
+    "path": "HeadPreview",
+    "properties": {
+      "AttributesSerialize": "\u0003\u0000\u0000\u0000!\u0000\u0000\u0000RBX_UGCAState_DEV11_equippedItems\u0002\u0002\u0000\u0000\u0000[]\u0019\u0000\u0000\u0000RBX_UGCAState_DEV11_stage\u0002\t\u0000\u0000\u0000CheckBody\u001c\u0000\u0000\u0000RBX_UGCAState_DEV11_textured\u0003\u0001",
+      "ModelMeshData": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Motor6D",
+    "name": "Motor6D",
+    "path": "HeadPreview/Head/Motor6D",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Part",
+    "name": "HumanoidRootPart",
+    "path": "HeadPreview/HumanoidRootPart",
+    "properties": {
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": "AvatarPartScaleType",
+    "path": "HeadPreview/Head/AvatarPartScaleType",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "SurfaceAppearance",
+    "name": "SurfaceAppearance",
+    "path": "HeadPreview/Head/SurfaceAppearance",
+    "properties": {
+      "AttributesSerialize": "",
+      "ColorMap": "rbxassetid://13413861802",
+      "MetalnessMap": "rbxassetid://13413862844",
+      "NormalMap": "rbxassetid://13413863657",
+      "RoughnessMap": "rbxassetid://13413864551",
+      "Tags": "",
+      "TexturePack": "rbxassetid://13413879959"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "HeadPreview/Head/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Vector3Value",
+    "name": "OriginalSize",
+    "path": "HeadPreview/HumanoidRootPart/OriginalSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "WrapTarget",
+    "name": "Head",
+    "path": "HeadPreview/Head/Head",
+    "properties": {
+      "AttributesSerialize": "",
+      "CageMeshId": "https://assetdelivery.roblox.com/v1/asset/?id=13413830065",
+      "HSRAssetId": "https://www.roblox.com//asset/?id=13413925623",
+      "HSRData": "",
+      "HSRMeshIdData": "",
+      "Tags": "",
+      "TemporaryCageMeshId": ""
+    },
+    "unreadable": []
+  }
+]

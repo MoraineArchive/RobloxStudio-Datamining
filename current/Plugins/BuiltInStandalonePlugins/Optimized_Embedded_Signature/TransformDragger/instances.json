@@ -1,0 +1,296 @@
+[
+  {
+    "class": "Model",
+    "name": "PrecisionDragger",
+    "path": "PrecisionDragger",
+    "properties": {
+      "AttributesSerialize": "",
+      "ModelMeshData": "",
+      "SlimHash": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Adornments",
+    "path": "PrecisionDragger/Adornments",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "61046",
+      "SourceBytecodeSha256": "670b66c31ae2a8405b8897934910c93ec6d606f2e9ff2fb0d7de809e7dccd025",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Analytics",
+    "path": "PrecisionDragger/Analytics",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1128",
+      "SourceBytecodeSha256": "f7d756a560d5ece03d99d667278fdb11d6fc945d1230b40f23245d6ec98ede5a",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Collision",
+    "path": "PrecisionDragger/Collision",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "5989",
+      "SourceBytecodeSha256": "3a82d00ec5a6eda6b4bc47414f6b985c04a18508ba46e30e3c904758bfa283c2",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Extent",
+    "path": "PrecisionDragger/Extent",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "6085",
+      "SourceBytecodeSha256": "cd98251ad86e6c34d180bc4ffa0cafa62f67388afa8fa8014f906f57387a91c3",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "FFlag",
+    "path": "PrecisionDragger/FFlag",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "379",
+      "SourceBytecodeSha256": "842f0888757e244cadab6c0bdd2c47e8f25da3fc7d4f5037bf0155a17c8eef8c",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "FuzzyMath",
+    "path": "PrecisionDragger/FuzzyMath",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "2297",
+      "SourceBytecodeSha256": "220377e04cab9c629f1b4312c6fb38d795f929661927f27970f3bacbeaee5dc7",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Input",
+    "path": "PrecisionDragger/Input",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "610",
+      "SourceBytecodeSha256": "550e96b16ebb3c07c569ad26fd7d4b89bef6e85cf9af31674a508bccd53496bd",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "List",
+    "path": "PrecisionDragger/List",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1714",
+      "SourceBytecodeSha256": "a0f74aacaf0ae871c04edf060f5607d008fda50c70eb840d6a3f5cdbee19e4cc",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Metapart",
+    "path": "PrecisionDragger/Metapart",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "31302",
+      "SourceBytecodeSha256": "ea4d3f22090fb27c52a359c3e92c929f5d4edc988fa9b3f122564961de65402c",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Plane",
+    "path": "PrecisionDragger/Plane",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91",
+      "SourceBytecodeSha256": "9cea8311f57b8996a0c66c75199e4d6a8a34eea1f015c311817be075c4db6688",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "RecyclingBin",
+    "path": "PrecisionDragger/RecyclingBin",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1066",
+      "SourceBytecodeSha256": "75b7227e22c8889a7964988e6fea24bf8afc15da9c194617c06b4e7b96287443",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Round",
+    "path": "PrecisionDragger/Round",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "681",
+      "SourceBytecodeSha256": "ed820e9f835d8896ccf274a6db3cd21127d5dab82318d5b122953665ce7ac234",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Rubberband",
+    "path": "PrecisionDragger/Rubberband",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "3619",
+      "SourceBytecodeSha256": "05a51679a9a495c6b5dd9a1b746f474286adf1471f5050a8ca816336e02e21e6",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Selection",
+    "path": "PrecisionDragger/Selection",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1153",
+      "SourceBytecodeSha256": "f71ffe3ed7fe34cbbe09da8d5a14ff5f5c4b9c8e1512abc68b94d158c8b5456d",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Utility",
+    "path": "PrecisionDragger/Utility",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "3099",
+      "SourceBytecodeSha256": "9e85a7a72b53fb2aefdad843eddc0b90b09dbfa2723e5dec30cc047ab3d04986",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "Script",
+    "name": "main",
+    "path": "PrecisionDragger/Standalone/main",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "818",
+      "SourceBytecodeSha256": "4a8f5e995beae32a85adb75e1532b13b46bda917c067b42b9b34e80338c60c09",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "Script",
+    "name": "Precision",
+    "path": "PrecisionDragger/Precision",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "95745",
+      "SourceBytecodeSha256": "ed3846de76f7a8cbb498bc3fa36c3ac4925d14b042e3dd5ba5b08de185b9674d",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "StandalonePluginScripts",
+    "name": "Standalone",
+    "path": "PrecisionDragger/Standalone",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  }
+]

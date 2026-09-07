@@ -1,0 +1,39 @@
+{
+  "hashes": {
+    "API-Dump.json": "9c014c728c95bd715bd4080f25bc7a9bfaabe7b84e7d41304445da3c6db5ec0f",
+    "Full-API-Dump.json": "3563090a8ff97fb10546967662827947c027cb61a5ed32aff31617f4dfd106de",
+    "api-diff.json": "059305514e44b0a20d3ddcf4a692f1781ffe18b5d703a86008b42381a9fbac16",
+    "metadata.json": "89823fd6d9ab4ded3f2833319030cccbd758d44ecfbd859d94c3ccc5b05fb9e7"
+  },
+  "id": "b902bad214d9f11a58f3e03c9d9791f4cd2d0aa2aafd7848b2483e00ab8096b9",
+  "observationMode": "live",
+  "observedAt": "2026-09-06T17:07:19.451Z",
+  "provenance": [
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 7281358,
+      "sha256": "96a97f388acf1f3a573e18f4d1677f1198d532ff4470462237efac15ac89c5dd",
+      "sourceType": "official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-API-Dump.json"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 8234036,
+      "sha256": "788a649955d14d827d5f6405d0b528db92fef6c6cd9b42c8defc6d40e225399b",
+      "sourceType": "official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-Full-API-Dump.json"
+    }
+  ],
+  "sequence": 2,
+  "status": "available",
+  "summary": {
+    "classes": 911,
+    "engineRevision": 1,
+    "enums": 629,
+    "fullStatus": "available",
+    "guid": "version-9fe94fb0e9d84c25",
+    "members": 7690
+  },
+  "surface": "API",
+  "target": "WindowsStudio64"
+}

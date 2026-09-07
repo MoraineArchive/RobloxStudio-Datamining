@@ -1,0 +1,308 @@
+--[[
+	This file contains tables in the format of {string = same string}.
+	The point is that indexing these tables with a typo will give you an error instead of nil, so they can be treated as enums.
+	We use ValidationEnums as a source of truth to run validations, log telemetry, etc.
+]]
+local ValidationEnums = {}
+
+local function createEnumMetatable(name: string)
+	return {
+		__index = function(_, index)
+			error("Invalid ValidationEnums." .. name .. " enum value: " .. tostring(index))
+		end,
+		__newindex = function(_, _, _)
+			error("Cannot add new keys to ValidationEnums")
+		end,
+		__metatable = "This metatable is protected",
+	}
+end
+
+local function finalizeEnumTable(enumTableName: string)
+	if ValidationEnums[enumTableName] == nil then
+		error(enumTableName .. " enum table is not found")
+	end
+
+	for k, v in ValidationEnums[enumTableName] do
+		if typeof(k) ~= "string" then
+			error(enumTableName .. " enum table has non string key " .. tostring(k))
+		elseif k ~= v then
+			error(enumTableName .. " enum table has non-matching key and value for key " .. tostring(k))
+		end
+	end
+
+	setmetatable(ValidationEnums[enumTableName], createEnumMetatable(enumTableName))
+end
+
+---- Title case enums (module names) ----
+ValidationEnums.ValidationModule = {
+	--[[
+	If a test doesn't have an enum, it will not be recognized and does not exist.
+    This table is a mapping of (string) TestEnum = (string) TestEnum with strict indexing, so it behaves like an enum
+
+    Enum naming rules:
+        - Unique
+        - Short (<= 3 words, with a hard limit at 4 words)
+        - Title case
+        - Human readable and describes the expectation for PROPER marketplace uploads
+			- Good examples: HeadIsDynamic, CagingIsRelevant, AccurateBoundingBox, AssetVisible
+			- Bad example: DynamicHead, Tags, ValidateMeshSize
+    --]]
+	-- Basic schema checks
+	ExpectedRootSchema = "ExpectedRootSchema",
+	SingleInstanceSelected = "SingleInstanceSelected",
+	SerializedAssetSizeBounded = "SerializedAssetSizeBounded",
+	NoExtraTags = "NoExtraTags",
+
+	-- Schema, Properties & Structural checks
+	AttributesAllowed = "AttributesAllowed",
+	MaterialsAllowed = "MaterialsAllowed",
+	PropertyRequirementsValid = "PropertyRequirementsValid",
+	ArchivableRequired = "ArchivableRequired",
+	PropertiesSensible = "PropertiesSensible",
+	InstanceTreeMatchesSchema = "InstanceTreeMatchesSchema",
+	DescendantIdsAllowed = "DescendantIdsAllowed",
+	ScaleTypeValid = "ScaleTypeValid",
+	CollisionFidelityCorrect = "CollisionFidelityCorrect",
+	AttachmentBoundsValid = "AttachmentBoundsValid",
+	AttachmentOrientationsValid = "AttachmentOrientationsValid",
+	HSRAssetStructureValid = "HSRAssetStructureValid",
+	HSRMeshIdsMatch = "HSRMeshIdsMatch",
+	ThumbnailConfigValid = "ThumbnailConfigValid",
+	DescendantIdsNotMissing = "DescendantIdsNotMissing",
+	ContentNotEditable = "ContentNotEditable",
+
+	-- Facs exploits
+	NoFACSOverrideData = "NoFACSOverrideData",
+	FacsHeadConsistency = "FacsHeadConsistency",
+	DynamicHeadFacsPresent = "DynamicHeadFacsPresent",
+	DynamicHeadControlsActive = "DynamicHeadControlsActive",
+	FacsJointBoundsValid = "FacsJointBoundsValid",
+
+	-- HRD/DRD/Bone checks (introduced for R15+ launch)
+	HrdBonesFollowSchema = "HrdBonesFollowSchema",
+	HrdPropertiesSensible = "HrdPropertiesSensible",
+	TposeAdjustmentSensible = "TposeAdjustmentSensible",
+	BoneCFramesInBounds = "BoneCFramesInBounds",
+	JointRotationAttachmentsLimited = "JointRotationAttachmentsLimited",
+	MoveableAttachmentsExist = "MoveableAttachmentsExist",
+
+	-- Mesh skinning checks
+	FacsNotDrivingSchema = "FacsNotDrivingSchema",
+	BodySkinnedToSchema = "BodySkinnedToSchema",
+	RigidSkinnedToSchema = "RigidSkinnedToSchema",
+	LCSkinnedToSchema = "LCSkinnedToSchema",
+
+	-- Texture & Transparency checks
+	TextureSizeBounded = "TextureSizeBounded",
+	SurfaceAppearanceTexturesBounded = "SurfaceAppearanceTexturesBounded",
+	AssetOpacityValid = "AssetOpacityValid",
+	SurfaceAppearanceOpacityValid = "SurfaceAppearanceOpacityValid",
+
+	-- Mesh geometry checks
+	MeshBoundsValid = "MeshBoundsValid",
+	TriangleCountBounded = "TriangleCountBounded",
+	SurfaceAreaBounded = "SurfaceAreaBounded",
+	VertexDensityBounded = "VertexDensityBounded",
+	TriangleAreaValid = "TriangleAreaValid",
+
+	-- Surface appearance & mesh quality checks
+	SurfaceAppearancePresent = "SurfaceAppearancePresent",
+	TexturePackConsistent = "TexturePackConsistent",
+	VertexColorsOpaque = "VertexColorsOpaque",
+	NoCoplanarTriangles = "NoCoplanarTriangles",
+
+	-- Body part geometry checks
+	PoseCorrect = "PoseCorrect",
+	LegsSeparated = "LegsSeparated",
+	BoundingBoxAccurate = "BoundingBoxAccurate",
+	BodyBlockingTestsPass = "BodyBlockingTestsPass",
+	-- Cage UV checks
+	CageUVCountValid = "CageUVCountValid",
+	CageUVValuesCorrect = "CageUVValuesCorrect",
+	CageUVAreaValid = "CageUVAreaValid",
+	CageUVNoDuplicates = "CageUVNoDuplicates",
+	CageModifiedAreaValid = "CageModifiedAreaValid",
+
+	-- Body part bounds & mesh consistency
+	AssetBoundsValid = "AssetBoundsValid",
+	BodyMeshSizesConsistent = "BodyMeshSizesConsistent",
+	ExtentsWithinParent = "ExtentsWithinParent",
+	IndividualMeshPartBoundsValid = "IndividualMeshPartBoundsValid",
+	MeshSizePropertyCorrect = "MeshSizePropertyCorrect",
+
+	-- Layered clothing exploits
+	LCDeformationWithinBounds = "LCDeformationWithinBounds",
+
+	-- Cage geometry checks
+	VerticesNotCoincident = "VerticesNotCoincident",
+	CageMeshDistanceBounded = "CageMeshDistanceBounded",
+	BodyPartCageDistanceValid = "BodyPartCageDistanceValid",
+	LCWithinRenderBounds = "LCWithinRenderBounds",
+
+	-- Makeup checks
+	WrapTextureValid = "WrapTextureValid",
+	MakeupDecalValid = "MakeupDecalValid",
+
+	-- Eyelash Tests
+	LeaderSkinnedVertsNearCageIslands = "LeaderSkinnedVertsNearCageIslands",
+
+	-- Curve Animation checks
+	CurveAnimDataAvailable = "CurveAnimDataAvailable",
+	CurveAnimHierarchyCorrect = "CurveAnimHierarchyCorrect",
+	CurveAnimRigDataPresent = "CurveAnimRigDataPresent",
+	CurveAnimMarkerCurvesLimited = "CurveAnimMarkerCurvesLimited",
+	CurveAnimNoScripts = "CurveAnimNoScripts",
+	CurveAnimAllowedTypes = "CurveAnimAllowedTypes",
+	CurveAnimNumericalDataValid = "CurveAnimNumericalDataValid",
+	CurveAnimTagsValid = "CurveAnimTagsValid",
+	EmoteAnimationAttributesAccurate = "EmoteAnimationAttributesAccurate",
+	CurveAnimJointsManipulated = "CurveAnimJointsManipulated",
+	CurveAnimFrameDataSensible = "CurveAnimFrameDataSensible",
+	CurveAnimJointsAnimated = "CurveAnimJointsAnimated",
+	CurveAnimPositionBounded = "CurveAnimPositionBounded",
+	CurveAnimLengthBounded = "CurveAnimLengthBounded",
+	CurveAnimBoundsValid = "CurveAnimBoundsValid",
+	CurveAnimSpeedBounded = "CurveAnimSpeedBounded",
+	CurveAnimRotationBounded = "CurveAnimRotationBounded",
+	CurveAnimJointRotationLimited = "CurveAnimJointRotationLimited",
+	AnimationWeightPositive = "AnimationWeightPositive",
+	AnimationPackNoDuplicateIds = "AnimationPackNoDuplicateIds",
+	CurveAnimBonesAllowed = "CurveAnimBonesAllowed",
+	CurveAnimBonesRotationOnly = "CurveAnimBonesRotationOnly",
+	CurveAnimBonesHaveValidNames = "CurveAnimBonesHaveValidNames",
+	CurveAnimBonesHaveValidParents = "CurveAnimBonesHaveValidParents",
+	CurveAnimPartsRotateOnlyIfBones = "CurveAnimPartsRotateOnlyIfBones",
+	CurveAnimBoneHierarchyValid = "CurveAnimBoneHierarchyValid",
+	CurveAnimLoopingRequired = "CurveAnimLoopingRequired",
+	EmissiveMapAllowed = "EmissiveMapAllowed",
+}
+
+---- Camel case enums (module members) ----
+ValidationEnums.SharedDataMember = {
+	--[[ 
+	Enum for Data that is made and used by validation tests. Should match Types.ValidationSharedData. 
+	This is duplicated in Types.SharedData for selene to run while the enum system allows strict code usage.
+	
+	The primary goal of this list is to consolidate any complicated or time-consuming (>50ms) data fetching or calculation.
+	For example, if multiple tests need to straighten out the limbs or fetch the editable meshes, we should create that information only once here.
+	On the otherhand, if a test needs to know an LC's ImportOrigin or the PBR's metalness map, it can just directly get it from the root instance.
+	If multiple tests want to do a simple data re-org (eg getAllInstancesIsA), they can just use a util instead of cluttering this data list. 
+	--]]
+
+	-- ==== Guaranteed data ====
+	jobId = "jobId",
+	entrypointInput = "entrypointInput",
+	rootInstance = "rootInstance",
+	uploadCategory = "uploadCategory",
+	uploadEnum = "uploadEnum",
+	consumerConfig = "consumerConfig",
+	aqsFetchMetrics = "aqsFetchMetrics",
+	r15LegacyDuplicateRoot = "r15LegacyDuplicateRoot",
+
+	-- ==== Data available upon request by any test ====
+	aqsSummaryData = "aqsSummaryData",
+	renderMeshesData = "renderMeshesData",
+	innerCagesData = "innerCagesData",
+	outerCagesData = "outerCagesData",
+	meshTextures = "meshTextures",
+	curveAnimations = "curveAnimations",
+	curveAnimComputedFrames = "curveAnimComputedFrames",
+	contentIds = "contentIds",
+	hsrAssets = "hsrAssets",
+	curveAnimBoneData = "curveAnimBoneData",
+}
+finalizeEnumTable("SharedDataMember")
+
+ValidationEnums.ValidationConfig = {
+	-- Configs for enabling or disabling the test
+	categories = "categories", -- List of UploadCategory to run the test against. If missing, the test does NOT run.
+	fflag = "fflag", -- Function that returns true/false. If provided and the function returns false, the test does not run.
+	shadowFlag = "shadowFlag", -- If provided and the function returns true, then even if the test is not enabled, we will include it as a warning.
+
+	-- Configs for setting test requirements, where an enabled test may be skipped
+	prereqTests = "prereqTests", -- List of Tests that must pass before running this test. If they do not pass, we get status CANNOT_START.
+	requiredData = "requiredData", -- List of SharedData enums fetched before running the test. If the data doesn't exist, this is an ERROR.
+	conditionalData = "conditionalData", -- List of SharedData enums fetched before running the test. If the data doesn't exist, the test will PASS.
+
+	-- AQS-only configs
+	knownAqsUserErrors = "knownAqsUserErrors", -- Mapping of AQS error enum to Validation failure key that has no params. If provided, the error results in FAIL. Otherwise ERROR.
+
+	-- Extra configs you should include
+	expectedFailures = "expectedFailures", -- List of System tests that we expect to fail this specific check. For bundles, you must specify Name.AssetType or Name.FullBody
+	run = "run", -- The main validation function
+}
+finalizeEnumTable("ValidationConfig")
+
+-- Camel-case sentinels for sharedData.aqsFetchMetrics.fetchStatus. NA means the upload had no AQS
+-- tests in scope; InProgress is a transient state while fetchQualityResults is running.
+ValidationEnums.AssetQualityFetchStatus = {
+	assetQualityFetchNA = "assetQualityFetchNA",
+	assetQualityFetchInProgress = "assetQualityFetchInProgress",
+	assetQualityFetchSuccess = "assetQualityFetchSuccess",
+	assetQualityFetchFailure = "assetQualityFetchFailure",
+}
+finalizeEnumTable("AssetQualityFetchStatus")
+
+-- Resolved environment that env-aware validation modules switch on.
+ValidationEnums.ConsumerEnv = {
+	Studio = "Studio",
+	Backend = "Backend",
+	IEC = "IEC",
+}
+finalizeEnumTable("ConsumerEnv")
+
+---- Upper case enums (constants) ----
+ValidationEnums.Status = {
+	-- When a test is complete, it can be in any one of these states
+	CANNOT_START = "CANNOT_START",
+	TIMEOUT = "TIMEOUT",
+	ERROR = "ERROR",
+	FAIL = "FAIL",
+	PASS = "PASS",
+	IN_PROGRESS = "IN_PROGRESS",
+}
+finalizeEnumTable("Status")
+
+ValidationEnums.AssetQualityCheck = {
+	Measure_Dynamic_Head = "Measure_Dynamic_Head",
+	Measure_Cage_Distance_Head = "Measure_Cage_Distance_Head",
+	Measure_Cage_Mesh_Distance = "Measure_Cage_Mesh_Distance",
+	Measure_Cage_Mesh_Distance_Avatar = "Measure_Cage_Mesh_Distance_Avatar",
+	Measure_Cage_UV = "Measure_Cage_UV",
+	Measure_Cage_UV_Avatar = "Measure_Cage_UV_Avatar",
+	Measure_Cage_Relevancy = "Measure_Cage_Relevancy",
+	Measure_Mesh_Outside_OuterCage = "Measure_Mesh_Outside_OuterCage",
+	Measure_Degen_Triangles = "Measure_Degen_Triangles",
+	Measure_Mesh_Manifold = "Measure_Mesh_Manifold",
+	Measure_Mesh_Watertight = "Measure_Mesh_Watertight",
+	Measure_Triangle_Intersection = "Measure_Triangle_Intersection",
+	Measure_UV_Bound = "Measure_UV_Bound",
+	Measure_Vertex_Similarity = "Measure_Vertex_Similarity",
+	Measure_Joint_Number = "Measure_Joint_Number",
+	Measure_Texture_Complexity = "Measure_Texture_Complexity",
+	Measure_Texture_Resolution = "Measure_Texture_Resolution",
+	Measure_Mesh_Island_Volume = "Measure_Mesh_Island_Volume",
+	Measure_Mesh_Island_ML = "Measure_Mesh_Island_ML",
+	Measure_Animation_Duration = "Measure_Animation_Duration",
+}
+finalizeEnumTable("AssetQualityCheck")
+
+finalizeEnumTable("ValidationModule")
+
+ValidationEnums.UploadCategory = {
+	-- Every upload will be strictly ONE group.
+	-- Tests can be configured to be run for multiple groups
+	TORSO_AND_LIMBS = "TORSO_AND_LIMBS",
+	DYNAMIC_HEAD = "DYNAMIC_HEAD",
+	LAYERED_CLOTHING = "LAYERED_CLOTHING",
+	RIGID_ACCESSORY = "RIGID_ACCESSORY",
+	EMOTE_ANIMATION = "EMOTE_ANIMATION",
+	MAKEUP = "MAKEUP",
+	FULL_BODY = "FULL_BODY",
+	BOTH_SHOES = "BOTH_SHOES",
+	ANIMATION_PACK = "ANIMATION_PACK",
+	ANIMATION = "ANIMATION",
+}
+finalizeEnumTable("UploadCategory")
+
+return ValidationEnums

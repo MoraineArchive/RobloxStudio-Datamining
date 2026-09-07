@@ -1,0 +1,65 @@
+[
+  {
+    "class": "Folder",
+    "name": "Bin",
+    "path": "SimulationStep/Bin",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "SimulationStep",
+    "path": "SimulationStep",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "defineLuaFlags",
+    "path": "SimulationStep/Bin/defineLuaFlags",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "39",
+      "SourceBytecodeSha256": "7ac73047f58f68065907a5688cf8ec8d594b5e6d53742158e5fa7db74e8c234b",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "PluginCapabilities",
+    "name": "PluginCapabilities",
+    "path": "SimulationStep/Bin/PluginCapabilities",
+    "properties": {
+      "AttributesSerialize": "",
+      "Manifest": "{\"Metadata\":{\"TargetDataModels\": [\"Edit\", \"Server\", \"Client\"]},\"Permissions\":{}}",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Script",
+    "name": "loader",
+    "path": "SimulationStep/Bin/loader",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "2830",
+      "SourceBytecodeSha256": "4c43b2eddf313e9b917381fdc8cd5a3c7e540a8e6abb065221626cf2f58a1ca3",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  }
+]
