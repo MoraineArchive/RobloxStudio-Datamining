@@ -1,65 +1,32 @@
+[![Moraine Roblox Datamining](https://github.com/ImElio/Moraine-asset/blob/main/roblox/banner_roblox.png?raw=true)](https://github.com/ImElio/Moraine-asset/blob/main/roblox/banner_roblox.png)
+
 # Roblox Studio Datamining
 
-Long-term public archive of independently observed Windows Studio builds, API metadata, readable public source, native metadata, LIVE settings and public web assets. The extractor never launches Roblox.
+Automated Roblox datamining archive maintained by Moraine.
 
-## Latest
+This repository contains independently observed Windows Studio data. The extraction and publication infrastructure is maintained separately from this data archive.
 
-See [LATEST.md](LATEST.md)
+## Archive layout
 
-## Current state
+- [`2026/`](2026/) contains chronological event records under `YYYY/MM/DD/HH-MM-SSZ_event/`.
+- [`current/`](current/) contains the latest canonical state for every observed surface.
+- [`LATEST.md`](LATEST.md) points to the most recent observed event.
+- [`events.jsonl`](events.jsonl) is the append-only machine-readable event index.
+- [`docs/`](docs/) documents provenance, event semantics, and interpretation rules.
+- Git history preserves earlier canonical contents and source-level changes.
 
-Browse [current/](current/)
+## Observed surfaces
 
-## Historical datamining
+Studio observations include build and API metadata, plugins, Lua packages, native static metadata, FastVariables, LIVE settings, web assets, and provenance records.
 
-Browse by year:
+Readable official Lua and Luau source is retained with upstream formatting, names, identifiers, and developer comments. Compiled source fields remain identified separately and are not presented as original readable source.
 
-- [2026](2026/)
+## Interpretation
 
-Later years (`2027/`, `2028/`, ...) will appear directly at the repository root the same way, alongside `2026/`, as they happen — never nested under an `archive/` wrapper.
+The summary convention is `+` added, `~` changed, and `-` removed. The presence of an identifier, flag, endpoint, source module, configuration value, or other artifact does not confirm that a feature is enabled, publicly available, or planned for release.
 
-### What each top-level thing is
+Read [the methodology](docs/METHODOLOGY.md) for provenance and event details, and [SECURITY.md](SECURITY.md) before reporting sensitive material.
 
-- **`2026/`** (and later years) — historical observed events by month/day/time: `YYYY/MM/DD/HH-MM-SSZ_<event>/`. `2026/09/07/BASELINE/` is the initial repository baseline, not a Roblox update.
-- **`current/`** — complete current extracted state. Modified in place on every real upstream change.
-- **`LATEST.md`** — the most recent event, or the baseline before any post-publication event exists.
-- **`dataminer/`** — implementation of the automated datamining engine (`src/`, `tests/`, `tools/`).
-- **Git history** — exact previous contents and line-level source diffs. `2026/.../<event>/` never stores a full copy of a canonical tree; Git already preserves that.
+## Commit comments
 
-## Readable Studio source
-
-Public Studio artifacts currently expose readable Lua/Luau source in areas including Plugins and LuaPackages. Original readable text is tracked under [current/Plugins](current/Plugins/) and [current/LuaPackages](current/LuaPackages/) with upstream formatting, names and developer comments preserved exactly as retrieved — except BOM removal and LF normalization. Nothing here renames local variables, strips or regenerates comments, prettifies source unnecessarily, or rewrites identifiers. Compiled Source fields are identified separately and are never presented as original source.
-
-## Surfaces
-
-- [Build](current/Build/) — version, packages and file manifest.
-- [API](current/API/) — regular/full API dumps and semantic API changes.
-- [Plugins](current/Plugins/) and [LuaPackages](current/LuaPackages/) — readable source, model hierarchy, localization and explicit compiled-script metadata.
-- [Native](current/Native/) — static analysis of `RobloxStudioBeta.exe`, retained as text; the executable stays in the ignored cache.
-- [FastVariables](current/FastVariables/) — C++ literal identifiers and Lua observations kept separate from LIVE values.
-- [LiveSettings](current/LiveSettings/) — current `PCStudioApp` values, checked independently of the build GUID.
-- [Web](current/Web/) — public JavaScript discovered from configured Studio pages.
-- [Provenance](current/Provenance/) — surface identities, source URLs and SHA-256 hashes.
-
-## Run locally
-
-Node.js 24 or newer is required. The implementation lives in [`dataminer/`](dataminer/); commands are documented from the repository root:
-
-```powershell
-npm ci --prefix dataminer
-npm --prefix dataminer run typecheck
-npm --prefix dataminer test
-npm --prefix dataminer run check
-```
-
-(Equivalently, `cd dataminer` and drop `--prefix dataminer`/`npm --prefix dataminer`.) The generated data always lands at the repository root — `current/`, `2026/`, `LATEST.md`, `events.jsonl` — never inside `dataminer/`.
-
-Run `npm --prefix dataminer run check` again to verify a no-op. No observable change means no new year/month/day directory, no `LATEST.md` rewrite, and no commit. A run containing a new build and its related surfaces creates one build event. Independent changes later that day create additional events — a GitHub Actions workflow ([.github/workflows/datamine.yml](.github/workflows/datamine.yml)) runs this every 15 minutes and commits/pushes only when something real changed.
-
-The summary convention is fixed everywhere — `LATEST.md`, event `summary.md`/`diff.md`/`findings.md`, CLI output, commit bodies: `+` added, `~` changed, `-` removed. Machine-readable JSON uses `added`, `changed` and `removed` fields.
-
-The presence of an identifier, flag, source module, API, string, endpoint, configuration value or other artifact does not confirm that a feature is enabled, publicly available, or planned for release.
-
-## Security and contributions
-
-Read [SECURITY.md](SECURITY.md) before reporting sensitive material. Contributions should preserve provenance, deterministic output and the distinction between observed artifacts and confirmed features.
+The Commit comments workflow is triggered by observed datamining commits and posts a compact summary directly on the corresponding commit. It does not perform datamining, generate events, modify datasets, or run for no-op checks; every displayed value comes from the event that was already committed.

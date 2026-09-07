@@ -1,13 +1,26 @@
-# Latest Datamining
+[![Moraine Roblox Datamining](https://github.com/ImElio/Moraine-asset/blob/main/roblox/banner_roblox.png?raw=true)](https://github.com/ImElio/Moraine-asset/blob/main/roblox/banner_roblox.png)
 
-No post-publication Roblox change has been observed yet.
+# Latest Roblox Studio Datamining
 
-Initial baseline:
+**Observed:** 07/09/2026, 21:25:27 CEST (19:25:27 UTC)
 
-2026/09/07/BASELINE/
+**Event:** [`2026/09/07/19-25-27Z_live-settings/`](2026/09/07/19-25-27Z_live-settings/)
 
-See [summary.md](2026/09/07/BASELINE/summary.md), [event.json](2026/09/07/BASELINE/event.json), and [provenance.json](2026/09/07/BASELINE/provenance.json).
+**Build:** [`0.737.0.7371584`](current/Build/version.json)
 
-Once a real upstream change is observed, this file is automatically rewritten
-to describe that event, using `+` for added, `~` for changed, and `-` for
-removed.
+**GUID:** [`version-9fe94fb0e9d84c25`](current/Provenance/Build.json)
+
+## Summary
+
+```text
+LiveSettings files +0 ~1 -0
+LiveSettings       +1 ~4 -0
+```
+
+File counts describe canonical files. Nested semantic rows describe values or API/source records inside those files.
+
+## Findings
+
+No strong cross-surface correlations in this event.
+
+See the [summary](2026/09/07/19-25-27Z_live-settings/summary.md), [diff](2026/09/07/19-25-27Z_live-settings/diff.md), [findings](2026/09/07/19-25-27Z_live-settings/findings.md), and [changes.json](2026/09/07/19-25-27Z_live-settings/changes.json).
