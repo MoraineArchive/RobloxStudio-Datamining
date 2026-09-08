@@ -3,6 +3,6 @@
 ]]
 local PackageIndex = script.Parent.Parent.Parent._Index
 
-local Package = require(PackageIndex["ChalkLua"]["ChalkLua"])
+local Package = require(PackageIndex["ChalkLua-31ab8d40-0.2.2"]["ChalkLua"])
 
 return Package

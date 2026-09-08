@@ -3,11 +3,14 @@ local Foundation = script:FindFirstAncestor("Foundation")
 local ColorMode = require(Foundation.Enums.ColorMode)
 local Device = require(Foundation.Enums.Device)
 local Flags = require(Foundation.Utility.Flags)
+local FontName = require(Foundation.Enums.FontName)
 local ThemeName = require(Foundation.Enums.ThemeName)
 
 type ColorMode = ColorMode.ColorMode
 type Device = Device.Device
 type ThemeName = ThemeName.ThemeName
+
+local TypographyVariants: { [ThemeName]: string } = require(Foundation.Generated.StyleRules.TypographyVariants)
 
 local requirePaths: { [typeof("Common") | ColorMode | Device]: () -> any } = {
 	Common = function()
@@ -37,6 +40,14 @@ local colorRulePaths: { [ThemeName]: { [ColorMode]: () -> any } } = {
 		end,
 		Light = function()
 			return require(Foundation.Generated.StyleRules.CircuitRush.LightAttribute)
+		end,
+	},
+	[ThemeName.Classic] = {
+		Dark = function()
+			return require(Foundation.Generated.StyleRules.Classic.DarkAttribute)
+		end,
+		Light = function()
+			return require(Foundation.Generated.StyleRules.Classic.LightAttribute)
 		end,
 	},
 	[ThemeName.CosmicDust] = {
@@ -85,6 +96,14 @@ local colorRulePaths: { [ThemeName]: { [ColorMode]: () -> any } } = {
 		end,
 		Light = function()
 			return require(Foundation.Generated.StyleRules.Kids.LightAttribute)
+		end,
+	},
+	[ThemeName.KidsClassic] = {
+		Dark = function()
+			return require(Foundation.Generated.StyleRules.KidsClassic.DarkAttribute)
+		end,
+		Light = function()
+			return require(Foundation.Generated.StyleRules.KidsClassic.LightAttribute)
 		end,
 	},
 	[ThemeName.KineticEnergy] = {
@@ -161,6 +180,27 @@ local colorRulePaths: { [ThemeName]: { [ColorMode]: () -> any } } = {
 	},
 }
 
+local DEFAULT_TYPOGRAPHY_VARIANT = FontName.BuilderSans
+
+local typographyVariantPaths: { [string]: { [Device]: () -> any } } = {
+	[FontName.BuilderSans] = {
+		Desktop = function()
+			return require(Foundation.Generated.StyleRules.Typography.BuilderSans.DesktopAttribute)
+		end,
+		Console = function()
+			return require(Foundation.Generated.StyleRules.Typography.BuilderSans.ConsoleAttribute)
+		end,
+	},
+	[FontName.Cartoon] = {
+		Desktop = function()
+			return require(Foundation.Generated.StyleRules.Typography.Cartoon.DesktopAttribute)
+		end,
+		Console = function()
+			return require(Foundation.Generated.StyleRules.Typography.Cartoon.ConsoleAttribute)
+		end,
+	},
+}
+
 local function getGeneratedRules(themeNameInput: ThemeName?, colorMode: ColorMode, device: Device): any
 	local themeName: ThemeName = themeNameInput or ThemeName.Default
 	local colorModeRules, sizeRules, commonRules
@@ -195,6 +235,24 @@ local function getGeneratedRules(themeNameInput: ThemeName?, colorMode: ColorMod
 
 	for key, value in colorModeRules do
 		combinedRules[key] = value
+	end
+
+	if Flags.FoundationThemedTypography then
+		local variant = TypographyVariants[themeName] or DEFAULT_TYPOGRAPHY_VARIANT
+		local variantPaths = typographyVariantPaths[variant] or typographyVariantPaths[DEFAULT_TYPOGRAPHY_VARIANT]
+		local typographyDevice: Device = if device == Device.Console and not Flags.FoundationDisableTokenScaling
+			then Device.Console
+			else Device.Desktop
+		local getTypographyRules = variantPaths[typographyDevice]
+
+		if getTypographyRules then
+			local typographyRules = getTypographyRules()
+			if typographyRules then
+				for key, value in typographyRules do
+					combinedRules[key] = value
+				end
+			end
+		end
 	end
 
 	return combinedRules

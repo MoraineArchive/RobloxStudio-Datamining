@@ -34,7 +34,7 @@ local FileUtils = require(script.Parent.FileUtils)
 local PropParser = require(script.Parent.PropParser)
 
 local Packages = script.Parent.Parent
-local Cryo = require(Packages.Cryo)
+local Dash = require(Packages.Dash)
 
 local DocParser = {}
 DocParser.__index = DocParser
@@ -170,6 +170,22 @@ function DocParser:parse()
 
 	local props, inherits = string.match(source, propsPattern)
 
+	-- If props is nil, check if there's a Types file in the same directory with the type definition
+	if not props and propsType and script.Parent then
+		local typesModule = script.Parent:FindFirstChild("Types")
+		if typesModule and typesModule:IsA("ModuleScript") then
+			local typesSource = typesModule.Source
+			-- Reuse the same pattern to look for the type in the Types file
+			local typesPropsPattern = "export type " .. propsType .. tableVarContentsPattern
+
+			if string.find(typesSource, typesPropsPattern .. inheritsPattern) then
+				typesPropsPattern ..= inheritsPattern
+			end
+
+			props, inherits = string.match(typesSource, typesPropsPattern)
+		end
+	end
+
 	local defaultProps = string.match(source, defaultPropsPattern)
 
 	if not result.Typechecking or not props then
@@ -187,7 +203,7 @@ function DocParser:parse()
 		components[component] = true
 	end
 
-	result.Components = Cryo.Dictionary.keys(components)
+	result.Components = Dash.keys(components)
 
 	return result
 end

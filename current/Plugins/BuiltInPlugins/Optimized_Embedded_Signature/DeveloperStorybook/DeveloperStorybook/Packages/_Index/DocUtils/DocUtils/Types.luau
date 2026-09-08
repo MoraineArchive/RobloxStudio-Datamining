@@ -6,8 +6,17 @@ export type Prop = {
 	Comment: string?,
 }
 
-local PropTypeQualifiers = { Array = "Array", Interface = "Interface" }
-export type PropTypeQualifier = typeof(PropTypeQualifiers.Array) | typeof(PropTypeQualifiers.Interface)
+local PropTypeQualifiers = {
+	Array = "Array",
+	Interface = "Interface",
+	Union = "Union",
+	Intersection = "Intersection",
+}
+export type PropTypeQualifier =
+	typeof(PropTypeQualifiers.Array)
+	| typeof(PropTypeQualifiers.Interface)
+	| typeof(PropTypeQualifiers.Union)
+	| typeof(PropTypeQualifiers.Intersection)
 
 export type PropType = { Qualifier: PropTypeQualifier, Props: { Prop } }
 

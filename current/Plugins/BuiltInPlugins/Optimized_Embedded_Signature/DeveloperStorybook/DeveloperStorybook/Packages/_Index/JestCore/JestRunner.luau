@@ -7,7 +7,6 @@ local Package = require(PackageIndex["JestRunner"]["JestRunner"])
 
 export type Test = Package.Test
 export type TestEvents = Package.TestEvents
-export type TestFileEvent = Package.TestFileEvent
 export type OnTestFailure = Package.OnTestFailure
 export type OnTestStart = Package.OnTestStart
 export type OnTestSuccess = Package.OnTestSuccess

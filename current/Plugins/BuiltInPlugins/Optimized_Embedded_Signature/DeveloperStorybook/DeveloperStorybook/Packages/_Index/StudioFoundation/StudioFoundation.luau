@@ -37,7 +37,6 @@ return {
 		StudioUri = require(script.Util.StudioUri),
 		createFoundationDesignBinding = require(script.Util.createFoundationDesignBinding),
 		safeGetFastFlag = require(script.Util.safeGetFastFlag),
-		isStyleSheetPolyfillOn = require(script.Util.isStyleSheetPolyfillOn),
 		uriToTestId = require(script.Util.uriToTestId),
 	},
 }

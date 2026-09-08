@@ -11,7 +11,6 @@ export type AssertionResult = Package.AssertionResult
 export type FailedAssertion = Package.FailedAssertion
 export type FormattedTestResults = Package.FormattedTestResults
 export type Milliseconds = Package.Milliseconds
-export type RuntimeTransformResult = Package.RuntimeTransformResult
 export type SerializableError = Package.SerializableError
 export type Snapshot = Package.Snapshot
 export type SnapshotSummary = Package.SnapshotSummary
@@ -25,7 +24,6 @@ export type TestFileEvent = Package.TestFileEvent
 export type TestResult = Package.TestResult
 export type TestResultsProcessor = Package.TestResultsProcessor
 export type TestCaseResult = Package.TestCaseResult
-export type V8CoverageResult = Package.V8CoverageResult
 
 
 return Package
