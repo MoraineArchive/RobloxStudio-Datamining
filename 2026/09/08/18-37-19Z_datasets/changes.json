@@ -1,0 +1,113 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-9fe94fb0e9d84c25",
+    "manifestFiles": 18497,
+    "packages": 34,
+    "version": "0.737.0.7371584"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "834e2f0a69a0141b65c708e37d9dea2f1be041c2eca1f74a01d67b06e6315939",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "e4dd0fbb37831a67b76dc5b0136424277b803194bf98eae611414f5139cb20e8",
+      "semantic": {
+        "added": [
+          "DFFlagEmoteSkinningDisableInEngine_Staged",
+          "DFFlagISRTimestampHeartbeat_Staged",
+          "DFFlagSimFixPrimalImprovedSleepCheck_Staged",
+          "DFIntEmoteSkinningDisableInEngineTranslationThresholdMillistuds",
+          "FFlagAbuseReportListNodeFullBleed_Staged",
+          "FFlagActionMgrCheckForLegacyAlias",
+          "FFlagAsyncUpdatePlaybackSettingsIOS",
+          "FFlagChromeNineDotActivityIndicator_Staged",
+          "FFlagDispatchCrashCounterTelemetryOffMainThreadIOS_Staged",
+          "FFlagEnableCustomTextInMenuTrailingBadge_Staged",
+          "FFlagEnableDisplayWakeLock2_Staged",
+          "FFlagEnableInExperienceOffersPurchaseFlow2_Staged",
+          "FFlagFmodDspConstructCallback",
+          "FFlagFoundationCoachmarkPressedOutside_Staged",
+          "FFlagGuardServiceCreationOfChildren",
+          "FFlagMenuOfferTooltip_Staged",
+          "FFlagResumeGCAfterTimeout",
+          "FFlagScriptCloneWatcherTolerateMissingDmLock",
+          "FFlagShowOfferBadge_Staged",
+          "FFlagTranscoderVersionedId2",
+          "FFlagUIBloxDeprecateComponentGlobalSemanticTokenUse",
+          "FFlagUpdateDeprecatedRequireUIThread",
+          "FIntMenuOfferTooltipShowDelayMs_Staged",
+          "FStringLowMemoryShowRewardedAdLayerName_Staged"
+        ],
+        "changed": [
+          {
+            "after": "aeee041c607e05fbcf17da416a12e84773ca541c",
+            "before": "5e7657f7b1356a2a401879495a2666075d98a3a3",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-08T18:35:48.308Z",
+            "before": "2026-09-08T18:07:49.367Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "aeee041c607e05fbcf17da416a12e84773ca541c",
+            "before": "5e7657f7b1356a2a401879495a2666075d98a3a3",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-08T18:35:48.308Z",
+            "before": "2026-09-08T18:07:49.367Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagActionMgrCheckForLegacyAlias_Staged",
+          "FFlagAsyncUpdatePlaybackSettingsIOS_Staged",
+          "FFlagFmodDspConstructCallback_Staged",
+          "FFlagGuardServiceCreationOfChildren_Staged",
+          "FFlagResumeGCAfterTimeout_Staged",
+          "FFlagScriptCloneWatcherTolerateMissingDmLock_Staged",
+          "FFlagTranscoderVersionedId2_Staged",
+          "FFlagUIBloxDeprecateComponentGlobalSemanticTokenUse_Staged",
+          "FFlagUpdateDeprecatedRequireUIThread_Staged"
+        ],
+        "unchanged": 24025
+      }
+    },
+    "Web": {
+      "current": "5459f3bef7e6979a664dffdc2f2485b6bcb97c5c49a7d6a0ecd51d5b9bfe6585",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-013.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-047.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-053.js",
+          "assets.create.roblox.com/page-0/script-066.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 90
+      },
+      "previous": "2583f5b61799d550d9c909e64fe9116553a8fe6a471e2ad1f28abcd8adb2ae4e",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
