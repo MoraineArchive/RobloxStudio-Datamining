@@ -1,0 +1,104 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-9fe94fb0e9d84c25",
+    "manifestFiles": 18497,
+    "packages": 34,
+    "version": "0.737.0.7371584"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "bab0f3e68fcc0c2af416c2ff6148c146614392714380eb97c60c764a71f01ba2",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "86521de12e579945940b8719708bbf0699c50039ef5d60d3326c905bd34baa82",
+      "semantic": {
+        "added": [
+          "DFFlagACSDeserializeWithUnpublished",
+          "FFlagAXItemDetailsPartialAssetInfoFix",
+          "FFlagAXOpenAppItemDetailsMountAnimation",
+          "FFlagAXSubscriptionRefetchEvictStores",
+          "FFlagEnableBandwidthSendTrackingForJoinBlob",
+          "FFlagEnforceRobloxShopForAllSurfaces_Staged",
+          "FFlagFriendsPageUserListEnabled_v2",
+          "FFlagIAMUseIconFix_Staged",
+          "FFlagIAMViewportPositionType_Staged",
+          "FFlagLoadCustomFontsOffMainThreadIOS",
+          "FFlagOfferNotifyOnGlobalIcon",
+          "FFlagPropertySetHardening",
+          "FFlagSceneManagerRemoveActive_Staged",
+          "FFlagSlimTintContextFilter_Staged",
+          "FFlagVirtualizedFeedFooterWrapperProp"
+        ],
+        "changed": [
+          {
+            "after": "d8a92b44f63c245ff4beb23123df40764f4e461d",
+            "before": "8f4178cb90a8ced27a40e97ee3f6ce915d778bfc",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-08T21:48:36.173Z",
+            "before": "2026-09-08T21:29:14.742Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "d8a92b44f63c245ff4beb23123df40764f4e461d",
+            "before": "8f4178cb90a8ced27a40e97ee3f6ce915d778bfc",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-08T21:48:36.173Z",
+            "before": "2026-09-08T21:29:14.742Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagACSDeserializeWithUnpublished_Staged",
+          "FFlagAXItemDetailsPartialAssetInfoFix_Staged",
+          "FFlagAXOpenAppItemDetailsMountAnimation_Staged",
+          "FFlagAXSubscriptionRefetchEvictStores_Staged",
+          "FFlagEnableBandwidthSendTrackingForJoinBlob_Staged",
+          "FFlagFriendsPageUserListEnabled_v2_Staged",
+          "FFlagLoadCustomFontsOffMainThreadIOS_Staged",
+          "FFlagOfferNotifyOnGlobalIcon_Staged",
+          "FFlagPropertySetHardening_Staged",
+          "FFlagVirtualizedFeedFooterWrapperProp_Staged"
+        ],
+        "unchanged": 24082
+      }
+    },
+    "Web": {
+      "current": "eef20c9ad489f4cec59d2da2d6a59690828e5fd20dc4ffebd3847e62de0220e0",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-012.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-047.js",
+          "assets.create.roblox.com/page-0/script-054.js",
+          "assets.create.roblox.com/page-0/script-063.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 93
+      },
+      "previous": "d7af02be66db58ed273f6d155370e6caf8eca3e36c1e763c26fcdd3205f5ed33",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
