@@ -8,6 +8,7 @@ export type Typechecking = Types.Typechecking
 local DocUtils = {
 	DocParser = require(script.DocParser),
 	PropParser = require(script.PropParser),
+	FunctionParser = require(script.FunctionParser),
 	Enums = {
 		PropTypeQualifiers = Types.PropTypeQualifiers,
 		Typecheckers = Types.Typecheckers,

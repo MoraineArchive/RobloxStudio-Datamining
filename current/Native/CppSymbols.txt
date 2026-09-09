@@ -1,6 +1,3 @@
-?$AsyncComponent@$03$0A@$0A@$03@Studio@RBX@@QEAA?AVscoped_connection@signals@rbx@@AEAV?$signal@$$A6AXVToolState@Studio@RBX@@@Z@7@V	public: class rbx::signals::scoped_connection __cdecl RBX::Studio::$03::$0A::$03$0A::$AsyncComponent(class signals::signal<void __cdecl(class RBX::Studio::ToolState)> & __ptr64,class ?? , ?? ) __ptr64
-?$AsyncComponent@$04$0A@$0A@$04@Studio@RBX@@QEAA?AVscoped_connection@signals@rbx@@AEAV?$remote_signal@$$A6AXV?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@@Z@7@V	public: class rbx::signals::scoped_connection __cdecl RBX::Studio::$04::$0A::$04$0A::$AsyncComponent(class signals::remote_signal<void __cdecl(class std::shared_ptr<class std::vector<class RBX::Reflection::Variant,class std::allocator<class RBX::Reflection::Variant> > const >)> & __ptr64,class ?? , ?? ) __ptr64
-?$AsyncComponent@$04$0A@$0A@$04@Studio@RBX@@QEAA?AVscoped_connection@signals@rbx@@AEAV?$signal@$$A6AXXZ@7@V	public: class rbx::signals::scoped_connection __cdecl RBX::Studio::$04::$0A::$04$0A::$AsyncComponent(class signals::signal<void __cdecl(void)> & __ptr64,class ?? , ?? ) __ptr64
 ?$_Ph@$00@std@@V	public: virtual ?? ?? std::$00::$_Ph( ?? ) ?? 
 ?$list1@V?$value@PEAU?$future_async_continuation_shared_state@V?$shared_future@UImportedCageInfo@AE_FBXRigImporter@@@boost@@UImportedCageInfo@AE_FBXRigImporter@@V	list1<class ?? :: ?? >
 ?$list1@V?$value@PEAU?$future_async_continuation_shared_state@V?$shared_future@UImportedPartInfo@AE_FBXRigImporter@@@boost@@UImportedPartInfo@AE_FBXRigImporter@@V	list1<class ?? :: ?? >
@@ -349,6 +346,7 @@
 ??0QTableWidgetItem@@QEAA@H@Z	public: __cdecl QTableWidgetItem::QTableWidgetItem(int) __ptr64
 ??0QTemporaryDir@@QEAA@AEBVQString@@@Z	public: __cdecl QTemporaryDir::QTemporaryDir(class QString const & __ptr64) __ptr64
 ??0QTemporaryFile@@QEAA@XZ	public: __cdecl QTemporaryFile::QTemporaryFile(void) __ptr64
+??0QTextBlock@@QEAA@AEBV0@@Z	public: __cdecl QTextBlock::QTextBlock(class QTextBlock const & __ptr64) __ptr64
 ??0QTextBrowser@@QEAA@PEAVQWidget@@@Z	public: __cdecl QTextBrowser::QTextBrowser(class QWidget * __ptr64) __ptr64
 ??0QTextCharFormat@@QEAA@$$QEAV0@@Z	public: __cdecl QTextCharFormat::QTextCharFormat(class QTextCharFormat && __ptr64) __ptr64
 ??0QTextCharFormat@@QEAA@AEBV0@@Z	public: __cdecl QTextCharFormat::QTextCharFormat(class QTextCharFormat const & __ptr64) __ptr64
@@ -686,6 +684,7 @@
 ??4QRegularExpression@@QEAAAEAV0@AEBV0@@Z	public: class QRegularExpression & __ptr64 __cdecl QRegularExpression::operator=(class QRegularExpression const & __ptr64) __ptr64
 ??4QString@@QEAAAEAV0@$$QEAV0@@Z	public: class QString & __ptr64 __cdecl QString::operator=(class QString && __ptr64) __ptr64
 ??4QString@@QEAAAEAV0@AEBV0@@Z	public: class QString & __ptr64 __cdecl QString::operator=(class QString const & __ptr64) __ptr64
+??4QTextBlock@@QEAAAEAV0@AEBV0@@Z	public: class QTextBlock & __ptr64 __cdecl QTextBlock::operator=(class QTextBlock const & __ptr64) __ptr64
 ??4QTextCursor@@QEAAAEAV0@$$QEAV0@@Z	public: class QTextCursor & __ptr64 __cdecl QTextCursor::operator=(class QTextCursor && __ptr64) __ptr64
 ??4QTextCursor@@QEAAAEAV0@AEBV0@@Z	public: class QTextCursor & __ptr64 __cdecl QTextCursor::operator=(class QTextCursor const & __ptr64) __ptr64
 ??4QTextFormat@@QEAAAEAV0@AEBV0@@Z	public: class QTextFormat & __ptr64 __cdecl QTextFormat::operator=(class QTextFormat const & __ptr64) __ptr64
@@ -746,6 +745,7 @@
 ??8QFont@@QEBA_NAEBV0@@Z	public: bool __cdecl QFont::operator==(class QFont const & __ptr64)const __ptr64
 ??8QKeySequence@@QEBA_NAEBV0@@Z	public: bool __cdecl QKeySequence::operator==(class QKeySequence const & __ptr64)const __ptr64
 ??8QModelIndex@@QEBA_NAEBV0@@Z	public: bool __cdecl QModelIndex::operator==(class QModelIndex const & __ptr64)const __ptr64
+??8QTextBlock@@QEBA_NAEBV0@@Z	public: bool __cdecl QTextBlock::operator==(class QTextBlock const & __ptr64)const __ptr64
 ??9FbxAxisSystem@fbxsdk@@QEBA_NAEBV01@@Z	public: bool __cdecl fbxsdk::FbxAxisSystem::operator!=(class fbxsdk::FbxAxisSystem const & __ptr64)const __ptr64
 ??9QColor@@QEBA_NAEBV0@@Z	public: bool __cdecl QColor::operator!=(class QColor const & __ptr64)const __ptr64
 ??9QFont@@QEBA_NAEBV0@@Z	public: bool __cdecl QFont::operator!=(class QFont const & __ptr64)const __ptr64
@@ -2322,7 +2322,6 @@
 ?isCriticalEnabled@QLoggingCategory@@QEBA_NXZ	public: bool __cdecl QLoggingCategory::isCriticalEnabled(void)const __ptr64
 ?isDebugEnabled@QLoggingCategory@@QEBA_NXZ	public: bool __cdecl QLoggingCategory::isDebugEnabled(void)const __ptr64
 ?isDefault@QPushButton@@QEBA_NXZ	public: bool __cdecl QPushButton::isDefault(void)const __ptr64
-?isDetached@QVariant@@QEBA_NXZ	public: bool __cdecl QVariant::isDetached(void)const __ptr64
 ?isDigit@QChar@@QEBA_NXZ	public: bool __cdecl QChar::isDigit(void)const __ptr64
 ?isDir@QFileInfo@@QEBA_NXZ	public: bool __cdecl QFileInfo::isDir(void)const __ptr64
 ?isDown@QAbstractButton@@QEBA_NXZ	public: bool __cdecl QAbstractButton::isDown(void)const __ptr64

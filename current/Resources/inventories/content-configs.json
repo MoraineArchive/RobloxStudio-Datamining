@@ -171,7 +171,7 @@
     "bytes": 252,
     "extension": "json",
     "path": "InExperiencePatchConfig/InExperiencePatchConfig.json",
-    "sha256": "f631c57115c58fa44d9b5f3cb4d2b96bdd6384dce7e4b97fdba01bbbd9e0f368"
+    "sha256": "cbaf7a1bf8c96bce22ef0ce0de55d73b522a30643c29e281648cfd8b5c26883b"
   },
   {
     "bytes": 179,
@@ -180,10 +180,10 @@
     "sha256": "91b9eb7420481c7aa584ad951929200865a6a221e27279ddc3b173ccc60938f0"
   },
   {
-    "bytes": 407749,
+    "bytes": 408211,
     "extension": "js",
     "path": "PerformanceConfigs/rofiler.js",
-    "sha256": "dacd2f27c8583a1605489be4daf9f0f4978138a4603bc7b16899e676fbff9bf7"
+    "sha256": "cf2a53c56fda087627a11da6c1dd364c9a57f54928e2feb7b9520f59432cfc71"
   },
   {
     "bytes": 369560,
@@ -213,6 +213,6 @@
     "bytes": 253,
     "extension": "json",
     "path": "UniversalAppPatchConfig/UniversalAppPatchConfig.json",
-    "sha256": "9e51afe1c667a7f417efc0d5ae94fe05de222822ee7d49bd48421cd91e710b27"
+    "sha256": "eab1432743d8f486e00cf0ddfee839a44ba06b8006ba137c9acfb1982da8c374"
   }
 ]

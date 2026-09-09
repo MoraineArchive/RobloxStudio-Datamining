@@ -12,6 +12,12 @@
     "sha256": "79d0eb94ac2fd7d3eadeb4cdf263640947b190270797bc632484fdccc26f95c3"
   },
   {
+    "bytes": 3919,
+    "extension": "rbxm",
+    "path": "abilities/AbilityManagerActor_justCoreAbilities.rbxm",
+    "sha256": "30cb14c9b10130839e3c6e2ac98c5bbc82f4c88fc67a8096af44c38ed417901f"
+  },
+  {
     "bytes": 3957,
     "extension": "rbxm",
     "path": "abilities/AbilityManagerActor_noReachAndHold.rbxm",
@@ -64,6 +70,12 @@
     "extension": "rbxm",
     "path": "characterR15DynamicHeadV2.rbxm",
     "sha256": "3a3ae38cd53b0f4004d7980245ca586c9ee7d420bd38705891f9fa97e2405df8"
+  },
+  {
+    "bytes": 8774,
+    "extension": "rbxm",
+    "path": "characterR6NoFace.rbxm",
+    "sha256": "c74b59373c4a19070e6ea89a1ac6d2e183d121b495da486a05ad97f2eefd0541"
   },
   {
     "bytes": 817,
@@ -358,12 +370,6 @@
     "extension": "lua",
     "path": "scripts/humanoidAnimateSAuth/humanoidAnimateSAuth_DEPRECATED_20260807.lua",
     "sha256": "c0d9229c78ad675dbbef061b869e90ef6a166dfbf47e7d71cde4bc01cfa58722"
-  },
-  {
-    "bytes": 47504,
-    "extension": "lua",
-    "path": "scripts/humanoidAnimateSAuth/humanoidAnimateSAuth_DEPRECATED_ChattedHook_20260721.lua",
-    "sha256": "53f1273996637da0db5c0d2e3e1e1b93ce11b467231f81ac02a7afdf0cf1fc04"
   },
   {
     "bytes": 48854,

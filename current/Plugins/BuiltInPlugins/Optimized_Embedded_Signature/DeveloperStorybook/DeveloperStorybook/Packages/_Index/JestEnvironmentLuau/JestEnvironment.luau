@@ -5,6 +5,7 @@ local PackageIndex = script.Parent.Parent.Parent._Index
 
 local Package = require(PackageIndex["JestEnvironment"]["JestEnvironment"])
 
+export type Context = Package.Context
 export type EnvironmentContext = Package.EnvironmentContext
 export type ModuleWrapper = Package.ModuleWrapper
 export type JestEnvironment<Timer = any> = Package.JestEnvironment<Timer > 

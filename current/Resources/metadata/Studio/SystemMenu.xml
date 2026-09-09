@@ -159,8 +159,8 @@
         <Action name="stepOverActionV2"/>
         <Separator/>
         <Action name="simulationToggleAccuratePlaySoloAction"/>
-        <Action fflag="StudioClientServerMDI2" name="toggleClientViewportAction"/>
-        <Action fflag="StudioClientServerMDI2" name="toggleServerViewportAction"/>
+        <Action fflag="StudioClientServerMDI3" name="toggleClientViewportAction"/>
+        <Action fflag="StudioClientServerMDI3" name="toggleServerViewportAction"/>
         <Action name="addClientsAction"/>
         <Separator/>
         <Action name="simulationPauseAllAction"/>

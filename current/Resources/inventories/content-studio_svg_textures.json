@@ -2916,400 +2916,400 @@
     "sha256": "60de34ba0ae94b0359770aed46d1db469613eb557cd873813d902fae55281d89"
   },
   {
-    "bytes": 480,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Accessory.png",
-    "sha256": "1dc44fa38e594fd202a0b7340fc029a391befe4fbb096feec6310e30bc38fad4"
-  },
-  {
-    "bytes": 875,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Accessory@2x.png",
-    "sha256": "8558640c200499b143b503ca50022d2711c5c2316ad3be6bb7d492d4b8260bad"
-  },
-  {
-    "bytes": 1295,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Accessory@3x.png",
-    "sha256": "d83386f371b822d5450a74a882c10cf66f8f31953f7ce0d1def0ad66da2c02ce"
-  },
-  {
-    "bytes": 346,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Avatar.png",
-    "sha256": "5092d93a5ded304ffacc16ce125b943adc6a830530ce7d8f00c994b6af1626af"
-  },
-  {
-    "bytes": 640,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Avatar@2x.png",
-    "sha256": "c5f1370d00611245fc3abdcf20e8114ff59386851a2eacae933a35ab31c84ccc"
-  },
-  {
-    "bytes": 915,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Avatar@3x.png",
-    "sha256": "71f028df68520a3263a3ecbcd2e123ebb6e82e28a82bcb097623fe6d0d1ff619"
-  },
-  {
-    "bytes": 526,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Hair.png",
-    "sha256": "39cae342ae3a16e66db9753cc772045aded92d51becb6981aa48441a46145707"
-  },
-  {
-    "bytes": 1005,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Hair@2x.png",
-    "sha256": "67528ca0a9a9d9efa5b40875eec0c413cfe9e00bf56209c5de7d28bfdc4df5f0"
-  },
-  {
-    "bytes": 1482,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Hair@3x.png",
-    "sha256": "c4a50b83a6f8aedba41cbf2be09d00239217c4869c4b0ea6db3f28719536500f"
-  },
-  {
-    "bytes": 346,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Humanoid.png",
-    "sha256": "5092d93a5ded304ffacc16ce125b943adc6a830530ce7d8f00c994b6af1626af"
-  },
-  {
-    "bytes": 640,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Humanoid@2x.png",
-    "sha256": "c5f1370d00611245fc3abdcf20e8114ff59386851a2eacae933a35ab31c84ccc"
-  },
-  {
-    "bytes": 915,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Humanoid@3x.png",
-    "sha256": "71f028df68520a3263a3ecbcd2e123ebb6e82e28a82bcb097623fe6d0d1ff619"
-  },
-  {
-    "bytes": 391,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Jacket.png",
-    "sha256": "2f9f3b5a1946cbf45086f2bc2a150327a4b55201a41b5d816ab2182facd8c3c0"
-  },
-  {
-    "bytes": 581,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Jacket@2x.png",
-    "sha256": "24bb182109d89e2863219d29694626a55fb5bec7ec60c68a21c0fe5f3185ebcd"
-  },
-  {
-    "bytes": 892,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Jacket@3x.png",
-    "sha256": "d0b2fcf74aa9c671a4f29cee9f61cc28e14478ed524735615f03b425bece870d"
-  },
-  {
-    "bytes": 621,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Makeup.png",
-    "sha256": "21d5a9a25e4ac8c06dd739c13358f6a74260cd88c33372413b4cbc9dc59be647"
-  },
-  {
-    "bytes": 1213,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Makeup@2x.png",
-    "sha256": "b8c120997683b082f682f7d94eda8b94ff9cccfabd04a69d38b2fdf099c26d8f"
-  },
-  {
-    "bytes": 1914,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Makeup@3x.png",
-    "sha256": "552811a84f32f7f224372654bfe66fed29be059a4e7797dacac3d771d9e94481"
-  },
-  {
-    "bytes": 492,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Pants.png",
-    "sha256": "44a862a2a99e13c6a6b2e8028a6be45840463ccb271b0499841664c3f76f9c98"
-  },
-  {
-    "bytes": 987,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Pants@2x.png",
-    "sha256": "e1ec4e5da900fe1ce1faa8a0ae96ebb999f6a3435f93e5a15c9a9e94b2dca100"
-  },
-  {
-    "bytes": 1471,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Pants@3x.png",
-    "sha256": "fd4054acce864db379b9bb1a72b5b85e483b9cdf8fac9b7d43fba269839639e7"
-  },
-  {
-    "bytes": 646,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Pants2D.png",
-    "sha256": "3bffa8ba4fa77882d4a8b2f23ecbdb19d9e2ab9fd3a61a376667abcfc759d1a5"
-  },
-  {
-    "bytes": 1264,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Pants2D@2x.png",
-    "sha256": "e8133b4fdfbaf0eef4f9ba1c2304111a85f2102c8793ee24c353c021f237d7f8"
-  },
-  {
-    "bytes": 1963,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Pants2D@3x.png",
-    "sha256": "9c786d59874c49d628c789f2a440b4d2b18b772db135e621f596dd24010bdf66"
-  },
-  {
-    "bytes": 383,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Shirt.png",
-    "sha256": "f7dd6be4c0b57a9dc3e1c3fa9c3f454f096a286fcce17c54f7fd2abad6d18ba5"
-  },
-  {
-    "bytes": 570,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Shirt@2x.png",
-    "sha256": "480f68153ec7386070946b6c25ad80c67a6e87960011223b392c947f69bbeb82"
-  },
-  {
-    "bytes": 881,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Shirt@3x.png",
-    "sha256": "8e3375a64a9f86fd1a1d52c50dff1e922f1a0022e6365623faffa15f0c5c9589"
-  },
-  {
-    "bytes": 589,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Shirt2D.png",
-    "sha256": "ac020927806863172080717e00fbf8a79330507a64f3d5dc604f251764a19015"
-  },
-  {
-    "bytes": 1015,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Shirt2D@2x.png",
-    "sha256": "ec9941b8f1a6fdc3bc44774975732754343ef5cbd68419f98769198918f74d3e"
-  },
-  {
-    "bytes": 1545,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Shirt2D@3x.png",
-    "sha256": "2328e4770ebd80a1fb269e5312df2c4af75483224828d78ff53ef1781fe97d9c"
-  },
-  {
-    "bytes": 390,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Shoe.png",
-    "sha256": "33a3eb3893fc5c71c76f9677c3998310513af552a77eee5fd0a34dd3762b2527"
-  },
-  {
-    "bytes": 623,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Shoe@2x.png",
-    "sha256": "1a3175342d0e402ed25f8f1a884de8359a37c4c476ea8408b15479ed35dd4f15"
-  },
-  {
-    "bytes": 994,
-    "extension": "png",
-    "path": "Lua/AvatarInstances/Dark/Standard/Shoe@3x.png",
-    "sha256": "5fce51f6af0ba623f335f4fa94866c043f50789f19eb2da31cfcd8b0f53902bb"
-  },
-  {
     "bytes": 445,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Accessory.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Accessory.png",
     "sha256": "f9de7e62a63b6148c31c6ac7dc750ac929d2c53ca4dd83c8a6dec6973dbec905"
   },
   {
     "bytes": 820,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Accessory@2x.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Accessory@2x.png",
     "sha256": "205a94931c4c00a2cce7ad0fe6876006faf7691e1ada5638cb329458453f5fbb"
   },
   {
     "bytes": 1218,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Accessory@3x.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Accessory@3x.png",
     "sha256": "1636c38713ef4e59971346883d9558b21363e16e0d7069af5f67a08598254652"
   },
   {
     "bytes": 374,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Avatar.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Avatar.png",
     "sha256": "4c9c28cbabb995a4157bb76e4050c1c0ae82f14d6c7ac983e68ab068c33b2885"
   },
   {
     "bytes": 688,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Avatar@2x.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Avatar@2x.png",
     "sha256": "590d1db0fb1c90089d3eedd3ea7bfb1346920db5195a5ef031b96c792e202654"
   },
   {
     "bytes": 1022,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Avatar@3x.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Avatar@3x.png",
     "sha256": "63cd0e4c572d950caca86a1c3b5f6b5f5106c49301768c8aff0430ef810c18ff"
   },
   {
     "bytes": 497,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Hair.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Hair.png",
     "sha256": "4564d895254eccfc5c1c41e7d0fdc378e02350f26179cbe461d498cce6bc4371"
   },
   {
     "bytes": 940,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Hair@2x.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Hair@2x.png",
     "sha256": "3d963aa13fc04f147feb079c0ff8a6d2541aeb0772711df3948ce925a2ae8895"
   },
   {
     "bytes": 1382,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Hair@3x.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Hair@3x.png",
     "sha256": "62a98e4c8eaf7a2951e04666d813aa0507cde40c7c8f1c426c56e87c306d3c20"
   },
   {
     "bytes": 374,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Humanoid.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Humanoid.png",
     "sha256": "4c9c28cbabb995a4157bb76e4050c1c0ae82f14d6c7ac983e68ab068c33b2885"
   },
   {
     "bytes": 688,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Humanoid@2x.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Humanoid@2x.png",
     "sha256": "590d1db0fb1c90089d3eedd3ea7bfb1346920db5195a5ef031b96c792e202654"
   },
   {
     "bytes": 1022,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Humanoid@3x.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Humanoid@3x.png",
     "sha256": "63cd0e4c572d950caca86a1c3b5f6b5f5106c49301768c8aff0430ef810c18ff"
   },
   {
     "bytes": 368,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Jacket.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Jacket.png",
     "sha256": "6869ef00c5f266241d13b6726a8b07d81263fcdddbff85eb0c0251a3c114fb03"
   },
   {
     "bytes": 563,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Jacket@2x.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Jacket@2x.png",
     "sha256": "3ba9a65be6155bb0db491bc27d2f3c00ad39d3aff7c4a731f0e3f442f467c7f9"
   },
   {
     "bytes": 847,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Jacket@3x.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Jacket@3x.png",
     "sha256": "6b0c0ebacf3958d74009f6015eb82f488aa05043bb5cd4fd3cf15dc370d24ae6"
   },
   {
     "bytes": 591,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Makeup.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Makeup.png",
     "sha256": "cc1cd583f66b69eafcb3a86ae5d1947aabea694584a981e30049f29aac2cc793"
   },
   {
     "bytes": 1130,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Makeup@2x.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Makeup@2x.png",
     "sha256": "2fc51855087c422b7c7c2ceb7aeb583b87b822927b94c0ec66b66d1fd15fdc28"
   },
   {
     "bytes": 1789,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Makeup@3x.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Makeup@3x.png",
     "sha256": "1bc1ffb863ffc483c4551ebeb94c81f8cb5cb45e871967a3e2518bdfd9128804"
   },
   {
     "bytes": 453,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Pants.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Pants.png",
     "sha256": "5f62aada36b2cdf203bf8fab797c32b4123626c33d6345a247bc7f2fc2a3f92a"
   },
   {
     "bytes": 929,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Pants@2x.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Pants@2x.png",
     "sha256": "ce3d80f886fd3b5d648cc6594a4201400fe743999fa3ce1c22e6e865b99558d2"
   },
   {
     "bytes": 1379,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Pants@3x.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Pants@3x.png",
     "sha256": "5cc0840cbf22585e645a8c3729630f7a81ef02a327207f2f38d7efaea5784d8e"
   },
   {
     "bytes": 592,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Pants2D.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Pants2D.png",
     "sha256": "49f392982a48a8aa2748df339641db8c11e58f5079e0cb4b36bbf32155303ecb"
   },
   {
     "bytes": 1169,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Pants2D@2x.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Pants2D@2x.png",
     "sha256": "23155c3ab3271a70f8288e71eca8948ca5c7f2429f7bdbf181a943a53de1f390"
   },
   {
     "bytes": 1837,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Pants2D@3x.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Pants2D@3x.png",
     "sha256": "99593844d8bdbd2a3e6dd0052b6ff39c253138b42afaedd29d0cd4cccc77501c"
   },
   {
     "bytes": 365,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Shirt.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Shirt.png",
     "sha256": "a45e552ba7de55c491ef7b6283f1e750fb232f336afde298bd355146110b7c76"
   },
   {
     "bytes": 548,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Shirt@2x.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Shirt@2x.png",
     "sha256": "b7933c45daadcea6096c83cfcee309db2e4930796f918f0ca607d5323a1d60cc"
   },
   {
     "bytes": 832,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Shirt@3x.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Shirt@3x.png",
     "sha256": "752d78751b6461712701ed755e94dba2e2c85dc3d96cdb1331ba960310a12396"
   },
   {
     "bytes": 552,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Shirt2D.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Shirt2D.png",
     "sha256": "598db318a2fb70c4ca484c91738171accd812ab6b94bb775b8c04ea0a885e691"
   },
   {
     "bytes": 962,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Shirt2D@2x.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Shirt2D@2x.png",
     "sha256": "dae2efc8e0fb111c4292aa2c6e47157aa81856c9f76fcf7c5dbd658531c205dd"
   },
   {
     "bytes": 1460,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Shirt2D@3x.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Shirt2D@3x.png",
     "sha256": "7666d9fbb26ae34ecc514d8e2361612707aae23f84755a8beb1685329cb1099a"
   },
   {
     "bytes": 369,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Shoe.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Shoe.png",
     "sha256": "ed48db75a3cb099e46c7a3d68e9557709a27be11b9483f6466572f6637131cc0"
   },
   {
     "bytes": 583,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Shoe@2x.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Shoe@2x.png",
     "sha256": "64b9fd9366e185f6b6aa535b52b9922bba4a8bb5b57dd02328fde6f756d9c331"
   },
   {
     "bytes": 942,
     "extension": "png",
-    "path": "Lua/AvatarInstances/Light/Standard/Shoe@3x.png",
+    "path": "Lua/AvatarInstances/Dark/Standard/Shoe@3x.png",
     "sha256": "911c1928a21f0acbfaa45a5d0013b7ccc6d57d7a808008f0dcdbb9ddecdde401"
+  },
+  {
+    "bytes": 480,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Accessory.png",
+    "sha256": "1dc44fa38e594fd202a0b7340fc029a391befe4fbb096feec6310e30bc38fad4"
+  },
+  {
+    "bytes": 875,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Accessory@2x.png",
+    "sha256": "8558640c200499b143b503ca50022d2711c5c2316ad3be6bb7d492d4b8260bad"
+  },
+  {
+    "bytes": 1295,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Accessory@3x.png",
+    "sha256": "d83386f371b822d5450a74a882c10cf66f8f31953f7ce0d1def0ad66da2c02ce"
+  },
+  {
+    "bytes": 346,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Avatar.png",
+    "sha256": "5092d93a5ded304ffacc16ce125b943adc6a830530ce7d8f00c994b6af1626af"
+  },
+  {
+    "bytes": 640,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Avatar@2x.png",
+    "sha256": "c5f1370d00611245fc3abdcf20e8114ff59386851a2eacae933a35ab31c84ccc"
+  },
+  {
+    "bytes": 915,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Avatar@3x.png",
+    "sha256": "71f028df68520a3263a3ecbcd2e123ebb6e82e28a82bcb097623fe6d0d1ff619"
+  },
+  {
+    "bytes": 526,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Hair.png",
+    "sha256": "39cae342ae3a16e66db9753cc772045aded92d51becb6981aa48441a46145707"
+  },
+  {
+    "bytes": 1005,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Hair@2x.png",
+    "sha256": "67528ca0a9a9d9efa5b40875eec0c413cfe9e00bf56209c5de7d28bfdc4df5f0"
+  },
+  {
+    "bytes": 1482,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Hair@3x.png",
+    "sha256": "c4a50b83a6f8aedba41cbf2be09d00239217c4869c4b0ea6db3f28719536500f"
+  },
+  {
+    "bytes": 346,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Humanoid.png",
+    "sha256": "5092d93a5ded304ffacc16ce125b943adc6a830530ce7d8f00c994b6af1626af"
+  },
+  {
+    "bytes": 640,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Humanoid@2x.png",
+    "sha256": "c5f1370d00611245fc3abdcf20e8114ff59386851a2eacae933a35ab31c84ccc"
+  },
+  {
+    "bytes": 915,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Humanoid@3x.png",
+    "sha256": "71f028df68520a3263a3ecbcd2e123ebb6e82e28a82bcb097623fe6d0d1ff619"
+  },
+  {
+    "bytes": 391,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Jacket.png",
+    "sha256": "2f9f3b5a1946cbf45086f2bc2a150327a4b55201a41b5d816ab2182facd8c3c0"
+  },
+  {
+    "bytes": 581,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Jacket@2x.png",
+    "sha256": "24bb182109d89e2863219d29694626a55fb5bec7ec60c68a21c0fe5f3185ebcd"
+  },
+  {
+    "bytes": 892,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Jacket@3x.png",
+    "sha256": "d0b2fcf74aa9c671a4f29cee9f61cc28e14478ed524735615f03b425bece870d"
+  },
+  {
+    "bytes": 621,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Makeup.png",
+    "sha256": "21d5a9a25e4ac8c06dd739c13358f6a74260cd88c33372413b4cbc9dc59be647"
+  },
+  {
+    "bytes": 1213,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Makeup@2x.png",
+    "sha256": "b8c120997683b082f682f7d94eda8b94ff9cccfabd04a69d38b2fdf099c26d8f"
+  },
+  {
+    "bytes": 1914,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Makeup@3x.png",
+    "sha256": "552811a84f32f7f224372654bfe66fed29be059a4e7797dacac3d771d9e94481"
+  },
+  {
+    "bytes": 492,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Pants.png",
+    "sha256": "44a862a2a99e13c6a6b2e8028a6be45840463ccb271b0499841664c3f76f9c98"
+  },
+  {
+    "bytes": 987,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Pants@2x.png",
+    "sha256": "e1ec4e5da900fe1ce1faa8a0ae96ebb999f6a3435f93e5a15c9a9e94b2dca100"
+  },
+  {
+    "bytes": 1471,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Pants@3x.png",
+    "sha256": "fd4054acce864db379b9bb1a72b5b85e483b9cdf8fac9b7d43fba269839639e7"
+  },
+  {
+    "bytes": 646,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Pants2D.png",
+    "sha256": "3bffa8ba4fa77882d4a8b2f23ecbdb19d9e2ab9fd3a61a376667abcfc759d1a5"
+  },
+  {
+    "bytes": 1264,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Pants2D@2x.png",
+    "sha256": "e8133b4fdfbaf0eef4f9ba1c2304111a85f2102c8793ee24c353c021f237d7f8"
+  },
+  {
+    "bytes": 1963,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Pants2D@3x.png",
+    "sha256": "9c786d59874c49d628c789f2a440b4d2b18b772db135e621f596dd24010bdf66"
+  },
+  {
+    "bytes": 383,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Shirt.png",
+    "sha256": "f7dd6be4c0b57a9dc3e1c3fa9c3f454f096a286fcce17c54f7fd2abad6d18ba5"
+  },
+  {
+    "bytes": 570,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Shirt@2x.png",
+    "sha256": "480f68153ec7386070946b6c25ad80c67a6e87960011223b392c947f69bbeb82"
+  },
+  {
+    "bytes": 881,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Shirt@3x.png",
+    "sha256": "8e3375a64a9f86fd1a1d52c50dff1e922f1a0022e6365623faffa15f0c5c9589"
+  },
+  {
+    "bytes": 589,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Shirt2D.png",
+    "sha256": "ac020927806863172080717e00fbf8a79330507a64f3d5dc604f251764a19015"
+  },
+  {
+    "bytes": 1015,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Shirt2D@2x.png",
+    "sha256": "ec9941b8f1a6fdc3bc44774975732754343ef5cbd68419f98769198918f74d3e"
+  },
+  {
+    "bytes": 1545,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Shirt2D@3x.png",
+    "sha256": "2328e4770ebd80a1fb269e5312df2c4af75483224828d78ff53ef1781fe97d9c"
+  },
+  {
+    "bytes": 390,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Shoe.png",
+    "sha256": "33a3eb3893fc5c71c76f9677c3998310513af552a77eee5fd0a34dd3762b2527"
+  },
+  {
+    "bytes": 623,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Shoe@2x.png",
+    "sha256": "1a3175342d0e402ed25f8f1a884de8359a37c4c476ea8408b15479ed35dd4f15"
+  },
+  {
+    "bytes": 994,
+    "extension": "png",
+    "path": "Lua/AvatarInstances/Light/Standard/Shoe@3x.png",
+    "sha256": "5fce51f6af0ba623f335f4fa94866c043f50789f19eb2da31cfcd8b0f53902bb"
   },
   {
     "bytes": 482,

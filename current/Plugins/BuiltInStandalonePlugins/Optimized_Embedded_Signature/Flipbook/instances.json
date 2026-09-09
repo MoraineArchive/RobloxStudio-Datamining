@@ -521,16 +521,6 @@
   },
   {
     "class": "Folder",
-    "name": "CommonMarkComplianceParser",
-    "path": "Flipbook/Packages/_Index/DeveloperFramework/DeveloperFramework/Util/Markdown/CommonMarkComplianceParser",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
     "name": "Component.spec",
     "path": "Flipbook/Packages/_Index/FlipbookCore/FlipbookCore/Packages/_Index/roblox_roact@1.4.4/roact/Component.spec",
     "properties": {
@@ -1583,6 +1573,16 @@
     "class": "Folder",
     "name": "Instances",
     "path": "Flipbook/Packages/_Index/FlipbookCore/FlipbookCore/Packages/_Index/elttob_fusion@0.3.0/fusion/Instances",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Internal",
+    "path": "Flipbook/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Internal",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -6311,8 +6311,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "27396",
-      "SourceBytecodeSha256": "05e7f92b9d30cc3f78c6c0e8251763f2dad239e108c5d58123d558bf7307a07b",
+      "SourceBytecodeBytes": "27242",
+      "SourceBytecodeSha256": "7ad6f0ecd2694a62bdd997d795fd64a534d60f4949bb3f782a9b6d546814b38f",
       "Tags": ""
     },
     "unreadable": [
@@ -6391,8 +6391,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "10389",
-      "SourceBytecodeSha256": "47888b607ab71d3c49b3e5a287acf17d7b4c8594c032c20ce0dedb2119fe2b52",
+      "SourceBytecodeBytes": "10160",
+      "SourceBytecodeSha256": "09de8783703f6c30a005a316217e498586fd0f4033a2f6611366fb7c207007b2",
       "Tags": ""
     },
     "unreadable": [
@@ -6727,8 +6727,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2528",
-      "SourceBytecodeSha256": "543f08d2741a86684a647410e8131eea2686940e0200339dabdb1edfeb026d7f",
+      "SourceBytecodeBytes": "2104",
+      "SourceBytecodeSha256": "d7fe2137f0833da998086f5daf773206c55ec50bbed8ec733fb1fcd2cb82e874",
       "Tags": ""
     },
     "unreadable": [
@@ -8583,24 +8583,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4941",
-      "SourceBytecodeSha256": "f3233afec7d21f6c9b41c900a4cd09d33f104c1d313760eb5fe4cd5228ea97a8",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "BuildTree",
-    "path": "Flipbook/Packages/_Index/DeveloperFramework/DeveloperFramework/Util/Markdown/CommonMarkComplianceParser/BuildTree",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "6028",
-      "SourceBytecodeSha256": "b49858b73d7439773fc75aa10629702f8706fa3f7ffd0c0006a6e299c1391b93",
+      "SourceBytecodeBytes": "5980",
+      "SourceBytecodeSha256": "cbf6760beffcc3a2ea1ad14dc4bde5d4aa1b873e259cae52e015445e5ad62120",
       "Tags": ""
     },
     "unreadable": [
@@ -13351,8 +13335,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1113",
-      "SourceBytecodeSha256": "5ce279bbbc38e767c23d49c5178f3303b1077de392524347eca1018564abc315",
+      "SourceBytecodeBytes": "845",
+      "SourceBytecodeSha256": "9db66276954650981f74d27086737532dc473097ec557e0d5669d4607ef08a5d",
       "Tags": ""
     },
     "unreadable": [
@@ -19858,13 +19842,13 @@
   {
     "class": "ModuleScript",
     "name": "EmphasisParser",
-    "path": "Flipbook/Packages/_Index/DeveloperFramework/DeveloperFramework/Util/Markdown/CommonMarkComplianceParser/EmphasisParser",
+    "path": "Flipbook/Packages/_Index/DeveloperFramework/DeveloperFramework/Util/Markdown/EmphasisParser",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3931",
-      "SourceBytecodeSha256": "6ae1e13815d64786929786f2017d41a23ba5cdb68bb48f9d153c6d24bd64bc5d",
+      "SourceBytecodeBytes": "3977",
+      "SourceBytecodeSha256": "fd5f0c4b1160ec66513a636700e12d5f25efb7a6d255390e7deff37858973e09",
       "Tags": ""
     },
     "unreadable": [
@@ -24599,8 +24583,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3489",
-      "SourceBytecodeSha256": "0d754b7445b324db730ab9bfd6297a5d8f3f08ad2153bbf0ea46d44598b12907",
+      "SourceBytecodeBytes": "3032",
+      "SourceBytecodeSha256": "35242417b8c11dc82ce038a541bcc3afcaec5f8d123f3585cd3f68ca9edd0e57",
       "Tags": ""
     },
     "unreadable": [
@@ -26289,22 +26273,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "getFFlagAssetPreviewHide3DPreview",
-    "path": "Flipbook/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagAssetPreviewHide3DPreview",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "210",
-      "SourceBytecodeSha256": "7366079cafa93467dd104a4034434961745f3b6f74a8186abf07ea8c189591ac",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "getFFlagAudioAssetInsertUsesNewApiLua",
     "path": "Flipbook/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagAudioAssetInsertUsesNewApiLua",
     "properties": {
@@ -26345,22 +26313,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "216",
       "SourceBytecodeSha256": "832dc3071c84b9a225190a4f0eefe1447dc21894a4b6b88f467a9727f40f2bcc",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkDisableAnimation",
-    "path": "Flipbook/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkDisableAnimation",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "213",
-      "SourceBytecodeSha256": "9c0d8cc92f16865c65b4f04cb5e9a5305ea565589356a6318580107c48aaedf0",
       "Tags": ""
     },
     "unreadable": [
@@ -26449,22 +26401,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkFixTreeViewHover",
-    "path": "Flipbook/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkFixTreeViewHover",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "213",
-      "SourceBytecodeSha256": "42409e146a68249db7fefd148213d596a6ab77b7e176f2072e0ebba06207428a",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "getFFlagDevFrameworkFormAlignment",
     "path": "Flipbook/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkFormAlignment",
     "properties": {
@@ -26529,54 +26465,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkMarkdownCommonMarkCompliance",
-    "path": "Flipbook/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkMarkdownCommonMarkCompliance",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "225",
-      "SourceBytecodeSha256": "6e005d3f6d9ded853cc9f9763f032955247890bdc4a1dd6130736c4576135c86",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkMarkdownInlineCodeSelectable",
-    "path": "Flipbook/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkMarkdownInlineCodeSelectable",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "225",
-      "SourceBytecodeSha256": "c07f9d03f8b63712795a6b47b6f2558b017343dc889cf2a19d44c8c5b7818d30",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkMarkdownNewCodeblockComponent",
-    "path": "Flipbook/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkMarkdownNewCodeblockComponent",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "227",
-      "SourceBytecodeSha256": "b712c10500657f8aa92e0ed3738c04954f1841b80b2f9030ac0cef1d040f951b",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "getFFlagDevFrameworkMemStorageServiceMocks",
     "path": "Flipbook/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkMemStorageServiceMocks",
     "properties": {
@@ -26585,22 +26473,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "219",
       "SourceBytecodeSha256": "91d833a963d838783402817b3d63aed96114f1925a742055d40ba7877a8f5c68",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkNetworkingBetterErrors",
-    "path": "Flipbook/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkNetworkingBetterErrors",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "219",
-      "SourceBytecodeSha256": "b8df9c9a2393ceabfee5a547fc89302371abc9ac14d6fb894a756168ac5bbe27",
       "Tags": ""
     },
     "unreadable": [
@@ -26857,22 +26729,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "213",
       "SourceBytecodeSha256": "7c1bfad84d4f89a905a471f23e42456851f20824321b7fc691b8835a66db1e62",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getFFlagUseDialogWidgetDeferUnmount",
-    "path": "Flipbook/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagUseDialogWidgetDeferUnmount",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "212",
-      "SourceBytecodeSha256": "813dea6bcb138e0c808ca2a37be3d77c23de7a6cecef4a8b15a6f32875cc77f1",
       "Tags": ""
     },
     "unreadable": [
@@ -30151,8 +30007,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1539",
-      "SourceBytecodeSha256": "d9729173ad5b13299f5985cbd31350be8bb6cca2df106b7f65f808f09aa71ca8",
+      "SourceBytecodeBytes": "613",
+      "SourceBytecodeSha256": "18855c5b788d6fe5a64ce5861ed73ce40f7e3528ce5a810fadcb55807884dbe4",
       "Tags": ""
     },
     "unreadable": [
@@ -32231,8 +32087,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4406",
-      "SourceBytecodeSha256": "1a0a4c5fbc4f256021d4114dc39c1767220912d141838cc84bf42f5c0b166b5c",
+      "SourceBytecodeBytes": "4227",
+      "SourceBytecodeSha256": "6dacf6229400f831082b371bbe1d7658b2a46af088f0aaa57dbff45e7bc436f0",
       "Tags": ""
     },
     "unreadable": [
@@ -33913,22 +33769,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "518",
       "SourceBytecodeSha256": "8f7551c4e48c9c7571931718d0b687487a94ccc69d0232e31a2e319610b53e48",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "isStyleSheetPolyfillOn",
-    "path": "Flipbook/Packages/_Index/StudioFoundation/StudioFoundation/Util/isStyleSheetPolyfillOn",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "573",
-      "SourceBytecodeSha256": "851f2c3c4f0480b5307ee8618725994c24a902ff7429e4d1ca56929e44728943",
       "Tags": ""
     },
     "unreadable": [
@@ -39505,6 +39345,38 @@
   },
   {
     "class": "ModuleScript",
+    "name": "LazyFoundationProvider",
+    "path": "Flipbook/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Internal/LazyFoundationProvider",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "661",
+      "SourceBytecodeSha256": "32bc49130b681afb7dddd286314eb12ceb869cf06d62fec431d01fda1d7a7c5a",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "LazyFoundationStyleLink",
+    "path": "Flipbook/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Internal/LazyFoundationStyleLink",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1649",
+      "SourceBytecodeSha256": "176f8b0f46a6275ad38e820e72939d1a117b6d5605393b459cb394e688dc6d4f",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "Leading",
     "path": "Flipbook/Packages/_Index/Foundation/Foundation/Components/HeaderBar/Leading",
     "properties": {
@@ -43911,8 +43783,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1373",
-      "SourceBytecodeSha256": "fe329bf509fe3c033f2f9a7494753c7730bb5f83a153cee26fe15673da7fce94",
+      "SourceBytecodeBytes": "976",
+      "SourceBytecodeSha256": "f67c8bdbf31ee551bfbcc870fc8e591dd861234d56b967ef470c575270128e92",
       "Tags": ""
     },
     "unreadable": [
@@ -43927,8 +43799,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "17576",
-      "SourceBytecodeSha256": "9550494aa885baac5cecbae4689ee127660eeb969af6561ea0193fa879c58ea3",
+      "SourceBytecodeBytes": "15192",
+      "SourceBytecodeSha256": "d182d04ad94360fac808b4c2798570d1d592aa70a5a9b3adc34b69485c6c6b71",
       "Tags": ""
     },
     "unreadable": [
@@ -43943,8 +43815,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "9010",
-      "SourceBytecodeSha256": "3e0f25289061d06120277a7d4d4cd631a1e27d72670a55a64a4e7abe443a9019",
+      "SourceBytecodeBytes": "9012",
+      "SourceBytecodeSha256": "c9e582b381c8431afb313b0cc4dd12b0b5c8c6daf12c7452875e5cf4d2fadf77",
       "Tags": ""
     },
     "unreadable": [
@@ -45975,8 +45847,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "11745",
-      "SourceBytecodeSha256": "32b42eca8a1150377b7c08c4487d7bf06a514bd4288b1d3140745cc354ee5beb",
+      "SourceBytecodeBytes": "10174",
+      "SourceBytecodeSha256": "0bf9bae6c375c69751b60d60b3536ad99c7d1664b283a7ad5d8f63f03b704d21",
       "Tags": ""
     },
     "unreadable": [
@@ -50034,29 +49906,13 @@
   {
     "class": "ModuleScript",
     "name": "PostProcessTokens",
-    "path": "Flipbook/Packages/_Index/DeveloperFramework/DeveloperFramework/Util/Markdown/CommonMarkComplianceParser/PostProcessTokens",
+    "path": "Flipbook/Packages/_Index/DeveloperFramework/DeveloperFramework/Util/Markdown/PostProcessTokens",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "716",
-      "SourceBytecodeSha256": "25e737920224956fc5ebe40164c68b9c098eeb9c378b5d19f574dc6f065a07e0",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "PostProcessTree",
-    "path": "Flipbook/Packages/_Index/DeveloperFramework/DeveloperFramework/Util/Markdown/CommonMarkComplianceParser/PostProcessTree",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "5792",
-      "SourceBytecodeSha256": "d87681186370911fb6c73ec3581c32acac8121d6e509a36dc08ae8cce8d52ef1",
+      "SourceBytecodeBytes": "706",
+      "SourceBytecodeSha256": "6d8ee3814f7b692339a2dc89d7d9c43a404b487994b8bf7c947e3a34c8d58056",
       "Tags": ""
     },
     "unreadable": [
@@ -50071,8 +49927,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4920",
-      "SourceBytecodeSha256": "bd8bb176831400ff06a87591c1622ff204b4a5e2b4b8d5bc70c7ad7a3293cb85",
+      "SourceBytecodeBytes": "5772",
+      "SourceBytecodeSha256": "66c3fcad2e680f61267d2f1c08ccfefb640dc755f161e0cb5f7ab3c27a5879d2",
       "Tags": ""
     },
     "unreadable": [
@@ -67479,8 +67335,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1739",
-      "SourceBytecodeSha256": "6ed40845e45fcf3bcbbdfebf7f4b335e91da7a5be59ff065cf4bbf3fb502f173",
+      "SourceBytecodeBytes": "1578",
+      "SourceBytecodeSha256": "d88f6ca45238af91383fbe4a68e348b58c2d845522b34ec05fea6c1a499ac733",
       "Tags": ""
     },
     "unreadable": [
@@ -67927,8 +67783,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1711",
-      "SourceBytecodeSha256": "ea1db7e5af735871a1afab7e0d52f44b154670baeace91d1916c3a948e8d4175",
+      "SourceBytecodeBytes": "1630",
+      "SourceBytecodeSha256": "5a7bd6cae78905967602d5477764fe8eade2142cc18dc25f5532326eb126e879",
       "Tags": ""
     },
     "unreadable": [
@@ -71303,8 +71159,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "553",
-      "SourceBytecodeSha256": "c77a1a7ea553d77583cdd925dd3f14ebd7cb91963ccc637b0845f22ffbc611fb",
+      "SourceBytecodeBytes": "708",
+      "SourceBytecodeSha256": "6a694023900a5fd74cbb5a0d62e0585604713a61ee94668383f6433c43ceddd3",
       "Tags": ""
     },
     "unreadable": [
@@ -71575,8 +71431,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "11250",
-      "SourceBytecodeSha256": "c580278bd790fc0b1d930e25be34c1bd65f96b0a11cefa7160b60def62c8515e",
+      "SourceBytecodeBytes": "10465",
+      "SourceBytecodeSha256": "a506ca9e0916948edceaa2c1a77fd6ec674cb3062e83281e75180d8d56a540f6",
       "Tags": ""
     },
     "unreadable": [
@@ -72583,8 +72439,24 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1692",
-      "SourceBytecodeSha256": "cf45cbe29a7787afdbc4bda61b979ac4d9474d6f9236c281651a608892eb0b19",
+      "SourceBytecodeBytes": "911",
+      "SourceBytecodeSha256": "c8ebacde65d90215b1b6cf53714c07d685f83b99d5436176dd453b094d4e147d",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ThemeSwitcherState",
+    "path": "Flipbook/Packages/_Index/DeveloperFramework/DeveloperFramework/Style/ThemeSwitcherState",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1220",
+      "SourceBytecodeSha256": "a28893eb9f352e022214df9f1724d7ab0b66cb8913c375b2340c92eb415e5910",
       "Tags": ""
     },
     "unreadable": [
@@ -73794,29 +73666,13 @@
   {
     "class": "ModuleScript",
     "name": "Tokenize",
-    "path": "Flipbook/Packages/_Index/DeveloperFramework/DeveloperFramework/Util/Markdown/CommonMarkComplianceParser/Tokenize",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "4348",
-      "SourceBytecodeSha256": "5135b4ccb4903b938b230e730d22a02205a26c130346de5965ba92e612c72076",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Tokenize",
     "path": "Flipbook/Packages/_Index/DeveloperFramework/DeveloperFramework/Util/Markdown/Tokenize",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3208",
-      "SourceBytecodeSha256": "3ec24b86c1cea6acc9b682566c7d6f7455ab4c2ffb8a8ab251ec7b5446e73526",
+      "SourceBytecodeBytes": "4328",
+      "SourceBytecodeSha256": "9b8acb6d2c04165634d57acabf39cb31708728fc12e92994df2510de6d3f554c",
       "Tags": ""
     },
     "unreadable": [
@@ -75207,8 +75063,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "12553",
-      "SourceBytecodeSha256": "d4fb56955187c5ef7635c153bfd79f16ee6869f468beca5a78e07b83db285e78",
+      "SourceBytecodeBytes": "11331",
+      "SourceBytecodeSha256": "be96a27e3225fb4cdac2a80fbfbb14701b63d523641cbf02f69f7e3a7d48d394",
       "Tags": ""
     },
     "unreadable": [
@@ -78327,8 +78183,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4577",
-      "SourceBytecodeSha256": "dc4f6ac43b2e15a5d2da988cdcb9edae2084d54eca02dd3ab76e2bd63af48968",
+      "SourceBytecodeBytes": "4410",
+      "SourceBytecodeSha256": "4a4ad4195910e1e8760f3e1692e3eb66cf3cea3a676864f5c6e1f1942a792844",
       "Tags": ""
     },
     "unreadable": [
@@ -81121,6 +80977,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "useStudioThemeName",
+    "path": "Flipbook/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Hooks/useStudioThemeName",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "616",
+      "SourceBytecodeSha256": "69351b1497b357b35371907d24d6eeb5911ef8f8c4eff3c722e706513d0ccaf6",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "useStyleTags",
     "path": "Flipbook/Packages/_Index/FlipbookCore/FlipbookCore/RobloxPackages/_Index/Foundation/Foundation/Providers/Style/useStyleTags",
     "properties": {
@@ -81842,13 +81714,13 @@
   {
     "class": "ModuleScript",
     "name": "Utils",
-    "path": "Flipbook/Packages/_Index/DeveloperFramework/DeveloperFramework/Util/Markdown/CommonMarkComplianceParser/Utils",
+    "path": "Flipbook/Packages/_Index/DeveloperFramework/DeveloperFramework/Util/Markdown/Utils",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4189",
-      "SourceBytecodeSha256": "78aca3486752245317c17603464a56a9f0c02d5e6fb58853d4af06d600f5a957",
+      "SourceBytecodeBytes": "4169",
+      "SourceBytecodeSha256": "c5d6c0eb9e625cbd7b697eb84a60ff77da88d9333a70c5f50a05602f66b63d23",
       "Tags": ""
     },
     "unreadable": [

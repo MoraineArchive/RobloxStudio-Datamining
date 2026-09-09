@@ -37,19 +37,6 @@ export type FoundationProviderAdapterProps = {
 
 local ContextServices = Framework.ContextServices
 
-local isFoundationStylingPolyfillEnabled = require(Main.Util.isStyleSheetPolyfillOn)()
-
-local FFlagDebugDeveloperFrameworkSdk = game:GetFastFlag("DebugDeveloperFrameworkSdk")
-
-if isFoundationStylingPolyfillEnabled and FFlagDebugDeveloperFrameworkSdk then
-	warn(
-		"Your foundation code is running with Foundation styles polyfill. useStyleTag won't work.\
-		To test your plugin with FoundationStylesheet support make sure that you're using Foundation version >= 1.48.0.\
-		",
-		debug.traceback()
-	)
-end
-
 -- Inserts Foundation StyleSheet into derives chain for plugin StyleSheet
 local function StyleSheetWrapper(
 	props: {
@@ -125,13 +112,11 @@ local function FoundationProviderAdapter(props: FoundationProviderAdapterProps)
 					overlayGui = overlayGui,
 					plugin = if FFlagStudioFoundationPluginPropSupport then props.plugin else nil,
 				},
-				if isFoundationStylingPolyfillEnabled
-					then props.children
-					else React.createElement(
-						StyleSheetWrapper,
-						{ themeName = themeName, onStyleSheetChange = props.onStyleSheetChange },
-						props.children
-					)
+				React.createElement(
+					StyleSheetWrapper,
+					{ themeName = themeName, onStyleSheetChange = props.onStyleSheetChange },
+					props.children
+				)
 			)
 		),
 		StyleLink = React.createElement("StyleLink", {

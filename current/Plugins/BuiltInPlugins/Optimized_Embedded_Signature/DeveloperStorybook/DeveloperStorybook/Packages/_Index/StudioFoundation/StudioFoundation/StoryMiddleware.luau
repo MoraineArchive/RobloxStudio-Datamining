@@ -14,7 +14,6 @@ local Mouse = ContextServices.Mouse
 local Plugin = ContextServices.Plugin
 
 local FoundationProvider = Foundation.FoundationProvider
-local isFoundationStylingPolyfillEnabled = require(StudioFoundation.Util.isStyleSheetPolyfillOn)()
 
 local Theme = Foundation.Enums.Theme
 local Device = Foundation.Enums.Device
@@ -25,7 +24,7 @@ local function StyleSheetWrapper(props: {
 	children: React.ReactNode,
 })
 	local styleSheet = Foundation.Hooks.useStyleSheet()
-	if not styleSheet and not isFoundationStylingPolyfillEnabled then
+	if not styleSheet then
 		return nil
 	end
 
@@ -35,9 +34,9 @@ local function StyleSheetWrapper(props: {
 			Plugin.new(props.plugin),
 			Mouse.new(props.plugin:GetMouse()),
 			Analytics.mock(),
-			Design.new(if isFoundationStylingPolyfillEnabled then Instance.new("StyleSheet") else styleSheet),
+			Design.new(styleSheet),
 		}
-	end, { styleSheet :: unknown, props.focus, props.plugin, isFoundationStylingPolyfillEnabled })
+	end, { styleSheet :: unknown, props.focus, props.plugin })
 
 	return ContextServices.provide(contextItems, props.children)
 end
