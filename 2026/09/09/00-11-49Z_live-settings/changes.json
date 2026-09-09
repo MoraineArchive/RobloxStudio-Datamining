@@ -1,0 +1,61 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-93202a13414c4131",
+    "manifestFiles": 18471,
+    "packages": 34,
+    "version": "0.738.0.7381393"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "0e228cc15d12cd734e64d7cd1dc2c4899fc8a4debef7b96a602c54ba3996c2eb",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "0c0d9abd286eafda83bf5d2a0349fb298f10fecd0dce482560193acc1de6728e",
+      "semantic": {
+        "added": [
+          "FFlagEnableReusableVPCPrologue",
+          "FFlagEnforceRobloxShopForAllSurfaces",
+          "FFlagHomePYMKUseProfileFrameThumbnail_Staged",
+          "FFlagLuaAppChartsAppPage"
+        ],
+        "changed": [
+          {
+            "after": "3ee3a93af5ac78c32af810716da7a41ff37c5455",
+            "before": "70463b04ea2365a925172bdfab48ee761203a3b9",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-09T00:08:41.393Z",
+            "before": "2026-09-08T23:44:57.345Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "3ee3a93af5ac78c32af810716da7a41ff37c5455",
+            "before": "70463b04ea2365a925172bdfab48ee761203a3b9",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-09T00:08:41.393Z",
+            "before": "2026-09-08T23:44:57.345Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagEnableReusableVPCPrologue_Staged",
+          "FFlagEnforceRobloxShopForAllSurfaces_Staged",
+          "FFlagLuaAppChartsAppPage_Staged"
+        ],
+        "unchanged": 24107
+      }
+    }
+  },
+  "schemaVersion": 1
+}
