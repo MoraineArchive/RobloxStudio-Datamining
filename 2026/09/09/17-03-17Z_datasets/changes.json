@@ -1,0 +1,100 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-9fe94fb0e9d84c25",
+    "manifestFiles": 18497,
+    "packages": 34,
+    "version": "0.737.0.7371584"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "d678b83e6f20a6a73b949fbfb07dd37a37bcbe0f2c925793b28226552586b116",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "5f685d02a20f929b574c30058409dfabfff744d704dfccf1938f75ca1ae7e310",
+      "semantic": {
+        "added": [
+          "DFFlagServerCollectSetVector_Staged",
+          "DFFlagSimAeroUnifiedTriangleThreshold_Staged",
+          "DFFlagVideoVpxEncodeLowLatency_Staged",
+          "FFlagAXBackgroundGenerationAnalytics_Staged",
+          "FFlagAXFixBackgroundGenerationResultMenuNavigation_Staged",
+          "FFlagAXSkipTapDetection_Staged",
+          "FFlagCanReplicateBaseWrapWrapLayerContentPropertiesServer_Staged",
+          "FFlagCanReplicateTexturePackContentPropertiesServer_Staged",
+          "FFlagDeviceSimulatorRefreshBetaFeature2_Staged",
+          "FFlagFoundationPopoverContentAnchorFix_Staged",
+          "FFlagModalImpressionEventAddSessionInfo_Staged",
+          "FFlagMomentsFlushDwellBeforeNavigation_Staged",
+          "FFlagUIAntiAliasClipRects_Staged",
+          "FStringAXPlusExclusiveBackgroundIds_Staged",
+          "FStringAutoReimportBetaFeatureUrl_Staged"
+        ],
+        "changed": [
+          {
+            "after": "ead92e2b86db5e17053431907e6376c4876182f4",
+            "before": "6079d7906c211ab6a8742647d77b93c35e3aa5ef",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-09T17:01:40.158Z",
+            "before": "2026-09-09T06:02:19.235Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "ead92e2b86db5e17053431907e6376c4876182f4",
+            "before": "6079d7906c211ab6a8742647d77b93c35e3aa5ef",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-09T17:01:40.158Z",
+            "before": "2026-09-09T06:02:19.235Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [],
+        "unchanged": 24109
+      }
+    },
+    "Web": {
+      "current": "f5803cb1fb68c77866181460949d17bdd7ec640bc8444b6e5fc94a21ab4de07b",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-012.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-047.js",
+          "assets.create.roblox.com/page-0/script-054.js",
+          "assets.create.roblox.com/page-0/script-063.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-1/script-001.js",
+          "assets.create.roblox.com/page-1/script-003.js",
+          "assets.create.roblox.com/page-1/script-004.js",
+          "assets.create.roblox.com/page-1/script-009.js",
+          "assets.create.roblox.com/page-1/script-013.js",
+          "assets.create.roblox.com/page-1/script-014.js",
+          "assets.create.roblox.com/page-1/script-016.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 86
+      },
+      "previous": "a4338ae9d5d5c1d4cd5d46e507b9512876bfe7603e4135828e5b0c7901977f5f",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
