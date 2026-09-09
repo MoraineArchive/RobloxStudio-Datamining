@@ -1,8 +1,8 @@
-[![Moraine Roblox Datamining](https://github.com/ImElio/Moraine-asset/blob/main/roblox/banner_roblox.png?raw=true)](https://github.com/ImElio/Moraine-asset/blob/main/roblox/banner_roblox.png)
+[![Moraine Roblox Datamining](https://github.com/MoraineArchive/Moraine-asset/blob/main/roblox/banner_roblox.png?raw=true)](https://github.com/MoraineArchive/Moraine-asset/blob/main/roblox/banner_roblox.png)
 
 # Roblox Studio Datamining
 
-Automated Roblox datamining archive maintained by Moraine.
+Automated Roblox Studio build tracker and datamining archive maintained by Moraine. It records Windows Studio versions, API changes, plugins, LuaPackages, FastVariables, LIVE settings, native metadata, web assets, and chronological diffs from publicly accessible Roblox distribution endpoints.
 
 This repository contains independently observed Windows Studio data. The extraction and publication infrastructure is maintained separately from this data archive.
 
@@ -26,6 +26,14 @@ Readable official Lua and Luau source is retained with upstream formatting, name
 The summary convention is `+` added, `~` changed, and `-` removed. The presence of an identifier, flag, endpoint, source module, configuration value, or other artifact does not confirm that a feature is enabled, publicly available, or planned for release.
 
 Read [the methodology](docs/METHODOLOGY.md) for provenance and event details, and [SECURITY.md](SECURITY.md) before reporting sensitive material.
+
+## Disclaimer and rights
+
+This is an independent research and archival project. It is not affiliated with, endorsed by, sponsored by, or associated with Roblox Corporation.
+
+Roblox, the Roblox logo, and all related names, trademarks, software, assets, and content are the property of Roblox Corporation or their respective rights holders. This repository documents technical observations for research, interoperability, preservation, and educational purposes. Moraine does not claim ownership of Roblox intellectual property.
+
+No license is granted for third-party material contained or referenced in this archive. See [NOTICE.md](NOTICE.md) for the complete rights notice and removal-request information.
 
 ## Commit comments
 
