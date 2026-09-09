@@ -1,0 +1,68 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-93202a13414c4131",
+    "manifestFiles": 18471,
+    "packages": 34,
+    "version": "0.738.0.7381393"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "87336df3e16bdf2725c435b5b878397d1b9a6b5c5d221dd45956425d32770536",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "26f63b900ab1771e2490a23969bec05ac29f39ea57dcc54a79b487712f3c7306",
+      "semantic": {
+        "added": [
+          "DFStringRbxAvatarAbilitiesStudioBeta2ContentUri",
+          "FFlagAXProfileTabHideAvatarScene",
+          "FFlagEditProfileImageCameraControlBar",
+          "FFlagEditProfileImageV2Telemetry"
+        ],
+        "changed": [
+          {
+            "after": "c4bca408641cf2c4946171ded7314c696df13fa7",
+            "before": "879be81dfeca9efeb03cc071285706c4a15b2687",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-09T01:47:15.053Z",
+            "before": "2026-09-09T00:37:13.458Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagEnableFetchCartPricingDuringInExperience"
+          },
+          {
+            "after": "c4bca408641cf2c4946171ded7314c696df13fa7",
+            "before": "879be81dfeca9efeb03cc071285706c4a15b2687",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-09T01:47:15.053Z",
+            "before": "2026-09-09T00:37:13.458Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFStringRbxAvatarAbilitiesStudioBeta2ContentUri_Staged",
+          "FFlagAXProfileTabHideAvatarScene_Staged",
+          "FFlagEditProfileImageCameraControlBar_Staged",
+          "FFlagEditProfileImageV2Telemetry_Staged",
+          "FFlagEnableFetchCartPricingDuringInExperience_Staged"
+        ],
+        "unchanged": 24104
+      }
+    }
+  },
+  "schemaVersion": 1
+}
