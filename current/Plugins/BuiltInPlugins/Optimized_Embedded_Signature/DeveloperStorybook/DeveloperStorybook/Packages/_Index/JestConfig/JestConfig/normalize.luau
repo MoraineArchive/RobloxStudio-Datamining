@@ -1168,7 +1168,6 @@ local function normalize(
 					or key == "maxConcurrency"
 					or key == "id"
 					or key == "noStackTrace"
-					or key == "stackDepth"
 					or key == "notify"
 					or key == "notifyMode"
 					or key == "mockDataModel"

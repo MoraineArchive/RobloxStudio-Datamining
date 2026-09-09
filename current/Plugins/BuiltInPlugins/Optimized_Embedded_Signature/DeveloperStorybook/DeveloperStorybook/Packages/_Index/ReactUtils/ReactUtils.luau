@@ -1,8 +1,4 @@
 --!strict
-local Bindings = require(script.Bindings)
-
-export type Binding<T> = Bindings.Binding<T>
-
 return {
 	-- Plugin specific: Requires ChangeHistoryService
 	useHistory = require(script.useHistory),
@@ -22,7 +18,6 @@ return {
 	useDebounce = require(script.useDebounce),
 	useDebouncedState = require(script.useDebouncedState),
 	useDelayedActionHandler = require(script.useDelayedActionHandler),
-	useEventCallback = require(script.useEventCallback),
 	useEventConnection = require(script.useEventConnection),
 	useForwardRef = require(script.useForwardRef),
 	useInitializedValue = require(script.useInitializedValue),
@@ -34,10 +29,8 @@ return {
 	useRefs = require(script.useRefs),
 	useRefToState = require(script.useRefToState),
 	useStackState = require(script.useStackState),
-	useStagnatingState = require(script.useStagnatingState),
 	useToggleState = require(script.useToggleState),
 
-	Bindings = require(script.Bindings),
 	ContextStack = require(script.ContextStack),
 	EventConnection = require(script.EventConnection),
 

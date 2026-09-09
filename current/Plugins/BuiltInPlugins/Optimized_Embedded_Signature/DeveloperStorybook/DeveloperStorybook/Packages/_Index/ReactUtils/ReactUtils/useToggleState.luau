@@ -4,6 +4,9 @@ local ReactUtils = script:FindFirstAncestor("ReactUtils")
 local Packages = ReactUtils.Parent
 local React = require(Packages.React)
 
+local getFFlagUseToggleStateImprovements = require(ReactUtils.Flags.getFFlagUseToggleStateImprovements)
+local FFlagUseToggleStateImprovements = getFFlagUseToggleStateImprovements()
+
 local function useToggleState(default: (boolean | () -> boolean)?): {
 	enabled: boolean,
 	enable: () -> (),
@@ -21,18 +24,21 @@ local function useToggleState(default: (boolean | () -> boolean)?): {
 		setEnabled(false)
 	end, {})
 
-	local toggle = React.useCallback(function()
-		setEnabled(function(currentEnabled)
-			return not currentEnabled
-		end)
-	end, {})
+	local toggle
+	if FFlagUseToggleStateImprovements then
+		toggle = React.useCallback(function()
+			setEnabled(function(currentEnabled)
+				return not currentEnabled
+			end)
+		end, {})
+	end
 
 	return {
 		enabled = enabled,
 		enable = enable,
 		disable = disable,
-		toggle = toggle,
-		set = setEnabled,
+		toggle = if FFlagUseToggleStateImprovements then toggle else nil :: never,
+		set = if FFlagUseToggleStateImprovements then setEnabled else nil :: never,
 	}
 end
 

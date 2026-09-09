@@ -512,8 +512,8 @@ function parse_(input, options) -- ROBLOX deviation END
 		 * If we're inside a quoted string, continue
 		 * until we reach the closing double quote.
 		 ]]
-		-- ROBLOX FIXME Luau: analyze narrows `value` to the literal type "]" and refuses the comparison; cast to string
-		if state.quotes == 1 and (value :: string) ~= '"' then
+
+		if state.quotes == 1 and value ~= '"' then
 			value = utils.escapeRegex(value)
 			prev.value ..= value
 			append({ value = value })
@@ -522,10 +522,9 @@ function parse_(input, options) -- ROBLOX deviation END
 
 		--[[*
 		 * Double quotes
-		]]
+		 ]]
 
-		-- ROBLOX FIXME Luau: analyze narrows `value` to the literal type "]" and refuses the comparison; cast to string
-		if (value :: string) == '"' then
+		if value == '"' then
 			state.quotes = state.quotes == 1 and 0 or 1
 			if opts.keepQuotes == true then
 				push({ type = "text", value = value })
@@ -536,15 +535,14 @@ function parse_(input, options) -- ROBLOX deviation END
 		--[[*
 		 * Parentheses
 		 ]]
-		-- ROBLOX FIXME Luau: analyze narrows `value` to the literal type "]" and refuses the comparison; cast to string
-		if (value :: string) == "(" then
+
+		if value == "(" then
 			increment("parens")
 			push({ type = "paren", value = value })
 			continue
 		end
 
-		-- ROBLOX FIXME Luau: analyze narrows `value` to the literal type "]" and refuses the comparison; cast to string
-		if (value :: string) == ")" then
+		if value == ")" then
 			if state.parens == 0 and opts.strictBrackets == true then
 				error(Error.new("SyntaxError: " .. syntaxError("opening", "(")))
 			end
@@ -568,8 +566,7 @@ function parse_(input, options) -- ROBLOX deviation END
 		 * Square brackets
 		 ]]
 
-		-- ROBLOX FIXME Luau: analyze narrows `value` to the literal type "]" and refuses the comparison; cast to string
-		if (value :: string) == "[" then
+		if value == "[" then
 			if opts.nobracket == true or remaining():find("]", 1, true) == nil then
 				if opts.nobracket ~= true and opts.strictBrackets == true then
 					error(Error.new("SyntaxError: " .. syntaxError("closing", "]")))
@@ -781,7 +778,7 @@ function parse_(input, options) -- ROBLOX deviation END
 
 		if value == "?" then
 			local isGroup = Boolean.toJSBoolean(prev) and prev.value == "("
-			if not isGroup and Boolean.toJSBoolean(opts.noextglob) ~= true and peek() == "(" and peek(2) ~= "?" then
+			if not isGroup and opts.noextglob ~= true and peek() == "(" and peek(2) ~= "?" then
 				extglobOpen("qmark", value)
 				continue
 			end
@@ -819,7 +816,7 @@ function parse_(input, options) -- ROBLOX deviation END
 		 ]]
 
 		if value == "!" then
-			if Boolean.toJSBoolean(opts.noextglob) ~= true and peek() == "(" then
+			if opts.noextglob ~= true and peek() == "(" then
 				if peek(2) ~= "?" or not RegExp("[!=<:]"):test(peek(3)) then
 					extglobOpen("negate", value)
 					continue
@@ -837,7 +834,7 @@ function parse_(input, options) -- ROBLOX deviation END
 		 ]]
 
 		if value == "+" then
-			if Boolean.toJSBoolean(opts.noextglob) ~= true and peek() == "(" and peek(2) ~= "?" then
+			if opts.noextglob ~= true and peek() == "(" and peek(2) ~= "?" then
 				extglobOpen("plus", value)
 				continue
 			end
@@ -864,7 +861,7 @@ function parse_(input, options) -- ROBLOX deviation END
 		 ]]
 
 		if value == "@" then
-			if Boolean.toJSBoolean(opts.noextglob) ~= true and peek() == "(" and peek(2) ~= "?" then
+			if opts.noextglob ~= true and peek() == "(" and peek(2) ~= "?" then
 				push({ type = "at", extglob = true, value = value, output = "" })
 				continue
 			end
@@ -908,7 +905,7 @@ function parse_(input, options) -- ROBLOX deviation END
 		end
 
 		local rest = remaining()
-		if Boolean.toJSBoolean(opts.noextglob) ~= true and RegExp("^\\([^?]"):test(rest) then
+		if Boolean.toJSBoolean(opts.noextglob ~= true and RegExp("^\\([^?]"):test(rest)) then
 			extglobOpen("star", value)
 			continue
 		end

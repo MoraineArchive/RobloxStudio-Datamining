@@ -250,11 +250,8 @@ local function findStorybooks()
 		insert(sources, foundation)
 	end
 
-	local materialFrameworkDeprecated = index and index.MaterialFrameworkDeprecated.MaterialFrameworkDeprecated
-		or Main.Parent.MaterialFrameworkDeprecated
-	insert(sources, materialFrameworkDeprecated)
-
-	local materialFramework = index and index.MaterialFramework.MaterialFramework or Main.Parent.MaterialFramework
+	local materialFramework = index and index.MaterialFrameworkDeprecated.MaterialFrameworkDeprecated
+		or Main.Parent.MaterialFramework
 	insert(sources, materialFramework)
 	insert(
 		sources,

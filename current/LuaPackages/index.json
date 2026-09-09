@@ -96,11 +96,11 @@
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 37484,
-    "instances": 41124,
+    "bytecodeOrUnreadable": 37003,
+    "instances": 40615,
     "package": "extracontent-models.zip",
     "path": "DataModelPatch/DataModelPatch.rbxm",
-    "sha256": "ca6994074f48c832c12db4050339eb95a9decddf5cb4afddf62becf67b6cbe86",
+    "sha256": "7ae1165711f7fc70bcea77e230a345c92a1fa30ba6d8a812f56246abf3193fb7",
     "sources": 0
   },
   {

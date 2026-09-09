@@ -28,7 +28,6 @@ export type UiComponentType =
 	| "UI_COMPONENT_TYPE_SONG_TILE"
 	| "UI_COMPONENT_TYPE_EVENT_TILE"
 	| "UI_COMPONENT_TYPE_PLACEHOLDER_TILE"
-	| "UI_COMPONENT_TYPE_SPONSORED_TWO_BY_ONE_TILE"
 	| "UI_COMPONENT_TYPE_BUTTON"
 	| "UI_COMPONENT_TYPE_IMAGE"
 	| "UI_COMPONENT_TYPE_TEXT"
@@ -91,7 +90,6 @@ export type UiComponentType =
 	| "UI_COMPONENT_TYPE_VIDEO_PLAYER"
 	| "UI_COMPONENT_TYPE_VERTICAL_LIST_WITH_IMPRESSIONS"
 	| "UI_COMPONENT_TYPE_REVEAL_ROWS_BUTTON_WITH_DIVIDER"
-	| "UI_COMPONENT_TYPE_HERO_UNIT_BOTTOM_ROW"
 	| "UI_COMPONENT_TYPE_FOCUS_NAV_ACTIONS"
 	| "UI_COMPONENT_TYPE_FRAGMENT"
 	| "UI_COMPONENT_TYPE_VERTICAL_FEED"
@@ -141,8 +139,6 @@ messages.UiComponentType = {
 			return "UI_COMPONENT_TYPE_EVENT_TILE"
 		elseif value == 106 then
 			return "UI_COMPONENT_TYPE_PLACEHOLDER_TILE"
-		elseif value == 107 then
-			return "UI_COMPONENT_TYPE_SPONSORED_TWO_BY_ONE_TILE"
 		elseif value == 200 then
 			return "UI_COMPONENT_TYPE_BUTTON"
 		elseif value == 201 then
@@ -267,8 +263,6 @@ messages.UiComponentType = {
 			return "UI_COMPONENT_TYPE_VERTICAL_LIST_WITH_IMPRESSIONS"
 		elseif value == 261 then
 			return "UI_COMPONENT_TYPE_REVEAL_ROWS_BUTTON_WITH_DIVIDER"
-		elseif value == 262 then
-			return "UI_COMPONENT_TYPE_HERO_UNIT_BOTTOM_ROW"
 		elseif value == 300 then
 			return "UI_COMPONENT_TYPE_FOCUS_NAV_ACTIONS"
 		elseif value == 400 then
@@ -335,8 +329,6 @@ messages.UiComponentType = {
 			return 105
 		elseif self == "UI_COMPONENT_TYPE_PLACEHOLDER_TILE" then
 			return 106
-		elseif self == "UI_COMPONENT_TYPE_SPONSORED_TWO_BY_ONE_TILE" then
-			return 107
 		elseif self == "UI_COMPONENT_TYPE_BUTTON" then
 			return 200
 		elseif self == "UI_COMPONENT_TYPE_IMAGE" then
@@ -461,8 +453,6 @@ messages.UiComponentType = {
 			return 260
 		elseif self == "UI_COMPONENT_TYPE_REVEAL_ROWS_BUTTON_WITH_DIVIDER" then
 			return 261
-		elseif self == "UI_COMPONENT_TYPE_HERO_UNIT_BOTTOM_ROW" then
-			return 262
 		elseif self == "UI_COMPONENT_TYPE_FOCUS_NAV_ACTIONS" then
 			return 300
 		elseif self == "UI_COMPONENT_TYPE_FRAGMENT" then
@@ -529,8 +519,6 @@ messages.UiComponentType = {
 			return "UI_COMPONENT_TYPE_EVENT_TILE"
 		elseif name == "UI_COMPONENT_TYPE_PLACEHOLDER_TILE" then
 			return "UI_COMPONENT_TYPE_PLACEHOLDER_TILE"
-		elseif name == "UI_COMPONENT_TYPE_SPONSORED_TWO_BY_ONE_TILE" then
-			return "UI_COMPONENT_TYPE_SPONSORED_TWO_BY_ONE_TILE"
 		elseif name == "UI_COMPONENT_TYPE_BUTTON" then
 			return "UI_COMPONENT_TYPE_BUTTON"
 		elseif name == "UI_COMPONENT_TYPE_IMAGE" then
@@ -655,8 +643,6 @@ messages.UiComponentType = {
 			return "UI_COMPONENT_TYPE_VERTICAL_LIST_WITH_IMPRESSIONS"
 		elseif name == "UI_COMPONENT_TYPE_REVEAL_ROWS_BUTTON_WITH_DIVIDER" then
 			return "UI_COMPONENT_TYPE_REVEAL_ROWS_BUTTON_WITH_DIVIDER"
-		elseif name == "UI_COMPONENT_TYPE_HERO_UNIT_BOTTOM_ROW" then
-			return "UI_COMPONENT_TYPE_HERO_UNIT_BOTTOM_ROW"
 		elseif name == "UI_COMPONENT_TYPE_FOCUS_NAV_ACTIONS" then
 			return "UI_COMPONENT_TYPE_FOCUS_NAV_ACTIONS"
 		elseif name == "UI_COMPONENT_TYPE_FRAGMENT" then

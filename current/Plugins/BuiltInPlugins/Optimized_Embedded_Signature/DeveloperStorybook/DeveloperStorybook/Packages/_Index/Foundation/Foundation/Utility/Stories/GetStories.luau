@@ -14,12 +14,12 @@ local FlagsStories = script.Parent:FindFirstChild("Flags")
 -- Classification mirrors Foundation's public surface from init.lua: Hooks /
 -- Utility key → that book, exported top-level component → Components, else
 -- Internal. Planned / Elements / Flags are path-based carve-outs; deprecated
--- and base are story-module flags.
+-- and engineering-only are story-module flags.
 export type StoryScope =
 	"flags"
 	| "elements"
 	| "components"
-	| "base"
+	| "engineering-only"
 	| "deprecated"
 	| "hooks"
 	| "utilities"
@@ -56,25 +56,9 @@ local function isDeprecatedStory(story: Instance): boolean
 	return ok and typeof(storyModule) == "table" and storyModule.deprecated == true
 end
 
-local function isBaseStory(story: Instance): boolean
+local function isEngineeringOnlyStory(story: Instance): boolean
 	local ok, storyModule = pcall(require, story :: ModuleScript)
-	return ok and typeof(storyModule) == "table" and storyModule.base == true
-end
-
-local function isCompoundSubPartStory(story: Instance): boolean
-	return story.Name:match("^[%w]+%.[%w]+%.story") ~= nil and story.Name:match("%.Root%.story") == nil
-end
-
-local function getComponentRootStory(story: Instance): ModuleScript?
-	if not story:IsDescendantOf(ComponentsFolder) then
-		return nil
-	end
-	local componentFolder = topChild(story, ComponentsFolder)
-	local rootStory = componentFolder:FindFirstChild(`{componentFolder.Name}.Root.story`)
-	if rootStory and rootStory:IsA("ModuleScript") then
-		return rootStory
-	end
-	return nil
+	return ok and typeof(storyModule) == "table" and storyModule.engineeringOnly == true
 end
 
 local function getStoryScope(story: Instance): StoryScope?
@@ -94,15 +78,8 @@ local function getStoryScope(story: Instance): StoryScope?
 	if isDeprecatedStory(story) then
 		return "deprecated"
 	end
-	if isBaseStory(story) then
-		return "base"
-	end
-	-- Compound sub-parts follow Root's base flag so a component stays in one book.
-	if isCompoundSubPartStory(story) then
-		local rootStory = getComponentRootStory(story)
-		if rootStory and isBaseStory(rootStory) then
-			return "base"
-		end
+	if isEngineeringOnlyStory(story) then
+		return "engineering-only"
 	end
 	if HookNames[name] then
 		return "hooks"
@@ -111,14 +88,8 @@ local function getStoryScope(story: Instance): StoryScope?
 		return "utilities"
 	end
 
-	if story:IsDescendantOf(ComponentsFolder) then
-		local componentName = topChild(story, ComponentsFolder).Name
-		if not isFoundationExport(componentName) and isCompoundSubPartStory(story) then
-			return nil
-		end
-		if isFoundationExport(componentName) then
-			return "components"
-		end
+	if story:IsDescendantOf(ComponentsFolder) and isFoundationExport(topChild(story, ComponentsFolder).Name) then
+		return "components"
 	end
 
 	return "internal"
@@ -135,38 +106,7 @@ local function isNested(folder: Instance, folders: { [Instance]: boolean }): boo
 	return false
 end
 
-local function getComponentFolderExcludeList(scope: StoryScope): { string }
-	local excluded: { [string]: boolean } = {}
-	for _, descendant in FoundationRoot:GetDescendants() do
-		if
-			descendant:IsA("ModuleScript")
-			and descendant.Name:match("%.story$")
-			and descendant:IsDescendantOf(ComponentsFolder)
-		then
-			local storyScope = getStoryScope(descendant)
-			if storyScope ~= scope then
-				excluded[topChild(descendant, ComponentsFolder).Name] = true
-			end
-		end
-	end
-
-	local excludeList = {}
-	for name in excluded do
-		table.insert(excludeList, name)
-	end
-	table.sort(excludeList)
-	return excludeList
-end
-
-local function getStorybookRoots(scope: StoryScope): { Instance }
-	-- Developer Storybook flattens each storyRoots entry's children into the
-	-- sidebar, so compound components (List/ListItem) never nest when every
-	-- component folder is its own root. Use the Components folder as a single
-	-- root and exclude folders owned by other storybooks.
-	if scope == "components" or scope == "base" then
-		return { ComponentsFolder }
-	end
-
+local function GetStories(scope: StoryScope)
 	local folders: { [Instance]: boolean } = {}
 	for _, descendant in FoundationRoot:GetDescendants() do
 		if
@@ -189,7 +129,4 @@ local function getStorybookRoots(scope: StoryScope): { Instance }
 	return storyRoots
 end
 
-return {
-	getStorybookRoots = getStorybookRoots,
-	getComponentFolderExcludeList = getComponentFolderExcludeList,
-}
+return GetStories

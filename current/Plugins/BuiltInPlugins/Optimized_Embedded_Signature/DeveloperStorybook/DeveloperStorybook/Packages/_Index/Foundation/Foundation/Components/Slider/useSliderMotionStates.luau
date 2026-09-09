@@ -1,4 +1,3 @@
--- Only the flag-off Slider path uses this; delete it with the FoundationSliderBeta cleanup.
 local Foundation = script:FindFirstAncestor("Foundation")
 local Packages = Foundation.Parent
 

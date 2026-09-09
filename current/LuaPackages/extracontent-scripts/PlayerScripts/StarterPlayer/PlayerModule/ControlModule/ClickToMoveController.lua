@@ -19,6 +19,7 @@ local UserInputService = game:GetService("UserInputService")
 local PathfindingService = game:GetService("PathfindingService")
 local Players = game:GetService("Players")
 local DebrisService = game:GetService('Debris')
+local StarterGui = game:GetService("StarterGui")
 local Workspace = game:GetService("Workspace")
 local CollectionService = game:GetService("CollectionService")
 local GuiService = game:GetService("GuiService")
@@ -28,6 +29,7 @@ local FlagUtil = CommonUtils.get("FlagUtil")
 
 local FFlagUserRaycastUpdateAPI = FlagUtil.getUserFlag("UserRaycastUpdateAPI2")
 local FFlagUserPlayerScriptsCTMDirectPlayerData = FlagUtil.getUserFlag("UserPlayerScriptsCTMDirectPlayerData")
+local FFlagUserPlayerScriptsTapToMoveUsesIAS2 = FlagUtil.getUserFlag("UserPlayerScriptsTapToMoveUsesIAS2")
 local FFlagUserPSIASClickToMoveRelaxTeleport = FlagUtil.getUserFlag("UserPSIASClickToMoveRelaxTeleport")
 local FFlagUserPlayerScriptsRefactor2 = FlagUtil.getUserFlag("UserPlayerScriptsRefactor2")
 local FFlagUserPlayerScriptsFireThroughScriptableBindings = FlagUtil.getUserFlag("UserPlayerScriptsFireThroughScriptableBindings")
@@ -696,18 +698,29 @@ local function DisconnectEvent(event)
 end
 
 local function calculateLocalMoveVector(worldMoveVector: Vector3): Vector2
-	local flat = Vector3.new(worldMoveVector.X, 0, worldMoveVector.Z)
-	if flat.Magnitude < ALMOST_ZERO then
-		return Vector2.zero
+	if FFlagUserPlayerScriptsTapToMoveUsesIAS2 then
+		local flat = Vector3.new(worldMoveVector.X, 0, worldMoveVector.Z)
+		if flat.Magnitude < ALMOST_ZERO then
+			return Vector2.zero
+		end
+		flat = flat.Unit
+		local camera = Workspace.CurrentCamera
+		if not camera then
+			return Vector2.new(flat.X, -flat.Z)
+		end
+		local _, yaw, _ = camera.CFrame:ToEulerAnglesYXZ()
+		local localVec = CFrame.Angles(0, yaw, 0):VectorToObjectSpace(flat)
+		return Vector2.new(localVec.X, -localVec.Z)
+	else
+		local camera = Workspace.CurrentCamera
+		if not camera then
+			return Vector2.new(worldMoveVector.X, -worldMoveVector.Z)
+		end
+		local _, yaw, _ = camera.CFrame:ToEulerAnglesYXZ()
+		local cameraVec = CFrame.Angles(0, yaw, 0)
+		local localVec = cameraVec:VectorToObjectSpace(worldMoveVector)
+		return Vector2.new(localVec.X, -localVec.Z)
 	end
-	flat = flat.Unit
-	local camera = Workspace.CurrentCamera
-	if not camera then
-		return Vector2.new(flat.X, -flat.Z)
-	end
-	local _, yaw, _ = camera.CFrame:ToEulerAnglesYXZ()
-	local localVec = CFrame.Angles(0, yaw, 0):VectorToObjectSpace(flat)
-	return Vector2.new(localVec.X, -localVec.Z)
 end
 
 --[[ The ClickToMove Controller Class ]]--
@@ -722,6 +735,9 @@ function ClickToMove.new(playerData)
 	self.mouse2DownPos = Vector2.new()
 	self.mouse2UpTime = tick()
 
+	if not FFlagUserPlayerScriptsTapToMoveUsesIAS2 then 
+		self.tapConn = nil
+	end
 	self.humanoidDiedConn = nil
 	self.characterChildAddedConn = nil
 	self.onCharacterAddedConn = nil
@@ -811,7 +827,7 @@ function ClickToMove:ShowPathFailedFeedback(hitPt)
 	ClickToMoveDisplay.DisplayFailureWaypoint(hitPt)
 end
 
-function ClickToMove:OnTap(tapPositions: {Vector3}, goToPoint: Vector3?)
+function ClickToMove:OnTap(tapPositions: {Vector3}, goToPoint: Vector3?, wasTouchTap: boolean?) -- remove wasTouchTap argument with FFlagUserPlayerScriptsTapToMoveUsesIAS2
 	-- Good to remember if this is the latest tap event
 	local camera = Workspace.CurrentCamera
 	local character = Player.Character
@@ -851,6 +867,16 @@ function ClickToMove:OnTap(tapPositions: {Vector3}, goToPoint: Vector3?)
 					end
 				until encounteredCollider
 
+				if not FFlagUserPlayerScriptsTapToMoveUsesIAS2 then
+					if wasTouchTap and humanoidResult and StarterGui:GetCore("AvatarContextMenuEnabled") then
+						local clickedPlayer = Players:GetPlayerFromCharacter(humanoidResult.Parent)
+						if clickedPlayer then
+							self:CleanupPath()
+							return
+						end
+					end
+				end
+
 				if not raycastResult or not character then
 					return
 				end
@@ -876,6 +902,15 @@ function ClickToMove:OnTap(tapPositions: {Vector3}, goToPoint: Vector3?)
 				local hitPart, hitPt, hitNormal = Utility.Raycast(ray, true, getIgnoreList())
 
 				local hitChar, hitHumanoid = Utility.FindCharacterAncestor(hitPart)
+				if not FFlagUserPlayerScriptsTapToMoveUsesIAS2 then
+					if wasTouchTap and hitHumanoid and StarterGui:GetCore("AvatarContextMenuEnabled") then
+						local clickedPlayer = Players:GetPlayerFromCharacter(hitHumanoid.Parent)
+						if clickedPlayer then
+							self:CleanupPath()
+							return
+						end
+					end
+				end
 				if goToPoint then
 					hitPt = goToPoint
 					hitChar = nil
@@ -907,6 +942,9 @@ function ClickToMove:OnTap(tapPositions: {Vector3}, goToPoint: Vector3?)
 end
 
 function ClickToMove:DisconnectEvents()
+	if not FFlagUserPlayerScriptsTapToMoveUsesIAS2 then 
+		DisconnectEvent(self.tapConn)
+	end
 	DisconnectEvent(self.humanoidDiedConn)
 	DisconnectEvent(self.characterChildAddedConn)
 	DisconnectEvent(self.onCharacterAddedConn)
@@ -934,10 +972,17 @@ function ClickToMove:OnCharacterAdded(character)
 	self:DisconnectEvents()
 
 	self.clickPressedConn = clickToMoveAction.Pressed:Connect(function()
+		if not FFlagUserPlayerScriptsTapToMoveUsesIAS2 then
+			self.mouse2DownTime = tick()
+		end
 		local topLeftInset, _ = GuiService:GetGuiInset() -- Remove with FFlagUserPlayerScriptsRefactor2
 		local currPos: Vector3 = clickToMovePositionAction:GetState()
 		if currPos.X == -1 and currPos.Y == -1 then
-			return
+			if FFlagUserPlayerScriptsTapToMoveUsesIAS2 then
+				return
+			else
+				currPos = UserInputService:GetMouseLocation()
+			end
 		end
 		if FFlagUserPlayerScriptsRefactor2 then
 			local guiInsetMin = GuiService:GetInsetArea(Enum.ScreenInsets.None).Min
@@ -946,23 +991,50 @@ function ClickToMove:OnCharacterAdded(character)
 			currPos = Vector2.new(currPos.X - topLeftInset.X, currPos.Y - topLeftInset.Y)
 		end
 		self.mouse2DownPos = currPos
-		self.mouse2DownTime = tick()
+		if FFlagUserPlayerScriptsTapToMoveUsesIAS2 then
+			self.mouse2DownTime = tick()
+		end
 	end)
 
 	self.clickReleasedConn = clickToMoveAction.Released:Connect(function()
 		self.mouse2UpTime = tick()
-		local currPos = self.mouse2DownPos
+		local currPos
+		if FFlagUserPlayerScriptsTapToMoveUsesIAS2 then
+			currPos = self.mouse2DownPos
+		else
+			local topLeftInset, _ = GuiService:GetGuiInset()
+			currPos = clickToMovePositionAction:GetState()
+			if currPos.X == -1 and currPos.Y == -1 then
+				currPos = UserInputService:GetMouseLocation()
+			end
+			currPos = Vector2.new(currPos.X - topLeftInset.X, currPos.Y - topLeftInset.Y)
+		end
 
 		if not self.playerData or not self.playerData.actions.MoveAction then
 			return
 		end
 
 		local allowed = ExistingPather or self.playerData.actions.MoveAction:GetState().Magnitude <= 0
-		if self.mouse2UpTime - self.mouse2DownTime < 0.25 and allowed then
-			local positions = {currPos}
-			self:OnTap(positions)
+		if FFlagUserPlayerScriptsTapToMoveUsesIAS2 then
+			if self.mouse2UpTime - self.mouse2DownTime < 0.25 and allowed then
+				local positions = {currPos}
+				self:OnTap(positions)
+			end
+		else
+			if self.mouse2UpTime - self.mouse2DownTime < 0.25 and (currPos - self.mouse2DownPos).Magnitude < 5 and allowed then
+				local positions = {currPos}
+				self:OnTap(positions)
+			end
 		end
 	end)
+
+	if not FFlagUserPlayerScriptsTapToMoveUsesIAS2 then
+		self.tapConn = UserInputService.TouchTap:Connect(function(touchPositions, processed)
+			if not processed then
+				self:OnTap(touchPositions, nil, true)
+			end
+		end)
+	end
 
 	self.menuOpenedConnection = GuiService.MenuOpened:Connect(function()
 		self:CleanupPath()

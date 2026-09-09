@@ -6,11 +6,13 @@
 --  * LICENSE file in the root directory of this source tree.
 --  */
 
-local Packages = script.Parent.Parent
+local CurrentModule = script.Parent
+local Packages = CurrentModule.Parent
 
 local ansiRegex = require(Packages.PrettyFormat).plugins.ConvertAnsi.ansiRegex
--- chalk replaces upstream's ansi-styles dependency
+-- ROBLOX deviation: imported chalk instead of ansi-styles
 local chalk = require(Packages.ChalkLua)
+-- ROBLOX deviation: omitting prettyFormat import
 
 local function serialize(val: string): string
 	-- Return the string itself, not escaped nor enclosed in double quote marks.

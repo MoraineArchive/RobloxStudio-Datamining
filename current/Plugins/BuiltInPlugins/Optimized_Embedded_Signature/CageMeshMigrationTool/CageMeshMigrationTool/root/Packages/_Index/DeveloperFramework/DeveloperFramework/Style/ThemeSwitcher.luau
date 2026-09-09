@@ -5,23 +5,47 @@
 	It has methods setTheme(name: string) and getThemeName() to let developers programatically change
 	or query the current theme. This is used in the Developer Storybook to let stories dynamically
 	change which theme they are displaying under in the plugin itself.
-
-	The name/override/signal state lives in ThemeSwitcherState; this module adds theme
-	construction (.new) on top of it.
 ]]
 local Framework = script.Parent.Parent
 local Cryo = require(Framework.Parent.Cryo)
+local Signal = require(Framework.Util.Signal)
 local Style = Framework.Style
 local DarkTheme = require(Style.Themes.DarkTheme)
 local LightTheme = require(Style.Themes.LightTheme)
 local createDefaultTheme = require(Style.createDefaultTheme)
-local ThemeSwitcherState = require(Style.ThemeSwitcherState)
+
+local getStudioThemeNameOrDefault = require(Style.getStudioThemeNameOrDefault)
+
+local themeSignal = Signal.new()
+pcall(function()
+	settings().Studio.ThemeChanged:Connect(function()
+		themeSignal:Fire()
+	end)
+end)
 
 local ThemeSwitcher = {
-	getThemeName = ThemeSwitcherState.getThemeName,
-	subscribe = ThemeSwitcherState.subscribe,
-	setTheme = ThemeSwitcherState.setTheme,
+	current = "Default",
 }
+
+function ThemeSwitcher.getThemeName()
+	if ThemeSwitcher.current == "Default" then
+		return getStudioThemeNameOrDefault()
+	else
+		return ThemeSwitcher.current
+	end
+end
+
+function ThemeSwitcher.setTheme(name: string)
+	ThemeSwitcher.current = name
+	themeSignal:Fire()
+	local StylingService = game:GetService("StylingService")
+	for _, design in StylingService:GetChildren() do
+		if design:IsA("Folder") and design.Name:match("^StudioDesign") then
+			-- We create a side-effect for the studio design here. It starts to inherit from the new theme even if the plugin is closed and open again.
+			design.Design:SetDerives({ design.Themes:FindFirstChild(ThemeSwitcher.getThemeName()) })
+		end
+	end
+end
 
 function ThemeSwitcher.new(darkThemeOverride, lightThemeOverride)
 	local darkTheme = DarkTheme
@@ -39,12 +63,12 @@ function ThemeSwitcher.new(darkThemeOverride, lightThemeOverride)
 			["Dark"] = darkTheme,
 			["Light"] = lightTheme,
 		},
-		themeChangedConnection = ThemeSwitcherState.themeSignal,
+		themeChangedConnection = themeSignal,
 	}, ThemeSwitcher)
 
 	local theme = createDefaultTheme(themeProps)
 	-- Yes, this is stupid, but we actually must reset the design derived and copying the code here would be worse.
-	ThemeSwitcherState.setTheme(ThemeSwitcherState.current)
+	ThemeSwitcher.setTheme(ThemeSwitcher.current)
 	return theme
 end
 

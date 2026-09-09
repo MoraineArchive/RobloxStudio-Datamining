@@ -22,14 +22,23 @@
 	THE SOFTWARE.
 ]]
 local Packages = script.Parent
+local LuauPolyfill = require(Packages.LuauPolyfill)
+local Array = LuauPolyfill.Array
+local Error = LuauPolyfill.Error
+type Array<T> = LuauPolyfill.Array<T>
 local Promise = require(Packages.Promise)
-local typesModule = require(Packages.JestTypes)
-type Promise<T> = typesModule.Promise<T>
-local Error = typesModule.Error
+type Promise<T> = LuauPolyfill.Promise<T>
 
+local TypeError = Error
+
+local exports = {}
+
+-- ROBLOX deviation START: predeclare classes
 local Delayed = {} :: Delayed
 local Queue: Queue
+-- ROBLOX deviation END
 
+-- ROBLOX deviation START: additional types for Luau
 type ThroatFn<TResult, TArgs> = (...TArgs) -> Promise<TResult>
 
 type ThroatFnOrCallableFn<TResult, TArgs> = ThroatFn<TResult, TArgs> | typeof(setmetatable({}, {
@@ -41,8 +50,12 @@ export type ThroatLateBound<TResult, TArgs> = (
 	...TArgs
 ) -> Promise<TResult>
 export type ThroatEarlyBound<TResult, TArgs> = (...TArgs) -> Promise<TResult>
+-- ROBLOX deviation END
 
--- Allow for both functions and callable tables to be passed as arguments
+--[[
+	ROBLOX deviation START:
+	additional checking function to allow for both functions and callable tables to be passed as arguments
+]]
 local function isCallable(f: any): boolean
 	return typeof(f) == "function"
 		or (
@@ -51,16 +64,19 @@ local function isCallable(f: any): boolean
 			and typeof(getmetatable(f).__call) == "function"
 		)
 end
+-- ROBLOX deviation END
 
 local function throatInternal(size: number)
+	-- ROBLOX deviation START: hoist functions declarations
 	local runDelayed
 	local onFulfill
 	local onReject
 	local release
+	-- ROBLOX deviation END
 
 	local queue = Queue.new()
 	local s = bit32.bor(size, 0)
-	local function run<TResult, TArgs>(fn: ThroatFnOrCallableFn<TResult, TArgs>, args: { TArgs })
+	local function run<TResult, TArgs>(fn: ThroatFnOrCallableFn<TResult, TArgs>, args: Array<TArgs>)
 		if bit32.bor(s, 0) ~= 0 then
 			s = bit32.bor(s, 0) - 1
 			return Promise.new(function(resolve)
@@ -118,11 +134,11 @@ local function lateBound<TResult, TArgs>(size: number): ThroatLateBound<TResult,
 	local run = throatInternal(bit32.bor(size, 0))
 	return function(fn, ...)
 		local arguments = { fn :: any, ... }
-
+		-- ROBLOX deviation: using isCallable to allow for callable tables being passed
 		if not isCallable(fn) then
-			error(Error.new("Expected throat fn to be a function but got " .. tostring(typeof(fn))))
+			error(TypeError.new("Expected throat fn to be a function but got " .. tostring(typeof(fn))))
 		end
-		local args = {} :: { TArgs }
+		local args = {} :: Array<TArgs>
 		for i = 1, #arguments - 1 do
 			args[i] = arguments[i + 1]
 		end
@@ -130,21 +146,24 @@ local function lateBound<TResult, TArgs>(size: number): ThroatLateBound<TResult,
 	end
 end
 
-local function throat<TResult, TArgs>(
+exports.default = function<TResult, TArgs>(
 	size: number,
 	fn: ((...TArgs) -> Promise<TResult>)?
 ): ((...TArgs) -> Promise<TResult>) | ((fn: (...TArgs) -> Promise<TResult>, ...TArgs) -> Promise<TResult>)
+	-- ROBLOX deviation: using isCallable to allow for callable tables being passed
 	if isCallable(size) then
 		local temp = fn
 		fn = (size :: any) :: (...TArgs) -> Promise<TResult>
 		size = (temp :: any) :: number
 	end
 	if typeof(size) ~= "number" then
-		error(Error.new("Expected throat size to be a number but got " .. tostring(typeof(size))))
+		error(TypeError.new("Expected throat size to be a number but got " .. tostring(typeof(size))))
 	end
+	-- ROBLOX deviation: using isCallable to allow for callable tables being passed
 	if fn ~= nil and not isCallable(fn) then
-		error(Error.new("Expected throat fn to be a function but got " .. tostring(typeof(fn))))
+		error(TypeError.new("Expected throat fn to be a function but got " .. tostring(typeof(fn))))
 	end
+	-- ROBLOX deviation: using isCallable to allow for callable tables being passed
 	if fn ~= nil and isCallable(fn) then
 		return earlyBound(bit32.bor(size, 0), fn)
 	else
@@ -152,8 +171,11 @@ local function throat<TResult, TArgs>(
 	end
 end
 
+-- ROBLOX deviation: only exporting as default
+-- module.exports.default = module.exports;
+
 type Delayed = {
-	new: (resolve: (...any) -> (), fn: (...any) -> ...any, args: { any }) -> Delayed,
+	new: (resolve: (...any) -> (), fn: (...any) -> ...any, args: Array<any>) -> Delayed,
 }
 
 (Delayed :: any).__index = Delayed
@@ -176,10 +198,10 @@ type QueuePrivate = {
 	new: () -> QueuePrivate,
 	push: (self: QueuePrivate, value: any) -> (),
 	shift: (self: QueuePrivate) -> any?,
-	_s1: { any },
-	_s2: { any },
-	_pushBlock: { any },
-	_shiftBlock: { any },
+	_s1: Array<any>,
+	_s2: Array<any>,
+	_pushBlock: Array<any>,
+	_shiftBlock: Array<any>,
 	_pushIndex: number,
 	_shiftIndex: number,
 }
@@ -216,14 +238,10 @@ function QueuePrivate:shift()
 				return nil
 			end
 			self._s1 = s2
-			local reversed = {}
-			for i = #s1, 1, -1 do
-				reversed[#s1 - i + 1] = s1[i]
-			end
-			self._s2 = reversed
+			self._s2 = Array.reverse(s1)
 			s2 = self._s2
 		end
-		self._shiftBlock = table.remove(s2) :: { any }
+		self._shiftBlock = table.remove(s2) :: Array<any>
 	end
 	if self._pushBlock == self._shiftBlock and self._pushIndex == self._shiftIndex then
 		return nil
@@ -236,4 +254,4 @@ function QueuePrivate:shift()
 end
 Queue = (QueuePrivate :: any) :: Queue
 
-return throat
+return exports

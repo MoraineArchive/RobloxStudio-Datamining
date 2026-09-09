@@ -15,6 +15,7 @@ local PlayerListPackage = require(CorePackages.Workspace.Packages.PlayerList)
 local LeaderboardStore = require(CorePackages.Workspace.Packages.LeaderboardStore)
 local Display = require(CorePackages.Workspace.Packages.Display)
 
+
 local StatsUtils = require(RobloxGui.Modules.Stats.StatsUtils)
 
 local Presentation = script.Parent
@@ -22,8 +23,6 @@ local PresentationCommon = Presentation.Parent.PresentationCommon
 local PlayerList = Presentation.Parent.Parent
 
 local useLeaderboardStore = PlayerListPackage.Hooks.useLeaderboardStore
-local usePlatformLeaderboard = PlayerListPackage.Hooks.usePlatformLeaderboard
-local PlayerListConstants = PlayerListPackage.Common.Constants
 
 local PlayerEntryContainer = require(PlayerList.Components.Container.PlayerEntryContainer)
 local PlayerListDisplayContainer = require(PlayerList.Components.Container.PlayerListDisplayContainer)
@@ -37,8 +36,6 @@ local LayoutValues = require(Connection.LayoutValues)
 local WithLayoutValues = LayoutValues.WithLayoutValues
 
 local FFlagAddNewPlayerListFocusNav = PlayerListPackage.Flags.FFlagAddNewPlayerListFocusNav
-local FFlagPlayerListFixPlatformLeaderboardSizing = PlayerListPackage.Flags.FFlagPlayerListFixPlatformLeaderboardSizing
-local FFlagPlayerListTwoTabsOnLegacy = PlayerListPackage.Flags.FFlagPlayerListTwoTabsOnLegacy
 local FFlagPlayerListRemoveTopStat = require(PlayerList.Flags.FFlagPlayerListRemoveTopStat)
 
 local MOTOR_OPTIONS = {
@@ -51,11 +48,6 @@ local OLD_PLAYERLIST_TEAM_ENTRY_SIZE = 20
 
 local MIN_PLAYERS_HEIGHT_ADJUST = 6
 local MAX_PLAYERS_HEIGHT_ADJUST = 12
-
-local getNoActivePlatformLeaderboard = if FFlagPlayerListFixPlatformLeaderboardSizing
-		and FFlagPlayerListTwoTabsOnLegacy
-	then Signals.createSignal(false)
-	else nil
 
 local PlayerListApp = Roact.PureComponent:extend("PlayerListApp")
 
@@ -148,12 +140,6 @@ function PlayerListApp:render()
 
 			containerSize = containerSize + UDim2.new(0, layoutValues.ExtraContainerPadding, 0, 0)
 
-			if FFlagPlayerListFixPlatformLeaderboardSizing and self.props.hasPlatformLeaderboard then
-				-- Player rows are sized from entrySize, so they have to grow with the panel or the
-				-- row backgrounds would cover only part of the platform-width container.
-				entrySize = math.max(entrySize, PlayerListConstants.PLATFORM_PANEL_WIDTH - containerSize.X.Offset)
-			end
-
 			local dropDownSpace = layoutValues.PlayerDropDownSizeX + layoutValues.PlayerDropDownOffset
 			local usedScreenSpace = containerSize.X.Offset + layoutValues.ContainerPadding * 2 + dropDownSpace
 
@@ -171,14 +157,6 @@ function PlayerListApp:render()
 			local teamCount = getTeamCount(self.props.teams, self.props.players)
 			previousSizeBound = previousSizeBound + teamCount * OLD_PLAYERLIST_TEAM_ENTRY_SIZE
 		end
-		local platformPanelMinSize = Vector2.zero
-		if FFlagPlayerListFixPlatformLeaderboardSizing and self.props.hasPlatformLeaderboard then
-			platformPanelMinSize = Vector2.new(
-				math.min(PlayerListConstants.PLATFORM_PANEL_WIDTH, containerSize.X.Offset),
-				PlayerListConstants.LEGACY_PLATFORM_PANEL_MIN_HEIGHT
-			)
-			previousSizeBound = math.max(previousSizeBound, platformPanelMinSize.Y)
-		end
 
 		local childElements = {}
 
@@ -190,13 +168,13 @@ function PlayerListApp:render()
 						Size = UDim2.new(1, layoutValues.EntryXOffset, 0, layoutValues.PlayerEntrySizeY),
 						BackgroundTransparency = 1,
 					}, {
-						PlayerEntry = Roact.createElement(PlayerEntryContainer, {
-							entrySizeX = entrySize,
-							titlePlayerEntry = true,
-							player = player,
-							playerIconInfo = self.props.playerIconInfo[player.UserId],
-							playerRelationship = self.props.playerRelationship[player.UserId],
-						}),
+					PlayerEntry = Roact.createElement(PlayerEntryContainer, {
+						entrySizeX = entrySize,
+						titlePlayerEntry = true,
+						player = player,
+						playerIconInfo = self.props.playerIconInfo[player.UserId],
+						playerRelationship = self.props.playerRelationship[player.UserId],
+					}),
 					})
 					break
 				end
@@ -236,7 +214,7 @@ function PlayerListApp:render()
 			}, childElements),
 
 			UISizeConstraint = Roact.createElement("UISizeConstraint", {
-				MinSize = platformPanelMinSize,
+				MinSize = Vector2.new(0, 0),
 				MaxSize = Vector2.new(math.huge, previousSizeBound),
 			}) or nil,
 		})
@@ -303,22 +281,9 @@ local function PlayerListAppWithLeaderboardStore(props)
 	end)
 	local gameStatsCount = SignalsReact.useSignalState(getGameStatsCount)
 
-	local hasPlatformLeaderboard = false
-	if FFlagPlayerListFixPlatformLeaderboardSizing and FFlagPlayerListTwoTabsOnLegacy then
-		local platformLeaderboard = usePlatformLeaderboard()
-		local getHasActiveLeaderboard = if platformLeaderboard
-			then platformLeaderboard.getHasActiveLeaderboard
-			else getNoActivePlatformLeaderboard
-		hasPlatformLeaderboard = SignalsReact.useSignalState(getHasActiveLeaderboard)
-	end
-
-	return Roact.createElement(
-		PlayerListApp,
-		Cryo.Dictionary.join(props, {
-			gameStatsCount = gameStatsCount,
-			hasPlatformLeaderboard = hasPlatformLeaderboard,
-		})
-	)
+	return Roact.createElement(PlayerListApp, Cryo.Dictionary.join(props, {
+		gameStatsCount = gameStatsCount,
+	}))
 end
 
 return RoactRodux.connect(mapStateToProps, nil)(PlayerListAppWithLeaderboardStore)

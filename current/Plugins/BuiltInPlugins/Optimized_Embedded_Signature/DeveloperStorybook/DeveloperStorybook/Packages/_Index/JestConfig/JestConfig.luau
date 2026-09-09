@@ -228,7 +228,6 @@ function groupOptions(options: Config_ProjectConfig & Config_GlobalConfig): {
 					silent = options.silent,
 					skipFilter = options.skipFilter,
 					snapshotFormat = options.snapshotFormat,
-					stackDepth = options.stackDepth,
 					testFailureExitCode = options.testFailureExitCode,
 					testNamePattern = options.testNamePattern,
 					testPathPattern = options.testPathPattern,
@@ -419,7 +418,7 @@ local function readConfigs(
 			local parsedConfigs = Promise.all(Array.map(
 				Array.filter(projects, function(root)
 					-- Ignore globbed files that cannot be `require`d.
-					if typeof(root) == "Instance" and #root:GetChildren() == 0 and not root:IsA("ModuleScript") then
+					if typeof(root) == "Instance" and #root:GetChildren() == 0 and not root:isA("ModuleScript") then
 						return false
 					end
 					return true

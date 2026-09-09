@@ -48,9 +48,7 @@ do
 		} from './globalErrorHandlers';
 	]]
 	-- ROBLOX FIXME: resolve cyclic dep
-	local typesImport = require(script.Parent.types)
-	local TEST_TIMEOUT_SYMBOL = typesImport.TEST_TIMEOUT_SYMBOL
-	local LOG_ERRORS_BEFORE_RETRY = typesImport.LOG_ERRORS_BEFORE_RETRY
+	local TEST_TIMEOUT_SYMBOL = require(script.Parent.types).TEST_TIMEOUT_SYMBOL
 	-- ROBLOX FIXME: resolve cyclic dep
 	local utilsModule = require(script.Parent.utils)
 	local addErrorToEachTestUnderDescribe = utilsModule.addErrorToEachTestUnderDescribe
@@ -250,11 +248,6 @@ do
 				table.insert(event.test.errors, { error_, asyncError })
 				break
 			elseif event.name == "test_retry" then
-				if _G[LOG_ERRORS_BEFORE_RETRY] then
-					for _, err in ipairs(event.test.errors) do
-						table.insert(event.test.retryReasons, err)
-					end
-				end
 				event.test.errors = {}
 				break
 			elseif event.name == "run_start" then

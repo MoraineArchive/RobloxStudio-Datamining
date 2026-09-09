@@ -8,6 +8,9 @@
 local CurrentModule = script.Parent
 local Packages = CurrentModule.Parent
 
+local LuauPolyfill = require(Packages.LuauPolyfill)
+local Boolean = LuauPolyfill.Boolean
+
 local typesModule = require(Packages.JestTypes)
 type Config_Path = typesModule.Config_Path
 
@@ -84,7 +87,7 @@ end
 local function addResult(aggregatedResults: AggregatedResult, testResult: TestResult): ()
 	-- `todos` are new as of Jest 24, and not all runners return it.
 	-- Set it to `0` to avoid `NaN`
-	if not testResult.numTodoTests then
+	if not Boolean.toJSBoolean(testResult.numTodoTests) then
 		testResult.numTodoTests = 0
 	end
 	table.insert(aggregatedResults.testResults, testResult)
@@ -93,32 +96,38 @@ local function addResult(aggregatedResults: AggregatedResult, testResult: TestRe
 	aggregatedResults.numPassedTests += testResult.numPassingTests
 	aggregatedResults.numPendingTests += testResult.numPendingTests
 	aggregatedResults.numTodoTests += testResult.numTodoTests
-	if testResult.testExecError then
+	if Boolean.toJSBoolean(testResult.testExecError) then
 		aggregatedResults.numRuntimeErrorTestSuites += 1
 	end
-	if testResult.skipped then
+	if Boolean.toJSBoolean(testResult.skipped) then
 		aggregatedResults.numPendingTestSuites += 1
-	elseif testResult.numFailingTests > 0 or testResult.testExecError then
+	elseif Boolean.toJSBoolean(testResult.numFailingTests > 0 or testResult.testExecError) then
 		aggregatedResults.numFailedTestSuites += 1
 	else
 		aggregatedResults.numPassedTestSuites += 1
-	end
-	if testResult.snapshot.added > 0 then
+	end -- Snapshot data
+	if Boolean.toJSBoolean(testResult.snapshot.added) then
 		aggregatedResults.snapshot.filesAdded += 1
 	end
-	if testResult.snapshot.fileDeleted then
+	if Boolean.toJSBoolean(testResult.snapshot.fileDeleted) then
 		aggregatedResults.snapshot.filesRemoved += 1
 	end
-	if testResult.snapshot.unmatched > 0 then
+	if Boolean.toJSBoolean(testResult.snapshot.unmatched) then
 		aggregatedResults.snapshot.filesUnmatched += 1
 	end
-	if testResult.snapshot.updated > 0 then
+	if Boolean.toJSBoolean(testResult.snapshot.updated) then
 		aggregatedResults.snapshot.filesUpdated += 1
 	end
 	aggregatedResults.snapshot.added += testResult.snapshot.added
 	aggregatedResults.snapshot.matched += testResult.snapshot.matched
 	aggregatedResults.snapshot.unchecked += testResult.snapshot.unchecked
-	if testResult.snapshot.uncheckedKeys and #testResult.snapshot.uncheckedKeys > 0 then
+	if
+		Boolean.toJSBoolean(
+			if Boolean.toJSBoolean(testResult.snapshot.uncheckedKeys)
+				then #testResult.snapshot.uncheckedKeys > 0
+				else testResult.snapshot.uncheckedKeys
+		)
+	then
 		table.insert(
 			aggregatedResults.snapshot.uncheckedKeysByFile,
 			{ filePath = testResult.testFilePath, keys = testResult.snapshot.uncheckedKeys }

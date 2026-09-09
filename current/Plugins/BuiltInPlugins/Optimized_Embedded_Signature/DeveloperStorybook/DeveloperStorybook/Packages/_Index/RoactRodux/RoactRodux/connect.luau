@@ -1,25 +1,7 @@
---!strict
 local Roact = require(script.Parent.Parent.Roact)
-
 local shallowEqual = require(script.Parent.shallowEqual)
 local join = require(script.Parent.join)
 local StoreContext = require(script.Parent.StoreContext)
-
-local types = require(script.Parent.types)
-
-type ThunkfulDispatchProp<State> = types.ThunkfulDispatchProp<State>
-type MapStateToProps<StoreState, Props, PartialProps> = types.MapStateToProps<StoreState, Props, PartialProps>
-type MapStateToPropsOrThunk<StoreState, Props, PartialProps> = types.MapStateToPropsOrThunk<
-	StoreState,
-	Props,
-	PartialProps
->
-type ActionCreatorMap = types.ActionCreatorMap
-type MapDispatchToProps<StoreState, PartialProps> = types.MapDispatchToProps<StoreState, PartialProps>
-type MapDispatchToPropsOrActionCreator<StoreState, PartialProps> = types.MapDispatchToPropsOrActionCreator<
-	StoreState,
-	PartialProps
->
 
 --[[
 	Formats a multi-line message with printf-style placeholders.
@@ -30,15 +12,6 @@ end
 
 local function noop()
 	return nil
-end
-
---[[
-	Returns `true` if the value can be called i.e. you can write `value(...)`.
-]]
-local function isCallable(value: any): boolean
-	return type(value) == "function"
-		or (type(value) == "table" and getmetatable(value) and getmetatable(value).__call ~= nil)
-		or false
 end
 
 --[[
@@ -74,19 +47,11 @@ end
 		() -> (storeState, props) -> partialProps
 	mapDispatchToProps: (dispatch) -> partialProps
 ]]
-local function connect<StoreState, Props, MappedStatePartialProps, MappedDispatchPartialProps>(
-	mapStateToPropsOrThunk: MapStateToPropsOrThunk<
-		StoreState,
-		Props,
-		MappedStatePartialProps
-	>?,
-	mapDispatchToProps: MapDispatchToPropsOrActionCreator<
-		StoreState,
-		MappedDispatchPartialProps
-	>?
-)
+local function connect(mapStateToPropsOrThunk, mapDispatchToProps)
+	local connectTrace = debug.traceback()
+
 	if mapStateToPropsOrThunk ~= nil then
-		assert(isCallable(mapStateToPropsOrThunk), "mapStateToProps must be a function or nil!")
+		assert(typeof(mapStateToPropsOrThunk) == "function", "mapStateToProps must be a function or nil!")
 	else
 		mapStateToPropsOrThunk = noop
 	end
@@ -103,7 +68,6 @@ local function connect<StoreState, Props, MappedStatePartialProps, MappedDispatc
 
 	return function(innerComponent)
 		if innerComponent == nil then
-			local connectTrace = debug.traceback()
 			local message = formatMessage({
 				"connect returns a function that must be passed a component.",
 				"Check the connection at:",
@@ -123,7 +87,6 @@ local function connect<StoreState, Props, MappedStatePartialProps, MappedDispatc
 			if prevState.stateUpdater ~= nil then
 				return prevState.stateUpdater(nextProps.innerProps, prevState)
 			end
-			return nil
 		end
 
 		function Connection:init(props)
@@ -143,16 +106,15 @@ local function connect<StoreState, Props, MappedStatePartialProps, MappedDispatc
 
 			local storeState = self.store:getState()
 
-			local mapStateToProps =
-				mapStateToPropsOrThunk :: MapStateToProps<StoreState, Props, MappedStatePartialProps>
+			local mapStateToProps = mapStateToPropsOrThunk
 			local mappedStoreState = mapStateToProps(storeState, self.props.innerProps)
 
 			-- mapStateToPropsOrThunk can return a function instead of a state
 			-- value. In this variant, we keep that value as mapStateToProps
 			-- instead of the original mapStateToProps. This matches react-redux
 			-- and enables connectors to keep instance-level state.
-			if isCallable(mappedStoreState) then
-				mapStateToProps = mappedStoreState :: any
+			if typeof(mappedStoreState) == "function" then
+				mapStateToProps = mappedStoreState
 				mappedStoreState = mapStateToProps(storeState, self.props.innerProps)
 			end
 
@@ -172,21 +134,19 @@ local function connect<StoreState, Props, MappedStatePartialProps, MappedDispatc
 				return self.store:dispatch(...)
 			end
 
-			local mappedStoreDispatch: any
-			if isCallable(mapDispatchToProps) then
-				mappedStoreDispatch = (mapDispatchToProps :: MapDispatchToProps<StoreState, MappedDispatchPartialProps>)(
-					(dispatch :: any) :: ThunkfulDispatchProp<StoreState>
-				)
-			elseif mapDispatchType == "table" then
+			local mappedStoreDispatch
+			if mapDispatchType == "table" then
 				mappedStoreDispatch = {}
 
-				for key, actionCreator in pairs(mapDispatchToProps :: ActionCreatorMap) do
-					assert(isCallable(actionCreator), "mapDispatchToProps must contain function values")
+				for key, actionCreator in pairs(mapDispatchToProps) do
+					assert(typeof(actionCreator) == "function", "mapDispatchToProps must contain function values")
 
 					mappedStoreDispatch[key] = function(...)
 						dispatch(actionCreator(...))
 					end
 				end
+			elseif mapDispatchType == "function" then
+				mappedStoreDispatch = mapDispatchToProps(dispatch)
 			end
 
 			local stateUpdater = makeStateUpdater(self.store)

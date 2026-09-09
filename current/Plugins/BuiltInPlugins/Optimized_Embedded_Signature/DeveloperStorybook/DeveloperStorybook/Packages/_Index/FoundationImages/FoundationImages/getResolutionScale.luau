@@ -1,11 +1,14 @@
 local GuiService = game:GetService("GuiService")
 
+local CorePackages = script:FindFirstAncestor("CorePackages")
 local success, scale = pcall(GuiService.GetResolutionScale, GuiService)
 
 local FoundationImages = script.Parent
 local GetImageSetData = require(FoundationImages.Generated.GetImageSetData)
+local Flags = require(FoundationImages.Flags)
+local FixBlurryImages = Flags.FixBlurryImages
 
-if not success then
+if not success or (not FixBlurryImages and not CorePackages) then
 	scale = 1
 end
 

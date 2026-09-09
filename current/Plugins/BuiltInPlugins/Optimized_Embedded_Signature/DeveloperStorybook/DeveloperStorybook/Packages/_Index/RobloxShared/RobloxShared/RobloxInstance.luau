@@ -27,6 +27,7 @@ local Object = LuauPolyfill.Object
 local CurrentModuleExpect = require(CurrentModule.expect)
 local equals = CurrentModuleExpect.equals
 local isObjectWithKeys = CurrentModuleExpect.isObjectWithKeys
+local hasPropertyInObject = CurrentModuleExpect.hasPropertyInObject
 local isAsymmetric = CurrentModuleExpect.isAsymmetric
 
 local exports = {}
@@ -36,11 +37,6 @@ local function readPropUnsafe(instance: Instance, propertyName: string): unknown
 	return instance[propertyName]
 end
 
--- Unsafe because no checks are performed that this property is readable via GetStyled.
-local function readStyledPropUnsafe(instance: Instance, propertyName: string): unknown
-	return (instance :: any):GetStyled(propertyName)
-end
-
 -- Unsafe because no checks are performed that this property is writable.
 local function writePropUnsafe(instance: Instance, propertyName: string, value: unknown): ()
 	instance[propertyName] = value
@@ -48,10 +44,6 @@ end
 
 function exports.readProp(instance: Instance, propertyName: string)
 	return pcall(readPropUnsafe, instance, propertyName)
-end
-
-function exports.readStyledProp(instance: Instance, propertyName: string)
-	return pcall(readStyledPropUnsafe, instance, propertyName)
 end
 
 function exports.writeProp(instance: Instance, propertyName: string, value: unknown)
@@ -71,38 +63,12 @@ local function listPropsUnsafe(className: string): { [string]: true }
 	return unsafeProps
 end
 
-export type ListPropsOptions = {
-	warmRead: boolean?,
-	useStyledProperties: boolean?,
-}
-
-function exports.listProps(instance: Instance, options: (boolean | ListPropsOptions)?): { [string]: unknown }
-	-- Support legacy boolean argument for backwards compatibility
-	local warmRead: boolean? = nil
-	local useStyledProperties: boolean? = nil
-	if typeof(options) == "boolean" then
-		warmRead = options
-	elseif typeof(options) == "table" then
-		warmRead = options.warmRead
-		useStyledProperties = options.useStyledProperties
-	end
-
+function exports.listProps(instance: Instance, warmRead: boolean?): { [string]: unknown }
 	local props = listPropsUnsafe(instance.ClassName)
-
 	-- cold read - values may not be stable, but at least we can weed out
 	-- property reads that will result in errors
 	for unsafeProp in props do
-		local ok, propValue
-		if useStyledProperties then
-			-- Try GetStyled first, fall back to regular read if not available
-			ok, propValue = exports.readStyledProp(instance, unsafeProp)
-			if not ok then
-				ok, propValue = exports.readProp(instance, unsafeProp)
-			end
-		else
-			ok, propValue = exports.readProp(instance, unsafeProp)
-		end
-
+		local ok, propValue = exports.readProp(instance, unsafeProp)
 		if ok then
 			props[unsafeProp] = if propValue == nil then Object.None else propValue
 		else
@@ -112,38 +78,18 @@ function exports.listProps(instance: Instance, options: (boolean | ListPropsOpti
 	if warmRead then
 		-- warm read - quantum UI bugs will no longer affect values here
 		for safeProp in props do
-			local ok, propValue
-			if useStyledProperties then
-				ok, propValue = pcall(readStyledPropUnsafe, instance, safeProp)
-				if not ok then
-					propValue = readPropUnsafe(instance, safeProp)
-				end
-			else
-				propValue = readPropUnsafe(instance, safeProp)
-			end
+			local propValue = readPropUnsafe(instance, safeProp)
 			props[safeProp] = if propValue == nil then Object.None else propValue
 		end
 	end
 	return props
 end
 
-function exports.getTags(instance: Instance): { string }
-	local ok, tags = pcall(function()
-		return (instance :: any):GetTags()
-	end)
-	if ok then
-		return tags
-	end
-	return {}
-end
-
 do
 	-- Hidden from outside code.
 	local cachedDefaults = {}
-	local cachedStyledDefaults = {}
-	function exports.listDefaultProps(className: string, useStyledProperties: boolean?): { [string]: unknown }
-		local cache = if useStyledProperties then cachedStyledDefaults else cachedDefaults
-		local cached = cache[className]
+	function exports.listDefaultProps(className: string): { [string]: unknown }
+		local cached = cachedDefaults[className]
 		if cached ~= nil then
 			return cached
 		end
@@ -152,12 +98,10 @@ do
 		if not ok then
 			error("Class type is abstract or not creatable - cannot list defaults")
 		end
-		local defaults = exports.listProps(instance, {
-			useStyledProperties = useStyledProperties,
-		})
+		local defaults = exports.listProps(instance)
 		instance:Destroy()
 
-		cache[className] = defaults
+		cachedDefaults[className] = defaults
 		return defaults
 	end
 end

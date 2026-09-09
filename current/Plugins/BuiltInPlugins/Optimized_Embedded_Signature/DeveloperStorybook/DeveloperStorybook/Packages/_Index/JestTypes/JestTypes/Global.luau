@@ -6,20 +6,32 @@
 * LICENSE file in the root directory of this source tree.
 ]]
 
-local PromiseModule = require(script.Parent.Promise)
-type Promise<T> = PromiseModule.Promise<T>
-local ErrorModule = require(script.Parent.Error)
-type Error = ErrorModule.Error
-type TemplateStringsArray = { string }
+local rootWorkspace = script.Parent.Parent
+local LuauPolyfill = require(rootWorkspace.LuauPolyfill)
+type Array<T> = LuauPolyfill.Array<T>
+type Error = LuauPolyfill.Error
+type Object = LuauPolyfill.Object
+type Promise<T> = LuauPolyfill.Promise<T>
+
+type Generator<T, TReturn, TNext> = Object
+type Record<T, U> = { [T]: U }
+type ReturnType<T> = any
+type TemplateStringsArray = Array<string>
+
+-- ROBLOX FIXME: can't express void when defined outside of a function type
 type void = nil
-type CoverageMapData = { [string]: any }
+
+-- ROBLOX deviation START: Package not available, setting type to object
+-- local istanbul_lib_coverageModule = require(rootWorkspace["istanbul-lib-coverage"])
+type CoverageMapData = Object
+-- ROBLOX deviation END
 
 export type ValidTestReturnValues = void | nil
 type TestReturnValuePromise = Promise<any>
-type TestReturnValueGenerator = { [string]: any }
+type TestReturnValueGenerator = Generator<void, any, void>
 export type TestReturnValue = ValidTestReturnValues | TestReturnValuePromise
 
-export type TestContext = { [string]: any }
+export type TestContext = Record<string, any>
 
 export type DoneFn = (reason: (string | Error)?) -> ()
 
@@ -27,13 +39,12 @@ export type DoneFn = (reason: (string | Error)?) -> ()
 export type DoneTakingTestFn = (this: TestContext | nil, done: DoneFn) -> ValidTestReturnValues
 export type PromiseReturningTestFn = (this: TestContext | nil) -> TestReturnValue
 export type GeneratorReturningTestFn = (this: TestContext | nil) -> TestReturnValueGenerator
-export type VoidTestFn = (this: TestContext | nil) -> ()
 
 type Fn = (...any) -> ...any
 export type NameLike = number | Fn
 export type TestName = string
 export type TestNameLike = TestName | NameLike
-export type TestFn = PromiseReturningTestFn | GeneratorReturningTestFn | DoneTakingTestFn | VoidTestFn
+export type TestFn = PromiseReturningTestFn | GeneratorReturningTestFn | DoneTakingTestFn
 export type ConcurrentTestFn = () -> TestReturnValuePromise
 export type BlockFn = () -> ()
 export type BlockName = string
@@ -41,25 +52,27 @@ export type BlockNameLike = BlockName | NameLike
 export type HookFn = TestFn
 
 export type Col = any
-export type Row = { Col }
-export type Table = { Row }
+export type Row = Array<Col>
+export type Table = Array<Row>
 export type ArrayTable = Table | Row
 export type TemplateTable = TemplateStringsArray
-export type TemplateData = { any }
+export type TemplateData = Array<any>
 
+-- ROBLOX deviation: Template literals are represented as a string
 export type EachTable = ArrayTable | TemplateTable | string
 
 export type TestCallback = BlockFn | TestFn | ConcurrentTestFn
 
-export type EachTestFn<EachCallback> = (...any) -> ...any
+-- ROBLOX FIXME: add type constraint <EachCallback extends TestCallback>
+export type EachTestFn<EachCallback> = (...any) -> ReturnType<EachCallback>
 
 -- TODO: Get rid of this at some point
-type Jasmine = { _DEFAULT_TIMEOUT_INTERVAL: number?, addMatchers: (matchers: { [string]: any }) -> () }
+type Jasmine = { _DEFAULT_TIMEOUT_INTERVAL: number?, addMatchers: (matchers: Record<string, any>) -> () }
 
-type Each<EachCallback> = (
-	table: EachTable,
-	...any
-) -> (title: string, test: EachTestFn<EachCallback>, timeout: number?) -> ()
+-- ROBLOX FIXME: add type constraint <EachCallback extends TestCallback>
+type Each<EachCallback> =
+	((table: EachTable, ...any) -> (title: string, test: EachTestFn<EachCallback>, timeout: number?) -> ())
+	| (() -> () -> ())
 
 export type HookBase = (fn: TestFn, timeout: number?) -> ()
 
@@ -80,10 +93,13 @@ export type ItConcurrentBase = typeof(setmetatable(
 
 export type ItConcurrentExtended = ItConcurrentBase & { only: ItConcurrentBase, skip: ItConcurrentBase }
 
+-- ROBLOX FIXME START Luau: inline It to make Luau analyze happy
 export type ItConcurrent =
 	ItBase
 	& { only: ItBase, skip: ItBase, todo: (testName: TestName) -> () }
 	& { concurrent: ItConcurrentExtended }
+-- export type ItConcurrent = It & { concurrent: ItConcurrentExtended }
+-- ROBLOX FIXME END
 
 export type DescribeBase = typeof(setmetatable({} :: { each: Each<BlockFn> }, {
 	__call = function(_, blockName: BlockName, blockFn: BlockFn): () end,
@@ -112,8 +128,10 @@ export type GlobalAdditions = TestFrameworkGlobals & {
 	fail: () -> (),
 	pending: () -> (),
 	spyOn: () -> (),
+	spyOnProperty: () -> (),
 }
 
+-- ROBLOX FIXME: should intersect with Omit<typeof globalThis, keyof GlobalAdditions>
 export type Global = GlobalAdditions & { [string]: any }
 
 return {}

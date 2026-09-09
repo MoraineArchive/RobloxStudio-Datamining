@@ -5,7 +5,4 @@ local PackageIndex = script.Parent.Parent.Parent._Index
 
 local Package = require(PackageIndex["ReactUtils"]["ReactUtils"])
 
-export type Binding<T> = Package.Binding<T> 
-
-
 return Package

@@ -11,7 +11,8 @@
 local CurrentModule = script.Parent
 local Packages = CurrentModule.Parent
 
-local Symbol = require(Packages.Symbol)
+local LuauPolyfill = require(Packages.LuauPolyfill)
+local Symbol = LuauPolyfill.Symbol
 
 local Types = require(CurrentModule.types)
 type MatcherState = Types.MatcherState

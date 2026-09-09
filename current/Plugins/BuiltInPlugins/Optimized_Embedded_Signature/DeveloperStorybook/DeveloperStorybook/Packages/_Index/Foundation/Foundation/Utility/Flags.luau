@@ -12,7 +12,6 @@ local FoundationCheckboxBeta = SafeFlags.createGetFFlag("FoundationCheckboxBeta"
 local FoundationInputGroup = SafeFlags.createGetFFlag("FoundationInputGroup")()
 local FoundationStyleSheetRefCounting = SafeFlags.createGetFFlag("FoundationStyleSheetRefCounting")()
 local FoundationThemeName = SafeFlags.createGetFFlag("FoundationThemeName")()
-local FoundationThemedTypography = SafeFlags.createGetFFlag("FoundationThemedTypography")()
 local FoundationRadioBeta = SafeFlags.createGetFFlag("FoundationRadioBeta")()
 
 return {
@@ -53,6 +52,7 @@ return {
 	FoundationBaseMenuSubmenuMaxHeight = SafeFlags.createGetFFlag("FoundationBaseMenuSubmenuMaxHeight")(),
 	FoundationImageContentSupport = SafeFlags.createGetFFlag("FoundationImageContentSupport")(),
 	FoundationInteractableSecondaryActivated = SafeFlags.createGetFFlag("FoundationInteractableSecondaryActivated")(),
+	FoundationSliderOffloadDraggingMath = SafeFlags.createGetFFlag("FoundationSliderOffloadDraggingMath")(),
 	FoundationViewMemoizationChanges = SafeFlags.createGetFFlag("FoundationViewMemoizationChanges")(),
 
 	-- Foundation@1.98.0
@@ -110,15 +110,6 @@ return {
 	FoundationPopoverPluginFocusable = SafeFlags.createGetFFlag("FoundationPopoverPluginFocusable")(),
 	FoundationSliderKnobSelection = FoundationSliderAsSeenOnTV and FoundationSliderKnobSelection,
 	FoundationTooltipBeta = SafeFlags.createGetFFlag("FoundationTooltipBeta3")(),
-
-	-- Foundation@1.104.0
-	FoundationProviderStableEmptyTable = SafeFlags.createGetFFlag("FoundationProviderStableEmptyTable")(),
-	FoundationSliderBeta = SafeFlags.createGetFFlag("FoundationSliderBeta")(),
-	FoundationStyleRulePseudoName = SafeFlags.createGetFFlag("FoundationStyleRulePseudoName")(),
-	FoundationThemedTypography = FoundationStyleSheetRefCounting and FoundationThemeName and FoundationThemedTypography,
-
-	-- Foundation@1.107.0
-	FoundationSliderOffloadDraggingMath = SafeFlags.createGetFFlag("FoundationSliderOffloadDraggingMath2")(),
 
 	-- Unreleased flags
 }

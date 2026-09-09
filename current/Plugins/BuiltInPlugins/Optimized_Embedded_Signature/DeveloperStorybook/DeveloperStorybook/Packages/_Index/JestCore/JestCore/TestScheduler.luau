@@ -212,7 +212,7 @@ function TestScheduler:scheduleTests(tests: Array<Test>, watcher: TestWatcher): 
 					testResult.testExecError,
 					test.context.config,
 					-- ROBLOX FIXME Luau: Config_GlobalConfig contains noStackTrace and noCodeFrame is optional in StackTraceOptions so it should be fine
-					(self._globalConfig :: any) :: { noStackTrace: boolean, noCodeFrame: boolean?, stackDepth: number? },
+					(self._globalConfig :: any) :: { noStackTrace: boolean, noCodeFrame: boolean? },
 					test.path
 				)
 				addResult(aggregatedResults, testResult)
@@ -280,7 +280,11 @@ function TestScheduler:scheduleTests(tests: Array<Test>, watcher: TestWatcher): 
 			return Promise.resolve():andThen(function()
 				local config = context.config
 				if not Boolean.toJSBoolean(testRunners[config.runner]) then
-					local Runner: TestRunner = require(Packages.JestRunner)
+					-- ROBLOX deviation START: use regular require to load TestRunner
+					-- local transformer = createScriptTransformer(config):expect()
+					-- local Runner: TestRunner = transformer:requireAndTranspileModule(config.runner):expect()
+					local Runner: TestRunner = require(Packages.JestRunner).default
+					-- ROBLOX deviation END
 					local runner = Runner.new(self._globalConfig, {
 						changedFiles = self._context.changedFiles,
 						sourcesRelatedToTestsInChangedFiles = self._context.sourcesRelatedToTestsInChangedFiles,
@@ -307,17 +311,65 @@ function TestScheduler:scheduleTests(tests: Array<Test>, watcher: TestWatcher): 
 						serial = runInBand or Boolean.toJSBoolean(testRunner.isSerial),
 					}
 
-					testRunner
-						:runTests(
-							-- ROBLOX FIXME Luau: Type 'Array<Test>' from 'JestRoblox/_Workspace/JestCore/JestCore/TestScheduler' could not be converted into 'Array<Test>' from 'JestRoblox/_Workspace/JestRunner/JestRunner'
-							tests :: Array<any>,
-							watcher,
-							onTestFileStart,
-							onResult :: Function,
-							onFailure :: Function,
-							testRunnerOptions
-						)
-						:expect()
+					--[[*
+					 * Test runners with event emitters are still not supported
+					 * for third party test runners.
+					]]
+					if testRunner.__PRIVATE_UNSTABLE_API_supportsEventEmitters__ then
+						local unsubscribes = {
+							testRunner:on("test-file-start", function(ref)
+								local test = ref[1]
+								return onTestFileStart(test)
+							end),
+							testRunner:on("test-file-success", function(ref)
+								local test, testResult = table.unpack(ref, 1, 2)
+								return onResult(test, testResult)
+							end),
+							testRunner:on("test-file-failure", function(ref)
+								local test, error_ = table.unpack(ref, 1, 2)
+								return onFailure(test, error_)
+							end),
+							testRunner:on("test-case-result", function(ref)
+								local testPath, testCaseResult = table.unpack(ref, 1, 2)
+								local test: Test = {
+									context = context,
+									path = testPath,
+									script = nil :: any, -- TODO: remove when we clean up Test type
+								}
+								self._dispatcher:onTestCaseResult(test, testCaseResult)
+							end),
+						}
+
+						testRunner
+							:runTests(
+								-- ROBLOX FIXME Luau: Type 'Array<Test>' from 'JestRoblox/_Workspace/JestCore/JestCore/TestScheduler' could not be converted into 'Array<Test>' from 'JestRoblox/_Workspace/JestRunner/JestRunner'
+								tests :: Array<any>,
+								watcher,
+								nil,
+								nil,
+								nil,
+								testRunnerOptions
+							)
+							:expect()
+
+						Array.forEach(unsubscribes, function(sub)
+							return sub()
+						end)
+					else
+						testRunner
+							:runTests(
+								-- ROBLOX FIXME Luau: Type 'Array<Test>' from 'JestRoblox/_Workspace/JestCore/JestCore/TestScheduler' could not be converted into 'Array<Test>' from 'JestRoblox/_Workspace/JestRunner/JestRunner'
+								tests :: Array<any>,
+								watcher,
+								onTestFileStart,
+								-- ROBLOX FIXME Luau: Type '(Test, TestResult) -> Promise<nil>' could not be converted into '((Test, TestResult) -> Promise<nil>)?'
+								onResult :: Function,
+								-- ROBLOX FIXME Luau: Type '(Test, SerializableError) -> Promise<nil>' could not be converted into '((Test, SerializableError) -> Promise<nil>)?'
+								onFailure :: Function,
+								testRunnerOptions
+							)
+							:expect()
+					end
 					-- ROBLOX deviation START: add cache of loaded module functions to a test runner
 					-- test runner should call clean up functions when it is done
 					testRunner:cleanup()
@@ -374,7 +426,7 @@ end
 function TestScheduler:_setupReporters()
 	return Promise.resolve():andThen(function()
 		local ref = self._globalConfig
-		local _coverage, _notify, verbose = false, false, ref.verbose
+		local coverage, notify, verbose = false, false, ref.verbose
 		local reporters
 		-- ROBLOX deviation: ReporterConfig is a named table since we can't type tuples
 		if ref.reporters ~= nil then
@@ -417,7 +469,7 @@ end
 
 function TestScheduler:_addCustomReporter(reporter: ModuleScript, options: Record<string, any>)
 	return Promise.resolve():andThen(function()
-		local _ok, _result, _hasReturned = xpcall(function()
+		local ok, result, hasReturned = xpcall(function()
 			local reporterConstructor: ReporterConstructor = require(reporter) :: any
 			self:addReporter(reporterConstructor.new(self._globalConfig, options, self._context :: ReporterContext))
 		end, function(error_)
@@ -438,7 +490,7 @@ function TestScheduler:_bailIfNeeded(
 	return Promise.resolve():andThen(function()
 		if self._globalConfig.bail ~= 0 and aggregatedResults.numFailedTests >= self._globalConfig.bail then
 			if watcher:isWatchMode() then
-				watcher:setState({ interrupted = true })
+				watcher:setState({ interrupted = true }):expect()
 				return
 			end
 

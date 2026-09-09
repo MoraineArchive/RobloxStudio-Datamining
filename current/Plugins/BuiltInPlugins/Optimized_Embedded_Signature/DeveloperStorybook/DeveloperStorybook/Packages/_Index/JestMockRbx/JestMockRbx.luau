@@ -13,9 +13,11 @@
 	* limitations under the License.
 ]]
 --!strict
+-- ROBLOX NOTE: no upstream
 
-local InstanceProxy = require(script.InstanceProxy)
-local DataModelMocker = require(script.DataModelMocker)
+local CurrentModule = script
+local InstanceProxy = require(CurrentModule.InstanceProxy)
+local DataModelMocker = require(CurrentModule.DataModelMocker)
 
 export type InstanceProxy<ClassType = Instance> = InstanceProxy.InstanceProxy<ClassType>
 export type Spied<ClassType = Instance> = InstanceProxy.Spied<ClassType>
@@ -23,6 +25,8 @@ export type ProxyControls<ClassType = Instance> = InstanceProxy.ProxyControls<Cl
 
 export type DataModelMocker = DataModelMocker.DataModelMocker
 
-return {
-	DataModelMocker = DataModelMocker,
-}
+local exports = {}
+
+exports.DataModelMocker = DataModelMocker
+
+return exports

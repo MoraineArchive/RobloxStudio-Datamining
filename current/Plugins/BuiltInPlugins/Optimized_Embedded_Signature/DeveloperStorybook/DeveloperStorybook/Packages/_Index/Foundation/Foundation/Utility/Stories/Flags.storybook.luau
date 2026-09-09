@@ -14,7 +14,7 @@ return {
 	name = "Flags",
 	group = "Foundation",
 	roact = Roact,
-	storyRoots = GetStories.getStorybookRoots("flags"),
+	storyRoots = GetStories("flags"),
 	mapStory = StoryMiddleware,
 	packages = {
 		React = React,

@@ -9,6 +9,7 @@
 local Packages = script.Parent.Parent
 local LuauPolyfill = require(Packages.LuauPolyfill)
 local Array = LuauPolyfill.Array
+local Error = LuauPolyfill.Error
 local String = LuauPolyfill.String
 type Array<T> = LuauPolyfill.Array<T>
 type Record<K, T> = { [K]: T }

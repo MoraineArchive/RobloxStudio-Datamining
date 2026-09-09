@@ -1,2 +1,0 @@
---!nocheck
-return {["KidsClassic"]="Cartoon",["NebulaDrift"]="BuilderSans",["PixelPop"]="BuilderSans",["SuperCharge"]="BuilderSans",["KineticEnergy"]="BuilderSans",["CosmicDust"]="BuilderSans",["NitroFrost"]="BuilderSans",["StarBurst"]="BuilderSans",["LavaGlow"]="BuilderSans",["CircuitRush"]="BuilderSans",["PolarFreeze"]="BuilderSans",["Classic"]="Cartoon",["QuantumPulse"]="BuilderSans",["Default"]="BuilderSans",["Kids"]="BuilderSans",["ElectricLime"]="BuilderSans",["InfernoBlast"]="BuilderSans",["HyperPlum"]="BuilderSans",}

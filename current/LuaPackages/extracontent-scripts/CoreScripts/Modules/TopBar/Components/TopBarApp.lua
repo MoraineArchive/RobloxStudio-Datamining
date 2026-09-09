@@ -102,12 +102,6 @@ local isInExperienceUIVREnabled =
 	require(CorePackages.Workspace.Packages.SharedExperimentDefinition).isInExperienceUIVREnabled
 local isSpatial = require(CorePackages.Workspace.Packages.AppCommonLib).isSpatial
 
-local FFlagShowSwitchServerButton = SharedFlags.FFlagShowSwitchServerButton
-local shouldAddSwitchServerToSideSheet = FFlagEnableSideSheet and FFlagShowSwitchServerButton
-local SwitchServer = require(CorePackages.Workspace.Packages.SwitchServer)
-local SwitchServerConfirmation = SwitchServer.SwitchServerConfirmation
-local GetSwitchServerStore = SwitchServer.GetSwitchServerStore
-
 local Unibar
 local KeepOutAreasHandler
 local ChromeAnalytics
@@ -393,17 +387,6 @@ function TopBarApp:init()
 			})
 		end)
 	end
-
-	if shouldAddSwitchServerToSideSheet then
-		self.disposeSwitchServerEffect = Signals.createEffect(function(scope)
-			local switchServerStore = GetSwitchServerStore(false)
-			self:setState({
-				shouldEnableSwitchServer = switchServerStore.shouldEnableSwitchServer(scope),
-				isConfirmationOpen = switchServerStore.isConfirmationOpen(scope),
-			})
-		end)
-		self.setConfirmationOpen = GetSwitchServerStore(false).setConfirmationOpen
-	end
 end
 
 function TopBarApp:didMount()
@@ -497,10 +480,6 @@ function TopBarApp:willUnmount()
 		if self.keepOutAreasStore then
 			self.keepOutAreasStore.cleanup()
 		end
-	end
-
-	if shouldAddSwitchServerToSideSheet and self.disposeSwitchServerEffect then
-		self.disposeSwitchServerEffect()
 	end
 end
 
@@ -717,13 +696,6 @@ function TopBarApp:renderWithStyle(style)
 			else nil,
 		GamepadNavigationDialog = if FFlagGamepadNavigationDialogABTest
 			then Roact.createElement(GamepadNavigationDialog)
-			else nil,
-		SwitchServerConfirmation = if shouldAddSwitchServerToSideSheet
-				and self.state.shouldEnableSwitchServer
-				and self.state.isConfirmationOpen
-			then React.createElement(SwitchServerConfirmation, {
-				setSwitchServerConfirmationOpen = self.setConfirmationOpen,
-			})
 			else nil,
 		HeadsetMenu = if FFlagUseNewHeadsetDisconnectDialog
 			then Roact.createElement(HeadsetDisconnectDialog)

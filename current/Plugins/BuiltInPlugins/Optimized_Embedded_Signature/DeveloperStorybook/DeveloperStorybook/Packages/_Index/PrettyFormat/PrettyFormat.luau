@@ -354,15 +354,11 @@ local DEFAULT_OPTIONS = {
 	printBasicPrototype = true,
 	-- ROBLOX deviation: option to omit default Roblox Instance values
 	printInstanceDefaults = true,
-	-- ROBLOX deviation: option to print Instance tags
-	printInstanceTags = false,
 	printFunctionName = true,
 	-- ROBLOX deviation: stable stacktrace snapshots
 	redactStackTracesInStrings = false,
 	-- ROBLOX deviation: color formatting omitted
 	theme = nil,
-	-- ROBLOX deviation: option to use GetStyled for property values
-	useStyledProperties = false,
 }
 
 local function validateOptions(options: OptionsReceived)
@@ -435,15 +431,11 @@ local function getConfig(options: OptionsReceived?): Config
 			else true,
 		-- ROBLOX deviation: option to omit default Roblox Instance values
 		printInstanceDefaults = getOption(options, "printInstanceDefaults"),
-		-- ROBLOX deviation: option to print Instance tags
-		printInstanceTags = getOption(options, "printInstanceTags"),
 		-- ROBLOX deviation: stable stack traces in snapshots
 		redactStackTracesInStrings = getOption(options, "redactStackTracesInStrings"),
 		printFunctionName = getOption(options, "printFunctionName"),
 		spacingInner = getSpacingInner(options),
 		spacingOuter = getSpacingOuter(options),
-		-- ROBLOX deviation: option to use GetStyled for property values
-		useStyledProperties = getOption(options, "useStyledProperties"),
 	}
 end
 

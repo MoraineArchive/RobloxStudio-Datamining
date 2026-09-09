@@ -9,7 +9,8 @@
 local CurrentModule = script.Parent.Parent
 local Packages = CurrentModule.Parent
 
-local Symbol = require(Packages.Symbol)
+local LuauPolyfill = require(Packages.LuauPolyfill)
+local Symbol = LuauPolyfill.Symbol
 
 local Collections = require(CurrentModule.Collections)
 local printListItems = Collections.printListItems

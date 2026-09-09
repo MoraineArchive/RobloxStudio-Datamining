@@ -2,7 +2,6 @@ local Foundation = script:FindFirstAncestor("Foundation")
 local Packages = Foundation.Parent
 
 local React = require(Packages.React)
-local ReactUtils = require(Packages.ReactUtils)
 
 local Constants = require(Foundation.Constants)
 
@@ -41,7 +40,6 @@ local CursorComponent = require(Foundation.Providers.Cursor.CursorComponent)
 local Flags = require(Foundation.Utility.Flags)
 local Knob = require(Foundation.Components.Knob)
 local PresentationContext = require(Foundation.Providers.Style.PresentationContext)
-local blendTransparencies = require(Foundation.Utility.blendTransparencies)
 local getKnobSize = require(Foundation.Components.Knob.getKnobSize)
 local usePresentationContext = PresentationContext.usePresentationContext
 local useSliderMotionStates = require(Foundation.Components.Slider.useSliderMotionStates)
@@ -125,14 +123,6 @@ local function Slider(sliderProps: SliderProps, forwardRef: React.Ref<GuiObject>
 		return ref.current
 	end, {})
 
-	local trackInstance, setTrackInstance
-	if Flags.FoundationSliderOffloadDraggingMath then
-		trackInstance, setTrackInstance = React.useBinding<<GuiObject?>>(nil)
-	end
-	local setTrackRef = if Flags.FoundationSliderOffloadDraggingMath
-		then ReactUtils.useComposedRef(ref, setTrackInstance)
-		else nil :: never
-
 	local pointerPosition = if Flags.FoundationSliderOffloadDraggingMath
 		then nil :: never
 		else usePointerPosition(ref.current)
@@ -148,26 +138,13 @@ local function Slider(sliderProps: SliderProps, forwardRef: React.Ref<GuiObject>
 		return if isDragging then motionStates.Dragging else motionStates.Idle
 	end, { tokens, isKnobVisible, isDragging, motionStates } :: { unknown })
 
-	local knobStyle = if Flags.FoundationSliderBeta
-		then React.useMemo(function(): Types.ColorStyleValue
-			if not isKnobVisible then
-				return { Color3 = variant.knob.style.Color3, Transparency = 1 }
-			elseif isDragging then
-				return variant.knob.dragStyle
-			end
-			return variant.knob.style
-		end, { variant, isKnobVisible, isDragging } :: { unknown })
-		else nil :: never
-
 	local isSelected = if Flags.FoundationSliderKnobSelection
 		then controlState == ControlState.Selected or controlState == ControlState.SelectedPressed
 		else nil :: never
 
 	React.useEffect(
 		function()
-			if Flags.FoundationSliderBeta and props.isDisabled then
-				setIsKnobVisible(false)
-			elseif props.knobVisibility :: Visibility == Visibility.None then
+			if props.knobVisibility :: Visibility == Visibility.None then
 				setIsKnobVisible(if Flags.FoundationSliderKnobSelection then isSelected else false)
 			elseif props.knobVisibility :: Visibility == Visibility.Always then
 				setIsKnobVisible(true)
@@ -184,7 +161,6 @@ local function Slider(sliderProps: SliderProps, forwardRef: React.Ref<GuiObject>
 			props.knobVisibility,
 			controlState,
 			isDragging,
-			if Flags.FoundationSliderBeta then props.isDisabled else nil,
 			if Flags.FoundationSliderKnobSelection then isSelected else nil,
 		} :: { unknown }
 	)
@@ -430,25 +406,6 @@ local function Slider(sliderProps: SliderProps, forwardRef: React.Ref<GuiObject>
 		end)
 		else Vector2.new(0.5, 0.5)
 
-	local hitboxHeight = if Flags.FoundationSliderBeta then getKnobSize(tokens, props.size).X.Offset else nil :: never
-
-	local knobStroke = if Flags.FoundationSliderBeta
-		then React.useMemo(function(): Types.Stroke?
-			local variantKnobStroke = variant.knob.stroke
-			if variantKnobStroke == nil then
-				return nil
-			end
-			return {
-				Color = variantKnobStroke.Color,
-				Thickness = variantKnobStroke.Thickness,
-				Transparency = blendTransparencies(
-					if typeof(variantKnobStroke.Transparency) == "number" then variantKnobStroke.Transparency else nil,
-					if isKnobVisible then 0 else 1
-				),
-			}
-		end, { variant, isKnobVisible } :: { unknown })
-		else nil :: never
-
 	local customKnobSize, setCustomKnobSize
 	if Flags.FoundationSliderKnobSelection then
 		customKnobSize, setCustomKnobSize = React.useBinding<<Vector2>>(Vector2.zero)
@@ -464,15 +421,7 @@ local function Slider(sliderProps: SliderProps, forwardRef: React.Ref<GuiObject>
 		withCommonProps(
 			props,
 			{
-				Size = UDim2.new(
-					props.width,
-					UDim.new(
-						0,
-						if Flags.FoundationSliderBeta
-							then hitboxHeight
-							else (variant.hitbox :: { height: number }).height
-					)
-				),
+				Size = UDim2.new(props.width, UDim.new(0, variant.hitbox.height)),
 				GroupTransparency = if props.isDisabled then Constants.DISABLED_TRANSPARENCY else nil,
 				stateLayer = {
 					-- This element is just the hitbox so we don't actually want it to visually change
@@ -482,14 +431,13 @@ local function Slider(sliderProps: SliderProps, forwardRef: React.Ref<GuiObject>
 				cursor = if Flags.FoundationSliderKnobSelection then CursorType.Invisible else nil,
 				onStateChanged = onStateChanged,
 				isDisabled = props.isDisabled,
-				ref = if Flags.FoundationSliderOffloadDraggingMath then setTrackRef else ref,
+				ref = ref,
 			} :: View.ViewProps
 		),
 		{
 			DragDetector = if Flags.FoundationSliderOffloadDraggingMath
 				then React.createElement("UIDragDetector", {
 					ref = dragDetectorRef,
-					ReferenceUIInstance = trackInstance,
 					DragStyle = Enum.UIDragDetectorDragStyle.TranslateLine,
 					DragAxis = Vector2.new(1, 0),
 					ResponseStyle = Enum.UIDragDetectorResponseStyle.CustomScale,
@@ -511,7 +459,6 @@ local function Slider(sliderProps: SliderProps, forwardRef: React.Ref<GuiObject>
 
 			Bar = React.createElement(View, {
 				tag = variant.bar.tag,
-				Size = if Flags.FoundationSliderBeta then UDim2.new(1, 0, 0, variant.bar.height) else nil,
 				testId = `{props.testId}--bar`,
 			}, {
 				Fill = React.createElement(View, {
@@ -557,8 +504,8 @@ local function Slider(sliderProps: SliderProps, forwardRef: React.Ref<GuiObject>
 								AnchorPoint = knobAnchorPoint,
 								Position = knobPosition,
 								size = props.size,
-								style = if Flags.FoundationSliderBeta then knobStyle else currentMotionState.knobStyle,
-								stroke = if Flags.FoundationSliderBeta then knobStroke else variant.knob.stroke,
+								style = currentMotionState.knobStyle,
+								stroke = variant.knob.stroke,
 								hasShadow = variant.knob.hasShadow,
 								testId = `{props.testId}--knob`,
 							}),

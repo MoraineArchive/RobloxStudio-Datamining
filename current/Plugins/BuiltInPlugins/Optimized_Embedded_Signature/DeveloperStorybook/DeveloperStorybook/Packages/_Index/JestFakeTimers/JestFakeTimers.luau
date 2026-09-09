@@ -14,7 +14,10 @@
 	* See the License for the specific language governing permissions and
 	* limitations under the License.
 ]]
--- Major implementation deviation from upstream, refer to README for more info
+--[[
+	ROBLOX deviation: API aligned with the upstream
+	major implementation deviation, refer to README for more info
+]]
 
 local CurrentModule = script
 local Packages = CurrentModule.Parent
@@ -23,7 +26,7 @@ local getType = require(Packages.JestGetType).getType
 
 local jestMock = require(Packages.JestMock).ModuleMocker
 
-local realDelay = task.delay
+local realDelay = delay
 local realTick = tick
 local realTime = time
 local realDateTime = DateTime
@@ -43,11 +46,12 @@ export type FakeTimers = {
 	runOnlyPendingTimers: (self: FakeTimers) -> (),
 	advanceTimersToNextTimer: (self: FakeTimers, steps_: number?) -> (),
 	advanceTimersByTime: (self: FakeTimers, msToRun: number) -> (),
+	runAllTicks: (self: FakeTimers) -> (),
 	useRealTimers: (self: FakeTimers) -> (),
 	useFakeTimers: (self: FakeTimers) -> (),
 	reset: (self: FakeTimers) -> (),
 	setSystemTime: (self: FakeTimers, now: any) -> (),
-	getRealSystemTime: (self: FakeTimers) -> DateTime,
+	getRealSystemTime: (self: FakeTimers) -> (),
 	getTimerCount: (self: FakeTimers) -> number,
 	setEngineFrameTime: (self: FakeTimers, frameTimeMs: number) -> (),
 	getEngineFrameTime: (self: FakeTimers) -> number,
@@ -201,6 +205,12 @@ function FakeTimers:advanceTimersByTime(msToRun: number): ()
 		end
 		self:_advanceToTime(targetTime)
 		self._timeouts = newTimeouts
+	end
+end
+
+function FakeTimers:runAllTicks(): ()
+	if self:_checkFakeTimers() then
+		error("not implemented")
 	end
 end
 
@@ -362,7 +372,7 @@ function FakeTimers:getEngineFrameTime(): number
 	return 0
 end
 
-function FakeTimers:getRealSystemTime(): DateTime
+function FakeTimers:getRealSystemTime(): ()
 	return realDateTime.now()
 end
 

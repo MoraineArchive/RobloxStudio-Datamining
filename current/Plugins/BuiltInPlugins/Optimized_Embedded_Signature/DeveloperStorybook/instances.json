@@ -12,16 +12,6 @@
   {
     "class": "Folder",
     "name": "__snapshots__",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-2.0.194/RbxDesignFoundations/__snapshots__",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
-    "name": "__snapshots__",
     "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-3.0.5/RbxDesignFoundations/__snapshots__",
     "properties": {
       "AttributesSerialize": "",
@@ -42,17 +32,7 @@
   {
     "class": "Folder",
     "name": "__tests__",
-    "path": "DeveloperStorybook/Packages/_Index/ChalkLua-31ab8d40-0.2.2/ChalkLua/__tests__",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
-    "name": "__tests__",
-    "path": "DeveloperStorybook/Packages/_Index/ChalkLua-31ab8d40-0.3.0/ChalkLua/__tests__",
+    "path": "DeveloperStorybook/Packages/_Index/ChalkLua/ChalkLua/__tests__",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -271,16 +251,6 @@
   },
   {
     "class": "Folder",
-    "name": "BuilderSans",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Typography/BuilderSans",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
     "name": "Calendar",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/DateTimePicker/Calendar",
     "properties": {
@@ -301,16 +271,6 @@
   },
   {
     "class": "Folder",
-    "name": "Cartoon",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Typography/Cartoon",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
     "name": "Catalog",
     "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/RobloxAPI/Catalog",
     "properties": {
@@ -321,18 +281,8 @@
   },
   {
     "class": "Folder",
-    "name": "ChalkLua-31ab8d40-0.2.2",
-    "path": "DeveloperStorybook/Packages/_Index/ChalkLua-31ab8d40-0.2.2",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
-    "name": "ChalkLua-31ab8d40-0.3.0",
-    "path": "DeveloperStorybook/Packages/_Index/ChalkLua-31ab8d40-0.3.0",
+    "name": "ChalkLua",
+    "path": "DeveloperStorybook/Packages/_Index/ChalkLua",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -383,16 +333,6 @@
     "class": "Folder",
     "name": "Classes",
     "path": "DeveloperStorybook/Packages/_Index/DeveloperTools/DeveloperTools/RoactInspector/Classes",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
-    "name": "Classic",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Classic",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -811,6 +751,16 @@
   },
   {
     "class": "Folder",
+    "name": "Emittery",
+    "path": "DeveloperStorybook/Packages/_Index/Emittery",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
     "name": "enumerate",
     "path": "DeveloperStorybook/Packages/_Index/enumerate",
     "properties": {
@@ -893,6 +843,16 @@
     "class": "Folder",
     "name": "Flags",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Utility/Stories/Flags",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Flags",
+    "path": "DeveloperStorybook/Packages/_Index/ReactUtils/ReactUtils/Flags",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -1173,16 +1133,6 @@
     "class": "Folder",
     "name": "InstanceOf",
     "path": "DeveloperStorybook/Packages/_Index/InstanceOf",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
-    "name": "Internal",
-    "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Internal",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -1531,16 +1481,6 @@
   },
   {
     "class": "Folder",
-    "name": "KidsClassic",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Generated/StyleRules/KidsClassic",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
     "name": "KineticEnergy",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Generated/StyleRules/KineticEnergy",
     "properties": {
@@ -1713,16 +1653,6 @@
     "class": "Folder",
     "name": "Markdown",
     "path": "DeveloperStorybook/Packages/_Index/Markdown",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
-    "name": "MaterialFramework",
-    "path": "DeveloperStorybook/Packages/_Index/MaterialFramework",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -2161,8 +2091,8 @@
   },
   {
     "class": "Folder",
-    "name": "RbxDesignFoundations-31ab8d40-2.0.194",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-2.0.194",
+    "name": "RbxDesignFoundations-31ab8d40-2.0.163",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-2.0.163",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -2181,8 +2111,8 @@
   },
   {
     "class": "Folder",
-    "name": "RbxDesignFoundations-31ab8d40-4.0.7",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7",
+    "name": "RbxDesignFoundations-31ab8d40-4.0.4",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -2291,18 +2221,8 @@
   },
   {
     "class": "Folder",
-    "name": "RegExp-31ab8d40-0.2.2",
-    "path": "DeveloperStorybook/Packages/_Index/RegExp-31ab8d40-0.2.2",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
-    "name": "RegExp-31ab8d40-0.3.0",
-    "path": "DeveloperStorybook/Packages/_Index/RegExp-31ab8d40-0.3.0",
+    "name": "RegExp",
+    "path": "DeveloperStorybook/Packages/_Index/RegExp",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -2391,18 +2311,8 @@
   },
   {
     "class": "Folder",
-    "name": "Rodux-31ab8d40-3.3.0",
-    "path": "DeveloperStorybook/Packages/_Index/Rodux-31ab8d40-3.3.0",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
-    "name": "Rodux-31ab8d40-4.0.0-rc.0",
-    "path": "DeveloperStorybook/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0",
+    "name": "Rodux",
+    "path": "DeveloperStorybook/Packages/_Index/Rodux",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -2681,6 +2591,16 @@
   },
   {
     "class": "Folder",
+    "name": "t",
+    "path": "DeveloperStorybook/Packages/_Index/t",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
     "name": "Table",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Utility/Stories/Planned/Table",
     "properties": {
@@ -2863,26 +2783,6 @@
     "class": "Folder",
     "name": "tutils",
     "path": "DeveloperStorybook/Packages/_Index/tutils",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
-    "name": "types",
-    "path": "DeveloperStorybook/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/types",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
-    "name": "Typography",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Typography",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -3473,20 +3373,8 @@
   },
   {
     "class": "ModuleScript",
-    "name": "Accordion.Item.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Accordion/Item/Accordion.Item.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Accordion.Root.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Accordion/Accordion.Root.story",
+    "name": "Accordion.story",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Accordion/Accordion.story",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -3535,18 +3423,6 @@
     "class": "ModuleScript",
     "name": "AccordionItem",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Accordion/Item/AccordionItem",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "AccordionPlayground",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Accordion/AccordionPlayground",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -3629,18 +3505,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "actions",
-    "path": "DeveloperStorybook/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/types/actions",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "ActionsRenderer",
     "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/PropertyCell/Renderers/ActionsRenderer",
     "properties": {
@@ -3701,44 +3565,8 @@
   },
   {
     "class": "ModuleScript",
-    "name": "Alert.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Alert/Alert.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "Alert",
     "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/Alert",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Alert",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Alert",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Alert",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Alert/Alert",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -4853,20 +4681,8 @@
   },
   {
     "class": "ModuleScript",
-    "name": "BaseComponents.storybook",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Utility/Stories/BaseComponents.storybook",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "BaseMenu.Root.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/BaseMenu/BaseMenu.Root.story",
+    "name": "BaseMenu.story",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/BaseMenu/BaseMenu.story",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -5095,18 +4911,6 @@
     "class": "ModuleScript",
     "name": "BindableEventBridge",
     "path": "DeveloperStorybook/Packages/_Index/DeveloperTools/DeveloperTools/Classes/BindableEventBridge",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Bindings",
-    "path": "DeveloperStorybook/Packages/_Index/ReactUtils/ReactUtils/Bindings",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -5837,42 +5641,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "CarouselIndicator.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/CarouselIndicator/CarouselIndicator.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "CarouselIndicator",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/CarouselIndicator",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "CarouselIndicator",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/CarouselIndicator/CarouselIndicator",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "Cell",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Grid/Cell",
     "properties": {
@@ -5946,19 +5714,7 @@
   {
     "class": "ModuleScript",
     "name": "ChalkLua",
-    "path": "DeveloperStorybook/Packages/_Index/ChalkLua-31ab8d40-0.2.2/ChalkLua",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "ChalkLua",
-    "path": "DeveloperStorybook/Packages/_Index/ChalkLua-31ab8d40-0.3.0/ChalkLua",
+    "path": "DeveloperStorybook/Packages/_Index/ChalkLua/ChalkLua",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -6474,7 +6230,7 @@
   {
     "class": "ModuleScript",
     "name": "CircuitRush",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/CircuitRush",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/CircuitRush",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -6571,18 +6327,6 @@
     "class": "ModuleScript",
     "name": "class",
     "path": "DeveloperStorybook/Packages/_Index/Dash-31ab8d40-3.4.0/Dash/class",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Classic",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/Classic",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -7278,19 +7022,7 @@
   {
     "class": "ModuleScript",
     "name": "combineReducers",
-    "path": "DeveloperStorybook/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux/combineReducers",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "combineReducers",
-    "path": "DeveloperStorybook/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/combineReducers",
+    "path": "DeveloperStorybook/Packages/_Index/Rodux/Rodux/combineReducers",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -7339,18 +7071,6 @@
     "class": "ModuleScript",
     "name": "Components.storybook",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Utility/Stories/Components.storybook",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Components",
-    "path": "DeveloperStorybook/Packages/_Index/MaterialFramework/MaterialFramework/Components",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -7613,30 +7333,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "ConsoleAttribute",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Typography/BuilderSans/ConsoleAttribute",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "ConsoleAttribute",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Typography/Cartoon/ConsoleAttribute",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "ConsolePatchingDev.roblox",
     "path": "DeveloperStorybook/Packages/_Index/Shared/Shared/ConsolePatchingDev.roblox",
     "properties": {
@@ -7759,18 +7455,6 @@
     "class": "ModuleScript",
     "name": "Constants",
     "path": "DeveloperStorybook/Packages/_Index/Markdown/Markdown/Utils/Parser/Constants",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Constants",
-    "path": "DeveloperStorybook/Packages/_Index/MaterialFramework/MaterialFramework/Constants",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -8154,7 +7838,7 @@
   {
     "class": "ModuleScript",
     "name": "CosmicDust",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/CosmicDust",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/CosmicDust",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -8417,18 +8101,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "createPlannedSubPartStory",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Utility/Stories/createPlannedSubPartStory",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "createPluginWidget",
     "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/createPluginWidget",
     "properties": {
@@ -8466,19 +8138,7 @@
   {
     "class": "ModuleScript",
     "name": "createReducer",
-    "path": "DeveloperStorybook/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux/createReducer",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "createReducer",
-    "path": "DeveloperStorybook/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/createReducer",
+    "path": "DeveloperStorybook/Packages/_Index/Rodux/Rodux/createReducer",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -8706,6 +8366,18 @@
   {
     "class": "ModuleScript",
     "name": "Cryo",
+    "path": "DeveloperStorybook/Packages/_Index/DocUtils/Cryo",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Cryo",
     "path": "DeveloperStorybook/Packages/_Index/lumberyak/Cryo",
     "properties": {
       "AttributesSerialize": "",
@@ -8910,7 +8582,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-2.0.194/RbxDesignFoundations/tokens/Dark",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-2.0.163/RbxDesignFoundations/tokens/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -8934,7 +8606,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/CircuitRush/Dark",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/CircuitRush/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -8946,7 +8618,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/Classic/Dark",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/CosmicDust/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -8958,7 +8630,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/CosmicDust/Dark",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/Default/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -8970,7 +8642,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/Default/Dark",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/ElectricLime/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -8982,7 +8654,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/ElectricLime/Dark",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/HyperPlum/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -8994,7 +8666,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/HyperPlum/Dark",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/InfernoBlast/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -9006,7 +8678,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/InfernoBlast/Dark",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/Kids/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -9018,7 +8690,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/Kids/Dark",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/KineticEnergy/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -9030,7 +8702,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/KidsClassic/Dark",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/LavaGlow/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -9042,7 +8714,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/KineticEnergy/Dark",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/NebulaDrift/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -9054,7 +8726,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/LavaGlow/Dark",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/NitroFrost/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -9066,7 +8738,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/NebulaDrift/Dark",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/PixelPop/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -9078,7 +8750,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/NitroFrost/Dark",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/PolarFreeze/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -9090,7 +8762,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/PixelPop/Dark",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/QuantumPulse/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -9102,7 +8774,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/PolarFreeze/Dark",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/StarBurst/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -9114,31 +8786,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/QuantumPulse/Dark",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Dark",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/StarBurst/Dark",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Dark",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/SuperCharge/Dark",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/SuperCharge/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -9151,18 +8799,6 @@
     "class": "ModuleScript",
     "name": "DarkAttribute",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Generated/StyleRules/CircuitRush/DarkAttribute",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "DarkAttribute",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Classic/DarkAttribute",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -9247,18 +8883,6 @@
     "class": "ModuleScript",
     "name": "DarkAttribute",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Kids/DarkAttribute",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "DarkAttribute",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Generated/StyleRules/KidsClassic/DarkAttribute",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -9451,18 +9075,6 @@
     "class": "ModuleScript",
     "name": "Dash",
     "path": "DeveloperStorybook/Packages/_Index/DeveloperTools/Dash",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Dash",
-    "path": "DeveloperStorybook/Packages/_Index/DocUtils/Dash",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -10026,7 +9638,7 @@
   {
     "class": "ModuleScript",
     "name": "Default",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/Default",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/Default",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -10253,30 +9865,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "DesktopAttribute",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Typography/BuilderSans/DesktopAttribute",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "DesktopAttribute",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Typography/Cartoon/DesktopAttribute",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "details",
     "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/RobloxAPI/APIS/ToolboxService/V1/Items/details",
     "properties": {
@@ -10361,54 +9949,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "Dialog.Actions.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Dialog/Dialog.Actions.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Dialog.Content.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Dialog/Dialog.Content.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Dialog.HeroMedia.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Dialog/Dialog.HeroMedia.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Dialog.Root.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Dialog/Dialog.Root.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "Dialog.story",
     "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/Dialog/Dialog.story",
     "properties": {
@@ -10422,31 +9962,19 @@
   {
     "class": "ModuleScript",
     "name": "Dialog.story",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Dialog/Dialog.story",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dialog.story",
     "path": "DeveloperStorybook/Packages/_Index/StudioFoundation/StudioFoundation/Components/Dialog/Dialog.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Dialog.Text.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Dialog/Dialog.Text.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Dialog.Title.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Dialog/Dialog.Title.story",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -10639,18 +10167,6 @@
     "class": "ModuleScript",
     "name": "DialogSize",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Enums/DialogSize",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "DialogStoryHelpers",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Dialog/DialogStoryHelpers",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -10985,18 +10501,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "Dot",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/CarouselIndicator/Dot",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "DoubleClickDetector",
     "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/Util/DoubleClickDetector",
     "properties": {
@@ -11141,8 +10645,8 @@
   },
   {
     "class": "ModuleScript",
-    "name": "Dropdown.Root.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Dropdown/Dropdown.Root.story",
+    "name": "Dropdown.story",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Dropdown/Dropdown.story",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -11322,7 +10826,7 @@
   {
     "class": "ModuleScript",
     "name": "ElectricLime",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/ElectricLime",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/ElectricLime",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -11465,6 +10969,42 @@
   },
   {
     "class": "ModuleScript",
+    "name": "Emittery",
+    "path": "DeveloperStorybook/Packages/_Index/Emittery/Emittery",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Emittery",
+    "path": "DeveloperStorybook/Packages/_Index/JestCore/Emittery",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Emittery",
+    "path": "DeveloperStorybook/Packages/_Index/JestRunner/Emittery",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "EmphasisParser",
     "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/Util/Markdown/EmphasisParser",
     "properties": {
@@ -11575,6 +11115,18 @@
     "class": "ModuleScript",
     "name": "endsWith",
     "path": "DeveloperStorybook/Packages/_Index/String/String/endsWith",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "EngineeringOnlyComponents.storybook",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Utility/Stories/EngineeringOnlyComponents.storybook",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -11706,18 +11258,6 @@
   {
     "class": "ModuleScript",
     "name": "Enums",
-    "path": "DeveloperStorybook/Packages/_Index/MaterialFramework/MaterialFramework/Enums",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Enums",
     "path": "DeveloperStorybook/Packages/_Index/MaterialFrameworkDeprecated/MaterialFrameworkDeprecated/Enums",
     "properties": {
       "AttributesSerialize": "",
@@ -11730,7 +11270,7 @@
   {
     "class": "ModuleScript",
     "name": "enums",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/enums",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/enums",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -11851,18 +11391,6 @@
     "class": "ModuleScript",
     "name": "Error",
     "path": "DeveloperStorybook/Packages/_Index/Dash-31ab8d40-3.4.0/Dash/Error",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Error",
-    "path": "DeveloperStorybook/Packages/_Index/JestTypes/JestTypes/Error",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -12905,18 +12433,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "FontName",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Enums/FontName",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "FontScales",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Text/FontScales",
     "properties": {
@@ -13279,18 +12795,6 @@
     "class": "ModuleScript",
     "name": "Foundation",
     "path": "DeveloperStorybook/Packages/_Index/Markdown/Foundation",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Foundation",
-    "path": "DeveloperStorybook/Packages/_Index/MaterialFramework/Foundation",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -13709,18 +13213,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "FunctionParser",
-    "path": "DeveloperStorybook/Packages/_Index/DocUtils/DocUtils/FunctionParser",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "games",
     "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/RobloxAPI/GameInternationalization/V1/AutoLocalization/games",
     "properties": {
@@ -14071,18 +13563,6 @@
     "class": "ModuleScript",
     "name": "getBuilderIconVariant",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Utility/getBuilderIconVariant/getBuilderIconVariant",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getCarouselIndicatorDotsConfig",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/CarouselIndicator/getCarouselIndicatorDotsConfig",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -14657,6 +14137,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "getFFlagUseToggleStateImprovements",
+    "path": "DeveloperStorybook/Packages/_Index/ReactUtils/ReactUtils/Flags/getFFlagUseToggleStateImprovements",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "getFFlagViewportToolingFrameworkMoreComponents",
     "path": "DeveloperStorybook/Packages/_Index/ViewportToolingFramework/ViewportToolingFramework/Flags/getFFlagViewportToolingFrameworkMoreComponents",
     "properties": {
@@ -14935,18 +14427,6 @@
     "class": "ModuleScript",
     "name": "getMainGui",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Utility/getMainGui",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getMaterialColor",
-    "path": "DeveloperStorybook/Packages/_Index/MaterialFramework/MaterialFramework/Util/getMaterialColor",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -15629,18 +15109,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "GoodSignal",
-    "path": "DeveloperStorybook/Packages/_Index/ReactUtils/GoodSignal",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "Gradient",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Gradient",
     "properties": {
@@ -15665,32 +15133,8 @@
   },
   {
     "class": "ModuleScript",
-    "name": "Grid.Cell.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Grid/Cell/Grid.Cell.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Grid.Debug.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Grid/Debug/Grid.Debug.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Grid.Root.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Grid/Grid.Root.story",
+    "name": "Grid.story",
+    "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/Grid/Grid.story",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -15702,7 +15146,7 @@
   {
     "class": "ModuleScript",
     "name": "Grid.story",
-    "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/Grid/Grid.story",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Grid/Grid.story",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -16001,56 +15445,8 @@
   },
   {
     "class": "ModuleScript",
-    "name": "HeaderBar.Actions.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/HeaderBar/Actions/HeaderBar.Actions.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "HeaderBar.Content.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/HeaderBar/Content/HeaderBar.Content.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "HeaderBar.Leading.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/HeaderBar/Leading/HeaderBar.Leading.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "HeaderBar.Root.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/HeaderBar/HeaderBar.Root.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "HeaderBar.Trailing.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/HeaderBar/Trailing/HeaderBar.Trailing.story",
+    "name": "HeaderBar.story",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/HeaderBar/HeaderBar.story",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -16410,7 +15806,7 @@
   {
     "class": "ModuleScript",
     "name": "HyperPlum",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/HyperPlum",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/HyperPlum",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -16962,7 +16358,7 @@
   {
     "class": "ModuleScript",
     "name": "InfernoBlast",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/InfernoBlast",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/InfernoBlast",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -18245,6 +17641,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "isStyleSheetPolyfillOn",
+    "path": "DeveloperStorybook/Packages/_Index/StudioFoundation/StudioFoundation/Util/isStyleSheetPolyfillOn",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "isTestEnvironment",
     "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/TestHelpers/isTestEnvironment",
     "properties": {
@@ -18499,18 +17907,6 @@
     "class": "ModuleScript",
     "name": "jest.config",
     "path": "DeveloperStorybook/Packages/_Index/Markdown/Markdown/jest.config",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "jest.config",
-    "path": "DeveloperStorybook/Packages/_Index/MaterialFramework/MaterialFramework/jest.config",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -19854,18 +19250,6 @@
   {
     "class": "ModuleScript",
     "name": "JestTypes",
-    "path": "DeveloperStorybook/Packages/_Index/JestMatcherUtils/JestTypes",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "JestTypes",
     "path": "DeveloperStorybook/Packages/_Index/JestMessageUtil/JestTypes",
     "properties": {
       "AttributesSerialize": "",
@@ -19986,31 +19370,7 @@
   {
     "class": "ModuleScript",
     "name": "JestTypes",
-    "path": "DeveloperStorybook/Packages/_Index/JestValidate/JestTypes",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "JestTypes",
     "path": "DeveloperStorybook/Packages/_Index/TestUtils/JestTypes",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "JestTypes",
-    "path": "DeveloperStorybook/Packages/_Index/Throat/JestTypes",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -20538,19 +19898,7 @@
   {
     "class": "ModuleScript",
     "name": "Kids",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/Kids",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "KidsClassic",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/KidsClassic",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/Kids",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -20562,7 +19910,7 @@
   {
     "class": "ModuleScript",
     "name": "KineticEnergy",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/KineticEnergy",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/KineticEnergy",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -20718,7 +20066,7 @@
   {
     "class": "ModuleScript",
     "name": "LavaGlow",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/LavaGlow",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/LavaGlow",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -20731,30 +20079,6 @@
     "class": "ModuleScript",
     "name": "LayoutOrderIterator",
     "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/Util/LayoutOrderIterator",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "LazyFoundationProvider",
-    "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Internal/LazyFoundationProvider",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "LazyFoundationStyleLink",
-    "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Internal/LazyFoundationStyleLink",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -20898,7 +20222,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-2.0.194/RbxDesignFoundations/tokens/Light",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-2.0.163/RbxDesignFoundations/tokens/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -20922,7 +20246,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/CircuitRush/Light",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/CircuitRush/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -20934,7 +20258,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/Classic/Light",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/CosmicDust/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -20946,7 +20270,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/CosmicDust/Light",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/Default/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -20958,7 +20282,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/Default/Light",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/ElectricLime/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -20970,7 +20294,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/ElectricLime/Light",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/HyperPlum/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -20982,7 +20306,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/HyperPlum/Light",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/InfernoBlast/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -20994,7 +20318,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/InfernoBlast/Light",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/Kids/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -21006,7 +20330,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/Kids/Light",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/KineticEnergy/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -21018,7 +20342,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/KidsClassic/Light",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/LavaGlow/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -21030,7 +20354,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/KineticEnergy/Light",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/NebulaDrift/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -21042,7 +20366,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/LavaGlow/Light",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/NitroFrost/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -21054,7 +20378,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/NebulaDrift/Light",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/PixelPop/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -21066,7 +20390,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/NitroFrost/Light",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/PolarFreeze/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -21078,7 +20402,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/PixelPop/Light",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/QuantumPulse/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -21090,7 +20414,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/PolarFreeze/Light",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/StarBurst/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -21102,31 +20426,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/QuantumPulse/Light",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Light",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/StarBurst/Light",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Light",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/SuperCharge/Light",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/SuperCharge/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -21139,18 +20439,6 @@
     "class": "ModuleScript",
     "name": "LightAttribute",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Generated/StyleRules/CircuitRush/LightAttribute",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "LightAttribute",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Classic/LightAttribute",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -21223,18 +20511,6 @@
     "class": "ModuleScript",
     "name": "LightAttribute",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Kids/LightAttribute",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "LightAttribute",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Generated/StyleRules/KidsClassic/LightAttribute",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -21449,20 +20725,8 @@
   },
   {
     "class": "ModuleScript",
-    "name": "List.Item.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/List/Item/List.Item.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "List.Root.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/List/List.Root.story",
+    "name": "List.story",
+    "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/List/List.story",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -21474,7 +20738,7 @@
   {
     "class": "ModuleScript",
     "name": "List.story",
-    "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/List/List.story",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/List/List.story",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -21571,6 +20835,18 @@
     "class": "ModuleScript",
     "name": "listDifferences",
     "path": "DeveloperStorybook/Packages/_Index/tutils/tutils/listDifferences",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ListItem.story",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/List/Item/ListItem.story",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -21798,19 +21074,7 @@
   {
     "class": "ModuleScript",
     "name": "loggerMiddleware",
-    "path": "DeveloperStorybook/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux/loggerMiddleware",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "loggerMiddleware",
-    "path": "DeveloperStorybook/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/loggerMiddleware",
+    "path": "DeveloperStorybook/Packages/_Index/Rodux/Rodux/loggerMiddleware",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -21834,7 +21098,31 @@
   {
     "class": "ModuleScript",
     "name": "LuauPolyfill",
+    "path": "DeveloperStorybook/Packages/_Index/DiffSequences/LuauPolyfill",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "LuauPolyfill",
     "path": "DeveloperStorybook/Packages/_Index/DomTestingLibrary/LuauPolyfill",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "LuauPolyfill",
+    "path": "DeveloperStorybook/Packages/_Index/Emittery/LuauPolyfill",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -21930,6 +21218,30 @@
   {
     "class": "ModuleScript",
     "name": "LuauPolyfill",
+    "path": "DeveloperStorybook/Packages/_Index/JestEnvironment/LuauPolyfill",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "LuauPolyfill",
+    "path": "DeveloperStorybook/Packages/_Index/JestEnvironmentLuau/LuauPolyfill",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "LuauPolyfill",
     "path": "DeveloperStorybook/Packages/_Index/JestFakeTimers/LuauPolyfill",
     "properties": {
       "AttributesSerialize": "",
@@ -21966,7 +21278,43 @@
   {
     "class": "ModuleScript",
     "name": "LuauPolyfill",
+    "path": "DeveloperStorybook/Packages/_Index/JestMatcherUtils/LuauPolyfill",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "LuauPolyfill",
+    "path": "DeveloperStorybook/Packages/_Index/JestMessageUtil/LuauPolyfill",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "LuauPolyfill",
     "path": "DeveloperStorybook/Packages/_Index/JestMock/LuauPolyfill",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "LuauPolyfill",
+    "path": "DeveloperStorybook/Packages/_Index/JestMockGenv/LuauPolyfill",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -22002,6 +21350,18 @@
   {
     "class": "ModuleScript",
     "name": "LuauPolyfill",
+    "path": "DeveloperStorybook/Packages/_Index/JestRunner/LuauPolyfill",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "LuauPolyfill",
     "path": "DeveloperStorybook/Packages/_Index/JestRuntime/LuauPolyfill",
     "properties": {
       "AttributesSerialize": "",
@@ -22026,6 +21386,30 @@
   {
     "class": "ModuleScript",
     "name": "LuauPolyfill",
+    "path": "DeveloperStorybook/Packages/_Index/JestTestResult/LuauPolyfill",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "LuauPolyfill",
+    "path": "DeveloperStorybook/Packages/_Index/JestTypes/LuauPolyfill",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "LuauPolyfill",
     "path": "DeveloperStorybook/Packages/_Index/JestUtil/LuauPolyfill",
     "properties": {
       "AttributesSerialize": "",
@@ -22038,7 +21422,31 @@
   {
     "class": "ModuleScript",
     "name": "LuauPolyfill",
+    "path": "DeveloperStorybook/Packages/_Index/JestValidate/LuauPolyfill",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "LuauPolyfill",
     "path": "DeveloperStorybook/Packages/_Index/LuauPolyfill/LuauPolyfill",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "LuauPolyfill",
+    "path": "DeveloperStorybook/Packages/_Index/Path/LuauPolyfill",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -22193,6 +21601,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "LuauPolyfill",
+    "path": "DeveloperStorybook/Packages/_Index/Throat/LuauPolyfill",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "LuauRegExp",
     "path": "DeveloperStorybook/Packages/_Index/DomTestingLibrary/LuauRegExp",
     "properties": {
@@ -22254,19 +21674,7 @@
   {
     "class": "ModuleScript",
     "name": "makeActionCreator",
-    "path": "DeveloperStorybook/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux/makeActionCreator",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "makeActionCreator",
-    "path": "DeveloperStorybook/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/makeActionCreator",
+    "path": "DeveloperStorybook/Packages/_Index/Rodux/Rodux/makeActionCreator",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -22338,19 +21746,7 @@
   {
     "class": "ModuleScript",
     "name": "makeThunkMiddleware",
-    "path": "DeveloperStorybook/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux/makeThunkMiddleware",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "makeThunkMiddleware",
-    "path": "DeveloperStorybook/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/makeThunkMiddleware",
+    "path": "DeveloperStorybook/Packages/_Index/Rodux/Rodux/makeThunkMiddleware",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -22794,31 +22190,7 @@
   {
     "class": "ModuleScript",
     "name": "MaterialFramework.storybook",
-    "path": "DeveloperStorybook/Packages/_Index/MaterialFramework/MaterialFramework/MaterialFramework.storybook",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "MaterialFramework.storybook",
     "path": "DeveloperStorybook/Packages/_Index/MaterialFrameworkDeprecated/MaterialFrameworkDeprecated/MaterialFramework.storybook",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "MaterialFramework",
-    "path": "DeveloperStorybook/Packages/_Index/MaterialFramework/MaterialFramework",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -22843,18 +22215,6 @@
     "class": "ModuleScript",
     "name": "MaterialFrameworkDeprecated",
     "path": "DeveloperStorybook/Packages/_Index/MaterialFrameworkDeprecated/MaterialFrameworkDeprecated",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "MaterialFrameworkDeprecated",
-    "path": "DeveloperStorybook/Packages/MaterialFrameworkDeprecated",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -22938,18 +22298,6 @@
   {
     "class": "ModuleScript",
     "name": "MaterialPreview.story",
-    "path": "DeveloperStorybook/Packages/_Index/MaterialFramework/MaterialFramework/Components/MaterialPreview/MaterialPreview.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "MaterialPreview.story",
     "path": "DeveloperStorybook/Packages/_Index/MaterialFrameworkDeprecated/MaterialFrameworkDeprecated/Components/MaterialPreview/MaterialPreview.story",
     "properties": {
       "AttributesSerialize": "",
@@ -22962,31 +22310,7 @@
   {
     "class": "ModuleScript",
     "name": "MaterialPreview",
-    "path": "DeveloperStorybook/Packages/_Index/MaterialFramework/MaterialFramework/Components/MaterialPreview",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "MaterialPreview",
     "path": "DeveloperStorybook/Packages/_Index/MaterialFrameworkDeprecated/MaterialFrameworkDeprecated/Components/MaterialPreview",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "MaterialPreviewGeometryType",
-    "path": "DeveloperStorybook/Packages/_Index/MaterialFramework/MaterialFramework/Enums/MaterialPreviewGeometryType",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -23922,7 +23246,7 @@
   {
     "class": "ModuleScript",
     "name": "NebulaDrift",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/NebulaDrift",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/NebulaDrift",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -23982,7 +23306,7 @@
   {
     "class": "ModuleScript",
     "name": "NitroFrost",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/NitroFrost",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/NitroFrost",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -24174,19 +23498,7 @@
   {
     "class": "ModuleScript",
     "name": "NoYield",
-    "path": "DeveloperStorybook/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux/NoYield",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "NoYield",
-    "path": "DeveloperStorybook/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/NoYield",
+    "path": "DeveloperStorybook/Packages/_Index/Rodux/Rodux/NoYield",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -24509,20 +23821,8 @@
   },
   {
     "class": "ModuleScript",
-    "name": "OptionSelectorGroup.Item.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/OptionSelectorGroup/Item/OptionSelectorGroup.Item.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "OptionSelectorGroup.Root.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/OptionSelectorGroup/OptionSelectorGroup.Root.story",
+    "name": "OptionSelectorGroup.story",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/OptionSelectorGroup/OptionSelectorGroup.story",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -24559,6 +23859,18 @@
     "class": "ModuleScript",
     "name": "OptionSelectorGroupContext",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/OptionSelectorGroup/OptionSelectorGroupContext",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "OptionSelectorGroupItem.story",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/OptionSelectorGroup/Item/OptionSelectorGroupItem.story",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -25302,7 +24614,7 @@
   {
     "class": "ModuleScript",
     "name": "PixelPop",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/PixelPop",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/PixelPop",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -25351,18 +24663,6 @@
     "class": "ModuleScript",
     "name": "PlannedComponents.storybook",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Utility/Stories/PlannedComponents.storybook",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "PlannedSubPart",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Utility/Stories/PlannedSubPart",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -25674,7 +24974,7 @@
   {
     "class": "ModuleScript",
     "name": "PolarFreeze",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/PolarFreeze",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/PolarFreeze",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -25697,32 +24997,8 @@
   },
   {
     "class": "ModuleScript",
-    "name": "Popover.Anchor.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Popover/Anchor/Popover.Anchor.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Popover.Content.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Popover/Content/Popover.Content.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Popover.Root.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Popover/Popover.Root.story",
+    "name": "Popover.story",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Popover/Popover.story",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -26310,19 +25586,7 @@
   {
     "class": "ModuleScript",
     "name": "prettyPrint",
-    "path": "DeveloperStorybook/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux/prettyPrint",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "prettyPrint",
-    "path": "DeveloperStorybook/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/prettyPrint",
+    "path": "DeveloperStorybook/Packages/_Index/Rodux/Rodux/prettyPrint",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -26586,6 +25850,18 @@
   {
     "class": "ModuleScript",
     "name": "Promise",
+    "path": "DeveloperStorybook/Packages/_Index/Emittery/Promise",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Promise",
     "path": "DeveloperStorybook/Packages/_Index/Expect/Promise",
     "properties": {
       "AttributesSerialize": "",
@@ -26671,18 +25947,6 @@
     "class": "ModuleScript",
     "name": "Promise",
     "path": "DeveloperStorybook/Packages/_Index/JestSnapshot/Promise",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Promise",
-    "path": "DeveloperStorybook/Packages/_Index/JestTypes/JestTypes/Promise",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -26874,7 +26138,7 @@
   {
     "class": "ModuleScript",
     "name": "QuantumPulse",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/QuantumPulse",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/QuantumPulse",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -27005,20 +26269,8 @@
   },
   {
     "class": "ModuleScript",
-    "name": "RadioGroup.Item.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/RadioGroup/Item/RadioGroup.Item.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "RadioGroup.Root.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/RadioGroup/RadioGroup.Root.story",
+    "name": "RadioGroup.story",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/RadioGroup/RadioGroup.story",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -27055,6 +26307,18 @@
     "class": "ModuleScript",
     "name": "RadioGroupContext",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/RadioGroup/RadioGroupContext",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "RadioGroupItem.story",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/RadioGroup/Item/RadioGroupItem.story",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -27198,7 +26462,7 @@
   {
     "class": "ModuleScript",
     "name": "RbxDesignFoundations",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-2.0.194/RbxDesignFoundations",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-2.0.163/RbxDesignFoundations",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -27222,7 +26486,7 @@
   {
     "class": "ModuleScript",
     "name": "RbxDesignFoundations",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -27283,18 +26547,6 @@
     "class": "ModuleScript",
     "name": "React",
     "path": "DeveloperStorybook/Packages/_Index/Markdown/React",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "React",
-    "path": "DeveloperStorybook/Packages/_Index/MaterialFramework/React",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -28542,18 +27794,6 @@
   {
     "class": "ModuleScript",
     "name": "ReactRoblox",
-    "path": "DeveloperStorybook/Packages/_Index/MaterialFramework/ReactRoblox",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "ReactRoblox",
     "path": "DeveloperStorybook/Packages/_Index/MaterialFrameworkDeprecated/ReactRoblox",
     "properties": {
       "AttributesSerialize": "",
@@ -29021,32 +28261,8 @@
   },
   {
     "class": "ModuleScript",
-    "name": "reducers",
-    "path": "DeveloperStorybook/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/types/reducers",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "RegEx",
-    "path": "DeveloperStorybook/Packages/_Index/RegExp-31ab8d40-0.2.2/RegExp/RegEx",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "RegEx",
-    "path": "DeveloperStorybook/Packages/_Index/RegExp-31ab8d40-0.3.0/RegExp/RegEx",
+    "path": "DeveloperStorybook/Packages/_Index/RegExp/RegExp/RegEx",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -29058,19 +28274,7 @@
   {
     "class": "ModuleScript",
     "name": "Regexp.global",
-    "path": "DeveloperStorybook/Packages/_Index/RegExp-31ab8d40-0.2.2/RegExp/Regexp.global",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Regexp.global",
-    "path": "DeveloperStorybook/Packages/_Index/RegExp-31ab8d40-0.3.0/RegExp/Regexp.global",
+    "path": "DeveloperStorybook/Packages/_Index/RegExp/RegExp/Regexp.global",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -29238,19 +28442,7 @@
   {
     "class": "ModuleScript",
     "name": "RegExp",
-    "path": "DeveloperStorybook/Packages/_Index/RegExp-31ab8d40-0.2.2/RegExp",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "RegExp",
-    "path": "DeveloperStorybook/Packages/_Index/RegExp-31ab8d40-0.3.0/RegExp",
+    "path": "DeveloperStorybook/Packages/_Index/RegExp/RegExp",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -29503,18 +28695,6 @@
     "class": "ModuleScript",
     "name": "resolveConfigPath",
     "path": "DeveloperStorybook/Packages/_Index/JestConfig/JestConfig/resolveConfigPath",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "resolveInstancePath",
-    "path": "DeveloperStorybook/Packages/_Index/JestRuntime/JestRuntime/resolveInstancePath",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -30198,19 +29378,7 @@
   {
     "class": "ModuleScript",
     "name": "Rodux",
-    "path": "DeveloperStorybook/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Rodux",
-    "path": "DeveloperStorybook/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux",
+    "path": "DeveloperStorybook/Packages/_Index/Rodux/Rodux",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -30415,18 +29583,6 @@
     "class": "ModuleScript",
     "name": "SafeFlags",
     "path": "DeveloperStorybook/Packages/_Index/ReactIs/SafeFlags",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "SafeFlags",
-    "path": "DeveloperStorybook/Packages/_Index/ReactOtter/SafeFlags",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -31385,30 +30541,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "ShadowPreset",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Enums/ShadowPreset",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "shadowRules",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/StyleSheet/Rules/shadowRules",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "shallowEqual",
     "path": "DeveloperStorybook/Packages/_Index/Dash-31ab8d40-0.1.9/Dash/shallowEqual",
     "properties": {
@@ -31649,56 +30781,8 @@
   },
   {
     "class": "ModuleScript",
-    "name": "Sheet.Actions.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Sheet/Actions/Sheet.Actions.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Sheet.Content.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Sheet/Content/Sheet.Content.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Sheet.FullBleed.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Sheet/FullBleed/Sheet.FullBleed.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Sheet.Header.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Sheet/Header/Sheet.Header.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Sheet.Root.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Sheet/Sheet.Root.story",
+    "name": "Sheet.story",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Sheet/Sheet.story",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -31962,19 +31046,7 @@
   {
     "class": "ModuleScript",
     "name": "Signal",
-    "path": "DeveloperStorybook/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux/Signal",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Signal",
-    "path": "DeveloperStorybook/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/Signal",
+    "path": "DeveloperStorybook/Packages/_Index/Rodux/Rodux/Signal",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -32718,7 +31790,7 @@
   {
     "class": "ModuleScript",
     "name": "StarBurst",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/StarBurst",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/StarBurst",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -33150,31 +32222,7 @@
   {
     "class": "ModuleScript",
     "name": "Store",
-    "path": "DeveloperStorybook/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux/Store",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Store",
-    "path": "DeveloperStorybook/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/Store",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "store",
-    "path": "DeveloperStorybook/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/types/store",
+    "path": "DeveloperStorybook/Packages/_Index/Rodux/Rodux/Store",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -33487,18 +32535,6 @@
     "class": "ModuleScript",
     "name": "StoryMiddleware",
     "path": "DeveloperStorybook/Packages/_Index/Markdown/Markdown/Middleware/StoryMiddleware",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "StoryMiddleware",
-    "path": "DeveloperStorybook/Packages/_Index/MaterialFramework/MaterialFramework/StoryMiddleware",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -35346,7 +34382,7 @@
   {
     "class": "ModuleScript",
     "name": "SuperCharge",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/SuperCharge",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/SuperCharge",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -35442,103 +34478,7 @@
   {
     "class": "ModuleScript",
     "name": "Symbol",
-    "path": "DeveloperStorybook/Packages/_Index/Expect/Symbol",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Symbol",
-    "path": "DeveloperStorybook/Packages/_Index/JestCircus/Symbol",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Symbol",
-    "path": "DeveloperStorybook/Packages/_Index/JestDiff/Symbol",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Symbol",
-    "path": "DeveloperStorybook/Packages/_Index/JestMatcherUtils/Symbol",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Symbol",
-    "path": "DeveloperStorybook/Packages/_Index/JestMock/Symbol",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Symbol",
-    "path": "DeveloperStorybook/Packages/_Index/JestRuntime/Symbol",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Symbol",
-    "path": "DeveloperStorybook/Packages/_Index/JestUtil/Symbol",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Symbol",
     "path": "DeveloperStorybook/Packages/_Index/LuauPolyfill/Symbol",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Symbol",
-    "path": "DeveloperStorybook/Packages/_Index/PrettyFormat/Symbol",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -35623,6 +34563,30 @@
     "class": "ModuleScript",
     "name": "t",
     "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/Util/Typecheck/t",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "t",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-2.0.163/t",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "t",
+    "path": "DeveloperStorybook/Packages/_Index/t/t",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -36005,6 +34969,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "testCaseReportHandler",
+    "path": "DeveloperStorybook/Packages/_Index/JestCircus/JestCircus/circus/testCaseReportHandler",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "TestHelpers",
     "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/TestHelpers",
     "properties": {
@@ -36199,6 +35175,18 @@
     "class": "ModuleScript",
     "name": "TestWatcher",
     "path": "DeveloperStorybook/Packages/_Index/JestCore/JestCore/TestWatcher",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "testWorker",
+    "path": "DeveloperStorybook/Packages/_Index/JestRunner/JestRunner/testWorker",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -36677,18 +35665,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "ThemeSwitcherState",
-    "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/Style/ThemeSwitcherState",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "Throat",
     "path": "DeveloperStorybook/Packages/_Index/JestCircus/Throat",
     "properties": {
@@ -36810,31 +35786,7 @@
   {
     "class": "ModuleScript",
     "name": "thunkMiddleware",
-    "path": "DeveloperStorybook/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux/thunkMiddleware",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "thunkMiddleware",
-    "path": "DeveloperStorybook/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/thunkMiddleware",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "thunks",
-    "path": "DeveloperStorybook/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/types/thunks",
+    "path": "DeveloperStorybook/Packages/_Index/Rodux/Rodux/thunkMiddleware",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -36857,8 +35809,8 @@
   },
   {
     "class": "ModuleScript",
-    "name": "Tile.Root.story",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Tile/Tile.Root.story",
+    "name": "Tile.story",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Tile/Tile.story",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -37374,18 +36326,6 @@
   {
     "class": "ModuleScript",
     "name": "tokens.test.snap",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-2.0.194/RbxDesignFoundations/__snapshots__/tokens.test.snap",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "tokens.test.snap",
     "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-3.0.5/RbxDesignFoundations/__snapshots__/tokens.test.snap",
     "properties": {
       "AttributesSerialize": "",
@@ -37410,7 +36350,7 @@
   {
     "class": "ModuleScript",
     "name": "tokens",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-2.0.194/RbxDesignFoundations/tokens",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-2.0.163/RbxDesignFoundations/tokens",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -37747,6 +36687,18 @@
     "class": "ModuleScript",
     "name": "Trailing",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/HeaderBar/Trailing",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Transform",
+    "path": "DeveloperStorybook/Packages/_Index/JestTypes/JestTypes/Transform",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -38502,18 +37454,6 @@
   {
     "class": "ModuleScript",
     "name": "Types",
-    "path": "DeveloperStorybook/Packages/_Index/MaterialFramework/MaterialFramework/Types",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Types",
     "path": "DeveloperStorybook/Packages/_Index/MaterialFrameworkDeprecated/MaterialFrameworkDeprecated/Types",
     "properties": {
       "AttributesSerialize": "",
@@ -38562,7 +37502,7 @@
   {
     "class": "ModuleScript",
     "name": "types",
-    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/types",
+    "path": "DeveloperStorybook/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.4/RbxDesignFoundations/types",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -38575,18 +37515,6 @@
     "class": "ModuleScript",
     "name": "types",
     "path": "DeveloperStorybook/Packages/_Index/ReactTestingLibrary/ReactTestingLibrary/types",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "types",
-    "path": "DeveloperStorybook/Packages/_Index/RoactRodux/RoactRodux/types",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -38647,18 +37575,6 @@
     "class": "ModuleScript",
     "name": "Types",
     "path": "DeveloperStorybook/Src/Types",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "TypographyVariants",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Generated/StyleRules/TypographyVariants",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -38899,18 +37815,6 @@
     "class": "ModuleScript",
     "name": "useAccordionItemVariants",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Accordion/useAccordionItemVariants",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "useAlertVariants",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Alert/useAlertVariants",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -39499,18 +38403,6 @@
     "class": "ModuleScript",
     "name": "useElevation",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Providers/Elevation/useElevation",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "useEventCallback",
-    "path": "DeveloperStorybook/Packages/_Index/ReactUtils/ReactUtils/useEventCallback",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -40697,18 +39589,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "useStagnatingState",
-    "path": "DeveloperStorybook/Packages/_Index/ReactUtils/ReactUtils/useStagnatingState",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "useStatusBadgeVariants",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/StatusBadge/useStatusBadgeVariants",
     "properties": {
@@ -40747,18 +39627,6 @@
     "class": "ModuleScript",
     "name": "useStudioThemeColors",
     "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/Util/Highlighter/useStudioThemeColors",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "useStudioThemeName",
-    "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Hooks/useStudioThemeName",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -41071,18 +39939,6 @@
     "class": "ModuleScript",
     "name": "Util",
     "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/Util",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Util",
-    "path": "DeveloperStorybook/Packages/_Index/MaterialFramework/MaterialFramework/Util",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -41443,18 +40299,6 @@
     "class": "ModuleScript",
     "name": "View",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/View/View",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "viewportCamera",
-    "path": "DeveloperStorybook/Packages/_Index/MaterialFramework/MaterialFramework/Util/viewportCamera",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -42149,16 +40993,6 @@
   {
     "class": "StringValue",
     "name": ".luaurc",
-    "path": "DeveloperStorybook/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/.luaurc",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "StringValue",
-    "name": ".luaurc",
     "path": "DeveloperStorybook/Packages/_Index/Signals/Signals/.luaurc",
     "properties": {
       "AttributesSerialize": "",
@@ -42299,17 +41133,7 @@
   {
     "class": "StringValue",
     "name": ".robloxrc",
-    "path": "DeveloperStorybook/Packages/_Index/RegExp-31ab8d40-0.2.2/RegExp/.robloxrc",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "StringValue",
-    "name": ".robloxrc",
-    "path": "DeveloperStorybook/Packages/_Index/RegExp-31ab8d40-0.3.0/RegExp/.robloxrc",
+    "path": "DeveloperStorybook/Packages/_Index/RegExp/RegExp/.robloxrc",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""

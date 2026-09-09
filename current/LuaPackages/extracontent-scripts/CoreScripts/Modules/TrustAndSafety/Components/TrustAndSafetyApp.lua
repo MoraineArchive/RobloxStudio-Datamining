@@ -24,6 +24,7 @@ local DISPLAY_ORDER = 8 -- Displays above the InGameMenu
 
 TrustAndSafetyApp.validateProps = t.strictInterface({
 	setScreenSize = t.callback,
+	visible = t.boolean,
 })
 
 function TrustAndSafetyApp:init() end
@@ -41,6 +42,7 @@ function TrustAndSafetyApp:render()
 			Content = Roact.createElement("Frame", {
 				BackgroundTransparency = 1,
 				Size = UDim2.new(1, 0, 1, 0),
+				Visible = self.props.visible,
 			}, {
 				ReportCategoryDialog = Roact.createElement(ReportCategoryDialog),
 				ReportMenu = Roact.createElement(ReportMenu),
@@ -55,7 +57,11 @@ function TrustAndSafetyApp:render()
 	})
 end
 
-return RoactRodux.UNSTABLE_connect2(nil, function(dispatch)
+return RoactRodux.UNSTABLE_connect2(function(state, props)
+	return {
+		visible = state.displayOptions.visible,
+	}
+end, function(dispatch)
 	return {
 		setScreenSize = function(rbx)
 			dispatch(SetScreenSize(rbx.AbsoluteSize))

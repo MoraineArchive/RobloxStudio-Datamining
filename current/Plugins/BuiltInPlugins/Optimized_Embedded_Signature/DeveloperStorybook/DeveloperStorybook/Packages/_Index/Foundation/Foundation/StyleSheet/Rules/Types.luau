@@ -7,7 +7,6 @@ export type StyleRule = {
 	tag: string,
 	modifier: string?,
 	pseudo: string?,
-	pseudoName: string?,
 	priority: number?,
 	properties: {
 		[string]: any,
@@ -22,7 +21,6 @@ export type StyleRuleNoTag = {
 	properties: { [string]: any },
 	attributes: { StyleAttribute<unknown> }?,
 	pseudo: string?,
-	pseudoName: string?,
 	children: { StyleRule }?,
 }
 
@@ -86,6 +84,6 @@ export type FormattedTokens = {
 export type RulesGenerator = (
 	tokens: Tokens,
 	formattedTokens: FormattedTokens
-) -> ({ StyleRule }, { StyleRule }, { StyleRule }, { StyleRule })
+) -> ({ StyleRule }, { StyleRule }, { StyleRule })
 
 return {}

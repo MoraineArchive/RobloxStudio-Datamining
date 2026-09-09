@@ -25,6 +25,8 @@ local iconMigrations = BuilderIcons.Migration
 
 local GetFFlagVoiceUserAgencyEnableIXP = require(RobloxGuiModules.Flags.GetFFlagVoiceUserAgencyEnableIXP)
 local GetFStringVoiceUserAgencyIXPLayerName = require(RobloxGuiModules.Flags.GetFStringVoiceUserAgencyIXPLayerName)
+local FFlagManuallyMigrateDeprecatedAssetUsage =
+	require(CorePackages.Workspace.Packages.SharedFlags).FFlagManuallyMigrateDeprecatedIconUsage
 
 local FIntVoiceUserAgencyAlertInitTimeOffset = game:DefineFastInt("VoiceUserAgencyAlertInitTimeOffset", 5)
 local FIntVoiceUserAgencyAlertStartTimeOffset = game:DefineFastInt("VoiceUserAgencyAlertStartTimeOffset", 3)
@@ -239,11 +241,19 @@ local function showUserAgencyPrompt()
 		end
 	end)
 
-	local checkboxButtonOverlay = Create("TextLabel")({
+	local checkboxButtonOverlay = if FFlagManuallyMigrateDeprecatedAssetUsage then
+		Create("TextLabel")({
+			Size = UDim2.new(1, 0, 1, 0),
+			BackgroundTransparency = 1,
+			Text = BuilderIcons.Migration["icons/status/success_small"].name,
+			FontFace = BuilderIcons.Font[BuilderIcons.Migration["icons/status/success_small"].variant],
+		})
+	else Create("ImageLabel")({
 		Size = UDim2.new(1, 0, 1, 0),
 		BackgroundTransparency = 1,
-		Text = BuilderIcons.Migration["icons/status/success_small"].name,
-		FontFace = BuilderIcons.Font[BuilderIcons.Migration["icons/status/success_small"].variant],
+		Image = Images["icons/status/success_small"].Image,
+		ImageRectOffset = Images["icons/status/success_small"].ImageRectOffset,
+		ImageRectSize = Images["icons/status/success_small"].ImageRectSize,
 	})
 	local checkboxButton = Create("ImageButton")({
 		Size = UDim2.new(0, 14, 0, 14),

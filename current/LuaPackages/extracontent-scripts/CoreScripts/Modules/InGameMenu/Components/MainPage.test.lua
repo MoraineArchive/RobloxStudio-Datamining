@@ -2,8 +2,6 @@
 local CorePackages = game:GetService("CorePackages")
 
 local JestGlobals = require(CorePackages.Packages.Dev.JestGlobals3)
-local afterEach = JestGlobals.afterEach
-local beforeEach = JestGlobals.beforeEach
 local describe = JestGlobals.describe
 local it = JestGlobals.it
 local expect = JestGlobals.expect
@@ -31,14 +29,6 @@ local act = Roact.act
 
 local GetFFlagIGMGamepadSelectionHistory = require(InGameMenu.Flags.GetFFlagIGMGamepadSelectionHistory)
 local GuiService = game:GetService("GuiService")
-
-beforeEach(function()
-	GuiService.SelectedCoreObject = nil
-end)
-
-afterEach(function()
-	GuiService.SelectedCoreObject = nil
-end)
 
 local CoreGui = game:GetService("CoreGui")
 local RobloxGui = CoreGui:WaitForChild("RobloxGui")

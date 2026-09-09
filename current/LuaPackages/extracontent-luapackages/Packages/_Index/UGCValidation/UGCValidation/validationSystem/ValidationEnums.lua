@@ -174,7 +174,6 @@ ValidationEnums.ValidationModule = {
 	CurveAnimPartsRotateOnlyIfBones = "CurveAnimPartsRotateOnlyIfBones",
 	CurveAnimBoneHierarchyValid = "CurveAnimBoneHierarchyValid",
 	CurveAnimLoopingRequired = "CurveAnimLoopingRequired",
-	CurveAnimStrictSchema = "CurveAnimStrictSchema",
 	EmissiveMapAllowed = "EmissiveMapAllowed",
 }
 

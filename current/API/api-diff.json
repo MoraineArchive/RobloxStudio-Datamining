@@ -2,6 +2,22 @@
   "classes": {
     "added": [
       {
+        "id": "DataModelPatchService",
+        "metadata": {
+          "MemoryCategory": "Instances",
+          "Name": "DataModelPatchService",
+          "Superclass": "Instance",
+          "Tags": [
+            "NotCreatable",
+            "Service",
+            "NotReplicated"
+          ]
+        }
+      }
+    ],
+    "changed": [],
+    "removed": [
+      {
         "id": "AnimatedImage",
         "metadata": {
           "MemoryCategory": "Gui",
@@ -64,26 +80,12 @@
           ]
         }
       }
-    ],
-    "changed": [],
-    "removed": [
-      {
-        "id": "DataModelPatchService",
-        "metadata": {
-          "MemoryCategory": "Instances",
-          "Name": "DataModelPatchService",
-          "Superclass": "Instance",
-          "Tags": [
-            "NotCreatable",
-            "Service",
-            "NotReplicated"
-          ]
-        }
-      }
     ]
   },
   "enumItems": {
-    "added": [
+    "added": [],
+    "changed": [],
+    "removed": [
       {
         "id": "AnimatedImagePlaybackState.Begin",
         "metadata": {
@@ -245,12 +247,12 @@
           "Value": 48
         }
       }
-    ],
-    "changed": [],
-    "removed": []
+    ]
   },
   "enums": {
-    "added": [
+    "added": [],
+    "changed": [],
+    "removed": [
       {
         "id": "AnimatedImagePlaybackState",
         "metadata": {
@@ -275,12 +277,187 @@
           "Name": "PinExperienceStatus"
         }
       }
-    ],
-    "changed": [],
-    "removed": []
+    ]
   },
   "members": {
     "added": [
+      {
+        "id": "DataModelPatchService.Function.GetLuaVersion",
+        "metadata": {
+          "MemberType": "Function",
+          "Name": "GetLuaVersion",
+          "Parameters": [
+            {
+              "Name": "patchName",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "string"
+          },
+          "Security": "RobloxScriptSecurity",
+          "ThreadSafety": "Unsafe"
+        }
+      },
+      {
+        "id": "DataModelPatchService.Function.GetPatch",
+        "metadata": {
+          "MemberType": "Function",
+          "Name": "GetPatch",
+          "Parameters": [
+            {
+              "Name": "patchName",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Class",
+            "Name": "Instance"
+          },
+          "Security": "RobloxScriptSecurity",
+          "ThreadSafety": "Unsafe"
+        }
+      },
+      {
+        "id": "DataModelPatchService.Function.RegisterPatch",
+        "metadata": {
+          "MemberType": "Function",
+          "Name": "RegisterPatch",
+          "Parameters": [
+            {
+              "Name": "patchName",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            },
+            {
+              "Name": "behaviorName",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            },
+            {
+              "Name": "localConfigPath",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            },
+            {
+              "Name": "userId",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "int64"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "null"
+          },
+          "Security": "RobloxScriptSecurity",
+          "ThreadSafety": "Unsafe"
+        }
+      },
+      {
+        "id": "DataModelPatchService.Function.UpdatePatch",
+        "metadata": {
+          "MemberType": "Function",
+          "Name": "UpdatePatch",
+          "Parameters": [
+            {
+              "Name": "userId",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "int64"
+              }
+            },
+            {
+              "Name": "patchName",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            },
+            {
+              "Name": "callbackFunction",
+              "Type": {
+                "Category": "DataType",
+                "Name": "Function"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "null"
+          },
+          "Security": "RobloxScriptSecurity",
+          "ThreadSafety": "Unsafe"
+        }
+      }
+    ],
+    "changed": [
+      {
+        "fields": [
+          {
+            "before": [
+              "Deprecated"
+            ],
+            "field": "Tags"
+          }
+        ],
+        "id": "GuiObject.Function.TweenPosition"
+      },
+      {
+        "fields": [
+          {
+            "before": [
+              "Deprecated"
+            ],
+            "field": "Tags"
+          }
+        ],
+        "id": "GuiObject.Function.TweenSize"
+      },
+      {
+        "fields": [
+          {
+            "before": [
+              "Deprecated"
+            ],
+            "field": "Tags"
+          }
+        ],
+        "id": "GuiObject.Function.TweenSizeAndPosition"
+      },
+      {
+        "fields": [
+          {
+            "after": [
+              "Hidden",
+              "NotReplicated"
+            ],
+            "before": [
+              "Hidden",
+              "NotReplicated",
+              "Deprecated"
+            ],
+            "field": "Tags"
+          }
+        ],
+        "id": "GuiObject.Property.Transparency"
+      }
+    ],
+    "removed": [
       {
         "id": "AnimatedImage.Function.GetBoundTracks",
         "metadata": {
@@ -1187,183 +1364,6 @@
             "Category": "Primitive",
             "Name": "bool"
           }
-        }
-      }
-    ],
-    "changed": [
-      {
-        "fields": [
-          {
-            "after": [
-              "Deprecated"
-            ],
-            "field": "Tags"
-          }
-        ],
-        "id": "GuiObject.Function.TweenPosition"
-      },
-      {
-        "fields": [
-          {
-            "after": [
-              "Deprecated"
-            ],
-            "field": "Tags"
-          }
-        ],
-        "id": "GuiObject.Function.TweenSize"
-      },
-      {
-        "fields": [
-          {
-            "after": [
-              "Deprecated"
-            ],
-            "field": "Tags"
-          }
-        ],
-        "id": "GuiObject.Function.TweenSizeAndPosition"
-      },
-      {
-        "fields": [
-          {
-            "after": [
-              "Hidden",
-              "NotReplicated",
-              "Deprecated"
-            ],
-            "before": [
-              "Hidden",
-              "NotReplicated"
-            ],
-            "field": "Tags"
-          }
-        ],
-        "id": "GuiObject.Property.Transparency"
-      }
-    ],
-    "removed": [
-      {
-        "id": "DataModelPatchService.Function.GetLuaVersion",
-        "metadata": {
-          "MemberType": "Function",
-          "Name": "GetLuaVersion",
-          "Parameters": [
-            {
-              "Name": "patchName",
-              "Type": {
-                "Category": "Primitive",
-                "Name": "string"
-              }
-            }
-          ],
-          "ReturnType": {
-            "Category": "Primitive",
-            "Name": "string"
-          },
-          "Security": "RobloxScriptSecurity",
-          "ThreadSafety": "Unsafe"
-        }
-      },
-      {
-        "id": "DataModelPatchService.Function.GetPatch",
-        "metadata": {
-          "MemberType": "Function",
-          "Name": "GetPatch",
-          "Parameters": [
-            {
-              "Name": "patchName",
-              "Type": {
-                "Category": "Primitive",
-                "Name": "string"
-              }
-            }
-          ],
-          "ReturnType": {
-            "Category": "Class",
-            "Name": "Instance"
-          },
-          "Security": "RobloxScriptSecurity",
-          "ThreadSafety": "Unsafe"
-        }
-      },
-      {
-        "id": "DataModelPatchService.Function.RegisterPatch",
-        "metadata": {
-          "MemberType": "Function",
-          "Name": "RegisterPatch",
-          "Parameters": [
-            {
-              "Name": "patchName",
-              "Type": {
-                "Category": "Primitive",
-                "Name": "string"
-              }
-            },
-            {
-              "Name": "behaviorName",
-              "Type": {
-                "Category": "Primitive",
-                "Name": "string"
-              }
-            },
-            {
-              "Name": "localConfigPath",
-              "Type": {
-                "Category": "Primitive",
-                "Name": "string"
-              }
-            },
-            {
-              "Name": "userId",
-              "Type": {
-                "Category": "Primitive",
-                "Name": "int64"
-              }
-            }
-          ],
-          "ReturnType": {
-            "Category": "Primitive",
-            "Name": "null"
-          },
-          "Security": "RobloxScriptSecurity",
-          "ThreadSafety": "Unsafe"
-        }
-      },
-      {
-        "id": "DataModelPatchService.Function.UpdatePatch",
-        "metadata": {
-          "MemberType": "Function",
-          "Name": "UpdatePatch",
-          "Parameters": [
-            {
-              "Name": "userId",
-              "Type": {
-                "Category": "Primitive",
-                "Name": "int64"
-              }
-            },
-            {
-              "Name": "patchName",
-              "Type": {
-                "Category": "Primitive",
-                "Name": "string"
-              }
-            },
-            {
-              "Name": "callbackFunction",
-              "Type": {
-                "Category": "DataType",
-                "Name": "Function"
-              }
-            }
-          ],
-          "ReturnType": {
-            "Category": "Primitive",
-            "Name": "null"
-          },
-          "Security": "RobloxScriptSecurity",
-          "ThreadSafety": "Unsafe"
         }
       }
     ]

@@ -13,8 +13,7 @@ return {
 	name = "Components",
 	group = "Foundation",
 	roact = Roact,
-	storyRoots = GetStories.getStorybookRoots("components"),
-	exclude = GetStories.getComponentFolderExcludeList("components"),
+	storyRoots = GetStories("components"),
 	mapStory = StoryMiddleware,
 	packages = {
 		React = React,

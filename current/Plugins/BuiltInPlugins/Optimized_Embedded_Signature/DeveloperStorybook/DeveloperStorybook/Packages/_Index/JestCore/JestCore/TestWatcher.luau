@@ -6,31 +6,42 @@
  * LICENSE file in the root directory of this source tree.
  ]]
 
+local Packages = script.Parent.Parent
+local LuauPolyfill = require(Packages.LuauPolyfill)
+local Object = LuauPolyfill.Object
+type Promise<T> = LuauPolyfill.Promise<T>
+local Promise = require(Packages.Promise)
+
 local exports = {}
+
+local emitteryModule = require(Packages.Emittery)
+local emittery = emitteryModule.default
+type emittery<EventData> = emitteryModule.Emittery
 
 type State = { interrupted: boolean }
 
-export type TestWatcher = {
+export type TestWatcher = emittery<{ change: State }> & {
 	state: State,
-	setState: (self: TestWatcher, state: State) -> (),
+	setState: (self: TestWatcher, state: State) -> Promise<nil>,
 	isInterrupted: (self: TestWatcher) -> boolean,
 	isWatchMode: (self: TestWatcher) -> boolean,
 	_isWatchMode: boolean,
 }
-local TestWatcher = {}
+local TestWatcher = setmetatable({}, { __index = emittery })
 TestWatcher.__index = TestWatcher
 function TestWatcher.new(ref: { isWatchMode: boolean }): TestWatcher
-	local self = setmetatable({}, TestWatcher)
+	local self = setmetatable(emittery.new(), TestWatcher) :: any
 	local isWatchMode = ref.isWatchMode
 	self.state = { interrupted = false }
 	self._isWatchMode = isWatchMode
 	return (self :: any) :: TestWatcher
 end
 
-function TestWatcher:setState(state: State)
-	for k, v in state do
-		self.state[k] = v
-	end
+function TestWatcher:setState(state: State): Promise<nil>
+	return Promise.resolve():andThen(function()
+		Object.assign(self.state, state)
+		self:emit("change", self.state):expect()
+	end)
 end
 
 function TestWatcher:isInterrupted(): boolean

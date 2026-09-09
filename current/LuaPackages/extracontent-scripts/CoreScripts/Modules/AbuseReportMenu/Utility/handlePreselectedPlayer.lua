@@ -1,11 +1,14 @@
 --!nonstrict
 local root = script:FindFirstAncestor("AbuseReportMenu")
-
+local CorePackages = game:GetService("CorePackages")
 local CoreGui = game:GetService("CoreGui")
 local RobloxGui = CoreGui.RobloxGui
 
 local Constants = require(root.Components.Constants)
 local TnSIXPWrapper = require(root.IXP.TnSIXPWrapper)
+
+local FFlagAddPreselectedAbuseTypeAnalytics =
+	require(CorePackages.Workspace.Packages.SharedFlags).FFlagAddPreselectedAbuseTypeAnalytics
 
 local VoiceChatServiceManager = require(RobloxGui.Modules.VoiceChat.VoiceChatServiceManager).default
 local playerUsedVoice = function(player: Player)
@@ -28,10 +31,12 @@ function handlePreselectedPlayer(
 			type = Constants.AnalyticsActions.SetTypeOfAbuseSelection,
 			selection = Constants.AbuseMethods.VoiceChat,
 		})
-		analyticsDispatch({
-			type = Constants.AnalyticsActions.SetPreselectedAbuseSelection,
-			selection = Constants.AbuseMethods.VoiceChat,
-		})
+		if FFlagAddPreselectedAbuseTypeAnalytics then
+			analyticsDispatch({
+				type = Constants.AnalyticsActions.SetPreselectedAbuseSelection,
+				selection = Constants.AbuseMethods.VoiceChat,
+			})
+		end
 	elseif TnSIXPWrapper.getReportAnythingAvatarEnabled() then
 		dispatchUIStates({
 			type = Constants.PlayerMenuActions.UpdateMethodOfAbuse,
@@ -41,11 +46,13 @@ function handlePreselectedPlayer(
 			type = Constants.AnalyticsActions.SetTypeOfAbuseSelection,
 			selection = Constants.AbuseMethods.TextChat,
 		})
-		analyticsDispatch({
-			type = Constants.AnalyticsActions.SetPreselectedAbuseSelection,
-			selection = Constants.AbuseMethods.TextChat,
-		})
-	else
+		if FFlagAddPreselectedAbuseTypeAnalytics then
+			analyticsDispatch({
+				type = Constants.AnalyticsActions.SetPreselectedAbuseSelection,
+				selection = Constants.AbuseMethods.TextChat,
+			})
+		end
+	elseif FFlagAddPreselectedAbuseTypeAnalytics then
 		analyticsDispatch({
 			type = Constants.AnalyticsActions.SetPreselectedAbuseSelection,
 			selection = "None",

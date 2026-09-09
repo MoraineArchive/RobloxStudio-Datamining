@@ -4,9 +4,9 @@ local ReactUtils = script:FindFirstAncestor("ReactUtils")
 local Packages = ReactUtils.Parent
 local React = require(Packages.React)
 
-type Ref<T> = React.Ref<T>
+type Ref = React.Ref<Instance>
 
-local function forwardRefValue<T>(ref: Ref<T>?, value: T?)
+local function forwardRefValue(ref: Ref?, value: Instance?)
 	if type(ref) == "function" then
 		ref(value)
 	elseif type(ref) == "table" then
@@ -19,8 +19,8 @@ end
 	assigned according to either object or callback ref semantics. Returns a
 	callback ref that forwards values.
 ]]
-local function useComposedRef<T>(baseRef: Ref<T>, innerRef: Ref<T>?): (value: T?) -> ()
-	local composedRef = React.useCallback(function(value: T?)
+local function useComposedRef(baseRef: Ref, innerRef: Ref?): Ref
+	local composedRef = React.useCallback(function(value)
 		forwardRefValue(baseRef, value)
 		forwardRefValue(innerRef, value)
 	end, { baseRef, innerRef } :: { any })

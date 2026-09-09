@@ -41,11 +41,9 @@ export type PrettyFormatOptions = {
 	plugins: Plugins?,
 	printBasicPrototype: boolean?,
 	printInstanceDefaults: boolean?,
-	printInstanceTags: boolean?,
 	printFunctionName: boolean?,
 	redactStackTracesInStrings: boolean?,
 	theme: ThemeReceived?,
-	useStyledProperties: boolean?,
 }
 
 export type OptionsReceived = PrettyFormatOptions

@@ -13,6 +13,11 @@ type Config_ProjectConfig = typesModule.Config_ProjectConfig
 
 export type Context = {
 	config: Config_ProjectConfig,
+	-- ROBLOX deviation START: no supported
+	-- hasteFS: HasteFS,
+	-- moduleMap: ModuleMap,
+	-- resolver: Resolver,
+	-- ROBLOX deviation END
 }
 
 return {}

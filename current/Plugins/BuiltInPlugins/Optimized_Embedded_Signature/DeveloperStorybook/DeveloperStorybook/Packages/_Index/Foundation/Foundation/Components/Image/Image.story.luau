@@ -313,7 +313,7 @@ local function ImageContentStory()
 end
 
 return {
-	base = true,
+	engineeringOnly = true,
 	summary = "Image",
 	stories = {
 		{

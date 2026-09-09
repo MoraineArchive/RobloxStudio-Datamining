@@ -52,9 +52,6 @@ local FIntConnectionAutoReconnectMaxDelayMs = game:DefineFastInt("ConnectionAuto
 local FIntConnectionAutoReconnectJitterMs = game:DefineFastInt("ConnectionAutoReconnectJitterMs", 2000)
 local FIntConnectionAutoReconnectMaxDurationSeconds = game:DefineFastInt("ConnectionAutoReconnectMaxDurationSeconds", 300)
 
-local fflagRbxTransportHandleUniqueErrors = game:DefineFastFlag("RbxTransportHandleUniqueErrors", false)
-local EngineFeatureRbxTransportUniqueConnectionErrors = game:GetEngineFeature("RbxTransportUniqueConnectionErrors")
-
 local autoReconnectRng
 if FFlagConnectionEnableAutoReconnect then
 	autoReconnectRng = Random.new()
@@ -153,12 +150,7 @@ local FFlagErrorPromptUseLeaveGameHelper =
 
 local LEAVE_GAME_FRAME_WAITS = 2
 
-local useLeaveGameHelper = FFlagErrorPromptUseLeaveGameHelper or isPioneerLaunch()
-
-local leaveGame
-if useLeaveGameHelper then
-	leaveGame = require(RobloxGui.Modules.Settings.leaveGame)
-end
+local leaveGame = require(RobloxGui.Modules.Settings.leaveGame)
 
 local FFlagAddCollaborationCoreGatedConnectionError = game:DefineFastFlag("AddCollaborationCoreGatedConnectionError2", false)
 local EngineFeaturePlacelaunchCollaborationCoreGatedConnectionError =
@@ -419,7 +411,7 @@ end
 
 local leaveFunction = function()
 	TelemetryService:LogCounter(connectionEventConfig, {customFields = {selectedItem = "LeaveInitiated"}}, 1.0)
-	if useLeaveGameHelper then
+	if FFlagErrorPromptUseLeaveGameHelper then
 		leaveGame(false, {
 			shouldNativeExit = isPioneerLaunch(),
 			inhibitAppRating = true,
@@ -701,10 +693,6 @@ if FFlagConnectionEnableAutoReconnect then
 		[Enum.ConnectionError.NetworkInternal] = true,
 		[Enum.ConnectionError.NetworkSend] = true,
 	}
-
-	if fflagRbxTransportHandleUniqueErrors and EngineFeatureRbxTransportUniqueConnectionErrors then
-		autoReconnectAllowedList[Enum.ConnectionError.DisconnectTransportIoInternetError] = true
-	end
 end
 
 local ButtonList = {
@@ -1366,15 +1354,6 @@ if FFlagRAKickLogic and supportsRemoteAttestationEnums then
 	enumToLocalizationKey[Enum.ConnectionError.DisconnectRemoteAttestationGeneralFailure] = "InGame.ConnectionError.RemoteAttestationGeneralFailure"
 	enumToLocalizationKey[Enum.ConnectionError.DisconnectRemoteAttestationOSOutOfDate] = "InGame.ConnectionError.RemoteAttestationOSOutOfDate"
 	enumToLocalizationKey[Enum.ConnectionError.DisconnectRemoteAttestationBootValidationFailure] = "InGame.ConnectionError.RemoteAttestationBootValidationFailure"
-end
-
-if fflagRbxTransportHandleUniqueErrors and EngineFeatureRbxTransportUniqueConnectionErrors then
-	enumToLocalizationKey[Enum.ConnectionError.DisconnectTransportIoError] = "InGame.ConnectionError.DisconnectTryAgain"
-	enumToLocalizationKey[Enum.ConnectionError.DisconnectTransportIoInternetError] = "InGame.ConnectionError.DisconnectConnectionLost"
-	enumToLocalizationKey[Enum.ConnectionError.DisconnectTransportProtocolError] = "InGame.ConnectionError.DisconnectTryAgain"
-	enumToLocalizationKey[Enum.ConnectionError.DisconnectTransportNgtcp2Error] = "InGame.ConnectionError.DisconnectTryAgain"
-	enumToLocalizationKey[Enum.ConnectionError.DisconnectTransportQuicError] = "InGame.ConnectionError.DisconnectTryAgain"
-	enumToLocalizationKey[Enum.ConnectionError.DisconnectTransportRnaError] = "InGame.ConnectionError.DisconnectTryAgain"
 end
 
 -- Localize the error string, with a fallback to the original string upon failure.

@@ -121,7 +121,7 @@ function PropParser.parseProps(typechecking: Types.Typechecking, props: string, 
 				PropParser._getProp(typechecking, if depth == 0 and multilinePropType then multilinePropType else line)
 
 			if propName == nil or propType == nil then
-				print(`🤏  Unable to parse prop definition: {line}`)
+				print("🤏  Unable to parse prop definition: " .. line)
 			else
 				local defaultValue = nil
 				if isOptional and defaultProps then
@@ -167,58 +167,8 @@ function splitPropOnDelimiter(propType: string, joiner: string, isMultiline: boo
 	return table.concat(string.split(propType, delimiter), " " .. joiner .. " ")
 end
 
-local TYPE_TO_DELIMITER = {
-	[Types.PropTypeQualifiers.Union] = "|",
-	[Types.PropTypeQualifiers.Intersection] = "&",
-}
-
--- Helper to parse union or intersection types into structured format
-local function parseUnionOrIntersection(propType: string): Types.PropType?
-	-- Check for union (|) or intersection (&)
-	local hasUnion = string.find(propType, "%s|%s")
-	local hasIntersection = string.find(propType, "%s&%s")
-
-	if not hasUnion and not hasIntersection then
-		return nil
-	end
-
-	-- Warn if both union and intersection are present (mixed types are not supported)
-	if hasUnion and hasIntersection then
-		warn(
-			`⚠️ Mixed union and intersection types are not fully supported: "{propType}". Documentation may not be complete.`
-		)
-		return nil
-	end
-
-	local qualifier = hasUnion and Types.PropTypeQualifiers.Union or Types.PropTypeQualifiers.Intersection
-	local delimiter = TYPE_TO_DELIMITER[qualifier]
-
-	-- Split on the delimiter and trim whitespace
-	local typeParts = {}
-	for part in string.gmatch(propType, "[^" .. delimiter .. "]+") do
-		local trimmed = part:match("^%s*(.-)%s*$")
-		if trimmed and trimmed ~= "" then
-			table.insert(typeParts, {
-				Name = trimmed,
-				Type = trimmed,
-				IsOptional = false,
-			})
-		end
-	end
-
-	if #typeParts > 0 then
-		return {
-			Qualifier = qualifier,
-			Props = typeParts,
-		}
-	end
-
-	return nil
-end
-
 local tInterfacePattern = "s?t?r?i?c?t?[iI]nterface"
 local luauPropPattern = "^%s*(%[?%w+%]?):%s+(.*)"
-local luauTypeAliasPattern = "^%s*([%w%.]+)%s=%s(.*)"
 local luauKeyPattern = "^%s*%[(%w+)%]: %{\n(.*)\n%s*%}"
 local tPropPattern = "^%s*%[?([%w%.]+)%]?%s=%s(.*)"
 function PropParser._getProp(
@@ -235,13 +185,6 @@ function PropParser._getProp(
 
 	-- Returns propName, propType, isOptional
 	local propName, propType = string.match(line, luauPropPattern .. (if isMultiline then "" else ",$"))
-
-	-- If not found, try matching type alias syntax: X = Y (for export type declarations)
-	if not propName and typechecking == Types.Typecheckers.Luau then
-		propName, propType = string.match(line, luauTypeAliasPattern)
-		-- Don't return early - let it fall through to process unions/intersections
-	end
-
 	if propName and propType then
 		assert(typechecking == Types.Typecheckers.Luau, "Typechecker must be Luau at this point")
 		local optionalQualifier = string.match(propType, "(%??)$")
@@ -274,25 +217,14 @@ function PropParser._getProp(
 			propType = "🤷"
 		end
 
-		-- Strip wrapping parentheses using balanced matching
-		if string.match(propType, "^%b()$") then
-			propType = string.sub(propType, 2, -2)
-		end
-
 		propType = propType:gsub("^{ %[number%]: (.-)%s*}$", function(s)
-			return `Array<{s}>`
+			return "Array<" .. s .. ">"
 		end)
 
 		-- Handle simple arrays surrounded in curly brackets
 		propType = propType:gsub("^{ (%w*)%s*}$", function(s)
-			return `Array<{s}>`
+			return "Array<" .. s .. ">"
 		end)
-
-		-- Check if this is a union or intersection type
-		local unionOrIntersectionType = parseUnionOrIntersection(propType)
-		if unionOrIntersectionType then
-			return propName, unionOrIntersectionType, optionalQualifier ~= ""
-		end
 
 		return propName, propType, optionalQualifier ~= ""
 	end
@@ -316,32 +248,26 @@ function PropParser._getProp(
 				elseif outerClassifier == "array" then
 					propTypeQualifier = Types.PropTypeQualifiers.Array
 					propType = innerPropType
-					propFormat = `Array<{propFormat}>`
+					propFormat = "Array<" .. propFormat .. ">"
 				elseif outerClassifier == "map" then
 					propType = innerPropType
-					propFormat = `Map<{propFormat}>`
+					propFormat = "Map<" .. propFormat .. ">"
 				elseif outerClassifier == "union" then
-					propTypeQualifier = Types.PropTypeQualifiers.Union
-					local formattedType =
-						splitPropOnDelimiter(innerPropType, TYPE_TO_DELIMITER[propTypeQualifier], isMultiline)
-					propType = formattedType
+					propType = splitPropOnDelimiter(innerPropType, "|", isMultiline)
 				elseif outerClassifier == "intersection" then
-					propTypeQualifier = Types.PropTypeQualifiers.Intersection
-					local formattedType =
-						splitPropOnDelimiter(innerPropType, TYPE_TO_DELIMITER[propTypeQualifier], isMultiline)
-					propType = formattedType
+					propType = splitPropOnDelimiter(innerPropType, "&", isMultiline)
 				elseif outerClassifier == "numberMin" then
 					propType = innerPropType
-					propFormat = `number > {propFormat}`
+					propFormat = "number > " .. propFormat
 				elseif outerClassifier == "enumerateValidator" then
-					propType = `Enum.{innerPropType}`
+					propType = "Enum." .. innerPropType
 				elseif outerClassifier == "enum" then
 					-- Already include enum prefix
 					propType = innerPropType
 				elseif outerClassifier == "strictInterface" or outerClassifier == "interface" then
 					propType = "🤷"
 				else
-					print(`🍵 Unhandled classifier: {outerClassifier}`)
+					print("🍵 Unhandled classifier: " .. outerClassifier)
 					propType = innerPropType
 				end
 
@@ -366,25 +292,14 @@ function PropParser._getProp(
 			end
 
 			if i == 20 then
-				warn(`⌛ Exceeded iterations for parsing {line}`)
-			end
-
-			-- If we have a union or intersection qualifier, parse it into structured format
-			if
-				propTypeQualifier == Types.PropTypeQualifiers.Union
-				or propTypeQualifier == Types.PropTypeQualifiers.Intersection
-			then
-				local unionOrIntersectionType = parseUnionOrIntersection(propType)
-				if unionOrIntersectionType then
-					return propName, unionOrIntersectionType, isOptional
-				end
+				warn("⌛ Exceeded iterations for parsing " .. line)
 			end
 
 			return propName, string.format(propFormat, propType), isOptional
 		end
 	end
 
-	print(`📛 Unable to find name or type: {line}`)
+	print("📛 Unable to find name or type: " .. line)
 	return nil, nil, true
 end
 

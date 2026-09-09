@@ -23,17 +23,12 @@ local PlayerListInitialVisibleState = require(PlayerList.PlayerListInitialVisibl
 
 local FFlagEnableMobilePlayerListOnConsole = PlayerListPackage.Flags.FFlagEnableMobilePlayerListOnConsole
 local FFlagPlayerListTwoTabsOnLegacy = PlayerListPackage.Flags.FFlagPlayerListTwoTabsOnLegacy
-local FFlagPlayerListKeepModalHiddenOnRemount = require(PlayerList.Flags.FFlagPlayerListKeepModalHiddenOnRemount)
 local PlatformLeaderboardContainer = PlayerListPackage.Container.PlatformLeaderboardContainer
 
 local PlayerListSwitcher = Roact.PureComponent:extend("PlayerListSwitcher")
 
 function PlayerListSwitcher:didMount()
-	if FFlagPlayerListKeepModalHiddenOnRemount and self.props.isSmallTouchDevice then
-		self.props.setPlayerListVisible(false)
-	else
-		self.props.setPlayerListVisible(PlayerListInitialVisibleState())
-	end
+	self.props.setPlayerListVisible(PlayerListInitialVisibleState())
 end
 
 function PlayerListSwitcher:wrapWithUiModeStyleProvider(children)

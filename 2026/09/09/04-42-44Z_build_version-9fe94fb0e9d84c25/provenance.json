@@ -1,0 +1,249 @@
+{
+  "API": [
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 7281358,
+      "sha256": "96a97f388acf1f3a573e18f4d1677f1198d532ff4470462237efac15ac89c5dd",
+      "sourceType": "official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-API-Dump.json"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 8234036,
+      "sha256": "788a649955d14d827d5f6405d0b528db92fef6c6cd9b42c8defc6d40e225399b",
+      "sourceType": "official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-Full-API-Dump.json"
+    }
+  ],
+  "Build": [
+    {
+      "bytes": 103,
+      "sha256": "5bf62a99083dac94bf78432aa1f4ec98b81e700f59a6399c8ebf0fec8801545d",
+      "sourceType": "official",
+      "sourceUrl": "https://clientsettings.roblox.com/v2/client-version/WindowsStudio64"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 2524,
+      "sha256": "c25fc38563a6741934a04e73eafba96cd83dfb26786a3360988c5161dacca5a0",
+      "sourceType": "official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-rbxPkgManifest.txt"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 2134131,
+      "sha256": "e5bd52a87d53c95a6a2ebb92a2f940621f1af3fe1852f1f78052eea3b62d0a29",
+      "sourceType": "official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-rbxManifest.txt"
+    }
+  ],
+  "FastVariables": [
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 125702130,
+      "derivedFrom": "RobloxStudioBeta.exe",
+      "sha256": "857752494a5a943a0cb4818afc28f5b462a36c7bad4013dc07465d36131c51d6",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-RobloxStudio.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 306439,
+      "derivedFrom": "content-configs.zip",
+      "sha256": "548676096947e20c1c47377c6e19b7a09f5fd3c2dbe3daae541ab13d876c55d5",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-content-configs.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 620396,
+      "derivedFrom": "content-models.zip",
+      "sha256": "03a9e12a9c6dc59f07d49e0d0469fe342f44dd99718e4586fc69411966aad8f6",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-content-models.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 650142,
+      "derivedFrom": "content-qt_translations.zip",
+      "sha256": "66526e43d2c9c9a18141ac2d41a0629fec1f11a21ebd6a12a9997f33b0fcc8ff",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-content-qt_translations.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 9512764,
+      "derivedFrom": "extracontent-luapackages.zip",
+      "sha256": "ba5cbd39401cca7230b82220f668507bc08e6c5803777909b1fc792b4d6ba0a6",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-extracontent-luapackages.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 14974953,
+      "derivedFrom": "extracontent-models.zip",
+      "sha256": "36604a08e88e35d4fddfbec38d3e653f80d1a6a9ceb76b80b852a5313e8dea05",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-extracontent-models.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 2955988,
+      "derivedFrom": "extracontent-scripts.zip",
+      "sha256": "e6f3b2301baa9c577d51670d633d42de25ac484e699c751b0b089300bdf99e81",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-extracontent-scripts.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 610717,
+      "derivedFrom": "extracontent-translations.zip",
+      "sha256": "16cd03787910fec0340c58cd4efd4ba47d1f00d61395c76693cd5db695db58a4",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-extracontent-translations.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 207417,
+      "derivedFrom": "studiocontent-models.zip",
+      "sha256": "91176b85e27a9b38dd2b31dd1718d996158d0816865284e0b80a35ab39bc62fe",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-studiocontent-models.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 73705017,
+      "derivedFrom": "BuiltInPlugins.zip",
+      "sha256": "f9589e24451ad3fad2143f69d093e01c3b70c75ffd6ead396955456eae7f0504",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-BuiltInPlugins.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 87481914,
+      "derivedFrom": "BuiltInStandalonePlugins.zip",
+      "sha256": "26022cfa5992fa8f631fc400550327326a4404c7c77cd27bff29d810ff47bbfc",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-BuiltInStandalonePlugins.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 927300,
+      "derivedFrom": "Plugins.zip",
+      "sha256": "336c248303ef778dd1ceeddee133a43b44ad17034d4f3db48df3fe389d7688a5",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-Plugins.zip"
+    }
+  ],
+  "LiveSettings": [
+    {
+      "bytes": 1350743,
+      "reference": "https://raw.githubusercontent.com/MaximumADHD/Roblox-FFlag-Tracker/main/README.md",
+      "sha256": "4ae3d246d21e15f1ff722fe7436264a5ec5414824ee7b089162dd2c316bdd7f0",
+      "sourceType": "official",
+      "sourceUrl": "https://clientsettings.roblox.com/v2/settings/application/PCStudioApp"
+    }
+  ],
+  "LuaPackages": [
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 306439,
+      "derivedFrom": "content-configs.zip",
+      "sha256": "548676096947e20c1c47377c6e19b7a09f5fd3c2dbe3daae541ab13d876c55d5",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-content-configs.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 620396,
+      "derivedFrom": "content-models.zip",
+      "sha256": "03a9e12a9c6dc59f07d49e0d0469fe342f44dd99718e4586fc69411966aad8f6",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-content-models.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 650142,
+      "derivedFrom": "content-qt_translations.zip",
+      "sha256": "66526e43d2c9c9a18141ac2d41a0629fec1f11a21ebd6a12a9997f33b0fcc8ff",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-content-qt_translations.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 9512764,
+      "derivedFrom": "extracontent-luapackages.zip",
+      "sha256": "ba5cbd39401cca7230b82220f668507bc08e6c5803777909b1fc792b4d6ba0a6",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-extracontent-luapackages.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 14974953,
+      "derivedFrom": "extracontent-models.zip",
+      "sha256": "36604a08e88e35d4fddfbec38d3e653f80d1a6a9ceb76b80b852a5313e8dea05",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-extracontent-models.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 2955988,
+      "derivedFrom": "extracontent-scripts.zip",
+      "sha256": "e6f3b2301baa9c577d51670d633d42de25ac484e699c751b0b089300bdf99e81",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-extracontent-scripts.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 610717,
+      "derivedFrom": "extracontent-translations.zip",
+      "sha256": "16cd03787910fec0340c58cd4efd4ba47d1f00d61395c76693cd5db695db58a4",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-extracontent-translations.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 207417,
+      "derivedFrom": "studiocontent-models.zip",
+      "sha256": "91176b85e27a9b38dd2b31dd1718d996158d0816865284e0b80a35ab39bc62fe",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-studiocontent-models.zip"
+    }
+  ],
+  "Native": [
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 125702130,
+      "derivedFrom": "RobloxStudioBeta.exe",
+      "sha256": "857752494a5a943a0cb4818afc28f5b462a36c7bad4013dc07465d36131c51d6",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-RobloxStudio.zip"
+    }
+  ],
+  "Plugins": [
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 73705017,
+      "derivedFrom": "BuiltInPlugins.zip",
+      "sha256": "f9589e24451ad3fad2143f69d093e01c3b70c75ffd6ead396955456eae7f0504",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-BuiltInPlugins.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 87481914,
+      "derivedFrom": "BuiltInStandalonePlugins.zip",
+      "sha256": "26022cfa5992fa8f631fc400550327326a4404c7c77cd27bff29d810ff47bbfc",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-BuiltInStandalonePlugins.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 927300,
+      "derivedFrom": "Plugins.zip",
+      "sha256": "336c248303ef778dd1ceeddee133a43b44ad17034d4f3db48df3fe389d7688a5",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-Plugins.zip"
+    }
+  ]
+}

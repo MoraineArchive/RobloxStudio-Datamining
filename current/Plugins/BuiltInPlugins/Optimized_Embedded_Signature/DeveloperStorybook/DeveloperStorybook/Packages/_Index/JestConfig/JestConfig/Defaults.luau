@@ -74,7 +74,6 @@ local defaultOptions: Config_DefaultOptions = {
 	-- ROBLOX deviation: mock data model
 	mockDataModel = false,
 	noStackTrace = false,
-	stackDepth = 0,
 	notify = false,
 	-- ROBLOX deviation START: not supported
 	-- notifyMode = "failure-change",

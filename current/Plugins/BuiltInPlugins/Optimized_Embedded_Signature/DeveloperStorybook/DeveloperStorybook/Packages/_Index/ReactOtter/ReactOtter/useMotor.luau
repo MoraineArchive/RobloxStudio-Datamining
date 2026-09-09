@@ -2,14 +2,11 @@
 local Packages = script.Parent.Parent
 local React = require(Packages.React)
 local Otter = require(Packages.Otter)
-local SafeFlags = require(Packages.SafeFlags)
 type Callback<T> = Otter.MotorCallback<T>
 type Motor<G, V> = Otter.Motor<G, V>
 
 type SubscribeToOnStep<V> = (Callback<V>) -> Otter.Unsubscribe
 type ValueGroup = { [string]: number }
-
-local FFlagOtterConnectMotorSignalsInLayoutEffect = SafeFlags.createGetFFlag("OtterConnectMotorSignalsInLayoutEffect")()
 
 export type SetGoal<G> = (G) -> ()
 
@@ -34,45 +31,24 @@ local function useMotor<V, G>(initialValue: V, onStep: Callback<V>, onComplete: 
 
 	-- If we're given a new `onComplete` function, unsubscribe the old one
 	-- and subscribe the new one
-	if FFlagOtterConnectMotorSignalsInLayoutEffect then
-		React.useLayoutEffect(function(): (() -> ())?
-			local disconnectOnComplete
-			local disconnectOnStep
-			if motor.current then
-				if onComplete then
-					disconnectOnComplete = motor.current:onComplete(onComplete)
-				end
-				disconnectOnStep = motor.current:onStep(onStep)
+	React.useEffect(function(): (() -> ())?
+		local disconnectOnComplete
+		local disconnectOnStep
+		if motor.current then
+			if onComplete then
+				disconnectOnComplete = motor.current:onComplete(onComplete)
 			end
-			return function()
-				if disconnectOnComplete then
-					disconnectOnComplete()
-				end
-				if disconnectOnStep then
-					disconnectOnStep()
-				end
+			disconnectOnStep = motor.current:onStep(onStep)
+		end
+		return function()
+			if disconnectOnComplete then
+				disconnectOnComplete()
 			end
-		end, { onStep, onComplete } :: { any })
-	else
-		React.useEffect(function(): (() -> ())?
-			local disconnectOnComplete
-			local disconnectOnStep
-			if motor.current then
-				if onComplete then
-					disconnectOnComplete = motor.current:onComplete(onComplete)
-				end
-				disconnectOnStep = motor.current:onStep(onStep)
+			if disconnectOnStep then
+				disconnectOnStep()
 			end
-			return function()
-				if disconnectOnComplete then
-					disconnectOnComplete()
-				end
-				if disconnectOnStep then
-					disconnectOnStep()
-				end
-			end
-		end, { onStep, onComplete } :: { any })
-	end
+		end
+	end, { onStep, onComplete } :: { any })
 
 	-- Clean up the motor when we're done
 	React.useEffect(function()

@@ -10,9 +10,12 @@
 local CurrentModule = script
 local Packages = CurrentModule.Parent
 
-local jestTypesModule = require(Packages.JestTypes)
-local Error = jestTypesModule.Error
-local Symbol = require(Packages.Symbol)
+local LuauPolyfill = require(Packages.LuauPolyfill)
+local Array = LuauPolyfill.Array
+type Array<T> = LuauPolyfill.Array<T>
+local Error = LuauPolyfill.Error
+local Number = LuauPolyfill.Number
+local Symbol = LuauPolyfill.Symbol
 
 local chalk = require(Packages.ChalkLua)
 
@@ -36,9 +39,11 @@ local prettyFormat = PrettyFormat.format
 local Replaceable = require(CurrentModule.Replaceable)
 local deepCyclicCopyReplaceable = require(CurrentModule.deepCyclicCopyReplaceable)
 
+-- ROBLOX TODO: continue to implement prettyFormat plugins
 local prettyFormatPlugins = PrettyFormat.plugins
 local PLUGINS = {
 	prettyFormatPlugins.AsymmetricMatcher,
+	-- ROBLOX deviation: Roblox Instance matchers
 	prettyFormatPlugins.RobloxInstance,
 }
 
@@ -92,9 +97,11 @@ local replaceTrailingSpaces, getCommonAndChangedSubstrings, isLineDiffable, shou
 local matcherErrorMessage, matcherHint
 
 local function stringify(object: unknown, maxDepth_: number?, maxWidth_: number?): string
+	-- ROBLOX deviation START: Added this if logic to deal with handling nil values in Lua tables
 	if object == Symbol.for_("$$nil") then
 		object = nil
 	end
+	-- ROBLOX deviation END
 	local maxDepth: number = if maxDepth_ ~= nil then maxDepth_ else 10
 	local maxWidth: number = if maxWidth_ ~= nil then maxWidth_ else 10
 
@@ -120,9 +127,21 @@ local function stringify(object: unknown, maxDepth_: number?, maxWidth_: number?
 		})
 	end
 
-	if #result >= MAX_LENGTH and maxDepth > 1 then
+	if
+		-- ROBLOX deviation START: fix length check
+		-- result.length >= MAX_LENGTH --[[ ROBLOX CHECK: operator '>=' works only if either both arguments are strings or both are a number ]]
+		#result >= MAX_LENGTH
+		-- ROBLOX deviation END
+		and maxDepth > 1 --[[ ROBLOX CHECK: operator '>' works only if either both arguments are strings or both are a number ]]
+	then
 		return stringify(object, math.floor(maxDepth / 2), maxWidth)
-	elseif #result >= MAX_LENGTH and maxWidth > 1 then
+	elseif
+		-- ROBLOX deviation START: fix length check
+		-- result.length >= MAX_LENGTH --[[ ROBLOX CHECK: operator '>=' works only if either both arguments are strings or both are a number ]]
+		#result >= MAX_LENGTH
+		-- ROBLOX deviation END
+		and maxWidth > 1 --[[ ROBLOX CHECK: operator '>' works only if either both arguments are strings or both are a number ]]
+	then
 		return stringify(object, maxDepth, math.floor(maxWidth / 2))
 	else
 		return result
@@ -177,7 +196,7 @@ local function ensureNoExpected(expected: any, matcherName: string, options: Mat
 		end
 
 		error(
-			Error.new(
+			Error(
 				matcherErrorMessage(
 					matcherHint(matcherString, nil, "", options),
 					"this matcher must not have an expected argument",
@@ -190,6 +209,7 @@ end
 
 -- Ensures that 'actual' is of type 'number'
 local function ensureActualIsNumber(actual: any, matcherName: string, options: MatcherHintOptions?): ()
+	-- ROBLOX deviation: we do not support a "bigint" type
 	if typeof(actual) ~= "number" then
 		-- Prepend maybe not only for backward compatibility
 		local matcherString = matcherName
@@ -199,7 +219,7 @@ local function ensureActualIsNumber(actual: any, matcherName: string, options: M
 		end
 
 		error(
-			Error.new(
+			Error(
 				matcherErrorMessage(
 					matcherHint(matcherString, nil, nil, options),
 					RECEIVED_COLOR("received") .. " value must be a number",
@@ -212,6 +232,7 @@ end
 
 -- Ensures that 'expected' is of type 'number'
 local function ensureExpectedIsNumber(expected: any, matcherName: string, options: MatcherHintOptions?): ()
+	-- ROBLOX deviation: we do not support a "bigint" type
 	if typeof(expected) ~= "number" then
 		-- Prepend maybe not only for backward compatibility
 		local matcherString = matcherName
@@ -221,7 +242,7 @@ local function ensureExpectedIsNumber(expected: any, matcherName: string, option
 		end
 
 		error(
-			Error.new(
+			Error(
 				matcherErrorMessage(
 					matcherHint(matcherString, nil, nil, options),
 					EXPECTED_COLOR("expected") .. " value must be a number",
@@ -239,7 +260,7 @@ local function ensureNumbers(actual: any, expected: any, matcherName: string, op
 end
 
 local function ensureExpectedIsNonNegativeInteger(expected: any, matcherName: string, options: MatcherHintOptions?): ()
-	if typeof(expected) ~= "number" or expected < 0 or expected % 1 ~= 0 then
+	if typeof(expected) ~= "number" or not Number.isSafeInteger(expected) or expected < 0 then
 		local matcherString = matcherName
 
 		if not options then
@@ -247,7 +268,7 @@ local function ensureExpectedIsNonNegativeInteger(expected: any, matcherName: st
 		end
 
 		error(
-			Error.new(
+			Error(
 				matcherErrorMessage(
 					matcherHint(matcherString, nil, nil, options),
 					EXPECTED_COLOR("expected") .. " value must be a non-negative integer",
@@ -263,20 +284,18 @@ end
 -- * exclude change substrings which have opposite op
 -- * include change substrings which have argument op
 --   with inverse highlight only if there is a common substring
-function getCommonAndChangedSubstrings(diffs: { Diff }, op: number, hasCommonDiff: boolean): string
-	local reduced = ""
-	for _, diff in diffs do
+function getCommonAndChangedSubstrings(diffs: Array<Diff>, op: number, hasCommonDiff: boolean): string
+	return Array.reduce(diffs, function(reduced: string, diff: Diff): string
 		if diff[1] == DIFF_EQUAL then
-			reduced ..= diff[2]
+			return reduced .. diff[2]
 		elseif diff[1] ~= op then
-			continue
+			return reduced
 		elseif hasCommonDiff then
-			reduced ..= INVERTED_COLOR(diff[2])
+			return reduced .. INVERTED_COLOR(diff[2])
 		else
-			reduced ..= diff[2]
+			return reduced .. diff[2]
 		end
-	end
-	return reduced
+	end, "")
 end
 
 function isLineDiffable(expected: any, received: any): boolean
@@ -346,13 +365,9 @@ function printDiffOrStringify(
 		end
 
 		local diffs = diffStringsRaw(expected, received, true)
-		local hasCommonDiff = false
-		for _, diff in diffs do
-			if diff[1] == DIFF_EQUAL then
-				hasCommonDiff = true
-				break
-			end
-		end
+		local hasCommonDiff = Array.some(diffs, function(diff)
+			return diff[1] == DIFF_EQUAL
+		end)
 
 		local printLabel = getLabelPrinter(expectedLabel, receivedLabel)
 		local expectedLine = printLabel(expectedLabel)
@@ -409,6 +424,8 @@ function shouldPrintDiff(actual: any, expected: any)
 		return false
 	end
 
+	-- ROBLOX deviation: excluded if statement checking bigint types
+
 	if typeof(actual) == "boolean" and typeof(expected) == "boolean" then
 		return false
 	end
@@ -419,8 +436,8 @@ end
 function replaceMatchedToAsymmetricMatcher(
 	replacedExpected: any,
 	replacedReceived: any,
-	expectedCycles: { any },
-	receivedCycles: { any }
+	expectedCycles: Array<any>,
+	receivedCycles: Array<any>
 )
 	if not Replaceable.isReplaceable(replacedExpected, replacedReceived) then
 		return {
@@ -429,7 +446,10 @@ function replaceMatchedToAsymmetricMatcher(
 		}
 	end
 
-	if table.find(expectedCycles, replacedExpected) or table.find(receivedCycles, replacedReceived) then
+	if
+		Array.indexOf(expectedCycles, replacedExpected) ~= -1
+		or Array.indexOf(receivedCycles, replacedReceived) ~= -1
+	then
 		return {
 			replacedExpected = replacedExpected,
 			replacedReceived = replacedReceived,
@@ -466,12 +486,19 @@ function replaceMatchedToAsymmetricMatcher(
 	}
 end
 
+-- ROBLOX deviation: excluded type annotation for AsymmetricMatcher because Luau does
+-- not yet support type annotations for a generic function
+
 function isAsymmetricMatcher(data: any)
 	local type_ = getType(data)
 	return type_ == "table" and typeof(data.asymmetricMatch) == "function"
 end
 
-local function diff(a: any, b: any, options: DiffOptions?): string | nil
+local function diff(
+	a: any,
+	b: any,
+	options -- ROBLOX deviation: omitted type annotation since we don't have DiffOptions translated
+): string | nil
 	return shouldPrintDiff(a, b) and diffDefault(a, b, options) or nil
 end
 
@@ -490,16 +517,18 @@ end
 
 type PrintLabel = (string) -> string
 
-function getLabelPrinter(...: string): PrintLabel
-	local strings: { string } = { ... }
+-- ROBLOX deviation: no annotation for "..." args
+function getLabelPrinter(...): PrintLabel
+	local strings: Array<string> = { ... }
 
-	local maxLength = 0
-	for _, str in strings do
-		maxLength = math.max(#str, maxLength)
-	end
+	local maxLength = Array.reduce(strings, function(max, string_)
+		return math.max(#string_, max)
+	end, 0)
 
 	return function(string_: string): string
-		-- string.rep with a negative count silently returns "", so guard explicitly.
+		-- ROBLOX deviation: We need to throw an error since string.rep called for
+		-- a negative repetition doesn't actually throw whereas upstream
+		-- would throw
 		if #string_ > maxLength then
 			error("Cannot print label for string with length larger than the max allowed of " .. maxLength)
 		end
@@ -525,15 +554,24 @@ end
 function matcherHint(matcherName: string, received: string?, expected: string?, options: MatcherHintOptions?): string
 	received = received or "received"
 	expected = expected or "expected"
-	local opts: MatcherHintOptions = options or {}
-	local comment = opts.comment or ""
-	local expectedColor = opts.expectedColor or EXPECTED_COLOR
-	local isDirectExpectCall = opts.isDirectExpectCall or false
-	local isNot = opts.isNot or false
-	local promise = opts.promise or ""
-	local receivedColor = opts.receivedColor or RECEIVED_COLOR
-	local secondArgument = opts.secondArgument or ""
-	local secondArgumentColor = opts.secondArgumentColor or EXPECTED_COLOR
+	options = options or {}
+
+	--[[
+		ROBLOX TODO: Remove the "if options" check once it can pass through
+		Luau cleanly and define all of the variables in-line i.e.
+		local comment = options.comment or ""
+	]]
+	local comment, expectedColor, isDirectExpectCall, isNot, promise, receivedColor, secondArgument, secondArgumentColor
+	if options then
+		comment = options.comment or ""
+		expectedColor = options.expectedColor or EXPECTED_COLOR
+		isDirectExpectCall = options.isDirectExpectCall or false
+		isNot = options.isNot or false
+		promise = options.promise or ""
+		receivedColor = options.receivedColor or RECEIVED_COLOR
+		secondArgument = options.secondArgument or ""
+		secondArgumentColor = options.secondArgumentColor or EXPECTED_COLOR
+	end
 
 	local hint = ""
 	local dimString = "expect" -- concatenate adjacent dim substrings

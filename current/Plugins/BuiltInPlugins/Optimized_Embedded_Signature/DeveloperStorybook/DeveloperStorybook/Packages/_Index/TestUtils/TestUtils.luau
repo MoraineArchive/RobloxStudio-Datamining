@@ -6,8 +6,23 @@
 --  * LICENSE file in the root directory of this source tree.
 --  */
 
-local alignedAnsiStyleSerializer = require(script.alignedAnsiStyleSerializer)
-local configModule = require(script.config)
+local CurrentModule = script
+
+local alignedAnsiStyleSerializer = require(CurrentModule.alignedAnsiStyleSerializer)
+local configModule = require(CurrentModule.config)
+
+--[[
+	ROBLOX deviation: ommiting ConditionalTest and config imports
+	original code:
+	export {
+	  isJestJasmineRun,
+	  skipSuiteOnJasmine,
+	  skipSuiteOnJestCircus,
+	  onNodeVersions,
+	} from './ConditionalTest';
+
+	export {makeGlobalConfig, makeProjectConfig} from './config';
+]]
 
 return {
 	alignedAnsiStyleSerializer = alignedAnsiStyleSerializer,

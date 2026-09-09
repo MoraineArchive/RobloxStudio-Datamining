@@ -1,10 +1,8 @@
-export type AlertVariant = "Standard" | "Emphasis" | "System" | "Feedback"
+export type AlertVariant = "Standard" | "Emphasis"
 
 local AlertVariantEnum = {
 	Standard = "Standard" :: "Standard",
 	Emphasis = "Emphasis" :: "Emphasis",
-	System = "System" :: "System",
-	Feedback = "Feedback" :: "Feedback",
 }
 
 return AlertVariantEnum

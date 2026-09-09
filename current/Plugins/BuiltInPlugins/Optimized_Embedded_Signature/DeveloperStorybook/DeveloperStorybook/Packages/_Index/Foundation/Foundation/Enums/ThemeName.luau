@@ -5,14 +5,12 @@
 -- values must stay assignable to `RbxDesignFoundations.Theme`.
 export type ThemeName =
 	"CircuitRush"
-	| "Classic"
 	| "CosmicDust"
 	| "Default"
 	| "ElectricLime"
 	| "HyperPlum"
 	| "InfernoBlast"
 	| "Kids"
-	| "KidsClassic"
 	| "KineticEnergy"
 	| "LavaGlow"
 	| "NebulaDrift"
@@ -25,14 +23,12 @@ export type ThemeName =
 
 local ThemeName = {
 	CircuitRush = "CircuitRush" :: "CircuitRush",
-	Classic = "Classic" :: "Classic",
 	CosmicDust = "CosmicDust" :: "CosmicDust",
 	Default = "Default" :: "Default",
 	ElectricLime = "ElectricLime" :: "ElectricLime",
 	HyperPlum = "HyperPlum" :: "HyperPlum",
 	InfernoBlast = "InfernoBlast" :: "InfernoBlast",
 	Kids = "Kids" :: "Kids",
-	KidsClassic = "KidsClassic" :: "KidsClassic",
 	KineticEnergy = "KineticEnergy" :: "KineticEnergy",
 	LavaGlow = "LavaGlow" :: "LavaGlow",
 	NebulaDrift = "NebulaDrift" :: "NebulaDrift",

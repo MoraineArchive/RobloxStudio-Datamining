@@ -248,7 +248,7 @@ local function TypographyStory(): React.ReactNode
 end
 
 return {
-	base = true,
+	engineeringOnly = true,
 	summary = "Text",
 	stories = {
 		{

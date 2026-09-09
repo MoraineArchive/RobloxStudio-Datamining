@@ -12,6 +12,11 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ]]
 
+local CurrentModule = script.Parent
+local Packages = CurrentModule.Parent
+local LuauPolyfill = require(Packages.LuauPolyfill)
+type Array<T> = LuauPolyfill.Array<T>
+
 local process = {
 	env = {},
 	cwd = function()
@@ -25,15 +30,15 @@ export type Path = {
 	getSep: (self: Path) -> string,
 	pathsEqual: (self: Path, a: string, b: string) -> boolean,
 	_splitPath: (self: Path, filename: string) -> (string, string, string),
-	_normalizeArray: (self: Path, parts: { string }, isrelative: boolean) -> (),
-	_splitBySeparators: (self: Path, filepath: string) -> { string },
+	_normalizeArray: (self: Path, parts: Array<string>, isrelative: boolean) -> (),
+	_splitBySeparators: (self: Path, filepath: string) -> Array<string>,
 	normalize: (self: Path, filepath: string) -> string,
-	_filterparts: (self: Path, parts: { string }) -> { string },
-	_rawjoin: (self: Path, parts: { string }) -> string,
-	_filteredjoin: (self: Path, ...string) -> (string, { string }),
+	_filterparts: (self: Path, parts: Array<string>) -> Array<string>,
+	_rawjoin: (self: Path, parts: Array<string>) -> string,
+	_filteredjoin: (self: Path, ...string) -> (string, Array<string>),
 	join: (self: Path, ...string) -> string,
 	resolve: (self: Path, ...string) -> string | nil,
-	_commonParts: (self: Path, ...string) -> { string },
+	_commonParts: (self: Path, ...string) -> Array<string>,
 	relative: (self: Path, from: string, to: string) -> string,
 	dirname: (self: Path, filepath: string) -> string,
 	basename: (self: Path, filepath: string, expected_ext: string?) -> string,
@@ -92,7 +97,7 @@ function Path:_splitPath(filename: string)
 end
 
 -- Modifies an array of path parts in place by interpreting "." and ".." segments
-function Path:_normalizeArray(parts: { string }, isrelative: boolean)
+function Path:_normalizeArray(parts: Array<string>, isrelative: boolean)
 	local skip = 0
 	for i = #parts, 1, -1 do
 		local part = parts[i]
@@ -151,15 +156,15 @@ function Path:normalize(filepath: string)
 	return filepath
 end
 
-function Path:_filterparts(parts: { string })
+function Path:_filterparts(parts: Array<string>)
 	local filteredparts = {}
 	-- filter out empty parts
-	for _, part in parts do
+	for i, part in ipairs(parts) do
 		if part and part ~= "" then
 			table.insert(filteredparts, part)
 		end
 	end
-	for i, part in filteredparts do
+	for i, part in ipairs(filteredparts) do
 		-- Strip leading slashes on all but first item
 		if i > 1 then
 			while part:sub(1, 1) == self.sep do
@@ -177,13 +182,13 @@ function Path:_filterparts(parts: { string })
 	return filteredparts
 end
 
-function Path:_rawjoin(parts: { string })
+function Path:_rawjoin(parts: Array<string>)
 	return table.concat(parts, self.sep)
 end
 
 function Path:_filteredjoin(...: string)
-	local parts: { string } = { ... }
-	for i, part in parts do
+	local parts: Array<string> = { ... }
+	for i, part in ipairs(parts) do
 		parts[i] = self:normalizeSeparators(part)
 	end
 	local filteredparts = self:_filterparts(parts)
@@ -197,9 +202,10 @@ function Path:join(...: string)
 end
 
 -- Works backwards, joining the arguments until it resolves to an absolute path.
--- If an absolute path is not resolved, the current working directory is prepended.
+-- If an absolute path is not resolved, then the current working directory is
+-- prepended
 function Path:resolve(...: string)
-	local paths: { string } = { ... }
+	local paths: Array<string> = { ... }
 	local resolvedpath = ""
 	local resolveddrive: string? = nil
 	local isabsolute = false
@@ -242,12 +248,13 @@ function Path:resolve(...: string)
 	return resolvedpath
 end
 
--- Returns the common parts of the given paths, or {} if none.
+-- Returns the common parts of the given paths or {} if no
+-- common parts were found.
 function Path:_commonParts(...: string)
-	local common_parts: { string } = {}
-	local paths: { string } = { ... }
+	local common_parts: Array<string> = {}
+	local paths: Array<string> = { ... }
 	local split_paths = {}
-	for _, path in paths do
+	for _, path in ipairs(paths) do
 		table.insert(split_paths, self:_splitBySeparators(path))
 	end
 	for part_i = 1, #split_paths[1] do
@@ -263,8 +270,8 @@ function Path:_commonParts(...: string)
 	return common_parts
 end
 
--- Returns the relative path from 'from' to 'to'. Falls back to 'to' if no
--- relative path can be solved.
+-- Returns the relative path from 'from' to 'to'
+-- If no relative path can be solved, then 'to' is returned
 function Path:relative(from: string, to: string)
 	local from_root, from_dir, from_basename = self:_splitPath(from)
 	local to_root, to_dir, to_basename = self:_splitPath(to)
@@ -280,7 +287,7 @@ function Path:relative(from: string, to: string)
 
 	local relative_parts = {}
 	if #common_parts > 0 then
-		for _ = #common_parts, #from_parts - 1 do
+		for i = #common_parts, #from_parts - 1 do
 			table.insert(relative_parts, "..")
 		end
 	end

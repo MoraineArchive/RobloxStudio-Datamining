@@ -1,3 +1,5 @@
+--!nonstrict
+-- ROBLOX NOTE: no upstream
 --[[
 	* Copyright (c) Roblox Corporation. All rights reserved.
 	* Licensed under the MIT License (the "License");
@@ -12,6 +14,14 @@
 	* See the License for the specific language governing permissions and
 	* limitations under the License.
 ]]
+
+local CurrentModule = script
+local Packages = CurrentModule.Parent
+
+local LuauPolyfill = require(Packages.LuauPolyfill)
+type Object = LuauPolyfill.Object
+
+local exports = {}
 
 local GlobalMockerClass = {}
 
@@ -65,7 +75,7 @@ function GlobalMockerClass:isMockGlobalLibrary(object: any): boolean
 end
 
 function GlobalMockerClass:_createGlobalAutomocks(): GlobalAutomocks
-	local function implement(mockableGlobals: { [string]: any }, into: GlobalAutomocks)
+	local function implement(mockableGlobals: Object, into: GlobalAutomocks)
 		for name, mockableGlobal in mockableGlobals do
 			if typeof(mockableGlobal) == "function" then
 				into[name] = {
@@ -115,8 +125,8 @@ function GlobalMockerClass:_createGlobalEnv(automocks: GlobalAutomocks): GlobalE
 				end
 
 				-- Give $$ names like $$typeof a free pass, because they're used
-				-- internally in some Jest functions, and probably aren't a user
-				-- accidentally misusing `globalEnv`.
+				-- internally in some Jest/LuauPolyfill functions, and probably
+				-- aren't a user accidentally misusing `globalEnv`.
 				if string.sub(name, 1, 2) == "$$" then
 					return nil
 				end
@@ -149,7 +159,7 @@ function GlobalMockerClass:_createGlobalEnv(automocks: GlobalAutomocks): GlobalE
 	return makeSentinelForLibrary(automocks, {}) :: any
 end
 
-return {
-	GlobalMocker = GlobalMockerClass,
-	MOCKABLE_GLOBALS = MOCKABLE_GLOBALS,
-}
+exports.GlobalMocker = GlobalMockerClass
+exports.MOCKABLE_GLOBALS = MOCKABLE_GLOBALS
+
+return exports

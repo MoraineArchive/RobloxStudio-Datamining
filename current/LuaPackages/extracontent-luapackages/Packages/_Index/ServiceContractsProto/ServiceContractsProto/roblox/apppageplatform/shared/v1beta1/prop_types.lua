@@ -2134,7 +2134,6 @@ type _GradientPropFields = {
 	kind: (
 		{ type: "literal", value: GradientProp_GradientData }
 		| { type: "conditional", value: GradientProp_ConditionalOptions }
-		| { type: "binding_path", value: string }
 	)?,
 }
 
@@ -2142,7 +2141,6 @@ type _GradientPropPartialFields = {
 	kind: (
 		{ type: "literal", value: GradientProp_GradientData }
 		| { type: "conditional", value: GradientProp_ConditionalOptions }
-		| { type: "binding_path", value: string }
 	)?,
 }
 
@@ -2161,12 +2159,12 @@ type _GradientProp_ConditionalOptionImpl = {
 
 type _GradientProp_ConditionalOptionFields = {
 	condition: _roblox_apppageplatform_shared_v1beta1_prop_condition.PropCondition?,
-	kind: ({ type: "literal", value: GradientProp_GradientData } | { type: "binding_path", value: string })?,
+	kind: { type: "literal", value: GradientProp_GradientData }?,
 }
 
 type _GradientProp_ConditionalOptionPartialFields = {
 	condition: _roblox_apppageplatform_shared_v1beta1_prop_condition.PropCondition?,
-	kind: ({ type: "literal", value: GradientProp_GradientData } | { type: "binding_path", value: string })?,
+	kind: { type: "literal", value: GradientProp_GradientData }?,
 }
 
 export type GradientProp_ConditionalOption = typeof(setmetatable(
@@ -12348,9 +12346,6 @@ do
 				local encoded = self.kind.value:encode()
 				output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
 				output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
-			elseif self.kind.type == "binding_path" then
-				output, cursor = proto.writeTag(output, cursor, 3, proto.wireTypes.lengthDelimited)
-				output, cursor = proto.writeString(output, cursor, self.kind.value)
 			end
 		end
 
@@ -12382,11 +12377,6 @@ do
 					local value
 					value, cursor = proto.readBuffer(input, cursor)
 					self.kind = { type = "conditional", value = messages.GradientProp_ConditionalOptions.decode(value) }
-					continue
-				elseif field == 3 then
-					local value
-					value, cursor = proto.readBuffer(input, cursor)
-					self.kind = { type = "binding_path", value = buffer.tostring(value) }
 					continue
 				end
 
@@ -12420,8 +12410,6 @@ do
 				output.literal = self.kind.value:jsonEncode()
 			elseif self.kind.type == "conditional" then
 				output.conditional = self.kind.value:jsonEncode()
-			elseif self.kind.type == "binding_path" then
-				output.bindingPath = self.kind.value
 			end
 		end
 
@@ -12438,14 +12426,6 @@ do
 		if input.conditional ~= nil then
 			self.kind =
 				{ type = "conditional", value = messages.GradientProp_ConditionalOptions.jsonDecode(input.conditional) }
-		end
-
-		if input.binding_path ~= nil then
-			self.kind = { type = "binding_path", value = input.binding_path }
-		end
-
-		if input.bindingPath ~= nil then
-			self.kind = { type = "binding_path", value = input.bindingPath }
 		end
 
 		return self
@@ -12489,9 +12469,6 @@ do
 				local encoded = self.kind.value:encode()
 				output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
 				output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
-			elseif self.kind.type == "binding_path" then
-				output, cursor = proto.writeTag(output, cursor, 3, proto.wireTypes.lengthDelimited)
-				output, cursor = proto.writeString(output, cursor, self.kind.value)
 			end
 		end
 
@@ -12523,11 +12500,6 @@ do
 					local value
 					value, cursor = proto.readBuffer(input, cursor)
 					self.kind = { type = "literal", value = messages.GradientProp_GradientData.decode(value) }
-					continue
-				elseif field == 3 then
-					local value
-					value, cursor = proto.readBuffer(input, cursor)
-					self.kind = { type = "binding_path", value = buffer.tostring(value) }
 					continue
 				end
 
@@ -12563,8 +12535,6 @@ do
 		if self.kind ~= nil then
 			if self.kind.type == "literal" then
 				output.literal = self.kind.value:jsonEncode()
-			elseif self.kind.type == "binding_path" then
-				output.bindingPath = self.kind.value
 			end
 		end
 
@@ -12581,14 +12551,6 @@ do
 
 		if input.literal ~= nil then
 			self.kind = { type = "literal", value = messages.GradientProp_GradientData.jsonDecode(input.literal) }
-		end
-
-		if input.binding_path ~= nil then
-			self.kind = { type = "binding_path", value = input.binding_path }
-		end
-
-		if input.bindingPath ~= nil then
-			self.kind = { type = "binding_path", value = input.bindingPath }
 		end
 
 		return self

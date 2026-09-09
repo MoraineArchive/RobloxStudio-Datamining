@@ -521,16 +521,6 @@
   },
   {
     "class": "Folder",
-    "name": "Internal",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Internal",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
     "name": "Inventory",
     "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/RobloxAPI/APIS/ToolboxService/V1/Inventory",
     "properties": {
@@ -7179,30 +7169,6 @@
     "class": "ModuleScript",
     "name": "LayoutOrderIterator",
     "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/Util/LayoutOrderIterator",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "LazyFoundationProvider",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Internal/LazyFoundationProvider",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "LazyFoundationStyleLink",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Internal/LazyFoundationStyleLink",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -14653,18 +14619,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "ThemeSwitcherState",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/Style/ThemeSwitcherState",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "Thumbnail",
     "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/MultiImagePicker/Thumbnail",
     "properties": {
@@ -15579,18 +15533,6 @@
     "class": "ModuleScript",
     "name": "useStudioThemeColors",
     "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/Util/Highlighter/useStudioThemeColors",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "useStudioThemeName",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Hooks/useStudioThemeName",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
