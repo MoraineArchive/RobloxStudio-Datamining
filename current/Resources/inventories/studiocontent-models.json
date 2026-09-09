@@ -1,0 +1,98 @@
+[
+  {
+    "bytes": 48227,
+    "extension": "rbxm",
+    "path": "AnimationEditor/AnimationEditorGUI.rbxm",
+    "sha256": "7fc559d4d257fb8176443df3d00cba13f9a9dd14b66b206085dea31da4ab9f90"
+  },
+  {
+    "bytes": 30492,
+    "extension": "rbxm",
+    "path": "AvatarCompatibilityPreviewer/bodyPreview.rbxm",
+    "sha256": "c742e7dcff45ed22e1285050b137d6b0bfd5f01a3302a2478059fbc15612540a"
+  },
+  {
+    "bytes": 10444,
+    "extension": "rbxm",
+    "path": "AvatarCompatibilityPreviewer/headPreview.rbxm",
+    "sha256": "bea6a1e3c23e37ee914cedc048b7ed189d7d1b8072865e695cdaa92963873340"
+  },
+  {
+    "bytes": 2963,
+    "extension": "rbxm",
+    "path": "AvatarCompatibilityPreviewer/pedestal.rbxm",
+    "sha256": "50a54f2ce48db17e692351c05386e8ca3a2e359a3d2a02d01f1327ae88a93505"
+  },
+  {
+    "bytes": 14148,
+    "extension": "rbxm",
+    "path": "LayeredClothingEditor/mannequin_mock.rbxm",
+    "sha256": "56af1a28655f573a5a681e37b7899f1219f0268d2ce86d305819c9a78a599eef"
+  },
+  {
+    "bytes": 15028,
+    "extension": "rbxm",
+    "path": "LayeredClothingEditor/mannequin.rbxm",
+    "sha256": "17f1e38665d83f78ae0b8c4f73d00c35e476dd9f2fed0f760bb9ca276f120f79"
+  },
+  {
+    "bytes": 4876,
+    "extension": "rbxm",
+    "path": "LayeredClothingEditor/MeshPartHeadTemplate.rbxm",
+    "sha256": "30500d7777b12f9df6dcf612a68aa41b63817a33e6c1310dc3816ef04c718060"
+  },
+  {
+    "bytes": 4201,
+    "extension": "rbxm",
+    "path": "LayeredClothingEditor/PartHeadTemplate.rbxm",
+    "sha256": "439dc5285262df09158060fb7c21a3dcf58dad3f810b7ab5ee13926afec34a08"
+  },
+  {
+    "bytes": 14267,
+    "extension": "rbxm",
+    "path": "RigBuilder/AnthroRigs.rbxm",
+    "sha256": "50be8f596d26290b7510ab3da5b286b99fdd836f5408fbdcab5b205fb4464e41"
+  },
+  {
+    "bytes": 12552,
+    "extension": "rbxm",
+    "path": "RigBuilder/RigBuilderGUI.rbxm",
+    "sha256": "f7bfb124d6b3b728f9ae27be83be2e2fd3914a2f6a7d185497c825e9a17fe092"
+  },
+  {
+    "bytes": 766,
+    "extension": "png",
+    "path": "studio_model_test.png",
+    "sha256": "a45ca21d310953cb2bb68608f02b6a24a4ad6f6e833a328cbd4e13328475d692"
+  },
+  {
+    "bytes": 1129,
+    "extension": "mesh",
+    "path": "ViewSelector/Axis.mesh",
+    "sha256": "fc6abdf1c30d4798fb1e74736585d59bfed36c0d9a69ea9ddad7200d314be6ae"
+  },
+  {
+    "bytes": 550409,
+    "extension": "mesh",
+    "path": "ViewSelector/Basic.mesh",
+    "sha256": "8a8fe7139500046b5071004e76d01328f08f7b6dd909f2adfe37236457b500ae"
+  },
+  {
+    "bytes": 9625,
+    "extension": "mesh",
+    "path": "ViewSelector/Corner.mesh",
+    "sha256": "8e854b336aff3c7c66c8f94ca7575268d3f76999e2bb8d0c87a6cad282e2664f"
+  },
+  {
+    "bytes": 21444,
+    "extension": "rbxm",
+    "path": "ViewSelector/ViewSelector.rbxm",
+    "sha256": "8aed0b8afaafaf715d8ca3a4deb76be0ec8582e98bb90dd26e344e5b1e376678"
+  },
+  {
+    "bytes": 20338,
+    "extension": "rbxm",
+    "path": "WindControl/windhose.rbxm",
+    "sha256": "9680a1fb89ecf338b702bc6d37d369fce415639d1b28373b123837b87727283e"
+  }
+]

@@ -1,0 +1,200 @@
+[
+  {
+    "bytes": 220467,
+    "extension": "qm",
+    "path": "qtbase_de.qm",
+    "sha256": "553c046835db9adef15954fa9a576625366ba8bfd16637038c4bcd28e5ebace1"
+  },
+  {
+    "bytes": 16,
+    "extension": "qm",
+    "path": "qtbase_en.qm",
+    "sha256": "9959b510b15d18937848ad13007e30459d2e993c67e564badbfc18f935695c85"
+  },
+  {
+    "bytes": 165160,
+    "extension": "qm",
+    "path": "qtbase_es.qm",
+    "sha256": "f6a0734903bbfcd9fd447fbcfd7ad6b9bbea50d038dc9388038c9ecfc13752a4"
+  },
+  {
+    "bytes": 166399,
+    "extension": "qm",
+    "path": "qtbase_fr.qm",
+    "sha256": "3df429a5e00bea13a89b594c369056e3be50acd3b58fae6324ff266c9b45fcc5"
+  },
+  {
+    "bytes": 187167,
+    "extension": "qm",
+    "path": "qtbase_it_IT.qm",
+    "sha256": "c5fba3a7c0ed88d90d39b915d4cbe523b80f9d5ff035e28116f4b079708b7d86"
+  },
+  {
+    "bytes": 129904,
+    "extension": "qm",
+    "path": "qtbase_ja.qm",
+    "sha256": "f0ee03c9936b459cc9bdf184df9b7efad98d40ab7b99e89166a42e019a0ec0ea"
+  },
+  {
+    "bytes": 124101,
+    "extension": "qm",
+    "path": "qtbase_ko.qm",
+    "sha256": "0572429dc3c7f4055343a3f4e28463c505df1c97211d1fb6a7430c145b62a9f2"
+  },
+  {
+    "bytes": 186855,
+    "extension": "qm",
+    "path": "qtbase_pt.qm",
+    "sha256": "58902ac9c18c691ce0666696b1e7d2387b2f71756dd9e8758aaa3fb37087bae1"
+  },
+  {
+    "bytes": 158012,
+    "extension": "qm",
+    "path": "qtbase_ru.qm",
+    "sha256": "418167c804f098decd64c452e9021dcaaa7e531ecd5dd5abbe2abada88788655"
+  },
+  {
+    "bytes": 117498,
+    "extension": "qm",
+    "path": "qtbase_zh_CN.qm",
+    "sha256": "93f0cf94f839f8bef7b87b4bf5ef0fad716a06c96275135bc930cdc5aba8bcd3"
+  },
+  {
+    "bytes": 142893,
+    "extension": "qm",
+    "path": "qtbase_zh_TW.qm",
+    "sha256": "ed754e2dcc919953f6f4a612bf0e5ecea2b1308f0d6927e090ab78c8a395c019"
+  },
+  {
+    "bytes": 74839,
+    "extension": "qm",
+    "path": "qtdeclarative_de.qm",
+    "sha256": "8f7e3aa3436c87bcff7113751e9a8576f2970755227929a024f2943ab4b4871e"
+  },
+  {
+    "bytes": 16,
+    "extension": "qm",
+    "path": "qtdeclarative_en.qm",
+    "sha256": "9959b510b15d18937848ad13007e30459d2e993c67e564badbfc18f935695c85"
+  },
+  {
+    "bytes": 59865,
+    "extension": "qm",
+    "path": "qtdeclarative_es.qm",
+    "sha256": "18ae849aa809462a4029db46e5d2002c6e869db423c1b452fed8fc286ca69780"
+  },
+  {
+    "bytes": 61410,
+    "extension": "qm",
+    "path": "qtdeclarative_fr.qm",
+    "sha256": "8d24d86ef6da0a0fa948fdf0dd5290817c4be85b8f324b986833c78bf82e7c59"
+  },
+  {
+    "bytes": 72326,
+    "extension": "qm",
+    "path": "qtdeclarative_it_IT.qm",
+    "sha256": "71e7e7ce2b6f5c2ed834f695a328a9ee802a962225ac6522e4dce5b2cb05a1b4"
+  },
+  {
+    "bytes": 45294,
+    "extension": "qm",
+    "path": "qtdeclarative_ja.qm",
+    "sha256": "21c81dbdf535ca7e0989b0ce78c18c5d6be99a1fa1ac12856ac927f2dd119d0d"
+  },
+  {
+    "bytes": 41831,
+    "extension": "qm",
+    "path": "qtdeclarative_ko.qm",
+    "sha256": "8854f4c18342f9e6e32185a269f1cbb59a60f0d2c60dab30cc66c58c95dfaf0b"
+  },
+  {
+    "bytes": 73118,
+    "extension": "qm",
+    "path": "qtdeclarative_pt.qm",
+    "sha256": "8fc3d5ff0808586eab3d6b8b57bbac85603769df43bf20383a14d995816fa710"
+  },
+  {
+    "bytes": 58109,
+    "extension": "qm",
+    "path": "qtdeclarative_ru.qm",
+    "sha256": "e6bc634d2c25cb1697aec3b7d7e65a23f19dba84e23076858a1df43d146f91e4"
+  },
+  {
+    "bytes": 37139,
+    "extension": "qm",
+    "path": "qtdeclarative_zh_CN.qm",
+    "sha256": "c61a4e6d3f94ec6ebce4ff3bddf48b32e54513cfed133a5fd9d06b0cd17fd491"
+  },
+  {
+    "bytes": 47469,
+    "extension": "qm",
+    "path": "qtdeclarative_zh_TW.qm",
+    "sha256": "6b618700befa21432942bf161b2db3b3603bdeb53f3cd1c907fdf8db6635c82b"
+  },
+  {
+    "bytes": 5198,
+    "extension": "qm",
+    "path": "qtquickcontrols_de.qm",
+    "sha256": "50472c2e995f5f3cc238ff118ec7ded9e22087b5a35f78671a0ce0ca856d30e9"
+  },
+  {
+    "bytes": 16,
+    "extension": "qm",
+    "path": "qtquickcontrols_en.qm",
+    "sha256": "9959b510b15d18937848ad13007e30459d2e993c67e564badbfc18f935695c85"
+  },
+  {
+    "bytes": 5144,
+    "extension": "qm",
+    "path": "qtquickcontrols_es.qm",
+    "sha256": "72b3923609540c1a42868f8c52205b348f1c5354f0496a87602db2173642cf76"
+  },
+  {
+    "bytes": 5540,
+    "extension": "qm",
+    "path": "qtquickcontrols_fr.qm",
+    "sha256": "8ab0ce6bc3c43396c3bcb880f07a97f81deb5b97d1b0949e1ee0ab3868f7f6e1"
+  },
+  {
+    "bytes": 5060,
+    "extension": "qm",
+    "path": "qtquickcontrols_it_IT.qm",
+    "sha256": "aff5d4d71b94419603293b18b5f12d083949d9b5bf1942ef890ebf8f324b9157"
+  },
+  {
+    "bytes": 4349,
+    "extension": "qm",
+    "path": "qtquickcontrols_ja.qm",
+    "sha256": "1f40784c6851ef591917fde75de4debb2d88a175ffb8d128857d07f134717376"
+  },
+  {
+    "bytes": 4335,
+    "extension": "qm",
+    "path": "qtquickcontrols_ko.qm",
+    "sha256": "5c5dc3570eca9df06ee958bd3b4c8121dfe448e4f33218e6443bcf36715ed727"
+  },
+  {
+    "bytes": 5046,
+    "extension": "qm",
+    "path": "qtquickcontrols_pt.qm",
+    "sha256": "31f416c304d624170ae17049ac7999699cac9153dae212c601fdf699c37c4e63"
+  },
+  {
+    "bytes": 5457,
+    "extension": "qm",
+    "path": "qtquickcontrols_ru.qm",
+    "sha256": "21e84d9a2135c52026032d19e51fc37376b2a1470d680744a431641730f2841e"
+  },
+  {
+    "bytes": 4193,
+    "extension": "qm",
+    "path": "qtquickcontrols_zh_CN.qm",
+    "sha256": "b2ce16f0d2798ff0a65a34a91cdefed3e734622a7db613a8163e4267b22d5f7f"
+  },
+  {
+    "bytes": 4177,
+    "extension": "qm",
+    "path": "qtquickcontrols_zh_TW.qm",
+    "sha256": "749ce0c3bce85c1b86bea3dfc661429df4327f55f6ca9357b38141121425d456"
+  }
+]

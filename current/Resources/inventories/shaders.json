@@ -1,0 +1,32 @@
+[
+  {
+    "bytes": 13410915,
+    "extension": "pack",
+    "path": "shaders_d3d10_1.pack",
+    "sha256": "131d6917d6654283701807fbccb427b772333401b00bd480801dc312f80d59f8"
+  },
+  {
+    "bytes": 13215463,
+    "extension": "pack",
+    "path": "shaders_d3d10.pack",
+    "sha256": "3b9d49b6b4301d01b693edda39d6d0e58ffdf554d1a015d3516d080ec3a02959"
+  },
+  {
+    "bytes": 18111647,
+    "extension": "pack",
+    "path": "shaders_d3d11.pack",
+    "sha256": "8f9ffc71c1bb4aa0e4f785f014825e9122a3dd70c0fbf8e6603b1ad119c8455a"
+  },
+  {
+    "bytes": 4232961,
+    "extension": "pack",
+    "path": "shaders_glsl3.pack",
+    "sha256": "9943e42a8ae4d466c64f0ddcb511bf4687309c64173098ede55644c74f06f4ac"
+  },
+  {
+    "bytes": 19101931,
+    "extension": "pack",
+    "path": "shaders_vulkan_desktop.pack",
+    "sha256": "4ec60b92f3fffbbf31f3359d7aef6d54698371d56fbd03cf28f9f7a090625882"
+  }
+]

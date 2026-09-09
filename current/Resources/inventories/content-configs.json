@@ -1,0 +1,218 @@
+[
+  {
+    "bytes": 102,
+    "extension": "json",
+    "path": "CrossExpVoicePatchConfig/CrossExpVoicePatchConfig.json",
+    "sha256": "1854fc5c5bc2020f8c20fa730542a290ea4004f3e478eccb4a6a3973cfcb2c9b"
+  },
+  {
+    "bytes": 256,
+    "extension": "json",
+    "path": "DataModelPatchConfig/DataModelPatchConfig.json",
+    "sha256": "4e1f60444051283e1362faedf7ff2136aa819e453ba56ffcabbc0e715f821af3"
+  },
+  {
+    "bytes": 1337,
+    "extension": "json",
+    "path": "DateTimeLocaleConfigs/ar-001.json",
+    "sha256": "1376927a800ad109d395bd25466c460fba17bf8994790ed2163472ce1df2bce5"
+  },
+  {
+    "bytes": 1532,
+    "extension": "json",
+    "path": "DateTimeLocaleConfigs/de-de.json",
+    "sha256": "f233a0c9f5a0816d1adf7474ad475706598c6a8df811d68ece588e856b884d71"
+  },
+  {
+    "bytes": 1513,
+    "extension": "json",
+    "path": "DateTimeLocaleConfigs/en-150.json",
+    "sha256": "b6a39424a859767726b64de3fd3f2958798a4138f28d24675ac482aab117d44b"
+  },
+  {
+    "bytes": 1519,
+    "extension": "json",
+    "path": "DateTimeLocaleConfigs/en-au.json",
+    "sha256": "d3328daebc11cb9395eb7c8d41bbd36238a2f78f8643c2635f2069c2bc480dc4"
+  },
+  {
+    "bytes": 1469,
+    "extension": "json",
+    "path": "DateTimeLocaleConfigs/en-ca.json",
+    "sha256": "0d29673dbc1493ac7d5a789b8ff70059f7545887e404d5086c10dc749967951e"
+  },
+  {
+    "bytes": 1513,
+    "extension": "json",
+    "path": "DateTimeLocaleConfigs/en-gb.json",
+    "sha256": "b6a39424a859767726b64de3fd3f2958798a4138f28d24675ac482aab117d44b"
+  },
+  {
+    "bytes": 1519,
+    "extension": "json",
+    "path": "DateTimeLocaleConfigs/en-nz.json",
+    "sha256": "d3328daebc11cb9395eb7c8d41bbd36238a2f78f8643c2635f2069c2bc480dc4"
+  },
+  {
+    "bytes": 1525,
+    "extension": "json",
+    "path": "DateTimeLocaleConfigs/en-us.json",
+    "sha256": "ffaac882a2cf35f4992b111dad7db62148e162d21796b01272650dad3be8bc1a"
+  },
+  {
+    "bytes": 1590,
+    "extension": "json",
+    "path": "DateTimeLocaleConfigs/es-es.json",
+    "sha256": "e9a3017dc1ab586bbd6be592b7ac7dc4b4b643637597cb4a16b9b5775d1a3d43"
+  },
+  {
+    "bytes": 1610,
+    "extension": "json",
+    "path": "DateTimeLocaleConfigs/es-mx.json",
+    "sha256": "da37ece6cbae7d7eb15c0b494834a9a806759b55de7300beffe53084323dc990"
+  },
+  {
+    "bytes": 1477,
+    "extension": "json",
+    "path": "DateTimeLocaleConfigs/fr-ca.json",
+    "sha256": "bcdead660b5db4d7da60f7293919fea4f0f3ce6b48324ea2e038b9faa5604f23"
+  },
+  {
+    "bytes": 1533,
+    "extension": "json",
+    "path": "DateTimeLocaleConfigs/fr-fr.json",
+    "sha256": "b8e6080cc67256168ddf6fa84ffc0399c89637c85deea09e372d5c0a84c66d15"
+  },
+  {
+    "bytes": 1524,
+    "extension": "json",
+    "path": "DateTimeLocaleConfigs/it-it.json",
+    "sha256": "ce48caf4bd0a4c54b8f1d0d752b5cd4490582a5fe86f59f68c65559261f3254d"
+  },
+  {
+    "bytes": 1540,
+    "extension": "json",
+    "path": "DateTimeLocaleConfigs/ja-jp.json",
+    "sha256": "439fec6cc0a299572fae7b99a7196d07b75645fa7d972fae5a1d929cb20d20ad"
+  },
+  {
+    "bytes": 1533,
+    "extension": "json",
+    "path": "DateTimeLocaleConfigs/ko-kr.json",
+    "sha256": "6bfc96d5e724370814025436213911022183e4300d3b8a43798135b95795b4d6"
+  },
+  {
+    "bytes": 1576,
+    "extension": "json",
+    "path": "DateTimeLocaleConfigs/pt-br.json",
+    "sha256": "d11499a8dacc80c432c79b8a9bd7012794ee9359ffbe702740cf93f3e76b2252"
+  },
+  {
+    "bytes": 1608,
+    "extension": "json",
+    "path": "DateTimeLocaleConfigs/pt-pt.json",
+    "sha256": "d23dd09358e517495d3ad305cf5571846a6aad157a7a7d90050631ee23fe531d"
+  },
+  {
+    "bytes": 2011,
+    "extension": "json",
+    "path": "DateTimeLocaleConfigs/ru-ru.json",
+    "sha256": "f4c451bae181489e516d000f0ad8dd6b9934364f659fb6bdc27a4ffcf9bd1922"
+  },
+  {
+    "bytes": 2103,
+    "extension": "json",
+    "path": "DateTimeLocaleConfigs/zh-cjv.json",
+    "sha256": "ef7f5de035bf013df39a8c0e6131cc96894784e6a15f7e811ef2cb1cfa313b50"
+  },
+  {
+    "bytes": 2103,
+    "extension": "json",
+    "path": "DateTimeLocaleConfigs/zh-cn.json",
+    "sha256": "ef7f5de035bf013df39a8c0e6131cc96894784e6a15f7e811ef2cb1cfa313b50"
+  },
+  {
+    "bytes": 2103,
+    "extension": "json",
+    "path": "DateTimeLocaleConfigs/zh-hans.json",
+    "sha256": "ef7f5de035bf013df39a8c0e6131cc96894784e6a15f7e811ef2cb1cfa313b50"
+  },
+  {
+    "bytes": 2095,
+    "extension": "json",
+    "path": "DateTimeLocaleConfigs/zh-hant.json",
+    "sha256": "3575fcb6f219b6db23b8b6997b34d6834957b291ece9cf83c914fe86c74f1421"
+  },
+  {
+    "bytes": 2095,
+    "extension": "json",
+    "path": "DateTimeLocaleConfigs/zh-hk.json",
+    "sha256": "3575fcb6f219b6db23b8b6997b34d6834957b291ece9cf83c914fe86c74f1421"
+  },
+  {
+    "bytes": 2095,
+    "extension": "json",
+    "path": "DateTimeLocaleConfigs/zh-tw.json",
+    "sha256": "3575fcb6f219b6db23b8b6997b34d6834957b291ece9cf83c914fe86c74f1421"
+  },
+  {
+    "bytes": 594397,
+    "extension": "txt",
+    "path": "GameControllerConfigs/gamecontrollerdb_new.txt",
+    "sha256": "a6fa5944bb8808724b574e513bc63594c08fccbdf090fb8efab9fe26cbb43f05"
+  },
+  {
+    "bytes": 391231,
+    "extension": "txt",
+    "path": "GameControllerConfigs/gamecontrollerdb.txt",
+    "sha256": "eb7a7a8f8bd50fcc59060db0531953b2a1b5df46646652694eced34893158f00"
+  },
+  {
+    "bytes": 252,
+    "extension": "json",
+    "path": "InExperiencePatchConfig/InExperiencePatchConfig.json",
+    "sha256": "f631c57115c58fa44d9b5f3cb4d2b96bdd6384dce7e4b97fdba01bbbd9e0f368"
+  },
+  {
+    "bytes": 179,
+    "extension": "json",
+    "path": "OtaPatchConfigs/DiscoveryOtaPatchConfig.json",
+    "sha256": "91b9eb7420481c7aa584ad951929200865a6a221e27279ddc3b173ccc60938f0"
+  },
+  {
+    "bytes": 407749,
+    "extension": "js",
+    "path": "PerformanceConfigs/rofiler.js",
+    "sha256": "dacd2f27c8583a1605489be4daf9f0f4978138a4603bc7b16899e676fbff9bf7"
+  },
+  {
+    "bytes": 369560,
+    "extension": "js",
+    "path": "PerformanceConfigs/rofiler.tools.js",
+    "sha256": "36a8c16e84cbc9a57381154227a74072ba471c752dd62167a3db4df918f85e46"
+  },
+  {
+    "bytes": 79,
+    "extension": "json",
+    "path": "PlaybackAppPatchConfig/PlaybackAppPatchConfig.json",
+    "sha256": "2141b0a2cd6e424a48b10d7386906aa23a4164f3bb8b9664c9dd807f1387ab9c"
+  },
+  {
+    "bytes": 234,
+    "extension": "json",
+    "path": "ReflectionLoggerConfig/EphemeralCounterWhitelist.json",
+    "sha256": "9f581bdde742d98ae2a142958dc335b4f6eba3dc2b1712ee0b957948daaf0034"
+  },
+  {
+    "bytes": 234,
+    "extension": "json",
+    "path": "ReflectionLoggerConfig/EphemeralCounterWhitelistMock.json",
+    "sha256": "9f581bdde742d98ae2a142958dc335b4f6eba3dc2b1712ee0b957948daaf0034"
+  },
+  {
+    "bytes": 253,
+    "extension": "json",
+    "path": "UniversalAppPatchConfig/UniversalAppPatchConfig.json",
+    "sha256": "9e51afe1c667a7f417efc0d5ae94fe05de222822ee7d49bd48421cd91e710b27"
+  }
+]

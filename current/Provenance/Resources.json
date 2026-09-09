@@ -1,0 +1,206 @@
+{
+  "hashes": {
+    "inventories/ApplicationConfig.json": "00112dadd68dff9470ed0e4374aef07dcbb9c3e67b71a69d3f70d366cde932fd",
+    "inventories/content-api-docs.json": "f0b84524e6df030845b2a4012cd237f8e48fc543ec5866dbd08bcd9c7ee5a2bc",
+    "inventories/content-avatar.json": "7b92db9508468ddd66d4d38ba639fae647c6f1ceb26ad39b2dfe799d8f4d663a",
+    "inventories/content-configs.json": "5d2455f366152880dbcccd409d06876f5e9cd071f023104fce5bd5068a910ac6",
+    "inventories/content-platform-dictionaries.json": "9fcb5cf9a53477131c7ffa7bda2cdb5a645b9a2e4313fc4111ceeb3e51fb6059",
+    "inventories/content-qt_translations.json": "ecd575f9fdcc394ebfc2bf7b8fff834be5f4caef8e9f29e665b10bf850754caf",
+    "inventories/content-studio_svg_textures.json": "65f49174b981a3491508a0f737896f822f2468cedf53c28e72eacf37fadc506d",
+    "inventories/content-textures2.json": "92145778e51f9ba171acf55dbbc231da49b0c588c45f5deaf804652a22eca997",
+    "inventories/content-textures3.json": "7607ccb078fd3011fab84a31d8959863e5123f4d2833718d3690cc8608cfbaca",
+    "inventories/extracontent-textures.json": "183eb21703fb4606e6eb28ba825fa8393e8756e336f998cd6ad935413714c932",
+    "inventories/shaders.json": "2e1dd94ea0003e1f26a442257903266c264cf854512cee04e5312fde67ea034b",
+    "inventories/studiocontent-models.json": "4279503f83c1959f19d80222a8dd11793ed9f7d6b3a29334295675196d7f1356",
+    "inventories/studiocontent-textures.json": "3918193ebc4ee79bcd2287db64ccbbd2d3a17a7fec60572b07a77ad5e943e365",
+    "manifests/rbxManifest.csv": "8f2175367dddc071387e444c7081cb7d2ba1e5fe11bc671d3ffc1d853a9a1b9c",
+    "manifests/rbxManifest.txt": "dc2c8c6e107ebd8010be5cd98d3806250cc213b34efd1f923a72af7ebcfe32cf",
+    "manifests/rbxPkgManifest.csv": "0f2a6d7a6e1f3f3ba2f2f536939916dd78991e6ad1e58515ae2ac827eae27ffd",
+    "manifests/rbxPkgManifest.txt": "be126e4690158f012c8896685faa538bce097770afbac33a5cc941852ad67cd2",
+    "manifests/version-guid.txt": "1a01b3835bce30c4d460ec1292894fc63cbf7bbd1b2a2b33282a34ae79d8124b",
+    "manifests/version.txt": "a5483ecded234e8b0ac20a7f932e15b2a724e39d674e69176355afd3e8f81998",
+    "metadata.json": "06fcc88862407cfdbec1100e6b894420ccb67a8fabd977252aed81c8e9aa22a5",
+    "metadata/ApplicationConfig/OAuth2Config.json": "9bccbda83a8b353da40d22c15d79df66646adb317d8ea9dc3623a95902621a0d",
+    "metadata/Studio/ReflectionMetadata.xml": "8c2a320c3edb9fe6e03e19e2ec06a8d1c232b2188ca70efea24bc5b3605344b0",
+    "metadata/Studio/StartPageSystemMenu.xml": "5c2e20c2ad98343f0f7d82e1da46db0ad678c558bde14a738feaaccf4077640b",
+    "metadata/Studio/SystemMenu.xml": "2b4e262b6940c39e543dde8f51e27ef79634a0519ff9d737d7d1d829cae31780",
+    "metadata/content-configs/CrossExpVoicePatchConfig/CrossExpVoicePatchConfig.json": "1854fc5c5bc2020f8c20fa730542a290ea4004f3e478eccb4a6a3973cfcb2c9b",
+    "metadata/content-configs/DataModelPatchConfig/DataModelPatchConfig.json": "4e1f60444051283e1362faedf7ff2136aa819e453ba56ffcabbc0e715f821af3",
+    "metadata/content-configs/DateTimeLocaleConfigs/ar-001.json": "1376927a800ad109d395bd25466c460fba17bf8994790ed2163472ce1df2bce5",
+    "metadata/content-configs/DateTimeLocaleConfigs/de-de.json": "f233a0c9f5a0816d1adf7474ad475706598c6a8df811d68ece588e856b884d71",
+    "metadata/content-configs/DateTimeLocaleConfigs/en-150.json": "b6a39424a859767726b64de3fd3f2958798a4138f28d24675ac482aab117d44b",
+    "metadata/content-configs/DateTimeLocaleConfigs/en-au.json": "d3328daebc11cb9395eb7c8d41bbd36238a2f78f8643c2635f2069c2bc480dc4",
+    "metadata/content-configs/DateTimeLocaleConfigs/en-ca.json": "0d29673dbc1493ac7d5a789b8ff70059f7545887e404d5086c10dc749967951e",
+    "metadata/content-configs/DateTimeLocaleConfigs/en-gb.json": "b6a39424a859767726b64de3fd3f2958798a4138f28d24675ac482aab117d44b",
+    "metadata/content-configs/DateTimeLocaleConfigs/en-nz.json": "d3328daebc11cb9395eb7c8d41bbd36238a2f78f8643c2635f2069c2bc480dc4",
+    "metadata/content-configs/DateTimeLocaleConfigs/en-us.json": "ffaac882a2cf35f4992b111dad7db62148e162d21796b01272650dad3be8bc1a",
+    "metadata/content-configs/DateTimeLocaleConfigs/es-es.json": "e9a3017dc1ab586bbd6be592b7ac7dc4b4b643637597cb4a16b9b5775d1a3d43",
+    "metadata/content-configs/DateTimeLocaleConfigs/es-mx.json": "da37ece6cbae7d7eb15c0b494834a9a806759b55de7300beffe53084323dc990",
+    "metadata/content-configs/DateTimeLocaleConfigs/fr-ca.json": "bcdead660b5db4d7da60f7293919fea4f0f3ce6b48324ea2e038b9faa5604f23",
+    "metadata/content-configs/DateTimeLocaleConfigs/fr-fr.json": "b8e6080cc67256168ddf6fa84ffc0399c89637c85deea09e372d5c0a84c66d15",
+    "metadata/content-configs/DateTimeLocaleConfigs/it-it.json": "ce48caf4bd0a4c54b8f1d0d752b5cd4490582a5fe86f59f68c65559261f3254d",
+    "metadata/content-configs/DateTimeLocaleConfigs/ja-jp.json": "439fec6cc0a299572fae7b99a7196d07b75645fa7d972fae5a1d929cb20d20ad",
+    "metadata/content-configs/DateTimeLocaleConfigs/ko-kr.json": "6bfc96d5e724370814025436213911022183e4300d3b8a43798135b95795b4d6",
+    "metadata/content-configs/DateTimeLocaleConfigs/pt-br.json": "d11499a8dacc80c432c79b8a9bd7012794ee9359ffbe702740cf93f3e76b2252",
+    "metadata/content-configs/DateTimeLocaleConfigs/pt-pt.json": "d23dd09358e517495d3ad305cf5571846a6aad157a7a7d90050631ee23fe531d",
+    "metadata/content-configs/DateTimeLocaleConfigs/ru-ru.json": "f4c451bae181489e516d000f0ad8dd6b9934364f659fb6bdc27a4ffcf9bd1922",
+    "metadata/content-configs/DateTimeLocaleConfigs/zh-cjv.json": "ef7f5de035bf013df39a8c0e6131cc96894784e6a15f7e811ef2cb1cfa313b50",
+    "metadata/content-configs/DateTimeLocaleConfigs/zh-cn.json": "ef7f5de035bf013df39a8c0e6131cc96894784e6a15f7e811ef2cb1cfa313b50",
+    "metadata/content-configs/DateTimeLocaleConfigs/zh-hans.json": "ef7f5de035bf013df39a8c0e6131cc96894784e6a15f7e811ef2cb1cfa313b50",
+    "metadata/content-configs/DateTimeLocaleConfigs/zh-hant.json": "3575fcb6f219b6db23b8b6997b34d6834957b291ece9cf83c914fe86c74f1421",
+    "metadata/content-configs/DateTimeLocaleConfigs/zh-hk.json": "3575fcb6f219b6db23b8b6997b34d6834957b291ece9cf83c914fe86c74f1421",
+    "metadata/content-configs/DateTimeLocaleConfigs/zh-tw.json": "3575fcb6f219b6db23b8b6997b34d6834957b291ece9cf83c914fe86c74f1421",
+    "metadata/content-configs/GameControllerConfigs/gamecontrollerdb.txt": "eb7a7a8f8bd50fcc59060db0531953b2a1b5df46646652694eced34893158f00",
+    "metadata/content-configs/GameControllerConfigs/gamecontrollerdb_new.txt": "a6fa5944bb8808724b574e513bc63594c08fccbdf090fb8efab9fe26cbb43f05",
+    "metadata/content-configs/InExperiencePatchConfig/InExperiencePatchConfig.json": "f631c57115c58fa44d9b5f3cb4d2b96bdd6384dce7e4b97fdba01bbbd9e0f368",
+    "metadata/content-configs/OtaPatchConfigs/DiscoveryOtaPatchConfig.json": "91b9eb7420481c7aa584ad951929200865a6a221e27279ddc3b173ccc60938f0",
+    "metadata/content-configs/PlaybackAppPatchConfig/PlaybackAppPatchConfig.json": "2141b0a2cd6e424a48b10d7386906aa23a4164f3bb8b9664c9dd807f1387ab9c",
+    "metadata/content-configs/ReflectionLoggerConfig/EphemeralCounterWhitelist.json": "9f581bdde742d98ae2a142958dc335b4f6eba3dc2b1712ee0b957948daaf0034",
+    "metadata/content-configs/ReflectionLoggerConfig/EphemeralCounterWhitelistMock.json": "9f581bdde742d98ae2a142958dc335b4f6eba3dc2b1712ee0b957948daaf0034",
+    "metadata/content-configs/UniversalAppPatchConfig/UniversalAppPatchConfig.json": "9e51afe1c667a7f417efc0d5ae94fe05de222822ee7d49bd48421cd91e710b27"
+  },
+  "id": "e954872e99f06b8a842e7442bfa698bb244f49b0c4b22cf327cb37a41868463e",
+  "observationMode": "live",
+  "observedAt": "2026-09-09T11:07:35.602Z",
+  "provenance": [
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 2524,
+      "sha256": "c25fc38563a6741934a04e73eafba96cd83dfb26786a3360988c5161dacca5a0",
+      "sourceType": "official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-rbxPkgManifest.txt"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 2134131,
+      "sha256": "e5bd52a87d53c95a6a2ebb92a2f940621f1af3fe1852f1f78052eea3b62d0a29",
+      "sourceType": "official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-rbxManifest.txt"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 407,
+      "derivedFrom": "ApplicationConfig.zip",
+      "sha256": "5cc8509882515d50e8c65602516a5dbc291092b24bc6ce0b2105ada1f7733dbc",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-ApplicationConfig.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 12035577,
+      "derivedFrom": "content-api-docs.zip",
+      "sha256": "ee16857cd786ff4350a3826b2ec8a0a3cfbc601a99dc481252c1b98f81457939",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-content-api-docs.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 382829,
+      "derivedFrom": "content-avatar.zip",
+      "sha256": "53cd07f9d3d507be662054c19f891fb666df1f5721f4f3e7a4483e27dddd91f6",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-content-avatar.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 306439,
+      "derivedFrom": "content-configs.zip",
+      "sha256": "548676096947e20c1c47377c6e19b7a09f5fd3c2dbe3daae541ab13d876c55d5",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-content-configs.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 405780,
+      "derivedFrom": "content-platform-dictionaries.zip",
+      "sha256": "fbcb2e6d81cb1afc2e679db7484e8ba8670af28a1a8d2aafe7476358e53931ce",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-content-platform-dictionaries.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 650142,
+      "derivedFrom": "content-qt_translations.zip",
+      "sha256": "66526e43d2c9c9a18141ac2d41a0629fec1f11a21ebd6a12a9997f33b0fcc8ff",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-content-qt_translations.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 7970831,
+      "derivedFrom": "content-studio_svg_textures.zip",
+      "sha256": "5eafb912291489ec5e8f42cd7f33811b62e8008094f756cbfc45fa6b7fc8ae8a",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-content-studio_svg_textures.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 5738076,
+      "derivedFrom": "content-textures2.zip",
+      "sha256": "4b7cde55c45f3a9804055a1f265417db07b147593c6451070ecaf907ccb6c62b",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-content-textures2.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 3716441,
+      "derivedFrom": "content-textures3.zip",
+      "sha256": "73c9d9a9333623a070ccc1e5f6cf325d83f1ef9ce35c4d255b66a1733f6e6a91",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-content-textures3.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 5859211,
+      "derivedFrom": "extracontent-textures.zip",
+      "sha256": "93e8597bb09b5b343e7717f45a2a73dc215b0d632b3a16cd28803170434f0e03",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-extracontent-textures.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 11485214,
+      "derivedFrom": "shaders.zip",
+      "sha256": "3ecb1493dec2103fdb47fb2b144f6dbe9ef840ce9dc5e474577bc89f1dc08270",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-shaders.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 207417,
+      "derivedFrom": "studiocontent-models.zip",
+      "sha256": "91176b85e27a9b38dd2b31dd1718d996158d0816865284e0b80a35ab39bc62fe",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-studiocontent-models.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 9138810,
+      "derivedFrom": "studiocontent-textures.zip",
+      "sha256": "db6ea5f981df42672773517b9ed81758ba45c3afb582203729088d280ae83b02",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-studiocontent-textures.zip"
+    },
+    {
+      "buildGuid": "version-9fe94fb0e9d84c25",
+      "bytes": 125702130,
+      "derivedFrom": "RobloxStudio.zip",
+      "sha256": "857752494a5a943a0cb4818afc28f5b462a36c7bad4013dc07465d36131c51d6",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-9fe94fb0e9d84c25-RobloxStudio.zip"
+    }
+  ],
+  "sequence": 1,
+  "status": "available",
+  "summary": {
+    "bytes": 234913060,
+    "engineRevision": 1,
+    "entries": 10829,
+    "guid": "version-9fe94fb0e9d84c25",
+    "method": "SHA-256 inventory of official resource packages; selected public text metadata is retained verbatim.",
+    "packages": 13,
+    "readableMetadataFiles": 38
+  },
+  "surface": "Resources",
+  "target": "WindowsStudio64"
+}
