@@ -1,0 +1,91 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-93202a13414c4131",
+    "manifestFiles": 18471,
+    "packages": 34,
+    "version": "0.738.0.7381393"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "26f63b900ab1771e2490a23969bec05ac29f39ea57dcc54a79b487712f3c7306",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "1180445377f518257ce0865a4690e1bcfa7a3d32eceee7c41f58b0ebcb916ee1",
+      "semantic": {
+        "added": [
+          "FFlagConnectionChannelsCollapseWhenEmpty",
+          "FFlagEnableGetFriendshipStatus",
+          "FFlagPlayStationRemoveShowProfile"
+        ],
+        "changed": [
+          {
+            "after": "879be81dfeca9efeb03cc071285706c4a15b2687",
+            "before": "4a614a6f1649e4e340fc0e49e98ad68fcd6256be",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-09T00:37:13.458Z",
+            "before": "2026-09-09T00:12:26.390Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "879be81dfeca9efeb03cc071285706c4a15b2687",
+            "before": "4a614a6f1649e4e340fc0e49e98ad68fcd6256be",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-09T00:37:13.458Z",
+            "before": "2026-09-09T00:12:26.390Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagBuildDesktopReadiness_Staged",
+          "FFlagConnectionChannelsCollapseWhenEmpty_Staged",
+          "FFlagEnableGetFriendshipStatus_Staged",
+          "FFlagPlayStationRemoveShowProfile_Staged"
+        ],
+        "unchanged": 24107
+      }
+    },
+    "Web": {
+      "current": "a4338ae9d5d5c1d4cd5d46e507b9512876bfe7603e4135828e5b0c7901977f5f",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-012.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-047.js",
+          "assets.create.roblox.com/page-0/script-054.js",
+          "assets.create.roblox.com/page-0/script-063.js",
+          "assets.create.roblox.com/page-0/script-068.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 88
+      },
+      "previous": "8774ceb9a58f381b1354e8dcc9b8ee63746e4192c81a12c696a443509ad90c1e",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
