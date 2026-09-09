@@ -134,7 +134,7 @@
     "engineRevision": 1,
     "entries": 10829,
     "guid": "version-9fe94fb0e9d84c25",
-    "method": "SHA-256 inventory of official resource packages; selected public text metadata is retained verbatim.",
+    "method": "Byte-exact extraction of official resource packages with SHA-256 inventories; selected metadata also has a normalized text view.",
     "packages": 13,
     "readableMetadataFiles": 38
   },

@@ -17,7 +17,7 @@ This repository contains independently observed Windows Studio data. The extract
 
 ## Observed surfaces
 
-Studio observations include build and API metadata, plugins, Lua packages, native static metadata, FastVariables, LIVE settings, web assets, and provenance records. The `Resources` surface also tracks package and file manifests, shaders, Studio SVG textures, avatar resources, configurations, dictionaries, translations, and selected Studio XML metadata. Binary resources are represented by reproducible paths, sizes, and SHA-256 hashes instead of copied binaries.
+Studio observations include build and API metadata, plugins, Lua packages, native static metadata, FastVariables, LIVE settings, web assets, and provenance records. The `Resources` surface extracts official resource packages into navigable files under [`current/Resources/files/`](current/Resources/files/) and tracks shaders, Studio SVG textures, avatar resources, configurations, dictionaries, translations, and Studio XML metadata. Per-package inventories record each original path, size, and SHA-256 hash.
 
 Readable official Lua and Luau source is retained with upstream formatting, names, identifiers, and developer comments. Compiled source fields remain identified separately and are not presented as original readable source.
 
