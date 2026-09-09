@@ -1,0 +1,33 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-93202a13414c4131",
+    "manifestFiles": 18471,
+    "packages": 34,
+    "version": "0.738.0.7381393"
+  },
+  "datasets": {
+    "Web": {
+      "current": "f832006a2a20058e673faca37e2b1c34f34fb008c4501238bc10902a9deaee6d",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-1/script-001.js",
+          "assets.create.roblox.com/page-1/script-003.js",
+          "assets.create.roblox.com/page-1/script-004.js",
+          "assets.create.roblox.com/page-1/script-009.js",
+          "assets.create.roblox.com/page-1/script-013.js",
+          "assets.create.roblox.com/page-1/script-014.js",
+          "assets.create.roblox.com/page-1/script-016.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 97
+      },
+      "previous": "185821839f769acd329dc7909caaa37b8ed446b7f56ebbf9ca11468f64bc22ba",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
