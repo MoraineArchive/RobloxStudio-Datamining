@@ -1,10 +1,12 @@
-[![Moraine Roblox Datamining](https://github.com/MoraineArchive/Moraine-asset/blob/main/roblox/banner_roblox.png?raw=true)](https://github.com/MoraineArchive/Moraine-asset/blob/main/roblox/banner_roblox.png)
+[![Moraine Roblox Studio datamining and client tracker](.github/assets/banner_roblox.png)](LATEST.md)
 
-# Roblox Studio Datamining
+# Roblox Studio Datamining, API and Build Tracker
 
-Automated Roblox Studio build tracker and datamining archive maintained by Moraine. It records Windows Studio versions, API changes, plugins, LuaPackages, FastVariables, LIVE settings, native metadata, web assets, and chronological diffs from publicly accessible Roblox distribution endpoints.
+An automated Roblox Studio client tracker and datamining archive maintained by Moraine. Follow Roblox Studio builds and GUIDs, API dumps and API changes, plugins, LuaPackages, FastFlags and FastVariables, LIVE settings, native metadata, extracted resources, web assets, and chronological diffs observed from public Roblox distribution endpoints.
 
 This repository contains independently observed Windows Studio data. The extraction and publication infrastructure is maintained separately from this data archive.
+
+**Latest data:** [open the current datamining report](LATEST.md) or browse the [latest canonical state](current/).
 
 ## Archive layout
 
