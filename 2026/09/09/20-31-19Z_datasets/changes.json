@@ -1,0 +1,111 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-93202a13414c4131",
+    "manifestFiles": 18471,
+    "packages": 34,
+    "version": "0.738.0.7381393"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "8f0e26c05b298ed2e06adddb922feb050b9d9645cd0248e9f37d3d1c03ae4a8b",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "799ad21037dfe853c79468094712fa48634220c31c67d02a788c969ac9cf9a10",
+      "semantic": {
+        "added": [
+          "FFlagEnableRequestLocationTypeForSduiPurchase",
+          "FFlagFixLoginV2PrefillForcedUsernameOverride",
+          "FFlagLuaAppOneByTwoTileGatePlayerOnVideoLoad",
+          "FFlagVRAbuseReportLocales",
+          "FIntLuaAppOneByTwoTileVideoLoadedTelemetryThrottleHundredthsPercent"
+        ],
+        "changed": [
+          {
+            "after": "e23227a39d62062c2992e3d257be9e97cef555cb",
+            "before": "5f33a22495074602a2dbeefe28698b8de4c44f2c",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-09T20:30:32.533Z",
+            "before": "2026-09-09T19:52:45.073Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "True;2440500124;383310974;7178032757;1516533665;3936365689;274816972;210851291;5578556129;3508322461;1686885941",
+            "before": "True;2440500124",
+            "name": "FFlagCLI214028_UniverseFilter"
+          },
+          {
+            "after": "True;10123059921;383310974;7178032757;1516533665;3936365689;274816972;210851291;5578556129;3508322461;1686885941",
+            "before": "True;10123059921",
+            "name": "FFlagCLI214030EnforceData_UniverseFilter"
+          },
+          {
+            "after": "True;290384992;383310974;7178032757;1516533665;3936365689;274816972;210851291;5578556129;3508322461;1686885941",
+            "before": "True;290384992",
+            "name": "FFlagCLI214030EnforceSettings_UniverseFilter"
+          },
+          {
+            "after": "AXFilterButtonExpiredItemsTooltip,AXHDCategoryCatalogTooltip,AXFavoritePillFtuxTooltip,AXBackgroundGenerationCreateTooltip",
+            "before": "AXFilterButtonExpiredItemsTooltip,AXHDCategoryCatalogTooltip,AXFavoritePillFtuxTooltip",
+            "name": "FStringAXTooltipAllowedTooltips"
+          },
+          {
+            "after": "e23227a39d62062c2992e3d257be9e97cef555cb",
+            "before": "5f33a22495074602a2dbeefe28698b8de4c44f2c",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-09T20:30:32.533Z",
+            "before": "2026-09-09T19:52:45.073Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagEnableRequestLocationTypeForSduiPurchase_Staged",
+          "FFlagFixLoginV2PrefillForcedUsernameOverride_Staged",
+          "FFlagLuaAppOneByTwoTileGatePlayerOnVideoLoad_Staged",
+          "FFlagVRAbuseReportLocales_Staged",
+          "FIntLuaAppOneByTwoTileVideoLoadedTelemetryThrottleHundredthsPercent_Staged",
+          "FStringAXTooltipAllowedTooltips_Staged"
+        ],
+        "unchanged": 24133
+      }
+    },
+    "Web": {
+      "current": "eaf2e9699d3bd886bc7337001d6d76fe80c7693d3954eb0651c62a41ef7ec828",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-012.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-047.js",
+          "assets.create.roblox.com/page-0/script-054.js",
+          "assets.create.roblox.com/page-0/script-063.js",
+          "assets.create.roblox.com/page-0/script-067.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 92
+      },
+      "previous": "f832006a2a20058e673faca37e2b1c34f34fb008c4501238bc10902a9deaee6d",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
