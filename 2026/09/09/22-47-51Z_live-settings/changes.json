@@ -1,0 +1,65 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-93202a13414c4131",
+    "manifestFiles": 18471,
+    "packages": 34,
+    "version": "0.738.0.7381393"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "ff1b51f3c2f0d84f357158f293ee462ac397a53cb0c1c20e04d69c58f6d2203e",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "7e3f2ce8e5d401a17fdbc06ea1712184439001b0573efaa15dd694fb601ca6be",
+      "semantic": {
+        "added": [
+          "DFFlagCollaboratorSafetyEvictionCloudEditOnly_Staged",
+          "DFFlagCrashUploadToSentryWindowsEnabled_Staged",
+          "DFFlagEnableDynamicCollaboratorSafetyEvictionCheck_Staged",
+          "DFIntCrashUploadToSentryWindowsPercentage_Staged",
+          "FFlagAXBackgroundGenerationOptimisticGrant_Staged",
+          "FFlagAXBackgroundUploadQuotaError_Staged",
+          "FFlagAmrEnableBenchmarking3_Staged",
+          "FFlagCinFixR15RigOffset",
+          "FFlagLuaAppGamePassesDataHydrationMigrationEnabled"
+        ],
+        "changed": [
+          {
+            "after": "bacd0cdd57fd658aa724656092a36a9a17ba396b",
+            "before": "2709ed4cbb6e849c69bc690ec9b9fd5fc887427e",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-09T22:46:17.650Z",
+            "before": "2026-09-09T22:31:10.886Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "bacd0cdd57fd658aa724656092a36a9a17ba396b",
+            "before": "2709ed4cbb6e849c69bc690ec9b9fd5fc887427e",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-09T22:46:17.650Z",
+            "before": "2026-09-09T22:31:10.886Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagCinFixR15RigOffset_Staged",
+          "FFlagLuaAppGamePassesDataHydrationMigrationEnabled_Staged"
+        ],
+        "unchanged": 24176
+      }
+    }
+  },
+  "schemaVersion": 1
+}
