@@ -1,0 +1,64 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-93202a13414c4131",
+    "manifestFiles": 18471,
+    "packages": 34,
+    "version": "0.738.0.7381393"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "8477ce7dfafe6d7857d9c288bd691685cbda0e528a5cdf55d15341a33bda4c8a",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "220fefe397ab478e379b900902be2d5e9c587811e44fd3bdf54b79583eb094ac",
+      "semantic": {
+        "added": [
+          "FIntPredictedSpawnPrewarmStatsThrottleHP_Staged"
+        ],
+        "changed": [
+          {
+            "after": "36ad3b5a4b384c3ccaea6ba59fc5584e5aed2334",
+            "before": "83afb0464e40d9d6ab5077f6db5d6cafce631bb8",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-10T16:15:29.783Z",
+            "before": "2026-09-10T03:02:07.809Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "1;PlayerApp.SearchResultsPage.PowerSearch;OmniSearchGameItemsShadowTraffic2;100418201;dev_controlled",
+            "before": "1;PlayerApp.SearchResultsPage.PowerSearch;GameItemsOnEmphasizeTile;1173296535;flagbank",
+            "name": "FFlagLuaAppEnableSearchStreamingEndpoint_IXP"
+          },
+          {
+            "after": "1;PlayerApp.SearchResultsPage.PowerSearch;OmniSearchGameItemsShadowTraffic2;100418201;dev_controlled",
+            "before": "1;PlayerApp.SearchResultsPage.PowerSearch;GameItemsOnEmphasizeTile;1173296535;flagbank",
+            "name": "FFlagLuaAppSduiStreamingChunkedResponses_IXP"
+          },
+          {
+            "after": "36ad3b5a4b384c3ccaea6ba59fc5584e5aed2334",
+            "before": "83afb0464e40d9d6ab5077f6db5d6cafce631bb8",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-10T16:15:29.783Z",
+            "before": "2026-09-10T03:02:07.809Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [],
+        "unchanged": 24193
+      }
+    }
+  },
+  "schemaVersion": 1
+}
