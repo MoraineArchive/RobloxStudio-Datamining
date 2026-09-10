@@ -1,0 +1,115 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-93202a13414c4131",
+    "manifestFiles": 18471,
+    "packages": 34,
+    "version": "0.738.0.7381393"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "5a9a204f8abec25102fe6268577f0052bcfe8580b9ea424512ff35cee0854889",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "3b0e9feac625edd6ef4ed1aa00a277e99409cfc3c2c52f520b8be055071c6b93",
+      "semantic": {
+        "added": [
+          "DFFlagAnimGraphTransitionBeforeFinish_Staged",
+          "DFFlagFixCyclicReplicationRootDependencyStackOverflow",
+          "DFFlagRbxStorageReportUniqueIDForAllPoints",
+          "DFFlagRbxTransportRxOverflowBuffer_Staged",
+          "DFFlagRbxTransportShiftPhysicsTimestamp_Staged",
+          "DFFlagRbxTransportWtSessionDatagramCallbackCleanup_Staged",
+          "DFFlagRealtimeDurableGapEventCallback_Staged",
+          "DFFlagUseClientContextForSubscriptionDetails_Staged",
+          "FFlagAXBackgroundsEndTryOnOnSelect_Staged",
+          "FFlagAXBackgroundsYouMayAlsoLike_Staged",
+          "FFlagAXFixPPEV2ConsoleSidebarNav_Staged",
+          "FFlagAXFixR6CharacterPlacement_Staged",
+          "FFlagAXFixWidgetListSeeAllListReuse_Staged",
+          "FFlagAXSlotsScrollAwayOnlyWithSlots_Staged",
+          "FFlagAXUseProfileIconEntryPoint_IXP",
+          "FFlagAdsLifecycleManagerOwnsOnDemandAdsProvider_Staged",
+          "FFlagEnableCollaboratorSafetyEvictionCheck4_Staged",
+          "FFlagEnableCommunitiesHttpDeepLink_Staged",
+          "FFlagEnableLoginPluginBridge3_Staged",
+          "FFlagExtractPackageDefinition_InstanceRefAttributes_Staged",
+          "FFlagFixR20UnlockPromptDesign_Staged",
+          "FFlagLuauCodegenNoLinearFastpcall_Staged",
+          "FFlagLuauFastpcallInterrupt_Staged",
+          "FFlagRelaxOnPlayTimeSinceLastCrash_Staged",
+          "FFlagSerializerDeferredRefOwnerLifetime_Staged",
+          "FFlagSlimReplicationFilterOutSkeletonsExceedingMaxReplicablePoseSize_Staged",
+          "FFlagSlimReplicationUseGlobalServerThrottle_Staged",
+          "FFlagSlimReplicationUseStaleFrameStrategy2_Staged",
+          "FFlagSlimTranscoderStatusTint_Staged",
+          "FFlagTTSUseGenerateAudioAsset_Staged",
+          "FFlagUGCValidateCurveAnimStrictSchema_Staged"
+        ],
+        "changed": [
+          {
+            "after": "6da1ed97af356c1899d88620df67b902c103fbf0",
+            "before": "db64559e32e16a8289ebcdbd01d50290cb79df31",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-10T17:58:53.659Z",
+            "before": "2026-09-10T16:42:35.864Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "6da1ed97af356c1899d88620df67b902c103fbf0",
+            "before": "db64559e32e16a8289ebcdbd01d50290cb79df31",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-10T17:58:53.659Z",
+            "before": "2026-09-10T16:42:35.864Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagFixCyclicReplicationRootDependencyStackOverflow_Staged",
+          "DFFlagRbxStorageReportUniqueIDForAllPoints_Staged",
+          "DFIntISRMinPlayerVelocityPriorityComponentHundredth_UniverseFilter",
+          "DFIntISRPlayerPriorityMultiplierHundredth_UniverseFilter",
+          "SFFlagUserPlayerScriptsSAuthDirectAPIs2_Staged"
+        ],
+        "unchanged": 24198
+      }
+    },
+    "Web": {
+      "current": "eea868787fe25fe4c924bd49207e6e01202e5a2457e26ae06f16a8565568eada",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-012.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-053.js",
+          "assets.create.roblox.com/page-0/script-067.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 92
+      },
+      "previous": "4792b003a48478ac611c9d96998fb20fff744945e1f791358a5f7a532f654b58",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
