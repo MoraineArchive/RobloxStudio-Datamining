@@ -1,0 +1,66 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-93202a13414c4131",
+    "manifestFiles": 18471,
+    "packages": 34,
+    "version": "0.738.0.7381393"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "220fefe397ab478e379b900902be2d5e9c587811e44fd3bdf54b79583eb094ac",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "2fad31d35900a96125ad428fc28aa199adad088c947bcb72b440bd348dd7781a",
+      "semantic": {
+        "added": [
+          "FFlagAXBackgroundGenerationCreateTileTooltip",
+          "FFlagAXBackgroundGenerationInventoryUpsellBanner",
+          "FFlagAXPlusExclusiveBackgroundTryOn"
+        ],
+        "changed": [
+          {
+            "after": "83afb0464e40d9d6ab5077f6db5d6cafce631bb8",
+            "before": "7250424196098f4f233360500a89f2c2d243f8aa",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-10T03:02:07.809Z",
+            "before": "2026-09-10T01:22:29.683Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagEnableDisplayWakeLock2"
+          },
+          {
+            "after": "83afb0464e40d9d6ab5077f6db5d6cafce631bb8",
+            "before": "7250424196098f4f233360500a89f2c2d243f8aa",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-10T03:02:07.809Z",
+            "before": "2026-09-10T01:22:29.683Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagAXBackgroundGenerationCreateTileTooltip_Staged",
+          "FFlagAXBackgroundGenerationInventoryUpsellBanner_Staged",
+          "FFlagAXPlusExclusiveBackgroundTryOn_Staged",
+          "FFlagEnableDisplayWakeLock2_Staged"
+        ],
+        "unchanged": 24191
+      }
+    }
+  },
+  "schemaVersion": 1
+}
