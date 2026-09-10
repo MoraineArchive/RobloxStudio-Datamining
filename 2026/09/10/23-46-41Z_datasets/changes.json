@@ -1,0 +1,96 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-93202a13414c4131",
+    "manifestFiles": 18471,
+    "packages": 34,
+    "version": "0.738.0.7381393"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "a2ce503f0867e5bd05fb2822768448e38102f81f31b90fe8c109e8b8b060b2ac",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "9920517831311e695f6a5d7cb0b89c370815e941bf0a2afabb61ff6b457dc17a",
+      "semantic": {
+        "added": [
+          "DFFlagRbxStorageReportDbCacheAvailable_Staged",
+          "FFlagAXFixClearScreensEmptyStack_Staged",
+          "FFlagDisableWindowsAccessibilityHotkeys",
+          "FFlagEnableTrustedFriendsWizardVPCPrologue_Staged",
+          "FFlagFixCrashOnCancelFailedImportSession",
+          "FFlagGen3dTextureGenReapplyMeshInPlace",
+          "FFlagMoveRemaingAssetRequestsToAssetProvider_Staged"
+        ],
+        "changed": [
+          {
+            "after": "52ca5ff856676f7d5c069745416502bb895293dc",
+            "before": "803ff7f47cb8964ba07be504577850f204e1b92a",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-10T23:42:38.345Z",
+            "before": "2026-09-10T22:38:36.577Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagEnableCommunitiesHttpDeepLink"
+          },
+          {
+            "after": "52ca5ff856676f7d5c069745416502bb895293dc",
+            "before": "803ff7f47cb8964ba07be504577850f204e1b92a",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-10T23:42:38.345Z",
+            "before": "2026-09-10T22:38:36.577Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagDisableWindowsAccessibilityHotkeys_Staged",
+          "FFlagFixCrashOnCancelFailedImportSession_Staged",
+          "FFlagGen3dTextureGenReapplyMeshInPlace_Staged"
+        ],
+        "unchanged": 24061
+      }
+    },
+    "Web": {
+      "current": "c2c8006b84b88690a7e278e515f06e4da97f2e7787193c224fbb31b360d4fe72",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-012.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-053.js",
+          "assets.create.roblox.com/page-0/script-054.js",
+          "assets.create.roblox.com/page-0/script-067.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 90
+      },
+      "previous": "3f2f33f6a5393e6679fed768a94f4f31e3289924c37bc45a09311914581f79eb",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
