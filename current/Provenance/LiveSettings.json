@@ -1,27 +1,27 @@
 {
   "hashes": {
-    "current.json": "21d1ebf48ea138fc3a7cafc29b105a456a9d62bb15ddb7b778749f0cf7a97712",
-    "metadata.json": "4ab4a49545e9b757eee3f16e51b2cec812b311a0b932601de8ef6d21f15907e3"
+    "current.json": "619924d623816c9b490dc2d2d50493e6b9a2f1e70f2a44dd68a5f0cfd56f54ee",
+    "metadata.json": "519dd5583fe3efdf38fad671a516f59da1b7b4b3982b693934679038dd704fec"
   },
-  "id": "8477ce7dfafe6d7857d9c288bd691685cbda0e528a5cdf55d15341a33bda4c8a",
+  "id": "50d9d3cb3aced77cf2a7beb54419ad5563171d5cc716f597a202fa30c14b7f61",
   "observationMode": "live",
-  "observedAt": "2026-09-10T16:22:58.542Z",
+  "observedAt": "2026-09-10T16:34:54.801Z",
   "provenance": [
     {
-      "bytes": 1355439,
+      "bytes": 1355820,
       "reference": "https://raw.githubusercontent.com/MaximumADHD/Roblox-FFlag-Tracker/main/README.md",
-      "sha256": "be7ec3ee47c7646488edc8558c3cbaf9dcbed39eb77fd291639404a4d5de49cb",
+      "sha256": "3f177e8156ec3e53e5d3583ed66ecf126b5cfd02d62ac708950a3d31e7ccdb4c",
       "sourceType": "official",
       "sourceUrl": "https://clientsettings.roblox.com/v2/settings/application/PCStudioApp"
     }
   ],
-  "sequence": 33,
+  "sequence": 34,
   "status": "available",
   "summary": {
     "application": "PCStudioApp",
     "engineRevision": 1,
     "note": "Current public remotely served values, observed independently of executable version.",
-    "settings": 24200
+    "settings": 24203
   },
   "surface": "LiveSettings",
   "target": "WindowsStudio64"

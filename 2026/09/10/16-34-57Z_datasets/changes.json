@@ -1,0 +1,86 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-93202a13414c4131",
+    "manifestFiles": 18471,
+    "packages": 34,
+    "version": "0.738.0.7381393"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "50d9d3cb3aced77cf2a7beb54419ad5563171d5cc716f597a202fa30c14b7f61",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "8477ce7dfafe6d7857d9c288bd691685cbda0e528a5cdf55d15341a33bda4c8a",
+      "semantic": {
+        "added": [
+          "DFFlagRbxStorageReportUniqueIDForAllPoints_Staged",
+          "FFlagAvatarAbilitiesBetaFeature2_Staged",
+          "SFFlagUserPlayerScriptsSAuthDirectAPIs2_Staged"
+        ],
+        "changed": [
+          {
+            "after": "1f0c5fe34c4457236d1cd68b7cfdbe34cefcfbff",
+            "before": "36ad3b5a4b384c3ccaea6ba59fc5584e5aed2334",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-10T16:32:51.972Z",
+            "before": "2026-09-10T16:15:29.783Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "True;9707042192;9671070925;8491889239;9164570436;9859999587;5824195619;9876947216;10004846655;9605987780;10036955953;10123702430;10241252491;10382950395;10390927281;10390930030;10390933265;10538358999;10538473450;7738776082;8005766508;10643104390;10631479676;10762769249;10765877033",
+            "before": "True;9707042192;9671070925;8491889239;9164570436;9859999587;5824195619;9876947216;10004846655;9605987780;10036955953;10123702430;10241252491;10382950395;10390927281;10390930030;10390933265;10538358999;10538473450;7738776082;8005766508;10643104390;10631479676;10762769249",
+            "name": "FFlagLuaAppIsClickoutEnabledUniverse_UniverseFilter"
+          },
+          {
+            "after": "1f0c5fe34c4457236d1cd68b7cfdbe34cefcfbff",
+            "before": "36ad3b5a4b384c3ccaea6ba59fc5584e5aed2334",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-10T16:32:51.972Z",
+            "before": "2026-09-10T16:15:29.783Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [],
+        "unchanged": 24195
+      }
+    },
+    "Web": {
+      "current": "4792b003a48478ac611c9d96998fb20fff744945e1f791358a5f7a532f654b58",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-012.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-053.js",
+          "assets.create.roblox.com/page-0/script-067.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 92
+      },
+      "previous": "17a1ccd4105575456f4b608fe555e699654ee52daa0b4382a562451be393b925",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
