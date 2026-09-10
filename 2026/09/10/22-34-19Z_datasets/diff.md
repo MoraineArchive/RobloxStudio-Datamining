@@ -1,0 +1,269 @@
+[![Moraine Roblox Datamining](https://github.com/MoraineArchive/Moraine-asset/blob/main/roblox/banner_roblox.png?raw=true)](https://github.com/MoraineArchive/Moraine-asset/blob/main/roblox/banner_roblox.png)
+
+# Roblox Studio Datamining Diff
+
+**Observed:** 11/09/2026, 00:34:19 CEST (22:34:19 UTC)
+
+## LiveSettings
+
+**File changes:** +0 ~1 -0
+
+- **Changed:** [`current.json`](../../../../current/LiveSettings/current.json)
+
+### Values
+
+- **Added:** `FFlagAXEditProfileImageFillCardHeight_Staged`
+- **Added:** `FFlagAXHideBottomNavForEditProfileImage_Staged`
+- **Added:** `FFlagAddFriendsClassmateFriendRequestSource_Staged`
+- **Added:** `FFlagAssistantSystemSkillsStateReminder_Staged`
+- **Added:** `FFlagControlBarUseProfileFrameThumbnail_Staged`
+- **Added:** `FFlagEnableCurrencyTransferWizardVPCPrologue_Staged`
+- **Added:** `FFlagEnableDeviceSimulatorClientViewportOnly_Staged`
+- **Added:** `FFlagExpChatWindowStatusEventFixes`
+- **Added:** `FFlagFlyoutAlternateEntryPointUseProfileFrameThumbnail_Staged`
+- **Added:** `FFlagReplicatePlayerUserIdMode_Staged`
+- **Added:** `FFlagStudioAutoUpdateWithNoEmergencyDialog_Staged`
+- **Added:** `FFlagUseAnimateScrollViewToSelectionHelper_Staged`
+- **Added:** `FIntStudioLoginPageRolloutPercent3_Staged`
+- **Changed:** `DFStringFlagRepoGitHashDynamicString`
+  - Before: `2ab5daed836b0b0f130c33e4422c4d9ce9f9072d`
+  - After: `09a94c35eef87541e62b44430ab761ee28980ef1`
+- **Changed:** `DFStringFlipTimeStampDynamicString`
+  - Before: `2026-09-10T21:55:02.118Z`
+  - After: `2026-09-10T22:33:27.969Z`
+- **Changed:** `FFlagEnableLoginPage2`
+  - Before: `False`
+  - After: `True`
+- **Changed:** `FStringFlagRepoGitHashFastString`
+  - Before: `2ab5daed836b0b0f130c33e4422c4d9ce9f9072d`
+  - After: `09a94c35eef87541e62b44430ab761ee28980ef1`
+- **Changed:** `FStringFlipTimeStampFastString`
+  - Before: `2026-09-10T21:55:02.118Z`
+  - After: `2026-09-10T22:33:27.969Z`
+- **Removed:** `DFFlagAddKtxContentHash2`
+- **Removed:** `DFFlagAnimationCurveAllowIkTargets`
+- **Removed:** `DFFlagBroadphaseCrash`
+- **Removed:** `DFFlagCCSD9183`
+- **Removed:** `DFFlagCCSD9184`
+- **Removed:** `DFFlagCCSD9185`
+- **Removed:** `DFFlagClientDetailsReplicatorStats`
+- **Removed:** `DFFlagDataModelEngineContextSet`
+- **Removed:** `DFFlagDontRoundPluginWindowSize`
+- **Removed:** `DFFlagEmitSafetyTelemetryInCallbackEnable`
+- **Removed:** `DFFlagFasterFolderSetName`
+- **Removed:** `DFFlagFasterScriptSetName`
+- **Removed:** `DFFlagFasterSequencePushes`
+- **Removed:** `DFFlagFeatureInterventionNamespaceEnabled`
+- **Removed:** `DFFlagFixAdInstancesNewAllowedTypesOnly`
+- **Removed:** `DFFlagFixAdsClangTidyCallAndMessage`
+- **Removed:** `DFFlagFixAdsClangTidyModernizeUseNull`
+- **Removed:** `DFFlagFixAdsRobloxNoExceptions`
+- **Removed:** `DFFlagFixShowRewardedVideoAdHang`
+- **Removed:** `DFFlagFixTextDirectionNotUpdating`
+- **Removed:** `DFFlagFixTextDirectionNotUpdating_PlaceFilter`
+- **Removed:** `DFFlagFixWhiteSpaceCauseDuplicateText`
+- **Removed:** `DFFlagHttpThrottleEarlierHandling`
+- **Removed:** `DFFlagInternalExportAllowCSGDecomp2`
+- **Removed:** `DFFlagLegacyRedundantPlayerCheckAnalytics`
+- **Removed:** `DFFlagMemoryStoreInsightMetricsEnabled`
+- **Removed:** `DFFlagMemoryStoreUpdateAsyncThrowIfInvalidSortKey`
+- **Removed:** `DFFlagMigrateAvatarTelemetryToDurationLogger`
+- **Removed:** `DFFlagNewInstanceItemPlayerAnalytics`
+- **Removed:** `DFFlagNewReplicatorConnectionStartTime`
+- **Removed:** `DFFlagOnDemandAdsProviderConstructAdContentLoader`
+- **Removed:** `DFFlagOptimizeClusterCacheAlloc`
+- **Removed:** `DFFlagPathfindingMultipleNavMeshPreAnalyitcs`
+- **Removed:** `DFFlagRakNetPriorityPings`
+- **Removed:** `DFFlagRayBridgeClosestPointPrecise`
+- **Removed:** `DFFlagReportIs64BitAppSupportedForAndroid`
+- **Removed:** `DFFlagSimComputeSteppingAssemblyRadius`
+- **Removed:** `DFFlagSimFixAssemblyRadiusCalc`
+- **Removed:** `DFFlagSimRefactorIndexMultiSetRepack`
+- **Removed:** `DFFlagSwoccMemCat`
+- **Removed:** `DFFlagTeleportFailOnPermissionResetBugFix`
+- **Removed:** `DFFlagTrackEditableLoadContentTypes`
+- **Removed:** `DFFlagUseNewPhysicsSmoothingFactor`
+- **Removed:** `DFFlagVoiceChatClientControlPlaneEnableOperationTimeoutGranular`
+- **Removed:** `DFFlagWindowsCleanUpOldVersions2`
+- **Removed:** `DFFlagWrappedThreadCreate`
+- **Removed:** `DFIntMemoryStoreInsightMetricsUniverseRolloutPercentage`
+- **Removed:** `DFIntNIIPlayerCloudEditAnalyticsHundredths`
+- **Removed:** `DFIntNIIPlayerOldAnalyticsHundredths`
+- **Removed:** `EnableExternalContentSharingSetClipboardTextAndroid`
+- **Removed:** `FFlagACEEulerAnglesOrder`
+- **Removed:** `FFlagACEFixDynamicTrackSelection`
+- **Removed:** `FFlagACEPartBoneSharedName`
+- **Removed:** `FFlagAESValidateHumanoidDescription`
+- **Removed:** `FFlagAICOChatBotFindVariationFix`
+- **Removed:** `FFlagAXAASnapSliderToMiddle2`
+- **Removed:** `FFlagAXAvatarsTabIXP`
+- **Removed:** `FFlagAXEnableOrganicContentTemplates2`
+- **Removed:** `FFlagAXFilterValuesLogging`
+- **Removed:** `FFlagAXFixLoadingIssueOnTryOnBarHeader`
+- **Removed:** `FFlagAXFixLookPurchaseLogging`
+- **Removed:** `FFlagAXFixValidatePropsForTryOnFromHome`
+- **Removed:** `FFlagAXLookDetailsCloseButtonHover`
+- **Removed:** `FFlagAXLookDetailsKeepTopBarHeight`
+- **Removed:** `FFlagAXLookDetailsPeekViewDidUpdateFix`
+- **Removed:** `FFlagAXTryOnFromHome4`
+- **Removed:** `FFlagAXTryOnFromHomeHidePeekViewShadow`
+- **Removed:** `FFlagAXTryOnFromHomeHideTabBar`
+- **Removed:** `FFlagAXTryOnFromHomeLoggingParams`
+- **Removed:** `FFlagAXTryOnShowLookDetailsDragger`
+- **Removed:** `FFlagAddFriendsTCEducationSetup_v11`
+- **Removed:** `FFlagAimClientTruncateNodeNames`
+- **Removed:** `FFlagAinSettingsHandleAnchored`
+- **Removed:** `FFlagAnnotationsFixForPolyfillOff2`
+- **Removed:** `FFlagAppChatFixDialogClipping`
+- **Removed:** `FFlagAppChatFixModalRecordEvent`
+- **Removed:** `FFlagAppChatModalImpressionImprovements2`
+- **Removed:** `FFlagAppChatReplaceWithCloseButton`
+- **Removed:** `FFlagAppChatTrustedCommsTransition_v2`
+- **Removed:** `FFlagAppendBodyPartToTitle`
+- **Removed:** `FFlagAssetImportFixStatusesNotUpdating`
+- **Removed:** `FFlagAssetImportRemoveAnimationSuffix`
+- **Removed:** `FFlagBlockOffHandTrigger`
+- **Removed:** `FFlagBootcampCLI160821`
+- **Removed:** `FFlagCAPSignalRAssistantPlugin`
+- **Removed:** `FFlagCSG4StudioBetaFeature`
+- **Removed:** `FFlagCinImprovedErrorMessages`
+- **Removed:** `FFlagCinReplaceUploadTextureRequest`
+- **Removed:** `FFlagCliAssignStudioUriToRunnerPlugin`
+- **Removed:** `FFlagCodeAssistDebounceBeforeLSP`
+- **Removed:** `FFlagColorComparisonFloatToDouble`
+- **Removed:** `FFlagEarlyOutRichTextParsing`
+- **Removed:** `FFlagEnableHarmonyForGmaAd`
+- **Removed:** `FFlagEnableLayoutModifiers3`
+- **Removed:** `FFlagEnableLayoutModifiers3_PlaceFilter`
+- **Removed:** `FFlagEnableLoginPage2_Staged`
+- **Removed:** `FFlagEnableNonUAPAccessoryAdjustment`
+- **Removed:** `FFlagEnablePreferredTextSizeFixGameGrid3`
+- **Removed:** `FFlagEnableToggleRegardlessOfUniverseEligibility`
+- **Removed:** `FFlagExpChatWindowStatusEventFixes_Staged`
+- **Removed:** `FFlagExplorerExposePlusButtonSetting`
+- **Removed:** `FFlagExternalContentSharingEnableSetClipboardText`
+- **Removed:** `FFlagFixIncorrectAppliedLayeredHairOrder`
+- **Removed:** `FFlagFixPublishAvatarVRViewports`
+- **Removed:** `FFlagFixSDLNotificationRace`
+- **Removed:** `FFlagFriendsLandingTileHeightFix`
+- **Removed:** `FFlagGLES3_0EnableCBs2`
+- **Removed:** `FFlagGraphicsClampCBGLES`
+- **Removed:** `FFlagGraphicsGLES3AllPowerVR9`
+- **Removed:** `FFlagGraphicsGLES3_2AllPowerVR9`
+- **Removed:** `FFlagGraphicsGLESPersistentUboAlignedBufferPadding`
+- **Removed:** `FFlagIASStudioDebugState`
+- **Removed:** `FFlagImportQueueGABugfixes`
+- **Removed:** `FFlagImportQueueGADesignFixes2`
+- **Removed:** `FFlagImportQueueReplaceWithAsync`
+- **Removed:** `FFlagIncreaseMaxEditableImageSize2`
+- **Removed:** `FFlagLogRewardedOnDemandAdsEligibilityFailureLua`
+- **Removed:** `FFlagLuaRibbonControlVisibility`
+- **Removed:** `FFlagLuauArityMismatchOnUndersaturatedUnknownArguments`
+- **Removed:** `FFlagLuauAutocompleteMissingFollows`
+- **Removed:** `FFlagLuauAvoidGenericsLeakingDuringFunctionCallCheck`
+- **Removed:** `FFlagLuauBetterCannotCallFunctionPrimitive`
+- **Removed:** `FFlagLuauBetterScopeSelection`
+- **Removed:** `FFlagLuauBlockDiffFragmentSelection`
+- **Removed:** `FFlagLuauDfgScopeStackNotNull`
+- **Removed:** `FFlagLuauDisablePrimitiveInferenceInLargeTables`
+- **Removed:** `FFlagLuauErrorSuppressionTypeFunctionArgs`
+- **Removed:** `FFlagLuauExpectedTypeVisitor`
+- **Removed:** `FFlagLuauFixEmptyTypePackStringification`
+- **Removed:** `FFlagLuauFragmentAcMemoryLeak`
+- **Removed:** `FFlagLuauFragmentAutocompleteIfRecommendations`
+- **Removed:** `FFlagLuauGeneralizationCannotMutateAcrossModules`
+- **Removed:** `FFlagLuauGetClassTypeForClassNameDefaults`
+- **Removed:** `FFlagLuauGlobalVariableModuleIsolation`
+- **Removed:** `FFlagLuauMissingFollowInAssignIndexConstraint`
+- **Removed:** `FFlagLuauNewNonStrictFixGenericTypePacks`
+- **Removed:** `FFlagLuauNormalizationIntersectTablesPreservesExternTypes`
+- **Removed:** `FFlagLuauNotAllBinaryTypeFunsHaveDefaults`
+- **Removed:** `FFlagLuauParseAttributeFixUninit`
+- **Removed:** `FFlagLuauParseStringIndexer`
+- **Removed:** `FFlagLuauPopulateRefinedTypesInFragmentFromOldSolver`
+- **Removed:** `FFlagLuauReduceCheckBinaryExprStackPressure`
+- **Removed:** `FFlagLuauRemoveTypeCallsForReadWriteProps`
+- **Removed:** `FFlagLuauSimplificationTableExternType`
+- **Removed:** `FFlagLuauSkipLvalueForCompoundAssignment`
+- **Removed:** `FFlagLuauSolverAgnosticClone`
+- **Removed:** `FFlagLuauStringFormatImprovements`
+- **Removed:** `FFlagLuauStuckTypeFunctionsStillDispatch`
+- **Removed:** `FFlagLuauTableLiteralSubtypeSpecificCheck2`
+- **Removed:** `FFlagLuauTypeFunOptional`
+- **Removed:** `FFlagLuauTypeFunctionSerializeFollowMetatable`
+- **Removed:** `FFlagLuauUseOrderedTypeSetsInConstraints`
+- **Removed:** `FFlagMainRibbonDropdownButton`
+- **Removed:** `FFlagNewUpsellModalExperimentForDesktop`
+- **Removed:** `FFlagNoFriendsViewWidthFixEnabled`
+- **Removed:** `FFlagObjectExporterSupportEditableImage`
+- **Removed:** `FFlagOpenTelemetryAvoidStaticRunTimeContextCall`
+- **Removed:** `FFlagOpenTelemetryHasStatusCodeAndKind`
+- **Removed:** `FFlagOpenTelemetryUseOtlpExportingEnabled`
+- **Removed:** `FFlagParallelLuauRuntimeConcurrency`
+- **Removed:** `FFlagPartyParticipantDisabledFixEnabled`
+- **Removed:** `FFlagPerformanceControlEnableExposureBasedIXPTesting`
+- **Removed:** `FFlagPlayerGridTileHeightFix`
+- **Removed:** `FFlagPreferredTextSizeFixCommunityProfileExpTile`
+- **Removed:** `FFlagPreferredTextSizeReportMenuButtonTextFix`
+- **Removed:** `FFlagPreloadMinimalFonts`
+- **Removed:** `FFlagPropertiesPanelResetModifiedProperty4`
+- **Removed:** `FFlagRSVPPromptUseConsistentBadgeComponent`
+- **Removed:** `FFlagRefactorDeviceLostCheckingD3D11`
+- **Removed:** `FFlagRefactorSetTextInternal`
+- **Removed:** `FFlagReplaceChromeNotificationBadge2`
+- **Removed:** `FFlagReportFrameNumberAppCrashpadReporter`
+- **Removed:** `FFlagReportFrameNumberBacktrace`
+- **Removed:** `FFlagReportFrameNumberStudioCrashHandler`
+- **Removed:** `FFlagReportLightingIntent`
+- **Removed:** `FFlagReportLightingIntentANR`
+- **Removed:** `FFlagReportLightingIntentCrashHandler`
+- **Removed:** `FFlagReportLightingIntentCrashpad`
+- **Removed:** `FFlagReportLightingIntentJNI`
+- **Removed:** `FFlagRevertDPJBehaviour`
+- **Removed:** `FFlagRibbonSpinboxStyleUpdate`
+- **Removed:** `FFlagSimEnableCSG4Studio4`
+- **Removed:** `FFlagSlotHandlerThreadCheckRemoval`
+- **Removed:** `FFlagSongDetailsUseFoundationSlider`
+- **Removed:** `FFlagStudioAllowScrollDuringDrag2`
+- **Removed:** `FFlagStudioLegacyRibbonInteractionTelemetry`
+- **Removed:** `FFlagStudioRemoveGetSessionIdPlaceSessionModel`
+- **Removed:** `FFlagStudioRemoveRestrictedGetDataModelForGameState`
+- **Removed:** `FFlagStudioSystemMenuFixPressedStateColors`
+- **Removed:** `FFlagTagEditorUseColorPicker`
+- **Removed:** `FFlagThisBetaFeatureIsACanaryBetaFeature`
+- **Removed:** `FFlagToolboxDeleteAnimationOnUpload`
+- **Removed:** `FFlagToolboxFixCopyIDLabel`
+- **Removed:** `FFlagUIBloxUseNewHeaderBar4`
+- **Removed:** `FFlagUnreduxChatTransparencyV2_IXP`
+- **Removed:** `FFlagUpdateUITabLuaRibbon`
+- **Removed:** `FFlagUseNewUnibarIcon`
+- **Removed:** `FFlagVideoCaptureSwReuseDownloadBuffers`
+- **Removed:** `FIntCSG4StudioBetaFeatureRolloutPercent`
+- **Removed:** `FIntRbxStorageMinOpenCount`
+- **Removed:** `FStringLooksWidgetThumbnailSize`
+- **Removed:** `GmaSdkAppPromoClickUI2`
+- **Removed:** `OpenGLES2DeprecationPhase2`
+
+## Web
+
+**File changes:** +0 ~18 -0
+
+- **Changed:** [`assets.create.roblox.com/page-0/script-012.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-012.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-028.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-028.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-034.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-034.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-036.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-036.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-040.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-040.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-044.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-044.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-046.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-046.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-048.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-048.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-051.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-051.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-053.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-053.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-067.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-067.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-069.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-069.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-072.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-072.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-078.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-078.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-080.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-080.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-081.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-081.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-082.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-082.js)
+- **Changed:** [`assets.json`](../../../../current/Web/assets.json)
+
