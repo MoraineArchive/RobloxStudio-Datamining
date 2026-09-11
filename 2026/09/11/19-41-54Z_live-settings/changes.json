@@ -1,0 +1,72 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-93202a13414c4131",
+    "manifestFiles": 18471,
+    "packages": 34,
+    "version": "0.738.0.7381393"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "8796f5c272b0f07b764dff66873ff1d0678526fb64eebdde40068ac0251bb70e",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "1bb33d9f2c05079d4f25abed73af2a2367567dfeddd63810003a7dfa586a208b",
+      "semantic": {
+        "added": [
+          "DFFlagCLI210645Fix",
+          "DFFlagFileCacheRCCBytesRemovedFix",
+          "FFlagAlwaysSetJoinVoiceButtonContext_Staged",
+          "FFlagEnableDeeplinkValueRoutingAndroid_Staged",
+          "FFlagEnableDeeplinkValueRoutingIOS_Staged",
+          "FFlagEnableUserOffers2",
+          "FFlagOffersOnlyAffordableLock_Staged",
+          "FFlagOffersRespectExpiration_Staged",
+          "FFlagSafetyServiceScreenshotAMCDeprecated_Staged",
+          "FFlagShopCloseOfferDialogOnCoreMenu",
+          "FFlagStudioFixDebuggerMDIStartup",
+          "FFlagStudioMoveMainEngineWidget"
+        ],
+        "changed": [
+          {
+            "after": "75722f4c84a8fe0c5c593d80e570119c05665abb",
+            "before": "b546282b91f9e2eece8ec472795d218d3c01c257",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-11T19:06:56.761Z",
+            "before": "2026-09-11T17:54:24.552Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "75722f4c84a8fe0c5c593d80e570119c05665abb",
+            "before": "b546282b91f9e2eece8ec472795d218d3c01c257",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-11T19:06:56.761Z",
+            "before": "2026-09-11T17:54:24.552Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagCLI210645Fix_Staged",
+          "DFFlagFileCacheRCCBytesRemovedFix_Staged",
+          "FFlagEnableUserOffers2_Staged",
+          "FFlagShopCloseOfferDialogOnCoreMenu_Staged",
+          "FFlagStudioFixDebuggerMDIStartup_Staged",
+          "FFlagStudioMoveMainEngineWidget_Staged"
+        ],
+        "unchanged": 24072
+      }
+    }
+  },
+  "schemaVersion": 1
+}
