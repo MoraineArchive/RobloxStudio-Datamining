@@ -1,0 +1,68 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-93202a13414c4131",
+    "manifestFiles": 18471,
+    "packages": 34,
+    "version": "0.738.0.7381393"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "175e8faec16e988f9c33f6ae39558f9f52e331a7ebdfa3c41b695048b0276941",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "5de43ea9533d46731bdf5ae36160dd88768874d112bacf89bff2167739912c04",
+      "semantic": {
+        "added": [
+          "FFlagOffersOnlyAffordableLock",
+          "FFlagOffersRespectExpiration",
+          "FFlagPassOfferIdInPurchasePayload",
+          "FFlagSafetyServiceScreenshotAMCDeprecated"
+        ],
+        "changed": [
+          {
+            "after": "d622168a32094dd70f2caddc77e5d61cfddeb06e",
+            "before": "05b6af84698c60623447e145d68ae48e9d453459",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-11T20:22:42.075Z",
+            "before": "2026-09-11T19:42:18.340Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "True",
+            "before": "False",
+            "name": "FFlagPromoteRobuxInTopPicks"
+          },
+          {
+            "after": "d622168a32094dd70f2caddc77e5d61cfddeb06e",
+            "before": "05b6af84698c60623447e145d68ae48e9d453459",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-11T20:22:42.075Z",
+            "before": "2026-09-11T19:42:18.340Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagOffersOnlyAffordableLock_Staged",
+          "FFlagOffersRespectExpiration_Staged",
+          "FFlagPassOfferIdInPurchasePayload_Staged",
+          "FFlagPromoteRobuxInTopPicks_Staged",
+          "FFlagSafetyServiceScreenshotAMCDeprecated_Staged"
+        ],
+        "unchanged": 24078
+      }
+    }
+  },
+  "schemaVersion": 1
+}
