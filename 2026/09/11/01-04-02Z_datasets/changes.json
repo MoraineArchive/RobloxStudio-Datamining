@@ -1,0 +1,94 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-93202a13414c4131",
+    "manifestFiles": 18471,
+    "packages": 34,
+    "version": "0.738.0.7381393"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "089c437cc0564cd25bc8e160d25e531c917c0e6c0567b3f470d86f45cc5118b4",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "32bfc673917551b717e7b5937a060d9421e21c7f09e476b2c5e8372d8cfba982",
+      "semantic": {
+        "added": [
+          "DFFlagRbxStorageReportDbCacheAvailable",
+          "FFlagTerrainEditorOptimizeRaycastUpdates",
+          "FFlagUseAnimateScrollViewToSelectionHelper",
+          "FIntStudioLoginPageRolloutPercent3"
+        ],
+        "changed": [
+          {
+            "after": "cf9151a209b266a61869871245621e1e54b8a0a8",
+            "before": "24d369ce09be8139f5da909cfeeb8d8aa94ac93c",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-11T00:45:02.630Z",
+            "before": "2026-09-11T00:34:23.683Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "0",
+            "before": "10000",
+            "name": "FIntEnableDataModelChangeTrackingBaseHundredthPercent"
+          },
+          {
+            "after": "cf9151a209b266a61869871245621e1e54b8a0a8",
+            "before": "24d369ce09be8139f5da909cfeeb8d8aa94ac93c",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-11T00:45:02.630Z",
+            "before": "2026-09-11T00:34:23.683Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagRbxStorageReportDbCacheAvailable_Staged",
+          "FFlagAssistantSystemSkillsStateReminder_Staged",
+          "FFlagTerrainEditorOptimizeRaycastUpdates_Staged",
+          "FFlagUseAnimateScrollViewToSelectionHelper_Staged",
+          "FIntEnableDataModelChangeTrackingBaseHundredthPercent_Staged",
+          "FIntStudioLoginPageRolloutPercent3_Staged"
+        ],
+        "unchanged": 24062
+      }
+    },
+    "Web": {
+      "current": "c42bd8ae5ea91157d8fd6b5ae2d7ff399959f0cef28edc22405dcc1799f3c67a",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-012.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-053.js",
+          "assets.create.roblox.com/page-0/script-067.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 92
+      },
+      "previous": "36bbff021bcc9173d39da132df412f16f7abdd93ecf1fa9310ba4cc122d7dd09",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
