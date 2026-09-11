@@ -1,0 +1,58 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-93202a13414c4131",
+    "manifestFiles": 18471,
+    "packages": 34,
+    "version": "0.738.0.7381393"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "5de43ea9533d46731bdf5ae36160dd88768874d112bacf89bff2167739912c04",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "8796f5c272b0f07b764dff66873ff1d0678526fb64eebdde40068ac0251bb70e",
+      "semantic": {
+        "added": [
+          "FFlagAppChatNewSquadJoinButtonLookIconless",
+          "FFlagAppChatSquadButtonColorUpdate"
+        ],
+        "changed": [
+          {
+            "after": "05b6af84698c60623447e145d68ae48e9d453459",
+            "before": "75722f4c84a8fe0c5c593d80e570119c05665abb",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-11T19:42:18.340Z",
+            "before": "2026-09-11T19:06:56.761Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "05b6af84698c60623447e145d68ae48e9d453459",
+            "before": "75722f4c84a8fe0c5c593d80e570119c05665abb",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-11T19:42:18.340Z",
+            "before": "2026-09-11T19:06:56.761Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagAppChatNewSquadJoinButtonLookIconless_Staged",
+          "FFlagAppChatSquadButtonColorUpdate_Staged"
+        ],
+        "unchanged": 24082
+      }
+    }
+  },
+  "schemaVersion": 1
+}
