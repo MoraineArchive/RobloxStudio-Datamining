@@ -1,0 +1,113 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-93202a13414c4131",
+    "manifestFiles": 18471,
+    "packages": 34,
+    "version": "0.738.0.7381393"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "32bfc673917551b717e7b5937a060d9421e21c7f09e476b2c5e8372d8cfba982",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "a2ce503f0867e5bd05fb2822768448e38102f81f31b90fe8c109e8b8b060b2ac",
+      "semantic": {
+        "added": [
+          "FFlagAXEditProfileImageFillCardHeight",
+          "FFlagAXHideBottomNavForEditProfileImage",
+          "FFlagAddFriendsClassmateFriendRequestSource",
+          "FFlagControlBarUseProfileFrameThumbnail",
+          "FFlagEnableCurrencyTransferWizardVPCPrologue",
+          "FFlagEnableDeviceSimulatorClientViewportOnly",
+          "FFlagFixUseNewGetContentApiUrlAndModKey",
+          "FFlagFlyoutAlternateEntryPointUseProfileFrameThumbnail",
+          "FFlagReplicatePlayerUserIdMode",
+          "FFlagStudioAutoUpdateWithNoEmergencyDialog",
+          "FFlagStudioUpdateDataModelListenerBridge2"
+        ],
+        "changed": [
+          {
+            "after": "24d369ce09be8139f5da909cfeeb8d8aa94ac93c",
+            "before": "52ca5ff856676f7d5c069745416502bb895293dc",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-11T00:34:23.683Z",
+            "before": "2026-09-10T23:42:38.345Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "24d369ce09be8139f5da909cfeeb8d8aa94ac93c",
+            "before": "52ca5ff856676f7d5c069745416502bb895293dc",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-11T00:34:23.683Z",
+            "before": "2026-09-10T23:42:38.345Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagAXEditProfileImageFillCardHeight_Staged",
+          "FFlagAXHideBottomNavForEditProfileImage_Staged",
+          "FFlagAddFriendsClassmateFriendRequestSource_Staged",
+          "FFlagControlBarUseProfileFrameThumbnail_Staged",
+          "FFlagEnableCurrencyTransferWizardVPCPrologue_Staged",
+          "FFlagEnableDeviceSimulatorClientViewportOnly_Staged",
+          "FFlagFixUseNewGetContentApiUrlAndModKey_Staged",
+          "FFlagFlyoutAlternateEntryPointUseProfileFrameThumbnail_Staged",
+          "FFlagReplicatePlayerUserIdMode_Staged",
+          "FFlagStudioAutoUpdateWithNoEmergencyDialog_Staged",
+          "FFlagStudioUpdateDataModelListenerBridge2_Staged"
+        ],
+        "unchanged": 24058
+      }
+    },
+    "Web": {
+      "current": "36bbff021bcc9173d39da132df412f16f7abdd93ecf1fa9310ba4cc122d7dd09",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-012.js",
+          "assets.create.roblox.com/page-0/script-023.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-042.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-047.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-052.js",
+          "assets.create.roblox.com/page-0/script-053.js",
+          "assets.create.roblox.com/page-0/script-055.js",
+          "assets.create.roblox.com/page-0/script-064.js",
+          "assets.create.roblox.com/page-0/script-067.js",
+          "assets.create.roblox.com/page-0/script-068.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 80
+      },
+      "previous": "c2c8006b84b88690a7e278e515f06e4da97f2e7787193c224fbb31b360d4fe72",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
