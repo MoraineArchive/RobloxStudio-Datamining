@@ -1,0 +1,59 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-93202a13414c4131",
+    "manifestFiles": 18471,
+    "packages": 34,
+    "version": "0.738.0.7381393"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "6abee22124895bc019b1ef5b7b5585c2916a4fbcb2507fb1243af50b9b6eb9bb",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "ca279b8481258e76c688e2d3d7add24394dd3262c75ea3410403af96c8baa486",
+      "semantic": {
+        "added": [],
+        "changed": [
+          {
+            "after": "c599b7d2860020ff94bd2f9136e27a6460d6f5c5",
+            "before": "e374c842f1033b2141a84870badd2f434b5fd257",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-12T00:42:05.840Z",
+            "before": "2026-09-11T22:39:07.007Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagStudioRemoveRESTRICTEDGetPSCPartF3"
+          },
+          {
+            "after": "c599b7d2860020ff94bd2f9136e27a6460d6f5c5",
+            "before": "e374c842f1033b2141a84870badd2f434b5fd257",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-12T00:42:05.840Z",
+            "before": "2026-09-11T22:39:07.007Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagStudioRemoveRESTRICTEDGetPSCPartF3_Staged"
+        ],
+        "unchanged": 24082
+      }
+    }
+  },
+  "schemaVersion": 1
+}
