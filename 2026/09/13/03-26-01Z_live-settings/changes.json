@@ -1,0 +1,59 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-93202a13414c4131",
+    "manifestFiles": 18471,
+    "packages": 34,
+    "version": "0.738.0.7381393"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "4e77240fec63fda57df0e07811ebf31c4eddd66a518a32b7794aa27f9f62d1dd",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "ce473bc6b840f09113baca79bd1b78715d8f618dbf745456a0e7e9b83a741a10",
+      "semantic": {
+        "added": [
+          "FFlagCanReplicateBaseWrapWrapLayerContentPropertiesServer_Staged"
+        ],
+        "changed": [
+          {
+            "after": "da72dfcc96b61f56f8b49f39386030a2ca805db8",
+            "before": "24de2a0ad6725a87a7519d2fffa5830d137330f5",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-13T03:02:03.541Z",
+            "before": "2026-09-13T00:18:33.657Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagVideoSpsAdaptiveDecodeLatency"
+          },
+          {
+            "after": "da72dfcc96b61f56f8b49f39386030a2ca805db8",
+            "before": "24de2a0ad6725a87a7519d2fffa5830d137330f5",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-13T03:02:03.541Z",
+            "before": "2026-09-13T00:18:33.657Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [],
+        "unchanged": 24082
+      }
+    }
+  },
+  "schemaVersion": 1
+}
