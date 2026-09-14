@@ -1,0 +1,77 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-93202a13414c4131",
+    "manifestFiles": 18471,
+    "packages": 34,
+    "version": "0.738.0.7381393"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "8afaca69d7508bd9f2416587a967197ba88dbdbd8482774b26e669c671a50f8d",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "04c282985ce1a2b64c30ee6b7e6df9b512e9f6b945aa14597940020b63fa1078",
+      "semantic": {
+        "added": [
+          "DFFlagDMCTMigrateObjectValue_Staged",
+          "DFFlagEditableMeshFixStaleSkinWeight_Staged",
+          "DFFlagRakNetCapSplitPacketAllocationV2_Staged",
+          "DFFlagRequestOrchestratorCountersEnabled_Staged",
+          "DFFlagSatPolyPolyContactEnabled_Staged",
+          "DFFlagServerAuthorityPredictionFixAnchored_Staged",
+          "DFFlagVoiceRtcStatsSplitDisableUnusedGrafanaStats_Staged",
+          "FFlagAXBackgroundGenerationDeepLink_Staged",
+          "FFlagChangeHistoryRecordAssemblyCFrames_Staged",
+          "FFlagEnableProfileFrameAssetDeepLink_Staged",
+          "FFlagEnableStartAttributionTelemetry_Staged",
+          "FFlagFacsPoseNameBoundsCheck_Staged",
+          "FFlagHomepagePromptsHandlerPassClientAttributes_Staged",
+          "FFlagHttpUseSharedRetryHeader_Staged",
+          "FFlagLuauIterativeTypeSearcher2_Staged",
+          "FFlagOnlySendOpenPlaceGetPlaceInfoSynchronousEndOnHttp_Staged",
+          "FFlagPlayStationSkipVertexIdInputAttribute_Staged",
+          "FFlagPluginQWidgetPopupDisableDismiss_Staged",
+          "FFlagRefactorUpdateRemoteCursorPositionSignalClient_Staged",
+          "FFlagSecurityCheckForGetService_Staged",
+          "FFlagSendNewOpenPlaceProgressTeamCreatePreGameJoinEvent_Staged",
+          "FFlagStudioPluginStatusBarWidget_Staged",
+          "FFlagUsePackageLinkDialogManager_Staged",
+          "FIntStudioLoginPageRolloutPercent3_Staged"
+        ],
+        "changed": [
+          {
+            "after": "8f84a8177a01d1c181e4ea48d4626d6a61af37d4",
+            "before": "87b7bef3b55b32e3168fd0a5e83f602990a8b138",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-14T16:57:49.556Z",
+            "before": "2026-09-13T19:32:07.992Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "8f84a8177a01d1c181e4ea48d4626d6a61af37d4",
+            "before": "87b7bef3b55b32e3168fd0a5e83f602990a8b138",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-14T16:57:49.556Z",
+            "before": "2026-09-13T19:32:07.992Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [],
+        "unchanged": 24081
+      }
+    }
+  },
+  "schemaVersion": 1
+}
