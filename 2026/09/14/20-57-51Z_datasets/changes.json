@@ -1,0 +1,156 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-93202a13414c4131",
+    "manifestFiles": 18471,
+    "packages": 34,
+    "version": "0.738.0.7381393"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "4747b173f072a680d6e7ae1a25bb35d62fd0434ceffafedeb3b81ad4ef818ed3",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "9a00943a4e00f8685d954371ae337c70fd109ad83413b085ee2bfff5d7f13952",
+      "semantic": {
+        "added": [
+          "DFFlagAddIntegrityToReplicatorTelemetry_Staged",
+          "DFFlagConnectionClosedTimeSinceDiagnostics_Staged",
+          "DFFlagFixClientJoinResultTelemetryPointsThrottle_Staged",
+          "DFFlagMSTVOnSkeletonInvalidated_Staged",
+          "DFFlagOptimizeHeatmapServiceStatsCollection_Staged",
+          "DFFlagSDFTextSurfaceGui",
+          "DFFlagSimRejectDisabledToolWeld_Staged",
+          "DFFlagSuppressLCInvalidationForDeadAvatars",
+          "DFFlagVoroCDPremergeHullPadding_Staged",
+          "DFFlagVoroCDUnlockPremerge_Staged",
+          "DFFlagVoroCDUseNewHHSettings_Staged",
+          "DFIntCollisionScalingDefaultStudTenths_Staged",
+          "DFIntVoroCDNumThreads_Staged",
+          "DFIntVoroCDPremergeContinuationLevel_Staged",
+          "DFIntVoroCDPremergeLevel_Staged",
+          "DFLogBootcampCLI221983Log",
+          "FFlagAXAlignUnifiedFilterSearchKeyword",
+          "FFlagAXFixHomeAvatarsUnifiedPurchase",
+          "FFlagAXUnifiedFilterWidgetLoadedAndUIImpression",
+          "FFlagBootcampCLI222132",
+          "FFlagBuildAddSearchIconAndMoveSearchbar",
+          "FFlagChangeHistoryRecordAssemblyCFrames_Staged",
+          "FFlagClearAccountBlobForPioneerLogin_Staged",
+          "FFlagEnablePioneerBrazilContentRatingBadge_Staged",
+          "FFlagExpChatFixLocalUserVerifiedBadge2",
+          "FFlagExpChatFixOutgoingUniverseChatBubble",
+          "FFlagFixBundleOwnershipAfterPurchaseInStudio_Staged",
+          "FFlagFixLoginV2DialogToastOverlayHeight",
+          "FFlagFixPreviousAccountsListEntries_Staged",
+          "FFlagFixUIDragDetectorVirtualCursorDragOnSelectedObjects_Staged",
+          "FFlagFoundationInputGroup",
+          "FFlagHideChallengeWebViewsUntilDisplayed_Staged",
+          "FFlagHttpUseSharedRetryHeader",
+          "FFlagMaterialGridItemLabelFoundationStyle",
+          "FFlagOpenTelemetryUseFiberSpanProcessor2_Staged",
+          "FFlagPlayerListFixPlatformLeaderboardSizing_Staged",
+          "FFlagPlayerListKeepModalHiddenOnRemount_Staged",
+          "FFlagPlayerListTwoTabsOnLegacyPerformance_Staged",
+          "FFlagPrimPairToJointCountRBXHashMap",
+          "FFlagProfileUnifiedPurchaseLogging",
+          "FFlagRefreshLoginV2AuthScreenUserDetails",
+          "FFlagReleaseTextBoxFocusOnChallengeOpen_Staged",
+          "FFlagSTUDIOPLAT43198VersionedPluginOTA3_Staged",
+          "FFlagScriptEditorSupportTopMargin1",
+          "FFlagSduiChartsPagePromptsHandlerEnabled_Staged",
+          "FFlagSecurityCheckForGetService_Staged",
+          "FFlagSimWorldStepLimit",
+          "FFlagSkipAccountSwitchRelaunchForPioneerLogin",
+          "FFlagSlimReplicationLimitHLPivotSnapshotToSlimAnimationEntities_Staged",
+          "FFlagTexturePackRefactor_Staged",
+          "FFlagUnifyVerifiedBadgeComponent_Staged",
+          "FFlagVertexNormalsSolverGracefulOom_Staged",
+          "FFlagWebViewSupportsHiddenOpen_Staged",
+          "FIntOpenTelemetryMaxConcurrentExports_Staged",
+          "FIntOpenTelemetryScheduleDelayMillis_Staged",
+          "FStringStudioEmergencyMessageV4_Staged",
+          "FStringTextureTranscodeRollout"
+        ],
+        "changed": [
+          {
+            "after": "3e6c5550c2a79c47b684898310af9a2cbc294309",
+            "before": "5207e68865327e64d7573a1e2683ac35d68ad889",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-14T20:53:45.367Z",
+            "before": "2026-09-14T19:30:28.133Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "3e6c5550c2a79c47b684898310af9a2cbc294309",
+            "before": "5207e68865327e64d7573a1e2683ac35d68ad889",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-14T20:53:45.367Z",
+            "before": "2026-09-14T19:30:28.133Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagSuppressLCInvalidationForDeadAvatars_Staged",
+          "DFLogBootcampCLI221983Log_Staged",
+          "FFlagAXAlignUnifiedFilterSearchKeyword_Staged",
+          "FFlagAXFixHomeAvatarsUnifiedPurchase_Staged",
+          "FFlagAXUnifiedFilterWidgetLoadedAndUIImpression_Staged",
+          "FFlagBootcampCLI222132_Staged",
+          "FFlagBuildAddSearchIconAndMoveSearchbar_Staged",
+          "FFlagExpChatFixLocalUserVerifiedBadge2_Staged",
+          "FFlagExpChatFixOutgoingUniverseChatBubble_Staged",
+          "FFlagFixLoginV2DialogToastOverlayHeight_Staged",
+          "FFlagFoundationInputGroup_Staged",
+          "FFlagHttpUseSharedRetryHeader_Staged",
+          "FFlagMaterialGridItemLabelFoundationStyle_Staged",
+          "FFlagPrimPairToJointCountRBXHashMap_Staged",
+          "FFlagProfileUnifiedPurchaseLogging_Staged",
+          "FFlagRefreshLoginV2AuthScreenUserDetails_Staged",
+          "FFlagScriptEditorSupportTopMargin1_Staged",
+          "FFlagSimWorldStepLimit_Staged",
+          "FFlagSkipAccountSwitchRelaunchForPioneerLogin_Staged",
+          "FStringTextureTranscodeRollout_Staged"
+        ],
+        "unchanged": 24138
+      }
+    },
+    "Web": {
+      "current": "3f55c6bb29ab34047f0a897f7ddef1ec09fdfeb0dbbe9b68738af0a635fb8833",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-012.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-053.js",
+          "assets.create.roblox.com/page-0/script-067.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 92
+      },
+      "previous": "9262c43fb23b5cfc1ddc834669981f54f4a3e91c3ecf69b78a2f58dc1f0959e8",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
