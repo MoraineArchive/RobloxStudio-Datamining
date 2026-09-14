@@ -2909,11 +2909,61 @@
             "nav",
             "skeleton"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/14/23-15-53Z_datasets",
+          "evidencePath": "2026/09/14/23-15-53Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "0bbb9a54b1031496066eab86c58a093431f40521e8ee4194426fc41071d318fc",
+          "key": "FFlagMomentsCreationMusicSearchCountTelemetry_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-14T23:15:53.928Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "count",
+            "creation",
+            "moments",
+            "music",
+            "search",
+            "telemetry"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/14/23-15-53Z_datasets",
+          "evidencePath": "2026/09/14/23-15-53Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "c8e8efd11a5dacb67e70a071d21b1f3a1764c664e88520d4d49e5aee704a903f",
+          "key": "FFlagMomentsCreationMusicSearchStateFix_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-14T23:15:53.928Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "fix",
+            "moments",
+            "music",
+            "search",
+            "state"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-09-10T00:59:40.439Z",
+      "lastObservedAt": "2026-09-14T23:15:53.928Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",

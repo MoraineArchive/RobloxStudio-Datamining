@@ -1,0 +1,185 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-93202a13414c4131",
+    "manifestFiles": 18471,
+    "packages": 34,
+    "version": "0.738.0.7381393"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "aab189c27e5c8e137db68a96438a9969e2f0e9ab47d6951e187a0feefa76b1f1",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "dcfddb778c70c6984289defe391c0f6652f75a4452d5a246f28fa542f020909f",
+      "semantic": {
+        "added": [
+          "DFFlagAddIntegrityToReplicatorTelemetry",
+          "DFFlagConnectionClosedTimeSinceDiagnostics",
+          "DFFlagEnableOpenShop_Staged",
+          "DFFlagFixClientJoinResultTelemetryPointsThrottle",
+          "DFFlagHttpClientFirstPartyCdnExempt_Staged",
+          "DFFlagLuauFixEnumPropertyAssignmentErrorType",
+          "DFFlagSDFTextSurfaceGui_Staged",
+          "DFFlagWsClientClearPollsEveryLoop_Staged",
+          "DFIntCollisionScalingDefaultStudTenths",
+          "FFlagAXCatalogSduiDisableOnSearchRoute_Staged",
+          "FFlagAXOutfitPageRevamp3_Staged",
+          "FFlagAXRefetchInventoryOnUpdate_Staged",
+          "FFlagAssetImporterShowPreviewLoading_Staged",
+          "FFlagAssetImporterVersionedAnimationUx_Staged",
+          "FFlagBuildExperienceRemoveAgentTaskUi_Staged",
+          "FFlagClearAccountBlobForPioneerLogin",
+          "FFlagConvertAccessoryApplySurfaceAppearanceColor",
+          "FFlagEditableMeshBatchCreate_Staged",
+          "FFlagEditableMeshBatchFaceAttributes_Staged",
+          "FFlagEditableMeshBatchSetGetValues_Staged",
+          "FFlagEditableMeshBatchVertexFaceAttributes_Staged",
+          "FFlagEnableCaptureUploadForSupportTicket_UniverseFilter",
+          "FFlagEnableCheckUploadCaptureStatusForSupportTicket_UniverseFilter",
+          "FFlagEnableDrawerAnimatingHook_Staged",
+          "FFlagEnablePioneerBrazilContentRatingBadge",
+          "FFlagEnablePlayerSupport4_UniverseFilter",
+          "FFlagEnablePlayerSupportCaptureAttachments2_UniverseFilter",
+          "FFlagEnablePlayerSupportPrompt_UniverseFilter",
+          "FFlagEnableSupportTicketAssetIdsInPayload_UniverseFilter",
+          "FFlagFixBundleOwnershipAfterPurchaseInStudio",
+          "FFlagFixPreviousAccountsListEntries",
+          "FFlagFixUIDragDetectorVirtualCursorDragOnSelectedObjects",
+          "FFlagFmodFixPrematureLoopbacks_Staged",
+          "FFlagGetWaveformAsyncChannelCap_Staged",
+          "FFlagHideChallengeWebViewsUntilDisplayed",
+          "FFlagImportAnimationVersionsIntent_Staged",
+          "FFlagImportAnimationVersions_Staged",
+          "FFlagMomentsCreationMusicSearchCountTelemetry_Staged",
+          "FFlagMomentsCreationMusicSearchStateFix_Staged",
+          "FFlagNotificationsDeeplinkNavigateToHome_Staged",
+          "FFlagOpenTelemetryUseFiberSpanProcessor2",
+          "FFlagPlatformLeaderboardEnabled_Staged",
+          "FFlagPlayerListFixPlatformLeaderboardSizing",
+          "FFlagPlayerListKeepModalHiddenOnRemount",
+          "FFlagPlayerListTwoTabsOnLegacyPerformance",
+          "FFlagPlayerListTwoTabsOnLegacy_Staged",
+          "FFlagReleaseTextBoxFocusOnChallengeOpen",
+          "FFlagSTUDIOPLAT43198VersionedPluginOTA3",
+          "FFlagSchoolsEntryDecisionRedirectOnce_Staged",
+          "FFlagSchoolsFunnelAnalytics_Staged",
+          "FFlagSduiChartsPagePromptsHandlerEnabled",
+          "FFlagSkipKnownAssetCacheRead_Staged",
+          "FFlagSlimReplicationLimitHLPivotSnapshotToSlimAnimationEntities",
+          "FFlagStudioUpdateEmergencyDialogWording_Staged",
+          "FFlagTaskSchedulerDetachArbiters2",
+          "FFlagTexturePackRefactor",
+          "FFlagUnifyVerifiedBadgeComponent",
+          "FFlagVertexNormalsSolverGracefulOom",
+          "FFlagWebViewSupportsHiddenOpen",
+          "FIntOpenTelemetryMaxConcurrentExports",
+          "FIntOpenTelemetryScheduleDelayMillis",
+          "FStringPerformanceControlComputePrimaryTunableConfigJson_Staged"
+        ],
+        "changed": [
+          {
+            "after": "ddd93785b1e73b925c5309ac2cc8b768b952750a",
+            "before": "3cf9beeedd14ffbd73cecbced7bc9e9b8dd2743f",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-14T23:14:36.956Z",
+            "before": "2026-09-14T21:39:21.816Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagChangeHistoryRecordAssemblyCFrames"
+          },
+          {
+            "after": "ddd93785b1e73b925c5309ac2cc8b768b952750a",
+            "before": "3cf9beeedd14ffbd73cecbced7bc9e9b8dd2743f",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-14T23:14:36.956Z",
+            "before": "2026-09-14T21:39:21.816Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagAddIntegrityToReplicatorTelemetry_Staged",
+          "DFFlagConnectionClosedTimeSinceDiagnostics_Staged",
+          "DFFlagFixClientJoinResultTelemetryPointsThrottle_Staged",
+          "DFFlagFixTriangleMeshPartPhysicsData_Staged",
+          "DFFlagLuauFixEnumPropertyAssignmentErrorType_Staged",
+          "DFIntCollisionScalingDefaultStudTenths_Staged",
+          "FFlagChangeHistoryRecordAssemblyCFrames_Staged",
+          "FFlagClearAccountBlobForPioneerLogin_Staged",
+          "FFlagConvertAccessoryApplySurfaceAppearanceColor_Staged",
+          "FFlagEnablePioneerBrazilContentRatingBadge_Staged",
+          "FFlagFixBundleOwnershipAfterPurchaseInStudio_Staged",
+          "FFlagFixPreviousAccountsListEntries_Staged",
+          "FFlagFixUIDragDetectorVirtualCursorDragOnSelectedObjects_Staged",
+          "FFlagHideChallengeWebViewsUntilDisplayed_Staged",
+          "FFlagOpenTelemetryUseFiberSpanProcessor2_Staged",
+          "FFlagPlayerListFixPlatformLeaderboardSizing_Staged",
+          "FFlagPlayerListKeepModalHiddenOnRemount_Staged",
+          "FFlagPlayerListTwoTabsOnLegacyPerformance_Staged",
+          "FFlagReleaseTextBoxFocusOnChallengeOpen_Staged",
+          "FFlagSTUDIOPLAT43198VersionedPluginOTA3_Staged",
+          "FFlagSduiChartsPagePromptsHandlerEnabled_Staged",
+          "FFlagSlimReplicationLimitHLPivotSnapshotToSlimAnimationEntities_Staged",
+          "FFlagTaskSchedulerDetachArbiters2_Staged",
+          "FFlagTexturePackRefactor_Staged",
+          "FFlagUnifyVerifiedBadgeComponent_Staged",
+          "FFlagVertexNormalsSolverGracefulOom_Staged",
+          "FFlagWebViewSupportsHiddenOpen_Staged",
+          "FIntOpenTelemetryMaxConcurrentExports_Staged",
+          "FIntOpenTelemetryScheduleDelayMillis_Staged"
+        ],
+        "unchanged": 24172
+      }
+    },
+    "Web": {
+      "current": "089b8f3119732be00ca496ed229f649962cdb56149bc450d514bfd66336e7198",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-004.js",
+          "assets.create.roblox.com/page-0/script-008.js",
+          "assets.create.roblox.com/page-0/script-012.js",
+          "assets.create.roblox.com/page-0/script-023.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-042.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-051.js",
+          "assets.create.roblox.com/page-0/script-053.js",
+          "assets.create.roblox.com/page-0/script-067.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 82
+      },
+      "previous": "73061e2175cadfca67b020e114522d5227d099ebbfbf4a7b8421d8ddb6e4b0ad",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
