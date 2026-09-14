@@ -1,0 +1,65 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-93202a13414c4131",
+    "manifestFiles": 18471,
+    "packages": 34,
+    "version": "0.738.0.7381393"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "b37d43de8fe8a594cc68d1922e9ed27a109676e85e2dcb309df3950ed8a5e498",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "8afaca69d7508bd9f2416587a967197ba88dbdbd8482774b26e669c671a50f8d",
+      "semantic": {
+        "added": [
+          "DFFlagMeshLODClampVertexColors_Staged",
+          "DFFlagPMDV8AccuracyByte_Staged",
+          "FFlagAXHideBottomNavForOverlayPrompts_Staged",
+          "FFlagBuildFixLiveStaleness_Staged",
+          "FFlagBuildPublishTerminologyChange_Staged",
+          "FFlagPresenceEventReceiverRefetchOnAppForeground_Staged",
+          "FFlagSlimReplicationFilterOutSkeletonsExceedingMaxReplicablePoseSize_Staged",
+          "FFlagSlimReplicationUseGlobalServerThrottle_Staged",
+          "FFlagSlimReplicationUseStaleFrameStrategy2_Staged",
+          "FFlagStudioAssistantPermissionsScriptCapabilities_Staged",
+          "FFlagStudioDialogManagerSnackbarQueue_Staged",
+          "FFlagVideoWebrtcForwardKeyframeFlag_Staged"
+        ],
+        "changed": [
+          {
+            "after": "19fac53472a94e5696a0084637f315eb1f1c9b56",
+            "before": "8f84a8177a01d1c181e4ea48d4626d6a61af37d4",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-14T17:04:17.691Z",
+            "before": "2026-09-14T16:57:49.556Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "19fac53472a94e5696a0084637f315eb1f1c9b56",
+            "before": "8f84a8177a01d1c181e4ea48d4626d6a61af37d4",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-14T17:04:17.691Z",
+            "before": "2026-09-14T16:57:49.556Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [],
+        "unchanged": 24105
+      }
+    }
+  },
+  "schemaVersion": 1
+}
