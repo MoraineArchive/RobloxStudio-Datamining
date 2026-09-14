@@ -1,0 +1,107 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-93202a13414c4131",
+    "manifestFiles": 18471,
+    "packages": 34,
+    "version": "0.738.0.7381393"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "cbc721e536db57233ff66c648c447ae71d35fdb06faab0b88d47cb567c4c13c4",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "aab189c27e5c8e137db68a96438a9969e2f0e9ab47d6951e187a0feefa76b1f1",
+      "semantic": {
+        "added": [
+          "FFlagAssistantDisableApplyEditDataModelAvailability",
+          "FFlagAssistantRetryMessageLoadWithSmallerLimit",
+          "FFlagEnableAdConsentUserSettingsPublish",
+          "FFlagLuauThreadGeneralizeThroughConstraintGeneration",
+          "FFlagMomentsCreationEntryOutcome_Staged",
+          "FFlagMomentsFeedMediaLoadAttemptedEvent_Staged",
+          "FFlagMomentsJoinImpression_Staged",
+          "FFlagPlatformLeaderboardPersistStoreOnRemount"
+        ],
+        "changed": [
+          {
+            "after": "False",
+            "before": "True",
+            "name": "DFFlagSDFTextSurfaceGui"
+          },
+          {
+            "after": "9203ff579c739513747bde6da39478fbf3f1da86",
+            "before": "ddd93785b1e73b925c5309ac2cc8b768b952750a",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-14T23:42:36.840Z",
+            "before": "2026-09-14T23:14:36.956Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "9203ff579c739513747bde6da39478fbf3f1da86",
+            "before": "ddd93785b1e73b925c5309ac2cc8b768b952750a",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-14T23:42:36.840Z",
+            "before": "2026-09-14T23:14:36.956Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagSDFTextSurfaceGui_Staged",
+          "FFlagAssistantDisableApplyEditDataModelAvailability_Staged",
+          "FFlagAssistantRetryMessageLoadWithSmallerLimit_Staged",
+          "FFlagEnableAdConsentUserSettingsPublish_Staged",
+          "FFlagFmodFixPrematureLoopbacks_Staged",
+          "FFlagLuauThreadGeneralizeThroughConstraintGeneration_Staged",
+          "FFlagPlatformLeaderboardLocalizedUnitEnabled_Staged",
+          "FFlagPlatformLeaderboardPersistStoreOnRemount_Staged"
+        ],
+        "unchanged": 24226
+      }
+    },
+    "Web": {
+      "current": "0dc356d7de7b3e68dadcfde878e9d7ef82a2f4ad5998de56a204a79a49e19d50",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-012.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-051.js",
+          "assets.create.roblox.com/page-0/script-053.js",
+          "assets.create.roblox.com/page-0/script-067.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 85
+      },
+      "previous": "089b8f3119732be00ca496ed229f649962cdb56149bc450d514bfd66336e7198",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}

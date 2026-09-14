@@ -2,9 +2,9 @@
 
 # Latest Roblox Studio Datamining
 
-**Observed:** 15/09/2026, 01:15:53 CEST (23:15:53 UTC)
+**Observed:** 15/09/2026, 01:52:20 CEST (23:52:20 UTC)
 
-**Event:** [`2026/09/14/23-15-53Z_datasets/`](2026/09/14/23-15-53Z_datasets/)
+**Event:** [`2026/09/14/23-52-20Z_datasets/`](2026/09/14/23-52-20Z_datasets/)
 
 **Build:** [`0.738.0.7381393`](current/Build/version.json)
 
@@ -14,8 +14,8 @@
 
 ```text
 LiveSettings files +0 ~1 -0
-Web files          +0 ~22 -0
-LiveSettings       +62 ~5 -29
+Web files          +0 ~19 -0
+LiveSettings       +8 ~5 -8
 ```
 
 File counts describe canonical files. Nested semantic rows describe values or API/source records inside those files.
@@ -24,4 +24,4 @@ File counts describe canonical files. Nested semantic rows describe values or AP
 
 - Moments capture/post API — correlated
 
-See the [summary](2026/09/14/23-15-53Z_datasets/summary.md), [diff](2026/09/14/23-15-53Z_datasets/diff.md), [findings](2026/09/14/23-15-53Z_datasets/findings.md), and [changes.json](2026/09/14/23-15-53Z_datasets/changes.json).
+See the [summary](2026/09/14/23-52-20Z_datasets/summary.md), [diff](2026/09/14/23-52-20Z_datasets/diff.md), [findings](2026/09/14/23-52-20Z_datasets/findings.md), and [changes.json](2026/09/14/23-52-20Z_datasets/changes.json).

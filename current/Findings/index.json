@@ -2959,11 +2959,81 @@
             "search",
             "state"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/14/23-52-20Z_datasets",
+          "evidencePath": "2026/09/14/23-52-20Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "7e6e70aafeac29da1c0bf387160fd121972d6492f0315598fa667a52d5a4a2a1",
+          "key": "FFlagMomentsCreationEntryOutcome_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-14T23:52:20.180Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "entry",
+            "moments",
+            "outcome"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/14/23-52-20Z_datasets",
+          "evidencePath": "2026/09/14/23-52-20Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "8546a964804a2d820198b3bb2fe01a6e7e644a7d5efc060cf83f1379636b5f09",
+          "key": "FFlagMomentsFeedMediaLoadAttemptedEvent_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-14T23:52:20.180Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "attempted",
+            "event",
+            "feed",
+            "load",
+            "media",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/14/23-52-20Z_datasets",
+          "evidencePath": "2026/09/14/23-52-20Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "9b7d6dbff7efec0dc421a83b8fb41f7f1c6e4af31ff4b1c74d4e17ff8cb5cb54",
+          "key": "FFlagMomentsJoinImpression_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-14T23:52:20.180Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "impression",
+            "join",
+            "moments"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-09-14T23:15:53.928Z",
+      "lastObservedAt": "2026-09-14T23:52:20.180Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
