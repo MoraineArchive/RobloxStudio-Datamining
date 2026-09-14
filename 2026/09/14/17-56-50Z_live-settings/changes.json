@@ -1,0 +1,91 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-93202a13414c4131",
+    "manifestFiles": 18471,
+    "packages": 34,
+    "version": "0.738.0.7381393"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "8b2ce551d8cedeea433b3bb3e3aa1c367cb64af4b6d905d53320ce38e8d72352",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "b37d43de8fe8a594cc68d1922e9ed27a109676e85e2dcb309df3950ed8a5e498",
+      "semantic": {
+        "added": [
+          "DFFlagDMCTMigrateObjectValue",
+          "DFFlagFixInputReplicatorStaleActions_Staged",
+          "DFFlagRakNetCapSplitPacketAllocationV2",
+          "DFFlagServerAuthorityPredictionFixAnchored",
+          "DFFlagSimRejectDisabledToolWeld_Staged",
+          "DFFlagUseSizedHttpBody_Staged",
+          "DFFlagUserInitiatedLaunchCounterEnabled2_Staged",
+          "DFLogBootcampCLI222132Log_Staged",
+          "FFlagAXAlignUnifiedFilterSearchKeyword_Staged",
+          "FFlagAXFixHomeAvatarsUnifiedPurchase_Staged",
+          "FFlagBootcampCLI222132_Staged",
+          "FFlagBuildAgentRollback_Staged",
+          "FFlagBuildResumeToastLocalization_Staged",
+          "FFlagBuildVersionHistoryUpdates_Staged",
+          "FFlagCommandAnalyzerDirectSource_Staged",
+          "FFlagDevConsoleFixMultilineContext_Staged",
+          "FFlagDevConsoleKeyCollisionFix_Staged",
+          "FFlagEnableAttributionContextOrganicWriteV1_Staged",
+          "FFlagExpChatFixLocalUserVerifiedBadge2_Staged",
+          "FFlagExpChatFixOutgoingUniverseChatBubble_Staged",
+          "FFlagFoundationInputGroup_Staged",
+          "FFlagLuaAppDataHydrationTotalVisitsGameInfoStore_Staged",
+          "FFlagProfileUnifiedPurchaseLogging_Staged",
+          "FFlagScriptEditorSupportTopMargin1_Staged",
+          "FFlagSearchLandingPageDeviceParams_Staged",
+          "FStringBuildAgentRollbackNotePrompt_Staged",
+          "FStringBuildAgentRollbackVersionPrompt_Staged"
+        ],
+        "changed": [
+          {
+            "after": "False",
+            "before": "True",
+            "name": "DFFlagSatPolyPolyContactEnabled"
+          },
+          {
+            "after": "60762b7a57045611ea280064cee27e726da3dfcd",
+            "before": "19fac53472a94e5696a0084637f315eb1f1c9b56",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-14T17:53:19.059Z",
+            "before": "2026-09-14T17:04:17.691Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "60762b7a57045611ea280064cee27e726da3dfcd",
+            "before": "19fac53472a94e5696a0084637f315eb1f1c9b56",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-14T17:53:19.059Z",
+            "before": "2026-09-14T17:04:17.691Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagDMCTMigrateObjectValue_Staged",
+          "DFFlagRakNetCapSplitPacketAllocationV2_Staged",
+          "DFFlagSatPolyPolyContactEnabled_Staged",
+          "DFFlagServerAuthorityPredictionFixAnchored_Staged",
+          "FFlagHttpUseSharedRetryHeader_Staged"
+        ],
+        "unchanged": 24111
+      }
+    }
+  },
+  "schemaVersion": 1
+}
