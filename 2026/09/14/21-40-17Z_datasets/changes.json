@@ -1,0 +1,127 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-93202a13414c4131",
+    "manifestFiles": 18471,
+    "packages": 34,
+    "version": "0.738.0.7381393"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "dcfddb778c70c6984289defe391c0f6652f75a4452d5a246f28fa542f020909f",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "73db146ede501921176f2993f8b18eeeeee2353309551cd392b33b59019fdeb3",
+      "semantic": {
+        "added": [
+          "DFFlagFixTriangleMeshPartPhysicsData_Staged",
+          "DFFlagLuauFixEnumPropertyAssignmentErrorType_Staged",
+          "DFFlagMSTVOnSkeletonInvalidated",
+          "DFFlagVoroCDPremergeHullPadding",
+          "DFFlagVoroCDUnlockPremerge",
+          "DFFlagVoroCDUseNewHHSettings",
+          "DFIntVoroCDNumThreads",
+          "DFIntVoroCDPremergeContinuationLevel",
+          "DFIntVoroCDPremergeLevel",
+          "FFlagAXIecLookModerationStatus",
+          "FFlagAXMakeupIECGrantFix",
+          "FFlagAssistantDisableApplyEditDataModelAvailability_Staged",
+          "FFlagAssistantRetryMessageLoadWithSmallerLimit_Staged",
+          "FFlagBootcampCLI221983",
+          "FFlagConvertAccessoryApplySurfaceAppearanceColor_Staged",
+          "FFlagCreateDecalAsyncEnabled",
+          "FFlagEnableAdConsentUserSettingsPublish_Staged",
+          "FFlagEnableFooter",
+          "FFlagLuauThreadGeneralizeThroughConstraintGeneration_Staged",
+          "FFlagMaterialGridUseItemIds",
+          "FFlagPlatformLeaderboardLocalizedUnitEnabled_Staged",
+          "FFlagPlatformLeaderboardPersistStoreOnRemount_Staged"
+        ],
+        "changed": [
+          {
+            "after": "False",
+            "before": "True",
+            "name": "DFFlagSimRejectDisabledToolWeld"
+          },
+          {
+            "after": "3cf9beeedd14ffbd73cecbced7bc9e9b8dd2743f",
+            "before": "3193b99a9bba603c7bf0b0318d2015278b53e89c",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-14T21:39:21.816Z",
+            "before": "2026-09-14T21:03:21.998Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "3cf9beeedd14ffbd73cecbced7bc9e9b8dd2743f",
+            "before": "3193b99a9bba603c7bf0b0318d2015278b53e89c",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-14T21:39:21.816Z",
+            "before": "2026-09-14T21:03:21.998Z",
+            "name": "FStringFlipTimeStampFastString"
+          },
+          {
+            "after": "eyJ2ZXJzaW9uU3RhcnQiOiAiMC4zMDAuMC4xIiwgInZlcnNpb25FbmQiOiAiMC43MzUuMC43MzgxMzkzIiwgInBsYXRmb3JtcyI6IFsiV2luZG93cyIsICJNYWMiXSwgIm1lc3NhZ2UiOiB7fSwgInNodXRkb3duIjogdHJ1ZX0=",
+            "before": "ewogICAgInZlcnNpb25TdGFydCI6IjAuMzAwLjAuMSIsCiAgICAidmVyc2lvbkVuZCI6IjAuNzM1LjAuMCIsCiAgICAicGxhdGZvcm1zIjogWyJXaW5kb3dzIiwgIk1hYyJdLAogICAgIm1lc3NhZ2UiOnt9LAogICAgInNodXRkb3duIjp0cnVlCn0=",
+            "name": "FStringStudioEmergencyMessageV4"
+          }
+        ],
+        "removed": [
+          "DFFlagMSTVOnSkeletonInvalidated_Staged",
+          "DFFlagSimRejectDisabledToolWeld_Staged",
+          "DFFlagVoroCDPremergeHullPadding_Staged",
+          "DFFlagVoroCDUnlockPremerge_Staged",
+          "DFFlagVoroCDUseNewHHSettings_Staged",
+          "DFIntVoroCDNumThreads_Staged",
+          "DFIntVoroCDPremergeContinuationLevel_Staged",
+          "DFIntVoroCDPremergeLevel_Staged",
+          "FFlagAXIecLookModerationStatus_Staged",
+          "FFlagAXMakeupIECGrantFix_Staged",
+          "FFlagBootcampCLI221983_Staged",
+          "FFlagCreateDecalAsyncEnabled_Staged",
+          "FFlagEnableFooter_Staged",
+          "FFlagMaterialGridUseItemIds_Staged",
+          "FFlagSecurityCheckForGetService_Staged",
+          "FStringStudioEmergencyMessageV4_Staged"
+        ],
+        "unchanged": 24178
+      }
+    },
+    "Web": {
+      "current": "73061e2175cadfca67b020e114522d5227d099ebbfbf4a7b8421d8ddb6e4b0ad",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-012.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-053.js",
+          "assets.create.roblox.com/page-0/script-067.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 92
+      },
+      "previous": "3f55c6bb29ab34047f0a897f7ddef1ec09fdfeb0dbbe9b68738af0a635fb8833",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
