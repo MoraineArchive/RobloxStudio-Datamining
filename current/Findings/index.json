@@ -3029,11 +3029,36 @@
             "join",
             "moments"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/15/00-01-33Z_datasets",
+          "evidencePath": "2026/09/15/00-01-33Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "84b39be1a2a2da1290749c10369fc8d1f4660c5c29908cc8b235c632180d7c77",
+          "key": "FFlagMomentsCreationMusicSearchStateFix_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-15T00:01:33.323Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "fix",
+            "moments",
+            "music",
+            "search",
+            "state"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-09-14T23:52:20.180Z",
+      "lastObservedAt": "2026-09-15T00:01:33.323Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
