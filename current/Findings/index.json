@@ -3367,11 +3367,155 @@
             "non",
             "scroll"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/15/20-02-07Z_datasets",
+          "evidencePath": "2026/09/15/20-02-07Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "1c174003fb3d0c86dc476ce7f90905a0a7b6f3900079839ceea6caddc693559d",
+          "key": "FFlagMomentsNonInfiniteScrollEndStateFixes",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-15T20:02:07.713Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "end",
+            "fixes",
+            "infinite",
+            "moments",
+            "non",
+            "scroll",
+            "state"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/15/20-02-07Z_datasets",
+          "evidencePath": "2026/09/15/20-02-07Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "46fb70513a8066cd7093b30687c50e70e1b3b2e99fb6202916d0bba2736060d3",
+          "key": "FFlagMomentsNonInfiniteScroll",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-15T20:02:07.713Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "infinite",
+            "moments",
+            "non",
+            "scroll"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/15/20-02-07Z_datasets",
+          "evidencePath": "2026/09/15/20-02-07Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "58384462734dc3c8138d6cafbb8563d811bfcabcbefc6b076b94c03aa56c15ce",
+          "key": "FFlagMomentsUploadOutcomeTelemetry",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-15T20:02:07.713Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "moments",
+            "outcome",
+            "telemetry",
+            "upload"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/15/20-02-07Z_datasets",
+          "evidencePath": "2026/09/15/20-02-07Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "bcbd38a31216ed2ab55adb96fe6a1b833969f0b7e2c0aa98639cbf6171b923e1",
+          "key": "FFlagMomentsUploadOutcomeTelemetry_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-15T20:02:07.713Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "moments",
+            "outcome",
+            "telemetry",
+            "upload"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/15/20-02-07Z_datasets",
+          "evidencePath": "2026/09/15/20-02-07Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "cf70179e8b2dc37c56867a059589c7e34f1b73ba4114a0092cdcc24b46730161",
+          "key": "FFlagMomentsNonInfiniteScrollEndStateFixes_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-15T20:02:07.713Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "end",
+            "fixes",
+            "infinite",
+            "moments",
+            "non",
+            "scroll",
+            "state"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/15/20-02-07Z_datasets",
+          "evidencePath": "2026/09/15/20-02-07Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "f64cc6d30cdeeb45dabd2ada133769559a3020db98d12afb012c80faa7478349",
+          "key": "FFlagMomentsNonInfiniteScroll_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-15T20:02:07.713Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "infinite",
+            "moments",
+            "non",
+            "scroll"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-09-15T18:20:04.750Z",
+      "lastObservedAt": "2026-09-15T20:02:07.713Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
@@ -3418,6 +3562,30 @@
           "signalIds": [
             "9b7d6dbff7efec0dc421a83b8fb41f7f1c6e4af31ff4b1c74d4e17ff8cb5cb54",
             "cf9d118de563d41b04cc6591b7765766a2650d4024de3a91c6a5126e774f41e1"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-09-15T20:02:07.713Z",
+          "signalIds": [
+            "4c9c84010c0f5b1706eb41343e34a2afa76ce2efd91dd8c01d62f3a49f01d9c7",
+            "58384462734dc3c8138d6cafbb8563d811bfcabcbefc6b076b94c03aa56c15ce"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-09-15T20:02:07.713Z",
+          "signalIds": [
+            "1c174003fb3d0c86dc476ce7f90905a0a7b6f3900079839ceea6caddc693559d",
+            "8081d1328ff0cd1f61362a340f7faf1d0c6871d2446ed5fc394f806e211bb9e3"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-09-15T20:02:07.713Z",
+          "signalIds": [
+            "46fb70513a8066cd7093b30687c50e70e1b3b2e99fb6202916d0bba2736060d3",
+            "b4f38a77f79308d4b38f85f0a7ca87824c598428ef8ab243728ba65f8f7502f1"
           ],
           "type": "staged-to-non-staged"
         }
