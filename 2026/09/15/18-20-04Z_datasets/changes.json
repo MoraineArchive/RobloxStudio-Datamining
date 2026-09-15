@@ -1,0 +1,138 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-55808de4b1914919",
+    "manifestFiles": 18507,
+    "packages": 34,
+    "version": "0.739.0.7390687"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "fc850610699783146b84507f903d7192f8461003f42d8037da786cc2c085b515",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "91c897c6cf131a75b3abf6edb187ec8df9b90617f3fe008cbe0b41d2770c5552",
+      "semantic": {
+        "added": [
+          "DFFlagAuroraDeferStopPrediction",
+          "DFFlagFilterClientStreamingPerfStatsToStreaming",
+          "DFFlagFlagRolloutTestDynamicBool49_Staged",
+          "DFFlagReimaginePIPSForVoroCD_Staged",
+          "DFFlagSimResumeScriptsAfterPostSimulation",
+          "FFlagAXIaBSinglePurchaseUnifiedEvents_Staged",
+          "FFlagAnimatorParallelManagerUseLiveTaskSchedulerConcurrency_Staged",
+          "FFlagDecalEmissiveEnabled_Staged",
+          "FFlagEnableLoginV2Modalization19_Staged",
+          "FFlagEnableLuaCommunityList_Staged",
+          "FFlagEnablePlayButtonWizardVPCPrologue_Staged",
+          "FFlagFixDrawerNavigateBackWhileClosing_Staged",
+          "FFlagFixSkinningLifetimeAndBugs15_Staged",
+          "FFlagFlyoutResolveItemContextOnActivation_Staged",
+          "FFlagFmodFixPrematureLoopbacks_Staged",
+          "FFlagFriendsChatHasFriendsGateRC1_Staged",
+          "FFlagHideChallengeWebViewsUntilDisplayed_Staged",
+          "FFlagJsonRpcSafeTeardown_Staged",
+          "FFlagLuaAppExtractNotInterestedHelper_Staged",
+          "FFlagLuaAppHomePageSharedEffects_Staged",
+          "FFlagLuaAppScaleDetailWidth_Staged",
+          "FFlagLuaAppSduiEdpEnabled2",
+          "FFlagLuauEmitCallFeedback_Staged",
+          "FFlagMaterialGridTerrainEditorItemUx_Staged",
+          "FFlagMigrateGameInfoToStore_Staged",
+          "FFlagMomentsNonInfiniteScrollEndStateFixes_Staged",
+          "FFlagMomentsNonInfiniteScroll_Staged",
+          "FFlagMomentsUploadOutcomeTelemetry_Staged",
+          "FFlagRbxStorageInitV25_Staged",
+          "FFlagSduiApiStoreOnSuccessAndRefresh_Staged",
+          "FFlagSearchBarGuardUnmountedAutocomplete_Staged",
+          "FFlagStudioFixFullPassInMDI_Staged",
+          "FFlagStudioFixPackageActions_Staged",
+          "FFlagStudioFixPluginFetchCrash_Staged",
+          "FFlagStudioViewportBorderCheckFocusedAndHosted_Staged",
+          "FFlagWebViewSupportsHiddenOpen_Staged",
+          "FStringPerformanceControlComputePrimaryTunableConfigJson_Staged"
+        ],
+        "changed": [
+          {
+            "after": "7500",
+            "before": "5000",
+            "name": "DFIntDataStoreRequestEventThrottleHundredthsPercentage"
+          },
+          {
+            "after": "8fca95f315bc2744537cfa0ba231bab65ae97cd1",
+            "before": "a1afcace2b602f18e577156655205aae6c65a80b",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-15T18:16:00.530Z",
+            "before": "2026-09-15T16:13:04.665Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagSimImprovedAnimationConstraintRollout2"
+          },
+          {
+            "after": "8fca95f315bc2744537cfa0ba231bab65ae97cd1",
+            "before": "a1afcace2b602f18e577156655205aae6c65a80b",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-15T18:16:00.530Z",
+            "before": "2026-09-15T16:13:04.665Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagAuroraDeferStopPrediction_Staged",
+          "FFlagLuaAppGamePassesDataHydrationMigrationEnabled_IXP",
+          "FFlagLuaAppSduiEdpEnabled2_IXP",
+          "FFlagSimImprovedAnimationConstraintRollout2_Staged"
+        ],
+        "unchanged": 24229
+      }
+    },
+    "Web": {
+      "current": "71248eb0f1e85751f7f481b9a48a9e141fd4175ad81e3fa361f855a0f0e1443b",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-012.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-033.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-053.js",
+          "assets.create.roblox.com/page-0/script-067.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-1/script-001.js",
+          "assets.create.roblox.com/page-1/script-003.js",
+          "assets.create.roblox.com/page-1/script-004.js",
+          "assets.create.roblox.com/page-1/script-009.js",
+          "assets.create.roblox.com/page-1/script-013.js",
+          "assets.create.roblox.com/page-1/script-014.js",
+          "assets.create.roblox.com/page-1/script-016.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 84
+      },
+      "previous": "1fe44bdb0222be589ca3128b16bfce97314a54a599b783feb937f856b396db3b",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
