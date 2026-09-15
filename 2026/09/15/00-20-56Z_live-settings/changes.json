@@ -1,0 +1,77 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-93202a13414c4131",
+    "manifestFiles": 18471,
+    "packages": 34,
+    "version": "0.738.0.7381393"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "e5a6059c64afb70aa0d7678a741a5b0e8d6d86cc56947af28e9526cfbcd61f8b",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "969219d366fad1230f542368440f2660a77549b55927b62a8a02b5bf0e1afc87",
+      "semantic": {
+        "added": [
+          "DFFlagEnableOpenShop",
+          "DFFlagHttpClientFirstPartyCdnExempt",
+          "FFlagAXCatalogSduiDisableOnSearchRoute",
+          "FFlagAXOutfitPageRevamp3",
+          "FFlagAXRefetchInventoryOnUpdate",
+          "FFlagAssetImporterShowPreviewLoading",
+          "FFlagAssetImporterVersionedAnimationUx",
+          "FFlagImportAnimationVersions",
+          "FFlagImportAnimationVersionsIntent",
+          "FFlagMomentsCreationMusicSearchCountTelemetry",
+          "FFlagSkipKnownAssetCacheRead"
+        ],
+        "changed": [
+          {
+            "after": "cae372a646d434411973c7cdbdecf69555cc9327",
+            "before": "cad71838d7ee7f01ac636ed39967088f17d4759f",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-15T00:12:53.517Z",
+            "before": "2026-09-14T23:57:52.752Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "cae372a646d434411973c7cdbdecf69555cc9327",
+            "before": "cad71838d7ee7f01ac636ed39967088f17d4759f",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-15T00:12:53.517Z",
+            "before": "2026-09-14T23:57:52.752Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagEnableOpenShop_Staged",
+          "DFFlagHttpClientFirstPartyCdnExempt_Staged",
+          "FFlagAXCatalogSduiDisableOnSearchRoute_Staged",
+          "FFlagAXOutfitPageRevamp3_Staged",
+          "FFlagAXRefetchInventoryOnUpdate_Staged",
+          "FFlagAssetImporterShowPreviewLoading_Staged",
+          "FFlagAssetImporterVersionedAnimationUx_Staged",
+          "FFlagImportAnimationVersionsIntent_Staged",
+          "FFlagImportAnimationVersions_Staged",
+          "FFlagMomentsCreationMusicSearchCountTelemetry_Staged",
+          "FFlagSkipKnownAssetCacheRead_Staged",
+          "FStringPerformanceControlComputePrimaryTunableConfigJson_Staged"
+        ],
+        "unchanged": 24222
+      }
+    }
+  },
+  "schemaVersion": 1
+}

@@ -3054,11 +3054,61 @@
             "search",
             "state"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/15/00-20-56Z_live-settings",
+          "evidencePath": "2026/09/15/00-20-56Z_live-settings/changes.json",
+          "family": "LiveSettings",
+          "id": "7a23818911fca898ad8a813ee9e4a1ffa69d6124a88ff10c976be25d6ab1cd62",
+          "key": "FFlagMomentsCreationMusicSearchCountTelemetry",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-15T00:20:56.573Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "count",
+            "creation",
+            "moments",
+            "music",
+            "search",
+            "telemetry"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/15/00-20-56Z_live-settings",
+          "evidencePath": "2026/09/15/00-20-56Z_live-settings/changes.json",
+          "family": "LiveSettings",
+          "id": "92a90264a2e61e0f402f1f0a55ffdf718f56849298d1b4228fa182da32ddd923",
+          "key": "FFlagMomentsCreationMusicSearchCountTelemetry_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-15T00:20:56.573Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "count",
+            "creation",
+            "moments",
+            "music",
+            "search",
+            "telemetry"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-09-15T00:01:33.323Z",
+      "lastObservedAt": "2026-09-15T00:20:56.573Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
@@ -3073,6 +3123,14 @@
           "signalIds": [
             "48f4b7837b4ea40e764be5cd2cd435fddf7437316109ea1d58cb017071d1a49a",
             "975a3f706b701c8459f23c7cd701c87b1a2d620f423b4cd0e75d671eef71057c"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-09-15T00:20:56.573Z",
+          "signalIds": [
+            "0bbb9a54b1031496066eab86c58a093431f40521e8ee4194426fc41071d318fc",
+            "7a23818911fca898ad8a813ee9e4a1ffa69d6124a88ff10c976be25d6ab1cd62"
           ],
           "type": "staged-to-non-staged"
         }
