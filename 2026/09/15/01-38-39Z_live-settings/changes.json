@@ -1,0 +1,80 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-93202a13414c4131",
+    "manifestFiles": 18471,
+    "packages": 34,
+    "version": "0.738.0.7381393"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "26b6264601051ce41d567c708e4181ac574e6b08901b15c32085325d1cc3d1d7",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "e5a6059c64afb70aa0d7678a741a5b0e8d6d86cc56947af28e9526cfbcd61f8b",
+      "semantic": {
+        "added": [
+          "FFlagBuildExperienceRemoveAgentTaskUi",
+          "FFlagEditableMeshBatchCreate",
+          "FFlagEditableMeshBatchFaceAttributes",
+          "FFlagEditableMeshBatchSetGetValues",
+          "FFlagEditableMeshBatchVertexFaceAttributes",
+          "FFlagEnableDrawerAnimatingHook",
+          "FFlagGetWaveformAsyncChannelCap",
+          "FFlagNotificationsDeeplinkNavigateToHome",
+          "FFlagPlatformLeaderboardEnabled",
+          "FFlagPlayerListTwoTabsOnLegacy",
+          "FFlagSchoolsEntryDecisionRedirectOnce",
+          "FFlagSchoolsFunnelAnalytics",
+          "FFlagStudioUpdateEmergencyDialogWording"
+        ],
+        "changed": [
+          {
+            "after": "65757c4be8b10a77d654e2a453eea354adf57666",
+            "before": "cae372a646d434411973c7cdbdecf69555cc9327",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-15T01:17:16.948Z",
+            "before": "2026-09-15T00:12:53.517Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "65757c4be8b10a77d654e2a453eea354adf57666",
+            "before": "cae372a646d434411973c7cdbdecf69555cc9327",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-15T01:17:16.948Z",
+            "before": "2026-09-15T00:12:53.517Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagBuildExperienceRemoveAgentTaskUi_Staged",
+          "FFlagEditableMeshBatchCreate_Staged",
+          "FFlagEditableMeshBatchFaceAttributes_Staged",
+          "FFlagEditableMeshBatchSetGetValues_Staged",
+          "FFlagEditableMeshBatchVertexFaceAttributes_Staged",
+          "FFlagEnableDrawerAnimatingHook_Staged",
+          "FFlagGetWaveformAsyncChannelCap_Staged",
+          "FFlagNotificationsDeeplinkNavigateToHome_Staged",
+          "FFlagPlatformLeaderboardEnabled_Staged",
+          "FFlagPlayerListTwoTabsOnLegacy_Staged",
+          "FFlagSchoolsEntryDecisionRedirectOnce_Staged",
+          "FFlagSchoolsFunnelAnalytics_Staged",
+          "FFlagStudioUpdateEmergencyDialogWording_Staged"
+        ],
+        "unchanged": 24220
+      }
+    }
+  },
+  "schemaVersion": 1
+}
