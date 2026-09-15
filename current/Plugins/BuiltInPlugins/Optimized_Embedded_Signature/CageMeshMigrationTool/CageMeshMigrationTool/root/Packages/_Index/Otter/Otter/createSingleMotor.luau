@@ -9,14 +9,14 @@ local AnimationStepSignal = require(script.Parent.AnimationStepSignal)
 local types = require(script.Parent.types)
 type AnimationValue = types.AnimationValue
 type Goal<T> = types.Goal<T>
-type State = types.State
+type State = types.State & types.EaseState & types.SpringState
 type Motor<T, U> = types.Motor<T, U>
 type Unsubscribe = types.Unsubscribe
 type MotorCallback<T> = types.MotorCallback<T>
 
 type SingleMotorInternal = {
 	__goal: Goal<any>,
-	__state: State & any,
+	__state: State,
 	__onComplete: Signal.Signal<AnimationValue>,
 	__fireOnComplete: Signal.FireSignal<AnimationValue>,
 	__onStep: Signal.Signal<AnimationValue>,
@@ -70,6 +70,14 @@ function SingleMotor:start()
 	end)
 
 	self.__running = true
+
+	if self.__goal and self.__goal.startingValue then
+		self.__state.value = self.__goal.startingValue
+		if self.__state.initialValue then
+			self.__state.initialValue = self.__goal.startingValue
+		end
+		self:step(0)
+	end
 end
 
 function SingleMotor:stop()

@@ -11,17 +11,19 @@
 
 local Shared = script.Parent
 local Packages = Shared.Parent
+local ReactGlobals = require(Packages.ReactGlobals)
 local SafeFlags = require(Packages.SafeFlags)
+
 local GetFFlagReactEnableSchedulingProfiler =
 	SafeFlags.createGetFFlag("ReactEnableSchedulingProfiler")
+local GetFFlagReactCatchYieldingInDEV =
+	SafeFlags.createGetFFlag("ReactCatchYieldingInDEV")
+local GetFFlagReactFilterInternalStackFrames =
+	SafeFlags.createGetFFlag("ReactFilterInternalStackFrames")
 
 -- Unknown globals fail type checking (see "Unknown symbols" section of
 -- https://roblox.github.io/luau/typecheck.html)
 local exports = {}
-
--- Filter certain DOM attributes (e.g. src, href) if their values are empty strings.
--- This prevents e.g. <img src=""> from making an unnecessary HTTP request for certain browsers.
-exports.enableFilterEmptyStringAttributesDOM = true
 
 -- Adds verbose console logging for e.g. state updates, suspense, and work loop stuff.
 -- Intended to enable React core members to more easily debug scheduling issues in DEV builds.
@@ -30,42 +32,41 @@ exports.enableDebugTracing = false
 -- Adds user timing marks for e.g. state updates, suspense, and work loop stuff,
 -- for an experimental scheduling profiler tool.
 exports.enableSchedulingProfiler = GetFFlagReactEnableSchedulingProfiler()
-	or (_G.__PROFILE__ and _G.__EXPERIMENTAL__)
+	or (ReactGlobals.__PROFILE__ and ReactGlobals.__EXPERIMENTAL__)
+
+-- When DEV mode is enabled, throw an error when a fiber attempts to yield.
+exports.catchYieldingInDEV = ReactGlobals.__DEV__ and GetFFlagReactCatchYieldingInDEV()
 
 -- Helps identify side effects in render-phase lifecycle hooks and setState
 -- reducers by double invoking them in Strict Mode.
 -- ROBLOX TODO: we'll want to enable this for DEV app bundles
-exports.debugRenderPhaseSideEffectsForStrictMode = _G.__DEV__
+exports.debugRenderPhaseSideEffectsForStrictMode = ReactGlobals.__DEV__
 
 -- To preserve the "Pause on caught exceptions" behavior of the debugger, we
 -- replay the begin phase of a failed component inside invokeGuardedCallback.
-exports.replayFailedUnitOfWorkWithInvokeGuardedCallback = _G.__DEV__
+exports.replayFailedUnitOfWorkWithInvokeGuardedCallback = ReactGlobals.__DEV__
 
 -- Warn about deprecated, async-unsafe lifecycles; relates to RFC #6:
 exports.warnAboutDeprecatedLifecycles = true
 
 -- Gather advanced timing metrics for Profiler subtrees.
-exports.enableProfilerTimer = _G.__PROFILE__
+exports.enableProfilerTimer = ReactGlobals.__PROFILE__
 
 -- Record durations for commit and passive effects phases.
-exports.enableProfilerCommitHooks = _G.__PROFILE__
+exports.enableProfilerCommitHooks = ReactGlobals.__PROFILE__
 
 -- Trace which interactions trigger each commit.
-exports.enableSchedulerTracing = false
+exports.enableSchedulerTracing = ReactGlobals.__PROFILE__
 
 -- SSR experiments
-exports.enableSuspenseServerRenderer = _G.__EXPERIMENTAL__
-exports.enableSelectiveHydration = _G.__EXPERIMENTAL__
+exports.enableSuspenseServerRenderer = ReactGlobals.__EXPERIMENTAL__
 
 -- Flight experiments
-exports.enableBlocksAPI = _G.__EXPERIMENTAL__
-exports.enableLazyElements = _G.__EXPERIMENTAL__
+exports.enableBlocksAPI = ReactGlobals.__EXPERIMENTAL__
+exports.enableLazyElements = ReactGlobals.__EXPERIMENTAL__
 
 -- Only used in www builds.
 exports.enableSchedulerDebugging = false
-
--- Disable javascript: URL strings in href for XSS protection.
-exports.disableJavaScriptURLs = false
 
 -- Experimental Host Component support.
 exports.enableFundamentalAPI = false
@@ -75,8 +76,6 @@ exports.enableScopeAPI = false
 
 -- Experimental Create Event Handle API.
 exports.enableCreateEventHandleAPI = false
-
--- New API for JSX transforms to target - https://github.com/reactjs/rfcs/pull/107
 
 -- We will enforce mocking scheduler with scheduler/unstable_mock at some point. (v18?)
 -- Till then, we warn about the missing mock, but still fallback to a legacy mode compatible version
@@ -94,10 +93,6 @@ exports.enableSuspenseCallback = false
 -- https://github.com/reactjs/rfcs/blob/createlement-rfc/text/0000-create-element-changes.md
 exports.warnAboutDefaultPropsOnFunctionComponents = false
 
-exports.disableSchedulerTimeoutBasedOnReactExpirationTime = false
-
-exports.enableTrustedTypesIntegration = false
-
 -- Enables a warning when trying to spread a 'key' to an element
 -- a deprecated pattern we want to get rid of in the future
 exports.warnAboutSpreadingKeyToJSX = true
@@ -112,28 +107,23 @@ exports.enableNewReconciler = true
 -- If there are no still-mounted boundaries, the errors should be rethrown.
 exports.skipUnmountedBoundaries = true
 
+-- Clean up stacktraces by filtering out stack frames coming from inside React
+-- itself.
+exports.filterInternalStackFrames = ReactGlobals.__DEV__
+	and GetFFlagReactFilterInternalStackFrames()
+
 -- --------------------------
 -- Future APIs to be deprecated
 -- --------------------------
-
--- Prevent the value and checked attributes from syncing
--- with their related DOM properties
-exports.disableInputAttributeSyncing = true
 
 exports.warnAboutStringRefs = false
 
 exports.disableLegacyContext = false
 
--- Disables children for <textarea> elements
-exports.disableTextareaChildren = false
-
 exports.disableModulePatternComponents = false
 
 -- We should remove this flag once the above flag becomes enabled
 exports.warnUnstableRenderSubtreeIntoContainer = false
-
--- Support legacy Primer support on internal FB www
-exports.enableLegacyFBSupport = true
 
 -- Updates that occur in the render phase are not officially supported. But when
 -- they do occur, we defer them to a subsequent render by picking a lane that's
@@ -145,9 +135,8 @@ exports.deferRenderPhaseUpdateToNextBatch = false
 -- Replacement for runWithPriority in React internals.
 exports.decoupleUpdatePriorityFromScheduler = true
 
-exports.enableDiscreteEventFlushingChange = false
-
 exports.enableEagerRootListeners = false
 
 exports.enableDoubleInvokingEffects = false
+
 return exports

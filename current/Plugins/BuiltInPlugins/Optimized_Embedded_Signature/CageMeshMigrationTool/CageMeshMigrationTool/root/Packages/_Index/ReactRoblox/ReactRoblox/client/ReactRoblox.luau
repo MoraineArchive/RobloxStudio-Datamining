@@ -10,6 +10,7 @@
 ]]
 local Packages = script.Parent.Parent.Parent
 
+local ReactGlobals = require(Packages.ReactGlobals)
 local ReactTypes = require(Packages.Shared)
 type ReactNodeList = ReactTypes.ReactNodeList
 local ReactRobloxHostTypes = require(script.Parent["ReactRobloxHostTypes.roblox"])
@@ -94,7 +95,7 @@ local Tag = require(Packages.Shared).Tag
 -- local didWarnAboutUnstableRenderSubtreeIntoContainer = false
 
 -- deviation: Built-ins for maps and sets are not required
--- if _G.__DEV__ then
+-- if ReactGlobals.__DEV__ then
 --   if
 --     typeof Map ~= 'function' or
 --     -- $FlowIssue Flow incorrectly thinks Map has no prototype
@@ -121,6 +122,16 @@ local Tag = require(Packages.Shared).Tag
 --   batchedEventUpdates
 -- )
 
+--[[
+	Lets you render some children into a different part of the DOM.
+
+	See [API reference for `createPortal`](https://react.dev/reference/react-dom/createPortal).
+
+	@param children Anything that can be rendered with React, such as an element or a Fragment.
+	@param container The Roblox instance to portal to.
+	@param key A unique string or number to be used as the portal’s [key](https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key).
+	@return A React element that can be returned from a React component.
+]]
 local function createPortal(
 	children: ReactNodeList,
 	container: Container,
@@ -158,7 +169,7 @@ end
 --   containerNode: Container,
 --   callback: any
 -- )
---   if _G.__DEV__ then
+--   if ReactGlobals.__DEV__ then
 --     if
 --       warnUnstableRenderSubtreeIntoContainer and
 --       not didWarnAboutUnstableRenderSubtreeIntoContainer
@@ -184,7 +195,7 @@ end
 --   container: Container,
 --   key: string?
 -- )
---   if _G.__DEV__ then
+--   if ReactGlobals.__DEV__ then
 --     if not didWarnAboutUnstableCreatePortal then
 --       didWarnAboutUnstableCreatePortal = true
 --       console.warn(
@@ -254,6 +265,14 @@ local exports = {
 
 	-- ROBLOX deviation: Export `act` function for testing purposes; in
 	-- production (a.k.a. scheduler isn't mocked), give an instructive error
+	--[[
+		Wrap any code rendering and triggering updates to your components into
+		`act()` calls.
+
+		Ensures that the behavior in your tests matches what happens in the
+		engine more closely by executing pending `useEffect`s before returning.
+		This also reduces the amount of re-renders done.
+	]]
 	act = function(_: () -> ()): ()
 		error(
 			"ReactRoblox.act is only available in testing environments, not "
@@ -263,7 +282,7 @@ local exports = {
 	end,
 }
 
-if _G.__ROACT_17_MOCK_SCHEDULER__ then
+if ReactGlobals.__ROACT_17_MOCK_SCHEDULER__ then
 	-- ROBLOX deviation: When the __ROACT_17_MOCK_SCHEDULER__ is enabled, we
 	-- re-export the `act` function from ReactReconciler. The global will
 	-- additionally force the scheduler to use the mock interface
@@ -274,12 +293,12 @@ end
 -- value
 local _foundDevTools = injectIntoDevTools({
 	findFiberByHostInstance = getClosestInstanceFromNode,
-	bundleType = if _G.__DEV__ then 1 else 0,
+	bundleType = if ReactGlobals.__DEV__ then 1 else 0,
 	version = ReactVersion,
 	rendererPackageName = "ReactRoblox",
 })
 
-if _G.__DEV__ then
+if ReactGlobals.__DEV__ then
 	-- if not foundDevTools and canUseDOM and window.top == window.self then
 	--   If we're in Chrome or Firefox, provide a download link if not installed.
 	--   if

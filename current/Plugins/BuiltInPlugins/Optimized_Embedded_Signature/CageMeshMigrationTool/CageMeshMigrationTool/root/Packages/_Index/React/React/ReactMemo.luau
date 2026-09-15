@@ -8,6 +8,7 @@
  ]]
 
 local Packages = script.Parent.Parent
+local ReactGlobals = require(Packages.ReactGlobals)
 -- ROBLOX: use patched console from shared
 local Shared = require(Packages.Shared)
 local console = Shared.console
@@ -35,6 +36,14 @@ local getComponentName = Shared.getComponentName
 
 local exports = {}
 
+--[[
+	Lets you skip re-rendering a component when its props are unchanged.
+
+	See [API reference for `memo`](https://react.dev/reference/react/memo).
+
+	@param Component The component to memoize.
+	@param propsAreEqual A function that will be used to determine if the props have changed.
+]]
 exports.memo = function<Props, T>(
 	-- ROBLOX deviation START: expanded type pulled from definitelytyped, not sure why upstream doesn't accept function component types
 	-- ROBLOX TODO Luau: React_Component<Props, any> gave me  Type 'React_Component<any, any>' could not be converted into '((any, any) -> (Array<(Array<<CYCLE>> | React_Element<any> | boolean | number | string)?> | React_Element<any> | boolean | number | string)?) | string'; none of the union options are compatible
@@ -42,7 +51,7 @@ exports.memo = function<Props, T>(
 	-- ROBLOX deviation END
 	compare: ((oldProps: Props, newProps: Props) -> boolean)?
 ): React_MemoComponent<Props, any>
-	if _G.__DEV__ then
+	if ReactGlobals.__DEV__ then
 		local validType = isValidElementType(type_)
 
 		-- We warn in this case but don't throw. We expect the element creation to
@@ -97,7 +106,7 @@ exports.memo = function<Props, T>(
 		compare = compare or nil,
 	}
 
-	if _G.__DEV__ then
+	if ReactGlobals.__DEV__ then
 		local name
 		-- ROBLOX deviation: use metatables to approximate Object.defineProperty logic
 		setmetatable(elementType, {

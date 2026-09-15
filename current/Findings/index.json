@@ -2483,7 +2483,7 @@
       "title": "Avatar abilities"
     },
     {
-      "classification": "correlated",
+      "classification": "strongly-correlated",
       "concepts": [
         "capture",
         "moments",
@@ -3244,11 +3244,62 @@
             "moments",
             "outcome"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/15/16-25-12Z_build_version-55808de4b1914919",
+          "evidencePath": "2026/09/15/16-25-12Z_build_version-55808de4b1914919/changes.json",
+          "family": "Distribution",
+          "id": "5a822a2d433f3020b1ac9c45a936b6e8a09ff30572c11fd81df504858260e4df",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentsCommon/lock.toml",
+          "kind": "files",
+          "observedAt": "2026-09-15T16:25:12.696Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "common",
+            "content",
+            "extra",
+            "index",
+            "lock",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/15/16-25-12Z_build_version-55808de4b1914919",
+          "evidencePath": "2026/09/15/16-25-12Z_build_version-55808de4b1914919/changes.json",
+          "family": "Distribution",
+          "id": "f2eae1d72701f8110aebeecacabdc0125f213bba73fba86dbf0b3a3475365292",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentsCreationFlow/lock.toml",
+          "kind": "files",
+          "observedAt": "2026-09-15T16:25:12.696Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "content",
+            "creation",
+            "extra",
+            "flow",
+            "index",
+            "lock",
+            "moments"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-09-15T04:51:20.967Z",
+      "lastObservedAt": "2026-09-15T16:25:12.696Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",

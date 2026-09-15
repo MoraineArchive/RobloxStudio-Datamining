@@ -19,7 +19,6 @@ Qt5Xml.dll
 QtitanBase.dll
 QtitanDocking.dll
 QtitanOffice2016Style.dll
-QtitanRibbon.dll
 SETUPAPI.dll
 SHELL32.dll
 SHLWAPI.dll

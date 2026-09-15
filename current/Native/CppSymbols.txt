@@ -223,6 +223,7 @@
 ??0QLocale@@QEAA@AEBVQString@@@Z	public: __cdecl QLocale::QLocale(class QString const & __ptr64) __ptr64
 ??0QLocale@@QEAA@XZ	public: __cdecl QLocale::QLocale(void) __ptr64
 ??0QLockFile@@QEAA@AEBVQString@@@Z	public: __cdecl QLockFile::QLockFile(class QString const & __ptr64) __ptr64
+??0QMainWindow@@QEAA@PEAVQWidget@@V?$QFlags@W4WindowType@Qt@@@@@Z	public: __cdecl QMainWindow::QMainWindow(class QWidget * __ptr64,class QFlags<enum Qt::WindowType>) __ptr64
 ??0QMatrix@@QEAA@XZ	public: __cdecl QMatrix::QMatrix(void) __ptr64
 ??0QMenu@@QEAA@AEBVQString@@PEAVQWidget@@@Z	public: __cdecl QMenu::QMenu(class QString const & __ptr64,class QWidget * __ptr64) __ptr64
 ??0QMenu@@QEAA@PEAVQWidget@@@Z	public: __cdecl QMenu::QMenu(class QWidget * __ptr64) __ptr64
@@ -410,7 +411,6 @@
 ??0QWidget@@QEAA@PEAV0@V?$QFlags@W4WindowType@Qt@@@@@Z	public: __cdecl QWidget::QWidget(class QWidget * __ptr64,class QFlags<enum Qt::WindowType>) __ptr64
 ??0QWidgetAction@@QEAA@PEAVQObject@@@Z	public: __cdecl QWidgetAction::QWidgetAction(class QObject * __ptr64) __ptr64
 ??0QXmlStreamReader@@QEAA@AEBVQByteArray@@@Z	public: __cdecl QXmlStreamReader::QXmlStreamReader(class QByteArray const & __ptr64) __ptr64
-??0RibbonMainWindow@Qtitan@@QEAA@PEAVQWidget@@V?$QFlags@W4WindowType@Qt@@@@@Z	public: __cdecl Qtitan::RibbonMainWindow::RibbonMainWindow(class QWidget * __ptr64,class QFlags<enum Qt::WindowType>) __ptr64
 ??0_Locinfo@std@@QEAA@PEBD@Z	public: __cdecl std::_Locinfo::_Locinfo(char const * __ptr64) __ptr64
 ??0_Lockit@std@@QEAA@H@Z	public: __cdecl std::_Lockit::_Lockit(int) __ptr64
 ??0facet@locale@std@@IEAA@_K@Z	protected: __cdecl std::locale::facet::facet(unsigned __int64) __ptr64
@@ -529,6 +529,7 @@
 ??1QLocalSocket@@UEAA@XZ	public: virtual __cdecl QLocalSocket::~QLocalSocket(void) __ptr64
 ??1QLocale@@QEAA@XZ	public: __cdecl QLocale::~QLocale(void) __ptr64
 ??1QLockFile@@QEAA@XZ	public: __cdecl QLockFile::~QLockFile(void) __ptr64
+??1QMainWindow@@UEAA@XZ	public: virtual __cdecl QMainWindow::~QMainWindow(void) __ptr64
 ??1QMenu@@UEAA@XZ	public: virtual __cdecl QMenu::~QMenu(void) __ptr64
 ??1QMenuBar@@UEAA@XZ	public: virtual __cdecl QMenuBar::~QMenuBar(void) __ptr64
 ??1QMessageBox@@UEAA@XZ	public: virtual __cdecl QMessageBox::~QMessageBox(void) __ptr64
@@ -632,7 +633,6 @@
 ??1QWidgetAction@@UEAA@XZ	public: virtual __cdecl QWidgetAction::~QWidgetAction(void) __ptr64
 ??1QXmlStreamAttributes@@QEAA@XZ	public: __cdecl QXmlStreamAttributes::~QXmlStreamAttributes(void) __ptr64
 ??1QXmlStreamReader@@QEAA@XZ	public: __cdecl QXmlStreamReader::~QXmlStreamReader(void) __ptr64
-??1RibbonMainWindow@Qtitan@@UEAA@XZ	public: virtual __cdecl Qtitan::RibbonMainWindow::~RibbonMainWindow(void) __ptr64
 ??1_Locinfo@std@@QEAA@XZ	public: __cdecl std::_Locinfo::~_Locinfo(void) __ptr64
 ??1_Lockit@std@@QEAA@XZ	public: __cdecl std::_Lockit::~_Lockit(void) __ptr64
 ??1facet@locale@std@@MEAA@XZ	protected: virtual __cdecl std::locale::facet::~facet(void) __ptr64
@@ -3041,6 +3041,7 @@
 ?qt_metacall@QListWidget@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z	public: virtual int __cdecl QListWidget::qt_metacall(enum QMetaObject::Call,int,void * __ptr64 * __ptr64) __ptr64
 ?qt_metacall@QLocalServer@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z	public: virtual int __cdecl QLocalServer::qt_metacall(enum QMetaObject::Call,int,void * __ptr64 * __ptr64) __ptr64
 ?qt_metacall@QLocalSocket@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z	public: virtual int __cdecl QLocalSocket::qt_metacall(enum QMetaObject::Call,int,void * __ptr64 * __ptr64) __ptr64
+?qt_metacall@QMainWindow@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z	public: virtual int __cdecl QMainWindow::qt_metacall(enum QMetaObject::Call,int,void * __ptr64 * __ptr64) __ptr64
 ?qt_metacall@QMenu@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z	public: virtual int __cdecl QMenu::qt_metacall(enum QMetaObject::Call,int,void * __ptr64 * __ptr64) __ptr64
 ?qt_metacall@QMenuBar@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z	public: virtual int __cdecl QMenuBar::qt_metacall(enum QMetaObject::Call,int,void * __ptr64 * __ptr64) __ptr64
 ?qt_metacall@QMessageBox@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z	public: virtual int __cdecl QMessageBox::qt_metacall(enum QMetaObject::Call,int,void * __ptr64 * __ptr64) __ptr64
@@ -3086,7 +3087,6 @@
 ?qt_metacall@QValidator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z	public: virtual int __cdecl QValidator::qt_metacall(enum QMetaObject::Call,int,void * __ptr64 * __ptr64) __ptr64
 ?qt_metacall@QWidget@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z	public: virtual int __cdecl QWidget::qt_metacall(enum QMetaObject::Call,int,void * __ptr64 * __ptr64) __ptr64
 ?qt_metacall@QWidgetAction@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z	public: virtual int __cdecl QWidgetAction::qt_metacall(enum QMetaObject::Call,int,void * __ptr64 * __ptr64) __ptr64
-?qt_metacall@RibbonMainWindow@Qtitan@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z	public: virtual int __cdecl Qtitan::RibbonMainWindow::qt_metacall(enum QMetaObject::Call,int,void * __ptr64 * __ptr64) __ptr64
 ?qt_metacast@DockDocumentPanel@Qtitan@@UEAAPEAXPEBD@Z	public: virtual void * __ptr64 __cdecl Qtitan::DockDocumentPanel::qt_metacast(char const * __ptr64) __ptr64
 ?qt_metacast@DockPanelManager@Qtitan@@UEAAPEAXPEBD@Z	public: virtual void * __ptr64 __cdecl Qtitan::DockPanelManager::qt_metacast(char const * __ptr64) __ptr64
 ?qt_metacast@DockWidgetPanel@Qtitan@@UEAAPEAXPEBD@Z	public: virtual void * __ptr64 __cdecl Qtitan::DockWidgetPanel::qt_metacast(char const * __ptr64) __ptr64
@@ -3128,6 +3128,7 @@
 ?qt_metacast@QListWidget@@UEAAPEAXPEBD@Z	public: virtual void * __ptr64 __cdecl QListWidget::qt_metacast(char const * __ptr64) __ptr64
 ?qt_metacast@QLocalServer@@UEAAPEAXPEBD@Z	public: virtual void * __ptr64 __cdecl QLocalServer::qt_metacast(char const * __ptr64) __ptr64
 ?qt_metacast@QLocalSocket@@UEAAPEAXPEBD@Z	public: virtual void * __ptr64 __cdecl QLocalSocket::qt_metacast(char const * __ptr64) __ptr64
+?qt_metacast@QMainWindow@@UEAAPEAXPEBD@Z	public: virtual void * __ptr64 __cdecl QMainWindow::qt_metacast(char const * __ptr64) __ptr64
 ?qt_metacast@QMenu@@UEAAPEAXPEBD@Z	public: virtual void * __ptr64 __cdecl QMenu::qt_metacast(char const * __ptr64) __ptr64
 ?qt_metacast@QMenuBar@@UEAAPEAXPEBD@Z	public: virtual void * __ptr64 __cdecl QMenuBar::qt_metacast(char const * __ptr64) __ptr64
 ?qt_metacast@QMessageBox@@UEAAPEAXPEBD@Z	public: virtual void * __ptr64 __cdecl QMessageBox::qt_metacast(char const * __ptr64) __ptr64
@@ -3173,7 +3174,6 @@
 ?qt_metacast@QValidator@@UEAAPEAXPEBD@Z	public: virtual void * __ptr64 __cdecl QValidator::qt_metacast(char const * __ptr64) __ptr64
 ?qt_metacast@QWidget@@UEAAPEAXPEBD@Z	public: virtual void * __ptr64 __cdecl QWidget::qt_metacast(char const * __ptr64) __ptr64
 ?qt_metacast@QWidgetAction@@UEAAPEAXPEBD@Z	public: virtual void * __ptr64 __cdecl QWidgetAction::qt_metacast(char const * __ptr64) __ptr64
-?qt_metacast@RibbonMainWindow@Qtitan@@UEAAPEAXPEBD@Z	public: virtual void * __ptr64 __cdecl Qtitan::RibbonMainWindow::qt_metacast(char const * __ptr64) __ptr64
 ?qt_qFindChild_helper@@YAPEAVQObject@@PEBV1@AEBVQString@@AEBUQMetaObject@@V?$QFlags@W4FindChildOption@Qt@@@@@Z	class QObject * __ptr64 __cdecl qt_qFindChild_helper(class QObject const * __ptr64,class QString const & __ptr64,struct QMetaObject const & __ptr64,class QFlags<enum Qt::FindChildOption>)
 ?qt_qFindChildren_helper@@YAXPEBVQObject@@AEBVQString@@AEBUQMetaObject@@PEAV?$QList@PEAX@@V?$QFlags@W4FindChildOption@Qt@@@@@Z	void __cdecl qt_qFindChildren_helper(class QObject const * __ptr64,class QString const & __ptr64,struct QMetaObject const & __ptr64,class QList<void * __ptr64> * __ptr64,class QFlags<enum Qt::FindChildOption>)
 ?quadTo@QPainterPath@@QEAAXAEBVQPointF@@0@Z	public: void __cdecl QPainterPath::quadTo(class QPointF const & __ptr64,class QPointF const & __ptr64) __ptr64
@@ -4262,7 +4262,6 @@
 ?staticMetaObject@QTreeWidget@@2UQMetaObject@@B	public: static struct QMetaObject const QTreeWidget::staticMetaObject
 ?staticMetaObject@QWidget@@2UQMetaObject@@B	public: static struct QMetaObject const QWidget::staticMetaObject
 ?staticMetaObject@QWindow@@2UQMetaObject@@B	public: static struct QMetaObject const QWindow::staticMetaObject
-?staticMetaObject@RibbonMainWindow@Qtitan@@2UQMetaObject@@B	public: static struct QMetaObject const Qtitan::RibbonMainWindow::staticMetaObject
 ?staticQtMetaObject@QObject@@1UQMetaObject@@B	protected: static struct QMetaObject const QObject::staticQtMetaObject
 ?status@QDataStream@@QEBA?AW4Status@1@XZ	public: enum QDataStream::Status __cdecl QDataStream::status(void)const __ptr64
 ?statusBar@QMainWindow@@QEBAPEAVQStatusBar@@XZ	public: class QStatusBar * __ptr64 __cdecl QMainWindow::statusBar(void)const __ptr64

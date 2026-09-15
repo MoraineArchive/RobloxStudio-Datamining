@@ -122,49 +122,49 @@
     "categories": [
       "UI"
     ],
-    "checksum": "e90a89cbc6383bf5d12877090ccd66fd",
+    "checksum": "d042b14754b2338af2d933a40c35a10f",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/9SliceEditor.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "ef046ee8404d2236c955dd4f32e149e4",
+    "checksum": "f0d68760fab0de9bb590eca44cc5886c",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/AdaptiveAnimationSupport.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "84fea1cdf8125a4698c0bf0ba7236453",
+    "checksum": "a4108a349239483f2a23bb1df50cca1f",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/AlignmentTool.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "fef5b723b4048e01f90ec7a9d0e19456",
+    "checksum": "052c8df1783cee484a568e569a402ba3",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/AnimationClipEditor.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "6003cbdcb4c289f6efe454d0d3c98ae1",
+    "checksum": "26a22f4c1b95fe03df1a8517f350c9d0",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/AssetImporter.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "2f8184dad206bb9afe674dc5152579b4",
+    "checksum": "57247174da95412d257c6fd572e29514",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/AudioDiscovery.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "ca55ec9178727c8958b16fbb63fe8116",
+    "checksum": "ce5d722f2015dd2244201e59a87b64ab",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/AutomaticRun.rbxm"
   },
   {
@@ -172,7 +172,7 @@
       "UI",
       "avatar"
     ],
-    "checksum": "e29fc5ddd8282cd31775fdbb22f2afe9",
+    "checksum": "e2befe024a7940d32e71f75586a65bc0",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/AvatarCompatibilityPreviewer.rbxm"
   },
   {
@@ -180,98 +180,98 @@
       "UI",
       "avatar"
     ],
-    "checksum": "cf6fcd97eeac9bf956022094f8ce6aaa",
+    "checksum": "b45c25b2e2101413bb2f20e3218cc991",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/AvatarImporter.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "e91a84d1a2669a4ba7609f613e62fca9",
+    "checksum": "f56fede9198e1830a575814674379df2",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/CageMeshMigrationTool.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "8e302938dc1e542c5c7941e1154b3225",
+    "checksum": "683904f0726db4d1a50aa4a5d3ae09ed",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/CompositorDebugger.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "730e4235775415deb2b9e8eced89b3dc",
+    "checksum": "d5e6eb67494bb1dc0fd4e5c0205558a5",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/ConstraintTool.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "d682840c0790e02718501ff745bb65bd",
+    "checksum": "19e9e657a9131730b495a78bbcf806bb",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/ConvertToPackage.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "dacec7c333a40e06dec3c5d916efbd71",
+    "checksum": "92e45c8f85ea197f361d5c7f9e843bfa",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/DEPRECATED_AssetManager.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "669b9d6b6309bba9726432d0d67f8f84",
+    "checksum": "e1fb6c65dc3e1c6044f46111934539ad",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/DeveloperInspector.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "16c31e2f9990dc1f00e533c002ec61d3",
+    "checksum": "e2d21c4abb763bcae0e1c4ce00bc512b",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/DeveloperStorybook.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "067fd09b872910d57769126946c8869d",
+    "checksum": "a0fd9979a7b416cf8c491c88c3ecdb1c",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/DeviceEmulator.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "601cfdeb73e3d8f188a0f5b9b901b8a0",
+    "checksum": "c17183f9c4ceec4da68f633a22f9951f",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/DraftsWidget.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "e7eae5bc9f644f3f9959c58730f5807b",
+    "checksum": "129caddf2f4b6e94e339477760b98735",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/DynamicHeadExportTool.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "9a1e7ee2e68c43ccf51d56962d7a5f4f",
+    "checksum": "7874b9431eaf68aa8d70bd400606a44d",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/EventEmulator.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "9c13103fe7128b549bc37dc45ffee8ec",
+    "checksum": "0cac6075ac6040b11c95a5afbd2393fc",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/ForceVisualizationControl.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "45c6cb65042e89dd94d1dfa80b6aa56f",
+    "checksum": "c8b0f4da979f5811be4606bef4685cc8",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/GameSettings.rbxm"
   },
   {
@@ -279,21 +279,21 @@
       "UI",
       "avatar"
     ],
-    "checksum": "1b562b2ed5c4995c270a748805b673fd",
+    "checksum": "93ac2c6b40f892550cfabcdce7ceedbe",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/InternalAvatarTools.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "3e53662e738f0cf1dc4e739c13f49b0f",
+    "checksum": "9d906044b42c8c4e03e778758a2f7ea0",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/KnowledgeTutorials.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "1ad73144d417768d19f2e49d277ce252",
+    "checksum": "f6db87f2f2b238df4754cac00630cdd8",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/LayeredClothingEditor.rbxm"
   },
   {
@@ -301,14 +301,14 @@
       "UI",
       "chat"
     ],
-    "checksum": "443a043b6ab7662bc642a0173e2a1af3",
+    "checksum": "87b9111e2de8e6758b6285272036ef96",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/LegacyChatDeprecation.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "265e5c4c29cc813c0be41f6ffc45bf62",
+    "checksum": "db40e634abfec3b8373ab7f724c9d35f",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/LightGuides.rbxm"
   },
   {
@@ -316,126 +316,126 @@
       "UI",
       "localization"
     ],
-    "checksum": "827d6b9bdb74a51a0ae4bc3593af6dea",
+    "checksum": "f5ab3a1bbf49a995c9859273db47daa9",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/LocalizationTools.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "9422242ef3575b19006633178fb1e0d4",
+    "checksum": "ea9526da15656efa7e8c8a6417c19d59",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/ManageCollaborators.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "d5ac631f989c277904eb2ed2f7c509a9",
+    "checksum": "8a4ad26140dff1687d262fbb45a2b241",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/MaterialGenerator.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "09ed02056600b8963d71718db05ade42",
+    "checksum": "fa15ce5e7c03f8fc43b075c2618c3237",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/MaterialManager.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "cfb21c6590a5e5cff57e40a2cbf7c91e",
+    "checksum": "3419114993734709ead03a019617e79e",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/MaterialPicker.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "1903e6e30b9a1f049643927720878974",
+    "checksum": "91ce1880be4d9f1212eef1b9ddab043e",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/MoveDragger.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "bddfecac889fd9d920a17ddf9256795b",
+    "checksum": "4b86c286c96053bcb3b95850138458c5",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/NestedPackagePublisher.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "6c53c1e98b0c36b8cb1c4d81f5295c51",
+    "checksum": "e87edb21ddba664596f17d93a598a311",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/PathEditor.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "10e5778e3ada083cf295be70c2799d7a",
+    "checksum": "d6f0282ed9a66c4c72627ec75f19cd0e",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/PivotEditor.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "5b16ac68590bc62af0218b28d557ba0f",
+    "checksum": "1d9d14f4a6a0e0aa5a426871bf502e35",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/PlayerEmulator.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "7fa9f30f39f0f853699b32412e44be45",
+    "checksum": "282e0e01588014b29ebb826fedb111f0",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/PublishPlaceAs.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "538ab432d387b5eafe0313ae870558d5",
+    "checksum": "06695a57a9e813668e5b3cb4251a0292",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/R15Migrator.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "2aaf77b3efc8e7896845017e3f04e127",
+    "checksum": "2c4772ba5a5171b8652b1de37f077bfc",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/RigGenerator.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "d7786e6bd27ca9f3487059067dc30b66",
+    "checksum": "6489c160df72723ba3726b8c4ba12e4a",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/RoduxDevtools.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "a6606145d0d549552544d4332599a683",
+    "checksum": "874daf64fc142937279b5ffedd90f904",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/RotateDragger.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "8e558035752142b68c469400c69b8fe3",
+    "checksum": "3d71798ee78411b375f9c944122f2349",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/ScaleDragger.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "0dc23f3317d8feaa6e4562261bec3ad6",
+    "checksum": "d482ea611f7a564bc01c8f03d82765d9",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/SelectDragger.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "4c315d62552561282e4a8d798e1c1fab",
+    "checksum": "f169b6e6b6322dab2d358c55be3b7a9b",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/SimulationStep.rbxm"
   },
   {
@@ -443,7 +443,7 @@
       "UI",
       "social"
     ],
-    "checksum": "45466aa3cae915bee34272d808dbe715",
+    "checksum": "d45536008c5db9fa6f38db20fb2cd9a6",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/SocialPresence.rbxm"
   },
   {
@@ -451,175 +451,175 @@
       "UI",
       "camera"
     ],
-    "checksum": "5c62ccde4ae680f679c3229746c05a8f",
+    "checksum": "658596e40c1e220b593ab32ee4b9564e",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/StudioCameraUI.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "d5472c4e000d78462c400fb480483374",
+    "checksum": "e74ab3179a4ad2246976e01e4e6dfee2",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/StyleEditor.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "8252cfbd886ce4a740a79905c60f1626",
+    "checksum": "10d58a3745355c7659fac73e3eeb660b",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/TagEditor.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "f5829fe87ae092eab25721961abd1b5b",
+    "checksum": "f7256f4afc90584f4f2cb50c4a82eff6",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/TerrainEditor.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "36d2c57ca8056afdaa7841394330adcc",
+    "checksum": "70e590fab8da1585b9f5c53663111f4c",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/TerrainPaletteEditor.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "8beb8029ebef23475b980c9000720ddd",
+    "checksum": "221d953ef223714e808050b2a9255ae8",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/TextureGenerator.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "75095e5814da3ac28e71bdda83b9e578",
+    "checksum": "9cefa7fac0d597adb05dea5ac2753eae",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/TextureViewer.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "6ac0e70acafa753388a63196c3f7afc1",
+    "checksum": "70df8d8009dd12bbbe5876e179b4a967",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/Toolbox.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "6e3a27283fb00f11ccb7eee20d1d38b0",
+    "checksum": "e2ab6325249bac111dfdb05b20a291f2",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/TutorialLinks.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "c59bcb5fbc93228faffd8c0705a1220c",
+    "checksum": "a9efb7d431a5664f04c5ccf21d96aea9",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/UIEditor.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "94119583d5c078105b2468ddd4d73c46",
+    "checksum": "c7693a0db6a8aef771376d5be1903e14",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/VRStatus.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "fdfc68b603d02cace7de4603db117397",
+    "checksum": "64914916b8e3990cfe7826299463197a",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/ViewSelector.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "7f4fd7493667295cd6c5314e998b39be",
+    "checksum": "9780957d80cef36e213a8ceb4014afaf",
     "path": "BuiltInPlugins/Optimized_Embedded_Signature/WindControl.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "206f7b8088dbce58e81b9f9c05486409",
+    "checksum": "8aee2ba8e572ad91396efe477780501d",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/ActivityFeed.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "f862e3e960417fa50297c9ede3e1ebf1",
+    "checksum": "d1d5577f00171161b23d612df9a04e30",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/AnimationGraphEditor.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "a03e6773127b3b0607101e862512d9b5",
+    "checksum": "369fd16b716a1b202877aeb171202020",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/AssetAccess.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "59d1459d6bf8129ecda712ce292fd713",
+    "checksum": "1f6b4d439432177ce2c36af3c6423a80",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/AssetExport.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "05f559758dcc930f733f3492afc8869e",
+    "checksum": "92204db21f8d6e07d406ed6645f33e05",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/AssetManager.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "6cbb32bfe6ed9bf6f0fd3642ca5712c9",
+    "checksum": "f3c8e5688b9052b098679d4d9dc8f742",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/AssetQualityValidation.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "6f85d6fd982362244f88cf95be13e909",
+    "checksum": "dc106b39320bc2f80686624fdaba9dce",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/Assistant.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "2d6683f7be602ef170073404f3814a5d",
+    "checksum": "5f463a5401b597dad27b54ad651f1f5d",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/AttenuationCurveEditor.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "cfe9a9b27382d34438c817fdf8610960",
+    "checksum": "c30a95a15875c7c8d34700a90f94d173",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/AudioActions.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "9792bd849ffdcf99a6f1384849f22152",
+    "checksum": "74942ae99d5b1e9bd0d655344d9efb03",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/AudioCompressorEditor.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "b9a953b3e39bfa5c163b5532c7a24240",
+    "checksum": "bda15d3f291e52849f81d01266982cf4",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/AudioEqualizerEditor.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "789bd7bf64d53c0cf1b6d894130e86d2",
+    "checksum": "8f90e803db4e3d08abc968e227607ab1",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/AudioPlayerEditor.rbxm"
   },
   {
@@ -627,112 +627,112 @@
       "UI",
       "avatar"
     ],
-    "checksum": "83b81dc5f03fcc79a29ecb1c3b5ecff9",
+    "checksum": "dbbfdd1fa7958c891ced28b5987f4dd5",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/AvatarSettings.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "e47af7580aedc431370b6b3699dd846e",
+    "checksum": "aa39591803af588d8671ba9c782a05ce",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/CancellableDialog.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "70b40407cf9d9c13280e8a48fcabe203",
+    "checksum": "80773eaa1b831bc258a94534c234327b",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/CollisionGroupsEditor.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "6a6358df22ca4469e12c9710a2d32279",
+    "checksum": "a55db2400adce4463fb77d2c6b550243",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/ConnectionIndicator.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "97ceb05fdbb225afda4e6244d30f7cd1",
+    "checksum": "e0e3dfad61b1bd2433de47b4bf6ea90c",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/ControlsEmulator.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "f56e093e356373813c852f79babb5cce",
+    "checksum": "fa8f2ad286e257f280700517929ca0b8",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/CreatorConfig.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "9997d4666709d91445c0cb75761ee3c4",
+    "checksum": "0c06d88aa82fe8a69295b1e66c27a74c",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/Debugger.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "b58fe82af2c2dd4850e8bf1f1f996baa",
+    "checksum": "434a9dfb43ae47b91180bf57ddfc5935",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/DeviceSimulatorToolbar.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "7e821e2bdd3f06d8427a5386c80cf694",
+    "checksum": "3bef977e6b07ae71b44d2f7823b4a95a",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/Dialog.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "e934107d330a6c5d4019a497b374f56b",
+    "checksum": "7b3dc5ff56ad52bc8c97971c2e241a5e",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/DirectionalCurveEditor.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "53de4aca647207e4c43607c845e6b98c",
+    "checksum": "bad0ace96862efb875cd98f40fc5f3d0",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/ExplorerPlugin.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "a7daf58658723af3df6d79c195056dab",
+    "checksum": "9161b074c9d6beb2416921d2045dfaf5",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/FindReplaceAll.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "66b23b685d0f6cb610a4239f81105e61",
+    "checksum": "ff5177f3bd3703f68bad637821f34779",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/Flipbook.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "ba1ac0658125ceba8c955c28ed91e7fb",
+    "checksum": "659e6c6811f4de712d5b28d6674d84fe",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/Footer.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "c772a4de344018cf62e9c7b06f67eb13",
+    "checksum": "64ffa4774c13e7a4dc3dd03b4532defe",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/Gen3d.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "63b1c9ae98500d53d24ac1e2e87dd835",
+    "checksum": "31fdeef8cbb397dc183dda386b8b8edf",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/HotModuleReplacement.rbxm"
   },
   {
@@ -740,133 +740,133 @@
       "UI",
       "input"
     ],
-    "checksum": "01c800d2eeab44883b920230aa6d3195",
+    "checksum": "15c7a6e559697c6bf59a1611811938a7",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/InputActionManager.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "bf232a9bfb943480c7ea10890b8edfd7",
+    "checksum": "02936a6a1e70e9a09a5f6a2c51909e86",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/LoginPage.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "f06efcd325218bf055c8b8be683b729b",
+    "checksum": "b46a1ab81dd01c9b8b91dc51580daa95",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/ModerationDialog.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "97970825306f43b6bfab5f4296a153a7",
+    "checksum": "f2412d5b9bb669217c42c5f6746a7d3c",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/MultitouchEmulator.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "9f1bac019c8e803ed17594b01408fe04",
+    "checksum": "182bd5d7a14c0826b3d6207b839b8e08",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/Notifications.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "641d446ef619240c47db980efb16f89a",
+    "checksum": "879af5023e4a7dc0d8fb9ce9e5d50faf",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/PartyEmulator.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "be8a71474d05c7dac1ca0466f3725f94",
+    "checksum": "16cf2d32430359cc53c34e6835f9bebb",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/PerformanceTools.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "501fe57629e901f7878e6be3751017e8",
+    "checksum": "0b747408d033cf129d4f471034bf6905",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/PlaceAnnotations.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "290d596cd9424ee5e31dde7139c61553",
+    "checksum": "ca65ae9bbdfdb388792e09ec6acd2cbd",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/PlaceVersionHistory.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "73a67a3cbb96589a05df1bfd085af663",
+    "checksum": "d44afa79ae9bf6369d43cf1bcbc4f937",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/PluginManagement.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "3a218df9e8a31845cb5e369a5bd3965b",
+    "checksum": "be91adf9bc5b505997c9284d8c9ea0ef",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/PropertiesPlugin.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "9273fee13d7df499b978d4f06eb8c92c",
+    "checksum": "ac4674109d240dde4281c2d113d1991d",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/Reimport.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "9915ada28036efd12292937045464bb6",
+    "checksum": "e6a6349b322b5bb4b48945f4c8e7d7d4",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/Ribbon.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "5a46e57292b3fe94e8f7e3df89052d97",
+    "checksum": "8328742a7a939af685e8c45eb7c63b99",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/SceneAnalysis.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "7f2bc91487663561a340de5f0899f505",
+    "checksum": "712d191ced49efc3875d6edec1073778",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/StartPage.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "130a822c11915d7a08a3ccb5a48ef04b",
+    "checksum": "be742869c28918501fc9f46b7db86783",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/SuperTemplate.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "a0d62e89b8bba18fe8c8f6a078c19e14",
+    "checksum": "58dbcae68f84daf98ee40b72373471ad",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/TeamCreateCollaborators.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "26dabc13d4ca843841aec03002e53514",
+    "checksum": "5744d42c23ae34b4cc9e5a8960df7e4e",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/TransformDragger.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "49b8700ca0b5f0c36afd83fd09513de6",
+    "checksum": "6710298faa9aaa407e60ce27179baae5",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/Tutorials.rbxm"
   },
   {
@@ -874,14 +874,14 @@
       "UI",
       "input"
     ],
-    "checksum": "c7015c086b849409ce9b4a4f0284d046",
+    "checksum": "8a50f8bb3c99069c78ffbac2ebd1b1eb",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/UserInputPlayback.rbxm"
   },
   {
     "categories": [
       "UI"
     ],
-    "checksum": "168a82fd0dcdf2c9750bb911b37001fc",
+    "checksum": "d0d44c966ecc267d07becb93fb362575",
     "path": "BuiltInStandalonePlugins/Optimized_Embedded_Signature/VisualizationModes.rbxm"
   },
   {
@@ -1421,7 +1421,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "6230ebf3c3277c59a2fe4e0644267cd9",
+    "checksum": "7b3a60fb9681c798ec2404208b6f813c",
     "path": "ExtraContent/LuaPackages/Packages/ServiceContractsProto.lua"
   },
   {
@@ -5283,7 +5283,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "ef388500fc7c7bd3be7ffa737176e380",
+    "checksum": "fb9f6f6fccc6456d3e1aa8b49b8b6fbf",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Components/Accordion/Item/Accordion.Item.story.lua"
   },
   {
@@ -5438,7 +5438,7 @@
       "LuaPackages",
       "avatar"
     ],
-    "checksum": "2b2943ca352cc29598671769656f6964",
+    "checksum": "209d5b15d29a5bd81671c3f5fb10c461",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Components/Avatar/Avatar.lua"
   },
   {
@@ -5488,7 +5488,7 @@
       "LuaPackages",
       "avatar"
     ],
-    "checksum": "10e1ee9594309dfa9d30257aa487649e",
+    "checksum": "6e6174a1be7cf27fcbf346864775708e",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Components/Avatar/useAvatarVariants.lua"
   },
   {
@@ -7236,7 +7236,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "3ac81fe1495ea04f2347dc62722f4a8b",
+    "checksum": "e2cb12676e1387e110471eae8cd8d06e",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Components/Grid/Cell/Grid.Cell.story.lua"
   },
   {
@@ -7263,7 +7263,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "d3d817843934db906509b46b770348bf",
+    "checksum": "c2743d3ab3d949e1fc5c036326161bab",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Components/Grid/Debug/Grid.Debug.story.lua"
   },
   {
@@ -7353,7 +7353,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "004d9a9f55ac645d6cca04ef510f2792",
+    "checksum": "65f29f04556226b3bc1a609b09688131",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Components/HeaderBar/Actions/HeaderBar.Actions.story.lua"
   },
   {
@@ -7380,7 +7380,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "2242ac256d673545800a33d12ab47b42",
+    "checksum": "8ef56d5631a6c4e1ddf81354cdfc6a46",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Components/HeaderBar/Content/HeaderBar.Content.story.lua"
   },
   {
@@ -7443,7 +7443,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "5a5e736868e3f600ae7c9c8962b73b99",
+    "checksum": "0e8d212f09aadc2da10930d09243e593",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Components/HeaderBar/Leading/HeaderBar.Leading.story.lua"
   },
   {
@@ -7470,7 +7470,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "e256f0dd886a0f51db627603da702f77",
+    "checksum": "a5a06b58fddbc1306526487357ac3019",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Components/HeaderBar/Trailing/HeaderBar.Trailing.story.lua"
   },
   {
@@ -8198,7 +8198,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "2bc5d4d339d5d35709240a4cc819c0f3",
+    "checksum": "9b36fa2a3a07ff6b0c3331a865569390",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Components/Knob/Knob.lua"
   },
   {
@@ -8835,7 +8835,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "5fe9935f22ad6293ed71c1709fc36720",
+    "checksum": "a034008634d300c2089d31f7b2148aef",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Components/Popover/Anchor/Popover.Anchor.story.lua"
   },
   {
@@ -8862,7 +8862,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "effb4a0d7e69feff62dad7eb2208bc6d",
+    "checksum": "d27759a4a627b398015454b0841d5d7d",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Components/Popover/Content/Popover.Content.story.lua"
   },
   {
@@ -9406,7 +9406,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "90d9b19cfb9ec979a29065c114f7dc81",
+    "checksum": "3ba8fdaab1bcadf3ddd9cd265247f959",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Components/Sheet/Actions/Sheet.Actions.story.lua"
   },
   {
@@ -9451,7 +9451,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "7b42e93cc1c6c24a756378387be823b4",
+    "checksum": "5b0f1dd968385330bba11c358cbe2e22",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Components/Sheet/Content/Sheet.Content.story.lua"
   },
   {
@@ -9478,7 +9478,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "b20f33e9c902f2dda879bb431ce51ed5",
+    "checksum": "8486cbd6dd8af75ae6d8c127acca8888",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Components/Sheet/FullBleed/Sheet.FullBleed.story.lua"
   },
   {
@@ -9505,7 +9505,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "0cd11268730a2a43a0e3d4b5afb9c533",
+    "checksum": "1110f7dc94dd522d7f8a14acd62c890a",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Components/Sheet/Header/Sheet.Header.story.lua"
   },
   {
@@ -9694,7 +9694,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "5d978321e5fc8e73bc03c4a6f74309c5",
+    "checksum": "03cd125121644c793aa9fa294828c91b",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Components/Slider/Slider.code.md"
   },
   {
@@ -9703,7 +9703,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "14129821283f5f2e00f93984918bb073",
+    "checksum": "e5b00f55f613644d83653a614486cfb0",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Components/Slider/Slider.lua"
   },
   {
@@ -9712,7 +9712,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "24d409e5cd374ac642d6c68b8cd22676",
+    "checksum": "9a1e927b9a395ee4bbd04cd503610ef5",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Components/Slider/Slider.story.lua"
   },
   {
@@ -9766,6 +9766,15 @@
       "ExtraContent",
       "LuaPackages"
     ],
+    "checksum": "789e78eab52a420679359dff96b5bf6f",
+    "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Components/Slider/calculateSliderFraction.lua"
+  },
+  {
+    "categories": [
+      "content",
+      "ExtraContent",
+      "LuaPackages"
+    ],
     "checksum": "308d927f93625d095b481215630e7046",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Components/Slider/calculateSliderPositionDelta.lua"
   },
@@ -9793,8 +9802,19 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "0a67c799d3a8b92765dbec8ed71a7734",
+    "checksum": "2fbf1783996adaa1268d21273971055b",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Components/Slider/calculateSliderValueFromPosition.lua"
+  },
+  {
+    "categories": [
+      "content",
+      "ExtraContent",
+      "LuaPackages",
+      "UI",
+      "input"
+    ],
+    "checksum": "cb4f294206e64efd94536df4cba7ea43",
+    "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Components/Slider/getGuiInputPosition.lua"
   },
   {
     "categories": [
@@ -9812,7 +9832,7 @@
       "LuaPackages",
       "input"
     ],
-    "checksum": "07352cabb2e2fe8231119bdf656f6e56",
+    "checksum": "57bc2a6bcb3554ff0a2fb38baa3ef125",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Components/Slider/useSliderDirectionalInput.lua"
   },
   {
@@ -9830,7 +9850,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "aaf47fa65e38080b5abdc1385b46956b",
+    "checksum": "687b9ef66ba544307114bda5cd1de787",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Components/Slider/useSliderVariants.lua"
   },
   {
@@ -9920,7 +9940,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "530113732ac2b1a470d7d57113200fd6",
+    "checksum": "2f0d866c062559d5a837a70519e1f7f3",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Components/StatusIndicator/StatusIndicator.code.md"
   },
   {
@@ -9929,7 +9949,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "6449439821098a03527a59433f1952bd",
+    "checksum": "2e0c0bd36562aace3ef5dcfac5eaa42d",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Components/StatusIndicator/StatusIndicator.lua"
   },
   {
@@ -9938,7 +9958,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "0ab64ee75d73c84428f6dd17e838eb61",
+    "checksum": "9b5a0bba536bca3992a827d2ed11491f",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Components/StatusIndicator/StatusIndicator.story.lua"
   },
   {
@@ -9965,7 +9985,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "aad82517a98196826f0e75feedcf2ef6",
+    "checksum": "f0b80c0bd125dc756e67f930991defcd",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Components/StatusIndicator/useStatusIndicatorVariants.lua"
   },
   {
@@ -12697,7 +12717,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "5017657be0d6574a1c45eb6189c9159a",
+    "checksum": "0de7692cdc2414b8a554c27e681d1c5a",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Utility/Flags.lua"
   },
   {
@@ -12937,7 +12957,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "36061181f65811e28f8f0ec7c38618eb",
+    "checksum": "26805a6b6c7d92ff2c3acf78b63f6125",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Utility/Stories/Planned/Autocomplete/Autocomplete.story.lua"
   },
   {
@@ -12955,7 +12975,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "11e5038006a3a19e2a2b58509432cb09",
+    "checksum": "e2e2a3b74eb04de30025e4957be5d5c3",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Utility/Stories/Planned/Breadcrumb/Breadcrumb.story.lua"
   },
   {
@@ -12973,7 +12993,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "d4869915336d67808dccc05934260138",
+    "checksum": "9a1a128cb888e0511c71fcd8202c2861",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Utility/Stories/Planned/Card/Card.story.lua"
   },
   {
@@ -12993,7 +13013,7 @@
       "LuaPackages",
       "chat"
     ],
-    "checksum": "1ded8dc7e40f963995b4d6fe9daeadae",
+    "checksum": "c592eaa7cc72146dbad4b6ef59bea302",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Utility/Stories/Planned/ChatBubble/ChatBubble.story.lua"
   },
   {
@@ -13011,7 +13031,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "e0e2412491ad5d515eb2dbdf4407e123",
+    "checksum": "7b7254e9dcbe1805e766b44b3600799d",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Utility/Stories/Planned/CollectionCarousel/CollectionCarousel.story.lua"
   },
   {
@@ -13029,7 +13049,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "072cb756847e9ccf76fdfac48c1ea1ad",
+    "checksum": "37d7209c8b80f7176cca90555645f25d",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Utility/Stories/Planned/Drawer/Drawer.story.lua"
   },
   {
@@ -13047,7 +13067,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "beb0243a7254460eb7af33bb8763b9b8",
+    "checksum": "279c5427887b33d545e5e1d738ed516b",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Utility/Stories/Planned/Link/Link.story.lua"
   },
   {
@@ -13065,7 +13085,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "b07ef6431c9ba1919c88c972b088cbaa",
+    "checksum": "fa8ec1afd81babb552b6ff94f218aa81",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Utility/Stories/Planned/Metadata/Metadata.story.lua"
   },
   {
@@ -13083,7 +13103,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "6f5c02ec1f66146e0fce067fda80426a",
+    "checksum": "3e36fcfde97338fdc13fb5f7cea3d912",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Utility/Stories/Planned/NavigationBar/NavigationBar.story.lua"
   },
   {
@@ -13101,7 +13121,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "0d98fbc28684c883eed7ebf7476f6ffe",
+    "checksum": "a48880995a2179ff62e28f3771868da7",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Utility/Stories/Planned/NavigationRail/NavigationRail.story.lua"
   },
   {
@@ -13119,7 +13139,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "9d95af5345141888147d3eabf7a553aa",
+    "checksum": "3c861c8e353750522f6afb5f3c85258a",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Utility/Stories/Planned/Notification/Notification.story.lua"
   },
   {
@@ -13137,7 +13157,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "660840779113b880f4eb0f66d2ec0eb1",
+    "checksum": "03f37f086ce2f71d89c0977f6e788e05",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Utility/Stories/Planned/Panel/Panel.story.lua"
   },
   {
@@ -13155,7 +13175,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "e3eea79bcf1c04bf0c8c2cffa2fd0e2b",
+    "checksum": "c9d09d0cd302572df24ba9bc3a02aafc",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Utility/Stories/Planned/SplitButton/SplitButton.story.lua"
   },
   {
@@ -13173,7 +13193,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "7120e78c386eea99fa7c308f018e9815",
+    "checksum": "b8dfeae4966b821fc6edff5158393d06",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Utility/Stories/Planned/Table/Table.story.lua"
   },
   {
@@ -13191,7 +13211,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "cc9316e5ac12b6c9a07ed6065b334bcf",
+    "checksum": "8f4933d6be71da969d2bbc6449358431",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Utility/Stories/Planned/Timeline/Timeline.story.lua"
   },
   {
@@ -13209,7 +13229,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "8cce354335b986c3e2391568037d0389",
+    "checksum": "84940c47c8ac50d49acfdb94a4912739",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Utility/Stories/Planned/Toolbar/Toolbar.story.lua"
   },
   {
@@ -13227,7 +13247,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "3d02288b7ed4b9fc9a4b8ca91f0dccad",
+    "checksum": "c7f2927740d60791a141bd4ed4955753",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Utility/Stories/Planned/TreeView/TreeView.story.lua"
   },
   {
@@ -13348,15 +13368,6 @@
     ],
     "checksum": "cb540f3fbc93174ea748befe350689e0",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Utility/Stories/Utilities.storybook.lua"
-  },
-  {
-    "categories": [
-      "content",
-      "ExtraContent",
-      "LuaPackages"
-    ],
-    "checksum": "fe45d11923604c3bb8e367ef029733ec",
-    "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/Utility/Stories/createPlannedSubPartStory.lua"
   },
   {
     "categories": [
@@ -14090,7 +14101,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "832401d0a5471a9634ae155fecdf3be0",
+    "checksum": "3ae9d1d61b800ddc0b9d0574afee1f98",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/Foundation/rotriever.toml"
   },
   {
@@ -14243,7 +14254,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "e811f1904c76e1305c3a68e5ad2ae195",
+    "checksum": "9b37e94a7b215affe52f98f5c56e9db0",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Foundation/lock.toml"
   },
   {
@@ -17763,7 +17774,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "3dc20b44fdcb5f344774c489a36ddd9f",
+    "checksum": "3c38e69db505ea3d6bfc759168d1b936",
     "path": "ExtraContent/LuaPackages/Packages/_Index/InlineLayout/lock.toml"
   },
   {
@@ -19080,7 +19091,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "f657969dc2aaae1efd1fad643818ccd3",
+    "checksum": "6b3dd5c9de0ba220d251d87460720352",
     "path": "ExtraContent/LuaPackages/Packages/_Index/Markdown/lock.toml"
   },
   {
@@ -19341,7 +19352,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "0d0680441771dfcb23374b62c8fee682",
+    "checksum": "4aadf8ba75778c69b84010d58197b1ca",
     "path": "ExtraContent/LuaPackages/Packages/_Index/MarkdownCore/lock.toml"
   },
   {
@@ -20045,7 +20056,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "08b7bf860075164602a7fb2ec69f27b0",
+    "checksum": "cc425699e51968c966bb55264a2fab69",
     "path": "ExtraContent/LuaPackages/Packages/_Index/MomentsCommon/lock.toml"
   },
   {
@@ -20668,7 +20679,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "cd1e046a3e69c2ceb622a74ca7182f2e",
+    "checksum": "490bc561a79912ed2fb8250780a6c10b",
     "path": "ExtraContent/LuaPackages/Packages/_Index/MomentsCreationFlow/lock.toml"
   },
   {
@@ -30614,6 +30625,15 @@
       "ExtraContent",
       "LuaPackages"
     ],
+    "checksum": "604d3fa5442d0357cd33720fea86d7c2",
+    "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/google/protobuf/duration.lua"
+  },
+  {
+    "categories": [
+      "content",
+      "ExtraContent",
+      "LuaPackages"
+    ],
     "checksum": "34fb573986646e7658c57e0c013ab4f6",
     "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/google/protobuf/struct.lua"
   },
@@ -30632,7 +30652,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "0f4d893e13faedcb016ed33f81ea1314",
+    "checksum": "e22161b1b04e080dfe5a56f9b3598246",
     "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/init.lua"
   },
   {
@@ -30812,7 +30832,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "2d83ad2bf74a362d0f6f7e99af4ea2f5",
+    "checksum": "9306768e12d131bd455afb1c11fe212b",
     "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/roblox/apppageplatform/init.lua"
   },
   {
@@ -30821,7 +30841,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "bd65c02a49948a3d57421a1847aba602",
+    "checksum": "feae920b4d0fa127549f1ba72c460b39",
     "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/roblox/apppageplatform/marketplacecatalog/v1beta1/init.lua"
   },
   {
@@ -30832,6 +30852,15 @@
     ],
     "checksum": "53134f6f0e4fc4596276864d864938b4",
     "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/roblox/apppageplatform/marketplacecatalog/v1beta1/marketplace_catalog_page.lua"
+  },
+  {
+    "categories": [
+      "content",
+      "ExtraContent",
+      "LuaPackages"
+    ],
+    "checksum": "94bbd17652f13e7b26e272f7d06900ea",
+    "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/roblox/apppageplatform/marketplacecatalog/v1beta1/marketplace_item_details_page.lua"
   },
   {
     "categories": [
@@ -30904,7 +30933,25 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "1cc1d0f7ed01c286062d735973b68452",
+    "checksum": "5ac592a343974345e4331cdcd07886c2",
+    "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/roblox/apppageplatform/settings/v1beta1/init.lua"
+  },
+  {
+    "categories": [
+      "content",
+      "ExtraContent",
+      "LuaPackages"
+    ],
+    "checksum": "43350d5e6fd8a25c1b276c3fd7bdf900",
+    "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/roblox/apppageplatform/settings/v1beta1/settings_page.lua"
+  },
+  {
+    "categories": [
+      "content",
+      "ExtraContent",
+      "LuaPackages"
+    ],
+    "checksum": "c38097577468a4d8129abf8022765315",
     "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/roblox/apppageplatform/shared/v1beta1/actions.lua"
   },
   {
@@ -30949,7 +30996,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "6bd1349b166df7e686fcbd5b1539ea04",
+    "checksum": "6911cf56b3474c20fbddc2bfe3c2b387",
     "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/roblox/apppageplatform/shared/v1beta1/capability.lua"
   },
   {
@@ -31012,15 +31059,6 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "5570ca30c95179bfbcd14ed1ddeaccc9",
-    "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/roblox/apppageplatform/shared/v1beta1/contact_data.lua"
-  },
-  {
-    "categories": [
-      "content",
-      "ExtraContent",
-      "LuaPackages"
-    ],
     "checksum": "85f760b7ef35a85633f4b06716a1fefb",
     "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/roblox/apppageplatform/shared/v1beta1/creator_data.lua"
   },
@@ -31039,7 +31077,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "158dbc0b5f60770e0bd283225328cf5c",
+    "checksum": "2eb5bd75ffc31f01ce90d1e49332c3b7",
     "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/roblox/apppageplatform/shared/v1beta1/display_location.lua"
   },
   {
@@ -31050,6 +31088,15 @@
     ],
     "checksum": "0e7b61cb8c20eb1c1265ec3b02c97834",
     "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/roblox/apppageplatform/shared/v1beta1/event_data.lua"
+  },
+  {
+    "categories": [
+      "content",
+      "ExtraContent",
+      "LuaPackages"
+    ],
+    "checksum": "9643ccb60320c346dfff1160bfc1f00b",
+    "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/roblox/apppageplatform/shared/v1beta1/friend_recommendation_data.lua"
   },
   {
     "categories": [
@@ -31084,7 +31131,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "bad68393ff8863996fe718b2d966ad57",
+    "checksum": "6baae54b3c9344a8d040db41d8b2e2e3",
     "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/roblox/apppageplatform/shared/v1beta1/hydration_content.lua"
   },
   {
@@ -31093,7 +31140,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "51c3ec0fcffa4836b1ab68f9758ca1df",
+    "checksum": "6fd0c469887046d3da1e7b231da7c5f3",
     "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/roblox/apppageplatform/shared/v1beta1/hydration_content_type.lua"
   },
   {
@@ -31120,7 +31167,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "6d1d11bc1f8d58bad31ea11bd6c4bf6c",
+    "checksum": "1aee319da91285161b529dd0d2b7c51a",
     "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/roblox/apppageplatform/shared/v1beta1/init.lua"
   },
   {
@@ -31183,6 +31230,15 @@
       "ExtraContent",
       "LuaPackages"
     ],
+    "checksum": "7c9493c1ec93e89c13347fd357efa408",
+    "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/roblox/apppageplatform/shared/v1beta1/notification_badge_data.lua"
+  },
+  {
+    "categories": [
+      "content",
+      "ExtraContent",
+      "LuaPackages"
+    ],
     "checksum": "805d270142bc51523c253322f2a419ef",
     "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/roblox/apppageplatform/shared/v1beta1/page_entry.lua"
   },
@@ -31192,7 +31248,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "9fd3be0f2c2ec27d13237ebed7f7b77a",
+    "checksum": "81a1ba44798a8a9b78fe787392983d25",
     "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/roblox/apppageplatform/shared/v1beta1/page_entry_content.lua"
   },
   {
@@ -31210,7 +31266,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "c17d5fc51e86cb047dcd509858476ed5",
+    "checksum": "c1ae802b8c50b98d21d339735e415ff7",
     "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/roblox/apppageplatform/shared/v1beta1/prop_condition.lua"
   },
   {
@@ -31219,7 +31275,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "f0cfa40c166e81ed18b96b32fc2034ca",
+    "checksum": "0cf50c6bc3b275036ffc7ca7b27afdde",
     "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/roblox/apppageplatform/shared/v1beta1/prop_types.lua"
   },
   {
@@ -31284,7 +31340,7 @@
       "LuaPackages",
       "UI"
     ],
-    "checksum": "4b2aef2893c554f447bf88b0f1415ecb",
+    "checksum": "6f46fcda13a26b566fe9996447cfe607",
     "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/roblox/apppageplatform/shared/v1beta1/ui_component_schema.lua"
   },
   {
@@ -31294,7 +31350,7 @@
       "LuaPackages",
       "UI"
     ],
-    "checksum": "abe7cf4bc51634791c58b7841b85902f",
+    "checksum": "525d3bed4ed56dc3e012efb121f7db04",
     "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/roblox/apppageplatform/shared/v1beta1/ui_component_type.lua"
   },
   {
@@ -31303,8 +31359,17 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "17751d3216e0c86030bd2b68e3a3952a",
+    "checksum": "50ff0b98d70b9c820c8141f7863d770a",
     "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/roblox/apppageplatform/shared/v1beta1/universe_data.lua"
+  },
+  {
+    "categories": [
+      "content",
+      "ExtraContent",
+      "LuaPackages"
+    ],
+    "checksum": "1344dec140ba87b4545dc3abcf1ac462",
+    "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/roblox/apppageplatform/shared/v1beta1/universe_private_server_data.lua"
   },
   {
     "categories": [
@@ -31366,15 +31431,6 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "febe9c7200374012038791d9e4a5ece0",
-    "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/roblox/apppageplatform/shared/v1beta1/user_recommendation_data.lua"
-  },
-  {
-    "categories": [
-      "content",
-      "ExtraContent",
-      "LuaPackages"
-    ],
     "checksum": "980ed464cba6ae62d502b760d9329ced",
     "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/roblox/apppageplatform/spotlightcollection/v1beta1/init.lua"
   },
@@ -31411,7 +31467,34 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "7f06e7c0cc5e8b03750ae0c4c6545454",
+    "checksum": "416dd94cfa96b7c83ab2fddc63719c44",
+    "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/roblox/posts/init.lua"
+  },
+  {
+    "categories": [
+      "content",
+      "ExtraContent",
+      "LuaPackages"
+    ],
+    "checksum": "f7d8d15bda4a3d201f7d449c210bf344",
+    "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/roblox/posts/postasset/v1/init.lua"
+  },
+  {
+    "categories": [
+      "content",
+      "ExtraContent",
+      "LuaPackages"
+    ],
+    "checksum": "e681ec6ec01f1634e7a8ed918d54b905",
+    "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/roblox/posts/postasset/v1/post.lua"
+  },
+  {
+    "categories": [
+      "content",
+      "ExtraContent",
+      "LuaPackages"
+    ],
+    "checksum": "6a9cfdf5c08a5ec9f33fd97056b6e0f7",
     "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/ServiceContractsProto/rotriever.toml"
   },
   {
@@ -31420,7 +31503,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "f8dc8b896aa1bad0ff3f1b4c3c7ff222",
+    "checksum": "504b95640dd6d242f2f39632ad62a12f",
     "path": "ExtraContent/LuaPackages/Packages/_Index/ServiceContractsProto/lock.toml"
   },
   {
@@ -33811,7 +33894,7 @@
       "LuaPackages",
       "social"
     ],
-    "checksum": "d6885c18dbb6d491681925c3d2665f56",
+    "checksum": "a227ddb7244294cdb21b3d2ae39dbc55",
     "path": "ExtraContent/LuaPackages/Packages/_Index/SocialLibraries/lock.toml"
   },
   {
@@ -34321,7 +34404,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "2c726aa165d7d8dc88f51420e503072a",
+    "checksum": "24ff250b49785223f54114f17cb826fb",
     "path": "ExtraContent/LuaPackages/Packages/_Index/UGCValidation/UGCValidation/assetQualityFolders/Measure_Cage_Relevancy/Measure_Cage_Relevancy.lua"
   },
   {
@@ -34728,6 +34811,15 @@
       "ExtraContent",
       "LuaPackages"
     ],
+    "checksum": "3dcde9bcdabee99bfc22e691a0e80da9",
+    "path": "ExtraContent/LuaPackages/Packages/_Index/UGCValidation/UGCValidation/flags/getEngineFeatureLayeredClothingDecomposition.lua"
+  },
+  {
+    "categories": [
+      "content",
+      "ExtraContent",
+      "LuaPackages"
+    ],
     "checksum": "076744f111561f32c29c6640973f2bfc",
     "path": "ExtraContent/LuaPackages/Packages/_Index/UGCValidation/UGCValidation/flags/getEngineFeatureUGCValidateCheckFacsDisableOverride.lua"
   },
@@ -34972,7 +35064,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "10758c42870af13999ff51af5f0fa4f1",
+    "checksum": "fb2bc79b39b01d04ce2d0898962ea838",
     "path": "ExtraContent/LuaPackages/Packages/_Index/UGCValidation/UGCValidation/flags/getFFlagUGCValidateAnimTranslationThreshold.lua"
   },
   {
@@ -35173,6 +35265,15 @@
     ],
     "checksum": "c6de2a4e76ff3175baed636f1a971da3",
     "path": "ExtraContent/LuaPackages/Packages/_Index/UGCValidation/UGCValidation/flags/getFFlagUGCValidateDuplicatesInAnimation.lua"
+  },
+  {
+    "categories": [
+      "content",
+      "ExtraContent",
+      "LuaPackages"
+    ],
+    "checksum": "5519d85f075c84efe8f4a0dc161ba142",
+    "path": "ExtraContent/LuaPackages/Packages/_Index/UGCValidation/UGCValidation/flags/getFFlagUGCValidateEmissiveAreaChecks.lua"
   },
   {
     "categories": [
@@ -35793,8 +35894,53 @@
       "ExtraContent",
       "LuaPackages"
     ],
+    "checksum": "75c5ef8199b285b909b54a52bef49dcb",
+    "path": "ExtraContent/LuaPackages/Packages/_Index/UGCValidation/UGCValidation/flags/getFIntUGCValidateEmissiveR15BlockyBoundingBoxVolume.lua"
+  },
+  {
+    "categories": [
+      "content",
+      "ExtraContent",
+      "LuaPackages"
+    ],
     "checksum": "27710a4ff83d164b3be8bb14f43ca292",
     "path": "ExtraContent/LuaPackages/Packages/_Index/UGCValidation/UGCValidation/flags/getFIntUGCValidateMaxAnimationFPS.lua"
+  },
+  {
+    "categories": [
+      "content",
+      "ExtraContent",
+      "LuaPackages"
+    ],
+    "checksum": "5ce043f4a9479db06505fe1f04b23b67",
+    "path": "ExtraContent/LuaPackages/Packages/_Index/UGCValidation/UGCValidation/flags/getFIntUGCValidateMaxEmissiveAreaLayeredClothing.lua"
+  },
+  {
+    "categories": [
+      "content",
+      "ExtraContent",
+      "LuaPackages"
+    ],
+    "checksum": "52cd95cf6311dd573fdfa8c57ebdea16",
+    "path": "ExtraContent/LuaPackages/Packages/_Index/UGCValidation/UGCValidation/flags/getFIntUGCValidateMaxEmissiveAreaRigidAccessory.lua"
+  },
+  {
+    "categories": [
+      "content",
+      "ExtraContent",
+      "LuaPackages"
+    ],
+    "checksum": "9045f22d3dc13c9e7bf63255a94e0a58",
+    "path": "ExtraContent/LuaPackages/Packages/_Index/UGCValidation/UGCValidation/flags/getFIntUGCValidateMaxEmissivePercentageBody.lua"
+  },
+  {
+    "categories": [
+      "content",
+      "ExtraContent",
+      "LuaPackages"
+    ],
+    "checksum": "94ce701c37295a76e23ad56d10f3b365",
+    "path": "ExtraContent/LuaPackages/Packages/_Index/UGCValidation/UGCValidation/flags/getFIntUGCValidateMaxEmissivePercentageDynamicHead.lua"
   },
   {
     "categories": [
@@ -36072,6 +36218,15 @@
       "ExtraContent",
       "LuaPackages"
     ],
+    "checksum": "97713d7457ce1073634ef2f59d00c1b9",
+    "path": "ExtraContent/LuaPackages/Packages/_Index/UGCValidation/UGCValidation/flags/getFIntUGCValidationMaxEmissiveStrengthForAreaChecks.lua"
+  },
+  {
+    "categories": [
+      "content",
+      "ExtraContent",
+      "LuaPackages"
+    ],
     "checksum": "2fda2d4e5839a0b942d307318bb152e3",
     "path": "ExtraContent/LuaPackages/Packages/_Index/UGCValidation/UGCValidation/flags/getFIntUGCValidationMaxMsPerFrame.lua"
   },
@@ -36207,7 +36362,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "738456737457672a51dc6fd5c421a1f6",
+    "checksum": "9213c2e0ac6de8466f59f2816210d875",
     "path": "ExtraContent/LuaPackages/Packages/_Index/UGCValidation/UGCValidation/rotriever.toml"
   },
   {
@@ -36993,7 +37148,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "aee65d45e5626688fc2f6fed81f58325",
+    "checksum": "d9f466d64cf5152de07ad558a8f87e37",
     "path": "ExtraContent/LuaPackages/Packages/_Index/UGCValidation/UGCValidation/util/preloadEditablesFromRootInstance.lua"
   },
   {
@@ -38138,7 +38293,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "94fbaec7419f5a85041c9649aff7b395",
+    "checksum": "795401d6b06351c5bb7988be01d45f9d",
     "path": "ExtraContent/LuaPackages/Packages/_Index/UGCValidation/UGCValidation/validationFolders/CurveAnimBonesRotationOnly/CurveAnimBonesRotationOnly.lua"
   },
   {
@@ -38283,7 +38438,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "968c18f4353edc2731d4e9b41c542b36",
+    "checksum": "0022c2ef240d78f5454df9fe634334f9",
     "path": "ExtraContent/LuaPackages/Packages/_Index/UGCValidation/UGCValidation/validationFolders/CurveAnimPartsRotateOnlyIfBones/CurveAnimPartsRotateOnlyIfBones.lua"
   },
   {
@@ -38384,6 +38539,24 @@
     ],
     "checksum": "3bc407f2c3cffc230953dc0276420fe1",
     "path": "ExtraContent/LuaPackages/Packages/_Index/UGCValidation/UGCValidation/validationFolders/DynamicHeadFacsPresent/DynamicHeadFacsPresent.lua"
+  },
+  {
+    "categories": [
+      "content",
+      "ExtraContent",
+      "LuaPackages"
+    ],
+    "checksum": "b31e3112ce72998e6952f8cc9eba77fb",
+    "path": "ExtraContent/LuaPackages/Packages/_Index/UGCValidation/UGCValidation/validationFolders/EmissiveAreaChecks/EmissiveAreaChecks.lua"
+  },
+  {
+    "categories": [
+      "content",
+      "ExtraContent",
+      "LuaPackages"
+    ],
+    "checksum": "bd6090de41fbaba469c62ee0fe48b865",
+    "path": "ExtraContent/LuaPackages/Packages/_Index/UGCValidation/UGCValidation/validationFolders/EmissiveAreaChecks/README.md"
   },
   {
     "categories": [
@@ -38562,7 +38735,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "6ac22f934ab46da9ac98aa0e271feb72",
+    "checksum": "dc349a8f15705570db502af9a6962f20",
     "path": "ExtraContent/LuaPackages/Packages/_Index/UGCValidation/UGCValidation/validationFolders/LCDeformationWithinBounds/LCDeformationWithinBounds.lua"
   },
   {
@@ -38932,7 +39105,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "52c1ad470531ef35156b218beebf42af",
+    "checksum": "e39c4a40c7c7b4bf23984a22c2b83175",
     "path": "ExtraContent/LuaPackages/Packages/_Index/UGCValidation/UGCValidation/validationSystem/ErrorSourceStrings.lua"
   },
   {
@@ -38950,7 +39123,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "a093f712f465fa32631769cdd5d251c3",
+    "checksum": "9a89852c17a0f86e8e96880659b456c8",
     "path": "ExtraContent/LuaPackages/Packages/_Index/UGCValidation/UGCValidation/validationSystem/ValidationEnums.lua"
   },
   {
@@ -39058,7 +39231,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "d70905c45013a03bf8d73807c1eee464",
+    "checksum": "2f44a6ec333a84d6e073212e02505516",
     "path": "ExtraContent/LuaPackages/Packages/_Index/UGCValidation/lock.toml"
   },
   {
@@ -42958,7 +43131,7 @@
       "LuaPackages",
       "UI"
     ],
-    "checksum": "5bf983663eed1c650fdbf45e4fb018e7",
+    "checksum": "5035091e977b45113d74624bf11bd39e",
     "path": "ExtraContent/LuaPackages/Packages/_Index/UIBlox/lock.toml"
   },
   {
@@ -48026,7 +48199,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "0a772ff4b21cdd2837b51c019cd4116b",
+    "checksum": "62d0dfa8258fa12376cddd307113e4e8",
     "path": "ExtraContent/LuaPackages/rotriever.lock"
   },
   {
@@ -48035,7 +48208,7 @@
       "ExtraContent",
       "LuaPackages"
     ],
-    "checksum": "3a91c999d455b7bd9307555000a5b600",
+    "checksum": "b7e1d44f5055fad3eaf0f4252b3fa293",
     "path": "ExtraContent/LuaPackages/rotriever.toml"
   },
   {
@@ -48060,7 +48233,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "9251aca988b297e97938b686ff4707eb",
+    "checksum": "4fa8dbaba46ca3cabeb548c20073dfec",
     "path": "ExtraContent/models/DataModelPatch/DataModelPatch.rbxm"
   },
   {
@@ -48085,7 +48258,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "578893ab2bd0084313fb178249a6cb51",
+    "checksum": "12cef08ade3861821f39ec9c51dcaa62",
     "path": "ExtraContent/models/ServerCoreScripts.rbxm"
   },
   {
@@ -48187,7 +48360,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "b91a11b646d7b7cac1a8ee931f4e0d66",
+    "checksum": "86122e8e56bf5f52675b0972a09256cf",
     "path": "ExtraContent/scripts/CoreScripts/CoreScripts/CharacterNameHandler.lua"
   },
   {
@@ -50279,7 +50452,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "d7b0711d9ef672df099640bd0727782f",
+    "checksum": "2bf080ba23b3b495dc84ad77c2d9d1cc",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/ChromeShared/Analytics/ChromeAnalytics.lua"
   },
   {
@@ -50488,7 +50661,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "539d10e5cc21838a3f98ae2120a3e004",
+    "checksum": "26239150ac40ca9f6fe64dc94c820a30",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/ChromeShared/Service/ChromeService.lua"
   },
   {
@@ -50497,7 +50670,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "77b9aad173a9f38eb4283492f1c401c4",
+    "checksum": "372c9b90a0b51c01b90539324d5d3c00",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/ChromeShared/Service/ChromeService.test.lua"
   },
   {
@@ -50587,7 +50760,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "51c3df6a3bd477fb3dbb6a09b01642e9",
+    "checksum": "2d178fba02c742cd713b9c7836fa94e5",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/ChromeShared/Shortcuts/ConfigureShortcuts.lua"
   },
   {
@@ -50596,7 +50769,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "7b29e9a665158695c3fcb25a6274d7bb",
+    "checksum": "4bbd99254877ffcaa6ad7e7bac30d407",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/ChromeShared/Shortcuts/ShortcutBar.lua"
   },
   {
@@ -50606,7 +50779,7 @@
       "ExtraContent",
       "chat"
     ],
-    "checksum": "9649c45267c618fef2e8a0420a73c6b9",
+    "checksum": "15e70c4a17eefbbca62ba67955e1b369",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/ChromeShared/Unibar/ComponentHosts/ChatNotificationBadge.lua"
   },
   {
@@ -50616,7 +50789,7 @@
       "ExtraContent",
       "chat"
     ],
-    "checksum": "b07d4c5abf589eb0a87e4077d12f683f",
+    "checksum": "92e9f83ef54b6685d9eeb14ab763970d",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/ChromeShared/Unibar/ComponentHosts/ChatNotificationBadge.test.lua"
   },
   {
@@ -50797,7 +50970,7 @@
       "ExtraContent",
       "UI"
     ],
-    "checksum": "fd7d0c01428bb129d03bc09a8f8dd961",
+    "checksum": "7e661d866ee5224185838feec9607471",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/ChromeShared/Unibar/buildMenuOrder.lua"
   },
   {
@@ -50807,7 +50980,7 @@
       "ExtraContent",
       "UI"
     ],
-    "checksum": "cf72f805ca2af61f881d83a34f9f2b70",
+    "checksum": "5439077e8d3ad5cc05d5b8f91ae257b6",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/ChromeShared/Unibar/buildMenuOrder.test.lua"
   },
   {
@@ -50892,6 +51065,15 @@
     ],
     "checksum": "d3b9145c5c92510e88822b0d6360fff0",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/Flags/FFlagChatIntegrationFixShortcut.lua"
+  },
+  {
+    "categories": [
+      "CoreScripts",
+      "content",
+      "ExtraContent"
+    ],
+    "checksum": "6aa5fc2f7af840d00304f916771a3b32",
+    "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/Flags/FFlagEnableSideSheetRobuxWidget.lua"
   },
   {
     "categories": [
@@ -51025,10 +51207,28 @@
     "categories": [
       "CoreScripts",
       "content",
+      "ExtraContent"
+    ],
+    "checksum": "23430f0f9c21e76c275e510db7fdaf03",
+    "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/Integrations/AccountUpsell.lua"
+  },
+  {
+    "categories": [
+      "CoreScripts",
+      "content",
+      "ExtraContent"
+    ],
+    "checksum": "dde77bdb9379f097dfbace07c879f9df",
+    "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/Integrations/AccountUpsell.test.lua"
+  },
+  {
+    "categories": [
+      "CoreScripts",
+      "content",
       "ExtraContent",
       "UI"
     ],
-    "checksum": "a621e3d58e9a605d7015e6800d63eef3",
+    "checksum": "2461f6c03ea35c5319bc1a150f476e0d",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/Integrations/AssistantBuild.lua"
   },
   {
@@ -51048,7 +51248,7 @@
       "ExtraContent",
       "avatar"
     ],
-    "checksum": "c1773f9834dffd5eff7a39d6391c26df",
+    "checksum": "840ba16b04289d68512f724f860813db",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/Integrations/AvatarSwitcher/AvatarSwitcherEntrypoint.lua"
   },
   {
@@ -51077,7 +51277,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "3b78f954c8b7f0e247c48660a929b1bd",
+    "checksum": "ff301ec3e328d56d8248696f3c48b681",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/Integrations/Captures/CapturesEntrypoint.lua"
   },
   {
@@ -51140,7 +51340,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "d27a0df7544558b17c5854df83b1707a",
+    "checksum": "8c5711bbbd24cd0eb1358c6d41d82a50",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/Integrations/Connect/ConnectIconUnibar.lua"
   },
   {
@@ -51167,7 +51367,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "77850593c94cb09b436b8ea7be890c02",
+    "checksum": "cb2990e8523b3aada1506aabcf53dca1",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/Integrations/Connect/registerConnectIntegration.lua"
   },
   {
@@ -51195,7 +51395,7 @@
       "ExtraContent",
       "chat"
     ],
-    "checksum": "80009b5b399360afb46153613e789312",
+    "checksum": "2e3f2bbc99fe974829f7320ffe6b80b5",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/Integrations/ExpChat/ChatChromeIntegration.lua"
   },
   {
@@ -51205,7 +51405,7 @@
       "ExtraContent",
       "chat"
     ],
-    "checksum": "1bb84cdcd63d7d5cc2f2011fc8968e52",
+    "checksum": "d74b2e33eca7e1313cdd18ca634a7715",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/Integrations/ExpChat/ChatChromeIntegration.test.lua"
   },
   {
@@ -51279,7 +51479,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "d1ac00393f60c0888adc984311591407",
+    "checksum": "80ebaff4f22765053744956dc088f043",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/Integrations/InExperienceShop/ShopEntrypoint.lua"
   },
   {
@@ -51389,7 +51589,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "a001c48662791f6f5bb17f6b2d743c09",
+    "checksum": "0a3370789277a8d7ff2dfc2dea67e442",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/Integrations/MusicUtility/MusicEntrypoint.lua"
   },
   {
@@ -51398,7 +51598,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "aea0b1e294c0907e061e63dc8a103f94",
+    "checksum": "5d4f469a4c1670f98850387c1d691bb4",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/Integrations/OverflowMenu.lua"
   },
   {
@@ -51407,7 +51607,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "bb4edb3639530b30e62497e06a626ba9",
+    "checksum": "08a3883325d1e17ba8dbc963c8823ec8",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/Integrations/Pages/Gallery.lua"
   },
   {
@@ -51416,8 +51616,17 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "d5a2e845799a0d507f7cc90913634b0e",
+    "checksum": "d5cf1858b1270268b0a7e90037082c7b",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/Integrations/Pages/Help.lua"
+  },
+  {
+    "categories": [
+      "CoreScripts",
+      "content",
+      "ExtraContent"
+    ],
+    "checksum": "7f8846e0f74927c71037bbe1a8b22a6f",
+    "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/Integrations/Pages/Help.test.lua"
   },
   {
     "categories": [
@@ -51445,7 +51654,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "ddff2cb9f81a300e937f7dbf8c29e83e",
+    "checksum": "5be42de518faa2ff8f62543fdee08a4a",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/Integrations/Pages/InviteFriends.lua"
   },
   {
@@ -51463,7 +51672,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "83625af84e82e186711e796257be6186",
+    "checksum": "13ef7027f2d18279d3e0fabde1ababa6",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/Integrations/Pages/People.lua"
   },
   {
@@ -51481,7 +51690,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "79f46a4e25273771f1257bba60ad390b",
+    "checksum": "c8a986e5e34b3b8c308366eabda07947",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/Integrations/Pages/Settings.lua"
   },
   {
@@ -51490,7 +51699,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "41045c2ec9f3450089701e867aa0e288",
+    "checksum": "e486ec81fb654b1dacb1aba39355e407",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/Integrations/Pages/TraversalHistory.lua"
   },
   {
@@ -51590,7 +51799,25 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "2c380ed56cc879e65cf7c62dcead43d0",
+    "checksum": "cefea6b7101b9b36235812562c01e831",
+    "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/Integrations/RobuxWidget.lua"
+  },
+  {
+    "categories": [
+      "CoreScripts",
+      "content",
+      "ExtraContent"
+    ],
+    "checksum": "7f7c421faf6b209f7cccb0fc8f816fe2",
+    "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/Integrations/RobuxWidget.test.lua"
+  },
+  {
+    "categories": [
+      "CoreScripts",
+      "content",
+      "ExtraContent"
+    ],
+    "checksum": "71c93e3ff254754c78b02a2c9348e186",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/Integrations/SelfieView.lua"
   },
   {
@@ -51599,7 +51826,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "fc49b2b1fc3311f40ed83a9d8e46799a",
+    "checksum": "f61e62d1f70fb38adf5df842bf7e3667",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/Integrations/SwitchServer.lua"
   },
   {
@@ -51617,7 +51844,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "925ec893e311cd977669ec91b9a1b8a6",
+    "checksum": "95c01e46ff4fdcd935ab053964bacecb",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/Integrations/TrustAndSafety.lua"
   },
   {
@@ -51644,7 +51871,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "004960a295085751d5d7862565b72aba",
+    "checksum": "b511a546796ed3466ee5ea70e131444f",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Chrome/Integrations/init.lua"
   },
   {
@@ -53891,7 +54118,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "07ebd92d56a127e3ba0ba3340c1fcb0b",
+    "checksum": "263880881c71ea954cb89a6e11738bdb",
     "path": "ExtraContent/scripts/CoreScripts/Modules/ErrorPrompt.lua"
   },
   {
@@ -58682,7 +58909,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "b5991026d498dcc2ec6912a79c46a755",
+    "checksum": "bb167cb5d6902b13c5bb3fca1b83ccd1",
     "path": "ExtraContent/scripts/CoreScripts/Modules/InspectAndBuy/Actions/SetItemBeingPurchased.lua"
   },
   {
@@ -58954,7 +59181,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "2be8db73a7d7ab122817b79226fe7c94",
+    "checksum": "e3347b5aa94d6c60c8829e3b94e254c4",
     "path": "ExtraContent/scripts/CoreScripts/Modules/InspectAndBuy/Components/InspectAndBuy.lua"
   },
   {
@@ -58963,7 +59190,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "34342a9c6d3963c8103ef484eecdb434",
+    "checksum": "446d954329a00761a09804989b448553",
     "path": "ExtraContent/scripts/CoreScripts/Modules/InspectAndBuy/Components/InspectAndBuyBaseContainer.lua"
   },
   {
@@ -59110,6 +59337,15 @@
     ],
     "checksum": "2dc523303df500e9a711f9f8f1e4c7c4",
     "path": "ExtraContent/scripts/CoreScripts/Modules/InspectAndBuy/Flags/FFlagAXEnableRegionalFilteringofAssets.lua"
+  },
+  {
+    "categories": [
+      "CoreScripts",
+      "content",
+      "ExtraContent"
+    ],
+    "checksum": "0d283b15d1c5308a4af4cfd953925b8a",
+    "path": "ExtraContent/scripts/CoreScripts/Modules/InspectAndBuy/Flags/FFlagAXIaBSinglePurchaseUnifiedEvents.lua"
   },
   {
     "categories": [
@@ -59354,7 +59590,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "a6a55ae703ea1e39fe976394e2388d0a",
+    "checksum": "98fc46392c37aeb94293876a985ed357",
     "path": "ExtraContent/scripts/CoreScripts/Modules/InspectAndBuy/Reducers/ItemBeingPurchased.lua"
   },
   {
@@ -59437,6 +59673,15 @@
     ],
     "checksum": "c90e4fbf4d85adb520ec373916432a9d",
     "path": "ExtraContent/scripts/CoreScripts/Modules/InspectAndBuy/Selectors/GetIsFavorite.lua"
+  },
+  {
+    "categories": [
+      "CoreScripts",
+      "content",
+      "ExtraContent"
+    ],
+    "checksum": "68f6f6885d61fdf0a792ec2301e48258",
+    "path": "ExtraContent/scripts/CoreScripts/Modules/InspectAndBuy/Selectors/GetPurchaseAnalyticsOptions.lua"
   },
   {
     "categories": [
@@ -59742,7 +59987,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "675485cb5f1d3d89669a6a1f0b70cf14",
+    "checksum": "8375e30cbefeccdecda6c96acfb32f7e",
     "path": "ExtraContent/scripts/CoreScripts/Modules/InspectAndBuy/Thunks/PromptPurchase.lua"
   },
   {
@@ -59753,6 +59998,24 @@
     ],
     "checksum": "184b23d42e12498fa9d01efe988e0656",
     "path": "ExtraContent/scripts/CoreScripts/Modules/InspectAndBuy/Thunks/ReportOpenDetailsPage.lua"
+  },
+  {
+    "categories": [
+      "CoreScripts",
+      "content",
+      "ExtraContent"
+    ],
+    "checksum": "b01046efbd1356c0bbbfdb05e21c6f3a",
+    "path": "ExtraContent/scripts/CoreScripts/Modules/InspectAndBuy/Thunks/ReportPurchaseAttemptUnifiedEvent.lua"
+  },
+  {
+    "categories": [
+      "CoreScripts",
+      "content",
+      "ExtraContent"
+    ],
+    "checksum": "0b4525d3718633fef7189ecd21b510c1",
+    "path": "ExtraContent/scripts/CoreScripts/Modules/InspectAndBuy/Thunks/ReportPurchaseSuccessUnifiedEvent.lua"
   },
   {
     "categories": [
@@ -60344,7 +60607,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "5dc8f941665c9b47e58b04fb826e4207",
+    "checksum": "7ada3e70e889aae9328edc1a1d6e9c22",
     "path": "ExtraContent/scripts/CoreScripts/Modules/PlayerList/Components/Connection/TopStatConnector.lua"
   },
   {
@@ -60732,7 +60995,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "0a706864f5ac858edc541b28e76fd9b5",
+    "checksum": "ab1ae1ab2c6ea161ca282f705db8a5c4",
     "path": "ExtraContent/scripts/CoreScripts/Modules/PlayerList/PlayerListController.lua"
   },
   {
@@ -60741,7 +61004,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "27e63b6d538672208fb8d190e152691f",
+    "checksum": "af02e441e843c1053e6b28b176f131f4",
     "path": "ExtraContent/scripts/CoreScripts/Modules/PlayerList/PlayerListInitialVisibleState.lua"
   },
   {
@@ -61387,7 +61650,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "5dc6da91bda23bf84e2558007631f9a1",
+    "checksum": "7746809587e3d92b48c564e3b5b98506",
     "path": "ExtraContent/scripts/CoreScripts/Modules/PublishAssetPrompt/ConnectAssetServiceEvents.lua"
   },
   {
@@ -61398,6 +61661,15 @@
     ],
     "checksum": "abde2495cdcbf537e3218918c8d776d8",
     "path": "ExtraContent/scripts/CoreScripts/Modules/PublishAssetPrompt/Constants.lua"
+  },
+  {
+    "categories": [
+      "CoreScripts",
+      "content",
+      "ExtraContent"
+    ],
+    "checksum": "31a0bbdd05c667aef7413dfb42af7c98",
+    "path": "ExtraContent/scripts/CoreScripts/Modules/PublishAssetPrompt/Flags/FFlagPublishAssetPromptItemDetailsTelemetry.lua"
   },
   {
     "categories": [
@@ -62391,7 +62663,7 @@
       "ExtraContent",
       "avatar"
     ],
-    "checksum": "6a113e4b864ccec3459468f87f38b0bd",
+    "checksum": "3fa827a3a1ae455f233c02b2dd51fed0",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Server/VR/VRAvatarGesturesServer.lua"
   },
   {
@@ -62672,7 +62944,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "610f204dbe3416497d040b7869345192",
+    "checksum": "9f5a0648608f32f4a08e4e12a30efb63",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Settings/Components/TabHeader/SwitchTabHint.lua"
   },
   {
@@ -62882,15 +63154,6 @@
     ],
     "checksum": "7e8bc2601d409f8b763f5815decdcfe1",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Settings/Flags/FFlagRelocateMobileMenuButtons.lua"
-  },
-  {
-    "categories": [
-      "CoreScripts",
-      "content",
-      "ExtraContent"
-    ],
-    "checksum": "8c54b59d7f6b2d61929f58f8cd64d118",
-    "path": "ExtraContent/scripts/CoreScripts/Modules/Settings/Flags/FFlagRemoveExitModal.lua"
   },
   {
     "categories": [
@@ -63130,6 +63393,15 @@
       "content",
       "ExtraContent"
     ],
+    "checksum": "559a590cab51b894928a83d98aa08d8e",
+    "path": "ExtraContent/scripts/CoreScripts/Modules/Settings/Flags/isExitModalRemoved.lua"
+  },
+  {
+    "categories": [
+      "CoreScripts",
+      "content",
+      "ExtraContent"
+    ],
     "checksum": "687c2dc1c6b98ad9bf56dceb7aca94e6",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Settings/FrontButtonController.lua"
   },
@@ -63285,7 +63557,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "7a7312b6f3c0e368f58eab0c5fb63552",
+    "checksum": "07b5d6b5179f1cc12577d4a19292043b",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Settings/Pages/CapturesPageWrapper.lua"
   },
   {
@@ -63294,7 +63566,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "f3462ed83082194c1baf022e35cf3369",
+    "checksum": "c97dfc9098687b68eb1ee6a3a0fda584",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Settings/Pages/ExitModal.lua"
   },
   {
@@ -63376,7 +63648,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "0ae120d42b205bb3bc8fd119a24a8b1e",
+    "checksum": "870f4a85e38de101eb24f228851f4e75",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Settings/Pages/LeaveGame.lua"
   },
   {
@@ -63457,7 +63729,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "da0d2fb8070e676949ee88855aabfeb7",
+    "checksum": "a83c49b800e91536b6669f358b4e9521",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Settings/Pages/Players.lua"
   },
   {
@@ -63475,7 +63747,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "1517eb82adad9d3c412ab069760400d3",
+    "checksum": "df29644bb922551daa96556a4fb2c15b",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Settings/Pages/ReportAbuseMenuNewContainerPage.lua"
   },
   {
@@ -63592,7 +63864,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "e8713b5d2880d2fff97dc9be3501ed57",
+    "checksum": "b20f6b6b60dfd9fe4f8389e8bf98d71c",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Settings/Pages/ShareGame/AppReducer.lua"
   },
   {
@@ -64069,7 +64341,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "e922fb8936bfc2577001aa811e532f71",
+    "checksum": "7a3d16376d058c93390034473bd8f06f",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Settings/Pages/TraversalHistoryWrapper.lua"
   },
   {
@@ -64159,7 +64431,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "414e16bbcd8db056d4e87f057852da2e",
+    "checksum": "607267fe0294ac62ba77900b56629e8e",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Settings/SettingsHub.lua"
   },
   {
@@ -64168,7 +64440,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "c1075877400838193af15205b4aab377",
+    "checksum": "5196be3e3315e51d6f21afe4a3f235a1",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Settings/SettingsPageFactory.lua"
   },
   {
@@ -64271,7 +64543,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "94ca65ca3253c59f631536990cbd0c8f",
+    "checksum": "cb8f8627681f4f91247a73513a9fafb2",
     "path": "ExtraContent/scripts/CoreScripts/Modules/Settings/leaveGame.lua"
   },
   {
@@ -64786,7 +65058,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "94e28e84e0b05cd91a5e3d151b48b9d9",
+    "checksum": "6c2be9dbc6fb7b621a43b08116fd978e",
     "path": "ExtraContent/scripts/CoreScripts/Modules/TopBar/Components/GamepadConnector.lua"
   },
   {
@@ -64805,7 +65077,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "76f16a29bfaef0282c7fdc6898c41ad6",
+    "checksum": "bd609b155666d6e49139d932aae5cdbb",
     "path": "ExtraContent/scripts/CoreScripts/Modules/TopBar/Components/Presentation/BadgeOver12.lua"
   },
   {
@@ -64815,7 +65087,7 @@
       "ExtraContent",
       "chat"
     ],
-    "checksum": "d2cba99e1e351214083a636d99b624f0",
+    "checksum": "f1f458c21bb108caec638acccc4c8feb",
     "path": "ExtraContent/scripts/CoreScripts/Modules/TopBar/Components/Presentation/ChatIcon.lua"
   },
   {
@@ -65008,8 +65280,17 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "c536b50d84a0e148eabb50ee19f812ab",
+    "checksum": "f23f0e3a6cc2e28e0db6e304052df10e",
     "path": "ExtraContent/scripts/CoreScripts/Modules/TopBar/Components/Presentation/PlaytestModeTooltip.lua"
+  },
+  {
+    "categories": [
+      "CoreScripts",
+      "content",
+      "ExtraContent"
+    ],
+    "checksum": "d7e473d82037d978fdd8d1368fc5be23",
+    "path": "ExtraContent/scripts/CoreScripts/Modules/TopBar/Components/Presentation/ShopIcon.lua"
   },
   {
     "categories": [
@@ -65036,7 +65317,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "8148d0cdf9c3c4663f921cce5d2e38c9",
+    "checksum": "fa8597273dee53581b5062026d53ebcf",
     "path": "ExtraContent/scripts/CoreScripts/Modules/TopBar/Components/TopBarApp.lua"
   },
   {
@@ -65073,7 +65354,7 @@
       "ExtraContent",
       "UI"
     ],
-    "checksum": "d13426ffb6878c569246f93284663452",
+    "checksum": "35bc9951afdd713dc4febcd0c5905e45",
     "path": "ExtraContent/scripts/CoreScripts/Modules/TopBar/ComponentsV2/MenuIcon.lua"
   },
   {
@@ -65082,7 +65363,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "2d531e604c68f047ffcfcc82dc3ca45d",
+    "checksum": "2091f36e33a1e52a8f55c784a9edcdf3",
     "path": "ExtraContent/scripts/CoreScripts/Modules/TopBar/ComponentsV2/TopBarApp.lua"
   },
   {
@@ -65091,7 +65372,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "f981aa00442320a2c084e2d0c4f800a0",
+    "checksum": "5266eace76060141d6a52245b4fdba3c",
     "path": "ExtraContent/scripts/CoreScripts/Modules/TopBar/Constants.lua"
   },
   {
@@ -65203,6 +65484,15 @@
     ],
     "checksum": "2c1fd23cac465bbe1beea5f978ffb6d3",
     "path": "ExtraContent/scripts/CoreScripts/Modules/TopBar/Flags/FFlagTopBarDeprecateRespawnRodux.lua"
+  },
+  {
+    "categories": [
+      "CoreScripts",
+      "content",
+      "ExtraContent"
+    ],
+    "checksum": "549f3c8773d749ad2a38c45bc8f52d9f",
+    "path": "ExtraContent/scripts/CoreScripts/Modules/TopBar/Flags/FFlagTopBarShopIconV2.lua"
   },
   {
     "categories": [
@@ -66483,30 +66773,8 @@
       "chat",
       "voice"
     ],
-    "checksum": "5388aa5295c0e22ff4982ec1eec7c00b",
-    "path": "ExtraContent/scripts/CoreScripts/Modules/VoiceChat/Flags/GetFFlagEnableVoiceTrustedConnectionsToasts.lua"
-  },
-  {
-    "categories": [
-      "CoreScripts",
-      "content",
-      "ExtraContent",
-      "chat",
-      "voice"
-    ],
     "checksum": "9c0110dd5f1d4ca7f46b0e3efb242253",
     "path": "ExtraContent/scripts/CoreScripts/Modules/VoiceChat/Flags/GetFFlagOnlyEnableJoinVoiceInVoiceEnabledUniverses.lua"
-  },
-  {
-    "categories": [
-      "CoreScripts",
-      "content",
-      "ExtraContent",
-      "chat",
-      "voice"
-    ],
-    "checksum": "b140518728a91936fd7f8143547e963f",
-    "path": "ExtraContent/scripts/CoreScripts/Modules/VoiceChat/Flags/GetFFlagUpdateVoiceConnectionToasts.lua"
   },
   {
     "categories": [
@@ -66661,7 +66929,7 @@
       "chat",
       "voice"
     ],
-    "checksum": "a022b5c5ea606dd72a98d71689557b62",
+    "checksum": "0e7dfdee0317dd7527a44b690d1b4a08",
     "path": "ExtraContent/scripts/CoreScripts/Modules/VoiceChat/VoiceChatServiceManager.lua"
   },
   {
@@ -66749,7 +67017,7 @@
       "chat",
       "voice"
     ],
-    "checksum": "9eccd4001f4de46252631f0a2572cf64",
+    "checksum": "814aac4e77cde46d892a5b60c75669c4",
     "path": "ExtraContent/scripts/CoreScripts/Modules/VoiceChatPrompt/Components/VoiceChatPromptFrame.lua"
   },
   {
@@ -67034,7 +67302,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "bb35c9c8c6e3b1391354fa8f8ad03433",
+    "checksum": "a170c01988fe193cd29b2f2a5de3f2d4",
     "path": "ExtraContent/scripts/CoreScripts/StarterScript.lua"
   },
   {
@@ -67120,7 +67388,7 @@
       "camera",
       "input"
     ],
-    "checksum": "fe5be9c9057ac09e0f35a1a1e985d2a9",
+    "checksum": "1fc5dc47268f2547fceb2e05454f55b2",
     "path": "ExtraContent/scripts/PlayerScripts/StarterPlayer/PlayerModule/CameraModule/CameraInput.lua"
   },
   {
@@ -67220,7 +67488,7 @@
       "ExtraContent",
       "camera"
     ],
-    "checksum": "b800ccb9ed6b02aa6c92ceec16f3f2ff",
+    "checksum": "5f12dfb001f82bd4bd75a2fc01e8c276",
     "path": "ExtraContent/scripts/PlayerScripts/StarterPlayer/PlayerModule/CameraModule/VRBaseCamera.lua"
   },
   {
@@ -67247,17 +67515,8 @@
       "ExtraContent",
       "camera"
     ],
-    "checksum": "4f3774e0e312c4f120d26114f87017cd",
+    "checksum": "b60111e7e51dd0481ca99a296afe1e9a",
     "path": "ExtraContent/scripts/PlayerScripts/StarterPlayer/PlayerModule/CameraModule/VRVehicleCamera.lua"
-  },
-  {
-    "categories": [
-      "content",
-      "ExtraContent",
-      "camera"
-    ],
-    "checksum": "10e0310e5457a02f84bc4d1c29126358",
-    "path": "ExtraContent/scripts/PlayerScripts/StarterPlayer/PlayerModule/CameraModule/VRVehicleCameraDeprecated.lua"
   },
   {
     "categories": [
@@ -67475,7 +67734,7 @@
       "ExtraContent",
       "input"
     ],
-    "checksum": "c84c4e7075a19f2f3bb4019475f73da7",
+    "checksum": "8389076a0c1ad640b601ee21edb6aeaf",
     "path": "ExtraContent/scripts/PlayerScripts/StarterPlayer/PlayerModule/InputSetup.server.lua"
   },
   {
@@ -67560,7 +67819,7 @@
       "camera",
       "input"
     ],
-    "checksum": "8a44e33c37b247477a3f73c052335802",
+    "checksum": "36f0f4952a83c12013ed71ecb8b30e28",
     "path": "ExtraContent/scripts/PlayerScripts/StarterPlayerScripts/PlayerModule.module/CameraModule/CameraInput.lua"
   },
   {
@@ -67660,7 +67919,7 @@
       "ExtraContent",
       "camera"
     ],
-    "checksum": "49cacce6b16d27c149d3798bd2dc0626",
+    "checksum": "37a0777747799e999ccdd2a0b6ccfdab",
     "path": "ExtraContent/scripts/PlayerScripts/StarterPlayerScripts/PlayerModule.module/CameraModule/VRBaseCamera.lua"
   },
   {
@@ -67687,17 +67946,8 @@
       "ExtraContent",
       "camera"
     ],
-    "checksum": "4f3774e0e312c4f120d26114f87017cd",
+    "checksum": "b60111e7e51dd0481ca99a296afe1e9a",
     "path": "ExtraContent/scripts/PlayerScripts/StarterPlayerScripts/PlayerModule.module/CameraModule/VRVehicleCamera.lua"
-  },
-  {
-    "categories": [
-      "content",
-      "ExtraContent",
-      "camera"
-    ],
-    "checksum": "4aa673a7d788adf5c6266bfaa3d619e5",
-    "path": "ExtraContent/scripts/PlayerScripts/StarterPlayerScripts/PlayerModule.module/CameraModule/VRVehicleCameraDeprecated.lua"
   },
   {
     "categories": [
@@ -67831,7 +68081,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "8f0a8b19e01dd89de999a07f0192cb02",
+    "checksum": "e5335262aef65225bf3f7b3f9835666c",
     "path": "ExtraContent/scripts/PlayerScripts/StarterPlayerScripts/PlayerModule.module/ControlModule/Gamepad.lua"
   },
   {
@@ -74535,7 +74785,7 @@
     "categories": [
       "other"
     ],
-    "checksum": "9813e3992ffadc36f57f7a0542081705",
+    "checksum": "c825887b3b26f757bd6e1188080bb36b",
     "path": "NativeDialog.exe"
   },
   {
@@ -75049,28 +75299,28 @@
     "categories": [
       "other"
     ],
-    "checksum": "eae83dc926cdde270fd9a51fb319ffd7",
+    "checksum": "81f423c23a7af27531b28c403970f76b",
     "path": "QtitanBase.dll"
   },
   {
     "categories": [
       "other"
     ],
-    "checksum": "e15a01855212764bf50862f4c1cd2623",
+    "checksum": "6de7d760e9fae4ebbca8a92fe0ba5511",
     "path": "QtitanDocking.dll"
   },
   {
     "categories": [
       "other"
     ],
-    "checksum": "7664c31da238e41f7cdc6feffdc75ce7",
+    "checksum": "05203158b92f545d8c93ac6ca7a49674",
     "path": "QtitanOffice2016Style.dll"
   },
   {
     "categories": [
       "other"
     ],
-    "checksum": "5b13964de93271b4e46998d1afc26962",
+    "checksum": "11a97353bcb3d30b92dd582b3941938d",
     "path": "QtitanRibbon.dll"
   },
   {
@@ -75084,14 +75334,14 @@
     "categories": [
       "other"
     ],
-    "checksum": "b79b6453829c00b588db6d2aa08c5351",
+    "checksum": "3e0cf0a293d9f287e525f2e7e0764eb8",
     "path": "RobloxCrashHandler.exe"
   },
   {
     "categories": [
       "other"
     ],
-    "checksum": "c712c8247007d7f7e26eda06955c1c66",
+    "checksum": "4467950ab1131a0b73c40e4b96516ff0",
     "path": "RobloxStudioBeta.exe"
   },
   {
@@ -81732,14 +81982,14 @@
     "categories": [
       "other"
     ],
-    "checksum": "4c6e6492ccb338613dae74bccdf24f45",
+    "checksum": "18a600f29ff3e2f08cec4b3d35111370",
     "path": "StudioMCP.exe"
   },
   {
     "categories": [
       "other"
     ],
-    "checksum": "2fb7af637fd7f3b3dfc92daeaf9c4606",
+    "checksum": "d7e82d63022b6b4ef447d6b6dd042a79",
     "path": "SystemMenu.xml"
   },
   {
@@ -81753,112 +82003,112 @@
     "categories": [
       "content"
     ],
-    "checksum": "808cfb1ed275ee47ddd26a38bda53d4e",
+    "checksum": "d992e7bc0bd77cf5b88d75902f8983ff",
     "path": "content/api_docs/ar-001.json"
   },
   {
     "categories": [
       "content"
     ],
-    "checksum": "4320a1a660919ba54872ce14dc50e949",
+    "checksum": "889471e052a6d7d90404c5212ab73fb9",
     "path": "content/api_docs/de-de.json"
   },
   {
     "categories": [
       "content"
     ],
-    "checksum": "808cfb1ed275ee47ddd26a38bda53d4e",
+    "checksum": "d992e7bc0bd77cf5b88d75902f8983ff",
     "path": "content/api_docs/en-us.json"
   },
   {
     "categories": [
       "content"
     ],
-    "checksum": "a7f75d5810db1e5bf5fceb57d9cf799c",
+    "checksum": "bea57b039872e32458a9481d43c75a52",
     "path": "content/api_docs/es-es.json"
   },
   {
     "categories": [
       "content"
     ],
-    "checksum": "54da75611c1016868d8d8f17b5d96237",
+    "checksum": "8e9debd27a9b4ec690f52a62c02a97e9",
     "path": "content/api_docs/fr-fr.json"
   },
   {
     "categories": [
       "content"
     ],
-    "checksum": "048c3c7c36aba41d2d378faaa298298e",
+    "checksum": "b3420c1a762aeb8f0bdac06008840699",
     "path": "content/api_docs/id-id.json"
   },
   {
     "categories": [
       "content"
     ],
-    "checksum": "ce9e90a13bc5dd74889f04b972480726",
+    "checksum": "d3eaea433d8c614e105e58ce94ef7bcc",
     "path": "content/api_docs/it-it.json"
   },
   {
     "categories": [
       "content"
     ],
-    "checksum": "73450bdd214050718f69f034ebeb1705",
+    "checksum": "358e5e2085d3fc0c8bf1f01cd9434626",
     "path": "content/api_docs/ja-jp.json"
   },
   {
     "categories": [
       "content"
     ],
-    "checksum": "3129d185d36cc381daaaf8ec89d46f1e",
+    "checksum": "e51c55ee8abcac0f5b321976fae22183",
     "path": "content/api_docs/ko-kr.json"
   },
   {
     "categories": [
       "content"
     ],
-    "checksum": "1a9cf55f732120774527531b76bb17c3",
+    "checksum": "57a468040543f0449a0373765b158765",
     "path": "content/api_docs/pl-pl.json"
   },
   {
     "categories": [
       "content"
     ],
-    "checksum": "b4990fafaece055b9c0812f07924b013",
+    "checksum": "4893e4705107a503d408957c827c0768",
     "path": "content/api_docs/pt-br.json"
   },
   {
     "categories": [
       "content"
     ],
-    "checksum": "4acdbe90137a1d78e61bb1366900c1b8",
+    "checksum": "a88f78d1a94ad3e127b3746d0071310a",
     "path": "content/api_docs/th-th.json"
   },
   {
     "categories": [
       "content"
     ],
-    "checksum": "8d94d810b46531c21ff00c2fb6ddcb8f",
+    "checksum": "e7645421fccfb1b76056477e4c67ead3",
     "path": "content/api_docs/tr-tr.json"
   },
   {
     "categories": [
       "content"
     ],
-    "checksum": "fc88565a70a354bc75922b19c5a415bc",
+    "checksum": "894ef747000d6d208f7c0ac17e1bef53",
     "path": "content/api_docs/vi-vn.json"
   },
   {
     "categories": [
       "content"
     ],
-    "checksum": "a145610a269e6c7d63de6b5b22a23af3",
+    "checksum": "f1c67f12d0a5035faa8ec75e33a3d4fb",
     "path": "content/api_docs/zh-cn.json"
   },
   {
     "categories": [
       "content"
     ],
-    "checksum": "925484d7491013cc257ab0d1e0e43e5c",
+    "checksum": "67ceea1c4a561c60e0f45d3dc6ac48ff",
     "path": "content/api_docs/zh-tw.json"
   },
   {
@@ -81922,8 +82172,16 @@
       "content",
       "avatar"
     ],
-    "checksum": "2f0a44ee2d2ad5e09551b0e8413ae781",
+    "checksum": "cdca633f49b72f24a02acaaa8fff572b",
     "path": "content/avatar/animations/humanoidR15AnimateChildren.rbxm"
+  },
+  {
+    "categories": [
+      "content",
+      "avatar"
+    ],
+    "checksum": "2f0a44ee2d2ad5e09551b0e8413ae781",
+    "path": "content/avatar/animations/humanoidR15AnimateChildren_DEPRECATED_20260902.rbxm"
   },
   {
     "categories": [
@@ -82362,8 +82620,16 @@
       "content",
       "avatar"
     ],
+    "checksum": "37b280ebe69a1763db54e739c80a42ab",
+    "path": "content/avatar/scripts/humanoidAnimateR15.lua"
+  },
+  {
+    "categories": [
+      "content",
+      "avatar"
+    ],
     "checksum": "9a02868e36dd01a2616d4aefd9f2f058",
-    "path": "content/avatar/scripts/humanoidAnimateR15CharacterController.rbxm"
+    "path": "content/avatar/scripts/humanoidAnimateR15_DEPRECATED_20260813.rbxm"
   },
   {
     "categories": [
@@ -82870,7 +83136,7 @@
     "categories": [
       "content"
     ],
-    "checksum": "02e5c05da18087d59a8bd62c4793e2a5",
+    "checksum": "99651bf67bff47390ae536974936ebaf",
     "path": "content/configs/InExperiencePatchConfig/InExperiencePatchConfig.json"
   },
   {
@@ -82919,7 +83185,7 @@
     "categories": [
       "content"
     ],
-    "checksum": "0d909c3f5d472e93833cc568f785e4ba",
+    "checksum": "2a08d7601a5959899c63be4295d58f2d",
     "path": "content/configs/UniversalAppPatchConfig/UniversalAppPatchConfig.json"
   },
   {
@@ -105263,6 +105529,27 @@
     "categories": [
       "content"
     ],
+    "checksum": "c406c4a9e6f3431da6577c4a27aadbab",
+    "path": "content/studio_svg_textures/Shared/InsertableObjects/Dark/Standard/CustomFolder.png"
+  },
+  {
+    "categories": [
+      "content"
+    ],
+    "checksum": "2c89e1466d5c5b07977be38c16c704f5",
+    "path": "content/studio_svg_textures/Shared/InsertableObjects/Dark/Standard/CustomFolder@2x.png"
+  },
+  {
+    "categories": [
+      "content"
+    ],
+    "checksum": "757845664836b7f82c1868b1c9c97b28",
+    "path": "content/studio_svg_textures/Shared/InsertableObjects/Dark/Standard/CustomFolder@3x.png"
+  },
+  {
+    "categories": [
+      "content"
+    ],
     "checksum": "6fd1fc75f13a272005fd3bbc6d8be7a4",
     "path": "content/studio_svg_textures/Shared/InsertableObjects/Dark/Standard/CylinderHandleAdornment.png"
   },
@@ -113091,6 +113378,27 @@
     ],
     "checksum": "24ec5f44122ffe2e1fbd1486b0d86569",
     "path": "content/studio_svg_textures/Shared/InsertableObjects/Light/Standard/CornerWedgePart@3x.png"
+  },
+  {
+    "categories": [
+      "content"
+    ],
+    "checksum": "de1207392b330bfc93040a8ddd835a33",
+    "path": "content/studio_svg_textures/Shared/InsertableObjects/Light/Standard/CustomFolder.png"
+  },
+  {
+    "categories": [
+      "content"
+    ],
+    "checksum": "de77cb8906a8ac728abd2fd6bd66a8b8",
+    "path": "content/studio_svg_textures/Shared/InsertableObjects/Light/Standard/CustomFolder@2x.png"
+  },
+  {
+    "categories": [
+      "content"
+    ],
+    "checksum": "7e0d99065f2708dfe854d9add3fd16ae",
+    "path": "content/studio_svg_textures/Shared/InsertableObjects/Light/Standard/CustomFolder@3x.png"
   },
   {
     "categories": [

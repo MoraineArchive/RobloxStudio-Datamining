@@ -44,8 +44,14 @@
   {
     "bytes": 2232,
     "extension": "rbxm",
-    "path": "animations/humanoidR15AnimateChildren.rbxm",
+    "path": "animations/humanoidR15AnimateChildren_DEPRECATED_20260902.rbxm",
     "sha256": "d3bd21b14670923c793e4d08d6be1f6306b2c4d6aac05b8f0fc11c1358641e40"
+  },
+  {
+    "bytes": 2228,
+    "extension": "rbxm",
+    "path": "animations/humanoidR15AnimateChildren.rbxm",
+    "sha256": "23d41584d87a60d46d965bfcb7d99a883977b70aac86b918d6194f4327af42d3"
   },
   {
     "bytes": 2284,
@@ -362,8 +368,14 @@
   {
     "bytes": 13313,
     "extension": "rbxm",
-    "path": "scripts/humanoidAnimateR15CharacterController.rbxm",
+    "path": "scripts/humanoidAnimateR15_DEPRECATED_20260813.rbxm",
     "sha256": "2a8c520427d460cdb790c68786aa064957eea12f00cccb2fd389c0f588ccb515"
+  },
+  {
+    "bytes": 32209,
+    "extension": "lua",
+    "path": "scripts/humanoidAnimateR15.lua",
+    "sha256": "1c925850c1726e89ef451305a4b8ce1e06acc9010a6598a4070dc0cd177d3242"
   },
   {
     "bytes": 48570,

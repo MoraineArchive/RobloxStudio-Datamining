@@ -9,10 +9,12 @@
  * @flow
 ]]
 
-local __DEV__ = _G.__DEV__ :: boolean
 local Packages = script.Parent.Parent
+local ReactGlobals = require(Packages.ReactGlobals)
 local LuauPolyfill = require(Packages.LuauPolyfill)
 local Object = LuauPolyfill.Object
+
+local __DEV__ = ReactGlobals.__DEV__ :: boolean
 
 -- ROBLOX: use patched console from shared
 local console = require(Packages.Shared).console
@@ -250,7 +252,7 @@ local function initializeClassComponentUpdater()
 
 	classComponentUpdater = {
 		isMounted = isMounted,
-		enqueueSetState = function(inst, payload, callback: (() -> (...any))?)
+		enqueueSetState = function(inst, payload, callback: (() -> ...any)?)
 			local fiber = getInstance(inst)
 			local eventTime = requestEventTime()
 			local lane = requestUpdateLane(fiber)

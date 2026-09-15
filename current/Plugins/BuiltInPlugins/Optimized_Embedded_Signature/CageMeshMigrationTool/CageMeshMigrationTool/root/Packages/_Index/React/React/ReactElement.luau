@@ -6,11 +6,13 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
 ]]
-local __DEV__ = _G.__DEV__ :: boolean
 local Packages = script.Parent.Parent
+local ReactGlobals = require(Packages.ReactGlobals)
 local LuauPolyfill = require(Packages.LuauPolyfill)
 local Error = LuauPolyfill.Error
 type Object = LuauPolyfill.Object
+
+local __DEV__ = ReactGlobals.__DEV__ :: boolean
 
 -- ROBLOX: use patched console from shared
 local console = require(Packages.Shared).console
@@ -582,19 +584,21 @@ exports.createElement = createElement
 --  factory.type = type
 --  return factory
 --end
-exports.cloneAndReplaceKey =
-	function<P, T>(oldElement: ReactElement<P, T>, newKey: any): ReactElement<P, T>
-		local newElement = ReactElement(
-			oldElement.type,
-			newKey,
-			oldElement.ref,
-			oldElement._self,
-			oldElement._source,
-			oldElement._owner,
-			oldElement.props
-		)
-		return newElement
-	end
+exports.cloneAndReplaceKey = function<P, T>(
+	oldElement: ReactElement<P, T>,
+	newKey: any
+): ReactElement<P, T>
+	local newElement = ReactElement(
+		oldElement.type,
+		newKey,
+		oldElement.ref,
+		oldElement._self,
+		oldElement._source,
+		oldElement._owner,
+		oldElement.props
+	)
+	return newElement
+end
 
 --[[*
 * Clone and return a new ReactElement using element as the starting point.

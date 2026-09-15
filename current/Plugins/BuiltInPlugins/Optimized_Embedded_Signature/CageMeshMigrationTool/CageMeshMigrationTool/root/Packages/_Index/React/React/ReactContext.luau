@@ -9,6 +9,7 @@
  *
 ]]
 local Packages = script.Parent.Parent
+local ReactGlobals = require(Packages.ReactGlobals)
 -- ROBLOX: use patched console from shared
 local Shared = require(Packages.Shared)
 local console = Shared.console
@@ -21,6 +22,15 @@ type ReactProviderType<T> = Shared.ReactProviderType<T>
 
 local exports = {}
 
+--[[
+	Lets you create a Context that components can provide or read.
+
+	See [API reference for `createContext`](https://react.dev/reference/react/createContext).
+
+	@param defaultValue The value you want the context to have when there is no
+	matching Provider in the tree above the component reading the context. This
+	is meant as a "last resort" fallback.
+]]
 exports.createContext = function<T>(
 	defaultValue: T,
 	calculateChangedBits: ((a: T, b: T) -> number)?
@@ -55,7 +65,7 @@ exports.createContext = function<T>(
 
 	local hasWarnedAboutDisplayNameOnConsumer = false
 
-	if _G.__DEV__ then
+	if ReactGlobals.__DEV__ then
 		-- A separate object, but proxies back to the original context object for
 		-- backwards compatibility. It has a different $$typeof, so we can properly
 		-- warn for the incorrect usage of Context as a Consumer.
@@ -105,7 +115,7 @@ exports.createContext = function<T>(
 		context.Consumer = context
 	end
 
-	if _G.__DEV__ then
+	if ReactGlobals.__DEV__ then
 		context._currentRenderer = nil
 		context._currentRenderer2 = nil
 	end

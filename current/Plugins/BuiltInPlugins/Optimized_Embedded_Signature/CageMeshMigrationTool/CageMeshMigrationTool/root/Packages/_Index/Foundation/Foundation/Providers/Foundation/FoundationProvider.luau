@@ -1,0 +1,81 @@
+local Providers = script.Parent.Parent
+local Foundation = Providers.Parent
+local Packages = Foundation.Parent
+
+local React = require(Packages.React)
+local ContextStack = require(Packages.ReactUtils).ContextStack
+local Flags = require(Foundation.Utility.Flags)
+
+local CursorProvider = require(Providers.Cursor)
+local OverlayProvider = require(Providers.Overlay)
+local PanelsProvider = require(Providers.StudioPanels.PanelsProvider)
+local PluginProvider = require(Providers.Plugin.PluginProvider)
+local PreferencesProvider = require(Providers.Preferences.PreferencesProvider)
+local ResponsiveContext = require(Providers.Responsive.ResponsiveContext)
+local ResponsiveProvider = require(Providers.Responsive.ResponsiveProvider)
+local StyleProvider = require(Providers.Style.StyleProvider)
+local Types = require(Foundation.Components.Types)
+local WidgetsProvider = require(Providers.StudioWidgets.WidgetsProvider)
+local ElevationProvider = require(Providers.Elevation.ElevationProvider).ElevationProvider
+local isPluginElevated = require(Providers.Plugin.isPluginElevated)
+
+type OverlayConfig = Types.OverlayConfig
+type StyleProps = StyleProvider.StyleProviderProps
+type Preferences = PreferencesProvider.PreferencesProps
+type ResponsiveConfig = ResponsiveContext.ResponsiveConfig
+
+export type FoundationProviderProps = {
+	-- Plugins must provide overlay since they can't use the default PlayerGui
+	overlayGui: (OverlayConfig | GuiBase2d)?,
+	preferences: Preferences?,
+	responsiveConfig: ResponsiveConfig?,
+	plugin: Plugin?,
+} & StyleProps
+
+local EMPTY_TABLE = table.freeze({})
+
+local function FoundationProvider(props: FoundationProviderProps)
+	-- TODO: not any, children types acting weird
+	local preferences: any = if props.preferences
+		then props.preferences
+		else (if Flags.FoundationProviderStableEmptyTable then EMPTY_TABLE else {})
+	local responsiveConfig = if props.responsiveConfig
+		then props.responsiveConfig
+		else (if Flags.FoundationProviderStableEmptyTable then EMPTY_TABLE else {}) :: ResponsiveConfig
+
+	local providers: { React.ReactElement } = {
+		React.createElement(PluginProvider, {
+			plugin = props.plugin,
+		}),
+		React.createElement(ElevationProvider, nil),
+		React.createElement(PreferencesProvider, preferences),
+		React.createElement(StyleProvider, {
+			themeName = if Flags.FoundationThemeName then props.themeName else nil,
+			colorMode = props.colorMode,
+			-- **Deprecated**. Use `colorMode` instead. Kept for backward compatibility.
+			theme = props.theme,
+			device = props.device,
+			derives = props.derives,
+			scale = preferences.scale,
+			tokenOverrides = props.tokenOverrides,
+		}),
+		React.createElement(ResponsiveProvider, { config = responsiveConfig }),
+		React.createElement(
+			OverlayProvider,
+			if typeof(props.overlayGui) == "table"
+				then { DisplayOrder = props.overlayGui.DisplayOrder }
+				else { gui = props.overlayGui }
+		),
+		React.createElement(CursorProvider),
+	}
+	if props.plugin and isPluginElevated(props.plugin) then
+		table.insert(providers, React.createElement(WidgetsProvider, {}))
+		table.insert(providers, React.createElement(PanelsProvider, {}))
+	end
+
+	return React.createElement(ContextStack, {
+		providers = providers,
+	}, props.children)
+end
+
+return FoundationProvider

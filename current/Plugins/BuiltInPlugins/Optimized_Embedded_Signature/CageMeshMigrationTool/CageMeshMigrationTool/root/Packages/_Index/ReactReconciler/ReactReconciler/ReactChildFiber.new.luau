@@ -8,8 +8,8 @@
  *
  * @flow
 ]]
-local __DEV__ = _G.__DEV__ :: boolean
 local Packages = script.Parent.Parent
+local ReactGlobals = require(Packages.ReactGlobals)
 local LuauPolyfill = require(Packages.LuauPolyfill)
 local Array = LuauPolyfill.Array
 local Error = LuauPolyfill.Error
@@ -20,6 +20,12 @@ type Map<K, V> = { [K]: V }
 -- ROBLOX: use patched console from shared
 local console = require(Packages.Shared).console
 local describeError = require(Packages.Shared).describeError
+
+local __DEV__ = ReactGlobals.__DEV__ :: boolean
+
+local SafeFlags = require(Packages.SafeFlags)
+local FFlagReactPreventAssigningKeyToChildren =
+	SafeFlags.createGetFFlag("ReactPreventAssigningKeyToChildren")()
 
 local ReactTypes = require(Packages.Shared)
 -- ROBLOX deviation: ReactElement is defined at the top level of Shared along
@@ -73,9 +79,9 @@ local createFiberFromPortal = ReactFiber.createFiberFromPortal
 -- ROBLOX deviation: we do not support string refs
 -- local emptyRefsObject =
 -- 	require(script.Parent["ReactFiberClassComponent.new"]).emptyRefsObject
--- local ReactFiberHotReloading = require(script.Parent["ReactFiberHotReloading.new"])
--- local isCompatibleFamilyForHotReloading =
--- 	ReactFiberHotReloading.isCompatibleFamilyForHotReloading
+local ReactFiberHotReloading = require(script.Parent["ReactFiberHotReloading.new"])
+local isCompatibleFamilyForHotReloading =
+	ReactFiberHotReloading.isCompatibleFamilyForHotReloading
 -- ROBLOX deviation: we do not support string refs, which removes our use of StrictMode
 -- local StrictMode = require(script.Parent.ReactTypeOfMode).StrictMode
 
@@ -483,9 +489,7 @@ local function ChildReconciler(shouldTrackSideEffects)
 		if current ~= nil then
 			if
 				(current :: Fiber).elementType == element.type
-				-- ROBLOX performance: avoid always-false cmp, hot reloading isn't enabled in Roblox yet
-				-- Keep this check inline so it only runs on the false path:
-				-- or (__DEV__ and isCompatibleFamilyForHotReloading(current, element))
+				or (__DEV__ and isCompatibleFamilyForHotReloading(current, element))
 			then
 				-- Move based on index
 				local existing = useFiber(current :: Fiber, element.props)
@@ -1054,15 +1058,35 @@ local function ChildReconciler(shouldTrackSideEffects)
 		-- Keep scanning and use the map to restore deleted items as moves.
 		-- ROBLOX deviation: use while loop in place of modified for loop
 		while newIdx <= newChildrenCount do
-			local newFiber = updateFromMap(
-				existingChildren,
-				returnFiber,
-				newIdx,
-				newChildren[newIdx],
-				lanes,
-				-- ROBLOX deviation: pass newIdx to be used as the key of the element
-				newIdx
-			)
+			local newFiber
+			-- ROBLOX performance: avoid repeated indexing of newChildren to newIdx
+			local newChildNewIdx = newChildren[newIdx]
+			if
+				not FFlagReactPreventAssigningKeyToChildren
+				or (
+					newChildNewIdx ~= nil
+					and type(newChildNewIdx) == "table"
+					and newChildNewIdx["$$typeof"] ~= nil
+				)
+			then
+				newFiber = updateFromMap(
+					existingChildren,
+					returnFiber,
+					newIdx,
+					newChildNewIdx,
+					lanes,
+					-- ROBLOX deviation: pass newIdx to be used as the key of the element
+					newIdx
+				)
+			else
+				newFiber = updateFromMap(
+					existingChildren,
+					returnFiber,
+					newIdx,
+					newChildNewIdx,
+					lanes
+				)
+			end
 			if newFiber ~= nil then
 				if shouldTrackSideEffects then
 					if newFiber.alternate ~= nil then
@@ -1393,12 +1417,7 @@ local function ChildReconciler(shouldTrackSideEffects)
 				else
 					if
 						child.elementType == element.type
-						-- ROBLOX performance: avoid always-false cmp, hot reloading isn't enabled in Roblox yet
-						-- Keep this check inline so it only runs on the false path:
-						-- or (
-						-- 	__DEV__
-						-- 	and isCompatibleFamilyForHotReloading(child, element)
-						-- )
+						or (__DEV__ and isCompatibleFamilyForHotReloading(child, element))
 					then
 						deleteRemainingChildren(returnFiber, child.sibling)
 						local existing = useFiber(child, element.props)

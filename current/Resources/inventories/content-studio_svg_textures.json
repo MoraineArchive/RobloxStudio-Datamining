@@ -17532,6 +17532,24 @@
     "sha256": "adee444e13b2b241c39a7829d5f46bf8f4ebf6f19be07eab3e270073f78498b2"
   },
   {
+    "bytes": 169,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/CustomFolder.png",
+    "sha256": "b61c46113a1c73bddcbefc9dbebb0bac2595310576395ab3288ec4ae5fd4c58e"
+  },
+  {
+    "bytes": 234,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/CustomFolder@2x.png",
+    "sha256": "c8a554495f15f6d3c2fce0079e2f9122a4155ae2a9215361de5de5db87a2876d"
+  },
+  {
+    "bytes": 351,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/CustomFolder@3x.png",
+    "sha256": "4111e06c7b34b8e973f5d99f6bf643d0cc58a737c2f77eacedd2316f80d59d70"
+  },
+  {
     "bytes": 324,
     "extension": "png",
     "path": "Shared/InsertableObjects/Dark/Standard/CylinderHandleAdornment.png",
@@ -24118,6 +24136,24 @@
     "extension": "png",
     "path": "Shared/InsertableObjects/Light/Standard/CornerWedgePart@3x.png",
     "sha256": "5a1ec18fe7b9dfa8205dc5bdb5fb727f503b5f9a094b22b113ae2fc99aef4999"
+  },
+  {
+    "bytes": 253,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/CustomFolder.png",
+    "sha256": "7906840fb49af85360c76afb8e0bda8f1565541bb9e23d2c801ffd8c5b85ad21"
+  },
+  {
+    "bytes": 374,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/CustomFolder@2x.png",
+    "sha256": "5da5e3665f703fd88d4ccb1ec291ae7682e137ec00729a9b6fe4f26eed9166c1"
+  },
+  {
+    "bytes": 522,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/CustomFolder@3x.png",
+    "sha256": "b22241ae7fe3fbbbfec53e393b244ba9a542930d1b725c208c71ccbd7b9f322c"
   },
   {
     "bytes": 349,

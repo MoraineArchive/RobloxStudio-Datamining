@@ -11,7 +11,11 @@
 -- for easier dependency injection with unstable_mock
 return function(hostConfig)
 	local Packages = script.Parent.Parent
-	local describeError = require(Packages.Shared).describeError
+	local ReactGlobals = require(Packages.ReactGlobals)
+	local ReactShared = require(Packages.Shared)
+
+	local describeError = ReactShared.describeError
+	local ReactFeatureFlags = ReactShared.ReactFeatureFlags
 
 	local SchedulerFeatureFlags = require(script.Parent.SchedulerFeatureFlags)
 	local enableSchedulerDebugging = SchedulerFeatureFlags.enableSchedulerDebugging
@@ -26,6 +30,9 @@ return function(hostConfig)
 	local forceFrameRate = SchedulerHostConfig.forceFrameRate
 	local requestPaint = SchedulerHostConfig.requestPaint
 	local setSchedulerFlags = SchedulerHostConfig.setSchedulerFlags
+	local getSchedulerFlags = SchedulerHostConfig.getSchedulerFlags
+
+	local NoYield = require(script.Parent.NoYield)
 
 	-- ROBLOX deviation? inline the MinHeap to see if the module-level visibility lets Luau optimize better
 	-- local SchedulerMinHeap = require(script.Parent.SchedulerMinHeap)
@@ -242,7 +249,7 @@ return function(hostConfig)
 
 		-- ROBLOX deviation: YOLO flag for disabling pcall
 		local ok, result
-		if not _G.__YOLO__ then
+		if not ReactGlobals.__YOLO__ then
 			-- ROBLOX performance: don't nest try/catch here, Lua can do better, and it eliminated an anon function creation
 			if enableProfiling then
 				ok, result =
@@ -282,6 +289,8 @@ return function(hostConfig)
 	end
 
 	workLoop = function(hasTimeRemaining, initialTime)
+		local catchYieldingInDEV = ReactGlobals.__DEV__
+			and ReactFeatureFlags.catchYieldingInDEV
 		local currentTime = initialTime
 		advanceTimers(currentTime)
 		currentTask = peek(taskQueue)
@@ -302,7 +311,15 @@ return function(hostConfig)
 				currentPriorityLevel = currentTask.priorityLevel
 				local didUserCallbackTimeout = currentTask.expirationTime <= currentTime
 				markTaskRun(currentTask, currentTime)
-				local continuationCallback = callback(didUserCallbackTimeout)
+
+				local continuationCallback
+
+				if catchYieldingInDEV then
+					continuationCallback = NoYield(callback, didUserCallbackTimeout)
+				else
+					continuationCallback = callback(didUserCallbackTimeout)
+				end
+
 				currentTime = getCurrentTime()
 				if typeof(continuationCallback) == "function" then
 					currentTask.callback = continuationCallback
@@ -356,7 +373,7 @@ return function(hostConfig)
 
 		-- ROBLOX deviation: YOLO flag for disabling pcall
 		local ok, result
-		if not _G.__YOLO__ then
+		if not ReactGlobals.__YOLO__ then
 			ok, result = xpcall(eventHandler, describeError)
 		else
 			ok = true
@@ -392,7 +409,7 @@ return function(hostConfig)
 
 		-- ROBLOX deviation: YOLO flag for disabling pcall
 		local ok, result
-		if not _G.__YOLO__ then
+		if not ReactGlobals.__YOLO__ then
 			ok, result = xpcall(eventHandler, describeError)
 		else
 			ok = true
@@ -419,7 +436,7 @@ return function(hostConfig)
 
 			-- ROBLOX deviation: YOLO flag for disabling pcall
 			local ok, result
-			if not _G.__YOLO__ then
+			if not ReactGlobals.__YOLO__ then
 				ok, result = xpcall(callback, describeError, ...)
 			else
 				ok = true
@@ -574,6 +591,7 @@ return function(hostConfig)
 		unstable_now = getCurrentTime,
 		unstable_forceFrameRate = forceFrameRate,
 		unstable_setSchedulerFlags = setSchedulerFlags,
+		unstable_getSchedulerFlags = getSchedulerFlags,
 		-- ROBLOX TODO: use if-expressions when all clients are on 503+
 		unstable_Profiling = (function()
 			if enableProfiling then

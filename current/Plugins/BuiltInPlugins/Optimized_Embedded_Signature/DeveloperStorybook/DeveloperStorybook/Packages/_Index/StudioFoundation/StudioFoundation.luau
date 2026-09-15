@@ -1,7 +1,6 @@
 local Dialog = require(script.Components.Dialog)
 local FoundationProviderAdapter = require(script.Components.FoundationProviderAdapter)
 local Types = require(script.Types)
-local getFFlagStudioFoundationDialogComponent = require(script.SharedFlags.getFFlagStudioFoundationDialogComponent)
 
 export type DialogAction = Types.DialogAction
 export type DialogEscapeButtonAction = Types.DialogEscapeButtonAction
@@ -11,21 +10,18 @@ export type FoundationProviderAdapterProps = FoundationProviderAdapter.Foundatio
 
 return {
 	Components = {
-		Dialog = if getFFlagStudioFoundationDialogComponent() then Dialog else nil :: never,
+		Dialog = Dialog,
 		FoundationProviderAdapter = FoundationProviderAdapter,
 	},
 	Contexts = {
 		StudioThemeContextProvider = require(script.Contexts.StudioThemeContextProvider),
 		ThemeContext = require(script.Contexts.ThemeContext),
 		Localization = require(script.Contexts.Localization),
-		TelemetryServiceContext = if getFFlagStudioFoundationDialogComponent()
-			then require(script.Contexts.TelemetryServiceContext)
-			else nil :: never,
+		TelemetryServiceContext = require(script.Contexts.TelemetryServiceContext),
 		TooltipSettingsContext = require(script.Contexts.TooltipSettingsContext),
 	},
 	SharedFlags = {
 		getFFlagStudioFoundationThemeContext = require(script.SharedFlags.getFFlagStudioFoundationThemeContext),
-		getFFlagStudioFoundationDialogComponent = getFFlagStudioFoundationDialogComponent,
 	},
 	Hooks = {
 		useWidgetRef = require(script.Hooks.useWidgetRef),

@@ -1,4 +1,3 @@
-#C.{xQä)
 $tIǁ
 &;ʼ~
 &C,˲kι!
@@ -7,6 +6,7 @@ $tIǁ
 +Ѐ|$U
 - Y/ן
 .؃8N
+000µ
 2ۀ|$(
 2ۀ}(
 333333ÿ
@@ -23,16 +23,27 @@ $tIǁ
 <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.5-c014 79.151481, 2013/03/13-12:09:15        "> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmp:CreatorTool="Adobe Photoshop CC (Windows)" xmpMM:InstanceID="xmp.iid:F8DE8FD7272E11E489A6CDE46C99CA59" xmpMM:DocumentID="xmp.did:F8DE8FD8272E11E489A6CDE46C99CA59"> <xmpMM:DerivedFrom stRef:instanceID="xmp.iid:F8DE8FD5272E11E489A6CDE46C99CA59" stRef:documentID="xmp.did:F8DE8FD6272E11E489A6CDE46C99CA59"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?><n9c
 <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.5-c021 79.154911, 2013/10/29-11:47:16        "> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmpMM:OriginalDocumentID="xmp.did:2608BAA3C620681180838E23F0DC6224" xmpMM:DocumentID="xmp.did:18386D72AAF111E38B9D871882A8E559" xmpMM:InstanceID="xmp.iid:18386D71AAF111E38B9D871882A8E559" xmp:CreatorTool="Adobe Photoshop CC (Macintosh)"> <xmpMM:DerivedFrom stRef:instanceID="xmp.iid:701d8ce0-b046-4164-8450-f955e0cf5f04" stRef:documentID="xmp.did:2608BAA3C620681180838E23F0DC6224"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>L7nj
 ?y[<Vɀ=
-@2 ÷
-@20ٟ
-@2pƓ
-@2Чs
-@40ܕ
-@8:0ٟ
+@2 Ə
+@2@ʺ
+@2@Ί
+@2Pֺ
+@2`˂
+@4@Ί
+@8-ʥ
+@8-ʯ
+@:@̀
+@:@Ί
+@< ď
 @?HǇ
-@j`ð
-@t0ٟ
-@ʀ%t
+@b@Ί
+@l@̀
+@l@Ί
+@t@̀
+@ʀxt
+@ʐGs
+@܀xt
+A":@Ί
+A"<@Ί
 A+ŀ<$
 A+ɺ??
 A;ϸ?
@@ -49,9 +60,9 @@ A_A^A]A\_^[]À|$9
 A_A^A]A\_^[]À|$a
 A_A^A]A\_^[]À}R
 A_A^A]A\_^[]À~8
+A_A^A]A\_^[]Ð]
 A_A^A]A\_^[]ù$
 A_A^A]A\_^[]ù(
-A_A^A]A\_^[]雀<
 A_A^A]A\_^][ùx
 A_A^A]A\_^]Àz,
 A_A^A]A\_^]À|$8
@@ -80,26 +91,26 @@ Ai͑,
 AiӅ{
 AiӚy
 AƆ0.
-AƆ0H
+AƆ8H
 AƆ8I
 AƆH,
 AƆT0
 AƆ\0
-AƆ`W
+AƆhW
 AƇ$&
 AƇ4(
 AǃTC
 AǃXC
 AǅPd
-Aǆ<J
-AǆD;
-AǆH<
-AǆX:
-Aǆx<
+AǆDJ
+AǆL;
+AǆP<
+Aǆ`:
 AǇPd
 BƄ2~ 
 D+ƺ+
 D+򉈀
+D85ԉ
 D;׸5
 D;׸6
 Ddʹd
@@ -122,6 +133,7 @@ H;Ƌ}
 Hcúd
 Hcȸ@
 HcȺ@
+Hcٸ 
 HsP"*Ҭ$
 Hǀ v
 HǁX 
@@ -138,16 +150,16 @@ Hǅ(=
 Hǅ(>
 Hǅ(?
 Hǅ0-
+Hǅ4*
 Hǅ8-
 Hǅ8.
 Hǅ8/
 Hǅ@,
-HǅD*
+HǅD)
 HǅH<
 HǅH=
 HǅH>
 HǅH?
-HǅT)
 HǅX-
 HǅX.
 HǅX/
@@ -160,8 +172,8 @@ Hǅx-
 Hǅx.
 Hǅx?
 Hǆ0>
-HǆL\
 HǆT?
+HǆT\
 Hǆ` 
 Hǆh?
 Hǆl?
@@ -169,21 +181,19 @@ HǇ0<
 HǇ` 
 HǇ`y
 IDATΈ[
-Iǆ8<
-IǆH:
-Iǆh<
-Iǆx:
-IǆxI
+Iǆ@<
+IǆP:
+Iǆp<
 JobsBƄ2| 
 L#Ѐ|$ 
 Lk9Mӽ
 P+2Ǐf
-P20ٟ
-P2`Ɗ
-P2Чs
-P40ܕ
-P4@˫
-Pl ·
+P2 Ə
+P2@Ί
+P2@ފ
+P4@Ί
+P:@Ί
+Pj@Ί
 Português (Brasil)
 StudioDeviceSimulatorService: no device is active — call SetDeviceAsync() first
 That video is too long – try a video shorter than 15 seconds.
@@ -228,16 +238,23 @@ Your device’s memory is low. Leaving now will preserve your state and prevent 
 ^Hƻ=
 ^[ø&
 _^]Àyh
-`20ٟ
-`2@˫
-`2Pڇ
-`2`ð
-`2Чs
-`4@˫
-`4Зr
+`2@Ί
+`2Pֺ
+`2`˂
+`2вx
+`4@Ί
+`4PȂ
+`:@Ί
+`:p̂
+`:pؚ
+`< ď
+`<@Ί
+`d@̀
+`jp̂
 `}mٙ
-`ʀ%t
-`ڀ%t
+`ʀxt
+`ڀxt
+e<5շէu
 f+k@2Rէ
 fD#ȸ
 fǃpl
@@ -247,73 +264,90 @@ fǅ("
 fǅ(#
 fǅ($
 fǅ(%
+fǅ(&
 fǅ8 
 fǅ8!
 fǅ8"
 fǅ8#
 fǅ8$
 fǅ8%
+fǅ8&
 fǅH 
 fǅH!
 fǅH"
 fǅH#
 fǅH$
 fǅH%
+fǅH&
 fǅX 
 fǅX!
 fǅX"
 fǅX#
 fǅX$
 fǅX%
+fǅX&
 fǅh 
 fǅh!
 fǅh"
 fǅh#
 fǅh$
 fǅh%
+fǅh&
 fǅx 
 fǅx!
 fǅx"
 fǅx#
 fǅx$
 fǅx%
-fǆ8X
-fǆHY
-fǆdY
+fǆ@X
+fǆPY
+fǆlY
 fذau}
+h2@Ί
 iȁ@ 
 khіD.ʧ
 layRǅ
-p2Pڇ
-p2Зr
-p4Pڇ
-p4`ð
-pjPڇ
-pʠrw
+p20ֺ
+p2@Ί
+p2Pֺ
+p2`˂
+p4@Ί
+p:@Ί
+p< ƨ
+p<@Ί
+p<`պ
+pb@Ί
+pd@Ί
+pjǩtӹ
 qD:?ǅ
 r݀~U
 r߃|$H
 ss!wڬ{
 să{|
 t"AƆ
-t'踎~
+t1贃G
 tOƅ@,
+tR蹬F
 tWɿu
 taǁ(u
 time(ms) - The time spent between “login success” and “user sees first frame of start page”.
+tr藿;
 tǀ{8
 tـyA
 u"2Ҁ|$\
 u(Ƈ1+
-u-Ƈy(
-u0ƃ8X
-uS菋2
-uX联I
+u,Ƈy(
+u0ƃ@X
+u3萱'
+uQ蔶1
+uV謇d
+uc赩C
 uǀx`
 uр~(
 uՀ|$(
 wyB)pԣʁʀ
 yֈ>ǅ
+~)袮k
 ~IӴ7S
 ~JND^<ĸ
 Ƅ$ "
@@ -322,7 +356,7 @@ yֈ>ǅ
 Ƅ$`"
 Ƅ$p#
 Ƅ7x 
-Ƅ;'7
+ȯHBackendAdsProviderLog
 Ƀvfr
 ʚ;EngineCrashMemoryMap
 ʚ;No error.
@@ -338,6 +372,11 @@ yֈ>ǅ
 Іdentity generated failed, not_before is after not_after.
 Б В Е П З О С Э
 Б В Е Ш З О С Э
+В /s
+М /s
+Т /s
+Ъ /s
+Ьpbu
 р у ф
 х п н ш е з о с
 Ա Մ Ւ Ս Բ Գ Դ Օ
@@ -354,6 +393,7 @@ yֈ>ǅ
 ت ث ط ظ ك
 س]?س]?س]?س]?
 ل ح ـ
+ޭ%-DԂ
 ߀ ߘ ߡ ߠ ߥ
 ߎ ߏ ߛ ߋ
 ߏ ߛ ߋ
@@ -541,4 +581,4 @@ yֈ>ǅ
 𞤌 𞤮
 𞤤 𞤨 𞤩 𞤭 𞤴 𞤸 𞤺 𞥀
 𞤬 𞤮 𞤻 𞤼 𞤾
-!!!!DebugCounterGet
+!!!!mask

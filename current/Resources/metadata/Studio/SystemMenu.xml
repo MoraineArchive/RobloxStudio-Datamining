@@ -192,9 +192,9 @@
             <Action name="collisionGroupsEditorAction"/>
             <Action name="materialManagerAction"/>
             <Action name="materialGeneratorAction"/>
-            <Action fflag="!StudioEnableTerrainPalette" name="toggleTerrainToolsDockAction"/>
-            <Action fflag="StudioEnableTerrainPalette" name="terrainEditorMenuAction"/>
-            <Action fflag="StudioEnableTerrainPalette" name="terrainPaletteEditorAction"/>
+            <Action fflag="!StudioEnableTerrainPalette2" name="toggleTerrainToolsDockAction"/>
+            <Action fflag="StudioEnableTerrainPalette2" name="terrainEditorMenuAction"/>
+            <Action fflag="StudioEnableTerrainPalette2" name="terrainPaletteEditorAction"/>
             <Action fflag="EnableTextureGenerator2" name="textureGeneratorAction"/>
         </SubMenu>
         <SubMenu name="Avatar" text="Studio.SystemMenu.Title.Avatar">

@@ -9,6 +9,7 @@
  ]]
 
 local Packages = script.Parent.Parent
+local ReactGlobals = require(Packages.ReactGlobals)
 -- ROBLOX: use patched console from shared
 local console = require(Packages.Shared).console
 
@@ -30,7 +31,7 @@ local isPrimaryRenderer = require(script.Parent.ReactFiberHostConfig).isPrimaryR
 local workInProgressSources: Array<MutableSource<any>> = {}
 
 local rendererSigil
-if _G.__DEV__ then
+if ReactGlobals.__DEV__ then
 	-- Used to detect multiple renderers using the same mutable source.
 	rendererSigil = {}
 end
@@ -50,27 +51,30 @@ exports.resetWorkInProgressVersions = function()
 	table.clear(workInProgressSources)
 end
 
-exports.getWorkInProgressVersion =
-	function(mutableSource: MutableSource<any>): nil | MutableSourceVersion
-		if isPrimaryRenderer then
-			return mutableSource._workInProgressVersionPrimary
-		else
-			return mutableSource._workInProgressVersionSecondary
-		end
+exports.getWorkInProgressVersion = function(
+	mutableSource: MutableSource<any>
+): nil | MutableSourceVersion
+	if isPrimaryRenderer then
+		return mutableSource._workInProgressVersionPrimary
+	else
+		return mutableSource._workInProgressVersionSecondary
 	end
+end
 
-exports.setWorkInProgressVersion =
-	function(mutableSource: MutableSource<any>, version_: MutableSourceVersion)
-		if isPrimaryRenderer then
-			mutableSource._workInProgressVersionPrimary = version_
-		else
-			mutableSource._workInProgressVersionSecondary = version_
-		end
-		table.insert(workInProgressSources, mutableSource)
+exports.setWorkInProgressVersion = function(
+	mutableSource: MutableSource<any>,
+	version_: MutableSourceVersion
+)
+	if isPrimaryRenderer then
+		mutableSource._workInProgressVersionPrimary = version_
+	else
+		mutableSource._workInProgressVersionSecondary = version_
 	end
+	table.insert(workInProgressSources, mutableSource)
+end
 
 exports.warnAboutMultipleRenderersDEV = function(mutableSource: MutableSource<any>)
-	if _G.__DEV__ then
+	if ReactGlobals.__DEV__ then
 		if isPrimaryRenderer then
 			if mutableSource._currentPrimaryRenderer == nil then
 				mutableSource._currentPrimaryRenderer = rendererSigil
@@ -97,20 +101,22 @@ end
 -- This ensures that the version used for server rendering matches the one
 -- that is eventually read during hydration.
 -- If they don't match there's a potential tear and a full deopt render is required.
-exports.registerMutableSourceForHydration =
-	function(root: FiberRoot, mutableSource: MutableSource<any>)
-		local getVersion = mutableSource._getVersion
-		local version_ = getVersion(mutableSource._source)
+exports.registerMutableSourceForHydration = function(
+	root: FiberRoot,
+	mutableSource: MutableSource<any>
+)
+	local getVersion = mutableSource._getVersion
+	local version_ = getVersion(mutableSource._source)
 
-		-- TODO Clear this data once all pending hydration work is finished.
-		-- Retaining it forever may interfere with GC.
-		if root.mutableSourceEagerHydrationData == nil then
-			root.mutableSourceEagerHydrationData = { mutableSource, version_ }
-		else
-			-- ROBLOX FIXME: having trouble with type coercion in this case
-			-- table.insert(root.mutableSourceEagerHydrationData, mutableSource)
-			-- table.insert(root.mutableSourceEagerHydrationData, version_)
-		end
+	-- TODO Clear this data once all pending hydration work is finished.
+	-- Retaining it forever may interfere with GC.
+	if root.mutableSourceEagerHydrationData == nil then
+		root.mutableSourceEagerHydrationData = { mutableSource, version_ }
+	else
+		-- ROBLOX FIXME: having trouble with type coercion in this case
+		-- table.insert(root.mutableSourceEagerHydrationData, mutableSource)
+		-- table.insert(root.mutableSourceEagerHydrationData, version_)
 	end
+end
 
 return exports

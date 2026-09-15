@@ -5,6 +5,9 @@ local TERRAIN = {
 	CPC_EVENTS = {
 		CATALOG_CHANGED = "TerrainMaterialCatalogChanged",
 		MATERIAL_PICKER_RESPONSE = "TerrainMaterialPickerResponse",
+		TERRAIN_EDITOR_READY = "TerrainEditorReady",
+		TERRAIN_EDITOR_SOURCE_MATERIAL_CHANGED = "TerrainEditorSourceMaterialChanged",
+		TERRAIN_PALETTE_SELECTION_CHANGED = "TerrainPaletteSelectionChanged",
 		TERRAIN_PALETTE_EDITOR_READY = "TerrainPaletteEditorReady",
 	},
 	CPC_CALLBACKS = {

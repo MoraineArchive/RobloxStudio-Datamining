@@ -15,12 +15,14 @@ local function unimplemented(message: string)
 	print("UNIMPLEMENTED ERROR: " .. message)
 	error("FIXME (roblox): " .. message .. " is unimplemented")
 end
-local __DEV__ = _G.__DEV__ :: boolean
 local Packages = script.Parent.Parent
+local ReactGlobals = require(Packages.ReactGlobals)
 local LuauPolyfill = require(Packages.LuauPolyfill)
 local Array = LuauPolyfill.Array
 local Error = LuauPolyfill.Error
 local Object = LuauPolyfill.Object
+
+local __DEV__ = ReactGlobals.__DEV__ :: boolean
 
 -- ROBLOX: use Bindings to implement useRef
 local createRef = require(Packages.React).createRef
@@ -149,6 +151,9 @@ local markStateUpdateScheduled =
 local ReactCurrentDispatcher = ReactSharedInternals.ReactCurrentDispatcher
 -- local ReactCurrentBatchConfig = ReactSharedInternals.ReactCurrentBatchConfig
 
+local FFlagReactCleanQueueOnUpdateBailout =
+	require(Packages.SafeFlags).createGetFFlag("ReactCleanQueueOnUpdateBailout")()
+
 -- deviation: common types
 type Array<T> = { [number]: T }
 
@@ -186,7 +191,7 @@ export type Hook = {
 export type Effect = {
 	tag: HookFlags,
 	-- ROBLOX TODO: this needs Luau type pack support to express accurately
-	create: (() -> (() -> ())) | () -> (),
+	create: (() -> () -> ()) | () -> (),
 	destroy: (() -> ())?,
 	deps: Array<any> | nil,
 	next: Effect,
@@ -1314,13 +1319,13 @@ end
 
 local function mountEffect(
 	-- ROBLOX TODO: Luau needs union type packs for this type to translate idiomatically
-	create: (() -> ()) | (() -> (() -> ())),
+	create: (() -> ()) | (() -> () -> ()),
 	deps: Array<any>?
 ): ()
 	if __DEV__ then
 		-- deviation: use TestEZ's __TESTEZ_RUNNING_TEST__ as well as jest
 		-- $FlowExpectedError - jest isn't a global, and isn't recognized outside of tests
-		if type(_G.jest) ~= "nil" or _G.__TESTEZ_RUNNING_TEST__ then
+		if type(_G.jest) ~= "nil" or ReactGlobals.__TESTEZ_RUNNING_TEST__ then
 			warnIfNotCurrentlyActingEffectsInDEV(currentlyRenderingFiber)
 		end
 	end
@@ -1344,13 +1349,13 @@ end
 
 local function updateEffect(
 	-- ROBLOX TODO: Luau needs union type packs for this type to translate idiomatically
-	create: (() -> ()) | (() -> (() -> ())),
+	create: (() -> ()) | (() -> () -> ()),
 	deps: Array<any>?
 ): ()
 	if __DEV__ then
 		-- deviation: use TestEZ's __TESTEZ_RUNNING_TEST__ in addition to jest
 		-- $FlowExpectedError - jest isn't a global, and isn't recognized outside of tests
-		if type(_G.jest) ~= "nil" or _G.__TESTEZ_RUNNING_TEST__ then
+		if type(_G.jest) ~= "nil" or ReactGlobals.__TESTEZ_RUNNING_TEST__ then
 			warnIfNotCurrentlyActingEffectsInDEV(currentlyRenderingFiber)
 		end
 	end
@@ -1359,7 +1364,7 @@ end
 
 local function mountLayoutEffect(
 	-- ROBLOX TODO: Luau needs union type packs for this type to translate idiomatically
-	create: (() -> ()) | (() -> (() -> ())),
+	create: (() -> ()) | (() -> () -> ()),
 	deps: Array<any>?
 ): ()
 	if __DEV__ and enableDoubleInvokingEffects then
@@ -1376,7 +1381,7 @@ end
 
 local function updateLayoutEffect(
 	-- ROBLOX TODO: Luau needs union type packs for this type to translate idiomatically
-	create: (() -> ()) | (() -> (() -> ())),
+	create: (() -> ()) | (() -> () -> ()),
 	deps: Array<any>?
 ): ()
 	updateEffectImpl(UpdateEffect, HookLayout, create, deps)
@@ -1874,6 +1879,17 @@ function dispatchAction<S, A>(fiber: Fiber, queue: UpdateQueue<S, A>, action: A,
 					-- It's still possible that we'll need to rebase this update later,
 					-- if the component re-renders for a different reason and by that
 					-- time the reducer has changed.
+
+					-- First remove the update just added to prevent unbounded queue growth.
+					if FFlagReactCleanQueueOnUpdateBailout then
+						if pending == nil then
+							queue.pending = nil
+						else
+							pending.next = update.next
+							queue.pending = pending
+						end
+					end
+
 					return
 				end
 				-- ROBLOX catch
@@ -1885,7 +1901,7 @@ function dispatchAction<S, A>(fiber: Fiber, queue: UpdateQueue<S, A>, action: A,
 		if __DEV__ then
 			-- $FlowExpectedError - jest isn't a global, and isn't recognized outside of tests
 			-- deviation: use TestEZ's __TESTEZ_RUNNING_TEST__ as well as jest
-			if type(_G.jest) ~= "nil" or _G.__TESTEZ_RUNNING_TEST__ then
+			if type(_G.jest) ~= "nil" or ReactGlobals.__TESTEZ_RUNNING_TEST__ then
 				warnIfNotScopedWithMatchingAct(fiber)
 				warnIfNotCurrentlyActingUpdatesInDEV(fiber)
 			end
@@ -2022,7 +2038,10 @@ if __DEV__ then
 	end
 
 	HooksDispatcherOnMountInDEV = {
-		readContext = function<T>(context: ReactContext<T>, observedBits: number | boolean | nil): T
+		readContext = function<T>(
+			context: ReactContext<T>,
+			observedBits: number | boolean | nil
+		): T
 			return readContext(context, observedBits)
 		end,
 		useCallback = function<T>(callback: T, deps: Array<any> | nil): T
@@ -2031,14 +2050,17 @@ if __DEV__ then
 			checkDepsAreArrayDev(deps)
 			return mountCallback(callback, deps)
 		end,
-		useContext = function<T>(context: ReactContext<T>, observedBits: nil | number | boolean): T
+		useContext = function<T>(
+			context: ReactContext<T>,
+			observedBits: nil | number | boolean
+		): T
 			currentHookNameInDev = "useContext"
 			mountHookTypesDev()
 			return readContext(context, observedBits)
 		end,
 		useEffect = function(
 			-- ROBLOX TODO: Luau needs union type packs for this type to translate idiomatically
-			create: (() -> ()) | (() -> (() -> ())),
+			create: (() -> ()) | (() -> () -> ()),
 			deps: Array<any>?
 		): ()
 			currentHookNameInDev = "useEffect"
@@ -2058,7 +2080,7 @@ if __DEV__ then
 		end,
 		useLayoutEffect = function(
 			-- ROBLOX TODO: Luau needs union type packs for this type to translate idiomatically
-			create: (() -> ()) | (() -> (() -> ())),
+			create: (() -> ()) | (() -> () -> ()),
 			deps: Array<any>?
 		): ()
 			currentHookNameInDev = "useLayoutEffect"
@@ -2114,7 +2136,9 @@ if __DEV__ then
 			mountHookTypesDev()
 			return mountBinding(initialValue)
 		end,
-		useState = function<S>(initialState: (() -> S) | S): (S, Dispatch<BasicStateAction<S>>)
+		useState = function<S>(
+			initialState: (() -> S) | S
+		): (S, Dispatch<BasicStateAction<S>>)
 			currentHookNameInDev = "useState"
 			mountHookTypesDev()
 			local prevDispatcher = ReactCurrentDispatcher.current
@@ -2168,7 +2192,10 @@ if __DEV__ then
 	}
 
 	HooksDispatcherOnMountWithHookTypesInDEV = {
-		readContext = function<T>(context: ReactContext<T>, observedBits: number | boolean | nil): T
+		readContext = function<T>(
+			context: ReactContext<T>,
+			observedBits: number | boolean | nil
+		): T
 			return readContext(context, observedBits)
 		end,
 		useCallback = function<T>(callback: T, deps: Array<any> | nil): T
@@ -2177,14 +2204,17 @@ if __DEV__ then
 			checkDepsAreArrayDev(deps)
 			return mountCallback(callback, deps)
 		end,
-		useContext = function<T>(context: ReactContext<T>, observedBits: nil | number | boolean): T
+		useContext = function<T>(
+			context: ReactContext<T>,
+			observedBits: nil | number | boolean
+		): T
 			currentHookNameInDev = "useContext"
 			updateHookTypesDev()
 			return readContext(context, observedBits)
 		end,
 		useEffect = function(
 			-- ROBLOX TODO: Luau needs union type packs for this type to translate idiomatically
-			create: (() -> ()) | (() -> (() -> ())),
+			create: (() -> ()) | (() -> () -> ()),
 			deps: Array<any>?
 		): ()
 			currentHookNameInDev = "useEffect"
@@ -2202,7 +2232,7 @@ if __DEV__ then
 		end,
 		useLayoutEffect = function(
 			-- ROBLOX TODO: Luau needs union type packs for this type to translate idiomatically
-			create: (() -> ()) | (() -> (() -> ())),
+			create: (() -> ()) | (() -> () -> ()),
 			deps: Array<any>?
 		): ()
 			currentHookNameInDev = "useLayoutEffect"
@@ -2255,7 +2285,9 @@ if __DEV__ then
 			updateHookTypesDev()
 			return mountBinding(initialValue)
 		end,
-		useState = function<S>(initialState: (() -> S) | S): (S, Dispatch<BasicStateAction<S>>)
+		useState = function<S>(
+			initialState: (() -> S) | S
+		): (S, Dispatch<BasicStateAction<S>>)
 			currentHookNameInDev = "useState"
 			updateHookTypesDev()
 			local prevDispatcher = ReactCurrentDispatcher.current
@@ -2309,7 +2341,10 @@ if __DEV__ then
 	}
 
 	HooksDispatcherOnUpdateInDEV = {
-		readContext = function<T>(context: ReactContext<T>, observedBits: number | boolean | nil): T
+		readContext = function<T>(
+			context: ReactContext<T>,
+			observedBits: number | boolean | nil
+		): T
 			return readContext(context, observedBits)
 		end,
 		useCallback = function<T>(callback: T, deps: Array<any> | nil): T
@@ -2317,14 +2352,17 @@ if __DEV__ then
 			updateHookTypesDev()
 			return updateCallback(callback, deps)
 		end,
-		useContext = function<T>(context: ReactContext<T>, observedBits: nil | number | boolean): T
+		useContext = function<T>(
+			context: ReactContext<T>,
+			observedBits: nil | number | boolean
+		): T
 			currentHookNameInDev = "useContext"
 			updateHookTypesDev()
 			return readContext(context, observedBits)
 		end,
 		useEffect = function(
 			-- ROBLOX TODO: Luau needs union type packs for this type to translate idiomatically
-			create: (() -> ()) | (() -> (() -> ())),
+			create: (() -> ()) | (() -> () -> ()),
 			deps: Array<any>?
 		): ()
 			currentHookNameInDev = "useEffect"
@@ -2342,7 +2380,7 @@ if __DEV__ then
 		end,
 		useLayoutEffect = function(
 			-- ROBLOX TODO: Luau needs union type packs for this type to translate idiomatically
-			create: (() -> ()) | (() -> (() -> ())),
+			create: (() -> ()) | (() -> () -> ()),
 			deps: Array<any>?
 		): ()
 			currentHookNameInDev = "useLayoutEffect"
@@ -2395,7 +2433,9 @@ if __DEV__ then
 			updateHookTypesDev()
 			return updateBinding(initialValue)
 		end,
-		useState = function<S>(initialState: (() -> S) | S): (S, Dispatch<BasicStateAction<S>>)
+		useState = function<S>(
+			initialState: (() -> S) | S
+		): (S, Dispatch<BasicStateAction<S>>)
 			currentHookNameInDev = "useState"
 			updateHookTypesDev()
 			local prevDispatcher = ReactCurrentDispatcher.current
@@ -2449,22 +2489,28 @@ if __DEV__ then
 	}
 
 	HooksDispatcherOnRerenderInDEV = {
-		readContext = function<T>(context: ReactContext<T>, observedBits: number | boolean | nil): T
+		readContext = function<T>(
+			context: ReactContext<T>,
+			observedBits: number | boolean | nil
+		): T
 			return readContext(context, observedBits)
 		end,
 		useCallback = function<T>(callback: T, deps: Array<any> | nil): T
 			currentHookNameInDev = "useCallback"
 			updateHookTypesDev()
-			return mountCallback(callback, deps)
+			return updateCallback(callback, deps)
 		end,
-		useContext = function<T>(context: ReactContext<T>, observedBits: nil | number | boolean): T
+		useContext = function<T>(
+			context: ReactContext<T>,
+			observedBits: nil | number | boolean
+		): T
 			currentHookNameInDev = "useContext"
 			updateHookTypesDev()
 			return readContext(context, observedBits)
 		end,
 		useEffect = function(
 			-- ROBLOX TODO: Luau needs union type packs for this type to translate idiomatically
-			create: (() -> ()) | (() -> (() -> ())),
+			create: (() -> ()) | (() -> () -> ()),
 			deps: Array<any> | nil
 		): ()
 			currentHookNameInDev = "useEffect"
@@ -2482,7 +2528,7 @@ if __DEV__ then
 		end,
 		useLayoutEffect = function(
 			-- ROBLOX TODO: Luau needs union type packs for this type to translate idiomatically
-			create: (() -> ()) | (() -> (() -> ())),
+			create: (() -> ()) | (() -> () -> ()),
 			deps: Array<any>?
 		): ()
 			currentHookNameInDev = "useLayoutEffect"
@@ -2536,7 +2582,9 @@ if __DEV__ then
 			updateHookTypesDev()
 			return updateBinding(initialValue)
 		end,
-		useState = function<S>(initialState: (() -> S) | S): (S, Dispatch<BasicStateAction<S>>)
+		useState = function<S>(
+			initialState: (() -> S) | S
+		): (S, Dispatch<BasicStateAction<S>>)
 			currentHookNameInDev = "useState"
 			updateHookTypesDev()
 			local prevDispatcher = ReactCurrentDispatcher.current
@@ -2590,7 +2638,10 @@ if __DEV__ then
 	}
 
 	InvalidNestedHooksDispatcherOnMountInDEV = {
-		readContext = function<T>(context: ReactContext<T>, observedBits: number | boolean | nil): T
+		readContext = function<T>(
+			context: ReactContext<T>,
+			observedBits: number | boolean | nil
+		): T
 			warnInvalidContextAccess()
 			return readContext(context, observedBits)
 		end,
@@ -2600,7 +2651,10 @@ if __DEV__ then
 			mountHookTypesDev()
 			return mountCallback(callback, deps)
 		end,
-		useContext = function<T>(context: ReactContext<T>, observedBits: nil | number | boolean): T
+		useContext = function<T>(
+			context: ReactContext<T>,
+			observedBits: nil | number | boolean
+		): T
 			currentHookNameInDev = "useContext"
 			warnInvalidHookAccess()
 			mountHookTypesDev()
@@ -2608,7 +2662,7 @@ if __DEV__ then
 		end,
 		useEffect = function(
 			-- ROBLOX TODO: Luau needs union type packs for this type to translate idiomatically
-			create: (() -> ()) | (() -> (() -> ())),
+			create: (() -> ()) | (() -> () -> ()),
 			deps: Array<any> | nil
 		): ()
 			currentHookNameInDev = "useEffect"
@@ -2628,7 +2682,7 @@ if __DEV__ then
 		end,
 		useLayoutEffect = function(
 			-- ROBLOX TODO: Luau needs union type packs for this type to translate idiomatically
-			create: (() -> ()) | (() -> (() -> ())),
+			create: (() -> ()) | (() -> () -> ()),
 			deps: Array<any> | nil
 		): ()
 			currentHookNameInDev = "useLayoutEffect"
@@ -2686,7 +2740,9 @@ if __DEV__ then
 			mountHookTypesDev()
 			return mountBinding(initialValue)
 		end,
-		useState = function<S>(initialState: (() -> S) | S): (S, Dispatch<BasicStateAction<S>>)
+		useState = function<S>(
+			initialState: (() -> S) | S
+		): (S, Dispatch<BasicStateAction<S>>)
 			currentHookNameInDev = "useState"
 			warnInvalidHookAccess()
 			mountHookTypesDev()
@@ -2746,7 +2802,10 @@ if __DEV__ then
 	}
 
 	InvalidNestedHooksDispatcherOnUpdateInDEV = {
-		readContext = function<T>(context: ReactContext<T>, observedBits: number | boolean | nil): T
+		readContext = function<T>(
+			context: ReactContext<T>,
+			observedBits: number | boolean | nil
+		): T
 			warnInvalidContextAccess()
 			return readContext(context, observedBits)
 		end,
@@ -2756,7 +2815,10 @@ if __DEV__ then
 			updateHookTypesDev()
 			return mountCallback(callback, deps)
 		end,
-		useContext = function<T>(context: ReactContext<T>, observedBits: nil | number | boolean): T
+		useContext = function<T>(
+			context: ReactContext<T>,
+			observedBits: nil | number | boolean
+		): T
 			currentHookNameInDev = "useContext"
 			warnInvalidHookAccess()
 			updateHookTypesDev()
@@ -2764,7 +2826,7 @@ if __DEV__ then
 		end,
 		useEffect = function(
 			-- ROBLOX TODO: Luau needs union type packs for this type to translate idiomatically
-			create: (() -> ()) | (() -> (() -> ())),
+			create: (() -> ()) | (() -> () -> ()),
 			deps: Array<any> | nil
 		): ()
 			currentHookNameInDev = "useEffect"
@@ -2784,7 +2846,7 @@ if __DEV__ then
 		end,
 		useLayoutEffect = function(
 			-- ROBLOX TODO: Luau needs union type packs for this type to translate idiomatically
-			create: (() -> ()) | (() -> (() -> ())),
+			create: (() -> ()) | (() -> () -> ()),
 			deps: Array<any>?
 		): ()
 			currentHookNameInDev = "useLayoutEffect"
@@ -2843,7 +2905,9 @@ if __DEV__ then
 			updateHookTypesDev()
 			return updateBinding(initialValue)
 		end,
-		useState = function<S>(initialState: (() -> S) | S): (S, Dispatch<BasicStateAction<S>>)
+		useState = function<S>(
+			initialState: (() -> S) | S
+		): (S, Dispatch<BasicStateAction<S>>)
 			currentHookNameInDev = "useState"
 			warnInvalidHookAccess()
 			updateHookTypesDev()
@@ -2903,7 +2967,10 @@ if __DEV__ then
 	}
 
 	InvalidNestedHooksDispatcherOnRerenderInDEV = {
-		readContext = function<T>(context: ReactContext<T>, observedBits: number | boolean | nil): T
+		readContext = function<T>(
+			context: ReactContext<T>,
+			observedBits: number | boolean | nil
+		): T
 			warnInvalidContextAccess()
 			return readContext(context, observedBits)
 		end,
@@ -2913,7 +2980,10 @@ if __DEV__ then
 			updateHookTypesDev()
 			return updateCallback(callback, deps)
 		end,
-		useContext = function<T>(context: ReactContext<T>, observedBits: nil | number | boolean): T
+		useContext = function<T>(
+			context: ReactContext<T>,
+			observedBits: nil | number | boolean
+		): T
 			currentHookNameInDev = "useContext"
 			warnInvalidHookAccess()
 			updateHookTypesDev()
@@ -2921,7 +2991,7 @@ if __DEV__ then
 		end,
 		useEffect = function(
 			-- ROBLOX TODO: Luau needs union type packs for this type to translate idiomatically
-			create: (() -> ()) | (() -> (() -> ())),
+			create: (() -> ()) | (() -> () -> ()),
 			deps: Array<any> | nil
 		): ()
 			currentHookNameInDev = "useEffect"
@@ -2941,7 +3011,7 @@ if __DEV__ then
 		end,
 		useLayoutEffect = function(
 			-- ROBLOX TODO: Luau needs union type packs for this type to translate idiomatically
-			create: (() -> ()) | (() -> (() -> ())),
+			create: (() -> ()) | (() -> () -> ()),
 			deps: Array<any>?
 		): ()
 			currentHookNameInDev = "useLayoutEffect"
@@ -3000,7 +3070,9 @@ if __DEV__ then
 			updateHookTypesDev()
 			return updateBinding(initialValue)
 		end,
-		useState = function<S>(initialState: (() -> S) | S): (S, Dispatch<BasicStateAction<S>>)
+		useState = function<S>(
+			initialState: (() -> S) | S
+		): (S, Dispatch<BasicStateAction<S>>)
 			currentHookNameInDev = "useState"
 			warnInvalidHookAccess()
 			updateHookTypesDev()

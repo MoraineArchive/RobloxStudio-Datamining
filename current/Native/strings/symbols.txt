@@ -728,7 +728,6 @@
 .?AUInstanceCollector@Luau@@
 .?AUInstanceTagHooks@RBX@@
 .?AUInstanceTagHooksNoOp@RBX@@
-.?AUInstantiation2_DEPRECATED@Luau@@
 .?AUInstantiation@Luau@@
 .?AUInstantiationQueuer@Luau@@
 .?AUInternalTypeFinder@Luau@@
@@ -1253,11 +1252,13 @@
 .?AV?$Allocator@V?$unique_ptr@UDeferredOperation@Impl@Io@RbxTransport@RBX@@U?$default_delete@UDeferredOperation@Impl@Io@RbxTransport@RBX@@@std@@@std@@@Detail@RSL@@
 .?AV?$AsyncBinding@VIAsyncComponent@Component@RBX@@$0A@@Async@RBX@@
 .?AV?$AsyncBinding@VIAsyncComponent@Component@RBX@@$1?CreateCommandAnalyzer@FFlag@@3VValue@5@A@Async@RBX@@
+.?AV?$AsyncBinding@VITeardownHooks@RBX@@$0A@@Async@RBX@@
 .?AV?$AsyncHttpCache@UCachedRawLuaWebServiceInfo@LuaWebService@RBX@@@RBX@@
 .?AV?$AsyncParallelBinding@VIAsyncComponent@Component@RBX@@$0A@@Async@RBX@@
 .?AV?$AsyncPlayerCallbackQueueHandler@V?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@@RBX@@
 .?AV?$AsyncReaderInterface@VSubscribedRoomEvent@grpc@@@internal@grpc@@
 .?AV?$AsyncSerialBinding@VIAsyncComponent@Component@RBX@@$0A@@Async@RBX@@
+.?AV?$AsyncSerialBinding@VITeardownHooks@RBX@@$0A@@Async@RBX@@
 .?AV?$AudioDecoderFactoryT@UAudioDecoderOpus@webrtc@@U?$NotAdvertised@UAudioDecoderMultiChannelOpus@webrtc@@@?A0x7fc896b0@2@UAudioDecoderG722@2@UAudioDecoderG711@2@U?$NotAdvertised@UAudioDecoderL16@webrtc@@@42@@audio_decoder_factory_template_impl@webrtc@@
 .?AV?$AudioDeviceModuleDefault@VAudioDeviceModule@webrtc@@@webrtc_impl@webrtc@@
 .?AV?$AudioEncoderFactoryT@UAudioEncoderOpus@webrtc@@U?$NotAdvertised@UAudioEncoderMultiChannelOpus@webrtc@@@?A0x55fd6586@2@UAudioEncoderG722@2@UAudioEncoderG711@2@U?$NotAdvertised@UAudioEncoderL16@webrtc@@@42@@audio_encoder_factory_template_impl@webrtc@@
@@ -1820,7 +1821,6 @@
 .?AV?$BoundFuncDesc@VCFramePose@RBX@@$$A6A?AV?$shared_ptr@$$CBV?$vector@V?$shared_ptr@VInstance@RBX@@@std@@V?$allocator@V?$shared_ptr@VInstance@RBX@@@std@@@2@@std@@@std@@XZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VCFramePose@RBX@@$$A6AXV?$shared_ptr@VInstance@RBX@@@std@@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VCRenderSettingsItem@@$$A6AHXZ$0A@$0A@@Reflection@RBX@@
-.?AV?$BoundFuncDesc@VCallingService@RBX@@$$A6A?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@4@V34@@Z$0A@$01@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VCallingService@RBX@@$$A6A?AV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VCallingService@RBX@@$$A6AXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z$0A@$01@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VCallingService@RBX@@$$A6AXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z$0A@$00@Reflection@RBX@@
@@ -2159,6 +2159,7 @@
 .?AV?$BoundFuncDesc@VExplorerFilterInstance@ExplorerFiltering@Studio@RBX@@$$A8@@EBA_NAEBV?$shared_ptr@VInstance@RBX@@@std@@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VExplorerFilterInstance@ExplorerFiltering@Studio@RBX@@$$A8@@EBA_NXZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VExplorerServiceVisibilityService@RBX@@$$A6A_NV?$shared_ptr@VInstance@RBX@@@std@@@Z$0A@$00@Reflection@RBX@@
+.?AV?$BoundFuncDesc@VExternalIdentityService@RBX@@$$A6AXXZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VFaceAnimatorService@RBX@@$$A6A?AV?$shared_ptr@VTrackerLodController@RBX@@@std@@XZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VFaceAnimatorService@RBX@@$$A6AXXZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VFaceAnimatorService@RBX@@$$A6AX_N0@Z$0A@$01@Reflection@RBX@@
@@ -2514,6 +2515,8 @@
 .?AV?$BoundFuncDesc@VMegaClusterInstance@RBX@@$$A6AXVCoordinateFrame@2@MMH@Z$0A@$03@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VMegaClusterInstance@RBX@@$$A6AXVCoordinateFrame@2@MMW4MaterialType@2@@Z$0A@$03@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VMegaClusterInstance@RBX@@$$A6AXVCoordinateFrame@2@VVector3@2@H@Z$0A@$02@Reflection@RBX@@
+.?AV?$BoundFuncDesc@VMegaClusterInstance@RBX@@$$A6AXVCoordinateFrame@2@VVector3@2@HHVRegion3int16@2@@Z$0A@$04@Reflection@RBX@@
+.?AV?$BoundFuncDesc@VMegaClusterInstance@RBX@@$$A6AXVCoordinateFrame@2@VVector3@2@HVRegion3int16@2@@Z$0A@$03@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VMegaClusterInstance@RBX@@$$A6AXVCoordinateFrame@2@VVector3@2@W4MaterialType@2@2@Z$0A@$03@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VMegaClusterInstance@RBX@@$$A6AXVCoordinateFrame@2@VVector3@2@W4MaterialType@2@2VRegion3int16@2@@Z$0A@$04@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VMegaClusterInstance@RBX@@$$A6AXVCoordinateFrame@2@VVector3@2@W4MaterialType@2@@Z$0A@$02@Reflection@RBX@@
@@ -2788,6 +2791,7 @@
 .?AV?$BoundFuncDesc@VProximityPrompt@RBX@@$$A6AXXZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VPublishService@RBX@@$$A6AXV?$shared_ptr@VInstance@RBX@@@std@@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VPublishService@RBX@@$$A6A_NV?$shared_ptr@VInstance@RBX@@@std@@@Z$0A@$00@Reflection@RBX@@
+.?AV?$BoundFuncDesc@VQueueService@RBX@@$$A6A?AV?$shared_ptr@VStandardQueue@RBX@@@std@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VRESTRICTED_StudioService@RBX@@$$A6A?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VRESTRICTED_StudioService@RBX@@$$A6A?AV?$optional@VLuaRaycastResult@RBX@@@std@@AEBVVector3@2@0AEBULuaRaycastParams@2@@Z$0A@$02@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VRESTRICTED_StudioService@RBX@@$$A6A?AV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@@Z$0A@$00@Reflection@RBX@@
@@ -3505,6 +3509,7 @@
 .?AV?$BoundYieldFuncDesc@VBranchService@RBX@@$$A6AX_J0@Z$0A@$01@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VBranchService@RBX@@$$A6AX_J@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VBugReporterService@RBX@@$$A6A_NXZ$0A@$0A@@Reflection@RBX@@
+.?AV?$BoundYieldFuncDesc@VCallingService@RBX@@$$A6A?AV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@V?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@4@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@@Z$0A@$01@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VCaptureService@RBX@@$$A6A?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@VContent@2@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VCaptureService@RBX@@$$A6A?AV?$shared_ptr@$$CBUTuple@Reflection@RBX@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VCaptureService@RBX@@$$A6A?AV?$shared_ptr@$$CBUTuple@Reflection@RBX@@@std@@V?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@4@_N@Z$0A@$01@Reflection@RBX@@
@@ -3553,6 +3558,8 @@
 .?AV?$BoundYieldFuncDesc@VDraftsService@RBX@@$$A6AXV?$shared_ptr@$$CBV?$vector@V?$shared_ptr@VInstance@RBX@@@std@@V?$allocator@V?$shared_ptr@VInstance@RBX@@@std@@@2@@std@@@std@@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VExperienceNotificationService@RBX@@$$A6A_NXZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VExperienceStateRecordingService@ExperienceStateCapture@RBX@@$$A6A?AV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@5@V?$optional@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@5@W4ExperienceStateRecordingLoadMode@Enums@3@W4ExperienceStateRecordingLoadSourceType@93@@Z$0A@$03@Reflection@RBX@@
+.?AV?$BoundYieldFuncDesc@VExternalIdentityService@RBX@@$$A6A?AV?$shared_ptr@$$CBUTuple@Reflection@RBX@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@V?$optional@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@4@1@Z$0A@$02@Reflection@RBX@@
+.?AV?$BoundYieldFuncDesc@VExternalIdentityService@RBX@@$$A6A?AV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@XZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VFacialAgeEstimationService@RBX@@$$A6A?AV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@V34@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VFacialAnimationRecordingService@Studio@@$$A6A?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VFacialAnimationStreamingServiceV2@RBX@@$$A6AH_J@Z$0A@$00@Reflection@RBX@@
@@ -3772,6 +3779,9 @@
 .?AV?$BoundYieldFuncDesc@VSocialService@RBX@@$$A6A_NV?$shared_ptr@VInstance@RBX@@@std@@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VSocialService@RBX@@$$A6A_NV?$shared_ptr@VInstance@RBX@@@std@@VUser@2@@Z$0A@$01@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VSoundService@Soundscape@RBX@@$$A6A?AV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@XZ$0A@$0A@@Reflection@RBX@@
+.?AV?$BoundYieldFuncDesc@VStandardQueue@RBX@@$$A6A?AVScriptConnection@2@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@VWeakObjectRef@Lua@2@@Z$0A@$01@Reflection@RBX@@
+.?AV?$BoundYieldFuncDesc@VStandardQueue@RBX@@$$A6AXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@4@@Z$0A@$01@Reflection@RBX@@
+.?AV?$BoundYieldFuncDesc@VStandardQueue@RBX@@$$A6AXVVariant@Reflection@2@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z$0A@$01@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VStarterGuiService@RBX@@$$A6A?AVVariant@Reflection@2@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VStatsService@Stats@RBX@@$$A6A?AV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@W4TextureQueryType@23@HH@Z$0A@$02@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VStudioAssetService@Studio@RBX@@$$A6A?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$shared_ptr@$$CBV?$vector@V?$shared_ptr@VInstance@RBX@@@std@@V?$allocator@V?$shared_ptr@VInstance@RBX@@@std@@@2@@std@@@5@@Z$0A@$00@Reflection@RBX@@
@@ -3845,6 +3855,7 @@
 .?AV?$BoundYieldFuncDesc@VUGCValidationService@RBX@@$$A6A?AV?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VUGCValidationService@RBX@@$$A6A?AV?$shared_ptr@VBinaryStringValue@RBX@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VUGCValidationService@RBX@@$$A6A?AV?$shared_ptr@VEditableImage@RBX@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@@Z$0A@$00@Reflection@RBX@@
+.?AV?$BoundYieldFuncDesc@VUGCValidationService@RBX@@$$A6A?AVVector3@2@V?$shared_ptr@VAccessory@RBX@@@std@@V?$shared_ptr@VEditableMesh@RBX@@@5@V32@@Z$0A@$02@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VUGCValidationService@RBX@@$$A6ANAEBV?$shared_ptr@$$CBV?$vector@V?$shared_ptr@VInstance@RBX@@@std@@V?$allocator@V?$shared_ptr@VInstance@RBX@@@std@@@2@@std@@@std@@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VUGCValidationService@RBX@@$$A6A_NV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VUGCValidationService@RBX@@$$A6A_NV?$shared_ptr@VAccessory@RBX@@@std@@@Z$0A@$00@Reflection@RBX@@
@@ -4077,6 +4088,9 @@
 .?AV?$CommandMetadata@P8AssistantBridgeProxy@Studio@RBX@@EAA?AV?$Result@VVariant@Reflection@RBX@@UCommandError@Studio@3@@Tasks@3@_JVVariant@Reflection@3@@ZV123@@Studio@RBX@@
 .?AV?$CommandMetadata@P8AssistantBridgeProxy@Studio@RBX@@EAA?AV?$Result@_JUCommandError@Studio@RBX@@@Tasks@3@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@ZV123@@Studio@RBX@@
 .?AV?$CommandMetadata@P8AssistantExperimentationProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@7@@ZV123@@Studio@RBX@@
+.?AV?$CommandMetadata@P8AssistantPermissionsBridgeProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@ZV123@@Studio@RBX@@
+.?AV?$CommandMetadata@P8AssistantPermissionsBridgeProxy@Studio@RBX@@EAA?AV?$Result@VVariant@Reflection@RBX@@UCommandError@Studio@3@@Tasks@3@XZV123@@Studio@RBX@@
+.?AV?$CommandMetadata@P8AssistantPermissionsBridgeProxy@Studio@RBX@@EAA?AV?$Result@_NUCommandError@Studio@RBX@@@Tasks@3@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@ZV123@@Studio@RBX@@
 .?AV?$CommandMetadata@P8CancellableDialogManager@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@XZV123@@Studio@RBX@@
 .?AV?$CommandMetadata@P8CapabilitiesHandlerProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@V?$shared_ptr@VInstance@RBX@@@std@@V?$optional@W4Capabilities@Security@RBX@@@7@@ZV123@@Studio@RBX@@
 .?AV?$CommandMetadata@P8CommandAnalyzerProxy@Studio@RBX@@EAA?AV?$Result@V?$optional@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@3@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@ZV123@@Studio@RBX@@
@@ -4291,6 +4305,7 @@
 .?AV?$Creator@VActivityHistoryEventService@RBX@@@RBX@@
 .?AV?$Creator@VActor@RBX@@@RBX@@
 .?AV?$Creator@VAdGui@Ads@RBX@@@RBX@@
+.?AV?$Creator@VAdPlacement@Ads@RBX@@@RBX@@
 .?AV?$Creator@VAdPortal@Ads@RBX@@@RBX@@
 .?AV?$Creator@VAdService@Ads@RBX@@@RBX@@
 .?AV?$Creator@VAdvLuaDragger@RBX@@@RBX@@
@@ -4508,6 +4523,7 @@
 .?AV?$Creator@VExplorerFilterInstance@ExplorerFiltering@Studio@RBX@@@RBX@@
 .?AV?$Creator@VExplorerServiceVisibilityService@RBX@@@RBX@@
 .?AV?$Creator@VExplosion@RBX@@@RBX@@
+.?AV?$Creator@VExternalIdentityService@RBX@@@RBX@@
 .?AV?$Creator@VExtrudedPartInstance@RBX@@@RBX@@
 .?AV?$Creator@VFaceAnimatorService@RBX@@@RBX@@
 .?AV?$Creator@VFaceControls@RBX@@@RBX@@
@@ -4716,6 +4732,7 @@
 .?AV?$Creator@VPublishService@RBX@@@RBX@@
 .?AV?$Creator@VPyramidHandleAdornment@RBX@@@RBX@@
 .?AV?$Creator@VQWidgetPluginGui@RBX@@@RBX@@
+.?AV?$Creator@VQueueService@RBX@@@RBX@@
 .?AV?$Creator@VRESTRICTED_LegacyStudioBridge@RBX@@@RBX@@
 .?AV?$Creator@VRESTRICTED_StudioService@RBX@@@RBX@@
 .?AV?$Creator@VRTAnimationTracker@RealTimeAnimation@RBX@@@RBX@@
@@ -5307,6 +5324,7 @@
 .?AV?$DescribedCreatable@VActivityHistoryEventService@RBX@@VServiceInstance@2@@RBX@@
 .?AV?$DescribedCreatable@VActor@RBX@@VModelInstance@2@@RBX@@
 .?AV?$DescribedCreatable@VAdGui@Ads@RBX@@VSurfaceGuiBase@3@@RBX@@
+.?AV?$DescribedCreatable@VAdPlacement@Ads@RBX@@VInstance@3@@RBX@@
 .?AV?$DescribedCreatable@VAdPortal@Ads@RBX@@VInstance@3@@RBX@@
 .?AV?$DescribedCreatable@VAdService@Ads@RBX@@VServiceInstance@3@@RBX@@
 .?AV?$DescribedCreatable@VAdvLuaDragger@RBX@@VInstance@2@@RBX@@
@@ -5524,6 +5542,7 @@
 .?AV?$DescribedCreatable@VExplorerFilterInstance@ExplorerFiltering@Studio@RBX@@VInstance@4@@RBX@@
 .?AV?$DescribedCreatable@VExplorerServiceVisibilityService@RBX@@VServiceInstance@2@@RBX@@
 .?AV?$DescribedCreatable@VExplosion@RBX@@VInstance@2@@RBX@@
+.?AV?$DescribedCreatable@VExternalIdentityService@RBX@@VServiceInstance@2@@RBX@@
 .?AV?$DescribedCreatable@VExtrudedPartInstance@RBX@@VBasePart@2@@RBX@@
 .?AV?$DescribedCreatable@VFaceAnimatorService@RBX@@VServiceInstance@2@@RBX@@
 .?AV?$DescribedCreatable@VFaceControls@RBX@@VInstance@2@@RBX@@
@@ -5732,6 +5751,7 @@
 .?AV?$DescribedCreatable@VPublishService@RBX@@VServiceInstance@2@@RBX@@
 .?AV?$DescribedCreatable@VPyramidHandleAdornment@RBX@@VHandleAdornment@2@@RBX@@
 .?AV?$DescribedCreatable@VQWidgetPluginGui@RBX@@VPluginGui@2@@RBX@@
+.?AV?$DescribedCreatable@VQueueService@RBX@@VServiceInstance@2@@RBX@@
 .?AV?$DescribedCreatable@VRESTRICTED_LegacyStudioBridge@RBX@@VRESTRICTED_ILegacyStudioBridge@2@@RBX@@
 .?AV?$DescribedCreatable@VRESTRICTED_StudioService@RBX@@VServiceInstance@2@@RBX@@
 .?AV?$DescribedCreatable@VRTAnimationTracker@RealTimeAnimation@RBX@@VInstance@3@@RBX@@
@@ -6070,6 +6090,7 @@
 .?AV?$EnumDesc@W4AnimatedImageScaleType@Enums@RBX@@@Reflection@RBX@@
 .?AV?$EnumDesc@W4AnimationClipFromVideoStatus@RBX@@@Reflection@RBX@@
 .?AV?$EnumDesc@W4AnimationNodeBlend2DInputMode@Enums@RBX@@@Reflection@RBX@@
+.?AV?$EnumDesc@W4AnimationNodeBlendMode@Enums@RBX@@@Reflection@RBX@@
 .?AV?$EnumDesc@W4AnimationNodeInterruptible@Enums@RBX@@@Reflection@RBX@@
 .?AV?$EnumDesc@W4AnimationNodePhaseSync@Enums@RBX@@@Reflection@RBX@@
 .?AV?$EnumDesc@W4AnimationNodePlayMode@Enums@RBX@@@Reflection@RBX@@
@@ -6459,6 +6480,7 @@
 .?AV?$EnumDesc@W4ProximityPromptStyle@ProximityPromptStyleEnum@Enums@RBX@@@Reflection@RBX@@
 .?AV?$EnumDesc@W4PurchaseOption@Enums@RBX@@@Reflection@RBX@@
 .?AV?$EnumDesc@W4QualityLevel@Enums@RBX@@@Reflection@RBX@@
+.?AV?$EnumDesc@W4QueueDecision@Enums@RBX@@@Reflection@RBX@@
 .?AV?$EnumDesc@W4R15CollisionType@RBX@@@Reflection@RBX@@
 .?AV?$EnumDesc@W4R15PartType@BodyPartR15Enum@Enums@RBX@@@Reflection@RBX@@
 .?AV?$EnumDesc@W4RaycastFilterType@RBX@@@Reflection@RBX@@
@@ -6574,6 +6596,7 @@
 .?AV?$EnumDesc@W4TerrainFace@RBX@@@Reflection@RBX@@
 .?AV?$EnumDesc@W4TerrainLiquidMergeOperation@RBX@@@Reflection@RBX@@
 .?AV?$EnumDesc@W4TerrainSolidMergeOperation@RBX@@@Reflection@RBX@@
+.?AV?$EnumDesc@W4TextChannelDisplayMode@RBX@@@Reflection@RBX@@
 .?AV?$EnumDesc@W4TextChatMessageStatus@RBX@@@Reflection@RBX@@
 .?AV?$EnumDesc@W4TextDirection@Text@RBX@@@Reflection@RBX@@
 .?AV?$EnumDesc@W4TextFilterContext@TextFilterContextEnum@Enums@RBX@@@Reflection@RBX@@
@@ -6675,6 +6698,7 @@
 .?AV?$EnumPropDescriptor@VAccessoryDescription@RBX@@W4AccessoryType@2@@Reflection@RBX@@
 .?AV?$EnumPropDescriptor@VAdGui@Ads@RBX@@W4AdShape@23@@Reflection@RBX@@
 .?AV?$EnumPropDescriptor@VAdGui@Ads@RBX@@W4AdUnitStatus@23@@Reflection@RBX@@
+.?AV?$EnumPropDescriptor@VAdPlacement@Ads@RBX@@W4AdFormat@23@@Reflection@RBX@@
 .?AV?$EnumPropDescriptor@VAdPortal@Ads@RBX@@W4AdUnitStatus@23@@Reflection@RBX@@
 .?AV?$EnumPropDescriptor@VAlignOrientation@Constraints@RBX@@W4AlignType@23@@Reflection@RBX@@
 .?AV?$EnumPropDescriptor@VAlignOrientation@Constraints@RBX@@W4OrientationAlignmentMode@23@@Reflection@RBX@@
@@ -6743,6 +6767,7 @@
 .?AV?$EnumPropDescriptor@VCharacterMesh@RBX@@W4BodyPart@2@@Reflection@RBX@@
 .?AV?$EnumPropDescriptor@VChatInputBarConfiguration@RBX@@W4KeyCode@2@@Reflection@RBX@@
 .?AV?$EnumPropDescriptor@VChatWindowConfiguration@RBX@@W4HorizontalAlignment@HorizontalAlignmentEnum@Enums@2@@Reflection@RBX@@
+.?AV?$EnumPropDescriptor@VChatWindowConfiguration@RBX@@W4TextChannelDisplayMode@2@@Reflection@RBX@@
 .?AV?$EnumPropDescriptor@VChatWindowConfiguration@RBX@@W4VerticalAlignment@VerticalAlignmentEnum@Enums@2@@Reflection@RBX@@
 .?AV?$EnumPropDescriptor@VClass@Metadata@Reflection@RBX@@W4ServiceVisibility@234@@Reflection@RBX@@
 .?AV?$EnumPropDescriptor@VCollaborator@RBX@@W4CollaboratorStatus@2@@Reflection@RBX@@
@@ -8018,6 +8043,9 @@
 .?AV?$GetImpl@P6APEAVInstance@RBX@@PEBVDataModel@2@@Z@?$PropDescriptor@VDataModel@RBX@@PEAVInstance@2@@Reflection@RBX@@
 .?AV?$GetImpl@P6APEAVRunService@RBX@@PEBVDataModel@2@@Z@?$PropDescriptor@VDataModel@RBX@@PEAVRunService@2@@Reflection@RBX@@
 .?AV?$GetImpl@P8AdGuiProp@Ads@RBX@@EBA?AW4AdUnitStatus@23@XZ@?$PropDescriptor@VAdGui@Ads@RBX@@W4AdUnitStatus@23@@Reflection@RBX@@
+.?AV?$GetImpl@P8AdPlacementProp@Ads@RBX@@EBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ@?$PropDescriptor@VAdPlacement@Ads@RBX@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Reflection@RBX@@
+.?AV?$GetImpl@P8AdPlacementProp@Ads@RBX@@EBA?AVContent@3@XZ@?$PropDescriptor@VAdPlacement@Ads@RBX@@VContent@3@@Reflection@RBX@@
+.?AV?$GetImpl@P8AdPlacementProp@Ads@RBX@@EBA_NXZ@?$PropDescriptor@VAdPlacement@Ads@RBX@@_N@Reflection@RBX@@
 .?AV?$GetImpl@P8AdPortalProp@Ads@RBX@@EBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ@?$PropDescriptor@VAdPortal@Ads@RBX@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Reflection@RBX@@
 .?AV?$GetImpl@P8AdPortalProp@Ads@RBX@@EBA?AW4AdUnitStatus@23@XZ@?$PropDescriptor@VAdPortal@Ads@RBX@@W4AdUnitStatus@23@@Reflection@RBX@@
 .?AV?$GetImpl@P8AdPortalProp@Ads@RBX@@EBA_JXZ@?$PropDescriptor@VAdPortal@Ads@RBX@@_J@Reflection@RBX@@
@@ -8370,6 +8398,9 @@
 .?AV?$GetSetImpl@P8AdGuiProp@Ads@RBX@@EBA?AVTextureId@3@XZP8123@EAAXV43@@Z@?$PropDescriptor@VAdGui@Ads@RBX@@VTextureId@3@@Reflection@RBX@@
 .?AV?$GetSetImpl@P8AdGuiProp@Ads@RBX@@EBA?AW4AdShape@23@XZP8123@EAAXW4423@@Z@?$PropDescriptor@VAdGui@Ads@RBX@@W4AdShape@23@@Reflection@RBX@@
 .?AV?$GetSetImpl@P8AdGuiProp@Ads@RBX@@EBA_NXZP8123@EAAX_N@Z@?$PropDescriptor@VAdGui@Ads@RBX@@_N@Reflection@RBX@@
+.?AV?$GetSetImpl@P8AdPlacementProp@Ads@RBX@@EBA?AW4AdFormat@23@XZP8123@EAAXW4423@@Z@?$PropDescriptor@VAdPlacement@Ads@RBX@@W4AdFormat@23@@Reflection@RBX@@
+.?AV?$GetSetImpl@P8AdPlacementProp@Ads@RBX@@EBAPEAVInstance@3@XZP8123@EAAXPEAV43@@Z@?$PropDescriptor@VAdPlacement@Ads@RBX@@PEAVInstance@3@@Reflection@RBX@@
+.?AV?$GetSetImpl@P8AdPlacementProp@Ads@RBX@@EBA_JXZP8123@EAAX_J@Z@?$PropDescriptor@VAdPlacement@Ads@RBX@@_J@Reflection@RBX@@
 .?AV?$GetSetImpl@P8AirControllerProp@RBX@@EBA?AVVector3@2@XZP812@EAAXV32@@Z@?$PropDescriptor@VAirController@RBX@@VVector3@2@@Reflection@RBX@@
 .?AV?$GetSetImpl@P8AirControllerProp@RBX@@EBAMXZP812@EAAXM@Z@?$PropDescriptor@VAirController@RBX@@M@Reflection@RBX@@
 .?AV?$GetSetImpl@P8AirControllerProp@RBX@@EBA_NXZP812@EAAX_N@Z@?$PropDescriptor@VAirController@RBX@@_N@Reflection@RBX@@
@@ -8691,6 +8722,7 @@
 .?AV?$GetSetImpl@P8ChatWindowConfigurationProp@RBX@@EBA?AVFontInfo@Text@2@XZP812@EAAXV342@@Z@?$PropDescriptor@VChatWindowConfiguration@RBX@@VFontInfo@Text@2@@Reflection@RBX@@
 .?AV?$GetSetImpl@P8ChatWindowConfigurationProp@RBX@@EBA?AVVector2@2@XZP812@EAAXV32@@Z@?$PropDescriptor@VChatWindowConfiguration@RBX@@VVector2@2@@Reflection@RBX@@
 .?AV?$GetSetImpl@P8ChatWindowConfigurationProp@RBX@@EBA?AW4HorizontalAlignment@HorizontalAlignmentEnum@Enums@2@XZP812@EAAXW43452@@Z@?$PropDescriptor@VChatWindowConfiguration@RBX@@W4HorizontalAlignment@HorizontalAlignmentEnum@Enums@2@@Reflection@RBX@@
+.?AV?$GetSetImpl@P8ChatWindowConfigurationProp@RBX@@EBA?AW4TextChannelDisplayMode@2@XZP812@EAAXW432@@Z@?$PropDescriptor@VChatWindowConfiguration@RBX@@W4TextChannelDisplayMode@2@@Reflection@RBX@@
 .?AV?$GetSetImpl@P8ChatWindowConfigurationProp@RBX@@EBA?AW4VerticalAlignment@VerticalAlignmentEnum@Enums@2@XZP812@EAAXW43452@@Z@?$PropDescriptor@VChatWindowConfiguration@RBX@@W4VerticalAlignment@VerticalAlignmentEnum@Enums@2@@Reflection@RBX@@
 .?AV?$GetSetImpl@P8ChatWindowConfigurationProp@RBX@@EBAMXZP812@EAAXM@Z@?$PropDescriptor@VChatWindowConfiguration@RBX@@M@Reflection@RBX@@
 .?AV?$GetSetImpl@P8ChatWindowConfigurationProp@RBX@@EBANXZP812@EAAXN@Z@?$PropDescriptor@VChatWindowConfiguration@RBX@@N@Reflection@RBX@@
@@ -9489,9 +9521,13 @@
 .?AV?$GetSetImpl@P8StarterPlayerProp@RBX@@EBA?AW4RolloutState@Enums@2@XZP812@EAAXW4342@@Z@?$PropDescriptor@VStarterPlayerService@RBX@@W4RolloutState@Enums@2@@Reflection@RBX@@
 .?AV?$GetSetImpl@P8StarterPlayerProp@RBX@@EBAHXZP812@EAAXH@Z@?$PropDescriptor@VStarterPlayerService@RBX@@H@Reflection@RBX@@
 .?AV?$GetSetImpl@P8StarterPlayerProp@RBX@@EBAMXZP812@EAAXM@Z@?$PropDescriptor@VStarterPlayerService@RBX@@M@Reflection@RBX@@
+.?AV?$GetSetImpl@P8StarterPlayerProp@RBX@@EBAPEAVInstance@2@XZP812@EAAXPEAV32@@Z@?$PropDescriptor@VStarterPlayerService@RBX@@PEAVInstance@2@@Reflection@RBX@@
 .?AV?$GetSetImpl@P8StarterPlayerProp@RBX@@EBA_JXZP812@EAAX_J@Z@?$PropDescriptor@VStarterPlayerService@RBX@@_J@Reflection@RBX@@
 .?AV?$GetSetImpl@P8StarterPlayerProp@RBX@@EBA_NXZP812@EAAX_N@Z@?$PropDescriptor@VStarterPlayerService@RBX@@_N@Reflection@RBX@@
 .?AV?$GetSetImpl@P8StateMachineDefinitionProp@RBX@@EBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZP812@EAAXV34@@Z@?$PropDescriptor@VStateMachineDefinition@RBX@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Reflection@RBX@@
+.?AV?$GetSetImpl@P8StateMachineTransitionDefinitionProp@RBX@@EBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZP812@EAAXV34@@Z@?$PropDescriptor@VStateMachineTransitionDefinition@RBX@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Reflection@RBX@@
+.?AV?$GetSetImpl@P8StateMachineTransitionDefinitionProp@RBX@@EBAHXZP812@EAAXH@Z@?$PropDescriptor@VStateMachineTransitionDefinition@RBX@@H@Reflection@RBX@@
+.?AV?$GetSetImpl@P8StateMachineTransitionDefinitionProp@RBX@@EBAPEAVInstance@2@XZP812@EAAXPEAV32@@Z@?$PropDescriptor@VStateMachineTransitionDefinition@RBX@@PEAVInstance@2@@Reflection@RBX@@
 .?AV?$GetSetImpl@P8StringValueProp@RBX@@EBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZP812@EAAXV34@@Z@?$PropDescriptor@VStringValue@RBX@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Reflection@RBX@@
 .?AV?$GetSetImpl@P8StudioActionOverrideProp@Studio@RBX@@EBA_NXZP8123@EAAX_N@Z@?$PropDescriptor@VStudioActionOverride@Studio@RBX@@_N@Reflection@RBX@@
 .?AV?$GetSetImpl@P8StudioAttachmentProp@Studio@RBX@@EBA?AVVector2@3@XZP8123@EAAXV43@@Z@?$PropDescriptor@VStudioAttachment@Studio@RBX@@VVector2@3@@Reflection@RBX@@
@@ -10329,9 +10365,13 @@
 .?AV?$MouseCommandAction@VLockTool@RBX@@@Studio@RBX@@
 .?AV?$MouseCommandAction@VMaterialFillTool@RBX@@@Studio@RBX@@
 .?AV?$NetAssetDeltaFactoryType@UConvexDecompHolder@RBX@@UDeltaConvexDecompHolder@2@@Network@RBX@@
+.?AV?$NetAssetDeltaFactoryType@VEditableMeshDataHolder@RBX@@VDeltaEditableMeshDataHolder@2@@Network@RBX@@
+.?AV?$NetAssetDeltaFactoryType@VImageHolder@RBX@@VDeltaImageHolder@2@@Network@RBX@@
 .?AV?$NetAssetDeltaFactoryType@VSolidMeshHolder@RBX@@VSolidMeshHolderDelta@2@@Network@RBX@@
 .?AV?$NetAssetFactoryType@UConvexDecompHolder@RBX@@@Network@RBX@@
 .?AV?$NetAssetFactoryType@URuntimeContentNetAsset@RBX@@@Network@RBX@@
+.?AV?$NetAssetFactoryType@VEditableMeshDataHolder@RBX@@@Network@RBX@@
+.?AV?$NetAssetFactoryType@VImageHolder@RBX@@@Network@RBX@@
 .?AV?$NetAssetFactoryType@VSolidMeshHolder@RBX@@@Network@RBX@@
 .?AV?$NetAssetPropDescriptor@VEditableImage@RBX@@VImageHolder@2@@Reflection@RBX@@
 .?AV?$NetAssetPropDescriptor@VEditableMesh@RBX@@VEditableMeshDataHolder@2@@Reflection@RBX@@
@@ -10547,6 +10587,10 @@
 .?AV?$PropDescriptor@VAdGui@Ads@RBX@@VContent@3@@Reflection@RBX@@
 .?AV?$PropDescriptor@VAdGui@Ads@RBX@@VTextureId@3@@Reflection@RBX@@
 .?AV?$PropDescriptor@VAdGui@Ads@RBX@@_N@Reflection@RBX@@
+.?AV?$PropDescriptor@VAdPlacement@Ads@RBX@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Reflection@RBX@@
+.?AV?$PropDescriptor@VAdPlacement@Ads@RBX@@VContent@3@@Reflection@RBX@@
+.?AV?$PropDescriptor@VAdPlacement@Ads@RBX@@_J@Reflection@RBX@@
+.?AV?$PropDescriptor@VAdPlacement@Ads@RBX@@_N@Reflection@RBX@@
 .?AV?$PropDescriptor@VAdPortal@Ads@RBX@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Reflection@RBX@@
 .?AV?$PropDescriptor@VAdPortal@Ads@RBX@@_J@Reflection@RBX@@
 .?AV?$PropDescriptor@VAirController@RBX@@M@Reflection@RBX@@
@@ -11479,6 +11523,8 @@
 .?AV?$PropDescriptor@VStarterPlayerService@RBX@@_J@Reflection@RBX@@
 .?AV?$PropDescriptor@VStarterPlayerService@RBX@@_N@Reflection@RBX@@
 .?AV?$PropDescriptor@VStateMachineDefinition@RBX@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Reflection@RBX@@
+.?AV?$PropDescriptor@VStateMachineTransitionDefinition@RBX@@H@Reflection@RBX@@
+.?AV?$PropDescriptor@VStateMachineTransitionDefinition@RBX@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Reflection@RBX@@
 .?AV?$PropDescriptor@VStatsService@Stats@RBX@@H@Reflection@RBX@@
 .?AV?$PropDescriptor@VStatsService@Stats@RBX@@M@Reflection@RBX@@
 .?AV?$PropDescriptor@VStatsService@Stats@RBX@@_N@Reflection@RBX@@
@@ -11915,6 +11961,7 @@
 .?AV?$RefCountedObject@VVp8EncoderSpecificSettings@VideoEncoderConfig@webrtc@@@webrtc@@
 .?AV?$RefCountedObject@VVp9EncoderSpecificSettings@VideoEncoderConfig@webrtc@@@webrtc@@
 .?AV?$RefPropDescriptor@VAccessoryDescription@RBX@@VInstance@2@@Reflection@RBX@@
+.?AV?$RefPropDescriptor@VAdPlacement@Ads@RBX@@VInstance@3@@Reflection@RBX@@
 .?AV?$RefPropDescriptor@VAnimationConstraint@Constraints@RBX@@VBasePart@3@@Reflection@RBX@@
 .?AV?$RefPropDescriptor@VAnimationStreamTrack@RBX@@VTrackerStreamAnimation@2@@Reflection@RBX@@
 .?AV?$RefPropDescriptor@VAnimationTrack@RBX@@VAnimation@2@@Reflection@RBX@@
@@ -12009,6 +12056,8 @@
 .?AV?$RefPropDescriptor@VSoundService@Soundscape@RBX@@VInstance@3@@Reflection@RBX@@
 .?AV?$RefPropDescriptor@VStackFrame@Studio@RBX@@VDebuggerVariable@23@@Reflection@RBX@@
 .?AV?$RefPropDescriptor@VStarterGuiService@RBX@@VStyleSheet@Styling@2@@Reflection@RBX@@
+.?AV?$RefPropDescriptor@VStarterPlayerService@RBX@@VInstance@2@@Reflection@RBX@@
+.?AV?$RefPropDescriptor@VStateMachineTransitionDefinition@RBX@@VInstance@2@@Reflection@RBX@@
 .?AV?$RefPropDescriptor@VStudioUserPreferences@@VInstance@RBX@@@Reflection@RBX@@
 .?AV?$RefPropDescriptor@VStyleDerive@Styling@RBX@@VStyleSheet@23@@Reflection@RBX@@
 .?AV?$RefPropDescriptor@VStyleLink@Styling@RBX@@VStyleSheet@23@@Reflection@RBX@@
@@ -12869,6 +12918,7 @@
 .?AV?$SupportsSubsystemWeakPtr@VDesignFoundationsCore@RBX@@@RBX@@
 .?AV?$SupportsSubsystemWeakPtr@VDeviceDisplayHandler@RBX@@@RBX@@
 .?AV?$SupportsSubsystemWeakPtr@VExampleProtocolCore@RBX@@@RBX@@
+.?AV?$SupportsSubsystemWeakPtr@VExternalIdentityCore@RBX@@@RBX@@
 .?AV?$SupportsSubsystemWeakPtr@VLocalStorageHandler@RBX@@@RBX@@
 .?AV?$SupportsSubsystemWeakPtr@VPinShortcutCore@RBX@@@RBX@@
 .?AV?$SupportsSubsystemWeakPtr@VWindowProtocolCore@WindowProtocol@RBX@@@RBX@@
@@ -13787,6 +13837,7 @@
 .?AV?$_Ebco_base@V?$Allocator@UAudioFileInfo@BulkAudioLoader@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UAudioMetadataRequest@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UAvatarImportParams@RBX@@@Detail@RSL@@$0A@@std@@
+.?AV?$_Ebco_base@V?$Allocator@UAvatarMeshBundle@WrapContentProvider@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UBulkAudioLoader@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UBundleReadStatus@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UCacheEntry@HttpCache@RBX@@@Detail@RSL@@$0A@@std@@
@@ -13823,6 +13874,7 @@
 .?AV?$_Ebco_base@V?$Allocator@UFileMetadata@FileSyncItem@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UFilterChain@Styling@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UFlowDef@FlowConfig@Analytics@RBX@@@Detail@RSL@@$0A@@std@@
+.?AV?$_Ebco_base@V?$Allocator@UFriendsList@FriendService@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UFromMmapImpl@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UFrontendCancellationToken@Luau@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UGeneralResponse@LSP@RBX@@@Detail@RSL@@$0A@@std@@
@@ -14075,6 +14127,9 @@
 .?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8AssistantBridgeProxy@Studio@RBX@@EAA?AV?$Result@VVariant@Reflection@RBX@@UCommandError@Studio@3@@Tasks@3@_JVVariant@Reflection@3@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8AssistantBridgeProxy@Studio@RBX@@EAA?AV?$Result@_JUCommandError@Studio@RBX@@@Tasks@3@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8AssistantExperimentationProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@7@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
+.?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8AssistantPermissionsBridgeProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
+.?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8AssistantPermissionsBridgeProxy@Studio@RBX@@EAA?AV?$Result@VVariant@Reflection@RBX@@UCommandError@Studio@3@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
+.?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8AssistantPermissionsBridgeProxy@Studio@RBX@@EAA?AV?$Result@_NUCommandError@Studio@RBX@@@Tasks@3@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8CancellableDialogManager@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8CapabilitiesHandlerProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@V?$shared_ptr@VInstance@RBX@@@std@@V?$optional@W4Capabilities@Security@RBX@@@7@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8CommandAnalyzerProxy@Studio@RBX@@EAA?AV?$Result@V?$optional@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@3@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
@@ -14908,6 +14963,9 @@
 .?AV?$_Ebco_base@V?$Allocator@VWeakObjectRef@Lua@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VWebLoginProtocol@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VWebSocketCurl@RBX@@@Detail@RSL@@$0A@@std@@
+.?AV?$_Ebco_base@V?$Allocator@VWebSocketServer@RBX@@@Detail@RSL@@$0A@@std@@
+.?AV?$_Ebco_base@V?$Allocator@VWebSocketServerConnection@RBX@@@Detail@RSL@@$0A@@std@@
+.?AV?$_Ebco_base@V?$Allocator@VWebSocketServerMessageStream@JsonRpc@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VWebmInputFormat@RVideo@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VWebmOutputFormat@Internal@RVideo@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VWebrtcInputFormat@RVideo@RBX@@@Detail@RSL@@$0A@@std@@
@@ -15123,6 +15181,7 @@
 .?AV?$_Func_base@V?$unique_ptr@VAssistantPluginLoader@Studio@RBX@@U?$default_delete@VAssistantPluginLoader@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIActionManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VAudioNetworkAdaptor@webrtc@@U?$default_delete@VAudioNetworkAdaptor@webrtc@@@std@@@std@@V?$basic_string_view@DU?$char_traits@D@std@@@2@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VAudioToggleAction@Studio@RBX@@U?$default_delete@VAudioToggleAction@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIActionManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VDataModelSoundManager@Studio@RBX@@@45@@std@@
+.?AV?$_Func_base@V?$unique_ptr@VAutoRecoveryTaskRegister@Studio@RBX@@U?$default_delete@VAutoRecoveryTaskRegister@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@45@V?$ManagedPtr@VIDialogManager@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceOpener@Studio@RBX@@@45@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@45@V?$ManagedPtr@VIDialogManagerUIBridge@Studio@RBX@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VAvatarGenerationDataModelObserver@Studio@RBX@@U?$default_delete@VAvatarGenerationDataModelObserver@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIUserContext@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VAvatarSettingsPublishHandler@Studio@RBX@@U?$default_delete@VAvatarSettingsPublishHandler@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIPublishMediator@Studio@RBX@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VBackendConfigBackgroundUpdater@Studio@RBX@@U?$default_delete@VBackendConfigBackgroundUpdater@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VBackendConfigManager@Studio@RBX@@@Component@RBX@@@std@@
@@ -15205,6 +15264,7 @@
 .?AV?$_Func_base@V?$unique_ptr@VDeviceEmulatorServicePlaceListener@Studio@RBX@@U?$default_delete@VDeviceEmulatorServicePlaceListener@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VStudioDeviceEmulator@@@45@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@V?$ManagedPtr@VIRobloxIDEDoc@Studio@RBX@@@45@V?$ManagedPtr@VStandaloneDataModelProvider@Studio@RBX@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VDeviceEmulatorServicePlaceListener@Studio@RBX@@U?$default_delete@VDeviceEmulatorServicePlaceListener@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VStudioDeviceEmulator@@@45@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@V?$ManagedPtr@VStandaloneDataModelProvider@Studio@RBX@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VDeviceEmulatorShortcutRegistrar@Studio@RBX@@U?$default_delete@VDeviceEmulatorShortcutRegistrar@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIShortcutRegistry@Studio@RBX@@@Component@RBX@@@std@@
+.?AV?$_Func_base@V?$unique_ptr@VDialogSuppressionUserListener@Studio@RBX@@U?$default_delete@VDialogSuppressionUserListener@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIDialogSuppressionStore@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIUserContext@Studio@RBX@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VDialogTelemetryEventFilter@Studio@RBX@@U?$default_delete@VDialogTelemetryEventFilter@Studio@RBX@@@std@@@std@@$$V@std@@
 .?AV?$_Func_base@V?$unique_ptr@VDiffAgainstLatestPackageAction@Studio@RBX@@U?$default_delete@VDiffAgainstLatestPackageAction@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIActionManager@Studio@RBX@@@45@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VDirectorySettings@Studio@RBX@@U?$default_delete@VDirectorySettings@Studio@RBX@@@std@@@std@@$$V@std@@
@@ -15269,7 +15329,7 @@
 .?AV?$_Func_base@V?$unique_ptr@VIAssetAccessController@AssetAccess@Studio@RBX@@U?$default_delete@VIAssetAccessController@AssetAccess@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@V?$ManagedPtr@VINotificationService@Studio@RBX@@@45@V?$ManagedPtr@VIRendererApi@Studio@RBX@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VIAssetDataModelANRListener@Studio@RBX@@U?$default_delete@VIAssetDataModelANRListener@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VDEPRECATED_ApplicationNotRespondingDetector@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@45@V?$ManagedPtr@VIAssetPluginErrorReporter@Studio@RBX@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VIAssetDataModelANRListener@Studio@RBX@@U?$default_delete@VIAssetDataModelANRListener@Studio@RBX@@@std@@@std@@V?$optional@V?$ManagedPtr@VIStudioHangMonitor@Studio@RBX@@@Component@RBX@@@2@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIAssetPluginErrorReporter@Studio@RBX@@@56@@std@@
-.?AV?$_Func_base@V?$unique_ptr@VIAssetDataModelManager@Studio@RBX@@U?$default_delete@VIAssetDataModelManager@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VCoreComponentManagerProxy@Component@RBX@@@Component@RBX@@V?$ManagedPtr@VIUserContext@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@V?$optional@V?$ManagedPtr@VIWaypointTelemetry@Studio@RBX@@@Component@RBX@@@2@V?$ManagedPtr@VIUniverseController@@@45@@std@@
+.?AV?$_Func_base@V?$unique_ptr@VIAssetDataModelManager@Studio@RBX@@U?$default_delete@VIAssetDataModelManager@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VCoreComponentManagerProxy@Component@RBX@@@Component@RBX@@V?$ManagedPtr@VIUserContext@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@V?$ManagedPtr@VIWaypointTelemetry@Studio@RBX@@@45@V?$ManagedPtr@VIUniverseController@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VIAssetExportController@Studio@RBX@@U?$default_delete@VIAssetExportController@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@V?$ManagedPtr@VIRendererApi@Studio@RBX@@@45@V?$ManagedPtr@VIGraphicsEngineProvider@Studio@RBX@@@45@V?$ManagedPtr@VIUserContext@Studio@RBX@@@45@V?$ManagedPtr@VIMainWindow@Studio@RBX@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VIAssetInsertController@Studio@RBX@@U?$default_delete@VIAssetInsertController@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VStandaloneDataModelProvider@Studio@RBX@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VIAssetManagementController@Studio@RBX@@U?$default_delete@VIAssetManagementController@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VINotificationService@Studio@RBX@@@45@V?$ManagedPtr@VStandaloneDataModelProvider@Studio@RBX@@@45@@std@@
@@ -15279,6 +15339,7 @@
 .?AV?$_Func_base@V?$unique_ptr@VIAssistantBridge@Studio@RBX@@U?$default_delete@VIAssistantBridge@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@V?$ManagedPtr@VIScriptDiffAndCommit@Studio@RBX@@@45@V?$ManagedPtr@VIAssistantPermissions@Studio@RBX@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VIAssistantExperimentation@Studio@RBX@@U?$default_delete@VIAssistantExperimentation@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIConversationalAIExperimentation@Studio@RBX@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VIAssistantPermissions@Studio@RBX@@U?$default_delete@VIAssistantPermissions@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@Component@RBX@@@std@@
+.?AV?$_Func_base@V?$unique_ptr@VIAssistantPermissionsBridge@Studio@RBX@@U?$default_delete@VIAssistantPermissionsBridge@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VIBenchmarkCaptureComponent@Profiling@RBX@@U?$default_delete@VIBenchmarkCaptureComponent@Profiling@RBX@@@std@@@std@@$$V@std@@
 .?AV?$_Func_base@V?$unique_ptr@VICancellableDialogManager@Studio@RBX@@U?$default_delete@VICancellableDialogManager@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VStandaloneDataModelProvider@Studio@RBX@@@45@V?$ManagedPtr@VIDialogManager@Studio@RBX@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VICapabilitiesHandler@Studio@RBX@@U?$default_delete@VICapabilitiesHandler@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@@std@@
@@ -15303,6 +15364,7 @@
 .?AV?$_Func_base@V?$unique_ptr@VIDialogImageManager@Studio@RBX@@U?$default_delete@VIDialogImageManager@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIPlaceManager@Studio@RBX@@@45@V?$ManagedPtr@VIThumbnailController@Studio@RBX@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VIDialogManager@Studio@RBX@@U?$default_delete@VIDialogManager@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIDialogManagerUIBridge@Studio@RBX@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VIDialogManagerUIBridge@Studio@RBX@@U?$default_delete@VIDialogManagerUIBridge@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@@std@@
+.?AV?$_Func_base@V?$unique_ptr@VIDialogSuppressionStore@Studio@RBX@@U?$default_delete@VIDialogSuppressionStore@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIStudioSettingsWrapper@@@Component@RBX@@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VIDragDropDataModelController@Studio@RBX@@U?$default_delete@VIDragDropDataModelController@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@V?$ManagedPtr@VIStudioPluginApiHost@@@45@V?$ManagedPtr@VIMainWindow@Studio@RBX@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VIExperienceCoordinator@RBX@@U?$default_delete@VIExperienceCoordinator@RBX@@@std@@@std@@$$V@std@@
 .?AV?$_Func_base@V?$unique_ptr@VIFeatureActivityTracker@Studio@RBX@@U?$default_delete@VIFeatureActivityTracker@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIHardwareSleepListener@@@Component@RBX@@V?$ManagedPtr@VINotificationService@Studio@RBX@@@45@@std@@
@@ -15348,8 +15410,8 @@
 .?AV?$_Func_base@V?$unique_ptr@VIPlaceSessionBridge@Studio@RBX@@U?$default_delete@VIPlaceSessionBridge@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VIPlaceSessionContextBridge@Studio@RBX@@U?$default_delete@VIPlaceSessionContextBridge@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VIPlaceSessionStateController@Studio@RBX@@U?$default_delete@VIPlaceSessionStateController@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VCoreComponentManagerProxy@Component@RBX@@@Component@RBX@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@45@@std@@
-.?AV?$_Func_base@V?$unique_ptr@VIPlaceSessionTaskRegister@Studio@RBX@@U?$default_delete@VIPlaceSessionTaskRegister@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIActionManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIRobloxIDEDoc@Studio@RBX@@@45@V?$ManagedPtr@VIStudioPluginRibbonActionHost@@@45@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceManager@Studio@RBX@@@45@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@45@V?$ManagedPtr@VIRendererApi@Studio@RBX@@@45@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@45@V?$optional@V?$ManagedPtr@VIWaypointTelemetry@Studio@RBX@@@Component@RBX@@@2@V?$optional@V?$ManagedPtr@VIPlaySoloManager@Studio@RBX@@@Component@RBX@@@2@V?$ManagedPtr@VIMemoryStatistics@Studio@Analytics@RBX@@@45@@std@@
-.?AV?$_Func_base@V?$unique_ptr@VIPlaceSessionTaskRegister@Studio@RBX@@U?$default_delete@VIPlaceSessionTaskRegister@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIRobloxIDEDoc@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceManager@Studio@RBX@@@45@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@45@V?$ManagedPtr@VIRendererApi@Studio@RBX@@@45@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@45@V?$optional@V?$ManagedPtr@VIWaypointTelemetry@Studio@RBX@@@Component@RBX@@@2@V?$optional@V?$ManagedPtr@VIPlaySoloManager@Studio@RBX@@@Component@RBX@@@2@V?$ManagedPtr@VIMemoryStatistics@Studio@Analytics@RBX@@@45@@std@@
+.?AV?$_Func_base@V?$unique_ptr@VIPlaceSessionTaskRegister@Studio@RBX@@U?$default_delete@VIPlaceSessionTaskRegister@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIActionManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIRobloxIDEDoc@Studio@RBX@@@45@V?$ManagedPtr@VIStudioPluginRibbonActionHost@@@45@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceManager@Studio@RBX@@@45@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@45@V?$ManagedPtr@VIRendererApi@Studio@RBX@@@45@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@45@V?$ManagedPtr@VIWaypointTelemetry@Studio@RBX@@@45@V?$optional@V?$ManagedPtr@VIPlaySoloManager@Studio@RBX@@@Component@RBX@@@2@V?$ManagedPtr@VIMemoryStatistics@Studio@Analytics@RBX@@@45@@std@@
+.?AV?$_Func_base@V?$unique_ptr@VIPlaceSessionTaskRegister@Studio@RBX@@U?$default_delete@VIPlaceSessionTaskRegister@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIRobloxIDEDoc@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceManager@Studio@RBX@@@45@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@45@V?$ManagedPtr@VIRendererApi@Studio@RBX@@@45@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@45@V?$ManagedPtr@VIWaypointTelemetry@Studio@RBX@@@45@V?$optional@V?$ManagedPtr@VIPlaySoloManager@Studio@RBX@@@Component@RBX@@@2@V?$ManagedPtr@VIMemoryStatistics@Studio@Analytics@RBX@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VIPlaceVersionHistoryBridge@Studio@RBX@@U?$default_delete@VIPlaceVersionHistoryBridge@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VIPlaySoloManager@Studio@RBX@@U?$default_delete@VIPlaySoloManager@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@V?$ManagedPtr@VIDataModelListenerBridge@Studio@RBX@@@45@V?$ManagedPtr@VRunServiceMonitor@Studio@RBX@@@45@V?$ManagedPtr@VTestModeModifiedScriptSavePreferenceController@Studio@RBX@@@45@V?$ManagedPtr@VIMainWindow@Studio@RBX@@@45@V?$ManagedPtr@VIRestartController@@@45@V?$ManagedPtr@VIMemoryStatistics@Studio@Analytics@RBX@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VIPlaySoloManager@Studio@RBX@@U?$default_delete@VIPlaySoloManager@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@V?$ManagedPtr@VIDataModelListenerBridge@Studio@RBX@@@45@V?$ManagedPtr@VRunServiceMonitor@Studio@RBX@@@45@V?$ManagedPtr@VTestModeModifiedScriptSavePreferenceController@Studio@RBX@@@45@V?$ManagedPtr@VIMainWindow@Studio@RBX@@@45@V?$ManagedPtr@VPlaceSessionMainViewManager@Studio@RBX@@@45@V?$ManagedPtr@VIRobloxIDEDoc@Studio@RBX@@@45@V?$ManagedPtr@VIRestartController@@@45@V?$ManagedPtr@VIMemoryStatistics@Studio@Analytics@RBX@@@45@@std@@
@@ -15376,6 +15438,7 @@
 .?AV?$_Func_base@V?$unique_ptr@VIRenderThrottleModel@Studio@RBX@@U?$default_delete@VIRenderThrottleModel@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIGraphicsEngineProvider@Studio@RBX@@@Component@RBX@@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VIRendererApi@Studio@RBX@@U?$default_delete@VIRendererApi@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIGraphicsEngineProvider@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIRenderThrottleModel@Studio@RBX@@@45@V?$ManagedPtr@VRenderScheduler@Studio@RBX@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VIRestartController@@U?$default_delete@VIRestartController@@@std@@@std@@V?$ManagedPtr@VIMainWindow@Studio@RBX@@@Component@RBX@@@std@@
+.?AV?$_Func_base@V?$unique_ptr@VIRestartController@@U?$default_delete@VIRestartController@@@std@@@std@@V?$ManagedPtr@VIMainWindow@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIProcessLauncher@Studio@RBX@@@45@V?$ManagedPtr@VProcessLaunchArgHelper@Studio@RBX@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VIRibbonConfigurationProvider@Studio@RBX@@U?$default_delete@VIRibbonConfigurationProvider@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIRibbonFileSystemHelper@Studio@RBX@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VIRibbonFileSystemHelper@Studio@RBX@@U?$default_delete@VIRibbonFileSystemHelper@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIUserContext@Studio@RBX@@@Component@RBX@@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VIRidlCommandExample@Studio@RBX@@U?$default_delete@VIRidlCommandExample@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIUserContext@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@@std@@
@@ -15570,7 +15633,9 @@
 .?AV?$_Func_base@V?$unique_ptr@VPluginWidgetsViewPlaceListener@Studio@RBX@@U?$default_delete@VPluginWidgetsViewPlaceListener@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIPluginWidgetsView@@@Component@RBX@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VPluginWindowCaptureConnector@Studio@RBX@@U?$default_delete@VPluginWindowCaptureConnector@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIMainWindow@Studio@RBX@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VPopupImagePickerController@Studio@RBX@@U?$default_delete@VPopupImagePickerController@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIMainWindow@Studio@RBX@@@45@V?$ManagedPtr@VIPanelsManager@Studio@RBX@@@45@V?$ManagedPtr@VIWidgetsManager@Studio@RBX@@@45@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@V?$ManagedPtr@VIStudioSettingsWrapper@@@45@@std@@
+.?AV?$_Func_base@V?$unique_ptr@VProcessLaunchArgHelper@Studio@RBX@@U?$default_delete@VProcessLaunchArgHelper@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIAppContext@Studio@RBX@@@Component@RBX@@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VProcessLaunchArgHelper@Studio@RBX@@U?$default_delete@VProcessLaunchArgHelper@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIAppContext@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIUserContext@Studio@RBX@@@45@@std@@
+.?AV?$_Func_base@V?$unique_ptr@VProcessLaunchArgHelperUserIdBridge@Studio@RBX@@U?$default_delete@VProcessLaunchArgHelperUserIdBridge@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VProcessLaunchArgHelper@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIUserContext@Studio@RBX@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VProcessMonitor@Studio@RBX@@U?$default_delete@VProcessMonitor@Studio@RBX@@@std@@@std@@$$V@std@@
 .?AV?$_Func_base@V?$unique_ptr@VPropertiesTelemetry@PropertiesWidget@@U?$default_delete@VPropertiesTelemetry@PropertiesWidget@@@std@@@std@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@Component@RBX@@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VPublishAction@Studio@RBX@@U?$default_delete@VPublishAction@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIActionManager@Studio@RBX@@@45@@std@@
@@ -15590,6 +15655,7 @@
 .?AV?$_Func_base@V?$unique_ptr@VReflectionMetadataDocs@Studio@RBX@@U?$default_delete@VReflectionMetadataDocs@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VStandaloneDataModelProvider@Studio@RBX@@@Component@RBX@@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VReloadDebuggablePluginAction@Studio@RBX@@U?$default_delete@VReloadDebuggablePluginAction@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIActionManager@Studio@RBX@@@45@V?$ManagedPtr@VIRunnableChangedPluginsSource@Studio@RBX@@@45@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@V?$ManagedPtr@VIDialogManager@Studio@RBX@@@45@V?$ManagedPtr@VIStudioSettingsWrapper@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VRemoteDebuggerScriptWatcher@Studio@RBX@@U?$default_delete@VRemoteDebuggerScriptWatcher@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@V?$ManagedPtr@VIDebuggerHostAppServices@Studio@RBX@@@45@@std@@
+.?AV?$_Func_base@V?$unique_ptr@VRemoteDebuggerStudioBridge@Studio@RBX@@U?$default_delete@VRemoteDebuggerStudioBridge@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIUserContext@Studio@RBX@@@45@V?$ManagedPtr@VStandaloneDataModelProvider@Studio@RBX@@@45@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@V?$ManagedPtr@VIDebuggerHostAppServices@Studio@RBX@@@45@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VRemoteSystemOutputTaskRegister@Studio@RBX@@U?$default_delete@VRemoteSystemOutputTaskRegister@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VSystemOutputModel@@@Component@RBX@@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@V?$ManagedPtr@VITeamTestModeChecker@Studio@RBX@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VRenderScheduler@Studio@RBX@@U?$default_delete@VRenderScheduler@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIGraphicsEngineProvider@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIRenderErrorModel@Studio@RBX@@@45@V?$ManagedPtr@VIRenderThrottleModel@Studio@RBX@@@45@V?$ManagedPtr@VISelectionColorController@Studio@RBX@@@45@V?$ManagedPtr@VIWindowManager@Studio@RBX@@@45@@std@@
 .?AV?$_Func_base@V?$unique_ptr@VReportIllegalContentAction@Studio@RBX@@U?$default_delete@VReportIllegalContentAction@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIActionManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIUserContext@Studio@RBX@@@45@V?$ManagedPtr@VIContextController@Studio@RBX@@@45@@std@@
@@ -15942,6 +16008,7 @@
 .?AV?$_Func_base@W4CreationDecision@Component@RBX@@V?$ManagedPtr@VIPlaceManager@Studio@RBX@@@23@V?$ManagedPtr@VIJoinConfigFetcher@Studio@RBX@@@23@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@23@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@23@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@23@V?$optional@V?$ManagedPtr@VTeamTestDisconnectManager@Studio@RBX@@@Component@RBX@@@std@@V?$ManagedPtr@VITeamTestModeChecker@Studio@RBX@@@23@V?$optional@V?$ManagedPtr@VTeamCreateTeamTestDisconnectionHandler@Studio@RBX@@@Component@RBX@@@std@@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@23@@std@@
 .?AV?$_Func_base@W4CreationDecision@Component@RBX@@V?$ManagedPtr@VIPlaceManager@Studio@RBX@@@23@V?$ManagedPtr@VIJoinConfigFetcher@Studio@RBX@@@23@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@23@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@23@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@23@V?$optional@V?$ManagedPtr@VTeamTestDisconnectManager@Studio@RBX@@@Component@RBX@@@std@@V?$ManagedPtr@VITeamTestModeChecker@Studio@RBX@@@23@V?$optional@V?$ManagedPtr@VTeamCreateTeamTestDisconnectionHandler@Studio@RBX@@@Component@RBX@@@std@@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@23@V?$ManagedPtr@VPlaceSessionMainViewManager@Studio@RBX@@@23@@std@@
 .?AV?$_Func_base@W4CreationDecision@Component@RBX@@V?$ManagedPtr@VIPlaceManager@Studio@RBX@@@23@V?$ManagedPtr@VIJoinConfigFetcher@Studio@RBX@@@23@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@23@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@23@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@23@V?$ManagedPtr@VTeamCreateReconnectManager@Studio@RBX@@@23@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@23@V?$optional@V?$ManagedPtr@VTeamCreateTeamTestDisconnectionHandler@Studio@RBX@@@Component@RBX@@@std@@V?$ManagedPtr@VICloudEditController@@@23@V?$optional@V?$ManagedPtr@VIPlaceReconnectState@Studio@RBX@@@Component@RBX@@@std@@@std@@
+.?AV?$_Func_base@W4CreationDecision@Component@RBX@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@23@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@23@V?$ManagedPtr@VIDialogManager@Studio@RBX@@@23@V?$ManagedPtr@VIPlaceOpener@Studio@RBX@@@23@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@23@V?$ManagedPtr@VIDialogManagerUIBridge@Studio@RBX@@@23@@std@@
 .?AV?$_Func_base@W4CreationDecision@Component@RBX@@V?$ManagedPtr@VIPluginOTAManager@Studio@RBX@@@23@V?$ManagedPtr@VIUserContext@Studio@RBX@@@23@V?$ManagedPtr@VIRunnableChangedPluginsSource@Studio@RBX@@@23@V?$ManagedPtr@VIContextController@Studio@RBX@@@23@V?$ManagedPtr@VIPluginOTAManagerNewInputs@Studio@RBX@@@23@V?$ManagedPtr@VIPluginOTAChangeDetector@Studio@RBX@@@23@@std@@
 .?AV?$_Func_base@W4CreationDecision@Component@RBX@@V?$ManagedPtr@VIPluginOTAManagerNewInputs@Studio@RBX@@@23@@std@@
 .?AV?$_Func_base@W4CreationDecision@Component@RBX@@V?$ManagedPtr@VIRendererApi@Studio@RBX@@@23@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@23@@std@@
@@ -16042,6 +16109,8 @@
 .?AV?$_Func_base@XAEBUContinuedEvent@DAP@Scripting@RBX@@@std@@
 .?AV?$_Func_base@XAEBUCookie@RBX@@@std@@
 .?AV?$_Func_base@XAEBUCreateAssetRequest@RBX@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$function@$$A6AXUAssetModel@RBX@@@Z@4@V?$function@$$A6AXUAssetsUploadFailureInfo@RBX@@@Z@4@@std@@
+.?AV?$_Func_base@XAEBUCreateCallOutcome@Calling@RBX@@@std@@
+.?AV?$_Func_base@XAEBUCreateCallResult@Calling@RBX@@@std@@
 .?AV?$_Func_base@XAEBUCreatorLogMessage@RBX@@@std@@
 .?AV?$_Func_base@XAEBUCrossExperienceCallParams@RBX@@@std@@
 .?AV?$_Func_base@XAEBUDebuggerResponse@Studio@RBX@@@std@@
@@ -16182,6 +16251,8 @@
 .?AV?$_Func_base@XAEBVruntime_error@std@@@std@@
 .?AV?$_Func_base@XAEBW4AvatarCreationErrorType@Enums@RBX@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@
 .?AV?$_Func_base@XAEB_N@std@@
+.?AV?$_Func_base@XG@std@@
+.?AV?$_Func_base@XGAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@
 .?AV?$_Func_base@XH@std@@
 .?AV?$_Func_base@XHH@std@@
 .?AV?$_Func_base@XHHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@
@@ -16397,6 +16468,7 @@
 .?AV?$_Func_base@XV?$shared_ptr@$$CBV?$vector@V?$shared_ptr@VInstance@RBX@@@std@@V?$allocator@V?$shared_ptr@VInstance@RBX@@@std@@@2@@std@@@std@@@std@@
 .?AV?$_Func_base@XV?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@@std@@
 .?AV?$_Func_base@XV?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@V?$function@$$A6AXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@2@V32@@std@@
+.?AV?$_Func_base@XV?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@_N@std@@
 .?AV?$_Func_base@XV?$shared_ptr@$$CBVDocument@json@RBX@@@std@@@std@@
 .?AV?$_Func_base@XV?$shared_ptr@$$CBVDocument@json@RBX@@@std@@V?$function@$$A6AXV?$shared_ptr@$$CBUResponseWithTelemetry@?$ITransportLayer@VDocument@json@RBX@@V123@V123@V123@@RBX@@@std@@@Z@2@@std@@
 .?AV?$_Func_base@XV?$shared_ptr@$$CBVGImage@RBX@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@@std@@
@@ -16409,7 +16481,7 @@
 .?AV?$_Func_base@XV?$shared_ptr@UEngineFont@FontSelection@@@std@@@std@@
 .?AV?$_Func_base@XV?$shared_ptr@UFileMeshData@RBX@@@std@@@std@@
 .?AV?$_Func_base@XV?$shared_ptr@UFileMeshData@RBX@@@std@@PEAVDataModel@RBX@@@std@@
-.?AV?$_Func_base@XV?$shared_ptr@UFileMeshData@RBX@@@std@@V?$shared_ptr@USolution@Rbf@RBX@@@2@@std@@
+.?AV?$_Func_base@XV?$shared_ptr@UFileMeshData@RBX@@@std@@V?$shared_ptr@$$CBUSolution@Rbf@RBX@@@2@@std@@
 .?AV?$_Func_base@XV?$shared_ptr@UMethod@LSP@RBX@@@std@@@std@@
 .?AV?$_Func_base@XV?$shared_ptr@UTuple@Reflection@RBX@@@std@@@std@@
 .?AV?$_Func_base@XV?$shared_ptr@V?$basic_istream@DU?$char_traits@D@std@@@std@@@std@@@std@@
@@ -16606,6 +16678,7 @@
 .?AV?$_Func_base@XVUser@RBX@@@std@@
 .?AV?$_Func_base@XVVariant@Reflection@RBX@@@std@@
 .?AV?$_Func_base@XVVector2@RBX@@@std@@
+.?AV?$_Func_base@XVVector3@RBX@@@std@@
 .?AV?$_Func_base@XViterator@?$QMap@_JV?$shared_ptr@VEntityProperties@@@std@@@@@std@@
 .?AV?$_Func_base@XVruntime_error@std@@@std@@
 .?AV?$_Func_base@XW4AdAvailabilityResult@Ads@RBX@@W4AdAvailabilityDiagnosticMessage@23@@std@@
@@ -16735,6 +16808,7 @@
 .?AV?$_Func_base@_N$$V@std@@
 .?AV?$_Func_base@_NAEAUSourceNode@Luau@@@std@@
 .?AV?$_Func_base@_NAEAVInstance@RBX@@@std@@
+.?AV?$_Func_base@_NAEBU?$StateTransitionInfo@W4PlaceSessionState@Studio@RBX@@@Studio@RBX@@@std@@
 .?AV?$_Func_base@_NAEBUFrameReference@RemoteDebuggerServer@Scripting@RBX@@@std@@
 .?AV?$_Func_base@_NAEBUPackageDetails@SelectionData@Studio@RBX@@@std@@
 .?AV?$_Func_base@_NAEBUParseResult@Luau@@UPosition@2@AEBVTextDocument@LSP@RBX@@@std@@
@@ -16916,6 +16990,7 @@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VAssetManagerServiceRegister@Studio@RBX@@U?$default_delete@VAssetManagerServiceRegister@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@V?$ManagedPtr@VIRobloxIDEDoc@Studio@RBX@@@45@@ZV12@V345@V645@V745@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VAssistantPluginLoader@Studio@RBX@@U?$default_delete@VAssistantPluginLoader@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIActionManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@@ZV12@V345@V645@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VAudioToggleAction@Studio@RBX@@U?$default_delete@VAudioToggleAction@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIActionManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VDataModelSoundManager@Studio@RBX@@@45@@ZV12@V345@V645@@std@@
+.?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VAutoRecoveryTaskRegister@Studio@RBX@@U?$default_delete@VAutoRecoveryTaskRegister@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@45@V?$ManagedPtr@VIDialogManager@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceOpener@Studio@RBX@@@45@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@45@V?$ManagedPtr@VIDialogManagerUIBridge@Studio@RBX@@@45@@ZV12@V345@V645@V745@V845@V945@V?$ManagedPtr@VIDialogManagerUIBridge@Studio@RBX@@@45@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VAvatarGenerationDataModelObserver@Studio@RBX@@U?$default_delete@VAvatarGenerationDataModelObserver@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIUserContext@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@45@@ZV12@V345@V645@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VAvatarSettingsPublishHandler@Studio@RBX@@U?$default_delete@VAvatarSettingsPublishHandler@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIPublishMediator@Studio@RBX@@@45@@ZV12@V345@V645@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VBackendConfigBackgroundUpdater@Studio@RBX@@U?$default_delete@VBackendConfigBackgroundUpdater@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VBackendConfigManager@Studio@RBX@@@Component@RBX@@@ZV12@V345@@std@@
@@ -16996,6 +17071,7 @@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VDeviceEmulatorServicePlaceListener@Studio@RBX@@U?$default_delete@VDeviceEmulatorServicePlaceListener@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VStudioDeviceEmulator@@@45@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@V?$ManagedPtr@VIRobloxIDEDoc@Studio@RBX@@@45@V?$ManagedPtr@VStandaloneDataModelProvider@Studio@RBX@@@45@@ZV12@V345@V645@V745@V845@V945@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VDeviceEmulatorServicePlaceListener@Studio@RBX@@U?$default_delete@VDeviceEmulatorServicePlaceListener@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VStudioDeviceEmulator@@@45@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@V?$ManagedPtr@VStandaloneDataModelProvider@Studio@RBX@@@45@@ZV12@V345@V645@V745@V845@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VDeviceEmulatorShortcutRegistrar@Studio@RBX@@U?$default_delete@VDeviceEmulatorShortcutRegistrar@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIShortcutRegistry@Studio@RBX@@@Component@RBX@@@ZV12@V345@@std@@
+.?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VDialogSuppressionUserListener@Studio@RBX@@U?$default_delete@VDialogSuppressionUserListener@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIDialogSuppressionStore@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIUserContext@Studio@RBX@@@45@@ZV12@V345@V645@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VDialogTelemetryEventFilter@Studio@RBX@@U?$default_delete@VDialogTelemetryEventFilter@Studio@RBX@@@std@@@std@@XZV12@$$V@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VDiffAgainstLatestPackageAction@Studio@RBX@@U?$default_delete@VDiffAgainstLatestPackageAction@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIActionManager@Studio@RBX@@@45@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@@ZV12@V345@V645@V745@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VDirectorySettings@Studio@RBX@@U?$default_delete@VDirectorySettings@Studio@RBX@@@std@@@std@@XZV12@$$V@std@@
@@ -17060,7 +17136,7 @@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIAssetAccessController@AssetAccess@Studio@RBX@@U?$default_delete@VIAssetAccessController@AssetAccess@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@V?$ManagedPtr@VINotificationService@Studio@RBX@@@45@V?$ManagedPtr@VIRendererApi@Studio@RBX@@@45@@ZV12@V345@V645@V745@V845@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIAssetDataModelANRListener@Studio@RBX@@U?$default_delete@VIAssetDataModelANRListener@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VDEPRECATED_ApplicationNotRespondingDetector@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@45@V?$ManagedPtr@VIAssetPluginErrorReporter@Studio@RBX@@@45@@ZV12@V345@V645@V745@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIAssetDataModelANRListener@Studio@RBX@@U?$default_delete@VIAssetDataModelANRListener@Studio@RBX@@@std@@@std@@V?$optional@V?$ManagedPtr@VIStudioHangMonitor@Studio@RBX@@@Component@RBX@@@2@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIAssetPluginErrorReporter@Studio@RBX@@@56@@ZV12@V32@V456@V756@@std@@
-.?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIAssetDataModelManager@Studio@RBX@@U?$default_delete@VIAssetDataModelManager@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VCoreComponentManagerProxy@Component@RBX@@@Component@RBX@@V?$ManagedPtr@VIUserContext@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@V?$optional@V?$ManagedPtr@VIWaypointTelemetry@Studio@RBX@@@Component@RBX@@@2@V?$ManagedPtr@VIUniverseController@@@45@@ZV12@V345@V645@V745@V82@V945@@std@@
+.?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIAssetDataModelManager@Studio@RBX@@U?$default_delete@VIAssetDataModelManager@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VCoreComponentManagerProxy@Component@RBX@@@Component@RBX@@V?$ManagedPtr@VIUserContext@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@V?$ManagedPtr@VIWaypointTelemetry@Studio@RBX@@@45@V?$ManagedPtr@VIUniverseController@@@45@@ZV12@V345@V645@V745@V845@V945@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIAssetExportController@Studio@RBX@@U?$default_delete@VIAssetExportController@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@V?$ManagedPtr@VIRendererApi@Studio@RBX@@@45@V?$ManagedPtr@VIGraphicsEngineProvider@Studio@RBX@@@45@V?$ManagedPtr@VIUserContext@Studio@RBX@@@45@V?$ManagedPtr@VIMainWindow@Studio@RBX@@@45@@ZV12@V345@V645@V745@V845@V945@V?$ManagedPtr@VIUserContext@Studio@RBX@@@45@V?$ManagedPtr@VIMainWindow@Studio@RBX@@@45@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIAssetInsertController@Studio@RBX@@U?$default_delete@VIAssetInsertController@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VStandaloneDataModelProvider@Studio@RBX@@@45@@ZV12@V345@V645@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIAssetManagementController@Studio@RBX@@U?$default_delete@VIAssetManagementController@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VINotificationService@Studio@RBX@@@45@V?$ManagedPtr@VStandaloneDataModelProvider@Studio@RBX@@@45@@ZV12@V345@V645@V745@@std@@
@@ -17070,6 +17146,7 @@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIAssistantBridge@Studio@RBX@@U?$default_delete@VIAssistantBridge@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@V?$ManagedPtr@VIScriptDiffAndCommit@Studio@RBX@@@45@V?$ManagedPtr@VIAssistantPermissions@Studio@RBX@@@45@@ZV12@V345@V645@V745@V845@V945@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIAssistantExperimentation@Studio@RBX@@U?$default_delete@VIAssistantExperimentation@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIConversationalAIExperimentation@Studio@RBX@@@45@@ZV12@V345@V645@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIAssistantPermissions@Studio@RBX@@U?$default_delete@VIAssistantPermissions@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@Component@RBX@@@ZV12@V345@@std@@
+.?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIAssistantPermissionsBridge@Studio@RBX@@U?$default_delete@VIAssistantPermissionsBridge@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@@ZV12@V345@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIBenchmarkCaptureComponent@Profiling@RBX@@U?$default_delete@VIBenchmarkCaptureComponent@Profiling@RBX@@@std@@@std@@XZV12@$$V@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VICancellableDialogManager@Studio@RBX@@U?$default_delete@VICancellableDialogManager@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VStandaloneDataModelProvider@Studio@RBX@@@45@V?$ManagedPtr@VIDialogManager@Studio@RBX@@@45@@ZV12@V345@V645@V745@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VICapabilitiesHandler@Studio@RBX@@U?$default_delete@VICapabilitiesHandler@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@@ZV12@V345@V645@V745@@std@@
@@ -17093,6 +17170,7 @@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIDialogImageManager@Studio@RBX@@U?$default_delete@VIDialogImageManager@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIPlaceManager@Studio@RBX@@@45@V?$ManagedPtr@VIThumbnailController@Studio@RBX@@@45@@ZV12@V345@V645@V745@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIDialogManager@Studio@RBX@@U?$default_delete@VIDialogManager@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIDialogManagerUIBridge@Studio@RBX@@@45@@ZV12@V345@V645@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIDialogManagerUIBridge@Studio@RBX@@U?$default_delete@VIDialogManagerUIBridge@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@@ZV12@V345@@std@@
+.?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIDialogSuppressionStore@Studio@RBX@@U?$default_delete@VIDialogSuppressionStore@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIStudioSettingsWrapper@@@Component@RBX@@@ZV12@V345@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIDragDropDataModelController@Studio@RBX@@U?$default_delete@VIDragDropDataModelController@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@V?$ManagedPtr@VIStudioPluginApiHost@@@45@V?$ManagedPtr@VIMainWindow@Studio@RBX@@@45@@ZV12@V345@V645@V745@V845@V945@V?$ManagedPtr@VIMainWindow@Studio@RBX@@@45@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIExperienceCoordinator@RBX@@U?$default_delete@VIExperienceCoordinator@RBX@@@std@@@std@@XZV12@$$V@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIFeatureActivityTracker@Studio@RBX@@U?$default_delete@VIFeatureActivityTracker@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIHardwareSleepListener@@@Component@RBX@@V?$ManagedPtr@VINotificationService@Studio@RBX@@@45@@ZV12@V345@V645@@std@@
@@ -17138,8 +17216,8 @@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIPlaceSessionBridge@Studio@RBX@@U?$default_delete@VIPlaceSessionBridge@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@@ZV12@V345@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIPlaceSessionContextBridge@Studio@RBX@@U?$default_delete@VIPlaceSessionContextBridge@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@@ZV12@V345@V645@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIPlaceSessionStateController@Studio@RBX@@U?$default_delete@VIPlaceSessionStateController@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VCoreComponentManagerProxy@Component@RBX@@@Component@RBX@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@45@@ZV12@V345@V645@V745@@std@@
-.?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIPlaceSessionTaskRegister@Studio@RBX@@U?$default_delete@VIPlaceSessionTaskRegister@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIActionManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIRobloxIDEDoc@Studio@RBX@@@45@V?$ManagedPtr@VIStudioPluginRibbonActionHost@@@45@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceManager@Studio@RBX@@@45@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@45@V?$ManagedPtr@VIRendererApi@Studio@RBX@@@45@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@45@V?$optional@V?$ManagedPtr@VIWaypointTelemetry@Studio@RBX@@@Component@RBX@@@2@V?$optional@V?$ManagedPtr@VIPlaySoloManager@Studio@RBX@@@Component@RBX@@@2@V?$ManagedPtr@VIMemoryStatistics@Studio@Analytics@RBX@@@45@@ZV12@V345@V645@V745@V845@V945@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@45@V?$ManagedPtr@VIRendererApi@Studio@RBX@@@45@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@45@V?$optional@V?$ManagedPtr@VIWaypointTelemetry@Studio@RBX@@@Component@RBX@@@2@V?$optional@V?$ManagedPtr@VIPlaySoloManager@Studio@RBX@@@Component@RBX@@@2@V?$ManagedPtr@VIMemoryStatistics@Studio@Analytics@RBX@@@45@@std@@
-.?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIPlaceSessionTaskRegister@Studio@RBX@@U?$default_delete@VIPlaceSessionTaskRegister@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIRobloxIDEDoc@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceManager@Studio@RBX@@@45@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@45@V?$ManagedPtr@VIRendererApi@Studio@RBX@@@45@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@45@V?$optional@V?$ManagedPtr@VIWaypointTelemetry@Studio@RBX@@@Component@RBX@@@2@V?$optional@V?$ManagedPtr@VIPlaySoloManager@Studio@RBX@@@Component@RBX@@@2@V?$ManagedPtr@VIMemoryStatistics@Studio@Analytics@RBX@@@45@@ZV12@V345@V645@V745@V845@V945@V?$ManagedPtr@VIRendererApi@Studio@RBX@@@45@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@45@V?$optional@V?$ManagedPtr@VIWaypointTelemetry@Studio@RBX@@@Component@RBX@@@2@V?$optional@V?$ManagedPtr@VIPlaySoloManager@Studio@RBX@@@Component@RBX@@@2@V?$ManagedPtr@VIMemoryStatistics@Studio@Analytics@RBX@@@45@@std@@
+.?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIPlaceSessionTaskRegister@Studio@RBX@@U?$default_delete@VIPlaceSessionTaskRegister@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIActionManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIRobloxIDEDoc@Studio@RBX@@@45@V?$ManagedPtr@VIStudioPluginRibbonActionHost@@@45@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceManager@Studio@RBX@@@45@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@45@V?$ManagedPtr@VIRendererApi@Studio@RBX@@@45@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@45@V?$ManagedPtr@VIWaypointTelemetry@Studio@RBX@@@45@V?$optional@V?$ManagedPtr@VIPlaySoloManager@Studio@RBX@@@Component@RBX@@@2@V?$ManagedPtr@VIMemoryStatistics@Studio@Analytics@RBX@@@45@@ZV12@V345@V645@V745@V845@V945@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@45@V?$ManagedPtr@VIRendererApi@Studio@RBX@@@45@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@45@V?$ManagedPtr@VIWaypointTelemetry@Studio@RBX@@@45@V?$optional@V?$ManagedPtr@VIPlaySoloManager@Studio@RBX@@@Component@RBX@@@2@V?$ManagedPtr@VIMemoryStatistics@Studio@Analytics@RBX@@@45@@std@@
+.?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIPlaceSessionTaskRegister@Studio@RBX@@U?$default_delete@VIPlaceSessionTaskRegister@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIRobloxIDEDoc@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceManager@Studio@RBX@@@45@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@45@V?$ManagedPtr@VIRendererApi@Studio@RBX@@@45@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@45@V?$ManagedPtr@VIWaypointTelemetry@Studio@RBX@@@45@V?$optional@V?$ManagedPtr@VIPlaySoloManager@Studio@RBX@@@Component@RBX@@@2@V?$ManagedPtr@VIMemoryStatistics@Studio@Analytics@RBX@@@45@@ZV12@V345@V645@V745@V845@V945@V?$ManagedPtr@VIRendererApi@Studio@RBX@@@45@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@45@V?$ManagedPtr@VIWaypointTelemetry@Studio@RBX@@@45@V?$optional@V?$ManagedPtr@VIPlaySoloManager@Studio@RBX@@@Component@RBX@@@2@V?$ManagedPtr@VIMemoryStatistics@Studio@Analytics@RBX@@@45@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIPlaceVersionHistoryBridge@Studio@RBX@@U?$default_delete@VIPlaceVersionHistoryBridge@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@@ZV12@V345@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIPlaySoloManager@Studio@RBX@@U?$default_delete@VIPlaySoloManager@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@V?$ManagedPtr@VIDataModelListenerBridge@Studio@RBX@@@45@V?$ManagedPtr@VRunServiceMonitor@Studio@RBX@@@45@V?$ManagedPtr@VTestModeModifiedScriptSavePreferenceController@Studio@RBX@@@45@V?$ManagedPtr@VIMainWindow@Studio@RBX@@@45@V?$ManagedPtr@VIRestartController@@@45@V?$ManagedPtr@VIMemoryStatistics@Studio@Analytics@RBX@@@45@@ZV12@V345@V645@V745@V845@V945@V?$ManagedPtr@VIMainWindow@Studio@RBX@@@45@V?$ManagedPtr@VIRestartController@@@45@V?$ManagedPtr@VIMemoryStatistics@Studio@Analytics@RBX@@@45@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIPlaySoloManager@Studio@RBX@@U?$default_delete@VIPlaySoloManager@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@V?$ManagedPtr@VIDataModelListenerBridge@Studio@RBX@@@45@V?$ManagedPtr@VRunServiceMonitor@Studio@RBX@@@45@V?$ManagedPtr@VTestModeModifiedScriptSavePreferenceController@Studio@RBX@@@45@V?$ManagedPtr@VIMainWindow@Studio@RBX@@@45@V?$ManagedPtr@VPlaceSessionMainViewManager@Studio@RBX@@@45@V?$ManagedPtr@VIRobloxIDEDoc@Studio@RBX@@@45@V?$ManagedPtr@VIRestartController@@@45@V?$ManagedPtr@VIMemoryStatistics@Studio@Analytics@RBX@@@45@@ZV12@V345@V645@V745@V845@V945@V?$ManagedPtr@VIMainWindow@Studio@RBX@@@45@V?$ManagedPtr@VPlaceSessionMainViewManager@Studio@RBX@@@45@V?$ManagedPtr@VIRobloxIDEDoc@Studio@RBX@@@45@V?$ManagedPtr@VIRestartController@@@45@V?$ManagedPtr@VIMemoryStatistics@Studio@Analytics@RBX@@@45@@std@@
@@ -17166,6 +17244,7 @@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIRenderThrottleModel@Studio@RBX@@U?$default_delete@VIRenderThrottleModel@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIGraphicsEngineProvider@Studio@RBX@@@Component@RBX@@@ZV12@V345@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIRendererApi@Studio@RBX@@U?$default_delete@VIRendererApi@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIGraphicsEngineProvider@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIRenderThrottleModel@Studio@RBX@@@45@V?$ManagedPtr@VRenderScheduler@Studio@RBX@@@45@@ZV12@V345@V645@V745@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIRestartController@@U?$default_delete@VIRestartController@@@std@@@std@@V?$ManagedPtr@VIMainWindow@Studio@RBX@@@Component@RBX@@@ZV12@V345@@std@@
+.?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIRestartController@@U?$default_delete@VIRestartController@@@std@@@std@@V?$ManagedPtr@VIMainWindow@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIProcessLauncher@Studio@RBX@@@45@V?$ManagedPtr@VProcessLaunchArgHelper@Studio@RBX@@@45@@ZV12@V345@V645@V745@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIRibbonConfigurationProvider@Studio@RBX@@U?$default_delete@VIRibbonConfigurationProvider@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIRibbonFileSystemHelper@Studio@RBX@@@45@@ZV12@V345@V645@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIRibbonFileSystemHelper@Studio@RBX@@U?$default_delete@VIRibbonFileSystemHelper@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIUserContext@Studio@RBX@@@Component@RBX@@@ZV12@V345@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VIRidlCommandExample@Studio@RBX@@U?$default_delete@VIRidlCommandExample@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIUserContext@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@@ZV12@V345@V645@V745@@std@@
@@ -17359,7 +17438,9 @@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VPluginWidgetsViewPlaceListener@Studio@RBX@@U?$default_delete@VPluginWidgetsViewPlaceListener@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIPluginWidgetsView@@@Component@RBX@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@@ZV12@V345@V645@V745@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VPluginWindowCaptureConnector@Studio@RBX@@U?$default_delete@VPluginWindowCaptureConnector@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIMainWindow@Studio@RBX@@@45@@ZV12@V345@V645@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VPopupImagePickerController@Studio@RBX@@U?$default_delete@VPopupImagePickerController@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIMainWindow@Studio@RBX@@@45@V?$ManagedPtr@VIPanelsManager@Studio@RBX@@@45@V?$ManagedPtr@VIWidgetsManager@Studio@RBX@@@45@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@V?$ManagedPtr@VIStudioSettingsWrapper@@@45@@ZV12@V345@V645@V745@V845@V945@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@45@V?$ManagedPtr@VIStudioSettingsWrapper@@@45@@std@@
+.?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VProcessLaunchArgHelper@Studio@RBX@@U?$default_delete@VProcessLaunchArgHelper@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIAppContext@Studio@RBX@@@Component@RBX@@@ZV12@V345@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VProcessLaunchArgHelper@Studio@RBX@@U?$default_delete@VProcessLaunchArgHelper@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIAppContext@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIUserContext@Studio@RBX@@@45@@ZV12@V345@V645@@std@@
+.?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VProcessLaunchArgHelperUserIdBridge@Studio@RBX@@U?$default_delete@VProcessLaunchArgHelperUserIdBridge@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VProcessLaunchArgHelper@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIUserContext@Studio@RBX@@@45@@ZV12@V345@V645@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VProcessMonitor@Studio@RBX@@U?$default_delete@VProcessMonitor@Studio@RBX@@@std@@@std@@XZV12@$$V@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VPropertiesTelemetry@PropertiesWidget@@U?$default_delete@VPropertiesTelemetry@PropertiesWidget@@@std@@@std@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@Component@RBX@@@ZV12@V345@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VPublishAction@Studio@RBX@@U?$default_delete@VPublishAction@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIActionManager@Studio@RBX@@@45@@ZV12@V345@V645@@std@@
@@ -17379,6 +17460,7 @@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VReflectionMetadataDocs@Studio@RBX@@U?$default_delete@VReflectionMetadataDocs@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VStandaloneDataModelProvider@Studio@RBX@@@Component@RBX@@@ZV12@V345@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VReloadDebuggablePluginAction@Studio@RBX@@U?$default_delete@VReloadDebuggablePluginAction@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIActionManager@Studio@RBX@@@45@V?$ManagedPtr@VIRunnableChangedPluginsSource@Studio@RBX@@@45@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@V?$ManagedPtr@VIDialogManager@Studio@RBX@@@45@V?$ManagedPtr@VIStudioSettingsWrapper@@@45@@ZV12@V345@V645@V745@V845@V945@V?$ManagedPtr@VIStudioSettingsWrapper@@@45@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VRemoteDebuggerScriptWatcher@Studio@RBX@@U?$default_delete@VRemoteDebuggerScriptWatcher@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@V?$ManagedPtr@VIDebuggerHostAppServices@Studio@RBX@@@45@@ZV12@V345@V645@V745@@std@@
+.?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VRemoteDebuggerStudioBridge@Studio@RBX@@U?$default_delete@VRemoteDebuggerStudioBridge@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIUserContext@Studio@RBX@@@45@V?$ManagedPtr@VStandaloneDataModelProvider@Studio@RBX@@@45@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@V?$ManagedPtr@VIDebuggerHostAppServices@Studio@RBX@@@45@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@45@@ZV12@V345@V645@V745@V845@V945@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@45@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@45@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VRemoteSystemOutputTaskRegister@Studio@RBX@@U?$default_delete@VRemoteSystemOutputTaskRegister@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VSystemOutputModel@@@Component@RBX@@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@45@V?$ManagedPtr@VITeamTestModeChecker@Studio@RBX@@@45@@ZV12@V345@V645@V745@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VRenderScheduler@Studio@RBX@@U?$default_delete@VRenderScheduler@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIGraphicsEngineProvider@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIRenderErrorModel@Studio@RBX@@@45@V?$ManagedPtr@VIRenderThrottleModel@Studio@RBX@@@45@V?$ManagedPtr@VISelectionColorController@Studio@RBX@@@45@V?$ManagedPtr@VIWindowManager@Studio@RBX@@@45@@ZV12@V345@V645@V745@V845@V945@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AV?$unique_ptr@VReportIllegalContentAction@Studio@RBX@@U?$default_delete@VReportIllegalContentAction@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIActionManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIUserContext@Studio@RBX@@@45@V?$ManagedPtr@VIContextController@Studio@RBX@@@45@@ZV12@V345@V645@V745@@std@@
@@ -17684,6 +17766,7 @@
 .?AV?$_Func_impl_no_alloc@P6A?AW4CreationDecision@Component@RBX@@V?$ManagedPtr@VIPlaceManager@Studio@RBX@@@23@V?$ManagedPtr@VIJoinConfigFetcher@Studio@RBX@@@23@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@23@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@23@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@23@V?$optional@V?$ManagedPtr@VTeamTestDisconnectManager@Studio@RBX@@@Component@RBX@@@std@@V?$ManagedPtr@VITeamTestModeChecker@Studio@RBX@@@23@V?$optional@V?$ManagedPtr@VTeamCreateTeamTestDisconnectionHandler@Studio@RBX@@@Component@RBX@@@std@@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@23@@ZW4123@V423@V523@V623@V723@V823@V9std@@V?$ManagedPtr@VITeamTestModeChecker@Studio@RBX@@@23@V?$optional@V?$ManagedPtr@VTeamCreateTeamTestDisconnectionHandler@Studio@RBX@@@Component@RBX@@@std@@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@23@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AW4CreationDecision@Component@RBX@@V?$ManagedPtr@VIPlaceManager@Studio@RBX@@@23@V?$ManagedPtr@VIJoinConfigFetcher@Studio@RBX@@@23@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@23@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@23@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@23@V?$optional@V?$ManagedPtr@VTeamTestDisconnectManager@Studio@RBX@@@Component@RBX@@@std@@V?$ManagedPtr@VITeamTestModeChecker@Studio@RBX@@@23@V?$optional@V?$ManagedPtr@VTeamCreateTeamTestDisconnectionHandler@Studio@RBX@@@Component@RBX@@@std@@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@23@V?$ManagedPtr@VPlaceSessionMainViewManager@Studio@RBX@@@23@@ZW4123@V423@V523@V623@V723@V823@V9std@@V?$ManagedPtr@VITeamTestModeChecker@Studio@RBX@@@23@V?$optional@V?$ManagedPtr@VTeamCreateTeamTestDisconnectionHandler@Studio@RBX@@@Component@RBX@@@std@@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@23@V?$ManagedPtr@VPlaceSessionMainViewManager@Studio@RBX@@@23@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AW4CreationDecision@Component@RBX@@V?$ManagedPtr@VIPlaceManager@Studio@RBX@@@23@V?$ManagedPtr@VIJoinConfigFetcher@Studio@RBX@@@23@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@23@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@23@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@23@V?$ManagedPtr@VTeamCreateReconnectManager@Studio@RBX@@@23@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@23@V?$optional@V?$ManagedPtr@VTeamCreateTeamTestDisconnectionHandler@Studio@RBX@@@Component@RBX@@@std@@V?$ManagedPtr@VICloudEditController@@@23@V?$optional@V?$ManagedPtr@VIPlaceReconnectState@Studio@RBX@@@Component@RBX@@@std@@@ZW4123@V423@V523@V623@V723@V823@V923@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@23@V?$optional@V?$ManagedPtr@VTeamCreateTeamTestDisconnectionHandler@Studio@RBX@@@Component@RBX@@@std@@V?$ManagedPtr@VICloudEditController@@@23@V?$optional@V?$ManagedPtr@VIPlaceReconnectState@Studio@RBX@@@Component@RBX@@@std@@@std@@
+.?AV?$_Func_impl_no_alloc@P6A?AW4CreationDecision@Component@RBX@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@23@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@23@V?$ManagedPtr@VIDialogManager@Studio@RBX@@@23@V?$ManagedPtr@VIPlaceOpener@Studio@RBX@@@23@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@23@V?$ManagedPtr@VIDialogManagerUIBridge@Studio@RBX@@@23@@ZW4123@V423@V523@V623@V723@V823@V923@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AW4CreationDecision@Component@RBX@@V?$ManagedPtr@VIPluginOTAManager@Studio@RBX@@@23@V?$ManagedPtr@VIUserContext@Studio@RBX@@@23@V?$ManagedPtr@VIRunnableChangedPluginsSource@Studio@RBX@@@23@V?$ManagedPtr@VIContextController@Studio@RBX@@@23@V?$ManagedPtr@VIPluginOTAManagerNewInputs@Studio@RBX@@@23@V?$ManagedPtr@VIPluginOTAChangeDetector@Studio@RBX@@@23@@ZW4123@V423@V523@V623@V723@V823@V923@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AW4CreationDecision@Component@RBX@@V?$ManagedPtr@VIPluginOTAManagerNewInputs@Studio@RBX@@@23@@ZW4123@V423@@std@@
 .?AV?$_Func_impl_no_alloc@P6A?AW4CreationDecision@Component@RBX@@V?$ManagedPtr@VIRendererApi@Studio@RBX@@@23@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@23@@ZW4123@V423@V523@@std@@
@@ -18239,7 +18322,6 @@
 .?AV?$_Ref_count@VStdMutex@RBX@@@std@@
 .?AV?$_Ref_count@VStreamJob@Replicator@Network@RBX@@@std@@
 .?AV?$_Ref_count@VStudioCmdService@@@std@@
-.?AV?$_Ref_count@VStyleThemeHelper@@@std@@
 .?AV?$_Ref_count@VSurfaceController@@@std@@
 .?AV?$_Ref_count@VTechnique@Graphics@RBX@@@std@@
 .?AV?$_Ref_count@VTextureD3D11@Graphics@RBX@@@std@@
@@ -18283,6 +18365,7 @@
 .?AV?$_Ref_count_obj2@$$CBV?$ClientSessionMetricKey@_N$0A@@ClientSessionTracker@RBX@@@std@@
 .?AV?$_Ref_count_obj2@$$CBV?$DenseHashMap@USignalPair@RBX@@UTouchStateManager@2@U?$Hash@USignalPair@RBX@@@2@U?$equal_to@USignalPair@RBX@@@std@@@RBX@@@std@@
 .?AV?$_Ref_count_obj2@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@
+.?AV?$_Ref_count_obj2@$$CBV?$function@$$A6AXXZ@std@@@std@@
 .?AV?$_Ref_count_obj2@$$CBV?$vector@IV?$allocator@I@std@@@std@@@std@@
 .?AV?$_Ref_count_obj2@$$CBV?$vector@V?$shared_ptr@VAuroraScript@RBX@@@std@@V?$allocator@V?$shared_ptr@VAuroraScript@RBX@@@std@@@2@@std@@@std@@
 .?AV?$_Ref_count_obj2@$$CBV?$vector@V?$shared_ptr@VInstance@RBX@@@std@@V?$allocator@V?$shared_ptr@VInstance@RBX@@@std@@@2@@std@@@std@@
@@ -18683,11 +18766,13 @@
 .?AV?$_Ref_count_obj2@UAudioFileInfo@BulkAudioLoader@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UAudioMetadataRequest@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UAvatarImportParams@RBX@@@std@@
+.?AV?$_Ref_count_obj2@UAvatarMeshBundle@WrapContentProvider@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UBoxMapped@FileMeshData@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UBuildQueueWorkState@Luau@@@std@@
 .?AV?$_Ref_count_obj2@UBulkAudioLoader@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UBulletDecomp@Interop@Graphics@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UBundleReadStatus@@@std@@
+.?AV?$_Ref_count_obj2@UBurstOutcome@Impl@StunPopProbe@3RbxTransport@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UCache@KeyframeSequence@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UCacheEntry@HttpCache@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UCachedBitstream@Network@RBX@@@std@@
@@ -18697,6 +18782,7 @@
 .?AV?$_Ref_count_obj2@UCharacterLoadingContext@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UChunkVoxelDataBoxes@Graphics@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UCommandCallerDmIdData@?A0x8ff92c0a@Commands@Studio@RBX@@@std@@
+.?AV?$_Ref_count_obj2@UCompletionInbox@WrapDeformerCoordinator@WrapDeformerInternal@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UConnectConfiguration@RbxTransport@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UConnectionState@DMConnection@LSP@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UContentTracker@RBX@@@std@@
@@ -18731,6 +18817,7 @@
 .?AV?$_Ref_count_obj2@UExtraState@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UExtraTrackingData_DEPRECATED@CSG3@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UFacsHuffmanCodec@RBX@@@std@@
+.?AV?$_Ref_count_obj2@UFastClusterSkeletonWait@?A0x6aeeb90a@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UFetchCompleted@?1??updatePackagesNoLock@?A0xbb11aefe@@YAXV?$vector@V?$shared_ptr@VInstance@RBX@@@std@@V?$allocator@V?$shared_ptr@VInstance@RBX@@@std@@@2@@std@@V?$shared_ptr@VInstance@RBX@@@5@W4PackageUpdateReason@RBX@@V?$function@$$A6AXV?$shared_ptr@VInstance@RBX@@@std@@@Z@5@@Z@@std@@
 .?AV?$_Ref_count_obj2@UFetchPhaseTimings@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UFileMeshData@RBX@@@std@@
@@ -18744,6 +18831,7 @@
 .?AV?$_Ref_count_obj2@UFindState@?A0x876b5a41@FindReplace@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UFlowDef@FlowConfig@Analytics@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UFrame@?CA@??step@TaskSchedulerImpl@RBX@@AEAA_NXZ@@std@@
+.?AV?$_Ref_count_obj2@UFriendsList@FriendService@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UFromMmapImpl@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UFrontendCancellationToken@Luau@@@std@@
 .?AV?$_Ref_count_obj2@UGeneralResponse@LSP@RBX@@@std@@
@@ -18841,8 +18929,10 @@
 .?AV?$_Ref_count_obj2@UPermissionValidator_DEPRECATED@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UPipelineOutputs@lm@@@std@@
 .?AV?$_Ref_count_obj2@UPlaceInfoResult@Studio@RBX@@@std@@
+.?AV?$_Ref_count_obj2@UPlatformDispatchState@ExternalIdentityCore@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UPlaylistSelectorFactoryCaller@RVideo@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UPluginMemoryData@Telemetry@Studio@RBX@@@std@@
+.?AV?$_Ref_count_obj2@UPopLatencyGateState@?A0x475ec588@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UPostPollFetchState@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UPreloadItemTextureManager@ContentProvider@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UProbeState@?A0x5a945fad@CDN@AssetProvider@RBX@@@std@@
@@ -18898,8 +18988,11 @@
 .?AV?$_Ref_count_obj2@USlotWrapper@?1???$connectAsync@Vsignal@rbx@@XAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V
 .?AV?$_Ref_count_obj2@USlotWrapper@?1???$connectAsync@Vsignal@rbx@@XAEBV?$unordered_set@_JU?$hash@_J@std@@U?$equal_to@_J@2@V?$allocator@_J@2@@std@@V
 .?AV?$_Ref_count_obj2@USlotWrapper@?1???$connectAsync@Vsignal@rbx@@XHV
+.?AV?$_Ref_count_obj2@USlotWrapper@?1???$connectAsync@Vsignal@rbx@@XHW4DebuggerPauseReason@Studio@RBX@@V
 .?AV?$_Ref_count_obj2@USlotWrapper@?1???$connectAsync@Vsignal@rbx@@XPEBVPropertyDescriptor@Reflection@RBX@@V
 .?AV?$_Ref_count_obj2@USlotWrapper@?1???$connectAsync@Vsignal@rbx@@XUDialogInteraction@Studio@RBX@@V
+.?AV?$_Ref_count_obj2@USlotWrapper@?1???$connectAsync@Vsignal@rbx@@XUStudioUri@RBX@@V
+.?AV?$_Ref_count_obj2@USlotWrapper@?1???$connectAsync@Vsignal@rbx@@XV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$shared_ptr@VInstance@RBX@@@4@V
 .?AV?$_Ref_count_obj2@USlotWrapper@?1???$connectAsync@Vsignal@rbx@@XV?$shared_ptr@VInstance@RBX@@@std@@V
 .?AV?$_Ref_count_obj2@USlotWrapper@?1???$connectAsync@Vsignal@rbx@@XVToolState@Studio@RBX@@V
 .?AV?$_Ref_count_obj2@USlotWrapper@?1???$connectAsync@Vsignal@rbx@@XW4DebuggerMessageTypeEnum@RemoteDebuggingApi@OpenApi@RBX@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V
@@ -19120,6 +19213,9 @@
 .?AV?$_Ref_count_obj2@V?$MethodExecutor@P8AssistantBridgeProxy@Studio@RBX@@EAA?AV?$Result@VVariant@Reflection@RBX@@UCommandError@Studio@3@@Tasks@3@_JVVariant@Reflection@3@@ZV123@@detail@Commands@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$MethodExecutor@P8AssistantBridgeProxy@Studio@RBX@@EAA?AV?$Result@_JUCommandError@Studio@RBX@@@Tasks@3@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@ZV123@@detail@Commands@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$MethodExecutor@P8AssistantExperimentationProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@7@@ZV123@@detail@Commands@Studio@RBX@@@std@@
+.?AV?$_Ref_count_obj2@V?$MethodExecutor@P8AssistantPermissionsBridgeProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@ZV123@@detail@Commands@Studio@RBX@@@std@@
+.?AV?$_Ref_count_obj2@V?$MethodExecutor@P8AssistantPermissionsBridgeProxy@Studio@RBX@@EAA?AV?$Result@VVariant@Reflection@RBX@@UCommandError@Studio@3@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@@std@@
+.?AV?$_Ref_count_obj2@V?$MethodExecutor@P8AssistantPermissionsBridgeProxy@Studio@RBX@@EAA?AV?$Result@_NUCommandError@Studio@RBX@@@Tasks@3@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@ZV123@@detail@Commands@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$MethodExecutor@P8CancellableDialogManager@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$MethodExecutor@P8CapabilitiesHandlerProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@V?$shared_ptr@VInstance@RBX@@@std@@V?$optional@W4Capabilities@Security@RBX@@@7@@ZV123@@detail@Commands@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$MethodExecutor@P8CommandAnalyzerProxy@Studio@RBX@@EAA?AV?$Result@V?$optional@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@3@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@ZV123@@detail@Commands@Studio@RBX@@@std@@
@@ -19537,6 +19633,7 @@
 .?AV?$_Ref_count_obj2@VBlendshapeRegression@lm@@@std@@
 .?AV?$_Ref_count_obj2@VBlockDialogCallback@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VBlockingDialog@PlatformSystemDialogHandler@RBX@@@std@@
+.?AV?$_Ref_count_obj2@VBodyMorphEngine@WrapDeformerInternal@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VBreakpointManager@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VBreakpointStore@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VBrowserTrackerIdRequest@AppBridge@RBX@@@std@@
@@ -19570,6 +19667,7 @@
 .?AV?$_Ref_count_obj2@VCachedItem@WrapDeformMeshProvider@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VCachedRecord@DataStore@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VCachedRecordV2@DataStore2@RBX@@@std@@
+.?AV?$_Ref_count_obj2@VCall@Calling@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VCallManager@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VCallState@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VCallToastManager@RBX@@@std@@
@@ -19771,7 +19869,6 @@
 .?AV?$_Ref_count_obj2@VExponentialBackoff@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VExponentialDecaySmoothing@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VExportSlot@?A0x197d8e0d@OpenTelemetryTracing@RBX@@@std@@
-.?AV?$_Ref_count_obj2@VExternalIdentityPlatformCallReceiver@?A0xa680772d@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VExtractor@ncnn@@@std@@
 .?AV?$_Ref_count_obj2@VFACSRigCFrameProvider@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VFMODPlaybackChannel@Soundscape@RBX@@@std@@
@@ -19805,6 +19902,7 @@
 .?AV?$_Ref_count_obj2@VFramebufferD3D11@Graphics@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VFramebufferGL@Graphics@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VFramebufferVulkan@Graphics@RBX@@@std@@
+.?AV?$_Ref_count_obj2@VFriendsCallingExperienceController@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VFrustumShape@StreamingSpatialQuery@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VGAReporterState@Event@Analytics@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VGCJob@ClientReplicator@Network@RBX@@@std@@
@@ -19904,6 +20002,7 @@
 .?AV?$_Ref_count_obj2@VLFFlagSetting@@@std@@
 .?AV?$_Ref_count_obj2@VLargeReplicatorPullManager@Network@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VLatch@RSL@@@std@@
+.?AV?$_Ref_count_obj2@VLayeredClothingEngine@WrapDeformerInternal@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VLayoutDefault@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VLayoutGrid@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VLayoutList@RBX@@@std@@
@@ -20034,6 +20133,7 @@
 .?AV?$_Ref_count_obj2@VPlatformCallReceiver@DesignFoundationsCore@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VPlatformCallReceiver@DeviceDisplayHandler@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VPlatformCallReceiver@ExampleProtocolCore@RBX@@@std@@
+.?AV?$_Ref_count_obj2@VPlatformCallReceiver@ExternalIdentityCore@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VPlatformCallReceiver@LocalStorageHandler@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VPlatformCallReceiver@WindowProtocolCore@WindowProtocol@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VPlatformNativeAdsProtocol@RBX@@@std@@
@@ -20349,6 +20449,9 @@
 .?AV?$_Ref_count_obj2@VWebRTCConnectionHost@Voice@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VWebRTCSession@Voice@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VWebSocketCurl@RBX@@@std@@
+.?AV?$_Ref_count_obj2@VWebSocketServer@RBX@@@std@@
+.?AV?$_Ref_count_obj2@VWebSocketServerConnection@RBX@@@std@@
+.?AV?$_Ref_count_obj2@VWebSocketServerMessageStream@JsonRpc@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VWebmInputFormat@RVideo@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VWebmOutputFormat@Internal@RVideo@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VWebrtcInputFormat@RVideo@RBX@@@std@@
@@ -20743,6 +20846,7 @@
 .?AV?$_Ref_count_obj_alloc3@UAudioFileInfo@BulkAudioLoader@RBX@@V?$Allocator@UAudioFileInfo@BulkAudioLoader@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UAudioMetadataRequest@RBX@@V?$Allocator@UAudioMetadataRequest@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UAvatarImportParams@RBX@@V?$Allocator@UAvatarImportParams@RBX@@@Detail@RSL@@@std@@
+.?AV?$_Ref_count_obj_alloc3@UAvatarMeshBundle@WrapContentProvider@RBX@@V?$Allocator@UAvatarMeshBundle@WrapContentProvider@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UBulkAudioLoader@RBX@@V?$Allocator@UBulkAudioLoader@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UBundleReadStatus@@V?$Allocator@UBundleReadStatus@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UCacheEntry@HttpCache@RBX@@V?$Allocator@UCacheEntry@HttpCache@RBX@@@Detail@RSL@@@std@@
@@ -20779,6 +20883,7 @@
 .?AV?$_Ref_count_obj_alloc3@UFileMetadata@FileSyncItem@RBX@@V?$Allocator@UFileMetadata@FileSyncItem@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UFilterChain@Styling@RBX@@V?$Allocator@UFilterChain@Styling@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UFlowDef@FlowConfig@Analytics@RBX@@V?$Allocator@UFlowDef@FlowConfig@Analytics@RBX@@@Detail@RSL@@@std@@
+.?AV?$_Ref_count_obj_alloc3@UFriendsList@FriendService@RBX@@V?$Allocator@UFriendsList@FriendService@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UFromMmapImpl@RBX@@V?$Allocator@UFromMmapImpl@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UFrontendCancellationToken@Luau@@V?$Allocator@UFrontendCancellationToken@Luau@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UGeneralResponse@LSP@RBX@@V?$Allocator@UGeneralResponse@LSP@RBX@@@Detail@RSL@@@std@@
@@ -21032,6 +21137,9 @@
 .?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8AssistantBridgeProxy@Studio@RBX@@EAA?AV?$Result@VVariant@Reflection@RBX@@UCommandError@Studio@3@@Tasks@3@_JVVariant@Reflection@3@@ZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8AssistantBridgeProxy@Studio@RBX@@EAA?AV?$Result@VVariant@Reflection@RBX@@UCommandError@Studio@3@@Tasks@3@_JVVariant@Reflection@3@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8AssistantBridgeProxy@Studio@RBX@@EAA?AV?$Result@_JUCommandError@Studio@RBX@@@Tasks@3@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@ZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8AssistantBridgeProxy@Studio@RBX@@EAA?AV?$Result@_JUCommandError@Studio@RBX@@@Tasks@3@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8AssistantExperimentationProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@7@@ZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8AssistantExperimentationProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@7@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
+.?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8AssistantPermissionsBridgeProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@ZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8AssistantPermissionsBridgeProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
+.?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8AssistantPermissionsBridgeProxy@Studio@RBX@@EAA?AV?$Result@VVariant@Reflection@RBX@@UCommandError@Studio@3@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8AssistantPermissionsBridgeProxy@Studio@RBX@@EAA?AV?$Result@VVariant@Reflection@RBX@@UCommandError@Studio@3@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
+.?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8AssistantPermissionsBridgeProxy@Studio@RBX@@EAA?AV?$Result@_NUCommandError@Studio@RBX@@@Tasks@3@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@ZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8AssistantPermissionsBridgeProxy@Studio@RBX@@EAA?AV?$Result@_NUCommandError@Studio@RBX@@@Tasks@3@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8CancellableDialogManager@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8CancellableDialogManager@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8CapabilitiesHandlerProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@V?$shared_ptr@VInstance@RBX@@@std@@V?$optional@W4Capabilities@Security@RBX@@@7@@ZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8CapabilitiesHandlerProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@V?$shared_ptr@VInstance@RBX@@@std@@V?$optional@W4Capabilities@Security@RBX@@@7@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8CommandAnalyzerProxy@Studio@RBX@@EAA?AV?$Result@V?$optional@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@3@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@ZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8CommandAnalyzerProxy@Studio@RBX@@EAA?AV?$Result@V?$optional@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@3@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
@@ -21865,6 +21973,9 @@
 .?AV?$_Ref_count_obj_alloc3@VWeakObjectRef@Lua@RBX@@V?$Allocator@VWeakObjectRef@Lua@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VWebLoginProtocol@RBX@@V?$Allocator@VWebLoginProtocol@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VWebSocketCurl@RBX@@V?$Allocator@VWebSocketCurl@RBX@@@Detail@RSL@@@std@@
+.?AV?$_Ref_count_obj_alloc3@VWebSocketServer@RBX@@V?$Allocator@VWebSocketServer@RBX@@@Detail@RSL@@@std@@
+.?AV?$_Ref_count_obj_alloc3@VWebSocketServerConnection@RBX@@V?$Allocator@VWebSocketServerConnection@RBX@@@Detail@RSL@@@std@@
+.?AV?$_Ref_count_obj_alloc3@VWebSocketServerMessageStream@JsonRpc@RBX@@V?$Allocator@VWebSocketServerMessageStream@JsonRpc@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VWebmInputFormat@RVideo@RBX@@V?$Allocator@VWebmInputFormat@RVideo@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VWebmOutputFormat@Internal@RVideo@RBX@@V?$Allocator@VWebmOutputFormat@Internal@RVideo@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VWebrtcInputFormat@RVideo@RBX@@V?$Allocator@VWebrtcInputFormat@RVideo@RBX@@@Detail@RSL@@@std@@
@@ -22010,6 +22121,7 @@
 .?AV?$_Ref_count_resource@PEAVNativeDNSResolver@grpc_core@@U?$default_delete@VNativeDNSResolver@grpc_core@@@std@@@std@@
 .?AV?$_Ref_count_resource@PEAVNetworkStream@Network@RBX@@U?$default_delete@VNetworkStream@Network@RBX@@@std@@@std@@
 .?AV?$_Ref_count_resource@PEAVNewNullTool@RBX@@VDeleter@Creatable@2@@std@@
+.?AV?$_Ref_count_resource@PEAVOneShotAnimationNode@RBX@@VDeleter@Creatable@2@@std@@
 .?AV?$_Ref_count_resource@PEAVOsslContext@Tls@Protocol@RbxTransport@RBX@@U?$default_delete@VOsslContext@Tls@Protocol@RbxTransport@RBX@@@std@@@std@@
 .?AV?$_Ref_count_resource@PEAVOutputLink@Studio@RBX@@VDeleter@Creatable@3@@std@@
 .?AV?$_Ref_count_resource@PEAVOverAnimationNode@RBX@@VDeleter@Creatable@2@@std@@
@@ -22248,6 +22360,7 @@
 .?AV?$enable_shared_from_this@VBreakpointManager@Studio@RBX@@@std@@
 .?AV?$enable_shared_from_this@VBrowserTrackerIdRequest@AppBridge@RBX@@@std@@
 .?AV?$enable_shared_from_this@VBrowserTrackerIdTask@AppBridge@RBX@@@std@@
+.?AV?$enable_shared_from_this@VCallingManager@Calling@RBX@@@std@@
 .?AV?$enable_shared_from_this@VChannel@grpc@@@std@@
 .?AV?$enable_shared_from_this@VCheckAppVersionTask@AppBridge@RBX@@@std@@
 .?AV?$enable_shared_from_this@VCrashMetricStorageReporter@RBX@@@std@@
@@ -22823,6 +22936,10 @@
 .?AVAdGuiData@Ads@RBX@@
 .?AVAdGuiProp@Ads@RBX@@
 .?AVAdInstanceInterface@Ads@RBX@@
+.?AVAdIntegrationPartViewabilityTracker@Ads@RBX@@
+.?AVAdIntegrationsHitTestFilter@Ads@RBX@@
+.?AVAdPlacement@Ads@RBX@@
+.?AVAdPlacementProp@Ads@RBX@@
 .?AVAdPortal@Ads@RBX@@
 .?AVAdPortalData@Ads@RBX@@
 .?AVAdPortalProp@Ads@RBX@@
@@ -23085,6 +23202,8 @@
 .?AVAssistantExperimentation@Studio@RBX@@
 .?AVAssistantExperimentationProxy@Studio@RBX@@
 .?AVAssistantPermissions@Studio@RBX@@
+.?AVAssistantPermissionsBridge@Studio@RBX@@
+.?AVAssistantPermissionsBridgeProxy@Studio@RBX@@
 .?AVAssistantPluginLoader@Studio@RBX@@
 .?AVAstAttr@Luau@@
 .?AVAstExpr@Luau@@
@@ -23368,6 +23487,7 @@
 .?AVAuthorizationMatcher@grpc_core@@
 .?AVAutoJointSurfacePair@RBX@@
 .?AVAutoLocalizableMixin@RBX@@
+.?AVAutoRecoveryTaskRegister@Studio@RBX@@
 .?AVAutoSaveDialog@@
 .?AVAutoValidStudioInstanceCounter@CrashHandler@Studio@RBX@@
 .?AVAutocompleteDocView@ScriptEditor@RBX@@
@@ -23806,6 +23926,7 @@
 .?AVCallbackDsp@Soundscape@RBX@@
 .?AVCallbacks@Metadata@Reflection@RBX@@
 .?AVCallingCore@RBX@@
+.?AVCallingManager@Calling@RBX@@
 .?AVCallingManagerObserver@CallingCore@RBX@@
 .?AVCallingService@RBX@@
 .?AVCallingServiceProp@RBX@@
@@ -24478,6 +24599,7 @@
 .?AVConvertToPackageAction@Studio@RBX@@
 .?AVConvexBuilder@@
 .?AVConvexDecompInterface@ConvexDecomposition@@
+.?AVConvexDecompPreviewAdornable@@
 .?AVConvolution1D@ncnn@@
 .?AVConvolution1D_final@ncnn@@
 .?AVConvolution1D_final_avx@ncnn@@
@@ -24671,6 +24793,8 @@
 .?AVDEPRECATED_LoginPageLoginListener@Studio@RBX@@
 .?AVDEPRECATED_ManagedWorldJointInstance@RBX@@
 .?AVDEPRECATED_PluginChangeWatcher@@
+.?AVDEPRECATED_RemoteDebuggerConnectionManager@Studio@RBX@@
+.?AVDEPRECATED_RemoteDebuggerNetworkHandler@Studio@RBX@@
 .?AVDEPRECATED_RobloxCustomEvent@@
 .?AVDEPRECATED_RobloxCustomEventWithArg@@
 .?AVDEPRECATED_SpotlightManager@Studio@RBX@@
@@ -24818,7 +24942,6 @@
 .?AVDcSctpSocketFactory@dcsctp@@
 .?AVDcSctpSocketInterface@dcsctp@@
 .?AVDcSctpTransport@webrtc@@
-.?AVDeDupeWorkflowCollectionV2@AssetProvider@RBX@@
 .?AVDeactivationTimer@ChildPriority@PriorityLb@?A0xdf426229@grpc_core@@
 .?AVDead@HUMAN@RBX@@
 .?AVDeadlineTimerCallback@ConnectionState@WindowsEventEngine@experimental@grpc_event_engine@@
@@ -24835,6 +24958,7 @@
 .?AVDebugExceptionUnhandledBreakContext@Studio@RBX@@
 .?AVDebugSettings@RBX@@
 .?AVDebugSettingsProp@RBX@@
+.?AVDebugSpriteTranscodingSource@Animation@UI@RBX@@
 .?AVDebugStringFieldValuePrinter@Printer@TextFormat@protobuf@google@@
 .?AVDebugUtilsLogRecorder@?A0x84d17821@@
 .?AVDebuggablePluginWatcher@Studio@RBX@@
@@ -25031,6 +25155,8 @@
 .?AVDialogManagerUIBridgeProxy@Studio@RBX@@
 .?AVDialogProp@RBX@@
 .?AVDialogRoot@RBX@@
+.?AVDialogSuppressionStore@Studio@RBX@@
+.?AVDialogSuppressionUserListener@Studio@RBX@@
 .?AVDialogTelemetryEventFilter@Studio@RBX@@
 .?AVDiff3DView@DmDiffUI@RBX@@
 .?AVDiff@v1@adaptiveconfigservice@2roblox@@
@@ -25437,7 +25563,8 @@
 .?AVExternalAccountCredentials@grpc_core@@
 .?AVExternalConnectivityWatcher@ClientChannelFilter@grpc_core@@
 .?AVExternalIdentityCore@RBX@@
-.?AVExternalIdentityPlatformCallReceiver@?A0xa680772d@RBX@@
+.?AVExternalIdentityService@RBX@@
+.?AVExternalIdentityServiceProp@RBX@@
 .?AVExternalStateWatcher@?A0x65143e41@grpc_core@@
 .?AVExtractor@ncnn@@
 .?AVExtrudedPartInstance@RBX@@
@@ -25729,6 +25856,7 @@
 .?AVFriendsCallJoinAwaitConnectBlobState@Voice@RBX@@
 .?AVFriendsCallJoinInitializeState@Voice@RBX@@
 .?AVFriendsCallJoinOperation@Voice@RBX@@
+.?AVFriendsCallingExperienceController@RBX@@
 .?AVFriendsCallingModule@RBX@@
 .?AVFrostFeatureLoggingOptions@event@@
 .?AVFrostFeatureServiceOptions@event@@
@@ -25926,6 +26054,7 @@
 .?AVGetSet@?$TypedPropertyDescriptor@W4ActionOnStopSync@Enums@RBX@@@Reflection@RBX@@
 .?AVGetSet@?$TypedPropertyDescriptor@W4ActuatorRelativeTo@Constraints@RBX@@@Reflection@RBX@@
 .?AVGetSet@?$TypedPropertyDescriptor@W4ActuatorType@Constraints@RBX@@@Reflection@RBX@@
+.?AVGetSet@?$TypedPropertyDescriptor@W4AdFormat@Ads@RBX@@@Reflection@RBX@@
 .?AVGetSet@?$TypedPropertyDescriptor@W4AdShape@Ads@RBX@@@Reflection@RBX@@
 .?AVGetSet@?$TypedPropertyDescriptor@W4AdUnitStatus@Ads@RBX@@@Reflection@RBX@@
 .?AVGetSet@?$TypedPropertyDescriptor@W4AdornCullingMode@RBX@@@Reflection@RBX@@
@@ -26191,6 +26320,7 @@
 .?AVGetSet@?$TypedPropertyDescriptor@W4TableMajorAxis@TableMajorAxisEnum@Enums@RBX@@@Reflection@RBX@@
 .?AVGetSet@?$TypedPropertyDescriptor@W4TerrainAcquisitionMethod@TerrainAcquisitionMethodEnum@Enums@RBX@@@Reflection@RBX@@
 .?AVGetSet@?$TypedPropertyDescriptor@W4TerrainFace@RBX@@@Reflection@RBX@@
+.?AVGetSet@?$TypedPropertyDescriptor@W4TextChannelDisplayMode@RBX@@@Reflection@RBX@@
 .?AVGetSet@?$TypedPropertyDescriptor@W4TextChatMessageStatus@RBX@@@Reflection@RBX@@
 .?AVGetSet@?$TypedPropertyDescriptor@W4TextDirection@Text@RBX@@@Reflection@RBX@@
 .?AVGetSet@?$TypedPropertyDescriptor@W4TextInputType@TextInputTypeEnum@Enums@RBX@@@Reflection@RBX@@
@@ -26554,6 +26684,7 @@
 .?AVHttpServiceProp@RBX@@
 .?AVHttpTelemetryHelper@RBX@@
 .?AVHttpTracingHelper@Tracing@RBX@@
+.?AVHttpUpgradeHandler@RBX@@
 .?AVHttpUrlRewriter@RBX@@
 .?AVHumanoid@RBX@@
 .?AVHumanoidAccessoryAssetRequirement@RBX@@
@@ -26620,6 +26751,7 @@
 .?AVIAssistantBridge@Studio@RBX@@
 .?AVIAssistantExperimentation@Studio@RBX@@
 .?AVIAssistantPermissions@Studio@RBX@@
+.?AVIAssistantPermissionsBridge@Studio@RBX@@
 .?AVIAsyncComponent@Component@RBX@@
 .?AVIAsyncTaskFactory@AssetProvider@RBX@@
 .?AVIAudible@Soundscape@RBX@@
@@ -26636,6 +26768,7 @@
 .?AVIAudioProcessing@RBX@@
 .?AVIAudioProcessor@lm@@
 .?AVIAuthTokenManager@RBX@@
+.?AVIAutoRecoveryTaskRegister@Studio@RBX@@
 .?AVIBackendConfigFetcher@Studio@RBX@@
 .?AVIBandwidthTracker@RBX@@
 .?AVIBatchSender@Telemetry@RBX@@
@@ -26650,6 +26783,7 @@
 .?AVIByteWriter@DCD@RBX@@
 .?AVICHull@HACD@@
 .?AVICMCDFactory@RVideo@RBX@@
+.?AVICallSink@Calling@RBX@@
 .?AVICallingCore@RBX@@
 .?AVICallingCoreListener@RBX@@
 .?AVICallingLegServiceClient@Calling@RBX@@
@@ -26742,6 +26876,7 @@
 .?AVIDialogImageManager@Studio@RBX@@
 .?AVIDialogManager@Studio@RBX@@
 .?AVIDialogManagerUIBridge@Studio@RBX@@
+.?AVIDialogSuppressionStore@Studio@RBX@@
 .?AVIDisplayedDocument@ScriptEditor@RBX@@
 .?AVIDistortionImpl@Soundscape@RBX@@
 .?AVIDraftsServiceHost@RBX@@
@@ -26858,6 +26993,7 @@
 .?AVILoginPluginBridge@Studio@RBX@@
 .?AVILoginUIManager@Studio@RBX@@
 .?AVILuaCalloutTarget@@
+.?AVILuauApiTracer@RBX@@
 .?AVIMDIManagerHost@RBX@@
 .?AVIMLPipeline@MLR@RBX@@
 .?AVIMLPostProcessProvider@MLR@RBX@@
@@ -26985,6 +27121,7 @@
 .?AVIRTAnimationTrackerConsumer@RealTimeAnimation@RBX@@
 .?AVIRTAnimationTrackerProducer@RealTimeAnimation@RBX@@
 .?AVIRateLimitedQueueItem@RBX@@
+.?AVIRaycastResultObserver@Ads@RBX@@
 .?AVIRbxCdnClient@AssetProvider@RBX@@
 .?AVIRbxStorageInterfaceFactory@AssetProvider@RBX@@
 .?AVIReachabilityProbeHandle@RBX@@
@@ -27091,6 +27228,7 @@
 .?AVISpatialEmitter@Soundscape@RBX@@
 .?AVISpatialListener@Soundscape@RBX@@
 .?AVISpotlightManager@Studio@RBX@@
+.?AVISpriteTranscodingSource@Animation@UI@RBX@@
 .?AVIStage@RBX@@
 .?AVIStandaloneDataModelANRListener@Studio@RBX@@
 .?AVIStandaloneDataModelController@Studio@RBX@@
@@ -27774,6 +27912,7 @@
 .?AVLuaWebServiceProp@RBX@@
 .?AVLuaWidgetObserver@Studio@RBX@@
 .?AVLuaWidgetUISink@@
+.?AVLuauApiTracerImpl@?A0xf389a44e@OpenTelemetryTracing@RBX@@
 .?AVLuauExpression@RBX@@
 .?AVLuauExpressionBridge@RBX@@
 .?AVLuauExpressionProp@RBX@@
@@ -28321,6 +28460,7 @@
 .?AVOnDemandAdsProvider@Ads@RBX@@
 .?AVOnSendPacketObserver@VideoSendStreamImpl@internal@webrtc@@
 .?AVOneEuroFeaturesSmoother@lm@@
+.?AVOneShotAnimationNode@RBX@@
 .?AVOneVectorSelector@RVideo@RBX@@
 .?AVOneofDescriptorProto@protobuf@google@@
 .?AVOneofOptions@protobuf@google@@
@@ -28507,6 +28647,7 @@
 .?AVPantsProp@RBX@@
 .?AVParabolaAdornment@RBX@@
 .?AVParabolaAdornmentProp@RBX@@
+.?AVParagraphContentBuilder@DefinitiveText@RBX@@
 .?AVParamDict@ncnn@@
 .?AVParameter@dcsctp@@
 .?AVParameterTranslator@Localization@RBX@@
@@ -28720,6 +28861,7 @@
 .?AVPlatformCallReceiver@DesignFoundationsCore@RBX@@
 .?AVPlatformCallReceiver@DeviceDisplayHandler@RBX@@
 .?AVPlatformCallReceiver@ExampleProtocolCore@RBX@@
+.?AVPlatformCallReceiver@ExternalIdentityCore@RBX@@
 .?AVPlatformCallReceiver@LocalStorageHandler@RBX@@
 .?AVPlatformCallReceiver@WindowProtocolCore@WindowProtocol@RBX@@
 .?AVPlatformCloudStorageService@RBX@@
@@ -28980,6 +29122,7 @@
 .?AVProcessInstancePhysicsService@RBX@@
 .?AVProcessInstancePhysicsServiceProp@RBX@@
 .?AVProcessLaunchArgHelper@Studio@RBX@@
+.?AVProcessLaunchArgHelperUserIdBridge@Studio@RBX@@
 .?AVProcessLaunchHelper@Studio@RBX@@
 .?AVProcessLauncher@Studio@RBX@@
 .?AVProcessMonitor@Studio@RBX@@
@@ -29205,6 +29348,8 @@
 .?AVQueryShape@StreamingSpatialQuery@RBX@@
 .?AVQueryShapeIterator@StreamingSpatialQuery@RBX@@
 .?AVQueuePicker@LoadBalancingPolicy@grpc_core@@
+.?AVQueueService@RBX@@
+.?AVQueueServiceProp@RBX@@
 .?AVQuicBaseConnection@Detail@Protocol@RbxTransport@RBX@@
 .?AVQuicClientConnection@Detail@Protocol@RbxTransport@RBX@@
 .?AVQuicClientConnection@Protocol@RbxTransport@RBX@@
@@ -29460,6 +29605,7 @@
 .?AVRemoteDebuggerScriptWatcher@Studio@RBX@@
 .?AVRemoteDebuggerServer@Scripting@RBX@@
 .?AVRemoteDebuggerServerProp@Scripting@RBX@@
+.?AVRemoteDebuggerStudioBridge@Studio@RBX@@
 .?AVRemoteEstimate@rtcp@webrtc@@
 .?AVRemoteEstimateSerializer@rtcp@webrtc@@
 .?AVRemoteEstimateSerializerImpl@?A0xcf3c83fd@rtcp@webrtc@@
@@ -29614,7 +29760,6 @@
 .?AVRibbonConfigurationProvider@Studio@RBX@@
 .?AVRibbonConfigurationProviderProxy@Studio@RBX@@
 .?AVRibbonFileSystemHelper@Studio@RBX@@
-.?AVRibbonMainWindow@Qtitan@@
 .?AVRibbonNotificationController@@
 .?AVRibbonNotificationService@Studio@RBX@@
 .?AVRibbonNotificationServiceBridge@@
@@ -29670,7 +29815,6 @@
 .?AVRobloxReplicatedStorage@RBX@@
 .?AVRobloxReplicatedStorageProp@RBX@@
 .?AVRobloxReportView@@
-.?AVRobloxRibbonMainWindow@@
 .?AVRobloxSavingStateDialog@@
 .?AVRobloxScriptDiffDoc@@
 .?AVRobloxScriptDoc@@
@@ -30800,6 +30944,8 @@
 .?AVStringPropertyItem@SettingsDialog@@
 .?AVStringStream@RSL@@
 .?AVStringTooLongError@Lua@RBX@@
+.?AVStringTraceparentCarrier@?A0xf389a44e@OpenTelemetryTracing@RBX@@
+.?AVStringTraceparentExtractCarrier@?A0xf389a44e@OpenTelemetryTracing@RBX@@
 .?AVStringValue@RBX@@
 .?AVStringValue@protobuf@google@@
 .?AVStringValueProp@RBX@@
@@ -32109,6 +32255,8 @@
 .?AVWebSocketClient@RBX@@
 .?AVWebSocketClientProp@RBX@@
 .?AVWebSocketCurl@RBX@@
+.?AVWebSocketServerConnection@RBX@@
+.?AVWebSocketServerMessageStream@JsonRpc@RBX@@
 .?AVWebSocketService@RBX@@
 .?AVWebSocketServiceProp@RBX@@
 .?AVWebStreamClient@RBX@@
@@ -32602,6 +32750,7 @@
 ?$SmallSplitHashMap@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@$0A@$09V?$DefaultHash@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@details@RBX@@V?$DefaultEqualTo@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@45@@RBX@@@std@@
 ?$SmallSplitHashMap@VPackageAssetVersion@RBX@@VRequestPackageResult@2@$0A@$09UHasher@12@V?$DefaultEqualTo@VPackageAssetVersion@RBX@@@details@2@@RBX@@@std@@
 ?$SmallSplitHashMap@_J_N$0A@$09V?$DefaultHash@_J@details@RBX@@V?$DefaultEqualTo@_J@23@@RBX@@@std@@
+?$StateTransitionInfo@W4PlaceSessionState@Studio@RBX@@@Studio@RBX@@@std@@
 ?$StdUniqueLock@VStdMutex@RBX@@@RBX@@@std@@
 ?$Variant@_NNV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Luau@@$$V@std@@
 ?$Variant@_NNV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Luau@@@std@@
@@ -32774,6 +32923,7 @@
 ?$shared_ptr@$$CBV?$vector@V?$shared_ptr@VInstance@RBX@@@std@@V?$allocator@V?$shared_ptr@VInstance@RBX@@@std@@@2@@std@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@HV23@@std@@
 ?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@@std@@
 ?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@V?$function@$$A6AXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@3@V43@@std@@
+?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@_N@std@@
 ?$shared_ptr@$$CBVDocument@json@RBX@@@std@@@std@@
 ?$shared_ptr@$$CBVDocument@json@RBX@@@std@@V?$function@$$A6AXV?$shared_ptr@$$CBUResponseWithTelemetry@?$ITransportLayer@VDocument@json@RBX@@V123@V123@V123@@RBX@@@std@@@Z@3@@std@@
 ?$shared_ptr@$$CBVGImage@RBX@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
@@ -32788,7 +32938,7 @@
 ?$shared_ptr@UEngineFont@FontSelection@@@std@@@std@@
 ?$shared_ptr@UFileMeshData@RBX@@@std@@@std@@
 ?$shared_ptr@UFileMeshData@RBX@@@std@@PEAVDataModel@RBX@@@std@@
-?$shared_ptr@UFileMeshData@RBX@@@std@@V?$shared_ptr@USolution@Rbf@RBX@@@3@@std@@
+?$shared_ptr@UFileMeshData@RBX@@@std@@V?$shared_ptr@$$CBUSolution@Rbf@RBX@@@3@@std@@
 ?$shared_ptr@UFileMeshData@RBX@@@std@@W4NormalId@Slim@RBX@@@std@@
 ?$shared_ptr@UMethod@LSP@RBX@@@std@@@std@@
 ?$shared_ptr@UScope@Luau@@@std@@@Z
@@ -33389,6 +33539,7 @@
 ??0QLocale@@QEAA@AEBVQString@@@Z
 ??0QLocale@@QEAA@XZ
 ??0QLockFile@@QEAA@AEBVQString@@@Z
+??0QMainWindow@@QEAA@PEAVQWidget@@V?$QFlags@W4WindowType@Qt@@@@@Z
 ??0QMatrix@@QEAA@XZ
 ??0QMenu@@QEAA@AEBVQString@@PEAVQWidget@@@Z
 ??0QMenu@@QEAA@PEAVQWidget@@@Z
@@ -33576,7 +33727,6 @@
 ??0QWidget@@QEAA@PEAV0@V?$QFlags@W4WindowType@Qt@@@@@Z
 ??0QWidgetAction@@QEAA@PEAVQObject@@@Z
 ??0QXmlStreamReader@@QEAA@AEBVQByteArray@@@Z
-??0RibbonMainWindow@Qtitan@@QEAA@PEAVQWidget@@V?$QFlags@W4WindowType@Qt@@@@@Z
 ??0_Locinfo@std@@QEAA@PEBD@Z
 ??0_Lockit@std@@QEAA@H@Z
 ??0facet@locale@std@@IEAA@_K@Z
@@ -33695,6 +33845,7 @@
 ??1QLocalSocket@@UEAA@XZ
 ??1QLocale@@QEAA@XZ
 ??1QLockFile@@QEAA@XZ
+??1QMainWindow@@UEAA@XZ
 ??1QMenu@@UEAA@XZ
 ??1QMenuBar@@UEAA@XZ
 ??1QMessageBox@@UEAA@XZ
@@ -33798,7 +33949,6 @@
 ??1QWidgetAction@@UEAA@XZ
 ??1QXmlStreamAttributes@@QEAA@XZ
 ??1QXmlStreamReader@@QEAA@XZ
-??1RibbonMainWindow@Qtitan@@UEAA@XZ
 ??1_Locinfo@std@@QEAA@XZ
 ??1_Lockit@std@@QEAA@XZ
 ??1facet@locale@std@@MEAA@XZ
@@ -34009,6 +34159,7 @@
 ?AV?$unique_ptr@VAssetManagerServiceRegister@Studio@RBX@@U?$default_delete@VAssetManagerServiceRegister@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@34@V?$ManagedPtr@VIRobloxIDEDoc@Studio@RBX@@@34@@Z
 ?AV?$unique_ptr@VAssistantPluginLoader@Studio@RBX@@U?$default_delete@VAssistantPluginLoader@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIActionManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@34@@Z
 ?AV?$unique_ptr@VAudioToggleAction@Studio@RBX@@U?$default_delete@VAudioToggleAction@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIActionManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VDataModelSoundManager@Studio@RBX@@@34@@Z
+?AV?$unique_ptr@VAutoRecoveryTaskRegister@Studio@RBX@@U?$default_delete@VAutoRecoveryTaskRegister@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@34@V?$ManagedPtr@VIDialogManager@Studio@RBX@@@34@V?$ManagedPtr@VIPlaceOpener@Studio@RBX@@@34@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@34@V?$ManagedPtr@VIDialogManagerUIBridge@Studio@RBX@@@34@@Z
 ?AV?$unique_ptr@VAvatarGenerationDataModelObserver@Studio@RBX@@U?$default_delete@VAvatarGenerationDataModelObserver@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIUserContext@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@34@@Z
 ?AV?$unique_ptr@VAvatarSettingsPublishHandler@Studio@RBX@@U?$default_delete@VAvatarSettingsPublishHandler@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIPublishMediator@Studio@RBX@@@34@@Z
 ?AV?$unique_ptr@VBackendConfigBackgroundUpdater@Studio@RBX@@U?$default_delete@VBackendConfigBackgroundUpdater@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VBackendConfigManager@Studio@RBX@@@Component@RBX@@@Z
@@ -34089,6 +34240,7 @@
 ?AV?$unique_ptr@VDeviceEmulatorServicePlaceListener@Studio@RBX@@U?$default_delete@VDeviceEmulatorServicePlaceListener@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VStudioDeviceEmulator@@@34@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@34@V?$ManagedPtr@VIRobloxIDEDoc@Studio@RBX@@@34@V?$ManagedPtr@VStandaloneDataModelProvider@Studio@RBX@@@34@@Z
 ?AV?$unique_ptr@VDeviceEmulatorServicePlaceListener@Studio@RBX@@U?$default_delete@VDeviceEmulatorServicePlaceListener@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VStudioDeviceEmulator@@@34@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@34@V?$ManagedPtr@VStandaloneDataModelProvider@Studio@RBX@@@34@@Z
 ?AV?$unique_ptr@VDeviceEmulatorShortcutRegistrar@Studio@RBX@@U?$default_delete@VDeviceEmulatorShortcutRegistrar@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIShortcutRegistry@Studio@RBX@@@Component@RBX@@@Z
+?AV?$unique_ptr@VDialogSuppressionUserListener@Studio@RBX@@U?$default_delete@VDialogSuppressionUserListener@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIDialogSuppressionStore@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIUserContext@Studio@RBX@@@34@@Z
 ?AV?$unique_ptr@VDialogTelemetryEventFilter@Studio@RBX@@U?$default_delete@VDialogTelemetryEventFilter@Studio@RBX@@@std@@@std@@XZ
 ?AV?$unique_ptr@VDiffAgainstLatestPackageAction@Studio@RBX@@U?$default_delete@VDiffAgainstLatestPackageAction@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIActionManager@Studio@RBX@@@34@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@34@@Z
 ?AV?$unique_ptr@VDirectorySettings@Studio@RBX@@U?$default_delete@VDirectorySettings@Studio@RBX@@@std@@@std@@XZ
@@ -34153,7 +34305,7 @@
 ?AV?$unique_ptr@VIAssetAccessController@AssetAccess@Studio@RBX@@U?$default_delete@VIAssetAccessController@AssetAccess@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@34@V?$ManagedPtr@VINotificationService@Studio@RBX@@@34@V?$ManagedPtr@VIRendererApi@Studio@RBX@@@34@@Z
 ?AV?$unique_ptr@VIAssetDataModelANRListener@Studio@RBX@@U?$default_delete@VIAssetDataModelANRListener@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VDEPRECATED_ApplicationNotRespondingDetector@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@34@V?$ManagedPtr@VIAssetPluginErrorReporter@Studio@RBX@@@34@@Z
 ?AV?$unique_ptr@VIAssetDataModelANRListener@Studio@RBX@@U?$default_delete@VIAssetDataModelANRListener@Studio@RBX@@@std@@@std@@V?$optional@V?$ManagedPtr@VIStudioHangMonitor@Studio@RBX@@@Component@RBX@@@1@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIAssetPluginErrorReporter@Studio@RBX@@@45@@Z
-?AV?$unique_ptr@VIAssetDataModelManager@Studio@RBX@@U?$default_delete@VIAssetDataModelManager@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VCoreComponentManagerProxy@Component@RBX@@@Component@RBX@@V?$ManagedPtr@VIUserContext@Studio@RBX@@@34@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@34@V?$optional@V?$ManagedPtr@VIWaypointTelemetry@Studio@RBX@@@Component@RBX@@@1@V?$ManagedPtr@VIUniverseController@@@34@@Z
+?AV?$unique_ptr@VIAssetDataModelManager@Studio@RBX@@U?$default_delete@VIAssetDataModelManager@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VCoreComponentManagerProxy@Component@RBX@@@Component@RBX@@V?$ManagedPtr@VIUserContext@Studio@RBX@@@34@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@34@V?$ManagedPtr@VIWaypointTelemetry@Studio@RBX@@@34@V?$ManagedPtr@VIUniverseController@@@34@@Z
 ?AV?$unique_ptr@VIAssetExportController@Studio@RBX@@U?$default_delete@VIAssetExportController@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@34@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@34@V?$ManagedPtr@VIRendererApi@Studio@RBX@@@34@V?$ManagedPtr@VIGraphicsEngineProvider@Studio@RBX@@@34@V?$ManagedPtr@VIUserContext@Studio@RBX@@@34@V?$ManagedPtr@VIMainWindow@Studio@RBX@@@34@@Z
 ?AV?$unique_ptr@VIAssetInsertController@Studio@RBX@@U?$default_delete@VIAssetInsertController@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VStandaloneDataModelProvider@Studio@RBX@@@34@@Z
 ?AV?$unique_ptr@VIAssetManagementController@Studio@RBX@@U?$default_delete@VIAssetManagementController@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VINotificationService@Studio@RBX@@@34@V?$ManagedPtr@VStandaloneDataModelProvider@Studio@RBX@@@34@@Z
@@ -34163,6 +34315,7 @@
 ?AV?$unique_ptr@VIAssistantBridge@Studio@RBX@@U?$default_delete@VIAssistantBridge@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@34@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@34@V?$ManagedPtr@VIScriptDiffAndCommit@Studio@RBX@@@34@V?$ManagedPtr@VIAssistantPermissions@Studio@RBX@@@34@@Z
 ?AV?$unique_ptr@VIAssistantExperimentation@Studio@RBX@@U?$default_delete@VIAssistantExperimentation@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIConversationalAIExperimentation@Studio@RBX@@@34@@Z
 ?AV?$unique_ptr@VIAssistantPermissions@Studio@RBX@@U?$default_delete@VIAssistantPermissions@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@Component@RBX@@@Z
+?AV?$unique_ptr@VIAssistantPermissionsBridge@Studio@RBX@@U?$default_delete@VIAssistantPermissionsBridge@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@@Z
 ?AV?$unique_ptr@VIBenchmarkCaptureComponent@Profiling@RBX@@U?$default_delete@VIBenchmarkCaptureComponent@Profiling@RBX@@@std@@@std@@XZ
 ?AV?$unique_ptr@VICancellableDialogManager@Studio@RBX@@U?$default_delete@VICancellableDialogManager@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VStandaloneDataModelProvider@Studio@RBX@@@34@V?$ManagedPtr@VIDialogManager@Studio@RBX@@@34@@Z
 ?AV?$unique_ptr@VICapabilitiesHandler@Studio@RBX@@U?$default_delete@VICapabilitiesHandler@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@34@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@34@@Z
@@ -34186,6 +34339,7 @@
 ?AV?$unique_ptr@VIDialogImageManager@Studio@RBX@@U?$default_delete@VIDialogImageManager@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIPlaceManager@Studio@RBX@@@34@V?$ManagedPtr@VIThumbnailController@Studio@RBX@@@34@@Z
 ?AV?$unique_ptr@VIDialogManager@Studio@RBX@@U?$default_delete@VIDialogManager@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIDialogManagerUIBridge@Studio@RBX@@@34@@Z
 ?AV?$unique_ptr@VIDialogManagerUIBridge@Studio@RBX@@U?$default_delete@VIDialogManagerUIBridge@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@@Z
+?AV?$unique_ptr@VIDialogSuppressionStore@Studio@RBX@@U?$default_delete@VIDialogSuppressionStore@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIStudioSettingsWrapper@@@Component@RBX@@@Z
 ?AV?$unique_ptr@VIDragDropDataModelController@Studio@RBX@@U?$default_delete@VIDragDropDataModelController@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@34@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@34@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@34@V?$ManagedPtr@VIStudioPluginApiHost@@@34@V?$ManagedPtr@VIMainWindow@Studio@RBX@@@34@@Z
 ?AV?$unique_ptr@VIExperienceCoordinator@RBX@@U?$default_delete@VIExperienceCoordinator@RBX@@@std@@@std@@XZ
 ?AV?$unique_ptr@VIFeatureActivityTracker@Studio@RBX@@U?$default_delete@VIFeatureActivityTracker@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIHardwareSleepListener@@@Component@RBX@@V?$ManagedPtr@VINotificationService@Studio@RBX@@@34@@Z
@@ -34231,8 +34385,8 @@
 ?AV?$unique_ptr@VIPlaceSessionBridge@Studio@RBX@@U?$default_delete@VIPlaceSessionBridge@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@@Z
 ?AV?$unique_ptr@VIPlaceSessionContextBridge@Studio@RBX@@U?$default_delete@VIPlaceSessionContextBridge@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@34@@Z
 ?AV?$unique_ptr@VIPlaceSessionStateController@Studio@RBX@@U?$default_delete@VIPlaceSessionStateController@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VCoreComponentManagerProxy@Component@RBX@@@Component@RBX@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@34@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@34@@Z
-?AV?$unique_ptr@VIPlaceSessionTaskRegister@Studio@RBX@@U?$default_delete@VIPlaceSessionTaskRegister@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIActionManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIRobloxIDEDoc@Studio@RBX@@@34@V?$ManagedPtr@VIStudioPluginRibbonActionHost@@@34@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@34@V?$ManagedPtr@VIPlaceManager@Studio@RBX@@@34@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@34@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@34@V?$ManagedPtr@VIRendererApi@Studio@RBX@@@34@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@34@V?$optional@V?$ManagedPtr@VIWaypointTelemetry@Studio@RBX@@@Component@RBX@@@1@V?$optional@V?$ManagedPtr@VIPlaySoloManager@Studio@RBX@@@Component@RBX@@@1@V?$ManagedPtr@VIMemoryStatistics@Studio@Analytics@RBX@@@34@@Z
-?AV?$unique_ptr@VIPlaceSessionTaskRegister@Studio@RBX@@U?$default_delete@VIPlaceSessionTaskRegister@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIRobloxIDEDoc@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@34@V?$ManagedPtr@VIPlaceManager@Studio@RBX@@@34@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@34@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@34@V?$ManagedPtr@VIRendererApi@Studio@RBX@@@34@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@34@V?$optional@V?$ManagedPtr@VIWaypointTelemetry@Studio@RBX@@@Component@RBX@@@1@V?$optional@V?$ManagedPtr@VIPlaySoloManager@Studio@RBX@@@Component@RBX@@@1@V?$ManagedPtr@VIMemoryStatistics@Studio@Analytics@RBX@@@34@@Z
+?AV?$unique_ptr@VIPlaceSessionTaskRegister@Studio@RBX@@U?$default_delete@VIPlaceSessionTaskRegister@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIActionManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIRobloxIDEDoc@Studio@RBX@@@34@V?$ManagedPtr@VIStudioPluginRibbonActionHost@@@34@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@34@V?$ManagedPtr@VIPlaceManager@Studio@RBX@@@34@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@34@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@34@V?$ManagedPtr@VIRendererApi@Studio@RBX@@@34@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@34@V?$ManagedPtr@VIWaypointTelemetry@Studio@RBX@@@34@V?$optional@V?$ManagedPtr@VIPlaySoloManager@Studio@RBX@@@Component@RBX@@@1@V?$ManagedPtr@VIMemoryStatistics@Studio@Analytics@RBX@@@34@@Z
+?AV?$unique_ptr@VIPlaceSessionTaskRegister@Studio@RBX@@U?$default_delete@VIPlaceSessionTaskRegister@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIRobloxIDEDoc@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@34@V?$ManagedPtr@VIPlaceManager@Studio@RBX@@@34@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@34@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@34@V?$ManagedPtr@VIRendererApi@Studio@RBX@@@34@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@34@V?$ManagedPtr@VIWaypointTelemetry@Studio@RBX@@@34@V?$optional@V?$ManagedPtr@VIPlaySoloManager@Studio@RBX@@@Component@RBX@@@1@V?$ManagedPtr@VIMemoryStatistics@Studio@Analytics@RBX@@@34@@Z
 ?AV?$unique_ptr@VIPlaceVersionHistoryBridge@Studio@RBX@@U?$default_delete@VIPlaceVersionHistoryBridge@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@@Z
 ?AV?$unique_ptr@VIPlaySoloManager@Studio@RBX@@U?$default_delete@VIPlaySoloManager@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@34@V?$ManagedPtr@VIDataModelListenerBridge@Studio@RBX@@@34@V?$ManagedPtr@VRunServiceMonitor@Studio@RBX@@@34@V?$ManagedPtr@VTestModeModifiedScriptSavePreferenceController@Studio@RBX@@@34@V?$ManagedPtr@VIMainWindow@Studio@RBX@@@34@V?$ManagedPtr@VIRestartController@@@34@V?$ManagedPtr@VIMemoryStatistics@Studio@Analytics@RBX@@@34@@Z
 ?AV?$unique_ptr@VIPlaySoloManager@Studio@RBX@@U?$default_delete@VIPlaySoloManager@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@34@V?$ManagedPtr@VIDataModelListenerBridge@Studio@RBX@@@34@V?$ManagedPtr@VRunServiceMonitor@Studio@RBX@@@34@V?$ManagedPtr@VTestModeModifiedScriptSavePreferenceController@Studio@RBX@@@34@V?$ManagedPtr@VIMainWindow@Studio@RBX@@@34@V?$ManagedPtr@VPlaceSessionMainViewManager@Studio@RBX@@@34@V?$ManagedPtr@VIRobloxIDEDoc@Studio@RBX@@@34@V?$ManagedPtr@VIRestartController@@@34@V?$ManagedPtr@VIMemoryStatistics@Studio@Analytics@RBX@@@34@@Z
@@ -34259,6 +34413,7 @@
 ?AV?$unique_ptr@VIRenderThrottleModel@Studio@RBX@@U?$default_delete@VIRenderThrottleModel@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIGraphicsEngineProvider@Studio@RBX@@@Component@RBX@@@Z
 ?AV?$unique_ptr@VIRendererApi@Studio@RBX@@U?$default_delete@VIRendererApi@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIGraphicsEngineProvider@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIRenderThrottleModel@Studio@RBX@@@34@V?$ManagedPtr@VRenderScheduler@Studio@RBX@@@34@@Z
 ?AV?$unique_ptr@VIRestartController@@U?$default_delete@VIRestartController@@@std@@@std@@V?$ManagedPtr@VIMainWindow@Studio@RBX@@@Component@RBX@@@Z
+?AV?$unique_ptr@VIRestartController@@U?$default_delete@VIRestartController@@@std@@@std@@V?$ManagedPtr@VIMainWindow@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIProcessLauncher@Studio@RBX@@@34@V?$ManagedPtr@VProcessLaunchArgHelper@Studio@RBX@@@34@@Z
 ?AV?$unique_ptr@VIRibbonConfigurationProvider@Studio@RBX@@U?$default_delete@VIRibbonConfigurationProvider@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIRibbonFileSystemHelper@Studio@RBX@@@34@@Z
 ?AV?$unique_ptr@VIRibbonFileSystemHelper@Studio@RBX@@U?$default_delete@VIRibbonFileSystemHelper@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIUserContext@Studio@RBX@@@Component@RBX@@@Z
 ?AV?$unique_ptr@VIRidlCommandExample@Studio@RBX@@U?$default_delete@VIRidlCommandExample@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIUserContext@Studio@RBX@@@34@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@34@@Z
@@ -34452,7 +34607,9 @@
 ?AV?$unique_ptr@VPluginWidgetsViewPlaceListener@Studio@RBX@@U?$default_delete@VPluginWidgetsViewPlaceListener@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIPluginWidgetsView@@@Component@RBX@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@34@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@34@@Z
 ?AV?$unique_ptr@VPluginWindowCaptureConnector@Studio@RBX@@U?$default_delete@VPluginWindowCaptureConnector@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIMainWindow@Studio@RBX@@@34@@Z
 ?AV?$unique_ptr@VPopupImagePickerController@Studio@RBX@@U?$default_delete@VPopupImagePickerController@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIMainWindow@Studio@RBX@@@34@V?$ManagedPtr@VIPanelsManager@Studio@RBX@@@34@V?$ManagedPtr@VIWidgetsManager@Studio@RBX@@@34@V?$ManagedPtr@VPluginComponentManager@Studio@RBX@@@34@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@34@V?$ManagedPtr@VIStudioSettingsWrapper@@@34@@Z
+?AV?$unique_ptr@VProcessLaunchArgHelper@Studio@RBX@@U?$default_delete@VProcessLaunchArgHelper@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIAppContext@Studio@RBX@@@Component@RBX@@@Z
 ?AV?$unique_ptr@VProcessLaunchArgHelper@Studio@RBX@@U?$default_delete@VProcessLaunchArgHelper@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIAppContext@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIUserContext@Studio@RBX@@@34@@Z
+?AV?$unique_ptr@VProcessLaunchArgHelperUserIdBridge@Studio@RBX@@U?$default_delete@VProcessLaunchArgHelperUserIdBridge@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VProcessLaunchArgHelper@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIUserContext@Studio@RBX@@@34@@Z
 ?AV?$unique_ptr@VProcessMonitor@Studio@RBX@@U?$default_delete@VProcessMonitor@Studio@RBX@@@std@@@std@@XZ
 ?AV?$unique_ptr@VPropertiesTelemetry@PropertiesWidget@@U?$default_delete@VPropertiesTelemetry@PropertiesWidget@@@std@@@std@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@Component@RBX@@@Z
 ?AV?$unique_ptr@VPublishAction@Studio@RBX@@U?$default_delete@VPublishAction@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIActionManager@Studio@RBX@@@34@@Z
@@ -34472,6 +34629,7 @@
 ?AV?$unique_ptr@VReflectionMetadataDocs@Studio@RBX@@U?$default_delete@VReflectionMetadataDocs@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VStandaloneDataModelProvider@Studio@RBX@@@Component@RBX@@@Z
 ?AV?$unique_ptr@VReloadDebuggablePluginAction@Studio@RBX@@U?$default_delete@VReloadDebuggablePluginAction@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIActionManager@Studio@RBX@@@34@V?$ManagedPtr@VIRunnableChangedPluginsSource@Studio@RBX@@@34@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@34@V?$ManagedPtr@VIDialogManager@Studio@RBX@@@34@V?$ManagedPtr@VIStudioSettingsWrapper@@@34@@Z
 ?AV?$unique_ptr@VRemoteDebuggerScriptWatcher@Studio@RBX@@U?$default_delete@VRemoteDebuggerScriptWatcher@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@34@V?$ManagedPtr@VIDebuggerHostAppServices@Studio@RBX@@@34@@Z
+?AV?$unique_ptr@VRemoteDebuggerStudioBridge@Studio@RBX@@U?$default_delete@VRemoteDebuggerStudioBridge@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIUserContext@Studio@RBX@@@34@V?$ManagedPtr@VStandaloneDataModelProvider@Studio@RBX@@@34@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@34@V?$ManagedPtr@VIDebuggerHostAppServices@Studio@RBX@@@34@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@34@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@34@@Z
 ?AV?$unique_ptr@VRemoteSystemOutputTaskRegister@Studio@RBX@@U?$default_delete@VRemoteSystemOutputTaskRegister@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VSystemOutputModel@@@Component@RBX@@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@34@V?$ManagedPtr@VITeamTestModeChecker@Studio@RBX@@@34@@Z
 ?AV?$unique_ptr@VRenderScheduler@Studio@RBX@@U?$default_delete@VRenderScheduler@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIGraphicsEngineProvider@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIRenderErrorModel@Studio@RBX@@@34@V?$ManagedPtr@VIRenderThrottleModel@Studio@RBX@@@34@V?$ManagedPtr@VISelectionColorController@Studio@RBX@@@34@V?$ManagedPtr@VIWindowManager@Studio@RBX@@@34@@Z
 ?AV?$unique_ptr@VReportIllegalContentAction@Studio@RBX@@U?$default_delete@VReportIllegalContentAction@Studio@RBX@@@std@@@std@@V?$ManagedPtr@VIActionManager@Studio@RBX@@@Component@RBX@@V?$ManagedPtr@VIUserContext@Studio@RBX@@@34@V?$ManagedPtr@VIContextController@Studio@RBX@@@34@@Z
@@ -34707,8 +34865,11 @@
 ?AVscoped_connection@signals@rbx@@AEAV?$signal@$$A6AXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@8@V
 ?AVscoped_connection@signals@rbx@@AEAV?$signal@$$A6AXAEBV?$unordered_set@_JU?$hash@_J@std@@U?$equal_to@_J@2@V?$allocator@_J@2@@std@@@Z@8@V
 ?AVscoped_connection@signals@rbx@@AEAV?$signal@$$A6AXH@Z@8@V
+?AVscoped_connection@signals@rbx@@AEAV?$signal@$$A6AXHW4DebuggerPauseReason@Studio@RBX@@@Z@8@V
 ?AVscoped_connection@signals@rbx@@AEAV?$signal@$$A6AXPEBVPropertyDescriptor@Reflection@RBX@@@Z@8@V
 ?AVscoped_connection@signals@rbx@@AEAV?$signal@$$A6AXUDialogInteraction@Studio@RBX@@@Z@8@V
+?AVscoped_connection@signals@rbx@@AEAV?$signal@$$A6AXUStudioUri@RBX@@@Z@8@V
+?AVscoped_connection@signals@rbx@@AEAV?$signal@$$A6AXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$shared_ptr@VInstance@RBX@@@2@@Z@8@V
 ?AVscoped_connection@signals@rbx@@AEAV?$signal@$$A6AXV?$shared_ptr@VInstance@RBX@@@std@@@Z@8@V
 ?AVscoped_connection@signals@rbx@@AEAV?$signal@$$A6AXVToolState@Studio@RBX@@@Z@8@V
 ?AVscoped_connection@signals@rbx@@AEAV?$signal@$$A6AXW4DebuggerMessageTypeEnum@RemoteDebuggingApi@OpenApi@RBX@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@8@V
@@ -34789,6 +34950,7 @@
 ?AW4CreationDecision@Component@RBX@@V?$ManagedPtr@VIPlaceManager@Studio@RBX@@@12@V?$ManagedPtr@VIJoinConfigFetcher@Studio@RBX@@@12@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@12@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@12@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@12@V?$optional@V?$ManagedPtr@VTeamTestDisconnectManager@Studio@RBX@@@Component@RBX@@@std@@V?$ManagedPtr@VITeamTestModeChecker@Studio@RBX@@@12@V?$optional@V?$ManagedPtr@VTeamCreateTeamTestDisconnectionHandler@Studio@RBX@@@Component@RBX@@@9@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@12@@Z
 ?AW4CreationDecision@Component@RBX@@V?$ManagedPtr@VIPlaceManager@Studio@RBX@@@12@V?$ManagedPtr@VIJoinConfigFetcher@Studio@RBX@@@12@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@12@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@12@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@12@V?$optional@V?$ManagedPtr@VTeamTestDisconnectManager@Studio@RBX@@@Component@RBX@@@std@@V?$ManagedPtr@VITeamTestModeChecker@Studio@RBX@@@12@V?$optional@V?$ManagedPtr@VTeamCreateTeamTestDisconnectionHandler@Studio@RBX@@@Component@RBX@@@9@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@12@V?$ManagedPtr@VPlaceSessionMainViewManager@Studio@RBX@@@12@@Z
 ?AW4CreationDecision@Component@RBX@@V?$ManagedPtr@VIPlaceManager@Studio@RBX@@@12@V?$ManagedPtr@VIJoinConfigFetcher@Studio@RBX@@@12@V?$ManagedPtr@VIAssetDataModelManager@Studio@RBX@@@12@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@12@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@12@V?$ManagedPtr@VTeamCreateReconnectManager@Studio@RBX@@@12@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@12@V?$optional@V?$ManagedPtr@VTeamCreateTeamTestDisconnectionHandler@Studio@RBX@@@Component@RBX@@@std@@V?$ManagedPtr@VICloudEditController@@@12@V?$optional@V?$ManagedPtr@VIPlaceReconnectState@Studio@RBX@@@Component@RBX@@@std@@@Z
+?AW4CreationDecision@Component@RBX@@V?$ManagedPtr@VIPlaceSessionContext@Studio@RBX@@@12@V?$ManagedPtr@VIPlaceSessionStateController@Studio@RBX@@@12@V?$ManagedPtr@VIDialogManager@Studio@RBX@@@12@V?$ManagedPtr@VIPlaceOpener@Studio@RBX@@@12@V?$ManagedPtr@VICancellableDialogManager@Studio@RBX@@@12@V?$ManagedPtr@VIDialogManagerUIBridge@Studio@RBX@@@12@@Z
 ?AW4CreationDecision@Component@RBX@@V?$ManagedPtr@VIPluginOTAManager@Studio@RBX@@@12@V?$ManagedPtr@VIUserContext@Studio@RBX@@@12@V?$ManagedPtr@VIRunnableChangedPluginsSource@Studio@RBX@@@12@V?$ManagedPtr@VIContextController@Studio@RBX@@@12@V?$ManagedPtr@VIPluginOTAManagerNewInputs@Studio@RBX@@@12@V?$ManagedPtr@VIPluginOTAChangeDetector@Studio@RBX@@@12@@Z
 ?AW4CreationDecision@Component@RBX@@V?$ManagedPtr@VIPluginOTAManagerNewInputs@Studio@RBX@@@12@@Z
 ?AW4CreationDecision@Component@RBX@@V?$ManagedPtr@VIRendererApi@Studio@RBX@@@12@V?$ManagedPtr@VAssetDataModelProvider@Studio@RBX@@@12@@Z
@@ -37056,6 +37218,7 @@
 ?qt_metacall@QListWidget@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 ?qt_metacall@QLocalServer@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 ?qt_metacall@QLocalSocket@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
+?qt_metacall@QMainWindow@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 ?qt_metacall@QMenu@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 ?qt_metacall@QMenuBar@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 ?qt_metacall@QMessageBox@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
@@ -37101,7 +37264,6 @@
 ?qt_metacall@QValidator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 ?qt_metacall@QWidget@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 ?qt_metacall@QWidgetAction@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
-?qt_metacall@RibbonMainWindow@Qtitan@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 ?qt_metacast@DockDocumentPanel@Qtitan@@UEAAPEAXPEBD@Z
 ?qt_metacast@DockPanelManager@Qtitan@@UEAAPEAXPEBD@Z
 ?qt_metacast@DockWidgetPanel@Qtitan@@UEAAPEAXPEBD@Z
@@ -37143,6 +37305,7 @@
 ?qt_metacast@QListWidget@@UEAAPEAXPEBD@Z
 ?qt_metacast@QLocalServer@@UEAAPEAXPEBD@Z
 ?qt_metacast@QLocalSocket@@UEAAPEAXPEBD@Z
+?qt_metacast@QMainWindow@@UEAAPEAXPEBD@Z
 ?qt_metacast@QMenu@@UEAAPEAXPEBD@Z
 ?qt_metacast@QMenuBar@@UEAAPEAXPEBD@Z
 ?qt_metacast@QMessageBox@@UEAAPEAXPEBD@Z
@@ -37188,7 +37351,6 @@
 ?qt_metacast@QValidator@@UEAAPEAXPEBD@Z
 ?qt_metacast@QWidget@@UEAAPEAXPEBD@Z
 ?qt_metacast@QWidgetAction@@UEAAPEAXPEBD@Z
-?qt_metacast@RibbonMainWindow@Qtitan@@UEAAPEAXPEBD@Z
 ?qt_qFindChild_helper@@YAPEAVQObject@@PEBV1@AEBVQString@@AEBUQMetaObject@@V?$QFlags@W4FindChildOption@Qt@@@@@Z
 ?qt_qFindChildren_helper@@YAXPEBVQObject@@AEBVQString@@AEBUQMetaObject@@PEAV?$QList@PEAX@@V?$QFlags@W4FindChildOption@Qt@@@@@Z
 ?quadTo@QPainterPath@@QEAAXAEBVQPointF@@0@Z
@@ -38277,7 +38439,6 @@
 ?staticMetaObject@QTreeWidget@@2UQMetaObject@@B
 ?staticMetaObject@QWidget@@2UQMetaObject@@B
 ?staticMetaObject@QWindow@@2UQMetaObject@@B
-?staticMetaObject@RibbonMainWindow@Qtitan@@2UQMetaObject@@B
 ?staticQtMetaObject@QObject@@1UQMetaObject@@B
 ?status@QDataStream@@QEBA?AW4Status@1@XZ
 ?statusBar@QMainWindow@@QEBAPEAVQStatusBar@@XZ

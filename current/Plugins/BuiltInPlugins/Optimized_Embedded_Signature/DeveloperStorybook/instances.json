@@ -5669,6 +5669,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "calculateSliderFraction",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Slider/calculateSliderFraction",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "calculateSliderPositionDelta",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Slider/calculateSliderPositionDelta",
     "properties": {
@@ -8407,18 +8419,6 @@
     "class": "ModuleScript",
     "name": "createNextOrder",
     "path": "DeveloperStorybook/Packages/_Index/ReactUtils/ReactUtils/createNextOrder",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "createPlannedSubPartStory",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Utility/Stories/createPlannedSubPartStory",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -13254,6 +13254,18 @@
   {
     "class": "ModuleScript",
     "name": "Foundation",
+    "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/Foundation",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Foundation",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation",
     "properties": {
       "AttributesSerialize": "",
@@ -14573,18 +14585,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "getFFlagStudioFoundationDialogComponent",
-    "path": "DeveloperStorybook/Packages/_Index/StudioFoundation/StudioFoundation/SharedFlags/getFFlagStudioFoundationDialogComponent",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "getFFlagStudioFoundationDialogDeviceSimFixes",
     "path": "DeveloperStorybook/Packages/_Index/StudioFoundation/StudioFoundation/SharedFlags/getFFlagStudioFoundationDialogDeviceSimFixes",
     "properties": {
@@ -14767,6 +14767,18 @@
     "class": "ModuleScript",
     "name": "getGridSizeTag",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Utility/getGridSizeTag",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "getGuiInputPosition",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Slider/getGuiInputPosition",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",

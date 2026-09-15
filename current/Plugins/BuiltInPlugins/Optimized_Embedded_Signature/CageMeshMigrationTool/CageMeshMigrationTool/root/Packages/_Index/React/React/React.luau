@@ -11,6 +11,7 @@
 
 local React = script.Parent
 local Packages = React.Parent
+local ReactGlobals = require(Packages.ReactGlobals)
 local LuauPolyfill = require(Packages.LuauPolyfill)
 type Object = LuauPolyfill.Object
 
@@ -36,7 +37,8 @@ local ReactNone = require(React["None.roblox"])
 local SharedModule = require(Packages.Shared)
 local ReactSymbols = SharedModule.ReactSymbols
 
-local shouldValidate = _G.__DEV__ or _G.__DISABLE_ALL_WARNINGS_EXCEPT_PROP_VALIDATION__
+local shouldValidate = ReactGlobals.__DEV__
+	or ReactGlobals.__DISABLE_ALL_WARNINGS_EXCEPT_PROP_VALIDATION__
 local ReactTypes = require(Packages.Shared)
 export type React_StatelessFunctionalComponent<P> =
 	ReactTypes.React_StatelessFunctionalComponent<P>
@@ -105,8 +107,23 @@ return {
 	-- ROBLOX deviation: bindings support
 	useBinding = ReactHooks.useBinding,
 	useState = ReactHooks.useState,
+	--[[
+		Lets you group elements without a wrapper node.
+
+		See [API reference for `Fragment`](https://react.dev/reference/react/Fragment).
+	]]
 	Fragment = ReactSymbols.REACT_FRAGMENT_TYPE,
+	--[[
+		Lets you measure rendering performance of a React tree programmatically.
+
+		See [API reference for `Profiler`](https://react.dev/reference/react/Profiler).
+	]]
 	Profiler = ReactSymbols.REACT_PROFILER_TYPE,
+	--[[
+		Lets you find common bugs in your components early during development.
+
+		See [API reference for `StrictMode`](https://react.dev/reference/react/StrictMode).
+	]]
 	StrictMode = ReactSymbols.REACT_STRICT_MODE_TYPE,
 	unstable_DebugTracingMode = ReactSymbols.REACT_DEBUG_TRACING_MODE_TYPE,
 	Suspense = ReactSymbols.REACT_SUSPENSE_TYPE,
