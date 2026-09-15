@@ -1,0 +1,100 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-55808de4b1914919",
+    "manifestFiles": 18507,
+    "packages": 34,
+    "version": "0.739.0.7390687"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "1a6ca475ab704046da484fd00c9b89b43dafef42c5d3cd7babf1545e45b51811",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "fa5c394f80d182d3892bc573e789951e3ea1a9c18d7f6cefbb9ff946058ccf65",
+      "semantic": {
+        "added": [
+          "FFlagAXFixSearchBarPortraitBackground_Staged",
+          "FFlagDecalEmissiveEnabled",
+          "FFlagEnableLoginV2Modalization19",
+          "FFlagEnableLuaCommunityList",
+          "FFlagFlyoutResolveItemContextOnActivation",
+          "FFlagFmodFixPrematureLoopbacks",
+          "FFlagStudioFixPackageActions",
+          "FFlagVoiceChatPermissionPromptUseMicrophoneRoute_Staged"
+        ],
+        "changed": [
+          {
+            "after": "bab2718fa589da8dd4f248eaf696064abce80db0",
+            "before": "bf859117bae314edeab4517efc869320be4f5142",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-15T19:14:55.920Z",
+            "before": "2026-09-15T18:56:46.391Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "True;SteadyState;10;15;Rollout;100;30;SteadyState;100;75;Promote;2026-09-15T19:04:10",
+            "before": "True;SteadyState;10;30;Revert;2026-09-15T18:24:46",
+            "name": "FFlagAESV4CreateOutfitTypeEnabled_Staged"
+          },
+          {
+            "after": "bab2718fa589da8dd4f248eaf696064abce80db0",
+            "before": "bf859117bae314edeab4517efc869320be4f5142",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-15T19:14:55.920Z",
+            "before": "2026-09-15T18:56:46.391Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagDecalEmissiveEnabled_Staged",
+          "FFlagEnableLoginV2Modalization19_Staged",
+          "FFlagEnableLuaCommunityList_Staged",
+          "FFlagFlyoutResolveItemContextOnActivation_Staged",
+          "FFlagFmodFixPrematureLoopbacks_Staged",
+          "FFlagStudioFixPackageActions_Staged"
+        ],
+        "unchanged": 24282
+      }
+    },
+    "Web": {
+      "current": "ecade25cd85eba9e2edcc05cd63c0f9d4dc666e0680b6c66d0f6e0092c36596b",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-012.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-033.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-053.js",
+          "assets.create.roblox.com/page-0/script-057.js",
+          "assets.create.roblox.com/page-0/script-067.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 90
+      },
+      "previous": "7ef6ff07b3da7c5ff8a149edaa98155ae295bebbda5a46244ff122765d19c9c1",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
