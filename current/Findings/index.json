@@ -2481,11 +2481,61 @@
             "synced",
             "with"
           ]
+        },
+        {
+          "concepts": [
+            "avatar",
+            "abilities"
+          ],
+          "eventPath": "2026/09/15/23-26-22Z_datasets",
+          "evidencePath": "2026/09/15/23-26-22Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "2ea268c6d3bcfbb8e51b29f6d1bc9e62bda5aced9623b386e25fa112e3922457",
+          "key": "FFlagAvatarSettingsJustCoreAbilitiesWithSyncedState_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-15T23:26:22.620Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abilities",
+            "avatar",
+            "just",
+            "settings",
+            "state",
+            "synced",
+            "with"
+          ]
+        },
+        {
+          "concepts": [
+            "avatar",
+            "abilities"
+          ],
+          "eventPath": "2026/09/15/23-26-22Z_datasets",
+          "evidencePath": "2026/09/15/23-26-22Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "b9d81a60ea419ee1b49b78e12c567c35090948a48ecc3463ccb3c30471be54ce",
+          "key": "FFlagAvatarSettingsJustCoreAbilitiesWithSyncedState",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-15T23:26:22.620Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abilities",
+            "avatar",
+            "just",
+            "settings",
+            "state",
+            "synced",
+            "with"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "avatar-abilities",
-      "lastObservedAt": "2026-09-15T21:34:31.101Z",
+      "lastObservedAt": "2026-09-15T23:26:22.620Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T01:54:39.846Z",
@@ -2500,6 +2550,14 @@
           "signalIds": [
             "003ae2a0551f32950891fd322772c5e7e5d9966b317bd4c51cf8bc32f88227b7",
             "bb64111bb29efc8bef03a05683f75655d8a464bf242c2af6a1a3066bab6eb622"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-09-15T23:26:22.620Z",
+          "signalIds": [
+            "6cb78765f87bbb372f5f9503d8c0fe24fe8caf8dcbe6e7f1b579a230b25d9246",
+            "b9d81a60ea419ee1b49b78e12c567c35090948a48ecc3463ccb3c30471be54ce"
           ],
           "type": "staged-to-non-staged"
         }
