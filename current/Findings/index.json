@@ -2456,11 +2456,36 @@
             "avatar",
             "feature2"
           ]
+        },
+        {
+          "concepts": [
+            "avatar",
+            "abilities"
+          ],
+          "eventPath": "2026/09/15/21-34-31Z_datasets",
+          "evidencePath": "2026/09/15/21-34-31Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "6cb78765f87bbb372f5f9503d8c0fe24fe8caf8dcbe6e7f1b579a230b25d9246",
+          "key": "FFlagAvatarSettingsJustCoreAbilitiesWithSyncedState_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-15T21:34:31.101Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abilities",
+            "avatar",
+            "just",
+            "settings",
+            "state",
+            "synced",
+            "with"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "avatar-abilities",
-      "lastObservedAt": "2026-09-10T19:19:37.828Z",
+      "lastObservedAt": "2026-09-15T21:34:31.101Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T01:54:39.846Z",

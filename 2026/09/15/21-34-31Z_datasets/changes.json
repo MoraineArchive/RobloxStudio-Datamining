@@ -1,0 +1,173 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-55808de4b1914919",
+    "manifestFiles": 18507,
+    "packages": 34,
+    "version": "0.739.0.7390687"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "66d5ec334a98463afb68999a832d51ec1617eeba32766a5ff835e798f6e0d350",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "62caacbe63e3c8d6107ea7bc04472339032bc94a2b395b137db4774026f24e74",
+      "semantic": {
+        "added": [
+          "DFFlagACSGuardEmptyBatchTokenDetails_Staged",
+          "DFFlagAJUFixBuildRigFromAttachmentsDoubleScaling",
+          "DFFlagCLI206370_Staged",
+          "DFFlagCLI220331Enabled_Staged",
+          "DFFlagCSGPublishCounterEnabled",
+          "DFFlagCrashMetricStorageWritePlaySession_Staged",
+          "DFFlagFriendsApiCallerIdentityParam",
+          "DFFlagInstanceRefWaiterDrainFastPath_Staged",
+          "DFFlagMeshLODBoundsCheckMaxSkinRadius",
+          "DFFlagRbxTransportQuicExtendMaxRemoteStreamsBidiCallback_Staged",
+          "DFFlagRbxTransportQuicRetryScidRoutingFix",
+          "DFFlagRccMonitorSendServerRestartInfo",
+          "DFFlagSelfLogicCleanupRbs_Staged",
+          "DFFlagSkipTypeCheckIfTooLong_Staged",
+          "DFFlagTypeCheckForAngleBetween_Staged",
+          "DFFlagUseTeleportMethodEnum",
+          "FFlagACEFixPromptTextClipping_Staged",
+          "FFlagACSSerializeWithUnpublished_Staged",
+          "FFlagAESV4CreateOutfitTypeEnabled",
+          "FFlagAXFixSearchBarPortraitBackground",
+          "FFlagAXSduiFeedBackToTopAndNavClearance",
+          "FFlagAXWidgetHeaderTreatEmptyTextAsNil",
+          "FFlagAmpV2WizardAnalytics_Staged",
+          "FFlagAmpWizardV2VpcHandoff_Staged",
+          "FFlagAnimatorParallelManagerUseLiveTaskSchedulerConcurrency",
+          "FFlagAnnotationsColorErrorFixes_Staged",
+          "FFlagAvatarSettingsJustCoreAbilitiesWithSyncedState_Staged",
+          "FFlagBuildExperiencePersistChatDraft",
+          "FFlagBuildExperiencePinForBuild",
+          "FFlagBuildExperienceShowThinkingAfterAskUserSubmit",
+          "FFlagCollabFixMCSearchWidgetErrors",
+          "FFlagComposerControlAlignment",
+          "FFlagEnableAmpV2Wizard_Staged",
+          "FFlagEnableEmptyContainerWidgetDeepLink",
+          "FFlagExpChatFlipDictationPriorityV2",
+          "FFlagFixDecalTintingFromSurfaceAppearance_Staged",
+          "FFlagFixStyleLinkRemoveOnDestroy",
+          "FFlagFixTFLinksVRGating",
+          "FFlagFriendsChatDiscloseUpdateSecondVersion",
+          "FFlagGeoGenUseDefaultArena_Staged",
+          "FFlagLuaAppSharedHomePageInteractive_Staged",
+          "FFlagLuauCompoundAssignSeedsAstTypes_Staged",
+          "FFlagMaterialGridTerrainEditorItemUx",
+          "FFlagProfilePlatformFixBioTruncation",
+          "FFlagPurchasePromptPreviewMakeupHead2_Staged",
+          "FFlagRemoveStyleEngineInstanceStyle",
+          "FFlagRequirePlayerModule2_Staged",
+          "FFlagSduiApiStoreOnSuccessAndRefresh",
+          "FFlagSduiCatalogVirtualizedFeed4",
+          "FFlagSduiClientDrivenTemplates_Staged",
+          "FFlagSduiRequestCounters_Staged",
+          "FFlagSduiTemplateApiPostRequest_Staged",
+          "FFlagSendAvatarBodyEvent_Staged",
+          "FFlagSimEditableMeshRemoveFaceAndFindCornerHelpers_Staged",
+          "FFlagSingleUploadMakeupSupport5_Staged",
+          "FFlagStratusOfferPlatform",
+          "FFlagTrustedContactsSheetFocusNavigation",
+          "FFlagUGCValidateAnimTranslationThreshold2_Staged",
+          "FFlagVoiceChatPermissionPromptUseMicrophoneRoute",
+          "FFlagWaitPlayerModuleStatus_Staged",
+          "SFFlagAuroraDeterministicGuidNonNegativeIndex_Staged"
+        ],
+        "changed": [
+          {
+            "after": "False",
+            "before": "True",
+            "name": "DFFlagImporterAceRestPoseFromRig"
+          },
+          {
+            "after": "cf1367aec74d700e08bd89ef0aed6b1105bcafec",
+            "before": "67f1727885dc61cf283fe77a6ff5ed1b32c4c89c",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-15T21:32:26.800Z",
+            "before": "2026-09-15T20:01:17.483Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "cf1367aec74d700e08bd89ef0aed6b1105bcafec",
+            "before": "67f1727885dc61cf283fe77a6ff5ed1b32c4c89c",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-15T21:32:26.800Z",
+            "before": "2026-09-15T20:01:17.483Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagAJUFixBuildRigFromAttachmentsDoubleScaling_Staged",
+          "DFFlagFriendsApiCallerIdentityParam_Staged",
+          "DFFlagRbxTransportQuicRetryScidRoutingFix_Staged",
+          "DFFlagRccMonitorSendServerRestartInfo_Staged",
+          "DFFlagUseTeleportMethodEnum_Staged",
+          "FFlagAESV4CreateOutfitTypeEnabled_Staged",
+          "FFlagAXFixSearchBarPortraitBackground_Staged",
+          "FFlagAXSduiFeedBackToTopAndNavClearance_Staged",
+          "FFlagAXWidgetHeaderTreatEmptyTextAsNil_Staged",
+          "FFlagAnimatorParallelManagerUseLiveTaskSchedulerConcurrency_Staged",
+          "FFlagBuildExperiencePersistChatDraft_Staged",
+          "FFlagBuildExperiencePinForBuild_Staged",
+          "FFlagBuildExperienceShowThinkingAfterAskUserSubmit_Staged",
+          "FFlagCollabFixMCSearchWidgetErrors_Staged",
+          "FFlagComposerControlAlignment_Staged",
+          "FFlagEnableEmptyContainerWidgetDeepLink_Staged",
+          "FFlagExpChatFlipDictationPriorityV2_Staged",
+          "FFlagFixStyleLinkRemoveOnDestroy_Staged",
+          "FFlagFixTFLinksVRGating_Staged",
+          "FFlagFriendsChatDiscloseUpdateSecondVersion_Staged",
+          "FFlagMaterialGridTerrainEditorItemUx_Staged",
+          "FFlagProfilePlatformFixBioTruncation_Staged",
+          "FFlagRemoveStyleEngineInstanceStyle_Staged",
+          "FFlagSduiApiStoreOnSuccessAndRefresh_Staged",
+          "FFlagSduiCatalogVirtualizedFeed4_Staged",
+          "FFlagStratusOfferPlatform_Staged",
+          "FFlagTrustedContactsSheetFocusNavigation_Staged",
+          "FFlagVoiceChatPermissionPromptUseMicrophoneRoute_Staged"
+        ],
+        "unchanged": 24272
+      }
+    },
+    "Web": {
+      "current": "02fa23c90fddd22fe9e727893c014553a6b498cbd2f428aaa0dcab9856526218",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-012.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-053.js",
+          "assets.create.roblox.com/page-0/script-067.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 92
+      },
+      "previous": "375f75447e1cd72fa512331edc470548672a3da1517998a23fe395542b310a85",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
