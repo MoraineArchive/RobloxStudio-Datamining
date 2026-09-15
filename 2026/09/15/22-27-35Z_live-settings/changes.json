@@ -1,0 +1,67 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-55808de4b1914919",
+    "manifestFiles": 18507,
+    "packages": 34,
+    "version": "0.739.0.7390687"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "fd79b5efe03d83dcf8d47a90444bc0403daf874d5d7c9aa551678044b7e69f5e",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "b4ad44439ff02db6b097b07f722035ca825c73c490312092a6c92a8b54f4af14",
+      "semantic": {
+        "added": [
+          "DFFlagCLI220331Enabled",
+          "DFFlagCrashMetricStorageWritePlaySession",
+          "FFlagACSSerializeWithUnpublished",
+          "FFlagAXCatalogSduiUseOpaqueRouteForSearch_Staged",
+          "FFlagLuaAppSduiHomeFriendCarousel_Staged",
+          "FFlagRequirePlayerModule2",
+          "FFlagSduiVerticalFeedProgressiveFillOnScroll2_Staged",
+          "FFlagWaitPlayerModuleStatus"
+        ],
+        "changed": [
+          {
+            "after": "2c659c39d00939f8ae5fb68de80184b808d1d8a3",
+            "before": "05feef0146deb919e1147c4f79dc2441927d63d3",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-15T22:26:49.884Z",
+            "before": "2026-09-15T22:07:38.347Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "2c659c39d00939f8ae5fb68de80184b808d1d8a3",
+            "before": "05feef0146deb919e1147c4f79dc2441927d63d3",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-15T22:26:49.884Z",
+            "before": "2026-09-15T22:07:38.347Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagCLI220331Enabled_Staged",
+          "DFFlagCrashMetricStorageWritePlaySession_Staged",
+          "FFlagACSSerializeWithUnpublished_Staged",
+          "FFlagRequirePlayerModule2_Staged",
+          "FFlagWaitPlayerModuleStatus_Staged"
+        ],
+        "unchanged": 24337
+      }
+    }
+  },
+  "schemaVersion": 1
+}
