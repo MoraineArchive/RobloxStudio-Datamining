@@ -3104,11 +3104,151 @@
             "search",
             "telemetry"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/15/04-51-20Z_live-settings",
+          "evidencePath": "2026/09/15/04-51-20Z_live-settings/changes.json",
+          "family": "LiveSettings",
+          "id": "181dd155258bcc9b6dfaf347264498e3372c3779f47b6ddccd2330b9e7516f1b",
+          "key": "FFlagMomentsJoinImpression_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-15T04:51:20.967Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "impression",
+            "join",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/15/04-51-20Z_live-settings",
+          "evidencePath": "2026/09/15/04-51-20Z_live-settings/changes.json",
+          "family": "LiveSettings",
+          "id": "3e3cfc0a8f96c4cfe537cacb1c5c75f518405c1c582877d6b877600f9b6f6e57",
+          "key": "FFlagMomentsFeedMediaLoadAttemptedEvent",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-15T04:51:20.967Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "attempted",
+            "event",
+            "feed",
+            "load",
+            "media",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/15/04-51-20Z_live-settings",
+          "evidencePath": "2026/09/15/04-51-20Z_live-settings/changes.json",
+          "family": "LiveSettings",
+          "id": "9fffcf46f13dd8eac0581bed1a5cefd1277c33aecb0895392b4ea05ba0dd7546",
+          "key": "FFlagMomentsCreationEntryOutcome_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-15T04:51:20.967Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "entry",
+            "moments",
+            "outcome"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/15/04-51-20Z_live-settings",
+          "evidencePath": "2026/09/15/04-51-20Z_live-settings/changes.json",
+          "family": "LiveSettings",
+          "id": "cf9d118de563d41b04cc6591b7765766a2650d4024de3a91c6a5126e774f41e1",
+          "key": "FFlagMomentsJoinImpression",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-15T04:51:20.967Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "impression",
+            "join",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/15/04-51-20Z_live-settings",
+          "evidencePath": "2026/09/15/04-51-20Z_live-settings/changes.json",
+          "family": "LiveSettings",
+          "id": "d868eef216c43ec3e4aac60c88f5c895835741d77393c0055129db8c6da8dab7",
+          "key": "FFlagMomentsFeedMediaLoadAttemptedEvent_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-15T04:51:20.967Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "attempted",
+            "event",
+            "feed",
+            "load",
+            "media",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/15/04-51-20Z_live-settings",
+          "evidencePath": "2026/09/15/04-51-20Z_live-settings/changes.json",
+          "family": "LiveSettings",
+          "id": "f91147666dee38152cf3085513efcf7486810fca0726a848118e1a51857daaa6",
+          "key": "FFlagMomentsCreationEntryOutcome",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-15T04:51:20.967Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "entry",
+            "moments",
+            "outcome"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-09-15T00:20:56.573Z",
+      "lastObservedAt": "2026-09-15T04:51:20.967Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
@@ -3131,6 +3271,30 @@
           "signalIds": [
             "0bbb9a54b1031496066eab86c58a093431f40521e8ee4194426fc41071d318fc",
             "7a23818911fca898ad8a813ee9e4a1ffa69d6124a88ff10c976be25d6ab1cd62"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-09-15T04:51:20.967Z",
+          "signalIds": [
+            "7e6e70aafeac29da1c0bf387160fd121972d6492f0315598fa667a52d5a4a2a1",
+            "f91147666dee38152cf3085513efcf7486810fca0726a848118e1a51857daaa6"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-09-15T04:51:20.967Z",
+          "signalIds": [
+            "3e3cfc0a8f96c4cfe537cacb1c5c75f518405c1c582877d6b877600f9b6f6e57",
+            "8546a964804a2d820198b3bb2fe01a6e7e644a7d5efc060cf83f1379636b5f09"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-09-15T04:51:20.967Z",
+          "signalIds": [
+            "9b7d6dbff7efec0dc421a83b8fb41f7f1c6e4af31ff4b1c74d4e17ff8cb5cb54",
+            "cf9d118de563d41b04cc6591b7765766a2650d4024de3a91c6a5126e774f41e1"
           ],
           "type": "staged-to-non-staged"
         }
