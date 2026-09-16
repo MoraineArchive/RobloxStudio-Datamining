@@ -1,0 +1,107 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-55808de4b1914919",
+    "manifestFiles": 18507,
+    "packages": 34,
+    "version": "0.739.0.7390687"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "5082795cd6532fe7dd85363712e8aad6712a306870b339a52358760ec9d72273",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "fca387a62e2a1ed21b5e7a2cca6d6d9886936851ec02e264bdd2081749b84fd5",
+      "semantic": {
+        "added": [
+          "DFFlagRCCTSThreadsOverriddenWithCoreRoundUp2",
+          "FFlagAXFixScrollingCarouselShowRightButton_Staged",
+          "FFlagAssistantCreditMeteringTelemetry2",
+          "FFlagFolderIconTint2",
+          "FFlagLuaAppDefaultGameAdTileText",
+          "FFlagLuauTableArrayAdjustCheck",
+          "FFlagSduiRequestCounters",
+          "FFlagSduiTemplateApiPostRequest",
+          "FFlagStudioAutoPersistCookiesAfterLogin_Staged",
+          "FFlagStudioFixJitteryMouseDragging4",
+          "FFlagUGCValidateAnimTranslationThreshold2"
+        ],
+        "changed": [
+          {
+            "after": "0a58b9dd591629e3b29f5a7f123320f3e17dc2be",
+            "before": "03e9fb8c1b88ab7799b86c7c418d656cd7e86db4",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-16T00:12:42.505Z",
+            "before": "2026-09-15T23:22:51.531Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagFixSkinningLifetimeAndBugs15"
+          },
+          {
+            "after": "0a58b9dd591629e3b29f5a7f123320f3e17dc2be",
+            "before": "03e9fb8c1b88ab7799b86c7c418d656cd7e86db4",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-16T00:12:42.505Z",
+            "before": "2026-09-15T23:22:51.531Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagRCCTSThreadsOverriddenWithCoreRoundUp2_Staged",
+          "FFlagAssistantCreditMeteringTelemetry2_Staged",
+          "FFlagFixSkinningLifetimeAndBugs15_Staged",
+          "FFlagFolderIconTint2_Staged",
+          "FFlagLuaAppDefaultGameAdTileText_Staged",
+          "FFlagLuauRequireAttributeReferences_Staged",
+          "FFlagLuauTableArrayAdjustCheck_Staged",
+          "FFlagSduiRequestCounters_Staged",
+          "FFlagSduiTemplateApiPostRequest_Staged",
+          "FFlagStudioFixJitteryMouseDragging4_Staged",
+          "FFlagUGCValidateAnimTranslationThreshold2_Staged"
+        ],
+        "unchanged": 24343
+      }
+    },
+    "Web": {
+      "current": "49a64f8de99a9b1bf5cdb5c099eeb171140d9a8907e368773a8bb4b417c66038",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-045.js",
+          "assets.create.roblox.com/page-0/script-047.js",
+          "assets.create.roblox.com/page-0/script-055.js",
+          "assets.create.roblox.com/page-0/script-057.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.create.roblox.com/page-0/script-085.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 94
+      },
+      "previous": "284c227009c20a22b0eff88018661c7fa24c170611b0d42099d05e69265123ca",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
