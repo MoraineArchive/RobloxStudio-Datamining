@@ -1,0 +1,142 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-55808de4b1914919",
+    "manifestFiles": 18507,
+    "packages": 34,
+    "version": "0.739.0.7390687"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "3aed51a00a6aa553e05704fa6c7393eef0e01934584e6278f21d4ae9f5f3cfd2",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "6382d5509e933608e5f8978e948d3da7f5a2e3512c210aa266e4184f0541209c",
+      "semantic": {
+        "added": [
+          "DFFlagMeshLODSkinWeightsUseJointMapper",
+          "DFFlagRobustRetargeterIgnoreHrpTransform2_Staged",
+          "DFFlagTeleportStageLatencyV2",
+          "DFFlagTestServiceBoundedReconnect",
+          "DFFlagUnlockCollisionPrecision_Staged",
+          "DFFlagXboxImproveSystemUtil",
+          "DFIntSlimRolloutHundredthPercent_Staged",
+          "DFStringSlimRolloutMajorVersion_Staged",
+          "FFlagAXEnableOffersOnHomeProfileItems_Staged",
+          "FFlagAXFixQRCodeAvatarTryOnFlash",
+          "FFlagAddFocusNavigationToGroupOSADialog_Staged",
+          "FFlagAppContainerReadyToRender_Staged",
+          "FFlagAutoReimportBetaFeature_Staged",
+          "FFlagBuildExperienceFreeTrialResetPeriod_Staged",
+          "FFlagEnableDLICSeedAndroidWebView_Staged",
+          "FFlagHomeSduiOfflineCache_Staged",
+          "FFlagLuaAppSduiHomeUserInfo",
+          "FFlagLuaAppSduiSlotOverlayZIndex",
+          "FFlagLuauCodegenPropagateFallbackTags2",
+          "FFlagLuauCompileCleanBlockDeadClose",
+          "FFlagLuauCompileLoopUnrollZero",
+          "FFlagLuauCompileUndoEmitAdjust",
+          "FFlagLuauEasyStateInit",
+          "FFlagMomentsCreationMusicSearchStateFix_Staged",
+          "FFlagOnlySendOpenPlaceGetPlaceInfoSynchronousEndOnHttp_Staged",
+          "FFlagRenderMeshInvalidateRestoreFullFidelity_Staged",
+          "FFlagSduiVerticalFeedPageShellSupport2_Staged",
+          "FFlagSendNewOpenPlaceProgressTeamCreatePreGameJoinEvent_Staged",
+          "FFlagStudioAssetPrivacyHideAssetTable_Staged",
+          "FFlagUserListChatCtaStandardVariant_Staged",
+          "FFlagVirtualCursorForTVRemoteKeycodes_Staged"
+        ],
+        "changed": [
+          {
+            "after": "114067ac203717334a176f79e0f57f1a217fa170",
+            "before": "d2ae9bdbc60669573206c4ade02af75f6d76dd89",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-16T18:40:29.251Z",
+            "before": "2026-09-16T17:45:49.170Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False;6000468131;99046552174353;107058894021320;115501326827215;118214123142991;16630762868;1333478699;536610775;14211774114;142823291;120663613476096;97419900482751;134784669137038;6447798030;15853290560;9591807130;119405477806317;14940375106;12299133019;114793399982419;128684318683332;463915360;966642236;92846094157750;80299426886587;133701727273517;331811267;79229494478119",
+            "before": "False;6000468131;99046552174353;107058894021320;115501326827215;118214123142991;16630762868;1333478699;536610775;14211774114;142823291;120663613476096;97419900482751;134784669137038;6447798030;14882483940;6996694685;15853290560;9591807130;119405477806317;14940375106;12299133019;114793399982419;128684318683332;463915360;966642236;92846094157750;80299426886587;133701727273517;331811267;79229494478119",
+            "name": "FFlagIASSinking_PlaceFilter"
+          },
+          {
+            "after": "True;9707042192;9671070925;8491889239;9164570436;9859999587;5824195619;9876947216;10004846655;9605987780;10036955953;10123702430;10241252491;10382950395;10390927281;10390930030;10390933265;10538358999;10538473450;7738776082;8005766508;10643104390;10631479676;10762769249;10765877033;10766493343",
+            "before": "True;9707042192;9671070925;8491889239;9164570436;9859999587;5824195619;9876947216;10004846655;9605987780;10036955953;10123702430;10241252491;10382950395;10390927281;10390930030;10390933265;10538358999;10538473450;7738776082;8005766508;10643104390;10631479676;10762769249;10765877033",
+            "name": "FFlagLuaAppIsClickoutEnabledUniverse_UniverseFilter"
+          },
+          {
+            "after": "114067ac203717334a176f79e0f57f1a217fa170",
+            "before": "d2ae9bdbc60669573206c4ade02af75f6d76dd89",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-16T18:40:29.251Z",
+            "before": "2026-09-16T17:45:49.170Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagMeshLODSkinWeightsUseJointMapper_Staged",
+          "DFFlagTeleportStageLatencyV2_Staged",
+          "DFFlagTestServiceBoundedReconnect_Staged",
+          "DFFlagXboxImproveSystemUtil_Staged",
+          "FFlagAXFixQRCodeAvatarTryOnFlash_Staged",
+          "FFlagLuaAppSduiHomeUserInfo_Staged",
+          "FFlagLuaAppSduiSlotOverlayZIndex_Staged",
+          "FFlagLuauCodegenPropagateFallbackTags2_Staged",
+          "FFlagLuauCompileCleanBlockDeadClose_Staged",
+          "FFlagLuauCompileLoopUnrollZero_Staged",
+          "FFlagLuauCompileUndoEmitAdjust_Staged",
+          "FFlagLuauEasyStateInit_Staged",
+          "FFlagSlimEmissiveMapSupport_Staged",
+          "FIntSlimCFrameTranslationQuantizeAbsolute_Staged"
+        ],
+        "unchanged": 24380
+      }
+    },
+    "Web": {
+      "current": "cab3c1ca221ddc60dffc01e25075d7f20c151ab76518870f59c8924003aa212a",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-045.js",
+          "assets.create.roblox.com/page-0/script-047.js",
+          "assets.create.roblox.com/page-0/script-055.js",
+          "assets.create.roblox.com/page-0/script-056.js",
+          "assets.create.roblox.com/page-0/script-057.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.create.roblox.com/page-0/script-077.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.create.roblox.com/page-0/script-085.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 87
+      },
+      "previous": "e04452902ae0e921147b444bb4cefa9a761b13b3109eefe5f7d37efe84ad2d5a",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}

@@ -3594,11 +3594,36 @@
             "non",
             "scroll"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/16/18-41-28Z_datasets",
+          "evidencePath": "2026/09/16/18-41-28Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "d574f082a72cfeed7b2c538accc218bdaddf8e37392f6d0a71e05b9063f01ccc",
+          "key": "FFlagMomentsCreationMusicSearchStateFix_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-16T18:41:28.766Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "fix",
+            "moments",
+            "music",
+            "search",
+            "state"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-09-15T20:02:07.713Z",
+      "lastObservedAt": "2026-09-16T18:41:28.766Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
