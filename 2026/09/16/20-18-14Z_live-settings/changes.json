@@ -1,0 +1,71 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-55808de4b1914919",
+    "manifestFiles": 18507,
+    "packages": 34,
+    "version": "0.739.0.7390687"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "f85beb07a6fe4d0b7c5c5568812464c57245680b4ff5d753d359f2e603a0269c",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "2b587ae55e2ffc06c38f358726497a62e58543cb59f9ea6434af0dd411b0d63e",
+      "semantic": {
+        "added": [
+          "FFlagProfileInsightsSkipFetchNoCacheEntry_Staged",
+          "FFlagSduiUseHttpClient_Staged",
+          "FFlagVirtualCursorForTVRemoteKeycodes"
+        ],
+        "changed": [
+          {
+            "after": "c67bea574c8df858be81c961b96f4a56cb810619",
+            "before": "84429aaedd4d3eb28797e9869e1a7ad259081a45",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-16T20:17:13.062Z",
+            "before": "2026-09-16T20:04:51.386Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "True",
+            "before": "False",
+            "name": "FFlagOnlySendOpenPlaceGetPlaceInfoSynchronousEndOnHttp"
+          },
+          {
+            "after": "True",
+            "before": "False",
+            "name": "FFlagSendNewOpenPlaceProgressTeamCreatePreGameJoinEvent"
+          },
+          {
+            "after": "c67bea574c8df858be81c961b96f4a56cb810619",
+            "before": "84429aaedd4d3eb28797e9869e1a7ad259081a45",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-16T20:17:13.062Z",
+            "before": "2026-09-16T20:04:51.386Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagOnlySendOpenPlaceGetPlaceInfoSynchronousEndOnHttp_Staged",
+          "FFlagSendNewOpenPlaceProgressTeamCreatePreGameJoinEvent_Staged",
+          "FFlagVirtualCursorForTVRemoteKeycodes_Staged",
+          "FIntSlimCFrameTranslationQuantizeMode"
+        ],
+        "unchanged": 24412
+      }
+    }
+  },
+  "schemaVersion": 1
+}
