@@ -1,0 +1,91 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-55808de4b1914919",
+    "manifestFiles": 18507,
+    "packages": 34,
+    "version": "0.739.0.7390687"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "6d4267c63acd06b6955de63646fcb2585b53c79b115a33c723b4bf75fbdf4666",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "d7d0695f2c090da9127ca03d8466c5445095d1e3e4ccad8481a0ab1fa655848e",
+      "semantic": {
+        "added": [
+          "FFlagAXFixScrollingCarouselShowRightButton",
+          "FFlagFriendsChatEnableConversationConsent2",
+          "FFlagLuaAppFixStartPlaybackProgress",
+          "FFlagSimEditableMeshNonManifoldTwinRework3",
+          "FFlagStudioAutoPersistCookiesAfterLogin"
+        ],
+        "changed": [
+          {
+            "after": "c9a7030f0e1bc18fbc22996e17ea2a62502db4f7",
+            "before": "765cd162a233ccd7c9b2a4c8af16b026f88bbb2c",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-16T01:47:14.822Z",
+            "before": "2026-09-16T00:37:30.158Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "c9a7030f0e1bc18fbc22996e17ea2a62502db4f7",
+            "before": "765cd162a233ccd7c9b2a4c8af16b026f88bbb2c",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-16T01:47:14.822Z",
+            "before": "2026-09-16T00:37:30.158Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagAXFixScrollingCarouselShowRightButton_Staged",
+          "FFlagFriendsChatEnableConversationConsent2_Staged",
+          "FFlagLuaAppFixStartPlaybackProgress_Staged",
+          "FFlagSimEditableMeshNonManifoldTwinRework3_Staged",
+          "FFlagStudioAutoPersistCookiesAfterLogin_Staged",
+          "FFlagTaskSchedulerDetachArbiters2_Staged"
+        ],
+        "unchanged": 24349
+      }
+    },
+    "Web": {
+      "current": "d1b6ea463d8ca2f3b06b053fcc0f8758e47ed74156d2421d9706e1c41613c0fb",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-045.js",
+          "assets.create.roblox.com/page-0/script-047.js",
+          "assets.create.roblox.com/page-0/script-055.js",
+          "assets.create.roblox.com/page-0/script-057.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.create.roblox.com/page-0/script-085.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 94
+      },
+      "previous": "49a64f8de99a9b1bf5cdb5c099eeb171140d9a8907e368773a8bb4b417c66038",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
