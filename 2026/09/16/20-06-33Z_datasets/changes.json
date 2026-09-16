@@ -1,0 +1,211 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-55808de4b1914919",
+    "manifestFiles": 18507,
+    "packages": 34,
+    "version": "0.739.0.7390687"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "2b587ae55e2ffc06c38f358726497a62e58543cb59f9ea6434af0dd411b0d63e",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "3aed51a00a6aa553e05704fa6c7393eef0e01934584e6278f21d4ae9f5f3cfd2",
+      "semantic": {
+        "added": [
+          "DFFlagGlobalUserBlockingValidation2",
+          "DFFlagRobustRetargeterIgnoreHrpTransform2",
+          "DFFlagSimPreventSleepOnJointRemoval_Staged",
+          "DFFlagSimulationCallbackViaScope",
+          "DFFlagUnlockCollisionPrecision",
+          "FFlagAXAddSearchTrendingChips4_Staged",
+          "FFlagAXDeferLookImpressionsForHydration",
+          "FFlagAXHideSearchTrendingChipsInAutocomplete_Staged",
+          "FFlagAXSearchTrendingChipLogging_Staged",
+          "FFlagAXUpdateOffersBannerFeatureKey_Staged",
+          "FFlagAmrDisableShardedEvent2",
+          "FFlagAmrFixSidebar",
+          "FFlagAppChatConsoleFocusFixes2_Staged",
+          "FFlagBypassIXPSkipVPCSignup",
+          "FFlagChangeHistoryRecordAssemblyCFrames_Staged",
+          "FFlagEnableDLICSeedAndroidWebView",
+          "FFlagEnableLazyWorkManagerInit",
+          "FFlagEnablePlatformRestrictedEventReceiver3",
+          "FFlagEnableSkipVPCSignupFlow2",
+          "FFlagFixBlackbirdDiscountStringWithEligibleItems_Staged",
+          "FFlagFixDoubleBackNav_Staged",
+          "FFlagFixPlatformRestrictedHomeClobber",
+          "FFlagFixTexturePackValidity",
+          "FFlagLcDeformerPropertySetTelemetry_Staged",
+          "FFlagLuaAppSduiMovePromptsActions",
+          "FFlagLuauBytecodeCostModel2",
+          "FFlagLuauClonePublicInterfaceRetainTypeFunctionSolvedStatus",
+          "FFlagLuauImproveDeprecatedLint",
+          "FFlagMomentsCreationAllowAPMMusic_Staged",
+          "FFlagRCCProcessContextIncludeJobIdentity_Staged",
+          "FFlagStudioUseBridgeInPlaySoloTabController",
+          "FFlagTextureTranscodeNewRollout",
+          "FFlagUGCValidateEmissiveAreaChecks",
+          "FFlagXboxSetFriendCommunicationStatus_Staged",
+          "FIntAXMaxTrendingSearchQueries_Staged",
+          "FIntSlimCFrameTranslationQuantizeMode"
+        ],
+        "changed": [
+          {
+            "after": "10",
+            "before": "10000",
+            "name": "DFIntSlimRolloutHundredthPercent"
+          },
+          {
+            "after": "84429aaedd4d3eb28797e9869e1a7ad259081a45",
+            "before": "114067ac203717334a176f79e0f57f1a217fa170",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-16T20:04:51.386Z",
+            "before": "2026-09-16T18:40:29.251Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "v2.4",
+            "before": "v2.3",
+            "name": "DFStringSlimRolloutMajorVersion"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagAutoReimportBetaFeature"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagFoundationBaseMenuContentSizing"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagFoundationPopoverContentAnchorFix"
+          },
+          {
+            "after": "True",
+            "before": "False",
+            "name": "FFlagPropertySetSortUnorderedInstanceIds"
+          },
+          {
+            "after": "True",
+            "before": "False",
+            "name": "FFlagSlimFixNoConstraintBoneHashScaleInvariance"
+          },
+          {
+            "after": "True",
+            "before": "False",
+            "name": "FFlagSlimUseExtentsBasedTransitionDistance"
+          },
+          {
+            "after": "True",
+            "before": "False",
+            "name": "FFlagSlimUseHSRAssetDataExtractor"
+          },
+          {
+            "after": "84429aaedd4d3eb28797e9869e1a7ad259081a45",
+            "before": "114067ac203717334a176f79e0f57f1a217fa170",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-16T20:04:51.386Z",
+            "before": "2026-09-16T18:40:29.251Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagRobustRetargeterIgnoreHrpTransform2_Staged",
+          "DFFlagUnlockCollisionPrecision_Staged",
+          "DFIntSlimRolloutHundredthPercent_Staged",
+          "DFStringSlimRolloutMajorVersion_Staged",
+          "FFlagAXDeferLookImpressionsForHydration_Staged",
+          "FFlagAmrDisableShardedEvent2_Staged",
+          "FFlagAmrFixSidebar_Staged",
+          "FFlagAppContainerReadyToRender_Staged",
+          "FFlagAutoReimportBetaFeature_Staged",
+          "FFlagBypassIXPSkipVPCSignup_Staged",
+          "FFlagEnableDLICSeedAndroidWebView_Staged",
+          "FFlagEnableLazyWorkManagerInit_Staged",
+          "FFlagEnablePlatformRestrictedEventReceiver3_Staged",
+          "FFlagEnableSkipVPCSignupFlow2_Staged",
+          "FFlagFixPlatformRestrictedHomeClobber_Staged",
+          "FFlagFixTexturePackValidity_Staged",
+          "FFlagFoundationBaseMenuContentSizing_Staged",
+          "FFlagFoundationPopoverContentAnchorFix_Staged",
+          "FFlagLuaAppSduiMovePromptsActions_Staged",
+          "FFlagLuauBytecodeCostModel2_Staged",
+          "FFlagLuauClonePublicInterfaceRetainTypeFunctionSolvedStatus_Staged",
+          "FFlagLuauImproveDeprecatedLint_Staged",
+          "FFlagMomentsCreationMusicSearchStateFix_Staged",
+          "FFlagPropertySetSortUnorderedInstanceIds_Staged",
+          "FFlagSlimFixNoConstraintBoneHashScaleInvariance_Staged",
+          "FFlagSlimUseExtentsBasedTransitionDistance_Staged",
+          "FFlagSlimUseHSRAssetDataExtractor_Staged",
+          "FFlagStudioUseBridgeInPlaySoloTabController_Staged",
+          "FFlagTextureTranscodeNewRollout_Staged",
+          "FFlagUGCValidateEmissiveAreaChecks_Staged",
+          "FIntSlimCFrameTranslationQuantizeMode_Staged"
+        ],
+        "unchanged": 24373
+      }
+    },
+    "Web": {
+      "current": "453be9a8dc5fdbcc387080be52e2b54ae750edec769d0e76d89ca9f512942e6f",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-019.js",
+          "assets.create.roblox.com/page-0/script-021.js",
+          "assets.create.roblox.com/page-0/script-023.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-042.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-045.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-047.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-050.js",
+          "assets.create.roblox.com/page-0/script-055.js",
+          "assets.create.roblox.com/page-0/script-056.js",
+          "assets.create.roblox.com/page-0/script-057.js",
+          "assets.create.roblox.com/page-0/script-059.js",
+          "assets.create.roblox.com/page-0/script-067.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.create.roblox.com/page-0/script-077.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.create.roblox.com/page-0/script-085.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 75
+      },
+      "previous": "cab3c1ca221ddc60dffc01e25075d7f20c151ab76518870f59c8924003aa212a",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}

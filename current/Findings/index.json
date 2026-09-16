@@ -3619,11 +3619,60 @@
             "search",
             "state"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/16/20-06-33Z_datasets",
+          "evidencePath": "2026/09/16/20-06-33Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "b3949b1e37a2b8d443067c4a770147357765941f5458fb8257e6637837dce5a1",
+          "key": "FFlagMomentsCreationMusicSearchStateFix_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-16T20:06:33.371Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "fix",
+            "moments",
+            "music",
+            "search",
+            "state"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/16/20-06-33Z_datasets",
+          "evidencePath": "2026/09/16/20-06-33Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "d5fbaaea34af7914504431524b9753e645c826ca487f443f6599ee2175fd190a",
+          "key": "FFlagMomentsCreationAllowAPMMusic_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-16T20:06:33.371Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "allow",
+            "apm",
+            "creation",
+            "moments",
+            "music"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-09-16T18:41:28.766Z",
+      "lastObservedAt": "2026-09-16T20:06:33.371Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
