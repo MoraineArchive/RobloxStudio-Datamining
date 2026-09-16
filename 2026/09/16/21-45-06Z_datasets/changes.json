@@ -1,0 +1,170 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-55808de4b1914919",
+    "manifestFiles": 18507,
+    "packages": 34,
+    "version": "0.739.0.7390687"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "33846cf577d2b9f6c462fa0139df82bacde0844ba6ba436877283cc83fda70fb",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "f85beb07a6fe4d0b7c5c5568812464c57245680b4ff5d753d359f2e603a0269c",
+      "semantic": {
+        "added": [
+          "DFFlagEnableRecentsWidgetClickedCounter_Staged",
+          "DFFlagGlobalUserBlockingInHasBlockedPlayer2_Staged",
+          "DFFlagNoDecompInGeoGen_Staged",
+          "DFFlagServerAuthorityDisableExtraRounding",
+          "DFFlagSimPreventSleepOnJointRemoval",
+          "DFFlagSlimRollout_Staged",
+          "DFFlagSplineFixRemoveControlPointStaleSegment_Staged",
+          "DFFlagVoiceChatIdempotentBlockUpdates_Staged",
+          "DFFlagVoiceChatSkipLegacyDirectBlockUpdate_Staged",
+          "DFFlagVoiceChatUpdateSubscriptionsOnBlockListChanged_Staged",
+          "DFFlagVoroCDDisableAddSitesOnDegenEdges_Staged",
+          "DFIntLcDeformerPropertySetEventHundredthsPercentageSentEventIngest_Staged",
+          "DFIntVoroCDMeshDetailsThrottle_Staged",
+          "DFIntVoroMaxHighResVerticesRelativeFactorTenths_Staged",
+          "DFIntVoroMaxHighResVertices_Staged",
+          "FFlagAXAddSearchTrendingChips4",
+          "FFlagAXEnableOffersOnHomeProfileItems",
+          "FFlagAXHideSearchTrendingChipsInAutocomplete",
+          "FFlagAXSearchTrendingChipLogging",
+          "FFlagAXUpdateOffersBannerFeatureKey",
+          "FFlagAddFocusNavigationToGroupOSADialog",
+          "FFlagAddFriendsPresenceRefreshOnRemount_Staged",
+          "FFlagAppChatConsoleFocusFixes2",
+          "FFlagBuildExperienceFreeTrialResetPeriod",
+          "FFlagEnableDLICReportReceivedUnifyAndroid_Staged",
+          "FFlagFixBlackbirdDiscountStringWithEligibleItems",
+          "FFlagFixSAMinify_Staged",
+          "FFlagFriendRequestModalRevampV4_Staged",
+          "FFlagGlobalUserBlockingLuaReadsFromSCMCache_Staged",
+          "FFlagHomeSduiOfflineCache",
+          "FFlagLcDeformerPropertySetTelemetry",
+          "FFlagLuauBidirectionalInferenceSetMetatable_Staged",
+          "FFlagLuauCostModel_Staged",
+          "FFlagLuauSoundGenericMismatches_Staged",
+          "FFlagPresenceForceFetchOnRemount_Staged",
+          "FFlagRCCProcessContextIncludeJobIdentity",
+          "FFlagRenderDRSScaleChangeTelemetry_Staged",
+          "FFlagRenderMeshInvalidateRestoreFullFidelity",
+          "FFlagSduiVerticalFeedPageShellSupport2",
+          "FFlagSentryReportBreadcrumbs_Staged",
+          "FFlagStudioAssetPrivacyHideAssetTable",
+          "FFlagUserListChatCtaStandardVariant",
+          "FFlagVoroCDTelemetryEnabled_Staged",
+          "FFlagXboxSetFriendCommunicationStatus",
+          "FIntAXMaxTrendingSearchQueries",
+          "FIntUGCValidateMaxEmissiveAreaRigidAccessory_Staged",
+          "FStringR20UniverseId_Staged"
+        ],
+        "changed": [
+          {
+            "after": "011e445e6ff2954482b00d273552ad174adcd2c1",
+            "before": "c67bea574c8df858be81c961b96f4a56cb810619",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-16T21:42:23.569Z",
+            "before": "2026-09-16T20:17:13.062Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "011e445e6ff2954482b00d273552ad174adcd2c1",
+            "before": "c67bea574c8df858be81c961b96f4a56cb810619",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-16T21:42:23.569Z",
+            "before": "2026-09-16T20:17:13.062Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagSimPreventSleepOnJointRemoval_Staged",
+          "FFlagAXAddSearchTrendingChips4_Staged",
+          "FFlagAXEnableOffersOnHomeProfileItems_Staged",
+          "FFlagAXHideSearchTrendingChipsInAutocomplete_Staged",
+          "FFlagAXSearchTrendingChipLogging_Staged",
+          "FFlagAXUpdateOffersBannerFeatureKey_Staged",
+          "FFlagAddFocusNavigationToGroupOSADialog_Staged",
+          "FFlagAppChatConsoleFocusFixes2_Staged",
+          "FFlagBuildExperienceFreeTrialResetPeriod_Staged",
+          "FFlagFixBlackbirdDiscountStringWithEligibleItems_Staged",
+          "FFlagFriendRequestModalIxpEnabled_IXP",
+          "FFlagFriendRequestModalRevampV4_IXP",
+          "FFlagHomeSduiOfflineCache_Staged",
+          "FFlagLcDeformerPropertySetTelemetry_Staged",
+          "FFlagMomentsCreationAllowAPMMusic_Staged",
+          "FFlagRCCProcessContextIncludeJobIdentity_Staged",
+          "FFlagRenderMeshInvalidateRestoreFullFidelity_Staged",
+          "FFlagSduiVerticalFeedPageShellSupport2_Staged",
+          "FFlagStudioAssetPrivacyHideAssetTable_Staged",
+          "FFlagUserListChatCtaStandardVariant_Staged",
+          "FFlagXboxSetFriendCommunicationStatus_Staged",
+          "FIntAXMaxTrendingSearchQueries_Staged"
+        ],
+        "unchanged": 24395
+      }
+    },
+    "Web": {
+      "current": "57b42a0e7233e7f33afc10d4dac533f6a6eb4cd143c6a704f34dec23dc6fe220",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-001.js",
+          "assets.create.roblox.com/page-0/script-002.js",
+          "assets.create.roblox.com/page-0/script-003.js",
+          "assets.create.roblox.com/page-0/script-005.js",
+          "assets.create.roblox.com/page-0/script-011.js",
+          "assets.create.roblox.com/page-0/script-012.js",
+          "assets.create.roblox.com/page-0/script-023.js",
+          "assets.create.roblox.com/page-0/script-025.js",
+          "assets.create.roblox.com/page-0/script-026.js",
+          "assets.create.roblox.com/page-0/script-027.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-042.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-045.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-047.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-051.js",
+          "assets.create.roblox.com/page-0/script-052.js",
+          "assets.create.roblox.com/page-0/script-053.js",
+          "assets.create.roblox.com/page-0/script-055.js",
+          "assets.create.roblox.com/page-0/script-056.js",
+          "assets.create.roblox.com/page-0/script-057.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.create.roblox.com/page-0/script-085.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 73
+      },
+      "previous": "453be9a8dc5fdbcc387080be52e2b54ae750edec769d0e76d89ca9f512942e6f",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}

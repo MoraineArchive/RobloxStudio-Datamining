@@ -3668,11 +3668,35 @@
             "moments",
             "music"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/16/21-45-06Z_datasets",
+          "evidencePath": "2026/09/16/21-45-06Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "6add4e646ee71984df0e26ea82f2a45a8fd63bb2a58e4dc312e19c2c6d99ac75",
+          "key": "FFlagMomentsCreationAllowAPMMusic_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-16T21:45:06.387Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "allow",
+            "apm",
+            "creation",
+            "moments",
+            "music"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-09-16T20:06:33.371Z",
+      "lastObservedAt": "2026-09-16T21:45:06.387Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
