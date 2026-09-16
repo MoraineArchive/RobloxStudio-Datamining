@@ -1,0 +1,128 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-55808de4b1914919",
+    "manifestFiles": 18507,
+    "packages": 34,
+    "version": "0.739.0.7390687"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "e9e9638d2ba02ca0128e79b3844f8f7707830a87d7562ebc1e7f23c2d119157d",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "2ce580c96e4601692f7f769f28518ab1805fb6d675ee42eda286b26cd17064d8",
+      "semantic": {
+        "added": [
+          "DFFlagEnableRecentsWidgetClickedCounter",
+          "DFFlagGlobalUserBlockingInHasBlockedPlayer2",
+          "DFFlagNoDecompInGeoGen",
+          "DFFlagSplineFixRemoveControlPointStaleSegment",
+          "DFFlagVoiceChatIdempotentBlockUpdates",
+          "DFFlagVoiceChatSkipLegacyDirectBlockUpdate",
+          "DFFlagVoiceChatUpdateSubscriptionsOnBlockListChanged",
+          "DFFlagVoroCDDisableAddSitesOnDegenEdges",
+          "DFIntLcDeformerPropertySetEventHundredthsPercentageSentEventIngest",
+          "DFIntSlimRolloutHundredthPercent_Staged",
+          "DFIntVoroCDMeshDetailsThrottle",
+          "DFIntVoroMaxHighResVertices",
+          "DFIntVoroMaxHighResVerticesRelativeFactorTenths",
+          "FFlagACEImportCancelButton_Staged",
+          "FFlagAXFixEmptyCatalogSearchChrome_Staged",
+          "FFlagAmrOptimizeRenderListUpdates_Staged",
+          "FFlagEnableDLICReportReceivedUnifyAndroid",
+          "FFlagEnableGameJoinEarlyAccess_Staged",
+          "FFlagFixDoubleBackNav",
+          "FFlagFixGltfZFlipBoneAnimationDirection_Staged",
+          "FFlagFocusDrivenReductionFromHealthState_Staged",
+          "FFlagForceOddFrustumAngularSubdivisions_Staged",
+          "FFlagHttpClientRetryExtensions_Staged",
+          "FFlagLuauBidirectionalInferenceSetMetatable",
+          "FFlagLuauCostModel",
+          "FFlagMomentsCreationAllowAPMMusic_Staged",
+          "FFlagProfileInsightsSkipFetchNoCacheEntry",
+          "FFlagRenderMeshStreamingLodGapTelemetry_Staged",
+          "FFlagRetargetingCacheIncludeTranslation_Staged",
+          "FFlagSduiEventRsvpFacePile_Staged",
+          "FFlagSduiScalePlayButtonAndImageSizes_Staged",
+          "FFlagSduiUseHttpClient",
+          "FFlagSentryReportBreadcrumbs",
+          "FFlagShowBodyForAnimationPreview_Staged",
+          "FFlagStratusEligibilityPrecheck_Staged",
+          "FIntUGCValidateMaxEmissiveAreaRigidAccessory"
+        ],
+        "changed": [
+          {
+            "after": "True",
+            "before": "False",
+            "name": "DFFlagSlimRollout"
+          },
+          {
+            "after": "0b1fea8f68f886905cf942c49a4b0f30783828a2",
+            "before": "ae7822d33db9062437c436a44459eb992a9b0b46",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-16T22:54:46.827Z",
+            "before": "2026-09-16T21:54:21.331Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "True",
+            "before": "False",
+            "name": "FFlagChangeHistoryRecordAssemblyCFrames"
+          },
+          {
+            "after": "True",
+            "before": "False",
+            "name": "FFlagFriendRequestModalRevampV4"
+          },
+          {
+            "after": "0b1fea8f68f886905cf942c49a4b0f30783828a2",
+            "before": "ae7822d33db9062437c436a44459eb992a9b0b46",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-16T22:54:46.827Z",
+            "before": "2026-09-16T21:54:21.331Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagEnableRecentsWidgetClickedCounter_Staged",
+          "DFFlagGlobalUserBlockingInHasBlockedPlayer2_Staged",
+          "DFFlagNoDecompInGeoGen_Staged",
+          "DFFlagSlimRollout_Staged",
+          "DFFlagSplineFixRemoveControlPointStaleSegment_Staged",
+          "DFFlagVoiceChatIdempotentBlockUpdates_Staged",
+          "DFFlagVoiceChatSkipLegacyDirectBlockUpdate_Staged",
+          "DFFlagVoiceChatUpdateSubscriptionsOnBlockListChanged_Staged",
+          "DFFlagVoroCDDisableAddSitesOnDegenEdges_Staged",
+          "DFIntLcDeformerPropertySetEventHundredthsPercentageSentEventIngest_Staged",
+          "DFIntVoroCDMeshDetailsThrottle_Staged",
+          "DFIntVoroMaxHighResVerticesRelativeFactorTenths_Staged",
+          "DFIntVoroMaxHighResVertices_Staged",
+          "FFlagChangeHistoryRecordAssemblyCFrames_Staged",
+          "FFlagEnableDLICReportReceivedUnifyAndroid_Staged",
+          "FFlagFixDoubleBackNav_Staged",
+          "FFlagFriendRequestModalRevampV4_Staged",
+          "FFlagLuauBidirectionalInferenceSetMetatable_Staged",
+          "FFlagLuauCostModel_Staged",
+          "FFlagProfileInsightsSkipFetchNoCacheEntry_Staged",
+          "FFlagSduiUseHttpClient_Staged",
+          "FFlagSentryReportBreadcrumbs_Staged",
+          "FIntUGCValidateMaxEmissiveAreaRigidAccessory_Staged"
+        ],
+        "unchanged": 24417
+      }
+    }
+  },
+  "schemaVersion": 1
+}
