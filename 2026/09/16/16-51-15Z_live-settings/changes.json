@@ -1,0 +1,70 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-55808de4b1914919",
+    "manifestFiles": 18507,
+    "packages": 34,
+    "version": "0.739.0.7390687"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "ba0c51f9888b0a82321c552fc97c621b2fd0be9cbbbd1f73c3df74c86f0b17f6",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "828602eeb7579bf9756c374cfe2fa06fc684dfa4b6fba2ab36c20cfffcea4a53",
+      "semantic": {
+        "added": [
+          "DFFlagFixWeldDisableReentryCrash_Staged",
+          "DFFlagMeshLODSkinWeightsUseJointMapper_Staged",
+          "DFFlagSimPartOperationReplicateTriangleCount_Staged",
+          "DFFlagXboxImproveSystemUtil_Staged",
+          "DFIntLcDeformerPropertySetEventHundredthsPercentageSentPoint_Staged",
+          "DFIntLcDeformerPropertySetSampleOneInN_Staged",
+          "FFlagAXDeferLookImpressionsForHydration_Staged",
+          "FFlagAXFixQRCodeAvatarTryOnFlash_Staged",
+          "FFlagLuaAppSduiHomeUserInfo_Staged",
+          "FFlagLuaAppSduiSlotOverlayZIndex_Staged",
+          "FFlagLuauCodegenPropagateFallbackTags2_Staged",
+          "FFlagLuauCompileCleanBlockDeadClose_Staged",
+          "FFlagLuauCompileLoopUnrollZero_Staged",
+          "FFlagLuauCompileUndoEmitAdjust_Staged",
+          "FFlagLuauEasyStateInit_Staged",
+          "FFlagNoContextFieldDependency_Staged",
+          "FFlagSimFixVehicleSeatHingeCacheStaleness_PlaceFilter"
+        ],
+        "changed": [
+          {
+            "after": "d71dff0b6a73c04977e209f75c220de06e6ff40e",
+            "before": "80f275cc5b5beb71f7fde919e5a2697d2c555ffa",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-16T16:45:26.807Z",
+            "before": "2026-09-16T08:02:08.789Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "d71dff0b6a73c04977e209f75c220de06e6ff40e",
+            "before": "80f275cc5b5beb71f7fde919e5a2697d2c555ffa",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-16T16:45:26.807Z",
+            "before": "2026-09-16T08:02:08.789Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [],
+        "unchanged": 24354
+      }
+    }
+  },
+  "schemaVersion": 1
+}
