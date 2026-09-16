@@ -1,0 +1,59 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-55808de4b1914919",
+    "manifestFiles": 18507,
+    "packages": 34,
+    "version": "0.739.0.7390687"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "828602eeb7579bf9756c374cfe2fa06fc684dfa4b6fba2ab36c20cfffcea4a53",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "70fafa3514b35c1007ca26a28ba07aacd7e23954dd9b6caeb224e2ac6552c77f",
+      "semantic": {
+        "added": [],
+        "changed": [
+          {
+            "after": "80f275cc5b5beb71f7fde919e5a2697d2c555ffa",
+            "before": "6ba49c887b44867282d7a76f6dbc714209414228",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-16T08:02:08.789Z",
+            "before": "2026-09-16T05:18:32.780Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagStudioFixJitteryMouseDragging4"
+          },
+          {
+            "after": "80f275cc5b5beb71f7fde919e5a2697d2c555ffa",
+            "before": "6ba49c887b44867282d7a76f6dbc714209414228",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-16T08:02:08.789Z",
+            "before": "2026-09-16T05:18:32.780Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagStudioFixJitteryMouseDragging4_Staged"
+        ],
+        "unchanged": 24353
+      }
+    }
+  },
+  "schemaVersion": 1
+}
