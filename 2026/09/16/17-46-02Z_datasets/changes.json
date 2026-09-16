@@ -1,0 +1,107 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-55808de4b1914919",
+    "manifestFiles": 18507,
+    "packages": 34,
+    "version": "0.739.0.7390687"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "6382d5509e933608e5f8978e948d3da7f5a2e3512c210aa266e4184f0541209c",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "326c6eb96e134527980e1497aea48e10b4c558b40a6865cd35a065bdcc63291d",
+      "semantic": {
+        "added": [
+          "DFFlagFixWeldDisableReentryCrash",
+          "DFFlagSimPartOperationReplicateTriangleCount",
+          "DFFlagTeleportStageLatencyV2_Staged",
+          "DFFlagTestServiceBoundedReconnect_Staged",
+          "DFIntLcDeformerPropertySetEventHundredthsPercentageSentPoint",
+          "DFIntLcDeformerPropertySetSampleOneInN",
+          "FFlagAmrDisableShardedEvent2_Staged",
+          "FFlagAmrFixSidebar_Staged",
+          "FFlagBypassIXPSkipVPCSignup_Staged",
+          "FFlagEnableLazyWorkManagerInit_Staged",
+          "FFlagFixPlatformRestrictedHomeClobber_Staged",
+          "FFlagLuaAppSduiMovePromptsActions_Staged",
+          "FFlagLuauClonePublicInterfaceRetainTypeFunctionSolvedStatus_Staged",
+          "FFlagLuauImproveDeprecatedLint_Staged",
+          "FFlagPropertySetSortUnorderedInstanceIds_Staged",
+          "FFlagSlimEmissiveMapSupport_Staged",
+          "FFlagSlimFixNoConstraintBoneHashScaleInvariance_Staged",
+          "FFlagSlimUseExtentsBasedTransitionDistance_Staged",
+          "FFlagStudioUseBridgeInPlaySoloTabController_Staged",
+          "FFlagUGCValidateEmissiveAreaChecks_Staged",
+          "FIntSlimCFrameTranslationQuantizeAbsolute_Staged",
+          "FIntSlimCFrameTranslationQuantizeMode_Staged"
+        ],
+        "changed": [
+          {
+            "after": "d2ae9bdbc60669573206c4ade02af75f6d76dd89",
+            "before": "70f1378713bba6133613806682a5279da7a594ab",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-16T17:45:49.170Z",
+            "before": "2026-09-16T17:10:47.367Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "d2ae9bdbc60669573206c4ade02af75f6d76dd89",
+            "before": "70f1378713bba6133613806682a5279da7a594ab",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-16T17:45:49.170Z",
+            "before": "2026-09-16T17:10:47.367Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagFixWeldDisableReentryCrash_Staged",
+          "DFFlagSimPartOperationReplicateTriangleCount_Staged",
+          "DFIntLcDeformerPropertySetEventHundredthsPercentageSentPoint_Staged",
+          "DFIntLcDeformerPropertySetSampleOneInN_Staged",
+          "FFlagNoContextFieldDependency_Staged"
+        ],
+        "unchanged": 24374
+      }
+    },
+    "Web": {
+      "current": "e04452902ae0e921147b444bb4cefa9a761b13b3109eefe5f7d37efe84ad2d5a",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-045.js",
+          "assets.create.roblox.com/page-0/script-047.js",
+          "assets.create.roblox.com/page-0/script-055.js",
+          "assets.create.roblox.com/page-0/script-056.js",
+          "assets.create.roblox.com/page-0/script-057.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.create.roblox.com/page-0/script-085.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 94
+      },
+      "previous": "fe91a82b3eb106efdb758e4f0de579b474dcff6d5330afc9af9d6a9e7015316e",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
