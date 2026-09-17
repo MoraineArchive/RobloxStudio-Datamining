@@ -3764,11 +3764,33 @@
             "moments",
             "music"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/17/19-19-41Z_datasets",
+          "evidencePath": "2026/09/17/19-19-41Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "b0fdfcf8cf2b0c97f8b6fcf282156ed80d1a0f32e4b095c5ef6205923362b894",
+          "key": "FFlagGuacMomentsFeatureList_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-17T19:19:41.333Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "guac",
+            "list",
+            "moments"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-09-17T01:23:18.354Z",
+      "lastObservedAt": "2026-09-17T19:19:41.333Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",

@@ -1,0 +1,145 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-55808de4b1914919",
+    "manifestFiles": 18507,
+    "packages": 34,
+    "version": "0.739.0.7390687"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "24ff7cf713ea8b06f92c3c18856dd5b7a3e4b3186ff73abbddc0690f4b38579b",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "c510bb73d6b54757942ea9763025c00d44aff279d647d551abe7e050550f1197",
+      "semantic": {
+        "added": [
+          "DFFlagRbxStorageUseNativeMethodsInTelemetryCache",
+          "DFFlagShowCollisionPrecisionAutocomplete_Staged",
+          "DFFlagShowVoroCDFidelityInAutocomplete_Staged",
+          "DFFlagShowVoroCDFidelityInDropdown_Staged",
+          "DFFlagSimWakeBodiesOnFluidForcePropertyChange",
+          "DFIntSlimRolloutHundredthPercent_Staged",
+          "DFStringCrashUploadForceFullPercentagePlaceId",
+          "FFlagAddFriendsPymkSessionService_v2_Staged",
+          "FFlagCollectionWatcherDirtyFlush",
+          "FFlagCollectionWatcherTagSignals",
+          "FFlagEnableCDVisPropertyPreview",
+          "FFlagEnableSafetyDashboard2",
+          "FFlagExperiencePurchaseFallbackToGameIcon",
+          "FFlagFixFrustumSubdivisionGaps_Staged",
+          "FFlagFriendsStoreRteRequestStatusUpdates_v1_Staged",
+          "FFlagGuacMomentsFeatureList_Staged",
+          "FFlagLuauCompileCleanBlockDeadClose_Staged",
+          "FFlagLuauCompileMoveElision_Staged",
+          "FFlagLuauFastpcall_Staged",
+          "FFlagNavigateToSafetyDashboardForAppeals3",
+          "FFlagSimBulletContactUseCollisionConnector_Staged",
+          "FFlagSubTabNavigationTTITracking_Staged",
+          "FFlagUFRImprovements4",
+          "FFlagUseAdornBasedCDDebugVis"
+        ],
+        "changed": [
+          {
+            "after": "False",
+            "before": "True",
+            "name": "DFFlagLuauFixEnumPropertyAssignmentErrorType"
+          },
+          {
+            "after": "5000",
+            "before": "1000",
+            "name": "DFIntLcDeformerPropertySetSampleOneInN"
+          },
+          {
+            "after": "982f81f9e20b5fee6afcf112e6df515766007590",
+            "before": "c95155f10fd7a888cf47ab039037dc695438bf1d",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-17T19:19:05.508Z",
+            "before": "2026-09-17T18:23:04.292Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagInExperienceShopFtuxTooltip"
+          },
+          {
+            "after": "True;SteadyState;10;15;Rollout;100;30;SteadyState;100;75;Promote;2026-09-17T19:07:10",
+            "before": "True;SteadyState;10;30;Revert;2026-09-17T17:52:35",
+            "name": "FFlagPinnedShortcutDeepLinkTelemetry_Staged"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagSlimUseExtentsBasedTransitionDistance"
+          },
+          {
+            "after": "982f81f9e20b5fee6afcf112e6df515766007590",
+            "before": "c95155f10fd7a888cf47ab039037dc695438bf1d",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-17T19:19:05.508Z",
+            "before": "2026-09-17T18:23:04.292Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagLuauFixEnumPropertyAssignmentErrorType_Staged",
+          "DFFlagRbxStorageUseNativeMethodsInTelemetryCache_Staged",
+          "DFFlagSimWakeBodiesOnFluidForcePropertyChange_Staged",
+          "DFIntLcDeformerPropertySetSampleOneInN_Staged",
+          "DFStringCrashUploadForceFullPercentagePlaceId_Staged",
+          "FFlagCollectionWatcherDirtyFlush_Staged",
+          "FFlagCollectionWatcherTagSignals_Staged",
+          "FFlagEnableCDVisPropertyPreview_Staged",
+          "FFlagEnableSafetyDashboard2_Staged",
+          "FFlagExperiencePurchaseFallbackToGameIcon_Staged",
+          "FFlagInExperienceShopFtuxTooltip_Staged",
+          "FFlagNavigateToSafetyDashboardForAppeals3_Staged",
+          "FFlagSlimUseExtentsBasedTransitionDistance_Staged",
+          "FFlagUFRImprovements4_Staged",
+          "FFlagUseAdornBasedCDDebugVis_Staged"
+        ],
+        "unchanged": 24468
+      }
+    },
+    "Web": {
+      "current": "75d5e596bce2d6a2f70d246cf5110d7c644e1c013bf00bf4118d253ae48d1c3f",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-045.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-055.js",
+          "assets.create.roblox.com/page-0/script-057.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.create.roblox.com/page-0/script-085.js",
+          "assets.create.roblox.com/page-0/script-086.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 94
+      },
+      "previous": "d15544e3c7fae7c5038fa26a337100ba752b9b9fe94a8de4ef9aea528c0867fa",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
