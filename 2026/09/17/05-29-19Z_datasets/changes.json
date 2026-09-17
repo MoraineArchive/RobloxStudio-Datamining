@@ -1,0 +1,108 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-55808de4b1914919",
+    "manifestFiles": 18507,
+    "packages": 34,
+    "version": "0.739.0.7390687"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "dfa965f90e2f11db9306ab503c6ec2d31d1f1b04aa25cb4e7226ef0ac97b90dc",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "202e4f425ab7b9f68bb218baae678f86adff1fd2a0c11ab54c8736c7ed8253f4",
+      "semantic": {
+        "added": [],
+        "changed": [
+          {
+            "after": "73e86d4acf2611815a44a30816ab82aabbaecc3f",
+            "before": "aac546a0c74d525867f4ffd8afc331a8df5bb9be",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-17T03:02:06.487Z",
+            "before": "2026-09-17T01:32:15.623Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagStudioAutoPersistCookiesAfterLogin"
+          },
+          {
+            "after": "73e86d4acf2611815a44a30816ab82aabbaecc3f",
+            "before": "aac546a0c74d525867f4ffd8afc331a8df5bb9be",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-17T03:02:06.487Z",
+            "before": "2026-09-17T01:32:15.623Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagStudioAutoPersistCookiesAfterLogin_Staged"
+        ],
+        "unchanged": 24458
+      }
+    },
+    "Web": {
+      "current": "13ee30ff03fe13fd62f9abf8d592934788c0f35a83d6bd21a4b173a0598fcb75",
+      "files": {
+        "added": [
+          "assets.create.roblox.com/page-0/script-088.js"
+        ],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-045.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-055.js",
+          "assets.create.roblox.com/page-0/script-056.js",
+          "assets.create.roblox.com/page-0/script-057.js",
+          "assets.create.roblox.com/page-0/script-061.js",
+          "assets.create.roblox.com/page-0/script-062.js",
+          "assets.create.roblox.com/page-0/script-063.js",
+          "assets.create.roblox.com/page-0/script-064.js",
+          "assets.create.roblox.com/page-0/script-065.js",
+          "assets.create.roblox.com/page-0/script-066.js",
+          "assets.create.roblox.com/page-0/script-067.js",
+          "assets.create.roblox.com/page-0/script-068.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-070.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.create.roblox.com/page-0/script-077.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.create.roblox.com/page-0/script-085.js",
+          "assets.create.roblox.com/page-0/script-086.js",
+          "assets.create.roblox.com/page-0/script-087.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 73
+      },
+      "previous": "83790671260420e6a5638242cb324076fe9a525578849eb64569bf808ebf957a",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
