@@ -2,9 +2,9 @@
   "observationMode": "live",
   "provenance": [
     {
-      "bytes": 1371677,
+      "bytes": 1372311,
       "reference": "https://raw.githubusercontent.com/MaximumADHD/Roblox-FFlag-Tracker/main/README.md",
-      "sha256": "eac8d13dc7c6ec427951e8724246d89331fb5599ed58f5b0cc703a1fd4a1eff8",
+      "sha256": "bec1143158586d8cc5389fcbc4d249a32c65006da2350a6c2c92df4f388150fd",
       "sourceType": "official",
       "sourceUrl": "https://clientsettings.roblox.com/v2/settings/application/PCStudioApp"
     }
@@ -14,7 +14,7 @@
     "application": "PCStudioApp",
     "engineRevision": 1,
     "note": "Current public remotely served values, observed independently of executable version.",
-    "settings": 24501
+    "settings": 24512
   },
   "target": "WindowsStudio64"
 }

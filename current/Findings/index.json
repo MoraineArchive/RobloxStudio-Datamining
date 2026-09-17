@@ -3786,11 +3786,33 @@
             "list",
             "moments"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/17/20-01-53Z_datasets",
+          "evidencePath": "2026/09/17/20-01-53Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "18e6d89322adee753d53e155f2c3f79119c2043c7ce0c043c38e218b0701732a",
+          "key": "FFlagGuacMomentsFeatureList_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-17T20:01:53.308Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "guac",
+            "list",
+            "moments"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-09-17T19:19:41.333Z",
+      "lastObservedAt": "2026-09-17T20:01:53.308Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
