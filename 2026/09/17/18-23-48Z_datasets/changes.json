@@ -1,0 +1,110 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-55808de4b1914919",
+    "manifestFiles": 18507,
+    "packages": 34,
+    "version": "0.739.0.7390687"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "c510bb73d6b54757942ea9763025c00d44aff279d647d551abe7e050550f1197",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "72f9be810fac3f26887c37359d928199262f5061e2a1de03cd1836cd9b0a73d4",
+      "semantic": {
+        "added": [
+          "FFlagAXMigrateAllTabToSdui9_IXP",
+          "FFlagAddFrustumPerfTelemetry_Staged"
+        ],
+        "changed": [
+          {
+            "after": "c95155f10fd7a888cf47ab039037dc695438bf1d",
+            "before": "f17b1b44a621c36dc21d390cfaafb12c4c441d28",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-17T18:23:04.292Z",
+            "before": "2026-09-17T18:06:54.132Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "1;AvatarExperience.UA.AllViews;AvatarMarketplace.UA.CatalogSdui-1789657572072;1811499930;dev_controlled",
+            "before": "1;AvatarExperience.UA.AllViews;AvatarMarketplace.UA.CatalogSdui;1115320030;dev_controlled",
+            "name": "FFlagAXCatalogSduiExposureLogging_IXP"
+          },
+          {
+            "after": "1;AvatarExperience.UA.AllViews;AvatarMarketplace.UA.CatalogSdui-1789657572072;1811499930;dev_controlled",
+            "before": "1;AvatarExperience.UA.AllViews;AvatarMarketplace.UA.CatalogSdui;901950325;dev_controlled",
+            "name": "FFlagAXFixCatalogTileThumbnailFlash3_IXP"
+          },
+          {
+            "after": "1;AvatarExperience.UA.AllViews;AvatarMarketplace.UA.CatalogSdui-1789657572072;1811499930;dev_controlled",
+            "before": "1;AvatarExperience.UA.AllViews;AvatarMarketplace.UA.CatalogSdui;1115320030;dev_controlled",
+            "name": "FFlagAXSduiFeedBackToTopAndNavClearance_IXP"
+          },
+          {
+            "after": "1;AvatarExperience.UA.AllViews;AvatarMarketplace.UA.CatalogSdui-1789657572072;1811499930;dev_controlled",
+            "before": "1;AvatarExperience.UA.AllViews;AvatarMarketplace.UA.CatalogSdui;1115320030;dev_controlled",
+            "name": "FFlagAXSlotEditorCategoryMenu_IXP"
+          },
+          {
+            "after": "1;AvatarExperience.UA.AllViews;AvatarMarketplace.UA.CatalogSdui-1789657572072;1811499930;dev_controlled",
+            "before": "1;AvatarExperience.UA.AllViews;AvatarMarketplace.UA.CatalogSdui;1115320030;dev_controlled",
+            "name": "FFlagAXUseVirtualizedFeedInWidgetList2_IXP"
+          },
+          {
+            "after": "c95155f10fd7a888cf47ab039037dc695438bf1d",
+            "before": "f17b1b44a621c36dc21d390cfaafb12c4c441d28",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-17T18:23:04.292Z",
+            "before": "2026-09-17T18:06:54.132Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagRbxTransportUseOptimizedPacketSenderForRna_Staged",
+          "FFlagUseSpecialMeshNoFaceForDefaultR6_Staged"
+        ],
+        "unchanged": 24481
+      }
+    },
+    "Web": {
+      "current": "d15544e3c7fae7c5038fa26a337100ba752b9b9fe94a8de4ef9aea528c0867fa",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-045.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-052.js",
+          "assets.create.roblox.com/page-0/script-055.js",
+          "assets.create.roblox.com/page-0/script-057.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.create.roblox.com/page-0/script-085.js",
+          "assets.create.roblox.com/page-0/script-086.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 94
+      },
+      "previous": "e777f79b97c036c788ea575b9b84bfa9d819f97b8e90ecd86aef5ca13e1121ab",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
