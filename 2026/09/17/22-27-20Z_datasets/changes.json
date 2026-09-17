@@ -1,0 +1,120 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-55808de4b1914919",
+    "manifestFiles": 18507,
+    "packages": 34,
+    "version": "0.739.0.7390687"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "4082b3c0fa5c44dc2fa6ca488faf07af713efc1495e37a73124241240a01c43f",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "5374a8ed7108020474bf18707afdae87e69c9bd5800961a9872d9acbc31bd30d",
+      "semantic": {
+        "added": [
+          "DFFlagEnableDLICAdoptionTelemetry",
+          "DFFlagEnableJoinTicketV22_Staged",
+          "DFFlagRbxStorageUseNativeOffsetAndBuffers_Staged",
+          "DFFlagRccApplyFilteredVariablesWithDataCenterId_Staged",
+          "DFIntSlimRolloutHundredthPercent_Staged",
+          "FFlagAbuseReportAttributedRBXSystemMessages",
+          "FFlagAbuseReportInExpShowConfigLoadingSkeleton",
+          "FFlagConnectionParentalApprovalLeaveOnly_Staged",
+          "FFlagExpChatUseSharedChannelTabDisplayLabel2",
+          "FFlagFinalizeRequiresFullContainment",
+          "FFlagFixClientForPrecomputeSetMoveRegionDelta",
+          "FFlagImportQueueUXClarity",
+          "FFlagPluginQWidgetKeepCenterOnResize",
+          "FFlagSideSheetFocusNav2_Staged",
+          "FFlagStudioPlayerScriptsPathSafety",
+          "FFlagSubTabUseHomeContainerOnConsole",
+          "FFlagTelemetryEnableOnFlagsLoaded_Staged",
+          "FFlagUseSignalsForAuthenticationStatus7",
+          "FFlagWebBrowserSetWidgetTitle",
+          "FFlagWebViewImprovedErrorHandling"
+        ],
+        "changed": [
+          {
+            "after": "575bc79c6822edce4938b9b6cfb4b17b77edbf21",
+            "before": "0004a3a1e82f9bf7764a61619845282fa977c9e4",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-17T22:25:34.260Z",
+            "before": "2026-09-17T21:31:28.171Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "575bc79c6822edce4938b9b6cfb4b17b77edbf21",
+            "before": "0004a3a1e82f9bf7764a61619845282fa977c9e4",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-17T22:25:34.260Z",
+            "before": "2026-09-17T21:31:28.171Z",
+            "name": "FStringFlipTimeStampFastString"
+          },
+          {
+            "after": "InExperienceShopTooltipStorageKeyBonusV1",
+            "before": "InExperienceShopTooltipStorageKeyV2",
+            "name": "FStringInExperienceShopTooltipStorageKey"
+          }
+        ],
+        "removed": [
+          "DFFlagEnableDLICAdoptionTelemetry_Staged",
+          "FFlagAbuseReportAttributedRBXSystemMessages_Staged",
+          "FFlagAbuseReportInExpShowConfigLoadingSkeleton_Staged",
+          "FFlagExpChatUseSharedChannelTabDisplayLabel2_Staged",
+          "FFlagFinalizeRequiresFullContainment_Staged",
+          "FFlagFixClientForPrecomputeSetMoveRegionDelta_Staged",
+          "FFlagImportQueueUXClarity_Staged",
+          "FFlagLuauTableArrayAdjustCheck_Staged",
+          "FFlagPluginQWidgetKeepCenterOnResize_Staged",
+          "FFlagStudioPlayerScriptsPathSafety_Staged",
+          "FFlagSubTabUseHomeContainerOnConsole_Staged",
+          "FFlagUseSignalsForAuthenticationStatus7_Staged",
+          "FFlagWebBrowserSetWidgetTitle_Staged",
+          "FFlagWebViewImprovedErrorHandling_Staged",
+          "FStringInExperienceShopTooltipStorageKey_Staged"
+        ],
+        "unchanged": 24510
+      }
+    },
+    "Web": {
+      "current": "aa0231fb2540095d92e9714a0ccd2c7fc89d0f68f454fd4420f2eece8c44941d",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-042.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-045.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-055.js",
+          "assets.create.roblox.com/page-0/script-057.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.create.roblox.com/page-0/script-085.js",
+          "assets.create.roblox.com/page-0/script-086.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 95
+      },
+      "previous": "2ad0569704aef585ad38d17fcf83583b1c73ec92c0591ae7b6fc917fa6f326e1",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
