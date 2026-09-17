@@ -3716,11 +3716,59 @@
             "moments",
             "music"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/17/01-23-18Z_datasets",
+          "evidencePath": "2026/09/17/01-23-18Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "6365e22977bfa56d2d0eee4c66b68026569ace0907552e539d402a5e3679dbb9",
+          "key": "FFlagMomentsCreationAllowAPMMusic",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-17T01:23:18.354Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "allow",
+            "apm",
+            "creation",
+            "moments",
+            "music"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/17/01-23-18Z_datasets",
+          "evidencePath": "2026/09/17/01-23-18Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "b97b98f0e9b3a9e532eaa00c7a1f3279b0014dedd575da063c6f5d8eaced3eb1",
+          "key": "FFlagMomentsCreationAllowAPMMusic_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-17T01:23:18.354Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "allow",
+            "apm",
+            "creation",
+            "moments",
+            "music"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-09-16T22:55:17.239Z",
+      "lastObservedAt": "2026-09-17T01:23:18.354Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
@@ -3791,6 +3839,22 @@
           "signalIds": [
             "46fb70513a8066cd7093b30687c50e70e1b3b2e99fb6202916d0bba2736060d3",
             "b4f38a77f79308d4b38f85f0a7ca87824c598428ef8ab243728ba65f8f7502f1"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-09-17T01:23:18.354Z",
+          "signalIds": [
+            "6365e22977bfa56d2d0eee4c66b68026569ace0907552e539d402a5e3679dbb9",
+            "d5fbaaea34af7914504431524b9753e645c826ca487f443f6599ee2175fd190a"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-09-17T01:23:18.354Z",
+          "signalIds": [
+            "6365e22977bfa56d2d0eee4c66b68026569ace0907552e539d402a5e3679dbb9",
+            "dfd249732872b95002d8a7468ec55602a2dec5f5ace5f1f37fbb2a3c8a68d30d"
           ],
           "type": "staged-to-non-staged"
         }

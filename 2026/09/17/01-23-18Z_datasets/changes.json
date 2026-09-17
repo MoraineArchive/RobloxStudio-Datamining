@@ -1,0 +1,133 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-55808de4b1914919",
+    "manifestFiles": 18507,
+    "packages": 34,
+    "version": "0.739.0.7390687"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "0239d964e3f09971f5706f5a17067375f4ecc8a41a41c27f78afdbac6ebea116",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "7f3e4f267735bbf6e9e09b38a079918aeb1e58066c9efa35140580ad7f332efd",
+      "semantic": {
+        "added": [
+          "DFFlagEnableDLICDesktopConsoleIngressSeeding",
+          "FFlagACEImportCancelButton",
+          "FFlagAXFixEmptyCatalogSearchChrome",
+          "FFlagAmrOptimizeRenderListUpdates",
+          "FFlagDevAssetExport",
+          "FFlagEnableAssetExport",
+          "FFlagEnableGameJoinEarlyAccess",
+          "FFlagFixGltfZFlipBoneAnimationDirection",
+          "FFlagFocusDrivenReductionFromHealthState",
+          "FFlagForceOddFrustumAngularSubdivisions",
+          "FFlagHttpClientRetryExtensions",
+          "FFlagMomentsCreationAllowAPMMusic",
+          "FFlagRenameObjExportButton",
+          "FFlagRenderMeshStreamingLodGapTelemetry",
+          "FFlagRetargetingCacheIncludeTranslation",
+          "FFlagSduiEventRsvpFacePile",
+          "FFlagSduiScalePlayButtonAndImageSizes",
+          "FFlagShowBodyForAnimationPreview"
+        ],
+        "changed": [
+          {
+            "after": "fcd281bd9573159572ec70fe73fc8499471e5ac9",
+            "before": "0ef36eef96b1c2732e446704e704175eef77d879",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-17T01:17:14.049Z",
+            "before": "2026-09-17T00:06:29.611Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagGltfExportBetaFeature"
+          },
+          {
+            "after": "fcd281bd9573159572ec70fe73fc8499471e5ac9",
+            "before": "0ef36eef96b1c2732e446704e704175eef77d879",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-17T01:17:14.049Z",
+            "before": "2026-09-17T00:06:29.611Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagEnableDLICDesktopConsoleIngressSeeding_Staged",
+          "FFlagACEImportCancelButton_Staged",
+          "FFlagAXFixEmptyCatalogSearchChrome_Staged",
+          "FFlagAmrOptimizeRenderListUpdates_Staged",
+          "FFlagDevAssetExport_Staged",
+          "FFlagEnableAssetExport_Staged",
+          "FFlagEnableGameJoinEarlyAccess_Staged",
+          "FFlagFixGltfZFlipBoneAnimationDirection_Staged",
+          "FFlagFocusDrivenReductionFromHealthState_Staged",
+          "FFlagForceOddFrustumAngularSubdivisions_Staged",
+          "FFlagGltfExportBetaFeature_Staged",
+          "FFlagHttpClientRetryExtensions_Staged",
+          "FFlagMomentsCreationAllowAPMMusic_Staged",
+          "FFlagRenameObjExportButton_Staged",
+          "FFlagRenderMeshStreamingLodGapTelemetry_Staged",
+          "FFlagRetargetingCacheIncludeTranslation_Staged",
+          "FFlagSduiEventRsvpFacePile_Staged",
+          "FFlagSduiScalePlayButtonAndImageSizes_Staged",
+          "FFlagShowBodyForAnimationPreview_Staged"
+        ],
+        "unchanged": 24442
+      }
+    },
+    "Web": {
+      "current": "83790671260420e6a5638242cb324076fe9a525578849eb64569bf808ebf957a",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-042.js",
+          "assets.create.roblox.com/page-0/script-045.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-049.js",
+          "assets.create.roblox.com/page-0/script-055.js",
+          "assets.create.roblox.com/page-0/script-056.js",
+          "assets.create.roblox.com/page-0/script-057.js",
+          "assets.create.roblox.com/page-0/script-059.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.create.roblox.com/page-0/script-085.js",
+          "assets.create.roblox.com/page-1/script-001.js",
+          "assets.create.roblox.com/page-1/script-003.js",
+          "assets.create.roblox.com/page-1/script-004.js",
+          "assets.create.roblox.com/page-1/script-009.js",
+          "assets.create.roblox.com/page-1/script-013.js",
+          "assets.create.roblox.com/page-1/script-014.js",
+          "assets.create.roblox.com/page-1/script-015.js",
+          "assets.create.roblox.com/page-1/script-016.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 83
+      },
+      "previous": "3ab6b02a0f2e9bdbcc1db5deb1c749b6ff7e1271f90c726607722947b13ee540",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
