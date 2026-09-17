@@ -1,0 +1,59 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-55808de4b1914919",
+    "manifestFiles": 18507,
+    "packages": 34,
+    "version": "0.739.0.7390687"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "202e4f425ab7b9f68bb218baae678f86adff1fd2a0c11ab54c8736c7ed8253f4",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "0239d964e3f09971f5706f5a17067375f4ecc8a41a41c27f78afdbac6ebea116",
+      "semantic": {
+        "added": [],
+        "changed": [
+          {
+            "after": "aac546a0c74d525867f4ffd8afc331a8df5bb9be",
+            "before": "fcd281bd9573159572ec70fe73fc8499471e5ac9",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-17T01:32:15.623Z",
+            "before": "2026-09-17T01:17:14.049Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagPromoteRobuxInTopPicks"
+          },
+          {
+            "after": "aac546a0c74d525867f4ffd8afc331a8df5bb9be",
+            "before": "fcd281bd9573159572ec70fe73fc8499471e5ac9",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-17T01:32:15.623Z",
+            "before": "2026-09-17T01:17:14.049Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagPromoteRobuxInTopPicks_Staged"
+        ],
+        "unchanged": 24459
+      }
+    }
+  },
+  "schemaVersion": 1
+}
