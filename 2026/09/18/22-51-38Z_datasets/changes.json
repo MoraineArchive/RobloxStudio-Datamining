@@ -1,0 +1,84 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-55808de4b1914919",
+    "manifestFiles": 18507,
+    "packages": 34,
+    "version": "0.739.0.7390687"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "91757ac947a58e028462074ae57d78e843e1f40fb77bf060f47965eede4c5b01",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "4000d6f55faf2c5ef43feaf3718b2aee56ab323b775437dc72eb185b4989643f",
+      "semantic": {
+        "added": [],
+        "changed": [
+          {
+            "after": "c1737ce83a5d384e6b80ae249d4a0c160c7abff1",
+            "before": "7dc96b8fd9b73d80c0bb61bcf40d14890916b332",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-18T22:48:08.898Z",
+            "before": "2026-09-18T22:01:20.382Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "c1737ce83a5d384e6b80ae249d4a0c160c7abff1",
+            "before": "7dc96b8fd9b73d80c0bb61bcf40d14890916b332",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-18T22:48:08.898Z",
+            "before": "2026-09-18T22:01:20.382Z",
+            "name": "FStringFlipTimeStampFastString"
+          },
+          {
+            "after": "Google atlas|Google eve|Google fizz|Google grunt|Google kalista|Google nami|Google nautilus|Google nocturne|Google rammus|Google soraka|TECNO BG6|HONOR HEY2-W09|Xiaomi 2312DRA50G|Xiaomi 23122PCD1G|HONOR HEY2-N09|HONOR ALI-NX3|Xiaomi 2405CRPFDG|Samsung SM-S908U|Xiaomi 21121210G|Xiaomi 2405CPCFBG|Motorola moto g stylus 5G - 2023|Motorola moto g75 5G|Samsung SM-S901U|Motorola Edge 30 Pro|Samsung SM-X700|Samsung SM-S906U|Xiaomi 24074RPD2G|Samsung SM-S908E|Motorola Edge 50 Fusion|Samsung SM-S711U|Samsung SM-X706B|Samsung SM-S901E|HONOR BRP-NX3|Vivo V2353A|HONOR ALI-NX1|Xiaomi 23046RP50C|Xiaomi 22081212UG|Asus ASUS_AI2201_C|Samsung SM-S906E|Samsung SM-F936B|Motorola Edge Plus 5G UW \\(2022\\)|Alldocube iPlay60 mini Turbo|HUAWEI MNA-LX9|Samsung SM-F721B|Motorola Edge Plus \\(2022\\)|Samsung SM-X906B|Samsung SM-X800|HONOR BRP-NX1|Lenovo TB320FC|Samsung SM-X900|Xiaomi 2312DRA50I|Xiaomi 23122PCD1I|Asus ASUS_AI2201_D|Meizu MEIZU Lucky 08",
+            "before": "Google atlas|Google eve|Google fizz|Google grunt|Google kalista|Google nami|Google nautilus|Google nocturne|Google rammus|Google soraka|TECNO BG6",
+            "name": "FStringGraphicsVulkanBlacklistDevicePattern"
+          }
+        ],
+        "removed": [
+          "FStringGraphicsVulkanBlacklistDevicePattern_Staged"
+        ],
+        "unchanged": 24555
+      }
+    },
+    "Web": {
+      "current": "dd5a8b2456969918905277962fdc52138b507061f9ecc5847dc02c9d086023b1",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-027.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-047.js",
+          "assets.create.roblox.com/page-0/script-055.js",
+          "assets.create.roblox.com/page-0/script-060.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 94
+      },
+      "previous": "43fe58723b8e6a24246dc21d8353e5131d9e23792ecdf15772aad296297c3c69",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
