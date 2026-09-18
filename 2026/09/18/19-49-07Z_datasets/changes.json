@@ -1,0 +1,119 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-55808de4b1914919",
+    "manifestFiles": 18507,
+    "packages": 34,
+    "version": "0.739.0.7390687"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "96a35b0f48390cc5e78e9fc5e57680078901c339aa21822d459f1f6b4a43599c",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "9bc23b737272b8949be733c084c30c0400cee3b856a57760c191d7d0b4c1145e",
+      "semantic": {
+        "added": [
+          "DFFlagExplorerChildSignalConnectOnDMThread",
+          "DFFlagFriendsApiCallerIdentityParam_Staged",
+          "DFFlagTextChatChannelAddPlayersOnJoin",
+          "FFlagAXBlockUnavailableMakeupLookSelection",
+          "FFlagAnimGraphUINoMaskParameter",
+          "FFlagEnableBonusJwtInShop_Staged",
+          "FFlagEnableFrustumAutomation_Staged",
+          "FFlagEnableSideSheetRobuxWidget",
+          "FFlagEnableSideSheetWidgets",
+          "FFlagExpChatUseIsDefaultTextChannel_Staged",
+          "FFlagFoundationEducationalTooltipRefresh",
+          "FFlagInstanceAttributesRefReplicationTeamCreateOnly1",
+          "FFlagPublishAssetPromptItemDetailsTelemetry",
+          "FFlagSideSheetAndroidBack_Staged",
+          "FFlagSimVolumeWeightedSubmergeRatio"
+        ],
+        "changed": [
+          {
+            "after": "10000",
+            "before": "1000",
+            "name": "DFIntJoinTicketV2RolloutHundredthsPercentage"
+          },
+          {
+            "after": "10000",
+            "before": "2500",
+            "name": "DFIntSlimRolloutHundredthPercent"
+          },
+          {
+            "after": "d9b51c1d18d8f11301f859e7b331e0ffd05ff119",
+            "before": "763b2459ec2870c447ff2cf2fa8fe2ee6dfad468",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-18T19:37:08.580Z",
+            "before": "2026-09-18T18:19:56.776Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "d9b51c1d18d8f11301f859e7b331e0ffd05ff119",
+            "before": "763b2459ec2870c447ff2cf2fa8fe2ee6dfad468",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-18T19:37:08.580Z",
+            "before": "2026-09-18T18:19:56.776Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagTextChatChannelAddPlayersOnJoin_Staged",
+          "DFIntJoinTicketV2RolloutHundredthsPercentage_Staged",
+          "DFIntSlimRolloutHundredthPercent_Staged",
+          "FFlagAXBlockUnavailableMakeupLookSelection_Staged",
+          "FFlagAnimGraphUINoMaskParameter_Staged",
+          "FFlagEnableSideSheetRobuxWidget_Staged",
+          "FFlagEnableSideSheetWidgets_Staged",
+          "FFlagFoundationEducationalTooltipRefresh_Staged",
+          "FFlagInstanceAttributesRefReplicationTeamCreateOnly1_Staged",
+          "FFlagPublishAssetPromptItemDetailsTelemetry_Staged",
+          "FFlagSimVolumeWeightedSubmergeRatio_Staged",
+          "FStringGraphicsVulkanBlacklistDevicePattern_Staged"
+        ],
+        "unchanged": 24538
+      }
+    },
+    "Web": {
+      "current": "c69357bd0d05b9ad225268b3d87d25decab91c8c6d25e4944c2d3fcac6e4d2a5",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-003.js",
+          "assets.create.roblox.com/page-0/script-026.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-056.js",
+          "assets.create.roblox.com/page-0/script-060.js",
+          "assets.create.roblox.com/page-0/script-061.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.create.roblox.com/page-0/script-085.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 92
+      },
+      "previous": "935b3830988aa864484ec38f5e0b02b2887e470e0ac7b8d471a44e143ba8ca47",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
