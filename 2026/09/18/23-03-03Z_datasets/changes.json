@@ -1,0 +1,133 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-55808de4b1914919",
+    "manifestFiles": 18507,
+    "packages": 34,
+    "version": "0.739.0.7390687"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "00f3ed3a43ad717fe30e4c86160db6981392b61f0756d9dd7fec9e0adf7a1557",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "91757ac947a58e028462074ae57d78e843e1f40fb77bf060f47965eede4c5b01",
+      "semantic": {
+        "added": [
+          "DFFlagFlagRolloutTestDynamicBool30_Staged",
+          "DFFlagFlagRolloutTestDynamicBool31_Staged",
+          "DFFlagFlagRolloutTestDynamicBool32_Staged",
+          "DFFlagFlagRolloutTestDynamicBool33_Staged",
+          "DFFlagFlagRolloutTestDynamicBool34_Staged",
+          "DFFlagFlagRolloutTestDynamicBool35_Staged",
+          "DFFlagFlagRolloutTestDynamicBool36_Staged",
+          "DFFlagFlagRolloutTestDynamicBool37_Staged",
+          "DFFlagFlagRolloutTestDynamicBool38_Staged",
+          "DFFlagFlagRolloutTestDynamicBool39_Staged",
+          "FFlagFlagRolloutTestStaticBool30_Staged",
+          "FFlagFlagRolloutTestStaticBool31_Staged",
+          "FFlagFlagRolloutTestStaticBool32_Staged",
+          "FFlagFlagRolloutTestStaticBool33_Staged",
+          "FFlagFlagRolloutTestStaticBool34_Staged",
+          "FFlagFlagRolloutTestStaticBool35_Staged",
+          "FFlagFlagRolloutTestStaticBool36_Staged",
+          "FFlagFlagRolloutTestStaticBool37_Staged",
+          "FFlagFlagRolloutTestStaticBool38_Staged",
+          "FFlagFlagRolloutTestStaticBool39_Staged"
+        ],
+        "changed": [
+          {
+            "after": "False",
+            "before": "True",
+            "name": "DFFlagEnableDynamicCollaboratorSafetyEvictionCheck"
+          },
+          {
+            "after": "491028d0102ddf8f4f5cbe35141f50bc711b3d1d",
+            "before": "c1737ce83a5d384e6b80ae249d4a0c160c7abff1",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-18T23:02:17.779Z",
+            "before": "2026-09-18T22:48:08.898Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagEnableGameJoinEarlyAccess"
+          },
+          {
+            "after": "491028d0102ddf8f4f5cbe35141f50bc711b3d1d",
+            "before": "c1737ce83a5d384e6b80ae249d4a0c160c7abff1",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-18T23:02:17.779Z",
+            "before": "2026-09-18T22:48:08.898Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagEnableDynamicCollaboratorSafetyEvictionCheck_Staged",
+          "DFFlagFlagRolloutTestDynamicBool30",
+          "DFFlagFlagRolloutTestDynamicBool31",
+          "DFFlagFlagRolloutTestDynamicBool32",
+          "DFFlagFlagRolloutTestDynamicBool33",
+          "DFFlagFlagRolloutTestDynamicBool34",
+          "DFFlagFlagRolloutTestDynamicBool35",
+          "DFFlagFlagRolloutTestDynamicBool36",
+          "DFFlagFlagRolloutTestDynamicBool37",
+          "DFFlagFlagRolloutTestDynamicBool38",
+          "DFFlagFlagRolloutTestDynamicBool39",
+          "FFlagEnableGameJoinEarlyAccess_Staged",
+          "FFlagFlagRolloutTestStaticBool30",
+          "FFlagFlagRolloutTestStaticBool31",
+          "FFlagFlagRolloutTestStaticBool32",
+          "FFlagFlagRolloutTestStaticBool33",
+          "FFlagFlagRolloutTestStaticBool34",
+          "FFlagFlagRolloutTestStaticBool35",
+          "FFlagFlagRolloutTestStaticBool36",
+          "FFlagFlagRolloutTestStaticBool37",
+          "FFlagFlagRolloutTestStaticBool38",
+          "FFlagFlagRolloutTestStaticBool39"
+        ],
+        "unchanged": 24532
+      }
+    },
+    "Web": {
+      "current": "fe62a0c1d0f6f3710f4c574e738de67b4d2c374955a0f6798e7c8e13cde1cc5a",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-016.js",
+          "assets.create.roblox.com/page-0/script-027.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-035.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-047.js",
+          "assets.create.roblox.com/page-0/script-055.js",
+          "assets.create.roblox.com/page-0/script-060.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 92
+      },
+      "previous": "dd5a8b2456969918905277962fdc52138b507061f9ecc5847dc02c9d086023b1",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
