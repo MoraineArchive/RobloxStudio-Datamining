@@ -1,0 +1,104 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-55808de4b1914919",
+    "manifestFiles": 18507,
+    "packages": 34,
+    "version": "0.739.0.7390687"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "9be6c04820c90568af842c9b5a4f9e8609be259e173c5eed6e15bdfb3857b937",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "4c5b5d90e00e0790cf9379628994563d0ce43cd0f475ec4278712d78fc633065",
+      "semantic": {
+        "added": [
+          "FFlagShareSheetMessageSendTelemetry",
+          "FFlagTelemetryEnableOnFlagsLoaded",
+          "FStringPublishStatusFallbackPath"
+        ],
+        "changed": [
+          {
+            "after": "737",
+            "before": "735",
+            "name": "DFIntJoinLimitOsx"
+          },
+          {
+            "after": "737",
+            "before": "735",
+            "name": "DFIntJoinLimitWin32x64"
+          },
+          {
+            "after": "288934602e54e0f9c2c16ff158b8f9c0d98751da",
+            "before": "9893d3d278d070967626b7e998ab4fba1df56bff",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-18T00:47:20.266Z",
+            "before": "2026-09-18T00:28:26.181Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "docs-search: true, scene-analysis: true, device-simulator: true, perf-profiling: true, create-skill: true, unit-test: true, convert-to-streaming: false, process-receipt-misuse: false, instrument-analytics: false, configs-experimentation: false",
+            "before": "docs-search, scene-analysis, device-simulator, perf-profiling, create-skill, unit-test",
+            "name": "FStringAssistantSkillsAllowlist"
+          },
+          {
+            "after": "288934602e54e0f9c2c16ff158b8f9c0d98751da",
+            "before": "9893d3d278d070967626b7e998ab4fba1df56bff",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-18T00:47:20.266Z",
+            "before": "2026-09-18T00:28:26.181Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFIntJoinLimitOsx_Staged",
+          "DFIntJoinLimitWin32x64_Staged",
+          "FFlagShareSheetMessageSendTelemetry_Staged",
+          "FFlagTelemetryEnableOnFlagsLoaded_Staged",
+          "FStringAssistantSkillsAllowlist_Staged",
+          "FStringPublishStatusFallbackPath_Staged"
+        ],
+        "unchanged": 24531
+      }
+    },
+    "Web": {
+      "current": "dda3446dfd9e06494ec1309e68e114d5b73b0b9d3fda7df8eb4ab40ff58cc504",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-016.js",
+          "assets.create.roblox.com/page-0/script-027.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-055.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 93
+      },
+      "previous": "01a63ad18983eb000af4d0c88af73b74816ef527a2bd870f049aa73fa3ef9911",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
