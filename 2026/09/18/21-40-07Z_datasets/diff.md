@@ -1,0 +1,191 @@
+[![Moraine Roblox Datamining](https://github.com/MoraineArchive/Moraine-asset/blob/main/roblox/banner_roblox.png?raw=true)](https://github.com/MoraineArchive/Moraine-asset/blob/main/roblox/banner_roblox.png)
+
+# Roblox Studio Datamining Diff
+
+**Observed:** 18/09/2026, 23:40:07 CEST (21:40:07 UTC)
+
+## LiveSettings
+
+**File changes:** +0 ~1 -0
+
+- **Changed:** [`current.json`](../../../../current/LiveSettings/current.json)
+
+### Values
+
+- **Added:** `DFFlagFlagRolloutTestDynamicBool0_Staged`
+- **Added:** `DFFlagFlagRolloutTestDynamicBool10_Staged`
+- **Added:** `DFFlagFlagRolloutTestDynamicBool11_Staged`
+- **Added:** `DFFlagFlagRolloutTestDynamicBool12_Staged`
+- **Added:** `DFFlagFlagRolloutTestDynamicBool13_Staged`
+- **Added:** `DFFlagFlagRolloutTestDynamicBool14_Staged`
+- **Added:** `DFFlagFlagRolloutTestDynamicBool15_Staged`
+- **Added:** `DFFlagFlagRolloutTestDynamicBool16_Staged`
+- **Added:** `DFFlagFlagRolloutTestDynamicBool17_Staged`
+- **Added:** `DFFlagFlagRolloutTestDynamicBool18_Staged`
+- **Added:** `DFFlagFlagRolloutTestDynamicBool19_Staged`
+- **Added:** `DFFlagFlagRolloutTestDynamicBool1_Staged`
+- **Added:** `DFFlagFlagRolloutTestDynamicBool2_Staged`
+- **Added:** `DFFlagFlagRolloutTestDynamicBool3_Staged`
+- **Added:** `DFFlagFlagRolloutTestDynamicBool4_Staged`
+- **Added:** `DFFlagFlagRolloutTestDynamicBool5_Staged`
+- **Added:** `DFFlagFlagRolloutTestDynamicBool6_Staged`
+- **Added:** `DFFlagFlagRolloutTestDynamicBool7_Staged`
+- **Added:** `DFFlagFlagRolloutTestDynamicBool8_Staged`
+- **Added:** `DFFlagFlagRolloutTestDynamicBool9_Staged`
+- **Added:** `FFlagEnableBonusJwtInShop`
+- **Added:** `FFlagEnableGameJoinEarlyAccess_Staged`
+- **Added:** `FFlagExpChatUseIsDefaultTextChannel`
+- **Added:** `FFlagFlagRolloutTestStaticBool0_Staged`
+- **Added:** `FFlagFlagRolloutTestStaticBool10_Staged`
+- **Added:** `FFlagFlagRolloutTestStaticBool11_Staged`
+- **Added:** `FFlagFlagRolloutTestStaticBool12_Staged`
+- **Added:** `FFlagFlagRolloutTestStaticBool13_Staged`
+- **Added:** `FFlagFlagRolloutTestStaticBool14_Staged`
+- **Added:** `FFlagFlagRolloutTestStaticBool15_Staged`
+- **Added:** `FFlagFlagRolloutTestStaticBool16_Staged`
+- **Added:** `FFlagFlagRolloutTestStaticBool17_Staged`
+- **Added:** `FFlagFlagRolloutTestStaticBool18_Staged`
+- **Added:** `FFlagFlagRolloutTestStaticBool19_Staged`
+- **Added:** `FFlagFlagRolloutTestStaticBool1_Staged`
+- **Added:** `FFlagFlagRolloutTestStaticBool2_Staged`
+- **Added:** `FFlagFlagRolloutTestStaticBool3_Staged`
+- **Added:** `FFlagFlagRolloutTestStaticBool4_Staged`
+- **Added:** `FFlagFlagRolloutTestStaticBool5_Staged`
+- **Added:** `FFlagFlagRolloutTestStaticBool6_Staged`
+- **Added:** `FFlagFlagRolloutTestStaticBool7_Staged`
+- **Added:** `FFlagFlagRolloutTestStaticBool8_Staged`
+- **Added:** `FFlagFlagRolloutTestStaticBool9_Staged`
+- **Added:** `FFlagSideSheetAndroidBack`
+- **Added:** `FStringGraphicsVulkanBlacklistDevicePattern_Staged`
+- **Changed:** `DFStringFlagRepoGitHashDynamicString`
+  - Before: `95836965396a735c8f03fe29c1179a1c87defbe2`
+  - After: `5b2363c0c1dc7018df5548ef29956ebbc2d015f6`
+- **Changed:** `DFStringFlipTimeStampDynamicString`
+  - Before: `2026-09-18T20:22:30.783Z`
+  - After: `2026-09-18T21:31:02.550Z`
+- **Changed:** `FFlagEnableFrustumAutomation`
+  - Before: `False`
+  - After: `True`
+- **Changed:** `FStringFlagRepoGitHashFastString`
+  - Before: `95836965396a735c8f03fe29c1179a1c87defbe2`
+  - After: `5b2363c0c1dc7018df5548ef29956ebbc2d015f6`
+- **Changed:** `FStringFlipTimeStampFastString`
+  - Before: `2026-09-18T20:22:30.783Z`
+  - After: `2026-09-18T21:31:02.550Z`
+- **Removed:** `DFFlagFlagRolloutTestDynamicBool0`
+- **Removed:** `DFFlagFlagRolloutTestDynamicBool1`
+- **Removed:** `DFFlagFlagRolloutTestDynamicBool10`
+- **Removed:** `DFFlagFlagRolloutTestDynamicBool11`
+- **Removed:** `DFFlagFlagRolloutTestDynamicBool12`
+- **Removed:** `DFFlagFlagRolloutTestDynamicBool13`
+- **Removed:** `DFFlagFlagRolloutTestDynamicBool14`
+- **Removed:** `DFFlagFlagRolloutTestDynamicBool15`
+- **Removed:** `DFFlagFlagRolloutTestDynamicBool16`
+- **Removed:** `DFFlagFlagRolloutTestDynamicBool17`
+- **Removed:** `DFFlagFlagRolloutTestDynamicBool18`
+- **Removed:** `DFFlagFlagRolloutTestDynamicBool19`
+- **Removed:** `DFFlagFlagRolloutTestDynamicBool2`
+- **Removed:** `DFFlagFlagRolloutTestDynamicBool3`
+- **Removed:** `DFFlagFlagRolloutTestDynamicBool4`
+- **Removed:** `DFFlagFlagRolloutTestDynamicBool5`
+- **Removed:** `DFFlagFlagRolloutTestDynamicBool6`
+- **Removed:** `DFFlagFlagRolloutTestDynamicBool7`
+- **Removed:** `DFFlagFlagRolloutTestDynamicBool8`
+- **Removed:** `DFFlagFlagRolloutTestDynamicBool9`
+- **Removed:** `FFlagEnableBonusJwtInShop_Staged`
+- **Removed:** `FFlagEnableFrustumAutomation_Staged`
+- **Removed:** `FFlagExpChatUseIsDefaultTextChannel_Staged`
+- **Removed:** `FFlagFlagRolloutTestStaticBool0`
+- **Removed:** `FFlagFlagRolloutTestStaticBool1`
+- **Removed:** `FFlagFlagRolloutTestStaticBool10`
+- **Removed:** `FFlagFlagRolloutTestStaticBool11`
+- **Removed:** `FFlagFlagRolloutTestStaticBool12`
+- **Removed:** `FFlagFlagRolloutTestStaticBool13`
+- **Removed:** `FFlagFlagRolloutTestStaticBool14`
+- **Removed:** `FFlagFlagRolloutTestStaticBool15`
+- **Removed:** `FFlagFlagRolloutTestStaticBool16`
+- **Removed:** `FFlagFlagRolloutTestStaticBool17`
+- **Removed:** `FFlagFlagRolloutTestStaticBool18`
+- **Removed:** `FFlagFlagRolloutTestStaticBool19`
+- **Removed:** `FFlagFlagRolloutTestStaticBool2`
+- **Removed:** `FFlagFlagRolloutTestStaticBool3`
+- **Removed:** `FFlagFlagRolloutTestStaticBool4`
+- **Removed:** `FFlagFlagRolloutTestStaticBool5`
+- **Removed:** `FFlagFlagRolloutTestStaticBool6`
+- **Removed:** `FFlagFlagRolloutTestStaticBool7`
+- **Removed:** `FFlagFlagRolloutTestStaticBool8`
+- **Removed:** `FFlagFlagRolloutTestStaticBool9`
+- **Removed:** `FFlagSideSheetAndroidBack_Staged`
+
+## Web
+
+**File changes:** +0 ~66 -1
+
+- **Changed:** [`assets.create.roblox.com/page-0/script-002.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-002.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-003.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-003.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-004.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-004.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-005.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-005.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-006.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-006.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-007.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-007.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-008.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-008.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-009.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-009.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-010.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-010.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-012.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-012.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-013.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-013.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-018.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-018.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-019.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-019.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-020.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-020.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-021.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-021.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-022.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-022.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-023.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-023.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-024.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-024.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-025.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-025.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-026.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-026.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-027.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-027.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-028.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-028.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-034.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-034.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-035.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-035.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-036.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-036.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-037.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-037.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-038.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-038.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-039.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-039.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-040.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-040.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-042.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-042.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-044.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-044.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-046.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-046.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-047.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-047.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-048.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-048.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-050.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-050.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-053.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-053.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-054.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-054.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-055.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-055.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-056.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-056.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-057.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-057.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-058.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-058.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-059.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-059.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-060.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-060.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-062.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-062.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-063.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-063.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-064.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-064.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-065.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-065.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-066.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-066.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-067.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-067.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-068.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-068.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-069.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-069.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-070.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-070.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-072.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-072.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-073.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-073.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-074.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-074.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-075.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-075.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-076.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-076.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-077.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-077.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-078.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-078.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-081.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-081.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-082.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-082.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-083.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-083.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-084.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-084.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-085.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-085.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-086.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-086.js)
+- **Changed:** [`assets.json`](../../../../current/Web/assets.json)
+- **Removed:** `assets.create.roblox.com/page-0/script-087.js`
+
