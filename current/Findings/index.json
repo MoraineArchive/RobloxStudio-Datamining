@@ -3830,11 +3830,55 @@
             "list",
             "moments"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/18/19-59-35Z_live-settings",
+          "evidencePath": "2026/09/18/19-59-35Z_live-settings/changes.json",
+          "family": "LiveSettings",
+          "id": "14bdcadb3b8a16e5be5124068265c4dd5f34076622ac7655b86a3277b84e2938",
+          "key": "FFlagGuacMomentsFeatureList",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-18T19:59:35.316Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "guac",
+            "list",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/18/19-59-35Z_live-settings",
+          "evidencePath": "2026/09/18/19-59-35Z_live-settings/changes.json",
+          "family": "LiveSettings",
+          "id": "c03c09fa924f1fe9646a63d169998f45ce502fd5c81eac94671eae2f89fd4a82",
+          "key": "FFlagGuacMomentsFeatureList_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-18T19:59:35.316Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "guac",
+            "list",
+            "moments"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-09-18T18:26:36.224Z",
+      "lastObservedAt": "2026-09-18T19:59:35.316Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
@@ -3921,6 +3965,22 @@
           "signalIds": [
             "6365e22977bfa56d2d0eee4c66b68026569ace0907552e539d402a5e3679dbb9",
             "dfd249732872b95002d8a7468ec55602a2dec5f5ace5f1f37fbb2a3c8a68d30d"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-09-18T19:59:35.316Z",
+          "signalIds": [
+            "14bdcadb3b8a16e5be5124068265c4dd5f34076622ac7655b86a3277b84e2938",
+            "b0fdfcf8cf2b0c97f8b6fcf282156ed80d1a0f32e4b095c5ef6205923362b894"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-09-18T19:59:35.316Z",
+          "signalIds": [
+            "14bdcadb3b8a16e5be5124068265c4dd5f34076622ac7655b86a3277b84e2938",
+            "159dadd4db305f5b397905d758ac5a09f1c7515b8bbba2702adf20e9cad55235"
           ],
           "type": "staged-to-non-staged"
         }
