@@ -1,0 +1,98 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-55808de4b1914919",
+    "manifestFiles": 18507,
+    "packages": 34,
+    "version": "0.739.0.7390687"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "e59485857680ded459359d0f32baaf0157d2eb3767ce9dceca9b6758368049a6",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "91060ff007ed20cb92e7affba9ba32736ba6596bf9c5eedfee33be23e66c59f6",
+      "semantic": {
+        "added": [
+          "DFIntJoinTicketV2RolloutHundredthsPercentage_Staged",
+          "FFlagAnimGraphUINoMaskParameter_Staged",
+          "FFlagEnableSideSheetRobuxWidget_Staged",
+          "FFlagEnableSideSheetWidgets_Staged",
+          "FFlagFoundationEducationalTooltipRefresh_Staged",
+          "FFlagUseSpecialMeshNoFaceForDefaultR6_Staged"
+        ],
+        "changed": [
+          {
+            "after": "1119d115432175766f2503c2d4b72e789fc2841b",
+            "before": "90cbca94d936da39fab4246a978b1887190f81de",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-18T16:32:50.566Z",
+            "before": "2026-09-18T06:02:07.540Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "True;9707042192;9671070925;8491889239;9164570436;9859999587;5824195619;9876947216;10004846655;9605987780;10036955953;10123702430;10241252491;10382950395;10390927281;10390930030;10390933265;10538358999;10538473450;7738776082;8005766508;10643104390;10631479676;10762769249;10765877033;10766493343;10766485671",
+            "before": "True;9707042192;9671070925;8491889239;9164570436;9859999587;5824195619;9876947216;10004846655;9605987780;10036955953;10123702430;10241252491;10382950395;10390927281;10390930030;10390933265;10538358999;10538473450;7738776082;8005766508;10643104390;10631479676;10762769249;10765877033;10766493343",
+            "name": "FFlagLuaAppIsClickoutEnabledUniverse_UniverseFilter"
+          },
+          {
+            "after": "1119d115432175766f2503c2d4b72e789fc2841b",
+            "before": "90cbca94d936da39fab4246a978b1887190f81de",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-18T16:32:50.566Z",
+            "before": "2026-09-18T06:02:07.540Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [],
+        "unchanged": 24536
+      }
+    },
+    "Web": {
+      "current": "6087b8f336ddb4684109bc9e4995f5c563d46b395bb8b381be5174d4ed703670",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-026.js",
+          "assets.create.roblox.com/page-0/script-027.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-042.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-052.js",
+          "assets.create.roblox.com/page-0/script-055.js",
+          "assets.create.roblox.com/page-0/script-056.js",
+          "assets.create.roblox.com/page-0/script-060.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.create.roblox.com/page-0/script-085.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 86
+      },
+      "previous": "5d5120544e791fc66b393cae42b12acd8e068447757dedd4b51b7d34ad34a4e8",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
