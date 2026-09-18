@@ -1,0 +1,121 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-55808de4b1914919",
+    "manifestFiles": 18507,
+    "packages": 34,
+    "version": "0.739.0.7390687"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "4000d6f55faf2c5ef43feaf3718b2aee56ab323b775437dc72eb185b4989643f",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "f0e61b7262a9bf9428a40cfde048b8668cc8d234853604719e38f9e55415e978",
+      "semantic": {
+        "added": [
+          "DFFlagEnableDynamicCollaboratorSafetyEvictionCheck_Staged",
+          "DFFlagFlagRolloutTestDynamicBool20_Staged",
+          "DFFlagFlagRolloutTestDynamicBool21_Staged",
+          "DFFlagFlagRolloutTestDynamicBool22_Staged",
+          "DFFlagFlagRolloutTestDynamicBool23_Staged",
+          "DFFlagFlagRolloutTestDynamicBool24_Staged",
+          "DFFlagFlagRolloutTestDynamicBool25_Staged",
+          "DFFlagFlagRolloutTestDynamicBool26_Staged",
+          "DFFlagFlagRolloutTestDynamicBool27_Staged",
+          "DFFlagFlagRolloutTestDynamicBool28_Staged",
+          "DFFlagFlagRolloutTestDynamicBool29_Staged",
+          "FFlagEnableCollaboratorSafetyEvictionCheck4_Staged",
+          "FFlagFlagRolloutTestStaticBool20_Staged",
+          "FFlagFlagRolloutTestStaticBool21_Staged",
+          "FFlagFlagRolloutTestStaticBool22_Staged",
+          "FFlagFlagRolloutTestStaticBool23_Staged",
+          "FFlagFlagRolloutTestStaticBool24_Staged",
+          "FFlagFlagRolloutTestStaticBool25_Staged",
+          "FFlagFlagRolloutTestStaticBool26_Staged",
+          "FFlagFlagRolloutTestStaticBool27_Staged",
+          "FFlagFlagRolloutTestStaticBool28_Staged",
+          "FFlagFlagRolloutTestStaticBool29_Staged"
+        ],
+        "changed": [
+          {
+            "after": "7dc96b8fd9b73d80c0bb61bcf40d14890916b332",
+            "before": "5b2363c0c1dc7018df5548ef29956ebbc2d015f6",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-18T22:01:20.382Z",
+            "before": "2026-09-18T21:31:02.550Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "7dc96b8fd9b73d80c0bb61bcf40d14890916b332",
+            "before": "5b2363c0c1dc7018df5548ef29956ebbc2d015f6",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-18T22:01:20.382Z",
+            "before": "2026-09-18T21:31:02.550Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagFlagRolloutTestDynamicBool20",
+          "DFFlagFlagRolloutTestDynamicBool21",
+          "DFFlagFlagRolloutTestDynamicBool22",
+          "DFFlagFlagRolloutTestDynamicBool23",
+          "DFFlagFlagRolloutTestDynamicBool24",
+          "DFFlagFlagRolloutTestDynamicBool25",
+          "DFFlagFlagRolloutTestDynamicBool26",
+          "DFFlagFlagRolloutTestDynamicBool27",
+          "DFFlagFlagRolloutTestDynamicBool28",
+          "DFFlagFlagRolloutTestDynamicBool29",
+          "FFlagFlagRolloutTestStaticBool20",
+          "FFlagFlagRolloutTestStaticBool21",
+          "FFlagFlagRolloutTestStaticBool22",
+          "FFlagFlagRolloutTestStaticBool23",
+          "FFlagFlagRolloutTestStaticBool24",
+          "FFlagFlagRolloutTestStaticBool25",
+          "FFlagFlagRolloutTestStaticBool26",
+          "FFlagFlagRolloutTestStaticBool27",
+          "FFlagFlagRolloutTestStaticBool28",
+          "FFlagFlagRolloutTestStaticBool29"
+        ],
+        "unchanged": 24535
+      }
+    },
+    "Web": {
+      "current": "43fe58723b8e6a24246dc21d8353e5131d9e23792ecdf15772aad296297c3c69",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-027.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-047.js",
+          "assets.create.roblox.com/page-0/script-055.js",
+          "assets.create.roblox.com/page-0/script-060.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 94
+      },
+      "previous": "faed3564502fe8956d1a9d5e97f864ef5a656082ee6aaaaf6486ce37757402a3",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
