@@ -1,0 +1,57 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-55808de4b1914919",
+    "manifestFiles": 18507,
+    "packages": 34,
+    "version": "0.739.0.7390687"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "8975bdbdd19f4cca0326fdfc07720f95ca5f5c1f270dd561ce37f773dad21bbc",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "73241bc2ea491a40a75f9318800972bc2abc0608ca18d77f4269bfaecc0953bb",
+      "semantic": {
+        "added": [],
+        "changed": [
+          {
+            "after": "1bf2295751fb8a18b9a910b23d3343cd24baf1bc",
+            "before": "3d0596d0341398161bc886277e0380d34ca851e5",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-19T19:38:08.677Z",
+            "before": "2026-09-19T03:02:16.352Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagGuacMomentsFeatureList"
+          },
+          {
+            "after": "1bf2295751fb8a18b9a910b23d3343cd24baf1bc",
+            "before": "3d0596d0341398161bc886277e0380d34ca851e5",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-19T19:38:08.677Z",
+            "before": "2026-09-19T03:02:16.352Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [],
+        "unchanged": 24553
+      }
+    }
+  },
+  "schemaVersion": 1
+}

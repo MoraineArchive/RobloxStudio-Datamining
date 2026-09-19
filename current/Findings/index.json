@@ -3874,11 +3874,35 @@
             "list",
             "moments"
           ]
+        },
+        {
+          "after": "False",
+          "before": "True",
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/09/19/20-37-01Z_live-settings",
+          "evidencePath": "2026/09/19/20-37-01Z_live-settings/changes.json",
+          "family": "LiveSettings",
+          "id": "23bc6ed02ff8ade42253f2f7765caf02864575d8f9e87bab31644c87e9018019",
+          "key": "FFlagGuacMomentsFeatureList",
+          "kind": "LiveSettings",
+          "observedAt": "2026-09-19T20:37:01.269Z",
+          "operation": "changed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "guac",
+            "list",
+            "moments"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-09-18T19:59:35.316Z",
+      "lastObservedAt": "2026-09-19T20:37:01.269Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
@@ -3983,6 +4007,13 @@
             "159dadd4db305f5b397905d758ac5a09f1c7515b8bbba2702adf20e9cad55235"
           ],
           "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-09-19T20:37:01.269Z",
+          "signalIds": [
+            "23bc6ed02ff8ade42253f2f7765caf02864575d8f9e87bab31644c87e9018019"
+          ],
+          "type": "boolean-transition"
         }
       ],
       "status": "observed",
