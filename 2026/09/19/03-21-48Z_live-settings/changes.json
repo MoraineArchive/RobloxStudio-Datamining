@@ -1,0 +1,59 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-55808de4b1914919",
+    "manifestFiles": 18507,
+    "packages": 34,
+    "version": "0.739.0.7390687"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "73241bc2ea491a40a75f9318800972bc2abc0608ca18d77f4269bfaecc0953bb",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "b51c178c3d7ef2d82fe50ada675dbdc91548b12e57a7450261122500995bf9fd",
+      "semantic": {
+        "added": [],
+        "changed": [
+          {
+            "after": "3d0596d0341398161bc886277e0380d34ca851e5",
+            "before": "a08045812a7e2a0466efd33fdc65c8803149004f",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-09-19T03:02:16.352Z",
+            "before": "2026-09-19T01:37:10.587Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagEnableFrustumAutomation"
+          },
+          {
+            "after": "3d0596d0341398161bc886277e0380d34ca851e5",
+            "before": "a08045812a7e2a0466efd33fdc65c8803149004f",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-09-19T03:02:16.352Z",
+            "before": "2026-09-19T01:37:10.587Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagEnableFrustumAutomation_Staged"
+        ],
+        "unchanged": 24553
+      }
+    }
+  },
+  "schemaVersion": 1
+}
