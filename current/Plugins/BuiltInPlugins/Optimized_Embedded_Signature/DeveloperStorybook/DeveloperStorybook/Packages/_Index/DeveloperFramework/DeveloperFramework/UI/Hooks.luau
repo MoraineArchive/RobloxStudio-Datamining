@@ -10,7 +10,7 @@ local hooks = {
 	useMenu = require(script.useMenu),
 	useTooltip = require(script.useTooltip),
 	useWidgets = require(script.useWidgets),
-	useDialog = require(script.useDialog),
+	RESTRICTED_useDialog = require(script.RESTRICTED_useDialog),
 	useDialogDetailsAction = require(script.useDialogDetailsAction),
 	useDialogWidget = require(script.useDialogWidget),
 }

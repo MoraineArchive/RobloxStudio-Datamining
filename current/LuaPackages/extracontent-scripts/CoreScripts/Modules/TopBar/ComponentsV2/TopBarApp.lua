@@ -11,6 +11,10 @@ local Presentation = Components.Presentation
 local Chrome = TopBar.Parent.Chrome
 
 local Constants = require(TopBar.Constants)
+local ExperienceAgeRatingPolicy = require(TopBar.ExperienceAgeRatingPolicy)
+local ExperienceAgeRatingBadge = require(CorePackages.Workspace.Packages.InExperienceTopBar.ExperienceAgeRatingBadge)
+local FFlagExperienceAgeRatingBadge =
+	require(CorePackages.Workspace.Packages.InExperienceTopBar).Flags.FFlagExperienceAgeRatingBadge
 
 -- Modules
 local CoreGuiCommon = require(CorePackages.Workspace.Packages.CoreGuiCommon)
@@ -40,6 +44,7 @@ local isInExperienceUIVREnabled =
 local isSpatial = require(CorePackages.Workspace.Packages.AppCommonLib).isSpatial
 local isSideSheetEnabled = require(CorePackages.Workspace.Packages.InExperienceSideSheetUtils.isSideSheetEnabled)
 local FFlagShowGameAgeRating = SharedFlags.FFlagShowGameAgeRating
+local useAgeRatingLayout = FFlagExperienceAgeRatingBadge and FFlagShowGameAgeRating
 local FFlagAppNavMyStatsTab = SharedFlags.FFlagAppNavMyStatsTab
 local InExperienceShop = require(CorePackages.Workspace.Packages.InExperienceShop)
 local FFlagEnableInExperienceShop = SharedFlags.FFlagEnableInExperienceShop
@@ -47,8 +52,9 @@ local FFlagEnableExperienceShopGlobalIcon = InExperienceShop.FFlagEnableExperien
 local FFlagCenterInExperienceShopWindow = InExperienceShop.FFlagCenterInExperienceShopWindow
 local FFlagExperienceShopNewIconography = InExperienceShop.FFlagExperienceShopNewIconography
 local FFlagShowSwitchServerButton = SharedFlags.FFlagShowSwitchServerButton
+local isPioneerLaunch = require(CorePackages.Workspace.Packages.PioneerUtils).isPioneerLaunch
 local shouldAddSwitchServerToSideSheet = isSideSheetEnabled
-	and FFlagShowSwitchServerButton
+	and (FFlagShowSwitchServerButton or isPioneerLaunch())
 local ShopGlobalIcon = InExperienceShop.ShopGlobalIcon
 local FFlagTopBarShopIconV2 = require(TopBar.Flags.FFlagTopBarShopIconV2)
 local ShopIcon
@@ -194,6 +200,12 @@ local function TopBarApp(props: TopBarProps)
 	end
 
 	local unibarMenuRef = React.useRef(nil :: GuiObject?)
+	local spatial = isSpatial()
+	local setSpatial
+	if FFlagExperienceAgeRatingBadge then
+		spatial, setSpatial = React.useState(spatial)
+	end
+	local persistentAgeRating = ExperienceAgeRatingPolicy.isEligible(showGameAgeRating, true, true, spatial)
 	local menuIconRef = React.useRef(nil :: GuiObject?)
 
     local showTopBarSignal = GamepadConnector:getShowTopBar()
@@ -204,6 +216,9 @@ local function TopBarApp(props: TopBarProps)
 			GamepadConnector:connectToTopbar()
 		end
 		local vrEnabledConnection = VRService:GetPropertyChangedSignal("VREnabled"):Connect(function()
+			if FFlagExperienceAgeRatingBadge then
+				setSpatial(isSpatial())
+			end
 			if isSpatial() then
 				GamepadConnector:disconnectFromTopbar()
 			else
@@ -242,6 +257,60 @@ local function TopBarApp(props: TopBarProps)
 		isConfirmationOpen = SignalsReact.useSignalState(getIsConfirmationOpen)
 		setConfirmationOpen = GetSwitchServerStore(false).setConfirmationOpen
 	end
+
+	local topLeftFrame = React.createElement(View, {
+		tag = "anchor-top-left auto-x row gap-small",
+		Size = UDim2.fromOffset(0, topBarButtonHeight),
+		onAbsoluteSizeChanged = if useAgeRatingLayout then nil else onAreaChanged,
+		onAbsolutePositionChanged = if useAgeRatingLayout then nil else onAreaChanged,
+		Position = if useAgeRatingLayout then nil else UDim2.new(0, screenSideOffset, 0, topBarTopMargin),
+		Visible = showTopBar,
+	}, {
+		MenuIcon = if not isSideSheetEnabled then React.createElement(SelectionCursorProvider, {}, {
+				Icon = React.createElement(MenuIcon, {
+					showBadgeOver12 = showGameAgeRating and not persistentAgeRating,
+					menuIconRef = menuIconRef,
+					unibarMenuRef = unibarMenuRef,
+				}),
+			}) else nil,
+		TraversalBackButton = if FFlagAddTraversalBackButton then React.createElement(TraversalBackButton) else nil,
+		UnibarFrame = React.createElement(MenuIconContext.Provider, {
+			value = {
+				menuIconRef = menuIconRef,
+				replacesAgeRating = persistentAgeRating,
+			},
+		}, {
+			React.createElement(Unibar, {
+				layoutOrder = 2,
+				onMinWidthChanged = function() end,
+				onAreaChanged = function() end,
+				menuRef = unibarMenuRef
+			}),
+		}),
+		ShopIcon = if FFlagTopBarShopIconV2 and FFlagEnableExperienceShopGlobalIcon
+			then React.createElement(ShopIcon, {
+				buttonSize = topBarButtonHeight,
+				layoutOrder = 3,
+			})
+			else nil,
+		ShopGlobalIcon = if not FFlagTopBarShopIconV2
+				and FFlagEnableExperienceShopGlobalIcon
+				and shopGlobalIconEnabled
+				and ShopGlobalIcon ~= nil
+			then React.createElement(ShopGlobalIcon, {
+				buttonSize = topBarButtonHeight,
+				layoutOrder = 3,
+				showStatusIndicator = shopGlobalStatusIndicatorEnabled,
+				onActivated = onShopGlobalIconActivated,
+				isActive = shopGlobalIconIsActive,
+				icon = (if not FFlagExperienceShopNewIconography
+						and CommonIcon
+						and shopIsActiveMappedSignal
+					then CommonIcon("BuildingStore", nil, shopIsActiveMappedSignal)
+					else nil) :: React.Node?,
+			})
+			else nil,
+	})
 
 	return React.createElement("ScreenGui", {
 		IgnoreGuiInset = true,
@@ -291,58 +360,23 @@ local function TopBarApp(props: TopBarProps)
 		TopBarFrame = React.createElement(View, {
 			Size = UDim2.new(1, 0, 0, topBarHeight),
 		}, {
-			TopLeftFrame = React.createElement(View, {
-				tag = "anchor-top-left auto-x row gap-small",
-				Size = UDim2.fromOffset(0, topBarButtonHeight),
-				onAbsoluteSizeChanged = onAreaChanged,
-				onAbsolutePositionChanged = onAreaChanged,
-				Position = UDim2.new(0, screenSideOffset, 0, topBarTopMargin),
-				Visible = showTopBar,
-			}, {
-				MenuIcon = if not isSideSheetEnabled then React.createElement(SelectionCursorProvider, {}, {
-					Icon = React.createElement(MenuIcon, {
-						showBadgeOver12 = showGameAgeRating,
-						menuIconRef = menuIconRef,
-						unibarMenuRef = unibarMenuRef,
-					}),
-				}) else nil,
-				TraversalBackButton = if FFlagAddTraversalBackButton then React.createElement(TraversalBackButton) else nil,
-				UnibarFrame = React.createElement(MenuIconContext.Provider, {
-					value = {
-						menuIconRef = menuIconRef,
-					},
+			TopLeftFrame = if useAgeRatingLayout
+				then React.createElement(View, {
+					tag = "row align-y-center gap-small auto-x",
+					Size = UDim2.fromOffset(0, topBarButtonHeight),
+					Position = UDim2.new(0, screenSideOffset, 0, topBarTopMargin),
+					onAbsoluteSizeChanged = onAreaChanged,
+					onAbsolutePositionChanged = onAreaChanged,
 				}, {
-					React.createElement(Unibar, {
-						layoutOrder = 2,
-						onMinWidthChanged = function() end,
-						onAreaChanged = function() end,
-						menuRef = unibarMenuRef
-					}),
-				}),
-				ShopIcon = if FFlagTopBarShopIconV2 and FFlagEnableExperienceShopGlobalIcon
-					then React.createElement(ShopIcon, {
-						buttonSize = topBarButtonHeight,
-						layoutOrder = 3,
-					})
-					else nil,
-				ShopGlobalIcon = if not FFlagTopBarShopIconV2
-						and FFlagEnableExperienceShopGlobalIcon
-						and shopGlobalIconEnabled
-						and ShopGlobalIcon ~= nil
-					then React.createElement(ShopGlobalIcon, {
-						buttonSize = topBarButtonHeight,
-						layoutOrder = 3,
-						showStatusIndicator = shopGlobalStatusIndicatorEnabled,
-						onActivated = onShopGlobalIconActivated,
-						isActive = shopGlobalIconIsActive,
-						icon = (if not FFlagExperienceShopNewIconography
-								and CommonIcon
-								and shopIsActiveMappedSignal
-							then CommonIcon("BuildingStore", nil, shopIsActiveMappedSignal)
-							else nil) :: React.Node?,
-					})
-					else nil,
-			}),
+					Controls = topLeftFrame,
+					AgeRating = if persistentAgeRating
+						then React.createElement(ExperienceAgeRatingBadge, {
+							universeId = tostring(game.GameId),
+							layoutOrder = 1,
+						})
+						else nil,
+				})
+				else topLeftFrame,
 			TopRightFrame = React.createElement(View, {
 				tag = "anchor-top-right auto-x",
 				Size = UDim2.fromOffset(0, topBarButtonHeight),

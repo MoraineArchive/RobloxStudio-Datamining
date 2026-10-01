@@ -5,13 +5,11 @@ local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 local getFIntUGCValidationDynamicHeadMinimumQualityPercent =
 	require(root.flags.getFIntUGCValidationDynamicHeadMinimumQualityPercent)
 
-local getFFlagUGCValidationAddGeometryToExports = require(root.flags.getFFlagUGCValidationAddGeometryToExports)
 local getFFlagUGCValidateAQScoreWarnings = require(root.flags.getFFlagUGCValidateAQScoreWarnings)
 
 local Measure_Dynamic_Head = {}
 
 Measure_Dynamic_Head.categories = { ValidationEnums.UploadCategory.DYNAMIC_HEAD }
-Measure_Dynamic_Head.fflag = require(root.flags.getFFlagUGCValidateIsDynamicHead)
 Measure_Dynamic_Head.shadowFlag = require(root.flags.getFFlagUGCValidationShadowIsDynamicHead)
 
 Measure_Dynamic_Head.knownAqsUserErrors = {
@@ -29,13 +27,8 @@ local head_metric: { [string]: string } = {
 }
 
 Measure_Dynamic_Head.run = function(reporter: Types.ValidationReporter, data: Types.SharedData)
-	local dynamicHeadScores = nil
-	if getFFlagUGCValidationAddGeometryToExports() then
-		dynamicHeadScores = data.aqsSummaryData.Measure_Dynamic_Head.Head
-			or data.aqsSummaryData.Measure_Dynamic_Head.Head_Geo
-	else
-		dynamicHeadScores = data.aqsSummaryData.Measure_Dynamic_Head.Head
-	end
+	local dynamicHeadScores = data.aqsSummaryData.Measure_Dynamic_Head.Head
+		or data.aqsSummaryData.Measure_Dynamic_Head.Head_Geo
 
 	if dynamicHeadScores == nil then
 		error("Measure_Dynamic_Head: AQS summary missing required fields")
@@ -55,7 +48,11 @@ Measure_Dynamic_Head.run = function(reporter: Types.ValidationReporter, data: Ty
 			and tonumber(dynamicHeadScores.score) ~= 100
 		then
 			reporter:warn(ErrorSourceStrings.Keys.AQSWarn_DynamicHead, {
-				score = tostring(math.floor(tonumber(dynamicHeadScores.score) or 0)),
+				left_eye_close = string.format("%.2f", tonumber(dynamicHeadScores.left_eye_close) or 0),
+				right_eye_close = string.format("%.2f", tonumber(dynamicHeadScores.right_eye_close) or 0),
+				mouth_open = string.format("%.2f", tonumber(dynamicHeadScores.mouth_open) or 0),
+				is_happy = string.format("%.2f", tonumber(dynamicHeadScores.is_happy) or 0),
+				is_sad = string.format("%.2f", tonumber(dynamicHeadScores.is_sad) or 0),
 			})
 		end
 	end

@@ -5,22 +5,16 @@ local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 local CurveAnimationHierarchyUtils = require(root.util.CurveAnimationHierarchyUtils)
 
-local getFFlagUGCValidateMigrateCurveAnim = require(root.flags.getFFlagUGCValidateMigrateCurveAnim)
-local getFFlagUGCValidateDuplicatesInAnimation = require(root.flags.getFFlagUGCValidateDuplicatesInAnimation)
 local getFFlagUGCValidateMaxTotalInstances = require(root.flags.getFFlagUGCValidateMaxTotalInstances)
-local getFFlagUGCValidationAnimationPackSupport = require(root.flags.getFFlagUGCValidationAnimationPackSupport)
 local getFFlagUGCValidateEmotesBonesAllowed = require(root.flags.getFFlagUGCValidateEmotesBonesAllowed)
 
 local CurveAnimHierarchyCorrect = {}
 
-CurveAnimHierarchyCorrect.categories = { ValidationEnums.UploadCategory.EMOTE_ANIMATION }
-if getFFlagUGCValidationAnimationPackSupport() then
-	table.insert(CurveAnimHierarchyCorrect.categories, ValidationEnums.UploadCategory.ANIMATION)
-end
+CurveAnimHierarchyCorrect.categories =
+	{ ValidationEnums.UploadCategory.EMOTE_ANIMATION, ValidationEnums.UploadCategory.ANIMATION }
 CurveAnimHierarchyCorrect.requiredData = {
 	ValidationEnums.SharedDataMember.curveAnimations,
 }
-CurveAnimHierarchyCorrect.fflag = getFFlagUGCValidateMigrateCurveAnim
 CurveAnimHierarchyCorrect.expectedFailures = {}
 CurveAnimHierarchyCorrect.prereqTests = { ValidationEnums.ValidationModule.CurveAnimDataAvailable }
 
@@ -48,51 +42,36 @@ CurveAnimHierarchyCorrect.run = function(reporter: Types.ValidationReporter, dat
 			end
 		end
 
-		if getFFlagUGCValidateDuplicatesInAnimation() then
-			if numRoots == 0 then
-				reporter:fail(ErrorSourceStrings.Keys.CurveAnim_NoBodyRoot)
-				return
-			end
+		if numRoots == 0 then
+			reporter:fail(ErrorSourceStrings.Keys.CurveAnim_NoBodyRoot)
+			return
 		end
 
 		for _, child in curveAnim:GetChildren() do
 			if child:IsA("MarkerCurve") or child:IsA("AnimationRigData") then
-				if getFFlagUGCValidateDuplicatesInAnimation() then
-					if #child:GetChildren() > 0 then
-						reporter:fail(ErrorSourceStrings.Keys.CurveAnim_ChildrenOnMarkerOrRig)
-						return
-					end
+				if #child:GetChildren() > 0 then
+					reporter:fail(ErrorSourceStrings.Keys.CurveAnim_ChildrenOnMarkerOrRig)
+					return
 				end
 				continue
 			end
 
 			if child:IsA("Folder") then
-				if getFFlagUGCValidateDuplicatesInAnimation() then
-					if not CurveAnimationHierarchyUtils.isBodyPartFolderNameValid(child.Name) then
-						if not getFFlagUGCValidateEmotesBonesAllowed() then
-							reporter:fail(ErrorSourceStrings.Keys.CurveAnim_UnexpectedChild, {
-								childName = child.Name,
-							})
-							return
-						end
+				if not CurveAnimationHierarchyUtils.isBodyPartFolderNameValid(child.Name) then
+					if not getFFlagUGCValidateEmotesBonesAllowed() then
+						reporter:fail(ErrorSourceStrings.Keys.CurveAnim_UnexpectedChild, {
+							childName = child.Name,
+						})
+						return
 					end
+				end
 
-					if not getFFlagUGCValidateEmotesBonesAllowed() then
-						if not CurveAnimationHierarchyUtils.validateCurveAnimationBodyPartFolder(child :: Folder) then
-							reporter:fail(ErrorSourceStrings.Keys.CurveAnim_InvalidBodyPartHierarchy, {
-								folderName = child.Name,
-							})
-							return
-						end
-					end
-				else
-					if not getFFlagUGCValidateEmotesBonesAllowed() then
-						if not CurveAnimationHierarchyUtils.validateCurveAnimationBodyPartFolder(child :: Folder) then
-							reporter:fail(ErrorSourceStrings.Keys.CurveAnim_InvalidBodyPartHierarchy, {
-								folderName = child.Name,
-							})
-							return
-						end
+				if not getFFlagUGCValidateEmotesBonesAllowed() then
+					if not CurveAnimationHierarchyUtils.validateCurveAnimationBodyPartFolder(child :: Folder) then
+						reporter:fail(ErrorSourceStrings.Keys.CurveAnim_InvalidBodyPartHierarchy, {
+							folderName = child.Name,
+						})
+						return
 					end
 				end
 				continue

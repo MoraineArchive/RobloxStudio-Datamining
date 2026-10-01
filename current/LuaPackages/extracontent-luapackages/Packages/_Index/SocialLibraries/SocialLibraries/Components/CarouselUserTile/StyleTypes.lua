@@ -1,10 +1,10 @@
 export type FontType = {
 	RelativeSize: number,
 	RelativeMinSize: number,
-	Font: Enum.Font,
+	Font: Font | Enum.Font,
 }
 
-export type Font = {
+export type FontStyle = {
 	BaseSize: number,
 	[string]: FontType,
 }

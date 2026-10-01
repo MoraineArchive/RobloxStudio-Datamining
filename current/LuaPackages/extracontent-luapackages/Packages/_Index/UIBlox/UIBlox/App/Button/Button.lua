@@ -282,6 +282,9 @@ local ButtonForwardRef = React.forwardRef(function(buttonProps, ref)
 				Position = props.position,
 				LayoutOrder = props.layoutOrder,
 
+				onAbsoluteSizeChanged = props[React.Change.AbsoluteSize],
+				onAbsolutePositionChanged = props[React.Change.AbsolutePosition],
+
 				Selectable = props.Selectable,
 				NextSelectionUp = props.NextSelectionUp,
 				NextSelectionDown = props.NextSelectionDown,

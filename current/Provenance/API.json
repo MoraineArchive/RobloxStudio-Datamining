@@ -1,38 +1,38 @@
 {
   "hashes": {
-    "API-Dump.json": "c8f30300de208a3f96eb2fdabba5116c22b38cfe50c42ebed24356c2a06e9e86",
-    "Full-API-Dump.json": "bd437ee320646adf363e8ddf693d06b6a4853ff9a57fc1fef4f4f5fd37443e67",
-    "api-diff.json": "9206efa27557c3541a04bfe650ea3816447f4f7056d5272a5d2956ca058af8f1",
-    "metadata.json": "1037d7f59bd3da2503d95baf31358e5c9784bca0c8fce63a504b4cf874386c54"
+    "API-Dump.json": "fd0ee674bf073955e902a51733d46764027a595a30590f034f13f6d84ecdac2d",
+    "Full-API-Dump.json": "22c88c8038aa582c3e8de651262330132193f34e73781af9672c400eb5bd84ec",
+    "api-diff.json": "2379fc09c6a45b417a808345f1c3bdabd1a2212eca7015a95cf891a561484fe7",
+    "metadata.json": "82607a6dbf6595e2c98617510ade29b05e2f545709f9dd5da72bacfdcfc77e68"
   },
-  "id": "816a88639be494a6796e2c0e56654c41d4f59f83be1f8104b7d977b7470d5e73",
+  "id": "51b18167096aa4fd4d36da0bd46cfa94b243714d705d88eb5382b631a7108104",
   "observationMode": "live",
-  "observedAt": "2026-09-15T16:22:57.088Z",
+  "observedAt": "2026-10-01T00:01:13.306Z",
   "provenance": [
     {
-      "buildGuid": "version-55808de4b1914919",
-      "bytes": 7340886,
-      "sha256": "3e8b3745b4590296d7f81cf999c39510465b8f1e8fbdcc87eed0af0b829d86f8",
+      "buildGuid": "version-76e1a02649ad4f35",
+      "bytes": 7389301,
+      "sha256": "6613902ea088d7a44d734e86ecf1331d69b42ca1b52a49e8139771d1857e6581",
       "sourceType": "official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-55808de4b1914919-API-Dump.json"
+      "sourceUrl": "https://setup.rbxcdn.com/version-76e1a02649ad4f35-API-Dump.json"
     },
     {
-      "buildGuid": "version-55808de4b1914919",
-      "bytes": 8299379,
-      "sha256": "68b0191847f6298cd7a6d93eab9f334c2377b5d416737a1ccca7ee88b0a6a4e6",
+      "buildGuid": "version-76e1a02649ad4f35",
+      "bytes": 8356896,
+      "sha256": "53eec161c347c81c143beac0f604a1a9a9d3e3d5854feee66a17f84428273660",
       "sourceType": "official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-55808de4b1914919-Full-API-Dump.json"
+      "sourceUrl": "https://setup.rbxcdn.com/version-76e1a02649ad4f35-Full-API-Dump.json"
     }
   ],
-  "sequence": 6,
+  "sequence": 7,
   "status": "available",
   "summary": {
-    "classes": 920,
+    "classes": 926,
     "engineRevision": 1,
-    "enums": 636,
+    "enums": 641,
     "fullStatus": "available",
-    "guid": "version-55808de4b1914919",
-    "members": 7747
+    "guid": "version-76e1a02649ad4f35",
+    "members": 7801
   },
   "surface": "API",
   "target": "WindowsStudio64"

@@ -31,7 +31,6 @@ Measure_Cage_Mesh_Distance.run = function(reporter: Types.ValidationReporter, da
 		end
 		if getFFlagUGCValidateAQScoreWarnings() and summary.score ~= nil and tonumber(summary.score) ~= 100 then
 			reporter:warn(ErrorSourceStrings.Keys.AQSWarn_CageMeshDistance, {
-				score = tostring(math.floor(tonumber(summary.score) or 0)),
 				max_distance = summary.max_distance or "unknown",
 				negative_sdf_percent = string.format("%.2f", (tonumber(summary.negative_sdf_percent) or 0) * 100),
 			})

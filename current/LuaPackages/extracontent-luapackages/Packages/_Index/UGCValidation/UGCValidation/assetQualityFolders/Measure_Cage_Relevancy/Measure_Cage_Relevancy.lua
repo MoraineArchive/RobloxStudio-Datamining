@@ -25,7 +25,6 @@ Measure_Cage_Relevancy.run = function(reporter: Types.ValidationReporter, data: 
 		end
 		if getFFlagUGCValidateAQScoreWarnings() and summary.score ~= nil and tonumber(summary.score) ~= 100 then
 			reporter:warn(ErrorSourceStrings.Keys.AQSWarn_CageRelevancy, {
-				score = tostring(math.floor(tonumber(summary.score) or 0)),
 				irrelevant_percent = string.format(
 					"%.2f",
 					100 - (tonumber(summary.outer_cage_face_relevant_percent) or 0) * 100

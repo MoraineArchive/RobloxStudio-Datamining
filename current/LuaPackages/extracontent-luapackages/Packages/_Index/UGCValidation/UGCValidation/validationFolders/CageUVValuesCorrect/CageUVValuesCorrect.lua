@@ -16,8 +16,6 @@ local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 
 local WRAP_TARGET_CAGE_REFERENCE_VALUES = require(root.WrapTargetCageUVReferenceValues)
 
-local getFFlagUGCValidateMigrateCageUV = require(root.flags.getFFlagUGCValidateMigrateCageUV)
-
 local CageUVValuesCorrect = {}
 
 CageUVValuesCorrect.categories = {
@@ -30,8 +28,6 @@ CageUVValuesCorrect.requiredData = {
 }
 
 CageUVValuesCorrect.conditionalData = {}
-
-CageUVValuesCorrect.fflag = getFFlagUGCValidateMigrateCageUV
 
 CageUVValuesCorrect.expectedFailures = {}
 

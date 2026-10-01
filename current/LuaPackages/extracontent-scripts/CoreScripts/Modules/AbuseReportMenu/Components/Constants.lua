@@ -3,7 +3,7 @@ local Types = require(root.Components.Types)
 
 local Constants = {}
 
-Constants.AbuseReportMenuRootName = "AbuseReportMenuNewRoot"
+Constants.LegacyAbuseReportMenuRootName = "LegacyAbuseReportMenuRoot"
 
 Constants.AbuseReportMenuPlaceholderFrame = "AbuseReportMenuPlaceholderFrame"
 

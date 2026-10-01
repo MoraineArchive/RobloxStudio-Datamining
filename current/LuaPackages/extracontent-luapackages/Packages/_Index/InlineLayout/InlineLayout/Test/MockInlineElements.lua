@@ -29,7 +29,7 @@ function MockInlineElement:render(id: string | number, layoutOrder: number)
 	return React.createElement("TextLabel", {
 		key = tostring(layoutOrder),
 		LayoutOrder = layoutOrder,
-		Size = UDim2.new(0, self.width, 0, 20),
+		Size = UDim2.fromOffset(self.width, 20),
 		Text = `{id}`, -- render id as text so its queryable
 	})
 end
@@ -71,7 +71,7 @@ function SplittableMockInlineElement:render(id: string | number, layoutOrder: nu
 	return React.createElement("TextLabel", {
 		key = tostring(layoutOrder),
 		LayoutOrder = layoutOrder,
-		Size = UDim2.new(0, self.width, 0, 20),
+		Size = UDim2.fromOffset(self.width, 20),
 		Text = `{id}`, -- render id as text so its queryable
 	})
 end

@@ -5,15 +5,13 @@ local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local CollectionService = game:GetService("CollectionService")
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 
-local getFFlagUGCValidateMigrateSchemaProperties = require(root.flags.getFFlagUGCValidateMigrateSchemaProperties)
 local getFFlagUGCValidateNoExtraTagsRequireHsrAssets =
 	require(root.flags.getFFlagUGCValidateNoExtraTagsRequireHsrAssets)
 
 local NoExtraTags = {}
 
 NoExtraTags.categories = Constants.AllAssetUploadCategories
-NoExtraTags.requiredData = if getFFlagUGCValidateMigrateSchemaProperties()
-		and getFFlagUGCValidateNoExtraTagsRequireHsrAssets()
+NoExtraTags.requiredData = if getFFlagUGCValidateNoExtraTagsRequireHsrAssets()
 	then {
 		ValidationEnums.SharedDataMember.rootInstance,
 		ValidationEnums.SharedDataMember.hsrAssets,
@@ -35,21 +33,19 @@ NoExtraTags.run = function(reporter: Types.ValidationReporter, data: Types.Share
 	local taggedPaths: { string } = {}
 	collectTaggedPaths(data.rootInstance, taggedPaths)
 
-	if getFFlagUGCValidateMigrateSchemaProperties() then
-		if getFFlagUGCValidateNoExtraTagsRequireHsrAssets() then
-			for _, hsrCandidates in data.hsrAssets do
-				for _, hsrAsset in hsrCandidates do
-					collectTaggedPaths(hsrAsset, taggedPaths)
-				end
+	if getFFlagUGCValidateNoExtraTagsRequireHsrAssets() then
+		for _, hsrCandidates in data.hsrAssets do
+			for _, hsrAsset in hsrCandidates do
+				collectTaggedPaths(hsrAsset, taggedPaths)
 			end
-		else
-			local hsrAssets = data.hsrAssets
-			if type(hsrAssets) == "table" then
-				for _, hsrCandidates in hsrAssets do
-					if type(hsrCandidates) == "table" then
-						for _, hsrAsset in hsrCandidates do
-							collectTaggedPaths(hsrAsset, taggedPaths)
-						end
+		end
+	else
+		local hsrAssets = data.hsrAssets
+		if type(hsrAssets) == "table" then
+			for _, hsrCandidates in hsrAssets do
+				if type(hsrCandidates) == "table" then
+					for _, hsrAsset in hsrCandidates do
+						collectTaggedPaths(hsrAsset, taggedPaths)
 					end
 				end
 			end

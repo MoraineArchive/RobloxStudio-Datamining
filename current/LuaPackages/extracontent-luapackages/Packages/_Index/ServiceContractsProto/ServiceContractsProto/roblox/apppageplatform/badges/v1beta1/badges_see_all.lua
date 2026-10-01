@@ -19,6 +19,8 @@ type _Messages = {
 }
 local messages: _Messages = {} :: _Messages
 
+local _roblox_apppageplatform_shared_v1beta1_client_capabilities =
+	require(script.Parent.Parent.Parent.shared.v1beta1.client_capabilities)
 local _roblox_apppageplatform_shared_v1beta1_hydration_content =
 	require(script.Parent.Parent.Parent.shared.v1beta1.hydration_content)
 local _roblox_apppageplatform_shared_v1beta1_template_entry =
@@ -43,6 +45,7 @@ type _BadgesSeeAllRequestFields = {
 	page_size: number,
 	cursor: string,
 	page_entry_format: _roblox_apppageplatform_shared_v1beta1_page_entry_content.PageEntryFormat,
+	client_capabilities: _roblox_apppageplatform_shared_v1beta1_client_capabilities.ClientCapabilities?,
 }
 
 type _BadgesSeeAllRequestPartialFields = {
@@ -51,6 +54,7 @@ type _BadgesSeeAllRequestPartialFields = {
 	page_size: number?,
 	cursor: string?,
 	page_entry_format: _roblox_apppageplatform_shared_v1beta1_page_entry_content.PageEntryFormat?,
+	client_capabilities: _roblox_apppageplatform_shared_v1beta1_client_capabilities.ClientCapabilities?,
 }
 
 export type BadgesSeeAllRequest = typeof(setmetatable({} :: _BadgesSeeAllRequestFields, {} :: _BadgesSeeAllRequestImpl))
@@ -299,6 +303,9 @@ do
 					"Enum has no 0 default"
 				)
 				else data.page_entry_format,
+			client_capabilities = if data == nil or data.client_capabilities == nil
+				then nil
+				else data.client_capabilities,
 		}, _BadgesSeeAllRequestImpl :: _BadgesSeeAllRequestImpl)
 	end
 
@@ -342,6 +349,12 @@ do
 					self.page_entry_format :: any
 				)
 			)
+		end
+
+		if self.client_capabilities ~= nil then
+			local encoded = self.client_capabilities:encode()
+			output, cursor = proto.writeTag(output, cursor, 6, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
 		end
 
 		local shrunkBuffer = buffer.create(cursor)
@@ -390,6 +403,12 @@ do
 					local value
 					value, cursor = proto.readBuffer(input, cursor)
 					self.cursor = buffer.tostring(value)
+					continue
+				elseif field == 6 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.client_capabilities =
+						_roblox_apppageplatform_shared_v1beta1_client_capabilities.ClientCapabilities.decode(value)
 					continue
 				end
 
@@ -449,6 +468,10 @@ do
 				)
 		end
 
+		if self.client_capabilities ~= nil then
+			output.clientCapabilities = self.client_capabilities:jsonEncode()
+		end
+
 		return output
 	end
 
@@ -501,6 +524,20 @@ do
 				else (_roblox_apppageplatform_shared_v1beta1_page_entry_content.PageEntryFormat.fromName(
 					input.pageEntryFormat
 				) or input.pageEntryFormat)
+		end
+
+		if input.client_capabilities ~= nil then
+			self.client_capabilities =
+				_roblox_apppageplatform_shared_v1beta1_client_capabilities.ClientCapabilities.jsonDecode(
+					input.client_capabilities
+				)
+		end
+
+		if input.clientCapabilities ~= nil then
+			self.client_capabilities =
+				_roblox_apppageplatform_shared_v1beta1_client_capabilities.ClientCapabilities.jsonDecode(
+					input.clientCapabilities
+				)
 		end
 
 		return self

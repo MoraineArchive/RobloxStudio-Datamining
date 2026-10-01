@@ -15,7 +15,10 @@ local SharedFlags = require(CorePackages.Workspace.Packages.SharedFlags)
 local FStringAgeCheckAmpFeature = SharedFlags.FStringLuaAppPlayButtonAgeCheckAmpFeatureName
 local FStringAgeCheckAmpNamespace = SharedFlags.FStringLuaAppPlayButtonAgeCheckAmpNameSpace
 local FFlagConnectionUpsellAnalytics = SharedFlags.FFlagConnectionUpsellAnalytics
+local FFlagPioneerLeaveOnInExpFaeDownAge = SharedFlags.FFlagPioneerLeaveOnInExpFaeDownAge
 local Url = require(CorePackages.Workspace.Packages.CoreScriptsCommon).Url
+local maybeLeavePioneerOnFaeDownAge =
+	require(CorePackages.Workspace.Packages.PioneerUtils.maybeLeavePioneerOnFaeDownAge)
 
 -- { universeId, experienceManagementAction } is passed via recourseData (becomes
 -- VPCUpsellContainer's requestDetails), not extraParameters.
@@ -222,14 +225,38 @@ local function openWizardThenReconnect(
 
 	-- pcall keeps wizard render errors from tearing down CoreScript init.
 	local renderOk = pcall(function()
-		AmpUpsell.InExpAmpWizardController.OpenAmpWizardContainerInExp(featureName, function(accessResponse)
-			if accessResponse == AmpUpsell.AmpEnums.AccessResponseEnum.Granted then
-				logTelemetry(eventConfig, "AmpWizardGrantedReconnect")
-				reconnectFunction()
-			else
-				logTelemetry(eventConfig, "AmpWizardNotGranted")
-			end
-		end, recourseData, eventCtx, extraParameters, namespaceName, apolloClient, wizardDisplayOrder, true)
+		AmpUpsell.InExpAmpWizardController.OpenAmpWizardContainerInExp(
+			featureName,
+			function(accessResponse, actionsTaken)
+				local granted = accessResponse == AmpUpsell.AmpEnums.AccessResponseEnum.Granted
+				if granted then
+					logTelemetry(eventConfig, "AmpWizardGrantedReconnect")
+					if not FFlagPioneerLeaveOnInExpFaeDownAge then
+						reconnectFunction()
+					end
+				else
+					logTelemetry(eventConfig, "AmpWizardNotGranted")
+				end
+
+				if FFlagPioneerLeaveOnInExpFaeDownAge then
+					local AmpEnums = AmpUpsell.AmpEnums
+					local ageEstimationSucceeded = actionsTaken ~= nil
+						and actionsTaken[AmpEnums.ActionTypeEnum.AgeEstimation] == AmpEnums.ActionStatusEnum.Success
+					maybeLeavePioneerOnFaeDownAge(ageEstimationSucceeded, function()
+						if granted then
+							reconnectFunction()
+						end
+					end)
+				end
+			end,
+			recourseData,
+			eventCtx,
+			extraParameters,
+			namespaceName,
+			apolloClient,
+			wizardDisplayOrder,
+			true
+		)
 	end)
 
 	if not renderOk then

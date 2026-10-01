@@ -60,8 +60,6 @@ local Cryo = require(Framework.Parent.Cryo)
 local ContextServices = require(Framework.UI.ContextServices)
 local withContext = ContextServices.withContext
 local Pane = require(script.Parent.Pane)
-local getFFlagDevFrameworkKeyboardNavComponentChanges =
-	require(Framework.SharedFlags.getFFlagDevFrameworkKeyboardNavComponentChanges)
 local prioritize = Util.prioritize
 local Typecheck = require(Framework.Util.Typecheck)
 
@@ -194,9 +192,7 @@ function ScrollingFrame:init()
 				AutomaticCanvasSize = if supportsStyleSheets and not props.CanvasSize
 					then Enum.AutomaticSize.XY
 					else props.AutomaticCanvasSize,
-				Selectable = if getFFlagDevFrameworkKeyboardNavComponentChanges()
-					then (if props.Selectable == nil then false else props.Selectable)
-					else nil,
+				Selectable = if props.Selectable == nil then false else props.Selectable,
 				Size = size,
 				ForwardRef = Cryo.None,
 				[Roact.Children] = Cryo.None,

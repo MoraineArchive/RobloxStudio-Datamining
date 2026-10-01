@@ -15,6 +15,7 @@ local DEFAULT_DELAY_TIME = 0.15
 local DISABLED_TRANSPARENCY = 0.5
 local SHADOW_IMAGE = "component_assets/dropshadow_17_8"
 local SHADOW_SIZE = 16
+local PLUGIN_SHADOW_SIZE = 4
 
 local INPUT_PLACEMENT_TO_LABEL_ALIGNMENT: { [InputPlacement]: Enum.HorizontalAlignment } = {
 	[InputPlacement.Start] = Enum.HorizontalAlignment.Right,
@@ -46,6 +47,7 @@ return {
 	TOOLTIP_MAX_WIDTH = 280,
 	SHADOW_IMAGE = SHADOW_IMAGE,
 	SHADOW_SIZE = SHADOW_SIZE,
+	PLUGIN_SHADOW_SIZE = PLUGIN_SHADOW_SIZE,
 	MODAL = {
 		-- Prevents the modal container itself from being selectable
 		DISABLE_SELECTION = {

@@ -195,7 +195,7 @@ function PlayerDropDown:createReportButton()
 				local InGameMenu = require(RobloxGui.Modules.InGameMenuInit)
 				InGameMenu.openReportDialog(selectedPlayer, self.__componentName)
 			else
-				local ReportAbuseMenu = require(RobloxGui.Modules.Settings.Pages.ReportAbuseMenuNewContainerPage)
+				local ReportAbuseMenu = require(RobloxGui.Modules.Settings.Pages.ReportAbuseMenuContainerPage)
 				ReportAbuseMenu:ReportPlayer(selectedPlayer, self.__componentName)
 				self.props.closeDropDown()
 			end

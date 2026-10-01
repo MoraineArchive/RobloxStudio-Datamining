@@ -1,8 +1,3 @@
-local Framework = script.Parent.Parent
-
-local getFFlagDevFrameworkMemStorageServiceMocks =
-	require(Framework.SharedFlags.getFFlagDevFrameworkMemStorageServiceMocks)
-
 local strict = require(script.Parent.Parent.Util.strict)
 
 return strict({
@@ -16,9 +11,7 @@ return strict({
 	MockMarketplaceService = require(script.MockMarketplaceService),
 	MockMaterialGenerationService = require(script.MockMaterialGenerationService),
 	MockMaterialService = require(script.MockMaterialService),
-	MockMemStorageService = if getFFlagDevFrameworkMemStorageServiceMocks()
-		then require(script.MockMemStorageService)
-		else nil,
+	MockMemStorageService = require(script.MockMemStorageService),
 	MockMouse = require(script.MockMouse),
 	MockPlugin = require(script.MockPlugin),
 	MockPluginToolbar = require(script.MockPluginToolbar),

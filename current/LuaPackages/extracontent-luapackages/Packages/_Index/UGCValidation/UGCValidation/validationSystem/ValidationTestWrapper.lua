@@ -22,7 +22,6 @@ local FetchAllDesiredData = require(root.validationSystem.dataFetchModules.Fetch
 local ValidationReporter = require(root.validationSystem.ValidationReporter)
 local getFFlagDebugUGCValidationPrintNewStructureResults =
 	require(root.flags.getFFlagDebugUGCValidationPrintNewStructureResults)
-local getFFlagUGCValidateMigrateSchemaProperties = require(root.flags.getFFlagUGCValidateMigrateSchemaProperties)
 local getFFlagUGCValidationFetchErrorMethod = require(root.flags.getFFlagUGCValidationFetchErrorMethod)
 local ValidateConstants = require(root.validationSystem.ValidationConstants)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
@@ -137,7 +136,7 @@ local function ValidationTestWrapper(
 
 	if not success then
 		-- forceError sentinel: re-raise so it escapes ValidationManager.
-		if getFFlagUGCValidateMigrateSchemaProperties() and type(issues) == "table" and issues.__forceError then
+		if type(issues) == "table" and issues.__forceError then
 			error(issues.message, 0)
 		end
 		-- fetchError sentinel: backend re-raises so RCC reschedules; Studio/IEC reports as err.

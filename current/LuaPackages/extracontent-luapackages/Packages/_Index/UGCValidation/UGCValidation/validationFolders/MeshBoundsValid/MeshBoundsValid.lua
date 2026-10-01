@@ -14,8 +14,6 @@ local isMeshPartAccessory = require(root.util.isMeshPartAccessory)
 local getFFlagUGCValidateMeshMaxScale = require(root.flags.getFFlagUGCValidateMeshMaxScale)
 local getFIntUGCValidateMeshCenteringHundredsThreshold =
 	require(root.flags.getFIntUGCValidateMeshCenteringHundredsThreshold)
-local getFFlagUGCValidateMigrateMeshGeometry = require(root.flags.getFFlagUGCValidateMigrateMeshGeometry)
-
 local FFlagLegacyAccessoryCheckAvatarPartScaleType =
 	game:DefineFastFlag("LegacyAccessoryCheckAvatarPartScaleType", false)
 local FFlagMeshpartAccessoryCheckAvatarPartScaleType =
@@ -28,7 +26,6 @@ local DEFAULT_OFFSET = Vector3.new(0, 0, 0)
 
 local MeshBoundsValid = {}
 
-MeshBoundsValid.fflag = getFFlagUGCValidateMigrateMeshGeometry
 MeshBoundsValid.categories = {
 	ValidationEnums.UploadCategory.LAYERED_CLOTHING,
 	ValidationEnums.UploadCategory.RIGID_ACCESSORY,
@@ -53,7 +50,7 @@ end
 MeshBoundsValid.run = function(reporter: Types.ValidationReporter, data: Types.SharedData)
 	local instance = data.rootInstance
 	local assetTypeEnum = data.uploadEnum.assetType
-	local isBackend = data.consumerConfig.consumerEnv == ValidationEnums.ConsumerEnv.Backend
+	local isBackend = data.consumerConfig.validationEnv == ValidationEnums.ValidationEnv.Backend
 
 	local assetInfo = Constants.ASSET_TYPE_INFO[assetTypeEnum]
 	if not assetInfo then
@@ -188,7 +185,7 @@ MeshBoundsValid.run = function(reporter: Types.ValidationReporter, data: Types.S
 		return
 	end
 
-	-- Mesh centering check (skip for IEC consumers, matching legacy allowEditableInstances behavior)
+	-- Mesh centering check: lifecycle-gated on consumerEnv (IEC-origin reuses live editables not yet centered — legacy allowEditableInstances skip).
 	local isIEC = data.consumerConfig.consumerEnv == ValidationEnums.ConsumerEnv.IEC
 	if not isIEC then
 		local meshInfo = {

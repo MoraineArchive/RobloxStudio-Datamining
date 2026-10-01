@@ -53,6 +53,7 @@ type _UniverseDataFields = {
 	preview_video_id: number?,
 	creation_source: string?,
 	promotional_text: string?,
+	moment_video_asset_id: number?,
 }
 
 type _UniverseDataPartialFields = {
@@ -85,6 +86,7 @@ type _UniverseDataPartialFields = {
 	preview_video_id: number?,
 	creation_source: string?,
 	promotional_text: string?,
+	moment_video_asset_id: number?,
 }
 
 export type UniverseData = typeof(setmetatable({} :: _UniverseDataFields, {} :: _UniverseDataImpl))
@@ -135,6 +137,9 @@ do
 			preview_video_id = if data == nil or data.preview_video_id == nil then nil else data.preview_video_id,
 			creation_source = if data == nil or data.creation_source == nil then nil else data.creation_source,
 			promotional_text = if data == nil or data.promotional_text == nil then nil else data.promotional_text,
+			moment_video_asset_id = if data == nil or data.moment_video_asset_id == nil
+				then nil
+				else data.moment_video_asset_id,
 		}, _UniverseDataImpl :: _UniverseDataImpl)
 	end
 
@@ -287,6 +292,11 @@ do
 			output, cursor = proto.writeString(output, cursor, self.promotional_text)
 		end
 
+		if self.moment_video_asset_id ~= nil then
+			output, cursor = proto.writeTag(output, cursor, 30, proto.wireTypes.varint)
+			output, cursor = proto.writeVarInt(output, cursor, self.moment_video_asset_id)
+		end
+
 		local shrunkBuffer = buffer.create(cursor)
 		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
 		return shrunkBuffer
@@ -370,6 +380,11 @@ do
 					local value
 					value, cursor = proto.readVarIntI64(input, cursor)
 					self.preview_video_id = value
+					continue
+				elseif field == 30 then
+					local value
+					value, cursor = proto.readVarIntI64(input, cursor)
+					self.moment_video_asset_id = value
 					continue
 				end
 
@@ -592,6 +607,10 @@ do
 
 		if self.promotional_text ~= nil then
 			output.promotionalText = self.promotional_text
+		end
+
+		if self.moment_video_asset_id ~= nil then
+			output.momentVideoAssetId = self.moment_video_asset_id
 		end
 
 		return output
@@ -818,6 +837,14 @@ do
 
 		if input.promotionalText ~= nil then
 			self.promotional_text = input.promotionalText
+		end
+
+		if input.moment_video_asset_id ~= nil then
+			self.moment_video_asset_id = input.moment_video_asset_id
+		end
+
+		if input.momentVideoAssetId ~= nil then
+			self.moment_video_asset_id = input.momentVideoAssetId
 		end
 
 		return self

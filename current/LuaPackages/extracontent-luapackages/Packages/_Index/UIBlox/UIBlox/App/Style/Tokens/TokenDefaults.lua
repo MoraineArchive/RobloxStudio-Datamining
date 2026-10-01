@@ -8,7 +8,7 @@
 ]]
 
 local _c: { Color3: Color3, Transparency: number } = { Color3 = Color3.new(), Transparency = 0 }
-local _t: { Font: Enum.Font, FontSize: number, LineHeight: number, LetterSpacing: number } =
+local _t: { Font: Font | Enum.Font, FontSize: number, LineHeight: number, LetterSpacing: number } =
 	{ Font = Enum.Font.Unknown, FontSize = 0, LineHeight = 0, LetterSpacing = 0 }
 
 return {

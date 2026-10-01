@@ -1,5 +1,11 @@
 if game:DefineFastFlag("GetPluginParentInternalFix", false) then
-	return script:FindFirstAncestorWhichIsA("Plugin"):FindFirstChild("Packages", true).Parent
+	local plugin = script:FindFirstAncestorWhichIsA("Plugin")
+	if plugin == nil then
+		-- The DeveloperStorybook embed clones TestLoader into a running place, where
+		-- there is no Plugin ancestor to search down from.
+		return script:FindFirstAncestor("Packages").Parent
+	end
+	return plugin:FindFirstChild("Packages", true).Parent
 else
 	local Main = script.Parent
 	local Plugin = Main:FindFirstAncestorWhichIsA("Plugin"):FindFirstChildWhichIsA("Folder")

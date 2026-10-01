@@ -23,7 +23,7 @@ function FontLoader.new(tokens: StyleTypes.Tokens)
 	return self
 end
 
-function FontLoader:loadFont(fontFaceOverride: Enum.Font?)
+function FontLoader:loadFont(fontOverride: (Font | Enum.Font)?)
 	local tokens: StyleTypes.Tokens = self._tokens
 	local baseSize = FONT_CONFIG.BASE_SIZE
 	local nominalSizeFactor = FONT_CONFIG.FACTOR
@@ -101,10 +101,10 @@ function FontLoader:loadFont(fontFaceOverride: Enum.Font?)
 		},
 	}
 
-	if fontFaceOverride ~= nil then
+	if fontOverride ~= nil then
 		for _, entry in fontWithToken do
 			if type(entry) == "table" and (entry :: any).Font ~= nil then
-				(entry :: any).Font = fontFaceOverride
+				(entry :: any).Font = fontOverride
 			end
 		end
 	end

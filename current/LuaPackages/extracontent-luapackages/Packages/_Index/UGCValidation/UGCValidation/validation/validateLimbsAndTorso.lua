@@ -5,14 +5,10 @@ local Constants = require(root.Constants)
 
 local validateMeshPartBodyPart = require(root.validation.validateMeshPartBodyPart)
 local validateTags = require(root.validation.validateTags)
-local validatePropertyRequirements = require(root.validation.validatePropertyRequirements)
-local validateAttributes = require(root.validation.validateAttributes)
 
 local FailureReasonsAccumulator = require(root.util.FailureReasonsAccumulator)
 local createLimbsAndTorsoSchema = require(root.util.createLimbsAndTorsoSchema)
 local Types = require(root.util.Types)
-
-local getFFlagUGCValidateMigrateSchemaProperties = require(root.flags.getFFlagUGCValidateMigrateSchemaProperties)
 
 local function getInstance(instances: { Instance }, name: string): Instance?
 	for _, inst in pairs(instances) do
@@ -127,12 +123,6 @@ local function validateR6Folder(
 	end
 
 	reasonsAccumulator:updateReasons(validateTags(inst, validationContext))
-
-	if not getFFlagUGCValidateMigrateSchemaProperties() then
-		reasonsAccumulator:updateReasons(validatePropertyRequirements(inst, assetTypeEnum, validationContext))
-
-		reasonsAccumulator:updateReasons(validateAttributes(inst, validationContext))
-	end
 
 	return reasonsAccumulator:getFinalResults()
 end

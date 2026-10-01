@@ -1,25 +1,4 @@
 ?$_Ph@$00@std@@V	public: virtual ?? ?? std::$00::$_Ph( ?? ) ?? 
-?$list1@V?$value@PEAU?$future_async_continuation_shared_state@V?$shared_future@UImportedCageInfo@AE_FBXRigImporter@@@boost@@UImportedCageInfo@AE_FBXRigImporter@@V	list1<class ?? :: ?? >
-?$list1@V?$value@PEAU?$future_async_continuation_shared_state@V?$shared_future@UImportedPartInfo@AE_FBXRigImporter@@@boost@@UImportedPartInfo@AE_FBXRigImporter@@V	list1<class ?? :: ?? >
-?$list1@V?$value@PEAU?$future_async_continuation_shared_state@V?$shared_future@_J@boost@@UImportedCageInfo@AE_FBXRigImporter@@V	list1<class ?? :: ?? >
-?$list1@V?$value@PEAU?$future_async_continuation_shared_state@V?$shared_future@_J@boost@@UImportedPartInfo@AE_FBXRigImporter@@V	list1<class ?? :: ?? >
-?$list1@V?$value@PEAU?$future_async_continuation_shared_state@V?$unique_future@UContinueResponseBody@DAP@Scripting@RBX@@@boost@@XV	list1<class ?? :: ?? >
-?$list1@V?$value@PEAU?$future_async_continuation_shared_state@V?$unique_future@UEvaluateResponseBody@DAP@Scripting@RBX@@@boost@@XV	list1<class ?? :: ?? >
-?$list1@V?$value@PEAU?$future_async_continuation_shared_state@V?$unique_future@UInitializeResponseBody@DAP@Scripting@RBX@@@boost@@XV	list1<class ?? :: ?? >
-?$list1@V?$value@PEAU?$future_async_continuation_shared_state@V?$unique_future@UNextResponseBody@DAP@Scripting@RBX@@@boost@@XV	list1<class ?? :: ?? >
-?$list1@V?$value@PEAU?$future_async_continuation_shared_state@V?$unique_future@UOriginalGuidResponseBody@DAP@Scripting@RBX@@@boost@@XV	list1<class ?? :: ?? >
-?$list1@V?$value@PEAU?$future_async_continuation_shared_state@V?$unique_future@UPauseResponseBody@DAP@Scripting@RBX@@@boost@@XV	list1<class ?? :: ?? >
-?$list1@V?$value@PEAU?$future_async_continuation_shared_state@V?$unique_future@UScopesResponseBody@DAP@Scripting@RBX@@@boost@@XV	list1<class ?? :: ?? >
-?$list1@V?$value@PEAU?$future_async_continuation_shared_state@V?$unique_future@USetBreakpointsResponseBody@DAP@Scripting@RBX@@@boost@@XV	list1<class ?? :: ?? >
-?$list1@V?$value@PEAU?$future_async_continuation_shared_state@V?$unique_future@USetExceptionBreakpointsResponseBody@DAP@Scripting@RBX@@@boost@@XV	list1<class ?? :: ?? >
-?$list1@V?$value@PEAU?$future_async_continuation_shared_state@V?$unique_future@USetVariableResponseBody@DAP@Scripting@RBX@@@boost@@XV	list1<class ?? :: ?? >
-?$list1@V?$value@PEAU?$future_async_continuation_shared_state@V?$unique_future@USourceResponseBody@DAP@Scripting@RBX@@@boost@@XV	list1<class ?? :: ?? >
-?$list1@V?$value@PEAU?$future_async_continuation_shared_state@V?$unique_future@UStackTraceResponseBody@DAP@Scripting@RBX@@@boost@@XV	list1<class ?? :: ?? >
-?$list1@V?$value@PEAU?$future_async_continuation_shared_state@V?$unique_future@UStepInResponseBody@DAP@Scripting@RBX@@@boost@@XV	list1<class ?? :: ?? >
-?$list1@V?$value@PEAU?$future_async_continuation_shared_state@V?$unique_future@UStepOutResponseBody@DAP@Scripting@RBX@@@boost@@XV	list1<class ?? :: ?? >
-?$list1@V?$value@PEAU?$future_async_continuation_shared_state@V?$unique_future@UThreadsResponseBody@DAP@Scripting@RBX@@@boost@@XV	list1<class ?? :: ?? >
-?$list1@V?$value@PEAU?$future_async_continuation_shared_state@V?$unique_future@UVariablesResponseBody@DAP@Scripting@RBX@@@boost@@XV	list1<class ?? :: ?? >
-?$list1@V?$value@PEAU?$future_async_continuation_shared_state@V?$unique_future@UVoid@DAP@Scripting@RBX@@@boost@@XV	list1<class ?? :: ?? >
 ?$task@E@Concurrency@@	 ?? Concurrency::E::$task
 ??0?$QList@VQItemSelectionRange@@@@QEAA@AEBV0@@Z	public: __cdecl QList<class QItemSelectionRange>::QList<class QItemSelectionRange>(class QList<class QItemSelectionRange> const & __ptr64) __ptr64
 ??0?$QVector@VQPointF@@@@QEAA@$$QEAV0@@Z	public: __cdecl QVector<class QPointF>::QVector<class QPointF>(class QVector<class QPointF> && __ptr64) __ptr64
@@ -184,7 +163,6 @@
 ??0QImage@@QEAA@HHW4Format@0@@Z	public: __cdecl QImage::QImage(int,int,enum QImage::Format) __ptr64
 ??0QImage@@QEAA@XZ	public: __cdecl QImage::QImage(void) __ptr64
 ??0QImageReader@@QEAA@AEBVQString@@AEBVQByteArray@@@Z	public: __cdecl QImageReader::QImageReader(class QString const & __ptr64,class QByteArray const & __ptr64) __ptr64
-??0QInputMethodEvent@@QEAA@AEBVQString@@AEBV?$QList@VAttribute@QInputMethodEvent@@@@@Z	public: __cdecl QInputMethodEvent::QInputMethodEvent(class QString const & __ptr64,class QList<class QInputMethodEvent::Attribute> const & __ptr64) __ptr64
 ??0QIntValidator@@QEAA@HHPEAVQObject@@@Z	public: __cdecl QIntValidator::QIntValidator(int,int,class QObject * __ptr64) __ptr64
 ??0QIntValidator@@QEAA@PEAVQObject@@@Z	public: __cdecl QIntValidator::QIntValidator(class QObject * __ptr64) __ptr64
 ??0QItemSelection@@QEAA@AEBVQModelIndex@@0@Z	public: __cdecl QItemSelection::QItemSelection(class QModelIndex const & __ptr64,class QModelIndex const & __ptr64) __ptr64
@@ -239,8 +217,7 @@
 ??0QMoveEvent@@QEAA@AEBVQPoint@@0@Z	public: __cdecl QMoveEvent::QMoveEvent(class QPoint const & __ptr64,class QPoint const & __ptr64) __ptr64
 ??0QMovie@@QEAA@AEBVQString@@AEBVQByteArray@@PEAVQObject@@@Z	public: __cdecl QMovie::QMovie(class QString const & __ptr64,class QByteArray const & __ptr64,class QObject * __ptr64) __ptr64
 ??0QMovie@@QEAA@PEAVQObject@@@Z	public: __cdecl QMovie::QMovie(class QObject * __ptr64) __ptr64
-??0QMutex@@QEAA@XZ	public: __cdecl QMutex::QMutex(void) __ptr64
-??0QMutexLocker@@QEAA@PEAVQRecursiveMutex@@@Z	public: __cdecl QMutexLocker::QMutexLocker(class QRecursiveMutex * __ptr64) __ptr64
+??0QNetworkAddressEntry@@QEAA@AEBV0@@Z	public: __cdecl QNetworkAddressEntry::QNetworkAddressEntry(class QNetworkAddressEntry const & __ptr64) __ptr64
 ??0QNetworkInterface@@QEAA@AEBV0@@Z	public: __cdecl QNetworkInterface::QNetworkInterface(class QNetworkInterface const & __ptr64) __ptr64
 ??0QObject@@QEAA@PEAV0@@Z	public: __cdecl QObject::QObject(class QObject * __ptr64) __ptr64
 ??0QPainter@@QEAA@PEAVQPaintDevice@@@Z	public: __cdecl QPainter::QPainter(class QPaintDevice * __ptr64) __ptr64
@@ -282,7 +259,6 @@
 ??0QRectF@@QEAA@AEBVQRect@@@Z	public: __cdecl QRectF::QRectF(class QRect const & __ptr64) __ptr64
 ??0QRectF@@QEAA@NNNN@Z	public: __cdecl QRectF::QRectF(double,double,double,double) __ptr64
 ??0QRectF@@QEAA@XZ	public: __cdecl QRectF::QRectF(void) __ptr64
-??0QRecursiveMutex@@QEAA@XZ	public: __cdecl QRecursiveMutex::QRecursiveMutex(void) __ptr64
 ??0QRegExp@@QEAA@AEBV0@@Z	public: __cdecl QRegExp::QRegExp(class QRegExp const & __ptr64) __ptr64
 ??0QRegExp@@QEAA@AEBVQString@@W4CaseSensitivity@Qt@@W4PatternSyntax@0@@Z	public: __cdecl QRegExp::QRegExp(class QString const & __ptr64,enum Qt::CaseSensitivity,enum QRegExp::PatternSyntax) __ptr64
 ??0QRegExp@@QEAA@XZ	public: __cdecl QRegExp::QRegExp(void) __ptr64
@@ -506,10 +482,10 @@
 ??1QHBoxLayout@@UEAA@XZ	public: virtual __cdecl QHBoxLayout::~QHBoxLayout(void) __ptr64
 ??1QHeaderView@@UEAA@XZ	public: virtual __cdecl QHeaderView::~QHeaderView(void) __ptr64
 ??1QHelpEvent@@UEAA@XZ	public: virtual __cdecl QHelpEvent::~QHelpEvent(void) __ptr64
+??1QHostAddress@@QEAA@XZ	public: __cdecl QHostAddress::~QHostAddress(void) __ptr64
 ??1QIcon@@QEAA@XZ	public: __cdecl QIcon::~QIcon(void) __ptr64
 ??1QImage@@UEAA@XZ	public: virtual __cdecl QImage::~QImage(void) __ptr64
 ??1QImageReader@@QEAA@XZ	public: __cdecl QImageReader::~QImageReader(void) __ptr64
-??1QInputMethodEvent@@UEAA@XZ	public: virtual __cdecl QInputMethodEvent::~QInputMethodEvent(void) __ptr64
 ??1QIntValidator@@UEAA@XZ	public: virtual __cdecl QIntValidator::~QIntValidator(void) __ptr64
 ??1QItemSelection@@QEAA@XZ	public: __cdecl QItemSelection::~QItemSelection(void) __ptr64
 ??1QItemSelectionRange@@QEAA@XZ	public: __cdecl QItemSelectionRange::~QItemSelectionRange(void) __ptr64
@@ -537,8 +513,6 @@
 ??1QMouseEvent@@UEAA@XZ	public: virtual __cdecl QMouseEvent::~QMouseEvent(void) __ptr64
 ??1QMoveEvent@@UEAA@XZ	public: virtual __cdecl QMoveEvent::~QMoveEvent(void) __ptr64
 ??1QMovie@@UEAA@XZ	public: virtual __cdecl QMovie::~QMovie(void) __ptr64
-??1QMutex@@QEAA@XZ	public: __cdecl QMutex::~QMutex(void) __ptr64
-??1QMutexLocker@@QEAA@XZ	public: __cdecl QMutexLocker::~QMutexLocker(void) __ptr64
 ??1QNetworkAddressEntry@@QEAA@XZ	public: __cdecl QNetworkAddressEntry::~QNetworkAddressEntry(void) __ptr64
 ??1QNetworkInterface@@QEAA@XZ	public: __cdecl QNetworkInterface::~QNetworkInterface(void) __ptr64
 ??1QObject@@UEAA@XZ	public: virtual __cdecl QObject::~QObject(void) __ptr64
@@ -559,7 +533,6 @@
 ??1QPushButton@@UEAA@XZ	public: virtual __cdecl QPushButton::~QPushButton(void) __ptr64
 ??1QRadioButton@@UEAA@XZ	public: virtual __cdecl QRadioButton::~QRadioButton(void) __ptr64
 ??1QRawFont@@QEAA@XZ	public: __cdecl QRawFont::~QRawFont(void) __ptr64
-??1QRecursiveMutex@@QEAA@XZ	public: __cdecl QRecursiveMutex::~QRecursiveMutex(void) __ptr64
 ??1QRegExp@@QEAA@XZ	public: __cdecl QRegExp::~QRegExp(void) __ptr64
 ??1QRegion@@QEAA@XZ	public: __cdecl QRegion::~QRegion(void) __ptr64
 ??1QRegularExpression@@QEAA@XZ	public: __cdecl QRegularExpression::~QRegularExpression(void) __ptr64
@@ -769,7 +742,6 @@
 ??BQImage@@QEBA?AVQVariant@@XZ	public: __cdecl QImage::operator class QVariant(void)const __ptr64
 ??BQPersistentModelIndex@@QEBAAEBVQModelIndex@@XZ	public: __cdecl QPersistentModelIndex::operator class QModelIndex const & __ptr64(void)const __ptr64
 ??BQPixmap@@QEBA?AVQVariant@@XZ	public: __cdecl QPixmap::operator class QVariant(void)const __ptr64
-??BQTextFormat@@QEBA?AVQVariant@@XZ	public: __cdecl QTextFormat::operator class QVariant(void)const __ptr64
 ??Bid@locale@std@@QEAA_KXZ	public: __cdecl std::locale::id::operator unsigned __int64(void) __ptr64
 ??Bios_base@std@@QEBA_NXZ	public: __cdecl std::ios_base::operator bool(void)const __ptr64
 ??DFbxAMatrix@fbxsdk@@QEBA?AV01@AEBV01@@Z	public: class fbxsdk::FbxAMatrix __cdecl fbxsdk::FbxAMatrix::operator*(class fbxsdk::FbxAMatrix const & __ptr64)const __ptr64
@@ -792,6 +764,7 @@
 ??_D?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAXXZ	public: void __cdecl std::basic_istream<char,struct std::char_traits<char> >::`vbase destructor'(void) __ptr64
 ??_D?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAXXZ	public: void __cdecl std::basic_ostream<char,struct std::char_traits<char> >::`vbase destructor'(void) __ptr64
 ?AVChannelArgs@grpc_core@@AEBV01@@Z	private: grpc_core __swift_2 grpc_core::AVChannelArgs()const __ptr64
+?AVChannelArgs@grpc_core@@AEBV01@PEAVStatus@lts_20240116@absl@@@Z	private: grpc_core __swift_2 grpc_core::AVChannelArgs(class absl::lts_20240116::Status * __ptr64)const __ptr64
 ?AVChannelArgs@grpc_core@@V01@@Z	public: virtual 
 ?AVComponentSpec@Component@RBX@@XZ	[thunk]:public: virtual ?? 
 ?AVVariant@Reflection@RBX@@AEBV012@@Z	private: RBX::Reflection __swift_2 RBX::Reflection::AVVariant()const __ptr64
@@ -868,8 +841,6 @@
 ?GetCustomFrameRate@FbxGlobalSettings@fbxsdk@@QEBANXZ	public: double __cdecl fbxsdk::FbxGlobalSettings::GetCustomFrameRate(void)const __ptr64
 ?GetDeformer@FbxGeometry@fbxsdk@@QEBAPEAVFbxDeformer@2@HW4EDeformerType@32@PEAVFbxStatus@2@@Z	public: class fbxsdk::FbxDeformer * __ptr64 __cdecl fbxsdk::FbxGeometry::GetDeformer(int,enum fbxsdk::FbxDeformer::EDeformerType,class fbxsdk::FbxStatus * __ptr64)const __ptr64
 ?GetDeformerCount@FbxGeometry@fbxsdk@@QEBAHW4EDeformerType@FbxDeformer@2@@Z	public: int __cdecl fbxsdk::FbxGeometry::GetDeformerCount(enum fbxsdk::FbxDeformer::EDeformerType)const __ptr64
-?GetDirectArray@?$FbxLayerElementTemplate@VFbxColor@fbxsdk@@@fbxsdk@@QEBAAEAV?$FbxLayerElementArrayTemplate@VFbxColor@fbxsdk@@@2@XZ	public: class fbxsdk::FbxLayerElementArrayTemplate<class fbxsdk::FbxColor> & __ptr64 __cdecl fbxsdk::FbxLayerElementTemplate<class fbxsdk::FbxColor>::GetDirectArray(void)const __ptr64
-?GetDirectArray@?$FbxLayerElementTemplate@VFbxVector4@fbxsdk@@@fbxsdk@@QEBAAEAV?$FbxLayerElementArrayTemplate@VFbxVector4@fbxsdk@@@2@XZ	public: class fbxsdk::FbxLayerElementArrayTemplate<class fbxsdk::FbxVector4> & __ptr64 __cdecl fbxsdk::FbxLayerElementTemplate<class fbxsdk::FbxVector4>::GetDirectArray(void)const __ptr64
 ?GetDocumentInfo@FbxDocument@fbxsdk@@QEBAPEAVFbxDocumentInfo@2@XZ	public: class fbxsdk::FbxDocumentInfo * __ptr64 __cdecl fbxsdk::FbxDocument::GetDocumentInfo(void)const __ptr64
 ?GetDstProperty@FbxProperty@fbxsdk@@QEBA?AV12@H@Z	public: class fbxsdk::FbxProperty __cdecl fbxsdk::FbxProperty::GetDstProperty(int)const __ptr64
 ?GetElementBinormal@FbxGeometryBase@fbxsdk@@QEAAPEAVFbxLayerElementBinormal@2@H@Z	public: class fbxsdk::FbxLayerElementBinormal * __ptr64 __cdecl fbxsdk::FbxGeometryBase::GetElementBinormal(int) __ptr64
@@ -1133,6 +1104,7 @@
 ?alignedRect@QStyle@@SA?AVQRect@@W4LayoutDirection@Qt@@V?$QFlags@W4AlignmentFlag@Qt@@@@AEBVQSize@@AEBV2@@Z	public: static class QRect __cdecl QStyle::alignedRect(enum Qt::LayoutDirection,class QFlags<enum Qt::AlignmentFlag>,class QSize const & __ptr64,class QRect const & __ptr64)
 ?allInterfaces@QNetworkInterface@@SA?AV?$QList@VQNetworkInterface@@@@XZ	public: static class QList<class QNetworkInterface> __cdecl QNetworkInterface::allInterfaces(void)
 ?allKeys@QSettings@@QEBA?AVQStringList@@XZ	public: class QStringList __cdecl QSettings::allKeys(void)const __ptr64
+?allWidgets@QApplication@@SA?AV?$QList@PEAVQWidget@@@@XZ	public: static class QList<class QWidget * __ptr64> __cdecl QApplication::allWidgets(void)
 ?allWindows@QGuiApplication@@SA?AV?$QList@PEAVQWindow@@@@XZ	public: static class QList<class QWindow * __ptr64> __cdecl QGuiApplication::allWindows(void)
 ?allocate@QArrayData@@SAPEAU1@_K00V?$QFlags@W4AllocationOption@QArrayData@@@@@Z	public: static struct QArrayData * __ptr64 __cdecl QArrayData::allocate(unsigned __int64,unsigned __int64,unsigned __int64,class QFlags<enum QArrayData::AllocationOption>)
 ?allocateNode@QHashData@@QEAAPEAXH@Z	public: void * __ptr64 __cdecl QHashData::allocateNode(int) __ptr64
@@ -1153,7 +1125,6 @@
 ?append@QString@@QEAAAEAV1@AEBV1@@Z	public: class QString & __ptr64 __cdecl QString::append(class QString const & __ptr64) __ptr64
 ?append@QString@@QEAAAEAV1@VQChar@@@Z	public: class QString & __ptr64 __cdecl QString::append(class QChar) __ptr64
 ?appendHtml@QPlainTextEdit@@QEAAXAEBVQString@@@Z	public: void __cdecl QPlainTextEdit::appendHtml(class QString const & __ptr64) __ptr64
-?appendRow@QStandardItem@@QEAAXPEAV1@@Z	public: void __cdecl QStandardItem::appendRow(class QStandardItem * __ptr64) __ptr64
 ?appendRow@QStandardItemModel@@QEAAXPEAVQStandardItem@@@Z	public: void __cdecl QStandardItemModel::appendRow(class QStandardItem * __ptr64) __ptr64
 ?applicationDirPath@QCoreApplication@@SA?AVQString@@XZ	public: static class QString __cdecl QCoreApplication::applicationDirPath(void)
 ?applicationFilePath@QCoreApplication@@SA?AVQString@@XZ	public: static class QString __cdecl QCoreApplication::applicationFilePath(void)
@@ -1253,7 +1224,6 @@
 ?bytesToWrite@QLocalSocket@@UEBA_JXZ	public: virtual __int64 __cdecl QLocalSocket::bytesToWrite(void)const __ptr64
 ?bytesToWrite@QProcess@@UEBA_JXZ	public: virtual __int64 __cdecl QProcess::bytesToWrite(void)const __ptr64
 ?bytesTotal@QStorageInfo@@QEBA_JXZ	public: __int64 __cdecl QStorageInfo::bytesTotal(void)const __ptr64
-?bytesWritten@QIODevice@@QEAAX_J@Z	public: void __cdecl QIODevice::bytesWritten(__int64) __ptr64
 ?c_str@?$_Yarn@D@std@@QEBAPEBDXZ	public: char const * __ptr64 __cdecl std::_Yarn<char>::c_str(void)const __ptr64
 ?canConvert@QVariant@@QEBA_NH@Z	public: bool __cdecl QVariant::canConvert(int)const __ptr64
 ?canDropMimeData@QAbstractItemModel@@UEBA_NPEBVQMimeData@@W4DropAction@Qt@@HHAEBVQModelIndex@@@Z	public: virtual bool __cdecl QAbstractItemModel::canDropMimeData(class QMimeData const * __ptr64,enum Qt::DropAction,int,int,class QModelIndex const & __ptr64)const __ptr64
@@ -1269,7 +1239,6 @@
 ?canonicalPath@QFileInfo@@QEBA?AVQString@@XZ	public: class QString __cdecl QFileInfo::canonicalPath(void)const __ptr64
 ?cap@QRegExp@@QEAA?AVQString@@H@Z	public: class QString __cdecl QRegExp::cap(int) __ptr64
 ?caption@DockWidgetPanel@Qtitan@@QEBAAEBVQString@@XZ	public: class QString const & __ptr64 __cdecl Qtitan::DockWidgetPanel::caption(void)const __ptr64
-?captured@QRegularExpressionMatch@@QEBA?AVQString@@H@Z	public: class QString __cdecl QRegularExpressionMatch::captured(int)const __ptr64
 ?capturedEnd@QRegularExpressionMatch@@QEBAHH@Z	public: int __cdecl QRegularExpressionMatch::capturedEnd(int)const __ptr64
 ?capturedLength@QRegularExpressionMatch@@QEBAHH@Z	public: int __cdecl QRegularExpressionMatch::capturedLength(int)const __ptr64
 ?capturedStart@QRegularExpressionMatch@@QEBAHH@Z	public: int __cdecl QRegularExpressionMatch::capturedStart(int)const __ptr64
@@ -1406,7 +1375,6 @@
 ?compare@QString@@QEBAHAEBV1@W4CaseSensitivity@Qt@@@Z	public: int __cdecl QString::compare(class QString const & __ptr64,enum Qt::CaseSensitivity)const __ptr64
 ?compare@QString@@SAHAEBV1@0W4CaseSensitivity@Qt@@@Z	public: static int __cdecl QString::compare(class QString const & __ptr64,class QString const & __ptr64,enum Qt::CaseSensitivity)
 ?compare@QVersionNumber@@SAHAEBV1@0@Z	public: static int __cdecl QVersionNumber::compare(class QVersionNumber const & __ptr64,class QVersionNumber const & __ptr64)
-?complete@QCompleter@@QEAAXAEBVQRect@@@Z	public: void __cdecl QCompleter::complete(class QRect const & __ptr64) __ptr64
 ?completeBaseName@QFileInfo@@QEBA?AVQString@@XZ	public: class QString __cdecl QFileInfo::completeBaseName(void)const __ptr64
 ?compressEvent@QApplication@@MEAA_NPEAVQEvent@@PEAVQObject@@PEAVQPostEventList@@@Z	protected: virtual bool __cdecl QApplication::compressEvent(class QEvent * __ptr64,class QObject * __ptr64,class QPostEventList * __ptr64) __ptr64
 ?compressionAlgorithm@QResource@@QEBA?AW4Compression@1@XZ	public: enum QResource::Compression __cdecl QResource::compressionAlgorithm(void)const __ptr64
@@ -1473,6 +1441,7 @@
 ?count@QStackedWidget@@QEBAHXZ	public: int __cdecl QStackedWidget::count(void)const __ptr64
 ?count@QString@@QEBAHVQChar@@W4CaseSensitivity@Qt@@@Z	public: int __cdecl QString::count(class QChar,enum Qt::CaseSensitivity)const __ptr64
 ?count@QTabBar@@QEBAHXZ	public: int __cdecl QTabBar::count(void)const __ptr64
+?count@QTabWidget@@QEBAHXZ	public: int __cdecl QTabWidget::count(void)const __ptr64
 ?country@QLocale@@QEBA?AW4Country@1@XZ	public: enum QLocale::Country __cdecl QLocale::country(void)const __ptr64
 ?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A	class std::basic_ostream<char,struct std::char_traits<char> > std::cout
 ?crbegin@QString@@QEBA?AV?$reverse_iterator@PEBVQChar@@@std@@XZ	public: class std::reverse_iterator<class QChar const * __ptr64> __cdecl QString::crbegin(void)const __ptr64
@@ -1510,6 +1479,7 @@
 ?currentIndex@QAbstractItemView@@QEBA?AVQModelIndex@@XZ	public: class QModelIndex __cdecl QAbstractItemView::currentIndex(void)const __ptr64
 ?currentIndex@QComboBox@@QEBAHXZ	public: int __cdecl QComboBox::currentIndex(void)const __ptr64
 ?currentIndex@QStackedWidget@@QEBAHXZ	public: int __cdecl QStackedWidget::currentIndex(void)const __ptr64
+?currentIndex@QTabWidget@@QEBAHXZ	public: int __cdecl QTabWidget::currentIndex(void)const __ptr64
 ?currentIndexChanged@QComboBox@@QEAAXH@Z	public: void __cdecl QComboBox::currentIndexChanged(int) __ptr64
 ?currentItem@QListWidget@@QEBAPEAVQListWidgetItem@@XZ	public: class QListWidgetItem * __ptr64 __cdecl QListWidget::currentItem(void)const __ptr64
 ?currentItem@QTreeWidget@@QEBAPEAVQTreeWidgetItem@@XZ	public: class QTreeWidgetItem * __ptr64 __cdecl QTreeWidget::currentItem(void)const __ptr64
@@ -1529,8 +1499,6 @@
 ?cursor@QWidget@@QEBA?AVQCursor@@XZ	public: class QCursor __cdecl QWidget::cursor(void)const __ptr64
 ?cursorFlashTime@QApplication@@SAHXZ	public: static int __cdecl QApplication::cursorFlashTime(void)
 ?cursorForPosition@QPlainTextEdit@@QEBA?AVQTextCursor@@AEBVQPoint@@@Z	public: class QTextCursor __cdecl QPlainTextEdit::cursorForPosition(class QPoint const & __ptr64)const __ptr64
-?cursorForPosition@QTextEdit@@QEBA?AVQTextCursor@@AEBVQPoint@@@Z	public: class QTextCursor __cdecl QTextEdit::cursorForPosition(class QPoint const & __ptr64)const __ptr64
-?cursorPosition@QLineEdit@@QEBAHXZ	public: int __cdecl QLineEdit::cursorPosition(void)const __ptr64
 ?cursorPositionChanged@QPlainTextEdit@@QEAAXXZ	public: void __cdecl QPlainTextEdit::cursorPositionChanged(void) __ptr64
 ?cursorRect@QPlainTextEdit@@QEBA?AVQRect@@AEBVQTextCursor@@@Z	public: class QRect __cdecl QPlainTextEdit::cursorRect(class QTextCursor const & __ptr64)const __ptr64
 ?cursorRect@QPlainTextEdit@@QEBA?AVQRect@@XZ	public: class QRect __cdecl QPlainTextEdit::cursorRect(void)const __ptr64
@@ -1597,7 +1565,6 @@
 ?directoryEntered@QFileDialog@@QEAAXAEBVQString@@@Z	public: void __cdecl QFileDialog::directoryEntered(class QString const & __ptr64) __ptr64
 ?disconnect@QObject@@SA_NAEBVConnection@QMetaObject@@@Z	public: static bool __cdecl QObject::disconnect(class QMetaObject::Connection const & __ptr64)
 ?disconnect@QObject@@SA_NPEBV1@PEBD01@Z	public: static bool __cdecl QObject::disconnect(class QObject const * __ptr64,char const * __ptr64,class QObject const * __ptr64,char const * __ptr64)
-?disconnectFromServer@QLocalSocket@@QEAAXXZ	public: void __cdecl QLocalSocket::disconnectFromServer(void) __ptr64
 ?disconnectImpl@QObject@@CA_NPEBV1@PEAPEAX01PEBUQMetaObject@@@Z	private: static bool __cdecl QObject::disconnectImpl(class QObject const * __ptr64,void * __ptr64 * __ptr64,class QObject const * __ptr64,void * __ptr64 * __ptr64,struct QMetaObject const * __ptr64)
 ?disconnectNotify@QObject@@MEAAXAEBVQMetaMethod@@@Z	protected: virtual void __cdecl QObject::disconnectNotify(class QMetaMethod const & __ptr64) __ptr64
 ?disconnected@QLocalSocket@@QEAAXXZ	public: void __cdecl QLocalSocket::disconnected(void) __ptr64
@@ -1926,7 +1893,6 @@
 ?flags@QNetworkInterface@@QEBA?AV?$QFlags@W4InterfaceFlag@QNetworkInterface@@@@XZ	public: class QFlags<enum QNetworkInterface::InterfaceFlag> __cdecl QNetworkInterface::flags(void)const __ptr64
 ?flags@QSortFilterProxyModel@@UEBA?AV?$QFlags@W4ItemFlag@Qt@@@@AEBVQModelIndex@@@Z	public: virtual class QFlags<enum Qt::ItemFlag> __cdecl QSortFilterProxyModel::flags(class QModelIndex const & __ptr64)const __ptr64
 ?flags@QStandardItemModel@@UEBA?AV?$QFlags@W4ItemFlag@Qt@@@@AEBVQModelIndex@@@Z	public: virtual class QFlags<enum Qt::ItemFlag> __cdecl QStandardItemModel::flags(class QModelIndex const & __ptr64)const __ptr64
-?flags@QStringListModel@@UEBA?AV?$QFlags@W4ItemFlag@Qt@@@@AEBVQModelIndex@@@Z	public: virtual class QFlags<enum Qt::ItemFlag> __cdecl QStringListModel::flags(class QModelIndex const & __ptr64)const __ptr64
 ?flags@QTextOption@@QEBA?AV?$QFlags@W4Flag@QTextOption@@@@XZ	public: class QFlags<enum QTextOption::Flag> __cdecl QTextOption::flags(void)const __ptr64
 ?flags@QTreeWidgetItem@@QEBA?AV?$QFlags@W4ItemFlag@Qt@@@@XZ	public: class QFlags<enum Qt::ItemFlag> __cdecl QTreeWidgetItem::flags(void)const __ptr64
 ?flags@ios_base@std@@QEAAHH@Z	public: int __cdecl std::ios_base::flags(int) __ptr64
@@ -2307,12 +2273,14 @@
 ?invertedAppearance@QAbstractSlider@@QEBA_NXZ	public: bool __cdecl QAbstractSlider::invertedAppearance(void)const __ptr64
 ?invisibleRootItem@QTreeWidget@@QEBAPEAVQTreeWidgetItem@@XZ	public: class QTreeWidgetItem * __ptr64 __cdecl QTreeWidget::invisibleRootItem(void)const __ptr64
 ?invokeMethodImpl@QMetaObject@@CA_NPEAVQObject@@PEAVQSlotObjectBase@QtPrivate@@W4ConnectionType@Qt@@PEAX@Z	private: static bool __cdecl QMetaObject::invokeMethodImpl(class QObject * __ptr64,class QtPrivate::QSlotObjectBase * __ptr64,enum Qt::ConnectionType,void * __ptr64)
+?ip@QNetworkAddressEntry@@QEBA?AVQHostAddress@@XZ	public: class QHostAddress __cdecl QNetworkAddressEntry::ip(void)const __ptr64
 ?isActive@DockWidgetPanel@Qtitan@@QEBA_NXZ	public: bool __cdecl Qtitan::DockWidgetPanel::isActive(void)const __ptr64
 ?isActive@QBasicTimer@@QEBA_NXZ	public: bool __cdecl QBasicTimer::isActive(void)const __ptr64
 ?isAncestorOf@QWidget@@QEBA_NPEBV1@@Z	public: bool __cdecl QWidget::isAncestorOf(class QWidget const * __ptr64)const __ptr64
 ?isArray@QJsonDocument@@QEBA_NXZ	public: bool __cdecl QJsonDocument::isArray(void)const __ptr64
 ?isAutoHide@DockWidgetPanel@Qtitan@@QEBA_NXZ	public: bool __cdecl Qtitan::DockWidgetPanel::isAutoHide(void)const __ptr64
 ?isCanceled@QFutureInterfaceBase@@QEBA_NXZ	public: bool __cdecl QFutureInterfaceBase::isCanceled(void)const __ptr64
+?isCheckable@QAbstractButton@@QEBA_NXZ	public: bool __cdecl QAbstractButton::isCheckable(void)const __ptr64
 ?isCheckable@QAction@@QEBA_NXZ	public: bool __cdecl QAction::isCheckable(void)const __ptr64
 ?isChecked@QAbstractButton@@QEBA_NXZ	public: bool __cdecl QAbstractButton::isChecked(void)const __ptr64
 ?isChecked@QAction@@QEBA_NXZ	public: bool __cdecl QAction::isChecked(void)const __ptr64
@@ -2325,6 +2293,7 @@
 ?isDigit@QChar@@QEBA_NXZ	public: bool __cdecl QChar::isDigit(void)const __ptr64
 ?isDir@QFileInfo@@QEBA_NXZ	public: bool __cdecl QFileInfo::isDir(void)const __ptr64
 ?isDown@QAbstractButton@@QEBA_NXZ	public: bool __cdecl QAbstractButton::isDown(void)const __ptr64
+?isEditable@QComboBox@@QEBA_NXZ	public: bool __cdecl QComboBox::isEditable(void)const __ptr64
 ?isEmpty@QByteArray@@QEBA_NXZ	public: bool __cdecl QByteArray::isEmpty(void)const __ptr64
 ?isEmpty@QJsonArray@@QEBA_NXZ	public: bool __cdecl QJsonArray::isEmpty(void)const __ptr64
 ?isEmpty@QJsonObject@@QEBA_NXZ	public: bool __cdecl QJsonObject::isEmpty(void)const __ptr64
@@ -2348,6 +2317,7 @@
 ?isFloating@QDockWidget@@QEBA_NXZ	public: bool __cdecl QDockWidget::isFloating(void)const __ptr64
 ?isFloating@QToolBar@@QEBA_NXZ	public: bool __cdecl QToolBar::isFloating(void)const __ptr64
 ?isFullScreen@QWidget@@QEBA_NXZ	public: bool __cdecl QWidget::isFullScreen(void)const __ptr64
+?isHeaderHidden@QTreeView@@QEBA_NXZ	public: bool __cdecl QTreeView::isHeaderHidden(void)const __ptr64
 ?isHidden@QTreeWidgetItem@@QEBA_NXZ	public: bool __cdecl QTreeWidgetItem::isHidden(void)const __ptr64
 ?isHighSurrogate@QChar@@QEBA_NXZ	public: bool __cdecl QChar::isHighSurrogate(void)const __ptr64
 ?isIndexHidden@QHeaderView@@MEBA_NAEBVQModelIndex@@@Z	protected: virtual bool __cdecl QHeaderView::isIndexHidden(class QModelIndex const & __ptr64)const __ptr64
@@ -2358,6 +2328,7 @@
 ?isLetter@QChar@@QEBA_NXZ	public: bool __cdecl QChar::isLetter(void)const __ptr64
 ?isLetterOrNumber@QChar@@QEBA_NXZ	public: bool __cdecl QChar::isLetterOrNumber(void)const __ptr64
 ?isLocalFile@QUrl@@QEBA_NXZ	public: bool __cdecl QUrl::isLocalFile(void)const __ptr64
+?isLoopback@QHostAddress@@QEBA_NXZ	public: bool __cdecl QHostAddress::isLoopback(void)const __ptr64
 ?isLowSurrogate@QChar@@QEBA_NXZ	public: bool __cdecl QChar::isLowSurrogate(void)const __ptr64
 ?isMinimized@QWidget@@QEBA_NXZ	public: bool __cdecl QWidget::isMinimized(void)const __ptr64
 ?isModified@QLineEdit@@QEBA_NXZ	public: bool __cdecl QLineEdit::isModified(void)const __ptr64
@@ -2380,8 +2351,8 @@
 ?isObject@QJsonDocument@@QEBA_NXZ	public: bool __cdecl QJsonDocument::isObject(void)const __ptr64
 ?isObscuredBy@QGraphicsPixmapItem@@UEBA_NPEBVQGraphicsItem@@@Z	public: virtual bool __cdecl QGraphicsPixmapItem::isObscuredBy(class QGraphicsItem const * __ptr64)const __ptr64
 ?isPrint@QChar@@QEBA_NXZ	public: bool __cdecl QChar::isPrint(void)const __ptr64
+?isReadOnly@QLineEdit@@QEBA_NXZ	public: bool __cdecl QLineEdit::isReadOnly(void)const __ptr64
 ?isReadOnly@QPlainTextEdit@@QEBA_NXZ	public: bool __cdecl QPlainTextEdit::isReadOnly(void)const __ptr64
-?isReadOnly@QTextEdit@@QEBA_NXZ	public: bool __cdecl QTextEdit::isReadOnly(void)const __ptr64
 ?isRowHidden@QTableView@@QEBA_NH@Z	public: bool __cdecl QTableView::isRowHidden(int)const __ptr64
 ?isRunning@QEventLoop@@QEBA_NXZ	public: bool __cdecl QEventLoop::isRunning(void)const __ptr64
 ?isRunning@QFutureInterfaceBase@@QEBA_NXZ	public: bool __cdecl QFutureInterfaceBase::isRunning(void)const __ptr64
@@ -2397,7 +2368,6 @@
 ?isUpper@QChar@@QEBA_NXZ	public: bool __cdecl QChar::isUpper(void)const __ptr64
 ?isUpper@QCharRef@@QEBA_NXZ	public: bool __cdecl QCharRef::isUpper(void)const __ptr64
 ?isValid@QColor@@QEBA_NXZ	public: bool __cdecl QColor::isValid(void)const __ptr64
-?isValid@QLocalSocket@@QEBA_NXZ	public: bool __cdecl QLocalSocket::isValid(void)const __ptr64
 ?isValid@QModelIndex@@QEBA_NXZ	public: bool __cdecl QModelIndex::isValid(void)const __ptr64
 ?isValid@QRect@@QEBA_NXZ	public: bool __cdecl QRect::isValid(void)const __ptr64
 ?isValid@QRegularExpression@@QEBA_NXZ	public: bool __cdecl QRegularExpression::isValid(void)const __ptr64
@@ -2543,7 +2513,6 @@
 ?loadResource@QTextEdit@@UEAA?AVQVariant@@HAEBVQUrl@@@Z	public: virtual class QVariant __cdecl QTextEdit::loadResource(int,class QUrl const & __ptr64) __ptr64
 ?loadStateFromDevice@DockPanelManager@Qtitan@@QEAA_NPEAVQIODevice@@@Z	public: bool __cdecl Qtitan::DockPanelManager::loadStateFromDevice(class QIODevice * __ptr64) __ptr64
 ?localeAwareCompare@QString@@QEBAHAEBV1@@Z	public: int __cdecl QString::localeAwareCompare(class QString const & __ptr64)const __ptr64
-?lock@QMutex@@QEAAXXZ	public: void __cdecl QMutex::lock(void) __ptr64
 ?logicalDotsPerInchChanged@QScreen@@QEAAXN@Z	public: void __cdecl QScreen::logicalDotsPerInchChanged(double) __ptr64
 ?logicalDotsPerInchX@QScreen@@QEBANXZ	public: double __cdecl QScreen::logicalDotsPerInchX(void)const __ptr64
 ?logicalDotsPerInchY@QScreen@@QEBANXZ	public: double __cdecl QScreen::logicalDotsPerInchY(void)const __ptr64
@@ -2565,6 +2534,7 @@
 ?matchedLength@QRegExp@@QEBAHXZ	public: int __cdecl QRegExp::matchedLength(void)const __ptr64
 ?matches@QKeyEvent@@QEBA_NW4StandardKey@QKeySequence@@@Z	public: bool __cdecl QKeyEvent::matches(enum QKeySequence::StandardKey)const __ptr64
 ?matches@QKeySequence@@QEBA?AW4SequenceMatch@1@AEBV1@@Z	public: enum QKeySequence::SequenceMatch __cdecl QKeySequence::matches(class QKeySequence const & __ptr64)const __ptr64
+?maxLength@QLineEdit@@QEBAHXZ	public: int __cdecl QLineEdit::maxLength(void)const __ptr64
 ?maxWidth@QFontMetrics@@QEBAHXZ	public: int __cdecl QFontMetrics::maxWidth(void)const __ptr64
 ?maximum@QAbstractSlider@@QEBAHXZ	public: int __cdecl QAbstractSlider::maximum(void)const __ptr64
 ?maximumSize@QBoxLayout@@UEBA?AVQSize@@XZ	public: virtual class QSize __cdecl QBoxLayout::maximumSize(void)const __ptr64
@@ -2957,7 +2927,6 @@
 ?polish@QProxyStyle@@UEAAXAEAVQPalette@@@Z	public: virtual void __cdecl QProxyStyle::polish(class QPalette & __ptr64) __ptr64
 ?polish@QProxyStyle@@UEAAXPEAVQApplication@@@Z	public: virtual void __cdecl QProxyStyle::polish(class QApplication * __ptr64) __ptr64
 ?polish@QProxyStyle@@UEAAXPEAVQWidget@@@Z	public: virtual void __cdecl QProxyStyle::polish(class QWidget * __ptr64) __ptr64
-?popup@QCompleter@@QEBAPEAVQAbstractItemView@@XZ	public: class QAbstractItemView * __ptr64 __cdecl QCompleter::popup(void)const __ptr64
 ?popup@QMenu@@QEAAXAEBVQPoint@@PEAVQAction@@@Z	public: void __cdecl QMenu::popup(class QPoint const & __ptr64,class QAction * __ptr64) __ptr64
 ?pos@QCursor@@SA?AVQPoint@@XZ	public: static class QPoint __cdecl QCursor::pos(void)
 ?pos@QDropEvent@@QEBA?AVQPoint@@XZ	public: class QPoint __cdecl QDropEvent::pos(void)const __ptr64
@@ -2970,6 +2939,7 @@
 ?position@QTextCursor@@QEBAHXZ	public: int __cdecl QTextCursor::position(void)const __ptr64
 ?position@QTextFragment@@QEBAHXZ	public: int __cdecl QTextFragment::position(void)const __ptr64
 ?positionInBlock@QTextCursor@@QEBAHXZ	public: int __cdecl QTextCursor::positionInBlock(void)const __ptr64
+?possibleKeys@QKeyMapper@@SA?AV?$QList@H@@PEAVQKeyEvent@@@Z	public: static class QList<int> __cdecl QKeyMapper::possibleKeys(class QKeyEvent * __ptr64)
 ?postEvent@QCoreApplication@@SAXPEAVQObject@@PEAVQEvent@@H@Z	public: static void __cdecl QCoreApplication::postEvent(class QObject * __ptr64,class QEvent * __ptr64,int)
 ?pptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ	protected: char * __ptr64 __cdecl std::basic_streambuf<char,struct std::char_traits<char> >::pptr(void)const __ptr64
 ?preeditAreaText@QTextLayout@@QEBA?AVQString@@XZ	public: class QString __cdecl QTextLayout::preeditAreaText(void)const __ptr64
@@ -2985,6 +2955,7 @@
 ?processId@QProcess@@QEBA_JXZ	public: __int64 __cdecl QProcess::processId(void)const __ptr64
 ?productVersion@QSysInfo@@SA?AVQString@@XZ	public: static class QString __cdecl QSysInfo::productVersion(void)
 ?property@QObject@@QEBA?AVQVariant@@PEBD@Z	public: class QVariant __cdecl QObject::property(char const * __ptr64)const __ptr64
+?protocol@QHostAddress@@QEBA?AW4NetworkLayerProtocol@QAbstractSocket@@XZ	public: enum QAbstractSocket::NetworkLayerProtocol __cdecl QHostAddress::protocol(void)const __ptr64
 ?proxy@QStyle@@QEBAPEBV1@XZ	public: class QStyle const * __ptr64 __cdecl QStyle::proxy(void)const __ptr64
 ?push_back@QJsonArray@@QEAAXAEBVQJsonValue@@@Z	public: void __cdecl QJsonArray::push_back(class QJsonValue const & __ptr64) __ptr64
 ?put@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@D@Z	public: class std::basic_ostream<char,struct std::char_traits<char> > & __ptr64 __cdecl std::basic_ostream<char,struct std::char_traits<char> >::put(char) __ptr64
@@ -3251,7 +3222,6 @@
 ?removePostedEvents@QCoreApplication@@SAXPEAVQObject@@H@Z	public: static void __cdecl QCoreApplication::removePostedEvents(class QObject * __ptr64,int)
 ?removeRecursively@QDir@@QEAA_NXZ	public: bool __cdecl QDir::removeRecursively(void) __ptr64
 ?removeRow@QAbstractItemModel@@QEAA_NHAEBVQModelIndex@@@Z	public: bool __cdecl QAbstractItemModel::removeRow(int,class QModelIndex const & __ptr64) __ptr64
-?removeRow@QStandardItem@@QEAAXH@Z	public: void __cdecl QStandardItem::removeRow(int) __ptr64
 ?removeRows@QAbstractItemModel@@UEAA_NHHAEBVQModelIndex@@@Z	public: virtual bool __cdecl QAbstractItemModel::removeRows(int,int,class QModelIndex const & __ptr64) __ptr64
 ?removeRows@QSortFilterProxyModel@@UEAA_NHHAEBVQModelIndex@@@Z	public: virtual bool __cdecl QSortFilterProxyModel::removeRows(int,int,class QModelIndex const & __ptr64) __ptr64
 ?removeRows@QStandardItem@@QEAAXHH@Z	public: void __cdecl QStandardItem::removeRows(int,int) __ptr64
@@ -3333,11 +3303,11 @@
 ?roleNames@QAbstractItemModel@@UEBA?AV?$QHash@HVQByteArray@@@@XZ	public: virtual class QHash<int,class QByteArray> __cdecl QAbstractItemModel::roleNames(void)const __ptr64
 ?rootFrame@QTextDocument@@QEBAPEAVQTextFrame@@XZ	public: class QTextFrame * __ptr64 __cdecl QTextDocument::rootFrame(void)const __ptr64
 ?rootIndex@QAbstractItemView@@QEBA?AVQModelIndex@@XZ	public: class QModelIndex __cdecl QAbstractItemView::rootIndex(void)const __ptr64
+?rootIsDecorated@QTreeView@@QEBA_NXZ	public: bool __cdecl QTreeView::rootIsDecorated(void)const __ptr64
 ?rootPath@QStorageInfo@@QEBA?AVQString@@XZ	public: class QString __cdecl QStorageInfo::rootPath(void)const __ptr64
 ?rotate@QMatrix@@QEAAAEAV1@N@Z	public: class QMatrix & __ptr64 __cdecl QMatrix::rotate(double) __ptr64
 ?row@QListWidget@@QEBAHPEBVQListWidgetItem@@@Z	public: int __cdecl QListWidget::row(class QListWidgetItem const * __ptr64)const __ptr64
 ?row@QModelIndex@@QEBAHXZ	public: int __cdecl QModelIndex::row(void)const __ptr64
-?row@QStandardItem@@QEBAHXZ	public: int __cdecl QStandardItem::row(void)const __ptr64
 ?rowCount@QSortFilterProxyModel@@UEBAHAEBVQModelIndex@@@Z	public: virtual int __cdecl QSortFilterProxyModel::rowCount(class QModelIndex const & __ptr64)const __ptr64
 ?rowCount@QStandardItem@@QEBAHXZ	public: int __cdecl QStandardItem::rowCount(void)const __ptr64
 ?rowCount@QStandardItemModel@@UEBAHAEBVQModelIndex@@@Z	public: virtual int __cdecl QStandardItemModel::rowCount(class QModelIndex const & __ptr64)const __ptr64
@@ -3454,7 +3424,6 @@
 ?setAlignment@QLayout@@QEAA_NPEAVQWidget@@V?$QFlags@W4AlignmentFlag@Qt@@@@@Z	public: bool __cdecl QLayout::setAlignment(class QWidget * __ptr64,class QFlags<enum Qt::AlignmentFlag>) __ptr64
 ?setAlignment@QLayoutItem@@QEAAXV?$QFlags@W4AlignmentFlag@Qt@@@@@Z	public: void __cdecl QLayoutItem::setAlignment(class QFlags<enum Qt::AlignmentFlag>) __ptr64
 ?setAlignment@QScrollArea@@QEAAXV?$QFlags@W4AlignmentFlag@Qt@@@@@Z	public: void __cdecl QScrollArea::setAlignment(class QFlags<enum Qt::AlignmentFlag>) __ptr64
-?setAlignment@QTextEdit@@QEAAXV?$QFlags@W4AlignmentFlag@Qt@@@@@Z	public: void __cdecl QTextEdit::setAlignment(class QFlags<enum Qt::AlignmentFlag>) __ptr64
 ?setAllowedAreas@QToolBar@@QEAAXV?$QFlags@W4ToolBarArea@Qt@@@@@Z	public: void __cdecl QToolBar::setAllowedAreas(class QFlags<enum Qt::ToolBarArea>) __ptr64
 ?setAlpha@QColor@@QEAAXH@Z	public: void __cdecl QColor::setAlpha(int) __ptr64
 ?setAlphaF@QColor@@QEAAXN@Z	public: void __cdecl QColor::setAlphaF(double) __ptr64
@@ -3523,7 +3492,6 @@
 ?setColumnWidth@QTreeView@@QEAAXHH@Z	public: void __cdecl QTreeView::setColumnWidth(int,int) __ptr64
 ?setCompleter@QComboBox@@QEAAXPEAVQCompleter@@@Z	public: void __cdecl QComboBox::setCompleter(class QCompleter * __ptr64) __ptr64
 ?setCompleter@QLineEdit@@QEAAXPEAVQCompleter@@@Z	public: void __cdecl QLineEdit::setCompleter(class QCompleter * __ptr64) __ptr64
-?setCompletionPrefix@QCompleter@@QEAAXAEBVQString@@@Z	public: void __cdecl QCompleter::setCompletionPrefix(class QString const & __ptr64) __ptr64
 ?setCompositionMode@QPainter@@QEAAXW4CompositionMode@1@@Z	public: void __cdecl QPainter::setCompositionMode(enum QPainter::CompositionMode) __ptr64
 ?setContent@QDomDocument@@QEAA_NAEBVQByteArray@@_NPEAVQString@@PEAH3@Z	public: bool __cdecl QDomDocument::setContent(class QByteArray const & __ptr64,bool,class QString * __ptr64,int * __ptr64,int * __ptr64) __ptr64
 ?setContent@QDomDocument@@QEAA_NPEAVQIODevice@@PEAVQString@@PEAH2@Z	public: bool __cdecl QDomDocument::setContent(class QIODevice * __ptr64,class QString * __ptr64,int * __ptr64,int * __ptr64) __ptr64
@@ -3763,7 +3731,6 @@
 ?setModal@QDialog@@QEAAX_N@Z	public: void __cdecl QDialog::setModal(bool) __ptr64
 ?setModel@QAbstractItemView@@UEAAXPEAVQAbstractItemModel@@@Z	public: virtual void __cdecl QAbstractItemView::setModel(class QAbstractItemModel * __ptr64) __ptr64
 ?setModel@QComboBox@@QEAAXPEAVQAbstractItemModel@@@Z	public: void __cdecl QComboBox::setModel(class QAbstractItemModel * __ptr64) __ptr64
-?setModel@QCompleter@@QEAAXPEAVQAbstractItemModel@@@Z	public: void __cdecl QCompleter::setModel(class QAbstractItemModel * __ptr64) __ptr64
 ?setModel@QHeaderView@@UEAAXPEAVQAbstractItemModel@@@Z	public: virtual void __cdecl QHeaderView::setModel(class QAbstractItemModel * __ptr64) __ptr64
 ?setModel@QListWidget@@EEAAXPEAVQAbstractItemModel@@@Z	private: virtual void __cdecl QListWidget::setModel(class QAbstractItemModel * __ptr64) __ptr64
 ?setModel@QTableView@@UEAAXPEAVQAbstractItemModel@@@Z	public: virtual void __cdecl QTableView::setModel(class QAbstractItemModel * __ptr64) __ptr64
@@ -3818,7 +3785,6 @@
 ?setPlaceholderText@QPlainTextEdit@@QEAAXAEBVQString@@@Z	public: void __cdecl QPlainTextEdit::setPlaceholderText(class QString const & __ptr64) __ptr64
 ?setPlainText@QPlainTextEdit@@QEAAXAEBVQString@@@Z	public: void __cdecl QPlainTextEdit::setPlainText(class QString const & __ptr64) __ptr64
 ?setPlainText@QTextDocument@@QEAAXAEBVQString@@@Z	public: void __cdecl QTextDocument::setPlainText(class QString const & __ptr64) __ptr64
-?setPlainText@QTextEdit@@QEAAXAEBVQString@@@Z	public: void __cdecl QTextEdit::setPlainText(class QString const & __ptr64) __ptr64
 ?setPointSize@QFont@@QEAAXH@Z	public: void __cdecl QFont::setPointSize(int) __ptr64
 ?setPointSizeF@QFont@@QEAAXN@Z	public: void __cdecl QFont::setPointSizeF(double) __ptr64
 ?setPos@QCursor@@SAXPEAVQScreen@@HH@Z	public: static void __cdecl QCursor::setPos(class QScreen * __ptr64,int,int)
@@ -3856,6 +3822,7 @@
 ?setScaledSize@QMovie@@QEAAXAEBVQSize@@@Z	public: void __cdecl QMovie::setScaledSize(class QSize const & __ptr64) __ptr64
 ?setScene@QGraphicsView@@QEAAXPEAVQGraphicsScene@@@Z	public: void __cdecl QGraphicsView::setScene(class QGraphicsScene * __ptr64) __ptr64
 ?setScheme@QUrl@@QEAAXAEBVQString@@@Z	public: void __cdecl QUrl::setScheme(class QString const & __ptr64) __ptr64
+?setScreen@QWindow@@QEAAXPEAVQScreen@@@Z	public: void __cdecl QWindow::setScreen(class QScreen * __ptr64) __ptr64
 ?setScriptDockGroupFromPanel@DockPanelManager@Qtitan@@QEAAXPEAVDockDocumentPanel@2@_N@Z	public: void __cdecl Qtitan::DockPanelManager::setScriptDockGroupFromPanel(class Qtitan::DockDocumentPanel * __ptr64,bool) __ptr64
 ?setSectionHidden@QHeaderView@@QEAAXH_N@Z	public: void __cdecl QHeaderView::setSectionHidden(int,bool) __ptr64
 ?setSectionResizeMode@QHeaderView@@QEAAXHW4ResizeMode@1@@Z	public: void __cdecl QHeaderView::setSectionResizeMode(int,enum QHeaderView::ResizeMode) __ptr64
@@ -4022,7 +3989,6 @@
 ?setWordWrap@QLabel@@QEAAX_N@Z	public: void __cdecl QLabel::setWordWrap(bool) __ptr64
 ?setWordWrap@QListView@@QEAAX_N@Z	public: void __cdecl QListView::setWordWrap(bool) __ptr64
 ?setWordWrap@QTableView@@QEAAX_N@Z	public: void __cdecl QTableView::setWordWrap(bool) __ptr64
-?setWordWrapMode@QTextEdit@@QEAAXW4WrapMode@QTextOption@@@Z	public: void __cdecl QTextEdit::setWordWrapMode(enum QTextOption::WrapMode) __ptr64
 ?setWrapping@QListView@@QEAAX_N@Z	public: void __cdecl QListView::setWrapping(bool) __ptr64
 ?setX@QRect@@QEAAXH@Z	public: void __cdecl QRect::setX(int) __ptr64
 ?setbuf@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAPEAV12@PEAD_J@Z	protected: virtual class std::basic_streambuf<char,struct std::char_traits<char> > * __ptr64 __cdecl std::basic_streambuf<char,struct std::char_traits<char> >::setbuf(char * __ptr64,__int64) __ptr64
@@ -4194,7 +4160,6 @@
 ?stateChanged@QCheckBox@@QEAAXH@Z	public: void __cdecl QCheckBox::stateChanged(int) __ptr64
 ?stateChanged@QProcess@@QEAAXW4ProcessState@1@UQPrivateSignal@1@@Z	public: void __cdecl QProcess::stateChanged(enum QProcess::ProcessState,struct QProcess::QPrivateSignal) __ptr64
 ?staticMetaObject@DockDocumentPanel@Qtitan@@2UQMetaObject@@B	public: static struct QMetaObject const Qtitan::DockDocumentPanel::staticMetaObject
-?staticMetaObject@DockPanelBase@Qtitan@@2UQMetaObject@@B	public: static struct QMetaObject const Qtitan::DockPanelBase::staticMetaObject
 ?staticMetaObject@DockPanelManager@Qtitan@@2UQMetaObject@@B	public: static struct QMetaObject const Qtitan::DockPanelManager::staticMetaObject
 ?staticMetaObject@DockWidgetPanel@Qtitan@@2UQMetaObject@@B	public: static struct QMetaObject const Qtitan::DockWidgetPanel::staticMetaObject
 ?staticMetaObject@QAbstractAnimation@@2UQMetaObject@@B	public: static struct QMetaObject const QAbstractAnimation::staticMetaObject
@@ -4253,7 +4218,6 @@
 ?staticMetaObject@QTabWidget@@2UQMetaObject@@B	public: static struct QMetaObject const QTabWidget::staticMetaObject
 ?staticMetaObject@QTableWidget@@2UQMetaObject@@B	public: static struct QMetaObject const QTableWidget::staticMetaObject
 ?staticMetaObject@QTextDocument@@2UQMetaObject@@B	public: static struct QMetaObject const QTextDocument::staticMetaObject
-?staticMetaObject@QTextEdit@@2UQMetaObject@@B	public: static struct QMetaObject const QTextEdit::staticMetaObject
 ?staticMetaObject@QTimer@@2UQMetaObject@@B	public: static struct QMetaObject const QTimer::staticMetaObject
 ?staticMetaObject@QToolBar@@2UQMetaObject@@B	public: static struct QMetaObject const QToolBar::staticMetaObject
 ?staticMetaObject@QToolButton@@2UQMetaObject@@B	public: static struct QMetaObject const QToolButton::staticMetaObject
@@ -4313,6 +4277,7 @@
 ?tabInserted@QTabWidget@@MEAAXH@Z	protected: virtual void __cdecl QTabWidget::tabInserted(int) __ptr64
 ?tabRemoved@QTabWidget@@MEAAXH@Z	protected: virtual void __cdecl QTabWidget::tabRemoved(int) __ptr64
 ?tabStopDistance@QPlainTextEdit@@QEBANXZ	public: double __cdecl QPlainTextEdit::tabStopDistance(void)const __ptr64
+?tabText@QTabWidget@@QEBA?AVQString@@H@Z	public: class QString __cdecl QTabWidget::tabText(int)const __ptr64
 ?tabletEvent@QWidget@@MEAAXPEAVQTabletEvent@@@Z	protected: virtual void __cdecl QWidget::tabletEvent(class QTabletEvent * __ptr64) __ptr64
 ?tagName@QDomElement@@QEBA?AVQString@@XZ	public: class QString __cdecl QDomElement::tagName(void)const __ptr64
 ?takeAt@QBoxLayout@@UEAAPEAVQLayoutItem@@H@Z	public: virtual class QLayoutItem * __ptr64 __cdecl QBoxLayout::takeAt(int) __ptr64
@@ -4342,7 +4307,6 @@
 ?text@QTextBlock@@QEBA?AVQString@@XZ	public: class QString __cdecl QTextBlock::text(void)const __ptr64
 ?text@QTreeWidgetItem@@QEBA?AVQString@@H@Z	public: class QString __cdecl QTreeWidgetItem::text(int)const __ptr64
 ?textChanged@QLineEdit@@QEAAXAEBVQString@@@Z	public: void __cdecl QLineEdit::textChanged(class QString const & __ptr64) __ptr64
-?textChanged@QTextEdit@@QEAAXXZ	public: void __cdecl QTextEdit::textChanged(void) __ptr64
 ?textCursor@QPlainTextEdit@@QEBA?AVQTextCursor@@XZ	public: class QTextCursor __cdecl QPlainTextEdit::textCursor(void)const __ptr64
 ?textCursor@QTextEdit@@QEBA?AVQTextCursor@@XZ	public: class QTextCursor __cdecl QTextEdit::textCursor(void)const __ptr64
 ?textEdited@QLineEdit@@QEAAXAEBVQString@@@Z	public: void __cdecl QLineEdit::textEdited(class QString const & __ptr64) __ptr64
@@ -4404,6 +4368,7 @@
 ?toLongLong@QVariant@@QEBA_JPEA_N@Z	public: __int64 __cdecl QVariant::toLongLong(bool * __ptr64)const __ptr64
 ?toLower@QString@@QEGBA?AV1@XZ	public: class QString __cdecl QString::toLower(void)const __ptr64& 
 ?toLower@QString@@QEHAA?AV1@XZ	public: class QString __cdecl QString::toLower(void) __ptr64&& 
+?toMSecsSinceEpoch@QDateTime@@QEBA_JXZ	public: __int64 __cdecl QDateTime::toMSecsSinceEpoch(void)const __ptr64
 ?toMap@QVariant@@QEBA?AV?$QMap@VQString@@VQVariant@@@@XZ	public: class QMap<class QString,class QVariant> __cdecl QVariant::toMap(void)const __ptr64
 ?toNativeSeparators@QDir@@SA?AVQString@@AEBV2@@Z	public: static class QString __cdecl QDir::toNativeSeparators(class QString const & __ptr64)
 ?toObject@QJsonValue@@QEBA?AVQJsonObject@@XZ	public: class QJsonObject __cdecl QJsonValue::toObject(void)const __ptr64
@@ -4413,6 +4378,7 @@
 ?toPlainText@QTextDocumentFragment@@QEBA?AVQString@@XZ	public: class QString __cdecl QTextDocumentFragment::toPlainText(void)const __ptr64
 ?toPlainText@QTextEdit@@QEBA?AVQString@@XZ	public: class QString __cdecl QTextEdit::toPlainText(void)const __ptr64
 ?toPoint@QPointF@@QEBA?AVQPoint@@XZ	public: class QPoint __cdecl QPointF::toPoint(void)const __ptr64
+?toPoint@QVariant@@QEBA?AVQPoint@@XZ	public: class QPoint __cdecl QVariant::toPoint(void)const __ptr64
 ?toRect@QRectF@@QEBA?AVQRect@@XZ	public: class QRect __cdecl QRectF::toRect(void)const __ptr64
 ?toRect@QVariant@@QEBA?AVQRect@@XZ	public: class QRect __cdecl QVariant::toRect(void)const __ptr64
 ?toSize@QSizeF@@QEBA?AVQSize@@XZ	public: class QSize __cdecl QSizeF::toSize(void)const __ptr64
@@ -4449,6 +4415,7 @@
 ?tolower@?$ctype@D@std@@QEBADD@Z	public: char __cdecl std::ctype<char>::tolower(char)const __ptr64
 ?tolower@?$ctype@D@std@@QEBAPEBDPEADPEBD@Z	public: char const * __ptr64 __cdecl std::ctype<char>::tolower(char * __ptr64,char const * __ptr64)const __ptr64
 ?toolTip@QAction@@QEBA?AVQString@@XZ	public: class QString __cdecl QAction::toolTip(void)const __ptr64
+?toolTip@QWidget@@QEBA?AVQString@@XZ	public: class QString __cdecl QWidget::toolTip(void)const __ptr64
 ?top@QRect@@QEBAHXZ	public: int __cdecl QRect::top(void)const __ptr64
 ?top@QRectF@@QEBANXZ	public: double __cdecl QRectF::top(void)const __ptr64
 ?topDockWindow@DockPanelBase@Qtitan@@QEBAPEAVDockWindowBase@2@XZ	public: class Qtitan::DockWindowBase * __ptr64 __cdecl Qtitan::DockPanelBase::topDockWindow(void)const __ptr64
@@ -4471,7 +4438,6 @@
 ?tr@QMessageBox@@SA?AVQString@@PEBD0H@Z	public: static class QString __cdecl QMessageBox::tr(char const * __ptr64,char const * __ptr64,int)
 ?tr@QMetaObject@@QEBA?AVQString@@PEBD0H@Z	public: class QString __cdecl QMetaObject::tr(char const * __ptr64,char const * __ptr64,int)const __ptr64
 ?tr@QObject@@SA?AVQString@@PEBD0H@Z	public: static class QString __cdecl QObject::tr(char const * __ptr64,char const * __ptr64,int)
-?tr@QStandardItemModel@@SA?AVQString@@PEBD0H@Z	public: static class QString __cdecl QStandardItemModel::tr(char const * __ptr64,char const * __ptr64,int)
 ?tr@QStyledItemDelegate@@SA?AVQString@@PEBD0H@Z	public: static class QString __cdecl QStyledItemDelegate::tr(char const * __ptr64,char const * __ptr64,int)
 ?tr@QTextBrowser@@SA?AVQString@@PEBD0H@Z	public: static class QString __cdecl QTextBrowser::tr(char const * __ptr64,char const * __ptr64,int)
 ?tr@QTextEdit@@SA?AVQString@@PEBD0H@Z	public: static class QString __cdecl QTextEdit::tr(char const * __ptr64,char const * __ptr64,int)
@@ -4498,14 +4464,15 @@
 ?trimmed@QString@@QEHAA?AV1@XZ	public: class QString __cdecl QString::trimmed(void) __ptr64&& 
 ?truncate@QString@@QEAAXH@Z	public: void __cdecl QString::truncate(int) __ptr64
 ?tryLock@QLockFile@@QEAA_NH@Z	public: bool __cdecl QLockFile::tryLock(int) __ptr64
-?tryLock@QMutex@@QEAA_NH@Z	public: bool __cdecl QMutex::tryLock(int) __ptr64
 ?type@QGraphicsPixmapItem@@UEBAHXZ	public: virtual int __cdecl QGraphicsPixmapItem::type(void)const __ptr64
 ?type@QJsonValue@@QEBA?AW4Type@1@XZ	public: enum QJsonValue::Type __cdecl QJsonValue::type(void)const __ptr64
+?type@QNetworkInterface@@QEBA?AW4InterfaceType@1@XZ	public: enum QNetworkInterface::InterfaceType __cdecl QNetworkInterface::type(void)const __ptr64
 ?type@QStandardItem@@UEBAHXZ	public: virtual int __cdecl QStandardItem::type(void)const __ptr64
 ?type@QTextFormat@@QEBAHXZ	public: int __cdecl QTextFormat::type(void)const __ptr64
 ?type@QVariant@@QEBA?AW4Type@1@XZ	public: enum QVariant::Type __cdecl QVariant::type(void)const __ptr64
 ?typeFlags@QMetaType@@SA?AV?$QFlags@W4TypeFlag@QMetaType@@@@H@Z	public: static class QFlags<enum QMetaType::TypeFlag> __cdecl QMetaType::typeFlags(int)
 ?typeName@QMetaType@@SAPEBDH@Z	public: static char const * __ptr64 __cdecl QMetaType::typeName(int)
+?typeName@QVariant@@QEBAPEBDXZ	public: char const * __ptr64 __cdecl QVariant::typeName(void)const __ptr64
 ?uflow@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAHXZ	protected: virtual int __cdecl std::basic_streambuf<char,struct std::char_traits<char> >::uflow(void) __ptr64
 ?uncaught_exception@std@@YA_NXZ	bool __cdecl std::uncaught_exception(void)
 ?uncaught_exceptions@std@@YAHXZ	int __cdecl std::uncaught_exceptions(void)
@@ -4518,7 +4485,6 @@
 ?unicode@QChar@@QEAAAEAGXZ	public: unsigned short & __ptr64 __cdecl QChar::unicode(void) __ptr64
 ?unicode@QChar@@QEBAGXZ	public: unsigned short __cdecl QChar::unicode(void)const __ptr64
 ?united@QRect@@QEBA?AV1@AEBV1@@Z	public: class QRect __cdecl QRect::united(class QRect const & __ptr64)const __ptr64
-?unlock@QMutex@@QEAAXXZ	public: void __cdecl QMutex::unlock(void) __ptr64
 ?unpolish@OfficeStyle@Qtitan@@UEAAXPEAVQApplication@@@Z	public: virtual void __cdecl Qtitan::OfficeStyle::unpolish(class QApplication * __ptr64) __ptr64
 ?unpolish@OfficeStyle@Qtitan@@UEAAXPEAVQWidget@@@Z	public: virtual void __cdecl Qtitan::OfficeStyle::unpolish(class QWidget * __ptr64) __ptr64
 ?unpolish@QProxyStyle@@UEAAXPEAVQApplication@@@Z	public: virtual void __cdecl QProxyStyle::unpolish(class QApplication * __ptr64) __ptr64
@@ -4654,6 +4620,7 @@
 ?windowState@QWidget@@QEBA?AV?$QFlags@W4WindowState@Qt@@@@XZ	public: class QFlags<enum Qt::WindowState> __cdecl QWidget::windowState(void)const __ptr64
 ?windowTitle@QWidget@@QEBA?AVQString@@XZ	public: class QString __cdecl QWidget::windowTitle(void)const __ptr64
 ?windowTitleChanged@QWidget@@QEAAXAEBVQString@@@Z	public: void __cdecl QWidget::windowTitleChanged(class QString const & __ptr64) __ptr64
+?wordWrap@QLabel@@QEBA_NXZ	public: bool __cdecl QLabel::wordWrap(void)const __ptr64
 ?writableLocation@QStandardPaths@@SA?AVQString@@W4StandardLocation@1@@Z	public: static class QString __cdecl QStandardPaths::writableLocation(enum QStandardPaths::StandardLocation)
 ?write@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@PEBD_J@Z	public: class std::basic_ostream<char,struct std::char_traits<char> > & __ptr64 __cdecl std::basic_ostream<char,struct std::char_traits<char> >::write(char const * __ptr64,__int64) __ptr64
 ?write@?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV12@PEB_W_J@Z	public: class std::basic_ostream<wchar_t,struct std::char_traits<wchar_t> > & __ptr64 __cdecl std::basic_ostream<wchar_t,struct std::char_traits<wchar_t> >::write(wchar_t const * __ptr64,__int64) __ptr64

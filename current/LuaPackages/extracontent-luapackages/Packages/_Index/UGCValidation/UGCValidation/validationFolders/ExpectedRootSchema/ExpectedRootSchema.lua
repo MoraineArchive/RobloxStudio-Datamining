@@ -6,7 +6,6 @@ local CreateExpectedSchema = require(root.util.CreateExpectedSchema)
 local validateInstanceTreeAgainstSchema = require(root.util.validateInstanceTreeAgainstSchema)
 
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
-local getFFlagUGCValidationAnimationPackSupport = require(root.flags.getFFlagUGCValidationAnimationPackSupport)
 local getFFlagUGCValidationAnimationPackFolderStructure =
 	require(root.flags.getFFlagUGCValidationAnimationPackFolderStructure)
 local getFFlagUGCValidationAnimationPackDisableModelStructure =
@@ -39,7 +38,7 @@ ExpectedRootSchema.run = function(reporter: Types.ValidationReporter, data: Type
 	local schema
 
 	if uploadEnum.bundleType then
-		if getFFlagUGCValidationAnimationPackSupport() and uploadEnum.bundleType == Enum.BundleType.Animations then
+		if uploadEnum.bundleType == Enum.BundleType.Animations then
 			if
 				not getFFlagUGCValidationAnimationPackDisableModelStructure()
 				and getFFlagUGCValidationAnimationPackFolderStructure()

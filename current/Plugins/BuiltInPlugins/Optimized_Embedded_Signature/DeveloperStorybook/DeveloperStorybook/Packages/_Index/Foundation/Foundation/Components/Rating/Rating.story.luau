@@ -8,13 +8,22 @@ local Chip = require(Foundation.Components.Chip)
 local ChipSize = require(Foundation.Enums.ChipSize)
 local Rating = require(Foundation.Components.Rating)
 local RatingValue = require(Foundation.Enums.RatingValue)
+local StorySection = require(Foundation.Utility.Stories.Shared.StorySection)
 local Text = require(Foundation.Components.Text)
 local View = require(Foundation.Components.View)
+
+local Section = StorySection.Section
 
 type RatingValue = RatingValue.RatingValue
 type ChipSize = ChipSize.ChipSize
 
 local TRUNCATION_TEXT = "99% of players liked this experience"
+
+local SIZE_ORDER: { ChipSize } = {
+	ChipSize.Small,
+	ChipSize.Medium,
+	ChipSize.Large,
+}
 
 local VALUE_ORDER: { RatingValue } = {
 	RatingValue.ThumbUp,
@@ -41,28 +50,6 @@ local function PlaygroundStory(props: {
 		onThumbDown = function()
 			print("Thumb down")
 		end,
-	})
-end
-
-local function Section(props: {
-	LayoutOrder: number,
-	name: string,
-	contentTag: string?,
-	children: React.ReactNode,
-})
-	return React.createElement(View, {
-		tag = "col gap-medium size-full-0 auto-y",
-		LayoutOrder = props.LayoutOrder,
-	}, {
-		Title = React.createElement(Text, {
-			Text = props.name,
-			tag = "auto-xy text-label-medium content-default",
-			LayoutOrder = 1,
-		}),
-		Content = React.createElement(View, {
-			tag = props.contentTag or "row gap-large auto-xy wrap",
-			LayoutOrder = 2,
-		}, props.children),
 	})
 end
 
@@ -141,7 +128,7 @@ end
 
 local function SizingStory(): React.ReactNode
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		Sizes = React.createElement(
 			Section,
@@ -150,7 +137,7 @@ local function SizingStory(): React.ReactNode
 				name = "Size",
 				contentTag = "row gap-large auto-xy wrap",
 			},
-			Dash.map(ChipSize, function(size, index)
+			Dash.map(SIZE_ORDER, function(size, index)
 				return React.createElement(LabeledRating, {
 					label = size,
 					LayoutOrder = index,
@@ -182,7 +169,7 @@ end
 
 local function ControlledStory(): React.ReactNode
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		ControlledImplementation = React.createElement(Section, {
 			LayoutOrder = 1,
@@ -237,7 +224,7 @@ end
 
 local function ContentStory(): React.ReactNode
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		Truncation = React.createElement(
 			Section,
@@ -246,7 +233,7 @@ local function ContentStory(): React.ReactNode
 				name = "Truncation",
 				contentTag = "col gap-large size-full-0 auto-y",
 			},
-			Dash.map(ChipSize, function(size, index)
+			Dash.map(SIZE_ORDER, function(size, index)
 				return React.createElement(TruncatedRating, {
 					LayoutOrder = index,
 					size = size,
@@ -258,7 +245,7 @@ end
 
 local function InContextStory(): React.ReactNode
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		Chips = React.createElement(Section, {
 			LayoutOrder = 1,
@@ -302,13 +289,12 @@ return {
 		},
 		{
 			name = "In context",
-			summary = "Rating should remain visually consistent with Chips.",
 			story = InContextStory,
 		},
 	},
 	controls = {
 		text = "99% liked",
-		size = Dash.values(ChipSize),
-		value = Dash.values(RatingValue),
+		size = SIZE_ORDER,
+		value = VALUE_ORDER,
 	},
 }

@@ -12,11 +12,13 @@ local InputSize = require(Foundation.Enums.InputSize)
 local MatrixGridShared = require(Foundation.Utility.Stories.Shared.MatrixGrid)
 local PresentationContext = require(Foundation.Providers.Style.PresentationContext)
 local StoryIcons = require(Foundation.Utility.Stories.Shared.StoryIcons)
+local StorySection = require(Foundation.Utility.Stories.Shared.StorySection)
 local Text = require(Foundation.Components.Text)
 local View = require(Foundation.Components.View)
 local useTokens = require(Foundation.Providers.Style.useTokens)
 
 local MatrixGrid = MatrixGridShared.MatrixGrid
+local Section = StorySection.Section
 
 local ButtonVariant = require(Foundation.Enums.ButtonVariant)
 local FillBehavior = require(Foundation.Enums.FillBehavior)
@@ -145,28 +147,6 @@ local function StoryButton(props: {
 	})
 end
 
-local function Section(props: {
-	LayoutOrder: number,
-	name: string,
-	contentTag: string?,
-	children: React.ReactNode,
-})
-	return React.createElement(View, {
-		tag = "col gap-medium size-full-0 auto-y",
-		LayoutOrder = props.LayoutOrder,
-	}, {
-		Title = React.createElement(Text, {
-			Text = props.name,
-			tag = "auto-xy text-label-medium content-default",
-			LayoutOrder = 1,
-		}),
-		Content = React.createElement(View, {
-			tag = props.contentTag or "row gap-large auto-xy wrap",
-			LayoutOrder = 2,
-		}, props.children),
-	})
-end
-
 local function LabeledButton(props: {
 	label: string,
 	LayoutOrder: number,
@@ -272,7 +252,7 @@ end
 
 local function StatesStory(): React.ReactNode
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		Disabled = React.createElement(Section, {
 			LayoutOrder = 1,
@@ -343,7 +323,7 @@ end
 
 local function ControlledStory(): React.ReactNode
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		RegularButton = React.createElement(Section, {
 			LayoutOrder = 1,
@@ -396,7 +376,7 @@ end
 
 local function SizingStory(): React.ReactNode
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		Size = React.createElement(
 			Section,
@@ -471,7 +451,7 @@ end
 
 local function ContentStory(): React.ReactNode
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		Icon = React.createElement(Section, {
 			LayoutOrder = 1,
@@ -604,7 +584,7 @@ end
 
 local function InContextStory(): React.ReactNode
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		InverseSurface = React.createElement(Section, {
 			LayoutOrder = 1,
@@ -659,7 +639,6 @@ return {
 		},
 		{
 			name = "In context",
-			summary = "Button reads colorNamespace from PresentationContext, not from props.",
 			story = InContextStory,
 		},
 	},

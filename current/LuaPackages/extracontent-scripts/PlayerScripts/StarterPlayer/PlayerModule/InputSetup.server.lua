@@ -15,6 +15,7 @@ local FFlagUserPlayerScriptsUseScriptableBindings = FlagUtil.getUserFlag("UserPl
 local FFlagUserPlayerScriptsSAuthDirectAPIs = FlagUtil.getUserFlag("UserPlayerScriptsSAuthDirectAPIs2")
 local FFlagUserPlayerScriptsPlayerControlState = FlagUtil.getUserFlag("UserPlayerScriptsPlayerControlState2")
 local FFlagUserPlayerScriptsSupportTVRemoteKeycodes = FlagUtil.getUserFlag("UserPlayerScriptsSupportTVRemoteKeycodes")
+local FFlagUserPlayerScriptsTaskDeferSimulation = FlagUtil.getUserFlag("UserPlayerScriptsTaskDeferSimulation")
 
 local AvatarAbilitiesInterface = if FFlagUserPlayerScriptsCCLIntegrationD
 	then require(script.Parent:WaitForChild("ControlModule"):WaitForChild("AvatarAbilitiesInterface"))
@@ -106,6 +107,7 @@ if not FFlagUserPlayerScriptsPlayerControlState then
 			if not inputContexts then return end
 			local characterContext = inputContexts:FindFirstChild("CharacterContext")
 			if not characterContext then return end
+			if FFlagUserPlayerScriptsTaskDeferSimulation and characterContext:FindFirstChild(abilityName .. "Action") then return end
 
 			local action = Instance.new("InputAction")
 			action.Name = abilityName .. "Action"
@@ -123,7 +125,7 @@ if not FFlagUserPlayerScriptsPlayerControlState then
 			if not inputContexts then
 				-- We aren't able to create new instances or wait while in a BindToSimulation update
 				-- Creating these objects will be done asynchronously. It will take two calls of attemptCreateActionsIfAbsent() to create the hierarchy
-				task.spawn(function()
+				(if FFlagUserPlayerScriptsTaskDeferSimulation then task.defer else task.spawn)(function()
 					InputReplication.CloneInputsIfAbsent(player)
 				end)
 			else
@@ -132,7 +134,7 @@ if not FFlagUserPlayerScriptsPlayerControlState then
 					for _, abilityName in avatarAbilitiesInterface:GetAbilities() do
 						local action = characterContext:FindFirstChild(abilityName .. "Action")
 						if not action then
-							task.spawn(function()
+							(if FFlagUserPlayerScriptsTaskDeferSimulation then task.defer else task.spawn)(function()
 								createAction(abilityName)
 							end)
 						end

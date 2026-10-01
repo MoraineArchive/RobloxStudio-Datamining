@@ -9,6 +9,7 @@ local typeRegistry = require(script.Parent.Parent.Parent.Parent.Parent.proto.typ
 type _Messages = {
 	Surfacing: _SurfacingMessage,
 	PeekView: _PeekViewMessage,
+	FullPage: _FullPageMessage,
 }
 local messages: _Messages = {} :: _Messages
 
@@ -23,11 +24,11 @@ type _SurfacingImpl = {
 }
 
 type _SurfacingFields = {
-	kind: { type: "peek_view", value: PeekView }?,
+	kind: ({ type: "peek_view", value: PeekView } | { type: "full_page", value: FullPage })?,
 }
 
 type _SurfacingPartialFields = {
-	kind: { type: "peek_view", value: PeekView }?,
+	kind: ({ type: "peek_view", value: PeekView } | { type: "full_page", value: FullPage })?,
 }
 
 export type Surfacing = typeof(setmetatable({} :: _SurfacingFields, {} :: _SurfacingImpl))
@@ -54,6 +55,27 @@ type _PeekViewPartialFields = {
 export type PeekView = typeof(setmetatable({} :: _PeekViewFields, {} :: _PeekViewImpl))
 type _PeekViewMessage = proto.Message<PeekView, _PeekViewPartialFields>
 
+type _FullPageImpl = {
+	__index: _FullPageImpl,
+	new: (fields: _FullPagePartialFields?) -> FullPage,
+	encode: (self: FullPage) -> buffer,
+	decode: (input: buffer) -> FullPage,
+	jsonEncode: (self: FullPage) -> { [string]: any },
+	jsonDecode: (input: { [string]: any }) -> FullPage,
+	descriptor: proto.Descriptor,
+}
+
+type _FullPageFields = {
+	content_top_padding: number?,
+}
+
+type _FullPagePartialFields = {
+	content_top_padding: number?,
+}
+
+export type FullPage = typeof(setmetatable({} :: _FullPageFields, {} :: _FullPageImpl))
+type _FullPageMessage = proto.Message<FullPage, _FullPagePartialFields>
+
 do
 	local _SurfacingImpl = {}
 	_SurfacingImpl.__index = _SurfacingImpl
@@ -72,6 +94,10 @@ do
 			if self.kind.type == "peek_view" then
 				local encoded = self.kind.value:encode()
 				output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.lengthDelimited)
+				output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+			elseif self.kind.type == "full_page" then
+				local encoded = self.kind.value:encode()
+				output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
 				output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
 			end
 		end
@@ -99,6 +125,11 @@ do
 					local value
 					value, cursor = proto.readBuffer(input, cursor)
 					self.kind = { type = "peek_view", value = messages.PeekView.decode(value) }
+					continue
+				elseif field == 2 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.kind = { type = "full_page", value = messages.FullPage.decode(value) }
 					continue
 				end
 
@@ -130,6 +161,8 @@ do
 		if self.kind ~= nil then
 			if self.kind.type == "peek_view" then
 				output.peekView = self.kind.value:jsonEncode()
+			elseif self.kind.type == "full_page" then
+				output.fullPage = self.kind.value:jsonEncode()
 			end
 		end
 
@@ -145,6 +178,14 @@ do
 
 		if input.peekView ~= nil then
 			self.kind = { type = "peek_view", value = messages.PeekView.jsonDecode(input.peekView) }
+		end
+
+		if input.full_page ~= nil then
+			self.kind = { type = "full_page", value = messages.FullPage.jsonDecode(input.full_page) }
+		end
+
+		if input.fullPage ~= nil then
+			self.kind = { type = "full_page", value = messages.FullPage.jsonDecode(input.fullPage) }
 		end
 
 		return self
@@ -261,7 +302,111 @@ do
 	typeRegistry.default:register(messages.PeekView)
 end
 
+do
+	local _FullPageImpl = {}
+	_FullPageImpl.__index = _FullPageImpl
+
+	function _FullPageImpl.new(data: _FullPagePartialFields?): FullPage
+		return setmetatable({
+			content_top_padding = if data == nil or data.content_top_padding == nil
+				then nil
+				else data.content_top_padding,
+		}, _FullPageImpl :: _FullPageImpl)
+	end
+
+	function _FullPageImpl.encode(self: FullPage): buffer
+		local output = buffer.create(0)
+		local cursor = 0
+
+		if self.content_top_padding ~= nil then
+			output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.varint)
+			output, cursor = proto.writeVarInt(output, cursor, self.content_top_padding)
+		end
+
+		local shrunkBuffer = buffer.create(cursor)
+		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
+		return shrunkBuffer
+	end
+
+	function _FullPageImpl.decode(input: buffer): FullPage
+		local self = _FullPageImpl.new()
+		local cursor = 0
+
+		while cursor < buffer.len(input) do
+			local field, wireType
+			field, wireType, cursor = proto.readTag(input, cursor)
+
+			if wireType == proto.wireTypes.varint then
+				if field == 1 then
+					local value
+					value, cursor = proto.readVarIntI32(input, cursor)
+					self.content_top_padding = value
+					continue
+				end
+
+				local _
+				_, cursor = proto.readVarInt(input, cursor)
+			elseif wireType == proto.wireTypes.lengthDelimited then
+				-- No fields
+
+				local length
+				length, cursor = proto.readVarInt(input, cursor)
+
+				cursor += length
+			elseif wireType == proto.wireTypes.i32 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed32(input, cursor)
+			elseif wireType == proto.wireTypes.i64 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed64(input, cursor)
+			else
+				error("Unsupported wire type: " .. wireType)
+			end
+		end
+
+		return self
+	end
+
+	function _FullPageImpl.jsonEncode(self: FullPage): any
+		local output = {}
+
+		if self.content_top_padding ~= nil then
+			output.contentTopPadding = self.content_top_padding
+		end
+
+		return output
+	end
+
+	function _FullPageImpl.jsonDecode(input: { [string]: any }): FullPage
+		local self = _FullPageImpl.new()
+
+		if input.content_top_padding ~= nil then
+			self.content_top_padding = input.content_top_padding
+		end
+
+		if input.contentTopPadding ~= nil then
+			self.content_top_padding = input.contentTopPadding
+		end
+
+		return self
+	end
+
+	_FullPageImpl.descriptor = {
+		name = "FullPage",
+		fullName = "roblox.apppageplatform.shared.v1beta1.FullPage",
+	}
+
+	messages.FullPage = _FullPageImpl :: any -- Luau: Not sure why this intersection fails.
+
+	typeRegistry.default:register(messages.FullPage)
+end
+
 return {
 	Surfacing = messages.Surfacing,
 	PeekView = messages.PeekView,
+	FullPage = messages.FullPage,
 }

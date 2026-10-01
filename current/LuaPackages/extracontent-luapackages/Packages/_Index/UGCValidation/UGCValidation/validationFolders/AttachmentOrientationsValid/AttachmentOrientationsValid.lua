@@ -10,8 +10,6 @@ local R15plusUtils = require(root.util.R15plusUtils)
 local getAttachmentCFrameInPartSpace = require(root.util.getAttachmentCFrameInPartSpace)
 local AttachmentRotationFInts = require(root.util.AttachmentRotationFInts)
 
-local getFFlagUGCValidateMigrateSchemaProperties = require(root.flags.getFFlagUGCValidateMigrateSchemaProperties)
-
 local FFlagUGCValidateRigAttachmentRotationUsesDiff =
 	game:DefineFastFlag("UGCValidateRigAttachmentRotationUsesDiff", false)
 
@@ -33,7 +31,6 @@ AttachmentOrientationsValid.requiredData = {
 	ValidationEnums.SharedDataMember.rootInstance,
 	ValidationEnums.SharedDataMember.uploadEnum,
 }
-AttachmentOrientationsValid.fflag = getFFlagUGCValidateMigrateSchemaProperties
 AttachmentOrientationsValid.expectedFailures = {}
 
 local function expectedGripAttCFrameRotation(armAsset: Instance, assetTypeEnum: Enum.AssetType): CFrame

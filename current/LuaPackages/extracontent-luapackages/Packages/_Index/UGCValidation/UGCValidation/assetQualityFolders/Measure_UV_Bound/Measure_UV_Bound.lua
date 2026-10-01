@@ -41,7 +41,6 @@ Measure_UV_Bound.run = function(reporter: Types.ValidationReporter, data: Types.
 						"%.2f",
 						(tonumber(partData.uv_outside_bound_vert_percent) or 0) * 100
 					),
-					score = tostring(math.floor(tonumber(partData.score) or 0)),
 				}
 				if getFFlagUGCValidateAQMeshQualityBlockUpload() then
 					reporter:fail(ErrorSourceStrings.Keys.AQSWarn_UVBound, params)

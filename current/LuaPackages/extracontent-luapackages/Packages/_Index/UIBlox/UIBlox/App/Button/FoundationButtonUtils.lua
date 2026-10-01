@@ -7,7 +7,6 @@ local Core = UIBlox.Core
 local Foundation = require(Packages.Foundation)
 local ButtonVariant = Foundation.Enums.ButtonVariant
 local InputSize = Foundation.Enums.InputSize
-local FoundationFlags = Foundation.Utility.Flags
 
 local GetTextSize = require(Core.Text.GetTextSize)
 
@@ -56,7 +55,7 @@ local TEXT_MEASURE_BOUNDS = Vector2.new(10000, 10000)
 type FitContentTokens = {
 	Padding: { [string]: number },
 	Size: { [string]: number },
-	Typography: { [string]: { Font: Enum.Font, FontSize: number } },
+	Typography: { [string]: { Font: Font | Enum.Font, FontSize: number } },
 }
 
 local function findIcon(searchData: any)
@@ -129,8 +128,7 @@ local function getFitContentSize(text: string, standardSize: string?, tokens: Fi
 		return nil
 	end
 
-	local typographyPrefix = if FoundationFlags.FoundationButtonLabelTypography then "Label" else "Title"
-	local typography = tokens.Typography[typographyPrefix .. metrics.typography]
+	local typography = tokens.Typography["Label" .. metrics.typography]
 	local textWidth = GetTextSize(text, typography.FontSize, typography.Font, TEXT_MEASURE_BOUNDS).X
 
 	-- Round up, because the label carries text-truncate-end and clips as soon as its

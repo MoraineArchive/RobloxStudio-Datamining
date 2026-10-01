@@ -2,9 +2,9 @@
 	Imperative screenshot capture sequence for the V2 abuse report menu.
 
 	Extracted and refactored from the inline capture logic in
-	Components/AbuseReportMenuNew.lua (the legacy menu) and the old
+	Components/LegacyAbuseReportMenu.lua and the old
 	Hooks/useCaptureScreenshot.lua hook. The frame/time waits and hide/show
-	timing are intended to match AbuseReportMenuNew; see the inline comments.
+	timing are intended to match LegacyAbuseReportMenu; see the inline comments.
 ]]
 local root = script:FindFirstAncestor("AbuseReportMenu")
 
@@ -31,7 +31,7 @@ local FIntAbuseReportMenuScreenshotWaitFrames = game:DefineFastInt("AbuseReportM
 local UserGameSettings = UserSettings():GetService("UserGameSettings")
 
 -- Take the screenshot one frame after hiding so the remaining menu UI has gone
--- away (matches AbuseReportMenuNew, which captured on the second Heartbeat).
+-- away (matches LegacyAbuseReportMenu, which captured on the second Heartbeat).
 local SCREENSHOT_WAIT_FRAMES = 1
 
 -- Per-capture callbacks: what to do as the capture progresses.
@@ -123,7 +123,7 @@ local function runScreenshotCaptureSequence(callbacks: CaptureSequenceCallbacks,
 		end
 
 		-- Re-show once enough frames AND time have elapsed since hide (counted
-		-- concurrently with the screenshot wait, matching AbuseReportMenuNew).
+		-- concurrently with the screenshot wait, matching LegacyAbuseReportMenu).
 		-- Re-showing too soon can leave the menu stuck.
 		local enoughFrames = framesSinceHide >= resolvedDeps.getWaitFrames()
 		local enoughTime = (os.clock() - startClock) >= resolvedDeps.getWaitTime()

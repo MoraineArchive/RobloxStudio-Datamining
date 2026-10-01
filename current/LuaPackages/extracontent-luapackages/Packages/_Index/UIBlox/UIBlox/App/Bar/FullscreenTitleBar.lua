@@ -3,6 +3,9 @@ local Bar = script.Parent
 local App = Bar.Parent
 local UIBlox = App.Parent
 local Packages = UIBlox.Parent
+local Foundation = require(Packages.Foundation)
+local normalizeFontFace = Foundation.Utility.normalizeFontFace
+local FFlagFoundationFontFaceMigration = Foundation.Utility.Flags.FoundationFontFaceMigration
 
 local Roact = require(Packages.Roact)
 local Otter = require(Packages.Otter)
@@ -111,7 +114,8 @@ function FullscreenTitleBar:render()
 		local function renderCenterText()
 			return Roact.createElement("TextLabel", {
 				BackgroundTransparency = 1,
-				Font = centerTextFont.Font,
+				Font = if FFlagFoundationFontFaceMigration then nil else centerTextFont.Font,
+				FontFace = if FFlagFoundationFontFaceMigration then normalizeFontFace(centerTextFont.Font) else nil,
 				Size = UDim2.new(1, 0, 0, centerTextSize),
 				Text = self.props.title,
 				TextColor3 = textColorStyle.Color,

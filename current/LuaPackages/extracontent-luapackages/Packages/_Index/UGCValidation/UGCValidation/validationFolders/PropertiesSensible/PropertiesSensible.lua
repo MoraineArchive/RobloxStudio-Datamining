@@ -7,7 +7,6 @@ local Types = require(root.util.Types)
 local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 
-local getFFlagUGCValidateMigrateSchemaProperties = require(root.flags.getFFlagUGCValidateMigrateSchemaProperties)
 local getEngineFeatureEngineUGCValidatePropertiesSensible =
 	require(root.flags.getEngineFeatureEngineUGCValidatePropertiesSensible)
 local getFIntUGCValidateMaxHSRDataLen = require(root.flags.getFIntUGCValidateMaxHSRDataLen)
@@ -35,7 +34,6 @@ PropertiesSensible.requiredData = {
 	ValidationEnums.SharedDataMember.consumerConfig,
 	ValidationEnums.SharedDataMember.uploadCategory,
 }
-PropertiesSensible.fflag = getFFlagUGCValidateMigrateSchemaProperties
 PropertiesSensible.expectedFailures = {}
 
 local function walkInstanceTree(
@@ -77,6 +75,7 @@ PropertiesSensible.run = function(reporter: Types.ValidationReporter, data: Type
 	end
 
 	if getFFlagUGCValidateWrapDataCaps() then
+		-- Lifecycle-gated on consumerEnv (not validationEnv): these are first-publish caps, so a VaaS run (consumerEnv=IEC) doesn't trip them.
 		local consumerEnv = data.consumerConfig.consumerEnv
 		local capHSRDataEmpty = consumerEnv == ValidationEnums.ConsumerEnv.Backend
 		local capTemporaryIds = consumerEnv ~= ValidationEnums.ConsumerEnv.IEC

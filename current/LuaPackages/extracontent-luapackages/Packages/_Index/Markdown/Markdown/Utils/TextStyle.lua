@@ -44,7 +44,27 @@ local function getBaseTextElementEngineTags(props: Types.TextStyles?): { InlineL
 	return engineTags
 end
 
+local function normalizeStyleFont<T>(styles: T?): T?
+	if not styles then
+		return styles
+	end
+
+	local castStyles: {
+		font: (Enum.Font | Font)?,
+		fontFace: Font?,
+	} = styles :: any
+
+	local normalized = Dash.omit(castStyles, { "font" })
+	if normalized.fontFace == nil and castStyles.font ~= nil then
+		normalized.fontFace = if typeof(castStyles.font) == "Font"
+			then castStyles.font
+			else Font.fromEnum(castStyles.font)
+	end
+	return normalized
+end
+
 return {
 	getCodeTextStyles = getCodeTextStyles,
 	getBaseTextElementEngineTags = getBaseTextElementEngineTags,
+	normalizeStyleFont = normalizeStyleFont,
 }

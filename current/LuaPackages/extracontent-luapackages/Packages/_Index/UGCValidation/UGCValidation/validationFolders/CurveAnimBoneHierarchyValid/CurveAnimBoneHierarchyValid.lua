@@ -7,16 +7,14 @@ local CurveAnimationHierarchyUtils = require(root.util.CurveAnimationHierarchyUt
 local CurveAnimBoneHierarchyUtils = require(root.util.CurveAnimBoneHierarchyUtils)
 
 local getFFlagUGCValidateEmotesBonesAllowed = require(root.flags.getFFlagUGCValidateEmotesBonesAllowed)
-local getFFlagUGCValidateDuplicatesInAnimation = require(root.flags.getFFlagUGCValidateDuplicatesInAnimation)
 local getFFlagUGCValidateRestrictNumFaceControls = require(root.flags.getFFlagUGCValidateRestrictNumFaceControls)
 local getFIntUGCValidateMaxTotalFaceControls = require(root.flags.getFIntUGCValidateMaxTotalFaceControls)
 local getFFlagUGCValidateAnimBonesSupport = require(root.flags.getFFlagUGCValidateAnimBonesSupport)
-local getFFlagUGCValidationAnimationPackSupport = require(root.flags.getFFlagUGCValidationAnimationPackSupport)
 
 local CurveAnimBoneHierarchyValid = {}
 
 CurveAnimBoneHierarchyValid.categories = { ValidationEnums.UploadCategory.EMOTE_ANIMATION }
-if getFFlagUGCValidateAnimBonesSupport() and getFFlagUGCValidationAnimationPackSupport() then
+if getFFlagUGCValidateAnimBonesSupport() then
 	table.insert(CurveAnimBoneHierarchyValid.categories, ValidationEnums.UploadCategory.ANIMATION)
 end
 CurveAnimBoneHierarchyValid.requiredData = {
@@ -194,17 +192,9 @@ CurveAnimBoneHierarchyValid.run = function(reporter: Types.ValidationReporter, d
 		local curveAnim = inst :: CurveAnimation
 
 		local bodyPartFolders: { Folder } = {}
-		if getFFlagUGCValidateDuplicatesInAnimation() then
-			local root_folder = CurveAnimationHierarchyUtils.getBodyPartFolderRoot(curveAnim)
-			if root_folder then
-				table.insert(bodyPartFolders, root_folder)
-			end
-		else
-			for _, child in curveAnim:GetChildren() do
-				if child:IsA("Folder") and CurveAnimationHierarchyUtils.isBodyPartFolderNameValid(child.Name) then
-					table.insert(bodyPartFolders, child :: Folder)
-				end
-			end
+		local root_folder = CurveAnimationHierarchyUtils.getBodyPartFolderRoot(curveAnim)
+		if root_folder then
+			table.insert(bodyPartFolders, root_folder)
 		end
 
 		for _, folder in bodyPartFolders do

@@ -8,12 +8,16 @@ local UIBloxConfig = require(UIBlox.UIBloxConfig)
 
 local Roact = require(Packages.Roact)
 local t = require(Packages.t)
+local Foundation = require(Packages.Foundation)
+local normalizeFontFace = Foundation.Utility.normalizeFontFace
 local withStyle = require(UIBlox.Core.Style.withStyle)
 
 local GetTextSize = require(UIBlox.Core.Text.GetTextSize)
 local Images = require(UIBlox.App.ImageSet.Images)
 local ImageSetComponent = require(UIBlox.Core.ImageSet.ImageSetComponent)
 local ItemTileEnums = require(TileRoot.Enum.ItemTileEnums)
+
+local FFlagFoundationFontFaceMigration = Foundation.Utility.Flags.FoundationFontFaceMigration
 
 local ItemTileStatus = Roact.PureComponent:extend("ItemTileStatus")
 
@@ -83,7 +87,8 @@ function ItemTileStatus:render()
 		}, {
 			Text = Roact.createElement("TextLabel", {
 				BackgroundTransparency = 1,
-				Font = font,
+				Font = if FFlagFoundationFontFaceMigration then nil else font,
+				FontFace = if FFlagFoundationFontFaceMigration then normalizeFontFace(font) else nil,
 				TextSize = fontSize,
 				Text = statusText,
 				TextColor3 = styleInfo.Text.Color,

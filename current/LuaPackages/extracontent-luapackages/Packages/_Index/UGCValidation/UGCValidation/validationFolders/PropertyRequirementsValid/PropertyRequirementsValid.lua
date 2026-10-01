@@ -7,10 +7,6 @@ local Types = require(root.util.Types)
 local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 local valueToString = require(root.util.valueToString)
-local getFFlagUGCValidationEyebrowEyelashSupport = require(root.flags.getFFlagUGCValidationEyebrowEyelashSupport)
-
-local getFFlagUGCValidateMigrateSchemaProperties = require(root.flags.getFFlagUGCValidateMigrateSchemaProperties)
-
 local EPSILON = 1e-5
 
 local PropertyRequirementsValid = {}
@@ -26,7 +22,6 @@ PropertyRequirementsValid.requiredData = {
 	ValidationEnums.SharedDataMember.rootInstance,
 	ValidationEnums.SharedDataMember.uploadEnum,
 }
-PropertyRequirementsValid.fflag = getFFlagUGCValidateMigrateSchemaProperties
 PropertyRequirementsValid.expectedFailures = {}
 
 local function comparitorMethodImpl(a: number, b: number, comparitorMethod: string): boolean
@@ -52,14 +47,12 @@ local function doesPropertyMatchExpectations(currentValue: any, expectedValue: a
 		return currentValue == nil
 	end
 
-	if getFFlagUGCValidationEyebrowEyelashSupport() then
-		if typeof(expectedValue) == "table" and comparitorMethod == Constants.COMPARISON_METHODS.FOUND_IN then
-			local result = false
-			for _, v in expectedValue do
-				result = result or doesPropertyMatchExpectations(currentValue, v, Constants.COMPARISON_METHODS.EXACT_EQ)
-			end
-			return result
+	if typeof(expectedValue) == "table" and comparitorMethod == Constants.COMPARISON_METHODS.FOUND_IN then
+		local result = false
+		for _, v in expectedValue do
+			result = result or doesPropertyMatchExpectations(currentValue, v, Constants.COMPARISON_METHODS.EXACT_EQ)
 		end
+		return result
 	end
 
 	if typeof(currentValue) ~= typeof(expectedValue) then

@@ -38,9 +38,6 @@ local Typecheck = require(Framework.Util.Typecheck)
 local Dash = require(Framework.Parent.Dash)
 local join = Dash.join
 
-local getFFlagDevFrameworkKeyboardNavComponentChanges =
-	require(Framework.SharedFlags.getFFlagDevFrameworkKeyboardNavComponentChanges)
-
 local Checkbox = Roact.PureComponent:extend("Checkbox")
 Typecheck.wrap(Checkbox, script)
 
@@ -152,7 +149,7 @@ function Checkbox:render()
 		local paneProps = if supportsStyleSheets
 			then {
 				Position = props.Position,
-				Selectable = if getFFlagDevFrameworkKeyboardNavComponentChanges() then false else nil,
+				Selectable = false,
 				[React.Tag] = tags,
 			}
 			else {
@@ -161,7 +158,7 @@ function Checkbox:render()
 				Layout = Enum.FillDirection.Horizontal,
 				OnClick = self.onClick,
 				Position = props.Position,
-				Selectable = if getFFlagDevFrameworkKeyboardNavComponentChanges() then false else nil,
+				Selectable = false,
 				Spacing = style.Spacing,
 			}
 

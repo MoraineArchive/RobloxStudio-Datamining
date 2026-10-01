@@ -12,7 +12,6 @@ local Types = require(root.util.Types)
 local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 
-local getFFlagUGCValidateMigrateDynamicHeadData = require(root.flags.getFFlagUGCValidateMigrateDynamicHeadData)
 local getFIntFacsJointMaximumDistRatioDirect = require(root.flags.getFIntFacsJointMaximumDistRatioDirect)
 local getFIntFacsJointMaximumDistRatioAccumulated = require(root.flags.getFIntFacsJointMaximumDistRatioAccumulated)
 local getEngineFeatureEngineUGCValidateFACSJointTransformsWithinBounds =
@@ -20,7 +19,6 @@ local getEngineFeatureEngineUGCValidateFACSJointTransformsWithinBounds =
 
 local FacsJointBoundsValid = {}
 
-FacsJointBoundsValid.fflag = getFFlagUGCValidateMigrateDynamicHeadData
 FacsJointBoundsValid.categories = { ValidationEnums.UploadCategory.DYNAMIC_HEAD }
 FacsJointBoundsValid.prereqTests = { ValidationEnums.ValidationModule.DynamicHeadFacsPresent }
 FacsJointBoundsValid.requiredData = { ValidationEnums.SharedDataMember.renderMeshesData }

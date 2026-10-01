@@ -3,7 +3,7 @@
 	a QDialog and mounts a React tree into it. It manages its own visibility
 	state and only renders child nodes if the dialog is visible.
 
-	NOTE: If you want a dialog with a standardized design, use `useDialog`
+	NOTE: If you want a dialog with a standardized design, use `StudioFoundation.Dialog`
 	instead.
 
 	Properties:

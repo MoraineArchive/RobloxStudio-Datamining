@@ -10,6 +10,7 @@ local SendCounter = require(InspectAndBuyFolder.Thunks.SendCounter)
 local ReportPurchaseAttemptUnifiedEvent = require(InspectAndBuyFolder.Thunks.ReportPurchaseAttemptUnifiedEvent)
 
 local FFlagAXIaBSinglePurchaseUnifiedEvents = require(InspectAndBuyFolder.Flags.FFlagAXIaBSinglePurchaseUnifiedEvents)
+local FFlagFixInspectAndBuyThirdPartySales = game:DefineFastFlag("FixInspectAndBuyThirdPartySales", false)
 
 local requiredServices = {
 	Analytics,
@@ -68,15 +69,17 @@ local function PromptPurchase(
 			MarketplaceService:PromptBundlePurchase(Players.LocalPlayer :: Player, itemId)
 			store:dispatch(SendCounter(Constants.Counters.PromptBundlePurchase))
 		elseif itemType == Constants.ItemType.Asset then
+			-- TODO: Remove this comment once FFlagFixInspectAndBuyThirdPartySales is removed
 			--[[
 				Calling `MarketplaceService:PromptPurchase` to prompt unlimited assets in collectibles system
 				Calling `MarketplaceService:PromptRobloxPurchase` to prompt assets NOT in collectibles system or Limited 2.0/Limited Collectible original copies
 			]]
 			local isNotLimited20OrLimitedCollectible = not isLimited20OrLimitedCollectible
-			if collectibleItemId ~= nil and isNotLimited20OrLimitedCollectible then
+			if not FFlagFixInspectAndBuyThirdPartySales and collectibleItemId ~= nil and isNotLimited20OrLimitedCollectible then
 				MarketplaceService:PromptPurchase(Players.LocalPlayer :: Player, itemId, false)
 				store:dispatch(SendCounter(Constants.Counters.PromptUnlimitedCollectiblePurchase))
 			else
+				-- When FFlagFixInspectAndBuyThirdPartySales is true, always use PromptRobloxPurchase for non collectibles.
 				MarketplaceService:PromptRobloxPurchase(itemId, false)
 				store:dispatch(SendCounter(Constants.Counters.PromptRobloxPurchase))
 			end

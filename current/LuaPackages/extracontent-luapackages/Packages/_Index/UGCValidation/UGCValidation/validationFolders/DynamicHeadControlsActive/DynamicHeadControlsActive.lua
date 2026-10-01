@@ -12,8 +12,6 @@ local Types = require(root.util.Types)
 local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 
-local getFFlagUGCValidateMigrateDynamicHeadData = require(root.flags.getFFlagUGCValidateMigrateDynamicHeadData)
-
 local REQUIRED_ACTIVE_FACS_CONTROLS = {
 	"LeftEyeClosed",
 	"EyesLookDown",
@@ -36,7 +34,6 @@ local REQUIRED_ACTIVE_FACS_CONTROLS = {
 
 local DynamicHeadControlsActive = {}
 
-DynamicHeadControlsActive.fflag = getFFlagUGCValidateMigrateDynamicHeadData
 DynamicHeadControlsActive.categories = { ValidationEnums.UploadCategory.DYNAMIC_HEAD }
 DynamicHeadControlsActive.prereqTests = { ValidationEnums.ValidationModule.DynamicHeadFacsPresent }
 DynamicHeadControlsActive.requiredData = { ValidationEnums.SharedDataMember.renderMeshesData }

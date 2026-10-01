@@ -34,6 +34,7 @@
 local Chrome = script:FindFirstAncestor("Chrome")
 
 local CorePackages = game:GetService("CorePackages")
+local GuiService = game:GetService("GuiService")
 local StarterGui = game:GetService("StarterGui")
 local React = require(CorePackages.Packages.React)
 
@@ -196,6 +197,17 @@ jest.mock(Chrome.Integrations.InExperienceShop.ShopWindowLayout, function()
 	}
 end)
 
+-- Captures the arguments `ShopEntrypoint` wires the menu controller with, so the
+-- tests can assert what it hands over without the controller touching real engine
+-- services. Nil when the cursor-lock fix is off and the call is skipped.
+local capturedInitializeShopMenuControllerArgs: { any }? = nil
+local function initializeShopMenuControllerMock(...)
+	capturedInitializeShopMenuControllerArgs = { ... }
+end
+jest.mock(Chrome.Integrations.InExperienceShop.initializeShopMenuController, function()
+	return initializeShopMenuControllerMock
+end)
+
 local shopChromeWrapperSpy = jest.fn()
 local shopChromeWrapperComponent = function(props)
 	shopChromeWrapperSpy(props)
@@ -275,6 +287,7 @@ type LoadOpts = {
 	menuTrailingBadgeFlag: boolean?,
 	showOfferBadgeFlag: boolean?,
 	newIconographyEnabled: boolean?,
+	cursorLockFixEnabled: boolean?,
 }
 
 -- Re-requires `ShopEntrypoint` under the scenario flags. Returns the
@@ -294,6 +307,7 @@ local function loadShopEntrypoint(opts: LoadOpts): any
 	toggleInExperienceShopWindowSpy:mockClear()
 	commonIconSpy:mockClear()
 	shopChromeWrapperSpy:mockClear()
+	capturedInitializeShopMenuControllerArgs = nil
 
 	mockSharedFlags.FFlagEnableMenuTrailingBadge = opts.menuTrailingBadgeFlag == true
 	mockSharedFlags.FFlagShowOfferBadge = opts.showOfferBadgeFlag == true
@@ -314,7 +328,14 @@ local function loadShopEntrypoint(opts: LoadOpts): any
 				FFlagHideShopMenuOnFailure = opts.hideEnabled,
 				FFlagCenterInExperienceShopWindow = opts.centerEnabled == true,
 				FFlagExperienceShopNewIconography = opts.newIconographyEnabled == true,
+				FFlagFixInExperienceShopCursorLock = opts.cursorLockFixEnabled == true,
 			}
+		end)
+		-- Re-pinned inside isolation for the same reason as the prefetch helper
+		-- below: the freshly required `ShopEntrypoint` has to resolve to the
+		-- controller that writes to the module-scoped capture above.
+		jest.mock(Chrome.Integrations.InExperienceShop.initializeShopMenuController, function()
+			return initializeShopMenuControllerMock
 		end)
 		-- Re-pin the prefetch helper inside isolation so the freshly
 		-- required `ShopEntrypoint` resolves to the same wrapper (and
@@ -840,6 +861,33 @@ describe("ShopEntrypoint", function()
 			expect(windowElement.type).toBe(shopChromeWrapperComponent)
 			expect(windowElement.props.maxWindowWidth).toBe(844)
 			expect(windowElement.props.maxWindowHeight).toBe(754)
+		end)
+	end)
+
+	describe("cursor-lock fix", function()
+		it("SHOULD drive the menu controller from the window's open state when ON", function()
+			loadShopEntrypoint({
+				prefetchEnabled = false,
+				hideEnabled = false,
+				coreGuiShopEnabled = true,
+				cursorLockFixEnabled = true,
+			})
+
+			local args = capturedInitializeShopMenuControllerArgs
+			assert(args ~= nil, "expected the menu controller to be initialized")
+			expect(args[1]).toBe(GuiService)
+			expect(args[2]).toBe(mockedIsActiveSignal)
+		end)
+
+		it("SHOULD NOT initialize the menu controller when OFF", function()
+			loadShopEntrypoint({
+				prefetchEnabled = false,
+				hideEnabled = false,
+				coreGuiShopEnabled = true,
+				cursorLockFixEnabled = false,
+			})
+
+			expect(capturedInitializeShopMenuControllerArgs).toBeNil()
 		end)
 	end)
 end)

@@ -4,8 +4,6 @@ local Types = require(root.util.Types)
 local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 
-local getFFlagUGCValidateMigrateSchemaProperties = require(root.flags.getFFlagUGCValidateMigrateSchemaProperties)
-
 local FStringUGCValidationBodyPartCollisionFidelity =
 	game:DefineFastString("UGCValidationBodyPartCollisionFidelity", "Default")
 
@@ -18,7 +16,6 @@ CollisionFidelityCorrect.categories = {
 CollisionFidelityCorrect.requiredData = {
 	ValidationEnums.SharedDataMember.rootInstance,
 }
-CollisionFidelityCorrect.fflag = getFFlagUGCValidateMigrateSchemaProperties
 CollisionFidelityCorrect.expectedFailures = {}
 
 CollisionFidelityCorrect.run = function(reporter: Types.ValidationReporter, data: Types.SharedData)

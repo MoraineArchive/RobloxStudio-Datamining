@@ -6,10 +6,6 @@ local Types = require(root.util.Types)
 local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 
-local getFFlagUGCValidateMigrateSchemaProperties = require(root.flags.getFFlagUGCValidateMigrateSchemaProperties)
-local getFFlagUGCValidateEyebrowEyelashThumbnailSchema =
-	require(root.flags.getFFlagUGCValidateEyebrowEyelashThumbnailSchema)
-
 local FFlagUGCValidationAddThumbnailFrustumCheckingv2 =
 	game:DefineFastFlag("UGCValidationAddThumbnailFrustumCheckingv2", false)
 
@@ -24,7 +20,6 @@ ThumbnailConfigValid.requiredData = {
 	ValidationEnums.SharedDataMember.renderMeshesData,
 	ValidationEnums.SharedDataMember.uploadEnum,
 }
-ThumbnailConfigValid.fflag = getFFlagUGCValidateMigrateSchemaProperties
 ThumbnailConfigValid.expectedFailures = {}
 
 ThumbnailConfigValid.run = function(reporter: Types.ValidationReporter, data: Types.SharedData)
@@ -32,11 +27,9 @@ ThumbnailConfigValid.run = function(reporter: Types.ValidationReporter, data: Ty
 
 	-- Mirror legacy validateLayeredClothingAccessory.lua:295: eyebrow/eyelash
 	-- accessories use a different thumbnail schema and skipped this check.
-	if getFFlagUGCValidateEyebrowEyelashThumbnailSchema() then
-		local assetTypeEnum = data.uploadEnum and data.uploadEnum.assetType
-		if assetTypeEnum == Enum.AssetType.EyebrowAccessory or assetTypeEnum == Enum.AssetType.EyelashAccessory then
-			return
-		end
+	local assetTypeEnum = data.uploadEnum and data.uploadEnum.assetType
+	if assetTypeEnum == Enum.AssetType.EyebrowAccessory or assetTypeEnum == Enum.AssetType.EyelashAccessory then
+		return
 	end
 
 	local thumbnailConfiguration = instance:FindFirstChild("ThumbnailConfiguration")

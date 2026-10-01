@@ -139,7 +139,7 @@ local function AppStyleProvider(props: Props)
 				else tokens.Semantic.Typography.Body.Font
 		)
 		if success then
-			setTextSizeOffset(newTextSizeOffset)
+			setTextSizeOffset(newTextSizeOffset :: number)
 		end
 	end, { style.settings.preferredTextSize })
 

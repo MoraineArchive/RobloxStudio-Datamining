@@ -4,6 +4,8 @@ local Roact = require(Packages.Roact)
 local t = require(Packages.t)
 local Cryo = require(Packages.Cryo)
 local RoactGamepad = require(Packages.RoactGamepad)
+local Foundation = require(Packages.Foundation)
+local normalizeFontFace = Foundation.Utility.normalizeFontFace
 
 local withStyle = require(Packages.UIBlox.Core.Style.withStyle)
 local ImageSetComponent = require(Packages.UIBlox.Core.ImageSet.ImageSetComponent)
@@ -12,6 +14,8 @@ local ControlState = require(Packages.UIBlox.Core.Control.Enum.ControlState)
 
 local FitTextLabel = require(Packages.FitFrame).FitTextLabel
 local FitFrameHorizontal = require(Packages.FitFrame).FitFrameHorizontal
+
+local FFlagFoundationFontFaceMigration = Foundation.Utility.Flags.FoundationFontFaceMigration
 
 local InputButton = Roact.PureComponent:extend("InputButton")
 
@@ -92,6 +96,7 @@ function InputButton:render()
 	return withStyle(function(stylePalette)
 		local font = stylePalette.Font
 		local fontSize = font.Body.RelativeSize * font.BaseSize
+		local textFont = font.Body.Font
 
 		local textComponent
 		local textComponentProps = {
@@ -102,7 +107,8 @@ function InputButton:render()
 			TextXAlignment = Enum.TextXAlignment.Left,
 
 			TextSize = fontSize,
-			Font = font.Body.Font,
+			Font = if FFlagFoundationFontFaceMigration then nil else textFont,
+			FontFace = if FFlagFoundationFontFaceMigration then normalizeFontFace(textFont) else nil,
 			TextWrapped = true,
 			TextColor3 = self.props.textColor,
 			TextTransparency = self.props.transparency,
@@ -124,6 +130,8 @@ function InputButton:render()
 			frameComponent = FitFrameHorizontal
 			textComponent = FitTextLabel
 			textComponentProps = Cryo.Dictionary.join(textComponentProps, {
+				Font = if FFlagFoundationFontFaceMigration then normalizeFontFace(textFont) else nil,
+				FontFace = if FFlagFoundationFontFaceMigration then Cryo.None else nil,
 				width = FitTextLabel.Width.FitToText,
 				onActivated = self.props.onActivated,
 				[Roact.Change.AbsoluteSize] = self.textAbsoluteSizeChanged,

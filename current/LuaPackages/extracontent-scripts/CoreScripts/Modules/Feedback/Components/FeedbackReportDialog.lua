@@ -54,6 +54,14 @@ local FFlagEnableFeedbackSelectionUpdate = game:DefineFastFlag("EnableFeedbackSe
 local CoreGuiCommon = require(CorePackages.Workspace.Packages.CoreGuiCommon)
 local FFlagTopBarSignalizeScreenSize = CoreGuiCommon.Flags.FFlagTopBarSignalizeScreenSize
 
+-- Extract the rbxassetid uri from a Content property, or "" when it holds no asset.
+local function getContentAssetUri(content)
+	if content ~= nil and content.SourceType == Enum.ContentSourceType.Uri then
+		return content.Uri
+	end
+	return ""
+end
+
 local BUTTON_HEIGHT = 36
 local ADDITIONAL_COMMENTS_TEXT_ENTRY_MAX_TEXT_LENGTH = 180
 local ADDITIONAL_COMMENTS_TEXT_ENTRY_FIELD_HEIGHT = 90
@@ -79,6 +87,7 @@ function FeedbackReportDialog:init()
 			isGenericSelection = false,
 			shouldDisplayFeedbackImage = false,
 			feedbackImageUri = "",
+			feedbackTranslatedImageUri = "",
 		}
 	else
 		self.state = {
@@ -90,6 +99,7 @@ function FeedbackReportDialog:init()
 			numFeedbackSubmissionAttempts = 0, -- This state value is exempt from resets, as it is tracked as a whole and not per feedback item submission
 			shouldDisplayFeedbackImage = false,
 			feedbackImageUri = "",
+			feedbackTranslatedImageUri = "",
 		}
 	end
 
@@ -113,6 +123,7 @@ function FeedbackReportDialog:init()
 		self:setState({
 			shouldDisplayFeedbackImage = false,
 			feedbackImageUri = "",
+			feedbackTranslatedImageUri = "",
 			correctTranslationText = "",
 			additionalCommentsText = "",
 			feedbackText = "",
@@ -154,11 +165,17 @@ function FeedbackReportDialog:init()
 			self:setState({
 				shouldDisplayFeedbackImage = true,
 				feedbackImageUri = instance.Image,
+				feedbackTranslatedImageUri = if GetFFlagEnableSendImageFeedbackToBackend()
+					then getContentAssetUri(instance.LocalizedImageContent)
+					else "",
 			})
 		elseif instance:IsA("Decal") then
 			self:setState({
 				shouldDisplayFeedbackImage = true,
 				feedbackImageUri = instance.Texture,
+				feedbackTranslatedImageUri = if GetFFlagEnableSendImageFeedbackToBackend()
+					then getContentAssetUri(instance.LocalizedTextureContent)
+					else "",
 			})
 		elseif instance:IsA("MeshPart") then
 			if instance.TextureContent.SourceType == Enum.ContentSourceType.Uri then
@@ -218,6 +235,7 @@ function FeedbackReportDialog:init()
 
 		local contentType = Constants.ContentType.Text
 		local feedbackOriginalText = self.state.feedbackOriginalText
+		local feedbackContent = self.state.feedbackText
 		local feedbackIdentifier = self.state.feedbackIdentifier
 
 		if GetFFlagEnableSendImageFeedbackToBackend() and self.state.shouldDisplayFeedbackImage then
@@ -230,14 +248,17 @@ function FeedbackReportDialog:init()
 			end
 
 			feedbackOriginalText = assetId -- feedbackOriginalText is set to the assetId of the source image
-			feedbackIdentifier = game.GameId .. "#" .. assetId -- feedbackIdentifier is set to the gameId and the assetId of the source image
 			contentType = Constants.ContentType.Image
+			-- Parity with Creator Hub: identify the target as "gameId:sourceAssetId" and report the
+			-- translated asset the player actually saw (from the engine-populated Localized*Content).
+			feedbackIdentifier = game.GameId .. ":" .. assetId
+			feedbackContent = string.match(self.state.feedbackTranslatedImageUri or "", "rbxassetid://(%d+)") or ""
 		end
 
 		self.props.sendFeedback(
 			contentType,
 			feedbackOriginalText,
-			self.state.feedbackText,
+			feedbackContent,
 			feedbackIdentifier,
 			self.state.correctTranslationText,
 			self.state.additionalCommentsText,
@@ -284,6 +305,11 @@ function FeedbackReportDialog:renderContents(localized)
 			localized.spellingOrGrammarIssue,
 			localized.inappropriateOrDerogatory,
 		}
+
+		-- Image Quality (ReasonType 5) is image-only; append it so its option index stays 5, matching Creator Hub.
+		if GetFFlagEnableSendImageFeedbackToBackend() and self.state.shouldDisplayFeedbackImage then
+			table.insert(feedbackReasonOptions, localized.imageQuality)
+		end
 
 		-- OriginalText fields are only populated (and rendered) in the flagged path.
 		local layoutOrders: {
@@ -350,7 +376,10 @@ function FeedbackReportDialog:renderContents(localized)
 				then Roact.createElement("ImageLabel", {
 					LayoutOrder = layoutOrders.SelectedTextLabel,
 					Size = UDim2.new(1, 0, 0, 72),
-					Image = self.state.feedbackImageUri,
+					Image = if self.state.feedbackTranslatedImageUri ~= nil
+							and self.state.feedbackTranslatedImageUri ~= ""
+						then self.state.feedbackTranslatedImageUri
+						else self.state.feedbackImageUri, -- translated image the player saw; else source
 					ScaleType = Enum.ScaleType.Fit,
 					BackgroundTransparency = 1,
 					BorderSizePixel = 0,
@@ -448,7 +477,8 @@ function FeedbackReportDialog:renderContents(localized)
 				automaticSize = Enum.AutomaticSize.X,
 			}),
 			TranslationProblemsListFrame = Roact.createElement("Frame", {
-				Size = UDim2.new(1, 0, 0, 160),
+				-- Height tracks the option count (40px each) so the image-only fifth reason doesn't overflow.
+				Size = UDim2.new(1, 0, 0, #feedbackReasonOptions * 40),
 				BackgroundTransparency = 1,
 				LayoutOrder = layoutOrders.TranslationProblemsListFrame,
 			}, {
@@ -498,6 +528,7 @@ function FeedbackReportDialog:render()
 		accuracyIssue = "CoreScripts.Feedback.FeedbackReportDialog.ProblemOption.AccuracyIssue",
 		spellingOrGrammarIssue = "CoreScripts.Feedback.FeedbackReportDialog.ProblemOption.SpellingOrGrammarIssue",
 		inappropriateOrDerogatory = "CoreScripts.Feedback.FeedbackReportDialog.ProblemOption.InappropriateOrDerogatory",
+		imageQuality = "CoreScripts.Feedback.FeedbackReportDialog.ProblemOption.ImageQuality",
 		textSelectionHeader = "CoreScripts.Feedback.FeedbackReportDialog.TextSelectionHeader",
 		correctTranslationHeader = "CoreScripts.Feedback.FeedbackReportDialog.CorrectTranslationHeader",
 		correctTranslationPlaceholder = "CoreScripts.Feedback.FeedbackReportDialog.CorrectTranslationPlaceholder",
@@ -537,10 +568,24 @@ function FeedbackReportDialog:render()
 								-- Room for the added "Original Text" header (72) and its body
 								+ 72
 								+ self.calculateFieldHeight(string.len(self.state.feedbackOriginalText), 14, false)
+								-- Room for the image-only "Image Quality" reason row (40px)
+								+ (
+									if GetFFlagEnableSendImageFeedbackToBackend()
+											and self.state.shouldDisplayFeedbackImage
+										then 40
+										else 0
+								)
 						)
 						else UDim.new(
 							0,
-							600 + self.calculateFieldHeight(string.len(self.state.feedbackText), 14, false) * 2
+							600
+								+ self.calculateFieldHeight(string.len(self.state.feedbackText), 14, false) * 2
+								+ (
+									if GetFFlagEnableSendImageFeedbackToBackend()
+											and self.state.shouldDisplayFeedbackImage
+										then 40
+										else 0
+								)
 						),
 				},
 				Roact.createElement("Frame", {

@@ -12,12 +12,7 @@ local Types = require(root.util.Types)
 local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 
-local getFFlagUGCValidateMigrateSurfaceAppearanceMeshQuality =
-	require(root.flags.getFFlagUGCValidateMigrateSurfaceAppearanceMeshQuality)
-
 local VertexColorsOpaque = {}
-
-VertexColorsOpaque.fflag = getFFlagUGCValidateMigrateSurfaceAppearanceMeshQuality
 
 VertexColorsOpaque.categories = {
 	ValidationEnums.UploadCategory.TORSO_AND_LIMBS,

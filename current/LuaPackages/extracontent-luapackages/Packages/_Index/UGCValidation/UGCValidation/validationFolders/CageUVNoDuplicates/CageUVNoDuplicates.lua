@@ -16,7 +16,6 @@ local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 
 local WRAP_TARGET_CAGE_REFERENCE_VALUES = require(root.WrapTargetCageUVReferenceValues)
 
-local getFFlagUGCValidateMigrateCageUV = require(root.flags.getFFlagUGCValidateMigrateCageUV)
 local getFIntUGCValidateCageDuplicateUVThreshold = require(root.flags.getFIntUGCValidateCageDuplicateUVThreshold)
 
 local CageUVNoDuplicates = {}
@@ -31,8 +30,6 @@ CageUVNoDuplicates.requiredData = {
 }
 
 CageUVNoDuplicates.conditionalData = {}
-
-CageUVNoDuplicates.fflag = getFFlagUGCValidateMigrateCageUV
 
 CageUVNoDuplicates.expectedFailures = {}
 

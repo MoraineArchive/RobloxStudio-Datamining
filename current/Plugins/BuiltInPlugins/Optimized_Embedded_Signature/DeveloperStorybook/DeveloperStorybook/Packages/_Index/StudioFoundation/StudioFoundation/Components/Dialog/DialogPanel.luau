@@ -10,6 +10,8 @@ local FoundationProviderAdapter = require(Main.Components.FoundationProviderAdap
 local StudioUri = require(Main.Util.StudioUri)
 local uriToTestId = require(Main.Util.uriToTestId)
 
+local FFlagDevFrameworkUsesFoundationDialog = require(Main.SharedFlags.getFFlagDevFrameworkUsesFoundationDialog)()
+
 local Plugin = Framework.ContextServices.Plugin
 local e = React.createElement
 local useTokens = Foundation.Hooks.useTokens
@@ -19,6 +21,9 @@ export type Props = {
 	getSize: Signals.getter<Vector2>,
 	onClose: () -> ()?,
 	children: React.ReactNode?,
+	--- Defaults to true
+	modal: boolean?,
+	toolDialog: boolean?,
 }
 
 local function DialogPanel(props: Props)
@@ -52,16 +57,30 @@ local function DialogPanel(props: Props)
 			local newPanel
 
 			local thread = task.spawn(function()
-				newPanel = plugin:CreateQWidgetPluginGui(dialogId, {
-					Id = dialogId,
-					InitialEnabled = true,
-					Modal = true,
-					-- Vector2.max is not in the selene standard library yet
-					-- selene: allow(incorrect_standard_library_use)
-					Size = Vector2.max(props.getSize(false), Vector2.new(1, 1)),
-					DisableTitleBar = props.onClose == nil,
-					TitleBarColor = titleBarColor,
-				})
+				if FFlagDevFrameworkUsesFoundationDialog then
+					newPanel = plugin:CreateQWidgetPluginGui(dialogId, {
+						Id = dialogId,
+						InitialEnabled = true,
+						ToolDialog = props.toolDialog,
+						Modal = props.modal ~= false,
+						-- Vector2.max is not in the selene standard library yet
+						-- selene: allow(incorrect_standard_library_use)
+						Size = Vector2.max(props.getSize(false), Vector2.new(1, 1)),
+						DisableTitleBar = props.onClose == nil,
+						TitleBarColor = titleBarColor,
+					})
+				else
+					newPanel = plugin:CreateQWidgetPluginGui(dialogId, {
+						Id = dialogId,
+						InitialEnabled = true,
+						Modal = true,
+						-- Vector2.max is not in the selene standard library yet
+						-- selene: allow(incorrect_standard_library_use)
+						Size = Vector2.max(props.getSize(false), Vector2.new(1, 1)),
+						DisableTitleBar = props.onClose == nil,
+						TitleBarColor = titleBarColor,
+					})
+				end
 				if newPanel:IsA("PluginGui") and props.onClose then
 					newPanel:BindToClose(props.onClose)
 				end

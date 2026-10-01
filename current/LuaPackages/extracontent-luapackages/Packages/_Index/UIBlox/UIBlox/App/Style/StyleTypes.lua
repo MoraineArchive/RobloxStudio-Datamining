@@ -83,7 +83,7 @@ export type BackgroundStyle = {
 }
 
 export type TypographyItem = {
-	Font: Enum.Font,
+	Font: Font | Enum.Font,
 	FontSize: number,
 	LineHeight: number,
 	LetterSpacing: number,

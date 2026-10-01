@@ -11,11 +11,12 @@ local FetchCurveAnimComputedFrames = require(root.validationSystem.dataFetchModu
 local FetchContentIds = require(root.validationSystem.dataFetchModules.FetchContentIds)
 local FetchHSRAssets = require(root.validationSystem.dataFetchModules.FetchHSRAssets)
 local FetchCurveAnimBoneData = require(root.validationSystem.dataFetchModules.FetchCurveAnimBoneData)
+local FetchFullBodyPartsMetrics = require(root.validationSystem.dataFetchModules.FetchFullBodyPartsMetrics)
 local Types = require(root.util.Types)
 local DataEnums = ValidationEnums.SharedDataMember
 
-local getFFlagUGCValidateMigrateSchemaProperties = require(root.flags.getFFlagUGCValidateMigrateSchemaProperties)
-local getFFlagUGCValidateMigrateBodyPartBounds = require(root.flags.getFFlagUGCValidateMigrateBodyPartBounds)
+local getFFlagUGCValidationAllowFullVaas = require(root.flags.getFFlagUGCValidationAllowFullVaas)
+local getFFlagUGCValidateHeadAboveTorso = require(root.flags.getFFlagUGCValidateHeadAboveTorso)
 local resetPhysicsData = require(root.util.resetPhysicsData)
 
 local EDITABLE_ENUMS = {
@@ -23,11 +24,6 @@ local EDITABLE_ENUMS = {
 	DataEnums.innerCagesData,
 	DataEnums.outerCagesData,
 	DataEnums.meshTextures,
-}
-
-local ALLOW_ORIGINAL_EDITABLES = {
-	InExpServer = true,
-	InExpClient = true,
 }
 
 local FetchAllDesiredData = {}
@@ -38,7 +34,8 @@ function FetchAllDesiredData.storeDesiredData(sharedData: Types.SharedData, desi
 	local preloadedMeshes = sharedData.consumerConfig.preloadedEditableMeshes or {}
 	local preloadedImages = sharedData.consumerConfig.preloadedEditableImages or {}
 
-	if getFFlagUGCValidateMigrateBodyPartBounds() then
+	-- Under full VaaS the backend reset moves to ValidationManager; skip here to avoid a double reset.
+	if not getFFlagUGCValidationAllowFullVaas() then
 		if sharedData.consumerConfig.consumerEnv ~= ValidationEnums.ConsumerEnv.IEC then
 			local isServer = sharedData.consumerConfig.consumerEnv == ValidationEnums.ConsumerEnv.Backend
 			pcall(resetPhysicsData, { rootInstance }, { isServer = isServer, bypassFlags = {} } :: any)
@@ -46,12 +43,7 @@ function FetchAllDesiredData.storeDesiredData(sharedData: Types.SharedData, desi
 	end
 
 	-- IEC is the only env where editable instances can be re-used directly.
-	local allowEditableInstances
-	if getFFlagUGCValidateMigrateSchemaProperties() then
-		allowEditableInstances = sharedData.consumerConfig.consumerEnv == ValidationEnums.ConsumerEnv.IEC
-	else
-		allowEditableInstances = ALLOW_ORIGINAL_EDITABLES[sharedData.consumerConfig.source] == true
-	end
+	local allowEditableInstances = sharedData.consumerConfig.consumerEnv == ValidationEnums.ConsumerEnv.IEC
 	for _, editableDataEnum in EDITABLE_ENUMS do
 		if desiredData[editableDataEnum] then
 			local success, result = pcall(function()
@@ -88,20 +80,35 @@ function FetchAllDesiredData.storeDesiredData(sharedData: Types.SharedData, desi
 		end
 	end
 
-	if getFFlagUGCValidateMigrateSchemaProperties() then
-		if desiredData[DataEnums.contentIds] then
-			sharedData.contentIds = FetchContentIds.getData(sharedData)
-		end
+	if desiredData[DataEnums.contentIds] then
+		sharedData.contentIds = FetchContentIds.getData(sharedData)
+	end
 
-		if desiredData[DataEnums.hsrAssets] then
-			local result = FetchHSRAssets.getData(rootInstance, sharedData.consumerConfig)
-			sharedData.hsrAssets = result or (FetchAllDesiredData.DATA_FETCH_FAILURE :: any)
-		end
+	if desiredData[DataEnums.hsrAssets] then
+		local result = FetchHSRAssets.getData(rootInstance, sharedData.consumerConfig)
+		sharedData.hsrAssets = result or (FetchAllDesiredData.DATA_FETCH_FAILURE :: any)
 	end
 
 	if desiredData[DataEnums.curveAnimBoneData] then
 		local boneData = FetchCurveAnimBoneData.getData(sharedData[DataEnums.curveAnimations])
 		sharedData[DataEnums.curveAnimBoneData] = boneData
+	end
+
+	if getFFlagUGCValidateHeadAboveTorso() and desiredData[DataEnums.fullBodyPartsMetrics] then
+		if
+			sharedData.uploadCategory == ValidationEnums.UploadCategory.FULL_BODY
+			and sharedData.renderMeshesData
+			and sharedData.renderMeshesData ~= FetchAllDesiredData.DATA_FETCH_FAILURE
+		then
+			local success, result = pcall(FetchFullBodyPartsMetrics.getData, sharedData)
+			if success and result then
+				sharedData.fullBodyPartsMetrics = result
+			else
+				sharedData.fullBodyPartsMetrics = {}
+			end
+		else
+			sharedData.fullBodyPartsMetrics = {}
+		end
 	end
 end
 

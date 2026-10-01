@@ -15,6 +15,8 @@ local getTextHeight = require(script.Parent.getTextHeight)
 local StyleTypes = require(script.Parent.StyleTypes)
 local Constants = require(script.Parent.Constants)
 
+local FFlagFoundationFontFaceMigration = dependencies.Foundation.Utility.Flags.FoundationFontFaceMigration
+
 export type Icon = {
 	path: string,
 	color: Color3?,
@@ -50,7 +52,7 @@ local CarouselUserContextualInfo = function(passedProps: Props)
 
 	return Style.withStyle(function(style)
 		local theme: StyleTypes.Theme = style.Theme
-		local font: StyleTypes.Font = style.Font
+		local font: StyleTypes.FontStyle = style.Font
 		local labelFont = label.font or font.CaptionBody
 		local text = label.text
 
@@ -88,8 +90,15 @@ local CarouselUserContextualInfo = function(passedProps: Props)
 					layoutOrder = 2,
 					size = UDim2.fromOffset(
 						icon and props.lineWidth - (UIBloxIconSize.Small + PADDING) or props.lineWidth,
-						getTextHeight(text, labelFont.Font, font.BaseSize * labelFont.RelativeSize)
-							* props.maxNumberOfLines
+						(
+							if FFlagFoundationFontFaceMigration
+								then font.BaseSize * labelFont.RelativeSize
+								else getTextHeight(
+									text,
+									labelFont.Font :: Enum.Font,
+									font.BaseSize * labelFont.RelativeSize
+								)
+						) * props.maxNumberOfLines
 					),
 					lineHeight = 1,
 					text = text,
@@ -100,7 +109,8 @@ local CarouselUserContextualInfo = function(passedProps: Props)
 					colorStyle = label.colorStyle or theme.SecondaryContent,
 					fluidSizing = false,
 					richText = false,
-				}) else nil,
+				})
+				else nil,
 		})
 	end)
 end

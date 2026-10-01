@@ -36,6 +36,8 @@ local BuilderIcons = require(CorePackages.Packages.BuilderIcons)
 local BlockingModalScreen = require(Modules.Settings.Components.Blocking.BlockingModalScreen)
 local migrationLookup = BuilderIcons.Migration["uiblox"]
 local PeopleService = require(CorePackages.Workspace.Packages.PeopleService)
+local InExperienceSideSheet = require(CorePackages.Workspace.Packages.InExperienceSideSheet)
+local FFlagSideSheetOpenPeoplePage = InExperienceSideSheet.Flags.FFlagSideSheetOpenPeoplePage
 
 -- Focus Navigation
 local FocusNavigationUtils = require(CorePackages.Workspace.Packages.FocusNavigationUtils)
@@ -73,7 +75,9 @@ end
 
 -- Returns GameSettings Page with Settings Framework
 local function createPeoplePage()
-	local PeopleReactView = require(CorePackages.Workspace.Packages.PeopleReactView).PeopleReactView
+	local PeopleReactViewPackage = require(CorePackages.Workspace.Packages.PeopleReactView)
+	local PeopleReactView = PeopleReactViewPackage.PeopleReactView
+	local SideSheetFocusContext = PeopleReactViewPackage.SideSheetFocusContext
 	local PeopleService = require(CorePackages.Workspace.Packages.PeopleService)
 	local PeoplePage = SettingsPageFactory:CreateNewPage()
 
@@ -114,11 +118,23 @@ local function createPeoplePage()
 			then PeoplePage.Page:FindFirstAncestorWhichIsA("ScrollingFrame")
 			else nil
 
+		-- Closes over the page-scoped locals built above, so hoisting it would mean threading all of
+		-- them through props. Pre-existing on master; only surfaced here because this PR edits lines
+		-- inside the component.
+		-- lute-lint-ignore(noNestedReactDefinitions)
 		local function PeopleConditionalView()
 			-- lute-lint-ignore(rulesOfHooks)
 			local displayed = SignalsReact.useSignalState(getDisplayed)
+			-- lute-lint-ignore(rulesOfHooks)
+			local isSideSheetVisible = if FFlagSideSheetOpenPeoplePage
+				then SignalsReact.useSignalState(InExperienceSideSheet.getSideSheetVisibility)
+				else false
+			-- lute-lint-ignore(rulesOfHooks)
+			local didSideSheetOpenWithPeoplePage = if FFlagSideSheetOpenPeoplePage
+				then SignalsReact.useSignalState(InExperienceSideSheet.getDidSideSheetOpenWithPeoplePage)
+				else false
 
-			local People = if displayed
+			local People: React.ReactElement<any, any>? = if displayed
 				then React.createElement(CoreScriptsRootProvider, {}, {
 					LocalizationProvider = React.createElement(LocalizationProvider, {
 						localization = locales,
@@ -142,11 +158,26 @@ local function createPeoplePage()
 								addUniverseToExposureList = if GetFFlagAddPeoplePageCardLayout() and LocalStore
 									then LocalStore.addUniverseToExposureList
 									else nil,
+								minimumCardWidth = if FFlagSideSheetOpenPeoplePage
+										and isSideSheetVisible
+										and didSideSheetOpenWithPeoplePage
+									then Constants.PEOPLEPAGE.PEOPLE_CARDS.SIDE_SHEET_MINIMUM_CARD_WIDTH
+									else nil,
 							}),
 						}),
 					}),
 				})
 				else nil
+
+			if FFlagSideSheetOpenPeoplePage and People then
+				-- There is only a sheet to hand focus back to when the page came up beside it, which a
+				-- screen with no room for the pairing never does.
+				People = React.createElement(SideSheetFocusContext.Provider, {
+					value = isSideSheetVisible and didSideSheetOpenWithPeoplePage,
+				}, {
+					People = People,
+				})
+			end
 
 			return People
 		end

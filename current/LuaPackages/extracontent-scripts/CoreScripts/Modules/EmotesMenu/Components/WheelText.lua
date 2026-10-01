@@ -9,6 +9,7 @@ local EmotesMenu = Components.Parent
 
 local Constants = require(EmotesMenu.Constants)
 local RobloxTranslator = require(CorePackages.Workspace.Packages.RobloxTranslator)
+local FFlagFixEmotesMenuAvailability = require(EmotesMenu.Flags.FFlagFixEmotesMenuAvailability)
 
 local WheelText = Roact.PureComponent:extend("WheelText")
 
@@ -18,7 +19,7 @@ function WheelText:getWheelText()
 	local numberEmotesLoaded = self.props.emotesPage.numberEmotesLoaded
 
 	if next(currentEmotes) == nil then
-		if StarterPlayer.UserEmotesEnabled and numberEmotesLoaded == 0 then
+		if StarterPlayer.UserEmotesEnabled and (FFlagFixEmotesMenuAvailability or numberEmotesLoaded == 0) then
 			return RobloxTranslator:FormatByKeyForLocale(Constants.LocalizationKeys.NoEmotesEquipped, locale)
 		else
 			return RobloxTranslator:FormatByKeyForLocale(Constants.LocalizationKeys.EmotesDisabled, locale)

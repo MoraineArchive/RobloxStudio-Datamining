@@ -32,7 +32,6 @@ Measure_Mesh_Manifold.run = function(reporter: Types.ValidationReporter, data: T
 			if tonumber(partData.score) ~= 100 then
 				reporter:warn(ErrorSourceStrings.Keys.AQSWarn_MeshManifold, {
 					partName = partName,
-					score = tostring(math.floor(tonumber(partData.score) or 0)),
 				})
 			end
 		end

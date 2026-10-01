@@ -14,8 +14,6 @@ local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 local BodyAssetMasksRenderer = require(root.util.bodyAssetMasksRenderer)
 local AccurateBoundingBoxRasterUtil = require(root.util.AccurateBoundingBoxRasterUtil)
 
-local getFFlagUGCValidateMigratePoseBlocking = require(root.flags.getFFlagUGCValidateMigratePoseBlocking)
-
 type BodyAssetMasksRenderer = BodyAssetMasksRenderer.BodyAssetMasksRenderer
 
 local BoundingBoxAccurate = {}
@@ -29,8 +27,6 @@ BoundingBoxAccurate.requiredData = {
 	ValidationEnums.SharedDataMember.rootInstance,
 	ValidationEnums.SharedDataMember.renderMeshesData,
 }
-
-BoundingBoxAccurate.fflag = getFFlagUGCValidateMigratePoseBlocking
 
 BoundingBoxAccurate.expectedFailures = {}
 
@@ -67,9 +63,11 @@ BoundingBoxAccurate.run = function(reporter: Types.ValidationReporter, data: Typ
 	local inst = data.rootInstance
 	local editableMeshes = buildEditableMeshesFromSharedData(data)
 
+	local isServer = data.consumerConfig.validationEnv == ValidationEnums.ValidationEnv.Backend
+
 	local validationContext = {
 		assetTypeEnum = assetTypeEnum,
-		isServer = data.consumerConfig.consumerEnv == ValidationEnums.ConsumerEnv.Backend,
+		isServer = isServer,
 		editableMeshes = editableMeshes,
 		shouldYield = false,
 	} :: any

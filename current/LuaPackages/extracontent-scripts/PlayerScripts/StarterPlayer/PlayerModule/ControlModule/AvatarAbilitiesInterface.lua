@@ -3,6 +3,7 @@ local CommonUtils = require(script.Parent.Parent:WaitForChild("CommonUtils"))
 local FlagUtil = CommonUtils.get("FlagUtil")
 local FFlagUserPlayerScriptsCCLIntegrationD = FlagUtil.getUserFlag("UserPlayerScriptsCCLIntegrationD")
 local FFlagUserPlayerScriptsPlayerControlState = FlagUtil.getUserFlag("UserPlayerScriptsPlayerControlState2")
+local FFlagUserPlayerScriptsTaskDeferSimulation = FlagUtil.getUserFlag("UserPlayerScriptsTaskDeferSimulation")
 
 if FFlagUserPlayerScriptsCCLIntegrationD then
     local AvatarAbilitiesInterface = {}
@@ -35,7 +36,7 @@ if FFlagUserPlayerScriptsCCLIntegrationD then
         self._abilityChangedEvents = {} -- key = attribute name, value = another dictionary.  key = ability name  value = BindableEvent
         self._abilityChangedConnections = {} -- key = attribute name, value = another dictionary.  key = ability name  value = connection
 
-        if FFlagUserPlayerScriptsPlayerControlState then
+        if FFlagUserPlayerScriptsPlayerControlState and not FFlagUserPlayerScriptsTaskDeferSimulation then
             task.spawn(function()
                 self._characterAddedConnection = player.CharacterAdded:Connect(function(character)
                     self:_onCharacterAdded(character)
@@ -110,6 +111,7 @@ if FFlagUserPlayerScriptsCCLIntegrationD then
         end
 
         if self._character then
+            -- call a separate thread to continue construction while waiting for AbilityManagerActor
         	task.spawn(function()
                 self._abilityManagerActor = self._character:WaitForChild("AbilityManagerActor", 5)
                 if self._abilityManagerActor then

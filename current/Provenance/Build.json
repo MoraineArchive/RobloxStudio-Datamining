@@ -1,43 +1,43 @@
 {
   "hashes": {
-    "FileManifest.json": "f44d19b12339c47226207401047f557abf29ffb25226b33dbfd5167f48aeca0f",
-    "Packages.json": "9d41bf51d068188be785f2580dd16f896baca0c526f526ddce4c62eb0d2895eb",
-    "metadata.json": "ba3b947c08c695a40e8d67273f1a8f29bd8ce15e2adb2e2796d8f1413b972060",
-    "version.json": "9e8de83a57c7903b3036d7f8b26cb87e748676e786055392c2382d47a6b7bb72"
+    "FileManifest.json": "c9982c0c7b90bd05dff78e514d58463592b4343dead6b3430e93e692b05b8b19",
+    "Packages.json": "4de3e68865129e9eb9832672fce2ac6da1cb67e5a4cc1f29d5a37b0571854c16",
+    "metadata.json": "c2a1d228c5dbdf23c9caba78448def00971ce758a64569f9a1ba2ca8b94335fa",
+    "version.json": "5e8e2df942764ec087141267d5ec7046576aab7009212538d4d39bb339fd9726"
   },
-  "id": "037abf14c38d367281310fa3eccf8eda9d82edd52ab7e50f03467dd09c147a5d",
+  "id": "7f5bc4da7e1da5f9719b6720625022ed42492120b1c15e0699779c8c323c8a40",
   "observationMode": "live",
-  "observedAt": "2026-09-15T16:22:55.673Z",
+  "observedAt": "2026-10-01T00:01:10.461Z",
   "provenance": [
     {
-      "bytes": 103,
-      "sha256": "95070bef360c947d3640860ca42dffc5cf137d0f736f550143c02b0d3abcb352",
+      "bytes": 104,
+      "sha256": "b96f34234ea9ffd95c47785ae0eabcc9640747a7cb3ec7c6002ce7ebf080c6da",
       "sourceType": "official",
       "sourceUrl": "https://clientsettings.roblox.com/v2/client-version/WindowsStudio64"
     },
     {
-      "buildGuid": "version-55808de4b1914919",
+      "buildGuid": "version-76e1a02649ad4f35",
       "bytes": 2528,
-      "sha256": "0058ff670fb38394ccb47ee0725dc38ff9f109d9e38967956067acd98da9ad8c",
+      "sha256": "95258e5870da59c84f0aebd39e609efe59d7eb11acabb412e51ec59feedbe78c",
       "sourceType": "official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-55808de4b1914919-rbxPkgManifest.txt"
+      "sourceUrl": "https://setup.rbxcdn.com/version-76e1a02649ad4f35-rbxPkgManifest.txt"
     },
     {
-      "buildGuid": "version-55808de4b1914919",
-      "bytes": 2136065,
-      "sha256": "9f040694c908b25f3b4887dc824c8d5289e65fd886520b953983d12b3a3c6fd8",
+      "buildGuid": "version-76e1a02649ad4f35",
+      "bytes": 2156230,
+      "sha256": "fa34ae5c895dd59cd99d4bb554c3da36c62ea1ce29d7da72d8fa64c1ec9df6cf",
       "sourceType": "official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-55808de4b1914919-rbxManifest.txt"
+      "sourceUrl": "https://setup.rbxcdn.com/version-76e1a02649ad4f35-rbxManifest.txt"
     }
   ],
-  "sequence": 6,
+  "sequence": 7,
   "status": "available",
   "summary": {
     "engineRevision": 1,
-    "guid": "version-55808de4b1914919",
-    "manifestFiles": 18507,
+    "guid": "version-76e1a02649ad4f35",
+    "manifestFiles": 18680,
     "packages": 34,
-    "version": "0.739.0.7390687"
+    "version": "0.741.19.7411056"
   },
   "surface": "Build",
   "target": "WindowsStudio64"

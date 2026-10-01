@@ -8,7 +8,6 @@ local helpers = require(script.Parent.ExpChatMessageHelpers)
 local loader = require(script.Parent.inExpChatMessagesLoader)
 
 local afterEach = JestGlobals.afterEach
-local beforeEach = JestGlobals.beforeEach
 local describe = JestGlobals.describe
 local expect = JestGlobals.expect
 local it = JestGlobals.it
@@ -24,7 +23,6 @@ local originalFormatChannelLabel = helpers.formatChannelLabel
 local originalYourServerLocalizationKey = ExpChatShared.ChannelTabDisplayLabel.LocalizationKeys.yourServer
 
 local FFlagExpChatUseChannelTabsStore = SharedFlags.FFlagExpChatUseChannelTabsStore
-local FFlagExpChatUseMessagesStore = SharedFlags.FFlagExpChatUseMessagesStore
 local FFlagExpChatUseSharedChannelTabDisplayLabel = SharedFlags.FFlagExpChatUseSharedChannelTabDisplayLabel
 
 type TabType = ExpChatShared.TabType
@@ -149,27 +147,18 @@ local function fetchWithChannelTabsEnabled(messageData: MessageData?)
 		tabIndex += 1
 	end
 
-	if FFlagExpChatUseMessagesStore then
-		ExpChatShared.context.store = makeRoduxStore(nil, roduxTabTypes)
-		ExpChatShared.context.messagesStore = {
-			getByMessageId = function()
-				return selectedByMessageId
-			end,
-			getWindowMessagesInOrder = function()
-				return selectedWindowMessagesInOrder
-			end,
-			getWindowMessagesInOrderByTabId = function()
-				return selectedWindowMessagesInOrderByTabId
-			end,
-		}
-	else
-		ExpChatShared.context.store = makeRoduxStore({
-			byMessageId = selectedByMessageId,
-			windowMessagesInOrder = selectedWindowMessagesInOrder,
-			windowMessagesInOrderByTabId = selectedWindowMessagesInOrderByTabId,
-		}, roduxTabTypes)
-		ExpChatShared.context.messagesStore = nil
-	end
+	ExpChatShared.context.store = makeRoduxStore(nil, roduxTabTypes)
+	ExpChatShared.context.messagesStore = {
+		getByMessageId = function()
+			return selectedByMessageId
+		end,
+		getWindowMessagesInOrder = function()
+			return selectedWindowMessagesInOrder
+		end,
+		getWindowMessagesInOrderByTabId = function()
+			return selectedWindowMessagesInOrderByTabId
+		end,
+	}
 
 	return loader.fetch({})
 end
@@ -179,27 +168,18 @@ local function fetchWithChannelTabsDisabled()
 		return false
 	end
 
-	if FFlagExpChatUseMessagesStore then
-		ExpChatShared.context.store = makeRoduxStore(nil)
-		ExpChatShared.context.messagesStore = {
-			getByMessageId = function()
-				return byMessageId
-			end,
-			getWindowMessagesInOrder = function()
-				return windowMessagesInOrder
-			end,
-			getWindowMessagesInOrderByTabId = function()
-				return windowMessagesInOrderByTabId
-			end,
-		}
-	else
-		ExpChatShared.context.store = makeRoduxStore({
-			byMessageId = byMessageId,
-			windowMessagesInOrder = windowMessagesInOrder,
-			windowMessagesInOrderByTabId = windowMessagesInOrderByTabId,
-		})
-		ExpChatShared.context.messagesStore = nil
-	end
+	ExpChatShared.context.store = makeRoduxStore(nil)
+	ExpChatShared.context.messagesStore = {
+		getByMessageId = function()
+			return byMessageId
+		end,
+		getWindowMessagesInOrder = function()
+			return windowMessagesInOrder
+		end,
+		getWindowMessagesInOrderByTabId = function()
+			return windowMessagesInOrderByTabId
+		end,
+	}
 
 	return loader.fetch({})
 end
@@ -237,73 +217,47 @@ describe("inExpChatMessagesLoader", function()
 		ExpChatShared.ChannelTabDisplayLabel.LocalizationKeys.yourServer = originalYourServerLocalizationKey
 		helpers.formatChannelLabel = originalFormatChannelLabel
 		for channelName in pairs(addedSignalTabs) do
-			channelTabsStore.removeChannelTab(channelName)
+			channelTabsStore.handleChannelRemoved(channelName)
 		end
 		table.clear(addedSignalTabs)
 	end)
 
-	if FFlagExpChatUseMessagesStore then
-		it("returns selectable messages from the Signals messages store", function()
-			local getByMessageId = jest.fn(function()
-				return byMessageId
-			end)
-			local getWindowMessagesInOrder = jest.fn(function()
-				return windowMessagesInOrder
-			end)
-			local getWindowMessagesInOrderByTabId = jest.fn(function()
-				return windowMessagesInOrderByTabId
-			end)
-
-			ExpChatShared.context.store = makeRoduxStore(nil)
-			ExpChatShared.context.messagesStore = {
-				getByMessageId = getByMessageId,
-				getWindowMessagesInOrder = getWindowMessagesInOrder,
-				getWindowMessagesInOrderByTabId = getWindowMessagesInOrderByTabId,
-			}
-
-			return loader.fetch({}):andThen(function(groups)
-				expect(#groups).toEqual(1)
-				expect(groups[1].items[1].id).toEqual(message.messageId)
-				expect(groups[1].items[1].label).toEqual("Reporter: visible text")
-				expect(getByMessageId).toHaveBeenCalledTimes(1)
-				expect(getWindowMessagesInOrder).toHaveBeenCalledTimes(1)
-				expect(getWindowMessagesInOrderByTabId).toHaveBeenCalledTimes(1)
-			end)
+	it("returns selectable messages from the Signals messages store", function()
+		local getByMessageId = jest.fn(function()
+			return byMessageId
+		end)
+		local getWindowMessagesInOrder = jest.fn(function()
+			return windowMessagesInOrder
+		end)
+		local getWindowMessagesInOrderByTabId = jest.fn(function()
+			return windowMessagesInOrderByTabId
 		end)
 
-		it("returns an empty result when the Signals messages store is unavailable", function()
-			ExpChatShared.context.store = makeRoduxStore(nil)
-			ExpChatShared.context.messagesStore = nil
+		ExpChatShared.context.store = makeRoduxStore(nil)
+		ExpChatShared.context.messagesStore = {
+			getByMessageId = getByMessageId,
+			getWindowMessagesInOrder = getWindowMessagesInOrder,
+			getWindowMessagesInOrderByTabId = getWindowMessagesInOrderByTabId,
+		}
 
-			return loader.fetch({}):andThen(function(groups)
-				expect(groups).toEqual({})
-			end)
+		return loader.fetch({}):andThen(function(groups)
+			expect(#groups).toEqual(1)
+			expect(groups[1].items[1].id).toEqual(message.messageId)
+			expect(groups[1].items[1].label).toEqual("Reporter: visible text")
+			expect(getByMessageId).toHaveBeenCalledTimes(1)
+			expect(getWindowMessagesInOrder).toHaveBeenCalledTimes(1)
+			expect(getWindowMessagesInOrderByTabId).toHaveBeenCalledTimes(1)
 		end)
-	else
-		it("returns selectable messages from the Rodux Messages state", function()
-			ExpChatShared.context.store = makeRoduxStore({
-				byMessageId = byMessageId,
-				windowMessagesInOrder = windowMessagesInOrder,
-				windowMessagesInOrderByTabId = windowMessagesInOrderByTabId,
-			})
-			ExpChatShared.context.messagesStore = nil
+	end)
 
-			return loader.fetch({}):andThen(function(groups)
-				expect(#groups).toEqual(1)
-				expect(groups[1].items[1].id).toEqual(message.messageId)
-				expect(groups[1].items[1].label).toEqual("Reporter: visible text")
-			end)
+	it("returns an empty result when the Signals messages store is unavailable", function()
+		ExpChatShared.context.store = makeRoduxStore(nil)
+		ExpChatShared.context.messagesStore = nil
+
+		return loader.fetch({}):andThen(function(groups)
+			expect(groups).toEqual({})
 		end)
-
-		it("returns an empty result when Rodux Messages state is unavailable", function()
-			ExpChatShared.context.store = makeRoduxStore(nil)
-			ExpChatShared.context.messagesStore = nil
-
-			return loader.fetch({}):andThen(function(groups)
-				expect(groups).toEqual({})
-			end)
-		end)
-	end
+	end)
 
 	if FFlagExpChatUseSharedChannelTabDisplayLabel then
 		it("uses the shared localization key when channel tabs are disabled", function()
@@ -433,103 +387,5 @@ describe("inExpChatMessagesLoader", function()
 				expect(getDisplayLabel).never.toHaveBeenCalled()
 			end)
 		end)
-	end
-
-	local function testSharedLabelsWithStores(useMessagesStore, useChannelTabsStore)
-		describe(
-			`when shared labels are on with messages store {useMessagesStore} and channel tabs store {useChannelTabsStore}`,
-			function()
-				local previousChannelTabsStoreFlag
-				local previousLabelFlag
-				local previousMessagesStoreFlag
-				local dynamicChannelTabsStore
-				local dynamicExpChatShared
-				local dynamicHelpers
-				local dynamicLoader
-
-				beforeEach(function()
-					previousChannelTabsStoreFlag =
-						game:SetFastFlagForTesting("ExpChatUseChannelTabsStore3", useChannelTabsStore)
-					previousLabelFlag = game:SetFastFlagForTesting("ExpChatUseSharedChannelTabDisplayLabel2", true)
-					previousMessagesStoreFlag = game:SetFastFlagForTesting("ExpChatUseMessagesStore9", useMessagesStore)
-					jest.resetModules()
-
-					local UIBlox = require(CorePackages.Packages.UIBlox)
-					UIBlox.init(require(CorePackages.Workspace.Packages.RobloxAppUIBloxConfig))
-					local dynamicExpChat = require(CorePackages.Workspace.Packages.ExpChat)
-					dynamicExpChatShared = require(CorePackages.Workspace.Packages.ExpChatShared)
-					dynamicHelpers = require(script.Parent.ExpChatMessageHelpers)
-					dynamicLoader = require(script.Parent.inExpChatMessagesLoader)
-					dynamicHelpers.areChannelTabsEnabled = function()
-						return true
-					end
-
-					dynamicChannelTabsStore = dynamicExpChat.Stores.GetChannelTabsStore(false)
-					if useChannelTabsStore then
-						local signalTab: ExpChatShared.TextChatTabDescriptor = {
-							type = "TextChat" :: "TextChat",
-							name = "RBXGeneral",
-						}
-						dynamicChannelTabsStore.addChannelTab(signalTab, 1)
-					else
-						local signalTab: ExpChatShared.UniverseChatTabDescriptor = {
-							type = "UniverseChat" :: "UniverseChat",
-							name = "RBXGeneral",
-						}
-						dynamicChannelTabsStore.addChannelTab(signalTab, 1)
-					end
-					local roduxTabTypes: TabTypesByName = {
-						RBXGeneral = if useChannelTabsStore then "UniverseChat" else "TextChat",
-					}
-
-					if useMessagesStore then
-						dynamicExpChatShared.context.store = makeRoduxStore(nil, roduxTabTypes)
-						dynamicExpChatShared.context.messagesStore = {
-							getByMessageId = function()
-								return byMessageId
-							end,
-							getWindowMessagesInOrder = function()
-								return windowMessagesInOrder
-							end,
-							getWindowMessagesInOrderByTabId = function()
-								return windowMessagesInOrderByTabId
-							end,
-						}
-					else
-						dynamicExpChatShared.context.store = makeRoduxStore({
-							byMessageId = byMessageId,
-							windowMessagesInOrder = windowMessagesInOrder,
-							windowMessagesInOrderByTabId = windowMessagesInOrderByTabId,
-						}, roduxTabTypes)
-						dynamicExpChatShared.context.messagesStore = nil
-					end
-				end)
-
-				afterEach(function()
-					dynamicChannelTabsStore.removeChannelTab("RBXGeneral")
-					game:SetFastFlagForTesting("ExpChatUseChannelTabsStore3", previousChannelTabsStoreFlag)
-					game:SetFastFlagForTesting("ExpChatUseSharedChannelTabDisplayLabel2", previousLabelFlag)
-					game:SetFastFlagForTesting("ExpChatUseMessagesStore9", previousMessagesStoreFlag)
-					jest.resetModules()
-				end)
-
-				it("uses the shared label resolver", function()
-					return dynamicLoader.fetch({}):andThen(function(groups)
-						expect(groups[1].label).toEqual("Here")
-					end)
-				end)
-			end
-		)
-	end
-
-	if
-		not FFlagExpChatUseChannelTabsStore
-		and not FFlagExpChatUseMessagesStore
-		and not FFlagExpChatUseSharedChannelTabDisplayLabel
-	then
-		testSharedLabelsWithStores(false, false)
-		testSharedLabelsWithStores(false, true)
-		testSharedLabelsWithStores(true, false)
-		testSharedLabelsWithStores(true, true)
 	end
 end)

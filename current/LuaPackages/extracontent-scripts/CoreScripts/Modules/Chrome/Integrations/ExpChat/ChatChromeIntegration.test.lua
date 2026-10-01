@@ -267,6 +267,7 @@ jest.mock(script.Parent.ChatIconVisibleSignals, function()
 	}
 end)
 
+local mockShouldSkipHistorical = false
 jest.mock(CorePackages.Workspace.Packages.ExpChat, function()
 	return {
 		Stores = {
@@ -287,6 +288,9 @@ jest.mock(CorePackages.Workspace.Packages.ExpChat, function()
 		},
 		shouldSuppressUnreadForTabMetadata = function()
 			return false
+		end,
+		shouldSkipHistoricalMessage = function()
+			return mockShouldSkipHistorical
 		end,
 		getExperienceChatVisualConfig = function()
 			return { icon = { off = "off", on = "on" } }
@@ -724,6 +728,7 @@ describe("ChatChromeIntegration unibar badge gating", function()
 		chatWindowVisible = false
 		mockUniverseChatTabsEnabled = false
 		mockShouldRenderInDefaultWindow = true
+		mockShouldSkipHistorical = false
 		table.clear(messageReceivedHandlers)
 		table.clear(universeMessageReceivedHandlers)
 		notificationFireCountSpy:mockClear()
@@ -753,6 +758,16 @@ describe("ChatChromeIntegration unibar badge gating", function()
 	-- channel under DefaultTextChannels) must not bump the unibar unread badge.
 	it("SHOULD NOT badge WHEN the helper excludes the channel from the default window", function()
 		mockShouldRenderInDefaultWindow = false
+		loadIntegrationForBadge()
+
+		fireMessageReceived(A_CHANNEL)
+
+		expect(notificationFireCountSpy).never.toHaveBeenCalled()
+	end)
+
+	it("SHOULD NOT badge WHEN the message is historical", function()
+		mockShouldRenderInDefaultWindow = true
+		mockShouldSkipHistorical = true
 		loadIntegrationForBadge()
 
 		fireMessageReceived(A_CHANNEL)

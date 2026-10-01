@@ -34,4 +34,3 @@ For EMOTE_ANIMATION uploads, if **any** HRD/DRD bone folder is found anywhere in
 
 - `getFFlagUGCValidateEmotesBonesAllowed` (shared across all bone modules)
 - `getFFlagUGCValidateAnimPartsRotationOnly` (gates ANIMATION category support and unconditional enforcement)
-- `getFFlagUGCValidationAnimationPackSupport` (gates ANIMATION category existence)

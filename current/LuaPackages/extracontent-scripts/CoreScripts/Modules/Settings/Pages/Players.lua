@@ -32,7 +32,7 @@ local Localization = require(CorePackages.Workspace.Packages.InExperienceLocales
 local utility = require(RobloxGui.Modules.Settings.Utility)
 local Create = require(CorePackages.Workspace.Packages.AppCommonLib).Create
 
-local reportAbuseMenu = require(RobloxGui.Modules.Settings.Pages.ReportAbuseMenuNewContainerPage)
+local reportAbuseMenu = require(RobloxGui.Modules.Settings.Pages.ReportAbuseMenuContainerPage)
 local SocialUtil = require(RobloxGui.Modules:WaitForChild("SocialUtil"))
 local Diag = require(CorePackages.Workspace.Packages.Analytics).AnalyticsReporters.Diag
 local EventStream = require(CorePackages.Workspace.Packages.Analytics).AnalyticsReporters.EventStream

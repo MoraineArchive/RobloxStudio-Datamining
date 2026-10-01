@@ -7,12 +7,16 @@ local UIBloxConfig = require(UIBlox.UIBloxConfig)
 
 local Cryo = require(Packages.Cryo)
 local React = require(Packages.React)
+local Foundation = require(Packages.Foundation)
+local normalizeFontFace = Foundation.Utility.normalizeFontFace
 
 local ImageSetLabel = require(UIBlox.Core.ImageSet.ImageSetComponent).Label
 local GenericTextLabel = require(UIBlox.Core.Text.GenericTextLabel.GenericTextLabel)
 local useStyle = require(UIBlox.Core.Style.useStyle)
 local StyleTypes = require(UIBlox.App.Style.StyleTypes)
 local Fonts = require(UIBlox.App.Style.Fonts)
+
+local FFlagFoundationFontFaceMigration = Foundation.Utility.Flags.FoundationFontFaceMigration
 
 -- Always a thin line inside the outer badge
 local EMPHASIS_BORDER_WIDTH = 1
@@ -217,7 +221,8 @@ local function renderBadge(props: BadgeProps, styleProps: StyleProps, style: Sty
 			Text = text,
 			TextXAlignment = Enum.TextXAlignment.Center,
 			TextYAlignment = Enum.TextYAlignment.Center,
-			Font = font.CaptionHeader.Font,
+			Font = if FFlagFoundationFontFaceMigration then nil else font.CaptionHeader.Font,
+			FontFace = if FFlagFoundationFontFaceMigration then normalizeFontFace(font.CaptionHeader.Font) else nil,
 			TextSize = font.BaseSize * font.CaptionHeader.RelativeSize,
 			TextColor3 = badgeContentColor.Color,
 			TextTransparency = badgeContentColor.Transparency,

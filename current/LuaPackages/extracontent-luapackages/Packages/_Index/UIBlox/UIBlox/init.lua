@@ -13,7 +13,7 @@ local ControlStateEnum = require(script.Core.Control.Enum.ControlState)
 
 local React = require(script.Parent.React)
 
-export type Font = Fonts.Font
+export type Font = Fonts.FontInfo
 export type FontPalette = Fonts.FontPalette
 
 export type ImageSetImage = ImagesTypes.ImageSetImage
@@ -103,6 +103,7 @@ local function initializeLibrary(configs)
 			ExpandableText = strict({
 				GetCanExpand = require(script.Core.Text.ExpandableText.ExpandableTextUtils).getCanExpand,
 			}),
+			GetTextSize = require(script.Core.Text.GetTextSize),
 			EmojiTextLabel = lazify(function()
 				return require(script.Core.Text.EmojiTextLabel.EmojiTextLabel)
 			end),

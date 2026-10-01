@@ -27,13 +27,13 @@ local ContextActionService = game:GetService("ContextActionService")
 local CommonUtils = require(script.Parent:WaitForChild("CommonUtils"))
 local FlagUtil = CommonUtils.get("FlagUtil")
 local FFlagUserPlayerScriptsCCLIntegrationD = FlagUtil.getUserFlag("UserPlayerScriptsCCLIntegrationD")
-local FFlagUserPSSpecifySimulationFrequency = FlagUtil.getUserFlag("UserPSSpecifySimulationFrequency")
 local FFlagUserPlayerScriptsBindActivateOnIAS = FlagUtil.getUserFlag("UserPlayerScriptsBindActivateOnIAS")
 local FFlagUserPlayerScriptsFireThroughScriptableBindings = FlagUtil.getUserFlag("UserPlayerScriptsFireThroughScriptableBindings")
 local FFlagUserPlayerScriptsUseReplicatedCameraAPI = FlagUtil.getUserFlag("UserPlayerScriptsUseReplicatedCameraAPI")
 local FFlagUserPlayerScriptsStopFireCameraAction = FlagUtil.getUserFlag("UserPlayerScriptsStopFireCameraAction")
 local FFlagUserPlayerScriptsSAuthDirectAPIs = FlagUtil.getUserFlag("UserPlayerScriptsSAuthDirectAPIs2")
 local FFlagUserPlayerScriptsPlayerControlState = FlagUtil.getUserFlag("UserPlayerScriptsPlayerControlState2")
+local FFlagUserPlayerScriptsTaskDeferSimulation = FlagUtil.getUserFlag("UserPlayerScriptsTaskDeferSimulation")
 local FFlagUserPlayerScriptsFixSAuthRenderStepMove = FlagUtil.getUserFlag("UserPlayerScriptsFixSAuthRenderStepMove")
 local FFlagUserPlayerScriptsSupportMicroGamepad = FlagUtil.getUserFlag("UserPlayerScriptsSupportMicroGamepad")
 local FFlagUserAbilitiesUserInterfaceC = FlagUtil.getUserFlag("UserAbilitiesUserInterfaceC")
@@ -295,20 +295,21 @@ function ControlModule:InitializeServerAuthority()
 			end
 			Players.PlayerAdded:Connect(InputReplication.createPlayerControlState)
 		end
-		-- Server processes all input
-		if (FFlagUserPSSpecifySimulationFrequency) then
-			RunService:BindToSimulation(function(dt)
-				for _, player in Players:GetPlayers() do
-					self:ProcessInputs(player, dt)
-				end
-			end, Enum.StepFrequency.Hz60)
-		else
-			RunService:BindToSimulation(function(dt)
-				for _, player in Players:GetPlayers() do
-					self:ProcessInputs(player, dt)
-				end
-			end)		
+		-- precreate AvatarAbilitiesInterface on server before simulation callbacks
+		if FFlagUserPlayerScriptsCCLIntegrationD and FFlagUserPlayerScriptsTaskDeferSimulation then
+			for _, player in Players:GetPlayers() do
+				AvatarAbilitiesInterface.get(player)
+			end
+			Players.PlayerAdded:Connect(function(player)
+				AvatarAbilitiesInterface.get(player)
+			end)
 		end
+		-- Server processes all input
+		RunService:BindToSimulation(function(dt)
+			for _, player in Players:GetPlayers() do
+				self:ProcessInputs(player, dt)
+			end
+		end, Enum.StepFrequency.Hz60)
 	else
 		if FFlagUserPlayerScriptsPlayerControlState then
 			InputReplication.watchForPlayerControlState(Players.LocalPlayer)
@@ -324,15 +325,9 @@ function ControlModule:InitializeServerAuthority()
 			end
 		end)
 		-- Client processes local player input only
-		if (FFlagUserPSSpecifySimulationFrequency) then
-			RunService:BindToSimulation(function(dt)
-				self:ProcessInputs(Players.LocalPlayer, dt)
-			end, Enum.StepFrequency.Hz60)
-		else
-			RunService:BindToSimulation(function(dt)
-				self:ProcessInputs(Players.LocalPlayer, dt)
-			end)
-		end
+		RunService:BindToSimulation(function(dt)
+			self:ProcessInputs(Players.LocalPlayer, dt)
+		end, Enum.StepFrequency.Hz60)
 	end
 
 	if self.data and self.data.eventBus then

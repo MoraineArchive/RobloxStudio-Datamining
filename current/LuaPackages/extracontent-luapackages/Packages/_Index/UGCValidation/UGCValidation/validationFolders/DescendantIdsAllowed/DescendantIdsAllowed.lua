@@ -9,7 +9,6 @@ local RunService = game:GetService("RunService")
 local canPublishAssets = require(root.util.canPublishAssets)
 local getAssetCreationDetails = require(root.util.getAssetCreationDetails)
 local getAssetCreationDetailsRCC = require(root.util.getAssetCreationDetailsRCC)
-local getFFlagUGCValidateMigrateSchemaProperties = require(root.flags.getFFlagUGCValidateMigrateSchemaProperties)
 local getFFlagUGCValidateForwardIECRestrictedUserIds =
 	require(root.flags.getFFlagUGCValidateForwardIECRestrictedUserIds)
 local getFFlagUGCValidateBackendInExperienceViaCanPublish =
@@ -199,7 +198,6 @@ DescendantIdsAllowed.requiredData = {
 	ValidationEnums.SharedDataMember.consumerConfig,
 	ValidationEnums.SharedDataMember.contentIds,
 }
-DescendantIdsAllowed.fflag = getFFlagUGCValidateMigrateSchemaProperties
 DescendantIdsAllowed.expectedFailures = {}
 
 DescendantIdsAllowed.run = function(reporter: Types.ValidationReporter, data: Types.SharedData)
@@ -213,9 +211,11 @@ DescendantIdsAllowed.run = function(reporter: Types.ValidationReporter, data: Ty
 	local rootInstance = data.rootInstance
 	local contentIdMap = data.contentIds
 
-	if consumerConfig.consumerEnv == ValidationEnums.ConsumerEnv.Studio then
+	local validationEnv = consumerConfig.validationEnv
+
+	if validationEnv == ValidationEnums.ValidationEnv.Studio then
 		runStudio(reporter, rootInstance, contentIdMap)
-	elseif consumerConfig.consumerEnv == ValidationEnums.ConsumerEnv.Backend then
+	elseif validationEnv == ValidationEnums.ValidationEnv.Backend then
 		local backendConfigs = consumerConfig.backendConfigs
 		-- In-experience deps are guaranteed reviewed before publish by the backend proactive flow, so these jobs check ownership (canPublish) only, not moderation state.
 		-- Enforced backend-side by AssetDependencyCheckActivity.ExecuteAsync (avatar-catalog-moderation) and CreateModerationRecordOperation.AreMeshImageDependenciesModeratedAsync (avtr-mktpl-moderation-status).
@@ -227,7 +227,7 @@ DescendantIdsAllowed.run = function(reporter: Types.ValidationReporter, data: Ty
 		else
 			runBackend(reporter, contentIdMap, backendConfigs)
 		end
-	elseif consumerConfig.consumerEnv == ValidationEnums.ConsumerEnv.IEC then
+	elseif validationEnv == ValidationEnums.ValidationEnv.IEC then
 		runCanPublishOwnershipCheck(reporter, rootInstance, contentIdMap, consumerConfig.iecConfigs)
 	end
 end

@@ -22,13 +22,18 @@ local StudioThemeContextProvider = require(Main.Contexts.StudioThemeContextProvi
 local ThemeContext = require(Main.Contexts.ThemeContext)
 type FoundationTheme = Foundation.Theme
 type FoundationDevice = Foundation.Device
+type FoundationThemeName = Foundation.ThemeName
 
 local Types = require(Main.Types)
 type FIXME = Types.FIXME
 
 export type FoundationProviderAdapterProps = {
 	device: FoundationDevice?,
+	-- Deprecated. Use colorMode instead. Light/Dark override for Studio theme.
 	theme: FoundationTheme?,
+	colorMode: FoundationTheme?,
+	-- Foundation named theme (Default, Kids, ...). Distinct from Light/Dark.
+	themeName: FoundationThemeName?,
 	overlayGui: GuiBase2d?,
 	plugin: Plugin?,
 	children: React.ReactNode,
@@ -89,9 +94,10 @@ local function FoundationProviderAdapter(props: FoundationProviderAdapterProps)
 	-- Remove the cast once FFlagStudioFoundationThemeContext is removed
 	local theme = useThemeName() :: any
 	-- Foundation and Studio themes match so far, should we do a check?
-	local themeName: FoundationTheme = (
+	local studioTheme: FoundationTheme = (
 		if FFlagStudioFoundationThemeContext then theme else props.theme or theme.Name
 	) :: FoundationTheme
+	local colorMode: FoundationTheme = (props.colorMode or studioTheme) :: FoundationTheme
 
 	if overlayGui == nil then
 		warn("No overlayGui is provided. Foundation will create a ScreenGui to render Toolips/Menus", debug.traceback())
@@ -108,13 +114,16 @@ local function FoundationProviderAdapter(props: FoundationProviderAdapterProps)
 				FoundationProvider,
 				{
 					device = device,
-					theme = themeName,
+					colorMode = colorMode,
+					-- Deprecated Foundation prop kept while consumers migrate.
+					theme = colorMode,
+					themeName = props.themeName,
 					overlayGui = overlayGui,
 					plugin = if FFlagStudioFoundationPluginPropSupport then props.plugin else nil,
 				},
 				React.createElement(
 					StyleSheetWrapper,
-					{ themeName = themeName, onStyleSheetChange = props.onStyleSheetChange },
+					{ themeName = colorMode, onStyleSheetChange = props.onStyleSheetChange },
 					props.children
 				)
 			)
@@ -126,11 +135,11 @@ local function FoundationProviderAdapter(props: FoundationProviderAdapterProps)
 end
 
 local function StudioThemeWrapper(props: FoundationProviderAdapterProps): React.ReactNode
-	-- If the theme was overridden, do not listen for Studio updates.
-	if props.theme then
+	-- If color mode was overridden, do not listen for Studio updates.
+	if props.colorMode or props.theme then
 		return React.createElement(
 			ThemeContext.Provider,
-			{ value = props.theme },
+			{ value = props.colorMode or props.theme },
 			React.createElement(FoundationProviderAdapter, props)
 		)
 	else

@@ -54,7 +54,6 @@ Measure_Mesh_Island_Volume.run = function(reporter: Types.ValidationReporter, da
 					partName = partName,
 					num_small_volume_islands = partData.num_small_volume_islands or "unknown",
 					num_disconnected_components = partData.num_disconnected_components or "unknown",
-					score = tostring(math.floor(tonumber(partData.score) or 0)),
 				}
 				if getFFlagUGCValidateAQMeshQualityBlockUpload() then
 					reporter:fail(ErrorSourceStrings.Keys.AQSWarn_MeshIslandVolume, params)

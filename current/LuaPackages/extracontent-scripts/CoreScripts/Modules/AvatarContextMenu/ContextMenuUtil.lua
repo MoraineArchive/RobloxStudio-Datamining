@@ -24,6 +24,8 @@ local UserInputService = game:GetService("UserInputService")
 local RobloxReplicatedStorage = game:GetService("RobloxReplicatedStorage")
 local CorePackages = game:GetService("CorePackages")
 
+local isTenFootInterface = require(CorePackages.Workspace.Packages.AppCommonLib).isTenFootInterface
+
 --- VARIABLES
 local RobloxGui = CoreGuiService:WaitForChild("RobloxGui")
 local CoreGuiModules = RobloxGui:WaitForChild("Modules")
@@ -272,7 +274,7 @@ function ContextMenuUtil:MakeStyledButton(name, text, size, clickFunc, theme: Th
 	textLabel.TextSize = 24 * theme.TextScale
 	if isSmallTouchScreen() then
 		textLabel.TextSize = 18 * theme.TextScale
-	elseif GuiService:IsTenFootInterface() then
+	elseif isTenFootInterface() then
 		textLabel.TextSize = 36 * theme.TextScale
 	end
 	textLabel.Text = text

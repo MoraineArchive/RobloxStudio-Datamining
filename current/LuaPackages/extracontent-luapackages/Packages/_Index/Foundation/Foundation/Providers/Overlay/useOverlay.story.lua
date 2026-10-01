@@ -87,7 +87,7 @@ local function OverlayConsumer()
 	})
 end
 
-local function UseOverlayStory()
+local function PlaygroundStory()
 	local overlay = useOverlay()
 	local name = if overlay ~= nil then overlay:GetFullName() else "N/A"
 	local text = `Overlay Name: {name}`
@@ -154,13 +154,11 @@ return {
 	summary = "useOverlay",
 	stories = {
 		{
-			name = "useOverlay",
-			summary = "Provides access to the overlay",
-			story = UseOverlayStory :: unknown,
+			name = "Playground",
+			story = PlaygroundStory :: unknown,
 		},
 		{
 			name = "Lazy Overlay Mounting",
-			summary = "Does not eagerly pollute workspace with FoundationOverlay instances (Flags.FoundationLazyOverlayLoading must be enabled)",
 			story = LazyOverlayMountingStory,
 		},
 	},

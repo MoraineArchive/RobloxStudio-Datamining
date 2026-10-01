@@ -5,22 +5,16 @@ local Types = require(root.util.Types)
 local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 
-local getFFlagUGCValidateMigrateCurveAnim = require(root.flags.getFFlagUGCValidateMigrateCurveAnim)
 local GetFStringUGCValidateMaxAnimationMovementPerPart =
 	require(root.flags.GetFStringUGCValidateMaxAnimationMovementPerPart)
-local getFFlagUGCValidationAnimationPackSupport = require(root.flags.getFFlagUGCValidationAnimationPackSupport)
-
 local CurveAnimPositionBounded = {}
 
-CurveAnimPositionBounded.categories = { ValidationEnums.UploadCategory.EMOTE_ANIMATION }
-if getFFlagUGCValidationAnimationPackSupport() then
-	table.insert(CurveAnimPositionBounded.categories, ValidationEnums.UploadCategory.ANIMATION)
-end
+CurveAnimPositionBounded.categories =
+	{ ValidationEnums.UploadCategory.EMOTE_ANIMATION, ValidationEnums.UploadCategory.ANIMATION }
 CurveAnimPositionBounded.requiredData = {
 	ValidationEnums.SharedDataMember.curveAnimations,
 	ValidationEnums.SharedDataMember.curveAnimComputedFrames,
 }
-CurveAnimPositionBounded.fflag = getFFlagUGCValidateMigrateCurveAnim
 CurveAnimPositionBounded.expectedFailures = {}
 CurveAnimPositionBounded.prereqTests = { ValidationEnums.ValidationModule.CurveAnimDataAvailable }
 

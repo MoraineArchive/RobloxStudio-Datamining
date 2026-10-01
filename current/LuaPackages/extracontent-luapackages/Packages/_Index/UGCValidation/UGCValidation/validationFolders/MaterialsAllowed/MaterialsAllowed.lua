@@ -5,8 +5,6 @@ local Types = require(root.util.Types)
 local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 
-local getFFlagUGCValidateMigrateSchemaProperties = require(root.flags.getFFlagUGCValidateMigrateSchemaProperties)
-
 local MaterialsAllowed = {}
 
 MaterialsAllowed.categories = {
@@ -18,7 +16,6 @@ MaterialsAllowed.categories = {
 MaterialsAllowed.requiredData = {
 	ValidationEnums.SharedDataMember.rootInstance,
 }
-MaterialsAllowed.fflag = getFFlagUGCValidateMigrateSchemaProperties
 MaterialsAllowed.expectedFailures = {}
 
 local function buildAcceptedMaterialList(): string

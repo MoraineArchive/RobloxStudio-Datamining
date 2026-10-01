@@ -93,22 +93,30 @@ return function(
 			serviceSourceType = Constants.ServiceSourceType.InGameUniverseAndImageAsset
 		end
 
+		-- Parity with Creator Hub: omit the Translation when there is no translated asset to report.
+		local translation: { ContentType: any, Value: any }? = {
+			ContentType = contentType,
+			Value = feedbackContent,
+		}
+		if contentType == Constants.ContentType.Image and (feedbackContent == nil or feedbackContent == "") then
+			translation = nil
+		end
+
+		local feedbackTarget = {
+			ServiceSource = {
+				Type = serviceSourceType,
+				ExternalId = feedbackIdentifier,
+			},
+			Source = {
+				ContentType = contentType,
+				Value = originalContent,
+			},
+			Translation = translation,
+		}
+
 		payload = {
 			LocalizationFeedback = {
-				FeedbackTarget = {
-					ServiceSource = {
-						Type = serviceSourceType,
-						ExternalId = feedbackIdentifier,
-					},
-					Source = {
-						ContentType = contentType,
-						Value = originalContent,
-					},
-					Translation = {
-						ContentType = contentType,
-						Value = feedbackContent,
-					},
-				},
+				FeedbackTarget = feedbackTarget,
 				Locale = if Players.LocalPlayer.LocaleId then Players.LocalPlayer.LocaleId:gsub("-", "_") else "", --Defensive substitution, but back end should handle this properly
 				ReasonType = feedbackReason,
 				Suggestion = {

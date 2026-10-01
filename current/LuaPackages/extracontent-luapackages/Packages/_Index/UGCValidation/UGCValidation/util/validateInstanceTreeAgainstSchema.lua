@@ -3,9 +3,6 @@ local root = script.Parent.Parent
 local Types = require(root.util.Types)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 
-local getFFlagUGCValidationExtendSchemaToIgnoreDescendants =
-	require(root.flags.getFFlagUGCValidationExtendSchemaToIgnoreDescendants)
-
 local function checkName(nameList: any, instanceName: string): boolean
 	if type(nameList) == "table" then
 		return table.find(nameList, instanceName) ~= nil
@@ -31,7 +28,7 @@ local function validateInstancesFromSchema(
 	skipInstanceContext: boolean?
 )
 	authorizedSet[instance] = true
-	if getFFlagUGCValidationExtendSchemaToIgnoreDescendants() and schema._ignoreDescendants then
+	if schema._ignoreDescendants then
 		assert(
 			not schema._children,
 			"if _ignoreDescendants is true, there should be no descendants in the schema as they would be ignored anyway"

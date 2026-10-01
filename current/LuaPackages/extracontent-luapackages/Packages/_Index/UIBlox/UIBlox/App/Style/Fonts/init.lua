@@ -1,30 +1,30 @@
-export type Font = {
-	Font: Enum.Font,
+export type FontInfo = {
+	Font: Font | Enum.Font,
 	RelativeSize: number,
 	RelativeMinSize: number,
 }
 
 export type FontPaletteOld = {
 	BaseSize: number,
-	Title: Font,
-	Header1: Font,
-	Header2: Font,
-	SubHeader1: Font,
-	Body: Font,
-	CaptionHeader: Font,
-	CaptionSubHeader: Font,
-	CaptionBody: Font,
-	Footer: Font,
+	Title: FontInfo,
+	Header1: FontInfo,
+	Header2: FontInfo,
+	SubHeader1: FontInfo,
+	Body: FontInfo,
+	CaptionHeader: FontInfo,
+	CaptionSubHeader: FontInfo,
+	CaptionBody: FontInfo,
+	Footer: FontInfo,
 }
 
 export type FontPaletteNew = FontPaletteOld & {
-	HeadingLarge: Font,
-	HeadingSmall: Font,
-	TitleLarge: Font,
-	BodyLarge: Font,
-	CaptionLarge: Font,
-	BodySmall: Font,
-	CaptionSmall: Font,
+	HeadingLarge: FontInfo,
+	HeadingSmall: FontInfo,
+	TitleLarge: FontInfo,
+	BodyLarge: FontInfo,
+	CaptionLarge: FontInfo,
+	BodySmall: FontInfo,
+	CaptionSmall: FontInfo,
 }
 
 export type FontPalette = FontPaletteOld | FontPaletteNew

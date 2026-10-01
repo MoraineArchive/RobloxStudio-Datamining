@@ -5,8 +5,6 @@ local Types = require(root.util.Types)
 local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 
-local getFFlagUGCValidateMigrateSchemaProperties = require(root.flags.getFFlagUGCValidateMigrateSchemaProperties)
-
 local InstanceTreeMatchesSchema = {}
 
 InstanceTreeMatchesSchema.categories = {
@@ -18,7 +16,6 @@ InstanceTreeMatchesSchema.categories = {
 InstanceTreeMatchesSchema.requiredData = {
 	ValidationEnums.SharedDataMember.rootInstance,
 }
-InstanceTreeMatchesSchema.fflag = getFFlagUGCValidateMigrateSchemaProperties
 InstanceTreeMatchesSchema.expectedFailures = {}
 
 InstanceTreeMatchesSchema.run = function(reporter: Types.ValidationReporter, data: Types.SharedData)

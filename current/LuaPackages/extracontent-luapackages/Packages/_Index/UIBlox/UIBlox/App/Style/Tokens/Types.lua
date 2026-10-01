@@ -13,7 +13,7 @@ export type ColorToken = {
 }
 
 export type TypographyToken = {
-	Font: Enum.Font,
+	Font: Font | Enum.Font,
 	FontSize: number,
 	LineHeight: number,
 	LetterSpacing: number,

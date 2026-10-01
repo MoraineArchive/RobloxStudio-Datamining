@@ -12,10 +12,12 @@ local OptionSelectorGroupContext = require(script.Parent.Parent.OptionSelectorGr
 local OptionSelectorGroupSize = require(Foundation.Enums.OptionSelectorGroupSize)
 local Orientation = require(Foundation.Enums.Orientation)
 local StoryIcons = require(Foundation.Utility.Stories.Shared.StoryIcons)
+local StorySection = require(Foundation.Utility.Stories.Shared.StorySection)
 local Text = require(Foundation.Components.Text)
 local View = require(Foundation.Components.View)
 
 local IconName = BuilderIcons.Icon
+local Section = StorySection.Section
 
 type FillBehavior = FillBehavior.FillBehavior
 type OptionSelectorGroupSize = OptionSelectorGroupSize.OptionSelectorGroupSize
@@ -62,28 +64,6 @@ local ITEM_COLUMN_WIDTH = 280
 -- Icon matrix cells need extra width at Medium (xxlarge padding + icon + checkmark chrome).
 local ICON_MATRIX_COLUMN_WIDTH = 240
 local ITEM_VALUE = "A"
-
-local function Section(props: {
-	LayoutOrder: number,
-	name: string,
-	contentTag: string?,
-	children: React.ReactNode,
-})
-	return React.createElement(View, {
-		tag = "col gap-medium size-full-0 auto-y",
-		LayoutOrder = props.LayoutOrder,
-	}, {
-		Title = React.createElement(Text, {
-			Text = props.name,
-			tag = "auto-xy text-label-medium content-default",
-			LayoutOrder = 1,
-		}),
-		Content = React.createElement(View, {
-			tag = props.contentTag or "row gap-large auto-xy wrap",
-			LayoutOrder = 2,
-		}, props.children),
-	})
-end
 
 local function ItemExample(
 	props: {
@@ -228,7 +208,7 @@ end
 
 local function SizingStory()
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		Size = React.createElement(
 			Section,
@@ -273,7 +253,7 @@ end
 
 local function StatesStory()
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		Selection = React.createElement(
 			Section,
@@ -410,7 +390,7 @@ local ICON_COLUMNS: { OrientationMatrixColumn } = {
 local function OrientationStory()
 	if Flags.FoundationOptionSelectorGroupBeta then
 		return React.createElement(View, {
-			tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+			tag = StorySection.STORY_PAGE_COL_TAG,
 		}, {
 			Matrix = React.createElement(OrientationSelectionMatrix, {
 				LayoutOrder = 1,
@@ -420,7 +400,7 @@ local function OrientationStory()
 	end
 
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		WithoutIcon = React.createElement(Section, {
 			LayoutOrder = 1,
@@ -474,7 +454,7 @@ end
 
 local function ControlledStory()
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		Controlled = React.createElement(Section, {
 			LayoutOrder = 1,
@@ -609,7 +589,7 @@ local function ContentStory()
 	end)
 
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		IconByTypeAndSize = React.createElement(Section, {
 			LayoutOrder = 1,
@@ -710,19 +690,14 @@ return {
 		},
 		{
 			name = "Sizing",
-			summary = "Prefer Root `size` and `fillBehavior` (Item props deprecated). fillBehavior applies in horizontal groups; default Fit. Vertical groups always Fill.",
 			story = SizingStory,
 		},
 		{
 			name = "States",
-			summary = "Selected uses a contrast stroke (checkmark when FoundationOptionSelectorGroupBeta is off).",
 			story = StatesStory,
 		},
 		{
 			name = "Orientation",
-			summary = if Flags.FoundationOptionSelectorGroupBeta
-				then "Rows: Vertical group, Horizontal Fit, Horizontal Fill. Columns: Without icon / With icon. Each Item lays out opposite the group (vertical group → horizontal item content; horizontal group → vertical item content)."
-				else "Rows: Vertical group, Horizontal Fit, Horizontal Fill. Columns: Unselected / Selected. Each Item lays out opposite the group (vertical group → horizontal item content; horizontal group → vertical item content).",
 			story = OrientationStory,
 		},
 		{
@@ -731,7 +706,6 @@ return {
 		},
 		{
 			name = "Content",
-			summary = "XSmall and Small share text-title-small, so the footprint jump is subtler until Medium (title + padding both step up).",
 			story = ContentStory,
 		},
 	},

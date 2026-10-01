@@ -24,15 +24,11 @@ type InputVariantProps = {
 	label: { style: ColorStyleValue },
 }
 
-local Flags = require(Foundation.Utility.Flags)
-
 local function variantsFactory(tokens: Tokens)
 	local strokeThickness = math.ceil(tokens.Stroke.Standard)
 	local common = {
 		container = {
-			tag = if Flags.FoundationInternalInputBeta
-				then "row align-x-left align-y-top auto-xy"
-				else "row align-x-left align-y-center auto-xy",
+			tag = "row align-x-left align-y-top auto-xy",
 			padding = UDim.new(0, strokeThickness),
 		},
 		input = { stroke = { thickness = strokeThickness } },

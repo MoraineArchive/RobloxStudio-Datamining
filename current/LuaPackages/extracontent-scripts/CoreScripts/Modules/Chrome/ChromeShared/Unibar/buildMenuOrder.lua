@@ -1,13 +1,13 @@
 local Chrome = script:FindFirstAncestor("Chrome")
 
 local CorePackages = game:GetService("CorePackages")
-local GuiService = game:GetService("GuiService")
 
 local Constants = require(script.Parent.Constants)
 local SideSheet = require(CorePackages.Workspace.Packages.InExperienceSideSheet)
 
 local isConnectDropdownEnabled = require(Chrome.Integrations.Connect.isConnectDropdownEnabled)
 local isSpatial = require(CorePackages.Workspace.Packages.AppCommonLib).isSpatial
+local isTenFootInterface = require(CorePackages.Workspace.Packages.AppCommonLib).isTenFootInterface
 local isInExperienceUIVREnabled =
 	require(CorePackages.Workspace.Packages.SharedExperimentDefinition).isInExperienceUIVREnabled
 local ArgoPartyExperimentation = require(CorePackages.Workspace.Packages.SocialExperiments).ArgoPartyExperimentation
@@ -48,8 +48,7 @@ local function buildMenuOrder(): Array<string>
 		)
 
 	-- TO-DO: Replace GuiService:IsTenFootInterface() once APPEXP-2014 has been merged
-	-- selene: allow(denylist_filter)
-	local isNotVROrConsole = not isSpatial() and not GuiService:IsTenFootInterface()
+	local isNotVROrConsole = not isSpatial() and not isTenFootInterface()
 	local notVRControlsOrNotSpatial = not isInExperienceUIVREnabled or not isSpatial()
 	local traversalEnabled = FFlagAddTraversalHistory and FFlagIntegrateTraversalHistoryInSideSheet
 
@@ -62,7 +61,7 @@ local function buildMenuOrder(): Array<string>
 		trust_and_safety = 40,
 		connect_dropdown = if connectDropdownVisible then 50 else nil,
 		[Constants.AVATAR_SWITCHER_ID] = if FFlagEnableInExperienceAvatarSwitcher then 60 else nil,
-		[Constants.SWITCH_SERVER_ID] = if FFlagShowSwitchServerButton then 65 else nil,
+		[Constants.SWITCH_SERVER_ID] = if FFlagShowSwitchServerButton or isPioneerLaunch() then 65 else nil,
 		[Constants.IN_EXPERIENCE_SHOP_ID] = if FFlagEnableInExperienceShop then 70 else nil,
 		leaderboard = 80,
 		emotes = 90,

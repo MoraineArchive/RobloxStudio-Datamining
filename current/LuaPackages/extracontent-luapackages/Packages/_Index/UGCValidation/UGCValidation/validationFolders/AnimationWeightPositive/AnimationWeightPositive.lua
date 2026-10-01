@@ -4,8 +4,6 @@ local Types = require(root.util.Types)
 local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 
-local getFFlagUGCValidationAnimationPackSupport = require(root.flags.getFFlagUGCValidationAnimationPackSupport)
-
 local AnimationWeightPositive = {}
 
 AnimationWeightPositive.categories = { ValidationEnums.UploadCategory.ANIMATION }
@@ -13,7 +11,6 @@ AnimationWeightPositive.requiredData = {
 	ValidationEnums.SharedDataMember.rootInstance,
 	ValidationEnums.SharedDataMember.uploadEnum,
 }
-AnimationWeightPositive.fflag = getFFlagUGCValidationAnimationPackSupport
 AnimationWeightPositive.expectedFailures = {}
 AnimationWeightPositive.prereqTests = { ValidationEnums.ValidationModule.ExpectedRootSchema }
 

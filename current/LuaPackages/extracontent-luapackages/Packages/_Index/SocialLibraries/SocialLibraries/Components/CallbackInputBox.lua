@@ -4,6 +4,8 @@ local dependencies = require(SocialLibraries.dependencies)
 local Roact = dependencies.Roact
 local UIBlox = dependencies.UIBlox
 local ImageSetLabel = UIBlox.Core.ImageSet.ImageSetLabel
+local FFlagFoundationFontFaceMigration = dependencies.Foundation.Utility.Flags.FoundationFontFaceMigration
+local normalizeFontFace = dependencies.Foundation.Utility.normalizeFontFace
 
 local CallbackInputBox = Roact.PureComponent:extend("CallbackInputBox")
 
@@ -107,7 +109,10 @@ function CallbackInputBox:render()
 				TextColor3 = self.props.inputTextColor3,
 				TextSize = self.props.inputTextSize,
 				TextTransparency = textTransparency,
-				Font = self.props.inputTextFont,
+				Font = if FFlagFoundationFontFaceMigration then nil :: never else self.props.inputTextFont,
+				FontFace = if FFlagFoundationFontFaceMigration
+					then normalizeFontFace(self.props.inputTextFont)
+					else nil :: never,
 				PlaceholderText = self.props.placeholderText,
 				PlaceholderColor3 = self.props.placeholderTextColor3,
 

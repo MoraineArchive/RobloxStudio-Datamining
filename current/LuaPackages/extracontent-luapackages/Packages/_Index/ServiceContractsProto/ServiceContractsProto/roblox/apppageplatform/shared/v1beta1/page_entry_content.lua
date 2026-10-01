@@ -44,6 +44,7 @@ type _Messages =
 		SocialLinkRowInputData_SocialLinkItem: _SocialLinkRowInputData_SocialLinkItemMessage,
 		ExperienceCarouselInputData: _ExperienceCarouselInputDataMessage,
 		ExperienceCarouselInputData_UniverseItem: _ExperienceCarouselInputData_UniverseItemMessage,
+		ExperienceCarouselInputData_UniverseItem_MomentVideoPlayback: _ExperienceCarouselInputData_UniverseItem_MomentVideoPlaybackMessage,
 		SongCarouselInputData: _SongCarouselInputDataMessage,
 		SongCarouselInputData_SongItem: _SongCarouselInputData_SongItemMessage,
 		EventsCarouselInputData: _EventsCarouselInputDataMessage,
@@ -99,6 +100,8 @@ type _Messages =
 		UAMarketplaceCatalogCategoryMenuInputData: _UAMarketplaceCatalogCategoryMenuInputDataMessage,
 		UAMarketplaceCatalogCategoryMenuInputData_MarketplaceCatalogCategoryItem: _UAMarketplaceCatalogCategoryMenuInputData_MarketplaceCatalogCategoryItemMessage,
 		MarketplaceOfferModalInputData: _MarketplaceOfferModalInputDataMessage,
+		MarketplaceItemMediaHeaderInputData: _MarketplaceItemMediaHeaderInputDataMessage,
+		MarketplaceItemMediaHeaderInputData_BundleItem: _MarketplaceItemMediaHeaderInputData_BundleItemMessage,
 		CatalogItemGridInputData: _CatalogItemGridInputDataMessage,
 		CatalogItemGridInputData_CatalogItem: _CatalogItemGridInputData_CatalogItemMessage,
 		SearchResultsFeedInputData: _SearchResultsFeedInputDataMessage,
@@ -126,6 +129,7 @@ type _Messages =
 		PreAuthLandingStickyHeaderInputData: _PreAuthLandingStickyHeaderInputDataMessage,
 		ImageCtaSectionInputData: _ImageCtaSectionInputDataMessage,
 		SettingsRowInputData: _SettingsRowInputDataMessage,
+		SettingsToggleInputData: _SettingsToggleInputDataMessage,
 		HeroUnitInputData: _HeroUnitInputDataMessage,
 		HeroUnitInputData_VisualAsset: _HeroUnitInputData_VisualAssetMessage,
 		HeroUnitInputData_Gradient: _HeroUnitInputData_GradientMessage,
@@ -145,6 +149,7 @@ type _Messages =
 	}
 local messages: _Messages = {} :: _Messages
 
+local _google_protobuf_struct = require(script.Parent.Parent.Parent.Parent.Parent.google.protobuf.struct)
 local _google_protobuf_timestamp = require(script.Parent.Parent.Parent.Parent.Parent.google.protobuf.timestamp)
 local _roblox_apppageplatform_shared_v1beta1_background_layer = require(script.Parent.background_layer)
 local _roblox_apppageplatform_shared_v1beta1_page_entry = require(script.Parent.page_entry)
@@ -298,6 +303,7 @@ type _PageEntryInputDataFields = {
 		| { type: "vertical_feed", value: VerticalFeedInputData }
 		| { type: "page_header", value: PageHeaderInputData }
 		| { type: "image_cta_section", value: ImageCtaSectionInputData }
+		| { type: "sandbox_content", value: _google_protobuf_struct.Struct }
 		| { type: "experience_details_feed", value: ExperienceDetailsFeedInputData }
 		| { type: "experience_details_action_bar", value: ExperienceDetailsActionBarInputData }
 		| { type: "experience_details_banner_image", value: ExperienceDetailsBannerImageInputData }
@@ -321,6 +327,7 @@ type _PageEntryInputDataFields = {
 		| { type: "marketplace_catalog_hero_unit", value: UAMarketplaceCatalogHeroUnitInputData }
 		| { type: "catalog_item_grid", value: CatalogItemGridInputData }
 		| { type: "marketplace_offer_modal", value: MarketplaceOfferModalInputData }
+		| { type: "marketplace_item_media_header", value: MarketplaceItemMediaHeaderInputData }
 		| { type: "search_results_feed", value: SearchResultsFeedInputData }
 		| { type: "power_search_ai_overview", value: PowerSearchAIOverviewInputData }
 		| { type: "experience_emphasis_tile", value: ExperienceEmphasisTileInputData }
@@ -332,6 +339,7 @@ type _PageEntryInputDataFields = {
 		| { type: "pre_auth_landing_sticky_header", value: PreAuthLandingStickyHeaderInputData }
 		| { type: "community_announcement", value: CommunityAnnouncementInputData }
 		| { type: "settings_row", value: SettingsRowInputData }
+		| { type: "settings_toggle", value: SettingsToggleInputData }
 	)?,
 }
 
@@ -374,6 +382,7 @@ type _PageEntryInputDataPartialFields = {
 		| { type: "vertical_feed", value: VerticalFeedInputData }
 		| { type: "page_header", value: PageHeaderInputData }
 		| { type: "image_cta_section", value: ImageCtaSectionInputData }
+		| { type: "sandbox_content", value: _google_protobuf_struct.Struct }
 		| { type: "experience_details_feed", value: ExperienceDetailsFeedInputData }
 		| { type: "experience_details_action_bar", value: ExperienceDetailsActionBarInputData }
 		| { type: "experience_details_banner_image", value: ExperienceDetailsBannerImageInputData }
@@ -397,6 +406,7 @@ type _PageEntryInputDataPartialFields = {
 		| { type: "marketplace_catalog_hero_unit", value: UAMarketplaceCatalogHeroUnitInputData }
 		| { type: "catalog_item_grid", value: CatalogItemGridInputData }
 		| { type: "marketplace_offer_modal", value: MarketplaceOfferModalInputData }
+		| { type: "marketplace_item_media_header", value: MarketplaceItemMediaHeaderInputData }
 		| { type: "search_results_feed", value: SearchResultsFeedInputData }
 		| { type: "power_search_ai_overview", value: PowerSearchAIOverviewInputData }
 		| { type: "experience_emphasis_tile", value: ExperienceEmphasisTileInputData }
@@ -408,6 +418,7 @@ type _PageEntryInputDataPartialFields = {
 		| { type: "pre_auth_landing_sticky_header", value: PreAuthLandingStickyHeaderInputData }
 		| { type: "community_announcement", value: CommunityAnnouncementInputData }
 		| { type: "settings_row", value: SettingsRowInputData }
+		| { type: "settings_toggle", value: SettingsToggleInputData }
 	)?,
 }
 
@@ -1291,6 +1302,8 @@ type _ExperienceCarouselInputDataFields = {
 	visible_rows_per_reveal: number?,
 	sponsored_user_cohort: string?,
 	anchor_tag: string?,
+	collection_item_size: string?,
+	sort_sub_id: string?,
 }
 
 type _ExperienceCarouselInputDataPartialFields = {
@@ -1313,6 +1326,8 @@ type _ExperienceCarouselInputDataPartialFields = {
 	visible_rows_per_reveal: number?,
 	sponsored_user_cohort: string?,
 	anchor_tag: string?,
+	collection_item_size: string?,
+	sort_sub_id: string?,
 }
 
 export type ExperienceCarouselInputData = typeof(setmetatable(
@@ -1359,6 +1374,9 @@ type _ExperienceCarouselInputData_UniverseItemFields = {
 	game_items: { GameItemInputData },
 	attribution_thumbnail_asset_id: string?,
 	game_items_compact: { GameItemInputData },
+	source_sort_id: string?,
+	new_game_enum: number?,
+	moment_video_playback: ExperienceCarouselInputData_UniverseItem_MomentVideoPlayback?,
 }
 
 type _ExperienceCarouselInputData_UniverseItemPartialFields = {
@@ -1386,6 +1404,9 @@ type _ExperienceCarouselInputData_UniverseItemPartialFields = {
 	game_items: { GameItemInputData }?,
 	attribution_thumbnail_asset_id: string?,
 	game_items_compact: { GameItemInputData }?,
+	source_sort_id: string?,
+	new_game_enum: number?,
+	moment_video_playback: ExperienceCarouselInputData_UniverseItem_MomentVideoPlayback?,
 }
 
 export type ExperienceCarouselInputData_UniverseItem = typeof(setmetatable(
@@ -1395,6 +1416,37 @@ export type ExperienceCarouselInputData_UniverseItem = typeof(setmetatable(
 type _ExperienceCarouselInputData_UniverseItemMessage = proto.Message<
 	ExperienceCarouselInputData_UniverseItem,
 	_ExperienceCarouselInputData_UniverseItemPartialFields
+>
+
+type _ExperienceCarouselInputData_UniverseItem_MomentVideoPlaybackImpl = {
+	__index: _ExperienceCarouselInputData_UniverseItem_MomentVideoPlaybackImpl,
+	new: (
+		fields: _ExperienceCarouselInputData_UniverseItem_MomentVideoPlaybackPartialFields?
+	) -> ExperienceCarouselInputData_UniverseItem_MomentVideoPlayback,
+	encode: (self: ExperienceCarouselInputData_UniverseItem_MomentVideoPlayback) -> buffer,
+	decode: (input: buffer) -> ExperienceCarouselInputData_UniverseItem_MomentVideoPlayback,
+	jsonEncode: (self: ExperienceCarouselInputData_UniverseItem_MomentVideoPlayback) -> { [string]: any },
+	jsonDecode: (input: { [string]: any }) -> ExperienceCarouselInputData_UniverseItem_MomentVideoPlayback,
+	descriptor: proto.Descriptor,
+}
+
+type _ExperienceCarouselInputData_UniverseItem_MomentVideoPlaybackFields = {
+	asset_id: string,
+	asset_access_context: string,
+}
+
+type _ExperienceCarouselInputData_UniverseItem_MomentVideoPlaybackPartialFields = {
+	asset_id: string?,
+	asset_access_context: string?,
+}
+
+export type ExperienceCarouselInputData_UniverseItem_MomentVideoPlayback = typeof(setmetatable(
+	{} :: _ExperienceCarouselInputData_UniverseItem_MomentVideoPlaybackFields,
+	{} :: _ExperienceCarouselInputData_UniverseItem_MomentVideoPlaybackImpl
+))
+type _ExperienceCarouselInputData_UniverseItem_MomentVideoPlaybackMessage = proto.Message<
+	ExperienceCarouselInputData_UniverseItem_MomentVideoPlayback,
+	_ExperienceCarouselInputData_UniverseItem_MomentVideoPlaybackPartialFields
 >
 
 type _SongCarouselInputDataImpl = {
@@ -3065,6 +3117,72 @@ type _MarketplaceOfferModalInputDataMessage = proto.Message<
 	_MarketplaceOfferModalInputDataPartialFields
 >
 
+type _MarketplaceItemMediaHeaderInputDataImpl = {
+	__index: _MarketplaceItemMediaHeaderInputDataImpl,
+	new: (fields: _MarketplaceItemMediaHeaderInputDataPartialFields?) -> MarketplaceItemMediaHeaderInputData,
+	encode: (self: MarketplaceItemMediaHeaderInputData) -> buffer,
+	decode: (input: buffer) -> MarketplaceItemMediaHeaderInputData,
+	jsonEncode: (self: MarketplaceItemMediaHeaderInputData) -> { [string]: any },
+	jsonDecode: (input: { [string]: any }) -> MarketplaceItemMediaHeaderInputData,
+	descriptor: proto.Descriptor,
+}
+
+type _MarketplaceItemMediaHeaderInputDataFields = {
+	item_id: string,
+	item_type: string,
+	prefer_three_dimensional: boolean,
+	bundle_type: string?,
+	bundle_items: { MarketplaceItemMediaHeaderInputData_BundleItem },
+}
+
+type _MarketplaceItemMediaHeaderInputDataPartialFields = {
+	item_id: string?,
+	item_type: string?,
+	prefer_three_dimensional: boolean?,
+	bundle_type: string?,
+	bundle_items: { MarketplaceItemMediaHeaderInputData_BundleItem }?,
+}
+
+export type MarketplaceItemMediaHeaderInputData = typeof(setmetatable(
+	{} :: _MarketplaceItemMediaHeaderInputDataFields,
+	{} :: _MarketplaceItemMediaHeaderInputDataImpl
+))
+type _MarketplaceItemMediaHeaderInputDataMessage = proto.Message<
+	MarketplaceItemMediaHeaderInputData,
+	_MarketplaceItemMediaHeaderInputDataPartialFields
+>
+
+type _MarketplaceItemMediaHeaderInputData_BundleItemImpl = {
+	__index: _MarketplaceItemMediaHeaderInputData_BundleItemImpl,
+	new: (
+		fields: _MarketplaceItemMediaHeaderInputData_BundleItemPartialFields?
+	) -> MarketplaceItemMediaHeaderInputData_BundleItem,
+	encode: (self: MarketplaceItemMediaHeaderInputData_BundleItem) -> buffer,
+	decode: (input: buffer) -> MarketplaceItemMediaHeaderInputData_BundleItem,
+	jsonEncode: (self: MarketplaceItemMediaHeaderInputData_BundleItem) -> { [string]: any },
+	jsonDecode: (input: { [string]: any }) -> MarketplaceItemMediaHeaderInputData_BundleItem,
+	descriptor: proto.Descriptor,
+}
+
+type _MarketplaceItemMediaHeaderInputData_BundleItemFields = {
+	id: string,
+	type: string,
+}
+
+type _MarketplaceItemMediaHeaderInputData_BundleItemPartialFields = {
+	id: string?,
+	type: string?,
+}
+
+export type MarketplaceItemMediaHeaderInputData_BundleItem = typeof(setmetatable(
+	{} :: _MarketplaceItemMediaHeaderInputData_BundleItemFields,
+	{} :: _MarketplaceItemMediaHeaderInputData_BundleItemImpl
+))
+type _MarketplaceItemMediaHeaderInputData_BundleItemMessage = proto.Message<
+	MarketplaceItemMediaHeaderInputData_BundleItem,
+	_MarketplaceItemMediaHeaderInputData_BundleItemPartialFields
+>
+
 type _CatalogItemGridInputDataImpl = {
 	__index: _CatalogItemGridInputDataImpl,
 	new: (fields: _CatalogItemGridInputDataPartialFields?) -> CatalogItemGridInputData,
@@ -3838,6 +3956,40 @@ export type SettingsRowInputData = typeof(setmetatable(
 	{} :: _SettingsRowInputDataImpl
 ))
 type _SettingsRowInputDataMessage = proto.Message<SettingsRowInputData, _SettingsRowInputDataPartialFields>
+
+type _SettingsToggleInputDataImpl = {
+	__index: _SettingsToggleInputDataImpl,
+	new: (fields: _SettingsToggleInputDataPartialFields?) -> SettingsToggleInputData,
+	encode: (self: SettingsToggleInputData) -> buffer,
+	decode: (input: buffer) -> SettingsToggleInputData,
+	jsonEncode: (self: SettingsToggleInputData) -> { [string]: any },
+	jsonDecode: (input: { [string]: any }) -> SettingsToggleInputData,
+	descriptor: proto.Descriptor,
+}
+
+type _SettingsToggleInputDataFields = {
+	setting_key: string,
+	label: string,
+	description: string,
+	is_checked: boolean,
+	is_disabled: boolean,
+	audit_data: string,
+}
+
+type _SettingsToggleInputDataPartialFields = {
+	setting_key: string?,
+	label: string?,
+	description: string?,
+	is_checked: boolean?,
+	is_disabled: boolean?,
+	audit_data: string?,
+}
+
+export type SettingsToggleInputData = typeof(setmetatable(
+	{} :: _SettingsToggleInputDataFields,
+	{} :: _SettingsToggleInputDataImpl
+))
+type _SettingsToggleInputDataMessage = proto.Message<SettingsToggleInputData, _SettingsToggleInputDataPartialFields>
 
 type _HeroUnitInputDataImpl = {
 	__index: _HeroUnitInputDataImpl,
@@ -5042,6 +5194,10 @@ do
 				local encoded = self.kind.value:encode()
 				output, cursor = proto.writeTag(output, cursor, 43, proto.wireTypes.lengthDelimited)
 				output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+			elseif self.kind.type == "sandbox_content" then
+				local encoded = self.kind.value:encode()
+				output, cursor = proto.writeTag(output, cursor, 50, proto.wireTypes.lengthDelimited)
+				output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
 			elseif self.kind.type == "experience_details_feed" then
 				local encoded = self.kind.value:encode()
 				output, cursor = proto.writeTag(output, cursor, 500, proto.wireTypes.lengthDelimited)
@@ -5134,6 +5290,10 @@ do
 				local encoded = self.kind.value:encode()
 				output, cursor = proto.writeTag(output, cursor, 906, proto.wireTypes.lengthDelimited)
 				output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+			elseif self.kind.type == "marketplace_item_media_header" then
+				local encoded = self.kind.value:encode()
+				output, cursor = proto.writeTag(output, cursor, 907, proto.wireTypes.lengthDelimited)
+				output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
 			elseif self.kind.type == "search_results_feed" then
 				local encoded = self.kind.value:encode()
 				output, cursor = proto.writeTag(output, cursor, 1000, proto.wireTypes.lengthDelimited)
@@ -5177,6 +5337,10 @@ do
 			elseif self.kind.type == "settings_row" then
 				local encoded = self.kind.value:encode()
 				output, cursor = proto.writeTag(output, cursor, 1500, proto.wireTypes.lengthDelimited)
+				output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+			elseif self.kind.type == "settings_toggle" then
+				local encoded = self.kind.value:encode()
+				output, cursor = proto.writeTag(output, cursor, 1501, proto.wireTypes.lengthDelimited)
 				output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
 			end
 		end
@@ -5422,6 +5586,11 @@ do
 					value, cursor = proto.readBuffer(input, cursor)
 					self.kind = { type = "image_cta_section", value = messages.ImageCtaSectionInputData.decode(value) }
 					continue
+				elseif field == 50 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.kind = { type = "sandbox_content", value = _google_protobuf_struct.Struct.decode(value) }
+					continue
 				elseif field == 500 then
 					local value
 					value, cursor = proto.readBuffer(input, cursor)
@@ -5578,6 +5747,14 @@ do
 						value = messages.MarketplaceOfferModalInputData.decode(value),
 					}
 					continue
+				elseif field == 907 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.kind = {
+						type = "marketplace_item_media_header",
+						value = messages.MarketplaceItemMediaHeaderInputData.decode(value),
+					}
+					continue
 				elseif field == 1000 then
 					local value
 					value, cursor = proto.readBuffer(input, cursor)
@@ -5655,6 +5832,11 @@ do
 					local value
 					value, cursor = proto.readBuffer(input, cursor)
 					self.kind = { type = "settings_row", value = messages.SettingsRowInputData.decode(value) }
+					continue
+				elseif field == 1501 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.kind = { type = "settings_toggle", value = messages.SettingsToggleInputData.decode(value) }
 					continue
 				end
 
@@ -5758,6 +5940,8 @@ do
 				output.pageHeader = self.kind.value:jsonEncode()
 			elseif self.kind.type == "image_cta_section" then
 				output.imageCtaSection = self.kind.value:jsonEncode()
+			elseif self.kind.type == "sandbox_content" then
+				output.sandboxContent = self.kind.value:jsonEncode()
 			elseif self.kind.type == "experience_details_feed" then
 				output.experienceDetailsFeed = self.kind.value:jsonEncode()
 			elseif self.kind.type == "experience_details_action_bar" then
@@ -5804,6 +5988,8 @@ do
 				output.catalogItemGrid = self.kind.value:jsonEncode()
 			elseif self.kind.type == "marketplace_offer_modal" then
 				output.marketplaceOfferModal = self.kind.value:jsonEncode()
+			elseif self.kind.type == "marketplace_item_media_header" then
+				output.marketplaceItemMediaHeader = self.kind.value:jsonEncode()
 			elseif self.kind.type == "search_results_feed" then
 				output.searchResultsFeed = self.kind.value:jsonEncode()
 			elseif self.kind.type == "power_search_ai_overview" then
@@ -5826,6 +6012,8 @@ do
 				output.communityAnnouncement = self.kind.value:jsonEncode()
 			elseif self.kind.type == "settings_row" then
 				output.settingsRow = self.kind.value:jsonEncode()
+			elseif self.kind.type == "settings_toggle" then
+				output.settingsToggle = self.kind.value:jsonEncode()
 			end
 		end
 
@@ -6245,6 +6433,16 @@ do
 			}
 		end
 
+		if input.sandbox_content ~= nil then
+			self.kind =
+				{ type = "sandbox_content", value = _google_protobuf_struct.Struct.jsonDecode(input.sandbox_content) }
+		end
+
+		if input.sandboxContent ~= nil then
+			self.kind =
+				{ type = "sandbox_content", value = _google_protobuf_struct.Struct.jsonDecode(input.sandboxContent) }
+		end
+
 		if input.experience_details_feed ~= nil then
 			self.kind = {
 				type = "experience_details_feed",
@@ -6559,6 +6757,20 @@ do
 			}
 		end
 
+		if input.marketplace_item_media_header ~= nil then
+			self.kind = {
+				type = "marketplace_item_media_header",
+				value = messages.MarketplaceItemMediaHeaderInputData.jsonDecode(input.marketplace_item_media_header),
+			}
+		end
+
+		if input.marketplaceItemMediaHeader ~= nil then
+			self.kind = {
+				type = "marketplace_item_media_header",
+				value = messages.MarketplaceItemMediaHeaderInputData.jsonDecode(input.marketplaceItemMediaHeader),
+			}
+		end
+
 		if input.search_results_feed ~= nil then
 			self.kind = {
 				type = "search_results_feed",
@@ -6699,6 +6911,16 @@ do
 
 		if input.settingsRow ~= nil then
 			self.kind = { type = "settings_row", value = messages.SettingsRowInputData.jsonDecode(input.settingsRow) }
+		end
+
+		if input.settings_toggle ~= nil then
+			self.kind =
+				{ type = "settings_toggle", value = messages.SettingsToggleInputData.jsonDecode(input.settings_toggle) }
+		end
+
+		if input.settingsToggle ~= nil then
+			self.kind =
+				{ type = "settings_toggle", value = messages.SettingsToggleInputData.jsonDecode(input.settingsToggle) }
 		end
 
 		return self
@@ -10841,6 +11063,10 @@ do
 				then nil
 				else data.sponsored_user_cohort,
 			anchor_tag = if data == nil or data.anchor_tag == nil then nil else data.anchor_tag,
+			collection_item_size = if data == nil or data.collection_item_size == nil
+				then nil
+				else data.collection_item_size,
+			sort_sub_id = if data == nil or data.sort_sub_id == nil then nil else data.sort_sub_id,
 		}, _ExperienceCarouselInputDataImpl :: _ExperienceCarouselInputDataImpl)
 	end
 
@@ -10944,6 +11170,16 @@ do
 		if self.anchor_tag ~= nil then
 			output, cursor = proto.writeTag(output, cursor, 19, proto.wireTypes.lengthDelimited)
 			output, cursor = proto.writeString(output, cursor, self.anchor_tag)
+		end
+
+		if self.collection_item_size ~= nil then
+			output, cursor = proto.writeTag(output, cursor, 20, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeString(output, cursor, self.collection_item_size)
+		end
+
+		if self.sort_sub_id ~= nil then
+			output, cursor = proto.writeTag(output, cursor, 21, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeString(output, cursor, self.sort_sub_id)
 		end
 
 		local shrunkBuffer = buffer.create(cursor)
@@ -11060,6 +11296,16 @@ do
 					value, cursor = proto.readBuffer(input, cursor)
 					self.anchor_tag = buffer.tostring(value)
 					continue
+				elseif field == 20 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.collection_item_size = buffer.tostring(value)
+					continue
+				elseif field == 21 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.sort_sub_id = buffer.tostring(value)
+					continue
 				end
 
 				local length
@@ -11165,6 +11411,14 @@ do
 
 		if self.anchor_tag ~= nil then
 			output.anchorTag = self.anchor_tag
+		end
+
+		if self.collection_item_size ~= nil then
+			output.collectionItemSize = self.collection_item_size
+		end
+
+		if self.sort_sub_id ~= nil then
+			output.sortSubId = self.sort_sub_id
 		end
 
 		return output
@@ -11327,6 +11581,22 @@ do
 			self.anchor_tag = input.anchorTag
 		end
 
+		if input.collection_item_size ~= nil then
+			self.collection_item_size = input.collection_item_size
+		end
+
+		if input.collectionItemSize ~= nil then
+			self.collection_item_size = input.collectionItemSize
+		end
+
+		if input.sort_sub_id ~= nil then
+			self.sort_sub_id = input.sort_sub_id
+		end
+
+		if input.sortSubId ~= nil then
+			self.sort_sub_id = input.sortSubId
+		end
+
 		return self
 	end
 
@@ -11374,6 +11644,11 @@ do
 				then nil
 				else data.attribution_thumbnail_asset_id,
 			game_items_compact = if data == nil or data.game_items_compact == nil then {} else data.game_items_compact,
+			source_sort_id = if data == nil or data.source_sort_id == nil then nil else data.source_sort_id,
+			new_game_enum = if data == nil or data.new_game_enum == nil then nil else data.new_game_enum,
+			moment_video_playback = if data == nil or data.moment_video_playback == nil
+				then nil
+				else data.moment_video_playback,
 		}, _ExperienceCarouselInputData_UniverseItemImpl :: _ExperienceCarouselInputData_UniverseItemImpl)
 	end
 
@@ -11509,6 +11784,22 @@ do
 			end
 		end
 
+		if self.source_sort_id ~= nil then
+			output, cursor = proto.writeTag(output, cursor, 25, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeString(output, cursor, self.source_sort_id)
+		end
+
+		if self.new_game_enum ~= nil then
+			output, cursor = proto.writeTag(output, cursor, 26, proto.wireTypes.varint)
+			output, cursor = proto.writeVarInt(output, cursor, self.new_game_enum)
+		end
+
+		if self.moment_video_playback ~= nil then
+			local encoded = self.moment_video_playback:encode()
+			output, cursor = proto.writeTag(output, cursor, 27, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
 		local shrunkBuffer = buffer.create(cursor)
 		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
 		return shrunkBuffer
@@ -11544,6 +11835,11 @@ do
 					local value
 					value, cursor = proto.readVarIntI32(input, cursor)
 					self.rank = value
+					continue
+				elseif field == 26 then
+					local value
+					value, cursor = proto.readVarIntI32(input, cursor)
+					self.new_game_enum = value
 					continue
 				end
 
@@ -11644,6 +11940,17 @@ do
 					local value
 					value, cursor = proto.readBuffer(input, cursor)
 					table.insert(self.game_items_compact, messages.GameItemInputData.decode(value))
+					continue
+				elseif field == 25 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.source_sort_id = buffer.tostring(value)
+					continue
+				elseif field == 27 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.moment_video_playback =
+						messages.ExperienceCarouselInputData_UniverseItem_MomentVideoPlayback.decode(value)
 					continue
 				end
 
@@ -11781,6 +12088,18 @@ do
 				table.insert(newOutput, value:jsonEncode())
 			end
 			output.gameItemsCompact = newOutput
+		end
+
+		if self.source_sort_id ~= nil then
+			output.sourceSortId = self.source_sort_id
+		end
+
+		if self.new_game_enum ~= nil then
+			output.newGameEnum = self.new_game_enum
+		end
+
+		if self.moment_video_playback ~= nil then
+			output.momentVideoPlayback = self.moment_video_playback:jsonEncode()
 		end
 
 		return output
@@ -11991,6 +12310,36 @@ do
 			self.game_items_compact = newOutput
 		end
 
+		if input.source_sort_id ~= nil then
+			self.source_sort_id = input.source_sort_id
+		end
+
+		if input.sourceSortId ~= nil then
+			self.source_sort_id = input.sourceSortId
+		end
+
+		if input.new_game_enum ~= nil then
+			self.new_game_enum = input.new_game_enum
+		end
+
+		if input.newGameEnum ~= nil then
+			self.new_game_enum = input.newGameEnum
+		end
+
+		if input.moment_video_playback ~= nil then
+			self.moment_video_playback =
+				messages.ExperienceCarouselInputData_UniverseItem_MomentVideoPlayback.jsonDecode(
+					input.moment_video_playback
+				)
+		end
+
+		if input.momentVideoPlayback ~= nil then
+			self.moment_video_playback =
+				messages.ExperienceCarouselInputData_UniverseItem_MomentVideoPlayback.jsonDecode(
+					input.momentVideoPlayback
+				)
+		end
+
 		return self
 	end
 
@@ -12002,6 +12351,147 @@ do
 	messages.ExperienceCarouselInputData_UniverseItem = _ExperienceCarouselInputData_UniverseItemImpl :: any -- Luau: Not sure why this intersection fails.
 
 	typeRegistry.default:register(messages.ExperienceCarouselInputData_UniverseItem)
+end
+
+do
+	local _ExperienceCarouselInputData_UniverseItem_MomentVideoPlaybackImpl = {}
+	_ExperienceCarouselInputData_UniverseItem_MomentVideoPlaybackImpl.__index =
+		_ExperienceCarouselInputData_UniverseItem_MomentVideoPlaybackImpl
+
+	function _ExperienceCarouselInputData_UniverseItem_MomentVideoPlaybackImpl.new(
+		data: _ExperienceCarouselInputData_UniverseItem_MomentVideoPlaybackPartialFields?
+	): ExperienceCarouselInputData_UniverseItem_MomentVideoPlayback
+		return setmetatable(
+			{
+				asset_id = if data == nil or data.asset_id == nil then "" else data.asset_id,
+				asset_access_context = if data == nil or data.asset_access_context == nil
+					then ""
+					else data.asset_access_context,
+			},
+			_ExperienceCarouselInputData_UniverseItem_MomentVideoPlaybackImpl :: _ExperienceCarouselInputData_UniverseItem_MomentVideoPlaybackImpl
+		)
+	end
+
+	function _ExperienceCarouselInputData_UniverseItem_MomentVideoPlaybackImpl.encode(
+		self: ExperienceCarouselInputData_UniverseItem_MomentVideoPlayback
+	): buffer
+		local output = buffer.create(0)
+		local cursor = 0
+
+		if self.asset_id ~= nil and self.asset_id ~= "" then
+			output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeString(output, cursor, self.asset_id)
+		end
+
+		if self.asset_access_context ~= nil and self.asset_access_context ~= "" then
+			output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeString(output, cursor, self.asset_access_context)
+		end
+
+		local shrunkBuffer = buffer.create(cursor)
+		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
+		return shrunkBuffer
+	end
+
+	function _ExperienceCarouselInputData_UniverseItem_MomentVideoPlaybackImpl.decode(
+		input: buffer
+	): ExperienceCarouselInputData_UniverseItem_MomentVideoPlayback
+		local self = _ExperienceCarouselInputData_UniverseItem_MomentVideoPlaybackImpl.new()
+		local cursor = 0
+
+		while cursor < buffer.len(input) do
+			local field, wireType
+			field, wireType, cursor = proto.readTag(input, cursor)
+
+			if wireType == proto.wireTypes.varint then
+				-- No fields
+
+				local _
+				_, cursor = proto.readVarInt(input, cursor)
+			elseif wireType == proto.wireTypes.lengthDelimited then
+				if field == 1 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.asset_id = buffer.tostring(value)
+					continue
+				elseif field == 2 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.asset_access_context = buffer.tostring(value)
+					continue
+				end
+
+				local length
+				length, cursor = proto.readVarInt(input, cursor)
+
+				cursor += length
+			elseif wireType == proto.wireTypes.i32 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed32(input, cursor)
+			elseif wireType == proto.wireTypes.i64 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed64(input, cursor)
+			else
+				error("Unsupported wire type: " .. wireType)
+			end
+		end
+
+		return self
+	end
+
+	function _ExperienceCarouselInputData_UniverseItem_MomentVideoPlaybackImpl.jsonEncode(
+		self: ExperienceCarouselInputData_UniverseItem_MomentVideoPlayback
+	): any
+		local output = {}
+
+		if self.asset_id ~= nil and self.asset_id ~= "" then
+			output.assetId = self.asset_id
+		end
+
+		if self.asset_access_context ~= nil and self.asset_access_context ~= "" then
+			output.assetAccessContext = self.asset_access_context
+		end
+
+		return output
+	end
+
+	function _ExperienceCarouselInputData_UniverseItem_MomentVideoPlaybackImpl.jsonDecode(
+		input: { [string]: any }
+	): ExperienceCarouselInputData_UniverseItem_MomentVideoPlayback
+		local self = _ExperienceCarouselInputData_UniverseItem_MomentVideoPlaybackImpl.new()
+
+		if input.asset_id ~= nil then
+			self.asset_id = input.asset_id
+		end
+
+		if input.assetId ~= nil then
+			self.asset_id = input.assetId
+		end
+
+		if input.asset_access_context ~= nil then
+			self.asset_access_context = input.asset_access_context
+		end
+
+		if input.assetAccessContext ~= nil then
+			self.asset_access_context = input.assetAccessContext
+		end
+
+		return self
+	end
+
+	_ExperienceCarouselInputData_UniverseItem_MomentVideoPlaybackImpl.descriptor = {
+		name = "ExperienceCarouselInputData_UniverseItem_MomentVideoPlayback",
+		fullName = "roblox.apppageplatform.shared.v1beta1.MomentVideoPlayback",
+	}
+
+	messages.ExperienceCarouselInputData_UniverseItem_MomentVideoPlayback =
+		_ExperienceCarouselInputData_UniverseItem_MomentVideoPlaybackImpl :: any -- Luau: Not sure why this intersection fails.
+
+	typeRegistry.default:register(messages.ExperienceCarouselInputData_UniverseItem_MomentVideoPlayback)
 end
 
 do
@@ -21157,6 +21647,351 @@ do
 end
 
 do
+	local _MarketplaceItemMediaHeaderInputDataImpl = {}
+	_MarketplaceItemMediaHeaderInputDataImpl.__index = _MarketplaceItemMediaHeaderInputDataImpl
+
+	function _MarketplaceItemMediaHeaderInputDataImpl.new(
+		data: _MarketplaceItemMediaHeaderInputDataPartialFields?
+	): MarketplaceItemMediaHeaderInputData
+		return setmetatable({
+			item_id = if data == nil or data.item_id == nil then "" else data.item_id,
+			item_type = if data == nil or data.item_type == nil then "" else data.item_type,
+			prefer_three_dimensional = if data == nil or data.prefer_three_dimensional == nil
+				then false
+				else data.prefer_three_dimensional,
+			bundle_type = if data == nil or data.bundle_type == nil then nil else data.bundle_type,
+			bundle_items = if data == nil or data.bundle_items == nil then {} else data.bundle_items,
+		}, _MarketplaceItemMediaHeaderInputDataImpl :: _MarketplaceItemMediaHeaderInputDataImpl)
+	end
+
+	function _MarketplaceItemMediaHeaderInputDataImpl.encode(self: MarketplaceItemMediaHeaderInputData): buffer
+		local output = buffer.create(0)
+		local cursor = 0
+
+		if self.item_id ~= nil and self.item_id ~= "" then
+			output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeString(output, cursor, self.item_id)
+		end
+
+		if self.item_type ~= nil and self.item_type ~= "" then
+			output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeString(output, cursor, self.item_type)
+		end
+
+		if self.prefer_three_dimensional then
+			output, cursor = proto.writeTag(output, cursor, 3, proto.wireTypes.varint)
+			output, cursor = proto.writeVarInt(output, cursor, if self.prefer_three_dimensional then 1 else 0)
+		end
+
+		if self.bundle_type ~= nil then
+			output, cursor = proto.writeTag(output, cursor, 4, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeString(output, cursor, self.bundle_type)
+		end
+
+		if self.bundle_items ~= nil and #self.bundle_items > 0 then
+			for _, value in self.bundle_items do
+				local encoded = value:encode()
+				output, cursor = proto.writeTag(output, cursor, 5, proto.wireTypes.lengthDelimited)
+				output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+			end
+		end
+
+		local shrunkBuffer = buffer.create(cursor)
+		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
+		return shrunkBuffer
+	end
+
+	function _MarketplaceItemMediaHeaderInputDataImpl.decode(input: buffer): MarketplaceItemMediaHeaderInputData
+		local self = _MarketplaceItemMediaHeaderInputDataImpl.new()
+		local cursor = 0
+
+		while cursor < buffer.len(input) do
+			local field, wireType
+			field, wireType, cursor = proto.readTag(input, cursor)
+
+			if wireType == proto.wireTypes.varint then
+				if field == 3 then
+					local value
+					value, cursor = proto.readVarInt(input, cursor)
+					self.prefer_three_dimensional = value ~= 0
+					continue
+				end
+
+				local _
+				_, cursor = proto.readVarInt(input, cursor)
+			elseif wireType == proto.wireTypes.lengthDelimited then
+				if field == 1 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.item_id = buffer.tostring(value)
+					continue
+				elseif field == 2 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.item_type = buffer.tostring(value)
+					continue
+				elseif field == 4 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.bundle_type = buffer.tostring(value)
+					continue
+				elseif field == 5 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					table.insert(
+						self.bundle_items,
+						messages.MarketplaceItemMediaHeaderInputData_BundleItem.decode(value)
+					)
+					continue
+				end
+
+				local length
+				length, cursor = proto.readVarInt(input, cursor)
+
+				cursor += length
+			elseif wireType == proto.wireTypes.i32 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed32(input, cursor)
+			elseif wireType == proto.wireTypes.i64 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed64(input, cursor)
+			else
+				error("Unsupported wire type: " .. wireType)
+			end
+		end
+
+		return self
+	end
+
+	function _MarketplaceItemMediaHeaderInputDataImpl.jsonEncode(self: MarketplaceItemMediaHeaderInputData): any
+		local output = {}
+
+		if self.item_id ~= nil and self.item_id ~= "" then
+			output.itemId = self.item_id
+		end
+
+		if self.item_type ~= nil and self.item_type ~= "" then
+			output.itemType = self.item_type
+		end
+
+		if self.prefer_three_dimensional then
+			output.preferThreeDimensional = self.prefer_three_dimensional
+		end
+
+		if self.bundle_type ~= nil then
+			output.bundleType = self.bundle_type
+		end
+
+		if self.bundle_items ~= nil and #self.bundle_items > 0 then
+			local newOutput = {}
+			for _, value in self.bundle_items do
+				table.insert(newOutput, value:jsonEncode())
+			end
+			output.bundleItems = newOutput
+		end
+
+		return output
+	end
+
+	function _MarketplaceItemMediaHeaderInputDataImpl.jsonDecode(
+		input: { [string]: any }
+	): MarketplaceItemMediaHeaderInputData
+		local self = _MarketplaceItemMediaHeaderInputDataImpl.new()
+
+		if input.item_id ~= nil then
+			self.item_id = input.item_id
+		end
+
+		if input.itemId ~= nil then
+			self.item_id = input.itemId
+		end
+
+		if input.item_type ~= nil then
+			self.item_type = input.item_type
+		end
+
+		if input.itemType ~= nil then
+			self.item_type = input.itemType
+		end
+
+		if input.prefer_three_dimensional ~= nil then
+			self.prefer_three_dimensional = input.prefer_three_dimensional
+		end
+
+		if input.preferThreeDimensional ~= nil then
+			self.prefer_three_dimensional = input.preferThreeDimensional
+		end
+
+		if input.bundle_type ~= nil then
+			self.bundle_type = input.bundle_type
+		end
+
+		if input.bundleType ~= nil then
+			self.bundle_type = input.bundleType
+		end
+
+		if input.bundle_items ~= nil then
+			local newOutput: { MarketplaceItemMediaHeaderInputData_BundleItem } = {}
+			for _, value in input.bundle_items do
+				table.insert(newOutput, messages.MarketplaceItemMediaHeaderInputData_BundleItem.jsonDecode(value))
+			end
+
+			self.bundle_items = newOutput
+		end
+
+		if input.bundleItems ~= nil then
+			local newOutput: { MarketplaceItemMediaHeaderInputData_BundleItem } = {}
+			for _, value in input.bundleItems do
+				table.insert(newOutput, messages.MarketplaceItemMediaHeaderInputData_BundleItem.jsonDecode(value))
+			end
+
+			self.bundle_items = newOutput
+		end
+
+		return self
+	end
+
+	_MarketplaceItemMediaHeaderInputDataImpl.descriptor = {
+		name = "MarketplaceItemMediaHeaderInputData",
+		fullName = "roblox.apppageplatform.shared.v1beta1.MarketplaceItemMediaHeaderInputData",
+	}
+
+	messages.MarketplaceItemMediaHeaderInputData = _MarketplaceItemMediaHeaderInputDataImpl :: any -- Luau: Not sure why this intersection fails.
+
+	typeRegistry.default:register(messages.MarketplaceItemMediaHeaderInputData)
+end
+
+do
+	local _MarketplaceItemMediaHeaderInputData_BundleItemImpl = {}
+	_MarketplaceItemMediaHeaderInputData_BundleItemImpl.__index = _MarketplaceItemMediaHeaderInputData_BundleItemImpl
+
+	function _MarketplaceItemMediaHeaderInputData_BundleItemImpl.new(
+		data: _MarketplaceItemMediaHeaderInputData_BundleItemPartialFields?
+	): MarketplaceItemMediaHeaderInputData_BundleItem
+		return setmetatable({
+			id = if data == nil or data.id == nil then "" else data.id,
+			type = if data == nil or data.type == nil then "" else data.type,
+		}, _MarketplaceItemMediaHeaderInputData_BundleItemImpl :: _MarketplaceItemMediaHeaderInputData_BundleItemImpl)
+	end
+
+	function _MarketplaceItemMediaHeaderInputData_BundleItemImpl.encode(
+		self: MarketplaceItemMediaHeaderInputData_BundleItem
+	): buffer
+		local output = buffer.create(0)
+		local cursor = 0
+
+		if self.id ~= nil and self.id ~= "" then
+			output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeString(output, cursor, self.id)
+		end
+
+		if self.type ~= nil and self.type ~= "" then
+			output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeString(output, cursor, self.type)
+		end
+
+		local shrunkBuffer = buffer.create(cursor)
+		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
+		return shrunkBuffer
+	end
+
+	function _MarketplaceItemMediaHeaderInputData_BundleItemImpl.decode(
+		input: buffer
+	): MarketplaceItemMediaHeaderInputData_BundleItem
+		local self = _MarketplaceItemMediaHeaderInputData_BundleItemImpl.new()
+		local cursor = 0
+
+		while cursor < buffer.len(input) do
+			local field, wireType
+			field, wireType, cursor = proto.readTag(input, cursor)
+
+			if wireType == proto.wireTypes.varint then
+				-- No fields
+
+				local _
+				_, cursor = proto.readVarInt(input, cursor)
+			elseif wireType == proto.wireTypes.lengthDelimited then
+				if field == 1 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.id = buffer.tostring(value)
+					continue
+				elseif field == 2 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.type = buffer.tostring(value)
+					continue
+				end
+
+				local length
+				length, cursor = proto.readVarInt(input, cursor)
+
+				cursor += length
+			elseif wireType == proto.wireTypes.i32 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed32(input, cursor)
+			elseif wireType == proto.wireTypes.i64 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed64(input, cursor)
+			else
+				error("Unsupported wire type: " .. wireType)
+			end
+		end
+
+		return self
+	end
+
+	function _MarketplaceItemMediaHeaderInputData_BundleItemImpl.jsonEncode(
+		self: MarketplaceItemMediaHeaderInputData_BundleItem
+	): any
+		local output = {}
+
+		if self.id ~= nil and self.id ~= "" then
+			output.id = self.id
+		end
+
+		if self.type ~= nil and self.type ~= "" then
+			output.type = self.type
+		end
+
+		return output
+	end
+
+	function _MarketplaceItemMediaHeaderInputData_BundleItemImpl.jsonDecode(
+		input: { [string]: any }
+	): MarketplaceItemMediaHeaderInputData_BundleItem
+		local self = _MarketplaceItemMediaHeaderInputData_BundleItemImpl.new()
+
+		if input.id ~= nil then
+			self.id = input.id
+		end
+
+		if input.type ~= nil then
+			self.type = input.type
+		end
+
+		return self
+	end
+
+	_MarketplaceItemMediaHeaderInputData_BundleItemImpl.descriptor = {
+		name = "MarketplaceItemMediaHeaderInputData_BundleItem",
+		fullName = "roblox.apppageplatform.shared.v1beta1.BundleItem",
+	}
+
+	messages.MarketplaceItemMediaHeaderInputData_BundleItem = _MarketplaceItemMediaHeaderInputData_BundleItemImpl :: any -- Luau: Not sure why this intersection fails.
+
+	typeRegistry.default:register(messages.MarketplaceItemMediaHeaderInputData_BundleItem)
+end
+
+do
 	local _CatalogItemGridInputDataImpl = {}
 	_CatalogItemGridInputDataImpl.__index = _CatalogItemGridInputDataImpl
 
@@ -25272,6 +26107,214 @@ do
 end
 
 do
+	local _SettingsToggleInputDataImpl = {}
+	_SettingsToggleInputDataImpl.__index = _SettingsToggleInputDataImpl
+
+	function _SettingsToggleInputDataImpl.new(data: _SettingsToggleInputDataPartialFields?): SettingsToggleInputData
+		return setmetatable({
+			setting_key = if data == nil or data.setting_key == nil then "" else data.setting_key,
+			label = if data == nil or data.label == nil then "" else data.label,
+			description = if data == nil or data.description == nil then "" else data.description,
+			is_checked = if data == nil or data.is_checked == nil then false else data.is_checked,
+			is_disabled = if data == nil or data.is_disabled == nil then false else data.is_disabled,
+			audit_data = if data == nil or data.audit_data == nil then "" else data.audit_data,
+		}, _SettingsToggleInputDataImpl :: _SettingsToggleInputDataImpl)
+	end
+
+	function _SettingsToggleInputDataImpl.encode(self: SettingsToggleInputData): buffer
+		local output = buffer.create(0)
+		local cursor = 0
+
+		if self.setting_key ~= nil and self.setting_key ~= "" then
+			output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeString(output, cursor, self.setting_key)
+		end
+
+		if self.label ~= nil and self.label ~= "" then
+			output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeString(output, cursor, self.label)
+		end
+
+		if self.description ~= nil and self.description ~= "" then
+			output, cursor = proto.writeTag(output, cursor, 3, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeString(output, cursor, self.description)
+		end
+
+		if self.is_checked then
+			output, cursor = proto.writeTag(output, cursor, 4, proto.wireTypes.varint)
+			output, cursor = proto.writeVarInt(output, cursor, if self.is_checked then 1 else 0)
+		end
+
+		if self.is_disabled then
+			output, cursor = proto.writeTag(output, cursor, 5, proto.wireTypes.varint)
+			output, cursor = proto.writeVarInt(output, cursor, if self.is_disabled then 1 else 0)
+		end
+
+		if self.audit_data ~= nil and self.audit_data ~= "" then
+			output, cursor = proto.writeTag(output, cursor, 6, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeString(output, cursor, self.audit_data)
+		end
+
+		local shrunkBuffer = buffer.create(cursor)
+		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
+		return shrunkBuffer
+	end
+
+	function _SettingsToggleInputDataImpl.decode(input: buffer): SettingsToggleInputData
+		local self = _SettingsToggleInputDataImpl.new()
+		local cursor = 0
+
+		while cursor < buffer.len(input) do
+			local field, wireType
+			field, wireType, cursor = proto.readTag(input, cursor)
+
+			if wireType == proto.wireTypes.varint then
+				if field == 4 then
+					local value
+					value, cursor = proto.readVarInt(input, cursor)
+					self.is_checked = value ~= 0
+					continue
+				elseif field == 5 then
+					local value
+					value, cursor = proto.readVarInt(input, cursor)
+					self.is_disabled = value ~= 0
+					continue
+				end
+
+				local _
+				_, cursor = proto.readVarInt(input, cursor)
+			elseif wireType == proto.wireTypes.lengthDelimited then
+				if field == 1 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.setting_key = buffer.tostring(value)
+					continue
+				elseif field == 2 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.label = buffer.tostring(value)
+					continue
+				elseif field == 3 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.description = buffer.tostring(value)
+					continue
+				elseif field == 6 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.audit_data = buffer.tostring(value)
+					continue
+				end
+
+				local length
+				length, cursor = proto.readVarInt(input, cursor)
+
+				cursor += length
+			elseif wireType == proto.wireTypes.i32 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed32(input, cursor)
+			elseif wireType == proto.wireTypes.i64 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed64(input, cursor)
+			else
+				error("Unsupported wire type: " .. wireType)
+			end
+		end
+
+		return self
+	end
+
+	function _SettingsToggleInputDataImpl.jsonEncode(self: SettingsToggleInputData): any
+		local output = {}
+
+		if self.setting_key ~= nil and self.setting_key ~= "" then
+			output.settingKey = self.setting_key
+		end
+
+		if self.label ~= nil and self.label ~= "" then
+			output.label = self.label
+		end
+
+		if self.description ~= nil and self.description ~= "" then
+			output.description = self.description
+		end
+
+		if self.is_checked then
+			output.isChecked = self.is_checked
+		end
+
+		if self.is_disabled then
+			output.isDisabled = self.is_disabled
+		end
+
+		if self.audit_data ~= nil and self.audit_data ~= "" then
+			output.auditData = self.audit_data
+		end
+
+		return output
+	end
+
+	function _SettingsToggleInputDataImpl.jsonDecode(input: { [string]: any }): SettingsToggleInputData
+		local self = _SettingsToggleInputDataImpl.new()
+
+		if input.setting_key ~= nil then
+			self.setting_key = input.setting_key
+		end
+
+		if input.settingKey ~= nil then
+			self.setting_key = input.settingKey
+		end
+
+		if input.label ~= nil then
+			self.label = input.label
+		end
+
+		if input.description ~= nil then
+			self.description = input.description
+		end
+
+		if input.is_checked ~= nil then
+			self.is_checked = input.is_checked
+		end
+
+		if input.isChecked ~= nil then
+			self.is_checked = input.isChecked
+		end
+
+		if input.is_disabled ~= nil then
+			self.is_disabled = input.is_disabled
+		end
+
+		if input.isDisabled ~= nil then
+			self.is_disabled = input.isDisabled
+		end
+
+		if input.audit_data ~= nil then
+			self.audit_data = input.audit_data
+		end
+
+		if input.auditData ~= nil then
+			self.audit_data = input.auditData
+		end
+
+		return self
+	end
+
+	_SettingsToggleInputDataImpl.descriptor = {
+		name = "SettingsToggleInputData",
+		fullName = "roblox.apppageplatform.shared.v1beta1.SettingsToggleInputData",
+	}
+
+	messages.SettingsToggleInputData = _SettingsToggleInputDataImpl :: any -- Luau: Not sure why this intersection fails.
+
+	typeRegistry.default:register(messages.SettingsToggleInputData)
+end
+
+do
 	local _HeroUnitInputDataImpl = {}
 	_HeroUnitInputDataImpl.__index = _HeroUnitInputDataImpl
 
@@ -28343,6 +29386,7 @@ return {
 	SocialLinkRowInputData_SocialLinkItem = messages.SocialLinkRowInputData_SocialLinkItem,
 	ExperienceCarouselInputData = messages.ExperienceCarouselInputData,
 	ExperienceCarouselInputData_UniverseItem = messages.ExperienceCarouselInputData_UniverseItem,
+	ExperienceCarouselInputData_UniverseItem_MomentVideoPlayback = messages.ExperienceCarouselInputData_UniverseItem_MomentVideoPlayback,
 	SongCarouselInputData = messages.SongCarouselInputData,
 	SongCarouselInputData_SongItem = messages.SongCarouselInputData_SongItem,
 	EventsCarouselInputData = messages.EventsCarouselInputData,
@@ -28394,6 +29438,8 @@ return {
 	UAMarketplaceCatalogCategoryMenuInputData = messages.UAMarketplaceCatalogCategoryMenuInputData,
 	UAMarketplaceCatalogCategoryMenuInputData_MarketplaceCatalogCategoryItem = messages.UAMarketplaceCatalogCategoryMenuInputData_MarketplaceCatalogCategoryItem,
 	MarketplaceOfferModalInputData = messages.MarketplaceOfferModalInputData,
+	MarketplaceItemMediaHeaderInputData = messages.MarketplaceItemMediaHeaderInputData,
+	MarketplaceItemMediaHeaderInputData_BundleItem = messages.MarketplaceItemMediaHeaderInputData_BundleItem,
 	CatalogItemGridInputData = messages.CatalogItemGridInputData,
 	CatalogItemGridInputData_CatalogItem = messages.CatalogItemGridInputData_CatalogItem,
 	SearchResultsFeedInputData = messages.SearchResultsFeedInputData,
@@ -28416,6 +29462,7 @@ return {
 	PreAuthLandingStickyHeaderInputData = messages.PreAuthLandingStickyHeaderInputData,
 	ImageCtaSectionInputData = messages.ImageCtaSectionInputData,
 	SettingsRowInputData = messages.SettingsRowInputData,
+	SettingsToggleInputData = messages.SettingsToggleInputData,
 	HeroUnitInputData = messages.HeroUnitInputData,
 	HeroUnitInputData_VisualAsset = messages.HeroUnitInputData_VisualAsset,
 	HeroUnitInputData_Gradient = messages.HeroUnitInputData_Gradient,

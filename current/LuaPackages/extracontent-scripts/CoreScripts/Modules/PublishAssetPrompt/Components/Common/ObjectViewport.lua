@@ -6,10 +6,16 @@ local CorePackages = game:GetService("CorePackages")
 local RunService = game:GetService("RunService")
 
 local Roact = require(CorePackages.Packages.Roact)
+local RobloxTranslator = require(CorePackages.Workspace.Packages.RobloxTranslator)
 
 local UIBlox = require(CorePackages.Packages.UIBlox)
 local Foundation = require(CorePackages.Packages.Foundation)
+local Progress = Foundation.Progress
 local Skeleton = Foundation.Skeleton
+local Text = Foundation.Text
+local View = Foundation.View
+local ProgressShape = Foundation.Enums.ProgressShape
+local ProgressSize = Foundation.Enums.ProgressSize
 
 local withStyle = UIBlox.Style.withStyle
 local ImageSetLabel = UIBlox.Core.ImageSet.ImageSetLabel
@@ -17,6 +23,7 @@ local t = require(CorePackages.Packages.t)
 local UIBloxImages = UIBlox.App.ImageSet.Images
 local Constants = require(script.Parent.Parent.Parent.Constants)
 local MakeupPreviewUtils = require(script.Parent.Parent.Parent.MakeupPreviewUtils)
+local FFlagIECPublishValidationLoadingUI = require(script.Parent.Parent.Parent.Flags.FFlagIECPublishValidationLoadingUI)
 local CharacterUtility = require(CorePackages.Packages.Thumbnailing).CharacterUtility
 local CameraUtility = require(CorePackages.Packages.Thumbnailing).CameraUtility
 local CFrameUtility = require(CorePackages.Packages.Thumbnailing).CFrameUtility
@@ -32,8 +39,15 @@ local DEFAULT_CAMERA_FOV = 30
 local DEFAULT_CAMERA_Y_ROT = 25
 local DROP_SHADOW_SIZE = UDim2.new(0.4, 50, 0.15, 10)
 local DROP_SHADOW_POSITION = UDim2.new(0.5, 0, 1, 0)
+local REVIEWING_CREATION_KEY = "CoreScripts.PublishCommon.ReviewingCreation"
+local REVIEWING_CREATION_FALLBACK = "Reviewing your creation..."
 
 local ObjectViewport = Roact.PureComponent:extend("ObjectViewport")
+
+local function getReviewingCreationText(): string
+	local success, text = pcall(RobloxTranslator.FormatByKey, RobloxTranslator, REVIEWING_CREATION_KEY)
+	return if success then text else REVIEWING_CREATION_FALLBACK
+end
 
 ObjectViewport.validateProps = t.strictInterface({
 	model = t.optional(t.instanceOf("Model")),
@@ -260,6 +274,31 @@ function ObjectViewport:render()
 					ZIndex = 0,
 				}),
 			})
+		elseif FFlagIECPublishValidationLoadingUI then
+			-- CanvasGroup so the scrolling frame clips the rotating spinner; rotated GuiObjects ignore ancestor ClipsDescendants.
+			return Roact.createElement("CanvasGroup", {
+				BackgroundTransparency = 1,
+				Size = UDim2.new(1, 0, 0, VIEWPORT_HEIGHT),
+				LayoutOrder = self.props.LayoutOrder,
+			}, {
+				Content = Roact.createElement(View, {
+					tag = "col align-x-center align-y-center gap-medium size-full",
+				}, {
+					ProgressCircle = Roact.createElement(Progress, {
+						shape = ProgressShape.Circle,
+						size = ProgressSize.Large,
+					}),
+					Status = Roact.createElement(View, {
+						tag = "row align-x-center align-y-center size-0-800 auto-x radius-circle clip bg-action-utility",
+						testId = "reviewing-creation-status",
+					}, {
+						Text = Roact.createElement(Text, {
+							Text = getReviewingCreationText(),
+							tag = "shrink size-0-full auto-x padding-x-medium text-label-medium text-truncate-end content-action-utility",
+						}),
+					}),
+				}),
+			}) :: any
 		else
 			return Roact.createElement(Skeleton, {
 				Size = UDim2.new(1, Constants.PromptSidePadding * 2, 0, VIEWPORT_HEIGHT),

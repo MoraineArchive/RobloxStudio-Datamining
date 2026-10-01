@@ -3,7 +3,6 @@ local root = script.Parent.Parent
 local AssetCalculator = require(root.util.AssetCalculator)
 
 local flags = root.flags
-local getFFlagUGCValidateDuplicatesInAnimation = require(flags.getFFlagUGCValidateDuplicatesInAnimation)
 local getFFlagUGCValidateRestrictNumFaceControls = require(flags.getFFlagUGCValidateRestrictNumFaceControls)
 local getFIntUGCValidateMaxTotalFaceControls = require(flags.getFIntUGCValidateMaxTotalFaceControls)
 
@@ -197,38 +196,18 @@ end
 
 function CurveAnimationHierarchyUtils.validateCurveAnimationBodyPartFolder(folder: Folder): boolean
 	local function validateBodyPartFolderInternal(parentFolder: Folder): boolean
-		if getFFlagUGCValidateDuplicatesInAnimation() then
-			if not CurveAnimationHierarchyUtils.validateBodyPartFolderChildren(parentFolder) then
-				return false
-			end
-
-			for _, child in parentFolder:GetChildren() do
-				if child:IsA("Folder") and child.Name ~= CurveAnimationHierarchyUtils.FaceControlsName then
-					if not validateBodyPartFolderInternal(child :: Folder) then
-						return false
-					end
-				end
-			end
-			return true
-		else
-			for _, child in parentFolder:GetChildren() do
-				if child:IsA("Folder") then
-					if child.Name == CurveAnimationHierarchyUtils.humanoidRootPartName then
-						return false
-					end
-
-					local requiredParentName = CurveAnimationHierarchyUtils.getBodyPartToParentMap()[child.Name]
-					if not requiredParentName then
-						continue
-					end
-					if requiredParentName ~= parentFolder.Name then
-						return false
-					end
-					return validateBodyPartFolderInternal(child :: Folder)
-				end
-			end
-			return true
+		if not CurveAnimationHierarchyUtils.validateBodyPartFolderChildren(parentFolder) then
+			return false
 		end
+
+		for _, child in parentFolder:GetChildren() do
+			if child:IsA("Folder") and child.Name ~= CurveAnimationHierarchyUtils.FaceControlsName then
+				if not validateBodyPartFolderInternal(child :: Folder) then
+					return false
+				end
+			end
+		end
+		return true
 	end
 
 	if not CurveAnimationHierarchyUtils.isBodyPartFolderNameValid(folder.Name) then

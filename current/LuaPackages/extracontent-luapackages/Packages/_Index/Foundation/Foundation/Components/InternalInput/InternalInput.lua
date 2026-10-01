@@ -1,7 +1,6 @@
 local Foundation = script:FindFirstAncestor("Foundation")
 local Packages = Foundation.Parent
 
-local Flags = require(Foundation.Utility.Flags)
 local Motion = require(Packages.Motion)
 local useMotion = Motion.useMotion
 
@@ -28,9 +27,6 @@ local withCommonProps = require(Foundation.Utility.withCommonProps)
 local withDefaults = require(Foundation.Utility.withDefaults)
 
 local Constants = require(Foundation.Constants)
-
-local ControlState = require(Foundation.Enums.ControlState)
-type ControlState = ControlState.ControlState
 
 local InputSize = require(Foundation.Enums.InputSize)
 type InputSize = InputSize.InputSize
@@ -82,17 +78,11 @@ local defaultProps = {
 	testId = "--foundation-internal-input",
 }
 
--- selene: allow(high_cyclomatic_complexity) -- remove this when FoundationInternalInputBeta is cleaned up
 local function InternalInput(inputProps: Props, ref: React.Ref<GuiObject>?)
 	local props = withDefaults(inputProps, defaultProps)
 
 	local label, labelPosition = props.label.text, props.label.position or Enum.HorizontalAlignment.Right
 	local hasLabel = if typeof(label) == "string" then #label > 0 else label ~= nil
-
-	local isHovering, setIsHovering
-	if not Flags.FoundationInternalInputBeta then
-		isHovering, setIsHovering = React.useState(false)
-	end
 
 	local tokens = useTokens()
 
@@ -112,34 +102,13 @@ local function InternalInput(inputProps: Props, ref: React.Ref<GuiObject>?)
 
 	local values, animate = useMotion(motionStates.Default)
 
-	React.useEffect(
-		function()
-			if Flags.FoundationInternalInputBeta then
-				if isFilled then
-					animate(motionStates.Checked)
-				else
-					animate(motionStates.Default)
-				end
-			else
-				if isFilled then
-					animate(motionStates.Checked)
-				elseif isHovering then
-					animate(motionStates.Hover)
-				else
-					animate(motionStates.Default)
-				end
-			end
-		end,
-		if Flags.FoundationInternalInputBeta
-			then { isFilled, motionStates } :: { unknown }
-			else { isFilled, isHovering, motionStates } :: { unknown }
-	)
-
-	local onInputStateChanged = if Flags.FoundationInternalInputBeta
-		then nil :: never
-		else React.useCallback(function(newState: ControlState)
-			setIsHovering(newState == ControlState.Hover)
-		end, {})
+	React.useEffect(function()
+		if isFilled then
+			animate(motionStates.Checked)
+		else
+			animate(motionStates.Default)
+		end
+	end, { isFilled, motionStates } :: { unknown })
 
 	local onActivated = React.useCallback(function()
 		if props.isDisabled then
@@ -160,7 +129,6 @@ local function InternalInput(inputProps: Props, ref: React.Ref<GuiObject>?)
 		Active = not props.isDisabled,
 		GroupTransparency = if props.isDisabled then Constants.DISABLED_TRANSPARENCY else 0,
 		onActivated = onActivated,
-		onStateChanged = if Flags.FoundationInternalInputBeta then nil else onInputStateChanged,
 		stateLayer = { affordance = StateLayerAffordance.None },
 		selection = (if hasLabel then { Selectable = false } else selectionProps),
 		cursor = (if hasLabel then nil else cursor),
@@ -173,11 +141,9 @@ local function InternalInput(inputProps: Props, ref: React.Ref<GuiObject>?)
 		then props.customVariantProps.stroke.thickness
 		else variantProps.input.stroke.thickness
 
-	local stateLayer: Types.StateLayer = if Flags.FoundationInternalInputBeta
-		then React.useMemo(function()
-			return { affordance = StateLayerAffordance.None, inset = nil, mode = nil }
-		end, {})
-		else nil :: never
+	local stateLayer: Types.StateLayer = React.useMemo(function()
+		return { affordance = StateLayerAffordance.None, inset = nil, mode = nil }
+	end, {})
 
 	local inputContainerProps = {
 		tag = props.customVariantProps.tag,
@@ -185,11 +151,7 @@ local function InternalInput(inputProps: Props, ref: React.Ref<GuiObject>?)
 		backgroundStyle = values.backgroundStyle,
 		-- StateLayer can only be applied to something with an onActivated
 		onActivated = onActivated,
-		stateLayer = if Flags.FoundationInternalInputBeta
-			then stateLayer
-			else {
-				affordance = StateLayerAffordance.Background,
-			},
+		stateLayer = stateLayer,
 		stroke = {
 			Color = values.strokeStyle:map(function(value: Types.ColorStyleValue)
 				return value.Color3 :: Color3
@@ -235,41 +197,30 @@ local function InternalInput(inputProps: Props, ref: React.Ref<GuiObject>?)
 		},
 	}
 
-	local inputLabel = if Flags.FoundationInternalInputBeta
-		then if typeof(label) == "string"
-			then React.createElement(InputLabel, {
-				Text = label,
-				textStyle = values.labelStyle,
-				size = getInputTextSize(props.size),
-				testId = `{props.testId}--label`,
-			})
-			else label
-		else nil
+	local inputLabel = if typeof(label) == "string"
+		then React.createElement(InputLabel, {
+			Text = label,
+			textStyle = values.labelStyle,
+			size = getInputTextSize(props.size),
+			testId = `{props.testId}--label`,
+		})
+		else label
 
 	return React.createElement(View, withCommonProps(props, Dash.union(internalInputProps, interactionProps)), {
 		Input = React.createElement(View, inputContainerProps, props.children),
-		InputLabel = if Flags.FoundationInternalInputBeta
-			then if props.label.hint ~= nil and props.label.hint ~= ""
-				then React.createElement(View, {
-					tag = "col gap-xxsmall auto-xy",
-				}, {
-					InputLabel = inputLabel,
-					Hint = React.createElement(InputHint, {
-						text = props.label.hint,
-						size = getInputTextSize(props.size),
-						testId = `{props.testId}--hint`,
-						LayoutOrder = 2,
-					}),
-				})
-				else inputLabel
-			else if typeof(label) == "string"
-				then React.createElement(InputLabel, {
-					Text = label,
-					textStyle = values.labelStyle,
+		InputLabel = if props.label.hint ~= nil and props.label.hint ~= ""
+			then React.createElement(View, {
+				tag = "col gap-xxsmall auto-xy",
+			}, {
+				InputLabel = inputLabel,
+				Hint = React.createElement(InputHint, {
+					text = props.label.hint,
 					size = getInputTextSize(props.size),
-					testId = `{props.testId}--label`,
-				})
-				else label,
+					testId = `{props.testId}--hint`,
+					LayoutOrder = 2,
+				}),
+			})
+			else inputLabel,
 	})
 end
 

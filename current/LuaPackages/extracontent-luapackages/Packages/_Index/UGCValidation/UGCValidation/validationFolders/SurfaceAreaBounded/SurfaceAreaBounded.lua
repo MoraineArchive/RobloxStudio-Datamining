@@ -7,11 +7,7 @@ local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 
 local getFIntMaxTotalSurfaceArea = require(root.flags.getFIntMaxTotalSurfaceArea)
-local getFFlagUGCValidateMigrateMeshGeometry = require(root.flags.getFFlagUGCValidateMigrateMeshGeometry)
-
 local SurfaceAreaBounded = {}
-
-SurfaceAreaBounded.fflag = getFFlagUGCValidateMigrateMeshGeometry
 SurfaceAreaBounded.categories = {
 	ValidationEnums.UploadCategory.LAYERED_CLOTHING,
 	ValidationEnums.UploadCategory.RIGID_ACCESSORY,

@@ -5,13 +5,17 @@ local UIBlox = Core.Parent
 local Packages = UIBlox.Parent
 
 local React = require(Packages.React)
+local Foundation = require(Packages.Foundation)
+local normalizeFontFace = Foundation.Utility.normalizeFontFace
 
 local EmojiEnum = require(EmojiRoot.Enum.Emoji)
 local constants = require(EmojiRoot.constants)
 
+local FFlagFoundationFontFaceMigration = Foundation.Utility.Flags.FoundationFontFaceMigration
+
 export type Props = {
 	emoji: string,
-	textFont: Enum.Font,
+	textFont: Font | Enum.Font,
 	textSize: number,
 	onActivated: (() -> ())?,
 	Position: UDim2?,
@@ -31,7 +35,8 @@ local function Emoji(props: Props)
 		Text = getEmojiString(props.emoji),
 		TextColor3 = Color3.fromHex("#fff"),
 		AutomaticSize = Enum.AutomaticSize.X,
-		Font = props.textFont,
+		Font = if FFlagFoundationFontFaceMigration then nil else props.textFont,
+		FontFace = if FFlagFoundationFontFaceMigration then normalizeFontFace(props.textFont) else nil,
 		TextSize = props.textSize,
 		Position = props.Position,
 		BackgroundTransparency = 1,

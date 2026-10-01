@@ -11,11 +11,13 @@ local BreakpointConfig = require(Foundation.Utility.Responsive.BreakpointConfig)
 local Button = require(Foundation.Components.Button)
 local ButtonVariant = require(Foundation.Enums.ButtonVariant)
 local MatrixGridShared = require(Foundation.Utility.Stories.Shared.MatrixGrid)
+local StorySection = require(Foundation.Utility.Stories.Shared.StorySection)
 local Text = require(Foundation.Components.Text)
 local View = require(Foundation.Components.View)
 
 local MatrixGrid = MatrixGridShared.MatrixGrid
 local matrixLabel = MatrixGridShared.matrixLabel
+local Section = StorySection.Section
 type AlertSeverity = AlertSeverity.AlertSeverity
 type AlertVariant = AlertVariant.AlertVariant
 type AlertAction = {
@@ -147,27 +149,6 @@ local function WidthPair(props: {
 	})
 end
 
-local function Section(props: {
-	LayoutOrder: number,
-	name: string,
-	children: React.ReactNode,
-})
-	return React.createElement(View, {
-		tag = "col gap-medium size-full-0 auto-y",
-		LayoutOrder = props.LayoutOrder,
-	}, {
-		Title = React.createElement(Text, {
-			Text = props.name,
-			tag = "auto-xy text-label-medium content-default",
-			LayoutOrder = 1,
-		}),
-		Content = React.createElement(View, {
-			tag = "col gap-large size-full-0 auto-y",
-			LayoutOrder = 2,
-		}, props.children),
-	})
-end
-
 local HAS_ACTIONS_OPTIONS = { "None", "Link", "One action", "Two actions" }
 
 local function PlaygroundStory(props: {
@@ -280,7 +261,11 @@ local function SizingStory(): React.ReactNode
 	return React.createElement(View, {
 		tag = "col gap-xxlarge size-full-0 auto-y padding-large bg-surface-0",
 	}, {
-		Width = React.createElement(Section, { LayoutOrder = 1, name = "Width" }, {
+		Width = React.createElement(Section, {
+			LayoutOrder = 1,
+			name = "Width",
+			contentTag = "col gap-large size-full-0 auto-y",
+		}, {
 			FullContainer = React.createElement(Example, {
 				LayoutOrder = 1,
 				label = "Unconstrained — the alert fills its parent",
@@ -422,7 +407,11 @@ local function ContentStory(): React.ReactNode
 	return React.createElement(View, {
 		tag = "col gap-xxlarge size-full-0 auto-y padding-large bg-surface-0",
 	}, {
-		WithLink = React.createElement(Section, { LayoutOrder = 1, name = "With link" }, {
+		WithLink = React.createElement(Section, {
+			LayoutOrder = 1,
+			name = "With link",
+			contentTag = "col gap-large size-full-0 auto-y",
+		}, {
 			Pair = React.createElement(WidthPair, {
 				LayoutOrder = 1,
 				renderAlert = function()
@@ -433,7 +422,11 @@ local function ContentStory(): React.ReactNode
 				end,
 			}),
 		}),
-		WithActions = React.createElement(Section, { LayoutOrder = 2, name = "With actions" }, {
+		WithActions = React.createElement(Section, {
+			LayoutOrder = 2,
+			name = "With actions",
+			contentTag = "col gap-large size-full-0 auto-y",
+		}, {
 			OneAction = React.createElement(WidthPair, {
 				LayoutOrder = 1,
 				label = "One action",
@@ -455,7 +448,11 @@ local function ContentStory(): React.ReactNode
 				end,
 			}),
 		}),
-		Wrapping = React.createElement(Section, { LayoutOrder = 3, name = "Wrapping" }, buildWrappingExamples()),
+		Wrapping = React.createElement(Section, {
+			LayoutOrder = 3,
+			name = "Wrapping",
+			contentTag = "col gap-large size-full-0 auto-y",
+		}, buildWrappingExamples()),
 	})
 end
 
@@ -480,7 +477,6 @@ return {
 		},
 		{
 			name = "Controlled component",
-			summary = "Dismissal and actions are consumer-owned; wire them to observe the effect.",
 			story = ControlledStory,
 		},
 		{

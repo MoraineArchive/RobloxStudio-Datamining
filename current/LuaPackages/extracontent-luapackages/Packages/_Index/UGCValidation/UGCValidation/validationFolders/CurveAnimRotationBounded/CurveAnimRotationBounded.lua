@@ -4,24 +4,18 @@ local Types = require(root.util.Types)
 local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 
-local getFFlagUGCValidateMigrateCurveAnim = require(root.flags.getFFlagUGCValidateMigrateCurveAnim)
 local getFFlagUGCValidateCurveAnimRotationSpeed = require(root.flags.getFFlagUGCValidateCurveAnimRotationSpeed)
 local getFIntUGCValidateMaxAnimationFPS = require(root.flags.getFIntUGCValidateMaxAnimationFPS)
 local getFIntUGCValidationMaxAnimationRotationSpeedPerSecond =
 	require(root.flags.getFIntUGCValidationMaxAnimationRotationSpeedPerSecond)
-local getFFlagUGCValidationAnimationPackSupport = require(root.flags.getFFlagUGCValidationAnimationPackSupport)
-
 local CurveAnimRotationBounded = {}
 
-CurveAnimRotationBounded.categories = { ValidationEnums.UploadCategory.EMOTE_ANIMATION }
-if getFFlagUGCValidationAnimationPackSupport() then
-	table.insert(CurveAnimRotationBounded.categories, ValidationEnums.UploadCategory.ANIMATION)
-end
+CurveAnimRotationBounded.categories =
+	{ ValidationEnums.UploadCategory.EMOTE_ANIMATION, ValidationEnums.UploadCategory.ANIMATION }
 CurveAnimRotationBounded.requiredData = {
 	ValidationEnums.SharedDataMember.curveAnimations,
 	ValidationEnums.SharedDataMember.curveAnimComputedFrames,
 }
-CurveAnimRotationBounded.fflag = getFFlagUGCValidateMigrateCurveAnim
 CurveAnimRotationBounded.expectedFailures = {}
 CurveAnimRotationBounded.prereqTests = { ValidationEnums.ValidationModule.CurveAnimDataAvailable }
 

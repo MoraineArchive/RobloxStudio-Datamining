@@ -9,6 +9,9 @@ export type Context = Types.Context
 export type PartialContext = Types.PartialContext
 export type NodeType = NodeType.NodeType
 export type MarkdownViewerProps = MarkdownViewer.Props
+export type MarkdownRendererPropsType = Types.MarkdownRendererPropsType
+export type TextStyles = Types.TextStyles
+export type CodeStyles = Types.CodeStyles
 
 -- InlineLayout element-specific types
 export type LinkCallbackType = Types.LinkCallbackType

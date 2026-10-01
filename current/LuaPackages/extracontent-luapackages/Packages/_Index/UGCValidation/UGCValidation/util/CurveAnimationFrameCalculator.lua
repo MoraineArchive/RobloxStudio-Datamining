@@ -6,9 +6,7 @@ local CurveAnimationHierarchyUtils = require(root.util.CurveAnimationHierarchyUt
 local RigBuilder = require(root.util.RigBuilder)
 
 local flags = root.flags
-local getFFlagUGCValidateDuplicatesInAnimation = require(flags.getFFlagUGCValidateDuplicatesInAnimation)
 local getFIntUGCValidateMaxAnimationFPS = require(flags.getFIntUGCValidateMaxAnimationFPS)
-local getFFlagUGCValidateCurveAnimFinalFrameBug = require(flags.getFFlagUGCValidateCurveAnimFinalFrameBug)
 
 local CurveAnimationFrameCalculator = {}
 
@@ -61,20 +59,15 @@ function CurveAnimationFrameCalculator.calculateAnimFramesAtOrigin(curveAnim: Cu
 	local function getCurveTracks(): any
 		local tracks = {}
 
-		local instancesToCheck: { any } = nil
-		if getFFlagUGCValidateDuplicatesInAnimation() then
-			local bodyPartFolderRootOpt = CurveAnimationHierarchyUtils.getBodyPartFolderRoot(curveAnim)
-			assert(
-				bodyPartFolderRootOpt,
-				"CurveAnimation must have one and only one body part Folder child or HumanoidRootPart child."
-			)
-			local bodyPartFolderRoot = bodyPartFolderRootOpt :: Folder
+		local bodyPartFolderRootOpt = CurveAnimationHierarchyUtils.getBodyPartFolderRoot(curveAnim)
+		assert(
+			bodyPartFolderRootOpt,
+			"CurveAnimation must have one and only one body part Folder child or HumanoidRootPart child."
+		)
+		local bodyPartFolderRoot = bodyPartFolderRootOpt :: Folder
 
-			instancesToCheck = bodyPartFolderRoot:GetDescendants()
-			table.insert(instancesToCheck, bodyPartFolderRoot)
-		else
-			instancesToCheck = curveAnim:GetDescendants()
-		end
+		local instancesToCheck: { any } = bodyPartFolderRoot:GetDescendants()
+		table.insert(instancesToCheck, bodyPartFolderRoot)
 		for _, desc in instancesToCheck do
 			if desc:IsA("Folder") and CurveAnimationHierarchyUtils.getBodyPartToParentMap()[desc.Name] then
 				local pos = desc:FindFirstChild(PositionName)
@@ -164,22 +157,11 @@ function CurveAnimationFrameCalculator.calculateAnimFramesAtOrigin(curveAnim: Cu
 
 	local time = 0
 	while time <= animationLength do
-		if getFFlagUGCValidateCurveAnimFinalFrameBug() then
-			addData(time)
-		else
-			local animationTransforms = calculateTransformsAtTime(time, tracks)
-			local finalFrameTransforms =
-				AssetCalculator.calculateAllTransformsForFullBody(fullBodyAssets, animationTransforms)
-			table.insert(result, finalFrameTransforms)
-
-			table.insert(positionMagnitudeResults, calculatePositionMagnitudeResultsAtTime(time, tracks))
-		end
+		addData(time)
 		time += frameDelta
 	end
-	if getFFlagUGCValidateCurveAnimFinalFrameBug() then
-		if animationLength >= 0 then
-			addData(animationLength)
-		end
+	if animationLength >= 0 then
+		addData(animationLength)
 	end
 
 	defaultCharacter:Destroy()

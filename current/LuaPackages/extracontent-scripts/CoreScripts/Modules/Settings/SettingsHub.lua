@@ -167,6 +167,7 @@ local Flags = {
 	FFlagSideSheetAndroidBack = game:DefineFastFlag("SideSheetAndroidBack", false),
 	FFlagAddInviteFriendsIntegration = SharedFlags.FFlagAddInviteFriendsIntegration,
 	FFlagIntegrateTraversalHistoryInSideSheet = SharedFlags.FFlagIntegrateTraversalHistoryInSideSheet,
+	FFlagShowSwitchServerButton = SharedFlags.FFlagShowSwitchServerButton,
 	isExitModalRemoved = require(RobloxGui.Modules.Settings.Flags.isExitModalRemoved),
 	FFlagEnableExitModalExposure = game:DefineFastFlag("EnableExitModalExposure", false),
 }
@@ -260,9 +261,21 @@ local SPRING_PARAMS = {
 }
 
 local InExperienceSideSheet = require(CorePackages.Workspace.Packages.InExperienceSideSheet)
+local getDidSideSheetOpenWithPeoplePage = InExperienceSideSheet.getDidSideSheetOpenWithPeoplePage
+local getHasRoomForPeoplePage = InExperienceSideSheet.getHasRoomForPeoplePage
+local getIsPeoplePageOpen = InExperienceSideSheet.getIsPeoplePageOpen
+local getSideSheetAnimationDuration = InExperienceSideSheet.getSideSheetAnimationDuration
+local getSideSheetDrawerWidth = InExperienceSideSheet.getSideSheetDrawerWidth
+local getSideSheetMenuPageHeight = InExperienceSideSheet.getSideSheetMenuPageHeight
+local getSideSheetMenuPageWidth = InExperienceSideSheet.getSideSheetMenuPageWidth
 local toggleSideSheet = InExperienceSideSheet.toggleSideSheet
 local getSideSheetVisibility = InExperienceSideSheet.getSideSheetVisibility
+local setupInGameMenuPeoplePageActions = InExperienceSideSheet.setupInGameMenuPeoplePageActions
+local setupPeoplePageOpenTracking = InExperienceSideSheet.setupPeoplePageOpenTracking
+local FFlagSideSheetOpenPeoplePage = InExperienceSideSheet.Flags.FFlagSideSheetOpenPeoplePage
 local isSideSheetEnabled = require(CorePackages.Workspace.Packages.InExperienceSideSheetUtils.isSideSheetEnabled)
+local GetSwitchServerStore = require(CorePackages.Workspace.Packages.SwitchServer).GetSwitchServerStore
+local isPioneerLaunch = require(CorePackages.Workspace.Packages.PioneerUtils).isPioneerLaunch
 
 local ReactPageFactory = require(RobloxGui.Modules.Settings.ReactPageFactory)
 type ReactPage = ReactPageFactory.ReactPage
@@ -2195,6 +2208,114 @@ local function CreateSettingsHub()
 		end
 	end
 
+	local SIDE_SHEET_MIN_MENU_WIDTH = 150
+
+	-- Whether the side sheet brought the People page up with it, which is only the case on a screen
+	-- wide enough to hold both. Everything the pairing changes about the menu keys off this, so a
+	-- narrower screen keeps the stand-alone menu even while it happens to show the People page.
+	local function isSideSheetPairedWithPeoplePage(): boolean
+		return FFlagSideSheetOpenPeoplePage and getDidSideSheetOpenWithPeoplePage()
+	end
+
+	-- Android back reaches the menu directly, which beside the sheet would bring up half the pair.
+	-- Route it through the sheet instead whenever the screen has room for the page, and whenever a
+	-- sheet is already up, since that one has to be closed through the sheet either way.
+	local function shouldAndroidBackUseSideSheet(): boolean
+		return FFlagSideSheetOpenPeoplePage and (getSideSheetVisibility() or getHasRoomForPeoplePage())
+	end
+
+	local function shouldUseSideSheetPeoplePageLayout(): boolean
+		return isSideSheetPairedWithPeoplePage() and getSideSheetVisibility() and getIsPeoplePageOpen()
+	end
+
+	local function shouldShowSettingsHubModal(): boolean
+		return this.Visible and not shouldUseSideSheetPeoplePageLayout()
+	end
+
+	-- The People page animates alongside the side sheet, so both directions borrow the sheet's
+	-- duration to land at the same time instead of using the stand-alone menu timing. The two
+	-- read different state because of when they run: opening lays out before the menu switches
+	-- to the People page, and closing happens after the sheet has already been hidden.
+	local function getShieldOpenTweenTime(defaultTweenTime: number): number
+		if not isSideSheetPairedWithPeoplePage() or not getSideSheetVisibility() then
+			return defaultTweenTime
+		end
+
+		return getSideSheetAnimationDuration()
+	end
+
+	-- Closing the menu takes the sheet and the People page down partway through, so the parts of the
+	-- close that run after that read the state the close started with rather than the live one.
+	-- Reading it live would put the background fade and the shield movement on different curves
+	-- within the same close, and leave the shield behind the sheet it is supposed to move with.
+	local function shouldCloseShieldWithSideSheet(wasPeoplePageOpenWithSideSheet: boolean?): boolean
+		if wasPeoplePageOpenWithSideSheet ~= nil then
+			return wasPeoplePageOpenWithSideSheet
+		end
+
+		return shouldUseSideSheetPeoplePageLayout()
+	end
+
+	local function getShieldCloseTweenTime(defaultTweenTime: number, wasPeoplePageOpenWithSideSheet: boolean?): number
+		if not shouldCloseShieldWithSideSheet(wasPeoplePageOpenWithSideSheet) then
+			return defaultTweenTime
+		end
+
+		return getSideSheetAnimationDuration()
+	end
+
+	-- Width of the side sheet, or 0 when the menu should keep its stand-alone layout.
+	local function getSideSheetMenuInset(): number
+		if not shouldUseSideSheetPeoplePageLayout() then
+			return 0
+		end
+
+		return getSideSheetDrawerWidth()
+	end
+
+	local function constrainMenuWidthForSideSheet(defaultWidth: number): number
+		local drawerWidth = getSideSheetMenuInset()
+		if drawerWidth <= 0 then
+			return defaultWidth
+		end
+
+		-- The menu's own padding sits outside the hub bar this width is for, so leaving it in
+		-- would push the page that much past the margin it is meant to keep from the screen.
+		local padding = Theme.HubPadding()
+		local availableWidth = getSideSheetMenuPageWidth(
+			RobloxGui.AbsoluteSize.X,
+			drawerWidth,
+			padding.PaddingLeft.Offset + padding.PaddingRight.Offset
+		)
+
+		return math.max(SIDE_SHEET_MIN_MENU_WIDTH, math.min(defaultWidth, availableWidth))
+	end
+
+	-- Height the menu gives up to the hub bar and its own padding, which the page beside the
+	-- sheet cannot use.
+	local function getSideSheetMenuReservedHeight(barSize: number, extraTopPadding: number): number
+		local padding = Theme.HubPadding()
+		return barSize + padding.PaddingTop.Offset + padding.PaddingBottom.Offset + extraTopPadding
+	end
+
+	local function applySideSheetLayoutToMenuContainer(basePosition: UDim2, baseAnchorPoint: Vector2): (UDim2, Vector2)
+		local drawerWidth = getSideSheetMenuInset()
+		if drawerWidth <= 0 then
+			return basePosition, baseAnchorPoint
+		end
+
+		-- The menu is centered on the screen, so centering it in the space beside the sheet is
+		-- a shift of half the sheet's width. Deriving this from HubBar.AbsoluteSize instead would
+		-- read a width that is a frame stale, which pushes the menu off the right of the screen.
+		local horizontalOffset = drawerWidth / 2
+
+		-- Centering vertically is what turns the height reserved for the margins into an equal
+		-- gap above and below. On its own the menu hugs the bottom of small touch screens, which
+		-- would hand the whole reservation to the top.
+		return UDim2.new(basePosition.X.Scale, basePosition.X.Offset + horizontalOffset, 0.5, 0),
+			Vector2.new(baseAnchorPoint.X, 0.5)
+	end
+
 	local function onScreenSizeChanged()
 		local function getBackBarVisible()
 			if not this.BackBarRef:getValue() then
@@ -2252,9 +2373,11 @@ local function CreateSettingsHub()
 			bufferSize = 0
 		end
 
+		local menuContainerPosition, menuContainerAnchorPoint =
+			applySideSheetLayoutToMenuContainer(menuPos.Position, menuPos.AnchorPoint)
 		this.MenuContainer.Size = menuPos.Size
-		this.MenuContainer.Position = menuPos.Position
-		this.MenuContainer.AnchorPoint = menuPos.AnchorPoint
+		this.MenuContainer.Position = menuContainerPosition
+		this.MenuContainer.AnchorPoint = menuContainerAnchorPoint
 
 		local barSize = this.HubBar.Size.Y.Offset
 		local extraSpace = bufferSize*2+barSize*2
@@ -2272,17 +2395,17 @@ local function CreateSettingsHub()
 
 		if isPortrait then
 			this.HubBar.Position = UDim2.new(0.5, 0, 0, 10)
-			this.HubBar.Size = UDim2.new(0, RobloxGui.AbsoluteSize.X-40, 0, 54)
+			this.HubBar.Size = UDim2.new(0, constrainMenuWidthForSideSheet(RobloxGui.AbsoluteSize.X-40), 0, 54)
 		else
 			if isTenFootInterface then
 				this.HubBar.Size = UDim2.new(0, 1200, 0, 100)
 			elseif utility:IsSmallTouchScreen() then
-				this.HubBar.Size = UDim2.new(0, RobloxGui.AbsoluteSize.X-60, 0, 52)
+				this.HubBar.Size = UDim2.new(0, constrainMenuWidthForSideSheet(RobloxGui.AbsoluteSize.X-60), 0, 52)
 			else
 				if Flags.isInExperienceUIVREnabled then
-					this.HubBar.Size = UDim2.new(0, this.SettingsUIDelegate:getHubBarSize(), 0, 60)
+					this.HubBar.Size = UDim2.new(0, constrainMenuWidthForSideSheet(this.SettingsUIDelegate:getHubBarSize()), 0, 60)
 				else
-					this.HubBar.Size = UDim2.new(0, 800, 0, 60)
+					this.HubBar.Size = UDim2.new(0, constrainMenuWidthForSideSheet(800), 0, 60)
 				end
 			end
 		end
@@ -2324,6 +2447,32 @@ local function CreateSettingsHub()
 				usableScreenHeight -= Theme.ExtraHubBottomPaddingMobile
 			end
 		end
+		if shouldUseSideSheetPeoplePageLayout() then
+			-- Beside the sheet the menu sits the same distance from the top and bottom of the
+			-- screen as it does from the sheet. The stand-alone reservation leaves the menu's own
+			-- padding out and scales with the screen, which on a short landscape screen sizes the
+			-- page taller than it can be and strands the leftover space above it. The shield is
+			-- what the menu is centered in, and it covers the strip the top bar sits in that the
+			-- screen size above leaves out, so measuring against anything else hands that strip
+			-- back as margin the sheet beside the page does not have.
+			usableScreenHeight = getSideSheetMenuPageHeight(
+				this.Shield.AbsoluteSize.Y,
+				getSideSheetMenuReservedHeight(barSize, extraTopPadding)
+			)
+		end
+
+		if FFlagSideSheetOpenPeoplePage then
+			-- Holding the gutter open whether or not the bar is up keeps the page width from
+			-- changing as the page starts and stops scrolling. The People page sizes its cards
+			-- from that width and their height follows their width, so a page landing within a
+			-- scrollbar's width of the view would otherwise grow past it, take the bar, shrink
+			-- back under it, and lose the bar again on every frame. Only the page beside the
+			-- sheet pays for the gutter, since every other page would just show an empty strip.
+			this.PageView.VerticalScrollBarInset = if shouldUseSideSheetPeoplePageLayout()
+				then Enum.ScrollBarInset.Always
+				else Enum.ScrollBarInset.ScrollBar
+		end
+
 		local minimumPageSize = 150
 		local usePageSize = nil
 
@@ -2443,6 +2592,49 @@ local function CreateSettingsHub()
 			this.PageViewClipper.Position = UDim2.new(0.5, 0, 0, this.HubBar.Position.Y.Offset + this.HubBar.AbsoluteSize.Y)
 		end
 
+	end
+
+	if FFlagSideSheetOpenPeoplePage then
+		local function scheduleSideSheetPeoplePageLayoutRefresh()
+			-- The People page always comes down with the sheet, so while the sheet is gone but the
+			-- page is still up the page is mid-dismissal. Restoring the stand-alone layout here
+			-- would stretch it back to full screen for the length of its close animation.
+			if isSideSheetPairedWithPeoplePage() and not getSideSheetVisibility() and getIsPeoplePageOpen() then
+				return
+			end
+
+			local selectionBehaviorLeft = if shouldUseSideSheetPeoplePageLayout()
+				then Enum.SelectionBehavior.Escape
+				else Enum.SelectionBehavior.Stop
+			if this.Modal then
+				this.Modal.Visible = shouldShowSettingsHubModal()
+			end
+			if this.Page then
+				this.Page.SelectionBehaviorLeft = selectionBehaviorLeft
+			end
+			if this.PageViewClipper then
+				this.PageViewClipper.SelectionBehaviorLeft = selectionBehaviorLeft
+			end
+			if this._sideSheetLayoutRefreshScheduled then
+				return
+			end
+
+			this._sideSheetLayoutRefreshScheduled = true
+			task.defer(function()
+				this._sideSheetLayoutRefreshScheduled = false
+				if this.Visible and this.MenuContainer then
+					onScreenSizeChanged()
+				end
+			end)
+		end
+
+		this._sideSheetLayoutEffectDispose = Signals.createEffect(function(scope)
+			getSideSheetVisibility(scope)
+			getSideSheetDrawerWidth(scope)
+			getIsPeoplePageOpen(scope)
+			getDidSideSheetOpenWithPeoplePage(scope)
+			scheduleSideSheetPeoplePageLayoutRefresh()
+		end)
 	end
 
 	local function onPreferredTransparencyChanged()
@@ -2823,9 +3015,11 @@ local function CreateSettingsHub()
 		this.MenuContainerPadding.PaddingTop = pad.PaddingTop + topExtra
 
 		local menuPos = Theme.MenuContainerPosition(this.SettingsUIDelegate)
-		this.MenuContainer.Position = menuPos.Position
+		local menuContainerPosition, menuContainerAnchorPoint =
+			applySideSheetLayoutToMenuContainer(menuPos.Position, menuPos.AnchorPoint)
+		this.MenuContainer.Position = menuContainerPosition
 		this.MenuContainer.Size = menuPos.Size
-		this.MenuContainer.AnchorPoint = menuPos.AnchorPoint
+		this.MenuContainer.AnchorPoint = menuContainerAnchorPoint
 
 		-- detect direction
 		if direction == nil then
@@ -3028,7 +3222,7 @@ local function CreateSettingsHub()
 	end
 	local setBackgroundVisibilityInternal = nil
 	if Flags.FFlagSettingsHubIndependentBackgroundVisibility then
-		setBackgroundVisibilityInternal = function(visible, noAnimation)
+		setBackgroundVisibilityInternal = function(visible, noAnimation, wasPeoplePageOpenWithSideSheet)
 			if not this.DarkenBackground then
 				return
 			end
@@ -3043,14 +3237,17 @@ local function CreateSettingsHub()
 			local easingStyle = Enum.EasingStyle.Quart
 			local movementTime = 0
 
-			movementTime = if Constants then Constants.ShieldCloseAnimationTweenTime else 0.4
+			movementTime = getShieldCloseTweenTime(
+				if Constants then Constants.ShieldCloseAnimationTweenTime else 0.4,
+				wasPeoplePageOpenWithSideSheet
+			)
 
 			if visible then
 				goalTransparency = if Flags.isInExperienceUIVREnabled
 					then this.SettingsUIDelegate:getDarkBackgroundTheme().Transparency
 					else Theme.transparency("DarkenBackground")
 				easingStyle = Enum.EasingStyle.Quad
-				movementTime = if Constants then Constants.ShieldOpenAnimationTweenTime else 0.5
+				movementTime = getShieldOpenTweenTime(if Constants then Constants.ShieldOpenAnimationTweenTime else 0.5)
 			end
 
 			if noAnimation then
@@ -3076,6 +3273,18 @@ local function CreateSettingsHub()
 		end
 	end
 	function setVisibilityInternal(visible, providedNoAnimation, customStartPage, switchedFromGamepadInput, analyticsContext)
+		-- Read before anything below takes the sheet and the People page down, since the close
+		-- animation is timed against the paired surface the menu is leaving rather than whatever is
+		-- left once it is gone. A People page the sheet is not up beside keeps the menu's own timing.
+		local wasPeoplePageOpenWithSideSheet = shouldUseSideSheetPeoplePageLayout()
+
+		if isSideSheetPairedWithPeoplePage() and not visible and this.Visible then
+			-- The sheet and the page beside it are one surface, so whatever closes the menu closes
+			-- the sheet as well. Callers that go straight to the menu, such as examining an avatar
+			-- from the People page, never had a chance to dismiss the sheet themselves.
+			toggleSideSheet(false)
+		end
+
 		local noAnimation
 		if Flags.isInExperienceUIVREnabled then
 			noAnimation = providedNoAnimation or not this.SettingsUIDelegate:isOpenCloseAnimationAllowed()
@@ -3111,7 +3320,7 @@ local function CreateSettingsHub()
 			this.PreferredTransparencyChangedConnection = nil
 		end
 
-		this.Modal.Visible = this.Visible
+		this.Modal.Visible = if FFlagSideSheetOpenPeoplePage then shouldShowSettingsHubModal() else this.Visible
 
 		if this.TabConnection then
 			this.TabConnection:disconnect()
@@ -3121,7 +3330,7 @@ local function CreateSettingsHub()
 		local playerList = require(RobloxGui.Modules.PlayerList.PlayerListManager)
 
 		if Flags.FFlagSettingsHubIndependentBackgroundVisibility then
-			setBackgroundVisibilityInternal(this.Visible, noAnimation)
+			setBackgroundVisibilityInternal(this.Visible, noAnimation, wasPeoplePageOpenWithSideSheet)
 		end
 
 		if this.Visible then
@@ -3181,7 +3390,7 @@ local function CreateSettingsHub()
 					end
 				end
 			else
-				local movementTime: number = if Constants then Constants.ShieldOpenAnimationTweenTime else 0.5
+				local movementTime: number = getShieldOpenTweenTime(if Constants then Constants.ShieldOpenAnimationTweenTime else 0.5)
 
 				if GameSettings.ReducedMotion then
 
@@ -3406,7 +3615,10 @@ local function CreateSettingsHub()
 					end
 				end
 			else
-				local movementTime: number = if Constants then Constants.ShieldCloseAnimationTweenTime else 0.4
+				local movementTime: number = getShieldCloseTweenTime(
+					if Constants then Constants.ShieldCloseAnimationTweenTime else 0.4,
+					wasPeoplePageOpenWithSideSheet
+				)
 
 				local function handleShieldClose()
 					if not Flags.FFlagAddTraversalBackButton then
@@ -3461,10 +3673,21 @@ local function CreateSettingsHub()
 						local ChromeService = require(RobloxGui.Modules.Chrome.Service)
 							ChromeService:setShortcutBar(nil)
 					end
+					local closeEasingDirection = Enum.EasingDirection.In
+					local closeEasingStyle = Enum.EasingStyle.Quad
+
+					if shouldCloseShieldWithSideSheet(wasPeoplePageOpenWithSideSheet) then
+						-- The side sheet slides out on a decelerating curve. Leaving the menu on the
+						-- default accelerating one makes the two surfaces move out of step even when
+						-- they finish together, which reads as the sheet lagging behind.
+						closeEasingDirection = Enum.EasingDirection.Out
+						closeEasingStyle = Enum.EasingStyle.Quart
+					end
+
 					this.Shield:TweenPositionInternal(
 						SETTINGS_SHIELD_INACTIVE_POSITION,
-						Enum.EasingDirection.In,
-						Enum.EasingStyle.Quad,
+						closeEasingDirection,
+						closeEasingStyle,
 						movementTime,
 						true,
 						function()
@@ -3605,6 +3828,14 @@ local function CreateSettingsHub()
 		else
 			this:AddToMenuStack(this.Pages.CurrentPage)
 			this:SwitchToPage(this.ShareGamePage, nil, 1, true)
+		end
+
+		if isSideSheetPairedWithPeoplePage() then
+			-- Every branch above takes over from the People page, whether by replacing it in the
+			-- menu, covering it with a modal, or handing off to a platform UI, so the side sheet
+			-- it was paired with has to come down as well. This runs last because the page swap
+			-- needs the menu still open.
+			toggleSideSheet(false)
 		end
 	end
 
@@ -3812,7 +4043,7 @@ local function CreateSettingsHub()
 	this.GameSettingsPage = require(RobloxGui.Modules.Settings.Pages.GameSettingsWrapper)
 	this.GameSettingsPage:SetHub(this)
 
-	this.ReportAbusePage = require(RobloxGui.Modules.Settings.Pages.ReportAbuseMenuNewContainerPage)
+	this.ReportAbusePage = require(RobloxGui.Modules.Settings.Pages.ReportAbuseMenuContainerPage)
 	this.ReportAbusePage:SetHub(this)
 
 	this.ReportSentPage = require(RobloxGui.Modules.Settings.Pages.ReportSentPage)
@@ -3971,9 +4202,23 @@ local function CreateSettingsHub()
 			if not Flags.FFlagAddUILessMode or Flags.FIntAddUILessModeVariant == 0 then
 				local closeMenuFunc = function(name, inputState, input)
 					if inputState ~= Enum.UserInputState.Begin then return end
+					-- switch server confirmation dialog is open, let escape dismiss it
+					if
+						(Flags.FFlagShowSwitchServerButton or isPioneerLaunch())
+						and GetSwitchServerStore(false).isConfirmationOpen(false)
+					then
+						return
+					end
 					if isSideSheetEnabled then
 						if getSideSheetVisibility() then
-							toggleSideSheet(false)
+							if isSideSheetPairedWithPeoplePage() and getIsPeoplePageOpen() then
+								-- Close the paired page in this frame. The side sheet takes it down
+								-- on its own, but only once React has re-rendered, which leaves the
+								-- sheet visibly leading the page out.
+								this:SetVisibility(false)
+							else
+								toggleSideSheet(false)
+							end
 						else
 							if this.MenuStack and #this.MenuStack > 0 then
 								if Flags.FFlagAddUILessMode then
@@ -4001,9 +4246,13 @@ local function CreateSettingsHub()
 
 	-- connect back button on android
 	GuiService.ShowLeaveConfirmation:connect(function()
-		if isSideSheetEnabled and Flags.FFlagSideSheetAndroidBack then
+		if isSideSheetEnabled and (Flags.FFlagSideSheetAndroidBack or shouldAndroidBackUseSideSheet()) then
 			if getSideSheetVisibility() then
-				toggleSideSheet(false)
+				if isSideSheetPairedWithPeoplePage() and getIsPeoplePageOpen() then
+					this:SetVisibility(false)
+				else
+					toggleSideSheet(false)
+				end
 			elseif #this.MenuStack > 0 then
 				this:PopMenu(false, true)
 			else
@@ -4226,6 +4475,11 @@ VRHub.ModuleOpened.Event:connect(function(moduleName)
 end)
 
 local SettingsHubInstance = CreateSettingsHub()
+
+if FFlagSideSheetOpenPeoplePage then
+	setupPeoplePageOpenTracking(SettingsHubInstance)
+	setupInGameMenuPeoplePageActions(SettingsHubInstance)
+end
 
 function moduleApiTable:GetExperienceControlStore()
 	return SettingsHubInstance:GetExperienceControlStore()

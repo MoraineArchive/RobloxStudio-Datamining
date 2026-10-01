@@ -92,6 +92,8 @@ jest.mock(CorePackages.Workspace.Packages.GenericAbuseReporting.DynamicReportInE
 	end
 end)
 
+local FFlagReportFocusNavCloseButton = require(root.Flags.FFlagReportFocusNavCloseButton)
+
 local AbuseReportMenu = require(script.Parent.AbuseReportMenu)
 
 local onReportTabHidden = function() end
@@ -114,6 +116,18 @@ local defaultProps = {
 }
 
 local mountedInstance: any = nil
+local mountedContainer: Instance? = nil
+
+-- The report's focus root is the only SelectionGroup frame in the tree; the report body
+-- itself is mocked out above.
+local function findFocusRootFrame(container: Instance): Frame?
+	for _, descendant in container:GetDescendants() do
+		if descendant:IsA("Frame") and descendant.SelectionGroup then
+			return descendant
+		end
+	end
+	return nil
+end
 
 local function fireOpen()
 	Roact.act(function()
@@ -146,11 +160,35 @@ describe("AbuseReportMenu V2", function()
 			Roact.unmount(mountedInstance)
 			mountedInstance = nil
 		end
+		if mountedContainer then
+			mountedContainer:Destroy()
+			mountedContainer = nil
+		end
 	end)
 
 	local function mount(name: string)
 		local element = React.createElement(AbuseReportMenu, defaultProps)
 		mountedInstance = Roact.mount(element, CoreGui, name)
+	end
+
+	-- Mounts into a container of its own so the focus root can be found without walking
+	-- the rest of CoreGui, and with the extra props the focus wiring needs.
+	local function mountInContainer(name: string, extraProps: any): Instance
+		local container = Instance.new("Frame")
+		container.Name = name .. "Container"
+		container.Parent = CoreGui
+		mountedContainer = container
+
+		local props = table.clone(defaultProps) :: any
+		for key, value in extraProps do
+			props[key] = value
+		end
+
+		Roact.act(function()
+			mountedInstance = Roact.mount(React.createElement(AbuseReportMenu, props), container, name)
+		end)
+
+		return container
 	end
 
 	it("mounts without errors", function()
@@ -244,6 +282,57 @@ describe("AbuseReportMenu V2", function()
 
 		expect(mockReportMenuTabClose).toHaveBeenCalledTimes(1)
 	end)
+
+	if FFlagReportFocusNavCloseButton then
+		it("lets selection escape upward to the menu's close button", function()
+			local closeButton = Instance.new("ImageButton")
+			closeButton.Name = "PageTitleCloseButton"
+			closeButton.Selectable = true
+			closeButton.Parent = CoreGui
+
+			local container = mountInContainer("AbuseReportMenuV2CloseEscapeTest", {
+				getSettingsHubRef = function()
+					return { PageTitleCloseButton = closeButton }
+				end,
+			})
+			fireOpen()
+
+			local focusRootFrame = findFocusRootFrame(container)
+			expect(focusRootFrame).never.toBeNil()
+			expect((focusRootFrame :: Frame).SelectionBehaviorUp).toBe(Enum.SelectionBehavior.Escape)
+			expect((focusRootFrame :: Frame).NextSelectionUp).toBe(closeButton)
+
+			closeButton:Destroy()
+		end)
+
+		it("leaves the other directions isolated", function()
+			local container = mountInContainer("AbuseReportMenuV2StillIsolatedTest", {})
+			fireOpen()
+
+			local focusRootFrame = findFocusRootFrame(container) :: Frame
+			expect(focusRootFrame.SelectionBehaviorDown).toBe(Enum.SelectionBehavior.Stop)
+			expect(focusRootFrame.SelectionBehaviorLeft).toBe(Enum.SelectionBehavior.Stop)
+			expect(focusRootFrame.SelectionBehaviorRight).toBe(Enum.SelectionBehavior.Stop)
+		end)
+
+		it("keeps upward isolation when the hub has no close button", function()
+			local container = mountInContainer("AbuseReportMenuV2NoCloseButtonIsolationTest", {})
+			fireOpen()
+
+			local focusRootFrame = findFocusRootFrame(container) :: Frame
+			expect(focusRootFrame.SelectionBehaviorUp).toBe(Enum.SelectionBehavior.Stop)
+			expect(focusRootFrame.NextSelectionUp).toBeNil()
+		end)
+	else
+		it("keeps the report focus root isolated in every direction", function()
+			local container = mountInContainer("AbuseReportMenuV2IsolatedTest", {})
+			fireOpen()
+
+			local focusRootFrame = findFocusRootFrame(container) :: Frame
+			expect(focusRootFrame.SelectionBehaviorUp).toBe(Enum.SelectionBehavior.Stop)
+			expect(focusRootFrame.NextSelectionUp).toBeNil()
+		end)
+	end
 
 	it("does not emit open/close signals when disabled", function()
 		mockSignalEnabled = false

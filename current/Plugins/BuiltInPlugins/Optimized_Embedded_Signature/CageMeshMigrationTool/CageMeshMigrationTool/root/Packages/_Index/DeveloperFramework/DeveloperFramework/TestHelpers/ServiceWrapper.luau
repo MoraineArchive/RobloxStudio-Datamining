@@ -1,8 +1,3 @@
-local Framework = script.Parent.Parent
-
-local getFFlagDevFrameworkMemStorageServiceMocks =
-	require(Framework.SharedFlags.getFFlagDevFrameworkMemStorageServiceMocks)
-
 local Instances = require(script.Parent.Instances)
 local isCli = require(script.Parent.isCli)
 
@@ -41,11 +36,9 @@ local function getMockService(serviceName: string, instance: Instance?)
 		MaterialService = function()
 			return Instances.MockMaterialService.new(instance)
 		end,
-		MemStorageService = if getFFlagDevFrameworkMemStorageServiceMocks()
-			then function()
-				return Instances.MockMemStorageService.new()
-			end
-			else nil,
+		MemStorageService = function()
+			return Instances.MockMemStorageService.new()
+		end,
 		Selection = function()
 			return Instances.MockSelectionService.new()
 		end,

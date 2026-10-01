@@ -11,7 +11,6 @@ local prettyPrintVector3 = require(root.util.prettyPrintVector3)
 local R15plusUtils = require(root.util.R15plusUtils)
 local getAttachmentCFrameInPartSpace = require(root.util.getAttachmentCFrameInPartSpace)
 
-local getFFlagUGCValidateMigrateSchemaProperties = require(root.flags.getFFlagUGCValidateMigrateSchemaProperties)
 local getFStringUGCValidationAttachmentErrorLink = require(root.flags.getFStringUGCValidationAttachmentErrorLink)
 local getFFlagUGCValidateAttachmentBoundsErrorMessage =
 	require(root.flags.getFFlagUGCValidateAttachmentBoundsErrorMessage)
@@ -30,7 +29,6 @@ AttachmentBoundsValid.requiredData = {
 AttachmentBoundsValid.conditionalData = {
 	ValidationEnums.SharedDataMember.renderMeshesData,
 }
-AttachmentBoundsValid.fflag = getFFlagUGCValidateMigrateSchemaProperties
 AttachmentBoundsValid.expectedFailures = {}
 
 local function validateInMeshSpace(
@@ -161,9 +159,11 @@ AttachmentBoundsValid.run = function(reporter: Types.ValidationReporter, data: T
 		end
 	end
 
+	local isServer = data.consumerConfig.validationEnv == ValidationEnums.ValidationEnv.Backend
+
 	local validationContext = {
 		assetTypeEnum = assetTypeEnum,
-		isServer = data.consumerConfig.consumerEnv == ValidationEnums.ConsumerEnv.Backend,
+		isServer = isServer,
 		editableMeshes = editableMeshes,
 	} :: any
 

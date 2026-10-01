@@ -21,8 +21,6 @@ local WrapTargetCageUVReferenceValues = require(root.WrapTargetCageUVReferenceVa
 local CollisionTestUtil = require(root.util.CollisionTestUtil)
 local StringUtil = require(root.util.StringUtil)
 
-local getFFlagUGCValidateMigrateCageUV = require(root.flags.getFFlagUGCValidateMigrateCageUV)
-
 local FIntUGCValidateExcludedUVModifyRequirements = game:DefineFastInt("UGCValidateExcludedUVModifyRequirements", 14)
 local FIntUGCValidatePartUVModifyRequirements = game:DefineFastInt("UGCValidatePartUVModifyRequirements", 45)
 local FIntUGCValidateRenderMeshInsideModifiedArea = game:DefineFastInt("UGCValidateRenderMeshInsideModifiedArea", 70)
@@ -76,8 +74,6 @@ CageModifiedAreaValid.requiredData = {
 }
 
 CageModifiedAreaValid.conditionalData = {}
-
-CageModifiedAreaValid.fflag = getFFlagUGCValidateMigrateCageUV
 
 CageModifiedAreaValid.expectedFailures = {}
 

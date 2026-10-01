@@ -25,7 +25,6 @@ Measure_Joint_Number.run = function(reporter: Types.ValidationReporter, data: Ty
 	end
 	if tonumber(partData.score) ~= 100 then
 		reporter:warn(ErrorSourceStrings.Keys.AQSWarn_JointNumber, {
-			score = tostring(math.floor(tonumber(partData.score) or 0)),
 			joint_number = partData.joint_number or "unknown",
 			left_hand_joint_number = partData.left_hand_joint_number or "unknown",
 			right_hand_joint_number = partData.right_hand_joint_number or "unknown",

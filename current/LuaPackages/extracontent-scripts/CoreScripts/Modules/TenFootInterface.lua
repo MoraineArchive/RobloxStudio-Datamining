@@ -17,15 +17,15 @@ local FORCE_TEN_FOOT_INTERFACE = false
 -------------- SERVICES --------------
 local CoreGui = game:GetService("CoreGui")
 local RobloxGui = CoreGui:WaitForChild("RobloxGui")
-local GuiService = game:GetService("GuiService")
 local Players = game:GetService("Players")
 local CorePackages = game:GetService("CorePackages")
 
 local Create = require(CorePackages.Workspace.Packages.AppCommonLib).Create
+local isTenFootInterface = require(CorePackages.Workspace.Packages.AppCommonLib).isTenFootInterface
 
 ------------------ VARIABLES --------------------
 
-local tenFootInterfaceEnabled = GuiService:IsTenFootInterface()
+local tenFootInterfaceEnabled = isTenFootInterface()
 
 local function CreateModule()
 	local this = {}

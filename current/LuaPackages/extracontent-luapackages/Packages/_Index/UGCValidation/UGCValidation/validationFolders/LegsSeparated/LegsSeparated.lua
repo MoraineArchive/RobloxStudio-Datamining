@@ -14,8 +14,7 @@ local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 local BoundsDataUtils = require(root.util.BoundsDataUtils)
 local BoundsCalculator = require(root.util.BoundsCalculator)
 
-local getFFlagUGCValidateMigratePoseBlocking = require(root.flags.getFFlagUGCValidateMigratePoseBlocking)
-local getFFlagUGCValidateLegFullBodySeparation = require(root.flags.getFFlagUGCValidateLegFullBodySeparation)
+local getFFlagUGCValidateHeadAboveTorso = require(root.flags.getFFlagUGCValidateHeadAboveTorso)
 local GetFStringUGCValidateLegHipAttachmentRange = require(root.flags.GetFStringUGCValidateLegHipAttachmentRange)
 local GetFStringUGCValidateAllowedLegOverlapMultiplier =
 	require(root.flags.GetFStringUGCValidateAllowedLegOverlapMultiplier)
@@ -32,7 +31,11 @@ LegsSeparated.requiredData = {
 	ValidationEnums.SharedDataMember.renderMeshesData,
 }
 
-LegsSeparated.fflag = getFFlagUGCValidateMigratePoseBlocking
+if getFFlagUGCValidateHeadAboveTorso() then
+	LegsSeparated.conditionalData = {
+		ValidationEnums.SharedDataMember.fullBodyPartsMetrics,
+	}
+end
 
 LegsSeparated.expectedFailures = {}
 
@@ -78,7 +81,6 @@ end
 local function buildEditableMeshesFromSharedData(data: Types.SharedData): Types.EditableMeshes
 	local editableMeshes: Types.EditableMeshes = {}
 	for partName, meshData in data.renderMeshesData do
-		-- Find the instance in rootInstance descendants
 		local inst = data.rootInstance:FindFirstChild(partName, true)
 		if inst and meshData.editable then
 			editableMeshes[inst] = { MeshId = { instance = meshData.editable, created = false } }
@@ -97,30 +99,7 @@ local function createAllBodyPartsFromRootInstance(rootInstance: Instance): Types
 	return results
 end
 
-local function validateFullBodySeparation(reporter: Types.ValidationReporter, data: Types.SharedData)
-	if not getFFlagUGCValidateLegFullBodySeparation() then
-		return
-	end
-
-	local allBodyParts = createAllBodyPartsFromRootInstance(data.rootInstance)
-
-	local editableMeshes = buildEditableMeshesFromSharedData(data)
-
-	local validationContext = {
-		isServer = data.consumerConfig.consumerEnv == ValidationEnums.ConsumerEnv.Backend,
-		editableMeshes = editableMeshes,
-	} :: any
-
-	local partsMetricsSuccess, partsMetricsErrors, allPartsMetricsOpt =
-		BoundsCalculator.calculateIndividualFullBodyPartsData(allBodyParts, validationContext, nil, false)
-	if not partsMetricsSuccess then
-		reporter:fail(ErrorSourceStrings.Keys.LegsSeparated_BoundsCalculationFailed, {
-			details = if partsMetricsErrors then table.concat(partsMetricsErrors, "; ") else "Unknown error",
-		})
-		return
-	end
-	local allPartsMetrics = allPartsMetricsOpt :: { [string]: any }
-
+local function checkLegOverlap(reporter: Types.ValidationReporter, allPartsMetrics: { [string]: any })
 	local leftLegBounds = calculateBounds(allPartsMetrics, {
 		Constants.NAMED_R15_BODY_PARTS.LeftUpperLeg,
 		Constants.NAMED_R15_BODY_PARTS.LeftLowerLeg,
@@ -155,6 +134,33 @@ local function validateFullBodySeparation(reporter: Types.ValidationReporter, da
 			leftMax = string.format("%.2f", leftLegAllowedOverlap),
 			rightMax = string.format("%.2f", rightLegAllowedOverlap),
 		})
+	end
+end
+
+local function validateFullBodySeparation(reporter: Types.ValidationReporter, data: Types.SharedData)
+	if getFFlagUGCValidateHeadAboveTorso() then
+		local allPartsMetrics = data.fullBodyPartsMetrics
+		if not allPartsMetrics or not next(allPartsMetrics) then
+			return
+		end
+		checkLegOverlap(reporter, allPartsMetrics)
+	else
+		local allBodyParts = createAllBodyPartsFromRootInstance(data.rootInstance)
+		local editableMeshes = buildEditableMeshesFromSharedData(data)
+		local validationContext = {
+			isServer = data.consumerConfig.consumerEnv == ValidationEnums.ConsumerEnv.Backend,
+			editableMeshes = editableMeshes,
+		} :: any
+
+		local partsMetricsSuccess, partsMetricsErrors, allPartsMetricsOpt =
+			BoundsCalculator.calculateIndividualFullBodyPartsData(allBodyParts, validationContext, nil, false)
+		if not partsMetricsSuccess then
+			reporter:fail(ErrorSourceStrings.Keys.LegsSeparated_BoundsCalculationFailed, {
+				details = if partsMetricsErrors then table.concat(partsMetricsErrors, "; ") else "Unknown error",
+			})
+			return
+		end
+		checkLegOverlap(reporter, allPartsMetricsOpt :: { [string]: any })
 	end
 end
 

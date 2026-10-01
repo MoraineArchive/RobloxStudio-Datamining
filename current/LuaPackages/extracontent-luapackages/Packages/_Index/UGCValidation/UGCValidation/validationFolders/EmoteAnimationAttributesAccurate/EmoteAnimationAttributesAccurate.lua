@@ -7,8 +7,6 @@ local Types = require(root.util.Types)
 local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 
-local getFFlagUGCValidateMigrateCurveAnim = require(root.flags.getFFlagUGCValidateMigrateCurveAnim)
-
 game:DefineFastFlag("UGCValidateEmoteAttributes", false)
 
 local EmoteAnimationAttributesAccurate = {}
@@ -30,9 +28,7 @@ EmoteAnimationAttributesAccurate.conditionalData = {
 	ValidationEnums.SharedDataMember.curveAnimations,
 }
 EmoteAnimationAttributesAccurate.fflag = function()
-	return getFFlagUGCValidateMigrateCurveAnim()
-		and game:GetFastFlag("UGCValidateEmoteAttributes")
-		and game:GetEngineFeature("EngineTagEmoteMaxPartTranslation")
+	return game:GetFastFlag("UGCValidateEmoteAttributes") and game:GetEngineFeature("EngineTagEmoteMaxPartTranslation")
 end
 EmoteAnimationAttributesAccurate.expectedFailures = {}
 EmoteAnimationAttributesAccurate.prereqTests = {}

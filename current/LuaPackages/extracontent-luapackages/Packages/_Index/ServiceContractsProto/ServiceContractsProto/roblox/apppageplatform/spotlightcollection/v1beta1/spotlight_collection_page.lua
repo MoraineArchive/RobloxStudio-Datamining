@@ -14,6 +14,8 @@ type _Messages = {
 }
 local messages: _Messages = {} :: _Messages
 
+local _roblox_apppageplatform_shared_v1beta1_client_capabilities =
+	require(script.Parent.Parent.Parent.shared.v1beta1.client_capabilities)
 local _roblox_apppageplatform_shared_v1beta1_hydration_content =
 	require(script.Parent.Parent.Parent.shared.v1beta1.hydration_content)
 local _roblox_apppageplatform_shared_v1beta1_page_entry_content =
@@ -34,11 +36,13 @@ type _SpotlightCollectionPageRequestImpl = {
 type _SpotlightCollectionPageRequestFields = {
 	spotlight_collection_id: string,
 	session_id: string,
+	client_capabilities: _roblox_apppageplatform_shared_v1beta1_client_capabilities.ClientCapabilities?,
 }
 
 type _SpotlightCollectionPageRequestPartialFields = {
 	spotlight_collection_id: string?,
 	session_id: string?,
+	client_capabilities: _roblox_apppageplatform_shared_v1beta1_client_capabilities.ClientCapabilities?,
 }
 
 export type SpotlightCollectionPageRequest = typeof(setmetatable(
@@ -157,6 +161,9 @@ do
 				then ""
 				else data.spotlight_collection_id,
 			session_id = if data == nil or data.session_id == nil then "" else data.session_id,
+			client_capabilities = if data == nil or data.client_capabilities == nil
+				then nil
+				else data.client_capabilities,
 		}, _SpotlightCollectionPageRequestImpl :: _SpotlightCollectionPageRequestImpl)
 	end
 
@@ -172,6 +179,12 @@ do
 		if self.session_id ~= nil and self.session_id ~= "" then
 			output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
 			output, cursor = proto.writeString(output, cursor, self.session_id)
+		end
+
+		if self.client_capabilities ~= nil then
+			local encoded = self.client_capabilities:encode()
+			output, cursor = proto.writeTag(output, cursor, 3, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
 		end
 
 		local shrunkBuffer = buffer.create(cursor)
@@ -202,6 +215,12 @@ do
 					local value
 					value, cursor = proto.readBuffer(input, cursor)
 					self.session_id = buffer.tostring(value)
+					continue
+				elseif field == 3 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.client_capabilities =
+						_roblox_apppageplatform_shared_v1beta1_client_capabilities.ClientCapabilities.decode(value)
 					continue
 				end
 
@@ -238,6 +257,10 @@ do
 			output.sessionId = self.session_id
 		end
 
+		if self.client_capabilities ~= nil then
+			output.clientCapabilities = self.client_capabilities:jsonEncode()
+		end
+
 		return output
 	end
 
@@ -258,6 +281,20 @@ do
 
 		if input.sessionId ~= nil then
 			self.session_id = input.sessionId
+		end
+
+		if input.client_capabilities ~= nil then
+			self.client_capabilities =
+				_roblox_apppageplatform_shared_v1beta1_client_capabilities.ClientCapabilities.jsonDecode(
+					input.client_capabilities
+				)
+		end
+
+		if input.clientCapabilities ~= nil then
+			self.client_capabilities =
+				_roblox_apppageplatform_shared_v1beta1_client_capabilities.ClientCapabilities.jsonDecode(
+					input.clientCapabilities
+				)
 		end
 
 		return self

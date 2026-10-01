@@ -12,8 +12,9 @@ local getMeshSizeFromEditable = require(root.util.getMeshSize)
 local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local DataEnums = ValidationEnums.SharedDataMember
 local Types = require(root.util.Types)
-local getFFlagUGCValidationAddPBRToSharedData = require(root.flags.getFFlagUGCValidationAddPBRToSharedData)
 local getFFlagUGCValidateAllowEmissives = require(root.flags.getFFlagUGCValidateAllowEmissives)
+local getFFlagUGCValidateEmissiveAreaChecksFixedAlgo =
+	require(root.flags.getFFlagUGCValidateEmissiveAreaChecksFixedAlgo)
 
 local FetchEditables = {}
 
@@ -28,12 +29,10 @@ function FetchEditables.cleanup(editableDatas: {
 			v.editable:Destroy()
 		end
 
-		if getFFlagUGCValidationAddPBRToSharedData() then
-			if v.isPBR ~= nil then
-				for _, nestedData in v do
-					if typeof(nestedData) == "table" and nestedData.createdInValidation then
-						(nestedData :: any).editable:Destroy()
-					end
+		if v.isPBR ~= nil then
+			for _, nestedData in v do
+				if typeof(nestedData) == "table" and nestedData.createdInValidation then
+					(nestedData :: any).editable:Destroy()
 				end
 			end
 		end
@@ -82,34 +81,6 @@ local function getMeshData(
 		}
 end
 
-local function getTextureData_deprecated(
-	meshInstance: MeshPart | SpecialMesh,
-	allowEditableInstances: boolean,
-	preloadedImages: { [string]: EditableImage }
-): (boolean, Types.EditableImageData?)
-	local content
-	if meshInstance:IsA("MeshPart") then
-		content = meshInstance.TextureContent
-	else
-		content = Content.fromUri(meshInstance.TextureId)
-	end
-
-	local success, editableImageInfo = createEditableInstancesForContext.getEditableInstanceInfo(
-		content,
-		preloadedImages,
-		"EditableImage",
-		allowEditableInstances
-	)
-
-	if success then
-		return true, {
-			editable = editableImageInfo.instance,
-			createdInValidation = editableImageInfo.created,
-		}
-	end
-	return false
-end
-
 local function getTextureData(
 	meshInstance: MeshPart | SpecialMesh,
 	allowEditableInstances: boolean,
@@ -142,10 +113,24 @@ local function getTextureData(
 		}
 	end
 
-	local editableMapping = { isPBR = contentMapping.isPBR }
+	local editableMapping = { isPBR = contentMapping.isPBR } :: Types.EditableImageWithPBRData
+	if getFFlagUGCValidateEmissiveAreaChecksFixedAlgo() and surfaceAppearance ~= nil then
+		editableMapping.EmissiveTint = surfaceAppearance.EmissiveTint
+		editableMapping.EmissiveStrength = surfaceAppearance.EmissiveStrength
+	end
 	for mapName, content in contentMapping do
-		if mapName == "isPBR" or (content :: Content).SourceType == Enum.ContentSourceType.None then
-			continue
+		if getFFlagUGCValidateEmissiveAreaChecksFixedAlgo() then
+			if mapName == "isPBR" or mapName == "EmissiveTint" or mapName == "EmissiveStrength" then
+				continue
+			end
+
+			if (content :: Content).SourceType == Enum.ContentSourceType.None then
+				continue
+			end
+		else
+			if mapName == "isPBR" or (content :: Content).SourceType == Enum.ContentSourceType.None then
+				continue
+			end
 		end
 
 		local success, editableImageInfo = createEditableInstancesForContext.getEditableInstanceInfo(
@@ -203,41 +188,6 @@ local function getCageData(
 	return false
 end
 
-local function getDataInstance_deprecated(instance: Instance, requestedData: string): (boolean, Instance?)
-	-- If this instance has the requested data, we return the instance that contains it.
-	-- For example, a Meshpart may return it's underlying wraplayer, or a part may return its underlying specialMesh
-	if instance:IsA("MeshPart") or (instance:IsA("Part") and instance:FindFirstChildOfClass("SpecialMesh")) then
-		local meshInstance = (
-			instance:IsA("MeshPart") and instance or instance:FindFirstChildOfClass("SpecialMesh")
-		) :: MeshPart | SpecialMesh
-
-		if requestedData == DataEnums.meshTextures then
-			-- Check if this meshInstance actually has no texture (likely using PBR instead), if so return nil
-			if
-				(
-					meshInstance.ClassName == "MeshPart"
-					and (meshInstance :: MeshPart).TextureContent.SourceType == Enum.ContentSourceType.None
-				) or meshInstance.ClassName == "SpecialMesh" and (meshInstance :: SpecialMesh).TextureId == ""
-			then
-				return false
-			end
-		end
-
-		if requestedData == DataEnums.renderMeshesData or requestedData == DataEnums.meshTextures then
-			return true, meshInstance
-		end
-
-		local wrapInstance = instance:FindFirstChildWhichIsA("BaseWrap")
-		if requestedData == DataEnums.outerCagesData then
-			return true, wrapInstance
-		elseif requestedData == DataEnums.innerCagesData and wrapInstance and wrapInstance.ClassName == "WrapLayer" then
-			return true, wrapInstance
-		end
-	end
-
-	return false
-end
-
 local function getDataInstance(instance: Instance, requestedData: string): (boolean, Instance?)
 	-- If this instance has the requested data, we return the instance that contains it.
 	-- For example, a Meshpart may return it's underlying wraplayer, or a part may return its underlying specialMesh
@@ -279,12 +229,7 @@ function FetchEditables.getDatas(
 	local allInstances = rootInstance:GetDescendants()
 	table.insert(allInstances, rootInstance)
 	for _, instance in allInstances do
-		local instanceHasRelevantData, dataInstance
-		if getFFlagUGCValidationAddPBRToSharedData() then
-			instanceHasRelevantData, dataInstance = getDataInstance(instance, requestedData)
-		else
-			instanceHasRelevantData, dataInstance = getDataInstance_deprecated(instance, requestedData)
-		end
+		local instanceHasRelevantData, dataInstance = getDataInstance(instance, requestedData)
 
 		if instanceHasRelevantData then
 			local fetchSuccess, data: Types.EditableCageData? | Types.EditableMeshData? | Types.EditableImageData? | Types.EditableImageWithPBRData?
@@ -295,12 +240,7 @@ function FetchEditables.getDatas(
 				fetchSuccess, data =
 					getCageData(dataInstance :: any, getOuterCage, allowEditableInstances, preloadedMeshes)
 			elseif requestedData == DataEnums.meshTextures then
-				if getFFlagUGCValidationAddPBRToSharedData() then
-					fetchSuccess, data = getTextureData(dataInstance :: any, allowEditableInstances, preloadedImages)
-				else
-					fetchSuccess, data =
-						getTextureData_deprecated(dataInstance :: any, allowEditableInstances, preloadedImages)
-				end
+				fetchSuccess, data = getTextureData(dataInstance :: any, allowEditableInstances, preloadedImages)
 			end
 
 			if not fetchSuccess or data == nil then

@@ -5,22 +5,17 @@ local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 local CurveAnimBoneHierarchyUtils = require(root.util.CurveAnimBoneHierarchyUtils)
 
-local getFFlagUGCValidateMigrateCurveAnim = require(root.flags.getFFlagUGCValidateMigrateCurveAnim)
-local getFFlagUGCValidationAnimationPackSupport = require(root.flags.getFFlagUGCValidationAnimationPackSupport)
 local getFFlagUGCValidateEmotesBonesAllowed = require(root.flags.getFFlagUGCValidateEmotesBonesAllowed)
 local getFFlagUGCValidateCurveAnimRigDataR15Plus = require(root.flags.getFFlagUGCValidateCurveAnimRigDataR15Plus)
 local getEngineFeatureIsValidR15Plus = require(root.flags.getEngineFeatureIsValidR15Plus)
 
 local CurveAnimRigDataPresent = {}
 
-CurveAnimRigDataPresent.categories = { ValidationEnums.UploadCategory.EMOTE_ANIMATION }
-if getFFlagUGCValidationAnimationPackSupport() then
-	table.insert(CurveAnimRigDataPresent.categories, ValidationEnums.UploadCategory.ANIMATION)
-end
+CurveAnimRigDataPresent.categories =
+	{ ValidationEnums.UploadCategory.EMOTE_ANIMATION, ValidationEnums.UploadCategory.ANIMATION }
 CurveAnimRigDataPresent.requiredData = {
 	ValidationEnums.SharedDataMember.curveAnimations,
 }
-CurveAnimRigDataPresent.fflag = getFFlagUGCValidateMigrateCurveAnim
 CurveAnimRigDataPresent.expectedFailures = {}
 CurveAnimRigDataPresent.prereqTests = { ValidationEnums.ValidationModule.CurveAnimDataAvailable }
 

@@ -9,33 +9,15 @@ local root = script.Parent.Parent
 local Analytics = require(root.Analytics)
 local Constants = require(root.Constants)
 local Types = require(root.util.Types)
-local pcallDeferred = require(root.util.pcallDeferred)
-
-local validateCoplanarIntersection = require(root.validation.validateCoplanarIntersection)
-local validateCageUVs = require(root.validation.validateCageUVs)
-local validateMeshVertColors = require(root.validation.validateMeshVertColors)
-local validateCageUVTriangleArea = require(root.validation.validateCageUVTriangleArea)
-local validateMeshTriangleArea = require(root.validation.validateMeshTriangleArea)
-local validateCageUVValues = require(root.validation.validateCageUVValues)
-local validateTotalSurfaceArea = require(root.validation.validateTotalSurfaceArea)
 local validateSkinningTransfer = require(root.validation.validateSkinningTransfer)
-
-local getFFlagUGCValidateMigrateCageUV = require(root.flags.getFFlagUGCValidateMigrateCageUV)
 
 local FailureReasonsAccumulator = require(root.util.FailureReasonsAccumulator)
 local ParseContentIds = require(root.util.ParseContentIds)
 local getMeshMinMax = require(root.util.getMeshMinMax)
 local getEditableMeshFromContext = require(root.util.getEditableMeshFromContext)
-local floatEquals = require(root.util.floatEquals)
-local getExpectedPartSize = require(root.util.getExpectedPartSize)
 
-local getFFlagUGCValidateCoplanarTriTestBody = require(root.flags.getFFlagUGCValidateCoplanarTriTestBody)
-local getFIntUGCValidateTriangleLimitTolerance = require(root.flags.getFIntUGCValidateTriangleLimitTolerance)
 local getEngineFeatureEngineUGCValidationConsolidateAccessorySkinning =
 	require(root.flags.getEngineFeatureEngineUGCValidationConsolidateAccessorySkinning)
-local getFFlagUGCValidateMigrateSurfaceAppearanceMeshQuality =
-	require(root.flags.getFFlagUGCValidateMigrateSurfaceAppearanceMeshQuality)
-local getFFlagUGCValidateMigrateMeshGeometry = require(root.flags.getFFlagUGCValidateMigrateMeshGeometry)
 
 local function validateIsSkinned(
 	obj: MeshPart,
@@ -98,91 +80,6 @@ local function validateIsSkinned(
 	return true
 end
 
-local function validateTotalAssetTriangles(
-	allMeshes: any,
-	assetTypeEnum: Enum.AssetType,
-	validationContext: Types.ValidationContext
-): (boolean, { string }?)
-	local isServer = validationContext.isServer
-	local maxTriangleCount = assert(Constants.ASSET_RENDER_MESH_MAX_TRIANGLES[assetTypeEnum.Name])
-
-	local function calculateTotalAssetTriangles(): (boolean, string?, number?)
-		local result = 0
-		for _, data in allMeshes do
-			if data.instance.ClassName ~= "MeshPart" then
-				continue
-			end
-			assert(data.fieldName == "MeshId")
-
-			local getEditableMeshSuccess, editableMesh =
-				getEditableMeshFromContext(data.instance, data.fieldName, validationContext)
-			if not getEditableMeshSuccess then
-				Analytics.reportFailure(
-					Analytics.ErrorType.validateDescendantMeshMetrics_FailedToLoadMesh,
-					nil,
-					validationContext
-				)
-				return false,
-					string.format(
-						"Failed to load mesh for '%s'. Make sure mesh exists and try again.",
-						data.instance.Name
-					)
-			end
-
-			local success, triangles = pcallDeferred(function()
-				return UGCValidationService:GetEditableMeshTriCount(editableMesh :: EditableMesh)
-			end, validationContext)
-
-			if not success then
-				return false,
-					string.format(
-						"Failed to execute check for triangle face information for mesh '%s'. Make sure mesh exists and try again.",
-						data.instance.Name
-					)
-			end
-			result = result + triangles
-		end
-		return true, nil, result
-	end
-
-	local success, message, totalAssetTriangles = calculateTotalAssetTriangles()
-	if not success then
-		if isServer then
-			-- there could be many reasons that an error occurred, the asset is not necessarilly incorrect, we just didn't get as
-			-- far as testing it, so we throw an error which means the RCC will try testing the asset again, rather than returning false
-			-- which would mean the asset failed validation
-			error(message :: string)
-		end
-		Analytics.reportFailure(
-			Analytics.ErrorType.validateDescendantMeshMetrics_FailedToCalculateTriangles,
-			nil,
-			validationContext
-		)
-		return false, { message :: string }
-	end
-
-	local tolerance = getFIntUGCValidateTriangleLimitTolerance() / 100
-	local maxTriangleCountWithTolerance = maxTriangleCount + (maxTriangleCount * tolerance)
-
-	if totalAssetTriangles :: number > maxTriangleCountWithTolerance then
-		Analytics.reportFailure(
-			Analytics.ErrorType.validateDescendantMeshMetrics_TooManyTriangles,
-			nil,
-			validationContext
-		)
-		return false,
-			{
-				string.format(
-					"Mesh resolution of '%d' for '%s' is higher than max supported number of triangles '%d'. You need to retopologize your model to reduce the triangle count.",
-					totalAssetTriangles :: number,
-					assetTypeEnum.Name,
-					maxTriangleCount
-				),
-			}
-	end
-	return true
-end
-
 -- the mesh should be created at the origin
 local function validateMeshIsAtOrigin(
 	meshInfo: Types.MeshInfo,
@@ -225,19 +122,13 @@ local function validateDescendantMeshMetrics(
 		validationContext.assetTypeEnum ~= nil,
 		"assetTypeEnum required in validationContext for validateDescendantMeshMetrics"
 	)
-	local assetTypeEnum = validationContext.assetTypeEnum :: Enum.AssetType
 	local allowEditableInstances = validationContext.allowEditableInstances
 
 	local reasonsAccumulator = FailureReasonsAccumulator.new()
 
 	local allMeshes = ParseContentIds.parse(rootInstance, Constants.MESH_CONTENT_ID_FIELDS, validationContext)
 
-	local startTime = tick()
-	if not getFFlagUGCValidateMigrateMeshGeometry() then
-		reasonsAccumulator:updateReasons(validateTotalAssetTriangles(allMeshes, assetTypeEnum, validationContext))
-	end
-	Analytics.recordScriptTime("validateTotalAssetTriangles", startTime, validationContext)
-
+	local startTime
 	for _, data in allMeshes do
 		local meshInfo = {
 			fullName = data.instance:GetFullName(),
@@ -277,35 +168,6 @@ local function validateDescendantMeshMetrics(
 				Analytics.recordScriptTime("validateMeshIsAtOrigin", startTime, validationContext)
 			end
 
-			if meshMinOpt and meshMaxOpt then
-				local meshSize = (meshMaxOpt :: Vector3 - meshMinOpt :: Vector3)
-				if floatEquals(meshSize.X, 0) or floatEquals(meshSize.Y, 0) or floatEquals(meshSize.Z, 0) then
-					reasonsAccumulator:updateReasons(false, {
-						"Mesh size is zero for " .. meshInfo.fullName .. ". You need to rescale your mesh.",
-					})
-				else
-					local meshScale = getExpectedPartSize(data.instance, validationContext) / meshSize
-
-					if not getFFlagUGCValidateMigrateMeshGeometry() then
-						reasonsAccumulator:updateReasons(
-							validateTotalSurfaceArea(meshInfo, meshScale, validationContext)
-						)
-					end
-
-					if not getFFlagUGCValidateMigrateSurfaceAppearanceMeshQuality() then
-						if getFFlagUGCValidateCoplanarTriTestBody() then
-							reasonsAccumulator:updateReasons(
-								validateCoplanarIntersection(meshInfo, meshScale, validationContext)
-							)
-						end
-					end
-				end
-			end
-
-			if not getFFlagUGCValidateMigrateSurfaceAppearanceMeshQuality() then
-				reasonsAccumulator:updateReasons(validateMeshVertColors(meshInfo, true, validationContext))
-			end
-
 			-- EditableMesh data currently does not support skinning, leave this check as-is for now
 			startTime = tick()
 			reasonsAccumulator:updateReasons(
@@ -316,33 +178,9 @@ local function validateDescendantMeshMetrics(
 			if not getEngineFeatureEngineUGCValidationConsolidateAccessorySkinning() then
 				reasonsAccumulator:updateReasons(validateSkinningTransfer(data.instance :: MeshPart, validationContext))
 			end
-
-			if not getFFlagUGCValidateMigrateMeshGeometry() then
-				reasonsAccumulator:updateReasons(validateMeshTriangleArea(meshInfo, validationContext))
-			end
 		elseif data.instance.ClassName == "WrapTarget" then
 			assert(data.fieldName == "CageMeshId")
 			meshInfo.fullName = meshInfo.fullName .. "OuterCage"
-
-			if not getFFlagUGCValidateMigrateCageUV() then
-				reasonsAccumulator:updateReasons(
-					validateCageUVs(meshInfo, data.instance :: WrapTarget, validationContext)
-				)
-			end
-
-			if not getFFlagUGCValidateMigrateCageUV() then
-				reasonsAccumulator:updateReasons(validateCageUVTriangleArea(meshInfo, validationContext))
-			end
-
-			if not getFFlagUGCValidateMigrateCageUV() then
-				reasonsAccumulator:updateReasons(
-					validateCageUVValues(meshInfo, data.instance :: WrapTarget, validationContext)
-				)
-			end
-
-			if not getFFlagUGCValidateMigrateMeshGeometry() then
-				reasonsAccumulator:updateReasons(validateMeshTriangleArea(meshInfo, validationContext))
-			end
 		end
 	end
 

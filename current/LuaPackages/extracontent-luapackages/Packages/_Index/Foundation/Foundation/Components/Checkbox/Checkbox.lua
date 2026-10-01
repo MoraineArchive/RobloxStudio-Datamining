@@ -76,7 +76,7 @@ local function Checkbox(checkboxProps: CheckboxProps, ref: React.Ref<GuiObject>?
 			label = {
 				text = props.label,
 				position = Constants.INPUT_PLACEMENT_TO_LABEL_ALIGNMENT[props.placement],
-				hint = if Flags.FoundationCheckboxBeta then props.hint else nil,
+				hint = props.hint,
 			},
 			customVariantProps = variantProps.input,
 			size = props.size,

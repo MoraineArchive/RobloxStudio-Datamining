@@ -38,9 +38,6 @@ local prioritize = require(Framework.Util.prioritize)
 local Typecheck = require(Framework.Util.Typecheck)
 local StyleModifier = require(Framework.Util.StyleModifier)
 
-local getFFlagDevFrameworkKeyboardNavComponentChanges =
-	require(Framework.SharedFlags.getFFlagDevFrameworkKeyboardNavComponentChanges)
-
 local Dash = require(Framework.Parent.Dash)
 local join = Dash.join
 
@@ -156,7 +153,7 @@ function RadioButton:render()
 		BackgroundTransparency = 1,
 		LayoutOrder = layoutOrder,
 		Size = buttonSize,
-		Selectable = if getFFlagDevFrameworkKeyboardNavComponentChanges() then false else nil,
+		Selectable = false,
 		Text = "",
 		[Roact.Event.Activated] = self.onClick,
 	}, {

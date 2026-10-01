@@ -5,11 +5,15 @@ local UIBlox = App.Parent
 local Packages = UIBlox.Parent
 
 local React = require(Packages.React)
+local Foundation = require(Packages.Foundation)
+local normalizeFontFace = Foundation.Utility.normalizeFontFace
 local useStyle = require(UIBlox.Core.Style.useStyle)
 local StyleTypes = require(App.Style.StyleTypes)
 local Fonts = require(App.Style.Fonts)
 
 local FooterFrame = require(ExperienceTileMetadata.FooterFrame)
+
+local FFlagFoundationFontFaceMigration = Foundation.Utility.Flags.FoundationFontFaceMigration
 
 export type StyleProps = {
 	-- Corner radius of text label
@@ -21,7 +25,7 @@ export type StyleProps = {
 	-- Horizontal alignment of text
 	textXAlignment: Enum.TextXAlignment?,
 	-- Font of text
-	textFont: Fonts.Font?,
+	textFont: Fonts.FontInfo?,
 }
 
 export type Props = {
@@ -51,7 +55,7 @@ local function TextFooter(props: Props)
 	local textColor = styleProps.textColor :: StyleTypes.ThemeItem
 	local backgroundColor = styleProps.backgroundColor
 	local textXAlignment = styleProps.textXAlignment
-	local textFont = styleProps.textFont :: Fonts.Font
+	local textFont = styleProps.textFont :: Fonts.FontInfo
 
 	return React.createElement(FooterFrame, props :: FooterFrame.Props, {
 		Text = React.createElement("TextLabel", {
@@ -62,7 +66,8 @@ local function TextFooter(props: Props)
 			Text = props.text,
 			TextXAlignment = textXAlignment,
 			TextYAlignment = Enum.TextYAlignment.Center,
-			Font = textFont.Font,
+			Font = if FFlagFoundationFontFaceMigration then nil else textFont.Font,
+			FontFace = if FFlagFoundationFontFaceMigration then normalizeFontFace(textFont.Font) else nil,
 			TextSize = font.BaseSize * textFont.RelativeSize,
 			TextColor3 = textColor.Color,
 			TextTransparency = textColor.Transparency,

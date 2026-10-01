@@ -13,8 +13,6 @@ local AssetCalculator = require(root.util.AssetCalculator)
 local canBeNormalized = require(root.util.canBeNormalized)
 local prettyPrintVector3 = require(root.util.prettyPrintVector3)
 
-local getFFlagUGCValidateMigratePoseBlocking = require(root.flags.getFFlagUGCValidateMigratePoseBlocking)
-
 local UGCValidatePoseDegFromXYPlane = game:DefineFastInt("UGCValidatePoseDegFromXYPlane", 20)
 local UGCValidatePoseArmMinDegFromXVectorOnXYPlane =
 	game:DefineFastInt("UGCValidatePoseArmMinDegFromXVectorOnXYPlane", -90)
@@ -34,8 +32,6 @@ PoseCorrect.categories = {
 PoseCorrect.requiredData = {
 	ValidationEnums.SharedDataMember.rootInstance,
 }
-
-PoseCorrect.fflag = getFFlagUGCValidateMigratePoseBlocking
 
 PoseCorrect.expectedFailures = {}
 

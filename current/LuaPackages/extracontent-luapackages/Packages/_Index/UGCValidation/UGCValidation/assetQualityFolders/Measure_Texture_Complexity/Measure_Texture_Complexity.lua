@@ -32,7 +32,6 @@ Measure_Texture_Complexity.run = function(reporter: Types.ValidationReporter, da
 			if tonumber(textureData.score) ~= 100 then
 				reporter:warn(ErrorSourceStrings.Keys.AQSWarn_TextureComplexity, {
 					textureName = textureName,
-					score = tostring(math.floor(tonumber(textureData.score) or 0)),
 				})
 			end
 		end

@@ -26,9 +26,6 @@ ExpChatMessageHelpers.CHANNEL_GLOBAL = CHANNEL_GLOBAL
 -- bar is visible. Developer opt-in: add ChannelTabsConfiguration under
 -- TextChatService and set Enabled = true.
 function ExpChatMessageHelpers.areChannelTabsEnabled(): boolean
-	if not game:GetEngineFeature("EnableChannelTabsConfiguration") then
-		return false
-	end
 	local config = TextChatService:FindFirstChildOfClass("ChannelTabsConfiguration")
 	return config ~= nil and config.Enabled
 end

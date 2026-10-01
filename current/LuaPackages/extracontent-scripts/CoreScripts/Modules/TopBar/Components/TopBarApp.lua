@@ -104,12 +104,18 @@ end
 
 local isSideSheetEnabled = require(CorePackages.Workspace.Packages.InExperienceSideSheetUtils.isSideSheetEnabled)
 local FFlagShowGameAgeRating = SharedFlags.FFlagShowGameAgeRating
+local FFlagExperienceAgeRatingBadge =
+	require(CorePackages.Workspace.Packages.InExperienceTopBar).Flags.FFlagExperienceAgeRatingBadge
+local useAgeRatingLayout = FFlagExperienceAgeRatingBadge and FFlagShowGameAgeRating
+local ExperienceAgeRatingBadge = require(CorePackages.Workspace.Packages.InExperienceTopBar.ExperienceAgeRatingBadge)
+local ExperienceAgeRatingPolicy = require(script.Parent.Parent.ExperienceAgeRatingPolicy)
 local isInExperienceUIVREnabled =
 	require(CorePackages.Workspace.Packages.SharedExperimentDefinition).isInExperienceUIVREnabled
 local isSpatial = require(CorePackages.Workspace.Packages.AppCommonLib).isSpatial
 
 local FFlagShowSwitchServerButton = SharedFlags.FFlagShowSwitchServerButton
-local shouldAddSwitchServerToSideSheet = isSideSheetEnabled and FFlagShowSwitchServerButton
+local isPioneerLaunch = require(CorePackages.Workspace.Packages.PioneerUtils).isPioneerLaunch
+local shouldAddSwitchServerToSideSheet = isSideSheetEnabled and (FFlagShowSwitchServerButton or isPioneerLaunch())
 local SwitchServer = require(CorePackages.Workspace.Packages.SwitchServer)
 local SwitchServerConfirmation = SwitchServer.SwitchServerConfirmation
 local GetSwitchServerStore = SwitchServer.GetSwitchServerStore
@@ -152,7 +158,7 @@ local Constants = require(TopBar.Constants)
 local SetScreenSize = require(TopBar.Actions.SetScreenSize)
 local SetKeepOutArea = require(TopBar.Actions.SetKeepOutArea)
 local RemoveKeepOutArea = require(TopBar.Actions.RemoveKeepOutArea)
-local MenuIconContext = if ChromeEnabled() and FFlagEnableConsoleExpControls
+local MenuIconContext = if ChromeEnabled() and (FFlagEnableConsoleExpControls or FFlagExperienceAgeRatingBadge)
 	then require(script.Parent.MenuIconContext)
 	else nil :: never
 local GamepadMenu = nil
@@ -344,6 +350,31 @@ function TopBarApp:init()
 	if FFlagTopBarSignalizeKeepOutAreas then
 		self.keepOutAreasStore = CoreGuiCommon.Stores.GetKeepOutAreasStore(false)
 	end
+	if FFlagExperienceAgeRatingBadge then
+		self:setState({ ageRatingSpatial = isSpatial() })
+		self.ageRatingControlsVisible, self.setAgeRatingControlsVisible = React.createBinding(true)
+		self.ageRatingControlsWidth, self.setAgeRatingControlsWidth = React.createBinding(0)
+		self.onAgeRatingControlsSizeChanged = function(rbx: GuiObject)
+			self.setAgeRatingControlsWidth(rbx.AbsoluteSize.X)
+		end
+		self.onAgeRatingUnibarAreaChanged = function(id: string, position: Vector2, size: Vector2)
+			self.setAgeRatingControlsWidth(size.X)
+			local report = if FFlagTopBarSignalizeKeepOutAreas
+				then self.keepOutAreasStore.setKeepOutArea
+				else self.props.setKeepOutArea
+			report(id, position, size)
+		end
+		self.onAgeRatingAreaChanged = function(rbx: GuiObject?)
+			local report = if FFlagTopBarSignalizeKeepOutAreas
+				then self.keepOutAreasStore.setKeepOutArea
+				else self.props.setKeepOutArea
+			report(
+				ExperienceAgeRatingPolicy.keepOutAreaId,
+				if rbx then rbx.AbsolutePosition else Vector2.zero,
+				if rbx then rbx.AbsoluteSize else Vector2.zero
+			)
+		end
+	end
 
 	self.onCloseBtnStateChange = function(_, newControlState)
 		self.setCloseButtonState(newControlState)
@@ -420,6 +451,24 @@ function TopBarApp:init()
 end
 
 function TopBarApp:didMount()
+	if FFlagExperienceAgeRatingBadge then
+		if GamepadConnector then
+			local showTopBar = GamepadConnector:getShowTopBar()
+			self.ageRatingVisibilityConnection = showTopBar:connect(function()
+				self.setAgeRatingControlsVisible(showTopBar:get())
+			end, true)
+		end
+		if FFlagAddUILessMode and FIntAddUILessModeVariant ~= 0 and self.uiLessStore then
+			self.ageRatingVisibilityEffect = Signals.createEffect(function(scope)
+				if self.uiLessStore.getUILessModeEnabled(scope) then
+					self.setAgeRatingControlsVisible(self.uiLessStore.getUIVisible(scope))
+				end
+			end)
+		end
+		self.ageRatingSpatialConnection = VRService:GetPropertyChangedSignal("VREnabled"):Connect(function()
+			self:setState({ ageRatingSpatial = isSpatial() })
+		end)
+	end
 	if ChromeEnabled() then
 		local ChromeService = require(Chrome.Service)
 		self.orderAlignmentConnection = ChromeService:orderAlignment():connect(function()
@@ -452,6 +501,15 @@ function TopBarApp:didMount()
 end
 
 function TopBarApp:willUnmount()
+	if self.ageRatingVisibilityConnection then
+		self.ageRatingVisibilityConnection:disconnect()
+	end
+	if self.ageRatingVisibilityEffect then
+		self.ageRatingVisibilityEffect()
+	end
+	if self.ageRatingSpatialConnection then
+		self.ageRatingSpatialConnection:Disconnect()
+	end
 	if ChromeEnabled() then
 		if self.orderAlignmentConnection then
 			self.orderAlignmentConnection:disconnect()
@@ -574,18 +632,21 @@ function TopBarApp:render()
 	end)
 end
 
-function TopBarApp:renderUnibarFrame(chromeEnabled: boolean)
+function TopBarApp:renderUnibarFrame(chromeEnabled: boolean, persistentAgeRating: boolean)
 	if isInExperienceUIVREnabled and isSpatial() then
 		return nil
-	elseif FFlagEnableConsoleExpControls then
+	elseif FFlagEnableConsoleExpControls or useAgeRatingLayout then
 		return React.createElement(MenuIconContext.Provider, {
 			value = {
 				menuIconRef = self.menuIconRef,
+				replacesAgeRating = persistentAgeRating,
 			},
 		}, {
 			React.createElement(Unibar, {
 				layoutOrder = 1,
-				onAreaChanged = if FFlagTopBarSignalizeKeepOutAreas
+				onAreaChanged = if useAgeRatingLayout and not FFlagAddTraversalBackButton
+					then self.onAgeRatingUnibarAreaChanged
+					elseif FFlagTopBarSignalizeKeepOutAreas
 					then self.keepOutAreasStore.setKeepOutArea
 					else self.props.setKeepOutArea,
 				-- ShopIcon V2 lays the left side out with Foundation flex (row auto-xy),
@@ -621,12 +682,20 @@ function TopBarApp:renderWithStyle(style)
 	if self.state.unibarAlignment ~= nil then
 		unibarAlignment = self.state.unibarAlignment
 	end
+	local persistentAgeRating = ExperienceAgeRatingPolicy.isEligible(
+		self.props.showGameAgeRating,
+		chromeEnabled,
+		unibarAlignment == Enum.HorizontalAlignment.Left,
+		if FFlagExperienceAgeRatingBadge then self.state.ageRatingSpatial else isSpatial()
+	)
 
 	local screenSideOffset = Constants.ScreenSideOffset * self.state.UiScale
 	local topBarHeight = Constants.TopBarHeight * self.state.UiScale
 	local topBarTopMargin = Constants.TopBarTopMargin * self.state.UiScale
 	local topBarPadding = Constants.TopBarPadding * self.state.UiScale
-	local stackedElementsPaddingLeft = if FFlagAppNavMyStatsTab and canShowAssistantBuild()
+	local stackedElementsPaddingLeft = if persistentAgeRating and not useV2ShopIcon
+		then if FFlagEnableExperienceShopGlobalIcon and self.state.shopGlobalIconEnabled then 0 else topBarPadding
+		elseif FFlagAppNavMyStatsTab and canShowAssistantBuild()
 		then screenSideOffset
 		elseif useV2ShopIcon then topBarPadding
 		elseif FFlagEnableExperienceShopGlobalIcon and self.state.shopGlobalIconEnabled then 2
@@ -676,7 +745,7 @@ function TopBarApp:renderWithStyle(style)
 			elseif self.props.menuOpen then Constants.MenuIconOpenScale
 			else 1,
 		layoutOrder = 1,
-		showBadgeOver12 = self.props.showGameAgeRating,
+		showBadgeOver12 = self.props.showGameAgeRating and not persistentAgeRating,
 		menuIconRef = if chromeEnabled and FFlagEnableConsoleExpControls then self.menuIconRef else nil :: never,
 		unibarMenuRef = if chromeEnabled and FFlagEnableConsoleExpControls then self.unibarMenuRef else nil :: never,
 		onAreaChanged = if FFlagTopBarSignalizeKeepOutAreas then self.keepOutAreasStore.setKeepOutArea else nil,
@@ -695,6 +764,28 @@ function TopBarApp:renderWithStyle(style)
 		-- Menu icon and Unibar are inside VRBottomUnibar in VR platform
 		showMenuIconAtTopLeft = not isSpatial()
 	end
+
+	local ageRating = if persistentAgeRating
+		then React.createElement(View, {
+			tag = "row align-y-center auto-x",
+			Size = UDim2.fromOffset(0, Constants.TopBarButtonHeight * self.state.UiScale),
+			LayoutOrder = 3,
+			padding = if useV2ShopIcon
+				then {
+					left = self.ageRatingControlsVisible:map(function(visible)
+						return UDim.new(0, if visible then topBarPadding else 0)
+					end),
+				}
+				else nil,
+			ref = self.onAgeRatingAreaChanged,
+			onAbsoluteSizeChanged = self.onAgeRatingAreaChanged,
+			onAbsolutePositionChanged = self.onAgeRatingAreaChanged,
+		}, {
+			Badge = React.createElement(ExperienceAgeRatingBadge, {
+				universeId = tostring(game.GameId),
+			}),
+		})
+		else nil
 
 	return Roact.createElement("ScreenGui", {
 		IgnoreGuiInset = true,
@@ -944,7 +1035,12 @@ function TopBarApp:renderWithStyle(style)
 				Padding = Roact.createElement("UIPadding", {
 					PaddingTop = UDim.new(0, unibarFramePaddingTop),
 					PaddingBottom = UDim.new(0, unibarFramePaddingBottom),
-					PaddingLeft = UDim.new(0, unibarFramePaddingLeft),
+					PaddingLeft = if persistentAgeRating
+						then self.ageRatingControlsVisible:map(function(visible)
+							-- The parent starts one screenSideOffset left of the screen.
+							return UDim.new(0, if visible then unibarFramePaddingLeft else 2 * screenSideOffset)
+						end)
+						else UDim.new(0, unibarFramePaddingLeft),
 				}),
 				TopBarLeftContainer = FFlagAddTraversalBackButton
 					and (
@@ -960,10 +1056,11 @@ function TopBarApp:renderWithStyle(style)
 									tag = "row gap-xsmall auto-xy",
 									LayoutOrder = 1,
 								}, {
-									TraversalBackButton = if not (isInExperienceUIVREnabled and isSpatial())
+									TraversalBackButton = if FFlagAddTraversalBackButton
+											and not (isInExperienceUIVREnabled and isSpatial())
 										then React.createElement(TraversalBackButton)
 										else nil,
-									UnibarFrame = self:renderUnibarFrame(chromeEnabled),
+									UnibarFrame = self:renderUnibarFrame(chromeEnabled, persistentAgeRating),
 								}),
 								ShopIcon = React.createElement(ShopIcon, {
 									layoutOrder = 2,
@@ -973,17 +1070,22 @@ function TopBarApp:renderWithStyle(style)
 										then self.keepOutAreasStore.setKeepOutArea
 										else self.props.setKeepOutArea,
 								}),
+								AgeRating = ageRating,
 							})
 							else React.createElement(View, {
 								tag = "row gap-xsmall auto-xy",
+								onAbsoluteSizeChanged = if useAgeRatingLayout then self.onAgeRatingControlsSizeChanged else nil,
 							}, {
-								TraversalBackButton = if not (isInExperienceUIVREnabled and isSpatial())
+								TraversalBackButton = if FFlagAddTraversalBackButton
+										and not (isInExperienceUIVREnabled and isSpatial())
 									then React.createElement(TraversalBackButton)
 									else nil,
-								UnibarFrame = self:renderUnibarFrame(chromeEnabled),
+								UnibarFrame = self:renderUnibarFrame(chromeEnabled, persistentAgeRating),
 							})
 					),
-				Unibar = if not FFlagAddTraversalBackButton then self:renderUnibarFrame(chromeEnabled) else nil,
+				Unibar = if not FFlagAddTraversalBackButton
+					then self:renderUnibarFrame(chromeEnabled, persistentAgeRating)
+					else nil,
 
 				HealthBar = if UseUpdatedHealthBar then Roact.createElement(HealthBar, {}) else nil,
 
@@ -996,11 +1098,26 @@ function TopBarApp:renderWithStyle(style)
 
 				StackedElements = Roact.createElement("Frame", {
 					BackgroundTransparency = 1,
-					Position = self.unibarRightSidePosition,
+					Position = if persistentAgeRating and not useV2ShopIcon
+						then Roact.joinBindings({
+							width = self.ageRatingControlsWidth,
+							visible = self.ageRatingControlsVisible,
+						}):map(function(values)
+							return UDim2.fromOffset(if FFlagAddTraversalBackButton or values.visible then values.width else 0, 0)
+						end)
+						else self.unibarRightSidePosition,
 					Size = UDim2.new(1, 0, 1, 0),
 				}, {
 					Padding = Roact.createElement("UIPadding", {
-						PaddingLeft = UDim.new(0, stackedElementsPaddingLeft),
+						PaddingLeft = if persistentAgeRating and not useV2ShopIcon
+							then Roact.joinBindings({
+								visible = self.ageRatingControlsVisible,
+								width = self.ageRatingControlsWidth,
+							}):map(function(values)
+								local hasControls = values.visible or (FFlagAddTraversalBackButton and values.width > 0)
+								return UDim.new(0, if hasControls then stackedElementsPaddingLeft else 0)
+							end)
+							else UDim.new(0, stackedElementsPaddingLeft),
 					}),
 					Layout = Roact.createElement("UIListLayout", {
 						Padding = UDim.new(0, topBarPadding),
@@ -1030,6 +1147,8 @@ function TopBarApp:renderWithStyle(style)
 								else nil,
 						})
 						else nil,
+
+					AgeRating = if not useV2ShopIcon then ageRating else nil,
 
 					HealthBar = if UseUpdatedHealthBar
 						then nil
@@ -1101,7 +1220,7 @@ function TopBarApp:renderWithStyle(style)
 
 				MenuIcon = not isNewTiltIconEnabled() and Roact.createElement(MenuIcon, {
 					layoutOrder = 1,
-					showBadgeOver12 = self.props.showGameAgeRating,
+					showBadgeOver12 = self.props.showGameAgeRating and not persistentAgeRating,
 					onAreaChanged = if FFlagTopBarSignalizeKeepOutAreas
 						then self.keepOutAreasStore.setKeepOutArea
 						else nil,

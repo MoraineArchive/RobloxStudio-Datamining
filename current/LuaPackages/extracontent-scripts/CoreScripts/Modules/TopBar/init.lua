@@ -7,6 +7,8 @@ local IXPService = game:GetService("IXPService")
 local LocalizationService = game:GetService("LocalizationService")
 
 local SharedFlags = require(CorePackages.Workspace.Packages.SharedFlags)
+local FFlagBuildExperienceInGameShell = SharedFlags.FFlagBuildExperienceInGameShell
+local shouldSkipHistoricalMessage = require(CorePackages.Workspace.Packages.ExpChat).shouldSkipHistoricalMessage
 
 local FFlagAddTopBarScrim = require(script.Flags.FFlagAddTopBarScrim)
 
@@ -20,6 +22,7 @@ local React = require(CorePackages.Packages.React)
 local Roact = require(CorePackages.Packages.Roact)
 local Rodux = require(CorePackages.Packages.Rodux)
 local RoactRodux = require(CorePackages.Packages.RoactRodux)
+local Signals = if FFlagBuildExperienceInGameShell then require(CorePackages.Packages.Signals) else nil :: never
 local UIBlox = require(CorePackages.Packages.UIBlox)
 
 local Foundation = require(CorePackages.Packages.Foundation)
@@ -60,24 +63,41 @@ local FFlagTopBarDeprecateDisplayOptionsRodux = require(script.Flags.FFlagTopBar
 local FFlagTopBarRefactor = require(CorePackages.Workspace.Packages.InExperienceTopBar).Flags.FFlagTopBarRefactor
 local FFlagEnablePlaytestModeUnibar = SharedFlags.FFlagEnablePlaytestModeUnibar
 
+local disposeGlobalGuiInsetEffect
 if ChromeEnabled then
-	local function SetGlobalGuiInset()
-		-- set this prior to TopBarApp require
-		local guiInsetTopLeft, guiInsetBottomRight = GuiService:GetGuiInset()
-		GuiService:SetGlobalGuiInset(
-			guiInsetTopLeft.X,
-			Constants.ApplyDisplayScale(Constants.TopBarHeight),
-			guiInsetBottomRight.X,
-			guiInsetBottomRight.Y
-		)
-		Display.GetDisplayStore().setGuiInset({
-			left = guiInsetTopLeft.X,
-			top = Constants.ApplyDisplayScale(Constants.TopBarHeight),
-			right = guiInsetBottomRight.X,
-			bottom = guiInsetBottomRight.Y,
-		})
+	if FFlagBuildExperienceInGameShell then
+		local displayStore = Display.GetDisplayStore(false)
+		displayStore.setGuiInset(function(previous)
+			return {
+				left = previous.left,
+				top = Constants.ApplyDisplayScale(Constants.TopBarHeight),
+				right = previous.right,
+				bottom = previous.bottom,
+			}
+		end)
+		disposeGlobalGuiInsetEffect = Signals.createEffect(function(scope)
+			local guiInset = displayStore.getGuiInset(scope)
+			GuiService:SetGlobalGuiInset(guiInset.left, guiInset.top, guiInset.right, guiInset.bottom)
+		end)
+	else
+		local function SetGlobalGuiInset()
+			-- set this prior to TopBarApp require
+			local guiInsetTopLeft, guiInsetBottomRight = GuiService:GetGuiInset()
+			GuiService:SetGlobalGuiInset(
+				guiInsetTopLeft.X,
+				Constants.ApplyDisplayScale(Constants.TopBarHeight),
+				guiInsetBottomRight.X,
+				guiInsetBottomRight.Y
+			)
+			Display.GetDisplayStore().setGuiInset({
+				left = guiInsetTopLeft.X,
+				top = Constants.ApplyDisplayScale(Constants.TopBarHeight),
+				right = guiInsetBottomRight.X,
+				bottom = guiInsetBottomRight.Y,
+			})
+		end
+		SetGlobalGuiInset()
 	end
-	SetGlobalGuiInset()
 end
 
 local TopBarApp = if FFlagTopBarRefactor
@@ -138,6 +158,9 @@ end
 
 local TopBar: any = {}
 TopBar.__index = TopBar
+if FFlagBuildExperienceInGameShell then
+	TopBar._disposeGlobalGuiInsetEffect = disposeGlobalGuiInsetEffect
+end
 
 function TopBar.new()
 	local self = setmetatable({}, TopBar)
@@ -287,7 +310,10 @@ function TopBar.new()
 	-- add binding
 	if not FFlagTopBarDeprecateChatRodux then
 		local TextChatService = game:GetService("TextChatService")
-		TextChatService.MessageReceived:Connect(function()
+		TextChatService.MessageReceived:Connect(function(textChatMessage)
+			if shouldSkipHistoricalMessage(textChatMessage) then
+				return
+			end
 			self.store:dispatch(UpdateUnreadMessagesBadge(1))
 		end)
 	end

@@ -4,26 +4,18 @@ local Types = require(root.util.Types)
 local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 
-local getFFlagUGCValidateMigrateCurveAnim = require(root.flags.getFFlagUGCValidateMigrateCurveAnim)
 local GetFStringUGCValidationMaxAnimationLength = require(root.flags.GetFStringUGCValidationMaxAnimationLength)
 local GetFStringUGCValidateFrameDeltaKeyTimeTol = require(root.flags.GetFStringUGCValidateFrameDeltaKeyTimeTol)
 local getFIntUGCValidateMaxAnimationFPS = require(root.flags.getFIntUGCValidateMaxAnimationFPS)
 local getFIntUGCValidateMaxMarkerCurveValueLength = require(root.flags.getFIntUGCValidateMaxMarkerCurveValueLength)
-local getFFlagUGCValidateRestrictNumMarkersInsideMarkerCurves =
-	require(root.flags.getFFlagUGCValidateRestrictNumMarkersInsideMarkerCurves)
 local getFIntUGCValidateMaxTotalInternalMarkers = require(root.flags.getFIntUGCValidateMaxTotalInternalMarkers)
-local getFFlagUGCValidationAnimationPackSupport = require(root.flags.getFFlagUGCValidationAnimationPackSupport)
-
 local CurveAnimNumericalDataValid = {}
 
-CurveAnimNumericalDataValid.categories = { ValidationEnums.UploadCategory.EMOTE_ANIMATION }
-if getFFlagUGCValidationAnimationPackSupport() then
-	table.insert(CurveAnimNumericalDataValid.categories, ValidationEnums.UploadCategory.ANIMATION)
-end
+CurveAnimNumericalDataValid.categories =
+	{ ValidationEnums.UploadCategory.EMOTE_ANIMATION, ValidationEnums.UploadCategory.ANIMATION }
 CurveAnimNumericalDataValid.requiredData = {
 	ValidationEnums.SharedDataMember.curveAnimations,
 }
-CurveAnimNumericalDataValid.fflag = getFFlagUGCValidateMigrateCurveAnim
 CurveAnimNumericalDataValid.expectedFailures = {}
 CurveAnimNumericalDataValid.prereqTests = { ValidationEnums.ValidationModule.CurveAnimDataAvailable }
 
@@ -57,23 +49,13 @@ CurveAnimNumericalDataValid.run = function(reporter: Types.ValidationReporter, d
 		for _, desc: any in inst:GetDescendants() do
 			if desc:IsA("MarkerCurve") then
 				local allMarkers = desc:GetMarkers()
-				if getFFlagUGCValidateRestrictNumMarkersInsideMarkerCurves() then
-					local maxInternalMarkers = math.min(getFIntUGCValidateMaxTotalInternalMarkers(), maxTotalKeys)
-					if #allMarkers > maxInternalMarkers then
-						reporter:fail(ErrorSourceStrings.Keys.CurveAnim_TooManyMarkers, {
-							count = tostring(#allMarkers),
-							maxAllowed = tostring(maxInternalMarkers),
-						})
-						return
-					end
-				else
-					if #allMarkers > maxTotalKeys then
-						reporter:fail(ErrorSourceStrings.Keys.CurveAnim_TooManyMarkers, {
-							count = tostring(#allMarkers),
-							maxAllowed = tostring(maxTotalKeys),
-						})
-						return
-					end
+				local maxInternalMarkers = math.min(getFIntUGCValidateMaxTotalInternalMarkers(), maxTotalKeys)
+				if #allMarkers > maxInternalMarkers then
+					reporter:fail(ErrorSourceStrings.Keys.CurveAnim_TooManyMarkers, {
+						count = tostring(#allMarkers),
+						maxAllowed = tostring(maxInternalMarkers),
+					})
+					return
 				end
 
 				for _, marker in allMarkers do

@@ -9,12 +9,11 @@ local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 local ReferenceUVValues = require(root.WrapTargetCageUVReferenceValues)
 local createEditableInstancesForContext = require(root.util.createEditableInstancesForContext)
 
-local getFFlagUGCValidateMigrateWrapAndMakeup = require(root.flags.getFFlagUGCValidateMigrateWrapAndMakeup)
+local getFFlagUGCValidationAllowFullVaas = require(root.flags.getFFlagUGCValidationAllowFullVaas)
 
 -- Server-side and IEC consumer routing. Read directly from `consumerConfig.source`
--- because consumerEnv is only assigned when FFlagUGCValidateMigrateSchemaProperties
--- is on (see ValidationManager.lua:445-451); under flag-off it is nil and a
--- consumerEnv comparison spuriously skips the RCC-retry and IEC pre-load paths.
+-- (always populated) so the RCC-retry and IEC pre-load paths work regardless of
+-- consumer surface.
 local SERVER_SOURCES = {
 	Publish = true,
 	Backend = true,
@@ -27,8 +26,6 @@ local IEC_SOURCES = {
 }
 
 local WrapTextureValid = {}
-
-WrapTextureValid.fflag = getFFlagUGCValidateMigrateWrapAndMakeup
 
 WrapTextureValid.categories = { ValidationEnums.UploadCategory.MAKEUP }
 
@@ -49,13 +46,15 @@ WrapTextureValid.run = function(reporter: Types.ValidationReporter, data: Types.
 	end
 	local wrapTextureTransfer = wrapTextureTransferOpt :: WrapTextureTransfer
 
-	local source = data.consumerConfig.source
-	local isBackend = SERVER_SOURCES[source] == true
-	-- Match legacy `getEditableMeshFromContext` behavior: IEC consumers may
-	-- pre-load the cage mesh on `content.Object`, so allowEditableInstances
-	-- must be true for IEC paths. Hardcoding false (the prior shape) silently
-	-- regressed IEC uploads.
-	local allowEditableInstances = IEC_SOURCES[source] == true
+	local consumerConfig = data.consumerConfig
+	-- Capability-gated: escalation-to-retry on cage/UV-load failure depends on where validation runs; route by validationEnv under the flag.
+	local routeByEnv = getFFlagUGCValidationAllowFullVaas() and consumerConfig.isVaaS
+	local isBackend = if routeByEnv
+		then consumerConfig.validationEnv == ValidationEnums.ValidationEnv.Backend
+		else SERVER_SOURCES[consumerConfig.source] == true
+	-- Lifecycle (honest origin): IEC-origin uploads may pre-load the cage mesh on `content.Object`, so they keep the
+	-- editable-instance allowance even when re-run on a VaaS backend. Hardcoding false silently regressed IEC uploads.
+	local allowEditableInstances = IEC_SOURCES[consumerConfig.source] == true
 
 	reporter:setReportingInstance(wrapTextureTransfer)
 

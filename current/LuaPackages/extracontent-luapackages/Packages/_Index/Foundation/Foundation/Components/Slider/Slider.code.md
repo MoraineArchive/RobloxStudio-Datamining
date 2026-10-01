@@ -14,7 +14,9 @@ Slider is designed such that the consumer controls the current bar fill percenta
 
 To create a basic form field the main props to supply are `value` and `onValueChanged`. This is enough to allow the user to drag the bar around, and the `value` binding can then be read when submitting the form.
 
-When a horizontal slider is selected with directional navigation, Left/Right adjust the value and repeat while held. Up/Down continue moving focus away from the slider. A vertical slider uses Up/Down to adjust the value and allows Left/Right to move focus away. L1/R1 take a larger page step (~10% of the range) in either orientation.
+Directional navigation uses two stages. When focus lands on a Slider, every direction can move to a neighboring control and the value does not change. Press A or Enter to capture the Slider and move selection to its active knob. While captured, Left/Right adjust a horizontal Slider and Up/Down adjust a vertical Slider; the cross axis is inert. Press B or Backspace to return selection to the whole control.
+
+Directional input uses `step` when supplied, or 1% of the range otherwise. Held input starts repeating after 400 ms. Continuous Sliders accelerate through faster repeat intervals, while stepped Sliders retain a fixed interval. Slider does not claim L1/R1 for coarse adjustment.
 
 Set `orientation` to `Orientation.Vertical` to fill upward from the bottom of the track. For a vertical Slider, `width` specifies the track length.
 
@@ -38,6 +40,27 @@ local function FormSlider()
 	})
 end
 ```
+
+Use `SliderType.Range` with a `NumberRange` binding to select an interval. Capturing a Range Slider activates the thumb nearest the direction focus entered from. While captured, press A or Enter to toggle the active thumb. Thumbs retain their minimum or maximum identity and stop when they meet.
+
+```luau
+local Foundation = require(Packages.Foundation)
+local Slider = Foundation.Slider
+local SliderType = Foundation.Enums.SliderType
+
+local function PriceRange()
+	local value, setValue = React.useBinding(NumberRange.new(25, 75))
+
+	return React.createElement(Slider, {
+		type = SliderType.Range,
+		value = value,
+		onValueChanged = setValue,
+		range = NumberRange.new(0, 100),
+	})
+end
+```
+
+Directional capture currently follows `GuiService.SelectedObject` for PlayerGui surfaces. CoreGui surfaces that use `SelectedCoreObject` do not yet support this capture model.
 
 A more complex example would be a media timeline that progresses independently and allows the user to scrub along it to skip to where they want in the media's playback.
 

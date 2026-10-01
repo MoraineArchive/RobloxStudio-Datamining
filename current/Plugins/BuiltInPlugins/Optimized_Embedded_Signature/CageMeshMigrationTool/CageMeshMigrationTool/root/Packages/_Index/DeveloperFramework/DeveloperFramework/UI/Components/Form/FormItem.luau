@@ -18,7 +18,6 @@ local TextLabel = require(Framework.UI.Components.TextLabel)
 local Tooltip = require(Framework.UI.Components.Tooltip)
 
 local getFFlagDevFrameworkAdjustTextFontSize = require(Framework.SharedFlags.getFFlagDevFrameworkAdjustTextFontSize)
-local getFFlagDevFrameworkFormAlignment = require(Framework.SharedFlags.getFFlagDevFrameworkFormAlignment)
 
 local COMPONENT_NAME = "FormItem"
 
@@ -336,9 +335,7 @@ function FormItem:render()
 				Size = if layout == Enum.FillDirection.Vertical
 					then UDim2.new(1, 0, 0, props.Height or props.LabelHeight or 0)
 					else size,
-				VerticalAlignment = if getFFlagDevFrameworkFormAlignment()
-					then Enum.VerticalAlignment.Center
-					else Enum.VerticalAlignment.Top,
+				VerticalAlignment = Enum.VerticalAlignment.Center,
 			}, {
 				PropertyCell = Roact.createElement(PropertyCell, {
 					AutomaticSize = if props.Height then nil else Enum.AutomaticSize.Y,

@@ -79,7 +79,7 @@ local function RadioGroupItem(radioGroupItemProps: RadioGroupItemProps, ref: Rea
 			label = {
 				text = label,
 				position = Constants.INPUT_PLACEMENT_TO_LABEL_ALIGNMENT[props.placement],
-				hint = if Flags.FoundationRadioBeta then props.hint else nil,
+				hint = props.hint,
 			},
 			customVariantProps = variantProps.input,
 			size = props.size,

@@ -53,6 +53,15 @@ if FFlagIEMSettingsGroups then
 	renderSettingsHeader = require(RobloxGui.Modules.Settings.Components.renderSettingsHeader)
 	renderSettingsDivider = require(RobloxGui.Modules.Settings.Components.renderSettingsDivider)
 end
+local FFlagEnablePioneerIGMSettingsBanner =
+	require(RobloxGui.Modules.Settings.Flags.FFlagEnablePioneerIGMSettingsBanner)
+local renderMoreSettingsBanner
+if FFlagEnablePioneerIGMSettingsBanner then
+	local isPioneerLaunch = require(CorePackages.Workspace.Packages.PioneerUtils).isPioneerLaunch
+	if isPioneerLaunch() then
+		renderMoreSettingsBanner = require(RobloxGui.Modules.Settings.Components.renderMoreSettingsBanner)
+	end
+end
 local PermissionsProtocol = require(CorePackages.Workspace.Packages.PermissionsProtocol).PermissionsProtocol.default
 local isVoiceFocused = require(CorePackages.Workspace.Packages.CrossExperience).Utils.isVoiceFocused
 local observeIsVoiceFocused = require(CorePackages.Workspace.Packages.CrossExperience).Utils.observeIsVoiceFocused
@@ -91,6 +100,7 @@ local FFlagExpChatEnableFriendsTab = SharedFlags.FFlagExpChatEnableFriendsTab
 local FFlagVoiceRewarmTelemetry = SharedFlags.FFlagVoiceRewarmTelemetry
 local FFlagDebounceVoiceSelectorIndexChange = game:DefineFastFlag("DebounceVoiceSelectorIndexChange", false)
 local FFlagVoiceSelectorIgnoreFailedStateDisconnect = game:DefineFastFlag("VoiceSelectorIgnoreFailedStateDisconnect", false)
+local FFlagVoiceConnectSelectorDebounce = game:DefineFastFlag("VoiceConnectSelectorDebounce", false)
 local FFlagVoiceVolumeControlsEnableVoiceChatVolumeSlider =
 	require(RobloxGui.Modules.Settings.Flags.FFlagVoiceVolumeControlsEnableVoiceChatVolumeSlider)
 local FFlagVoiceVolumeControlsFixSliderVisibilityOnEligibleGames =
@@ -260,6 +270,7 @@ local Cryo = require(CorePackages.Packages.Cryo)
 local GfxReset = require(script.Parent.Parent.GfxReset)
 local Create = require(CorePackages.Workspace.Packages.AppCommonLib).Create
 local throttle = require(CoreGui.RobloxGui.Modules.Settings.Pages.ShareGame.ThrottleFunctionCall)
+local debounce = require(RobloxGui.Modules.Chrome.ChromeShared.Utility.debounce)
 local BuilderIcons = require(CorePackages.Packages.BuilderIcons)
 local Signals = require(CorePackages.Packages.Signals)
 local migrationLookup = BuilderIcons.Migration
@@ -3991,9 +4002,25 @@ local function Initialize()
 			end
 		end
 
-		this.VoiceConnectDisconnectSelector.IndexChanged:connect(
-			if useDebounce then throttle(debounceDelay, onSelectorIndexChanged) else onSelectorIndexChanged
-		)
+		if FFlagVoiceConnectSelectorDebounce then
+			local debouncedRunner = if useDebounce then debounce(onSelectorIndexChanged, debounceDelay) else onSelectorIndexChanged
+			this.VoiceConnectDisconnectSelector.IndexChanged:connect(function(newIndex)
+				if FFlagDifferentiateVoiceSelectorSystemAndUser then
+					if isProgrammaticChange then
+						-- Programmatic (system-driven) change: run synchronously so it bypasses the
+						-- debounce -- it can't cancel a pending user tap, and it early-returns without
+						-- firing a voice op or click telemetry (isProgrammaticChange is still set here).
+						onSelectorIndexChanged(newIndex)
+						return
+					end
+				end
+				debouncedRunner(newIndex)
+			end)
+		else
+			this.VoiceConnectDisconnectSelector.IndexChanged:connect(
+				if useDebounce then throttle(debounceDelay, onSelectorIndexChanged) else onSelectorIndexChanged
+			)
+		end
 
     	if FFlagVoiceChatSelectorReconnectFocus then
 			this.VoiceConnectDisconnectFrame.SelectionChanged:Connect(function(_, previousSelection, newSelection)
@@ -4030,6 +4057,21 @@ local function Initialize()
 			else
 				if newState == (Enum :: any).VoiceChatState.Failed then
 					this.VoiceConnectDisconnectSelector:SetSelectionIndex(disconnectedIndex)
+				end
+			end
+
+			if FFlagVoiceConnectSelectorDebounce then
+				if FFlagDifferentiateVoiceSelectorSystemAndUser then
+					-- The Differentiate path syncs Joined/Failed but not Ended/Idle, which can leave the
+					-- toggle stuck on Connected after an external disconnect; reconcile it here.
+					if
+						newState == (Enum :: any).VoiceChatState.Ended
+						or newState == (Enum :: any).VoiceChatState.Idle
+					then
+						if this.VoiceConnectDisconnectSelector:GetSelectedIndex() ~= disconnectedIndex then
+							this.VoiceConnectDisconnectSelector:SetSelectionIndex(disconnectedIndex)
+						end
+					end
 				end
 			end
 
@@ -4467,16 +4509,34 @@ local function Initialize()
 					end
 
 					if GetFFlagEnableVoiceUxUpdates() then
-						if FFlagDifferentiateVoiceSelectorSystemAndUser and FFlagDeferProgrammaticChange then
-							isProgrammaticChange = true
+						if FFlagVoiceConnectSelectorDebounce then
+							-- Only sync to connected if the selector isn't already there; under the debounce a
+							-- redundant SetSelectionIndex would replay the connect animation.
+							if this.VoiceConnectDisconnectSelector:GetSelectedIndex() ~= 2 then
+								if FFlagDifferentiateVoiceSelectorSystemAndUser and FFlagDeferProgrammaticChange then
+									isProgrammaticChange = true
 
-							this.VoiceConnectDisconnectSelector:SetSelectionIndex(2)
+									this.VoiceConnectDisconnectSelector:SetSelectionIndex(2)
 
-							task.defer(function()
-								isProgrammaticChange = false
-							end)
+									task.defer(function()
+										isProgrammaticChange = false
+									end)
+								else
+									this.VoiceConnectDisconnectSelector:SetSelectionIndex(2)
+								end
+							end
 						else
-							this.VoiceConnectDisconnectSelector:SetSelectionIndex(2)
+							if FFlagDifferentiateVoiceSelectorSystemAndUser and FFlagDeferProgrammaticChange then
+								isProgrammaticChange = true
+
+								this.VoiceConnectDisconnectSelector:SetSelectionIndex(2)
+
+								task.defer(function()
+									isProgrammaticChange = false
+								end)
+							else
+								this.VoiceConnectDisconnectSelector:SetSelectionIndex(2)
+							end
 						end
 
 					else
@@ -4812,6 +4872,13 @@ local function Initialize()
 	allSettingsCreated = true
 	if VRService.VREnabled then
 		onVRSettingsReady()
+	end
+
+	if renderMoreSettingsBanner then
+		this.MoreSettingsBanner = renderMoreSettingsBanner({
+			layoutOrder = SETTINGS_MENU_LAYOUT_ORDER.MoreSettingsBanner,
+			parent = this.Page,
+		})
 	end
 
 	if FFlagIEMSettingsGroups then

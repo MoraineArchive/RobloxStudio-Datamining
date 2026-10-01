@@ -28,6 +28,11 @@ local OnboardingModal = Roact.PureComponent:extend("OnboardingModal")
 local CoreGuiCommon = require(CorePackages.Workspace.Packages.CoreGuiCommon)
 local FFlagTopBarSignalizeScreenSize = CoreGuiCommon.Flags.FFlagTopBarSignalizeScreenSize
 
+local CoreGui = game:GetService("CoreGui")
+local RobloxGui = CoreGui:WaitForChild("RobloxGui")
+local GetFFlagEnableSendImageFeedbackToBackend =
+	require(RobloxGui.Modules.Flags.GetFFlagEnableSendImageFeedbackToBackend)
+
 local HEIGHT = 200
 local WIDTH = 540
 local BUTTON_HEIGHT = 36
@@ -61,7 +66,9 @@ end
 function OnboardingModal:render()
 	return withLocalization({
 		mainHeader = "CoreScripts.Feedback.Onboarding.MainHeader",
-		instructionLabel = "CoreScripts.Feedback.Onboarding.Instructions",
+		instructionLabel = if GetFFlagEnableSendImageFeedbackToBackend()
+			then "CoreScripts.Feedback.Onboarding.InstructionsWithImage"
+			else "CoreScripts.Feedback.Onboarding.Instructions",
 		cancel = "CoreScripts.Feedback.Onboarding.Cancel",
 		start = "CoreScripts.Feedback.Onboarding.Start",
 	})(function(localized)

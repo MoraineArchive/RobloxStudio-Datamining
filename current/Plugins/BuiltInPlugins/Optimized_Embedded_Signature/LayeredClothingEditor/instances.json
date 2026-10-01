@@ -2857,8 +2857,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "246",
-      "SourceBytecodeSha256": "e5d99915a460b9e2e571d17950ec2a764e62589cfc33ea174368000e5be0afbe",
+      "SourceBytecodeBytes": "558",
+      "SourceBytecodeSha256": "86642c84be13a3e19739e8dbf323a5815c9d835c405644e8acecab6f31f9ddba",
       "Tags": ""
     },
     "unreadable": [
@@ -4329,8 +4329,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "592",
-      "SourceBytecodeSha256": "a100719a7d2cf24d069cb98bd87d6e91e41c8f5a636d34c07d829104234e9d4c",
+      "SourceBytecodeBytes": "608",
+      "SourceBytecodeSha256": "34e616cfb97da40b00d317b649865dffae9cc48d565abdbe3447109270fa6a14",
       "Tags": ""
     },
     "unreadable": [
@@ -4377,8 +4377,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3372",
-      "SourceBytecodeSha256": "a17a357af31532c99421608b87968c5794f30146cc21a10fc42e2dae01447636",
+      "SourceBytecodeBytes": "3782",
+      "SourceBytecodeSha256": "c8ee42adfed59a09fcb71b07e725ff28ad5afe10ab793aa53deb623b532f3870",
       "Tags": ""
     },
     "unreadable": [
@@ -5289,8 +5289,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "588",
-      "SourceBytecodeSha256": "d3227f28718569ec49c7f727f7ab2ec9bc3d7ace90e7a848cb43931d7b3fb079",
+      "SourceBytecodeBytes": "604",
+      "SourceBytecodeSha256": "74758a9b5c86d3e4942204b4672289420135dd64178119384e09895454e03ae8",
       "Tags": ""
     },
     "unreadable": [
@@ -5875,6 +5875,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "calculateSliderFraction",
+    "path": "LayeredClothingEditor/Packages/_Index/Foundation/Foundation/Components/Slider/calculateSliderFraction",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "559",
+      "SourceBytecodeSha256": "3c306d3fc96060db0ccec3f85241dcdcc427adf760bceb274474af81879c778d",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "calculateSliderPositionDelta",
     "path": "LayeredClothingEditor/Packages/_Index/Foundation/Foundation/Components/Slider/calculateSliderPositionDelta",
     "properties": {
@@ -5930,7 +5946,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "608",
-      "SourceBytecodeSha256": "0537a14ab5ff537d8e40b5ed5291a68e1f58c646932800ed7599a09726ae23a2",
+      "SourceBytecodeSha256": "87ad26b7c0c6f6b45dde0458769756b007974e684a9405f59ae466d8c0966183",
       "Tags": ""
     },
     "unreadable": [
@@ -6073,8 +6089,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "576",
-      "SourceBytecodeSha256": "1600458586412047e8cfeb242e1a9c04e3a0844c51d41f68f76e5da19ca77def",
+      "SourceBytecodeBytes": "592",
+      "SourceBytecodeSha256": "5dec782a1253157b584231e22489cae1fe036a1d6ea4aab40636aa3361dda044",
       "Tags": ""
     },
     "unreadable": [
@@ -6265,8 +6281,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "588",
-      "SourceBytecodeSha256": "a8bdbba8eac28cfdeee0bef8ea1f6d7a6c5a310c8cc552a7ea6296533db5bc37",
+      "SourceBytecodeBytes": "604",
+      "SourceBytecodeSha256": "2419496a521ecb37e832c24b7d0ddf8c992dcad5471384919c6b07fcd493c8de",
       "Tags": ""
     },
     "unreadable": [
@@ -6313,8 +6329,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3503",
-      "SourceBytecodeSha256": "a25ecab5bfdd143ef30fb367cb36b41c8b9c577001d0a4c35066666768a6b98a",
+      "SourceBytecodeBytes": "3364",
+      "SourceBytecodeSha256": "3a0fdfd5bf06adc044409bc8f197dde9d6c420265b1475213e0d77a498639e7e",
       "Tags": ""
     },
     "unreadable": [
@@ -7081,8 +7097,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "604",
-      "SourceBytecodeSha256": "cf00d554d7f22dc1503f5a944a3e8ec7585f15cda0679300d4398013dc73812e",
+      "SourceBytecodeBytes": "620",
+      "SourceBytecodeSha256": "138cf0ec5046e7b9dd18bc01f731b113fe24993df31772eab786059788ab43d1",
       "Tags": ""
     },
     "unreadable": [
@@ -8923,22 +8939,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "154",
       "SourceBytecodeSha256": "80de782b589b1ac49c9cf16060dad054b330cf98cfd6a2cc6c56a6bbb379614f",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "createPlannedSubPartStory",
-    "path": "LayeredClothingEditor/Packages/_Index/Foundation/Foundation/Utility/Stories/createPlannedSubPartStory",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "616",
-      "SourceBytecodeSha256": "cd30f49e554f70ebe33b47be51fb90983c3542a0751e91a725927749350d2ae2",
       "Tags": ""
     },
     "unreadable": [
@@ -12297,8 +12297,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "580",
-      "SourceBytecodeSha256": "1aa3ba7f67342eeb169b4b49ea53ad1ab042caaba4c18ae1e46860875d3ad7aa",
+      "SourceBytecodeBytes": "596",
+      "SourceBytecodeSha256": "7b1d76db41bc859a8a15c187a0ea8760f4f5586de9b276b2972a05baf73f18e6",
       "Tags": ""
     },
     "unreadable": [
@@ -14201,8 +14201,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5240",
-      "SourceBytecodeSha256": "666b3137ee194132b1ea9e090c9bf4e6bc88c6fefbddc248dc9912556c0ceb1c",
+      "SourceBytecodeBytes": "5415",
+      "SourceBytecodeSha256": "fe1f739966b470052291ec1095a06b01da9e7030f36544183b6f06f6b2e54e33",
       "Tags": ""
     },
     "unreadable": [
@@ -14713,8 +14713,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "10609",
-      "SourceBytecodeSha256": "7c901bfff92522f746989abc5c1ee6d3bc7e8c70543bf10c7ea79f202db40fb3",
+      "SourceBytecodeBytes": "10534",
+      "SourceBytecodeSha256": "aef441fa7c805e3340e3a56782f9f1bfa973aa4f6da827fb9d6a3790deb0e7ff",
       "Tags": ""
     },
     "unreadable": [
@@ -15188,7 +15188,7 @@
   {
     "class": "ModuleScript",
     "name": "FullyConfigurable.story",
-    "path": "LayeredClothingEditor/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Hooks/useDialog/FullyConfigurable.story",
+    "path": "LayeredClothingEditor/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Hooks/RESTRICTED_useDialog/FullyConfigurable.story",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -16019,22 +16019,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkFormAlignment",
-    "path": "LayeredClothingEditor/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkFormAlignment",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "211",
-      "SourceBytecodeSha256": "b8f053bfcb8f80d68ce5737649ddfbbbc383b1a90e2349ec8b8ba8d0ee9dfb9c",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "getFFlagDevFrameworkHighlighterHooks",
     "path": "LayeredClothingEditor/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkHighlighterHooks",
     "properties": {
@@ -16059,38 +16043,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "215",
       "SourceBytecodeSha256": "3fcb8527fb5377b9c0d0a9573955ad4fc0e6c7d13f5c30d2e972112360d4dbac",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkKeyboardNavComponentChanges",
-    "path": "LayeredClothingEditor/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkKeyboardNavComponentChanges",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "224",
-      "SourceBytecodeSha256": "3eb174fae25b54e59687a8408b44bd38e3bed4c9c8894816a4b67927d2d28e10",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkMemStorageServiceMocks",
-    "path": "LayeredClothingEditor/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkMemStorageServiceMocks",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "219",
-      "SourceBytecodeSha256": "8a15536a4261505583659cefce78ac3913e79e922abf6a287d2e3beabba855e0",
       "Tags": ""
     },
     "unreadable": [
@@ -16187,6 +16139,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "215",
       "SourceBytecodeSha256": "4aaa0399127fa4dc2f8a1afb97c4e9e3a117ace00937876ac16a08217545ae7e",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "getFFlagDevFrameworkUsesFoundationDialog",
+    "path": "LayeredClothingEditor/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkUsesFoundationDialog",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "217",
+      "SourceBytecodeSha256": "bfeea9f7f53924f05f333c470d9c0339e03a65097efa44bca8646bfadb79cec7",
       "Tags": ""
     },
     "unreadable": [
@@ -16619,6 +16587,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "546",
       "SourceBytecodeSha256": "2d4d79391a05e73b989e3f3523650077f67abe230376f2e19bb1236ddfad221e",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "getGuiInputPosition",
+    "path": "LayeredClothingEditor/Packages/_Index/Foundation/Foundation/Components/Slider/getGuiInputPosition",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "580",
+      "SourceBytecodeSha256": "e086df53b7db0c7fdab2b6b67bb4ac70c4262ca388db7d2d472d9c38c1d11cb0",
       "Tags": ""
     },
     "unreadable": [
@@ -17465,8 +17449,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "241",
-      "SourceBytecodeSha256": "153426a93cf290260bb0f4ba0e522461fc8258a802dc82fc7d16f1132ccbdf24",
+      "SourceBytecodeBytes": "548",
+      "SourceBytecodeSha256": "a22608a66da30d60da4986d7d9d110f9edf520fa4baf535c5708d123e36c90f4",
       "Tags": ""
     },
     "unreadable": [
@@ -17481,8 +17465,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "242",
-      "SourceBytecodeSha256": "d439d08d7c47786c58294298ee0e1ad235323828293ecffae78f96995eb58bd1",
+      "SourceBytecodeBytes": "550",
+      "SourceBytecodeSha256": "9fc4826c8b224b614f1eb28537136bb1d850cca749b9338c5f7dcb8a2451856e",
       "Tags": ""
     },
     "unreadable": [
@@ -17913,8 +17897,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "249",
-      "SourceBytecodeSha256": "3e13f295fad65b67f8cebb839a468183ce763832ecbd4bf54f3cd2184e4b8088",
+      "SourceBytecodeBytes": "564",
+      "SourceBytecodeSha256": "165d88467e07d1e3fd0608b10389f7c42c8e64c08cbde627c77c507966263436",
       "Tags": ""
     },
     "unreadable": [
@@ -17929,8 +17913,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "249",
-      "SourceBytecodeSha256": "5956e811edd747dc89bb8b39645663c9ef828a3a946286dae2abd0090db043aa",
+      "SourceBytecodeBytes": "564",
+      "SourceBytecodeSha256": "aa866fbac2010106cf3b5b9a5914c73fa156cb568c5e299302c3be498e948c18",
       "Tags": ""
     },
     "unreadable": [
@@ -17945,8 +17929,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "249",
-      "SourceBytecodeSha256": "02fe8dff6d2c7251854f2d123c2dfca5aed618cc6cd4a5fb6015ccf684e9edea",
+      "SourceBytecodeBytes": "564",
+      "SourceBytecodeSha256": "b1e9c85440a7ea7665d86e289eec38abe0c8d7b03b6ed44bd154fc45d4e25c21",
       "Tags": ""
     },
     "unreadable": [
@@ -17977,8 +17961,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "250",
-      "SourceBytecodeSha256": "8758d93ee872fc17b7a8501ec345f18f8e33c552a4ebcd766cdf60ff8741c032",
+      "SourceBytecodeBytes": "566",
+      "SourceBytecodeSha256": "06788982c60e93154cdbbeab5d4c638c916d76b9fae0c12bcb1a4f37c95cee75",
       "Tags": ""
     },
     "unreadable": [
@@ -18233,8 +18217,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "901",
-      "SourceBytecodeSha256": "cb0bd6de564dd2cb0aca45760509fd4536c4f441349f11669947ebc80e0110e0",
+      "SourceBytecodeBytes": "912",
+      "SourceBytecodeSha256": "0a9569baa231deb2f6897b682b7197fca3ac5c44fc26697dd325e99d90566793",
       "Tags": ""
     },
     "unreadable": [
@@ -19705,8 +19689,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1625",
-      "SourceBytecodeSha256": "681aaca809108b3c70ad0d04c79eb2674286dde3adf13f003394f66598b85c5c",
+      "SourceBytecodeBytes": "1476",
+      "SourceBytecodeSha256": "d1a6931f6b1ec5b5c4de3ad5751e76dd7602ff7bf489a99b6cec7550ec491212",
       "Tags": ""
     },
     "unreadable": [
@@ -19812,7 +19796,7 @@
   {
     "class": "ModuleScript",
     "name": "Intents.story",
-    "path": "LayeredClothingEditor/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Hooks/useDialog/Intents.story",
+    "path": "LayeredClothingEditor/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Hooks/RESTRICTED_useDialog/Intents.story",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -21465,8 +21449,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4136",
-      "SourceBytecodeSha256": "e67bcdd9516a32a05539ccfadb29fa2880f46f7eb811db4c87d1397a4a09ed76",
+      "SourceBytecodeBytes": "4713",
+      "SourceBytecodeSha256": "8be8a44f9e2f95be82a97d4c5e1cd9335696b54f4ec821cc8bf9da17a446758f",
       "Tags": ""
     },
     "unreadable": [
@@ -22489,8 +22473,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "576",
-      "SourceBytecodeSha256": "3f03fe0ba5e5998e77bcdce2253745bff98e0bde9fe9d2b2d558be9c97a0d290",
+      "SourceBytecodeBytes": "592",
+      "SourceBytecodeSha256": "56bbddba85fc07913d9434a6a1a10c9794e95829c0a1db4f5e75205b2aa466b3",
       "Tags": ""
     },
     "unreadable": [
@@ -24329,8 +24313,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "584",
-      "SourceBytecodeSha256": "f1a895cc7b41587d034a67208425599f11518a8c6b2f00653daf8bb4fb2374c6",
+      "SourceBytecodeBytes": "600",
+      "SourceBytecodeSha256": "cabe8ff00066c3913d412d1c99bf8873d9b3dfb256762fac250225c27e21b4f8",
       "Tags": ""
     },
     "unreadable": [
@@ -25129,8 +25113,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "594",
-      "SourceBytecodeSha256": "d48d760c04ffd96d77acd3a5cb5d6dc9cced56384d95b512d8a045af770b2117",
+      "SourceBytecodeBytes": "610",
+      "SourceBytecodeSha256": "377d2219a929d2c5896aa4519407652502bd5b3c495fe842299ae4f545fa4ce4",
       "Tags": ""
     },
     "unreadable": [
@@ -25145,8 +25129,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "596",
-      "SourceBytecodeSha256": "60f99cd839ead3d2162edb20f5c45c2e3f19150440fa2e70765498724ff334ce",
+      "SourceBytecodeBytes": "612",
+      "SourceBytecodeSha256": "324f2c543af325ad2c1dd7755d5a807c39d2da3861dbf140c17c9a5aa21c1db0",
       "Tags": ""
     },
     "unreadable": [
@@ -25369,8 +25353,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "592",
-      "SourceBytecodeSha256": "b7e23dd98364948954c1f0cf93d31c2ccc4332dc40ea2bcba1bfef2c8c556731",
+      "SourceBytecodeBytes": "608",
+      "SourceBytecodeSha256": "a5b331300dbe3600a5d766fb5ad638fae2431a467a03b85fd7c8e1e399e5c67a",
       "Tags": ""
     },
     "unreadable": [
@@ -26489,8 +26473,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "578",
-      "SourceBytecodeSha256": "f89b5ed97924f1c100ef65472601ca95afbe84d8ac7cc5571fe0aedd41069b02",
+      "SourceBytecodeBytes": "594",
+      "SourceBytecodeSha256": "5d3b8578dc7e24d2d4eb143773fd800935c36d6fd2ece5fdfb3061909ba7acb1",
       "Tags": ""
     },
     "unreadable": [
@@ -27113,8 +27097,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "246",
-      "SourceBytecodeSha256": "1f3abf5e506979fbe8e91a20769bfd8f9ab62316c34e0a682f566b74836c22d5",
+      "SourceBytecodeBytes": "558",
+      "SourceBytecodeSha256": "f17929300b1fe7b134f1cbbfc2e89dee4ed04f7337958914630f3da9a0babcc4",
       "Tags": ""
     },
     "unreadable": [
@@ -27129,8 +27113,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "247",
-      "SourceBytecodeSha256": "ba0e0b33c5161ed9df8bc385c4c93714b85a8e32cb615ad7de2e56cf471a14a2",
+      "SourceBytecodeBytes": "560",
+      "SourceBytecodeSha256": "20958b976f499cf7386f980a45d87267da0997f3b402ebddceebadb047bd5674",
       "Tags": ""
     },
     "unreadable": [
@@ -28409,8 +28393,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2268",
-      "SourceBytecodeSha256": "0ec7871b100bf82e5342b35d61c339379fbc4ba8bf0cbef048a282562176df20",
+      "SourceBytecodeBytes": "2166",
+      "SourceBytecodeSha256": "f73c481c9016df7530097f9730c766a2a7db47b311a493dbfb842bdc4b2f9814",
       "Tags": ""
     },
     "unreadable": [
@@ -28505,8 +28489,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4697",
-      "SourceBytecodeSha256": "7e54847439a34e96e8f3e4af3a0e7e71cb78e5da52b52c52388499b5a75e1e93",
+      "SourceBytecodeBytes": "4568",
+      "SourceBytecodeSha256": "a0a71b953ee49c1259f4e54cc502b713e4af4e7d414fdcd3074e57583ad0d410",
       "Tags": ""
     },
     "unreadable": [
@@ -31203,6 +31187,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "RESTRICTED_useDialog",
+    "path": "LayeredClothingEditor/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Hooks/RESTRICTED_useDialog",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "8545",
+      "SourceBytecodeSha256": "02d6b0353fcca4f98a8d48c5f54e4f41e827551484f20415d719349f356b8570",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "reverse",
     "path": "LayeredClothingEditor/Packages/_Index/Collections/Collections/Array/reverse",
     "properties": {
@@ -32004,7 +32004,7 @@
   {
     "class": "ModuleScript",
     "name": "SaveSequence.story",
-    "path": "LayeredClothingEditor/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Hooks/useDialog/SaveSequence.story",
+    "path": "LayeredClothingEditor/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Hooks/RESTRICTED_useDialog/SaveSequence.story",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -32377,8 +32377,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "8036",
-      "SourceBytecodeSha256": "df8800a4cf2fbaab4d08d70a33943c5d8132aee14d5d9bd10bcf3260c7a7b17b",
+      "SourceBytecodeBytes": "7902",
+      "SourceBytecodeSha256": "e87a3c1515aea12fb50e1cd3ab3fdd09783b722f9c6144f959eb31699cd3520b",
       "Tags": ""
     },
     "unreadable": [
@@ -33113,8 +33113,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3007",
-      "SourceBytecodeSha256": "9d0df032045e23be942b5abf4d0543dfe842a23ae2eddec4f28c581fd44a4f05",
+      "SourceBytecodeBytes": "2853",
+      "SourceBytecodeSha256": "9562131b0dfe07d12909a789a4e5ede39b4658baa734da90f1e11d1e5c3e7834",
       "Tags": ""
     },
     "unreadable": [
@@ -33849,8 +33849,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "245",
-      "SourceBytecodeSha256": "fd7b89bc0e8e0c5d7965d3d33f3319fe88508c8fc9772d1b6ec5e3a2d8f57e46",
+      "SourceBytecodeBytes": "556",
+      "SourceBytecodeSha256": "59fb375ea256b5b884c3a7652fad1ec3a4fa6fb3bad46c764268d1368cd87739",
       "Tags": ""
     },
     "unreadable": [
@@ -33865,8 +33865,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "245",
-      "SourceBytecodeSha256": "e89ec7c6f2822bbd98994685d1d703abfbd8bb9b89572dcb7ac8750d3c22322e",
+      "SourceBytecodeBytes": "556",
+      "SourceBytecodeSha256": "6d09c08c56eac3e957ccdb7b84d15a0a85529fe24e171155eb7cc961bc934fc4",
       "Tags": ""
     },
     "unreadable": [
@@ -33881,8 +33881,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "247",
-      "SourceBytecodeSha256": "d83ba93dce1094cef4e7ff348f601c62a6002664ce4c13183d7724c4335c9110",
+      "SourceBytecodeBytes": "560",
+      "SourceBytecodeSha256": "49ca9d7af680a0e12f28ea652c044cbd46356aebd9e7abe25232b572a27db125",
       "Tags": ""
     },
     "unreadable": [
@@ -33897,8 +33897,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "244",
-      "SourceBytecodeSha256": "61a64ff812a585aaa4b5e5bc94137a19695ccf9236ffa74385b158a48bc28cd4",
+      "SourceBytecodeBytes": "554",
+      "SourceBytecodeSha256": "b14f97ab4a4eeae08c64d205abe8e1a6ab8f8641bce7b5b9a30a44bd1fc6637d",
       "Tags": ""
     },
     "unreadable": [
@@ -34601,8 +34601,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "9277",
-      "SourceBytecodeSha256": "50c687a90a61085b7a1dc12057e023f268d6921d18f812611996b5eb84a31362",
+      "SourceBytecodeBytes": "10862",
+      "SourceBytecodeSha256": "a60319e074d0db7010acf4d51d095acb823f70505a3aa04c9175838af9d8c586",
       "Tags": ""
     },
     "unreadable": [
@@ -34649,8 +34649,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "15810",
-      "SourceBytecodeSha256": "4628a6f0ecd0b6d550cc9ef5de92a835c8b0f7bc2faac89f61d4d37fc3c498c9",
+      "SourceBytecodeBytes": "16457",
+      "SourceBytecodeSha256": "f07de21d32d3b15deaa72c97d91f6f3cd03c1beaad7072948e2097a53695d0ed",
       "Tags": ""
     },
     "unreadable": [
@@ -35001,8 +35001,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "590",
-      "SourceBytecodeSha256": "3faa510429551dbd649f7f6cad68114e2d22c8fff0c4c9aa0a193d7f2219e27c",
+      "SourceBytecodeBytes": "606",
+      "SourceBytecodeSha256": "6261eecdb2f4a4508d583c72188d83a0c9d9d22ebe81138e5c95e171fe0182ba",
       "Tags": ""
     },
     "unreadable": [
@@ -35545,8 +35545,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2750",
-      "SourceBytecodeSha256": "dd7ac874f74baf9b052810c507279043be60ff9313e202c46686ca02662c784c",
+      "SourceBytecodeBytes": "4446",
+      "SourceBytecodeSha256": "83968eef9229e0227a0ae60db1a8e40b62414b6cdc6e8f669a9977782297c088",
       "Tags": ""
     },
     "unreadable": [
@@ -35577,8 +35577,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3414",
-      "SourceBytecodeSha256": "38e305fd68d3558fc1e631ab472cee71559d42e2adb675ebfea4d7ae99a92157",
+      "SourceBytecodeBytes": "3486",
+      "SourceBytecodeSha256": "e691980e3abe50cb85a06c42eaef9d3364952175d48e185a3f5724a7191474b3",
       "Tags": ""
     },
     "unreadable": [
@@ -38953,8 +38953,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "578",
-      "SourceBytecodeSha256": "3fc199c132cf5a05a80a4665945ab19b1abe8cfe6cc84379f289498362040929",
+      "SourceBytecodeBytes": "594",
+      "SourceBytecodeSha256": "3369a1a89906ca13b072dc2277fef4dbdaac9236f2fc10f1f6a2288e5b9fa028",
       "Tags": ""
     },
     "unreadable": [
@@ -39012,7 +39012,7 @@
   {
     "class": "ModuleScript",
     "name": "TableDialog.story",
-    "path": "LayeredClothingEditor/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Hooks/useDialog/TableDialog.story",
+    "path": "LayeredClothingEditor/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Hooks/RESTRICTED_useDialog/TableDialog.story",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -40537,8 +40537,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "584",
-      "SourceBytecodeSha256": "10724ca84eb8952b86d893e04639bb260612ba6738383a997cf5de7ff8a46301",
+      "SourceBytecodeBytes": "600",
+      "SourceBytecodeSha256": "e50e0ed73b74225c25a0cc0ea75bc3233cf3ac17c74841329b5cfbc89cbddd70",
       "Tags": ""
     },
     "unreadable": [
@@ -41113,8 +41113,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "582",
-      "SourceBytecodeSha256": "377b1ec3ee80ad77223186b3f52f8807b0e3d7e9363e4d6acefa6b2a496b1223",
+      "SourceBytecodeBytes": "598",
+      "SourceBytecodeSha256": "d8ad2414ab1dab0b0faf5d3c3ab6b114f777917df8cf4b4c7a1bb83fd8fbbb8d",
       "Tags": ""
     },
     "unreadable": [
@@ -41513,8 +41513,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "584",
-      "SourceBytecodeSha256": "8b177d0bfcdce08e8175c372c5227d0a7be1cc2fd07e8ea4d33de926806d987b",
+      "SourceBytecodeBytes": "600",
+      "SourceBytecodeSha256": "454400f015d3bb4acd35a2a3d71c5555cfc28f54f8b07f947691cc032fd96f43",
       "Tags": ""
     },
     "unreadable": [
@@ -42697,8 +42697,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4713",
-      "SourceBytecodeSha256": "4354bb6de942187f4d97249444ee14589da1cfd55be163b8a814e09c0c68dd79",
+      "SourceBytecodeBytes": "5071",
+      "SourceBytecodeSha256": "0489e53d219b9a29159a0c55e700bc87b2da8c88e585336e4b10fc9a6ad89c49",
       "Tags": ""
     },
     "unreadable": [
@@ -43083,22 +43083,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "849",
       "SourceBytecodeSha256": "53d31e708c6b2232b705f59d4aee5358c56c65970cfc9b43e7aae184e72058bb",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "useDialog",
-    "path": "LayeredClothingEditor/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Hooks/useDialog",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "2658",
-      "SourceBytecodeSha256": "1d0ce01c9c0349ed324989cb0a63de53ba38c73a050efdbc3885288d17008f83",
       "Tags": ""
     },
     "unreadable": [
@@ -44745,8 +44729,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3521",
-      "SourceBytecodeSha256": "ab8665286514bf6c508b2222ae08eb8d036bb8b707d642214a95f7b9c9426610",
+      "SourceBytecodeBytes": "4416",
+      "SourceBytecodeSha256": "c90af069ec6a8e2a3ddec020266dbc1d22fae2275e6b0ac0297f00dc4a9d255f",
       "Tags": ""
     },
     "unreadable": [
@@ -44777,8 +44761,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3275",
-      "SourceBytecodeSha256": "7bb769842bdfccc65e4900ece7199f3dfb250c7d715cad52485bc6a6708d27a9",
+      "SourceBytecodeBytes": "3731",
+      "SourceBytecodeSha256": "077ee60515036754fbd86e07178a1f37e004b3e57a1607b2c6220637c253c6de",
       "Tags": ""
     },
     "unreadable": [
@@ -44857,8 +44841,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4733",
-      "SourceBytecodeSha256": "b36d15ffa5d9610183bdda7c40db4dd1c63dad2cf95c765bd8de24ede77ce6bb",
+      "SourceBytecodeBytes": "5390",
+      "SourceBytecodeSha256": "68b5ef021ba527ba3a13f664eaa4311d2b612d51db84a50fcc1669188c5194b8",
       "Tags": ""
     },
     "unreadable": [

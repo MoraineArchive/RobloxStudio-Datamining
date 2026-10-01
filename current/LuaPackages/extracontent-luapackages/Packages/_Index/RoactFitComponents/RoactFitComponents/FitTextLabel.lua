@@ -3,6 +3,7 @@ local Packages = root.Parent
 
 local Cryo = require(Packages.Cryo)
 local Roact = require(Packages.Roact)
+local Flags = require(root.Flags)
 
 local EngineFeatureTextBoundsRoundUp do
 	local success, value = pcall(function()
@@ -29,6 +30,25 @@ local function getTextWidth(text, fontSize, font)
 	end
 end
 
+local function getFontTextBoundsAsync(text, fontSize, font, width)
+	local params = Instance.new("GetTextBoundsParams")
+	params.Text = text
+	params.Font = font
+	params.Size = fontSize
+	params.Width = width
+
+	local success, bounds = pcall(function()
+		return TextService:GetTextBoundsAsync(params)
+	end)
+	params:Destroy()
+
+	if success and typeof(bounds) == "Vector2" then
+		return bounds
+	end
+
+	return nil
+end
+
 local Width = {
 	FitToText = {},
 }
@@ -45,6 +65,11 @@ FitTextLabel.defaultProps = {
 }
 
 function FitTextLabel:init()
+	if Flags.RoactFitComponentsFontDatatypeSupport then
+		self.measurementId = 0
+		self.mounted = false
+	end
+
 	if Roact.Ref == "ref" then
 		self.frameRef = self.props.forwardedRef or Roact.createRef()
 	else
@@ -56,7 +81,14 @@ function FitTextLabel:init()
 			return
 		end
 
-		self.frameRef.current.Size = self:__getSize(self.frameRef.current)
+		if Flags.RoactFitComponentsFontDatatypeSupport and typeof(self.props.Font) == "Font" then
+			self:__resizeForFont(self.frameRef.current)
+		else
+			if Flags.RoactFitComponentsFontDatatypeSupport then
+				self.measurementId = self.measurementId + 1
+			end
+			self.frameRef.current.Size = self:__getSize(self.frameRef.current)
+		end
 	end
 end
 
@@ -66,6 +98,9 @@ function FitTextLabel:render()
 end
 
 function FitTextLabel:didMount()
+	if Flags.RoactFitComponentsFontDatatypeSupport then
+		self.mounted = true
+	end
 	self.onResize()
 end
 
@@ -73,17 +108,25 @@ function FitTextLabel:didUpdate()
 	self.onResize()
 end
 
+function FitTextLabel:willUnmount()
+	if Flags.RoactFitComponentsFontDatatypeSupport then
+		self.mounted = false
+		self.measurementId = self.measurementId + 1
+	end
+end
+
 function FitTextLabel:__getFilteredProps()
 	-- Will return a new prop map after removing
 	-- Roact.Children and any defaultProps in an effort
 	-- to only return safe Roblox Instance "TextLabel"
 	-- properties that may be present.
+	local initialWidth = typeof(self.props.width) == "UDim" and self.props.width or UDim.new(0, 0)
 	local filteredProps = {
 		width = Cryo.None,
 		maximumWidth = Cryo.None,
 		onActivated = Cryo.None,
 		forwardedRef = Cryo.None,
-		Size = UDim2.new(self.props.width, UDim.new(0, 0)),
+		Size = UDim2.new(initialWidth, UDim.new(0, 0)),
 		[Roact.Ref] = self.frameRef,
 
 		[Roact.Children] = Cryo.Dictionary.join(self.props[Roact.Children] or {}, {
@@ -102,7 +145,44 @@ function FitTextLabel:__getFilteredProps()
 		end,
 	}
 
+	if Flags.RoactFitComponentsFontDatatypeSupport and typeof(self.props.Font) == "Font" then
+		filteredProps.Font = Cryo.None
+		filteredProps.FontFace = self.props.Font
+	end
+
 	return Cryo.Dictionary.join(self.props, filteredProps)
+end
+
+function FitTextLabel:__resizeForFont(rbx)
+	self.measurementId = self.measurementId + 1
+	local measurementId = self.measurementId
+
+	local text = self.props.Text
+	local fontSize = self.props.TextSize
+	local font = self.props.Font
+	local maximumWidth = self.props.maximumWidth
+	local width = self.props.width
+	local widthCap = math.max(maximumWidth < math.huge and maximumWidth or 0, rbx.AbsoluteSize.X)
+
+	task.spawn(function()
+		if width == Width.FitToText then
+			local widthBounds = getFontTextBoundsAsync(text, fontSize, font, 10000)
+			width = UDim.new(0, widthBounds and math.min(math.ceil(widthBounds.X), maximumWidth) or 0)
+		end
+
+		if not self.mounted or self.measurementId ~= measurementId then
+			return
+		end
+
+		local heightBounds = getFontTextBoundsAsync(text, fontSize, font, widthCap)
+		local textHeight = heightBounds and math.ceil(heightBounds.Y) or fontSize
+
+		if not self.mounted or self.measurementId ~= measurementId or not self.frameRef.current then
+			return
+		end
+
+		self.frameRef.current.Size = UDim2.new(width, UDim.new(0, textHeight))
+	end)
 end
 
 function FitTextLabel:__getSize(rbx)

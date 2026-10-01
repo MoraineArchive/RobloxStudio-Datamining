@@ -14,7 +14,7 @@ local MUTUAL_FRIENDS_ICON_PATH = "icons/status/player/friend"
 type FontType = {
 	RelativeSize: number,
 	RelativeMinSize: number,
-	Font: Enum.Font,
+	Font: Font | Enum.Font,
 }
 
 type ThemeType = {

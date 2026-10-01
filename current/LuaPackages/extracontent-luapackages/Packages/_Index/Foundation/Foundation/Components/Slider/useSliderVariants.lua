@@ -60,7 +60,9 @@ local function variantsFactory(tokens: Tokens)
 			},
 			knob = {
 				style = tokens.Color.Extended.White.White_100,
-				dragStyle = tokens.Color.ActionEmphasis.Background,
+				dragStyle = if Flags.FoundationSystemEmphasisNonActions
+					then tokens.Color.System.Emphasis
+					else tokens.Color.ActionEmphasis.Background,
 				hasShadow = true,
 			},
 		},
@@ -142,5 +144,8 @@ end
 
 return function(tokens: Tokens, size: InputSize, variant: SliderVariant, isVertical: boolean): SliderVariantProps
 	local props = VariantsContext.useVariants("Slider", variantsFactory, tokens)
+	if Flags.FoundationSliderCapture then
+		return composeStyleVariant(props.common, props.variants[variant], props.sizes[size])
+	end
 	return composeStyleVariant(props.common, props.variants[variant], props.sizes[size], props.orientation[isVertical])
 end

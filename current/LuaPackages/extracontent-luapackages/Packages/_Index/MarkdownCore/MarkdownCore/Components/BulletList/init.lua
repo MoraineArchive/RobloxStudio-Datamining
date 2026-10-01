@@ -13,7 +13,7 @@
 			Defaults to DEFAULT_LIST_STYLE.
 			See below for details on the ListStyle.
 	List Style Values:
-		Enum.Font Font: The font used to render the text.
+		Enum.Font | Font Font: The font used to render the text.
 		number ItemOffset: The distance between the marker's right edge and the list item, in pixels.
 		string MarkerImage: The Marker Image. The image will be colorised with the TextColor.
 		number MarkerSize: The size of the Marker - assumes a 1:1 aspect ratio.
@@ -34,9 +34,13 @@ local Foundation = require(Packages.Foundation)
 local map = Dash.map
 type ReactElement<T> = React.Element<T>
 
+local MarkdownCoreRoot = script:FindFirstAncestor("MarkdownCore")
+local Flags = require(MarkdownCoreRoot.Flags)
+
 local View = Foundation.View
 local Image = Foundation.Image
 local Text = Foundation.Text
+local FoundationFlags = Foundation.Utility.Flags
 
 local DEFAULT_LIST_STYLE = {
 	ItemOffset = 12,
@@ -68,7 +72,7 @@ type BulletListItem = string | ReactElement<any> | {
 }
 
 type ListStyle = {
-	Font: Enum.Font?,
+	Font: (Enum.Font | Font)?,
 	LineHeight: number?,
 	ItemOffset: number?,
 	MarkerImage: string?,
@@ -113,6 +117,20 @@ local function BulletList(props: Props)
 	local itemOffset = calculateItemOffset(tokens.Gap.Small, listStyle.MarkerSize or DEFAULT_LIST_STYLE.MarkerSize)
 	local itemSize = UDim2.new(1, -itemOffset, 0, 0)
 
+	local font, textSize, textColor, lineHeight
+	if Flags.FFlagMarkdownAssistantParity then
+		local bodyTypography = tokens.Typography.BodyMedium
+		font = listStyle.Font or bodyTypography.Font
+		textSize = listStyle.TextSize or bodyTypography.FontSize
+		textColor = listStyle.TextColor or tokens.Color.Content.Default.Color3
+		lineHeight = listStyle.LineHeight or textSize * bodyTypography.LineHeight
+	else
+		font = listStyle.Font or DEFAULT_LIST_STYLE.Font
+		textSize = listStyle.TextSize or DEFAULT_LIST_STYLE.TextSize
+		textColor = listStyle.TextColor or DEFAULT_LIST_STYLE.TextColor
+		lineHeight = listStyle.LineHeight or DEFAULT_LIST_STYLE.LineHeight
+	end
+
 	local children = map(items, function(item, i: number)
 		local itemElement
 		local currItemIndentation = itemIndentation
@@ -124,12 +142,23 @@ local function BulletList(props: Props)
 		if type(item) == "string" then
 			itemElement = React.createElement(Text, {
 				AutomaticSize = Enum.AutomaticSize.XY,
-				Font = listStyle.Font or DEFAULT_LIST_STYLE.Font,
+				Font = if FoundationFlags.FoundationFontFaceMigration then nil else font,
+				fontStyle = if FoundationFlags.FoundationFontFaceMigration
+					then {
+						Font = font,
+						FontSize = textSize,
+					}
+					else nil,
 				LayoutOrder = 2,
 				Size = itemSize,
 				Text = item,
-				TextColor = listStyle.TextColor or DEFAULT_LIST_STYLE.TextColor,
-				TextSize = listStyle.TextSize or DEFAULT_LIST_STYLE.TextSize,
+				TextColor = if FoundationFlags.FoundationFontFaceMigration then nil else textColor,
+				textStyle = if FoundationFlags.FoundationFontFaceMigration
+					then {
+						Color3 = textColor,
+					}
+					else nil,
+				TextSize = if FoundationFlags.FoundationFontFaceMigration then nil else textSize,
 				TextTruncate = textTruncate,
 				TextWrapped = textWrapped,
 				Padding = listStyle.Padding or DEFAULT_LIST_STYLE.Padding,
@@ -158,12 +187,20 @@ local function BulletList(props: Props)
 				LayoutOrder = 2,
 				Size = subItemSize,
 				textStyle = {
-					Color3 = listStyle.TextColor or DEFAULT_LIST_STYLE.TextColor,
+					Color3 = textColor,
 				},
-				FontStyle = {
-					Font = listStyle.Font or DEFAULT_LIST_STYLE.Font,
-					FontSize = listStyle.TextSize or DEFAULT_LIST_STYLE.TextSize,
-				},
+				FontStyle = if FoundationFlags.FoundationFontFaceMigration
+					then nil
+					else {
+						Font = font,
+						FontSize = textSize,
+					},
+				fontStyle = if FoundationFlags.FoundationFontFaceMigration
+					then {
+						Font = font,
+						FontSize = textSize,
+					}
+					else nil,
 				Text = item.Text,
 				TextWrapped = textWrapped,
 				TextTruncate = textTruncate,
@@ -197,21 +234,18 @@ local function BulletList(props: Props)
 		}, {
 			Marker = React.createElement(View, {
 				LayoutOrder = 1,
-				Size = UDim2.fromOffset(
-					listStyle.MarkerSize or DEFAULT_LIST_STYLE.MarkerSize,
-					listStyle.LineHeight or DEFAULT_LIST_STYLE.LineHeight
-				),
+				Size = UDim2.fromOffset(listStyle.MarkerSize or DEFAULT_LIST_STYLE.MarkerSize, lineHeight),
 			}, {
 				Image = if isOrdered(prefix)
 					then React.createElement(Text, {
 						tag = "position-center-left anchor-center-left",
 						Text = `{prefix}.`,
 						fontStyle = {
-							Font = listStyle.Font or DEFAULT_LIST_STYLE.Font,
-							FontSize = listStyle.TextSize or DEFAULT_LIST_STYLE.TextSize,
+							Font = font,
+							FontSize = textSize,
 						},
 						textStyle = {
-							Color3 = listStyle.TextColor or DEFAULT_LIST_STYLE.TextColor,
+							Color3 = textColor,
 						},
 						Size = UDim2.fromOffset(
 							listStyle.MarkerSize or DEFAULT_LIST_STYLE.MarkerSize,
@@ -222,7 +256,7 @@ local function BulletList(props: Props)
 						tag = "position-center-left anchor-center-left",
 						Image = currMarkerImage,
 						imageStyle = {
-							Color3 = listStyle.TextColor or DEFAULT_LIST_STYLE.TextColor,
+							Color3 = textColor,
 						},
 						LayoutOrder = 1,
 						Size = UDim2.fromOffset(

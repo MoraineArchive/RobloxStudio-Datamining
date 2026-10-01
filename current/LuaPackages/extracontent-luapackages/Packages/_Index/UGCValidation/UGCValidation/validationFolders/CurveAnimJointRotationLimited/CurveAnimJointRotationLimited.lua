@@ -5,7 +5,6 @@ local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 
 local getFIntUGCValidateMaxAnimationFPS = require(root.flags.getFIntUGCValidateMaxAnimationFPS)
-local getFFlagUGCValidationAnimationPackSupport = require(root.flags.getFFlagUGCValidationAnimationPackSupport)
 
 local GetFStringUGCValidateMaxJointRotationPerPart = require(script.Parent.GetFStringUGCValidateMaxJointRotationPerPart)
 
@@ -16,7 +15,6 @@ CurveAnimJointRotationLimited.requiredData = {
 	ValidationEnums.SharedDataMember.curveAnimations,
 	ValidationEnums.SharedDataMember.curveAnimComputedFrames,
 }
-CurveAnimJointRotationLimited.fflag = getFFlagUGCValidationAnimationPackSupport
 CurveAnimJointRotationLimited.expectedFailures = {}
 CurveAnimJointRotationLimited.prereqTests = { ValidationEnums.ValidationModule.CurveAnimDataAvailable }
 

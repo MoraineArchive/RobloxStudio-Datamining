@@ -29,7 +29,7 @@ export type Props = {
 	countRight: StatWidgetProps,
 }
 
-local function getTextWidth(text, fontStyle: Fonts.Font, style)
+local function getTextWidth(text, fontStyle: Fonts.FontInfo, style)
 	local baseSize = style.Font.BaseSize
 	local fontSize = fontStyle.RelativeSize * baseSize
 	local bounds = Vector2.new(TEXT_MAX_BOUND, TEXT_MAX_BOUND)

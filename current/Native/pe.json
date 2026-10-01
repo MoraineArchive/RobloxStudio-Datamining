@@ -5,8 +5,8 @@
     "rbxAllocate",
     "rbxDeallocate"
   ],
-  "fileBytes": 226963408,
-  "imageSize": 241799168,
+  "fileBytes": 221204432,
+  "imageSize": 232103936,
   "imports": [
     "ADVAPI32.dll",
     "CRYPT32.dll",
@@ -40,48 +40,7 @@
     "WINMM.dll",
     "WS2_32.dll",
     "WebView2Loader.dll",
-    "api-ms-win-core-com-l1-1-0.dll",
-    "api-ms-win-core-console-l1-1-0.dll",
-    "api-ms-win-core-debug-l1-1-0.dll",
-    "api-ms-win-core-errorhandling-l1-1-0.dll",
-    "api-ms-win-core-errorhandling-l1-1-1.dll",
-    "api-ms-win-core-fibers-l2-1-0.dll",
-    "api-ms-win-core-fibers-l2-1-1.dll",
-    "api-ms-win-core-file-l1-1-0.dll",
-    "api-ms-win-core-file-l1-2-0.dll",
-    "api-ms-win-core-file-l2-1-0.dll",
-    "api-ms-win-core-handle-l1-1-0.dll",
-    "api-ms-win-core-heap-l1-1-0.dll",
-    "api-ms-win-core-heap-l2-1-0.dll",
-    "api-ms-win-core-interlocked-l1-1-0.dll",
-    "api-ms-win-core-io-l1-1-0.dll",
-    "api-ms-win-core-io-l1-1-1.dll",
-    "api-ms-win-core-kernel32-legacy-l1-1-0.dll",
-    "api-ms-win-core-kernel32-legacy-l1-1-1.dll",
-    "api-ms-win-core-kernel32-legacy-l1-1-2.dll",
-    "api-ms-win-core-libraryloader-l1-2-0.dll",
-    "api-ms-win-core-libraryloader-l1-2-1.dll",
-    "api-ms-win-core-localization-l1-2-0.dll",
-    "api-ms-win-core-memory-l1-1-0.dll",
-    "api-ms-win-core-namedpipe-l1-1-0.dll",
-    "api-ms-win-core-processenvironment-l1-1-0.dll",
-    "api-ms-win-core-processthreads-l1-1-0.dll",
-    "api-ms-win-core-processthreads-l1-1-1.dll",
-    "api-ms-win-core-profile-l1-1-0.dll",
-    "api-ms-win-core-psapi-l1-1-0.dll",
-    "api-ms-win-core-registry-l1-1-0.dll",
-    "api-ms-win-core-rtlsupport-l1-1-0.dll",
-    "api-ms-win-core-string-l1-1-0.dll",
-    "api-ms-win-core-string-l2-1-0.dll",
-    "api-ms-win-core-synch-ansi-l1-1-0.dll",
-    "api-ms-win-core-synch-l1-1-0.dll",
     "api-ms-win-core-synch-l1-2-0.dll",
-    "api-ms-win-core-synch-l1-2-1.dll",
-    "api-ms-win-core-sysinfo-l1-1-0.dll",
-    "api-ms-win-core-sysinfo-l1-2-0.dll",
-    "api-ms-win-core-sysinfo-l1-2-1.dll",
-    "api-ms-win-core-threadpool-l1-2-0.dll",
-    "api-ms-win-core-util-l1-1-0.dll",
     "api-ms-win-core-winrt-l1-1-0.dll",
     "api-ms-win-core-winrt-string-l1-1-0.dll",
     "api-ms-win-crt-convert-l1-1-0.dll",
@@ -95,9 +54,6 @@
     "api-ms-win-crt-string-l1-1-0.dll",
     "api-ms-win-crt-time-l1-1-0.dll",
     "api-ms-win-crt-utility-l1-1-0.dll",
-    "api-ms-win-mm-time-l1-1-0.dll",
-    "api-ms-win-ntuser-sysparams-l1-1-0.dll",
-    "api-ms-win-security-sddl-l1-1-0.dll",
     "bcrypt.dll",
     "d3d11.dll",
     "dbghelp.dll",
@@ -108,87 +64,87 @@
     "ole32.dll"
   ],
   "machine": 34404,
-  "peTimestamp": 2773514034,
+  "peTimestamp": 2147031510,
   "sections": [
     {
       "characteristics": 1610612768,
       "name": ".text",
       "rawOffset": 1024,
-      "rawSize": 138039296,
+      "rawSize": 139941376,
       "virtualAddress": 4096,
-      "virtualSize": 138038882
+      "virtualSize": 139941155
     },
     {
       "characteristics": 1610612768,
       "name": ".rodata",
-      "rawOffset": 138040320,
+      "rawOffset": 139942400,
       "rawSize": 2560,
-      "virtualAddress": 138043392,
+      "virtualAddress": 139948032,
       "virtualSize": 2288
     },
     {
       "characteristics": 1073741888,
       "name": ".rdata",
-      "rawOffset": 138042880,
-      "rawSize": 74110464,
-      "virtualAddress": 138047488,
-      "virtualSize": 74109980
+      "rawOffset": 139944960,
+      "rawSize": 66426880,
+      "virtualAddress": 139952128,
+      "virtualSize": 66426622
     },
     {
       "characteristics": 3221225536,
       "name": ".data",
-      "rawOffset": 212153344,
-      "rawSize": 8374272,
-      "virtualAddress": 212160512,
-      "virtualSize": 23202632
+      "rawOffset": 206371840,
+      "rawSize": 8437760,
+      "virtualAddress": 206381056,
+      "virtualSize": 19326472
     },
     {
       "characteristics": 1073741888,
       "name": ".pdata",
-      "rawOffset": 220527616,
-      "rawSize": 4791808,
-      "virtualAddress": 235364352,
-      "virtualSize": 4791720
+      "rawOffset": 214809600,
+      "rawSize": 4855808,
+      "virtualAddress": 225710080,
+      "virtualSize": 4855656
     },
     {
       "characteristics": 3221225536,
       "name": "CPADinfo",
-      "rawOffset": 225319424,
+      "rawOffset": 219665408,
       "rawSize": 512,
-      "virtualAddress": 240156672,
+      "virtualAddress": 230567936,
       "virtualSize": 56
     },
     {
       "characteristics": 1073741888,
       "name": "_RDATA",
-      "rawOffset": 225319936,
-      "rawSize": 112128,
-      "virtualAddress": 240160768,
-      "virtualSize": 111624
+      "rawOffset": 219665920,
+      "rawSize": 1024,
+      "virtualAddress": 230572032,
+      "virtualSize": 560
     },
     {
-      "characteristics": 1073741888,
+      "characteristics": 3221225536,
       "name": ".rsrc",
-      "rawOffset": 225432064,
+      "rawOffset": 219666944,
       "rawSize": 12288,
-      "virtualAddress": 240275456,
-      "virtualSize": 11904
+      "virtualAddress": 230576128,
+      "virtualSize": 11992
     },
     {
       "characteristics": 1107296320,
       "name": ".reloc",
-      "rawOffset": 225444352,
-      "rawSize": 1508352,
-      "virtualAddress": 240287744,
-      "virtualSize": 1508140
+      "rawOffset": 219679232,
+      "rawSize": 1514496,
+      "virtualAddress": 230588416,
+      "virtualSize": 1514092
     }
   ],
-  "sha256": "996c3666e2872bf62d5db78bbfe65cd4fe78a120b110c01d191e3410dc0dbd01",
+  "sha256": "f53930a1702ac8e4067a61cf2cb5ba7f69936932ffab0c8986f0a551ddaa581a",
   "signing": {
     "certificates": [
       {
         "revision": 512,
-        "sha256": "40eae55efe01d1c6313c92f1fa8e67b1cd5d254335bea7f500b1e6936a868a19",
+        "sha256": "9b709fda7aefe3340fc89b02a6d544e178fe8a60a49bb7f13c89b4752cb2ffb2",
         "size": 10704,
         "type": 2
       }
@@ -199,8 +155,8 @@
   "versionResource": {
     "fileFlags": 0,
     "fileType": 0,
-    "fileVersion": "0.739.0.50655",
-    "productVersion": "0.739.0.50655"
+    "fileVersion": "0.741.19.5488",
+    "productVersion": "0.741.19.5488"
   },
   "warnings": []
 }

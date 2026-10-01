@@ -5,14 +5,10 @@ local Cryo = require(root.Parent.Cryo)
 
 local ValidationRulesUtil = require(root.util.ValidationRulesUtil)
 local ValidationEnums = require(root.validationSystem.ValidationEnums)
-local getFFlagUGCValidationFixConstantsTypoLeg = require(root.flags.getFFlagUGCValidationFixConstantsTypoLeg)
 local getFFlagUGCValidationEyebrowEyelashSupport = require(root.flags.getFFlagUGCValidationEyebrowEyelashSupport)
 local getFFlagUGCValidateCheckHSROwner = require(root.flags.getFFlagUGCValidateCheckHSROwner)
 local getFFlagUGCValidateCheckTexturePackOwner = require(root.flags.getFFlagUGCValidateCheckTexturePackOwner)
-local getFFlagUGCValidationAnimationPackSupport = require(root.flags.getFFlagUGCValidationAnimationPackSupport)
 local FFlagUGCValidateMakeupDecalUVProperties = game:DefineFastFlag("UGCValidateMakeupDecalUVProperties", false)
-local getFFlagUGCValidationAllowEngineDefaultPartSurfaces =
-	require(root.flags.getFFlagUGCValidationAllowEngineDefaultPartSurfaces)
 local getFFlagUGCValidateAllowEmissives = require(root.flags.getFFlagUGCValidateAllowEmissives)
 local getFFlagUGCValidateMakeupCategoryParity = require(root.flags.getFFlagUGCValidateMakeupCategoryParity)
 local getFFlagUGCValidateDisallowAeroMeshData = require(root.flags.getFFlagUGCValidateDisallowAeroMeshData)
@@ -281,13 +277,8 @@ Constants.BODYPART_TO_PARENT = {
 	["RightUpperLeg"] = nil,
 	["RightLowerLeg"] = "RightUpperLeg",
 }
-if getFFlagUGCValidationFixConstantsTypoLeg() then -- move back to array when cleaning up flag
-	Constants.BODYPART_TO_PARENT["RightFoot"] = "RightLowerLeg"
-	Constants.BODYPART_TO_PARENT["LeftFoot"] = "LeftLowerLeg"
-else
-	Constants.BODYPART_TO_PARENT["RightLeg"] = "RightLowerLeg"
-	Constants.BODYPART_TO_PARENT["LeftLeg"] = "LeftLowerLeg"
-end
+Constants.BODYPART_TO_PARENT["RightFoot"] = "RightLowerLeg"
+Constants.BODYPART_TO_PARENT["LeftFoot"] = "LeftLowerLeg"
 
 Constants.RenderVsWrapMeshMaxDiff = ValidationRulesUtil:getRules().MeshRules.CageMeshMaxDistanceFromRenderMesh
 
@@ -378,19 +369,15 @@ Constants.PROPERTIES = {
 		TopSurfaceInput = Enum.InputType.NoInput,
 
 		BackSurface = Enum.SurfaceType.Smooth,
-		BottomSurface = if getFFlagUGCValidationAllowEngineDefaultPartSurfaces()
-			then {
-				[Constants.COMPARISON_METHODS.FOUND_IN] = { Enum.SurfaceType.Smooth, Enum.SurfaceType.Inlet },
-			}
-			else Enum.SurfaceType.Smooth,
+		BottomSurface = {
+			[Constants.COMPARISON_METHODS.FOUND_IN] = { Enum.SurfaceType.Smooth, Enum.SurfaceType.Inlet },
+		},
 		FrontSurface = Enum.SurfaceType.Smooth,
 		LeftSurface = Enum.SurfaceType.Smooth,
 		RightSurface = Enum.SurfaceType.Smooth,
-		TopSurface = if getFFlagUGCValidationAllowEngineDefaultPartSurfaces()
-			then {
-				[Constants.COMPARISON_METHODS.FOUND_IN] = { Enum.SurfaceType.Smooth, Enum.SurfaceType.Studs },
-			}
-			else Enum.SurfaceType.Smooth,
+		TopSurface = {
+			[Constants.COMPARISON_METHODS.FOUND_IN] = { Enum.SurfaceType.Smooth, Enum.SurfaceType.Studs },
+		},
 
 		-- ====== Extra Context checks ======
 		--Transparency = { [Constants.COMPARISON_METHODS.EXACT_EQ] = 0 },
@@ -650,17 +637,15 @@ Constants.MESH_CONTENT_TYPE_TO_FIELD_NAME = {
 	[Constants.MESH_CONTENT_TYPE.INNER_CAGE] = "ReferenceMeshId",
 }
 
-if getFFlagUGCValidationAnimationPackSupport() then
-	Constants.ANIMATION_ASSET_INFO = {
-		[Enum.AssetType.ClimbAnimation] = { modelName = "ClimbAnimation", stringValueNames = { "climb" } },
-		[Enum.AssetType.FallAnimation] = { modelName = "FallAnimation", stringValueNames = { "fall" } },
-		[Enum.AssetType.IdleAnimation] = { modelName = "IdleAnimation", stringValueNames = { "idle" } },
-		[Enum.AssetType.JumpAnimation] = { modelName = "JumpAnimation", stringValueNames = { "jump" } },
-		[Enum.AssetType.RunAnimation] = { modelName = "RunAnimation", stringValueNames = { "run" } },
-		[Enum.AssetType.SwimAnimation] = { modelName = "SwimAnimation", stringValueNames = { "swim", "swimidle" } },
-		[Enum.AssetType.WalkAnimation] = { modelName = "WalkAnimation", stringValueNames = { "walk" } },
-	}
-end
+Constants.ANIMATION_ASSET_INFO = {
+	[Enum.AssetType.ClimbAnimation] = { modelName = "ClimbAnimation", stringValueNames = { "climb" } },
+	[Enum.AssetType.FallAnimation] = { modelName = "FallAnimation", stringValueNames = { "fall" } },
+	[Enum.AssetType.IdleAnimation] = { modelName = "IdleAnimation", stringValueNames = { "idle" } },
+	[Enum.AssetType.JumpAnimation] = { modelName = "JumpAnimation", stringValueNames = { "jump" } },
+	[Enum.AssetType.RunAnimation] = { modelName = "RunAnimation", stringValueNames = { "run" } },
+	[Enum.AssetType.SwimAnimation] = { modelName = "SwimAnimation", stringValueNames = { "swim", "swimidle" } },
+	[Enum.AssetType.WalkAnimation] = { modelName = "WalkAnimation", stringValueNames = { "walk" } },
+}
 
 Constants.AllAssetUploadCategories = {
 	-- For tests that run on all assets
@@ -671,9 +656,7 @@ Constants.AllAssetUploadCategories = {
 	ValidationEnums.UploadCategory.EMOTE_ANIMATION,
 }
 
-if getFFlagUGCValidationAnimationPackSupport() then
-	table.insert(Constants.AllAssetUploadCategories, ValidationEnums.UploadCategory.ANIMATION)
-end
+table.insert(Constants.AllAssetUploadCategories, ValidationEnums.UploadCategory.ANIMATION)
 
 Constants.AllAssetUploadCategoriesIncludingMakeup = {}
 for _, category in Constants.AllAssetUploadCategories do
@@ -691,9 +674,7 @@ Constants.AllBundleUploadCategories = {
 	ValidationEnums.UploadCategory.BOTH_SHOES,
 }
 
-if getFFlagUGCValidationAnimationPackSupport() then
-	table.insert(Constants.AllBundleUploadCategories, ValidationEnums.UploadCategory.ANIMATION_PACK)
-end
+table.insert(Constants.AllBundleUploadCategories, ValidationEnums.UploadCategory.ANIMATION_PACK)
 
 Constants.AllUploadCategories = {} -- For tests that run every upload
 for _, category in ValidationEnums.UploadCategory do

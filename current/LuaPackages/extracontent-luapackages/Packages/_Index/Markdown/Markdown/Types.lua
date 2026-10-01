@@ -86,7 +86,14 @@ type TextStyles_Internal = {
 	viewTags: (string | { [string]: boolean })?,
 }
 type TextStyles_Public = {
-	font: Enum.Font?,
+	font: (Enum.Font | Font)?,
+	fontFace: Font?,
+	textSize: number?,
+	transparency: number?,
+	color: string?,
+}
+type TextStyles_Resolved = {
+	font: (Enum.Font | Font)?,
 	fontFace: Font?,
 	textSize: number?,
 	transparency: number?,
@@ -95,8 +102,11 @@ type TextStyles_Public = {
 type CodeStyles_Public = TextStyles_Public & {
 	lineHeight: number?,
 }
-export type TextStyles = TextStyles_Internal & TextStyles_Public
-export type CodeStyles = TextStyles_Internal & CodeStyles_Public
+type CodeStyles_Resolved = TextStyles_Resolved & {
+	lineHeight: number?,
+}
+export type TextStyles = TextStyles_Internal & TextStyles_Resolved
+export type CodeStyles = TextStyles_Internal & CodeStyles_Resolved
 
 type ImageStyles = {
 	size: UDim2?,

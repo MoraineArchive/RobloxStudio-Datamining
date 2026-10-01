@@ -34,7 +34,6 @@ Measure_Texture_Resolution.run = function(reporter: Types.ValidationReporter, da
 					textureName = textureName,
 					texture_width = textureData.texture_width or "unknown",
 					texture_height = textureData.texture_height or "unknown",
-					score = tostring(math.floor(tonumber(textureData.score) or 0)),
 				})
 			end
 		end

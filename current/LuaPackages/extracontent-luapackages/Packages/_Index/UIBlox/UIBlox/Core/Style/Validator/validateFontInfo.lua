@@ -4,16 +4,20 @@ local App = Style.Parent
 local UIBlox = App.Parent
 local Packages = UIBlox.Parent
 
+local Foundation = require(Packages.Foundation)
 local t = require(Packages.t)
+
+local validateFontFace = require(script.Parent.validateFontFace)
+local FFlagFoundationFontFaceMigration = Foundation.Utility.Flags.FoundationFontFaceMigration
 
 export type FontInfo = {
 	RelativeSize: number,
 	RelativeMinSize: number,
-	Font: Enum.Font,
+	Font: Font | Enum.Font,
 }
 
 return t.strictInterface({
 	RelativeSize = t.numberMinExclusive(0),
 	RelativeMinSize = t.numberMinExclusive(0),
-	Font = t.EnumItem,
+	Font = if FFlagFoundationFontFaceMigration then t.union(t.EnumItem, validateFontFace) else t.EnumItem,
 })

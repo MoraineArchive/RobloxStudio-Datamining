@@ -16,7 +16,10 @@ local map = Dash.map
 local RenderableInlineElement = require(Root.Components.InlineLayout.InlineLayoutElements.RenderableInlineElement)
 local HardBreakElement = require(Root.Components.InlineLayout.InlineLayoutElements.HardBreakElement)
 local HoverContext = require(Root.Components.InlineLayout.InlineLayoutElements.HoverContext)
+local MarkdownCore = require(Packages.MarkdownCore)
 local View = Foundation.View
+
+local Flags = MarkdownCore.Flags
 
 local FFlagDebugInlineLayout = game:DefineFastFlag("FFlagDebugInlineLayout", false)
 
@@ -30,11 +33,16 @@ type Props = {
 
 -- To avoid unknonw bugs that can lead to an infinite cycle we have a hard stop
 local MAX_ITERATIONS = 100
+local ITERATIONS_PER_ELEMENT = 4
 
 local function layoutElements(elements: { InlineElement }, width: number): { ReactNode }
 	if #elements == 0 then
 		return {}
 	end
+
+	local maxIterations = if Flags.FFlagMarkdownAssistantParity
+		then MAX_ITERATIONS + #elements * ITERATIONS_PER_ELEMENT
+		else MAX_ITERATIONS
 
 	local rows = {}
 	local currentRow = {}
@@ -50,7 +58,7 @@ local function layoutElements(elements: { InlineElement }, width: number): { Rea
 		availableWidth = width
 	end
 
-	while (i <= #elements or wrappedElement) and breakPoint < MAX_ITERATIONS do
+	while (i <= #elements or wrappedElement) and breakPoint < maxIterations do
 		-- 1. Pick wrappedElement or ith element
 		local element = wrappedElement or elements[i]
 
@@ -92,15 +100,18 @@ local function layoutElements(elements: { InlineElement }, width: number): { Rea
 					wrappedElement = element
 				end
 			end
+			if Flags.FFlagMarkdownAssistantParity and wrappedElement == nil then
+				i += 1
+			end
 			flushRow()
 		end
 		breakPoint += 1
 	end
 
-	if breakPoint == MAX_ITERATIONS and FFlagDebugInlineLayout then
+	if breakPoint == maxIterations and FFlagDebugInlineLayout then
 		warn(
 			"InlineLayout: trying to wrap text across multiple lines and iterations cap is reached. Layout may be imperfect",
-			`Desired width: {width}`,
+			`Desired width: {width}, elements: {#elements}`,
 			debug.traceback()
 		)
 	end

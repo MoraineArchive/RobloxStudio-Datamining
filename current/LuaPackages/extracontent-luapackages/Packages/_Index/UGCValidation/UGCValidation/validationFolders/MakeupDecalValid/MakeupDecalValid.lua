@@ -9,8 +9,8 @@ local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 local createEditableInstancesForContext = require(root.util.createEditableInstancesForContext)
 
-local getFFlagUGCValidateMigrateWrapAndMakeup = require(root.flags.getFFlagUGCValidateMigrateWrapAndMakeup)
 local getFFlagUGCValidateDecalTextureLimits = require(root.flags.getFFlagUGCValidateDecalTextureLimits)
+local getFFlagUGCValidationAllowFullVaas = require(root.flags.getFFlagUGCValidationAllowFullVaas)
 
 -- We allow this much coverage outside the include bounds
 local FIntValidateMakeupZoneIncludeToleranceHundredPercent =
@@ -20,9 +20,8 @@ local FIntValidateMakeupZoneExcludeToleranceHundredPercent =
 	game:DefineFastInt("ValidateMakeupZoneExcludeHundredthsPercent", 200)
 
 -- Server-side and IEC consumer routing. Read directly from `consumerConfig.source`
--- because consumerEnv is only assigned when FFlagUGCValidateMigrateSchemaProperties
--- is on (see ValidationManager.lua:445-451); under flag-off it is nil and a
--- consumerEnv comparison spuriously skips the RCC-retry and IEC pre-load paths.
+-- (always populated) so the RCC-retry and IEC pre-load paths work regardless of
+-- consumer surface.
 local SERVER_SOURCES = {
 	Publish = true,
 	Backend = true,
@@ -35,8 +34,6 @@ local IEC_SOURCES = {
 }
 
 local MakeupDecalValid = {}
-
-MakeupDecalValid.fflag = getFFlagUGCValidateMigrateWrapAndMakeup
 
 MakeupDecalValid.categories = { ValidationEnums.UploadCategory.MAKEUP }
 
@@ -224,7 +221,12 @@ end
 MakeupDecalValid.run = function(reporter: Types.ValidationReporter, data: Types.SharedData)
 	local instance = data.rootInstance
 	local assetTypeEnum = data.uploadEnum.assetType
-	local isBackend = SERVER_SOURCES[data.consumerConfig.source] == true
+	local consumerConfig = data.consumerConfig
+	-- Capability-gated: route by validationEnv (=Backend for VaaS) under the flag.
+	local routeByEnv = getFFlagUGCValidationAllowFullVaas() and consumerConfig.isVaaS
+	local isBackend = if routeByEnv
+		then consumerConfig.validationEnv == ValidationEnums.ValidationEnv.Backend
+		else SERVER_SOURCES[consumerConfig.source] == true
 
 	local wrapTextureTransfer = instance:FindFirstChildOfClass("WrapTextureTransfer")
 	if wrapTextureTransfer == nil then
@@ -236,7 +238,9 @@ MakeupDecalValid.run = function(reporter: Types.ValidationReporter, data: Types.
 	reporter:setReportingInstance(instance)
 
 	local preloadedImages = data.consumerConfig.preloadedEditableImages
-	local allowEditableInstances = IEC_SOURCES[data.consumerConfig.source] == true
+	-- Lifecycle (honest origin): IEC-origin uploads may preload editable images on `content.Object`, so they keep the
+	-- editable-instance allowance even when re-run on a VaaS backend.
+	local allowEditableInstances = IEC_SOURCES[consumerConfig.source] == true
 
 	-- The Decal root instance has texture content fields (ColorMap, MetalnessMap, etc.)
 	-- Walk the same fields as the legacy code

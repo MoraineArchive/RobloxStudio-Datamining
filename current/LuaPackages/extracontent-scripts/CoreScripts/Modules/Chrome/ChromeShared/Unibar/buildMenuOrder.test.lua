@@ -30,6 +30,7 @@ jest.mock(Chrome.Integrations.Connect.isConnectDropdownEnabled, function()
 end)
 
 local SharedFlags = require(CorePackages.Workspace.Packages.SharedFlags)
+local FFlagShowSwitchServerButton = SharedFlags.FFlagShowSwitchServerButton
 local isSideSheetEnabled = require(CorePackages.Workspace.Packages.InExperienceSideSheetUtils.isSideSheetEnabled)
 local FFlagAddInviteFriendsIntegration = SharedFlags.FFlagAddInviteFriendsIntegration
 local FFlagEnableSideSheetRobuxWidget = require(Chrome.Flags.FFlagEnableSideSheetRobuxWidget)
@@ -82,6 +83,10 @@ describe("buildMenuOrder", function()
 			end
 
 			if isPioneerLaunch() then
+				it("SHOULD include switch server", function()
+					expect(contains(buildOrder(), "switch_server")).toBe(true)
+				end)
+
 				it("SHOULD include the account upsell", function()
 					expect(contains(buildOrder(), "AccountUpsell")).toBe(true)
 				end)
@@ -102,6 +107,16 @@ describe("buildMenuOrder", function()
 				it("SHOULD not include the account upsell outside Pioneer", function()
 					expect(contains(buildOrder(), "AccountUpsell")).toBe(false)
 				end)
+
+				if FFlagShowSwitchServerButton or isPioneerLaunch() then
+					it("SHOULD include switch server while its flag is on", function()
+						expect(contains(buildOrder(), "switch_server")).toBe(true)
+					end)
+				else
+					it("SHOULD not include switch server while its flag is off", function()
+						expect(contains(buildOrder(), "switch_server")).toBe(false)
+					end)
+				end
 			end
 
 			if isPioneerLaunch() then

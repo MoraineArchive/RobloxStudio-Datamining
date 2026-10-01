@@ -24,7 +24,7 @@ export type StyleProps = {
 	-- Gap between content list's icon and text
 	contentGap: number,
 	-- The Font type of text
-	titleFont: Fonts.Font,
+	titleFont: Fonts.FontInfo,
 	-- Color for title's text
 	titleTextColor: StyleTypes.ThemeItem,
 	-- The length of icon size

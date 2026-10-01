@@ -8,6 +8,8 @@ local Packages = UIBlox.Parent
 
 local Roact = require(Packages.Roact)
 local t = require(Packages.t)
+local Foundation = require(Packages.Foundation)
+local normalizeFontFace = Foundation.Utility.normalizeFontFace
 
 local withStyle = require(Core.Style.withStyle)
 local Interactable = require(Core.Control.Interactable)
@@ -16,6 +18,8 @@ local LoadableImage = require(UIBlox.App.Loading.LoadableImage)
 local Images = require(App.ImageSet.Images)
 local ImageSetComponent = require(Core.ImageSet.ImageSetComponent)
 local ItemSplitTileFooter = require(UIBlox.App.Tile.ItemSplitTile.ItemSplitTileFooter)
+
+local FFlagFoundationFontFaceMigration = Foundation.Utility.Flags.FoundationFontFaceMigration
 
 local TITLE_LINE_COUNT = 2
 local MAX_TITLE_WIDTH = math.huge
@@ -211,7 +215,8 @@ function ItemSplitTile:renderBottomContent(stylePalette)
 				AutomaticSize = Enum.AutomaticSize.Y,
 				BackgroundTransparency = 1,
 				Text = itemName,
-				Font = font.Header2.Font,
+				Font = if FFlagFoundationFontFaceMigration then nil else font.Header2.Font,
+				FontFace = if FFlagFoundationFontFaceMigration then normalizeFontFace(font.Header2.Font) else nil,
 				TextSize = fontSize,
 				TextTransparency = titleColorStyle.Transparency,
 				TextColor3 = titleColorStyle.Color,

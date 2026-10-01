@@ -29,7 +29,7 @@ export type StyleProps = {
 	-- Padding between the content text and footer
 	contentTitlePadding: number,
 	-- The Font type of the title
-	contentTitleFont: Fonts.Font,
+	contentTitleFont: Fonts.FontInfo,
 }
 
 local function getDefaultStyleProps(style: StyleTypes.AppStyle): StyleProps

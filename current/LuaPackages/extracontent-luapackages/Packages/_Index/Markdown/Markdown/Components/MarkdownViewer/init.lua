@@ -29,6 +29,7 @@ local MarkdownCore = require(Packages.MarkdownCore)
 local Parser = require(Root.Parsers.CommonMarkComplianceParser)
 local Types = require(Root.Types)
 local MarkdownRenderer = require(script.MarkdownRenderer)
+local Flags = MarkdownCore.Flags
 
 export type Props = {
 	Markdown: string?,
@@ -45,20 +46,25 @@ export type Props = {
 
 local function MarkdownViewer(props: Props)
 	local tokens = useTokens()
-	if not props.Markdown and not props.Ast then
+
+	if not Flags.FFlagMarkdownAssistantParity and not props.Markdown and not props.Ast then
 		warn("MarkdownViewer requires either a Markdown string or an Ast in props")
 		return nil
 	end
 
-	local renderers = React.useMemo(function()
-		return Dash.join(
-			MarkdownRenderer.defaultRenderers,
-			props.Renderers or {},
-			props.AdditionalFeatureRenderers or {}
-		)
-	end, { props.Renderers })
+	local renderers = React.useMemo(
+		function()
+			return Dash.join(
+				MarkdownRenderer.defaultRenderers,
+				props.Renderers or {},
+				props.AdditionalFeatureRenderers or {}
+			)
+		end,
+		if Flags.FFlagMarkdownAssistantParity
+			then { props.Renderers, props.AdditionalFeatureRenderers }
+			else { props.Renderers }
+	)
 
-	-- selene: allow(shadowing)
 	local ok, astOrError = React.useMemo(function()
 		-- We guarded against both being nil at the start of the function,
 		-- but the typechecker still complains about the possibility of both being nil.
@@ -66,31 +72,49 @@ local function MarkdownViewer(props: Props)
 			return true, props.Ast
 		end
 		if props.Markdown then
-			local ok, astOrError = Parser.safeParse(props.Markdown)
-			if not ok then
+			local parseOk, parseResult = Parser.safeParse(props.Markdown)
+			if not parseOk then
 				if props.OnError then
-					props.OnError(astOrError)
+					props.OnError(parseResult)
 				else
-					warn("MarkdownViewer: Error parsing markdown.", astOrError)
+					warn("MarkdownViewer: Error parsing markdown.", parseResult)
 				end
 			end
-			return ok, astOrError
+			return parseOk, parseResult
 		end
 		return true, nil
 	end, { props.Markdown, props.Ast })
 
-	local children = React.useMemo(function()
-		if not ok then
-			return nil
-		end
-		return MarkdownRenderer.render(astOrError, {
-			userRenderers = renderers,
-			linkCallback = props.LinkCallback,
-			markdownRendererProps = props.MarkdownRendererProps,
-			colorScheme = props.ColorScheme,
-			tokens = tokens,
-		})
-	end, { ok, astOrError, props.LinkCallback, props.MarkdownRendererProps, props.ColorScheme, renderers })
+	local children = React.useMemo(
+		function()
+			if not ok then
+				return nil
+			end
+			return MarkdownRenderer.render(astOrError, {
+				userRenderers = renderers,
+				linkCallback = props.LinkCallback,
+				markdownRendererProps = props.MarkdownRendererProps,
+				colorScheme = props.ColorScheme,
+				tokens = tokens,
+			})
+		end,
+		if Flags.FFlagMarkdownAssistantParity
+			then {
+				ok,
+				astOrError,
+				props.LinkCallback,
+				props.MarkdownRendererProps,
+				props.ColorScheme,
+				renderers,
+				tokens,
+			}
+			else { ok, astOrError, props.LinkCallback, props.MarkdownRendererProps, props.ColorScheme, renderers }
+	)
+
+	if Flags.FFlagMarkdownAssistantParity and not props.Markdown and not props.Ast then
+		warn("MarkdownViewer requires either a Markdown string or an Ast in props")
+		return nil
+	end
 
 	if not ok then
 		return props.Fallback

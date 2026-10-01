@@ -26,6 +26,11 @@ local HelpModal = Roact.PureComponent:extend("HelpModal")
 local CoreGuiCommon = require(CorePackages.Workspace.Packages.CoreGuiCommon)
 local FFlagTopBarSignalizeScreenSize = CoreGuiCommon.Flags.FFlagTopBarSignalizeScreenSize
 
+local CoreGui = game:GetService("CoreGui")
+local RobloxGui = CoreGui:WaitForChild("RobloxGui")
+local GetFFlagEnableSendImageFeedbackToBackend =
+	require(RobloxGui.Modules.Flags.GetFFlagEnableSendImageFeedbackToBackend)
+
 local MAX_HEIGHT = 130
 local MAX_WIDTH = 540
 
@@ -54,7 +59,9 @@ end
 function HelpModal:render()
 	return withLocalization({
 		mainHeader = "CoreScripts.Feedback.Help.MainHeader",
-		instructionLabel = "CoreScripts.Feedback.Help.Instructions",
+		instructionLabel = if GetFFlagEnableSendImageFeedbackToBackend()
+			then "CoreScripts.Feedback.Help.InstructionsWithImage"
+			else "CoreScripts.Feedback.Help.Instructions",
 	})(function(localized)
 		return Roact.createElement(ModalDialog, {
 			visible = self.props.visible,

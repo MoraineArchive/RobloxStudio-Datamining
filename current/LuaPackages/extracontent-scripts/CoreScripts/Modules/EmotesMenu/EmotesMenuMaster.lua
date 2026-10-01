@@ -49,6 +49,7 @@ local UiModeStyleProvider = require(CorePackages.Workspace.Packages.Style).UiMod
 
 local CanPlayEmotes = require(Utility.CanPlayEmotes)
 local Constants = require(EmotesModules.Constants)
+local FFlagFixEmotesMenuAvailability = require(EmotesModules.Flags.FFlagFixEmotesMenuAvailability)
 
 local EmotesMenu = require(Components.EmotesMenu)
 local EmotesMenuReducer = require(Reducers.EmotesMenuReducer)
@@ -223,7 +224,11 @@ function EmotesMenuMaster:_onHumanoidDescriptionChanged(humanoidDescription)
 
 		local numberEmotesChangedSignal = humanoidDescription:GetPropertyChangedSignal("NumberEmotesLoaded")
 		self.numberEmotesLoadedChangedConn = numberEmotesChangedSignal:Connect(function(newNumberEmotesLoaded)
-			self:_onNumberEmotesLoadedChanged(newNumberEmotesLoaded)
+			if FFlagFixEmotesMenuAvailability then
+				self:_onNumberEmotesLoadedChanged(humanoidDescription.NumberEmotesLoaded)
+			else
+				self:_onNumberEmotesLoadedChanged(newNumberEmotesLoaded)
+			end
 		end)
 		self:_onNumberEmotesLoadedChanged(humanoidDescription.NumberEmotesLoaded)
 

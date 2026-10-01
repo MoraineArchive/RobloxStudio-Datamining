@@ -25,7 +25,9 @@ local LocalizationProvider = require(CorePackages.Workspace.Packages.Localizatio
 local VoiceChatServiceManager = require(RobloxGui.Modules.VoiceChat.VoiceChatServiceManager).default
 
 local useCaptureScreenshotV2 = require(root.Hooks.useCaptureScreenshotV2)
+local useSettingsHubCloseButton = require(script.Parent.useSettingsHubCloseButton)
 local isAbuseReportMenuOpenCloseSignalEnabled = require(root.Flags.isAbuseReportMenuOpenCloseSignalEnabled)
+local FFlagReportFocusNavCloseButton = require(root.Flags.FFlagReportFocusNavCloseButton)
 local FIntAbuseReportTabClearCapturedScreenshotOnCloseFixDelay =
 	require(root.Flags.FIntAbuseReportTabClearCapturedScreenshotOnCloseFixDelay)
 local isInWHAM1707Experiment = require(script.Parent.isInWHAM1707Experiment)
@@ -50,6 +52,7 @@ export type Props = {
 	registerOnReportTabDisplaying: (() -> ()) -> (),
 	registerOnSettingsHidden: (() -> ()) -> (), -- IGM closed
 	registerSetNextPlayerToReport: ((player: Player) -> ()) -> (),
+	getSettingsHubRef: (() -> any)?,
 }
 
 type ScreenshotSnapshotRef = {
@@ -65,6 +68,7 @@ type InnerProps = {
 	reportAnythingSnapshotRef: ScreenshotSnapshotRef,
 	onClose: () -> (),
 	onReportFinish: () -> (),
+	getSettingsHubRef: (() -> any)?,
 }
 
 -- Pure, props-driven view. Knows nothing about the imperative host bridge or the
@@ -75,6 +79,12 @@ local function AbuseReportMenuContentInner(props: InnerProps)
 	local centralOverlay = useRegistryEntry(FocusNavigableSurfaceIdentifierEnum.CentralOverlay)
 	local isFocusable = centralOverlay == nil
 
+	local hubCloseButton, isHubCloseButtonSelected
+	if FFlagReportFocusNavCloseButton then
+		hubCloseButton, isHubCloseButtonSelected =
+			useSettingsHubCloseButton(props.getSettingsHubRef, props.isReportTabVisible)
+	end
+
 	return React.createElement("Frame", {
 		BackgroundTransparency = 1,
 		Position = UDim2.new(0, 0, 0, 0),
@@ -83,9 +93,17 @@ local function AbuseReportMenuContentInner(props: InnerProps)
 		FocusNavigationCoreScriptsWrapper = React.createElement(FocusRoot, {
 			frameProps = {
 				Size = UDim2.new(1, 0, 1, 0),
+				-- The menu owns the close button, in the header above the report, so this
+				-- isolated root has to let selection escape upward for it to be reachable.
+				SelectionBehaviorUp = if FFlagReportFocusNavCloseButton and hubCloseButton ~= nil
+					then Enum.SelectionBehavior.Escape
+					else nil,
+				NextSelectionUp = hubCloseButton,
 			},
 			isFocusable = isFocusable,
-			isAutoFocusRoot = true,
+			-- Auto-focus pulls selection back into the report whenever it sits elsewhere,
+			-- which would take it straight off the close button again.
+			isAutoFocusRoot = if FFlagReportFocusNavCloseButton then not isHubCloseButtonSelected else true,
 			isIsolated = true,
 			surfaceIdentifier = FocusNavigableSurfaceIdentifierEnum.RouterView,
 		}, {
@@ -223,6 +241,7 @@ local function AbuseReportMenuContent(props: Props)
 		isReportTabVisible = tabVisible,
 		preselectedPlayer = preselectedPlayer,
 		reportAnythingSnapshotRef = screenshotCapture.snapshotRef,
+		getSettingsHubRef = if FFlagReportFocusNavCloseButton then props.getSettingsHubRef else nil,
 		onClose = props.hideReportTab,
 		onReportFinish = function()
 			setPreselectedPlayer(nil)

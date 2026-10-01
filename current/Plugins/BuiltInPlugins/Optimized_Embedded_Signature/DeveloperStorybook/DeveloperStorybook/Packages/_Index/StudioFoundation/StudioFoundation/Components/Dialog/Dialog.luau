@@ -42,7 +42,10 @@ export type Props = {
 
 	-- Optional custom-dialog presentation overrides
 	isContentFullBleed: boolean?,
+	--- Defaults to true
+	modal: boolean?,
 	tertiaryActionVariant: ("Standard" | "Utility")?,
+	toolDialog: boolean?,
 }
 
 local function Dialog(props: Props)
@@ -78,6 +81,8 @@ local function Dialog(props: Props)
 		uri = props.uri,
 		getSize = getSize,
 		onClose = if wrappedDialogActions.escapeAction then wrappedDialogActions.escapeAction.onClose else nil,
+		modal = props.modal,
+		toolDialog = props.toolDialog,
 	}, {
 		DialogView = e(DialogView, {
 			type = props.type,

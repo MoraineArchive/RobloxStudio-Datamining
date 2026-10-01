@@ -19,7 +19,9 @@ local Topbar = script.Parent.Parent.Parent.Parent
 local Modules = Topbar.Parent
 local Chrome = Modules.Chrome
 local ChromeEnabled = require(CorePackages.Workspace.Packages.Chrome).Enabled()
-local GamepadConnector = if (not FFlagEnableConsoleExpControls or ChromeEnabled) then require(Topbar.Components.GamepadConnector) else nil :: never
+local GamepadConnector = if (not FFlagEnableConsoleExpControls or ChromeEnabled)
+	then require(Topbar.Components.GamepadConnector)
+	else nil :: never
 local useObservableValue = require(Chrome.ChromeShared.Hooks.useObservableValue)
 
 local Localization = require(CorePackages.Workspace.Packages.InExperienceLocales).Localization
@@ -96,14 +98,14 @@ local function MenuNavigationToggleDialog(props: Props)
 		local rightTextSize_ = GetTextSize(rightText, font.FontSize, font.Font, Vector2.new(math.huge, math.huge))
 
 		return leftTextSize_, rightTextSize_
-	end, { font.FontSize, font.Font, leftText, rightText })
+	end, { font.FontSize, font.Font, leftText, rightText } :: { unknown })
 
-	local topbarFocus: GuiObject? | boolean? 
-	if ChromeEnabled then 
-		if FFlagEnableConsoleExpControls then 
+	local topbarFocus: GuiObject? | boolean?
+	if ChromeEnabled then
+		if FFlagEnableConsoleExpControls then
 			topbarFocus = useObservableValue(GamepadConnector:getSelectedCoreObject())
 		end
-	else 
+	else
 		topbarFocus = nil
 	end
 
@@ -113,8 +115,7 @@ local function MenuNavigationToggleDialog(props: Props)
 		AutomaticSize = Enum.AutomaticSize.XY,
 		AnchorPoint = Vector2.new(0.5, 0.5),
 		Position = props.Position,
-		Visible = if ChromeEnabled and FFlagEnableConsoleExpControls then topbarFocus ~= nil 
-			else true,
+		Visible = if ChromeEnabled and FFlagEnableConsoleExpControls then topbarFocus ~= nil else true,
 	}, {
 		Corner = React.createElement("UICorner", {
 			CornerRadius = UDim.new(0, cornerRadius),

@@ -23,22 +23,29 @@ local ImageElement = InlineLayout.Components.InlineLayoutElements.ImageElement
 local HardBreakElement = InlineLayout.Components.InlineLayoutElements.HardBreakElement
 local mergeContexts = require(Utils.mergeContexts)
 local processSoftBreaks = require(Utils.processSoftBreaks)
-local getCodeTextStyles = require(Utils.TextStyle).getCodeTextStyles
-local getBaseTextElementEngineTags = require(Utils.TextStyle).getBaseTextElementEngineTags
+local TextStyle = require(Utils.TextStyle)
 local renderInline = require(script.Parent.Parent.NodeRenderers.renderInline)
 local renderTag = require(script.Parent.Parent.NodeRenderers.renderTag)
 local BulletList = MarkdownCore.Components.BulletList
+
+local getBaseTextElementEngineTags = TextStyle.getBaseTextElementEngineTags
+local getCodeTextStyles = TextStyle.getCodeTextStyles
+local normalizeStyleFont = TextStyle.normalizeStyleFont
 
 local Types = require(Root.Types)
 local Highlighter = MarkdownCore.Utils.Highlighter
 local getNodeTypeConfig = require(Root.Utils.getNodeTypeConfig)
 local isInlineElement = InlineLayout.Utils.isInlineElement
+local Flags = MarkdownCore.Flags
+local FoundationFlags = Foundation.Utility.Flags
 
 local DEFAULT_TEXT_SIZE = 18
 local DEFAULT_FONT = Enum.Font.BuilderSans
-local DEFAULT_IMAGE_SIZE = UDim2.new(0, 16, 0, 16)
-local DEFAULT_CODE_FONT = Enum.Font.Code
+local DEFAULT_IMAGE_SIZE = UDim2.fromOffset(16, 16)
 local DEFAULT_CODE_LINE_HEIGHT = 1.111
+local DEFAULT_CODE_FONT_LEGACY = Enum.Font.Code
+local DEFAULT_CODE_FONT =
+	Font.new("rbxasset://fonts/families/BuilderMono.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 
 local defaultLinkCallback: Types.LinkCallbackType = function(url: string)
 	print(`[Default link callback]: URL [{url}] is clicked`)
@@ -49,10 +56,11 @@ local MarkdownRenderer = {
 }
 
 local function getFontFace(styles: Types.TextStyles, defaultFont: Enum.Font): Font
-	if styles.fontFace then
-		return styles.fontFace
-	elseif styles.font then
-		return Font.fromEnum(styles.font)
+	local font = styles.fontFace or styles.font
+	if typeof(font) == "Font" then
+		return font
+	elseif font then
+		return Font.fromEnum(font)
 	end
 	return Font.fromEnum(defaultFont)
 end
@@ -210,7 +218,9 @@ local function renderCodeBlock(node: Types.Node, context: Types.Context): React.
 		TextWrapped = false,
 		fontStyle = {
 			FontSize = mergedTextStyles.textSize,
-			Font = getFontFace(mergedTextStyles, DEFAULT_CODE_FONT),
+			Font = if Flags.FFlagMarkdownAssistantParity
+				then mergedTextStyles.fontFace or DEFAULT_CODE_FONT
+				else getFontFace(mergedTextStyles, DEFAULT_CODE_FONT_LEGACY),
 			LineHeight = mergedTextStyles.lineHeight,
 		},
 		TextXAlignment = Enum.TextXAlignment.Left,
@@ -384,7 +394,9 @@ local function renderList(node: Types.Node, context: Types.Context): React.React
 		Items = items :: { any },
 		TextWrapped = true,
 		ListStyle = {
-			Font = getFontFace(context.textStyles, DEFAULT_FONT),
+			Font = if Flags.FFlagMarkdownAssistantParity
+				then context.textStyles.fontFace
+				else getFontFace(context.textStyles, DEFAULT_FONT),
 			TextColor = if typeof(context.textStyles.color) == "string"
 				then Color3.fromHex(context.textStyles.color)
 				else context.textStyles.color,
@@ -432,7 +444,9 @@ local function renderText(node: Types.Node, context: Types.Context): InlineEleme
 		Text = processSoftBreaks(node.text :: string),
 		EngineTags = getBaseTextElementEngineTags(context.textStyles),
 		fontStyle = {
-			Font = getFontFace(context.textStyles, DEFAULT_FONT),
+			Font = if Flags.FFlagMarkdownAssistantParity
+				then context.textStyles.fontFace
+				else getFontFace(context.textStyles, DEFAULT_FONT),
 			FontSize = context.textStyles.textSize,
 		},
 		textStyle = {
@@ -563,34 +577,63 @@ function MarkdownRenderer.render(node: Types.Node, props: Props): React.ReactEle
 
 	local markdownRendererProps = table.clone(props.markdownRendererProps or {})
 
+	local defaultStyles
+	if Flags.FFlagMarkdownAssistantParity then
+		markdownRendererProps.textStyles = normalizeStyleFont(markdownRendererProps.textStyles)
+		markdownRendererProps.codeStyles = normalizeStyleFont(markdownRendererProps.codeStyles)
+		if markdownRendererProps.headerStyles then
+			markdownRendererProps.headerStyles = Dash.map(markdownRendererProps.headerStyles, normalizeStyleFont)
+		end
+
+		local bodyTypography = props.tokens.Typography.BodyMedium
+		local defaultFontFace = if FoundationFlags.FoundationFontFaceMigration
+			then normalizeStyleFont({ font = bodyTypography.Font }).fontFace
+			else Font.fromEnum(bodyTypography.Font :: Enum.Font)
+		local defaultTextSize = bodyTypography.FontSize
+
+		defaultStyles = {
+			textStyles = {
+				textSize = defaultTextSize,
+				fontFace = defaultFontFace,
+			},
+			codeStyles = {
+				textSize = defaultTextSize,
+				fontFace = DEFAULT_CODE_FONT,
+				lineHeight = DEFAULT_CODE_LINE_HEIGHT,
+			},
+			headerStyles = {
+				[1] = { textSize = defaultTextSize * 3, fontFace = defaultFontFace },
+				[2] = { textSize = defaultTextSize * 2.5, fontFace = defaultFontFace },
+				[3] = { textSize = defaultTextSize * 2, fontFace = defaultFontFace },
+				[4] = { textSize = defaultTextSize * 1.5, fontFace = defaultFontFace },
+				[5] = { textSize = defaultTextSize * 1.5, fontFace = defaultFontFace },
+				[6] = { textSize = defaultTextSize * 1.5, fontFace = defaultFontFace },
+			},
+		}
+	else
+		defaultStyles = {
+			textStyles = {
+				textSize = DEFAULT_TEXT_SIZE,
+				font = DEFAULT_FONT,
+			},
+			codeStyles = {
+				textSize = DEFAULT_TEXT_SIZE,
+				font = DEFAULT_CODE_FONT_LEGACY,
+				lineHeight = DEFAULT_CODE_LINE_HEIGHT,
+			},
+			headerStyles = {
+				[1] = { textSize = DEFAULT_TEXT_SIZE * 3, font = DEFAULT_FONT },
+				[2] = { textSize = DEFAULT_TEXT_SIZE * 2.5, font = DEFAULT_FONT },
+				[3] = { textSize = DEFAULT_TEXT_SIZE * 2, font = DEFAULT_FONT },
+				[4] = { textSize = DEFAULT_TEXT_SIZE * 1.5, font = DEFAULT_FONT },
+			},
+		}
+	end
+
 	local initialContext: Types.Context = Dash.joinDeep({
-		textStyles = {
-			textSize = DEFAULT_TEXT_SIZE,
-			font = DEFAULT_FONT,
-		},
-		codeStyles = {
-			textSize = DEFAULT_TEXT_SIZE,
-			font = DEFAULT_CODE_FONT,
-			lineHeight = DEFAULT_CODE_LINE_HEIGHT,
-		},
-		headerStyles = {
-			[1] = {
-				textSize = DEFAULT_TEXT_SIZE * 3,
-				font = DEFAULT_FONT,
-			},
-			[2] = {
-				textSize = DEFAULT_TEXT_SIZE * 2.5,
-				font = DEFAULT_FONT,
-			},
-			[3] = {
-				textSize = DEFAULT_TEXT_SIZE * 2,
-				font = DEFAULT_FONT,
-			},
-			[4] = {
-				textSize = DEFAULT_TEXT_SIZE * 1.5,
-				font = DEFAULT_FONT,
-			},
-		},
+		textStyles = defaultStyles.textStyles,
+		codeStyles = defaultStyles.codeStyles,
+		headerStyles = defaultStyles.headerStyles,
 		imageStyles = {
 			size = DEFAULT_IMAGE_SIZE,
 		},

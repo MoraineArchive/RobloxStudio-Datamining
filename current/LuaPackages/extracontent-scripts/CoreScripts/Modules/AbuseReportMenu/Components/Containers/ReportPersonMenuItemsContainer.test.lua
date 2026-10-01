@@ -24,7 +24,7 @@ local it = JestGlobals.it
 local Constants = require(root.Components.Constants)
 local reportAnythingAnalytics = require(root.ReportAnything.Utility.ReportAnythingAnalytics)
 local ReportPersonMenuItemsContainer = require(root.Components.Containers.ReportPersonMenuItemsContainer)
-local AbuseReportMenuNew = require(root.Components.AbuseReportMenuNew)
+local LegacyAbuseReportMenu = require(root.Components.LegacyAbuseReportMenu)
 local LocalPlayer = Players.LocalPlayer :: Player
 local StyleProviderWithDefaultTheme = Style.StyleProviderWithDefaultTheme
 
@@ -83,7 +83,7 @@ local element = React.createElement(Foundation.FoundationProvider, {
 })
 
 -- Create ReportPersonMenuItemsContainer component
-local element2 = React.createElement(AbuseReportMenuNew, defaultProps)
+local element2 = React.createElement(LegacyAbuseReportMenu, defaultProps)
 
 describe("ReportPersonMenuItemsContainer", function()
 	it("should create ReportPersonMenuItemsContainer with no errors", function()
@@ -104,11 +104,11 @@ describe("ReportPersonMenuItemsContainer", function()
 	end)
 
 	it("should have ModalSelectorDialogGui as not nil when clicking PlayerSelector dropdown menu item", function()
-		-- We need to mount the AbuseReportMenuNew or else the ModalSelectorDialogGui will not have a parent component to mount to
-		local AbuseReportMenuInstance = Roact.mount(element2, CoreGui, Constants.AbuseReportMenuRootName)
+		-- The legacy menu provides the parent used to mount ModalSelectorDialogGui.
+		local AbuseReportMenuInstance = Roact.mount(element2, CoreGui, Constants.LegacyAbuseReportMenuRootName)
 		local ReportPersonMenuItemsContainerInstance = Roact.mount(element, RobloxGui, "ReportPersonMenuItemsContainer")
 
-		-- AbuseReportMenuNew won't render anything if the report tab isn't actually visible, so let it know that it is
+		-- LegacyAbuseReportMenu only renders while the report tab is visible.
 		Roact.act(function()
 			displayReportTab()
 		end)

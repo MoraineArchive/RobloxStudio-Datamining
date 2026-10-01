@@ -8,11 +8,7 @@ local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 
 local getFIntUGCValidateTriangleLimitTolerance = require(root.flags.getFIntUGCValidateTriangleLimitTolerance)
-local getFFlagUGCValidateMigrateMeshGeometry = require(root.flags.getFFlagUGCValidateMigrateMeshGeometry)
-
 local TriangleCountBounded = {}
-
-TriangleCountBounded.fflag = getFFlagUGCValidateMigrateMeshGeometry
 TriangleCountBounded.categories = {
 	ValidationEnums.UploadCategory.LAYERED_CLOTHING,
 	ValidationEnums.UploadCategory.RIGID_ACCESSORY,

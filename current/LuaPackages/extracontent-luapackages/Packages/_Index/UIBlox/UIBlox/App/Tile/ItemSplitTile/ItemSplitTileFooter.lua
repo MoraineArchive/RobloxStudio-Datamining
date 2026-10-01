@@ -8,10 +8,12 @@ local Packages = UIBlox.Parent
 local Roact = require(Packages.Roact)
 local t = require(Packages.t)
 local Foundation = require(Packages.Foundation)
+local normalizeFontFace = Foundation.Utility.normalizeFontFace
 
 local withStyle = require(UIBlox.Core.Style.withStyle)
 local Images = require(UIBlox.App.ImageSet.Images)
 
+local FFlagFoundationFontFaceMigration = Foundation.Utility.Flags.FoundationFontFaceMigration
 local Skeleton = Foundation.Skeleton
 local ImageSetComponent = require(UIBlox.Core.ImageSet.ImageSetComponent)
 local IconSize = require(App.ImageSet.Enum.IconSize)
@@ -70,7 +72,8 @@ function ItemSplitTileFooter:render()
 				BackgroundTransparency = 1,
 				Position = UDim2.new(0, iconPadding, 0, 0),
 				Size = UDim2.new(1, -iconPadding, 1, 0),
-				Font = font,
+				Font = if FFlagFoundationFontFaceMigration then nil else font,
+				FontFace = if FFlagFoundationFontFaceMigration then normalizeFontFace(font) else nil,
 				TextColor3 = theme.TextMuted.Color,
 				TextTransparency = theme.TextMuted.Transparency,
 				TextSize = fontSize,

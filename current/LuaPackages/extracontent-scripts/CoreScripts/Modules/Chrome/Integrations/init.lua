@@ -61,6 +61,8 @@ return {
 	RespawnConfirmation = if isSideSheetEnabled then require(script.Pages.RespawnConfirmation) else nil,
 	RobuxWidget = if FFlagEnableSideSheetRobuxWidget and isSideSheetEnabled then require(script.RobuxWidget) else nil,
 	ShopEntrypoint = if FFlagEnableInExperienceShop then require(script.InExperienceShop.ShopEntrypoint) else nil,
-	SwitchServer = if isSideSheetEnabled and FFlagShowSwitchServerButton then require(script.SwitchServer) else nil,
+	SwitchServer = if isSideSheetEnabled and (isPioneerLaunch() or FFlagShowSwitchServerButton)
+		then require(script.SwitchServer)
+		else nil,
 	AccountUpsell = if isPioneerLaunch() then require(script.AccountUpsell) else nil,
 }

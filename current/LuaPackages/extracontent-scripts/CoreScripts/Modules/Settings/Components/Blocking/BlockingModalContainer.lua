@@ -68,7 +68,7 @@ local function BlockingModalContainer(props: Props)
 			local InGameMenu = require(Modules.InGameMenuInit)
 			InGameMenu.openReportDialog(player, sourceForReporting)
 		else
-			local ReportAbuseMenu = require(Modules.Settings.Pages.ReportAbuseMenuNewContainerPage)
+			local ReportAbuseMenu = require(Modules.Settings.Pages.ReportAbuseMenuContainerPage)
 			ReportAbuseMenu:ReportPlayer(player, sourceForReporting)
 		end
 	end, { onBlock, player, source } :: { any })

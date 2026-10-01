@@ -7,11 +7,7 @@ local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 
 local getFIntUGCValidationVertexDensityThreshold = require(root.flags.getFIntUGCValidationVertexDensityThreshold)
-local getFFlagUGCValidateMigrateMeshGeometry = require(root.flags.getFFlagUGCValidateMigrateMeshGeometry)
-
 local VertexDensityBounded = {}
-
-VertexDensityBounded.fflag = getFFlagUGCValidateMigrateMeshGeometry
 VertexDensityBounded.categories = { ValidationEnums.UploadCategory.LAYERED_CLOTHING }
 VertexDensityBounded.requiredData = { ValidationEnums.SharedDataMember.renderMeshesData }
 VertexDensityBounded.expectedFailures = {}

@@ -8,7 +8,6 @@ local CurveAnimTranslationUtils = require(root.util.CurveAnimTranslationUtils)
 
 local getFFlagUGCValidateEmotesBonesAllowed = require(root.flags.getFFlagUGCValidateEmotesBonesAllowed)
 local getFFlagUGCValidateAnimBonesSupport = require(root.flags.getFFlagUGCValidateAnimBonesSupport)
-local getFFlagUGCValidationAnimationPackSupport = require(root.flags.getFFlagUGCValidationAnimationPackSupport)
 local getFFlagUGCValidateAnimTranslationThreshold = require(root.flags.getFFlagUGCValidateAnimTranslationThreshold)
 local FIntUGCValidateBoneTranslationMaxDistanceHundredths =
 	game:DefineFastInt("UGCValidateBoneTranslationMaxDistanceHundredths", 100)
@@ -16,7 +15,7 @@ local FIntUGCValidateBoneTranslationMaxDistanceHundredths =
 local CurveAnimBonesRotationOnly = {}
 
 CurveAnimBonesRotationOnly.categories = { ValidationEnums.UploadCategory.EMOTE_ANIMATION }
-if getFFlagUGCValidateAnimBonesSupport() and getFFlagUGCValidationAnimationPackSupport() then
+if getFFlagUGCValidateAnimBonesSupport() then
 	table.insert(CurveAnimBonesRotationOnly.categories, ValidationEnums.UploadCategory.ANIMATION)
 end
 CurveAnimBonesRotationOnly.requiredData = {

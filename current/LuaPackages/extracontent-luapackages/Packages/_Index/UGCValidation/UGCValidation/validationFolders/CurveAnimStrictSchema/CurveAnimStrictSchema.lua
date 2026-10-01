@@ -8,14 +8,11 @@ local validateInstanceTreeAgainstSchema = require(root.util.validateInstanceTree
 local CurveAnimationHierarchyUtils = require(root.util.CurveAnimationHierarchyUtils)
 
 local getFFlagUGCValidateCurveAnimStrictSchema = require(root.flags.getFFlagUGCValidateCurveAnimStrictSchema)
-local getFFlagUGCValidationAnimationPackSupport = require(root.flags.getFFlagUGCValidationAnimationPackSupport)
 
 local CurveAnimStrictSchema = {}
 
-CurveAnimStrictSchema.categories = { ValidationEnums.UploadCategory.EMOTE_ANIMATION }
-if getFFlagUGCValidationAnimationPackSupport() then
-	table.insert(CurveAnimStrictSchema.categories, ValidationEnums.UploadCategory.ANIMATION)
-end
+CurveAnimStrictSchema.categories =
+	{ ValidationEnums.UploadCategory.EMOTE_ANIMATION, ValidationEnums.UploadCategory.ANIMATION }
 CurveAnimStrictSchema.requiredData = {
 	ValidationEnums.SharedDataMember.curveAnimations,
 }

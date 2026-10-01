@@ -2,6 +2,8 @@ local SocialLibraries = script:FindFirstAncestor("SocialLibraries")
 local dependencies = require(SocialLibraries.dependencies)
 local Roact = dependencies.Roact
 local UIBlox = dependencies.UIBlox
+local FFlagFoundationFontFaceMigration = dependencies.Foundation.Utility.Flags.FoundationFontFaceMigration
+local normalizeFontFace = dependencies.Foundation.Utility.normalizeFontFace
 
 local AlertViewLabel = Roact.PureComponent:extend("AlertViewLabel")
 AlertViewLabel.defaultProps = {
@@ -22,7 +24,8 @@ function AlertViewLabel:render()
 
 		return Roact.createElement("TextLabel", {
 			BackgroundTransparency = backgroundTransparency,
-			Font = font,
+			Font = if FFlagFoundationFontFaceMigration then nil :: never else font,
+			FontFace = if FFlagFoundationFontFaceMigration then normalizeFontFace(font) else nil :: never,
 			LayoutOrder = self.props.LayoutOrder,
 			Size = self.props.Size,
 			Text = text,

@@ -6,6 +6,7 @@ local Packages = UIBlox.Parent
 local React = require(Packages.React)
 local Cryo = require(Packages.Cryo)
 local Foundation = require(Packages.Foundation)
+local normalizeFontFace = Foundation.Utility.normalizeFontFace
 
 local ImagesTypes = require(App.ImageSet.ImagesTypes)
 local StyleTypes = require(App.Style.StyleTypes)
@@ -17,6 +18,8 @@ local useStyle = require(UIBlox.Core.Style.useStyle)
 
 local UIBloxConfig = require(UIBlox.UIBloxConfig)
 local OpenTypeSupport = require(UIBlox.Utility.OpenTypeSupport)
+
+local FFlagFoundationFontFaceMigration = Foundation.Utility.Flags.FoundationFontFaceMigration
 
 export type ItemStyleProps = {
 	-- Spacing between icon and label
@@ -176,7 +179,8 @@ local function NameItem(props: InnerItemProps)
 				Text = icon,
 				TextXAlignment = Enum.TextXAlignment.Center,
 				TextYAlignment = Enum.TextYAlignment.Center,
-				Font = labelTypography.Font,
+				Font = if FFlagFoundationFontFaceMigration then nil else labelTypography.Font,
+				FontFace = if FFlagFoundationFontFaceMigration then normalizeFontFace(labelTypography.Font) else nil,
 				TextSize = iconSize,
 				TextColor3 = iconColorStyle.Color3,
 				TextTransparency = if iconColorStyle.Transparency then iconColorStyle.Transparency else 0,
@@ -227,7 +231,8 @@ local function NameItem(props: InnerItemProps)
 				Text = labelText,
 				TextXAlignment = Enum.TextXAlignment.Left,
 				TextYAlignment = Enum.TextYAlignment.Center,
-				Font = labelTypography.Font,
+				Font = if FFlagFoundationFontFaceMigration then nil else labelTypography.Font,
+				FontFace = if FFlagFoundationFontFaceMigration then normalizeFontFace(labelTypography.Font) else nil,
 				TextSize = labelTypography.FontSize,
 				TextColor3 = labelColorStyle.Color3,
 				TextTransparency = labelColorStyle.Transparency,

@@ -6,7 +6,6 @@ local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 
 local getFFlagUGCValidateAnimationPackNoDuplicateIds =
 	require(root.flags.getFFlagUGCValidateAnimationPackNoDuplicateIds)
-local getFFlagUGCValidateMigrateSchemaProperties = require(root.flags.getFFlagUGCValidateMigrateSchemaProperties)
 
 local AnimationPackNoDuplicateIds = {}
 
@@ -15,7 +14,7 @@ AnimationPackNoDuplicateIds.requiredData = {
 	ValidationEnums.SharedDataMember.contentIds,
 }
 AnimationPackNoDuplicateIds.fflag = function()
-	return getFFlagUGCValidateAnimationPackNoDuplicateIds() and getFFlagUGCValidateMigrateSchemaProperties()
+	return getFFlagUGCValidateAnimationPackNoDuplicateIds()
 end
 AnimationPackNoDuplicateIds.expectedFailures = {}
 AnimationPackNoDuplicateIds.prereqTests = { ValidationEnums.ValidationModule.ExpectedRootSchema }

@@ -7,6 +7,8 @@ local Packages = script.Parent.Parent.Parent.Parent
 
 local Roact = require(Packages.Roact)
 local t = require(Packages.t)
+local Foundation = require(Packages.Foundation)
+local normalizeFontFace = Foundation.Utility.normalizeFontFace
 
 local ReactUtils = require(Packages.ReactUtils)
 local EventConnection = ReactUtils.EventConnection
@@ -16,6 +18,8 @@ local Images = require(Packages.UIBlox.App.ImageSet.Images)
 local withStyle = require(Packages.UIBlox.Core.Style.withStyle)
 
 local divideTransparency = require(Packages.UIBlox.Utility.divideTransparency)
+
+local FFlagFoundationFontFaceMigration = Foundation.Utility.Flags.FoundationFontFaceMigration
 
 local SliderTextInput = Roact.PureComponent:extend("SliderTextInput")
 SliderTextInput.validateProps = t.strictInterface({
@@ -73,7 +77,8 @@ function SliderTextInput:render()
 				[Roact.Ref] = self.textBoxRef,
 				BackgroundTransparency = 1,
 				ClearTextOnFocus = false,
-				Font = style.Font.Body.Font,
+				Font = if FFlagFoundationFontFaceMigration then nil else style.Font.Body.Font,
+				FontFace = if FFlagFoundationFontFaceMigration then normalizeFontFace(style.Font.Body.Font) else nil,
 				TextSize = style.Font.Body.RelativeSize * style.Font.BaseSize,
 				TextColor3 = style.Theme.TextDefault.Color,
 				TextTransparency = textTransparency,

@@ -6,7 +6,7 @@ category: Display
 
 Progress components provide visual feedback about the completion status of tasks or processes. They support both determinate (with a specific value) and indeterminate (loading) states, and are available in two shapes: `Bar` and `Circle`.
 
-The `Bar` shape only officially supports only one size, `Medium`, as well as an additional `width` property.
+The `Bar` shape officially supports two sizes, `Small` and `Medium`, as well as an additional `width` property.
 
 !!! info "Progress vs. Loading"
 

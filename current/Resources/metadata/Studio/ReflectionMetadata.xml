@@ -11242,6 +11242,15 @@
     </Item>
     <Item class="ReflectionMetadataClass">
       <Properties>
+        <string name="Name">TextDocument</string>
+        <string name="ClassCategory">Scripting</string>
+        <string name="ExplorerOrder">55</string>
+        <string name="ExplorerImageIndex">6</string>
+        <string name="FFlag">ExposeTextDocumentInstance</string>
+      </Properties>
+    </Item>
+    <Item class="ReflectionMetadataClass">
+      <Properties>
         <string name="Name">AuroraScript</string>
         <string name="ClassCategory">Scripting</string>
         <string name="ExplorerOrder">50</string>

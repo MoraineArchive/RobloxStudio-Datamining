@@ -45,6 +45,7 @@ end
 
 local ExpChat = require(CorePackages.Workspace.Packages.ExpChat)
 local ExpChatFocusNavigationStore = ExpChat.Stores.GetFocusNavigationStore(false)
+local shouldSkipHistoricalMessage = ExpChat.shouldSkipHistoricalMessage
 local shouldSuppressUnreadForTabMetadata = ExpChat.shouldSuppressUnreadForTabMetadata
 -- TODO: exp-chat should own friends unread-count tracking and expose an
 -- abstracted interface for chrome, rather than chrome reaching into a
@@ -363,8 +364,11 @@ end
 -- Purely informational system messages (chat-enabled, welcome, and summary lines)
 -- should not bump the unibar unread badge, mirroring the channel-tab unread
 local function shouldIgnoreUnreadForMessage(textChatMessage: TextChatMessage?): boolean
-	return FFlagExpChatSuppressWelcomeMessageUnibarUnread
-		and shouldSuppressUnreadForTabMetadata(textChatMessage and textChatMessage.Metadata)
+	return (textChatMessage ~= nil and shouldSkipHistoricalMessage(textChatMessage))
+		or (
+			FFlagExpChatSuppressWelcomeMessageUnibarUnread
+			and shouldSuppressUnreadForTabMetadata(textChatMessage and textChatMessage.Metadata)
+		)
 end
 
 TextChatService.MessageReceived:Connect(function(textChatMessage: TextChatMessage)

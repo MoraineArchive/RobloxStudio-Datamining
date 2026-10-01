@@ -15,6 +15,8 @@ type _Messages = {
 }
 local messages: _Messages = {} :: _Messages
 
+local _roblox_apppageplatform_shared_v1beta1_client_capabilities =
+	require(script.Parent.Parent.Parent.shared.v1beta1.client_capabilities)
 local _roblox_apppageplatform_shared_v1beta1_hydration_content =
 	require(script.Parent.Parent.Parent.shared.v1beta1.hydration_content)
 local _roblox_apppageplatform_shared_v1beta1_template_entry =
@@ -37,6 +39,7 @@ type _GetSearchResultsPageRequestFields = {
 	session_id: string,
 	vertical_type: SearchResultsPageVerticalType,
 	global_session_id: string,
+	client_capabilities: _roblox_apppageplatform_shared_v1beta1_client_capabilities.ClientCapabilities?,
 }
 
 type _GetSearchResultsPageRequestPartialFields = {
@@ -44,6 +47,7 @@ type _GetSearchResultsPageRequestPartialFields = {
 	session_id: string?,
 	vertical_type: SearchResultsPageVerticalType?,
 	global_session_id: string?,
+	client_capabilities: _roblox_apppageplatform_shared_v1beta1_client_capabilities.ClientCapabilities?,
 }
 
 export type GetSearchResultsPageRequest = typeof(setmetatable(
@@ -172,6 +176,9 @@ do
 				then assert(messages.SearchResultsPageVerticalType.fromNumber(0), "Enum has no 0 default")
 				else data.vertical_type,
 			global_session_id = if data == nil or data.global_session_id == nil then "" else data.global_session_id,
+			client_capabilities = if data == nil or data.client_capabilities == nil
+				then nil
+				else data.client_capabilities,
 		}, _GetSearchResultsPageRequestImpl :: _GetSearchResultsPageRequestImpl)
 	end
 
@@ -207,6 +214,12 @@ do
 		if self.global_session_id ~= nil and self.global_session_id ~= "" then
 			output, cursor = proto.writeTag(output, cursor, 4, proto.wireTypes.lengthDelimited)
 			output, cursor = proto.writeString(output, cursor, self.global_session_id)
+		end
+
+		if self.client_capabilities ~= nil then
+			local encoded = self.client_capabilities:encode()
+			output, cursor = proto.writeTag(output, cursor, 5, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
 		end
 
 		local shrunkBuffer = buffer.create(cursor)
@@ -247,6 +260,12 @@ do
 					local value
 					value, cursor = proto.readBuffer(input, cursor)
 					self.global_session_id = buffer.tostring(value)
+					continue
+				elseif field == 5 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.client_capabilities =
+						_roblox_apppageplatform_shared_v1beta1_client_capabilities.ClientCapabilities.decode(value)
 					continue
 				end
 
@@ -299,6 +318,10 @@ do
 			output.globalSessionId = self.global_session_id
 		end
 
+		if self.client_capabilities ~= nil then
+			output.clientCapabilities = self.client_capabilities:jsonEncode()
+		end
+
 		return output
 	end
 
@@ -339,6 +362,20 @@ do
 
 		if input.globalSessionId ~= nil then
 			self.global_session_id = input.globalSessionId
+		end
+
+		if input.client_capabilities ~= nil then
+			self.client_capabilities =
+				_roblox_apppageplatform_shared_v1beta1_client_capabilities.ClientCapabilities.jsonDecode(
+					input.client_capabilities
+				)
+		end
+
+		if input.clientCapabilities ~= nil then
+			self.client_capabilities =
+				_roblox_apppageplatform_shared_v1beta1_client_capabilities.ClientCapabilities.jsonDecode(
+					input.clientCapabilities
+				)
 		end
 
 		return self

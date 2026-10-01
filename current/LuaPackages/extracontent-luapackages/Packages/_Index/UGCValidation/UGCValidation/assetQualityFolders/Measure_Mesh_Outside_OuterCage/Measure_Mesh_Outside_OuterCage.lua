@@ -26,7 +26,6 @@ Measure_Mesh_Outside_OuterCage.run = function(reporter: Types.ValidationReporter
 		end
 		if getFFlagUGCValidateAQScoreWarnings() and summary.score ~= nil and tonumber(summary.score) ~= 100 then
 			reporter:warn(ErrorSourceStrings.Keys.AQSWarn_MeshOutsideOuterCage, {
-				score = tostring(math.floor(tonumber(summary.score) or 0)),
 				mesh_outside_outer_cage_percent = string.format(
 					"%.2f",
 					(tonumber(summary.mesh_outside_outer_cage_percent) or 0) * 100

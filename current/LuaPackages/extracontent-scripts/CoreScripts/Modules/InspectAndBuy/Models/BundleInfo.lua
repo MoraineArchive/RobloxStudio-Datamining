@@ -18,7 +18,10 @@
 	}
 ]]
 local CorePackages = game:GetService("CorePackages")
+local Cryo = require(CorePackages.Packages.Cryo)
 local Dash = require(CorePackages.Packages.Dash)
+local FFlagAXMarketplaceLicensing =
+	require(CorePackages.Workspace.Packages.AvatarExperienceFlags).FFlagAXMarketplaceLicensing
 
 local InspectAndBuyFolder = script.Parent.Parent
 
@@ -26,6 +29,8 @@ local Constants = require(InspectAndBuyFolder.Constants)
 local AvatarExperienceInspectAndBuy = require(CorePackages.Workspace.Packages.AvatarExperienceInspectAndBuy)
 local AvatarExperienceCommon = require(CorePackages.Workspace.Packages.AvatarExperienceCommon)
 local ItemRestrictions = AvatarExperienceCommon.Enums.ItemRestrictions
+local getRawItemLicensingInfo = AvatarExperienceCommon.Utils.getRawItemLicensingInfo
+local parseItemLicensing = AvatarExperienceCommon.Utils.parseItemLicensing
 
 type AvatarPreviewItem = AvatarExperienceInspectAndBuy.AvatarPreviewItem
 type BundleInfo = AvatarExperienceInspectAndBuy.BundleInfo
@@ -128,6 +133,9 @@ function BundleInfo.fromAvatarPreviewItem(avatarPreviewItem: AvatarPreviewItem):
 	newBundle.bundleId = tostring(avatarPreviewItem.id)
 	newBundle.bundleType = tostring(avatarPreviewItem.bundleType)
 	newBundle.noPriceStatus = avatarPreviewItem.noPriceStatus
+	if FFlagAXMarketplaceLicensing then
+		newBundle.itemLicensingInfo = parseItemLicensing(getRawItemLicensingInfo(avatarPreviewItem))
+	end
 
 	-- parse assetsInBundle field and turn the number ids into string ids
 	local stringAssetsInBundle = {}
@@ -218,6 +226,10 @@ function BundleInfo.fromGetItemDetailsV2(itemDetails: ItemDetails): BundleInfo
 	newBundle.saleLocationType = itemDetails.saleLocationType
 	newBundle.numFavorites = itemDetails.favoriteCount
 	newBundle.catalogPriceStatus = itemDetails.priceStatus
+	local rawItemLicensingInfo = getRawItemLicensingInfo(itemDetails)
+	if FFlagAXMarketplaceLicensing and rawItemLicensingInfo ~= nil then
+		newBundle.itemLicensingInfo = parseItemLicensing(rawItemLicensingInfo) or Cryo.None
+	end
 
 	-- parse the assets in the bundle
 	local assetsInBundle = {}

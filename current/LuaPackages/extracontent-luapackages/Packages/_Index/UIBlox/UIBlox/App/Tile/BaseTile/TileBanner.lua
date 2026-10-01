@@ -7,7 +7,11 @@ local Packages = UIBlox.Parent
 
 local Roact = require(Packages.Roact)
 local t = require(Packages.t)
+local Foundation = require(Packages.Foundation)
+local normalizeFontFace = Foundation.Utility.normalizeFontFace
 local withStyle = require(UIBlox.Core.Style.withStyle)
+
+local FFlagFoundationFontFaceMigration = Foundation.Utility.Flags.FoundationFontFaceMigration
 
 local TileBanner = Roact.PureComponent:extend("TileBanner")
 
@@ -35,7 +39,8 @@ function TileBanner:render()
 		}, {
 			TextLabel = Roact.createElement("TextLabel", {
 				BackgroundTransparency = 1,
-				Font = font.CaptionBody.Font,
+				Font = if FFlagFoundationFontFaceMigration then nil else font.CaptionBody.Font,
+				FontFace = if FFlagFoundationFontFaceMigration then normalizeFontFace(font.CaptionBody.Font) else nil,
 				TextSize = font.CaptionBody.RelativeSize * font.BaseSize,
 				Text = bannerText,
 				TextColor3 = theme.SystemPrimaryContent.Color,

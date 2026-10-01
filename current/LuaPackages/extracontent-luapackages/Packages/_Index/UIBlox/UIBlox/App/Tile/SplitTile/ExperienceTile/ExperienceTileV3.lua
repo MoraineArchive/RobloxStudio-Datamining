@@ -134,7 +134,7 @@ local function ExperienceTileV3(props: Props)
 	local overlayColors: StyleTypes.ControlStateColors = styleProps.overlayColors
 	local selectionCursorPadding: StyleTypes.PaddingItem = styleProps.selectionCursorPadding
 	local contentTitlePadding: number = styleProps.contentTitlePadding
-	local contentTitleFont: Fonts.Font = styleProps.contentTitleFont
+	local contentTitleFont: Fonts.FontInfo = styleProps.contentTitleFont
 	local contentTextLineCount: number = setDefault(props.contentTextLineCount, Constants.DEFAULT_TEXT_LINE_COUNT)
 
 	local renderTopContent = React.useCallback(function(isHoverContent: boolean): React.ReactElement?

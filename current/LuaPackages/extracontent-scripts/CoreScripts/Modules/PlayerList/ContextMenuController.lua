@@ -83,7 +83,7 @@ local function openReportDialog(player: Player)
 		local InGameMenu = require(RobloxGui.Modules.InGameMenuInit)
 		InGameMenu.openReportDialog(player, "PlayerListReskin")
 	else
-		local ReportAbuseMenu = require(RobloxGui.Modules.Settings.Pages.ReportAbuseMenuNewContainerPage)
+		local ReportAbuseMenu = require(RobloxGui.Modules.Settings.Pages.ReportAbuseMenuContainerPage)
 		ReportAbuseMenu:ReportPlayer(player, "PlayerListReskin")
 	end
 end

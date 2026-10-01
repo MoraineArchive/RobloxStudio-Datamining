@@ -26,9 +26,10 @@
 	}
 ]]
 local CorePackages = game:GetService("CorePackages")
+local Cryo = require(CorePackages.Packages.Cryo)
 local Dash = require(CorePackages.Packages.Dash)
-local FFlagAXEnableIaBTimedOptionsBulkPurchase =
-	require(CorePackages.Workspace.Packages.AvatarExperienceFlags).FFlagAXEnableIaBTimedOptionsBulkPurchase
+local FFlagAXMarketplaceLicensing =
+	require(CorePackages.Workspace.Packages.AvatarExperienceFlags).FFlagAXMarketplaceLicensing
 
 local InspectAndBuyFolder = script.Parent.Parent
 
@@ -37,6 +38,8 @@ local Constants = require(InspectAndBuyFolder.Constants)
 local AvatarExperienceInspectAndBuy = require(CorePackages.Workspace.Packages.AvatarExperienceInspectAndBuy)
 local AvatarExperienceCommon = require(CorePackages.Workspace.Packages.AvatarExperienceCommon)
 local ItemRestrictions = AvatarExperienceCommon.Enums.ItemRestrictions
+local getRawItemLicensingInfo = AvatarExperienceCommon.Utils.getRawItemLicensingInfo
+local parseItemLicensing = AvatarExperienceCommon.Utils.parseItemLicensing
 
 type AvatarPreviewItem = AvatarExperienceInspectAndBuy.AvatarPreviewItem
 type AssetInfo = AvatarExperienceInspectAndBuy.AssetInfo
@@ -143,6 +146,9 @@ function AssetInfo.fromAvatarPreviewItem(avatarPreviewItem: AvatarPreviewItem): 
 	newAsset.isForSale = avatarPreviewItem.isPurchasable
 	newAsset.noPriceStatus = avatarPreviewItem.noPriceStatus
 	newAsset.meta = avatarPreviewItem.meta
+	if FFlagAXMarketplaceLicensing then
+		newAsset.itemLicensingInfo = parseItemLicensing(getRawItemLicensingInfo(avatarPreviewItem))
+	end
 
 	-- parse item restrictions
 	if avatarPreviewItem.itemRestrictions then
@@ -346,8 +352,10 @@ function AssetInfo.fromGetItemDetailsV2(itemDetails: ItemDetails): AssetInfo
 	newAsset.numFavorites = itemDetails.favoriteCount
 	newAsset.catalogPriceStatus = itemDetails.priceStatus
 
-	if FFlagAXEnableIaBTimedOptionsBulkPurchase then
-		newAsset.timedOptions = itemDetails.timedOptions
+	newAsset.timedOptions = itemDetails.timedOptions
+	local rawItemLicensingInfo = getRawItemLicensingInfo(itemDetails)
+	if FFlagAXMarketplaceLicensing and rawItemLicensingInfo ~= nil then
+		newAsset.itemLicensingInfo = parseItemLicensing(rawItemLicensingInfo) or Cryo.None
 	end
 
 	return newAsset

@@ -5,8 +5,6 @@ local Types = require(root.util.Types)
 local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 
-local getFFlagUGCValidateMigrateSchemaProperties = require(root.flags.getFFlagUGCValidateMigrateSchemaProperties)
-
 local ScaleTypeValid = {}
 
 ScaleTypeValid.categories = {
@@ -18,7 +16,6 @@ ScaleTypeValid.categories = {
 ScaleTypeValid.requiredData = {
 	ValidationEnums.SharedDataMember.rootInstance,
 }
-ScaleTypeValid.fflag = getFFlagUGCValidateMigrateSchemaProperties
 ScaleTypeValid.expectedFailures = {}
 
 ScaleTypeValid.run = function(reporter: Types.ValidationReporter, data: Types.SharedData)

@@ -210,7 +210,7 @@ local function useRenderLeft(props: Props, style: StyleTypes.AppStyle)
 		elseif isSecondary and not shouldHideSecondaryLeftItem and string.len(title) > 0 then
 			local theme = style.Theme
 			local font = style.Font
-			local textFontStyle: Fonts.Font = font.Header2
+			local textFontStyle: Fonts.FontInfo = font.Header2
 			local textSize = textFontStyle.RelativeSize * font.BaseSize
 
 			renderFun = function()

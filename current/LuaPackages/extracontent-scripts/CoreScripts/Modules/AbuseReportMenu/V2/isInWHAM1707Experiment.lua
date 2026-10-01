@@ -8,7 +8,7 @@ local IXPFieldWHAM1707 = require(root.Flags.FStringWHAM1707IXPField)
 local SharedFlags = require(CorePackages.Workspace.Packages.SharedFlags)
 local FStringEARReportMenuIXPLayer = SharedFlags.FStringEARReportMenuIXPLayer
 
--- Copied out of the legacy menu (Components/AbuseReportMenuNew.lua), where this
+-- Copied out of Components/LegacyAbuseReportMenu.lua, where this
 -- IXP check was inline, so the new V2 menu can reuse the same experiment gating.
 return function(): boolean
 	if GetFFlagWHAM1707ExperimentForceEnabled() then

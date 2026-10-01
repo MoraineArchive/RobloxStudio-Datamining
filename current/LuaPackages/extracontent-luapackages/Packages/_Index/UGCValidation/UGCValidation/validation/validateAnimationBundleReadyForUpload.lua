@@ -11,7 +11,6 @@ local destroyEditableInstances = require(root.util.destroyEditableInstances)
 
 local validateBundleReadyForUpload = require(root.validation.validateBundleReadyForUpload)
 
-local getFFlagUGCValidationAnimationPackSupport = require(root.flags.getFFlagUGCValidationAnimationPackSupport)
 local getFFlagUGCValidationAnimationPackFolderStructure =
 	require(root.flags.getFFlagUGCValidationAnimationPackFolderStructure)
 local getFFlagUGCValidationAnimationPackDisableModelStructure =
@@ -80,7 +79,7 @@ local function validateAnimationBundleReadyForUpload(
 	end
 
 	local animationModels: { [any]: { Instance } } = {}
-	if getFFlagUGCValidationAnimationPackSupport() and Constants.ANIMATION_ASSET_INFO then
+	if Constants.ANIMATION_ASSET_INFO then
 		local unexpectedNames = {}
 		local missingAnimationTypes = {}
 
@@ -227,7 +226,7 @@ local function validateAnimationBundleReadyForUpload(
 		end
 	end
 
-	if getFFlagUGCValidationAnimationPackSupport() and Constants.ANIMATION_ASSET_INFO then
+	if Constants.ANIMATION_ASSET_INFO then
 		for assetTypeEnum, _ in Constants.ANIMATION_ASSET_INFO do
 			if piecesByAssetType[assetTypeEnum] then
 				table.insert(pieces, piecesByAssetType[assetTypeEnum])
@@ -342,16 +341,14 @@ local function validateAnimationBundleReadyForUpload(
 				validationContext.editableImages = result.editableImages :: Types.EditableImages
 
 				success, failures = true, nil
-				if getFFlagUGCValidationAnimationPackSupport() then
-					success, failures = LegacyValidationAdapter.studioRFUBundleValidation(
-						fullBodyData,
-						Enum.BundleType.Animations,
-						validationContext,
-						telemetryBundleId,
-						success,
-						failures
-					)
-				end
+				success, failures = LegacyValidationAdapter.studioRFUBundleValidation(
+					fullBodyData,
+					Enum.BundleType.Animations,
+					validationContext,
+					telemetryBundleId,
+					success,
+					failures
+				)
 
 				destroyEditableInstances(
 					validationContext.editableMeshes :: Types.EditableMeshes,

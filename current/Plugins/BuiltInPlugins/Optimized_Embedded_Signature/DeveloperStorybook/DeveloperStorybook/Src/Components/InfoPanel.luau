@@ -383,7 +383,8 @@ function InfoPanel:render()
 			StoryRef = self.storyRef,
 			LayoutOrder = nextOrder(),
 			StoryProps = definitelyStoryProps,
-			ThemeName = ThemeSwitcher.getThemeName(),
+			ColorMode = props.ColorMode or ThemeSwitcher.getThemeName(),
+			ThemeName = props.ThemeName,
 			Platform = props.Platform,
 			Settings = props.Settings,
 			FixedSize = definitelyStoryProps.storybook.fixedSize,
@@ -411,7 +412,8 @@ function InfoPanel:render()
 					story = self:getRoactComponent(subDefinition.story),
 					key = key,
 				}),
-				ThemeName = ThemeSwitcher.getThemeName(),
+				ColorMode = props.ColorMode or ThemeSwitcher.getThemeName(),
+				ThemeName = props.ThemeName,
 				Platform = props.Platform,
 				Settings = props.Settings,
 			})
@@ -493,7 +495,8 @@ InfoPanel = withContext({
 InfoPanel = RoactRodux.connect(function(state)
 	return {
 		Platform = state.Stories.platform,
-		CurrentTheme = state.Stories.theme,
+		ColorMode = state.Stories.colorMode,
+		ThemeName = state.Stories.themeName,
 		SelectedStory = state.Stories.selectedStory,
 		Live = state.Stories.live,
 		Settings = state.Stories.settings,

@@ -45,7 +45,6 @@ local Tooltip = require(Components.Tooltip)
 
 local getFFlagDevFrameworkPropertyCellLayoutOrderFix =
 	require(Framework.SharedFlags.getFFlagDevFrameworkPropertyCellLayoutOrderFix)
-local getFFlagDevFrameworkFormAlignment = require(Framework.SharedFlags.getFFlagDevFrameworkFormAlignment)
 
 local PropertyCell = Roact.PureComponent:extend("PropertyCell")
 
@@ -78,13 +77,11 @@ function PropertyCell:render()
 		),
 		{
 			Content = if Renderer then Roact.createElement(Renderer, props) else nil,
-			Layout = if getFFlagDevFrameworkFormAlignment()
-				then Roact.createElement("UIListLayout", {
-					HorizontalAlignment = Enum.HorizontalAlignment.Left,
-					SortOrder = Enum.SortOrder.LayoutOrder,
-					VerticalAlignment = Enum.VerticalAlignment.Center,
-				})
-				else nil,
+			Layout = Roact.createElement("UIListLayout", {
+				HorizontalAlignment = Enum.HorizontalAlignment.Left,
+				SortOrder = Enum.SortOrder.LayoutOrder,
+				VerticalAlignment = Enum.VerticalAlignment.Center,
+			}),
 		}
 	)
 

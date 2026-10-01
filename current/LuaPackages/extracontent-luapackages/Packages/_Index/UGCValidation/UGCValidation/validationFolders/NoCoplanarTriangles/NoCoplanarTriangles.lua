@@ -13,14 +13,10 @@ local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 local floatEquals = require(root.util.floatEquals)
 
-local getFFlagUGCValidateMigrateSurfaceAppearanceMeshQuality =
-	require(root.flags.getFFlagUGCValidateMigrateSurfaceAppearanceMeshQuality)
 local getFIntMaxCoplanarIntersectionsPercentage = require(root.flags.getFIntMaxCoplanarIntersectionsPercentage)
 local getFFlagUGCValidateCoplanarTriTestBody = require(root.flags.getFFlagUGCValidateCoplanarTriTestBody)
 
 local NoCoplanarTriangles = {}
-
-NoCoplanarTriangles.fflag = getFFlagUGCValidateMigrateSurfaceAppearanceMeshQuality
 
 NoCoplanarTriangles.categories = {
 	ValidationEnums.UploadCategory.TORSO_AND_LIMBS,

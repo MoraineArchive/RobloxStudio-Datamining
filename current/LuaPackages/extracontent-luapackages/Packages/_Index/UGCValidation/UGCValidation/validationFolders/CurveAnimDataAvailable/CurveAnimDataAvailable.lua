@@ -5,17 +5,11 @@ local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 local FetchAllDesiredData = require(root.validationSystem.dataFetchModules.FetchAllDesiredData)
 
-local getFFlagUGCValidateMigrateCurveAnim = require(root.flags.getFFlagUGCValidateMigrateCurveAnim)
-local getFFlagUGCValidationAnimationPackSupport = require(root.flags.getFFlagUGCValidationAnimationPackSupport)
-
 local CurveAnimDataAvailable = {}
 
-CurveAnimDataAvailable.categories = { ValidationEnums.UploadCategory.EMOTE_ANIMATION }
-if getFFlagUGCValidationAnimationPackSupport() then
-	table.insert(CurveAnimDataAvailable.categories, ValidationEnums.UploadCategory.ANIMATION)
-end
+CurveAnimDataAvailable.categories =
+	{ ValidationEnums.UploadCategory.EMOTE_ANIMATION, ValidationEnums.UploadCategory.ANIMATION }
 CurveAnimDataAvailable.requiredData = {}
-CurveAnimDataAvailable.fflag = getFFlagUGCValidateMigrateCurveAnim
 CurveAnimDataAvailable.expectedFailures = {}
 
 CurveAnimDataAvailable.run = function(reporter: Types.ValidationReporter, data: Types.SharedData)

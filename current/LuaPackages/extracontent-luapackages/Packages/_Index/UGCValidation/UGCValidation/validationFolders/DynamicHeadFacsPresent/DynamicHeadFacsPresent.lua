@@ -12,11 +12,7 @@ local Types = require(root.util.Types)
 local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 
-local getFFlagUGCValidateMigrateDynamicHeadData = require(root.flags.getFFlagUGCValidateMigrateDynamicHeadData)
-
 local DynamicHeadFacsPresent = {}
-
-DynamicHeadFacsPresent.fflag = getFFlagUGCValidateMigrateDynamicHeadData
 DynamicHeadFacsPresent.categories = { ValidationEnums.UploadCategory.DYNAMIC_HEAD }
 DynamicHeadFacsPresent.requiredData = { ValidationEnums.SharedDataMember.renderMeshesData }
 DynamicHeadFacsPresent.expectedFailures = {}

@@ -4,6 +4,8 @@ local UIBlox = App.Parent
 local Packages = UIBlox.Parent
 
 local React = require(Packages.React)
+local Foundation = require(Packages.Foundation)
+local normalizeFontFace = Foundation.Utility.normalizeFontFace
 
 local InputLabel = require(Input.InputLabel)
 local HelperText = require(Input.HelperText)
@@ -13,6 +15,8 @@ local ImagesTypes = require(App.ImageSet.ImagesTypes)
 local useStyle = require(UIBlox.Core.Style.useStyle)
 local useCursor = require(UIBlox.App.SelectionCursor.useCursor)
 local UIBloxConfig = require(UIBlox.UIBloxConfig)
+
+local FFlagFoundationFontFaceMigration = Foundation.Utility.Flags.FoundationFontFaceMigration
 
 type TextFieldProps = {
 	-- Input text value
@@ -311,9 +315,19 @@ local function TextField(props: TextFieldProps)
 						BackgroundTransparency = 1,
 						TextXAlignment = Enum.TextXAlignment.Left,
 						TextYAlignment = Enum.TextYAlignment.Center,
-						Font = if UIBloxConfig.deprecateComponentGlobalSemanticTokenUse
+						Font = if FFlagFoundationFontFaceMigration
+							then nil
+							elseif
+								UIBloxConfig.deprecateComponentGlobalSemanticTokenUse
 							then tokens.Typography.BodyLarge.Font
 							else tokens.Component.TextField.Base.Field.Typography.Font,
+						FontFace = if FFlagFoundationFontFaceMigration
+							then normalizeFontFace(
+								if UIBloxConfig.deprecateComponentGlobalSemanticTokenUse
+									then tokens.Typography.BodyLarge.Font
+									else tokens.Component.TextField.Base.Field.Typography.Font
+							)
+							else nil,
 						OpenTypeFeatures = if UIBloxConfig.enableOpenTypeSupport and props.openTypeFeatures
 							then props.openTypeFeatures
 							else nil,

@@ -1,5 +1,5 @@
 --[[
-	validateAccurateBoundingBox.lua validates that there are no sparse regions of an asset bounding box caused by low visibility geometry
+	validates that there are no sparse regions of an asset bounding box caused by low visibility geometry
 	which has only the purpose of inflating the asset bounds artificially. It does this by using the asset mask images to determine the best fit bounding box
 	in image space that minimizes the bounding box size while containing the most geometry. The minimized 2d bounding boxes in image space for all rendered views
 	are then projected back into 3d world space to determine the valid asset bounding box. The asset fails if the difference between its current bounding box

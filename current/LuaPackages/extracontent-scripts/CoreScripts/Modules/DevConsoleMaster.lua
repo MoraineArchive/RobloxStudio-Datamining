@@ -28,6 +28,8 @@ local ScriptProfiler = require(Components.ScriptProfiler.MainViewScriptProfiler)
 local DebugVisualizations = require(Components.DebugVisualizations.MainViewDebugVisualizations)
 local LuauHeap = require(Components.LuauHeap.MainViewLuauHeap)
 local VoiceChat = require(Components.VoiceChat.MainViewVoiceChat)
+local VoiceDebug = require(Components.VoiceDebug.MainViewVoiceDebug)
+local getFFlagVoiceDebugConsoleV2 = require(Components.VoiceDebug.GetFFlagVoiceDebugConsoleV2)
 local RequestOrchestrator = require(Components.RequestOrchestrator.MainViewRequestOrchestrator)
 
 local RCCProfilerDataCompleteListener = require(Components.MicroProfiler.RCCProfilerDataCompleteListener)
@@ -49,8 +51,12 @@ local ScriptProfilerEngineFeature = game:GetEngineFeature("ScriptProfiler")
 
 local FFlagDevConsoleRequestOrchestratorTab = game:DefineFastFlag("DevConsoleRequestOrchestratorTab2", false)
 local FFlagDevConsoleAdminSeesDevTabs = game:DefineFastFlag("DevConsoleAdminSeesDevTabs", false)
+local FFlagDevConsoleRefreshVoiceAvailabilityOnReopen =
+	game:DefineFastFlag("DevConsoleRefreshVoiceAvailabilityOnReopen", false)
 
 local VoiceChatServiceManager = require(CoreGui.RobloxGui.Modules.VoiceChat.VoiceChatServiceManager).default
+
+local voiceDevConsoleAvailable = false
 
 local DEV_TAB_LIST = {
 	Log = {
@@ -106,6 +112,10 @@ local DEV_TAB_LIST = {
 		tab = LuauHeap,
 		layoutOrder = 12,
 	},
+	-- Always nil here: voiceDevConsoleAvailable starts false and is only known once
+	-- refreshVoiceDevConsoleAvailability()'s async check resolves, which populates this entry for
+	-- real (see its apply() function below).
+	VoiceDebug = nil,
 }
 
 local ADMIN_TAB_LIST = {
@@ -127,7 +137,12 @@ local ADMIN_TAB_LIST = {
 		tab = LuauHeap,
 		layoutOrder = 4,
 	},
-	VoiceChat = if game:GetEngineFeature("VoiceChatDevConsoleTabEnabled")
+	-- Deliberately VoiceChatServiceManager:canUseService(), not the new async voiceDevConsoleAvailable
+	-- mechanism below -- with FFlagVoiceDebugConsoleV2 off this must resolve exactly as it did before
+	-- that flag existed (synchronous, at module-load time), not switch to a different availability
+	-- check for every client just because this stack landed.
+	VoiceChat = if not getFFlagVoiceDebugConsoleV2()
+			and game:GetEngineFeature("VoiceChatDevConsoleTabEnabled")
 			and VoiceChatServiceManager
 			and VoiceChatServiceManager:canUseService()
 		then {
@@ -157,7 +172,10 @@ local NEW_ADMIN_TABS = {
 		tab = VoiceChat,
 		layoutOrder = 13,
 		isEnabled = function()
-			return game:GetEngineFeature("VoiceChatDevConsoleTabEnabled")
+			-- Same as ADMIN_TAB_LIST.VoiceChat above: canUseService(), not voiceDevConsoleAvailable,
+			-- so the flag-off path keeps calling the same synchronous check it always has.
+			return not getFFlagVoiceDebugConsoleV2()
+				and game:GetEngineFeature("VoiceChatDevConsoleTabEnabled")
 				and VoiceChatServiceManager ~= nil
 				and VoiceChatServiceManager:canUseService()
 		end,
@@ -299,6 +317,41 @@ function DevConsoleMaster:refreshTabList()
 	end
 end
 
+function DevConsoleMaster:refreshVoiceDevConsoleAvailability()
+	-- This entire async mechanism (and the VoiceChatServiceManager:asyncInit() call it triggers) only
+	-- exists to drive DEV_TAB_LIST.VoiceDebug, the new tab -- with the flag off, nothing reads
+	-- voiceDevConsoleAvailable, so calling this would just be a pointless new side effect (an extra
+	-- async RPC on every Dev Console open) for every client, not a behavior change worth making
+	-- unconditionally. ADMIN_TAB_LIST.VoiceChat / NEW_ADMIN_TABS.VoiceChat's own availability check
+	-- calls VoiceChatServiceManager:canUseService() directly and is unaffected by this flag.
+	if not getFFlagVoiceDebugConsoleV2() then
+		return
+	end
+
+	if not (game:GetEngineFeature("VoiceChatDevConsoleTabEnabled") and VoiceChatServiceManager) then
+		return
+	end
+
+	local function apply()
+		local available = VoiceChatServiceManager:VoiceChatAvailable()
+		if available == voiceDevConsoleAvailable then
+			return
+		end
+		voiceDevConsoleAvailable = available
+
+		DEV_TAB_LIST.VoiceDebug = if voiceDevConsoleAvailable
+			then {
+				tab = VoiceDebug,
+				layoutOrder = 13,
+			}
+			else nil
+
+		self:refreshTabList()
+	end
+
+	VoiceChatServiceManager:asyncInit():andThen(apply):catch(apply)
+end
+
 function DevConsoleMaster:Start()
 	if not self.init then
 		if self.waitForStart then
@@ -321,6 +374,10 @@ function DevConsoleMaster:Start()
 					self.store:dispatch(SetTabList(ADMIN_TAB_LIST, "Log", false))
 				end
 			end
+		end)
+
+		task.spawn(function()
+			self:refreshVoiceDevConsoleAvailability()
 		end)
 
 		if clientReplicator then
@@ -380,6 +437,8 @@ function DevConsoleMaster:SetVisibility(value)
 	if type(value) == "boolean" then
 		if not self.init and value then
 			master:Start()
+		elseif FFlagDevConsoleRefreshVoiceAvailabilityOnReopen and value then
+			self:refreshVoiceDevConsoleAvailability()
 		end
 
 		self:SetServerStatsConnection(value)

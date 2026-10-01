@@ -18,9 +18,14 @@ local UnifiedLoggingSurface =
 	require(CorePackages.Workspace.Packages.AvatarExperienceNavigation).Enums.UnifiedLoggingSurface
 local UnifiedEventLogConstants =
 	require(CorePackages.Workspace.Packages.AvatarExperienceAnalytics).UnifiedEventLogConstants
-local ItemTypeEnum = require(CorePackages.Workspace.Packages.AvatarExperienceCommon).Enums.ItemTypeEnum
+local ItemTypeEnum = require(CorePackages.Workspace.Packages.AvatarExperienceModel).Enums.ItemTypeEnum
 local TIMED_OPTION_BY_DAYS =
 	require(CorePackages.Workspace.Packages.AvatarExperienceAnalytics).Constants.TIMED_OPTION_BY_DAYS
+local AXUnifiedEventFilter = require(CorePackages.Workspace.Packages.AvatarExperienceAnalytics).AXUnifiedEventFilter
+local UnifiedEventCounterAggregator =
+	require(CorePackages.Workspace.Packages.AvatarExperienceAnalytics).UnifiedEventCounterAggregator
+local FFlagAXUnifiedEventCounters =
+	require(CorePackages.Workspace.Packages.AvatarExperienceFlags).FFlagAXUnifiedEventCounters
 
 export type PurchaseOptions = {
 	itemSubType: string?,
@@ -231,6 +236,11 @@ function Analytics:reportUnifiedEvent(additionalFields)
 	}
 
 	local fields = Cryo.Dictionary.join(defaultFields, additionalFields)
+
+	if FFlagAXUnifiedEventCounters then
+		UnifiedEventCounterAggregator.record(fields, AXUnifiedEventFilter.filter(fields, { skipReporting = true }))
+	end
+
 	self.eventStream:sendTelemetryEvent(self.ctx, UnifiedEventLogConstants.EVENT_NAME, fields)
 end
 

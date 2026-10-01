@@ -4,6 +4,9 @@ local ChatBubbleContainer = require(script.Parent.ChatBubbleContainerAutomaticSi
 local Roact = dependencies.Roact
 local withStyle = dependencies.UIBlox.Style.withStyle
 local TextService = game:GetService("TextService")
+local FFlagFoundationFontFaceMigration = dependencies.Foundation.Utility.Flags.FoundationFontFaceMigration
+local normalizeFontFace = dependencies.Foundation.Utility.normalizeFontFace
+local useTextBounds = require(SocialLibraries.Utils.useTextBounds)
 
 game:DefineFastFlag("FixPlainTextAutomaticSizeClippingText", false)
 
@@ -20,6 +23,40 @@ local defaultProps = {
 	[Roact.Change.AbsoluteSize] = function() end,
 }
 
+type TextContentProps = {
+	text: string,
+	font: Font | Enum.Font,
+	textSize: number,
+	contentMaxWidth: number,
+	textColor3: Color3,
+	textTransparency: number,
+}
+
+local function TextContent(props: TextContentProps)
+	local measuredBounds = useTextBounds(props.text, props.font, props.textSize, props.contentMaxWidth)
+	local textBounds = measuredBounds or Vector2.new(0, props.textSize)
+
+	return Roact.createElement("TextLabel", {
+		Text = props.text,
+		TextXAlignment = Enum.TextXAlignment.Left,
+		BackgroundTransparency = 1,
+		TextColor3 = props.textColor3,
+		AutomaticSize = Enum.AutomaticSize.XY,
+		FontFace = normalizeFontFace(props.font),
+		TextSize = props.textSize,
+		Size = fFlagFixPlainTextAutomaticSizeClippingText
+				and UDim2.fromOffset(math.ceil(textBounds.X), math.ceil(textBounds.Y))
+			or UDim2.new(0, textBounds.X, 0, textBounds.Y),
+		TextTransparency = props.textTransparency,
+		TextYAlignment = Enum.TextYAlignment.Top,
+		TextWrapped = true,
+	}, {
+		SizeConstraint = Roact.createElement("UISizeConstraint", {
+			MaxSize = Vector2.new(props.contentMaxWidth, math.huge),
+		}),
+	})
+end
+
 local function PlainText(props)
 	return withStyle(function(style)
 		local maxWidth = props.maxWidth or defaultProps.maxWidth
@@ -30,8 +67,9 @@ local function PlainText(props)
 		local text = props.text or defaultProps.text
 		local font = props.font or fontStyle.Font
 		local maxTextBounds = Vector2.new(contentMaxWidth, math.huge)
-
-		local textBounds = TextService:GetTextSize(text, textSize, font, maxTextBounds)
+		local textBounds = if FFlagFoundationFontFaceMigration
+			then nil
+			else TextService:GetTextSize(text, textSize, font, maxTextBounds)
 
 		return Roact.createElement(ChatBubbleContainer, {
 			isIncoming = props.isIncoming or defaultProps.isIncoming,
@@ -41,25 +79,34 @@ local function PlainText(props)
 			LayoutOrder = props.LayoutOrder or defaultProps.LayoutOrder,
 			[Roact.Change.AbsoluteSize] = props[Roact.Change.AbsoluteSize] or defaultProps[Roact.Change.AbsoluteSize],
 		}, {
-			textContent = Roact.createElement("TextLabel", {
-				Text = text,
-				TextXAlignment = Enum.TextXAlignment.Left,
-				BackgroundTransparency = 1,
-				TextColor3 = style.Theme.TextEmphasis.Color,
-				AutomaticSize = Enum.AutomaticSize.XY,
-				Font = font,
-				TextSize = textSize,
-				Size = fFlagFixPlainTextAutomaticSizeClippingText
-						and UDim2.fromOffset(math.ceil(textBounds.X), math.ceil(textBounds.Y))
-					or UDim2.new(0, textBounds.X, 0, textBounds.Y),
-				TextTransparency = props.isPending and style.Theme.TextMuted.Transparency or 0,
-				TextYAlignment = Enum.TextYAlignment.Top,
-				TextWrapped = true,
-			}, {
-				SizeConstraint = Roact.createElement("UISizeConstraint", {
-					MaxSize = Vector2.new(contentMaxWidth or maxWidth, math.huge),
+			textContent = if FFlagFoundationFontFaceMigration
+				then Roact.createElement(TextContent, {
+					text = text,
+					font = font,
+					textSize = textSize,
+					contentMaxWidth = contentMaxWidth,
+					textColor3 = style.Theme.TextEmphasis.Color,
+					textTransparency = props.isPending and style.Theme.TextMuted.Transparency or 0,
+				})
+				else Roact.createElement("TextLabel", {
+					Text = text,
+					TextXAlignment = Enum.TextXAlignment.Left,
+					BackgroundTransparency = 1,
+					TextColor3 = style.Theme.TextEmphasis.Color,
+					AutomaticSize = Enum.AutomaticSize.XY,
+					Font = font,
+					TextSize = textSize,
+					Size = fFlagFixPlainTextAutomaticSizeClippingText
+							and UDim2.fromOffset(math.ceil((textBounds :: Vector2).X), math.ceil((textBounds :: Vector2).Y))
+						or UDim2.new(0, (textBounds :: Vector2).X, 0, (textBounds :: Vector2).Y),
+					TextTransparency = props.isPending and style.Theme.TextMuted.Transparency or 0,
+					TextYAlignment = Enum.TextYAlignment.Top,
+					TextWrapped = true,
+				}, {
+					SizeConstraint = Roact.createElement("UISizeConstraint", {
+						MaxSize = Vector2.new(contentMaxWidth or maxWidth, math.huge),
+					}),
 				}),
-			}),
 		})
 	end)
 end

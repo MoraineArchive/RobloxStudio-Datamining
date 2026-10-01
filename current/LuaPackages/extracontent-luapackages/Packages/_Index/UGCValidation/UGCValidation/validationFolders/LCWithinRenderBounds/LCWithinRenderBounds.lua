@@ -6,18 +6,16 @@ local Types = require(root.util.Types)
 local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 
-local getFFlagUGCValidateMigrateCageGeometry = require(root.flags.getFFlagUGCValidateMigrateCageGeometry)
 local getEngineFeatureEngineUGCValidationLCOOB = require(root.flags.getEngineFeatureEngineUGCValidationLCOOB)
-local getFFlagEnforceMaxSizeOffsetForLC = require(root.flags.getFFlagEnforceMaxSizeOffsetForLC)
 
 local LCWithinRenderBounds = {}
 
-LCWithinRenderBounds.fflag = getFFlagUGCValidateMigrateCageGeometry
 LCWithinRenderBounds.categories = { ValidationEnums.UploadCategory.LAYERED_CLOTHING }
 LCWithinRenderBounds.requiredData = {}
 LCWithinRenderBounds.expectedFailures = {}
 
 LCWithinRenderBounds.run = function(reporter: Types.ValidationReporter, data: Types.SharedData)
+	-- Lifecycle-gated on consumerEnv: IEC-origin skips today and keeps skipping under VaaS (enabling it there is a follow-up).
 	if data.consumerConfig.consumerEnv == "IEC" then
 		return
 	end
@@ -52,18 +50,13 @@ LCWithinRenderBounds.run = function(reporter: Types.ValidationReporter, data: Ty
 	end
 
 	local typedWrapLayer = wrapLayer :: WrapLayer
-	if getFFlagEnforceMaxSizeOffsetForLC() then
-		if typedWrapLayer.MaxSize ~= Vector3.new(0, 0, 0) then
-			reporter:fail(ErrorSourceStrings.Keys.LCWithinRenderBounds_NonZeroMaxSize, {})
-			return
-		end
-		if typedWrapLayer.Offset ~= Vector3.new(0, 0, 0) then
-			reporter:fail(ErrorSourceStrings.Keys.LCWithinRenderBounds_NonZeroOffset, {})
-			return
-		end
-	else
-		typedWrapLayer.MaxSize = Vector3.new(0, 0, 0)
-		typedWrapLayer.Offset = Vector3.new(0, 0, 0)
+	if typedWrapLayer.MaxSize ~= Vector3.new(0, 0, 0) then
+		reporter:fail(ErrorSourceStrings.Keys.LCWithinRenderBounds_NonZeroMaxSize, {})
+		return
+	end
+	if typedWrapLayer.Offset ~= Vector3.new(0, 0, 0) then
+		reporter:fail(ErrorSourceStrings.Keys.LCWithinRenderBounds_NonZeroOffset, {})
+		return
 	end
 
 	local isOOB = (UGCValidationService :: any):IsDeformedLayeredClothingOutOfRenderBounds(accessory)

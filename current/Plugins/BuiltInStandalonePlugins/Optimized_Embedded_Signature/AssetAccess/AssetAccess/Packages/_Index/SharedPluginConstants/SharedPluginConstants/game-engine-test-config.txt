@@ -1,0 +1,5 @@
+# This file is used to set test parameter. See .github/workflows/test.yml and Client/RobloxStudio/cmake/Target_BuiltInPlugins.cmake
+# use new line separated sequences of config options
+# do not modify these comments or you will risk breaking the parsers!
+TESTS_MISSING_DISABLE_TESTS
+DISABLE_SELENE

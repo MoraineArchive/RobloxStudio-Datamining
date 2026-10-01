@@ -57,6 +57,9 @@ local FFlagTokenizeUnibarConstantsWithStyleProvider = ChromeSharedFlags.FFlagTok
 
 local SharedFlags = require(CorePackages.Workspace.Packages.SharedFlags)
 local FFlagShowGameAgeRating = SharedFlags.FFlagShowGameAgeRating
+local FFlagExperienceAgeRatingBadge =
+	require(CorePackages.Workspace.Packages.InExperienceTopBar).Flags.FFlagExperienceAgeRatingBadge
+local MenuIconContext = require(script.Parent.Parent.Parent.TopBar.Components.MenuIconContext)
 local isSideSheetEnabled = require(CorePackages.Workspace.Packages.InExperienceSideSheetUtils.isSideSheetEnabled)
 local FFlagSideSheetFocusNav = SharedFlags.FFlagSideSheetFocusNav
 local FFlagEnableConsoleExpControls = SharedFlags.FFlagEnableConsoleExpControls
@@ -367,6 +370,10 @@ function HamburgerButton(props)
 		else useAppPolicy(function(appPolicy)
 			return appPolicy.getShowBadgeOver12()
 		end)
+	local replacesAgeRating = false
+	if FFlagExperienceAgeRatingBadge then
+		replacesAgeRating = React.useContext(MenuIconContext).replacesAgeRating
+	end
 
 	return React.createElement("Frame", {
 		Size = UDim2.new(0, iconSize, 0, iconSize),
@@ -384,7 +391,7 @@ function HamburgerButton(props)
 		if isSideSheetEnabled
 			then React.createElement(SelectionCursorProvider, {}, {
 				Icon = React.createElement(MenuIcon, {
-					showBadgeOver12 = showGameAgeRating,
+					showBadgeOver12 = showGameAgeRating and not replacesAgeRating,
 				}),
 			})
 			else nil,

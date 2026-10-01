@@ -6,11 +6,16 @@ local React = require(Packages.React)
 
 local Icon = require(Foundation.Components.Icon)
 local KeyLabel = require(Foundation.Components.KeyLabel)
+local Shortcut = require(Foundation.Components.Shortcut)
 local Text = require(Foundation.Components.Text)
 local View = require(Foundation.Components.View)
 
+local InputSize = require(Foundation.Enums.InputSize)
+
 local MatrixGridShared = require(Foundation.Utility.Stories.Shared.MatrixGrid)
+local StorySection = require(Foundation.Utility.Stories.Shared.StorySection)
 local MatrixGrid = MatrixGridShared.MatrixGrid
+local Section = StorySection.Section
 type MatrixGridRow = MatrixGridShared.MatrixGridRow
 local BuilderIconKeycodeMappings = require(Foundation.Utility.Stories.Shared.BuilderIconKeycodeMappings)
 local KeyCodeCategories = require(Foundation.Utility.Stories.Shared.KeyCodeCategories)
@@ -19,6 +24,7 @@ local Types = require(Foundation.Components.Types)
 type ColorStyleValue = Types.ColorStyleValue
 local getBuilderIconForKeycode = require(Foundation.Utility.getBuilderIconForKeycode)
 local getVisualForKey = require(Foundation.Components.KeyLabel.getVisualForKey)
+local keyDisplay = require(Foundation.Components.Shortcut.keyDisplay)
 local useTokens = require(Foundation.Providers.Style.useTokens)
 
 local EMPTY_ROW_BACKGROUND_TRANSPARENCY = 0.9
@@ -29,10 +35,13 @@ local ERROR_ROW_TAG = "padding-x-small radius-medium size-full-0 auto-y"
 local DEFAULT_KEY_LABEL_SIZE = UDim2.fromOffset(35, 35)
 local KEYCODE_LABEL_COLUMN_WIDTH = 160
 local COMPARISON_CELL_COLUMN_WIDTH = 64
+-- Wider than the icon columns because the text fallback renders a whole word.
+local SHORTCUT_CELL_COLUMN_WIDTH = 140
 local ALL_ICONS_CELL_COLUMN_WIDTH = 280
 local NOTES_CELL_COLUMN_WIDTH = 220
 local COMPARISON_COLUMN_HEADERS = {
 	"KeyLabel",
+	"Shortcut",
 	"Current",
 	"PS4",
 	"PS5",
@@ -48,6 +57,18 @@ end)
 
 local function keyLabelHasContent(keyCode: Enum.KeyCode): boolean
 	return getVisualForKey(keyCode).key ~= ""
+end
+
+-- Count either an icon or non-empty fallback text as rendered.
+local function shortcutHasContent(keyCode: Enum.KeyCode): boolean
+	local resolved = keyDisplay.resolveKey(keyCode, "Default")
+	if resolved == nil then
+		return false
+	end
+	if resolved.kind == "Icon" or resolved.kind == "GamepadIcon" then
+		return true
+	end
+	return resolved.text ~= ""
 end
 
 local function isFullyEmptyKeyCode(keyCode: Enum.KeyCode): boolean
@@ -107,28 +128,6 @@ local KEYCODES_BY_CATEGORY = KeyCodeCategories.groupByCategory(ALL_KEYCODES)
 
 local NON_EMPTY_CATEGORIES = KeyCodeCategories.getNonEmptyCategories(KEYCODES_BY_CATEGORY)
 
-local function Section(props: {
-	layoutOrder: number,
-	name: string,
-	contentTag: string?,
-	children: React.ReactNode,
-})
-	return React.createElement(View, {
-		tag = "col gap-medium size-full-0 auto-y",
-		LayoutOrder = props.layoutOrder,
-	}, {
-		Title = React.createElement(Text, {
-			Text = props.name,
-			tag = "auto-xy text-label-medium content-default",
-			LayoutOrder = 1,
-		}),
-		Content = React.createElement(View, {
-			tag = props.contentTag or "row gap-large auto-xy wrap",
-			LayoutOrder = 2,
-		}, props.children),
-	})
-end
-
 local function BuilderIconCell(props: { icon: string? }): React.ReactNode
 	if props.icon then
 		return React.createElement(Icon, {
@@ -139,6 +138,21 @@ local function BuilderIconCell(props: { icon: string? }): React.ReactNode
 	return React.createElement(Text, {
 		Text = "—",
 		tag = "auto-xy text-caption-small content-muted",
+	})
+end
+
+-- Render the component so the column includes its text fallback.
+local function ShortcutCell(props: { keyCode: Enum.KeyCode }): React.ReactNode
+	if not shortcutHasContent(props.keyCode) then
+		return React.createElement(Text, {
+			Text = "—",
+			tag = "auto-xy text-caption-small content-muted",
+		})
+	end
+
+	return React.createElement(Shortcut, {
+		shortcut = { { keyCode = props.keyCode } },
+		size = InputSize.Medium,
 	})
 end
 
@@ -208,6 +222,7 @@ local function KeyLabelComparisonMatrix(props: { keyCodes: { Enum.KeyCode } }): 
 		columnHeaders = COMPARISON_COLUMN_HEADERS,
 		cellColumnWidths = {
 			COMPARISON_CELL_COLUMN_WIDTH,
+			SHORTCUT_CELL_COLUMN_WIDTH,
 			COMPARISON_CELL_COLUMN_WIDTH,
 			COMPARISON_CELL_COLUMN_WIDTH,
 			COMPARISON_CELL_COLUMN_WIDTH,
@@ -232,6 +247,9 @@ local function KeyLabelComparisonMatrix(props: { keyCodes: { Enum.KeyCode } }): 
 					React.createElement(KeyLabel, {
 						keyCode = keyCode,
 						Size = DEFAULT_KEY_LABEL_SIZE,
+					}),
+					React.createElement(ShortcutCell, {
+						keyCode = keyCode,
 					}),
 					React.createElement(BuilderIconCell, {
 						icon = getBuilderIconForKeycode(keyCode),
@@ -273,7 +291,7 @@ local function CategoryComparisonTable(props: {
 	local keyCodes = KEYCODES_BY_CATEGORY[props.categoryName]
 
 	return React.createElement(Section, {
-		layoutOrder = props.layoutOrder,
+		LayoutOrder = props.layoutOrder,
 		name = `{props.categoryName} ({#keyCodes})`,
 		contentTag = "auto-xy",
 	}, {
@@ -299,7 +317,7 @@ local function UnmappedIconsSection(): React.ReactNode
 	}
 
 	return React.createElement(Section, {
-		layoutOrder = 2,
+		LayoutOrder = 2,
 		name = `Unmapped keycode icons ({#UNMAPPED_KEYCODE_ICON_ENTRIES})`,
 		contentTag = "col gap-medium auto-xy",
 	}, {
@@ -339,7 +357,7 @@ local function UnmappedIconsSection(): React.ReactNode
 end
 
 return {
-	summary = "Side-by-side comparison of KeyLabel and getBuilderIconForKeycode for every KeyCode.",
+	summary = "Side-by-side comparison of KeyLabel, Shortcut, and getBuilderIconForKeycode for every KeyCode.",
 	story = function(): React.ReactNode
 		return React.createElement(View, {
 			tag = "col gap-xxlarge size-full-0 auto-y padding-large bg-surface-0",
@@ -348,7 +366,7 @@ return {
 			ByKeyType = React.createElement(
 				Section,
 				{
-					layoutOrder = 3,
+					LayoutOrder = 3,
 					name = "By key type",
 					contentTag = "col gap-xxlarge auto-xy",
 				},

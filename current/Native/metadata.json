@@ -2,30 +2,30 @@
   "observationMode": "live",
   "provenance": [
     {
-      "buildGuid": "version-55808de4b1914919",
-      "bytes": 126347314,
+      "buildGuid": "version-76e1a02649ad4f35",
+      "bytes": 116599130,
       "derivedFrom": "RobloxStudioBeta.exe",
-      "sha256": "e24704d37846f9963a59882b16816f3c569af3c7b8a78cefee0f611a2fbc991e",
+      "sha256": "8b4a7ef18cf8444e852b430679763bf40febdabf8173b12491e365ca8e44b42a",
       "sourceType": "derived-official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-55808de4b1914919-RobloxStudio.zip"
+      "sourceUrl": "https://setup.rbxcdn.com/version-76e1a02649ad4f35-RobloxStudio.zip"
     }
   ],
   "status": "available",
   "summary": {
-    "ascii": 815411,
+    "ascii": 722230,
     "demangleStatus": "Windows DbgHelp offline undecoration; no Roblox process",
-    "demangled": 4682,
+    "demangled": 4649,
     "engineRevision": 1,
     "executable": "RobloxStudioBeta.exe",
     "fastVariableMethod": "Explicit prefixed identifier strings only; unclassified registration candidates stored separately without guessed prefixes.",
     "fastVariables": 29,
-    "guid": "version-55808de4b1914919",
-    "identifiers": 133303,
-    "sha256": "996c3666e2872bf62d5db78bbfe65cd4fe78a120b110c01d191e3410dc0dbd01",
-    "symbols": 38859,
-    "unclassifiedRegistrationCandidates": 9908,
-    "utf16": 190567,
-    "utf8": 584
+    "guid": "version-76e1a02649ad4f35",
+    "identifiers": 135132,
+    "sha256": "f53930a1702ac8e4067a61cf2cb5ba7f69936932ffab0c8986f0a551ddaa581a",
+    "symbols": 38989,
+    "unclassifiedRegistrationCandidates": 9973,
+    "utf16": 196657,
+    "utf8": 574
   },
   "target": "WindowsStudio64"
 }

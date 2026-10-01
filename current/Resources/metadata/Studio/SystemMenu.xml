@@ -22,7 +22,7 @@
         <Action name="savePlaceToRobloxAsAction"/>
         <Separator/>
         <Action name="publishToRobloxAction"/>
-        <Action fflag="PVHGenerateNotes2" name="publishToRobloxWithNotesAction"/>
+        <Action fflag="PVHGenerateNotes2,!StudioPublishLatestVersionLabel" name="publishToRobloxWithNotesAction"/>
         <Action name="publishToRobloxAsAction"/>
         <Action fflag="StudioUnifiedPublishAction" name="publishAction"/>
         <Separator/>
@@ -192,15 +192,13 @@
             <Action name="collisionGroupsEditorAction"/>
             <Action name="materialManagerAction"/>
             <Action name="materialGeneratorAction"/>
-            <Action fflag="!StudioEnableTerrainPalette2" name="toggleTerrainToolsDockAction"/>
-            <Action fflag="StudioEnableTerrainPalette2" name="terrainEditorMenuAction"/>
-            <Action fflag="StudioEnableTerrainPalette2" name="terrainPaletteEditorAction"/>
+            <Action name="toggleTerrainToolsDockAction"/>
+            <Action fflag="StudioEnableTerrainPalette4" name="terrainPaletteEditorAction"/>
             <Action fflag="EnableTextureGenerator2" name="textureGeneratorAction"/>
         </SubMenu>
         <SubMenu name="Avatar" text="Studio.SystemMenu.Title.Avatar">
             <Action name="animationEditorAction"/>
             <Action name="layeredClothingEditorAction"/>
-            <Action fflag="DebugR15MigratorPlugin" name="r15migratorAction"/>
             <Action name="avatarPreviewerAction"/>
         </SubMenu>
         <SubMenu name="Collaboration" text="Studio.SystemMenu.Title.Collaboration">

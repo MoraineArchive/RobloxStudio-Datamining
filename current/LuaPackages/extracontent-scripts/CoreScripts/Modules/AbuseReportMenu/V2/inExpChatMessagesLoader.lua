@@ -14,7 +14,6 @@ local ChannelTabDisplayLabel = ExpChatShared.ChannelTabDisplayLabel
 local getChannelTabsStore = ExpChat.Stores.GetChannelTabsStore
 
 local FFlagExpChatUseChannelTabsStore = SharedFlags.FFlagExpChatUseChannelTabsStore
-local FFlagExpChatUseMessagesStore = SharedFlags.FFlagExpChatUseMessagesStore
 local FFlagExpChatUseSharedChannelTabDisplayLabel = SharedFlags.FFlagExpChatUseSharedChannelTabDisplayLabel
 
 local locales = Localization.new(LocalizationService.RobloxLocaleId)
@@ -46,23 +45,13 @@ return {
 		local windowMessagesInOrder
 		local windowMessagesInOrderByTabId
 
-		if FFlagExpChatUseMessagesStore then
-			local messagesStore = ExpChatShared.context.messagesStore
-			if not messagesStore then
-				return Promise.resolve({})
-			end
-			byMessageId = messagesStore.getByMessageId(false) or {}
-			windowMessagesInOrder = messagesStore.getWindowMessagesInOrder(false) or {}
-			windowMessagesInOrderByTabId = messagesStore.getWindowMessagesInOrderByTabId(false) or {}
-		else
-			local messagesState = state and state.Messages
-			if not messagesState then
-				return Promise.resolve({})
-			end
-			byMessageId = messagesState.byMessageId or {}
-			windowMessagesInOrder = messagesState.windowMessagesInOrder or {}
-			windowMessagesInOrderByTabId = messagesState.windowMessagesInOrderByTabId or {}
+		local messagesStore = ExpChatShared.context.messagesStore
+		if not messagesStore then
+			return Promise.resolve({})
 		end
+		byMessageId = messagesStore.getByMessageId(false) or {}
+		windowMessagesInOrder = messagesStore.getWindowMessagesInOrder(false) or {}
+		windowMessagesInOrderByTabId = messagesStore.getWindowMessagesInOrderByTabId(false) or {}
 
 		local translator = ExpChatShared.context.translator
 

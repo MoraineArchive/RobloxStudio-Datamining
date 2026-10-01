@@ -4,6 +4,9 @@ local Text = GenericTextLabelRoot.Parent
 local App = Text.Parent
 local UIBlox = App.Parent
 local Packages = UIBlox.Parent
+local Foundation = require(Packages.Foundation)
+local normalizeFontFace = Foundation.Utility.normalizeFontFace
+local FFlagFoundationFontFaceMigration = Foundation.Utility.Flags.FoundationFontFaceMigration
 
 local Roact = require(Packages.Roact)
 local Cryo = require(Packages.Cryo)
@@ -91,7 +94,8 @@ function GenericTextLabel:render()
 			maxSize = Cryo.None,
 			Size = size,
 			Text = text,
-			Font = textFont,
+			Font = if FFlagFoundationFontFaceMigration then Cryo.None else textFont,
+			FontFace = if FFlagFoundationFontFaceMigration then normalizeFontFace(textFont) else Cryo.None,
 			TextSize = textSize,
 			AutomaticSize = automaticSize,
 			TextColor3 = textColor,

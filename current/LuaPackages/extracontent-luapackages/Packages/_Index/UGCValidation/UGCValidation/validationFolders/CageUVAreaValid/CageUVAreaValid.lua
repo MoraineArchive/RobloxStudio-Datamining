@@ -14,8 +14,6 @@ local Types = require(root.util.Types)
 local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 
-local getFFlagUGCValidateMigrateCageUV = require(root.flags.getFFlagUGCValidateMigrateCageUV)
-
 local CageUVAreaValid = {}
 
 CageUVAreaValid.categories = {
@@ -28,8 +26,6 @@ CageUVAreaValid.requiredData = {
 }
 
 CageUVAreaValid.conditionalData = {}
-
-CageUVAreaValid.fflag = getFFlagUGCValidateMigrateCageUV
 
 CageUVAreaValid.expectedFailures = {}
 

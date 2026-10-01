@@ -5,6 +5,9 @@ local App = TileRoot.Parent
 local UIBlox = App.Parent
 local Core = UIBlox.Core
 local Packages = UIBlox.Parent
+local Foundation = require(Packages.Foundation)
+local normalizeFontFace = Foundation.Utility.normalizeFontFace
+local FFlagFoundationFontFaceMigration = Foundation.Utility.Flags.FoundationFontFaceMigration
 
 local React = require(Packages.React)
 local useStyle = require(Core.Style.useStyle)
@@ -38,7 +41,7 @@ export type Props = {
 	-- The spacing between title and footer
 	titlePadding: number?,
 	-- The Font type of the title
-	titleFont: Fonts.Font?,
+	titleFont: Fonts.FontInfo?,
 }
 
 local function TileContentPanel(props: Props)
@@ -99,7 +102,8 @@ local function TileContentPanel(props: Props)
 				AutomaticSize = Enum.AutomaticSize.Y,
 				BackgroundTransparency = 1,
 				Text = contentTitle,
-				Font = titleFont.Font,
+				Font = if FFlagFoundationFontFaceMigration then nil else titleFont.Font,
+				FontFace = if FFlagFoundationFontFaceMigration then normalizeFontFace(titleFont.Font) else nil,
 				TextSize = font.BaseSize * titleFont.RelativeSize,
 				TextTransparency = titleColorStyle.Transparency,
 				TextColor3 = titleColorStyle.Color,

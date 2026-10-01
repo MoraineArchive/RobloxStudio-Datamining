@@ -8,8 +8,11 @@ local FillBehavior = require(Foundation.Enums.FillBehavior)
 local OptionSelectorGroup = require(Foundation.Components.OptionSelectorGroup)
 local OptionSelectorGroupSize = require(Foundation.Enums.OptionSelectorGroupSize)
 local Orientation = require(Foundation.Enums.Orientation)
+local StorySection = require(Foundation.Utility.Stories.Shared.StorySection)
 local Text = require(Foundation.Components.Text)
 local View = require(Foundation.Components.View)
+
+local Section = StorySection.Section
 
 type FillBehavior = FillBehavior.FillBehavior
 type OptionSelectorGroupSize = OptionSelectorGroupSize.OptionSelectorGroupSize
@@ -47,28 +50,6 @@ local ITEM_DESCRIPTIONS = {
 }
 
 local GROUP_COLUMN_WIDTH = 280
-
-local function Section(props: {
-	LayoutOrder: number,
-	name: string,
-	contentTag: string?,
-	children: React.ReactNode,
-})
-	return React.createElement(View, {
-		tag = "col gap-medium size-full-0 auto-y",
-		LayoutOrder = props.LayoutOrder,
-	}, {
-		Title = React.createElement(Text, {
-			Text = props.name,
-			tag = "auto-xy text-label-medium content-default",
-			LayoutOrder = 1,
-		}),
-		Content = React.createElement(View, {
-			tag = props.contentTag or "row gap-large auto-xy wrap",
-			LayoutOrder = 2,
-		}, props.children),
-	})
-end
 
 local function makeItems(props: {
 	count: number?,
@@ -212,7 +193,7 @@ end
 
 local function SizingStory()
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		Size = React.createElement(
 			Section,
@@ -340,7 +321,7 @@ end
 
 local function ContentStory()
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		Legend = React.createElement(
 			Section,
@@ -387,7 +368,7 @@ end
 
 local function ControlledStory()
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		Controlled = React.createElement(Section, {
 			LayoutOrder = 1,

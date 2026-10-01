@@ -7,12 +7,10 @@ local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 local AssetCalculator = require(root.util.AssetCalculator)
 
-local getFFlagUGCValidateMigrateCageGeometry = require(root.flags.getFFlagUGCValidateMigrateCageGeometry)
 local GetFStringUGCValidationMaxCageDistance = require(root.flags.GetFStringUGCValidationMaxCageDistance)
 
 local BodyPartCageDistanceValid = {}
 
-BodyPartCageDistanceValid.fflag = getFFlagUGCValidateMigrateCageGeometry
 BodyPartCageDistanceValid.categories = { ValidationEnums.UploadCategory.FULL_BODY }
 BodyPartCageDistanceValid.requiredData = {
 	ValidationEnums.SharedDataMember.renderMeshesData,

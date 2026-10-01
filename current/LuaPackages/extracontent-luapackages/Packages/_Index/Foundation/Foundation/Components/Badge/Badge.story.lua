@@ -12,11 +12,13 @@ local IconPosition = require(Foundation.Enums.IconPosition)
 local Icons = BuilderIcons.Icon
 local MatrixGridShared = require(Foundation.Utility.Stories.Shared.MatrixGrid)
 local StoryIcons = require(Foundation.Utility.Stories.Shared.StoryIcons)
+local StorySection = require(Foundation.Utility.Stories.Shared.StorySection)
 local Text = require(Foundation.Components.Text)
 local View = require(Foundation.Components.View)
 
 local MatrixGrid = MatrixGridShared.MatrixGrid
 local matrixLabel = MatrixGridShared.matrixLabel
+local Section = StorySection.Section
 type BadgeVariant = BadgeVariant.BadgeVariant
 type BadgeShape = BadgeShape.BadgeShape
 type BadgeSize = BadgeSize.BadgeSize
@@ -26,9 +28,25 @@ local Flags = require(Foundation.Utility.Flags)
 local useTokens = require(Foundation.Providers.Style.useTokens)
 
 -- DEPRECATED Primary, Secondary, and Neutral variants are scheduled for removal in the next major release (2.0)
-local nonDeprecatedVariants = Dash.filter(Dash.values(BadgeVariant), function(item)
-	return item ~= BadgeVariant.Primary and item ~= BadgeVariant.Secondary and item ~= BadgeVariant.Neutral
-end) :: { BadgeVariant }
+local VARIANT_ORDER: { BadgeVariant } = {
+	BadgeVariant.Contrast,
+	BadgeVariant.Alert,
+	BadgeVariant.Success,
+	BadgeVariant.Warning,
+	BadgeVariant.Standard,
+	BadgeVariant.OverMedia,
+	BadgeVariant.Emphasis,
+}
+
+local SHAPE_ORDER: { BadgeShape } = {
+	BadgeShape.Pill,
+	BadgeShape.Box,
+}
+
+local ICON_POSITION_ORDER: { IconPosition } = {
+	IconPosition.Left,
+	IconPosition.Right,
+}
 
 local defaultBadgeProps = {
 	text = "Label",
@@ -91,28 +109,6 @@ local controlSizeOptions: { BadgeSize } = {
 	BadgeSize.XSmall,
 	BadgeSize.Small,
 }
-
-local function Section(props: {
-	LayoutOrder: number,
-	name: string,
-	contentTag: string?,
-	children: React.ReactNode,
-})
-	return React.createElement(View, {
-		tag = "col gap-medium size-full-0 auto-y",
-		LayoutOrder = props.LayoutOrder,
-	}, {
-		Title = React.createElement(Text, {
-			Text = props.name,
-			tag = "auto-xy text-label-medium content-default",
-			LayoutOrder = 1,
-		}),
-		Content = React.createElement(View, {
-			tag = props.contentTag or "row gap-large auto-xy wrap",
-			LayoutOrder = 2,
-		}, props.children),
-	})
-end
 
 local function LabeledBadge(props: {
 	label: string,
@@ -209,7 +205,7 @@ local function VariantsStory(): React.ReactNode
 		{
 			tag = "row wrap gap-large auto-xy padding-y-large bg-surface-0",
 		},
-		Dash.map(nonDeprecatedVariants, function(variant, index)
+		Dash.map(VARIANT_ORDER, function(variant, index)
 			return React.createElement(LabeledBadge, {
 				label = variant,
 				LayoutOrder = index,
@@ -226,7 +222,7 @@ end
 
 local function SizingStory(): React.ReactNode
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		Size = React.createElement(
 			Section,
@@ -279,7 +275,7 @@ end
 
 local function ContentStory(): React.ReactNode
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		Truncation = React.createElement(
 			Section,
@@ -406,7 +402,7 @@ end
 
 local function InContextStory(): React.ReactNode
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		SemiTransparent = React.createElement(
 			Section,
@@ -457,7 +453,7 @@ return {
 			story = SizingStory,
 		},
 		{
-			name = "Shapes",
+			name = "Shape",
 			story = ShapesStory,
 		},
 		{
@@ -466,16 +462,15 @@ return {
 		},
 		{
 			name = "In context",
-			summary = "Badges on media backgrounds, grouped by transparency.",
 			story = InContextStory,
 		},
 	},
 	controls = {
 		text = "Label",
 		icon = StoryIcons.buildIconControlOptions(),
-		variant = nonDeprecatedVariants,
-		shape = Dash.values(BadgeShape),
-		iconPosition = Dash.values(IconPosition),
+		variant = VARIANT_ORDER,
+		shape = SHAPE_ORDER,
+		iconPosition = ICON_POSITION_ORDER,
 		size = controlSizeOptions,
 	},
 }

@@ -12,12 +12,13 @@ local CorePackages = game:GetService("CorePackages")
 local CoreGui = game:GetService("CoreGui")
 
 local SharedFlags = require(CorePackages.Workspace.Packages.SharedFlags)
-local FStringLuaAppPlayButtonAgeCheckAmpFeatureName =
-	SharedFlags.FStringLuaAppPlayButtonAgeCheckAmpFeatureName
-local FStringLuaAppPlayButtonAgeCheckAmpNameSpace =
-	SharedFlags.FStringLuaAppPlayButtonAgeCheckAmpNameSpace
+local FStringLuaAppPlayButtonAgeCheckAmpFeatureName = SharedFlags.FStringLuaAppPlayButtonAgeCheckAmpFeatureName
+local FStringLuaAppPlayButtonAgeCheckAmpNameSpace = SharedFlags.FStringLuaAppPlayButtonAgeCheckAmpNameSpace
+local FFlagPioneerLeaveOnInExpFaeDownAge = SharedFlags.FFlagPioneerLeaveOnInExpFaeDownAge
 
 local Logging = require(CorePackages.Workspace.Packages.AppCommonLib).Logging
+local maybeLeavePioneerOnFaeDownAge =
+	require(CorePackages.Workspace.Packages.PioneerUtils.maybeLeavePioneerOnFaeDownAge)
 
 local PromptAgeCheckHandler = {}
 
@@ -39,16 +40,25 @@ local function onPromptAgeCheckRequested(player)
 
 	AmpUpsell.InExpAmpWizardController.OpenAmpWizardContainerInExp(
 		FStringLuaAppPlayButtonAgeCheckAmpFeatureName,
-		function(accessResponse, _actionsTaken)
-			if accessResponse == "Granted" then
-				local notifyOk, err = pcall(function()
-					LocalPlayer:NotifyAgeCheckPassed()
-				end)
-				if not notifyOk then
-					Logging.warn(
-						"PromptAgeCheckRequested: NotifyAgeCheckPassed failed: " .. tostring(err)
-					)
+		function(accessResponse, actionsTaken)
+			local function notifyIfGranted()
+				if accessResponse == "Granted" then
+					local notifyOk, err = pcall(function()
+						LocalPlayer:NotifyAgeCheckPassed()
+					end)
+					if not notifyOk then
+						Logging.warn("PromptAgeCheckRequested: NotifyAgeCheckPassed failed: " .. tostring(err))
+					end
 				end
+			end
+
+			if FFlagPioneerLeaveOnInExpFaeDownAge then
+				local AmpEnums = AmpUpsell.AmpEnums
+				local ageEstimationSucceeded = actionsTaken ~= nil
+					and actionsTaken[AmpEnums.ActionTypeEnum.AgeEstimation] == AmpEnums.ActionStatusEnum.Success
+				maybeLeavePioneerOnFaeDownAge(ageEstimationSucceeded, notifyIfGranted)
+			else
+				notifyIfGranted()
 			end
 		end,
 		nil, -- recourseData

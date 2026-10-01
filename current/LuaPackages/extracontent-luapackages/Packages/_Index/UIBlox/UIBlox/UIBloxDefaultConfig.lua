@@ -55,4 +55,7 @@ return {
 
 	-- Reserve toast button space from Foundation's button metrics instead of the toast's own text styles
 	useFoundationToastButtonSizing = false,
+
+	-- Add hover tooltips and truncated labels for stacked NavigationTab
+	addNavigationTabTooltipAndTruncation = false,
 }

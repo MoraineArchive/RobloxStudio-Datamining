@@ -5,27 +5,78 @@
 local TextService = game:GetService("TextService")
 
 local UIBlox = script.Parent.Parent.Parent
+local Packages = UIBlox.Parent
+local Foundation = require(Packages.Foundation)
+local normalizeFontFace = Foundation.Utility.normalizeFontFace
+local FFlagFoundationFontFaceMigration = Foundation.Utility.Flags.FoundationFontFaceMigration
 local Logger = require(UIBlox.Logger)
+local GetLegacyFont = require(script.Parent.GetLegacyFont)
 
+-- Comic Neue measurements exceeded the Cartoon fallback by up to 4 px (0.9%)
+-- in the migration matrix. One percent keeps unbounded width conservative and
+-- forces legacy wrapping before the exact font's measured boundary.
+-- BuilderSans and exact mappings skip this family-specific correction. This is
+-- separate from TEMPORARY_TEXT_SIZE_PADDING.
+local COMIC_NEUE_WIDTH_SCALE = 1.01
 local TEMPORARY_TEXT_SIZE_PADDING = Vector2.new(2, 2)
 
-local function getTextSize(string: string, fontSize: number, font: Enum.Font, frameSize: Vector2, isRichText: boolean?)
-	local params = Instance.new("GetTextBoundsParams")
-	params.Font = Font.fromEnum(font)
-	params.Size = fontSize
-	params.Text = string
-	params.Width = frameSize.X
-	params.RichText = isRichText or false
+local function getTextSize(
+	string: string,
+	fontSize: number,
+	font: Font | Enum.Font,
+	frameSize: Vector2,
+	isRichText: boolean?
+)
+	local success, value, usesWidthCorrection = pcall(function(): (Vector2?, boolean)
+		if FFlagFoundationFontFaceMigration and not isRichText then
+			local legacyFont, usesFallback = GetLegacyFont(font)
+			if legacyFont == nil then
+				return nil, usesFallback
+			end
+			local usesComicNeueFallback = usesFallback and legacyFont == Enum.Font.Cartoon
 
-	-- pcall because GetTextBoundsAsync can error if network call fails
-	local success, value = pcall(function()
-		return TextService:GetTextBoundsAsync(params)
+			-- GetTextBoundsParams.Width <= 0 means unconstrained; legacy GetTextSize treats X as a
+			-- hard wrap width. Match the async path by measuring with an unbounded height and only
+			-- using X as a wrap constraint when it is a finite positive width.
+			local measurementWidth = frameSize.X
+			local hasFiniteWrapWidth = measurementWidth > 0 and measurementWidth < math.huge
+			if not hasFiniteWrapWidth then
+				measurementWidth = math.huge
+			elseif usesComicNeueFallback then
+				measurementWidth = measurementWidth / COMIC_NEUE_WIDTH_SCALE
+			end
+
+			local measurementFrameSize = Vector2.new(measurementWidth, math.huge)
+			return TextService:GetTextSize(string, fontSize, legacyFont, measurementFrameSize), usesComicNeueFallback
+		end
+
+		local params = Instance.new("GetTextBoundsParams")
+		params.Font = if FFlagFoundationFontFaceMigration
+			then normalizeFontFace(font) :: Font
+			else Font.fromEnum(font :: Enum.Font)
+		params.Size = fontSize
+		params.Text = string
+		params.Width = frameSize.X
+		params.RichText = isRichText or false
+
+		return TextService:GetTextBoundsAsync(params), false
 	end)
-	if success then
+	if success and value then
 		local textSize = Vector2.new(value.X, math.min(value.Y, frameSize.Y))
+		if usesWidthCorrection then
+			local width = math.ceil(textSize.X * COMIC_NEUE_WIDTH_SCALE)
+			if frameSize.X > 0 and frameSize.X < math.huge then
+				width = math.min(width, frameSize.X)
+			end
+			textSize = Vector2.new(width, textSize.Y)
+		end
+
 		return textSize + TEMPORARY_TEXT_SIZE_PADDING
+	elseif success then
+		Logger:warning("Font cannot be measured, falling back to frame size")
+		return frameSize
 	else
-		Logger:warning("GetTextBoundsAsync call failed, falling back to frame size. Error: ", value)
+		Logger:warning(`Text measurement failed, falling back to frame size. Error: {value}`)
 		return frameSize
 	end
 end

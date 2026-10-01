@@ -13,8 +13,6 @@ local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 
 local floatEquals = require(root.util.floatEquals)
 
-local getFFlagUGCValidateMigratePoseBlocking = require(root.flags.getFFlagUGCValidateMigratePoseBlocking)
-
 local BodyBlockingTestsPass = {}
 
 BodyBlockingTestsPass.categories = {
@@ -27,8 +25,6 @@ BodyBlockingTestsPass.requiredData = {
 	ValidationEnums.SharedDataMember.rootInstance,
 	ValidationEnums.SharedDataMember.renderMeshesData,
 }
-
-BodyBlockingTestsPass.fflag = getFFlagUGCValidateMigratePoseBlocking
 
 BodyBlockingTestsPass.expectedFailures = {}
 

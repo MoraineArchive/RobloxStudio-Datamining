@@ -1295,6 +1295,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "VRAvatarGesturesServer.spec",
+    "path": "Modules/Server/VR/VRAvatarGesturesServer.spec",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "VRAvatarGesturesServer",
     "path": "Modules/Server/VR/VRAvatarGesturesServer",
     "properties": {

@@ -55,7 +55,7 @@ local switchServerIntegration = ChromeService:register({
 SignalsUtils.createDetachedEffect(function(scope)
 	local shouldEnableSwitchServer = switchServerStore.shouldEnableSwitchServer(scope)
 
-	if shouldEnableSwitchServer then
+	if shouldEnableSwitchServer or isPioneerLaunch() then
 		switchServerIntegration.availability:available()
 	else
 		switchServerIntegration.availability:unavailable()

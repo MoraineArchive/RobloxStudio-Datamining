@@ -15,6 +15,8 @@ local FoundationSlider = Foundation.Slider
 local Checkbox = Foundation.Checkbox
 local InputSize = Foundation.Enums.InputSize
 local Visibility = Foundation.Enums.Visibility
+local ColorMode = Foundation.Enums.ColorMode
+local ThemeName = Foundation.Enums.ThemeName
 
 local Framework = require(Main.Packages.Framework)
 local ThemeSwitcher = Framework.Style.ThemeSwitcher
@@ -24,7 +26,8 @@ local SLIDER_INPUT_WIDTH = UDim.new(0, 60)
 
 local Actions = Main.Src.Actions
 local Thunks = Main.Src.Thunks
-local SelectTheme = require(Actions.SelectTheme)
+local SelectColorMode = require(Actions.SelectColorMode)
+local SelectThemeName = require(Actions.SelectThemeName)
 local SelectPlatform = require(Actions.SelectPlatform)
 local SetLive = require(Actions.SetLive)
 local SetSettings = require(Actions.SetSettings)
@@ -35,10 +38,35 @@ local GuiService = game:GetService("GuiService")
 
 local TopBar = React.PureComponent:extend("TopBar")
 
-local THEMES = {
-	{ id = "Default", text = "Default" },
-	{ id = "Light", text = "Light" },
-	{ id = "Dark", text = "Dark" },
+-- Not a Foundation ColorMode: picking it clears the stored color mode so the
+-- storybook follows Studio's Light/Dark setting again.
+local DEFAULT_COLOR_MODE = "Default"
+
+local COLOR_MODES = {
+	{ id = DEFAULT_COLOR_MODE, text = DEFAULT_COLOR_MODE },
+	{ id = ColorMode.Light :: string, text = ColorMode.Light :: string },
+	{ id = ColorMode.Dark :: string, text = ColorMode.Dark :: string },
+}
+
+-- Foundation.Enums.ThemeName is a dictionary, so list its values explicitly to
+-- keep the dropdown order stable.
+local THEME_NAMES = {
+	{ id = ThemeName.Default, text = ThemeName.Default },
+	{ id = ThemeName.CircuitRush, text = ThemeName.CircuitRush },
+	{ id = ThemeName.CosmicDust, text = ThemeName.CosmicDust },
+	{ id = ThemeName.ElectricLime, text = ThemeName.ElectricLime },
+	{ id = ThemeName.HyperPlum, text = ThemeName.HyperPlum },
+	{ id = ThemeName.InfernoBlast, text = ThemeName.InfernoBlast },
+	{ id = ThemeName.Kids, text = ThemeName.Kids },
+	{ id = ThemeName.KineticEnergy, text = ThemeName.KineticEnergy },
+	{ id = ThemeName.LavaGlow, text = ThemeName.LavaGlow },
+	{ id = ThemeName.NebulaDrift, text = ThemeName.NebulaDrift },
+	{ id = ThemeName.NitroFrost, text = ThemeName.NitroFrost },
+	{ id = ThemeName.PixelPop, text = ThemeName.PixelPop },
+	{ id = ThemeName.PolarFreeze, text = ThemeName.PolarFreeze },
+	{ id = ThemeName.QuantumPulse, text = ThemeName.QuantumPulse },
+	{ id = ThemeName.StarBurst, text = ThemeName.StarBurst },
+	{ id = ThemeName.SuperCharge, text = ThemeName.SuperCharge },
 }
 
 local PLATFORM_STRING = "Default,Console,Desktop"
@@ -212,30 +240,46 @@ function TopBar(props)
 				size = InputSize.XSmall,
 			})
 			else nil,
-		ThemeLabel = React.createElement(Text, {
-			Text = "Theme:",
+		ColorModeLabel = React.createElement(Text, {
+			Text = "Color mode:",
 			LayoutOrder = 4,
 			tag = "auto-xy text-label-small text-align-x-left",
 		}),
-		SelectTheme = React.createElement(Dropdown.Root, {
+		SelectColorMode = React.createElement(Dropdown.Root, {
 			label = "",
 			width = INPUT_WIDTH,
-			onItemChanged = function(id, label)
-				props.selectTheme(id)
+			onItemChanged = function(id)
+				props.selectColorMode(id)
 			end,
-			items = THEMES,
-			value = props.CurrentTheme or "Default",
+			items = COLOR_MODES,
+			value = props.ColorMode or DEFAULT_COLOR_MODE,
 			LayoutOrder = 5,
+			size = InputSize.XSmall,
+		}),
+		ThemeNameLabel = React.createElement(Text, {
+			Text = "Theme:",
+			LayoutOrder = 6,
+			tag = "auto-xy text-label-small text-align-x-left",
+		}),
+		SelectThemeName = React.createElement(Dropdown.Root, {
+			label = "",
+			width = INPUT_WIDTH,
+			onItemChanged = function(id)
+				props.selectThemeName(id)
+			end,
+			items = THEME_NAMES,
+			value = props.ThemeName or ThemeName.Default,
+			LayoutOrder = 7,
 			size = InputSize.XSmall,
 		}),
 		PlatformLabel = React.createElement(Text, {
 			Text = "Platform:",
-			LayoutOrder = 6,
+			LayoutOrder = 8,
 			tag = "auto-xy text-label-small text-align-x-left",
 		}),
 		SelectPlatform = React.createElement(Dropdown.Root, {
 			label = "",
-			LayoutOrder = 7,
+			LayoutOrder = 9,
 			width = INPUT_WIDTH,
 			value = props.Platform,
 			items = PLATFORMS,
@@ -243,7 +287,7 @@ function TopBar(props)
 			size = InputSize.XSmall,
 		}),
 		ReducedMotion = React.createElement(Checkbox, {
-			LayoutOrder = 8,
+			LayoutOrder = 10,
 			isChecked = props.Settings.reducedMotion,
 			onActivated = onToggleReducedMotion,
 			label = "Reduced Motion",
@@ -251,7 +295,7 @@ function TopBar(props)
 		}),
 		PreferredTransparencySlider = React.createElement(SliderWithInput, {
 			range = NumberRange.new(0, 1),
-			LayoutOrder = 9,
+			LayoutOrder = 11,
 			value = props.Settings.preferredTransparency,
 			onValueChanged = onPreferredTransparencyChanged,
 			text = "Preferred Transparency:",
@@ -261,7 +305,7 @@ function TopBar(props)
 			RichText = true,
 			tag = "auto-xy text-label-small text-align-x-left",
 			AnchorPoint = Vector2.new(0, 0),
-			LayoutOrder = 10,
+			LayoutOrder = 12,
 		}),
 		Slider = React.createElement(SliderWithInput, {
 			range = NumberRange.new(0, 3),
@@ -276,16 +320,20 @@ end
 return RoactRodux.connect(function(state)
 	return {
 		Embedded = state.Stories.embedded,
-		CurrentTheme = state.Stories.theme,
+		ColorMode = state.Stories.colorMode,
+		ThemeName = state.Stories.themeName,
 		Live = state.Stories.live,
 		Platform = state.Stories.platform,
 		Settings = state.Stories.settings,
 	}
 end, function(dispatch)
 	return {
-		selectTheme = function(theme)
-			ThemeSwitcher.setTheme(theme)
-			dispatch(SelectTheme(theme))
+		selectColorMode = function(colorMode)
+			ThemeSwitcher.setTheme(colorMode)
+			dispatch(SelectColorMode(if colorMode == DEFAULT_COLOR_MODE then nil else colorMode))
+		end,
+		selectThemeName = function(themeName)
+			dispatch(SelectThemeName(themeName))
 		end,
 		selectPlatform = function(platform)
 			dispatch(SelectPlatform(platform))

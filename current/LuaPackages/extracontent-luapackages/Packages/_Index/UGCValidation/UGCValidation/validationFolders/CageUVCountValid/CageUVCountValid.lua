@@ -15,7 +15,6 @@ local Types = require(root.util.Types)
 local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 
-local getFFlagUGCValidateMigrateCageUV = require(root.flags.getFFlagUGCValidateMigrateCageUV)
 local getFIntUniqueUVTolerance = require(root.flags.getFIntUniqueUVTolerance)
 
 local CageUVCountValid = {}
@@ -30,8 +29,6 @@ CageUVCountValid.requiredData = {
 }
 
 CageUVCountValid.conditionalData = {}
-
-CageUVCountValid.fflag = getFFlagUGCValidateMigrateCageUV
 
 CageUVCountValid.expectedFailures = {}
 

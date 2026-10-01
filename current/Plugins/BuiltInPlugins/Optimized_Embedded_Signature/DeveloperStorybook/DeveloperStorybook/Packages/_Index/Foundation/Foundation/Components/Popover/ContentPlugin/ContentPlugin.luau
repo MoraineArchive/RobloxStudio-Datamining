@@ -48,7 +48,9 @@ type SideConfig = useFloating.SideConfig
 type AlignConfig = useFloating.AlignConfig
 type StudioUri = StudioUri.StudioUri
 
-local SHADOW_SIZE = Constants.SHADOW_SIZE
+local SHADOW_SIZE = if Flags.FoundationPopoverPluginOverlayMeasurement and Flags.FoundationPluginShadowSize
+	then Constants.PLUGIN_SHADOW_SIZE
+	else Constants.SHADOW_SIZE
 local SHADOW_VERTICAL_OFFSET = 2
 
 local defaultProps = {
@@ -420,7 +422,17 @@ local function PopoverContentPlugin(
 				}, {
 					Shadow = React.createElement(PopoverShadow, {
 						contentSize = contentSize,
-						position = UDim2.fromOffset(SHADOW_SIZE / 2, SHADOW_SIZE / 2 + SHADOW_VERTICAL_OFFSET),
+						position = UDim2.fromOffset(
+							SHADOW_SIZE / 2,
+							SHADOW_SIZE / 2
+								+ (
+									if Flags.FoundationPopoverPluginOverlayMeasurement
+											and Flags.FoundationPluginShadowSize
+										then 0
+										else SHADOW_VERTICAL_OFFSET
+								)
+						),
+						radiusTag = radiusToTag[props.radius],
 						ZIndex = 1,
 						testId = `{popoverContext.testId}--shadow`,
 					}),

@@ -7,14 +7,12 @@
 local root = script.Parent.Parent
 local Types = require(root.util.Types)
 local AssetService = game:GetService("AssetService")
-local getFFlagUGCValidationAddPBRToSharedData = require(root.flags.getFFlagUGCValidationAddPBRToSharedData)
 local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local R15plusUtils = require(root.util.R15plusUtils)
 local RigBuilder = require(root.util.RigBuilder)
 local buildEmoteKeyframeSequenceFromCurveAnim = require(root.util.buildEmoteKeyframeSequenceFromCurveAnim)
 local getEngineFeatureEngineUGCValidateEmoteAnimationExport =
 	require(root.flags.getEngineFeatureEngineUGCValidateEmoteAnimationExport)
-local getFFlagUGCValidationAddGeometryToExports = require(root.flags.getFFlagUGCValidationAddGeometryToExports)
 local getFFlagUGCValidateAllowEmissives = require(root.flags.getFFlagUGCValidateAllowEmissives)
 
 local RecreateSceneFromEditables = {}
@@ -41,33 +39,29 @@ local function copyMeshPart(
 	-- Creates a new meshpart from the saved editable mesh, as our gltf upload path expects meshcontent to be editable
 	-- Need to copy over attachment points and facs
 	local newMeshPart = AssetService:CreateMeshPartAsync(Content.fromObject(meshData.editable))
-	if getFFlagUGCValidationAddPBRToSharedData() then
-		if editablePBRData and not editablePBRData.isPBR and editablePBRData.Texture then
-			newMeshPart.TextureContent = Content.fromObject(editablePBRData.Texture.editable)
-		elseif editablePBRData and editablePBRData.isPBR then
-			local surfaceAppearance = Instance.new("SurfaceAppearance")
-			if editablePBRData.ColorMap then
-				surfaceAppearance.ColorMapContent = Content.fromObject(editablePBRData.ColorMap.editable)
-			end
-			if editablePBRData.MetalnessMap then
-				surfaceAppearance.MetalnessMapContent = Content.fromObject(editablePBRData.MetalnessMap.editable)
-			end
-			if editablePBRData.NormalMap then
-				surfaceAppearance.NormalMapContent = Content.fromObject(editablePBRData.NormalMap.editable)
-			end
-			if editablePBRData.RoughnessMap then
-				surfaceAppearance.RoughnessMapContent = Content.fromObject(editablePBRData.RoughnessMap.editable)
-			end
-			if getFFlagUGCValidateAllowEmissives() then
-				if editablePBRData.EmissiveMask then
-					surfaceAppearance.EmissiveMaskContent = Content.fromObject(editablePBRData.EmissiveMask.editable)
-				end
-			end
-
-			surfaceAppearance.Parent = newMeshPart
+	if editablePBRData and not editablePBRData.isPBR and editablePBRData.Texture then
+		newMeshPart.TextureContent = Content.fromObject(editablePBRData.Texture.editable)
+	elseif editablePBRData and editablePBRData.isPBR then
+		local surfaceAppearance = Instance.new("SurfaceAppearance")
+		if editablePBRData.ColorMap then
+			surfaceAppearance.ColorMapContent = Content.fromObject(editablePBRData.ColorMap.editable)
 		end
-	elseif editablePBRData then
-		newMeshPart.TextureContent = Content.fromObject((editablePBRData :: any).editable)
+		if editablePBRData.MetalnessMap then
+			surfaceAppearance.MetalnessMapContent = Content.fromObject(editablePBRData.MetalnessMap.editable)
+		end
+		if editablePBRData.NormalMap then
+			surfaceAppearance.NormalMapContent = Content.fromObject(editablePBRData.NormalMap.editable)
+		end
+		if editablePBRData.RoughnessMap then
+			surfaceAppearance.RoughnessMapContent = Content.fromObject(editablePBRData.RoughnessMap.editable)
+		end
+		if getFFlagUGCValidateAllowEmissives() then
+			if editablePBRData.EmissiveMask then
+				surfaceAppearance.EmissiveMaskContent = Content.fromObject(editablePBRData.EmissiveMask.editable)
+			end
+		end
+
+		surfaceAppearance.Parent = newMeshPart
 	end
 
 	newMeshPart.Name = originalMeshPart.Name
@@ -204,10 +198,7 @@ function RecreateSceneFromEditables.createModelForGltfExport(sharedData: Types.S
 			cageMesh.Parent = exportScene
 		end
 
-		if
-			getFFlagUGCValidationAddGeometryToExports()
-			and sharedData.uploadCategory == ValidationEnums.UploadCategory.FULL_BODY
-		then
+		if sharedData.uploadCategory == ValidationEnums.UploadCategory.FULL_BODY then
 			sceneMeshPart.Name = `{meshName}_Geo`
 		end
 	end

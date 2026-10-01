@@ -6,13 +6,11 @@ local Types = require(root.util.Types)
 local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 
-local getFFlagUGCValidateMigrateCageGeometry = require(root.flags.getFFlagUGCValidateMigrateCageGeometry)
 local getFIntUGCValidateCageMeshDistanceThreshold = require(root.flags.getFIntUGCValidateCageMeshDistanceThreshold)
 local getFFlagUGCValidationEyebrowEyelashSupport = require(root.flags.getFFlagUGCValidationEyebrowEyelashSupport)
 
 local CageMeshDistanceBounded = {}
 
-CageMeshDistanceBounded.fflag = getFFlagUGCValidateMigrateCageGeometry
 CageMeshDistanceBounded.categories = { ValidationEnums.UploadCategory.LAYERED_CLOTHING }
 CageMeshDistanceBounded.requiredData = {
 	ValidationEnums.SharedDataMember.renderMeshesData,

@@ -8,12 +8,11 @@ local CurveAnimBoneHierarchyUtils = require(root.util.CurveAnimBoneHierarchyUtil
 
 local getFFlagUGCValidateEmotesBonesAllowed = require(root.flags.getFFlagUGCValidateEmotesBonesAllowed)
 local getFFlagUGCValidateAnimBonesSupport = require(root.flags.getFFlagUGCValidateAnimBonesSupport)
-local getFFlagUGCValidationAnimationPackSupport = require(root.flags.getFFlagUGCValidationAnimationPackSupport)
 
 local CurveAnimBonesHaveValidParents = {}
 
 CurveAnimBonesHaveValidParents.categories = { ValidationEnums.UploadCategory.EMOTE_ANIMATION }
-if getFFlagUGCValidateAnimBonesSupport() and getFFlagUGCValidationAnimationPackSupport() then
+if getFFlagUGCValidateAnimBonesSupport() then
 	table.insert(CurveAnimBonesHaveValidParents.categories, ValidationEnums.UploadCategory.ANIMATION)
 end
 CurveAnimBonesHaveValidParents.requiredData = {

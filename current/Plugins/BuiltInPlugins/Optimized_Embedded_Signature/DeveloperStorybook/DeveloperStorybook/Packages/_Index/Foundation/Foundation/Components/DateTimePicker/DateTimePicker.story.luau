@@ -10,6 +10,7 @@ local DateTimePresetRangesUtilities =
 	require(Foundation.Components.DateTimePicker.Utilities.DateTimePresetRangesUtilities)
 local DateTimeUtilities = require(Foundation.Components.DateTimePicker.DateTimeUtilities)
 local Flags = require(Foundation.Utility.Flags)
+local StorySection = require(Foundation.Utility.Stories.Shared.StorySection)
 local Text = require(Foundation.Components.Text)
 local View = require(Foundation.Components.View)
 
@@ -71,7 +72,7 @@ local WIDTH_UDIM_500 = UDim.new(0, 500)
 local WIDTH_UDIM_FILL = UDim.new(1, 0)
 
 local STACKED_EXAMPLES_TAG = "col gap-xxlarge size-full-0 auto-y"
-local STORY_PAGE_TAG = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0"
+local STORY_PAGE_TAG = StorySection.STORY_PAGE_COL_TAG
 local STACKED_STORY_PAGE_TAG = STORY_PAGE_TAG .. " " .. STACKED_EXAMPLES_TAG
 
 local WIDTH_EXAMPLES: { { label: string, width: UDim? } } = {
@@ -773,7 +774,7 @@ return {
 			story = VariantsStory,
 		},
 		{
-			name = "Width",
+			name = "Sizing",
 			story = WidthStory,
 		},
 		{
@@ -782,7 +783,6 @@ return {
 		},
 		{
 			name = "Controlled component",
-			summary = "Parent state via onChanged. Non-empty invalid or out-of-range input sets hasError; clearing restores a valid empty state.",
 			story = ControlledStory,
 		},
 		{

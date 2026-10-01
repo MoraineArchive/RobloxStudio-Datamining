@@ -7,8 +7,11 @@ local React = require(Packages.React)
 local Button = require(Foundation.Components.Button)
 local InputChip = require(Foundation.Components.InputChip)
 local InputSize = require(Foundation.Enums.InputSize)
+local StorySection = require(Foundation.Utility.Stories.Shared.StorySection)
 local Text = require(Foundation.Components.Text)
 local View = require(Foundation.Components.View)
+
+local Section = StorySection.Section
 
 type InputSize = InputSize.InputSize
 
@@ -33,32 +36,7 @@ local PLAYGROUND_SIZE_OPTIONS: { InputSize } = {
 
 local INITIAL_CHIPS = { "Design", "Engineering", "Product" }
 
-local IN_CONTEXT_NOTE =
-	"Unlike Chip, InputChip represents selections inside active text inputs — not as a standalone control — and is not yet integrated into TextInput or other consumers."
-
 local function noop() end
-
-local function Section(props: {
-	LayoutOrder: number,
-	name: string,
-	contentTag: string?,
-	children: React.ReactNode,
-})
-	return React.createElement(View, {
-		tag = "col gap-medium size-full-0 auto-y",
-		LayoutOrder = props.LayoutOrder,
-	}, {
-		Title = React.createElement(Text, {
-			Text = props.name,
-			tag = "auto-xy text-label-medium content-default",
-			LayoutOrder = 1,
-		}),
-		Content = React.createElement(View, {
-			tag = props.contentTag or "row gap-large auto-xy wrap",
-			LayoutOrder = 2,
-		}, props.children),
-	})
-end
 
 local function StoryInputChip(props: {
 	text: string,
@@ -128,7 +106,7 @@ end
 
 local function SizingStory(): React.ReactNode
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		Size = React.createElement(
 			Section,
@@ -151,7 +129,7 @@ end
 
 local function StatesStory(): React.ReactNode
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		Disabled = React.createElement(Section, {
 			LayoutOrder = 1,
@@ -206,7 +184,7 @@ end
 
 local function ControlledStory(): React.ReactNode
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		Dismiss = React.createElement(Section, {
 			LayoutOrder = 1,
@@ -246,7 +224,7 @@ end
 
 local function ContentStory(): React.ReactNode
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		Truncation = React.createElement(
 			Section,
@@ -287,13 +265,6 @@ return {
 		{
 			name = "Content",
 			story = ContentStory,
-		},
-		{
-			name = "In context",
-			summary = IN_CONTEXT_NOTE,
-			story = function()
-				return nil
-			end,
 		},
 	},
 	controls = {

@@ -5,6 +5,8 @@ local Core = UIBlox.Core
 local Packages = UIBlox.Parent
 
 local React = require(Packages.React)
+local Foundation = require(Packages.Foundation)
+local normalizeFontFace = Foundation.Utility.normalizeFontFace
 
 local Images = require(App.ImageSet.Images)
 
@@ -13,6 +15,8 @@ local useStyle = require(Core.Style.useStyle)
 local Fonts = require(App.Style.Fonts)
 
 local UIBloxConfig = require(UIBlox.UIBloxConfig)
+
+local FFlagFoundationFontFaceMigration = Foundation.Utility.Flags.FoundationFontFaceMigration
 
 local RATING_ICON = "icons/status/games/rating_small"
 local PLAYERS_ICON = "icons/status/games/people-playing_small"
@@ -70,7 +74,8 @@ local function renderStatItem(containerProps, icon, text, stylePalette)
 			AutomaticSize = Enum.AutomaticSize.XY,
 			BackgroundTransparency = 1,
 			Text = text,
-			Font = font.Body.Font,
+			Font = if FFlagFoundationFontFaceMigration then nil else font.Body.Font,
+			FontFace = if FFlagFoundationFontFaceMigration then normalizeFontFace(font.Body.Font) else nil,
 			TextSize = textSize,
 			TextXAlignment = Enum.TextXAlignment.Left,
 			TextYAlignment = Enum.TextYAlignment.Center,

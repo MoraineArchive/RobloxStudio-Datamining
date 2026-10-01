@@ -12,9 +12,6 @@ local createEmoteSchema = require(root.util.createEmoteSchema)
 local createAnimationSchema = require(root.util.createAnimationSchema)
 local getUploadCategory = require(root.util.getUploadCategory)
 
-local getFFlagUGCValidateEyebrowEyelashThumbnailSchema =
-	require(root.flags.getFFlagUGCValidateEyebrowEyelashThumbnailSchema)
-local getFFlagUGCValidationAnimationPackSupport = require(root.flags.getFFlagUGCValidationAnimationPackSupport)
 local getFFlagUGCValidationAnimationPackFolderStructure =
 	require(root.flags.getFFlagUGCValidationAnimationPackFolderStructure)
 local getFFlagUGCValidationAnimationPackDisableModelStructure =
@@ -86,12 +83,8 @@ local categoryToSchemaGenerator = {
 		return createBodyPartSchema(assetEnum)
 	end,
 	LAYERED_CLOTHING = function(assetEnum: Enum.AssetType, _rootInstance: Instance)
-		if getFFlagUGCValidateEyebrowEyelashThumbnailSchema() then
-			if assetEnum == Enum.AssetType.EyebrowAccessory or assetEnum == Enum.AssetType.EyelashAccessory then
-				return createEyebrowEyelashSchema(Constants.ASSET_TYPE_INFO[assetEnum].attachmentNames)
-			else
-				return createLayeredClothingSchema(Constants.ASSET_TYPE_INFO[assetEnum].attachmentNames)
-			end
+		if assetEnum == Enum.AssetType.EyebrowAccessory or assetEnum == Enum.AssetType.EyelashAccessory then
+			return createEyebrowEyelashSchema(Constants.ASSET_TYPE_INFO[assetEnum].attachmentNames)
 		else
 			return createLayeredClothingSchema(Constants.ASSET_TYPE_INFO[assetEnum].attachmentNames)
 		end
@@ -110,10 +103,8 @@ local categoryToSchemaGenerator = {
 	end,
 }
 
-if getFFlagUGCValidationAnimationPackSupport() then
-	categoryToSchemaGenerator.ANIMATION = function(assetEnum: Enum.AssetType, rootInstance: Instance)
-		return createAnimationSchema(assetEnum, rootInstance)
-	end
+categoryToSchemaGenerator.ANIMATION = function(assetEnum: Enum.AssetType, rootInstance: Instance)
+	return createAnimationSchema(assetEnum, rootInstance)
 end
 
 function CreateExpectedSchema.generateAssetSchema(

@@ -272,7 +272,7 @@ Image can be added via `img` tag with the `src` attribute. Optionally, you can s
 
 	local markdownRendererProps = {
 		imageStyles = {
-			size = UDim2.new(0, 20, 0, 20),
+			size = UDim2.fromOffset(20, 20),
 		},
 	}
 

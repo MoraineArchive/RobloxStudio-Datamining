@@ -4507,6 +4507,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "calculateSliderFraction",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Slider/calculateSliderFraction",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "calculateSliderPositionDelta",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Slider/calculateSliderPositionDelta",
     "properties": {
@@ -4929,6 +4941,18 @@
     "class": "ModuleScript",
     "name": "CheckboxTreeView",
     "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/CheckboxTreeView",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "checkListConsistency.spec",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/tutils/tutils/checkListConsistency.spec",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -5721,6 +5745,18 @@
     "class": "ModuleScript",
     "name": "ColorValueSlider",
     "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/ColorPicker/ColorValueSlider",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "combineReducers.spec",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux/combineReducers.spec",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -6631,18 +6667,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "createPlannedSubPartStory",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Utility/Stories/createPlannedSubPartStory",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "createPluginWidget",
     "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/createPluginWidget",
     "properties": {
@@ -6681,6 +6705,18 @@
     "class": "ModuleScript",
     "name": "createReconcilerCompat",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Roact/Roact/createReconcilerCompat",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "createReducer.spec",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux/createReducer.spec",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -7999,6 +8035,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "deepCopy.spec",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/tutils/tutils/deepCopy.spec",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "deepCopy",
     "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/Util/deepCopy",
     "properties": {
@@ -8013,6 +8061,18 @@
     "class": "ModuleScript",
     "name": "deepCopy",
     "path": "CageMeshMigrationTool/root/Packages/_Index/tutils/tutils/deepCopy",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "deepEqual.spec",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/tutils/tutils/deepEqual.spec",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -9403,6 +9463,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "equalKey.spec",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/tutils/tutils/equalKey.spec",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "equalKey",
     "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/Util/Typecheck/tutils/equalKey",
     "properties": {
@@ -9667,6 +9739,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "example.spec",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/lumberyak/lumberyak/example/example.spec",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "example",
     "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/ScrollingFrame/example",
     "properties": {
@@ -9873,6 +9957,18 @@
     "class": "ModuleScript",
     "name": "fetchAssetFormat",
     "path": "CageMeshMigrationTool/root/src/Util/fetchAssetFormat",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "fieldCount.spec",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/tutils/tutils/fieldCount.spec",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -10868,7 +10964,7 @@
   {
     "class": "ModuleScript",
     "name": "FullyConfigurable.story",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Hooks/useDialog/FullyConfigurable.story",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Hooks/RESTRICTED_useDialog/FullyConfigurable.story",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -11359,18 +11455,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkFormAlignment",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkFormAlignment",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "getFFlagDevFrameworkHighlighterHooks",
     "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkHighlighterHooks",
     "properties": {
@@ -11385,30 +11469,6 @@
     "class": "ModuleScript",
     "name": "getFFlagDevFrameworkIconButtonAsButton",
     "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkIconButtonAsButton",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkKeyboardNavComponentChanges",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkKeyboardNavComponentChanges",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkMemStorageServiceMocks",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkMemStorageServiceMocks",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -11481,6 +11541,18 @@
     "class": "ModuleScript",
     "name": "getFFlagDevFrameworkSupportExternalLoc",
     "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkSupportExternalLoc",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "getFFlagDevFrameworkUsesFoundationDialog",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkUsesFoundationDialog",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -11589,6 +11661,18 @@
     "class": "ModuleScript",
     "name": "getGridSizeTag",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Utility/getGridSizeTag",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "getGuiInputPosition",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Slider/getGuiInputPosition",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -13339,6 +13423,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "init.spec",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux/init.spec",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "InlineElementType",
     "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/InlineLayout/InlineElementType",
     "properties": {
@@ -13784,7 +13880,7 @@
   {
     "class": "ModuleScript",
     "name": "Intents.story",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Hooks/useDialog/Intents.story",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Hooks/RESTRICTED_useDialog/Intents.story",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -15763,6 +15859,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "listDifferences.spec",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/tutils/tutils/listDifferences.spec",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "listDifferences",
     "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/Util/Typecheck/tutils/listDifferences",
     "properties": {
@@ -15955,6 +16063,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "Logger.spec",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/lumberyak/lumberyak/Logger.spec",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "Logger",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Utility/Logger",
     "properties": {
@@ -15969,6 +16089,18 @@
     "class": "ModuleScript",
     "name": "Logger",
     "path": "CageMeshMigrationTool/root/Packages/_Index/lumberyak/lumberyak/Logger",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "loggerMiddleware.spec",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux/loggerMiddleware.spec",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -16137,6 +16269,18 @@
     "class": "ModuleScript",
     "name": "lumberyak",
     "path": "CageMeshMigrationTool/root/Packages/_Index/lumberyak/lumberyak",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "makeActionCreator.spec",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux/makeActionCreator.spec",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -16927,6 +17071,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "MockLogger.spec",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/lumberyak/lumberyak/MockLogger.spec",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "MockLogger",
     "path": "CageMeshMigrationTool/root/Packages/_Index/lumberyak/lumberyak/MockLogger",
     "properties": {
@@ -17371,6 +17527,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "noCollisions.test",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/FoundationCloudAssets/FoundationCloudAssets/tests/noCollisions.test",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "None.roblox",
     "path": "CageMeshMigrationTool/root/Packages/_Index/React/React/None.roblox",
     "properties": {
@@ -17481,6 +17649,18 @@
     "class": "ModuleScript",
     "name": "Notification.story",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Utility/Stories/Planned/Notification/Notification.story",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "NoYield.spec",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux/NoYield.spec",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -19195,6 +19375,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "print.spec",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/tutils/tutils/print.spec",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "print",
     "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/Util/Typecheck/tutils/print",
     "properties": {
@@ -20325,6 +20517,18 @@
     "class": "ModuleScript",
     "name": "ReactFiberHooks.new",
     "path": "CageMeshMigrationTool/root/Packages/_Index/ReactReconciler/ReactReconciler/ReactFiberHooks.new",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ReactFiberHostConfig.test",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/ReactReconciler/ReactReconciler/forks/ReactFiberHostConfig.test",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -21547,6 +21751,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "RESTRICTED_useDialog",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Hooks/RESTRICTED_useDialog",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "reverse",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Collections/Collections/Array/reverse",
     "properties": {
@@ -22040,7 +22256,7 @@
   {
     "class": "ModuleScript",
     "name": "SaveSequence.story",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Hooks/useDialog/SaveSequence.story",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Hooks/RESTRICTED_useDialog/SaveSequence.story",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -22819,6 +23035,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "shallowEqual.spec",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/tutils/tutils/shallowEqual.spec",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "shallowEqual",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Dash-31ab8d40-2.1.0/Dash/shallowEqual",
     "properties": {
@@ -23229,6 +23457,18 @@
     "class": "ModuleScript",
     "name": "SideSheet",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Sheet/SideSheet",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Signal.spec",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux/Signal.spec",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -24189,6 +24429,18 @@
     "class": "ModuleScript",
     "name": "StepperStepState",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Enums/StepperStepState",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Store.spec",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux/Store.spec",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -26372,7 +26624,19 @@
   {
     "class": "ModuleScript",
     "name": "TableDialog.story",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Hooks/useDialog/TableDialog.story",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Hooks/RESTRICTED_useDialog/TableDialog.story",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "tableDifference.spec",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/tutils/tutils/tableDifference.spec",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -27103,6 +27367,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "thunkMiddleware.spec",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux/thunkMiddleware.spec",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "thunkMiddleware",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Rodux-31ab8d40-3.3.0/Rodux/thunkMiddleware",
     "properties": {
@@ -27789,6 +28065,18 @@
     "class": "ModuleScript",
     "name": "toSet",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Cryo/Cryo/List/toSet",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "toString.spec",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/tutils/tutils/toString.spec",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -29072,18 +29360,6 @@
   {
     "class": "ModuleScript",
     "name": "useDialog",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Hooks/useDialog",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "useDialog",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Dialog/useDialog",
     "properties": {
       "AttributesSerialize": "",
@@ -30057,6 +30333,18 @@
     "class": "ModuleScript",
     "name": "useRatingVariants",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Rating/useRatingVariants",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "useRefCache.test",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/ReactUtils/ReactUtils/useRefCache.test",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",

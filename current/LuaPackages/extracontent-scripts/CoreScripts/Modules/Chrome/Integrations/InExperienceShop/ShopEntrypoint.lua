@@ -1,6 +1,7 @@
 local Chrome = script:FindFirstAncestor("Chrome")
 
 local CorePackages = game:GetService("CorePackages")
+local GuiService = game:GetService("GuiService")
 local MarketplaceService = game:GetService("MarketplaceService")
 local Players = game:GetService("Players")
 local StarterGui = game:GetService("StarterGui")
@@ -11,6 +12,7 @@ local ChromePackage = require(CorePackages.Workspace.Packages.Chrome)
 local WindowSizeSignal = require(Chrome.ChromeShared.Service.WindowSizeSignal)
 local Constants = require(Chrome.ChromeShared.Unibar.Constants)
 local CommonIcon = require(Chrome.Integrations.CommonIcon)
+local initializeShopMenuController = require(Chrome.Integrations.InExperienceShop.initializeShopMenuController)
 local ShopChromeWrapper = require(Chrome.Integrations.InExperienceShop.ShopChromeWrapper)
 local ShopWindowLayout = require(Chrome.Integrations.InExperienceShop.ShopWindowLayout)
 local ChromeUtils = require(Chrome.ChromeShared.Service.ChromeUtils)
@@ -21,6 +23,7 @@ local Shop = require(CorePackages.Workspace.Packages.InExperienceShop)
 local FFlagEnableShopPrefetch = Shop.FFlagEnableShopPrefetch
 local FFlagHideShopMenuOnFailure = Shop.FFlagHideShopMenuOnFailure
 local FFlagCenterInExperienceShopWindow = Shop.FFlagCenterInExperienceShopWindow
+local FFlagFixInExperienceShopCursorLock = Shop.FFlagFixInExperienceShopCursorLock
 local SharedFlags = require(CorePackages.Workspace.Packages.SharedFlags)
 local FFlagEnableMenuTrailingBadge = SharedFlags.FFlagEnableMenuTrailingBadge
 local FFlagShowOfferBadge = SharedFlags.FFlagShowOfferBadge
@@ -127,6 +130,10 @@ local integration = ChromeService:register({
 		end,
 	},
 })
+
+if FFlagFixInExperienceShopCursorLock then
+	initializeShopMenuController(GuiService, isActive)
+end
 
 -- Kick off the initial shop fetch at game-load time. Lazy-required via the
 -- package's per-symbol rotriever export so the helper's require tree stays

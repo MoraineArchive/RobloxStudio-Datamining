@@ -4,11 +4,14 @@ local Packages = Foundation.Parent
 local React = require(Packages.React)
 
 local Constants = require(Foundation.Constants)
+local Flags = require(Foundation.Utility.Flags)
 local PopoverSide = require(Foundation.Enums.PopoverSide)
 local Radius = require(Foundation.Enums.Radius)
 local useTokens = require(Foundation.Providers.Style.useTokens)
 
-local SHADOW_SIZE = Constants.SHADOW_SIZE
+local SHADOW_SIZE = if Flags.FoundationPopoverPluginOverlayMeasurement and Flags.FoundationPluginShadowSize
+	then Constants.PLUGIN_SHADOW_SIZE
+	else Constants.SHADOW_SIZE
 
 type PopoverSide = PopoverSide.PopoverSide
 type Radius = Radius.Radius

@@ -96,8 +96,16 @@ export type UiComponentType =
 	| "UI_COMPONENT_TYPE_HOME_USER_INFO_WIDGET"
 	| "UI_COMPONENT_TYPE_GAME_TILE_HIDDEN_STATE"
 	| "UI_COMPONENT_TYPE_PLUS_EARLY_ACCESS_UPSELL"
+	| "UI_COMPONENT_TYPE_TOGGLE"
+	| "UI_COMPONENT_TYPE_LIST_ROOT"
+	| "UI_COMPONENT_TYPE_LIST_ITEM"
+	| "UI_COMPONENT_TYPE_MARKDOWN_TEXT"
+	| "UI_COMPONENT_TYPE_SIGN_UP_FORM"
+	| "UI_COMPONENT_TYPE_BANNER_CONTEXT"
+	| "UI_COMPONENT_TYPE_VIEWPORT_VISIBILITY"
 	| "UI_COMPONENT_TYPE_FOCUS_NAV_ACTIONS"
 	| "UI_COMPONENT_TYPE_FRAGMENT"
+	| "UI_COMPONENT_TYPE_EXPERIMENTAL"
 	| "UI_COMPONENT_TYPE_VERTICAL_FEED"
 	| "UI_COMPONENT_TYPE_CATALOG_VIRTUALIZED_FEED"
 	| "UI_COMPONENT_TYPE_CATALOG_ITEM_GROUP"
@@ -106,6 +114,8 @@ export type UiComponentType =
 	| "UI_COMPONENT_TYPE_CATALOG_HERO_UNIT"
 	| "UI_COMPONENT_TYPE_MARKETPLACE_FAVORITES_CATEGORY_MENU"
 	| "UI_COMPONENT_TYPE_CATALOG_ITEM_GRID"
+	| "UI_COMPONENT_TYPE_ITEM_MEDIA_HEADER"
+	| "UI_COMPONENT_TYPE_CATALOG_ITEM_CARD"
 	| "UI_COMPONENT_TYPE_FILTER_PILLS_CAROUSEL"
 	| "UI_COMPONENT_TYPE_PILL_TABS_CAROUSEL"
 	| "UI_COMPONENT_TYPE_USER_LIST"
@@ -283,10 +293,26 @@ messages.UiComponentType = {
 			return "UI_COMPONENT_TYPE_GAME_TILE_HIDDEN_STATE"
 		elseif value == 265 then
 			return "UI_COMPONENT_TYPE_PLUS_EARLY_ACCESS_UPSELL"
+		elseif value == 266 then
+			return "UI_COMPONENT_TYPE_TOGGLE"
+		elseif value == 267 then
+			return "UI_COMPONENT_TYPE_LIST_ROOT"
+		elseif value == 268 then
+			return "UI_COMPONENT_TYPE_LIST_ITEM"
+		elseif value == 269 then
+			return "UI_COMPONENT_TYPE_MARKDOWN_TEXT"
+		elseif value == 270 then
+			return "UI_COMPONENT_TYPE_SIGN_UP_FORM"
+		elseif value == 271 then
+			return "UI_COMPONENT_TYPE_BANNER_CONTEXT"
+		elseif value == 272 then
+			return "UI_COMPONENT_TYPE_VIEWPORT_VISIBILITY"
 		elseif value == 300 then
 			return "UI_COMPONENT_TYPE_FOCUS_NAV_ACTIONS"
 		elseif value == 400 then
 			return "UI_COMPONENT_TYPE_FRAGMENT"
+		elseif value == 401 then
+			return "UI_COMPONENT_TYPE_EXPERIMENTAL"
 		elseif value == 500 then
 			return "UI_COMPONENT_TYPE_VERTICAL_FEED"
 		elseif value == 600 then
@@ -303,6 +329,10 @@ messages.UiComponentType = {
 			return "UI_COMPONENT_TYPE_MARKETPLACE_FAVORITES_CATEGORY_MENU"
 		elseif value == 606 then
 			return "UI_COMPONENT_TYPE_CATALOG_ITEM_GRID"
+		elseif value == 607 then
+			return "UI_COMPONENT_TYPE_ITEM_MEDIA_HEADER"
+		elseif value == 608 then
+			return "UI_COMPONENT_TYPE_CATALOG_ITEM_CARD"
 		elseif value == 700 then
 			return "UI_COMPONENT_TYPE_FILTER_PILLS_CAROUSEL"
 		elseif value == 701 then
@@ -489,10 +519,26 @@ messages.UiComponentType = {
 			return 264
 		elseif self == "UI_COMPONENT_TYPE_PLUS_EARLY_ACCESS_UPSELL" then
 			return 265
+		elseif self == "UI_COMPONENT_TYPE_TOGGLE" then
+			return 266
+		elseif self == "UI_COMPONENT_TYPE_LIST_ROOT" then
+			return 267
+		elseif self == "UI_COMPONENT_TYPE_LIST_ITEM" then
+			return 268
+		elseif self == "UI_COMPONENT_TYPE_MARKDOWN_TEXT" then
+			return 269
+		elseif self == "UI_COMPONENT_TYPE_SIGN_UP_FORM" then
+			return 270
+		elseif self == "UI_COMPONENT_TYPE_BANNER_CONTEXT" then
+			return 271
+		elseif self == "UI_COMPONENT_TYPE_VIEWPORT_VISIBILITY" then
+			return 272
 		elseif self == "UI_COMPONENT_TYPE_FOCUS_NAV_ACTIONS" then
 			return 300
 		elseif self == "UI_COMPONENT_TYPE_FRAGMENT" then
 			return 400
+		elseif self == "UI_COMPONENT_TYPE_EXPERIMENTAL" then
+			return 401
 		elseif self == "UI_COMPONENT_TYPE_VERTICAL_FEED" then
 			return 500
 		elseif self == "UI_COMPONENT_TYPE_CATALOG_VIRTUALIZED_FEED" then
@@ -509,6 +555,10 @@ messages.UiComponentType = {
 			return 605
 		elseif self == "UI_COMPONENT_TYPE_CATALOG_ITEM_GRID" then
 			return 606
+		elseif self == "UI_COMPONENT_TYPE_ITEM_MEDIA_HEADER" then
+			return 607
+		elseif self == "UI_COMPONENT_TYPE_CATALOG_ITEM_CARD" then
+			return 608
 		elseif self == "UI_COMPONENT_TYPE_FILTER_PILLS_CAROUSEL" then
 			return 700
 		elseif self == "UI_COMPONENT_TYPE_PILL_TABS_CAROUSEL" then
@@ -695,10 +745,26 @@ messages.UiComponentType = {
 			return "UI_COMPONENT_TYPE_GAME_TILE_HIDDEN_STATE"
 		elseif name == "UI_COMPONENT_TYPE_PLUS_EARLY_ACCESS_UPSELL" then
 			return "UI_COMPONENT_TYPE_PLUS_EARLY_ACCESS_UPSELL"
+		elseif name == "UI_COMPONENT_TYPE_TOGGLE" then
+			return "UI_COMPONENT_TYPE_TOGGLE"
+		elseif name == "UI_COMPONENT_TYPE_LIST_ROOT" then
+			return "UI_COMPONENT_TYPE_LIST_ROOT"
+		elseif name == "UI_COMPONENT_TYPE_LIST_ITEM" then
+			return "UI_COMPONENT_TYPE_LIST_ITEM"
+		elseif name == "UI_COMPONENT_TYPE_MARKDOWN_TEXT" then
+			return "UI_COMPONENT_TYPE_MARKDOWN_TEXT"
+		elseif name == "UI_COMPONENT_TYPE_SIGN_UP_FORM" then
+			return "UI_COMPONENT_TYPE_SIGN_UP_FORM"
+		elseif name == "UI_COMPONENT_TYPE_BANNER_CONTEXT" then
+			return "UI_COMPONENT_TYPE_BANNER_CONTEXT"
+		elseif name == "UI_COMPONENT_TYPE_VIEWPORT_VISIBILITY" then
+			return "UI_COMPONENT_TYPE_VIEWPORT_VISIBILITY"
 		elseif name == "UI_COMPONENT_TYPE_FOCUS_NAV_ACTIONS" then
 			return "UI_COMPONENT_TYPE_FOCUS_NAV_ACTIONS"
 		elseif name == "UI_COMPONENT_TYPE_FRAGMENT" then
 			return "UI_COMPONENT_TYPE_FRAGMENT"
+		elseif name == "UI_COMPONENT_TYPE_EXPERIMENTAL" then
+			return "UI_COMPONENT_TYPE_EXPERIMENTAL"
 		elseif name == "UI_COMPONENT_TYPE_VERTICAL_FEED" then
 			return "UI_COMPONENT_TYPE_VERTICAL_FEED"
 		elseif name == "UI_COMPONENT_TYPE_CATALOG_VIRTUALIZED_FEED" then
@@ -715,6 +781,10 @@ messages.UiComponentType = {
 			return "UI_COMPONENT_TYPE_MARKETPLACE_FAVORITES_CATEGORY_MENU"
 		elseif name == "UI_COMPONENT_TYPE_CATALOG_ITEM_GRID" then
 			return "UI_COMPONENT_TYPE_CATALOG_ITEM_GRID"
+		elseif name == "UI_COMPONENT_TYPE_ITEM_MEDIA_HEADER" then
+			return "UI_COMPONENT_TYPE_ITEM_MEDIA_HEADER"
+		elseif name == "UI_COMPONENT_TYPE_CATALOG_ITEM_CARD" then
+			return "UI_COMPONENT_TYPE_CATALOG_ITEM_CARD"
 		elseif name == "UI_COMPONENT_TYPE_FILTER_PILLS_CAROUSEL" then
 			return "UI_COMPONENT_TYPE_FILTER_PILLS_CAROUSEL"
 		elseif name == "UI_COMPONENT_TYPE_PILL_TABS_CAROUSEL" then

@@ -6,11 +6,7 @@ local Types = require(root.util.Types)
 local ValidationEnums = require(root.validationSystem.ValidationEnums)
 local ErrorSourceStrings = require(root.validationSystem.ErrorSourceStrings)
 
-local getFFlagUGCValidateMigrateMeshGeometry = require(root.flags.getFFlagUGCValidateMigrateMeshGeometry)
-
 local TriangleAreaValid = {}
-
-TriangleAreaValid.fflag = getFFlagUGCValidateMigrateMeshGeometry
 TriangleAreaValid.categories = {
 	ValidationEnums.UploadCategory.TORSO_AND_LIMBS,
 	ValidationEnums.UploadCategory.DYNAMIC_HEAD,

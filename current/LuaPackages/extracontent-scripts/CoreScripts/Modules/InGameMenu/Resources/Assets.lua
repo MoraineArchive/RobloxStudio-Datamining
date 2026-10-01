@@ -10,6 +10,8 @@ local UIBloxImages = UIBlox.App.ImageSet.Images
 local SharedFlags = require(CorePackages.Workspace.Packages.SharedFlags)
 local FFlagCoreUiMigrateUIBloxToFoundation = SharedFlags.FFlagCoreUiMigrateUIBloxToFoundation
 
+local FFlagFixInGameMenuMoreButtonIcon = game:DefineFastFlag("FixInGameMenuMoreButtonIcon", false)
+
 return {
 	Images = {
 		RobloxLogo = Images["LuaApp/graphic/ic_logo"],
@@ -62,7 +64,12 @@ return {
 		UnFriend = Images["InGameMenu/Icons/UnFriend"],
 		Friends = Images["InGameMenu/Icons/Friends"],
 
-		MoreActions = Images["LuaApp/icons/GameDetails/more"],
+		-- UIBloxImages (not the InGameMenu-local Images) carries a Foundation migration
+		-- key: in-experience UIBlox Button always routes to Foundation, whose findIcon
+		-- rejects the legacy spritesheet slice and renders no glyph (APPEXP-4212).
+		MoreActions = if FFlagFixInGameMenuMoreButtonIcon
+			then UIBloxImages["icons/common/more"]
+			else Images["LuaApp/icons/GameDetails/more"],
 		ViewAvatar = Images["InGameMenu/Icons/ViewAvatar"],
 
 		RoundedRectImageKey = "component_assets/circle_17",

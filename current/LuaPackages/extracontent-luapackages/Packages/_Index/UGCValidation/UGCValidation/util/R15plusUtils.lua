@@ -8,8 +8,6 @@ local jointNameWhitelist = nil
 local flags = root.flags
 local getFFlagUGCValidationAllowHRDUpload = require(flags.getFFlagUGCValidationAllowHRDUpload)
 local getFFlagDebugAllowHRDUploadOnBundleBackend = require(flags.getFFlagDebugAllowHRDUploadOnBundleBackend)
-local getFFlagUGCValidationExtendSchemaToIgnoreDescendants =
-	require(flags.getFFlagUGCValidationExtendSchemaToIgnoreDescendants)
 
 local FINGER_FLAT_SUFFIXES = { "Index", "Middle", "Pinky", "Ring", "Thumb" }
 
@@ -130,11 +128,6 @@ function R15plusUtils.setIsBackendBundleUpload(value: boolean)
 end
 
 function R15plusUtils.checkFlagEnabledForAllowHrd()
-	if not getFFlagUGCValidationExtendSchemaToIgnoreDescendants() then
-		-- HRD upload depends on first extending our schema check capabilities
-		return false
-	end
-
 	if getFFlagUGCValidationAllowHRDUpload() then
 		return true
 	end

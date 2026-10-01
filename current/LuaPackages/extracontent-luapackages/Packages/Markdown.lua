@@ -11,6 +11,9 @@ export type Context = Package.Context
 export type PartialContext = Package.PartialContext
 export type NodeType = Package.NodeType
 export type MarkdownViewerProps = Package.MarkdownViewerProps
+export type MarkdownRendererPropsType = Package.MarkdownRendererPropsType
+export type TextStyles = Package.TextStyles
+export type CodeStyles = Package.CodeStyles
 export type LinkCallbackType = Package.LinkCallbackType
 
 
