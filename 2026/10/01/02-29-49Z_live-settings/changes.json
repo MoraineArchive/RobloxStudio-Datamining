@@ -1,0 +1,74 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-76e1a02649ad4f35",
+    "manifestFiles": 18680,
+    "packages": 34,
+    "version": "0.741.19.7411056"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "3b8cf8cd1b7db064d366c4d1653de4b6795ee4e0591c40a3912ebe92e12ca6cb",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "836bbe2d96a45ba07c94792015cfaad88e65837e2ea92a08f3d5405d476cbd96",
+      "semantic": {
+        "added": [
+          "DFFlagPerformPurchaseNewRequestOrchestratorFlow",
+          "FFlagAXCatalogHttpLinkSalesTypeFilter",
+          "FFlagAssistantPromptModeratedError",
+          "FFlagPlayStationgetMBSysAvailableRAMuseFreeMem",
+          "FFlagPublishSMCancelPostPublishTasksOnClose",
+          "FFlagRbxStorageAddNameToInitStats",
+          "FStringAXFetchCartPricingDuringInExperienceLayerName"
+        ],
+        "changed": [
+          {
+            "after": "7ffa00fa26089d2854fcea96e46204f56b8c617f",
+            "before": "da614c0800fe5be678348e6a6a1983d95deb87ad",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-01T01:32:21.953Z",
+            "before": "2026-10-01T00:22:06.960Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "True",
+            "before": "False",
+            "name": "FFlagTerrainRemoveOrphanedVertices"
+          },
+          {
+            "after": "7ffa00fa26089d2854fcea96e46204f56b8c617f",
+            "before": "da614c0800fe5be678348e6a6a1983d95deb87ad",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-01T01:32:21.953Z",
+            "before": "2026-10-01T00:22:06.960Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagPerformPurchaseNewRequestOrchestratorFlow_Staged",
+          "FFlagAXCatalogHttpLinkSalesTypeFilter_Staged",
+          "FFlagAssistantPromptModeratedError_Staged",
+          "FFlagPlayStationgetMBSysAvailableRAMuseFreeMem_Staged",
+          "FFlagPublishSMCancelPostPublishTasksOnClose_Staged",
+          "FFlagRbxStorageAddNameToInitStats_Staged",
+          "FFlagTerrainRemoveOrphanedVertices_Staged",
+          "FStringAXFetchCartPricingDuringInExperienceLayerName_Staged"
+        ],
+        "unchanged": 25128
+      }
+    }
+  },
+  "schemaVersion": 1
+}
