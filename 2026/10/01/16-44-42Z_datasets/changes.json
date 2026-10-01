@@ -1,0 +1,91 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-76e1a02649ad4f35",
+    "manifestFiles": 18680,
+    "packages": 34,
+    "version": "0.741.19.7411056"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "70197f371d47a83c8acadc62e960c61b6a625fefaaf257503b564f8e5d737cdb",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "e5860a187e8cd9c0fb245368ce81cda30dd9b182340124571f6aaef1ae7f0e95",
+      "semantic": {
+        "added": [
+          "DFFlagBuildRigSkipAccessoryParts_Staged",
+          "DFIntRbxStorageSQLiteL2MissCap_Staged",
+          "DFIntResendAliveForAllCapThrottle_Staged",
+          "FFlagSlimCanonicalSkeleton2_Staged"
+        ],
+        "changed": [
+          {
+            "after": "b4b0eae8cd800fa2d516131c85cf13c26b542c72",
+            "before": "d1a8ac1ae374ccd2ab87bb0b22d2bf43d9638128",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-01T16:40:38.241Z",
+            "before": "2026-10-01T08:02:01.366Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "b4b0eae8cd800fa2d516131c85cf13c26b542c72",
+            "before": "d1a8ac1ae374ccd2ab87bb0b22d2bf43d9638128",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-01T16:40:38.241Z",
+            "before": "2026-10-01T08:02:01.366Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [],
+        "unchanged": 25136
+      }
+    },
+    "Web": {
+      "current": "e31fea65a912ec170c996ac070644f12b55b777afe04b490c58e6a636ff538c0",
+      "files": {
+        "added": [
+          "assets.create.roblox.com/page-0/script-085.js"
+        ],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-002.js",
+          "assets.create.roblox.com/page-0/script-012.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-052.js",
+          "assets.create.roblox.com/page-0/script-055.js",
+          "assets.create.roblox.com/page-0/script-056.js",
+          "assets.create.roblox.com/page-0/script-060.js",
+          "assets.create.roblox.com/page-0/script-065.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 85
+      },
+      "previous": "9b35c49dafeb871c287615f9cb13c35f4ac91e45b91b0213290605a51a7e9122",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}

@@ -1,6 +1,14 @@
 {
-  "observationMode": "live",
-  "provenance": [
+  "LiveSettings": [
+    {
+      "bytes": 1414699,
+      "reference": "https://raw.githubusercontent.com/MaximumADHD/Roblox-FFlag-Tracker/main/README.md",
+      "sha256": "b0fa56410811477598492aeeb08f2d3bab8278afdd214c28c634e66a09cd4773",
+      "sourceType": "official",
+      "sourceUrl": "https://clientsettings.roblox.com/v2/settings/application/PCStudioApp"
+    }
+  ],
+  "Web": [
     {
       "bytes": 42278,
       "sha256": "069497ec9a6e9f7305fecf58f3a1ec1b105d77a37b17f685bbba1536a4f2b65c",
@@ -625,16 +633,5 @@
       "sourceType": "official",
       "sourceUrl": "https://assets.create.roblox.com/docs/ce16adaa1b1c5516cdd22554cc26d63ec640e755/_next/static/chunks/webpack-0de300660a10d092.js"
     }
-  ],
-  "status": "available",
-  "summary": {
-    "assets": 104,
-    "engineRevision": 1,
-    "errors": 0,
-    "pages": [
-      "https://create.roblox.com/",
-      "https://create.roblox.com/docs"
-    ]
-  },
-  "target": "WindowsStudio64"
+  ]
 }
