@@ -4844,11 +4844,136 @@
             "recording",
             "skip"
           ]
+        },
+        {
+          "after": "1;Moments.CreationTools;Moments.TTS.Phase2;143735543;dev_controlled",
+          "before": "1;Moments.CreationTools;Moments.TTS.Phase1;1208482120;flagbank",
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/01/21-26-40Z_datasets",
+          "evidencePath": "2026/10/01/21-26-40Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "283eaa428e4c7bc6aa9609027da5d5035d969c3ef8dcfe95ccde66991a5ffb98",
+          "key": "FFlagMomentsTTSAudioOverlayLua5_IXP",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-01T21:26:40.168Z",
+          "operation": "changed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "audio",
+            "ixp",
+            "lua5",
+            "moments",
+            "overlay",
+            "tts"
+          ]
+        },
+        {
+          "after": "1;Moments.CreationTools;Moments.TTS.Phase2;143735543;dev_controlled",
+          "before": "1;Moments.CreationTools;Moments.TTS.Phase1;1208482120;flagbank",
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/01/21-26-40Z_datasets",
+          "evidencePath": "2026/10/01/21-26-40Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "438889c2984a6896e50c062d03d429570897d73d61b3c5210b782459fdc62bd1",
+          "key": "FFlagMomentsCreationToolsIxpEnabled_IXP",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-01T21:26:40.168Z",
+          "operation": "changed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "ixp",
+            "moments",
+            "tools"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/01/21-26-40Z_datasets",
+          "evidencePath": "2026/10/01/21-26-40Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "48d3caa23b248c57ccb61e614da088d4cc21815b65ea552e478b79a488088bd7",
+          "key": "FFlagMomentsTTSStartTimePositioning_IXP",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-01T21:26:40.168Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "ixp",
+            "moments",
+            "positioning",
+            "start",
+            "time",
+            "tts"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/01/21-26-40Z_datasets",
+          "evidencePath": "2026/10/01/21-26-40Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "8aab3692b091ebee7171a43d5663fa128f58467c0beb4f64e5a6e021aa5c483c",
+          "key": "FFlagMomentsTTSComposerCaretAlignment_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-01T21:26:40.168Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "alignment",
+            "caret",
+            "composer",
+            "moments",
+            "tts"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/01/21-26-40Z_datasets",
+          "evidencePath": "2026/10/01/21-26-40Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "ce2cae158a5edfe54347e2a52045620476d83c53ca4cf5f2a2e5f00ad0473913",
+          "key": "FFlagMomentsTTSComposerCaretAlignment",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-01T21:26:40.168Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "alignment",
+            "caret",
+            "composer",
+            "moments",
+            "tts"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-10-01T19:40:30.295Z",
+      "lastObservedAt": "2026-10-01T21:26:40.168Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
@@ -4981,6 +5106,14 @@
           "signalIds": [
             "1d12dae56022301b0309b590b3fd25c9a34f387fcc3bc4a3a66677f4011764f5",
             "5f6de45d00a9fbcfc6614e54126a9ab1645efd823aeed9050313a0e8489cc204"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-10-01T21:26:40.168Z",
+          "signalIds": [
+            "79412898d216e55e2f825f1250a4ba32a876eea68d53b478ad051775d78a15de",
+            "ce2cae158a5edfe54347e2a52045620476d83c53ca4cf5f2a2e5f00ad0473913"
           ],
           "type": "staged-to-non-staged"
         }
