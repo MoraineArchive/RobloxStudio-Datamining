@@ -4969,11 +4969,33 @@
             "moments",
             "tts"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/01/23-11-35Z_datasets",
+          "evidencePath": "2026/10/01/23-11-35Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "327e249de9175fdc287b794f50a9db7a301b11c15e5e8e3e5c1aa0566002c4ff",
+          "key": "FFlagEnableMomentsCommentReporting_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-01T23:11:35.937Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "comment",
+            "moments",
+            "reporting"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-10-01T21:26:40.168Z",
+      "lastObservedAt": "2026-10-01T23:11:35.937Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
