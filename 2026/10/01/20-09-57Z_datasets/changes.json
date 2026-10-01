@@ -1,0 +1,91 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-76e1a02649ad4f35",
+    "manifestFiles": 18680,
+    "packages": 34,
+    "version": "0.741.19.7411056"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "5dca737742638dc40d485ebebe9dec08bbcc74805eb5a5ee4920ea644d4c10dd",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "2c952da535e27c517df85902105d1daaa6493b68423183c73b5cd73d027fe290",
+      "semantic": {
+        "added": [
+          "DFFlagRenderFixMeshBatchHiQualCount",
+          "FFlagAXAddAttributionToCheckoutCartPurchases_Staged",
+          "FFlagAXFixDiscountSummaryTextWrapPlus_Staged",
+          "FFlagAXFixTwoAxisSliderForVR_Staged",
+          "FFlagAXOfferBannerImpressionOnlyOnStartup_Staged",
+          "FFlagAnimGraphUI_OnlySetChangedParams",
+          "FStringIxpNewLayersForRegistration_Staged"
+        ],
+        "changed": [
+          {
+            "after": "d011c677d99eb28357a09ee28fac1ee534e407c2",
+            "before": "f8c6268bc4d7167fb3cf803b19a5b04c8e14e168",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-01T20:07:05.304Z",
+            "before": "2026-10-01T19:40:13.499Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "d011c677d99eb28357a09ee28fac1ee534e407c2",
+            "before": "f8c6268bc4d7167fb3cf803b19a5b04c8e14e168",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-01T20:07:05.304Z",
+            "before": "2026-10-01T19:40:13.499Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagRenderFixMeshBatchHiQualCount_Staged",
+          "FFlagAnimGraphUI_OnlySetChangedParams_Staged",
+          "FFlagDeviceSimulatorToolbarWaitForDataModel_Staged",
+          "FFlagEnableDeviceSimulatorClientViewportOnly_Staged",
+          "FFlagStudioDeviceSimVRSwitchFixes_Staged"
+        ],
+        "unchanged": 25162
+      }
+    },
+    "Web": {
+      "current": "e85cd1797edcd26eb328c14646209270206097393052cd98ae4946bd4d64d998",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-012.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-052.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 93
+      },
+      "previous": "90e94f49e739072b9a7bbe4cc48562ec31277396bb57c509479289ba5fe08a1f",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
