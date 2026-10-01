@@ -4676,11 +4676,83 @@
             "moments",
             "text"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/01/18-53-34Z_datasets",
+          "evidencePath": "2026/10/01/18-53-34Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "15c2ba92b4c2e6d7199cb6b3240e5fcb6c9884647d7c733773e7b0aaa67294ad",
+          "key": "FFlagMomentsCreationSkipRecordingCodeFilter_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-01T18:53:34.407Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "code",
+            "creation",
+            "filter",
+            "moments",
+            "recording",
+            "skip"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/01/18-53-34Z_datasets",
+          "evidencePath": "2026/10/01/18-53-34Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "1d12dae56022301b0309b590b3fd25c9a34f387fcc3bc4a3a66677f4011764f5",
+          "key": "FFlagMomentsCreationBackCta_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-01T18:53:34.407Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "back",
+            "creation",
+            "cta",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/01/18-53-34Z_datasets",
+          "evidencePath": "2026/10/01/18-53-34Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "79412898d216e55e2f825f1250a4ba32a876eea68d53b478ad051775d78a15de",
+          "key": "FFlagMomentsTTSComposerCaretAlignment_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-01T18:53:34.407Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "alignment",
+            "caret",
+            "composer",
+            "moments",
+            "tts"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-10-01T00:05:02.782Z",
+      "lastObservedAt": "2026-10-01T18:53:34.407Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
