@@ -1,6 +1,5 @@
 {
-  "observationMode": "live",
-  "provenance": [
+  "Web": [
     {
       "bytes": 42278,
       "sha256": "5055195165bb44ca4e2bef0d779614091a75ad560997f696d32cb927128b50fe",
@@ -619,16 +618,5 @@
       "sourceType": "official",
       "sourceUrl": "https://assets.create.roblox.com/docs/ce16adaa1b1c5516cdd22554cc26d63ec640e755/_next/static/chunks/webpack-0de300660a10d092.js"
     }
-  ],
-  "status": "available",
-  "summary": {
-    "assets": 103,
-    "engineRevision": 1,
-    "errors": 0,
-    "pages": [
-      "https://create.roblox.com/",
-      "https://create.roblox.com/docs"
-    ]
-  },
-  "target": "WindowsStudio64"
+  ]
 }
