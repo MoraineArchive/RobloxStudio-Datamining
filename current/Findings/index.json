@@ -4991,11 +4991,55 @@
             "moments",
             "reporting"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/02/01-06-59Z_live-settings",
+          "evidencePath": "2026/10/02/01-06-59Z_live-settings/changes.json",
+          "family": "LiveSettings",
+          "id": "46d12231eb8f3c6453165f33e2cb06f9335019f84fee7176fd8c56ff326c5203",
+          "key": "FFlagEnableMomentsCommentReporting",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-02T01:06:59.983Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "comment",
+            "moments",
+            "reporting"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/02/01-06-59Z_live-settings",
+          "evidencePath": "2026/10/02/01-06-59Z_live-settings/changes.json",
+          "family": "LiveSettings",
+          "id": "ea62e55988caff16cace32075ab404c4e2abdc16bcc014ba6a89ba095fb077cc",
+          "key": "FFlagEnableMomentsCommentReporting_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-02T01:06:59.983Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "comment",
+            "moments",
+            "reporting"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-10-01T23:11:35.937Z",
+      "lastObservedAt": "2026-10-02T01:06:59.983Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
@@ -5136,6 +5180,14 @@
           "signalIds": [
             "79412898d216e55e2f825f1250a4ba32a876eea68d53b478ad051775d78a15de",
             "ce2cae158a5edfe54347e2a52045620476d83c53ca4cf5f2a2e5f00ad0473913"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-10-02T01:06:59.983Z",
+          "signalIds": [
+            "327e249de9175fdc287b794f50a9db7a301b11c15e5e8e3e5c1aa0566002c4ff",
+            "46d12231eb8f3c6453165f33e2cb06f9335019f84fee7176fd8c56ff326c5203"
           ],
           "type": "staged-to-non-staged"
         }

@@ -1,0 +1,68 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-76e1a02649ad4f35",
+    "manifestFiles": 18680,
+    "packages": 34,
+    "version": "0.741.19.7411056"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "565a9cac59dcd6ef73e2d4fb39d38ccaaf9ed54e2218e5993abb97fd0217dc32",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "d21ad4d8ce38fa8618aa75d0d3313c4b8b730389d6b7e95e2420881597f8ced8",
+      "semantic": {
+        "added": [
+          "FFlagAbuseReportAttributes",
+          "FFlagEnableMomentsCommentReporting",
+          "FFlagGroupObjectMapRawPointer",
+          "FFlagLuaAppVideoAutoplayOneByTwoTileCandidatePercentageUpdate"
+        ],
+        "changed": [
+          {
+            "after": "988d1a2421ed73fb1e42bb335a93cd7b2e17519d",
+            "before": "70b6d7a6286e5abc52d8dc9e0b87f1a663334a63",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-02T01:02:23.114Z",
+            "before": "2026-10-02T00:32:25.506Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagMigrateComponentManagerToRuntimeInjector8"
+          },
+          {
+            "after": "988d1a2421ed73fb1e42bb335a93cd7b2e17519d",
+            "before": "70b6d7a6286e5abc52d8dc9e0b87f1a663334a63",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-02T01:02:23.114Z",
+            "before": "2026-10-02T00:32:25.506Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagAbuseReportAttributes_Staged",
+          "FFlagEnableMomentsCommentReporting_Staged",
+          "FFlagGroupObjectMapRawPointer_Staged",
+          "FFlagLuaAppVideoAutoplayOneByTwoTileCandidatePercentageUpdate_Staged",
+          "FFlagMigrateComponentManagerToRuntimeInjector8_Staged"
+        ],
+        "unchanged": 25191
+      }
+    }
+  },
+  "schemaVersion": 1
+}
