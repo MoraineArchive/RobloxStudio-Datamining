@@ -5035,11 +5035,80 @@
             "moments",
             "reporting"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/02/18-35-30Z_datasets",
+          "evidencePath": "2026/10/02/18-35-30Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "16fe48c4a3681895300b60473622c20b156f7bc67441c4cbfc4e6981fc1aa70e",
+          "key": "FIntMomentsAudioDuckThresholdDb_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-02T18:35:30.380Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "audio",
+            "duck",
+            "moments",
+            "threshold"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/02/18-35-30Z_datasets",
+          "evidencePath": "2026/10/02/18-35-30Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "26e40de5fbe43d490edca270f51f066ed7ef4dfd86986b33d981629c394b5895",
+          "key": "FIntMomentsAudioDuckRatio_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-02T18:35:30.380Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "audio",
+            "duck",
+            "moments",
+            "ratio"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/02/18-35-30Z_datasets",
+          "evidencePath": "2026/10/02/18-35-30Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "2f6799927c73498b32e20f69301378c994b0f8925646c5937f4d11ffee1f1350",
+          "key": "FIntMomentsTTSVolumePercent_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-02T18:35:30.380Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "moments",
+            "percent",
+            "tts",
+            "volume"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-10-02T01:06:59.983Z",
+      "lastObservedAt": "2026-10-02T18:35:30.380Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
