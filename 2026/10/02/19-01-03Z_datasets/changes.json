@@ -1,0 +1,104 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-76e1a02649ad4f35",
+    "manifestFiles": 18680,
+    "packages": 34,
+    "version": "0.741.19.7411056"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "fd09678b5e1c592120fac05b2bd64a528c6c251aa8a492e15a43292704cbb504",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "0fe9f69ca5cc8eaf34623e495e3c59155505e3e8b1570062f162802baaa61c66",
+      "semantic": {
+        "added": [
+          "DFFlagRbxTransportQuicDetailedLogging_Staged",
+          "FFlagDMRecorderRecordCoreGui_Staged",
+          "FFlagLuaAppEnableReportExperience",
+          "FFlagLuaAppInitializeErrorReporterEarly_Staged",
+          "FFlagMomentsCreationMusicChipRemoveButton_Staged",
+          "FFlagPresenceRefetchTelemetryCounters_Staged",
+          "FIntMomentsAudioDuckRatio",
+          "FIntMomentsAudioDuckThresholdDb",
+          "FIntMomentsTTSVolumePercent"
+        ],
+        "changed": [
+          {
+            "after": "False",
+            "before": "True",
+            "name": "DFFlagUIGradientFixFirstLastStop"
+          },
+          {
+            "after": "357da10fcede96b5a589d74f53eb8eef2ac22692",
+            "before": "805a366dd16c2c2dfe155dd0eac7a445aa607a51",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-02T18:57:08.261Z",
+            "before": "2026-10-02T18:34:39.818Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "357da10fcede96b5a589d74f53eb8eef2ac22692",
+            "before": "805a366dd16c2c2dfe155dd0eac7a445aa607a51",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-02T18:57:08.261Z",
+            "before": "2026-10-02T18:34:39.818Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagUIGradientFixFirstLastStop_Staged",
+          "FFlagLuaAppEnableReportExperience_Staged",
+          "FIntMomentsAudioDuckRatio_Staged",
+          "FIntMomentsAudioDuckThresholdDb_Staged",
+          "FIntMomentsTTSVolumePercent_Staged"
+        ],
+        "unchanged": 24618
+      }
+    },
+    "Web": {
+      "current": "8322a0f3ec10d1a1e65f3899b281fbe5a6018f769775b2da25750dc2ae438db6",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-012.js",
+          "assets.create.roblox.com/page-0/script-026.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-051.js",
+          "assets.create.roblox.com/page-0/script-052.js",
+          "assets.create.roblox.com/page-0/script-068.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 87
+      },
+      "previous": "5faf2d9e428f15a521884d209e0ec6be038cce9882c5d4738319a7938d0a98b4",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}

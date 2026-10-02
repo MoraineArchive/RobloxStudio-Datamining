@@ -5104,11 +5104,174 @@
             "tts",
             "volume"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/02/19-01-03Z_datasets",
+          "evidencePath": "2026/10/02/19-01-03Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "156f1b611648b933cba763ef37ad3ae0c6e1c9c2977e3d56c2f071e741bc653b",
+          "key": "FIntMomentsAudioDuckRatio",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-02T19:01:03.449Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "audio",
+            "duck",
+            "moments",
+            "ratio"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/02/19-01-03Z_datasets",
+          "evidencePath": "2026/10/02/19-01-03Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "2fbaa25a9607a89d621a6ef0c02e03a495ddd248dc3e911c7ba92759809e5604",
+          "key": "FIntMomentsTTSVolumePercent",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-02T19:01:03.449Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "moments",
+            "percent",
+            "tts",
+            "volume"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/02/19-01-03Z_datasets",
+          "evidencePath": "2026/10/02/19-01-03Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "48c80d310230de506ea6a41db95a42bb03b00b9d788fb3d7511f3e7ce37b804a",
+          "key": "FIntMomentsAudioDuckThresholdDb",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-02T19:01:03.449Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "audio",
+            "duck",
+            "moments",
+            "threshold"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/02/19-01-03Z_datasets",
+          "evidencePath": "2026/10/02/19-01-03Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "9a55ddf28452fdb432cb089ee994b18535a5703db875957ae10906dcf87aa616",
+          "key": "FIntMomentsTTSVolumePercent_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-02T19:01:03.449Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "moments",
+            "percent",
+            "tts",
+            "volume"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/02/19-01-03Z_datasets",
+          "evidencePath": "2026/10/02/19-01-03Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "b5d58cc16b34cef95a87a3b8af6cefd4837dd1836e77ec29b15fc40e2a5f6572",
+          "key": "FIntMomentsAudioDuckThresholdDb_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-02T19:01:03.449Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "audio",
+            "duck",
+            "moments",
+            "threshold"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/02/19-01-03Z_datasets",
+          "evidencePath": "2026/10/02/19-01-03Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "df81eb52f6fdb44a04392e32c83152eba9a472acafc15df71656e82e39c46969",
+          "key": "FIntMomentsAudioDuckRatio_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-02T19:01:03.449Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "audio",
+            "duck",
+            "moments",
+            "ratio"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/02/19-01-03Z_datasets",
+          "evidencePath": "2026/10/02/19-01-03Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "e75e5f2390459fad569cf493611655da0551beb234acc134b3e50b38199a8eb7",
+          "key": "FFlagMomentsCreationMusicChipRemoveButton_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-02T19:01:03.449Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "button",
+            "chip",
+            "creation",
+            "moments",
+            "music",
+            "remove"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-10-02T18:35:30.380Z",
+      "lastObservedAt": "2026-10-02T19:01:03.449Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
@@ -5257,6 +5420,30 @@
           "signalIds": [
             "327e249de9175fdc287b794f50a9db7a301b11c15e5e8e3e5c1aa0566002c4ff",
             "46d12231eb8f3c6453165f33e2cb06f9335019f84fee7176fd8c56ff326c5203"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-10-02T19:01:03.449Z",
+          "signalIds": [
+            "16fe48c4a3681895300b60473622c20b156f7bc67441c4cbfc4e6981fc1aa70e",
+            "48c80d310230de506ea6a41db95a42bb03b00b9d788fb3d7511f3e7ce37b804a"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-10-02T19:01:03.449Z",
+          "signalIds": [
+            "156f1b611648b933cba763ef37ad3ae0c6e1c9c2977e3d56c2f071e741bc653b",
+            "26e40de5fbe43d490edca270f51f066ed7ef4dfd86986b33d981629c394b5895"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-10-02T19:01:03.449Z",
+          "signalIds": [
+            "2f6799927c73498b32e20f69301378c994b0f8925646c5937f4d11ffee1f1350",
+            "2fbaa25a9607a89d621a6ef0c02e03a495ddd248dc3e911c7ba92759809e5604"
           ],
           "type": "staged-to-non-staged"
         }
