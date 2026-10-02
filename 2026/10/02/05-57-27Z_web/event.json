@@ -1,0 +1,23 @@
+{
+  "archivePath": "2026/10/02/05-57-27Z_web",
+  "commit": {
+    "body": "Web files          +0 ~13 -0",
+    "subject": "2 October 2026 - Web update"
+  },
+  "findings": {
+    "new": 0,
+    "updated": 0
+  },
+  "guid": "version-76e1a02649ad4f35",
+  "id": "44a350c533315995ec6bc510a566cc1fc63024d6af6c03368f3c3b75429270a7",
+  "observedAt": "2026-10-02T05:57:27.268Z",
+  "product": "Studio",
+  "schemaVersion": 1,
+  "surfaces": [
+    "Web"
+  ],
+  "target": "WindowsStudio64",
+  "type": "web.changed",
+  "upstreamChange": true,
+  "version": "0.741.19.7411056"
+}
