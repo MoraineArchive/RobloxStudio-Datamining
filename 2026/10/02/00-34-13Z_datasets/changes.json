@@ -1,0 +1,99 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-76e1a02649ad4f35",
+    "manifestFiles": 18680,
+    "packages": 34,
+    "version": "0.741.19.7411056"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "d21ad4d8ce38fa8618aa75d0d3313c4b8b730389d6b7e95e2420881597f8ced8",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "8b37d78bccfd5cac97c6fdd27608ddcd0ecdcf575d89a67ed80b14481e13acb5",
+      "semantic": {
+        "added": [
+          "FFlagRbxTransportDummyClientForwardConfig",
+          "FFlagSduiAdvertiseRuntimeSupportSets",
+          "FFlagStudioDialogManagerSuppression2",
+          "FFlagTempAssetImporterLegacyVideoProgress"
+        ],
+        "changed": [
+          {
+            "after": "3000",
+            "before": "120",
+            "name": "DFIntVideoCaptureSnapshotMaxFrameTimeSecond"
+          },
+          {
+            "after": "70b6d7a6286e5abc52d8dc9e0b87f1a663334a63",
+            "before": "e2f3287e37a127ce18216512b09343781ec4ac58",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-02T00:32:25.506Z",
+            "before": "2026-10-01T23:57:31.900Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "70b6d7a6286e5abc52d8dc9e0b87f1a663334a63",
+            "before": "e2f3287e37a127ce18216512b09343781ec4ac58",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-02T00:32:25.506Z",
+            "before": "2026-10-01T23:57:31.900Z",
+            "name": "FStringFlipTimeStampFastString"
+          },
+          {
+            "after": "Debugger.rbxm,SelectDragger.rbxm,SimulationStep.rbxm,MoveDragger.rbxm,ScaleDragger.rbxm,RotateDragger.rbxm,Tutorials.rbxm,AttenuationCurveEditor.rbxm,StreamingServiceDispatcherRegistry.rbxm,AudioEqualizerEditor.rbxm,DirectionalCurveEditor.rbxm,ExplorerPlugin.rbxm,PerformanceTools.rbxm,FindReplaceAll.rbxm,ControlsEmulator.rbxm,MultitouchEmulator.rbxm,Assistant.rbxm,SceneAnalysis.rbxm,InputActionManager.rbxm",
+            "before": "Debugger.rbxm,SelectDragger.rbxm,SimulationStep.rbxm,MoveDragger.rbxm,ScaleDragger.rbxm,RotateDragger.rbxm,Tutorials.rbxm,AttenuationCurveEditor.rbxm,StreamingServiceDispatcherRegistry.rbxm,AudioEqualizerEditor.rbxm,DirectionalCurveEditor.rbxm,ExplorerPlugin.rbxm,PerformanceTools.rbxm,FindReplaceAll.rbxm,ControlsEmulator.rbxm,MultitouchEmulator.rbxm,Assistant.rbxm,SceneAnalysis.rbxm",
+            "name": "FStringStudioPlayModeAllowedBuiltins"
+          }
+        ],
+        "removed": [
+          "DFIntVideoCaptureSnapshotMaxFrameTimeSecond_Staged",
+          "FFlagRbxTransportDummyClientForwardConfig_Staged",
+          "FFlagSduiAdvertiseRuntimeSupportSets_Staged",
+          "FFlagStudioDialogManagerSuppression2_Staged",
+          "FFlagTempAssetImporterLegacyVideoProgress_Staged",
+          "FStringStudioPlayModeAllowedBuiltins_Staged"
+        ],
+        "unchanged": 25191
+      }
+    },
+    "Web": {
+      "current": "b503bbe1133c0f4eaa4c9629edffe5cdb34ae290e308c652397f4aa7a532fb6b",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-012.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-052.js",
+          "assets.create.roblox.com/page-0/script-068.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 94
+      },
+      "previous": "fe42dd004d9ba405f21b3fb9a660163206333482498c6e3ef1bc1069584d150b",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
