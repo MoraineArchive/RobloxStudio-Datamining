@@ -5267,11 +5267,61 @@
             "music",
             "remove"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/02/23-07-50Z_datasets",
+          "evidencePath": "2026/10/02/23-07-50Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "1101bf4fa99c497d8027b951527a400b2e76f3dcfb22a1a38f1658787ff86768",
+          "key": "FFlagMomentsCreationMusicChipRemoveButton_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-02T23:07:50.924Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "button",
+            "chip",
+            "creation",
+            "moments",
+            "music",
+            "remove"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/02/23-07-50Z_datasets",
+          "evidencePath": "2026/10/02/23-07-50Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "48f8664a0bad6db51ec6dd1fca9663d4da8b4b563f1c8e10cf605f2121b9ff14",
+          "key": "FFlagMomentsCreationMusicChipRemoveButton",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-02T23:07:50.924Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "button",
+            "chip",
+            "creation",
+            "moments",
+            "music",
+            "remove"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-10-02T19:01:03.449Z",
+      "lastObservedAt": "2026-10-02T23:07:50.924Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
@@ -5444,6 +5494,14 @@
           "signalIds": [
             "2f6799927c73498b32e20f69301378c994b0f8925646c5937f4d11ffee1f1350",
             "2fbaa25a9607a89d621a6ef0c02e03a495ddd248dc3e911c7ba92759809e5604"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-10-02T23:07:50.924Z",
+          "signalIds": [
+            "48f8664a0bad6db51ec6dd1fca9663d4da8b4b563f1c8e10cf605f2121b9ff14",
+            "e75e5f2390459fad569cf493611655da0551beb234acc134b3e50b38199a8eb7"
           ],
           "type": "staged-to-non-staged"
         }
