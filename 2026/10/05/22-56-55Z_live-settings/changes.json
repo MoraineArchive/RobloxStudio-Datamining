@@ -1,0 +1,66 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-76e1a02649ad4f35",
+    "manifestFiles": 18680,
+    "packages": 34,
+    "version": "0.741.19.7411056"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "9f7523e977278e573a3f83012cd5693133b0bd1b2d18904079810ce7d6d2bc5a",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "a5c703ed2d99fe8649e9c5c65ce8a5db96d42abb55e4364a4adba6c311745e5a",
+      "semantic": {
+        "added": [
+          "FFlagAnimationGenOpenACE2",
+          "FFlagAssistantEditScrubbarPropertyRow",
+          "FFlagPropertiesExposeContentView"
+        ],
+        "changed": [
+          {
+            "after": "1111111111010111111101001111111110011111111111111110111",
+            "before": "11111111110101111111010011111111100111111111111111101",
+            "name": "DFStringDebugFileMeshDataValidationPolicy"
+          },
+          {
+            "after": "75ce811a85623020c6c97f56cc7933a2047cff21",
+            "before": "29ab036e43dc3b3b32ffb1ccbd822ccefe32ef7a",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-05T22:52:45.556Z",
+            "before": "2026-10-05T22:48:22.632Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "75ce811a85623020c6c97f56cc7933a2047cff21",
+            "before": "29ab036e43dc3b3b32ffb1ccbd822ccefe32ef7a",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-05T22:52:45.556Z",
+            "before": "2026-10-05T22:48:22.632Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFStringDebugFileMeshDataValidationPolicy_Staged",
+          "FFlagAnimationGenOpenACE2_Staged",
+          "FFlagAssistantEditScrubbarPropertyRow_Staged",
+          "FFlagPropertiesExposeContentView_Staged"
+        ],
+        "unchanged": 24712
+      }
+    }
+  },
+  "schemaVersion": 1
+}
