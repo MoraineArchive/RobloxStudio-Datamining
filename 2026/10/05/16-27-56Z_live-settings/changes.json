@@ -1,0 +1,60 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-76e1a02649ad4f35",
+    "manifestFiles": 18680,
+    "packages": 34,
+    "version": "0.741.19.7411056"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "301005bf8b6c611d34eefa38589eed0519dbe9630c8adb1a2664601dd1af11f6",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "1b0aef3510a855532e5897a52ebf3a30a4f66252ae49a2a66fe96db0a33e4a9d",
+      "semantic": {
+        "added": [
+          "FFlagBulkPurchaseReportCounters_Staged",
+          "FFlagDeferredGameJoinEnabled_Staged"
+        ],
+        "changed": [
+          {
+            "after": "True;SteadyState;100;90;Promote;2026-10-05T16:25:20",
+            "before": "True;SteadyState;100;90;Promote;2026-10-02T21:32:05",
+            "name": "DFFlagFlagRolloutTestDynamicBool33_Staged"
+          },
+          {
+            "after": "fea81ae180a6f3cd759c4c59283b95d9d752a1d0",
+            "before": "3b24ca30b32b34356d451b6fc404b83fd346a2ef",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-05T16:25:22.134Z",
+            "before": "2026-10-05T16:14:47.953Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "fea81ae180a6f3cd759c4c59283b95d9d752a1d0",
+            "before": "3b24ca30b32b34356d451b6fc404b83fd346a2ef",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-05T16:25:22.134Z",
+            "before": "2026-10-05T16:14:47.953Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [],
+        "unchanged": 24634
+      }
+    }
+  },
+  "schemaVersion": 1
+}
