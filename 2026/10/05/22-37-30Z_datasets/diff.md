@@ -1,0 +1,223 @@
+[![Moraine Roblox Datamining](https://github.com/MoraineArchive/Moraine-asset/blob/main/roblox/banner_roblox.png?raw=true)](https://github.com/MoraineArchive/Moraine-asset/blob/main/roblox/banner_roblox.png)
+
+# Roblox Studio Datamining Diff
+
+**Observed:** 06/10/2026, 00:37:30 CEST (22:37:30 UTC)
+
+## LiveSettings
+
+**File changes:** +0 ~1 -0
+
+- **Changed:** [`current.json`](../../../../current/LiveSettings/current.json)
+
+### Values
+
+- **Added:** `DFFlagAJUDeathPreservesSubmodelJoints`
+- **Added:** `DFFlagAvatarJointUpgradeOnlyDestroyRigMotor6Ds_Staged`
+- **Added:** `DFFlagCLI188056`
+- **Added:** `DFFlagCli227430`
+- **Added:** `DFFlagCorrectSdfSoftnessForSmoothScaleTextShadow`
+- **Added:** `DFFlagDMCTMigrateChatInputBarConfiguration`
+- **Added:** `DFFlagDebugDisableExpandedTerrainGrid`
+- **Added:** `DFFlagEnableTeamTestLuauExecution`
+- **Added:** `DFFlagForceOneSdfBucketForTextShadow`
+- **Added:** `DFFlagLuauTableRobustOom`
+- **Added:** `DFFlagModularizeStreamerBaseDrawShadow`
+- **Added:** `DFFlagRakNetValidateRbxOpenRequest2BoxSize`
+- **Added:** `DFFlagRbxTransportDummyClientSendCapabilities_Staged`
+- **Added:** `DFFlagRbxTransportRtcIoSelfSignedCertRotation2_Staged`
+- **Added:** `DFFlagTattletaleReportPlaceInstanceId`
+- **Added:** `DFFlagUIShadowTelemetryCountsFormAndGradient`
+- **Added:** `DFFlagUIShadowTelemetryCountsPseudo`
+- **Added:** `DFFlagWebSocketCurlFailOnUpgradeError`
+- **Added:** `DFIntHeapProfilerTimeoutSeconds`
+- **Added:** `DFIntImmersiveAdImpressionEventPointsThrottleHundrethsPercent_Staged`
+- **Added:** `DFIntImmersiveAdTeleportEventPointsThrottleHundrethsPercent_Staged`
+- **Added:** `DFIntImpressionCriteriaCounterPointsThrottleHundrethsPercent_Staged`
+- **Added:** `DFStringDebugFileMeshDataValidationPolicy_Staged`
+- **Added:** `FFlagAXPendingLookModerationStatus`
+- **Added:** `FFlagAccountRecoveryMaxContentWidth`
+- **Added:** `FFlagAdConsentForwardCachedRegion`
+- **Added:** `FFlagAnimationGenOpenACE2_Staged`
+- **Added:** `FFlagAppChatConversationLoadingSkeleton_Staged`
+- **Added:** `FFlagAppChatConversationTrustedFriendUpsellBanner4_Staged`
+- **Added:** `FFlagAppChatMessageTTIMilestones1`
+- **Added:** `FFlagAppChatReactiveFeatureRestrictions_Staged`
+- **Added:** `FFlagAppChatUniversalFeatureRestriction`
+- **Added:** `FFlagAssistantCreditMeteringLocalBackend_Staged`
+- **Added:** `FFlagAssistantEditScrubbarPropertyRow_Staged`
+- **Added:** `FFlagBootcampCLI226477`
+- **Added:** `FFlagBulkPurchaseReportCounters`
+- **Added:** `FFlagCollectionWatcherFilterSignals`
+- **Added:** `FFlagDMCTMigrateDragDetectorAxis`
+- **Added:** `FFlagDMCTMigratePartOperationMeshSize`
+- **Added:** `FFlagDataModelPatchWebSocketTransport_Staged`
+- **Added:** `FFlagDecalNormalMapRotation`
+- **Added:** `FFlagDeferredGameJoinEnabled`
+- **Added:** `FFlagEnableAvatarItemAffiliateDeepLink_Staged`
+- **Added:** `FFlagEnableDelayedAppsFlyerStartBackstopGeoRecheck4`
+- **Added:** `FFlagEnableNativeAdsProtocol2`
+- **Added:** `FFlagEnablePlayerSupportSessionIdMetadata`
+- **Added:** `FFlagExperienceLeaveReason`
+- **Added:** `FFlagFixInspectAndBuyThirdPartySales`
+- **Added:** `FFlagFoundationAccordionBeta`
+- **Added:** `FFlagFoundationKnobRaisedShadow_Staged`
+- **Added:** `FFlagFoundationProgressBarBetaUpdate2`
+- **Added:** `FFlagFoundationSliderBeta3_Staged`
+- **Added:** `FFlagFoundationStatusIndicatorMask`
+- **Added:** `FFlagFriendsChatAddTopBarDivider_Staged`
+- **Added:** `FFlagFriendsChatPlaceholderRenameFix`
+- **Added:** `FFlagIECBlockEmissiveMakeup`
+- **Added:** `FFlagISRLockAttributeSchemaCleanup`
+- **Added:** `FFlagIdentifyTopPicksByCategoryType`
+- **Added:** `FFlagLuaAppAddAnalyticsDataToSeeAllImpressions`
+- **Added:** `FFlagLuauCompileNoFoldVectorEqW`
+- **Added:** `FFlagLuauUnconditionallyVisitTypeAliasParams`
+- **Added:** `FFlagPrepareProjectionMeshDataAsyncEnabled`
+- **Added:** `FFlagProfileInsightsParseClassmates`
+- **Added:** `FFlagProfilePlatformNewProfileHeader_v4`
+- **Added:** `FFlagPropertiesExposeContentView_Staged`
+- **Added:** `FFlagQueryDescendantsInRadius`
+- **Added:** `FFlagRccScriptsFixBase64Encode`
+- **Added:** `FFlagRefreshBulkPurchaseEnabled`
+- **Added:** `FFlagSchoolMemberListMutualFriends`
+- **Added:** `FFlagSduiBannerContextComponent`
+- **Added:** `FFlagSimFixStaleContactGeometry`
+- **Added:** `FFlagSlimDisableAnyAvatarChanges_Staged`
+- **Added:** `FFlagSlimGamesRccOnly`
+- **Added:** `FFlagStudioEnableTerrainPalette4`
+- **Added:** `FFlagStudioPluginWindowCaptureAPI3`
+- **Added:** `FFlagStudioPluginWindowScreenshot2`
+- **Added:** `FFlagStudioWebLaunchAutoLogin_Staged`
+- **Added:** `FFlagStyleEditorDontClampUIShadowZIndex`
+- **Added:** `FFlagTFClassmatesProfileInsight`
+- **Added:** `FFlagTTranscoderProfiling`
+- **Added:** `FFlagUserListComposeRenderRowWithCta`
+- **Added:** `FFlagUserSearchClassmatesInsight`
+- **Added:** `FIntAssistantProcessEventTimeoutMS_Staged`
+- **Added:** `FStringAXAddPlusUpsellToBulkPurchaseLayerName`
+- **Changed:** `DFFlagLibMpApiOne_PlaceFilter`
+  - Before: `True;70526018540413;138340084845942;101789045531886;95085625712617;98999942533775;3233893879;5913871729;11379161761;12177325772;14382948560;71758036674663;72771627260907;99724655740834;110948941832728;126195208568849;127060568647054;71597542639726;83281124436612;84462552388243;94361122673808;94875088696269;113613143002512;120399860141275;132835478597727;13219974422;14219743827;101214680213533;108868965219696;140147840673223;74239695238938;89656992288652;100350684837018;103099881087655;1273929...`
+  - After: `True;70526018540413;138340084845942;101789045531886;95085625712617;98999942533775;3233893879;5913871729;11379161761;12177325772;14382948560;71758036674663;72771627260907;99724655740834;110948941832728;126195208568849;127060568647054;71597542639726;83281124436612;84462552388243;94361122673808;94875088696269;113613143002512;120399860141275;132835478597727;13219974422;14219743827;101214680213533;108868965219696;140147840673223;74239695238938;89656992288652;100350684837018;103099881087655;1273929...`
+- **Changed:** `DFStringFlagRepoGitHashDynamicString`
+  - Before: `666f4498471d0fb90bfe07f702ba3d23f2340581`
+  - After: `d4c05e8111ea9981ddd00ffc8a7e52c22fc67661`
+- **Changed:** `DFStringFlipTimeStampDynamicString`
+  - Before: `2026-10-05T17:58:39.033Z`
+  - After: `2026-10-05T22:36:43.315Z`
+- **Changed:** `FFlagFmodCoreAudioStartStopCrashFix`
+  - Before: `True`
+  - After: `False`
+- **Changed:** `FIntVoiceChatCullingTransactionsPerMessage`
+  - Before: `100`
+  - After: `50`
+- **Changed:** `FStringCursorGroupHelp`
+  - Before: `https://create.roblox.com/docs/workspace/collisions#studioselectable-collision-group`
+  - After: `https://create.roblox.com/docs/workspace/collisions#studioselectable-group`
+- **Changed:** `FStringFlagRepoGitHashFastString`
+  - Before: `666f4498471d0fb90bfe07f702ba3d23f2340581`
+  - After: `d4c05e8111ea9981ddd00ffc8a7e52c22fc67661`
+- **Changed:** `FStringFlipTimeStampFastString`
+  - Before: `2026-10-05T17:58:39.033Z`
+  - After: `2026-10-05T22:36:43.315Z`
+- **Changed:** `FStringStudioEmergencyMessageV4`
+  - Before: `eyJ2ZXJzaW9uU3RhcnQiOiAiMC4zMDAuMC4xIiwgInZlcnNpb25FbmQiOiAiMC43MzcuMTkuNzQwMDAwMyIsICJwbGF0Zm9ybXMiOiBbIldpbmRvd3MiLCAiTWFjIl0sICJtZXNzYWdlIjoge30sICJzaHV0ZG93biI6IHRydWUsICJmb3JjZVJldHJ5U3RhcnR1cFVwZGF0ZSI6IHRydWV9`
+  - After: `eyJ2ZXJzaW9uU3RhcnQiOiAiMC4zMDAuMC4xIiwgInZlcnNpb25FbmQiOiAiMC43MzguMTkuNzQxMTA1NiIsICJwbGF0Zm9ybXMiOiBbIldpbmRvd3MiLCAiTWFjIl0sICJtZXNzYWdlIjoge30sICJzaHV0ZG93biI6IHRydWUsICJmb3JjZVJldHJ5U3RhcnR1cFVwZGF0ZSI6IHRydWV9`
+- **Removed:** `DFFlagCli227430_Staged`
+- **Removed:** `DFFlagEnableTeamTestLuauExecution_Staged`
+- **Removed:** `DFFlagFlagRolloutTestDynamicBool33_Staged`
+- **Removed:** `DFFlagForceOneSdfBucketForTextShadow_Staged`
+- **Removed:** `DFFlagLuauTableRobustOom_Staged`
+- **Removed:** `DFFlagModularizeStreamerBaseDrawShadow_Staged`
+- **Removed:** `DFFlagRakNetValidateRbxOpenRequest2BoxSize_Staged`
+- **Removed:** `DFFlagUIShadowTelemetryCountsFormAndGradient_Staged`
+- **Removed:** `DFFlagUIShadowTelemetryCountsPseudo_Staged`
+- **Removed:** `DFFlagWebSocketCurlFailOnUpgradeError_Staged`
+- **Removed:** `DFIntHeapProfilerTimeoutSeconds_Staged`
+- **Removed:** `FFlagAppChatMessageTTIMilestones1_Staged`
+- **Removed:** `FFlagAppChatUniversalFeatureRestriction_IXP`
+- **Removed:** `FFlagBootcampCLI226477_Staged`
+- **Removed:** `FFlagBulkPurchaseReportCounters_Staged`
+- **Removed:** `FFlagCollectionWatcherFilterSignals_Staged`
+- **Removed:** `FFlagDMCTMigratePartOperationMeshSize_Staged`
+- **Removed:** `FFlagDecalNormalMapRotation_Staged`
+- **Removed:** `FFlagDeferredGameJoinEnabled_Staged`
+- **Removed:** `FFlagEnableDelayedAppsFlyerStartBackstopGeoRecheck4_Staged`
+- **Removed:** `FFlagEnableNativeAdsProtocol2_Staged`
+- **Removed:** `FFlagExperienceLeaveReason_Staged`
+- **Removed:** `FFlagFixInspectAndBuyThirdPartySales_Staged`
+- **Removed:** `FFlagFoundationProgressBarBetaUpdate2_Staged`
+- **Removed:** `FFlagFriendsChatPlaceholderRenameFix_Staged`
+- **Removed:** `FFlagLuauUnconditionallyVisitTypeAliasParams_Staged`
+- **Removed:** `FFlagProfileInsightsParseClassmates_Staged`
+- **Removed:** `FFlagProfilePlatformNewProfileHeader_v4_Staged`
+- **Removed:** `FFlagQueryDescendantsInRadius_Staged`
+- **Removed:** `FFlagRccScriptsFixBase64Encode_Staged`
+- **Removed:** `FFlagStudioEnableTerrainPalette4_Staged`
+- **Removed:** `FFlagStyleEditorDontClampUIShadowZIndex_Staged`
+- **Removed:** `FFlagTTranscoderProfiling_Staged`
+- **Removed:** `FFlagUFRFriendsChatIXPExposure_IXP`
+- **Removed:** `FFlagUserListComposeRenderRowWithCta_Staged`
+
+## Web
+
+**File changes:** +2 ~55 -0
+
+- **Added:** [`assets.create.roblox.com/page-0/script-086.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-086.js)
+- **Added:** [`assets.create.roblox.com/page-0/script-087.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-087.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-002.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-002.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-003.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-003.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-005.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-005.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-006.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-006.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-010.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-010.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-011.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-011.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-012.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-012.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-013.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-013.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-026.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-026.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-028.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-028.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-032.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-032.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-033.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-033.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-034.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-034.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-036.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-036.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-040.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-040.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-042.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-042.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-044.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-044.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-046.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-046.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-048.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-048.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-051.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-051.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-052.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-052.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-053.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-053.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-054.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-054.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-055.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-055.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-056.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-056.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-057.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-057.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-058.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-058.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-059.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-059.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-060.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-060.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-061.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-061.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-062.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-062.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-063.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-063.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-064.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-064.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-065.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-065.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-066.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-066.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-067.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-067.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-068.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-068.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-069.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-069.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-070.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-070.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-071.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-071.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-072.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-072.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-073.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-073.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-074.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-074.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-075.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-075.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-076.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-076.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-077.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-077.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-078.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-078.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-079.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-079.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-080.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-080.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-081.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-081.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-082.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-082.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-083.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-083.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-084.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-084.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-085.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-085.js)
+- **Changed:** [`assets.json`](../../../../current/Web/assets.json)
+
