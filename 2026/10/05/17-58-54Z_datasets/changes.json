@@ -1,0 +1,118 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-76e1a02649ad4f35",
+    "manifestFiles": 18680,
+    "packages": 34,
+    "version": "0.741.19.7411056"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "3f7a11785a2829f7d56e7ac5d1a4269bc687e3e5f7a565274f242fb5a351b2a2",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "301005bf8b6c611d34eefa38589eed0519dbe9630c8adb1a2664601dd1af11f6",
+      "semantic": {
+        "added": [
+          "DFFlagCli227430_Staged",
+          "DFFlagEnableTeamTestLuauExecution_Staged",
+          "DFFlagForceOneSdfBucketForTextShadow_Staged",
+          "DFFlagLuauTableRobustOom_Staged",
+          "DFFlagModularizeStreamerBaseDrawShadow_Staged",
+          "DFFlagRakNetRejectUnalignedSplitFragments",
+          "DFFlagRakNetValidateRbxOpenRequest2BoxSize_Staged",
+          "DFFlagRbxStorageAvgTimeRecordingReporting",
+          "DFFlagUIShadowTelemetryCountsFormAndGradient_Staged",
+          "DFFlagUIShadowTelemetryCountsPseudo_Staged",
+          "DFFlagWebSocketCurlFailOnUpgradeError_Staged",
+          "DFIntHeapProfilerTimeoutSeconds_Staged",
+          "FFlagAppChatMessageTTIMilestones1_Staged",
+          "FFlagBootcampCLI226477_Staged",
+          "FFlagCollectionWatcherFilterSignals_Staged",
+          "FFlagDMCTMigratePartOperationMeshSize_Staged",
+          "FFlagDecalNormalMapRotation_Staged",
+          "FFlagEnableDelayedAppsFlyerStartBackstopGeoRecheck4_Staged",
+          "FFlagEnableNativeAdsProtocol2_Staged",
+          "FFlagExperienceLeaveReason_Staged",
+          "FFlagFriendsChatPlaceholderRenameFix_Staged",
+          "FFlagFriendsStoreSortOnlineFriendsByRank_IXP",
+          "FFlagGameDetailsMigrateOffLegacyPresence_IXP",
+          "FFlagGameTileMigrateOffLegacyPresence_IXP",
+          "FFlagPlacesListMigrateOffLegacyPresence_IXP",
+          "FFlagProfilePlatformNewProfileHeader_v4_Staged",
+          "FFlagQueryDescendantsInRadius_Staged",
+          "FFlagSduiSocialDataMigrateOffLegacyPresence_IXP",
+          "FFlagStudioEnableTerrainPalette4_Staged",
+          "FFlagStyleEditorDontClampUIShadowZIndex_Staged"
+        ],
+        "changed": [
+          {
+            "after": "True",
+            "before": "False",
+            "name": "DFFlagGamePassPurchaseOrchestratorEnabled"
+          },
+          {
+            "after": "True;10683865908;9950442110;4165164803;204387960;8580361332;5467837225;10062969908;6618224782;3906287814;6421895339;9326923393;6544763344;2152417643;1585046700;10766008731;8156335562",
+            "before": "True;10683865908;9950442110;4165164803;204387960;8580361332;5467837225;10062969908;6618224782;3906287814;6421895339;9326923393;6544763344;2152417643;1585046700;10766008731",
+            "name": "DFFlagLogJourneyEventEnabled_UniverseFilter"
+          },
+          {
+            "after": "666f4498471d0fb90bfe07f702ba3d23f2340581",
+            "before": "fea81ae180a6f3cd759c4c59283b95d9d752a1d0",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-05T17:58:39.033Z",
+            "before": "2026-10-05T16:25:22.134Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "666f4498471d0fb90bfe07f702ba3d23f2340581",
+            "before": "fea81ae180a6f3cd759c4c59283b95d9d752a1d0",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-05T17:58:39.033Z",
+            "before": "2026-10-05T16:25:22.134Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [],
+        "unchanged": 24635
+      }
+    },
+    "Web": {
+      "current": "b9ffe2497e7289a7dbd483ac91fcbf32845a6fceeffb29e5b993eaff2d8f8351",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-012.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-052.js",
+          "assets.create.roblox.com/page-0/script-068.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 93
+      },
+      "previous": "a224b6bd97c4030879d068f8a3fcd0d95fdbc3dfc4dddc347d75295d3d181c3c",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
