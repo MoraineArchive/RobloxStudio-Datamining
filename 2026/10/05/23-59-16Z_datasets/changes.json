@@ -1,0 +1,143 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-76e1a02649ad4f35",
+    "manifestFiles": 18680,
+    "packages": 34,
+    "version": "0.741.19.7411056"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "fefa5bdb2876d216752e0b5e59e7f805e07131fcd9b392bab4a9a4926fb17dcf",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "9f7523e977278e573a3f83012cd5693133b0bd1b2d18904079810ce7d6d2bc5a",
+      "semantic": {
+        "added": [
+          "DFFlagAvatarJointUpgradeOnlyDestroyRigMotor6Ds",
+          "DFFlagForceOTAFinalizeLuaAppExperienceOnly_Staged",
+          "DFFlagOtaPatchSafeBackupCleanup_Staged",
+          "DFFlagRbxTransportDummyClientSendCapabilities",
+          "DFFlagRbxTransportRtcIoSelfSignedCertRotation2",
+          "FFlagAppChatConversationTrustedFriendUpsellBanner4",
+          "FFlagDataModelPatchWebSocketTransport",
+          "FFlagFoundationKnobRaisedShadow",
+          "FFlagFoundationListItemDecoupledInput_Staged",
+          "FFlagFoundationListItemTypographySpacing_Staged",
+          "FFlagFoundationSliderBeta3",
+          "FFlagFoundationTooltipBeta3_Staged",
+          "FFlagFriendsChatAddTopBarDivider",
+          "FFlagStudioWebLaunchAutoLogin",
+          "FFlagUseSpecialMeshNoFaceForDefaultR62_Staged"
+        ],
+        "changed": [
+          {
+            "after": "1000",
+            "before": "5000",
+            "name": "DFIntImmersiveAdImpressionEventPointsThrottleHundrethsPercent"
+          },
+          {
+            "after": "1000",
+            "before": "5000",
+            "name": "DFIntImmersiveAdTeleportEventPointsThrottleHundrethsPercent"
+          },
+          {
+            "after": "1000",
+            "before": "5000",
+            "name": "DFIntImpressionCriteriaCounterPointsThrottleHundrethsPercent"
+          },
+          {
+            "after": "184bf99d1cad4c08a9568959d7564075e4465e47",
+            "before": "75ce811a85623020c6c97f56cc7933a2047cff21",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-05T23:57:30.649Z",
+            "before": "2026-10-05T22:52:45.556Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagSlimDisableAnyAvatarChanges"
+          },
+          {
+            "after": "600000",
+            "before": "180000",
+            "name": "FIntAssistantProcessEventTimeoutMS"
+          },
+          {
+            "after": "184bf99d1cad4c08a9568959d7564075e4465e47",
+            "before": "75ce811a85623020c6c97f56cc7933a2047cff21",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-05T23:57:30.649Z",
+            "before": "2026-10-05T22:52:45.556Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagAvatarJointUpgradeOnlyDestroyRigMotor6Ds_Staged",
+          "DFFlagRbxTransportDummyClientSendCapabilities_Staged",
+          "DFFlagRbxTransportRtcIoSelfSignedCertRotation2_Staged",
+          "DFIntImmersiveAdImpressionEventPointsThrottleHundrethsPercent_Staged",
+          "DFIntImmersiveAdTeleportEventPointsThrottleHundrethsPercent_Staged",
+          "DFIntImpressionCriteriaCounterPointsThrottleHundrethsPercent_Staged",
+          "FFlagAppChatConversationTrustedFriendUpsellBanner4_Staged",
+          "FFlagDataModelPatchWebSocketTransport_Staged",
+          "FFlagFoundationKnobRaisedShadow_Staged",
+          "FFlagFoundationSliderBeta3_Staged",
+          "FFlagFriendsChatAddTopBarDivider_Staged",
+          "FFlagSlimDisableAnyAvatarChanges_Staged",
+          "FFlagStudioWebLaunchAutoLogin_Staged",
+          "FIntAssistantProcessEventTimeoutMS_Staged"
+        ],
+        "unchanged": 24697
+      }
+    },
+    "Web": {
+      "current": "599e620b50a0763d0d992bcf0ce338b0324f490cc144225c07b0851e4ee3c875",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-006.js",
+          "assets.create.roblox.com/page-0/script-018.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-033.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-042.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-051.js",
+          "assets.create.roblox.com/page-0/script-052.js",
+          "assets.create.roblox.com/page-0/script-053.js",
+          "assets.create.roblox.com/page-0/script-059.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.create.roblox.com/page-0/script-085.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 85
+      },
+      "previous": "00a8ef4f984ab8fcb0858526e6e98d91ed3c42b9b1bb4de48e4751d13f4419fd",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
