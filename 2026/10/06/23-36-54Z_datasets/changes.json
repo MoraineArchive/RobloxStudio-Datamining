@@ -1,0 +1,169 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-76e1a02649ad4f35",
+    "manifestFiles": 18680,
+    "packages": 34,
+    "version": "0.741.19.7411056"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "392b49ced3227cab287ef0dcf1cea6b02bab8bfc3ce9b3f10fbaaee2a44ca76c",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "f0c850f529cd703735f29f3d51bc3adc631f417bc1553f77e37a560c319211ac",
+      "semantic": {
+        "added": [
+          "DFFlagCloseSoundOutputOnDestroy",
+          "DFFlagDMRecorderRecordListLayoutPadding",
+          "DFFlagEditableMeshSlotMapNegativeIndexOverflow",
+          "DFFlagSubFlowDurationLoggerReportFlowStart",
+          "FFlagAXAddPlusUpsellToBulkPurchaseExposure_IXP",
+          "FFlagAXAddPlusUpsellToBulkPurchase_IXP",
+          "FFlagAndroidUseTypedWindowInsets",
+          "FFlagAnimGraphUIPasteWithoutConnections",
+          "FFlagAnimGraphUIRemoveOrphanedParameterWires",
+          "FFlagBootcampCLI226592",
+          "FFlagDMPatcherCloneToDestinationEngineContext",
+          "FFlagEnableAndroidUnifiedSystemBarControl",
+          "FFlagEnableLuaAppScriptErrorListener2",
+          "FFlagEnablePlayerSupportCaptureAttachments2_Staged",
+          "FFlagFMDFixCompressedCoreMeshViewSize",
+          "FFlagKeepWebviewOpenOnNavigation",
+          "FFlagLuaAppGamepadSelectionRespectsInteractable",
+          "FFlagLuaAppHideDeviceInsetBackgroundOnAvatarWrapperPages",
+          "FFlagPlatformLeaderboardDisplayNameEnabled_Staged",
+          "FFlagProfileModalViewStatusBarOffset_Staged",
+          "FFlagRenderWaterTransparencyNonSHQ3",
+          "FFlagSlimOnlySetUse2022MaterialsForWedge_Staged",
+          "FFlagSlimUseBoxMappingForSkinnedMeshDecal_Staged",
+          "FFlagStudioShortcutKeyMapping",
+          "FFlagUserPlayerScriptsTaskDeferSimulation"
+        ],
+        "changed": [
+          {
+            "after": "9e6c590d8c11a8757d7c31dc25823fa45f3bd415",
+            "before": "6c802620f8fefd84904bbc050da54d2f015345a3",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-06T23:32:38.309Z",
+            "before": "2026-10-06T21:52:38.840Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "10000",
+            "before": "2000",
+            "name": "FIntLuaAppNxMApportioningDiagnosticThrottleHundredthsPercent"
+          },
+          {
+            "after": "9e6c590d8c11a8757d7c31dc25823fa45f3bd415",
+            "before": "6c802620f8fefd84904bbc050da54d2f015345a3",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-06T23:32:38.309Z",
+            "before": "2026-10-06T21:52:38.840Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagCloseSoundOutputOnDestroy_Staged",
+          "DFFlagDMRecorderRecordListLayoutPadding_Staged",
+          "DFFlagEditableMeshSlotMapNegativeIndexOverflow_Staged",
+          "FFlagAndroidUseTypedWindowInsets_Staged",
+          "FFlagAnimGraphUIPasteWithoutConnections_Staged",
+          "FFlagAnimGraphUIRemoveOrphanedParameterWires_Staged",
+          "FFlagBootcampCLI226592_Staged",
+          "FFlagDMPatcherCloneToDestinationEngineContext_Staged",
+          "FFlagEnableAndroidUnifiedSystemBarControl_Staged",
+          "FFlagEnableLuaAppScriptErrorListener2_Staged",
+          "FFlagFMDFixCompressedCoreMeshViewSize_Staged",
+          "FFlagKeepWebviewOpenOnNavigation_Staged",
+          "FFlagLuaAppGamepadSelectionRespectsInteractable_Staged",
+          "FFlagLuaAppHideDeviceInsetBackgroundOnAvatarWrapperPages_Staged",
+          "FFlagRenderWaterTransparencyNonSHQ3_Staged",
+          "FFlagStudioShortcutKeyMapping_Staged",
+          "FFlagUserPlayerScriptsTaskDeferSimulation_Staged",
+          "FIntLuaAppNxMApportioningDiagnosticThrottleHundredthsPercent_Staged"
+        ],
+        "unchanged": 24766
+      }
+    },
+    "Web": {
+      "current": "10e17d14cd1e60c219183608ce36cfa5c1f9ba4662f320fbe76ba6c8ce525f11",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-004.js",
+          "assets.create.roblox.com/page-0/script-006.js",
+          "assets.create.roblox.com/page-0/script-007.js",
+          "assets.create.roblox.com/page-0/script-008.js",
+          "assets.create.roblox.com/page-0/script-012.js",
+          "assets.create.roblox.com/page-0/script-013.js",
+          "assets.create.roblox.com/page-0/script-015.js",
+          "assets.create.roblox.com/page-0/script-016.js",
+          "assets.create.roblox.com/page-0/script-017.js",
+          "assets.create.roblox.com/page-0/script-018.js",
+          "assets.create.roblox.com/page-0/script-023.js",
+          "assets.create.roblox.com/page-0/script-024.js",
+          "assets.create.roblox.com/page-0/script-025.js",
+          "assets.create.roblox.com/page-0/script-026.js",
+          "assets.create.roblox.com/page-0/script-027.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-033.js",
+          "assets.create.roblox.com/page-0/script-035.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-045.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-047.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-050.js",
+          "assets.create.roblox.com/page-0/script-051.js",
+          "assets.create.roblox.com/page-0/script-053.js",
+          "assets.create.roblox.com/page-0/script-057.js",
+          "assets.create.roblox.com/page-0/script-058.js",
+          "assets.create.roblox.com/page-0/script-059.js",
+          "assets.create.roblox.com/page-0/script-060.js",
+          "assets.create.roblox.com/page-0/script-061.js",
+          "assets.create.roblox.com/page-0/script-062.js",
+          "assets.create.roblox.com/page-0/script-063.js",
+          "assets.create.roblox.com/page-0/script-064.js",
+          "assets.create.roblox.com/page-0/script-065.js",
+          "assets.create.roblox.com/page-0/script-066.js",
+          "assets.create.roblox.com/page-0/script-067.js",
+          "assets.create.roblox.com/page-0/script-068.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-070.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.create.roblox.com/page-0/script-077.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.create.roblox.com/page-0/script-085.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 53
+      },
+      "previous": "4443cab37b34cf4340e8e0a21045e0893a837cd17787cdab531be49d6813e157",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
