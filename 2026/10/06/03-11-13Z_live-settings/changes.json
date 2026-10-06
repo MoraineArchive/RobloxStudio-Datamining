@@ -1,0 +1,59 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-76e1a02649ad4f35",
+    "manifestFiles": 18680,
+    "packages": 34,
+    "version": "0.741.19.7411056"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "56571646ca94058b72ceaf74fe77ede9c8e0336e093b914f3b37e77002320115",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "c6b8d48f818bab6ef3cd08f83fcebd48e75cfbb91339a8c4a2252dbd80bdc74c",
+      "semantic": {
+        "added": [],
+        "changed": [
+          {
+            "after": "False",
+            "before": "True",
+            "name": "DFFlagEnableTeamTestLuauExecution"
+          },
+          {
+            "after": "069e488292c3e8f5f2f84d0ddb06fe203d0d3d67",
+            "before": "251a9a32311fefb9200a11f3bdcaa42c6495ce18",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-06T03:02:06.326Z",
+            "before": "2026-10-06T01:18:14.756Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "069e488292c3e8f5f2f84d0ddb06fe203d0d3d67",
+            "before": "251a9a32311fefb9200a11f3bdcaa42c6495ce18",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-06T03:02:06.326Z",
+            "before": "2026-10-06T01:18:14.756Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagEnableTeamTestLuauExecution_Staged"
+        ],
+        "unchanged": 24716
+      }
+    }
+  },
+  "schemaVersion": 1
+}
