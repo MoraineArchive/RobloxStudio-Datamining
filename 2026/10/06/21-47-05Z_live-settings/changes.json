@@ -1,0 +1,56 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-76e1a02649ad4f35",
+    "manifestFiles": 18680,
+    "packages": 34,
+    "version": "0.741.19.7411056"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "0c077fc9b4d7ccf9d3102c97dd282ff5ce11aa1bacb47c6a8d5f32c84496efa0",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "79372cfe61793ecbe592d60ff9314a8594521af009c3b4e5b604a2701fefaca1",
+      "semantic": {
+        "added": [
+          "DFFlagCloseSoundOutputOnDestroy_Staged",
+          "FFlagSTUDIOPLAT44513EnablePreinitHandoff_Staged",
+          "FFlagSTUDIOPLAT44648RetryCorruptOTAPluginAsBuiltIn_Staged"
+        ],
+        "changed": [
+          {
+            "after": "49d86ba07ae3f2b0d36b855324e72e3d4c7c273c",
+            "before": "8b7f6d8567d05cccb3117be9e22e03585e007633",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-06T21:46:54.684Z",
+            "before": "2026-10-06T21:36:52.328Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "49d86ba07ae3f2b0d36b855324e72e3d4c7c273c",
+            "before": "8b7f6d8567d05cccb3117be9e22e03585e007633",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-06T21:46:54.684Z",
+            "before": "2026-10-06T21:36:52.328Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [],
+        "unchanged": 24782
+      }
+    }
+  },
+  "schemaVersion": 1
+}
