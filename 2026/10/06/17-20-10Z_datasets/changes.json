@@ -1,0 +1,90 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-76e1a02649ad4f35",
+    "manifestFiles": 18680,
+    "packages": 34,
+    "version": "0.741.19.7411056"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "5d9b8c3095ef0819ba6b67ce7f58f5b9b286690b57aa42d5c45d9b1176a6ad5c",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "15ea490f107c276945abbc110326c75656a182a3ac7efbf064189875027d24e4",
+      "semantic": {
+        "added": [
+          "DFFlagNativeFunctionProfilerTelemetry",
+          "FFlagACSDeserializeSkipRobloxSerializable_Staged",
+          "FFlagLuaAppAddHomeExtraTopPadding_Staged",
+          "FFlagProfileGamepadPrimaryActionFocus_Staged",
+          "FFlagProfileInspectAvatarCWEntry_v2_IXP"
+        ],
+        "changed": [
+          {
+            "after": "6ad782f1b9a628d8da416222b479782cdccfdc6a",
+            "before": "247bc59c6fe955e8454344bc6733ade0662920c3",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-06T17:19:00.069Z",
+            "before": "2026-10-06T16:49:27.062Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "True;9707042192;9671070925;8491889239;9164570436;9859999587;5824195619;9876947216;10004846655;9605987780;10036955953;10123702430;10241252491;10382950395;10390927281;10390930030;10390933265;10538358999;10538473450;7738776082;8005766508;10643104390;10631479676;10762769249;10765877033;10766493343;10766485671;4391533696;2564505263;10767763406;10768893031",
+            "before": "True;9707042192;9671070925;8491889239;9164570436;9859999587;5824195619;9876947216;10004846655;9605987780;10036955953;10123702430;10241252491;10382950395;10390927281;10390930030;10390933265;10538358999;10538473450;7738776082;8005766508;10643104390;10631479676;10762769249;10765877033;10766493343;10766485671;4391533696;2564505263;10767763406",
+            "name": "FFlagLuaAppIsClickoutEnabledUniverse_UniverseFilter"
+          },
+          {
+            "after": "6ad782f1b9a628d8da416222b479782cdccfdc6a",
+            "before": "247bc59c6fe955e8454344bc6733ade0662920c3",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-06T17:19:00.069Z",
+            "before": "2026-10-06T16:49:27.062Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagNativeFunctionProfilerTelemetry_Staged"
+        ],
+        "unchanged": 24733
+      }
+    },
+    "Web": {
+      "current": "7c468196c7716cd63d1fcadccc2170dc512aebc68d89afd477921f4d75c3a8aa",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-006.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-053.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.create.roblox.com/page-0/script-085.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 95
+      },
+      "previous": "a3e33584b7dd93549daccc9e9dc4a30837a18ad3314eb4415af65a47f513f6cb",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
