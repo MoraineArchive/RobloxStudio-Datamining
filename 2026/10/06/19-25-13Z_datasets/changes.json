@@ -1,0 +1,156 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-76e1a02649ad4f35",
+    "manifestFiles": 18680,
+    "packages": 34,
+    "version": "0.741.19.7411056"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "d9e6a2387bd9abd3c532232f80f398ba441aa96856b58ab0fbcd561d78cecd2c",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "054ff80a1d2c3de0bd76dad76a96dcc6a918536b5d84afffa5b60706d870fd12",
+      "semantic": {
+        "added": [
+          "DFFlagCLI226288_Staged",
+          "DFFlagCLI226305_Staged",
+          "DFFlagCSGPublishDedupSolidMesh_Staged",
+          "DFFlagCollisionSummaryCLI151929_Staged",
+          "DFFlagDataModelDrainDiagnostics2_Staged",
+          "DFFlagGcInParallelWithRenderPrepareTelemetry",
+          "DFFlagRbxTransportProfileIoEventLoopThreads",
+          "DFFlagRbxTransportQuicRccTokenRotation_Staged",
+          "DFFlagRbxTransportSentinelConnectionIdCheck",
+          "DFFlagVoiceChatFixCallEndTelemetry_Staged",
+          "FFlagACSDeserializeSkipRobloxSerializable",
+          "FFlagAddImpressionSourceInstanceAndLifecycleId_Staged",
+          "FFlagAnimatorFilterNonAnimatableDescendants_Staged",
+          "FFlagCollectionEngineSignalsEnabled",
+          "FFlagCollectionTopLevelAccessors",
+          "FFlagDMCTMetadataIncludeChannelAndRecordingType_Staged",
+          "FFlagDeviceSimulatorNetworkOffState_Staged",
+          "FFlagDeviceSimulatorToolbarNetworkSync2_Staged",
+          "FFlagExtendRobloxInputListener",
+          "FFlagFixCheckForRolloutsRespectFilters_Staged",
+          "FFlagFixGameDetailsDeepLinkHomeRootRoute_Staged",
+          "FFlagFoundationSystemEmphasisNonActions",
+          "FFlagGameDetailsHomeRootTelemetry_Staged",
+          "FFlagGrassGPUDensityCull",
+          "FFlagLuaAppAddHomeExtraTopPadding",
+          "FFlagLuauIfLocalBetaFeature",
+          "FFlagMegaClusterDisableAsyncAPIs_Staged",
+          "FFlagMomentsFeedSwipeSensitivityConfig_Staged",
+          "FFlagNativeFunctionProfilerIndependentInvocation",
+          "FFlagPlayerSearchEnableOnlineFrequentsForAll_Staged",
+          "FFlagProfileGamepadPrimaryActionFocus",
+          "FFlagSceneAnalysisMdiDataModelPicker_Staged",
+          "FFlagStratusEnableSetStatusBarVisibility",
+          "FFlagStratusKeyboardOnRemoteTextBox",
+          "FFlagStratusKeyboardOnRemoteTextBoxIOS",
+          "FFlagStratusUserSettingsSync",
+          "FFlagStratusWebViewForwarding",
+          "FFlagStudioControlsEmulatorWaitForDeviceEmulator_Staged",
+          "FFlagStyleTransitionLerpSequences_Staged",
+          "FFlagUseTM1ColorMapOnlyDecal",
+          "FFlagUseTM1PropsetSupportedTranscoderForDecal_Staged",
+          "FFlagUserPlayerScriptsTaskDeferSimulation_Staged",
+          "FFlagVRLaserPointerRaycastChange_Staged",
+          "FIntLuauIfLocalBetaFeatureRoleSet",
+          "FIntLuauIfLocalBetaFeatureRolloutPercent",
+          "FIntSentryErrorLevelQueueTimeLimitSeconds_Staged",
+          "FStringLuauIfLocalBetaFeatureUrl"
+        ],
+        "changed": [
+          {
+            "after": "True",
+            "before": "False",
+            "name": "DFFlagEnableTeamTestLuauExecution"
+          },
+          {
+            "after": "True",
+            "before": "False",
+            "name": "DFFlagMotor6DC0C1WriteTelemetry"
+          },
+          {
+            "after": "e2b209246641e89ddd015425cdb0c0f8b35cbf07",
+            "before": "26a07081f941dd3e097b3a55554dc96be97cc872",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-06T19:21:29.525Z",
+            "before": "2026-10-06T17:25:54.379Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "e2b209246641e89ddd015425cdb0c0f8b35cbf07",
+            "before": "26a07081f941dd3e097b3a55554dc96be97cc872",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-06T19:21:29.525Z",
+            "before": "2026-10-06T17:25:54.379Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagGcInParallelWithRenderPrepareTelemetry_Staged",
+          "FFlagACSDeserializeSkipRobloxSerializable_Staged",
+          "FFlagCollectionEngineSignalsEnabled_Staged",
+          "FFlagCollectionTopLevelAccessors_Staged",
+          "FFlagExtendRobloxInputListener_Staged",
+          "FFlagFoundationSystemEmphasisNonActions_Staged",
+          "FFlagGrassGPUDensityCull_Staged",
+          "FFlagLuaAppAddHomeExtraTopPadding_Staged",
+          "FFlagLuaAppCompositionSearch_IXP",
+          "FFlagLuauIfLocalBetaFeature_Staged",
+          "FFlagNativeFunctionProfilerIndependentInvocation_Staged",
+          "FFlagProfileGamepadPrimaryActionFocus_Staged",
+          "FFlagStratusEnableSetStatusBarVisibility_Staged",
+          "FFlagStratusKeyboardOnRemoteTextBoxIOS_Staged",
+          "FFlagStratusKeyboardOnRemoteTextBox_Staged",
+          "FFlagStratusUserSettingsSync_Staged",
+          "FFlagStratusWebViewForwarding_Staged",
+          "FFlagUseTM1ColorMapOnlyDecal_Staged",
+          "FIntLuauIfLocalBetaFeatureRoleSet_Staged",
+          "FIntLuauIfLocalBetaFeatureRolloutPercent_Staged"
+        ],
+        "unchanged": 24718
+      }
+    },
+    "Web": {
+      "current": "f0f17fcb006530aa0555ec13b620367eec55938945b1847d11459048fbdb87d4",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-006.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-053.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.create.roblox.com/page-0/script-085.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 95
+      },
+      "previous": "7c468196c7716cd63d1fcadccc2170dc512aebc68d89afd477921f4d75c3a8aa",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
