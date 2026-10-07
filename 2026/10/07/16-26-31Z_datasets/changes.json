@@ -1,0 +1,99 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-76e1a02649ad4f35",
+    "manifestFiles": 18680,
+    "packages": 34,
+    "version": "0.741.19.7411056"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "f05f8fce2618f6d3cddeb9b8de9a2ca4f68df2be1c773ac6abee4c45fc23e02d",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "6fb1dd8d151315bd9134e32862e26e1381e384d1386cab093b484256de1092e8",
+      "semantic": {
+        "added": [
+          "FFlagExpChatDisableNameTapActionInGlobalChat_Staged",
+          "FFlagLuauDisallowRedefiningBuiltinTypes_Staged",
+          "FFlagVoiceConnectSelectorDebounce_Staged"
+        ],
+        "changed": [
+          {
+            "after": "d0f4752d7ec0a753fedd80ea5e17d0ccf0cc40e7",
+            "before": "88ed6130e430fce7a893ca3b2bea8c6e2d33a7ce",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-07T16:25:52.191Z",
+            "before": "2026-10-07T07:02:33.682Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "1;Ads.UI;Ads.HomeAds.MaxReachNxMFlagOnly.V2-WithTelemetryVariants;799635606;flagbank",
+            "before": "1;Ads.UI2;Ads.HomeAds.MaxReachNxMFlagOnly.V5;799635606;flagbank",
+            "name": "FFlagLuaAppEnableNxMRoduxApportioning_IXP"
+          },
+          {
+            "after": "d0f4752d7ec0a753fedd80ea5e17d0ccf0cc40e7",
+            "before": "88ed6130e430fce7a893ca3b2bea8c6e2d33a7ce",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-07T16:25:52.191Z",
+            "before": "2026-10-07T07:02:33.682Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [],
+        "unchanged": 24793
+      }
+    },
+    "Web": {
+      "current": "f9c676e7b5090a19aba921cbb3c88309882bc373ae4e1af2075744f3318fbaa6",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-003.js",
+          "assets.create.roblox.com/page-0/script-006.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-042.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-045.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-047.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-052.js",
+          "assets.create.roblox.com/page-0/script-053.js",
+          "assets.create.roblox.com/page-0/script-068.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-077.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.create.roblox.com/page-0/script-085.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 82
+      },
+      "previous": "3fe2a76adaceb290b9c21f350fcb7dae74901deea66b021877981e40fa3d7ddc",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
