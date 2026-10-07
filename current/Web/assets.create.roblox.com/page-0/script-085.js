@@ -1,843 +1,843 @@
 self.__BUILD_MANIFEST = {
   "/": [
-    "static/chunks/0tk5a1nkwmvq8.js"
+    "static/chunks/2tsqa_9at_2gt.js"
   ],
   "/404": [
-    "static/chunks/2wj7e4jnz258_.js"
+    "static/chunks/0b08iws_v9_mm.js"
   ],
   "/500": [
-    "static/chunks/27eris0lw6lx5.js"
+    "static/chunks/3s5_092-zuuo0.js"
   ],
   "/_error": [
-    "static/chunks/2x24wazoqk3f8.js"
+    "static/chunks/3fyoq5ha0am6q.js"
   ],
   "/build": [
-    "static/chunks/3kkclua86bol0.js"
+    "static/chunks/442i-8rgqpez8.js"
   ],
   "/creator": [
-    "static/chunks/3lylo2ga4i9gv.js"
+    "static/chunks/2_zss_brre_po.js"
   ],
   "/dashboard/account-information": [
-    "static/chunks/25knyxsaibf4p.js"
+    "static/chunks/1y524-mgnws_p.js"
   ],
   "/dashboard/analytics": [
-    "static/chunks/3lhmi6ql2r5c2.js"
+    "static/chunks/0wbffx37a80ql.js"
   ],
   "/dashboard/analytics/ip-earnings": [
-    "static/chunks/00rireyehgbug.js"
+    "static/chunks/33jmb37wz614v.js"
   ],
   "/dashboard/analytics/studio-configs": [
-    "static/chunks/39-at4zbii714.js"
+    "static/chunks/1vlm8_757s2yw.js"
   ],
   "/dashboard/billing": [
-    "static/chunks/44e-pty5p23ya.js"
+    "static/chunks/2_2scqvdn46ul.js"
   ],
   "/dashboard/creations": [
-    "static/chunks/02ghcoomat-s_.js"
+    "static/chunks/0xuzysrlwej3p.js"
   ],
   "/dashboard/creations/bundle/[id]/analytics": [
-    "static/chunks/1lmftqnnrc_si.js"
+    "static/chunks/2cex_da5sh1_d.js"
   ],
   "/dashboard/creations/bundle/[id]/configure": [
-    "static/chunks/3nu6eqxj3_95p.js"
+    "static/chunks/1phk99j9c4vs2.js"
   ],
   "/dashboard/creations/bundle/[id]/publish": [
-    "static/chunks/1wbey5k46g_qt.js"
+    "static/chunks/3nu6m0snm7q4h.js"
   ],
   "/dashboard/creations/bundle/[id]/variants": [
-    "static/chunks/1wiazc5-4ha1f.js"
+    "static/chunks/1ahmhk9j7o-1_.js"
   ],
   "/dashboard/creations/catalog/[id]/analytics": [
-    "static/chunks/0o_ln8_u3yyrt.js"
+    "static/chunks/1p3vs1qwp4zrc.js"
   ],
   "/dashboard/creations/catalog/[id]/configure": [
-    "static/chunks/24eootml1x7vf.js"
+    "static/chunks/0706mjsa1pp0g.js"
   ],
   "/dashboard/creations/catalog/[id]/publish": [
-    "static/chunks/3ya_quej3k3sk.js"
+    "static/chunks/1i_h83mfga2na.js"
   ],
   "/dashboard/creations/catalog/[id]/variants": [
-    "static/chunks/0pv664ty5-19b.js"
+    "static/chunks/07wy9dcf_p96-.js"
   ],
   "/dashboard/creations/experiences/[id]/access": [
-    "static/chunks/07g5ey1qmdotz.js"
+    "static/chunks/3gx3pjiro9ioi.js"
   ],
   "/dashboard/creations/experiences/[id]/activity-history": [
-    "static/chunks/0uq-w30zyzs0p.js"
+    "static/chunks/0_a116kfy5ya6.js"
   ],
   "/dashboard/creations/experiences/[id]/advanced-settings": [
-    "static/chunks/2le9etmr2a3kd.js"
+    "static/chunks/2uokpcvv82gfv.js"
   ],
   "/dashboard/creations/experiences/[id]/alerts": [
-    "static/chunks/0yw_dzyaoibt5.js"
+    "static/chunks/30prog8hblg5c.js"
   ],
   "/dashboard/creations/experiences/[id]/alerts/[alertId]/configure": [
-    "static/chunks/1bd25hntnncth.js"
+    "static/chunks/41xr5zpc0qd0i.js"
   ],
   "/dashboard/creations/experiences/[id]/alerts/create": [
-    "static/chunks/1dfanpuwendw5.js"
+    "static/chunks/0bwd9wz-0h7p9.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics": [
-    "static/chunks/2fs5ky_-1v9dm.js"
+    "static/chunks/14loh5c7a036q.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/acquisition": [
-    "static/chunks/2vp74lj_yfbdp.js"
+    "static/chunks/18t6oyslfqoci.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/agent": [
-    "static/chunks/0-pb4j4zrzv2m.js"
+    "static/chunks/1b0sjklb8iae7.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/ai-chat": [
-    "static/chunks/33-ex9hn8jbax.js"
+    "static/chunks/3s11a-8z5-mbt.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/assistant": [
-    "static/chunks/2bh2qro5g38wz.js"
+    "static/chunks/1_pt0_n--5vse.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/audience": [
-    "static/chunks/1n69ztmexg-6s.js"
+    "static/chunks/3xg2tl1bj25pz.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/crashes": [
-    "static/chunks/1_ovcj_8av21k.js"
+    "static/chunks/0fo100siuiho8.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/dashboards": [
-    "static/chunks/0n_rnplklbula.js"
+    "static/chunks/114vif9zq-5h1.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/dashboards/[dashboardId]": [
-    "static/chunks/1r2nuh1s2vsaj.js"
+    "static/chunks/3oav2d0sbocds.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/dashboards/[dashboardId]/edit": [
-    "static/chunks/1ne1iekc25tmy.js"
+    "static/chunks/2t3m3e3_0pl-h.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/dashboards/[dashboardId]/preview": [
-    "static/chunks/2xo3_s8tlthrh.js"
+    "static/chunks/2mjzvjlgjftdk.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/dashboards/[dashboardId]/tile/[tileId]/edit": [
-    "static/chunks/1ewy3m_ccc3jx.js"
+    "static/chunks/0tjsc77cin5ro.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/data-stores": [
-    "static/chunks/458h3uq08p6p_.js"
+    "static/chunks/0dqa2gtfr8mcy.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/economy": [
-    "static/chunks/1tmwdv1d9psck.js"
+    "static/chunks/24tf1_avmtnvz.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/engagement": [
-    "static/chunks/36ui1k469vv7w.js"
+    "static/chunks/2qq4mq53rqvpk.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/errors": [
-    "static/chunks/1kum679701bzu.js"
+    "static/chunks/0ej1n8uolnmj8.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/experience-subscriptions": [
-    "static/chunks/0e9ixnsgfxl1h.js"
+    "static/chunks/0x7oc-vk6u7rs.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/explore": [
-    "static/chunks/3zgj7jtyk5_p5.js"
+    "static/chunks/1x1un2qu3zjr1.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/funnels": [
-    "static/chunks/40p5k_jbcdh54.js"
+    "static/chunks/17fa8lp0bxc25.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/generative-ai": [
-    "static/chunks/1zc4yqv1660ag.js"
+    "static/chunks/1twxzr8w7aq63.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/http-service": [
-    "static/chunks/2jhm08u2ou016.js"
+    "static/chunks/3u-jw_5rujhgm.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/immersive-ads": [
-    "static/chunks/16_nvaqaaygjv.js"
+    "static/chunks/1mrzncu-rvrm5.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/journeys": [
-    "static/chunks/1qw71qgrtxb89.js"
+    "static/chunks/3ejhrd-35a0xu.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/journeys/create": [
-    "static/chunks/1dg9lvt6d3kiz.js"
+    "static/chunks/1pkou__strw9i.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/journeys/edit": [
-    "static/chunks/1ut_qsdy-gmh3.js"
+    "static/chunks/2vyaxo56ne-t2.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/journeys/view": [
-    "static/chunks/2ws-kk2ahtjgg.js"
+    "static/chunks/00893uxlvn0k8.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/memory-stores": [
-    "static/chunks/25ybc04_ug_38.js"
+    "static/chunks/2tv853r7i9uq1.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/messaging-service": [
-    "static/chunks/0fsiogo7c61dq.js"
+    "static/chunks/0o9gke8u6o2iz.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/monetization": [
-    "static/chunks/1tivjd9l9es7v.js"
+    "static/chunks/1qcelp4pt3ota.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/performance": [
-    "static/chunks/0ngnew-ht_mz5.js"
+    "static/chunks/3_uqsbrkcq3_o.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/retention": [
-    "static/chunks/3b_xdhp6wa_x-.js"
+    "static/chunks/3vv842sldwg4i.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/select-eligibility": [
-    "static/chunks/21zdanm543-_j.js"
+    "static/chunks/2p--bl6sdjzz6.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/speech-to-text": [
-    "static/chunks/0dswwt40q12xo.js"
+    "static/chunks/2gwiagrv_8_r0.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/text-to-speech": [
-    "static/chunks/34lck4u9nm6cu.js"
+    "static/chunks/0ltuj0a_jn-mj.js"
   ],
   "/dashboard/creations/experiences/[id]/analytics/video-service": [
-    "static/chunks/1se2c0cx1urir.js"
+    "static/chunks/14uihe3gq7_0l.js"
   ],
   "/dashboard/creations/experiences/[id]/associated-items": [
-    "static/chunks/1lf59mzg9--7f.js"
+    "static/chunks/21pf2ogy0ei-y.js"
   ],
   "/dashboard/creations/experiences/[id]/audience-reach": [
-    "static/chunks/1_tyd-mb4bdjo.js"
+    "static/chunks/41e3x3uwq2s-y.js"
   ],
   "/dashboard/creations/experiences/[id]/avatar-creation-tokens/[tokenId]/configure": [
-    "static/chunks/1jjavd3p-urzv.js"
+    "static/chunks/399csfj5bjaha.js"
   ],
   "/dashboard/creations/experiences/[id]/avatar-creation-tokens/create": [
-    "static/chunks/2zilq_rc2xuv0.js"
+    "static/chunks/26mgubidvlnf4.js"
   ],
   "/dashboard/creations/experiences/[id]/badges/[badgeId]/configure": [
-    "static/chunks/16x-xm955ldv8.js"
+    "static/chunks/1u1nd3q_q6t51.js"
   ],
   "/dashboard/creations/experiences/[id]/badges/[badgeId]/overview": [
-    "static/chunks/39yvgiycdq15y.js"
+    "static/chunks/0o9_bb2iyj321.js"
   ],
   "/dashboard/creations/experiences/[id]/badges/create": [
-    "static/chunks/1re4-4gdru74z.js"
+    "static/chunks/3hzba3_8ab5dh.js"
   ],
   "/dashboard/creations/experiences/[id]/badges/reorder": [
-    "static/chunks/0h5wsrujowiav.js"
+    "static/chunks/20se8ciat_0i4.js"
   ],
   "/dashboard/creations/experiences/[id]/chat": [
-    "static/chunks/0-f24g1vkyah5.js"
+    "static/chunks/10b72skhij77v.js"
   ],
   "/dashboard/creations/experiences/[id]/collaborators": [
-    "static/chunks/0sjb39s63mgul.js"
+    "static/chunks/324djtd8yjw5q.js"
   ],
   "/dashboard/creations/experiences/[id]/communication-settings": [
-    "static/chunks/333fuxxo4-ody.js"
+    "static/chunks/2lgj-8qi0zjuo.js"
   ],
   "/dashboard/creations/experiences/[id]/configs": [
-    "static/chunks/2ij5_vh4oqrh-.js"
+    "static/chunks/1mpy477fiozfx.js"
   ],
   "/dashboard/creations/experiences/[id]/configs/config-create": [
-    "static/chunks/0g93tz2bs5esn.js"
+    "static/chunks/36ap8prbwqt87.js"
   ],
   "/dashboard/creations/experiences/[id]/configs/history": [
-    "static/chunks/0nxldhvzmmhtl.js"
+    "static/chunks/0c140f31xh51-.js"
   ],
   "/dashboard/creations/experiences/[id]/configs/studio": [
-    "static/chunks/3rhk3c-zb-spe.js"
+    "static/chunks/1r8khiwya_gbl.js"
   ],
   "/dashboard/creations/experiences/[id]/configure": [
-    "static/chunks/2eud6v9exxixn.js"
+    "static/chunks/2486oq-619h-v.js"
   ],
   "/dashboard/creations/experiences/[id]/content-rating": [
-    "static/chunks/2gf3c1b7gg92_.js"
+    "static/chunks/280ly27a1tcpk.js"
   ],
   "/dashboard/creations/experiences/[id]/created-places": [
-    "static/chunks/087g3iy1jhn_8.js"
+    "static/chunks/04pj5bsehhde5.js"
   ],
   "/dashboard/creations/experiences/[id]/developer-products/[productId]/configure": [
-    "static/chunks/0pse3p70ocus0.js"
+    "static/chunks/0dtff36m9hufk.js"
   ],
   "/dashboard/creations/experiences/[id]/developer-products/create": [
-    "static/chunks/3tb9qyjpthllo.js"
+    "static/chunks/1jga1kardzhxl.js"
   ],
   "/dashboard/creations/experiences/[id]/environments": [
-    "static/chunks/25ydezvf8ra7w.js"
+    "static/chunks/1v7_k2jslb8mg.js"
   ],
   "/dashboard/creations/experiences/[id]/environments/[environmentId]/configure": [
-    "static/chunks/0_rgx4o4hujow.js"
+    "static/chunks/1y61d_gfyp8_7.js"
   ],
   "/dashboard/creations/experiences/[id]/environments/new_environment": [
-    "static/chunks/0l9yuq4-28rg2.js"
+    "static/chunks/0qyznown9l36o.js"
   ],
   "/dashboard/creations/experiences/[id]/events": [
-    "static/chunks/2bd00a4tr9vv3.js"
+    "static/chunks/0gtyqpd6xo8bd.js"
   ],
   "/dashboard/creations/experiences/[id]/events/[eventId]/configure": [
-    "static/chunks/0el-rcbntpyzk.js"
+    "static/chunks/0ntd-ui3-6uap.js"
   ],
   "/dashboard/creations/experiences/[id]/events/create": [
-    "static/chunks/1ik04e993vxck.js"
+    "static/chunks/1augpsgm9u5oh.js"
   ],
   "/dashboard/creations/experiences/[id]/experience-questionnaire": [
-    "static/chunks/2hsze-ozzves2.js"
+    "static/chunks/0k5u6rir132qh.js"
   ],
   "/dashboard/creations/experiences/[id]/experience-subscriptions/[subscriptionId]/configure": [
-    "static/chunks/07ys2czp-2nnm.js"
+    "static/chunks/0zmb9a2-51nml.js"
   ],
   "/dashboard/creations/experiences/[id]/experience-subscriptions/create": [
-    "static/chunks/2bs3t4_ncmmkg.js"
+    "static/chunks/3iv8yv5ztxvov.js"
   ],
   "/dashboard/creations/experiences/[id]/experiments": [
-    "static/chunks/1wx20gtw8r9ml.js"
+    "static/chunks/0680rzk_ot0lb.js"
   ],
   "/dashboard/creations/experiences/[id]/experiments/[experimentId]/experiment-details": [
-    "static/chunks/151ozdhrlm2b5.js"
+    "static/chunks/3756betj3tfe1.js"
   ],
   "/dashboard/creations/experiences/[id]/experiments/experiment-create": [
-    "static/chunks/3kfyp2__tr-w7.js"
+    "static/chunks/02iec0v-sj-52.js"
   ],
   "/dashboard/creations/experiences/[id]/extended-services": [
-    "static/chunks/0ofe6buq-rtpo.js"
+    "static/chunks/2yh_e6-mlhilw.js"
   ],
   "/dashboard/creations/experiences/[id]/feedback": [
-    "static/chunks/32qecxpx_-q0a.js"
+    "static/chunks/1kdz3dspz01m8.js"
   ],
   "/dashboard/creations/experiences/[id]/game-details": [
-    "static/chunks/3jvagwt6ojkzk.js"
+    "static/chunks/1xqsbtf7d5eiz.js"
   ],
   "/dashboard/creations/experiences/[id]/game-join": [
-    "static/chunks/0rt6bb-ef4ybt.js"
+    "static/chunks/1v95fudr4rhjp.js"
   ],
   "/dashboard/creations/experiences/[id]/leaderboard": [
-    "static/chunks/44f2zr8twro1u.js"
+    "static/chunks/3v0_bt3nun81p.js"
   ],
   "/dashboard/creations/experiences/[id]/localization": [
-    "static/chunks/3z-0dmkm5kzze.js"
+    "static/chunks/2432xvl9b9sjv.js"
   ],
   "/dashboard/creations/experiences/[id]/localization/contribution-report": [
-    "static/chunks/3vefypp6_e37v.js"
+    "static/chunks/35j-4gdg0ypf2.js"
   ],
   "/dashboard/creations/experiences/[id]/localization/translation": [
-    "static/chunks/2wi3ld7cuwyrh.js"
+    "static/chunks/45byrl-ajl69c.js"
   ],
   "/dashboard/creations/experiences/[id]/manage-audience": [
-    "static/chunks/2b4e1totmu_9o.js"
+    "static/chunks/2ezh8nfcqg4oi.js"
   ],
   "/dashboard/creations/experiences/[id]/matchmaking": [
-    "static/chunks/19y1nkrbbvxge.js"
+    "static/chunks/2wbiqk8qe9fho.js"
   ],
   "/dashboard/creations/experiences/[id]/matchmaking/create-attribute": [
-    "static/chunks/3su9q4ec888pe.js"
+    "static/chunks/210miglvknzit.js"
   ],
   "/dashboard/creations/experiences/[id]/matchmaking/create-configuration/[configurationId]": [
-    "static/chunks/2z_fulp541e88.js"
+    "static/chunks/06u8vfk_2vrzb.js"
   ],
   "/dashboard/creations/experiences/[id]/matchmaking/edit-configuration/[configurationId]": [
-    "static/chunks/193hg_66-li-e.js"
+    "static/chunks/130cdnsc6zd5f.js"
   ],
   "/dashboard/creations/experiences/[id]/matchmaking/edit-player-attribute/[attributeId]": [
-    "static/chunks/0vlkjq2eo3s7v.js"
+    "static/chunks/333pm-dgi1io7.js"
   ],
   "/dashboard/creations/experiences/[id]/matchmaking/edit-server-attribute/[attributeId]": [
-    "static/chunks/1btbes_2bq8dz.js"
+    "static/chunks/3skl4h-vj6xh9.js"
   ],
   "/dashboard/creations/experiences/[id]/monetization/avatar-creation-tokens": [
-    "static/chunks/26f2t8vrp1h3k.js"
+    "static/chunks/2dilbihtbmxlg.js"
   ],
   "/dashboard/creations/experiences/[id]/monetization/avatar-items": [
-    "static/chunks/3rjarqa3jufu5.js"
+    "static/chunks/2upzdan47uuw2.js"
   ],
   "/dashboard/creations/experiences/[id]/monetization/commerce": [
-    "static/chunks/38__cy0ivklzz.js"
+    "static/chunks/1qdmnl--xf1bw.js"
   ],
   "/dashboard/creations/experiences/[id]/monetization/commerce/create-products": [
-    "static/chunks/1t-szilgk3mi0.js"
+    "static/chunks/191mt6y9kyr1k.js"
   ],
   "/dashboard/creations/experiences/[id]/monetization/commerce/draft-products": [
-    "static/chunks/0by1v1_gpjx1h.js"
+    "static/chunks/1_-5bk4h5sz0c.js"
   ],
   "/dashboard/creations/experiences/[id]/monetization/creator-rewards": [
-    "static/chunks/0cxmr5z7kysqk.js"
+    "static/chunks/31bb9k99gctt8.js"
   ],
   "/dashboard/creations/experiences/[id]/monetization/developer-products": [
-    "static/chunks/2dlqefqdwmn4n.js"
+    "static/chunks/2sosq__iggi07.js"
   ],
   "/dashboard/creations/experiences/[id]/monetization/developer-products/external-purchase-settings": [
-    "static/chunks/0aqp_dkhtsi17.js"
+    "static/chunks/0qunxkm0hu_8r.js"
   ],
   "/dashboard/creations/experiences/[id]/monetization/hard-coded-prices": [
-    "static/chunks/37ul_iadxk_5s.js"
+    "static/chunks/3zyyyvvpngbho.js"
   ],
   "/dashboard/creations/experiences/[id]/monetization/immersive-ads": [
-    "static/chunks/3azkbcqvugphu.js"
+    "static/chunks/1w-ekdyz3prl9.js"
   ],
   "/dashboard/creations/experiences/[id]/monetization/immersive-ads/create-placement": [
-    "static/chunks/3g370mk9ane84.js"
+    "static/chunks/0plsj-81-12v7.js"
   ],
   "/dashboard/creations/experiences/[id]/monetization/managed-pricing": [
-    "static/chunks/3uwgv36a7kdd0.js"
+    "static/chunks/2pqc22qdqmqtq.js"
   ],
   "/dashboard/creations/experiences/[id]/monetization/managed-pricing/events/[eventId]/details": [
-    "static/chunks/12dduhdqg2uig.js"
+    "static/chunks/0ocv8u45m0h97.js"
   ],
   "/dashboard/creations/experiences/[id]/monetization/overview": [
-    "static/chunks/13mtezxyynqam.js"
+    "static/chunks/32iiho45r62z8.js"
   ],
   "/dashboard/creations/experiences/[id]/monetization/passes": [
-    "static/chunks/25h6jho0tpx6s.js"
+    "static/chunks/0uophdc-qhguf.js"
   ],
   "/dashboard/creations/experiences/[id]/monetization/price-check": [
-    "static/chunks/2l28oo-dfgmis.js"
+    "static/chunks/0gylw8uifgw1t.js"
   ],
   "/dashboard/creations/experiences/[id]/monetization/price-optimization": [
-    "static/chunks/2zohcphpev04i.js"
+    "static/chunks/393xgxkxfxgjk.js"
   ],
   "/dashboard/creations/experiences/[id]/monetization/price-optimization/price-check": [
-    "static/chunks/16f4fuoib_o3d.js"
+    "static/chunks/43b0ndehmy7vx.js"
   ],
   "/dashboard/creations/experiences/[id]/monetization/roblox-plus": [
-    "static/chunks/39m9ct2a309r1.js"
+    "static/chunks/07ame-wu_rxrn.js"
   ],
   "/dashboard/creations/experiences/[id]/monetization/shop": [
-    "static/chunks/0ui1olum5kmgp.js"
+    "static/chunks/1h9lz7em6msbi.js"
   ],
   "/dashboard/creations/experiences/[id]/monetization/shop/developer-product-purchases-blocked": [
-    "static/chunks/1vn52nc7jlsmo.js"
+    "static/chunks/1-4c8k-xf54kn.js"
   ],
   "/dashboard/creations/experiences/[id]/monetization/subscriptions": [
-    "static/chunks/0gn7sjeoqw1hd.js"
+    "static/chunks/3p_sfesdb6qnp.js"
   ],
   "/dashboard/creations/experiences/[id]/notifications": [
-    "static/chunks/3b5u4sb5qehk_.js"
+    "static/chunks/3jqrxs3jt4mq1.js"
   ],
   "/dashboard/creations/experiences/[id]/notifications/content/[contentId]/update": [
-    "static/chunks/0qd6m_h39b43f.js"
+    "static/chunks/12346_pxf56zp.js"
   ],
   "/dashboard/creations/experiences/[id]/notifications/content/create": [
-    "static/chunks/1hwt4ly34txsk.js"
+    "static/chunks/3umve9vl3vs-1.js"
   ],
   "/dashboard/creations/experiences/[id]/observability/client-sessions": [
-    "static/chunks/3bsa1g_pk_i76.js"
+    "static/chunks/15kznteg6zsel.js"
   ],
   "/dashboard/creations/experiences/[id]/observability/client-sessions/[sessionId]": [
-    "static/chunks/22my8yve7rrqf.js"
+    "static/chunks/0stuil34j59xf.js"
   ],
   "/dashboard/creations/experiences/[id]/overview": [
-    "static/chunks/0k3qm7wtzxs0z.js"
+    "static/chunks/0zhkr5c-xps4y.js"
   ],
   "/dashboard/creations/experiences/[id]/passes/[passId]/configure": [
-    "static/chunks/1vfmn6nn5aj9s.js"
+    "static/chunks/21k4jht5-tbte.js"
   ],
   "/dashboard/creations/experiences/[id]/passes/[passId]/promotions": [
-    "static/chunks/1k1dk6jc-wk72.js"
+    "static/chunks/331pq21ejrmri.js"
   ],
   "/dashboard/creations/experiences/[id]/passes/[passId]/sales": [
-    "static/chunks/1y9a09z4iqctd.js"
+    "static/chunks/04xb3nyq-b8ah.js"
   ],
   "/dashboard/creations/experiences/[id]/passes/create": [
-    "static/chunks/0q6_2pug3wvvx.js"
+    "static/chunks/3v6yksaep4oij.js"
   ],
   "/dashboard/creations/experiences/[id]/permissions": [
-    "static/chunks/01970obe3j9rw.js"
+    "static/chunks/44g639jzf0n3d.js"
   ],
   "/dashboard/creations/experiences/[id]/places": [
-    "static/chunks/0rucb1b7a924z.js"
+    "static/chunks/43zjibye3t5nu.js"
   ],
   "/dashboard/creations/experiences/[id]/places/[placeId]/access": [
-    "static/chunks/1yhanhay1u-sm.js"
+    "static/chunks/0qos1zmo9e33k.js"
   ],
   "/dashboard/creations/experiences/[id]/places/[placeId]/configure": [
-    "static/chunks/37rho718vi3fh.js"
+    "static/chunks/2drz7kyvryrj_.js"
   ],
   "/dashboard/creations/experiences/[id]/places/[placeId]/icon": [
-    "static/chunks/31xfnc615atlh.js"
+    "static/chunks/2vcx8v4hpkirh.js"
   ],
   "/dashboard/creations/experiences/[id]/places/[placeId]/permissions": [
-    "static/chunks/0-o0dpivau_vx.js"
+    "static/chunks/2hh3a3sx54ylc.js"
   ],
   "/dashboard/creations/experiences/[id]/places/[placeId]/thumbnails": [
-    "static/chunks/0x5d1k5kig5st.js"
+    "static/chunks/1njskpd2osljm.js"
   ],
   "/dashboard/creations/experiences/[id]/places/[placeId]/version-history": [
-    "static/chunks/0t7ij8u0tb1ya.js"
+    "static/chunks/229-bixrvsf9k.js"
   ],
   "/dashboard/creations/experiences/[id]/places/[placeId]/videos": [
-    "static/chunks/1fu94ni3wrib_.js"
+    "static/chunks/0hn4utn7e34t-.js"
   ],
   "/dashboard/creations/experiences/[id]/places/manage": [
-    "static/chunks/3tlirhoj9rdph.js"
+    "static/chunks/36uy1e4m_115o.js"
   ],
   "/dashboard/creations/experiences/[id]/player-support": [
-    "static/chunks/1yg4j2m26h1ha.js"
+    "static/chunks/0nkezvenlaov9.js"
   ],
   "/dashboard/creations/experiences/[id]/player-support/[ticketId]": [
-    "static/chunks/0qbmqgjl7h8ei.js"
+    "static/chunks/1m8h9xu_qhevz.js"
   ],
   "/dashboard/creations/experiences/[id]/publishing": [
-    "static/chunks/1lgq1m3wgd-qz.js"
+    "static/chunks/25kuan8-p-v0b.js"
   ],
   "/dashboard/creations/experiences/[id]/recommendation-service": [
-    "static/chunks/1noapk0cpt-l0.js"
+    "static/chunks/37q10p1wq8v7b.js"
   ],
   "/dashboard/creations/experiences/[id]/recommendation-service/configs": [
-    "static/chunks/1oke68f7os93i.js"
+    "static/chunks/3e__s1rarh8bq.js"
   ],
   "/dashboard/creations/experiences/[id]/recommendation-service/create": [
-    "static/chunks/38nqcd19gvuab.js"
+    "static/chunks/2oedm_f3dwalc.js"
   ],
   "/dashboard/creations/experiences/[id]/recommendation-service/edit": [
-    "static/chunks/3o2e-3smasjpq.js"
+    "static/chunks/1_s138-7-ujm9.js"
   ],
   "/dashboard/creations/experiences/[id]/referral-reward-details": [
-    "static/chunks/2fugs62hnv1yl.js"
+    "static/chunks/0m612odlnytit.js"
   ],
   "/dashboard/creations/experiences/[id]/referral-reward-details/create": [
-    "static/chunks/134ooo7imxxig.js"
+    "static/chunks/14ewb1z33z_io.js"
   ],
   "/dashboard/creations/experiences/[id]/safety/anti-cheat": [
-    "static/chunks/1mmehnom8-hht.js"
+    "static/chunks/0ev4diawe7sbi.js"
   ],
   "/dashboard/creations/experiences/[id]/safety/bans": [
-    "static/chunks/3_tsvwipn62f_.js"
+    "static/chunks/1ebzdiksvid3-.js"
   ],
   "/dashboard/creations/experiences/[id]/safety/bans/add": [
-    "static/chunks/1quf587jzkbj0.js"
+    "static/chunks/3o26mcp30qzi4.js"
   ],
   "/dashboard/creations/experiences/[id]/safety/collaborators": [
-    "static/chunks/03i5s-af1pvgr.js"
+    "static/chunks/3ihwmfp7ccbb9.js"
   ],
   "/dashboard/creations/experiences/[id]/safety/overview": [
-    "static/chunks/1qgmmxy0v96ev.js"
+    "static/chunks/1vcetywmqj8o9.js"
   ],
   "/dashboard/creations/experiences/[id]/secrets": [
-    "static/chunks/372njogcuaooc.js"
+    "static/chunks/13-su3dbmpc0h.js"
   ],
   "/dashboard/creations/experiences/[id]/server-management": [
-    "static/chunks/42j0n3llj5kbq.js"
+    "static/chunks/0b1z0stks8w2m.js"
   ],
   "/dashboard/creations/experiences/[id]/server-management/[placeId]/servers": [
-    "static/chunks/0ls6o_6oi2svp.js"
+    "static/chunks/34lzixz6-ph_3.js"
   ],
   "/dashboard/creations/experiences/[id]/server-management/[placeId]/servers/[jobId]/details": [
-    "static/chunks/2d9gqooymhbbs.js"
+    "static/chunks/11sarugoveh5-.js"
   ],
   "/dashboard/creations/experiences/[id]/social-links": [
-    "static/chunks/10hx72-15vkgo.js"
+    "static/chunks/3j69oc5vpu9s0.js"
   ],
   "/dashboard/creations/experiences/[id]/stats": [
-    "static/chunks/42opxnup5a81n.js"
+    "static/chunks/2ax1seqmfdsk7.js"
   ],
   "/dashboard/creations/experiences/[id]/updates": [
-    "static/chunks/2p-y_hpt9vl2v.js"
+    "static/chunks/15uzwzv17cbub.js"
   ],
   "/dashboard/creations/experiences/[id]/webhooks": [
-    "static/chunks/0luvjzwsmqf0c.js"
+    "static/chunks/2kwxo5y7hb2ge.js"
   ],
   "/dashboard/creations/look/[id]/configure": [
-    "static/chunks/1dg-upqs2gdma.js"
+    "static/chunks/27ed0k675m5qd.js"
   ],
   "/dashboard/creations/pricing": [
-    "static/chunks/1wa7hlpo-tkgi.js"
+    "static/chunks/2gj0q67_t-jxg.js"
   ],
   "/dashboard/creations/showcases/[id]/manage": [
-    "static/chunks/2_ho6hr_1pjl7.js"
+    "static/chunks/2fpttc74al5zu.js"
   ],
   "/dashboard/creations/showcases/create": [
-    "static/chunks/213tsom10xvjb.js"
+    "static/chunks/1_788rtu-bt13.js"
   ],
   "/dashboard/creations/store/[id]/configure": [
-    "static/chunks/2_-mcoq-6drq6.js"
+    "static/chunks/0tpnlfjvqd3n2.js"
   ],
   "/dashboard/creations/store/[id]/dependencies": [
-    "static/chunks/0_eqv0l9_ab91.js"
+    "static/chunks/12fjute7ho2tw.js"
   ],
   "/dashboard/creations/store/[id]/permissions": [
-    "static/chunks/36a4rt42r_81j.js"
+    "static/chunks/2vyzvhytkdbl4.js"
   ],
   "/dashboard/creations/store/[id]/version-history": [
-    "static/chunks/21i-61c2yzymd.js"
+    "static/chunks/1cby0y05lk--x.js"
   ],
   "/dashboard/creations/upload": [
-    "static/chunks/384phf0ldhsqh.js"
+    "static/chunks/2z6l9c50fqd5l.js"
   ],
   "/dashboard/credentials": [
-    "static/chunks/01e33g4uuuteu.js"
+    "static/chunks/2b9q2djl6993o.js"
   ],
   "/dashboard/devex": [
-    "static/chunks/0owxsoumyb458.js"
+    "static/chunks/113mo35ft362h.js"
   ],
   "/dashboard/devex/cashout": [
-    "static/chunks/3opuo5kygnfd_.js"
+    "static/chunks/3i6b3oq8bazlb.js"
   ],
   "/dashboard/devex/taxes": [
-    "static/chunks/0j02ycb4aeze8.js"
+    "static/chunks/0c_6py48cp_dw.js"
   ],
   "/dashboard/devex/taxes/taxsubmission": [
-    "static/chunks/1fsc_qybb1iyv.js"
+    "static/chunks/33jx735e416xt.js"
   ],
   "/dashboard/finance/overview": [
-    "static/chunks/0f2bfglfxf0ol.js"
+    "static/chunks/0ysg9hs4rnarw.js"
   ],
   "/dashboard/group/activity-history": [
-    "static/chunks/42g4daff0p7gm.js"
+    "static/chunks/0bq-9pbpn7om7.js"
   ],
   "/dashboard/group/create": [
-    "static/chunks/0tq9wbyh6jipy.js"
+    "static/chunks/1krwji0-l8lqt.js"
   ],
   "/dashboard/group/members": [
-    "static/chunks/29rs0yvmibobp.js"
+    "static/chunks/1xeiu_1yg29r7.js"
   ],
   "/dashboard/group/moderation": [
-    "static/chunks/32sfxj3q6ef-n.js"
+    "static/chunks/15hh5qb88jcja.js"
   ],
   "/dashboard/group/payouts": [
-    "static/chunks/0zwhzg_e5pqw_.js"
+    "static/chunks/2uqywkv_src9v.js"
   ],
   "/dashboard/group/profile": [
-    "static/chunks/32qxyn3zwwu7q.js"
+    "static/chunks/31jvji5pgm2nd.js"
   ],
   "/dashboard/group/revenue-share-agreements": [
-    "static/chunks/3vi8pgo3b3pbo.js"
+    "static/chunks/002phqrxdp13b.js"
   ],
   "/dashboard/group/roles/[[...roleParams]]": [
-    "static/chunks/3dfhl304uhs-r.js"
+    "static/chunks/0cvs4x6s7hcg5.js"
   ],
   "/dashboard/ip": [
-    "static/chunks/13ahjt3p1o_mi.js"
+    "static/chunks/11-rfysdhg34v.js"
   ],
   "/dashboard/ip/ip-library": [
-    "static/chunks/3z7vvvs1fr6cg.js"
+    "static/chunks/1e27nzp3xgbbg.js"
   ],
   "/dashboard/ip/ip-library/[id]": [
-    "static/chunks/2nix304j-0_0a.js"
+    "static/chunks/2yq2bytam-hk3.js"
   ],
   "/dashboard/ip/ip-library/[id]/add-ip": [
-    "static/chunks/0z3xgcklthmrf.js"
+    "static/chunks/240ea0ake9r80.js"
   ],
   "/dashboard/ip/ip-library/[id]/edit": [
-    "static/chunks/3k_9vu3dwr-n6.js"
+    "static/chunks/0o2mlfu-lrnur.js"
   ],
   "/dashboard/ip/ip-library/create": [
-    "static/chunks/09ae7u34ndia3.js"
+    "static/chunks/3ddhhp7jog5za.js"
   ],
   "/dashboard/license-manager": [
-    "static/chunks/3la-j9_r3zugg.js"
+    "static/chunks/1div76_8q_aho.js"
   ],
   "/dashboard/license-manager/agreements/[agreementId]": [
-    "static/chunks/0rpg616fh8gk2.js"
+    "static/chunks/2j9hn8d994i9h.js"
   ],
   "/dashboard/license-manager/creator-agreements": [
-    "static/chunks/0i_-pali4_a6p.js"
+    "static/chunks/22fi9b6ytqodq.js"
   ],
   "/dashboard/license-manager/creator-agreements/[id]": [
-    "static/chunks/395yrr6heo_qp.js"
+    "static/chunks/0xayn5_9l_j7_.js"
   ],
   "/dashboard/license-manager/license-listings/[id]": [
-    "static/chunks/0j3tq7tmuqxjb.js"
+    "static/chunks/1ie3uclo0uxf5.js"
   ],
   "/dashboard/license-manager/license-listings/[id]/edit": [
-    "static/chunks/3ie9erq3ut14m.js"
+    "static/chunks/1og6dt5a2blw2.js"
   ],
   "/dashboard/license-manager/license-listings/[id]/license/create": [
-    "static/chunks/3yfvqogetpfiy.js"
+    "static/chunks/2n2h94w610s_x.js"
   ],
   "/dashboard/license-manager/license-listings/create": [
-    "static/chunks/22azcr1v8jsxj.js"
+    "static/chunks/23-q4imr3oss4.js"
   ],
   "/dashboard/license-manager/license/[id]/edit": [
-    "static/chunks/0456vfvel8jyc.js"
+    "static/chunks/03fw0vywrh1l8.js"
   ],
   "/dashboard/license-manager/licenses": [
-    "static/chunks/14z10s7v_umec.js"
+    "static/chunks/42daveymta_7q.js"
   ],
   "/dashboard/license-manager/matches": [
-    "static/chunks/3fw2l0feh1jx6.js"
+    "static/chunks/1n7uyim8_rocj.js"
   ],
   "/dashboard/license-manager/matches/[agreementCandidateId]": [
-    "static/chunks/17sqj1ia3sxuz.js"
+    "static/chunks/2_e20wr5lz2t6.js"
   ],
   "/dashboard/payments": [
-    "static/chunks/14f1u4-bfntfq.js"
+    "static/chunks/3x4j5m13eutt8.js"
   ],
   "/dashboard/revenue-share-agreements": [
-    "static/chunks/0x6xdfhtpdybh.js"
+    "static/chunks/3ko7uxm6_elzo.js"
   ],
   "/dashboard/rights-manager": [
-    "static/chunks/19x_0b4wjve1j.js"
+    "static/chunks/2s18t8ht5s7v1.js"
   ],
   "/dashboard/rights-manager/account": [
-    "static/chunks/18wut3fxi_tdl.js"
+    "static/chunks/3sof0xi_nqvpe.js"
   ],
   "/dashboard/rights-manager/accounts": [
-    "static/chunks/31_hsngezva78.js"
+    "static/chunks/2u206fnsr0aqu.js"
   ],
   "/dashboard/rights-manager/apply": [
-    "static/chunks/1fzd95q89pa47.js"
+    "static/chunks/2fzfj1teiw70v.js"
   ],
   "/dashboard/rights-manager/claims": [
-    "static/chunks/23lzad2asgchh.js"
+    "static/chunks/065x6p-pjfn--.js"
   ],
   "/dashboard/rights-manager/claims/[caseId]/items": [
-    "static/chunks/0vov9s6bt3x_c.js"
+    "static/chunks/01d7k5ewakaow.js"
   ],
   "/dashboard/rights-manager/claims/[caseId]/items/[claimItemId]": [
-    "static/chunks/2y_uejhl3x3xw.js"
+    "static/chunks/40n8k76mwat4h.js"
   ],
   "/dashboard/rights-manager/claims/create": [
-    "static/chunks/1i9tl1ftiw9dt.js"
+    "static/chunks/2jw4nf5r4ra_f.js"
   ],
   "/dashboard/rights-manager/claims/report-code": [
-    "static/chunks/2k52r6h3y5e2r.js"
+    "static/chunks/2athbdjevfkgq.js"
   ],
   "/dashboard/rights-manager/contents/[contentType]/[contentId]": [
-    "static/chunks/0vjozznc9gk7l.js"
+    "static/chunks/3s1xrgc3-i0fl.js"
   ],
   "/dashboard/rights-manager/matches": [
-    "static/chunks/1s4mwku707t9_.js"
+    "static/chunks/08dd1zhguf4zq.js"
   ],
   "/dashboard/rights-manager/register": [
-    "static/chunks/1-llcdky9-7_x.js"
+    "static/chunks/2ek25qta6zixu.js"
   ],
   "/dashboard/rights-manager/removal-requests": [
-    "static/chunks/08zxexwq1r95q.js"
+    "static/chunks/1-nx3dv4qx5yi.js"
   ],
   "/dashboard/rights-manager/removal-requests/create": [
-    "static/chunks/0zlf1_k04x19t.js"
+    "static/chunks/3u1d6_7qqx1vr.js"
   ],
   "/dashboard/rights-manager/removal-requests/report-code": [
-    "static/chunks/3qhhmo0iu9ju3.js"
+    "static/chunks/01559od4w8th7.js"
   ],
   "/dashboard/roblox-cash": [
-    "static/chunks/1esiknpaouzzk.js"
+    "static/chunks/30xxslswqfibj.js"
   ],
   "/dashboard/roblox-cash/rfi": [
-    "static/chunks/13q9x-w798t2r.js"
+    "static/chunks/2a7hm84y0-z99.js"
   ],
   "/dashboard/summary/[date]": [
-    "static/chunks/30h9f0h1e_tax.js"
+    "static/chunks/1m7a4bhay19u_.js"
   ],
   "/dashboard/transactions": [
-    "static/chunks/2vp4j2n7_0pc_.js"
+    "static/chunks/3_7td1absf4fc.js"
   ],
   "/dashboard/translator-portal": [
-    "static/chunks/3vrza151x0hh6.js"
+    "static/chunks/3t9fi8p87eq7g.js"
   ],
   "/data-collection": [
-    "static/chunks/0rol1bd22tu6z.js"
+    "static/chunks/3b7_z3i8avcxw.js"
   ],
   "/error": [
-    "static/chunks/1kuls7tjojyp5.js"
+    "static/chunks/19b2sfezlxb3h.js"
   ],
   "/explore/licenses": [
-    "static/chunks/1eh2zjtrmydoi.js"
+    "static/chunks/2pralekr8jv4i.js"
   ],
   "/explore/licenses/[listingId]": [
-    "static/chunks/2expl-jk8fxdv.js"
+    "static/chunks/34ubwm3k0gd8e.js"
   ],
   "/explore/licenses/[listingId]/[licenseId]/request": [
-    "static/chunks/1dp3r0xvfcepw.js"
+    "static/chunks/05vc9ak378tr-.js"
   ],
   "/hire": [
-    "static/chunks/3tbnz4a8h8b6g.js"
+    "static/chunks/0zgt2rnvnbbt8.js"
   ],
   "/hire/inbox": [
-    "static/chunks/3hxssbnf96qeh.js"
+    "static/chunks/049jv8fxq-e4s.js"
   ],
   "/hire/jobs/[jobId]": [
-    "static/chunks/1czvkijdjp302.js"
+    "static/chunks/1xq5foc4oy1jh.js"
   ],
   "/hire/my-profile": [
-    "static/chunks/1puht2rfd7k3t.js"
+    "static/chunks/0_-syo4r3mrp8.js"
   ],
   "/hire/my-profile/applied": [
-    "static/chunks/2v6ts-cokumnn.js"
+    "static/chunks/0gmdl36c_fbko.js"
   ],
   "/hire/my-studio": [
-    "static/chunks/0_5_a0hr8eeud.js"
+    "static/chunks/1lcpdv6ac3ok7.js"
   ],
   "/hire/my-studio/jobs": [
-    "static/chunks/35cxin-_hxda0.js"
+    "static/chunks/3xul5nwr4cm3q.js"
   ],
   "/hire/my-studio/jobs/[jobId]": [
-    "static/chunks/2tkevzcp6q1h4.js"
+    "static/chunks/1y46u6r7bpk4b.js"
   ],
   "/hire/my-studio/jobs/[jobId]/edit": [
-    "static/chunks/2z1ylkex2tdwd.js"
+    "static/chunks/17yaqrq-i7euq.js"
   ],
   "/hire/my-studio/onboard": [
-    "static/chunks/1b9c4myyaez5k.js"
+    "static/chunks/3fw_a0c4uqtd2.js"
   ],
   "/hire/my-studio/onboard/form": [
-    "static/chunks/1rib8jue6aay6.js"
+    "static/chunks/2rsrp3ia5x2jl.js"
   ],
   "/hire/my-studio/post-job": [
-    "static/chunks/2w59g3y35vnnw.js"
+    "static/chunks/3dpnwckqu6avy.js"
   ],
   "/hire/studios": [
-    "static/chunks/0wvj8emhn7232.js"
+    "static/chunks/17f4f7n54vm8o.js"
   ],
   "/hire/studios/[studioId]": [
-    "static/chunks/36gqihp_sahd7.js"
+    "static/chunks/1qad-mn1-v15g.js"
   ],
   "/inspire": [
-    "static/chunks/34_h2cilr1st-.js"
+    "static/chunks/3rrv7lk7oy6gn.js"
   ],
   "/landing": [
-    "static/chunks/40u7j2jl-fy6j.js"
+    "static/chunks/02pvl2qc1h2wg.js"
   ],
   "/maintenance": [
-    "static/chunks/07j7wtp7il-j4.js"
+    "static/chunks/2467r3mpltmbv.js"
   ],
   "/rewards": [
-    "static/chunks/09ukn19f49iqy.js"
+    "static/chunks/1q72s7p6f76t7.js"
   ],
   "/roadmap": [
-    "static/chunks/25k5lcysnpejp.js"
+    "static/chunks/3qzex20725dq5.js"
   ],
   "/settings/advanced": [
-    "static/chunks/0-v8r6z4osjak.js"
+    "static/chunks/02ste53pyl2z3.js"
   ],
   "/settings/data-collection": [
-    "static/chunks/1zfruj6tti5pd.js"
+    "static/chunks/0_0qm2l3w340t.js"
   ],
   "/settings/eligibility": [
-    "static/chunks/1ghtz3s3-he_6.js"
+    "static/chunks/2ec7hn_s3cq1_.js"
   ],
   "/settings/eligibility/audio-distribution": [
-    "static/chunks/3zcfma-6bbpbh.js"
+    "static/chunks/0h_ok-gyvyg23.js"
   ],
   "/settings/eligibility/creator-rewards": [
-    "static/chunks/3vke1nbuzovq0.js"
+    "static/chunks/390th3iwqmn22.js"
   ],
   "/settings/eligibility/extended-services": [
-    "static/chunks/38q-cvhvmwtf7.js"
+    "static/chunks/0_ed6hb_vlw13.js"
   ],
   "/settings/eligibility/paid-access": [
-    "static/chunks/09ex41p-b5_e3.js"
+    "static/chunks/20e0tk5g6ai93.js"
   ],
   "/settings/eligibility/priced-assets": [
-    "static/chunks/2ckr9y2xxqxuk.js"
+    "static/chunks/1dt595c4ivzt-.js"
   ],
   "/settings/eligibility/public-publish": [
-    "static/chunks/3a639ghh4iwy2.js"
+    "static/chunks/0x_3e0zqjmewf.js"
   ],
   "/settings/eligibility/publishing-permissions": [
-    "static/chunks/3xttjnlye05ip.js"
+    "static/chunks/2lowlpk4f84ef.js"
   ],
   "/settings/eligibility/us-o18-devex-rate": [
-    "static/chunks/2vmnchwu0cebu.js"
+    "static/chunks/0w_9ltyifa_kh.js"
   ],
   "/settings/notifications": [
-    "static/chunks/11sxnagqvgjdi.js"
+    "static/chunks/15j389z4o3jmb.js"
   ],
   "/settings/notifications/[notificationCategory]": [
-    "static/chunks/0v_ywkzl181zn.js"
+    "static/chunks/3a_lvcddhhmko.js"
   ],
   "/settings/preferences": [
-    "static/chunks/2xccej1ppv2kp.js"
+    "static/chunks/2s8m2c95jm43r.js"
   ],
   "/settings/webhooks": [
-    "static/chunks/2vxnn82y4cb-r.js"
+    "static/chunks/29z3beub6_quu.js"
   ],
   "/unsubscribe": [
-    "static/chunks/1-qnvhofu7ylb.js"
+    "static/chunks/3yqe3vbfc-44_.js"
   ],
   "/unsupported-browser": [
-    "static/chunks/30juvuovtv1vn.js"
+    "static/chunks/43gqc3-41ne5a.js"
   ],
   "/updates": [
-    "static/chunks/2k9m0ftks5awd.js"
+    "static/chunks/1j69dg72uove-.js"
   ],
   "/updates/roadmap": [
-    "static/chunks/42-28d6xa_oix.js"
+    "static/chunks/0ser9iukxp80t.js"
   ],
   "__rewrites": {
     "afterFiles": [],
     "beforeFiles": [
       {
-        "source": "/9968a35aa53be9ec00a4ea1fef02a5a686271816/_next/:path+",
+        "source": "/9d66891ef3dabe9f2822e40489ba634b11441ead/_next/:path+",
         "destination": "/_next/:path+"
       }
     ],
