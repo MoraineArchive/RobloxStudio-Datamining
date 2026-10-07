@@ -5386,11 +5386,84 @@
             "sensitivity",
             "swipe"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/07/18-31-06Z_datasets",
+          "evidencePath": "2026/10/07/18-31-06Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "0c21b4e5b4778d3c9427536c8abc08368f4d8b7793b4ae1419c56231da6ed436",
+          "key": "DFStringVideoAbrSelectorConfigMomentsOverride_IXP",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-07T18:31:06.752Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abr",
+            "ixp",
+            "moments",
+            "override",
+            "selector",
+            "video"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/07/18-31-06Z_datasets",
+          "evidencePath": "2026/10/07/18-31-06Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "5d09dadaaa97eabea7d69a44901a19f304e3618f4e102321c2ddf7c282e60ab1",
+          "key": "FFlagMomentsUseSmallOverflowMenu_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-07T18:31:06.752Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "menu",
+            "moments",
+            "overflow",
+            "small"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/07/18-31-06Z_datasets",
+          "evidencePath": "2026/10/07/18-31-06Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "c4ecbf2f816da75a6a25830c49725ca37a3a6af4093cc24c69750b2976c10ba0",
+          "key": "DFStringVideoAcrPriorityListMoments_IXP",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-07T18:31:06.752Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "acr",
+            "ixp",
+            "list",
+            "moments",
+            "priority",
+            "video"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-10-06T21:38:08.562Z",
+      "lastObservedAt": "2026-10-07T18:31:06.752Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
