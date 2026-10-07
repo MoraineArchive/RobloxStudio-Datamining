@@ -1,0 +1,125 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-76e1a02649ad4f35",
+    "manifestFiles": 18680,
+    "packages": 34,
+    "version": "0.741.19.7411056"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "fa6adcab18567b55d51b9f9d9df3a717022dec8da98d94f99663b7eb75cf6cfb",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "392b49ced3227cab287ef0dcf1cea6b02bab8bfc3ce9b3f10fbaaee2a44ca76c",
+      "semantic": {
+        "added": [
+          "FFlagAXFixOrientationInputBlocking",
+          "FFlagAppChatReactivePaneLayoutOnRotation",
+          "FFlagEnablePlayerSupportCaptureAttachments2",
+          "FFlagLuaAppEdpKeepFullPageOnPortraitRotation",
+          "FFlagLuaAppNxMApportioningDiagnosticIncludeLatency_Staged",
+          "FFlagPlatformLeaderboardDisplayNameEnabled",
+          "FFlagProfileModalViewStatusBarOffset",
+          "FFlagReactEnableClassCompilerRuntimeRelease1",
+          "FFlagReactEnableCompilerRuntimeRelease1",
+          "FFlagReactEnableNoCloningCompilerMemoCache",
+          "FFlagSTUDIOPLAT44513EnablePreinitHandoff",
+          "FFlagSTUDIOPLAT44648RetryCorruptOTAPluginAsBuiltIn",
+          "FFlagSlimAlwaysShadowUploadOnAvatarFetch",
+          "FFlagSlimUseBoxMappingForSkinnedMeshDecal"
+        ],
+        "changed": [
+          {
+            "after": "a02569ab0836fff05acb6380760fae3a3902a940",
+            "before": "9e6c590d8c11a8757d7c31dc25823fa45f3bd415",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-07T01:12:26.400Z",
+            "before": "2026-10-06T23:32:38.309Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "1;Ads.UI2;Ads.HomeAds.MaxReachNxMFlagOnly.V5;799635606;flagbank",
+            "before": "1;Ads.UI;Ads.HomeAds.MaxReachNxMFlagOnly.V2-WithTelemetryVariants;799635606;flagbank",
+            "name": "FFlagLuaAppEnableNxMRoduxApportioning_IXP"
+          },
+          {
+            "after": "a02569ab0836fff05acb6380760fae3a3902a940",
+            "before": "9e6c590d8c11a8757d7c31dc25823fa45f3bd415",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-07T01:12:26.400Z",
+            "before": "2026-10-06T23:32:38.309Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagAXFixOrientationInputBlocking_Staged",
+          "FFlagAppChatReactivePaneLayoutOnRotation_Staged",
+          "FFlagEnablePlayerSupportCaptureAttachments2_Staged",
+          "FFlagLuaAppEdpKeepFullPageOnPortraitRotation_Staged",
+          "FFlagPlatformLeaderboardDisplayNameEnabled_Staged",
+          "FFlagProfileModalViewStatusBarOffset_Staged",
+          "FFlagSTUDIOPLAT44513EnablePreinitHandoff_Staged",
+          "FFlagSTUDIOPLAT44648RetryCorruptOTAPluginAsBuiltIn_Staged",
+          "FFlagSlimAlwaysShadowUploadOnAvatarFetch_Staged",
+          "FFlagSlimOnlySetUse2022MaterialsForWedge_Staged",
+          "FFlagSlimUseBoxMappingForSkinnedMeshDecal_Staged"
+        ],
+        "unchanged": 24780
+      }
+    },
+    "Web": {
+      "current": "dd1beb8c17bac97a075b77ed12f51f30231ef3d0e7af56cf1cc78d555c2294b5",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-002.js",
+          "assets.create.roblox.com/page-0/script-006.js",
+          "assets.create.roblox.com/page-0/script-010.js",
+          "assets.create.roblox.com/page-0/script-011.js",
+          "assets.create.roblox.com/page-0/script-029.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-035.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-053.js",
+          "assets.create.roblox.com/page-0/script-060.js",
+          "assets.create.roblox.com/page-0/script-064.js",
+          "assets.create.roblox.com/page-0/script-070.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.create.roblox.com/page-0/script-077.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.create.roblox.com/page-0/script-085.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 79
+      },
+      "previous": "10e17d14cd1e60c219183608ce36cfa5c1f9ba4662f320fbe76ba6c8ce525f11",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
