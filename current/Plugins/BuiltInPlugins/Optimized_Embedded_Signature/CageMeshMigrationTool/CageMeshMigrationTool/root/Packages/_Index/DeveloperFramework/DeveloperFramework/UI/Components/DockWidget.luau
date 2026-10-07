@@ -47,7 +47,6 @@ local Framework = script:FindFirstAncestor("UI").Parent
 local Typecheck = require(Framework.Util).Typecheck
 local createPluginWidget = require(Framework.UI.Components.createPluginWidget)
 
-local FFlagDevFrameworkKeyboardNavigation = game:DefineFastFlag("DevFrameworkKeyboardNavigation", false)
 local FFlagDevFrameworkKeyboardNavigationDefault = game:DefineFastFlag("DevFrameworkKeyboardNavigationDefault", false)
 
 local DockWidget = createPluginWidget("DockWidget", function(props)
@@ -78,11 +77,9 @@ local DockWidget = createPluginWidget("DockWidget", function(props)
 
 	local dockWidget = plugin:CreateDockWidgetPluginGui(pluginId, info)
 
-	if FFlagDevFrameworkKeyboardNavigation then
-		dockWidget.TabKeyboardNavigation = if props.KeyboardNavigationEnabled ~= nil
-			then props.KeyboardNavigationEnabled
-			else FFlagDevFrameworkKeyboardNavigationDefault
-	end
+	dockWidget.TabKeyboardNavigation = if props.KeyboardNavigationEnabled ~= nil
+		then props.KeyboardNavigationEnabled
+		else FFlagDevFrameworkKeyboardNavigationDefault
 
 	return dockWidget
 end)

@@ -6,7 +6,6 @@ local FFlagPluginLoaderAddMultipleButtonInfos =
 
 local FFlagPluginLoaderRegisterUri = game:DefineFastFlag("PluginLoaderRegisterUri", false)
 
-local FFlagPluginLoaderKeyboardNavigation = game:DefineFastFlag("PluginLoaderKeyboardNavigation", false)
 local FFlagPluginLoaderKeyboardNavigationDefault = game:DefineFastFlag("PluginLoaderKeyboardNavigationDefault", false)
 
 export type GetLocalizedTextFunc = ((string, string, string, string) -> string, string, string) -> string
@@ -93,11 +92,9 @@ local function createDockWidgetPluginGui(
 	end
 	newDockWidget.ZIndexBehavior = dockWidgetInfo.zIndexBehavior or Enum.ZIndexBehavior.Sibling
 
-	if FFlagPluginLoaderKeyboardNavigation then
-		newDockWidget.TabKeyboardNavigation = if dockWidgetInfo.keyboardNavigationEnabled ~= nil
-			then dockWidgetInfo.keyboardNavigationEnabled
-			else FFlagPluginLoaderKeyboardNavigationDefault
-	end
+	newDockWidget.TabKeyboardNavigation = if dockWidgetInfo.keyboardNavigationEnabled ~= nil
+		then dockWidgetInfo.keyboardNavigationEnabled
+		else FFlagPluginLoaderKeyboardNavigationDefault
 
 	return newDockWidget
 end

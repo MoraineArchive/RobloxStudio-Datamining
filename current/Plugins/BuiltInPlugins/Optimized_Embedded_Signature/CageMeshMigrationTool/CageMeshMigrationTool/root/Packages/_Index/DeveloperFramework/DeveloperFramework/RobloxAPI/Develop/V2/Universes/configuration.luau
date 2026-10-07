@@ -19,10 +19,6 @@
 		"id": 0,
 		"name": "string",
 		"description": "string",
-		"universeAvatarType": "MorphToR6",
-		"universeAnimationType": "Standard",
-		"universeCollisionType": "InnerBox",
-		"universeJointPositioningType": "Standard",
 		"isArchived": true,
 		"isFriendsOnly": true,
 		"genre": "All",
@@ -31,29 +27,6 @@
 		],
 		"isForSale": true,
 		"price": 0,
-		"universeAvatarAssetOverrides": [
-			{
-				"assetID": 0,
-				"assetTypeID": 0,
-				"isPlayerChoice": true
-			}
-		],
-		"universeAvatarMinScales": {
-			"height": 0,
-			"width": 0,
-			"head": 0,
-			"depth": 0,
-			"proportion": 0,
-			"bodyType": 0
-		},
-		"universeAvatarMaxScales": {
-			"height": 0,
-			"width": 0,
-			"head": 0,
-			"depth": 0,
-			"proportion": 0,
-			"bodyType": 0
-		},
 		"studioAccessToApisAllowed": true,
 		"permissions": {
 			"IsThirdPartyTeleportAllowed": true,

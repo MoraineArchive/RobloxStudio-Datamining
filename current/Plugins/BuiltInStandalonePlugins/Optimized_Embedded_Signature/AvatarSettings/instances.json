@@ -5133,8 +5133,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1207",
-      "SourceBytecodeSha256": "12eef577923203a180a8673217da339db42f9f88991b8cb6b048e32b2bdc7c7e",
+      "SourceBytecodeBytes": "2078",
+      "SourceBytecodeSha256": "7b88dd56a2ffa54b72b66f6249f4993bb83ddbe1257a83e576b9a5b06265c0ea",
       "Tags": ""
     },
     "unreadable": [
@@ -5165,8 +5165,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1418",
-      "SourceBytecodeSha256": "e7384de20e493174a0e5f8feb24b477b4fffa3150ac4c554f42c5cca2b40c83d",
+      "SourceBytecodeBytes": "1886",
+      "SourceBytecodeSha256": "1f4ac66b7bd33ccedc649bd8bf4a39756cde9fd4f51ac6aebf81033528921f7d",
       "Tags": ""
     },
     "unreadable": [
@@ -5239,14 +5239,30 @@
   },
   {
     "class": "ModuleScript",
+    "name": "assetDmSettingsSnapshot",
+    "path": "AvatarSettings/Src/Util/BridgingFiles/AssetDmFiles/assetDmSettingsSnapshot",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1114",
+      "SourceBytecodeSha256": "1733859df7e04289d85ed4a810a373dd70b64b3cf5db40fd5aebb798ba7e06c4",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "assetDmSetup",
     "path": "AvatarSettings/Src/Util/BridgingFiles/AssetDmFiles/assetDmSetup",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "6120",
-      "SourceBytecodeSha256": "1066271ace1704b4c9f27c941c7ac22dad6b308f4146b9891c6a39f9ea6957eb",
+      "SourceBytecodeBytes": "6822",
+      "SourceBytecodeSha256": "aa1e464f5b556301776e2dd6ce43fb0766e88e83f8a84996b8316346d646daac",
       "Tags": ""
     },
     "unreadable": [
@@ -5262,7 +5278,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "47",
-      "SourceBytecodeSha256": "93dd1711f1ae74b343d359cf1a5f8002d1b3462eb8a10d305da080ce6ae9de87",
+      "SourceBytecodeSha256": "086003f3b2571934a2164077589dbb10b8effbddfa7e6d1aaf6ae7218a76abe8",
       "Tags": ""
     },
     "unreadable": [
@@ -5325,8 +5341,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1931",
-      "SourceBytecodeSha256": "2ffcdb1dc40c1c2aca35b7e3939745bbae198b01ac5c7d2741fe99baedbf815f",
+      "SourceBytecodeBytes": "2360",
+      "SourceBytecodeSha256": "1f7f2fedcda456c59018bebc97f8f0d4fc12b7e7723464c5524bf867667491a5",
       "Tags": ""
     },
     "unreadable": [
@@ -6125,8 +6141,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1769",
-      "SourceBytecodeSha256": "aa1a6e2e5e68fefd68fa297ef958a68a796e198326c87b03180675ba17885643",
+      "SourceBytecodeBytes": "1917",
+      "SourceBytecodeSha256": "1bed68ff2b38f2dccfeb8fa069df265abfa6f48dcefc9164ac7bca1459e60e04",
       "Tags": ""
     },
     "unreadable": [
@@ -6206,7 +6222,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "209",
-      "SourceBytecodeSha256": "4a0f57394453c47e3b031c68a5650c612348903302a29b7444244d5c04d88598",
+      "SourceBytecodeSha256": "f458432383b4eac2dccd3672bcd86088b17cb29db92ab9b75aab73033cbe2cdb",
       "Tags": ""
     },
     "unreadable": [
@@ -6222,7 +6238,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "39",
-      "SourceBytecodeSha256": "08a9f7bbf2dcabc8ea496180ccc65690e8a4f1d0bd77db76a534173d47873839",
+      "SourceBytecodeSha256": "202ab5372265e4238d2fcbe9afe3a5cfc13f3c3b7d41126afc67700a43ddc814",
       "Tags": ""
     },
     "unreadable": [
@@ -9031,6 +9047,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "ClothingCategorySettings",
+    "path": "AvatarSettings/Src/Util/ClothingCategorySettings",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1808",
+      "SourceBytecodeSha256": "bda95f3d7525a0be8c893126413a87b2aff26c14ae630c71fe95c7f6b7c9ec4c",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "ClothingScaleSection",
     "path": "AvatarSettings/Src/Components/ClothingSettings/ClothingScaleSection",
     "properties": {
@@ -9437,8 +9469,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5533",
-      "SourceBytecodeSha256": "d1df9fc4ac8bd860fe6176bfb67804251b52d0aeda79581f55d6084d68817417",
+      "SourceBytecodeBytes": "7713",
+      "SourceBytecodeSha256": "da02feaeec98d065166503e3c06b96546a6ccb114502100352382e54c98c3a25",
       "Tags": ""
     },
     "unreadable": [
@@ -10158,7 +10190,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "1111",
-      "SourceBytecodeSha256": "db2bcfaeadca246fa3d9677ad45180ede1fae63547aab685c4bc98c7c155f166",
+      "SourceBytecodeSha256": "a7eec09644fe7c31d1283a4721ad2925ff90701cd281d1037a7bfa9e3ffa0beb",
       "Tags": ""
     },
     "unreadable": [
@@ -10199,14 +10231,30 @@
   },
   {
     "class": "ModuleScript",
+    "name": "connectPlaceSaveCompleted",
+    "path": "AvatarSettings/Src/Util/connectPlaceSaveCompleted",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1108",
+      "SourceBytecodeSha256": "6e687769c6dd1fee409e7ee809a2514b88b6395df30f2affb81434228b5048fb",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "connectRefreshPluginState",
     "path": "AvatarSettings/Src/Util/Interfaces/PublishingInterface/connectRefreshPluginState",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "494",
-      "SourceBytecodeSha256": "49cd49ae4ace3e6183584726c0103311865d5716cc1a2d7eafafe792c4f0022f",
+      "SourceBytecodeBytes": "853",
+      "SourceBytecodeSha256": "71fcd7ce8b2a3fc608f9fb5a9170f16e75452983e27520535c1e579821db2d0e",
       "Tags": ""
     },
     "unreadable": [
@@ -11501,8 +11549,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4106",
-      "SourceBytecodeSha256": "695911dc0eabb6a1871cd75e49d5fdec63bea404cc7ff731a30846a80e52f97a",
+      "SourceBytecodeBytes": "4397",
+      "SourceBytecodeSha256": "2a5253230f7a2782dc70937cfc46abf835fa38914a8b182a030bfef77fbb8307",
       "Tags": ""
     },
     "unreadable": [
@@ -11517,8 +11565,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4106",
-      "SourceBytecodeSha256": "695911dc0eabb6a1871cd75e49d5fdec63bea404cc7ff731a30846a80e52f97a",
+      "SourceBytecodeBytes": "4397",
+      "SourceBytecodeSha256": "2a5253230f7a2782dc70937cfc46abf835fa38914a8b182a030bfef77fbb8307",
       "Tags": ""
     },
     "unreadable": [
@@ -11677,8 +11725,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1940",
-      "SourceBytecodeSha256": "e4053b1d46c017aa7869b9fa33f718b5eb2bd78bd79161adbe6b255d6244ae06",
+      "SourceBytecodeBytes": "2139",
+      "SourceBytecodeSha256": "98755f6e7ad6721fd63163f95993acefdd476803a2c1b2f6cae4c8e56f96dd2b",
       "Tags": ""
     },
     "unreadable": [
@@ -14941,8 +14989,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1345",
-      "SourceBytecodeSha256": "ee587e3a57a7b1b89d12b6e77a3d6c488ad5fdf5e3fa7604e6d36bb5fa21f4c5",
+      "SourceBytecodeBytes": "1262",
+      "SourceBytecodeSha256": "bcd2e48ff6cd54706dcbb2c4d48e7881c88bdb967f5fe76fcf88bfc1422fa557",
       "Tags": ""
     },
     "unreadable": [
@@ -19383,6 +19431,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "getEngineFeatureAvatarSettingsBodyPartsCollidableOnDeath",
+    "path": "AvatarSettings/Src/Flags/getEngineFeatureAvatarSettingsBodyPartsCollidableOnDeath",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "169",
+      "SourceBytecodeSha256": "69bd52dd7f5b95f12f4ad77f9cf9302ff3009361bc3e14dcddb0ff529a79c39f",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "getEngineFeatureAvatarSettingsEnableEmissiveRuleLua",
     "path": "AvatarSettings/Src/Flags/getEngineFeatureAvatarSettingsEnableEmissiveRuleLua",
     "properties": {
@@ -19503,6 +19567,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "219",
       "SourceBytecodeSha256": "e7396a8da8c7f4ec1bd1a2569cd178c011e5c953d5e013c65650bb6863afe9bb",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "getFFlagAvatarSettingsConsistentGameplayUseCollider",
+    "path": "AvatarSettings/Src/Flags/getFFlagAvatarSettingsConsistentGameplayUseCollider",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "228",
+      "SourceBytecodeSha256": "cb13f815ba25376397d48d8fcd199ebaf3ceac576bbc8a9cc6e98e6bf2ec91b7",
       "Tags": ""
     },
     "unreadable": [
@@ -19639,6 +19719,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "getFFlagAvatarSettingsRemoveLegacyCollisionMode",
+    "path": "AvatarSettings/Src/Flags/getFFlagAvatarSettingsRemoveLegacyCollisionMode",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "224",
+      "SourceBytecodeSha256": "2c89829c65052a2aec0b18e3ff6b28f3fd8792818748357b1e5d0dc2dde0ed2b",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "getFFlagAvatarSettingsRemoveMouseDownNavbarColor",
     "path": "AvatarSettings/Src/Flags/getFFlagAvatarSettingsRemoveMouseDownNavbarColor",
     "properties": {
@@ -19719,6 +19815,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "getFFlagAvatarSettingsSyncPublishedSnapshot",
+    "path": "AvatarSettings/Src/Flags/getFFlagAvatarSettingsSyncPublishedSnapshot",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "220",
+      "SourceBytecodeSha256": "a0d989018ecb9092a37bf0d8f75ba9809bc36277d9994ecf6abf116bc8fff877",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "getFFlagAvatarSettingsTurning",
     "path": "AvatarSettings/Src/Flags/getFFlagAvatarSettingsTurning",
     "properties": {
@@ -19727,6 +19839,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "231",
       "SourceBytecodeSha256": "dcb960be26b0862e71e2aa0e360f7396af273897b582e36f9207c8eeb073e230",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "getFFlagAvatarSettingsWarnOnPlaceSave",
+    "path": "AvatarSettings/Src/Flags/getFFlagAvatarSettingsWarnOnPlaceSave",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "214",
+      "SourceBytecodeSha256": "0e592fc61519dbf833a2ec27421d1935d491e570671688c29d916837f2203b53",
       "Tags": ""
     },
     "unreadable": [
@@ -21069,8 +21197,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "7449",
-      "SourceBytecodeSha256": "6571c256047f06030726eaa5088708b40d3f34e0d8a6f1f9a11f2ea851edfff2",
+      "SourceBytecodeBytes": "7476",
+      "SourceBytecodeSha256": "b789bb54f05a2291e6d9ca38d6b34da0464efce543a20d46dd2079c8e7ef7008",
       "Tags": ""
     },
     "unreadable": [
@@ -24509,8 +24637,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "21384",
-      "SourceBytecodeSha256": "b881f1ae44d25aeb939f0660ac463f2238b4f353065ac3483e0167fe168f12df",
+      "SourceBytecodeBytes": "21591",
+      "SourceBytecodeSha256": "26c8d952dff63e7e0b5a3f173ec5f082cd5f9ba2409470043e975f6f7f8560d6",
       "Tags": ""
     },
     "unreadable": [
@@ -31773,8 +31901,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "781",
-      "SourceBytecodeSha256": "a141078e980ee43fbb6a7b4ebc056f71b1492385119ff0e563630aba03af541f",
+      "SourceBytecodeBytes": "1330",
+      "SourceBytecodeSha256": "a8ad06d35ab28110b2fc135014ac06f04ece34d797d67b6f8f9439094c02b001",
       "Tags": ""
     },
     "unreadable": [
@@ -31789,8 +31917,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "781",
-      "SourceBytecodeSha256": "a141078e980ee43fbb6a7b4ebc056f71b1492385119ff0e563630aba03af541f",
+      "SourceBytecodeBytes": "1330",
+      "SourceBytecodeSha256": "a8ad06d35ab28110b2fc135014ac06f04ece34d797d67b6f8f9439094c02b001",
       "Tags": ""
     },
     "unreadable": [
@@ -32349,8 +32477,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5142",
-      "SourceBytecodeSha256": "41e7119fdfbbf4cc7f91cc6df4e0d9772e4e75f34ad111144827dc1791b77862",
+      "SourceBytecodeBytes": "5235",
+      "SourceBytecodeSha256": "f39400e2d299034f7cee95d30022d94d8e06443fca7ff820a0e90e2b3d12ee50",
       "Tags": ""
     },
     "unreadable": [
@@ -34983,6 +35111,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "PlaceSaveWarning",
+    "path": "AvatarSettings/Src/Components/PlaceSaveWarning",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "2328",
+      "SourceBytecodeSha256": "196cc44e73337a81700b02fccb92e829c2dbca372cf267efd65fe341f8f66107",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "PlacesServiceInterface",
     "path": "AvatarSettings/Src/Util/Interfaces/PlacesServiceInterface",
     "properties": {
@@ -35261,8 +35405,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "64",
-      "SourceBytecodeSha256": "2e2ff04c365260f6e904a52b18442e5907862cf83d92fc411d0112155e6ebc12",
+      "SourceBytecodeBytes": "131",
+      "SourceBytecodeSha256": "e386353a457e34693673e5dc00d27f5acc74ac19dedb84dc4cbc39ba1ba6da4e",
       "Tags": ""
     },
     "unreadable": [
@@ -35277,8 +35421,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "199",
-      "SourceBytecodeSha256": "aa133493a1d209611454a546aadc3ace4107663a2306505e6281609205118206",
+      "SourceBytecodeBytes": "280",
+      "SourceBytecodeSha256": "da3e6a225de7e3a9765045a447ece7eb585847a5572e3d8aa81dc7e84bf76d9c",
       "Tags": ""
     },
     "unreadable": [
@@ -35325,8 +35469,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5476",
-      "SourceBytecodeSha256": "17ceb6cb6bbed0c3e335c7fa84d4d77a28cab936153a2e1aa62451e5247728ea",
+      "SourceBytecodeBytes": "5360",
+      "SourceBytecodeSha256": "e55c32d1df251b677d37b92d1b2ddf0f898cf82b00389dde16d95b081c84f216",
       "Tags": ""
     },
     "unreadable": [
@@ -35421,8 +35565,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "8153",
-      "SourceBytecodeSha256": "a11661952363b2a80e08bd952658597cefbdf07fd9683de71bcb904886125c38",
+      "SourceBytecodeBytes": "8471",
+      "SourceBytecodeSha256": "acf291defafb8ef05dbe5b8b2672acdd806543b0de8da4af22cf5ed8f8deb8ec",
       "Tags": ""
     },
     "unreadable": [
@@ -37405,8 +37549,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3554",
-      "SourceBytecodeSha256": "35f81460e4af0b494d66042e1fa67af5999250ffdc0d0128d3f8be3ed43a33d6",
+      "SourceBytecodeBytes": "4051",
+      "SourceBytecodeSha256": "b4e37ea857e2527dfa157750866b17de4242caadb93ebd6953b74c0e2b61d69e",
       "Tags": ""
     },
     "unreadable": [
@@ -37422,7 +37566,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "39",
-      "SourceBytecodeSha256": "2a0e9ed180b7a4aa7243cae74f8686e884f7be6361b5d19e3a5512e513bfe372",
+      "SourceBytecodeSha256": "0f5293eb7013e3e492ea479a9b12556238dbd29e36711332547d7f7e0951a420",
       "Tags": ""
     },
     "unreadable": [
@@ -37453,8 +37597,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4615",
-      "SourceBytecodeSha256": "5dece6643b80b2687014e81d84d7a4b256d8a8f00af3c3769a4a7d8fbaa1292a",
+      "SourceBytecodeBytes": "5373",
+      "SourceBytecodeSha256": "8c593d4ac044b33cb742c63c3ad56b7f1ffe5e5c918726625c45558ae2b7aadd",
       "Tags": ""
     },
     "unreadable": [
@@ -37567,6 +37711,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "1250",
       "SourceBytecodeSha256": "dcae00c6895a9ca3752153cd00aeea69dbea229b010fa2c804e202ebfa6ce9ae",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "QueuedOneShotCrossDMPluginInvoke",
+    "path": "AvatarSettings/Packages/_Index/PluginLoader/PluginLoader/QueuedOneShotCrossDMPluginInvoke",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "734",
+      "SourceBytecodeSha256": "02fb00a7a8075a22ba79cb049f8e424cc81c485a07096a99fb3e77a1ab17941d",
       "Tags": ""
     },
     "unreadable": [
@@ -43671,6 +43831,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "settingsSnapshotState",
+    "path": "AvatarSettings/Src/Util/BridgingFiles/StandaloneFiles/settingsSnapshotState",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1114",
+      "SourceBytecodeSha256": "fd0f036d7031bacc64eb9ec68383fb48d564db43a8b4a1983f1bdd341d6a1ba1",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "settingUtil",
     "path": "AvatarSettings/Src/Util/settingUtil",
     "properties": {
@@ -49533,8 +49709,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "12787",
-      "SourceBytecodeSha256": "e70a122cbc7e5e1069d4cb12161c1fff4810de4a574db4c06f9cb0d2cbed9186",
+      "SourceBytecodeBytes": "15536",
+      "SourceBytecodeSha256": "f602e923a084a1af17febd8a84c37cad19bde4c29e6e99a3811ebe59f77e775a",
       "Tags": ""
     },
     "unreadable": [
@@ -49773,8 +49949,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4246",
-      "SourceBytecodeSha256": "ff1aef99e08a6dfbfaf9f0f52aab2844a64ce7f7c7958483ea1830824413c2b6",
+      "SourceBytecodeBytes": "4450",
+      "SourceBytecodeSha256": "dff2663303bf548fadc8bc63a426a6085a1901307f32e016e59f98df0e1f73a3",
       "Tags": ""
     },
     "unreadable": [
@@ -50413,8 +50589,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4168",
-      "SourceBytecodeSha256": "d46d426bbf3750e9ddfddad42422404d767cce605645aa98825577d47558e1c6",
+      "SourceBytecodeBytes": "4424",
+      "SourceBytecodeSha256": "fd03550ec4d02dd97d604ac39a25dd6184c8dc64881f242ef07d2137bed63569",
       "Tags": ""
     },
     "unreadable": [
@@ -50429,8 +50605,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4168",
-      "SourceBytecodeSha256": "d46d426bbf3750e9ddfddad42422404d767cce605645aa98825577d47558e1c6",
+      "SourceBytecodeBytes": "4424",
+      "SourceBytecodeSha256": "fd03550ec4d02dd97d604ac39a25dd6184c8dc64881f242ef07d2137bed63569",
       "Tags": ""
     },
     "unreadable": [
@@ -53965,8 +54141,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "688",
-      "SourceBytecodeSha256": "0b1a0390dc15401b0bc485d19ee8e6a269cb6bffb48625c6d2a17093df432339",
+      "SourceBytecodeBytes": "989",
+      "SourceBytecodeSha256": "762fa683f8ff936ad183512b405eb2bf9d99a416bc96ef3c479a965547caece7",
       "Tags": ""
     },
     "unreadable": [
@@ -54637,8 +54813,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2658",
-      "SourceBytecodeSha256": "60bc6821739c4c8b37d1d0239d75a199288fa6a0a887348321bdbb51b5a5fabb",
+      "SourceBytecodeBytes": "2952",
+      "SourceBytecodeSha256": "1850e0bbaf919e5e7c7722a7fc56b99d669e4f0fb619e03ab690ebe434740f07",
       "Tags": ""
     },
     "unreadable": [
@@ -54669,8 +54845,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2142",
-      "SourceBytecodeSha256": "d79b2ee6fa4bffb36660a3eeabccb43dd3427eff38fa37176cc7c84c4b9e9388",
+      "SourceBytecodeBytes": "2480",
+      "SourceBytecodeSha256": "b48ab8de16f5417368e1998aca23cd859980c3460effe557c89b74a78971e2ae",
       "Tags": ""
     },
     "unreadable": [
@@ -55213,8 +55389,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3489",
-      "SourceBytecodeSha256": "8818f18e86ab6b29c7280dbd67a9c9b99b350cd87142108fa16c6d9e6832e251",
+      "SourceBytecodeBytes": "2569",
+      "SourceBytecodeSha256": "6ff1e49bd391eace35f4c02c90482c0292d342f7275b6c1241b4dd3b5d98d745",
       "Tags": ""
     },
     "unreadable": [
@@ -55229,8 +55405,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2686",
-      "SourceBytecodeSha256": "484fa4a91063333b95a7517dead4271cb295db11cb4a1744833dd7b60d7d7a79",
+      "SourceBytecodeBytes": "2910",
+      "SourceBytecodeSha256": "948ffe38ff5dc0afb2a86f890dc815ab414b7940f303978c5e8e31b674abc41c",
       "Tags": ""
     },
     "unreadable": [
@@ -58605,8 +58781,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1553",
-      "SourceBytecodeSha256": "9cee39350afc192f3abeb4760238af4810d5e9b4325863930a052ea34343ed2a",
+      "SourceBytecodeBytes": "2082",
+      "SourceBytecodeSha256": "31d54ac2659ecead126a3aff58aed2bb826afe2170d35abe4628e51a61e98f88",
       "Tags": ""
     },
     "unreadable": [
@@ -58663,6 +58839,16 @@
     "class": "StringValue",
     "name": ".luaurc",
     "path": "AvatarSettings/Packages/_Index/SignalsScheduler/SignalsScheduler/.luaurc",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": ".luaurc",
+    "path": "AvatarSettings/Src/.luaurc",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""

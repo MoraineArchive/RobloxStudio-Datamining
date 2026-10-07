@@ -8858,7 +8858,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "1111",
-      "SourceBytecodeSha256": "db2bcfaeadca246fa3d9677ad45180ede1fae63547aab685c4bc98c7c155f166",
+      "SourceBytecodeSha256": "a7eec09644fe7c31d1283a4721ad2925ff90701cd281d1037a7bfa9e3ffa0beb",
       "Tags": ""
     },
     "unreadable": [
@@ -12281,8 +12281,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "19110",
-      "SourceBytecodeSha256": "d7c775b921b9ec7e3437e24e3591b23157b2488d7b11d5a4907be8dd7960672c",
+      "SourceBytecodeBytes": "19432",
+      "SourceBytecodeSha256": "be80df72c8ed2e262c136e68d6320efeb91aa26e79247c03f3899f54c2853097",
       "Tags": ""
     },
     "unreadable": [
@@ -13257,8 +13257,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "7134",
-      "SourceBytecodeSha256": "3b4a8a558e74f886fdf7c18ec02e6f20aeecf06b2221d1274d6dbe4aafd555f4",
+      "SourceBytecodeBytes": "7406",
+      "SourceBytecodeSha256": "b0d02fb0f340161a71956d67b8eaa6ddb56692156acde40dcce9179969b3ba33",
       "Tags": ""
     },
     "unreadable": [
@@ -13273,8 +13273,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3059",
-      "SourceBytecodeSha256": "3fc35f779da0f1894a5c9e71499c27ca8fe884715146163c51510423cc173d5e",
+      "SourceBytecodeBytes": "3327",
+      "SourceBytecodeSha256": "a28ee6b2a24b86bf376323e7b52220e0fec62e618254bddb36e2953514003b6d",
       "Tags": ""
     },
     "unreadable": [
@@ -13443,14 +13443,30 @@
   },
   {
     "class": "ModuleScript",
+    "name": "DiscoverReachStatus",
+    "path": "StartPage/Src/Network/DiscoverReachStatus",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1738",
+      "SourceBytecodeSha256": "c3c773f687aba0cc6598d130ac4bc5d5e6d967e64bdddf716aceeeed0fc36309",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "DiscoverRecents",
     "path": "StartPage/Src/Network/DiscoverRecents",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3736",
-      "SourceBytecodeSha256": "a3b2001994e93d6b2c925190b0313d044bf66f198f13f2b20e54f31f7aa5a53d",
+      "SourceBytecodeBytes": "3932",
+      "SourceBytecodeSha256": "2e92848df0f0865b5480ca52e50cb715fbda0ed001866afcd816fd66891923ad",
       "Tags": ""
     },
     "unreadable": [
@@ -13465,8 +13481,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2840",
-      "SourceBytecodeSha256": "ff904c2490c16b673d1e90bdee31287f4722dfdceef9a27328137637100b8540",
+      "SourceBytecodeBytes": "3057",
+      "SourceBytecodeSha256": "fcc7d826d709a62d6ca871896ffcf03add2c6cf8066329c34b54ab08d4f61257",
       "Tags": ""
     },
     "unreadable": [
@@ -13673,8 +13689,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1345",
-      "SourceBytecodeSha256": "ee587e3a57a7b1b89d12b6e77a3d6c488ad5fdf5e3fa7604e6d36bb5fa21f4c5",
+      "SourceBytecodeBytes": "1262",
+      "SourceBytecodeSha256": "bcd2e48ff6cd54706dcbb2c4d48e7881c88bdb967f5fe76fcf88bfc1422fa557",
       "Tags": ""
     },
     "unreadable": [
@@ -16682,7 +16698,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "184",
-      "SourceBytecodeSha256": "27ad9e7dbfb37e6c4cf1ee93a7524907604affd57d19c1661884dc03383b6698",
+      "SourceBytecodeSha256": "6b43dd3a139559a170221db29f26846bd487f4a39bb2b086a45f178cc188194c",
       "Tags": ""
     },
     "unreadable": [
@@ -17993,8 +18009,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2332",
-      "SourceBytecodeSha256": "03f35812b94046c5c12626668229614a96089cc91cf1be1d7090595c0a7b1901",
+      "SourceBytecodeBytes": "2577",
+      "SourceBytecodeSha256": "c2331bcb8ad30be9b437c97b4ad6b01bd9bf2fa8b8b5b6c96b63f5e4aff93324",
       "Tags": ""
     },
     "unreadable": [
@@ -18651,6 +18667,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "221",
       "SourceBytecodeSha256": "d13aed508956ae008bae7b1b60d1a8d84d77ba10007f95e699624e52c7f0ad66",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "getFFlagLuaStartPageReachStatus",
+    "path": "StartPage/Src/SharedFlags/getFFlagLuaStartPageReachStatus",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "208",
+      "SourceBytecodeSha256": "63951e3f7ed7919228dff9685ee749baaa013184ee92adb2a0b274ddece30b86",
       "Tags": ""
     },
     "unreadable": [
@@ -20355,6 +20387,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "getReachStatusBadgePresentation",
+    "path": "StartPage/Src/Util/getReachStatusBadgePresentation",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1680",
+      "SourceBytecodeSha256": "8d57bd4163534755478aed291a0f02ba4fb699da1975e196ddc7fd9bfaaaf53b",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "getRelativePath",
     "path": "StartPage/Packages/_Index/RobloxShared/RobloxShared/getRelativePath",
     "properties": {
@@ -21673,8 +21721,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "25426",
-      "SourceBytecodeSha256": "eab9d9afb7c9985e333ca50789a8f2e7d01531b6cfe6f3e37394c326535f6887",
+      "SourceBytecodeBytes": "24351",
+      "SourceBytecodeSha256": "47c3ac7917dbb02e8d412850823b86ed2fb4d8387c15a1651a4a285fe2dcaa5e",
       "Tags": ""
     },
     "unreadable": [
@@ -22569,8 +22617,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "13421",
-      "SourceBytecodeSha256": "3a328ee8c8b13df061d61aaacf64a0d3fc19936ded55974b06a7126a674a8c29",
+      "SourceBytecodeBytes": "14820",
+      "SourceBytecodeSha256": "f61bb3bd5ff101506e19f18bbe83b07b97b771bb9a7c186cefa06772c79fe2ba",
       "Tags": ""
     },
     "unreadable": [
@@ -22585,8 +22633,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "8445",
-      "SourceBytecodeSha256": "d0ae16e1ecf45f7161c02161b300efda3d5c7b4dac4881631c57c8ed3dd6572d",
+      "SourceBytecodeBytes": "8853",
+      "SourceBytecodeSha256": "43c03b50f75172b761095912667d162470b2fb67ed7f127a1551f02d42363fa7",
       "Tags": ""
     },
     "unreadable": [
@@ -29209,8 +29257,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5639",
-      "SourceBytecodeSha256": "3e58d63c9135f8006796de0535dc320d22a526d0552acccfc6d454c3c1e85312",
+      "SourceBytecodeBytes": "5650",
+      "SourceBytecodeSha256": "debe1e44d6e69cd687dfbfb8048c012f520097edffc74eaabc8380c82c1b8571",
       "Tags": ""
     },
     "unreadable": [
@@ -30553,8 +30601,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5142",
-      "SourceBytecodeSha256": "41e7119fdfbbf4cc7f91cc6df4e0d9772e4e75f34ad111144827dc1791b77862",
+      "SourceBytecodeBytes": "5235",
+      "SourceBytecodeSha256": "f39400e2d299034f7cee95d30022d94d8e06443fca7ff820a0e90e2b3d12ee50",
       "Tags": ""
     },
     "unreadable": [
@@ -33529,8 +33577,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "199",
-      "SourceBytecodeSha256": "aa133493a1d209611454a546aadc3ace4107663a2306505e6281609205118206",
+      "SourceBytecodeBytes": "280",
+      "SourceBytecodeSha256": "da3e6a225de7e3a9765045a447ece7eb585847a5572e3d8aa81dc7e84bf76d9c",
       "Tags": ""
     },
     "unreadable": [
@@ -33577,8 +33625,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5476",
-      "SourceBytecodeSha256": "17ceb6cb6bbed0c3e335c7fa84d4d77a28cab936153a2e1aa62451e5247728ea",
+      "SourceBytecodeBytes": "5360",
+      "SourceBytecodeSha256": "e55c32d1df251b677d37b92d1b2ddf0f898cf82b00389dde16d95b081c84f216",
       "Tags": ""
     },
     "unreadable": [
@@ -35475,6 +35523,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "QueuedOneShotCrossDMPluginInvoke",
+    "path": "StartPage/Packages/_Index/PluginLoader/PluginLoader/QueuedOneShotCrossDMPluginInvoke",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "734",
+      "SourceBytecodeSha256": "02fb00a7a8075a22ba79cb049f8e424cc81c485a07096a99fb3e77a1ab17941d",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "RadioButton.story",
     "path": "StartPage/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/RadioButton/RadioButton.story",
     "properties": {
@@ -35819,6 +35883,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "2143",
       "SourceBytecodeSha256": "6a262c5c1de55088aa33b1d3a7dca0932412896d5bccaeb4b6afe1f5cc832c6a",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ReachStatusBadge",
+    "path": "StartPage/Src/Components/ReachStatusBadge",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "968",
+      "SourceBytecodeSha256": "2f2f1b5a0dc8b7e0f6cf39e784ebb0ee04eca7d2b97ff002624c0edd1825f7d8",
       "Tags": ""
     },
     "unreadable": [
@@ -39827,14 +39907,30 @@
   },
   {
     "class": "ModuleScript",
-    "name": "safeGetFastFlag",
-    "path": "StartPage/Packages/_Index/StudioFoundation/StudioFoundation/Util/safeGetFastFlag",
+    "name": "SafeFlags",
+    "path": "StartPage/Packages/_Index/StudioFoundation/SafeFlags",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "204",
-      "SourceBytecodeSha256": "e820b2fecae8f0d79c772d56d1562e6f1e09673fa1e750d560087bb80b8515e6",
+      "SourceBytecodeBytes": "178",
+      "SourceBytecodeSha256": "36b279786c2d99da236b43fbead13cd8b322a4e171cc20348dbed8b3a5090d72",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "SafeFlags",
+    "path": "StartPage/Packages/SafeFlags",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "158",
+      "SourceBytecodeSha256": "667ec67aca4a7b412df8ca68f88c629bf8c78ba0cd77a95bac4d284b47a084cb",
       "Tags": ""
     },
     "unreadable": [
@@ -39844,7 +39940,7 @@
   {
     "class": "ModuleScript",
     "name": "safeGetFastFlag",
-    "path": "StartPage/Src/SharedFlags/safeGetFastFlag",
+    "path": "StartPage/Packages/_Index/StudioFoundation/StudioFoundation/Util/safeGetFastFlag",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -40585,8 +40681,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5316",
-      "SourceBytecodeSha256": "8f3e39b3460de27a8859c5b7946525adb4bc8c7c0fd795d7ee53f9954fad1537",
+      "SourceBytecodeBytes": "5706",
+      "SourceBytecodeSha256": "bd96e5fcbb4868c1d8e1e956a67ab959072b0c11c5acdf0522be2d2e298e8d98",
       "Tags": ""
     },
     "unreadable": [
@@ -50441,8 +50537,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "263",
-      "SourceBytecodeSha256": "8abe655b96ce25fc0216d1b57fd550888183962c09a392937594aed300b35ed2",
+      "SourceBytecodeBytes": "347",
+      "SourceBytecodeSha256": "09f302dc76943bfad2faf81de9d2e51d9d2b1591eedf5c793cef2a3c9951609f",
       "Tags": ""
     },
     "unreadable": [
@@ -50633,8 +50729,24 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2683",
-      "SourceBytecodeSha256": "9a92ee2fdb0783323b113ff5db2ada4d8bf9b2ae03a1e504e79e8805af6dd6a1",
+      "SourceBytecodeBytes": "2993",
+      "SourceBytecodeSha256": "e1f3bfbb6c72f8c926cd1b296fb473bbef9eeb22a2e96955f0f9b2af9e2c04f6",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "UniverseReachStatusResponse",
+    "path": "StartPage/Src/Models/UniverseReachStatusResponse",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "518",
+      "SourceBytecodeSha256": "c1386e10c06ba469d24edf117d6e3a68db967a2377fb1a23f9d39dd6e4ed8140",
       "Tags": ""
     },
     "unreadable": [
@@ -50745,8 +50857,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "6239",
-      "SourceBytecodeSha256": "32a6eee667733929d895a91bcde83e02a69e7188717899153ebe717f0c498164",
+      "SourceBytecodeBytes": "6421",
+      "SourceBytecodeSha256": "ff71d72aa927458114cc313414316cd155069a6883ef7f44bbc882120136f3fb",
       "Tags": ""
     },
     "unreadable": [

@@ -9923,8 +9923,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "199",
-      "SourceBytecodeSha256": "aa133493a1d209611454a546aadc3ace4107663a2306505e6281609205118206",
+      "SourceBytecodeBytes": "280",
+      "SourceBytecodeSha256": "da3e6a225de7e3a9765045a447ece7eb585847a5572e3d8aa81dc7e84bf76d9c",
       "Tags": ""
     },
     "unreadable": [
@@ -9971,8 +9971,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5476",
-      "SourceBytecodeSha256": "17ceb6cb6bbed0c3e335c7fa84d4d77a28cab936153a2e1aa62451e5247728ea",
+      "SourceBytecodeBytes": "5360",
+      "SourceBytecodeSha256": "e55c32d1df251b677d37b92d1b2ddf0f898cf82b00389dde16d95b081c84f216",
       "Tags": ""
     },
     "unreadable": [
@@ -10581,6 +10581,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "479",
       "SourceBytecodeSha256": "70a739e0435327ac2ec25abb37487683e9e99eeedccbfb67ebc2f7779c5febbd",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "QueuedOneShotCrossDMPluginInvoke",
+    "path": "MoveDragger/Packages/_Index/PluginLoader/PluginLoader/QueuedOneShotCrossDMPluginInvoke",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "734",
+      "SourceBytecodeSha256": "02fb00a7a8075a22ba79cb049f8e424cc81c485a07096a99fb3e77a1ab17941d",
       "Tags": ""
     },
     "unreadable": [

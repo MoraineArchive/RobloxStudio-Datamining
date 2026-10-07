@@ -498,6 +498,12 @@
     "sha256": "1036ac9f0dc86e1f4994cc8095211a06c5e6527a1f9ca565e549befa4475ff1d"
   },
   {
+    "bytes": 3520,
+    "extension": "png",
+    "path": "ui/ExternalIdentity/google.png",
+    "sha256": "68260899411828f0d6282c3c67d0f63341ed55bcd3e4f2f7ef28ffdd121de1f5"
+  },
+  {
     "bytes": 15185,
     "extension": "png",
     "path": "ui/Gamepad/Controller.png",

@@ -1,117 +1,117 @@
 {
   "hashes": {
-    "combined.json": "46d5e02f24ace02a78fa06889e5745c1594f51a88c4432c76b76282d43e3b228",
-    "cpp.txt": "62a131c28e119c771d6831d64a844f05e7fe5b31b787da17e78084eaf842e8fc",
-    "lua.txt": "7f28cfa4d5760b91bf8c263652a0f703d5ac590a18dd8fd55cc2dfe95eaa7af3",
-    "metadata.json": "901aba82576f2ae9632214bc7e86fdb0da2917a099aaa9da1bf5d23e773911eb"
+    "combined.json": "38ded1094a8a34abf1572cd425c51e68af24051bf731c5139bf2a45acec82479",
+    "cpp.txt": "4e962182de379670e0742e6e2bb192c7a2577e290c5dbd11b7f896d58b448c54",
+    "lua.txt": "5dce831427750075455f45e9b8b09572bc7bdb74ccd181e8a171bb769392a02d",
+    "metadata.json": "0aabb3973d1391e8df7175d7b8d9fe4585516748ebc73322c4e80c9eae2ebfaa"
   },
-  "id": "612a0a1a20e443c88615fcdb6305f4f1f084065f85095e57aef73add637a701e",
+  "id": "70436e01af0fd05aaf8a178c3c42964f1374c457e9ac64a9d718bf7b89243c30",
   "observationMode": "live",
-  "observedAt": "2026-10-01T00:04:59.884Z",
+  "observedAt": "2026-10-07T22:02:35.248Z",
   "provenance": [
     {
-      "buildGuid": "version-76e1a02649ad4f35",
-      "bytes": 116599130,
+      "buildGuid": "version-9b554450a0fc4e65",
+      "bytes": 118010438,
       "derivedFrom": "RobloxStudioBeta.exe",
-      "sha256": "8b4a7ef18cf8444e852b430679763bf40febdabf8173b12491e365ca8e44b42a",
+      "sha256": "bbf1bbeb72f9d382e43f9daf99a295c86d4ed1a74b99148170ae95beb0e907a2",
       "sourceType": "derived-official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-76e1a02649ad4f35-RobloxStudio.zip"
+      "sourceUrl": "https://setup.rbxcdn.com/version-9b554450a0fc4e65-RobloxStudio.zip"
     },
     {
-      "buildGuid": "version-76e1a02649ad4f35",
-      "bytes": 306510,
+      "buildGuid": "version-9b554450a0fc4e65",
+      "bytes": 306514,
       "derivedFrom": "content-configs.zip",
-      "sha256": "c9536721b0aeb2c2e9795086297ee115dd30a3f5a7ac3a7ac6287fe26ec49ec3",
+      "sha256": "46d4c874a6310144832527e320e1e804073d71f251bf862ea6a1140881f4cdf1",
       "sourceType": "derived-official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-76e1a02649ad4f35-content-configs.zip"
+      "sourceUrl": "https://setup.rbxcdn.com/version-9b554450a0fc4e65-content-configs.zip"
     },
     {
-      "buildGuid": "version-76e1a02649ad4f35",
+      "buildGuid": "version-9b554450a0fc4e65",
       "bytes": 620166,
       "derivedFrom": "content-models.zip",
       "sha256": "bd9d84b18399042e0478ccdc989081d48a82279a498b36efaa197a317e01df76",
       "sourceType": "derived-official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-76e1a02649ad4f35-content-models.zip"
+      "sourceUrl": "https://setup.rbxcdn.com/version-9b554450a0fc4e65-content-models.zip"
     },
     {
-      "buildGuid": "version-76e1a02649ad4f35",
+      "buildGuid": "version-9b554450a0fc4e65",
       "bytes": 650142,
       "derivedFrom": "content-qt_translations.zip",
       "sha256": "66526e43d2c9c9a18141ac2d41a0629fec1f11a21ebd6a12a9997f33b0fcc8ff",
       "sourceType": "derived-official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-76e1a02649ad4f35-content-qt_translations.zip"
+      "sourceUrl": "https://setup.rbxcdn.com/version-9b554450a0fc4e65-content-qt_translations.zip"
     },
     {
-      "buildGuid": "version-76e1a02649ad4f35",
-      "bytes": 9504538,
+      "buildGuid": "version-9b554450a0fc4e65",
+      "bytes": 9827073,
       "derivedFrom": "extracontent-luapackages.zip",
-      "sha256": "d06db34d00339164f81286d94bf37c534e0fff390d12bc4489fe5274fc871f49",
+      "sha256": "3d5fecff4fa00d9443650e0632dc3404af243c4383d287922fbc6c41263ea210",
       "sourceType": "derived-official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-76e1a02649ad4f35-extracontent-luapackages.zip"
+      "sourceUrl": "https://setup.rbxcdn.com/version-9b554450a0fc4e65-extracontent-luapackages.zip"
     },
     {
-      "buildGuid": "version-76e1a02649ad4f35",
-      "bytes": 15599118,
+      "buildGuid": "version-9b554450a0fc4e65",
+      "bytes": 16045892,
       "derivedFrom": "extracontent-models.zip",
-      "sha256": "d40dc212f58ca1ea033e878550e0beb41dfe686e971983248ebee0c4c82536bd",
+      "sha256": "625021e29d54403528a81e02580a00ecf5b241a5e9871a55712981656e23d388",
       "sourceType": "derived-official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-76e1a02649ad4f35-extracontent-models.zip"
+      "sourceUrl": "https://setup.rbxcdn.com/version-9b554450a0fc4e65-extracontent-models.zip"
     },
     {
-      "buildGuid": "version-76e1a02649ad4f35",
-      "bytes": 3062613,
+      "buildGuid": "version-9b554450a0fc4e65",
+      "bytes": 3093987,
       "derivedFrom": "extracontent-scripts.zip",
-      "sha256": "af2114340fe48345e40d264f919a99398c9570c8537997e6a2a7c9910223bccf",
+      "sha256": "cf7720f2a1e66cb65b10ff302c3b82ba403ef5949474b94bd9681be4bdca4f8c",
       "sourceType": "derived-official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-76e1a02649ad4f35-extracontent-scripts.zip"
+      "sourceUrl": "https://setup.rbxcdn.com/version-9b554450a0fc4e65-extracontent-scripts.zip"
     },
     {
-      "buildGuid": "version-76e1a02649ad4f35",
+      "buildGuid": "version-9b554450a0fc4e65",
       "bytes": 610717,
       "derivedFrom": "extracontent-translations.zip",
       "sha256": "16cd03787910fec0340c58cd4efd4ba47d1f00d61395c76693cd5db695db58a4",
       "sourceType": "derived-official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-76e1a02649ad4f35-extracontent-translations.zip"
+      "sourceUrl": "https://setup.rbxcdn.com/version-9b554450a0fc4e65-extracontent-translations.zip"
     },
     {
-      "buildGuid": "version-76e1a02649ad4f35",
+      "buildGuid": "version-9b554450a0fc4e65",
       "bytes": 207417,
       "derivedFrom": "studiocontent-models.zip",
       "sha256": "91176b85e27a9b38dd2b31dd1718d996158d0816865284e0b80a35ab39bc62fe",
       "sourceType": "derived-official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-76e1a02649ad4f35-studiocontent-models.zip"
+      "sourceUrl": "https://setup.rbxcdn.com/version-9b554450a0fc4e65-studiocontent-models.zip"
     },
     {
-      "buildGuid": "version-76e1a02649ad4f35",
-      "bytes": 101747711,
+      "buildGuid": "version-9b554450a0fc4e65",
+      "bytes": 101953345,
       "derivedFrom": "BuiltInPlugins.zip",
-      "sha256": "7189e9ca0cc2f3f3903d547914e70734659bbd1b298bae5dd81d181b569812d7",
+      "sha256": "1cde3090d1b29bda7ac540cdcc84198be39adc6d998931eb4790cd120435dcf8",
       "sourceType": "derived-official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-76e1a02649ad4f35-BuiltInPlugins.zip"
+      "sourceUrl": "https://setup.rbxcdn.com/version-9b554450a0fc4e65-BuiltInPlugins.zip"
     },
     {
-      "buildGuid": "version-76e1a02649ad4f35",
-      "bytes": 105900800,
+      "buildGuid": "version-9b554450a0fc4e65",
+      "bytes": 104399784,
       "derivedFrom": "BuiltInStandalonePlugins.zip",
-      "sha256": "55d25cb942d69bbf9e37909d56b78b5f1fd561ce843b96c8c749db59a5e6d902",
+      "sha256": "e46f2fec8ce520627fac82821ace087dfe9969786b6272b7555c0e50eb225480",
       "sourceType": "derived-official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-76e1a02649ad4f35-BuiltInStandalonePlugins.zip"
+      "sourceUrl": "https://setup.rbxcdn.com/version-9b554450a0fc4e65-BuiltInStandalonePlugins.zip"
     },
     {
-      "buildGuid": "version-76e1a02649ad4f35",
+      "buildGuid": "version-9b554450a0fc4e65",
       "bytes": 927300,
       "derivedFrom": "Plugins.zip",
       "sha256": "336c248303ef778dd1ceeddee133a43b44ad17034d4f3db48df3fe389d7688a5",
       "sourceType": "derived-official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-76e1a02649ad4f35-Plugins.zip"
+      "sourceUrl": "https://setup.rbxcdn.com/version-9b554450a0fc4e65-Plugins.zip"
     }
   ],
-  "sequence": 9,
+  "sequence": 10,
   "status": "available",
   "summary": {
-    "cpp": 29,
+    "cpp": 31,
     "engineRevision": 1,
-    "lua": 1498,
+    "lua": 1501,
     "method": "C++: explicitly prefixed native strings. Lua: explicit names and DefineFast/GetFast literals. These are observations, not a complete executable registration table. LIVE values are separate."
   },
   "surface": "FastVariables",

@@ -492,16 +492,6 @@
   {
     "class": "Folder",
     "name": "Components",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Components",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
-    "name": "Components",
     "path": "ModerationDialog/Src/Components",
     "properties": {
       "AttributesSerialize": "",
@@ -523,16 +513,6 @@
     "class": "Folder",
     "name": "ContentAliasesApi",
     "path": "ModerationDialog/Packages/_Index/DeveloperFramework/DeveloperFramework/RobloxAPI/APIS/ContentAliasesApi",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
-    "name": "Contexts",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Contexts",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -1073,16 +1053,6 @@
     "class": "Folder",
     "name": "Hooks",
     "path": "ModerationDialog/Packages/_Index/Foundation/Foundation/Providers/Cursor/Hooks",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
-    "name": "Hooks",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Hooks",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -1891,16 +1861,6 @@
   },
   {
     "class": "Folder",
-    "name": "Panels",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Panels",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
     "name": "ParserTestSuite",
     "path": "ModerationDialog/Packages/_Index/DeveloperFramework/DeveloperFramework/Util/Markdown/ParserTestSuite",
     "properties": {
@@ -2011,28 +1971,8 @@
   },
   {
     "class": "Folder",
-    "name": "plugins",
-    "path": "ModerationDialog/Packages/_Index/SharedPluginConstants/SharedPluginConstants/plugins",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
     "name": "PolarFreeze",
     "path": "ModerationDialog/Packages/_Index/Foundation/Foundation/Generated/StyleRules/PolarFreeze",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
-    "name": "Popover",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Components/Popover",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -2292,16 +2232,6 @@
   {
     "class": "Folder",
     "name": "Resources",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Resources",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
-    "name": "Resources",
     "path": "ModerationDialog/Src/Resources",
     "properties": {
       "AttributesSerialize": "",
@@ -2442,27 +2372,7 @@
   {
     "class": "Folder",
     "name": "SharedFlags",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/SharedFlags",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
-    "name": "SharedFlags",
     "path": "ModerationDialog/Src/SharedFlags",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
-    "name": "SharedPluginConstants",
-    "path": "ModerationDialog/Packages/_Index/SharedPluginConstants",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -2473,26 +2383,6 @@
     "class": "Folder",
     "name": "Signal",
     "path": "ModerationDialog/Packages/_Index/Signal",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
-    "name": "Signals",
-    "path": "ModerationDialog/Packages/_Index/Signals",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
-    "name": "SignalsScheduler",
-    "path": "ModerationDialog/Packages/_Index/SignalsScheduler",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -2573,16 +2463,6 @@
     "class": "Folder",
     "name": "String",
     "path": "ModerationDialog/Packages/_Index/String",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
-    "name": "StudioFoundation",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -2963,16 +2843,6 @@
     "class": "Folder",
     "name": "Users",
     "path": "ModerationDialog/Packages/_Index/DeveloperFramework/DeveloperFramework/RobloxAPI/Inventory/V1/Users",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
-    "name": "Util",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Util",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -4319,22 +4189,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "149",
       "SourceBytecodeSha256": "76cb9923eb24d5d34cf93eeca0173ba26a7f8d921018b4d03c7d6a17d46ec83e",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "AssetManager",
-    "path": "ModerationDialog/Packages/_Index/SharedPluginConstants/SharedPluginConstants/plugins/AssetManager",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "159",
-      "SourceBytecodeSha256": "fbc3df2eddd67c8438bbde9bd9995d37fa5959cd6f9e0d31d7547954f616e609",
       "Tags": ""
     },
     "unreadable": [
@@ -5991,22 +5845,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "BuilderIcons",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/BuilderIcons",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "181",
-      "SourceBytecodeSha256": "9da267ff06ad4b0667252fc7abaf4520d11a4b7824875d0dca6643c04cdb9c5d",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "BuilderIconsFallback",
     "path": "ModerationDialog/Packages/_Index/BuilderIcons/BuilderIcons/BuilderIconsFallback",
     "properties": {
@@ -6447,22 +6285,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "4482",
       "SourceBytecodeSha256": "6ad3523a4df328afc4df5a53c98ad62ac8a7722634ad3114088bb62f4ac05eaa",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "callUserSpace",
-    "path": "ModerationDialog/Packages/_Index/Signals/Signals/callUserSpace",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "806",
-      "SourceBytecodeSha256": "29049ea6ce0563147e3c19fc63d0a6d646f676a848d61c1e7f422ef612f88810",
       "Tags": ""
     },
     "unreadable": [
@@ -8647,22 +8469,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "computeFairWidths",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Components/Dialog/computeFairWidths",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "738",
-      "SourceBytecodeSha256": "82a1facbb189a6a2c6c6e7973237c466754f5670e34e51565f30d7614e3e56f4",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "concat",
     "path": "ModerationDialog/Packages/_Index/Collections/Collections/Array/concat",
     "properties": {
@@ -8766,7 +8572,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "1111",
-      "SourceBytecodeSha256": "db2bcfaeadca246fa3d9677ad45180ede1fae63547aab685c4bc98c7c155f166",
+      "SourceBytecodeSha256": "a7eec09644fe7c31d1283a4721ad2925ff90701cd281d1037a7bfa9e3ffa0beb",
       "Tags": ""
     },
     "unreadable": [
@@ -9751,22 +9557,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "createFoundationDesignBinding",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Util/createFoundationDesignBinding",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "723",
-      "SourceBytecodeSha256": "4070409afca106adcf07a43c023851c5b6d3aea164bc9fe1fff6db6a218544f1",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "createFragment",
     "path": "ModerationDialog/Packages/_Index/RoactCompat/RoactCompat/createFragment",
     "properties": {
@@ -10233,22 +10023,6 @@
     "class": "ModuleScript",
     "name": "Cryo",
     "path": "ModerationDialog/Packages/_Index/lumberyak/Cryo",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "173",
-      "SourceBytecodeSha256": "73d5ac38b82fac5178d5f9c68d8c8db21de2fda77f43921d2cb666f7f22b6a7d",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Cryo",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/Cryo",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -11263,22 +11037,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "195",
       "SourceBytecodeSha256": "145464553355742991d68af0007ebc712e42e8c2a3e1363c75ce7e2a5d6d0b00",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Dash",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/Dash",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "195",
-      "SourceBytecodeSha256": "bfc847517457dbe7e10719e9bbbc79bb1e2fa0711f111e97750468431bd44320",
       "Tags": ""
     },
     "unreadable": [
@@ -12471,22 +12229,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "Dialog.story",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Components/Dialog/Dialog.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "4815",
-      "SourceBytecodeSha256": "1dfbb8bc15c062981050448dda6a6de4fc2e4322b019df9d866405687d555a9a",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "Dialog.Text.story",
     "path": "ModerationDialog/Packages/_Index/Foundation/Foundation/Components/Dialog/Dialog.Text.story",
     "properties": {
@@ -12583,38 +12325,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "Dialog",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Components/Dialog",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "107",
-      "SourceBytecodeSha256": "24508804b23e6c2227a73f1c46c85741b6e57f7aa72aa9e8355b4007c5017426",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Dialog",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Components/Dialog/Dialog",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "2291",
-      "SourceBytecodeSha256": "6f7477116039a23ab2f53ab5e6ecf61917216d883c066bfe97cfd4627cf7fa76",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "DialogAction",
     "path": "ModerationDialog/Packages/_Index/DeveloperFramework/DeveloperFramework/Util/DialogAction",
     "properties": {
@@ -12647,46 +12357,14 @@
   },
   {
     "class": "ModuleScript",
-    "name": "DialogButtonGroup.story",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Components/Dialog/DialogButtonGroup.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "1550",
-      "SourceBytecodeSha256": "2cb43389bcbf5b7d5659112a2a38c8f6d74f75da8bc9847e2c6ee0de10c36620",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "DialogButtonGroup",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Components/Dialog/DialogButtonGroup",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "4409",
-      "SourceBytecodeSha256": "3a85fd5454d0ddf1d8ab1ee3c6532c025e21bfb9e74735c13d8c6d582ee0775d",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "DialogContainer",
     "path": "ModerationDialog/Src/Components/DialogContainer",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4074",
-      "SourceBytecodeSha256": "444f1dcde20424b307339b62cd390c5bb8547d43d648b23ace6b3fc780f1e495",
+      "SourceBytecodeBytes": "3441",
+      "SourceBytecodeSha256": "f0610d794490a511ba4546b30a278d0af7885d35ca327da6cc5f90f69b6ad999",
       "Tags": ""
     },
     "unreadable": [
@@ -12751,22 +12429,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "1712",
       "SourceBytecodeSha256": "3b9b6c1d620fa20102fb300378b86a72a83740acd0d4b412917707ee3c2ce6d9",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "DialogPanel",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Components/Dialog/DialogPanel",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "3360",
-      "SourceBytecodeSha256": "a2b31c53263d1efbdf3c9d32491b29cb34aa4f3c230d084720ae76a9a59144c8",
       "Tags": ""
     },
     "unreadable": [
@@ -12847,38 +12509,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "1375",
       "SourceBytecodeSha256": "d765deaf2d3028ebb272395cc6cdb31632d37554ec836e859c320038caae07a9",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "DialogView.story",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Components/Dialog/DialogView.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "2620",
-      "SourceBytecodeSha256": "5f305b119b9299c52432f30af0f0643c598734523944c198c5caddd7a8c8f19c",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "DialogView",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Components/Dialog/DialogView",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "5980",
-      "SourceBytecodeSha256": "943704bd0a29f68f2f05a3abfae7cce6732c25dab75d7fe3753b245d41e946fa",
       "Tags": ""
     },
     "unreadable": [
@@ -13085,8 +12715,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1345",
-      "SourceBytecodeSha256": "ee587e3a57a7b1b89d12b6e77a3d6c488ad5fdf5e3fa7604e6d36bb5fa21f4c5",
+      "SourceBytecodeBytes": "1262",
+      "SourceBytecodeSha256": "bcd2e48ff6cd54706dcbb2c4d48e7881c88bdb967f5fe76fcf88bfc1422fa557",
       "Tags": ""
     },
     "unreadable": [
@@ -16167,22 +15797,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "Foundation",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/Foundation",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "179",
-      "SourceBytecodeSha256": "33c24841010e5b780a5d1c00227eaf8a325bbd98183ba86ee9d8ff9dab4a563b",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "FoundationCloudAssets",
     "path": "ModerationDialog/Packages/_Index/Foundation/FoundationCloudAssets",
     "properties": {
@@ -16287,38 +15901,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "2335",
       "SourceBytecodeSha256": "6a7fe58453d09d71a9e591de8272e2a5aaf1fea2ea23cfe14f7e3e81342d1bf6",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "FoundationProviderAdapter",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Components/FoundationProviderAdapter",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "3123",
-      "SourceBytecodeSha256": "58e19f1ab31ae828373e232a0884a9894fe7fc20e0d70e41f01a7213e9b71113",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Framework",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/Framework",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "187",
-      "SourceBytecodeSha256": "7618720db3cc324e8b2bf2e2096dfa2236953b5d3a531311defcf951a0b90aad",
       "Tags": ""
     },
     "unreadable": [
@@ -17607,22 +17189,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkUsesFoundationDialog",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/SharedFlags/getFFlagDevFrameworkUsesFoundationDialog",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "217",
-      "SourceBytecodeSha256": "bfeea9f7f53924f05f333c470d9c0339e03a65097efa44bca8646bfadb79cec7",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "getFFlagDFVideoStudioPreviewPermissionFix",
     "path": "ModerationDialog/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDFVideoStudioPreviewPermissionFix",
     "properties": {
@@ -17679,118 +17245,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "206",
       "SourceBytecodeSha256": "953e2a79e2edecf98a641e261ab7a6fba89150910db3a82469c3a72598253c07",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getFFlagModerationDialogMigrateUseDialog",
-    "path": "ModerationDialog/Src/SharedFlags/getFFlagModerationDialogMigrateUseDialog",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "217",
-      "SourceBytecodeSha256": "f3f2e373154bb8d9b285b1e522275b80c42ef71808f9d8d42272a9403099ab8f",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getFFlagStudioFoundationDialogDeviceSimFixes",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/SharedFlags/getFFlagStudioFoundationDialogDeviceSimFixes",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "221",
-      "SourceBytecodeSha256": "b3ad75ff2eb3f309176918c0369843ac5dba4bcc6d6dca17d2e0646c362cd5c9",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getFFlagStudioFoundationDialogWidthRenderFix",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/SharedFlags/getFFlagStudioFoundationDialogWidthRenderFix",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "221",
-      "SourceBytecodeSha256": "28264f0c341ca2782e38a8f0f27d371fef39ba6f5b0e0aa0fbbee901d59298e5",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getFFlagStudioFoundationOpenPlaceDialogFixes",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/SharedFlags/getFFlagStudioFoundationOpenPlaceDialogFixes",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "221",
-      "SourceBytecodeSha256": "1fa0d550b85b1fc61730af0c8e455f67b9705590c30b473835c2f5a50073938d",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getFFlagStudioFoundationPluginPropSupport",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/SharedFlags/getFFlagStudioFoundationPluginPropSupport",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "218",
-      "SourceBytecodeSha256": "faa401f2b8329bd2aa63f9b68dea64275000723692dfa650330d85df59a830fc",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getFFlagStudioFoundationPopupTooltipFix",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/SharedFlags/getFFlagStudioFoundationPopupTooltipFix",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "216",
-      "SourceBytecodeSha256": "ef8f3eac3e6a407b5cef94c4461413f5b4feac3f3ee1cef24a93837cb4b59742",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getFFlagStudioFoundationThemeContext",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/SharedFlags/getFFlagStudioFoundationThemeContext",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "213",
-      "SourceBytecodeSha256": "84f3fee21d4a9f0ceae9df2d22df94606bf68edc0c7fe6e27f00115eaed5a90c",
       "Tags": ""
     },
     "unreadable": [
@@ -18423,22 +17877,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "getPosition",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Components/Popover/getPosition",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "1301",
-      "SourceBytecodeSha256": "76fe08452789b356dcb8ec0ff049972017dffa932edf954094217492084104f1",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "getProjectDisplayName",
     "path": "ModerationDialog/Packages/_Index/JestCore/JestCore/getProjectDisplayName",
     "properties": {
@@ -18777,22 +18215,6 @@
     "class": "ModuleScript",
     "name": "getStudioSettings",
     "path": "ModerationDialog/Packages/_Index/DeveloperFramework/DeveloperFramework/Util/getStudioSettings",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "234",
-      "SourceBytecodeSha256": "5dd08c9b30720275d6e6a1b9f71f03e652c41e5f8e97bc2501c5d8a38e673c8d",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getStudioSettings",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Util/getStudioSettings",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -22687,22 +22109,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "101",
       "SourceBytecodeSha256": "8833a3edf93e62a17950c827aaa31af565c4834d93c0d0eb15fbb72d8c67e637",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "jest.config",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/jest.config",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "143",
-      "SourceBytecodeSha256": "c958ed210a6fde7cb8ffd95baeac7a943170020a51407f743fbb46ec5425bb3c",
       "Tags": ""
     },
     "unreadable": [
@@ -26791,22 +26197,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "Localization",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Contexts/Localization",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "12869",
-      "SourceBytecodeSha256": "bd368671ef386cedf1003bd60b5f26e772af73a4a4383151837e22675e75466d",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "logDebugMessages",
     "path": "ModerationDialog/Packages/_Index/JestCore/JestCore/lib/logDebugMessages",
     "properties": {
@@ -28391,22 +27781,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "Menu.story",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Components/Menu/Menu.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "7738",
-      "SourceBytecodeSha256": "81a08f8f6aff96c019972f6cf7937907c1d890eedd40773b7df9cb63ed8657f4",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "Menu",
     "path": "ModerationDialog/Packages/_Index/Foundation/Foundation/Components/Menu",
     "properties": {
@@ -28431,54 +27805,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "2200",
       "SourceBytecodeSha256": "e6dba31d7fe8609aeefb4e22aae936316f13da3463ad3466ba9b3122ff6773f1",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Menu",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Components/Menu",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "105",
-      "SourceBytecodeSha256": "b9cebc212cf3820b78e0af4f7bd9ab0c9080600d08b3c1a56f197e2c33a47117",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Menu",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Components/Menu/Menu",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "2198",
-      "SourceBytecodeSha256": "33adbbc0968c33e06a5d3bb5809b3160c30b1e5501cb47fc924df5575e3154af",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "MenuManager",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Panels/MenuManager",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "3867",
-      "SourceBytecodeSha256": "fe06fe0594e3aee1be1841d27f8087882496365832cdf026a8e89001cb9dd0bf",
       "Tags": ""
     },
     "unreadable": [
@@ -28680,22 +28006,6 @@
   {
     "class": "ModuleScript",
     "name": "mockContext",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Util/mockContext",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "1011",
-      "SourceBytecodeSha256": "0c02da29b395679012b3b3beaabad6dcf84ada8ca611f3614e49834c5cd3cbc5",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "mockContext",
     "path": "ModerationDialog/Src/Util/mockContext",
     "properties": {
       "AttributesSerialize": "",
@@ -28877,8 +28187,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5142",
-      "SourceBytecodeSha256": "41e7119fdfbbf4cc7f91cc6df4e0d9772e4e75f34ad111144827dc1791b77862",
+      "SourceBytecodeBytes": "5235",
+      "SourceBytecodeSha256": "f39400e2d299034f7cee95d30022d94d8e06443fca7ff820a0e90e2b3d12ee50",
       "Tags": ""
     },
     "unreadable": [
@@ -30871,22 +30181,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "PanelsContext",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Panels/PanelsContext",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "2290",
-      "SourceBytecodeSha256": "536eb97806e9e424e507b13025f5d28ed4ea9471065fa1822811120debe17ad1",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "PanelsProvider",
     "path": "ModerationDialog/Packages/_Index/Foundation/Foundation/Providers/StudioPanels/PanelsProvider",
     "properties": {
@@ -31485,8 +30779,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "199",
-      "SourceBytecodeSha256": "aa133493a1d209611454a546aadc3ace4107663a2306505e6281609205118206",
+      "SourceBytecodeBytes": "280",
+      "SourceBytecodeSha256": "da3e6a225de7e3a9765045a447ece7eb585847a5572e3d8aa81dc7e84bf76d9c",
       "Tags": ""
     },
     "unreadable": [
@@ -31533,8 +30827,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5476",
-      "SourceBytecodeSha256": "17ceb6cb6bbed0c3e335c7fa84d4d77a28cab936153a2e1aa62451e5247728ea",
+      "SourceBytecodeBytes": "5360",
+      "SourceBytecodeSha256": "e55c32d1df251b677d37b92d1b2ddf0f898cf82b00389dde16d95b081c84f216",
       "Tags": ""
     },
     "unreadable": [
@@ -31895,22 +31189,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "PopoverContent",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Components/Popover/PopoverContent",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "1018",
-      "SourceBytecodeSha256": "6cd3d51a55608ed734529f72979aa7339450765213a22f658ff5103dd4c9bbb1",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "PopoverContentProxy",
     "path": "ModerationDialog/Packages/_Index/Foundation/Foundation/Components/Popover/PopoverContentProxy",
     "properties": {
@@ -31935,22 +31213,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "689",
       "SourceBytecodeSha256": "9d3f9cc43eabcc6468355b93a721ebef535b3dfcf579d8a0621d6623302f6f3f",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "PopoverDelayGroup",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Components/Popover/PopoverDelayGroup",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "2054",
-      "SourceBytecodeSha256": "39b6b3796d2818790b3da853c32420ceb366a722402e9a88016aaddee3954642",
       "Tags": ""
     },
     "unreadable": [
@@ -33415,14 +32677,30 @@
   },
   {
     "class": "ModuleScript",
+    "name": "QueuedOneShotCrossDMPluginInvoke",
+    "path": "ModerationDialog/Packages/_Index/PluginLoader/PluginLoader/QueuedOneShotCrossDMPluginInvoke",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "734",
+      "SourceBytecodeSha256": "02fb00a7a8075a22ba79cb049f8e424cc81c485a07096a99fb3e77a1ab17941d",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "QuitDialogContainer",
     "path": "ModerationDialog/Src/Components/QuitDialogContainer",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2206",
-      "SourceBytecodeSha256": "53f254078f8a0945c85c9ab93bc46992f7d73bf8371fccd0db60e5a1171b20f8",
+      "SourceBytecodeBytes": "1546",
+      "SourceBytecodeSha256": "5bcb501ecb0e370c2327c1e7d56de9b06d89cd1d314d8feda53a7609988867d7",
       "Tags": ""
     },
     "unreadable": [
@@ -34041,22 +33319,6 @@
     "class": "ModuleScript",
     "name": "React",
     "path": "ModerationDialog/Packages/_Index/RoactCompat/React",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "174",
-      "SourceBytecodeSha256": "975cf02f953587022bb8ed3e3e89f39dd09346d2518fd959c7ffec201ead671c",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "React",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/React",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -35400,22 +34662,6 @@
   {
     "class": "ModuleScript",
     "name": "ReactIs",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/ReactIs",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "176",
-      "SourceBytecodeSha256": "e23e8d007723f5e26d1516b176288f9dabb04049b269816ba15805cb7fff3bd0",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "ReactIs",
     "path": "ModerationDialog/Packages/_Index/UsageTracker/ReactIs",
     "properties": {
       "AttributesSerialize": "",
@@ -35864,22 +35110,6 @@
   {
     "class": "ModuleScript",
     "name": "ReactRoblox",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/ReactRoblox",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "180",
-      "SourceBytecodeSha256": "9342c835e422a7162ef8ed43373c20e19fad13578cf48dd75db546fa4b30fbc1",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "ReactRoblox",
     "path": "ModerationDialog/Packages/ReactRoblox",
     "properties": {
       "AttributesSerialize": "",
@@ -36207,22 +35437,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "1991",
       "SourceBytecodeSha256": "5c609fccb7e0acdc2ed928dfa9c385db4969423bd166fd16e7d3784faa7c0c34",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "ReactUtils",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/ReactUtils",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "179",
-      "SourceBytecodeSha256": "a2da424acc0669065ac6ed6e1f9162a151e168cfcc151490ab1fa28457e0c097",
       "Tags": ""
     },
     "unreadable": [
@@ -36751,22 +35965,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "357",
       "SourceBytecodeSha256": "bed7ddf4ffb6ccc62bc3870c568c1562e8e4287b3b95872b3a05e33c0f265c45",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Reimport",
-    "path": "ModerationDialog/Packages/_Index/SharedPluginConstants/SharedPluginConstants/plugins/Reimport",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "680",
-      "SourceBytecodeSha256": "a8d39282208dcd5fb4830376591566173805e8089cff127d6fda97a4c3172df6",
       "Tags": ""
     },
     "unreadable": [
@@ -38295,22 +37493,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "safeGetFastFlag",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Util/safeGetFastFlag",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "204",
-      "SourceBytecodeSha256": "e820b2fecae8f0d79c772d56d1562e6f1e09673fa1e750d560087bb80b8515e6",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "sanitizeRoactLog",
     "path": "ModerationDialog/Packages/_Index/DeveloperTools/DeveloperTools/RoactInspector/Utils/sanitizeRoactLog",
     "properties": {
@@ -39735,38 +38917,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "SharedPluginConstants",
-    "path": "ModerationDialog/Packages/_Index/SharedPluginConstants/SharedPluginConstants",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "882",
-      "SourceBytecodeSha256": "5a47511bd2fa77893442cf7925a57de86793f85fe99832b34e58936348eb45b2",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "SharedPluginConstants",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/SharedPluginConstants",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "190",
-      "SourceBytecodeSha256": "ca68569991a1df404170a0920499967a394b687225025dfbda12aae0a2cfe4e1",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "Sheet.Actions.story",
     "path": "ModerationDialog/Packages/_Index/Foundation/Foundation/Components/Sheet/Actions/Sheet.Actions.story",
     "properties": {
@@ -40207,118 +39357,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "243",
       "SourceBytecodeSha256": "a2d90b77d4dc57ba27b4c9b4a98ff2f813bbff975fc081ed58865d6ecb62df31",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Signal",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/Signal",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "175",
-      "SourceBytecodeSha256": "1f66b6993e436e1babcf40e96181300b44c1ff126b0342757a37d1e685662aba",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Signals",
-    "path": "ModerationDialog/Packages/_Index/Signals/Signals",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "108",
-      "SourceBytecodeSha256": "e553c42eec6158c256eda1a5d91605bc1e2406b073a2babd235d1005fe2213ba",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Signals",
-    "path": "ModerationDialog/Packages/_Index/Signals/Signals/Signals",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "4820",
-      "SourceBytecodeSha256": "8b7ccf341d3b0313e262ba08e553dfdee0e1069407a30623ef4dfdf708c00ef0",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Signals",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/Signals",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "176",
-      "SourceBytecodeSha256": "191172ece9452dd8eedb5cd5b1e0169dfb9765c05f2c77a278e2f152266bf822",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "SignalsScheduler",
-    "path": "ModerationDialog/Packages/_Index/Signals/SignalsScheduler",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "185",
-      "SourceBytecodeSha256": "fa873191add9e652ed044037c4312374842d22fd7ccbc8ecf4cf46439f79e6f6",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "SignalsScheduler",
-    "path": "ModerationDialog/Packages/_Index/SignalsScheduler/SignalsScheduler",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "117",
-      "SourceBytecodeSha256": "0bfac900b0455902a905d30d24bb102fab52017bb76ce183d2b0cae5e5f45f46",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "SignalsScheduler",
-    "path": "ModerationDialog/Packages/_Index/SignalsScheduler/SignalsScheduler/SignalsScheduler",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "472",
-      "SourceBytecodeSha256": "a5c9707a8784f1552c730e0362cbb13336ee3f8ded6b5e5751e3ea864302abcf",
       "Tags": ""
     },
     "unreadable": [
@@ -42135,22 +41173,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "StoryMiddleware",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/StoryMiddleware",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "1578",
-      "SourceBytecodeSha256": "b2b6db616602d4ef5958108d79da85b225e3edc9d975c28cc75d107c4d12ce02",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "strict",
     "path": "ModerationDialog/Packages/_Index/DeveloperFramework/DeveloperFramework/Util/strict",
     "properties": {
@@ -42295,54 +41317,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "StudioFoundation.storybook",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/StudioFoundation.storybook",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "436",
-      "SourceBytecodeSha256": "18ed30ff7e8a5c9ed5dc06add0cf26f4dcf8afa7b24d9067b0fbac6cef2938e8",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "StudioFoundation",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "1477",
-      "SourceBytecodeSha256": "22a0c1a6fc6287e5b9db8d61dd1680646c78ce6df21afb7b402201049af10fc4",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "StudioFoundation",
-    "path": "ModerationDialog/Packages/StudioFoundation",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "165",
-      "SourceBytecodeSha256": "a37daf898cfad5a63c41396540d677fb691bc20439ed8e0297898e958864d00d",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "StudioMixins",
     "path": "ModerationDialog/Packages/_Index/DeveloperFramework/DeveloperFramework/Styling/StudioMixins",
     "properties": {
@@ -42423,22 +41397,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "StudioThemeContextProvider",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Contexts/StudioThemeContextProvider",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "1013",
-      "SourceBytecodeSha256": "998bd1d4b3faecca9b7aab0d5756a383d7bda4f01af25df78a65de2c95256948",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "StudioThemeFallback",
     "path": "ModerationDialog/Packages/_Index/DeveloperFramework/DeveloperFramework/Style/StudioThemeFallback",
     "properties": {
@@ -42479,22 +41437,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "3085",
       "SourceBytecodeSha256": "759c0bb7ab4485ef5d51721f2c1f29df36b52423f6af62e8f2dfbe8cbf72c123",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "StudioUri",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Util/StudioUri",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "2840",
-      "SourceBytecodeSha256": "4b5f1f3d0b6e6e5b6c506cfc0466b7a6db895ebff10b0e0c30cf38629ae2faf0",
       "Tags": ""
     },
     "unreadable": [
@@ -45223,22 +44165,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "TelemetryConfigs",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Resources/TelemetryConfigs",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "1566",
-      "SourceBytecodeSha256": "a288167bbfc9b388d2ea4fc91852ef7edc308a32dcd900c9405fcd6294459a6b",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "TelemetryProtocol",
     "path": "ModerationDialog/Src/Util/Telemetry/TelemetryProtocol",
     "properties": {
@@ -45271,22 +44197,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "TelemetryServiceContext",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Contexts/TelemetryServiceContext",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "289",
-      "SourceBytecodeSha256": "2a818d3b8116abc902f9fb8d08d02e26414c5d097942fb86061223886d27f6a1",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "template",
     "path": "ModerationDialog/Packages/_Index/JestEach/JestEach/table/template",
     "properties": {
@@ -45311,22 +44221,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "44",
       "SourceBytecodeSha256": "92029be7e8b134ccdac99d701cdc971ec4847ac9e75cf90e11e57c1c32edcfbb",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Terrain",
-    "path": "ModerationDialog/Packages/_Index/SharedPluginConstants/SharedPluginConstants/plugins/Terrain",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "914",
-      "SourceBytecodeSha256": "1b6042354b8e2ded438573b373326a181ddc3e34861d04089dd8b9e0ddba99f7",
       "Tags": ""
     },
     "unreadable": [
@@ -45455,22 +44349,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "1463",
       "SourceBytecodeSha256": "b079d00a07c1f35ff05125b5e4f72ce3a7d9a8c9aabd5e6b0cbd71142013b1a3",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "TestLoader",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/TestLoader",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "179",
-      "SourceBytecodeSha256": "0bc102c6dbd8104286dd9a45d8ff8965706dd338fc4aceac83d4f7493b8d9815",
       "Tags": ""
     },
     "unreadable": [
@@ -46111,22 +44989,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "129",
       "SourceBytecodeSha256": "8fd52e0970854f6d34e47f65644d7f6d01273f7407a387627692d487fa7cd2fb",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "ThemeContext",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Contexts/ThemeContext",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "432",
-      "SourceBytecodeSha256": "5d07fc7fd03a2c27fec2a7e898b88fbffa2bf99cd751784a3cfed1ab6dec6738",
       "Tags": ""
     },
     "unreadable": [
@@ -47207,22 +46069,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "Tooltip.story",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Components/Tooltip/Tooltip.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "2680",
-      "SourceBytecodeSha256": "2b01adf9026b9235f8f9dfce5a00d0566d2fd2a8652a1caed845615fe6e28374",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "Tooltip",
     "path": "ModerationDialog/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/Tooltip",
     "properties": {
@@ -47271,70 +46117,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "Tooltip",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Components/Tooltip",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "108",
-      "SourceBytecodeSha256": "cbfc1a7b31b24fdf1700d076a432c87c27d4ee5d476b6399db6ac86f2fcb7790",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Tooltip",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Components/Tooltip/Tooltip",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "2277",
-      "SourceBytecodeSha256": "7b1e95aef47556bcd90bf43c3b6341bcfb19683bc4a2aaef121ae90815fc6768",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "TooltipContent",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Components/Tooltip/TooltipContent",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "1830",
-      "SourceBytecodeSha256": "8c9ada889f9b5e6c9cd71dbbc139b804f1bf3d68dd533037b297e797c65ae418",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "TooltipManager",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Panels/TooltipManager",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "3212",
-      "SourceBytecodeSha256": "b473a83e499300010e986f3271ad7affc19cdfa5a66b88e3baf1b3fdbea65888",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "TooltipSettings",
     "path": "ModerationDialog/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Hooks/useTooltip/TooltipSettings",
     "properties": {
@@ -47343,22 +46125,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "349",
       "SourceBytecodeSha256": "c0e047a8b3574c70626aabcb3b2124ea04ff7c1cae78649a4c901fad1ba62fcc",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "TooltipSettingsContext",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Contexts/TooltipSettingsContext",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "1678",
-      "SourceBytecodeSha256": "9ab9df3e6a9054b698104c26e09aeba59f2bc1b811684791cbd07df75af88910",
       "Tags": ""
     },
     "unreadable": [
@@ -48663,22 +47429,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "Types",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Types",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "194",
-      "SourceBytecodeSha256": "b9ca4cd936ce0e0c18e7d0e0f51d050480b3065edb1f9245e4b8ec60bef4a567",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "types",
     "path": "ModerationDialog/Packages/_Index/TestLoader/TestLoader/types",
     "properties": {
@@ -48879,22 +47629,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "917",
       "SourceBytecodeSha256": "65065bded86a1e012a79caefc0838426823a9bb9e00e008bf6542f7ac43faee3",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "uriToTestId",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Util/uriToTestId",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "273",
-      "SourceBytecodeSha256": "ff8b7fb75e21c244d9e366f61ce07238c0ea807552e48a53b3bd60f0859b55f9",
       "Tags": ""
     },
     "unreadable": [
@@ -49111,22 +47845,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "useAsyncOnAbsoluteSizeChanged",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Components/Popover/useAsyncOnAbsoluteSizeChanged",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "840",
-      "SourceBytecodeSha256": "8113a96fcf34da49822e08696ec8b078a4126ce3515094f0cce5104386a640b0",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "useAvatarIconVariants",
     "path": "ModerationDialog/Packages/_Index/Foundation/Foundation/Components/AvatarIcon/useAvatarIconVariants",
     "properties": {
@@ -49207,22 +47925,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "useBindable",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Hooks/useBindable",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "410",
-      "SourceBytecodeSha256": "7f7b409b5af7b1d12249e3b3ec75ca56f3b613936996ea336e66a81fb44c1628",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "useBreakpoint",
     "path": "ModerationDialog/Packages/_Index/Foundation/Foundation/Providers/Responsive/Hooks/useBreakpoint",
     "properties": {
@@ -49231,22 +47933,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "2750",
       "SourceBytecodeSha256": "0399bda53e61ee0e8858f7fb86378ce0f65b3a2dbf04062eb52a1b4e1d08634c",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "useButtonGroupFairWidth",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Components/Dialog/useButtonGroupFairWidth",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "2765",
-      "SourceBytecodeSha256": "fcb77b8d4b7124f3041755ccea08d8b91be900ff9e2611b12f9de40a0acefb66",
       "Tags": ""
     },
     "unreadable": [
@@ -49607,22 +48293,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "useDialogIconProps",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Components/Dialog/useDialogIconProps",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "959",
-      "SourceBytecodeSha256": "b33193b6637aaf7656d8f548e026ad836830961835ccd233ddba4c4236fcd181",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "UseDialogLayout",
     "path": "ModerationDialog/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/UseDialogLayout",
     "properties": {
@@ -49679,22 +48349,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "821",
       "SourceBytecodeSha256": "b77ba431260e4ce99ff6993e02b77097304985384c0cd7ea3d8ccf40fd957680",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "useDialogTelemetry",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Components/Dialog/useDialogTelemetry",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "3689",
-      "SourceBytecodeSha256": "e42e39c51ea35a2ddd0bcd5b6f4ef14d74953b1d755d8b31546ebe87eca37864",
       "Tags": ""
     },
     "unreadable": [
@@ -50375,22 +49029,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "useMouseOver",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Hooks/useMouseOver",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "1342",
-      "SourceBytecodeSha256": "047478cf66a8a884bf9cb842b3538f9adba470e85546f862adfd61d473bf3276",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "useNumberInputVariants",
     "path": "ModerationDialog/Packages/_Index/Foundation/Foundation/Components/NumberInput/useNumberInputVariants",
     "properties": {
@@ -50583,22 +49221,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "usePanel",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Panels/usePanel",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "1438",
-      "SourceBytecodeSha256": "0514378c2d7d609febb7579b4558d1828308a90a8fb900390bc4b8c9b04d7a5d",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "usePanelsContext",
     "path": "ModerationDialog/Packages/_Index/Foundation/Foundation/Providers/StudioPanels/usePanelsContext",
     "properties": {
@@ -50655,22 +49277,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "2883",
       "SourceBytecodeSha256": "bc39170a128ff6611bf622199d66f194453ecdc9b57c931d47e8685bbe863e02",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "usePluginSetting",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Hooks/usePluginSetting",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "873",
-      "SourceBytecodeSha256": "7a83ca7d50e714d887cbbe2fd87ee866edfdafe86924d465ce57095524213817",
       "Tags": ""
     },
     "unreadable": [
@@ -51271,22 +49877,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "useShowDelayed",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Components/Tooltip/useShowDelayed",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "2165",
-      "SourceBytecodeSha256": "5c287876ced0be08885c03ec0556d6d04723ba2e56bbce3a248cf8c1044fe211",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "useSingleMonthCalendarState",
     "path": "ModerationDialog/Packages/_Index/Foundation/Foundation/Components/DateTimePicker/Calendar/useSingleMonthCalendarState",
     "properties": {
@@ -51607,22 +50197,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "useThemeName",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Hooks/useThemeName",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "1200",
-      "SourceBytecodeSha256": "3836ae41f9aa5183143c5ffa4eff14bc9cb74957b58dcee2ec683ceb43b16d20",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "useTile",
     "path": "ModerationDialog/Packages/_Index/Foundation/Foundation/Components/Tile/useTile",
     "properties": {
@@ -51735,22 +50309,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "useUniqueWidget",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Hooks/useUniqueWidget",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "908",
-      "SourceBytecodeSha256": "efe5e9a40540621512ef7caa0ef73c30c0273397124ca368691179ef0073832e",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "useViewportBreakpoint",
     "path": "ModerationDialog/Packages/_Index/Foundation/Foundation/Providers/Responsive/Hooks/useViewportBreakpoint",
     "properties": {
@@ -51783,22 +50341,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "useWidgetRef",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Hooks/useWidgetRef",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "748",
-      "SourceBytecodeSha256": "d47888667ae0c0b4a16b8297ba614e4e6cdbde03802f5c3eaf64a82624f70dc6",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "useWidgets",
     "path": "ModerationDialog/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Hooks/useWidgets",
     "properties": {
@@ -51807,22 +50349,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "1838",
       "SourceBytecodeSha256": "b0ae9883fd515be4f880dbf2ad3d0f7d451ef0220386b0daf949c4861450ed7c",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "useWidgets",
-    "path": "ModerationDialog/Packages/_Index/StudioFoundation/StudioFoundation/Hooks/useWidgets",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "3399",
-      "SourceBytecodeSha256": "18a2b720c45532ae9e2a9ed6b6c46f2ec146fa63b2c8b8ebd9258f15211d1f49",
       "Tags": ""
     },
     "unreadable": [
@@ -53131,26 +51657,6 @@
   },
   {
     "class": "StringValue",
-    "name": ".luaurc",
-    "path": "ModerationDialog/Packages/_Index/Signals/Signals/.luaurc",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "StringValue",
-    "name": ".luaurc",
-    "path": "ModerationDialog/Packages/_Index/SignalsScheduler/SignalsScheduler/.luaurc",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "StringValue",
     "name": ".robloxrc",
     "path": "ModerationDialog/Packages/_Index/Boolean/Boolean/.robloxrc",
     "properties": {
@@ -53313,16 +51819,6 @@
     "class": "StringValue",
     "name": "game-engine-test-config",
     "path": "ModerationDialog/Packages/_Index/PluginLoader/PluginLoader/game-engine-test-config",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "StringValue",
-    "name": "game-engine-test-config",
-    "path": "ModerationDialog/Packages/_Index/SharedPluginConstants/SharedPluginConstants/game-engine-test-config",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""

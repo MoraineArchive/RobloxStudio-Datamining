@@ -9166,7 +9166,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "1111",
-      "SourceBytecodeSha256": "db2bcfaeadca246fa3d9677ad45180ede1fae63547aab685c4bc98c7c155f166",
+      "SourceBytecodeSha256": "a7eec09644fe7c31d1283a4721ad2925ff90701cd281d1037a7bfa9e3ffa0beb",
       "Tags": ""
     },
     "unreadable": [
@@ -10605,8 +10605,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5864",
-      "SourceBytecodeSha256": "38b3058d23ff86ac6638bfbd544897e7d7f3874e9862d12f05380c18c3556173",
+      "SourceBytecodeBytes": "6036",
+      "SourceBytecodeSha256": "92284fe0a179b68090192e91eae42ae00cf414594016689613d68c47f90badc5",
       "Tags": ""
     },
     "unreadable": [
@@ -13613,8 +13613,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1345",
-      "SourceBytecodeSha256": "ee587e3a57a7b1b89d12b6e77a3d6c488ad5fdf5e3fa7604e6d36bb5fa21f4c5",
+      "SourceBytecodeBytes": "1262",
+      "SourceBytecodeSha256": "bcd2e48ff6cd54706dcbb2c4d48e7881c88bdb967f5fe76fcf88bfc1422fa557",
       "Tags": ""
     },
     "unreadable": [
@@ -18311,6 +18311,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "getFFlagEnableMaterialGenerator",
+    "path": "MaterialPicker/Src/Flags/getFFlagEnableMaterialGenerator",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "208",
+      "SourceBytecodeSha256": "157f512edc2f97cd07ca1b499c6c4835751ca502715aa73522b816dfefda85bf",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "getFFlagEnableTerrainPalette",
     "path": "MaterialPicker/Src/Flags/getFFlagEnableTerrainPalette",
     "properties": {
@@ -18318,7 +18334,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "314",
-      "SourceBytecodeSha256": "58d536fd1b067d0f2b69e82ebb1b7c19bb26fffa3b9a589e748a465e1a5c52e9",
+      "SourceBytecodeSha256": "d296dde7353573d7f8ac36fe0e4864dffacc14d70391af4585d3802225b05569",
       "Tags": ""
     },
     "unreadable": [
@@ -28461,8 +28477,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "16580",
-      "SourceBytecodeSha256": "d3f82c71c3ac1f429cccf0223a5d8033e138fbf83107befc131b4099a0034949",
+      "SourceBytecodeBytes": "17028",
+      "SourceBytecodeSha256": "9d5f5540fa8386d209e9c2c3a3511c6abdf13dbde0502f3d3e22dbca7e2c697f",
       "Tags": ""
     },
     "unreadable": [
@@ -29279,22 +29295,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "1008",
       "SourceBytecodeSha256": "bcfee87a21ff9ae3285b1acdb32bc8a6de8656a349c793f92b4169274128994d",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "MaterialPickerSettings",
-    "path": "MaterialPicker/Src/Util/MaterialPickerSettings",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "1002",
-      "SourceBytecodeSha256": "111552bb0d42ee3ac8d62f240bc390de3b0524fbd55c906f6c2dd570c7f64d31",
       "Tags": ""
     },
     "unreadable": [
@@ -30253,8 +30253,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5142",
-      "SourceBytecodeSha256": "41e7119fdfbbf4cc7f91cc6df4e0d9772e4e75f34ad111144827dc1791b77862",
+      "SourceBytecodeBytes": "5235",
+      "SourceBytecodeSha256": "f39400e2d299034f7cee95d30022d94d8e06443fca7ff820a0e90e2b3d12ee50",
       "Tags": ""
     },
     "unreadable": [
@@ -37325,8 +37325,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1121",
-      "SourceBytecodeSha256": "3ad07de4f9211d96130a7767afa198b4f6ece00515c57fe1b728aec70865e304",
+      "SourceBytecodeBytes": "2032",
+      "SourceBytecodeSha256": "18e1bb2477146a5b3ff8cc9a4640d0e6079db53bc9e2d3ea98a06852330d6a13",
       "Tags": ""
     },
     "unreadable": [
@@ -42078,7 +42078,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "1016",
-      "SourceBytecodeSha256": "2fe1f1085f15ccabe94296f008f2d4320d51e925ad23ba5e1ffb9e35a48c6232",
+      "SourceBytecodeSha256": "666adbb56c7c3cc76209221583e51490cb3ec2f7e6e594598128677df2839f31",
       "Tags": ""
     },
     "unreadable": [
@@ -46551,6 +46551,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "TERRAIN_CUSTOM_MATERIALS",
+    "path": "MaterialPicker/Src/Constants/TERRAIN_CUSTOM_MATERIALS",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "184",
+      "SourceBytecodeSha256": "9675501f8ea05c5cf6a8bb3c54cdcfe32bbcb0a86883f01f469ccf6201cf2ce6",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "Terrain",
     "path": "MaterialPicker/Packages/_Index/SharedPluginConstants/SharedPluginConstants/plugins/Terrain",
     "properties": {
@@ -46605,8 +46621,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2367",
-      "SourceBytecodeSha256": "3f9e9009ccb20ebf61143b8c58e905980f9b378ec11764ede98324d0c81d3854",
+      "SourceBytecodeBytes": "2507",
+      "SourceBytecodeSha256": "34002becc65d7af0c4f5193f5deec2ba100cf144d87102efb6456d296d3ba0ac",
       "Tags": ""
     },
     "unreadable": [
@@ -46621,8 +46637,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2205",
-      "SourceBytecodeSha256": "08cf3740ddaace13bb7de72c639a3c3159f8e0340ed876964d586e2971e6effb",
+      "SourceBytecodeBytes": "2345",
+      "SourceBytecodeSha256": "d19affa8b6a7639fbdbbb74adc7c373f987f9511f596b7692eb5f7388b75228b",
       "Tags": ""
     },
     "unreadable": [
@@ -46637,8 +46653,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2806",
-      "SourceBytecodeSha256": "924b0c0ddde1a1d4fb2beb9a5d0c62a01b7b3deea710f22eb4afa28f4b0db281",
+      "SourceBytecodeBytes": "2752",
+      "SourceBytecodeSha256": "80aadb9d2d607844c4d4db92b90564d6436d453a4a96c361685e6de1c3f8433e",
       "Tags": ""
     },
     "unreadable": [
@@ -46653,8 +46669,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "7668",
-      "SourceBytecodeSha256": "f240051742b287621adbf6f4f73df7a645bead88dbca431401ab1a757e577556",
+      "SourceBytecodeBytes": "7670",
+      "SourceBytecodeSha256": "5c9179f3f7ffc23733b354ca1d2458cd950abace181622bc91ad0ba6f3eacb16",
       "Tags": ""
     },
     "unreadable": [
@@ -46797,8 +46813,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3366",
-      "SourceBytecodeSha256": "cbef9196e9cd3c793ace801250afd8dd9560c3c7051bb716e6a78b595a8727c6",
+      "SourceBytecodeBytes": "3502",
+      "SourceBytecodeSha256": "1ffcbbeeb165d0fbb403e683e047dc9ae4524e69c0908b18dfad44b0ca84c688",
       "Tags": ""
     },
     "unreadable": [

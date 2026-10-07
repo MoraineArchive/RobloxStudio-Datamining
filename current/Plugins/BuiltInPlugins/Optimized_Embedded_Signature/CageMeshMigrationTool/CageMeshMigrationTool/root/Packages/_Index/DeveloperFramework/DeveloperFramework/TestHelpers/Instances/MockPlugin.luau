@@ -240,4 +240,8 @@ function MockPlugin:GetPluginComponent(componentName: string)
 	return component or self._plugin:GetPluginComponent(componentName)
 end
 
+function MockPlugin:GetPreinitPayload()
+	return self.mockPreinitPayload
+end
+
 return MockPlugin

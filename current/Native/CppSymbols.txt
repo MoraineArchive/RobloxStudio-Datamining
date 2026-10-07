@@ -1303,6 +1303,7 @@
 ?clear@QAbstractSpinBox@@UEAAXXZ	public: virtual void __cdecl QAbstractSpinBox::clear(void) __ptr64
 ?clear@QByteArray@@QEAAXXZ	public: void __cdecl QByteArray::clear(void) __ptr64
 ?clear@QClipboard@@QEAAXW4Mode@1@@Z	public: void __cdecl QClipboard::clear(enum QClipboard::Mode) __ptr64
+?clear@QComboBox@@QEAAXXZ	public: void __cdecl QComboBox::clear(void) __ptr64
 ?clear@QLabel@@QEAAXXZ	public: void __cdecl QLabel::clear(void) __ptr64
 ?clear@QLineEdit@@QEAAXXZ	public: void __cdecl QLineEdit::clear(void) __ptr64
 ?clear@QListWidget@@QEAAXXZ	public: void __cdecl QListWidget::clear(void) __ptr64

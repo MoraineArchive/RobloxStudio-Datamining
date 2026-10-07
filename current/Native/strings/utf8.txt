@@ -1,5 +1,4 @@
-!m:PҀ
-!o:PҀ
+!%␉w
 $tIǁ
 &;ʼ~
 ' — skipping duplicate
@@ -7,9 +6,10 @@ $tIǁ
 +Ѐ|$`
 - Y/ן
 .؃8N
-/Kɔv
+2ɈM߀}?
 2ۀ}(
 333333ÿ
+333333ӿ
 3Ҁ|$ 
 3טyk&
 3ۀ}H
@@ -26,21 +26,40 @@ $tIǁ
 <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.5-c014 79.151481, 2013/03/13-12:09:15        "> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmp:CreatorTool="Adobe Photoshop CC (Windows)" xmpMM:InstanceID="xmp.iid:F8DE8FD7272E11E489A6CDE46C99CA59" xmpMM:DocumentID="xmp.did:F8DE8FD8272E11E489A6CDE46C99CA59"> <xmpMM:DerivedFrom stRef:instanceID="xmp.iid:F8DE8FD5272E11E489A6CDE46C99CA59" stRef:documentID="xmp.did:F8DE8FD6272E11E489A6CDE46C99CA59"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?><n9c
 <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.5-c021 79.154911, 2013/10/29-11:47:16        "> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmpMM:OriginalDocumentID="xmp.did:2608BAA3C620681180838E23F0DC6224" xmpMM:DocumentID="xmp.did:18386D72AAF111E38B9D871882A8E559" xmpMM:InstanceID="xmp.iid:18386D71AAF111E38B9D871882A8E559" xmp:CreatorTool="Adobe Photoshop CC (Macintosh)"> <xmpMM:DerivedFrom stRef:instanceID="xmp.iid:701d8ce0-b046-4164-8450-f955e0cf5f04" stRef:documentID="xmp.did:2608BAA3C620681180838E23F0DC6224"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>L7nj
 ?س]?س]?س]?س]?
-@2PŠ
-@2`ޑ
-@2pܫ
-@:@ß
-@:@ލ
-@<@Ϛ
-@?HǇ
-@Z@ލ
-@d@Ϛ
-@j ߑ
-@j`ލ
-@ҰEu
+@2 Ŋ
+@2 Ԙ
+@20Ȋ
+@20Α
+@20Ж
+@2@ٱ
+@2PȊ
+@2PϘ
+@2`͘
+@2`ޡ
+@2pȊ
+@2Юw
+@4 ٱ
+@40Ȗ
+@4PϘ
+@: Ŋ
+@:0Α
+@:PЀ
+@:м}
+@<0Ć
+@b0Α
+@bЮw
+@j Ŋ
+@l Ŋ
+@lPϘ
+@lp۱
+@°ux
+@İux
+@Ұux
+A#␉w
 A+ŀ<$
 A+ɺ??
 A;ϸ?
+AHǃTl
 A\_^[]ù 
 A^_[ø
 A^_^[]À|$H
@@ -56,6 +75,7 @@ A_A^A]A\_^]Àz,
 A_A^A]A\_^]À|$X
 A_A^A]A\_^]À|$a
 A_A^A]A\_^]ù 
+A_A^A]A\_^]ù(
 A_A^A]A\_^]ù0
 A_A^A]A\_^]ùh
 A_A^A]A\_^]þ 
@@ -79,35 +99,38 @@ Aiɫ"
 Ai͑,
 AiӅ{
 AiӚy
-AƆ K
-AƆ!I
+AƆ )
+AƆ U
 AƆ(1
-AƆ4)
+AƆ(K
+AƆ)I
 AƆ81
 AƆ8I
+AƆ<)
 AƆH,
-AƆPH
-AƇ *
-AƇ +
-AƇ,&
-AƇ<(
+AƆXH
+AƇ0*
+AƇ<&
+AƇL(
+AƇX*
+AƇX+
+AǃPl
 AǃTC
 AǃXC
 AǅPd
-Aǆ(;
-Aǆ01
-Aǆ5=
-Aǆd;
-AǆdJ
-Aǆh<
-Aǆx="
+Aǆ =
+Aǆ0;
+Aǆ81
+Aǆ==
+Aǆl;
+AǆlJ
+Aǆp<
+AǇ(,
+AǇ42
 AǇPd
-BƄ2~ 
 C̙N还(
-D+ƺ+
 D+򉈀
 D-Cߩ
-D8=݃
 D;׸5
 D;׸6
 Dió,
@@ -131,26 +154,23 @@ HcȺ@
 Hcٸ 
 HsP"*Ҭ$
 Hǀ v
-Hǁ \
+Hǁ(\
 Hǁp 
 Hǃ m
 Hǃ u
-Hǃ(V
 Hǃ(u
+Hǃ0V
 Hǃ8!
-Hǃ8V
-Hǃ@1
+Hǃ@V
 Hǃ@m
+HǃH1
 Hǃ`m
 Hǃ`y
 Hǃhn
 Hǃpn
-HǄ$(%
 HǄ$H 
-HǄ$H%
 HǄ$x"
 Hǅ -
-Hǅ$*
 Hǅ(-
 Hǅ(.
 Hǅ(/
@@ -158,7 +178,6 @@ Hǅ(<
 Hǅ(=
 Hǅ(>
 Hǅ(?
-Hǅ4)
 Hǅ@,
 Hǅ@-
 HǅH-
@@ -168,6 +187,7 @@ HǅH<
 HǅH=
 HǅH>
 HǅH?
+HǅT)
 HǅX#
 HǅXI
 Hǅh-
@@ -178,27 +198,40 @@ Hǅh=
 Hǅh>
 Hǅh?
 Hǅx?
-Hǆ0>
-HǆT?
+Hǆ8>
+Hǆ\?
 Hǆh?
-Hǆl?
-Hǆt\
+Hǆt?
 Hǆx 
+Hǆ|\
 HǇ0<
-HǇ8\
 HǇ@\
+HǇH\
 HǇ`y
 HǇx 
+I+Ā<0
 IDATΈ[
-IǆX<
-Iǆp:
-JobsBƄ2| 
+Iǆ :
+Iǆ ;
+Iǆ`<
+Iǆx:
+IǇ('
 L#Ѐ|$ 
 LcBlHcRh蹺
 P+2Ǐf
-P4@Ϛ
-P4`ޑ
+P2 Ԙ
+P2pȊ
+P2Юw
+P4 ٱ
+P: Ŋ
+P:Ј|
+Pb0Α
+PdГw
 Português (Brasil)
+Pİux
+Pʰux
+PҰg{
+Pڰux
 StudioDeviceSimulatorService: no device is active — call SetDeviceAsync() first
 That video is too long – try a video shorter than 15 seconds.
 Tiếng Việt
@@ -206,7 +239,6 @@ Türkçe
 Video processing failed: Couldn't detect a person – try a video with a person fully in frame, facing the camera.
 Video processing failed: That video is too shaky – try a more stable video.
 Video processing: Our moderation team is taking a look – we'll be in touch shortly.
-W@gȘ
 Your device’s memory is low. Leaving now will preserve your state and prevent Roblox from crashing.
 [DFLog::CaptureService] CheckUploadCaptureStatusForSupportTicketAsync: HTTP {} — {}
 [DFLog::CaptureService] startTestCapture: insufficient disk space — available {} MB, required {} MB
@@ -225,7 +257,6 @@ Your device’s memory is low. Leaving now will preserve your state and prevent 
 [DFLog::TurnApiClient] TurnApiClient: 200 with empty/unparseable response — backing off
 [DFLog::TurnApiClient] TurnApiClient: HTTP failure (err={}, status={}) — backing off
 [DFLog::VideoAdaption] AbrSelectorConfig: selector parse failed — starting={} dynamic={}
-[FLog::AccessToken] Token refresh discarded — token was replaced by a newer exchange
 [FLog::DesignFoundationsService] SetTokens: color token '{}' invalid — {}; skipping.
 [FLog::ExtractPackageDefinition] Package root '{}' missing PackageLink child during hydration — skipping
 [FLog::PluginLoadingEnhanced] collectOTAPlugins: skipping OTA for '{}' — built-in already loaded by another DM
@@ -240,22 +271,38 @@ Your device’s memory is low. Leaving now will preserve your state and prevent 
 [À|$P
 ^Dڮn
 ^[ø&
-_[]鄗
-_[]餞
-_[]餥
 _^]Àyh
-`2 ؔ
-`20ȟ
-`2PŠ
-`2`ޑ
-`2`ߑ
-`4`ޑ
-`:@ލ
-`j0Đ
-`r@ލ
-`rPҀ
+`2 Ŋ
+`2 Ԙ
+`20Ŋ
+`20Α
+`20Ѓ
+`2PȊ
+`2`ʖ
+`2pȊ
+`2Гw
+`2Юw
+`4 Ŋ
+`4 ٱ
+`4PϘ
+`4Pڱ
+`4P۱
+`:0Α
+`:0Ҙ
+`:PЀ
+`:pҘ
+`b Ŋ
+`b0Α
+`dPϘ
+`d`͘
+`j0Α
+`jГw
+`lPϘ
 `}mٙ
-`ڰEu
+`°ux
+`ʰg{
+a ␓w
+fAǇ,(
 fD#ȸ
 fǃpl
 fǅ( 
@@ -265,6 +312,7 @@ fǅ(#
 fǅ($
 fǅ(%
 fǅ(&
+fǅ('
 fǅ8 
 fǅ8!
 fǅ8"
@@ -272,6 +320,7 @@ fǅ8#
 fǅ8$
 fǅ8%
 fǅ8&
+fǅ8'
 fǅH 
 fǅH!
 fǅH"
@@ -279,6 +328,7 @@ fǅH#
 fǅH$
 fǅH%
 fǅH&
+fǅH'
 fǅX 
 fǅX!
 fǅX"
@@ -286,6 +336,7 @@ fǅX#
 fǅX$
 fǅX%
 fǅX&
+fǅX'
 fǅh 
 fǅh!
 fǅh"
@@ -293,53 +344,58 @@ fǅh#
 fǅh$
 fǅh%
 fǅh&
-fǅx 
+fǅh'
 fǅx!
 fǅx"
 fǅx#
 fǅx$
 fǅx%
-fǆ`X
-fǆpY
+fǅx&
+fǅx'
+fǆhX
+fǆxY
 hW@ˆ
 iȁ@ 
 khіD.ʧ
 layRǅ
 lȘ~#
-p20ȟ
-p40ȟ
-pj0Đ
-pj`ޑ
-pʰEu
-p̰Eu
-pڰEu
+p20Α
+p2`ʖ
+p2`ޡ
+p2Гw
+p2Юw
+p4 Ŋ
+p40Ѓ
+p4Йw
+p:Гw
+pZ0Α
+pʐ:}
 qD:?ǅ
 r݀~U
 r߃|$H
 ss!wڬ{
 să{|
-t Ɓ5=
+t Ɓ==
 t"AƆ
 taǁ(u
 time(ms) - The time spent between “login success” and “user sees first frame of start page”.
 tǀ{8
 tـyA
 u"2Ҁ|$\
-u(Ƈ9+
-u0ƃ`X
-uQ胢O
-uU视O
-uY趿W
-uY蹔k
+u(Ƈq+
+u0ƃhX
+uS耷M
+uV耴a
+uV蚿9
+uV負8
+uY詏W
 uр~(
 uՀ|$(
 wyB)pԣʁʀ
 yֈ>ǅ
-¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
 ï2➱2M
 Ƅ$ "
 Ƅ$ #
-Ƅ$0%
 Ƅ$`"
 Ƅ$p#
 ȟDg&J
@@ -359,13 +415,9 @@ yֈ>ǅ
 Іdentity generated failed, not_before is after not_after.
 Б В Е П З О С Э
 Б В Е Ш З О С Э
-Вp0u
-Кp0u
-Тp0u
-ТpNu
-Фp0u
-Ъp0u
-Ь`?u
+ВpN~
+КpM~
+Т0[}
 р у ф
 х п н ш е з о с
 Ա Մ Ւ Ս Բ Գ Դ Օ
@@ -398,7 +450,6 @@ yֈ>ǅ
 ਇ ਈ ਉ ਏ ਓ ੳ ਿ ੀ
 ਕ ਗ ਙ ਚ ਜ ਤ ਧ ਸ
 ਠ ਰ ੦
-ਲp0u
 ੦ ੧ ੨ ੩ ੭
 ઈ ઊ િ ી લી શ્ચિ જિ સી
 ખ ગ ઘ ઞ ઇ ઈ ઠ જ

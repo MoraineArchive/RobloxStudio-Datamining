@@ -96,11 +96,11 @@
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 39141,
-    "instances": 42916,
+    "bytecodeOrUnreadable": 39988,
+    "instances": 43812,
     "package": "extracontent-models.zip",
     "path": "DataModelPatch/DataModelPatch.rbxm",
-    "sha256": "ef6aa562a401766b1500e8377a1daf9fd689676a9ca62c93b548f9166bdabdf8",
+    "sha256": "380576e7028dac742bcf16bf59a838a2bb9492a360b461378cb2ac4cefa52f27",
     "sources": 0
   },
   {
@@ -121,11 +121,11 @@
   },
   {
     "bytecodeOrUnreadable": 1,
-    "instances": 125,
+    "instances": 127,
     "package": "extracontent-models.zip",
     "path": "ServerCoreScripts.rbxm",
-    "sha256": "6e93dc6b8e73571f2aca844b557319c9b04821f7b16161cf4b104205d5572bd4",
-    "sources": 96
+    "sha256": "ea50c8ef77fe20ff9a3c56aa7182af8357ef16a29283ab28b4bc2196c38e9ff7",
+    "sources": 98
   },
   {
     "bytecodeOrUnreadable": 0,

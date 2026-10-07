@@ -4445,8 +4445,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2998",
-      "SourceBytecodeSha256": "bafd4e6e8ec851ac96d7f9cdd9ce9737f493f956df83955d5c6121f7134979e7",
+      "SourceBytecodeBytes": "3643",
+      "SourceBytecodeSha256": "105bde2c8487c5e98b15bbbe283bd19b97bbb859ef783b5875643a030e78477a",
       "Tags": ""
     },
     "unreadable": [
@@ -4749,8 +4749,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1636",
-      "SourceBytecodeSha256": "dfce677c0d2ddf95db684db3cd23d7a0b4542fbd0f60bf3af905c404f5ca36fb",
+      "SourceBytecodeBytes": "1787",
+      "SourceBytecodeSha256": "4262e7f3be4b316f650990f5908474cec3a149c8405885e5a368f3fa17f40fc3",
       "Tags": ""
     },
     "unreadable": [
@@ -6861,8 +6861,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "6427",
-      "SourceBytecodeSha256": "e20988f7564fb4ad7435c20f8f76330db4c27a6f951a505cbf6d1e5b0a58ba72",
+      "SourceBytecodeBytes": "7064",
+      "SourceBytecodeSha256": "1375e8752cf4e55a5e07dde2344da7bac36795bdf9d9ef1d7ef063fc55d2c308",
       "Tags": ""
     },
     "unreadable": [
@@ -6893,8 +6893,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "6533",
-      "SourceBytecodeSha256": "f576c210e97f31b3867a5f4bb9362edfc224ee771c4f1467ada4a9d9055ebf5d",
+      "SourceBytecodeBytes": "7853",
+      "SourceBytecodeSha256": "2b34b5080ebfb1423069c445e897f87ca686c630476e6a68ca5732924d3c8e69",
       "Tags": ""
     },
     "unreadable": [
@@ -6909,8 +6909,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "6410",
-      "SourceBytecodeSha256": "168d2ba1cb0d2afa1a95de297a931956ad304aaf45f8b0cded788fe0f6e71385",
+      "SourceBytecodeBytes": "7047",
+      "SourceBytecodeSha256": "b909404083679153f974995562a41c18f84c0f0b31b386383537635a69a878ce",
       "Tags": ""
     },
     "unreadable": [
@@ -10126,7 +10126,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "1111",
-      "SourceBytecodeSha256": "db2bcfaeadca246fa3d9677ad45180ede1fae63547aab685c4bc98c7c155f166",
+      "SourceBytecodeSha256": "a7eec09644fe7c31d1283a4721ad2925ff90701cd281d1037a7bfa9e3ffa0beb",
       "Tags": ""
     },
     "unreadable": [
@@ -10477,8 +10477,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1135",
-      "SourceBytecodeSha256": "75371a16d33a10fc439c1c05f76e02e22e7639fa13b3b655e140371458f6f1ea",
+      "SourceBytecodeBytes": "1162",
+      "SourceBytecodeSha256": "9e75abf81555a0b8905ec8e1b53d41353d89b1aee385c04b0ee04140fbe0f861",
       "Tags": ""
     },
     "unreadable": [
@@ -13639,6 +13639,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "DefaultTerrainMaterialSlot",
+    "path": "TerrainEditor/Src/Util/DefaultTerrainMaterialSlot",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "749",
+      "SourceBytecodeSha256": "ee5d4cb41aa4e9dcf50d922a0f70edb57ac66958c70e52e9b67027969b0c743b",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "defineLuaFlags",
     "path": "TerrainEditor/Packages/_Index/PluginLoader/PluginLoader/defineLuaFlags",
     "properties": {
@@ -14781,8 +14797,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1345",
-      "SourceBytecodeSha256": "ee587e3a57a7b1b89d12b6e77a3d6c488ad5fdf5e3fa7604e6d36bb5fa21f4c5",
+      "SourceBytecodeBytes": "1262",
+      "SourceBytecodeSha256": "bcd2e48ff6cd54706dcbb2c4d48e7881c88bdb967f5fe76fcf88bfc1422fa557",
       "Tags": ""
     },
     "unreadable": [
@@ -17309,8 +17325,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3447",
-      "SourceBytecodeSha256": "e99b46b2b2d0795d956d233d3e8ec29009499daf6c707ec7bcd0c43519ece2ff",
+      "SourceBytecodeBytes": "3673",
+      "SourceBytecodeSha256": "607fee523bd0ac14d66c0ffb345fd57433ca48ef7a43bd7cf101e4fd2ee6eec1",
       "Tags": ""
     },
     "unreadable": [
@@ -20407,6 +20423,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "getFFlagDisableTerrainEditorLegacyTelemetryMetrics",
+    "path": "TerrainEditor/Src/Flags/getFFlagDisableTerrainEditorLegacyTelemetryMetrics",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "227",
+      "SourceBytecodeSha256": "01f4f1e01133b58a4a042f67eadc7cbdb2cccba58df82c9bcc4dc9a58ce0abe1",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "getFFlagDraggerBetterAlignOrientationFalse",
     "path": "TerrainEditor/Packages/DraggerFramework/Flags/getFFlagDraggerBetterAlignOrientationFalse",
     "properties": {
@@ -20574,7 +20606,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "314",
-      "SourceBytecodeSha256": "58d536fd1b067d0f2b69e82ebb1b7c19bb26fffa3b9a589e748a465e1a5c52e9",
+      "SourceBytecodeSha256": "d296dde7353573d7f8ac36fe0e4864dffacc14d70391af4585d3802225b05569",
       "Tags": ""
     },
     "unreadable": [
@@ -20687,6 +20719,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "207",
       "SourceBytecodeSha256": "cc863f0aaa9fe05ae904c896436cae5d37c271fce37a7ce52b9f00101458ad6a",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "getFFlagMigrateTerrainEditorTelemetryToV2",
+    "path": "TerrainEditor/Src/Flags/getFFlagMigrateTerrainEditorTelemetryToV2",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "218",
+      "SourceBytecodeSha256": "c6e65eb02a9059cec0f99554188f2c12b3b00ba9533a5e0039c6b77aa6b177f6",
       "Tags": ""
     },
     "unreadable": [
@@ -31981,8 +32029,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "12415",
-      "SourceBytecodeSha256": "7befd097ab745b506b5edcf89fbeb71f67cbce3adf06c0ca97e351c86db11aa7",
+      "SourceBytecodeBytes": "13397",
+      "SourceBytecodeSha256": "d59a4eb454f3878192a008cdd223df74dc3b02e340ec5417b5e908298abed9cd",
       "Tags": ""
     },
     "unreadable": [
@@ -32637,8 +32685,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2792",
-      "SourceBytecodeSha256": "90e7f63db8216b3e5eb16406471c0d31ccbccce9c6cffd408dab45f9a02a50e9",
+      "SourceBytecodeBytes": "3071",
+      "SourceBytecodeSha256": "2c5fc8d0231771ed854346fdb3ca48de86f81c61e69e44a67e73527001800129",
       "Tags": ""
     },
     "unreadable": [
@@ -33869,8 +33917,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5142",
-      "SourceBytecodeSha256": "41e7119fdfbbf4cc7f91cc6df4e0d9772e4e75f34ad111144827dc1791b77862",
+      "SourceBytecodeBytes": "5235",
+      "SourceBytecodeSha256": "f39400e2d299034f7cee95d30022d94d8e06443fca7ff820a0e90e2b3d12ee50",
       "Tags": ""
     },
     "unreadable": [
@@ -35981,8 +36029,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3364",
-      "SourceBytecodeSha256": "ad850784eb4505ed4b90ec3ea6605065ced8fcaa71ace2a90810019ac5e1c334",
+      "SourceBytecodeBytes": "3684",
+      "SourceBytecodeSha256": "c110f4d72ef2632f3ca3cddc1ba6e9405988d395db7a5ada45517a05951c09b5",
       "Tags": ""
     },
     "unreadable": [
@@ -35997,8 +36045,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5185",
-      "SourceBytecodeSha256": "20a98492638a5389716626b64ce7ec5773a841a10ec9b2956f9f54b814c660da",
+      "SourceBytecodeBytes": "5310",
+      "SourceBytecodeSha256": "5ace9874491f1a7957dc0dcfc8ec725a4b0fae5c7d5cc891d927c36ab8387e96",
       "Tags": ""
     },
     "unreadable": [
@@ -36877,8 +36925,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "199",
-      "SourceBytecodeSha256": "aa133493a1d209611454a546aadc3ace4107663a2306505e6281609205118206",
+      "SourceBytecodeBytes": "280",
+      "SourceBytecodeSha256": "da3e6a225de7e3a9765045a447ece7eb585847a5572e3d8aa81dc7e84bf76d9c",
       "Tags": ""
     },
     "unreadable": [
@@ -36925,8 +36973,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5476",
-      "SourceBytecodeSha256": "17ceb6cb6bbed0c3e335c7fa84d4d77a28cab936153a2e1aa62451e5247728ea",
+      "SourceBytecodeBytes": "5360",
+      "SourceBytecodeSha256": "e55c32d1df251b677d37b92d1b2ddf0f898cf82b00389dde16d95b081c84f216",
       "Tags": ""
     },
     "unreadable": [
@@ -38831,6 +38879,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "1250",
       "SourceBytecodeSha256": "dcae00c6895a9ca3752153cd00aeea69dbea229b010fa2c804e202ebfa6ce9ae",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "QueuedOneShotCrossDMPluginInvoke",
+    "path": "TerrainEditor/Packages/_Index/PluginLoader/PluginLoader/QueuedOneShotCrossDMPluginInvoke",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "734",
+      "SourceBytecodeSha256": "02fb00a7a8075a22ba79cb049f8e424cc81c485a07096a99fb3e77a1ab17941d",
       "Tags": ""
     },
     "unreadable": [
@@ -42061,8 +42125,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5027",
-      "SourceBytecodeSha256": "de02e6577aea319cc525ebcba1ab1ae01defe504b053f37ae4912a0eb4b5b4cd",
+      "SourceBytecodeBytes": "6419",
+      "SourceBytecodeSha256": "1d9c13cdd955cb54fee5314496db04a754f33d53bdb630455c43cd2e17e6d44e",
       "Tags": ""
     },
     "unreadable": [
@@ -42093,8 +42157,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "7576",
-      "SourceBytecodeSha256": "5610561c76d8e321dbd9360e0d957624dc583ac8ece7f62d9f3d72d39f7b24b6",
+      "SourceBytecodeBytes": "8187",
+      "SourceBytecodeSha256": "e3619879fac4dc2d7ecd2a45a5d49a76cc2875b64d6307bcedb83204be822479",
       "Tags": ""
     },
     "unreadable": [
@@ -42333,8 +42397,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1011",
-      "SourceBytecodeSha256": "7e62ab8265770022884f1e7802feb95674f3ed3fca48db4550caa6c50b4d3c53",
+      "SourceBytecodeBytes": "1043",
+      "SourceBytecodeSha256": "ed4ea1be929ef3c59ec4dc3e65684b92ba30c47bbc4b2aeb6e9cc83803dda4f4",
       "Tags": ""
     },
     "unreadable": [
@@ -45373,8 +45437,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2555",
-      "SourceBytecodeSha256": "2d8124117f667208dad1ee47e8b94d658558174d5b85ddefbc2ffc601416b524",
+      "SourceBytecodeBytes": "2580",
+      "SourceBytecodeSha256": "e1d00e8f317e0f3faef19bf5838664790c067b055b67b66cb90e9623ac393b98",
       "Tags": ""
     },
     "unreadable": [
@@ -51927,14 +51991,30 @@
   },
   {
     "class": "ModuleScript",
+    "name": "TerrainEditorOpened",
+    "path": "TerrainEditor/Src/Util/Telemetry/TerrainEditorOpened",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "757",
+      "SourceBytecodeSha256": "6bcc748afdf2390c4186b3037240d9de87f1a566b84dfc09d63de7d272834a9e",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "TerrainInvalidMaterialSlot",
     "path": "TerrainEditor/Src/Util/Telemetry/TerrainInvalidMaterialSlot",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "518",
-      "SourceBytecodeSha256": "0eb3ca66a6cd4de5fc0c1e23cdfebb04bb33deecfb0ef65b447d78e8ed16a741",
+      "SourceBytecodeBytes": "791",
+      "SourceBytecodeSha256": "8178372576c10d7c22c063e6c7c57bbd8b784174e359101454441c0d71e801d4",
       "Tags": ""
     },
     "unreadable": [
@@ -51975,22 +52055,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "TerrainMaterialPicker",
-    "path": "TerrainEditor/Src/Components/Renderers/TerrainMaterialPicker",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "5948",
-      "SourceBytecodeSha256": "7983eaa9a46c0cf6d58c4233f5a12c317b0ce18d485930ba073c28b6d6e7ed0e",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "TerrainMaterialPickerProtocol",
     "path": "TerrainEditor/Packages/_Index/TerrainPalette/TerrainPalette/Domain/TerrainMaterialPickerProtocol",
     "properties": {
@@ -52007,14 +52071,30 @@
   },
   {
     "class": "ModuleScript",
+    "name": "TerrainMaterialPickerRenderer",
+    "path": "TerrainEditor/Src/Components/Renderers/TerrainMaterialPickerRenderer",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "6130",
+      "SourceBytecodeSha256": "ab50f16c2f47845dcbf19edb7b8a0ddd44e33e51a341be1557347f23989d5302",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "TerrainMaterialPickerRequester",
     "path": "TerrainEditor/Src/Util/TerrainMaterialPickerRequester",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2418",
-      "SourceBytecodeSha256": "5e9a31e2418aa1c8170432714b895fabb2070eca96094254f9a199f476d0709d",
+      "SourceBytecodeBytes": "2567",
+      "SourceBytecodeSha256": "f35e5fbe6a36e91f39787b765b7bc3c8da97c85970b8bdc294fb1383bff928da",
       "Tags": ""
     },
     "unreadable": [
@@ -52029,8 +52109,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "497",
-      "SourceBytecodeSha256": "ffedcd97b0df083fb3f0e9f63f8be68133b42680deba8b16b12e23ca68e6d547",
+      "SourceBytecodeBytes": "770",
+      "SourceBytecodeSha256": "4b8aad7574fd6fc410b69a9cf98bdf369d246d041b177e66ac8c99ca493430f5",
       "Tags": ""
     },
     "unreadable": [
@@ -52061,8 +52141,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2299",
-      "SourceBytecodeSha256": "391ff2f015bc422b52dd662252eee24b766595c105c6250bc5672cc03c4ec224",
+      "SourceBytecodeBytes": "4342",
+      "SourceBytecodeSha256": "ffaa510306fe166b72d6fc30c59e823d83f6ea6462cc93a32bec80c1acadcdf7",
       "Tags": ""
     },
     "unreadable": [
@@ -52199,14 +52279,46 @@
   },
   {
     "class": "ModuleScript",
+    "name": "TerrainToolActivated",
+    "path": "TerrainEditor/Src/Util/Telemetry/TerrainToolActivated",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "751",
+      "SourceBytecodeSha256": "560271d44a71229a806fdf76c848400dd112d8366c262cfa60e1baf8a981a671",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "TerrainToolPerformance",
     "path": "TerrainEditor/Src/Util/Telemetry/TerrainToolPerformance",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "522",
-      "SourceBytecodeSha256": "a68d3b370d951f23e45f3ac6be78ad539e187b087b61d1c523468e1f659b23e5",
+      "SourceBytecodeBytes": "784",
+      "SourceBytecodeSha256": "60e33235d27603cd732007cbb081892dc64da663fbd69b3e5b46706e341cc97f",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "TerrainToolUsage",
+    "path": "TerrainEditor/Src/Util/Telemetry/TerrainToolUsage",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "756",
+      "SourceBytecodeSha256": "023b96c54994bef210752ce8fcaf572621c4e39b8b83ceb958d634a5ef114291",
       "Tags": ""
     },
     "unreadable": [
@@ -52221,8 +52333,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4761",
-      "SourceBytecodeSha256": "7eb33b46b65722ad13cc37d3507e5f2d07593b25c455d9049b2109cce0337a8d",
+      "SourceBytecodeBytes": "4931",
+      "SourceBytecodeSha256": "f67d4ca2dd778c306940e04b53ed31277d1f37cac53aba8d36108c0c2c0477dc",
       "Tags": ""
     },
     "unreadable": [

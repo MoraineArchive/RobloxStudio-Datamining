@@ -1875,11 +1875,351 @@
             "playback",
             "state"
           ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65",
+          "evidencePath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65/changes.json",
+          "family": "API",
+          "id": "0d4d4c4f0d385990e7bd59d06a125fc8d0227c8f40294e57a2a6dd7c0e64f775",
+          "key": "AnimatedImagePlaybackState.Canceled",
+          "kind": "enumItems",
+          "observedAt": "2026-10-07T22:02:39.782Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "image",
+            "playback",
+            "state"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65",
+          "evidencePath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65/changes.json",
+          "family": "API",
+          "id": "3feb8710a7ff29c408477b5749efd5ea04cb85cdc5a5c3690c7f3c9f1a451f0b",
+          "key": "AnimatedImage.Function.GetBoundTracks",
+          "kind": "members",
+          "observedAt": "2026-10-07T22:02:39.782Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "function",
+            "image"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65",
+          "evidencePath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65/changes.json",
+          "family": "API",
+          "id": "408a2f92b04449e4f031c88de594c5ab0f2008865bc70c4f96065c36d2d1fbef",
+          "key": "AnimatedImageService.Property.UserCreatedTracks",
+          "kind": "members",
+          "observedAt": "2026-10-07T22:02:39.782Z",
+          "operation": "added",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "image",
+            "property"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65",
+          "evidencePath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65/changes.json",
+          "family": "API",
+          "id": "4b2e3a7b573c5013d2a02b40ad6ae415fc005ab488ae6e414a23c65b3b1cde7a",
+          "key": "AnimatedImagePlaybackState.Completed",
+          "kind": "enumItems",
+          "observedAt": "2026-10-07T22:02:39.782Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "image",
+            "playback",
+            "state"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65",
+          "evidencePath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65/changes.json",
+          "family": "API",
+          "id": "553e0239c94521e54b58800f9e79083389e83b39f2d498dda0c11081e402ebaf",
+          "key": "AnimatedImageService",
+          "kind": "classes",
+          "observedAt": "2026-10-07T22:02:39.782Z",
+          "operation": "changed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "image"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65",
+          "evidencePath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65/changes.json",
+          "family": "API",
+          "id": "6a28781ad7a8570778ada6d725edf7f22e34bef9f99a20ce71da2720f9f3962a",
+          "key": "AnimatedImagePlaybackState",
+          "kind": "enums",
+          "observedAt": "2026-10-07T22:02:39.782Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "image",
+            "playback",
+            "state"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65",
+          "evidencePath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65/changes.json",
+          "family": "API",
+          "id": "736cb68c8f256801f2b47032a59c947276e3aed4686e6bda0607e4b0e3b1eb85",
+          "key": "AnimatedImage.Function.Pause",
+          "kind": "members",
+          "observedAt": "2026-10-07T22:02:39.782Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "function",
+            "image"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65",
+          "evidencePath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65/changes.json",
+          "family": "API",
+          "id": "7e0ee92333a17852a597e0567905a2087d6ae30c42c5f0b3ed847d5d6c37f88b",
+          "key": "AnimatedImage.Property.PlaybackSpeed",
+          "kind": "members",
+          "observedAt": "2026-10-07T22:02:39.782Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "image",
+            "property"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65",
+          "evidencePath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65/changes.json",
+          "family": "API",
+          "id": "90239c142cb81aa5100988f8bfef26e202e5b61f4f35f5b346c6fcf92dfd3f00",
+          "key": "AnimatedImagePlaybackState.Paused",
+          "kind": "enumItems",
+          "observedAt": "2026-10-07T22:02:39.782Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "image",
+            "playback",
+            "state"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65",
+          "evidencePath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65/changes.json",
+          "family": "API",
+          "id": "999721a9d783c5bfed7275c53a8aa13f28dabb49d707b75d20adac18572153f2",
+          "key": "AnimatedImageService.Function.CreateTrack",
+          "kind": "members",
+          "observedAt": "2026-10-07T22:02:39.782Z",
+          "operation": "added",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "function",
+            "image"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65",
+          "evidencePath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65/changes.json",
+          "family": "API",
+          "id": "b269c7928db405fef803bf621da2bc4500741e7ee4912a2763b2146a0bd3de58",
+          "key": "AnimatedImage.Function.Resume",
+          "kind": "members",
+          "observedAt": "2026-10-07T22:02:39.782Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "function",
+            "image"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65",
+          "evidencePath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65/changes.json",
+          "family": "API",
+          "id": "b3ed9e114abb3f91c3afc6f4976a1ecdadb7089172f0566d5304692d6606e297",
+          "key": "AnimatedImageService.Function.DestroyTrack",
+          "kind": "members",
+          "observedAt": "2026-10-07T22:02:39.782Z",
+          "operation": "added",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "function",
+            "image"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65",
+          "evidencePath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65/changes.json",
+          "family": "API",
+          "id": "b98df0056cde9a52e51aa895fd224078d30b38a12d5991e98564334bfae04a16",
+          "key": "AnimatedImage",
+          "kind": "classes",
+          "observedAt": "2026-10-07T22:02:39.782Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "image"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65",
+          "evidencePath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65/changes.json",
+          "family": "API",
+          "id": "ddaf30b5c4208cf0aae22d298236c4afc1f5b73a223ab6fa0ba31734333d59cb",
+          "key": "AnimatedImagePlaybackState.Playing",
+          "kind": "enumItems",
+          "observedAt": "2026-10-07T22:02:39.782Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "image",
+            "playback",
+            "state"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65",
+          "evidencePath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65/changes.json",
+          "family": "API",
+          "id": "eb7d579d82489dd6b9c6937eb38c79746481e51c9a78dd407e6c288b4f71054c",
+          "key": "AnimatedImagePlaybackState.Begin",
+          "kind": "enumItems",
+          "observedAt": "2026-10-07T22:02:39.782Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "image",
+            "playback",
+            "state"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65",
+          "evidencePath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65/changes.json",
+          "family": "API",
+          "id": "f9a78b1bd9fc6abd9eaac48b82244e054995807fb5098f0d2992a2cfdddfcbc0",
+          "key": "AnimatedImage.Property.Content",
+          "kind": "members",
+          "observedAt": "2026-10-07T22:02:39.782Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "image",
+            "property"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "animated-images",
-      "lastObservedAt": "2026-09-09T19:49:12.343Z",
+      "lastObservedAt": "2026-10-07T22:02:39.782Z",
       "lifecycle": [],
       "status": "observed",
       "title": "Animated images"
@@ -5459,11 +5799,261 @@
             "priority",
             "video"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65",
+          "evidencePath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65/changes.json",
+          "family": "Distribution",
+          "id": "24744cc7eae9ac6b436d3c0bcbc9e4892f22bc8cf54905c6b7af839dba9fd007",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentsCreationFlow/Foundation.lua",
+          "kind": "files",
+          "observedAt": "2026-10-07T22:02:39.782Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "content",
+            "creation",
+            "extra",
+            "flow",
+            "foundation",
+            "index",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65",
+          "evidencePath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65/changes.json",
+          "family": "LiveSettings",
+          "id": "250ea4bea657b9264f2c71f1910eaefcaaf3db5d751e4e0104ffa2878068c37b",
+          "key": "FFlagMomentsUseSmallOverflowMenu",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-07T22:02:39.782Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "menu",
+            "moments",
+            "overflow",
+            "small"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65",
+          "evidencePath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65/changes.json",
+          "family": "Source",
+          "id": "407c63db590db9e9876f7ff61975cbcebf7896ef45cc521382c2dc5a990a2cee",
+          "key": "extracontent-luapackages/Packages/_Index/MomentsCommon/Foundation.lua",
+          "kind": "file",
+          "observedAt": "2026-10-07T22:02:39.782Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "common",
+            "extracontent",
+            "foundation",
+            "index",
+            "luapackages",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65",
+          "evidencePath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65/changes.json",
+          "family": "Source",
+          "id": "58cd97ee3052a4676d71dc77b58dded021424c0df67f1bcc85b86405b103f02a",
+          "key": "extracontent-luapackages/Packages/_Index/MomentsCreationFlow/Foundation.lua",
+          "kind": "sources",
+          "observedAt": "2026-10-07T22:02:39.782Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "extracontent",
+            "flow",
+            "foundation",
+            "index",
+            "luapackages",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65",
+          "evidencePath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65/changes.json",
+          "family": "LiveSettings",
+          "id": "60cf566b73dfb019657a47a48d3c743a67b85d89a9b48010253bead59332e18a",
+          "key": "FFlagMomentsUseSmallOverflowMenu_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-07T22:02:39.782Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "menu",
+            "moments",
+            "overflow",
+            "small"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65",
+          "evidencePath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65/changes.json",
+          "family": "Source",
+          "id": "676f91cf66780704439ef4eab440b1207978a8b172922b7bebf58fa6b81be724",
+          "key": "extracontent-luapackages/Packages/_Index/MomentsCreationFlow/Foundation.lua",
+          "kind": "file",
+          "observedAt": "2026-10-07T22:02:39.782Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "extracontent",
+            "flow",
+            "foundation",
+            "index",
+            "luapackages",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65",
+          "evidencePath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65/changes.json",
+          "family": "Distribution",
+          "id": "853bc698f18002bf33e93097fa3ec3cec834bb365ce80b52d46b2286eb9441d9",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentsCommon/Foundation.lua",
+          "kind": "files",
+          "observedAt": "2026-10-07T22:02:39.782Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "common",
+            "content",
+            "extra",
+            "foundation",
+            "index",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65",
+          "evidencePath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65/changes.json",
+          "family": "Distribution",
+          "id": "d210b182e52644828c5d7d229096435236094ea0f1a1dbf8ccfe4683ebcd0809",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentsCommon/lock.toml",
+          "kind": "files",
+          "observedAt": "2026-10-07T22:02:39.782Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "common",
+            "content",
+            "extra",
+            "index",
+            "lock",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65",
+          "evidencePath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65/changes.json",
+          "family": "Distribution",
+          "id": "d77e962dff2d837e3141aa1fdda742dffa91316ecc6533f30ddc186f9e786f88",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentsCreationFlow/lock.toml",
+          "kind": "files",
+          "observedAt": "2026-10-07T22:02:39.782Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "content",
+            "creation",
+            "extra",
+            "flow",
+            "index",
+            "lock",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65",
+          "evidencePath": "2026/10/07/22-02-39Z_build_version-9b554450a0fc4e65/changes.json",
+          "family": "Source",
+          "id": "f7e415af2915c391f4fa865ed1a8208b98f343de10c1ae04f0e320abfe97c139",
+          "key": "extracontent-luapackages/Packages/_Index/MomentsCommon/Foundation.lua",
+          "kind": "sources",
+          "observedAt": "2026-10-07T22:02:39.782Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "common",
+            "extracontent",
+            "foundation",
+            "index",
+            "luapackages",
+            "moments"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-10-07T18:31:06.752Z",
+      "lastObservedAt": "2026-10-07T22:02:39.782Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
@@ -5652,6 +6242,14 @@
           "signalIds": [
             "15b69d4f3fdc46a7fa175c8e8e48fea729de0c7c146808c4ac791d088afacdb5",
             "b543abacd174cd28cba6f0a46bd5c27ca4dd67d6b7f72b986b116cb963978162"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-10-07T22:02:39.782Z",
+          "signalIds": [
+            "250ea4bea657b9264f2c71f1910eaefcaaf3db5d751e4e0104ffa2878068c37b",
+            "5d09dadaaa97eabea7d69a44901a19f304e3618f4e102321c2ddf7c282e60ab1"
           ],
           "type": "staged-to-non-staged"
         }

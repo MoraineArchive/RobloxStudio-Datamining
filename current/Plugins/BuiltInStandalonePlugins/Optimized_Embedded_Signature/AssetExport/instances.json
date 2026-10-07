@@ -8788,7 +8788,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "1111",
-      "SourceBytecodeSha256": "db2bcfaeadca246fa3d9677ad45180ede1fae63547aab685c4bc98c7c155f166",
+      "SourceBytecodeSha256": "a7eec09644fe7c31d1283a4721ad2925ff90701cd281d1037a7bfa9e3ffa0beb",
       "Tags": ""
     },
     "unreadable": [
@@ -10245,6 +10245,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "693",
       "SourceBytecodeSha256": "4d752890f42fc61369b389b24c3a9aeb3f3227737714b97250bfbf891c196551",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "CrossDmSignals",
+    "path": "AssetExport/Src/Util/CrossDmSignals",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "85",
+      "SourceBytecodeSha256": "22c261deee167804f28b929113a93fbdefb922378ecef93babadf5ef58fdec20",
       "Tags": ""
     },
     "unreadable": [
@@ -12051,8 +12067,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "296",
-      "SourceBytecodeSha256": "7317a41381c7b4bb7df15cfa5276e89807d411d93b9360be7d810bd57aed1667",
+      "SourceBytecodeBytes": "293",
+      "SourceBytecodeSha256": "e17c7db43d41f756d527826a567d8b5a7f978b18c7ed56b71c0ffa803162d94d",
       "Tags": ""
     },
     "unreadable": [
@@ -13139,8 +13155,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1345",
-      "SourceBytecodeSha256": "ee587e3a57a7b1b89d12b6e77a3d6c488ad5fdf5e3fa7604e6d36bb5fa21f4c5",
+      "SourceBytecodeBytes": "1262",
+      "SourceBytecodeSha256": "bcd2e48ff6cd54706dcbb2c4d48e7881c88bdb967f5fe76fcf88bfc1422fa557",
       "Tags": ""
     },
     "unreadable": [
@@ -14883,8 +14899,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "13511",
-      "SourceBytecodeSha256": "fbc0925b78ac88d6a4b684246347725b7691d6c7d8def8ee6799fb89ac15b05e",
+      "SourceBytecodeBytes": "14620",
+      "SourceBytecodeSha256": "a61ffb4a1f24ec42779e59fc4b67b44415c88945727290605ecdc65824e3b238",
       "Tags": ""
     },
     "unreadable": [
@@ -17517,6 +17533,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "getEngineFeatureStudioPreinitPayloadHandoff",
+    "path": "AssetExport/Src/Flags/getEngineFeatureStudioPreinitPayloadHandoff",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "156",
+      "SourceBytecodeSha256": "bf4864654bfc0155c0ac2f3780af12725dbed60f51bd242be831b988a4ed1ac9",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "getFFlagAnimationExportSupport",
     "path": "AssetExport/Src/Flags/getFFlagAnimationExportSupport",
     "properties": {
@@ -17541,6 +17573,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "202",
       "SourceBytecodeSha256": "1a79500dcedb3a4cf6fb99232e6313a370b0b2471e6a2e52c6cc3a6439670818",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "getFFlagAssetExportStandaloneLazyLoad",
+    "path": "AssetExport/Src/Flags/getFFlagAssetExportStandaloneLazyLoad",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "214",
+      "SourceBytecodeSha256": "19cde369e439e0b89ee3d3c0e2866a43f4267cbfc90c2eaf1f361ec70419cd86",
       "Tags": ""
     },
     "unreadable": [
@@ -29379,8 +29427,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5142",
-      "SourceBytecodeSha256": "41e7119fdfbbf4cc7f91cc6df4e0d9772e4e75f34ad111144827dc1791b77862",
+      "SourceBytecodeBytes": "5235",
+      "SourceBytecodeSha256": "f39400e2d299034f7cee95d30022d94d8e06443fca7ff820a0e90e2b3d12ee50",
       "Tags": ""
     },
     "unreadable": [
@@ -32003,8 +32051,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "199",
-      "SourceBytecodeSha256": "aa133493a1d209611454a546aadc3ace4107663a2306505e6281609205118206",
+      "SourceBytecodeBytes": "280",
+      "SourceBytecodeSha256": "da3e6a225de7e3a9765045a447ece7eb585847a5572e3d8aa81dc7e84bf76d9c",
       "Tags": ""
     },
     "unreadable": [
@@ -32051,8 +32099,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5476",
-      "SourceBytecodeSha256": "17ceb6cb6bbed0c3e335c7fa84d4d77a28cab936153a2e1aa62451e5247728ea",
+      "SourceBytecodeBytes": "5360",
+      "SourceBytecodeSha256": "e55c32d1df251b677d37b92d1b2ddf0f898cf82b00389dde16d95b081c84f216",
       "Tags": ""
     },
     "unreadable": [
@@ -33909,6 +33957,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "1250",
       "SourceBytecodeSha256": "dcae00c6895a9ca3752153cd00aeea69dbea229b010fa2c804e202ebfa6ce9ae",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "QueuedOneShotCrossDMPluginInvoke",
+    "path": "AssetExport/Packages/_Index/PluginLoader/PluginLoader/QueuedOneShotCrossDMPluginInvoke",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "734",
+      "SourceBytecodeSha256": "02fb00a7a8075a22ba79cb049f8e424cc81c485a07096a99fb3e77a1ab17941d",
       "Tags": ""
     },
     "unreadable": [
@@ -38701,6 +38765,38 @@
   },
   {
     "class": "ModuleScript",
+    "name": "SafeFlags",
+    "path": "AssetExport/Packages/_Index/StudioFoundation/SafeFlags",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "178",
+      "SourceBytecodeSha256": "36b279786c2d99da236b43fbead13cd8b322a4e171cc20348dbed8b3a5090d72",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "SafeFlags",
+    "path": "AssetExport/Packages/SafeFlags",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "158",
+      "SourceBytecodeSha256": "667ec67aca4a7b412df8ca68f88c629bf8c78ba0cd77a95bac4d284b47a084cb",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "safeGetFastFlag",
     "path": "AssetExport/Packages/_Index/StudioFoundation/StudioFoundation/Util/safeGetFastFlag",
     "properties": {
@@ -39828,7 +39924,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "5580",
-      "SourceBytecodeSha256": "646454f8654e2c38bf4a2187f92b0d7a73b03d7cfe0be345dcced15703cd85e1",
+      "SourceBytecodeSha256": "8651dec746f3fcc03ac19390469a4df72096be8db1018ea5763d93cdf7233382",
       "Tags": ""
     },
     "unreadable": [
@@ -53827,8 +53923,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1699",
-      "SourceBytecodeSha256": "ef9754c4a169c7dc46995be8fcb3ba54f3f75b04949b9ba50194f65ac817ee7d",
+      "SourceBytecodeBytes": "2419",
+      "SourceBytecodeSha256": "c7db76e576671e8f7a566565e006091f7f53693c7fbfb45474a64f80509886ab",
       "Tags": ""
     },
     "unreadable": [

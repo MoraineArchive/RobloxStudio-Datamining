@@ -50,5 +50,6 @@ dbghelp.dll
 dd-win-prof.dll
 dxgi.dll
 libfbxsdk.dll
+mimalloc.dll
 msdmo.dll
 ole32.dll

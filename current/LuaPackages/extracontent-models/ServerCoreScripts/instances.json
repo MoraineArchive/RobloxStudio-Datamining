@@ -1079,6 +1079,30 @@
   },
   {
     "class": "ModuleScript",
+    "name": "shouldShowFriendJoinedPlayerToast.spec",
+    "path": "Modules/Server/shouldShowFriendJoinedPlayerToast.spec",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "shouldShowFriendJoinedPlayerToast",
+    "path": "Modules/Server/shouldShowFriendJoinedPlayerToast",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "SoundDispatcher",
     "path": "Modules/Server/ServerSound/SoundDispatcher",
     "properties": {

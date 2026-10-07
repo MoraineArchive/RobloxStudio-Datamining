@@ -3271,8 +3271,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2366",
-      "SourceBytecodeSha256": "6494a5decf36542f6a7219d9e565ee2ada16ccabe81299d9fb3fbd4aff5de32a",
+      "SourceBytecodeBytes": "2202",
+      "SourceBytecodeSha256": "5ade3514c204af4ff0dfab9ddb9e6cb22365c574469b949529e1fa2378e5f583",
       "Tags": ""
     },
     "unreadable": [
@@ -8353,22 +8353,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "createGetSafeFFlag",
-    "path": "PublishPlaceAs/Packages/_Index/WebView/WebView/Util/SharedFlags/createGetSafeFFlag",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "327",
-      "SourceBytecodeSha256": "0e46c0a09cfb9a47da1281ba3a115c787727da1b53f031c30beeda2ed9a01efe",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "createGridStyleRules",
     "path": "PublishPlaceAs/Packages/_Index/Foundation/Foundation/Components/Grid/createGridStyleRules",
     "properties": {
@@ -11175,8 +11159,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1345",
-      "SourceBytecodeSha256": "ee587e3a57a7b1b89d12b6e77a3d6c488ad5fdf5e3fa7604e6d36bb5fa21f4c5",
+      "SourceBytecodeBytes": "1262",
+      "SourceBytecodeSha256": "bcd2e48ff6cd54706dcbb2c4d48e7881c88bdb967f5fe76fcf88bfc1422fa557",
       "Tags": ""
     },
     "unreadable": [
@@ -12455,8 +12439,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "206",
-      "SourceBytecodeSha256": "183e8d01ad971b1940173d7166e6ff389d3247a39c75bf0cce8b9f3f260b99f9",
+      "SourceBytecodeBytes": "359",
+      "SourceBytecodeSha256": "28f52b7abee284cdb86d1a843958dc3259b7892f3549ea3617dad3e00036b559",
       "Tags": ""
     },
     "unreadable": [
@@ -15201,6 +15185,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "getFFlagStudioDialogManagerSnackbarQueue",
+    "path": "PublishPlaceAs/Packages/_Index/WebView/WebView/Util/SharedFlags/getFFlagStudioDialogManagerSnackbarQueue",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "251",
+      "SourceBytecodeSha256": "0cab76f02e148b71dddb97fd36355dd4bdc1c9f998971600f3f2cd5773176a71",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "getFFlagSTUDIOPLAT42559FixSaveDialogXClose",
     "path": "PublishPlaceAs/Src/Flags/getFFlagSTUDIOPLAT42559FixSaveDialogXClose",
     "properties": {
@@ -15209,6 +15209,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "219",
       "SourceBytecodeSha256": "1635d287819613a475b4c03ced7364d5690842964bd1f0036dd0550b6f950923",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "getFFlagWebBrowserEnableSnackbar",
+    "path": "PublishPlaceAs/Packages/_Index/WebView/WebView/Util/SharedFlags/getFFlagWebBrowserEnableSnackbar",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "355",
+      "SourceBytecodeSha256": "c9ff2b69d721daa03dc8d285103ee735e7aa5bb04e1d33c4a3fbabba60fa4f9f",
       "Tags": ""
     },
     "unreadable": [
@@ -25399,8 +25415,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5476",
-      "SourceBytecodeSha256": "17ceb6cb6bbed0c3e335c7fa84d4d77a28cab936153a2e1aa62451e5247728ea",
+      "SourceBytecodeBytes": "5360",
+      "SourceBytecodeSha256": "e55c32d1df251b677d37b92d1b2ddf0f898cf82b00389dde16d95b081c84f216",
       "Tags": ""
     },
     "unreadable": [
@@ -30129,6 +30145,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "SafeFlags",
+    "path": "PublishPlaceAs/Packages/_Index/WebView/SafeFlags",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "178",
+      "SourceBytecodeSha256": "36b279786c2d99da236b43fbead13cd8b322a4e171cc20348dbed8b3a5090d72",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "SaveSequence.story",
     "path": "PublishPlaceAs/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Hooks/RESTRICTED_useDialog/SaveSequence.story",
     "properties": {
@@ -32665,6 +32697,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "4170",
       "SourceBytecodeSha256": "f7bdc1beaa72b8ffb2cdb95aeeb707475c59f7494faabc309c82f6c522e4463e",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "SnackbarHandlers",
+    "path": "PublishPlaceAs/Packages/_Index/WebView/WebView/SnackbarHandlers",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "4156",
+      "SourceBytecodeSha256": "6663d8d62427327d42278a284e5f93ffcef59c2fbe968939ab560e77ef4d54df",
       "Tags": ""
     },
     "unreadable": [
@@ -42967,8 +43015,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "630",
-      "SourceBytecodeSha256": "44975b55e5125686ccbf171c9df1f373577512c62d1d0d93e3df18f3549894a4",
+      "SourceBytecodeBytes": "905",
+      "SourceBytecodeSha256": "03c71233304a4efb64ed9aac0845765224e67c333e3c1b8cb8173f35880dfbc1",
       "Tags": ""
     },
     "unreadable": [
@@ -42999,8 +43047,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "8829",
-      "SourceBytecodeSha256": "dd6cd506347a3297631915242e5e6cea7aae579a3cf012cf094a3f0eadba43aa",
+      "SourceBytecodeBytes": "9330",
+      "SourceBytecodeSha256": "a29065dcd2fab034505c6055e45a66e7531d6f2ecc02a2579258e7197cf169f1",
       "Tags": ""
     },
     "unreadable": [
@@ -43063,8 +43111,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "473",
-      "SourceBytecodeSha256": "78c26ef59de684e336b4fa788ed20117e625a3ea3ede45b501af3468b0f2aee9",
+      "SourceBytecodeBytes": "678",
+      "SourceBytecodeSha256": "57e7360e17fdf66638fd6bf4915670abf53bf61af505bea3e05b13aaeceb35ae",
       "Tags": ""
     },
     "unreadable": [

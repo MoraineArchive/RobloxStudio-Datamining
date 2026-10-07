@@ -2421,6 +2421,16 @@
   },
   {
     "class": "Folder",
+    "name": "PlaceManagement",
+    "path": "AssetManager/Src/Util/PlaceManagement",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
     "name": "Places",
     "path": "AssetManager/Packages/_Index/DeveloperFramework/DeveloperFramework/RobloxAPI/Develop/V1/Places",
     "properties": {
@@ -4447,6 +4457,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "ActiveSearchFilters",
+    "path": "AssetManager/Src/Components/App/MainView/ActiveSearchFilters",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1208",
+      "SourceBytecodeSha256": "fd54c28f21c8cb3934fb37dbcdcd0f4a5108967d65a2aea31c85c10c0acc83f2",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "adaptor",
     "path": "AssetManager/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/DEPRECATED_Button/adaptor",
     "properties": {
@@ -4455,6 +4481,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "2441",
       "SourceBytecodeSha256": "a6df3164bbdd596110264e15eb70801aa2c87a8f1902d402c80f837d50eb95ff",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "addNewPlace",
+    "path": "AssetManager/Src/Util/PlaceManagement/addNewPlace",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "646",
+      "SourceBytecodeSha256": "b8c5153a7cfab3089f66f248e7bf91f6e0c14388936ede7c36705dbc954b4d57",
       "Tags": ""
     },
     "unreadable": [
@@ -4885,8 +4927,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3871",
-      "SourceBytecodeSha256": "52acf4c2bcb5c58125ad11672809a2f223d9e493b24085d9d64ed36cf1b35412",
+      "SourceBytecodeBytes": "3909",
+      "SourceBytecodeSha256": "8679e6f16bfbcb961e6ad0630bbb699f0f534f70776bfb839d7d101e47d71eb2",
       "Tags": ""
     },
     "unreadable": [
@@ -5142,7 +5184,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "197",
-      "SourceBytecodeSha256": "7738abf84c22938e7f7da747e858b680bcf4bbc731385f3596ef4b3ca69c2506",
+      "SourceBytecodeSha256": "95977e6e5f2ca8ea9a518ce719ab230df11b8b39822803b5e2812d39e9902f8d",
       "Tags": ""
     },
     "unreadable": [
@@ -5158,7 +5200,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "164",
-      "SourceBytecodeSha256": "11dcb2d0ba5e5ff7fd806ce1e4fcf6b268aeca9fa44920fccecfdc21a81eaa4c",
+      "SourceBytecodeSha256": "300951d34b6b53b9c2640cb6190ffd6fdfb0a91ab3a023813a1006167c7e4176",
       "Tags": ""
     },
     "unreadable": [
@@ -5557,8 +5599,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3631",
-      "SourceBytecodeSha256": "d1de7fa7bb9bdd4b4b68fe767c33bf362337713d53ef7bce98c4ed34f116e4d2",
+      "SourceBytecodeBytes": "4187",
+      "SourceBytecodeSha256": "b45e1d86651245dcc6675a9e1e8aabbc32be0cb2e6cbf03bd027ee8f97bed646",
       "Tags": ""
     },
     "unreadable": [
@@ -5743,14 +5785,30 @@
   },
   {
     "class": "ModuleScript",
+    "name": "AudioPlayer",
+    "path": "AssetManager/Src/Components/App/DetailsDrawer/AudioPlayer",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "2033",
+      "SourceBytecodeSha256": "5624355e4533345e42d97d9979f320a711b1c71664ac83138cb06b7e25dc9763",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "AudioPreviewManager",
     "path": "AssetManager/Src/Controllers/AudioPreviewManager",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3437",
-      "SourceBytecodeSha256": "d13c4184c2d4cd555f47e8803ec02216cfd76b61b500e9c2e9d983d1ea6c7c50",
+      "SourceBytecodeBytes": "3608",
+      "SourceBytecodeSha256": "57870a3b3aca3cd865880638135724a116972d13957efc6fd5e44ced7589030a",
       "Tags": ""
     },
     "unreadable": [
@@ -5765,8 +5823,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1920",
-      "SourceBytecodeSha256": "31831a05bc06c5111d5bfb48fd2d1fd91e5bc7973e22a779eb2a037d3c271747",
+      "SourceBytecodeBytes": "1816",
+      "SourceBytecodeSha256": "ab59b9f6273aace12141a9c49e20d8b8629e4b69a6e882df1464be34e1b3432a",
       "Tags": ""
     },
     "unreadable": [
@@ -9830,7 +9888,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "1111",
-      "SourceBytecodeSha256": "db2bcfaeadca246fa3d9677ad45180ede1fae63547aab685c4bc98c7c155f166",
+      "SourceBytecodeSha256": "a7eec09644fe7c31d1283a4721ad2925ff90701cd281d1037a7bfa9e3ffa0beb",
       "Tags": ""
     },
     "unreadable": [
@@ -9846,7 +9904,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "1111",
-      "SourceBytecodeSha256": "db2bcfaeadca246fa3d9677ad45180ede1fae63547aab685c4bc98c7c155f166",
+      "SourceBytecodeSha256": "a7eec09644fe7c31d1283a4721ad2925ff90701cd281d1037a7bfa9e3ffa0beb",
       "Tags": ""
     },
     "unreadable": [
@@ -10421,8 +10479,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2545",
-      "SourceBytecodeSha256": "7e2ad707b9984a3c87fda9c49c704b44e3fa7c6c172bbf77699b8431006695a6",
+      "SourceBytecodeBytes": "2583",
+      "SourceBytecodeSha256": "bfc101818f6bcfbf3092909fa9c9499b4f375c5199e22725d397c13959cba8d8",
       "Tags": ""
     },
     "unreadable": [
@@ -10725,8 +10783,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "847",
-      "SourceBytecodeSha256": "513c352146233d86b06bd9c7a3160431bfc0b358459817c58c4d9e25993cebc6",
+      "SourceBytecodeBytes": "902",
+      "SourceBytecodeSha256": "3c956dbcd4bcc03bf249b177bbd3625f82d2fcc4813d277875c4686b0d2def4a",
       "Tags": ""
     },
     "unreadable": [
@@ -13525,8 +13583,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "183",
-      "SourceBytecodeSha256": "cb06b18dac2f96effbcc06395255a272e5383cf844a019727b4a7b274d6a0610",
+      "SourceBytecodeBytes": "127",
+      "SourceBytecodeSha256": "5c49dfa8cc1c006b46ebd7f6ddb0739065510c4d55b665a09315494e4e41021d",
       "Tags": ""
     },
     "unreadable": [
@@ -13861,8 +13919,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3070",
-      "SourceBytecodeSha256": "172202545f9ed7664fc7373233e35f40ab4d9ebe7dcfe7de0ed1c5b64dda67eb",
+      "SourceBytecodeBytes": "6512",
+      "SourceBytecodeSha256": "ccda780be80bd8f6f8c3e77dc6df709f6a878428b38865150db244c422002102",
       "Tags": ""
     },
     "unreadable": [
@@ -14645,8 +14703,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1345",
-      "SourceBytecodeSha256": "ee587e3a57a7b1b89d12b6e77a3d6c488ad5fdf5e3fa7604e6d36bb5fa21f4c5",
+      "SourceBytecodeBytes": "1262",
+      "SourceBytecodeSha256": "bcd2e48ff6cd54706dcbb2c4d48e7881c88bdb967f5fe76fcf88bfc1422fa557",
       "Tags": ""
     },
     "unreadable": [
@@ -15205,8 +15263,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3702",
-      "SourceBytecodeSha256": "5f0394700f57f3b5ca981c18643145f19ca1537359f638e022d1b6805811e397",
+      "SourceBytecodeBytes": "4070",
+      "SourceBytecodeSha256": "dd4c44848c1f8cfc388f1bb7a53083a22d599ade9b710bafb770dfa280314be8",
       "Tags": ""
     },
     "unreadable": [
@@ -15797,8 +15855,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1244",
-      "SourceBytecodeSha256": "b160e85910090ef5a2e11ed2fa48e19055d8e56462ead1628f66260711ac623a",
+      "SourceBytecodeBytes": "1263",
+      "SourceBytecodeSha256": "3e12088012f7771b5318f8f22533498c832ace4e295dc8e3d266d83c38fa28ed",
       "Tags": ""
     },
     "unreadable": [
@@ -15829,8 +15887,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2098",
-      "SourceBytecodeSha256": "b50175880b34c3a321e15ca10c5ec1eeefebbfe43ffe4f2095439b97bb147659",
+      "SourceBytecodeBytes": "2503",
+      "SourceBytecodeSha256": "a6ad2d0b92e80e9eef29ee35e95b77cda78e3d0b11cb637c80d71ddc206f2597",
       "Tags": ""
     },
     "unreadable": [
@@ -17365,8 +17423,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5643",
-      "SourceBytecodeSha256": "3ae49ddc21204ebe1cfc8d083333a8074bd84152d60d06d8b414e4214d3f2cbd",
+      "SourceBytecodeBytes": "5681",
+      "SourceBytecodeSha256": "0a9baaedc07152c647bebebc5062f1ea9539541a9be1f44dc06023da319e46ea",
       "Tags": ""
     },
     "unreadable": [
@@ -17429,8 +17487,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "9042",
-      "SourceBytecodeSha256": "55462dd4136e41274cbfbdae714da3b8167fad1fd4bcefe3dc1ae43bad95c477",
+      "SourceBytecodeBytes": "9406",
+      "SourceBytecodeSha256": "4ccc19bcee9fbd257f3b31f1c4975f268ef7590c3f4848b85b7a6577925480fb",
       "Tags": ""
     },
     "unreadable": [
@@ -17542,7 +17600,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "849",
-      "SourceBytecodeSha256": "34bd7f7d7120e3b4942a299e6cb01c33f6f6ddff52c4a8ff1fce810a2cefea6c",
+      "SourceBytecodeSha256": "9fdbdb0ab28ed5be116fea15e1bce69ab357690b31b281de6685c4026b03aa3c",
       "Tags": ""
     },
     "unreadable": [
@@ -17703,6 +17761,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "1018",
       "SourceBytecodeSha256": "41a9b90223316c896fe9dc49f3347a99cb0ffe900144d91e905d4fbca234e6b9",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "formatDateTime",
+    "path": "AssetManager/Src/Util/formatDateTime",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "360",
+      "SourceBytecodeSha256": "5cee6b910a183b1e3e8738344203ad45c7578363f3e938ca52ec6a8371e4a640",
       "Tags": ""
     },
     "unreadable": [
@@ -18917,8 +18991,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3062",
-      "SourceBytecodeSha256": "1d1518351283c0e0f02cc72b487bc070006ab1add9ed87f8998d411e47dcc542",
+      "SourceBytecodeBytes": "3264",
+      "SourceBytecodeSha256": "768871f511d9832a60dda4ece8b714b1866b1897994bda69113b8d11197ec28b",
       "Tags": ""
     },
     "unreadable": [
@@ -18933,8 +19007,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4416",
-      "SourceBytecodeSha256": "22c92c9024ad32e4fb90aaeea9a18b1e1ed35cec9fa2271b05dd7cb5156997e1",
+      "SourceBytecodeBytes": "4628",
+      "SourceBytecodeSha256": "13becee2d6aa48304e95bd81435863b542fc419b3ba30644a9d0d4416f286805",
       "Tags": ""
     },
     "unreadable": [
@@ -19343,22 +19417,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "getDetailsDrawerItemPath",
-    "path": "AssetManager/Src/Util/getDetailsDrawerItemPath",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "207",
-      "SourceBytecodeSha256": "a8fd11f393de2dccecea6736c16c15a6e657bee22ebc8c9f02d6fe19482b28f2",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "getDisabledStyle",
     "path": "AssetManager/Packages/_Index/Foundation/Foundation/Utility/getDisabledStyle",
     "properties": {
@@ -19583,14 +19641,30 @@
   },
   {
     "class": "ModuleScript",
+    "name": "getFFlagAmrEnableDraftStatus",
+    "path": "AssetManager/Src/Flags/getFFlagAmrEnableDraftStatus",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "346",
+      "SourceBytecodeSha256": "33a8b7f923367cfc33f705603ee69dc2df5d711cc0d74d6c8b22f3e5010c8cdf",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "getFFlagAmrEnableIntroTutorial",
     "path": "AssetManager/Src/Flags/getFFlagAmrEnableIntroTutorial",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "348",
-      "SourceBytecodeSha256": "5d460de4126d0b850ff40d2413b2b8bfa0383581407e33e836dee089b4568fae",
+      "SourceBytecodeBytes": "457",
+      "SourceBytecodeSha256": "f34be4eca27e4ddea6703fe109d31d021f2a6c84ebbef36cd10d4e6cd74c5269",
       "Tags": ""
     },
     "unreadable": [
@@ -19638,7 +19712,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "345",
-      "SourceBytecodeSha256": "dc8bf9bc742209e85e2f89b303362e0af2fa1e130354f69aeafd17991dd59558",
+      "SourceBytecodeSha256": "48a90904bee1869351c6154e97aa811749a914b86a57f44992fb2117cf32da07",
       "Tags": ""
     },
     "unreadable": [
@@ -19871,6 +19945,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "getFFlagAmrRemoveAssetManagerServiceDependency",
+    "path": "AssetManager/Src/Flags/getFFlagAmrRemoveAssetManagerServiceDependency",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "364",
+      "SourceBytecodeSha256": "443f38dd21df983c5b759b5851fa34735c296dfe5567fcd95c14e07177051953",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "getFFlagAmrStudioToastsIntegration",
     "path": "AssetManager/Src/Flags/getFFlagAmrStudioToastsIntegration",
     "properties": {
@@ -19926,7 +20016,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "458",
-      "SourceBytecodeSha256": "ab4c32727265e12385b3c811ec4d9dba4952d808feb7ba845977289aeba62fa2",
+      "SourceBytecodeSha256": "076a6d73bd2fb7f88ae84daebe5a61e4e6c95164f0b66c2f2db609827fbfc871",
       "Tags": ""
     },
     "unreadable": [
@@ -20935,6 +21025,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "260",
       "SourceBytecodeSha256": "713126fbb715b37832e8ffc3b7917e9dc1be946a40e0cf8b9c4b13077718fb73",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "getFStringStudioDefaultNewTemplatePlaceId",
+    "path": "AssetManager/Src/Flags/getFStringStudioDefaultNewTemplatePlaceId",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "314",
+      "SourceBytecodeSha256": "b0cd2f90e101a7b434327c39d4e7172f8cd9d9113e5b591e61780db1e682dff1",
       "Tags": ""
     },
     "unreadable": [
@@ -22997,8 +23103,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2557",
-      "SourceBytecodeSha256": "24741afeef8466786d5c1331a2954f6ebfcb55b1599be3532ce13e9efc635896",
+      "SourceBytecodeBytes": "2885",
+      "SourceBytecodeSha256": "ece2d2705a5955269497e42c1bce16a1198d8599602362af38f3b87a70c56a63",
       "Tags": ""
     },
     "unreadable": [
@@ -23014,7 +23120,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "4913",
-      "SourceBytecodeSha256": "61c16e8e36973c82dcaea07f5cbf3cc4f8a9453c852985d96674bd4207b4ca19",
+      "SourceBytecodeSha256": "5ed84b24bc71c1d3086fb950726f1b96a7829307a467a912b8bf5509f6dc7804",
       "Tags": ""
     },
     "unreadable": [
@@ -23157,8 +23263,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3336",
-      "SourceBytecodeSha256": "cebdb883599003950f3b15f5ca2d7fe44426c13933d2c2baf75006c8eb0a6b3c",
+      "SourceBytecodeBytes": "3536",
+      "SourceBytecodeSha256": "cc4075b76af0a93ef477aa306ad54a48557a3a04de0e69d592a17422a1bfd24a",
       "Tags": ""
     },
     "unreadable": [
@@ -24325,8 +24431,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "15305",
-      "SourceBytecodeSha256": "c4be6bfde7959d3aec010103cb1ff7882acff57579ddb54294d7e50d3bc11a69",
+      "SourceBytecodeBytes": "15613",
+      "SourceBytecodeSha256": "3a9e6ca20b5f42f6434a32d39c2e2e52070dce4b956562c1bcafcdec80aec715",
       "Tags": ""
     },
     "unreadable": [
@@ -25237,8 +25343,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1108",
-      "SourceBytecodeSha256": "b7bc40a8690b9b0a14bceffdbb1716581a8afd680dcecd82de141759b6c58832",
+      "SourceBytecodeBytes": "1303",
+      "SourceBytecodeSha256": "8821ccc601f44922cd6f628103eb305b1b1ff96acf218e1ae9c76f575eb07827",
       "Tags": ""
     },
     "unreadable": [
@@ -25351,6 +25457,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "303",
       "SourceBytecodeSha256": "2893f9836fbdfa7e92a1e1e81810a6010242fd30d2c3eb78ec00e9979e463433",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "isAudioPreviewable",
+    "path": "AssetManager/Src/Util/isAudioPreviewable",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "348",
+      "SourceBytecodeSha256": "d6e491c4d827892df11cdbb135fd301312f8ade8a9af129dd31b99cabc0fce58",
       "Tags": ""
     },
     "unreadable": [
@@ -25717,8 +25839,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "414",
-      "SourceBytecodeSha256": "5b33801e5d772ffe6bf080338539839501b1ff177bef979b08ecd71a304c5aa8",
+      "SourceBytecodeBytes": "510",
+      "SourceBytecodeSha256": "416cdf922430ff6129fa468682eec0d6290ed35b73cab451713c1382bacf35ee",
       "Tags": ""
     },
     "unreadable": [
@@ -26165,8 +26287,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "6330",
-      "SourceBytecodeSha256": "a303aa68509fd2cc7e08a59ce00a60b1d0b18ba74629a2c66cc480bf61666d72",
+      "SourceBytecodeBytes": "6715",
+      "SourceBytecodeSha256": "405f4f189a66832003cc340b5c29aafbd92a8c8df228474453991c8a0c46614d",
       "Tags": ""
     },
     "unreadable": [
@@ -26181,8 +26303,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "9884",
-      "SourceBytecodeSha256": "43bb2ac0f561e8d8bc632d0516a36edae74105a89579e1c852affb8cbf2adae7",
+      "SourceBytecodeBytes": "10261",
+      "SourceBytecodeSha256": "4cf7289ca8974525b91973c45f86609d55042232f1df19a08dd945b5675fdf20",
       "Tags": ""
     },
     "unreadable": [
@@ -26197,8 +26319,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "11709",
-      "SourceBytecodeSha256": "ba9f3d5032753f6fe3fdb3a662e83dab8908366c53812750499af3e9e1575193",
+      "SourceBytecodeBytes": "11934",
+      "SourceBytecodeSha256": "96c408be1e68cbe3e4a4c9f5960f258e69fdc5b92674fe0441551253922919b1",
       "Tags": ""
     },
     "unreadable": [
@@ -26213,8 +26335,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "49086",
-      "SourceBytecodeSha256": "8931a0d1856866a4ea994e6dc052ad66082d1275d7d089a4de7ede859aa2d5d3",
+      "SourceBytecodeBytes": "48789",
+      "SourceBytecodeSha256": "e6e68ccf8fa1bed15225ea335c81a635288e9814222405f80a346759c1014155",
       "Tags": ""
     },
     "unreadable": [
@@ -26229,8 +26351,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3263",
-      "SourceBytecodeSha256": "9e80889fa44f2e9eee6e618bed849ca5c375934ae5d8f012583686c311a29d12",
+      "SourceBytecodeBytes": "3387",
+      "SourceBytecodeSha256": "ac6e45c46e30e940569a1322a04458380932ea5be73bd0814f4df6c32131d7db",
       "Tags": ""
     },
     "unreadable": [
@@ -26309,8 +26431,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "600",
-      "SourceBytecodeSha256": "77a23db1cf54e78509fd2111d4e9d43a9813ec93ee51cd8c81b6888db4b65eac",
+      "SourceBytecodeBytes": "794",
+      "SourceBytecodeSha256": "7f27968bf9b3f7d69e9b03031eff4bec6b3b8fd0c967c74fcd8295c885bd8471",
       "Tags": ""
     },
     "unreadable": [
@@ -26325,8 +26447,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5135",
-      "SourceBytecodeSha256": "bf9620da6c707378d97d5fbfc173316f0371e767cbbdaf92090833edafa109ae",
+      "SourceBytecodeBytes": "5280",
+      "SourceBytecodeSha256": "b80f330e8c26b0f08b3291581b723edc73cd480a7e221c2dfd53bfa45b863cb9",
       "Tags": ""
     },
     "unreadable": [
@@ -29317,8 +29439,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "19961",
-      "SourceBytecodeSha256": "65f532a537c2f1d420fe5e7f60ecf0891aed94b5abeaf9dbdd15b94762388348",
+      "SourceBytecodeBytes": "19830",
+      "SourceBytecodeSha256": "0a3cc59e302215a122f59becd331c63fe8e48761228250dc56036668bee4a2ca",
       "Tags": ""
     },
     "unreadable": [
@@ -31397,8 +31519,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "9377",
-      "SourceBytecodeSha256": "7ee7db4de001fa7e63042db87786e869861e961a5a565fe0342e6afac0e2699e",
+      "SourceBytecodeBytes": "9398",
+      "SourceBytecodeSha256": "1a7f7730d5b00f6c4266842b40bc9c9963c7d693f30f518f956d6863db817cdd",
       "Tags": ""
     },
     "unreadable": [
@@ -31413,8 +31535,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2501",
-      "SourceBytecodeSha256": "76d3723e48ce2f3b2171cc6b1b667d64e8797259bd5e6e528d610dc727f021e3",
+      "SourceBytecodeBytes": "2846",
+      "SourceBytecodeSha256": "aaca53ef0085c4c20d5c0b8ebe3b90fc97fcddbbfece3e34ceaf5a0f9786dc77",
       "Tags": ""
     },
     "unreadable": [
@@ -32597,8 +32719,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "18859",
-      "SourceBytecodeSha256": "447bc4d968b86dbcb18310b983037d7bacf859f931e046053d66f81b8c5c08a1",
+      "SourceBytecodeBytes": "18919",
+      "SourceBytecodeSha256": "e815905d13509a5068b655674b7cfd425ac4b94827527659dbb497a2a9a8e2f0",
       "Tags": ""
     },
     "unreadable": [
@@ -32757,8 +32879,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5142",
-      "SourceBytecodeSha256": "41e7119fdfbbf4cc7f91cc6df4e0d9772e4e75f34ad111144827dc1791b77862",
+      "SourceBytecodeBytes": "5235",
+      "SourceBytecodeSha256": "f39400e2d299034f7cee95d30022d94d8e06443fca7ff820a0e90e2b3d12ee50",
       "Tags": ""
     },
     "unreadable": [
@@ -33135,6 +33257,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "MultiSelect",
+    "path": "AssetManager/Src/Components/App/DetailsDrawer/MultiSelect",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1975",
+      "SourceBytecodeSha256": "47429611e6d5faff8c06209fcdf05685143c7458b82ac363bf42369c55cfb888",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "naturalCompare",
     "path": "AssetManager/Src/Util/naturalCompare",
     "properties": {
@@ -33365,8 +33503,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "6233",
-      "SourceBytecodeSha256": "6d1a9fb6a4ca01e7a707b28312282752942785bc970182474a468b4d5d608e04",
+      "SourceBytecodeBytes": "6661",
+      "SourceBytecodeSha256": "95a01bb974bc7b7f0baecaf7096f8dcd3adcbf4309a46ee3a3240d0ad1fb23b8",
       "Tags": ""
     },
     "unreadable": [
@@ -33381,8 +33519,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "27464",
-      "SourceBytecodeSha256": "eb51b8f3e79804a37486fd9c527ca3c75a61abb7c3d2271649c632008f9b0022",
+      "SourceBytecodeBytes": "29447",
+      "SourceBytecodeSha256": "4d970a9338ec18cd0b14c6392088e4dd7d1d28f6461924ccf56614314c33daa6",
       "Tags": ""
     },
     "unreadable": [
@@ -33397,8 +33535,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "11541",
-      "SourceBytecodeSha256": "cc40b0ea464ca7fc609f713633bf07f60c3f5469b83798399ad71806e864adb5",
+      "SourceBytecodeBytes": "12842",
+      "SourceBytecodeSha256": "3ac742769958426c56c05e600d6b2480a4b3906a26b5c6da144669bbafc2e73e",
       "Tags": ""
     },
     "unreadable": [
@@ -34133,8 +34271,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "816",
-      "SourceBytecodeSha256": "2335b0e12fdea45f633d2344a1c4d6213b12297d53a4675e3ec6a0e418552817",
+      "SourceBytecodeBytes": "1276",
+      "SourceBytecodeSha256": "33e617d0241222a45848646a398651aca99573702aa1dfe9c91aa568ee012767",
       "Tags": ""
     },
     "unreadable": [
@@ -34229,8 +34367,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5971",
-      "SourceBytecodeSha256": "06d0c03258078d252fc1c98c4a61663cd9b4415a39a00a4a967a10483b1f63e2",
+      "SourceBytecodeBytes": "5874",
+      "SourceBytecodeSha256": "582b4da02efdd96aec026eb2c47b32c55ab62ea361fba7079f503e6987863de3",
       "Tags": ""
     },
     "unreadable": [
@@ -35413,8 +35551,24 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3315",
-      "SourceBytecodeSha256": "2577fe9020be64d04947eaa9beed228703a308148a6235e45e82462bcff271e5",
+      "SourceBytecodeBytes": "3766",
+      "SourceBytecodeSha256": "5daaf9727b8e1d649fd011ab5634fcc841bde99f43844aa0bd03aeab6d68f4b2",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "PlaceManagementTypes",
+    "path": "AssetManager/Src/Util/PlaceManagement/PlaceManagementTypes",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "44",
+      "SourceBytecodeSha256": "ccfacf5fd0cf8b29dcf2ef3e28ad5262fe26411acf163f256e6accfd8e28fde8",
       "Tags": ""
     },
     "unreadable": [
@@ -35749,8 +35903,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "199",
-      "SourceBytecodeSha256": "aa133493a1d209611454a546aadc3ace4107663a2306505e6281609205118206",
+      "SourceBytecodeBytes": "280",
+      "SourceBytecodeSha256": "da3e6a225de7e3a9765045a447ece7eb585847a5572e3d8aa81dc7e84bf76d9c",
       "Tags": ""
     },
     "unreadable": [
@@ -35797,8 +35951,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5476",
-      "SourceBytecodeSha256": "17ceb6cb6bbed0c3e335c7fa84d4d77a28cab936153a2e1aa62451e5247728ea",
+      "SourceBytecodeBytes": "5360",
+      "SourceBytecodeSha256": "e55c32d1df251b677d37b92d1b2ddf0f898cf82b00389dde16d95b081c84f216",
       "Tags": ""
     },
     "unreadable": [
@@ -37735,6 +37889,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "1250",
       "SourceBytecodeSha256": "dcae00c6895a9ca3752153cd00aeea69dbea229b010fa2c804e202ebfa6ce9ae",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "QueuedOneShotCrossDMPluginInvoke",
+    "path": "AssetManager/Packages/_Index/PluginLoader/PluginLoader/QueuedOneShotCrossDMPluginInvoke",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "734",
+      "SourceBytecodeSha256": "02fb00a7a8075a22ba79cb049f8e424cc81c485a07096a99fb3e77a1ab17941d",
       "Tags": ""
     },
     "unreadable": [
@@ -40815,6 +40985,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "removePlace",
+    "path": "AssetManager/Src/Util/PlaceManagement/removePlace",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "839",
+      "SourceBytecodeSha256": "d8fc5b74a78873e34c0270d29533f0c44ea749483f79d3ff3083cd177093c3e1",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "removeRange",
     "path": "AssetManager/Packages/_Index/Cryo/Cryo/List/removeRange",
     "properties": {
@@ -40839,6 +41025,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "156",
       "SourceBytecodeSha256": "1f3225dc952dbcd49b3b39dc328adefe2ebfb0e3093dd2b8ff8c07f195c7fe2c",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "renamePlace",
+    "path": "AssetManager/Src/Util/PlaceManagement/renamePlace",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1286",
+      "SourceBytecodeSha256": "0f46b9e5b1f5038da05699bc913dc760153b05b0ab66988ccd246147af16c254",
       "Tags": ""
     },
     "unreadable": [
@@ -41999,6 +42201,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "Rows",
+    "path": "AssetManager/Src/Components/App/DetailsDrawer/Rows",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "5401",
+      "SourceBytecodeSha256": "e20dc9c6cf4f3343fb46a373b5da64bf4113eb8faba594ab0669f35ff1959faa",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "run",
     "path": "AssetManager/Packages/_Index/JestCircus/JestCircus/circus/run",
     "properties": {
@@ -42325,8 +42543,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1318",
-      "SourceBytecodeSha256": "0df708db4f1a21a15da42d43a715570a0d82acc78dbffe3b34df1d58dc4f695e",
+      "SourceBytecodeBytes": "1356",
+      "SourceBytecodeSha256": "3c239dc7f0d01b3159f0cf9fd68ececfb6f7784bda9022389c853f1b256741f4",
       "Tags": ""
     },
     "unreadable": [
@@ -42646,7 +42864,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "8364",
-      "SourceBytecodeSha256": "d428ae73fdbf435dd7cf9887d57d12c9db68305983b97ec90d6f0168e67fad73",
+      "SourceBytecodeSha256": "4cf5533752a17c974ee733bfefe6a76d36b80c55f3e5eedc6e4a7c2b9e939af4",
       "Tags": ""
     },
     "unreadable": [
@@ -42981,8 +43199,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1666",
-      "SourceBytecodeSha256": "5225b38b67aeab781d90063301aee5455f07fddf14ea302fa3ee264fb5f0b343",
+      "SourceBytecodeBytes": "1665",
+      "SourceBytecodeSha256": "ac8983ef4be537939742418e57f1df7dde8b39aec259f7c69a1e4c873f7d3464",
       "Tags": ""
     },
     "unreadable": [
@@ -42997,8 +43215,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "7973",
-      "SourceBytecodeSha256": "6d32d78c4af0f6fc130a565e02baceb74168441e151010616e1df8bb4755152a",
+      "SourceBytecodeBytes": "8634",
+      "SourceBytecodeSha256": "600ff3063978b5d2bf6f8851816fda8bc211c610361d5b44db9ebb7f9ac9ed32",
       "Tags": ""
     },
     "unreadable": [
@@ -43093,8 +43311,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4369",
-      "SourceBytecodeSha256": "0652e62566afda570a90a992e45329b4632970b312cc07ac8d90b4007d08782f",
+      "SourceBytecodeBytes": "4366",
+      "SourceBytecodeSha256": "ef98e17aa5294df9002cb8a586c3bd313dabfe3bc4963d1c0f2717830ae001e0",
       "Tags": ""
     },
     "unreadable": [
@@ -43669,8 +43887,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4395",
-      "SourceBytecodeSha256": "39e3b4b06a2dcc191f09a5bd323ccc0abff8025156ec3eec6b64a3fbef385328",
+      "SourceBytecodeBytes": "4832",
+      "SourceBytecodeSha256": "c573ad7f94078dd214ff03991fa514192fb593d170130d678283d28190beaada",
       "Tags": ""
     },
     "unreadable": [
@@ -44469,8 +44687,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1409",
-      "SourceBytecodeSha256": "221e477a6615053651fb8e57e151a345d0b02ffd995b60df76ace1cdc1a1ae8b",
+      "SourceBytecodeBytes": "1614",
+      "SourceBytecodeSha256": "5b41aee6dab23069e8f382f092ed964f30b7559ef8d573e7a2deec5184a5c302",
       "Tags": ""
     },
     "unreadable": [
@@ -44759,6 +44977,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "4525",
       "SourceBytecodeSha256": "48d133252bbea05563b01ace0d02ee0285bf0b71ab57ec4695ef4c4b1c3456a5",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "SingleAsset",
+    "path": "AssetManager/Src/Components/App/DetailsDrawer/SingleAsset",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "4717",
+      "SourceBytecodeSha256": "8dc2d7ee81b185a043cc4e47a3d6502e6746e9fbab7faf7b1fd0b9ad64bc7fdc",
       "Tags": ""
     },
     "unreadable": [
@@ -52245,8 +52479,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5456",
-      "SourceBytecodeSha256": "52995b312ea84dce8adab0a8d83e9d4df7dc3e8ac4b9f3821262c7ebd7d8c94c",
+      "SourceBytecodeBytes": "6085",
+      "SourceBytecodeSha256": "115dc2d1190a454d2042907019c524e72f7716230a68cdeb3f8ec4ee8bc8d3e0",
       "Tags": ""
     },
     "unreadable": [
@@ -52277,8 +52511,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2257",
-      "SourceBytecodeSha256": "b6ce81a6db57731642626956566a497cc03cf9eb85d6569be7ec100bb99581f4",
+      "SourceBytecodeBytes": "2309",
+      "SourceBytecodeSha256": "2f6a6f3454ac03a59f85224caace6fbead250b3e6112e45c62637ce18ebefa5a",
       "Tags": ""
     },
     "unreadable": [
@@ -52389,8 +52623,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1019",
-      "SourceBytecodeSha256": "1cacd8f65fcb858a18b698beee0007040b5f43087a997927f5f599050432ef0c",
+      "SourceBytecodeBytes": "1059",
+      "SourceBytecodeSha256": "a960376f8a6a7fb7f4db7e173c94dde4cb3caa46c0066c63568f726af62f4f28",
       "Tags": ""
     },
     "unreadable": [
@@ -53062,7 +53296,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "364",
-      "SourceBytecodeSha256": "133f6b1fa3ca7633b6345dfd1c4dafb943208c549d9a80873fdc006dc0448e93",
+      "SourceBytecodeSha256": "b60af70f78779b1877f16e7dbbe78cb0ca0f723d1d4e29436098bbc3121bcb35",
       "Tags": ""
     },
     "unreadable": [
@@ -53365,8 +53599,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2484",
-      "SourceBytecodeSha256": "59d2d814576d73be393171840de4c89e997d9fa0c1408b13d40daf51f4dd3f8d",
+      "SourceBytecodeBytes": "2752",
+      "SourceBytecodeSha256": "d7eb570441007e045086cc9854472e1d47ffb5ba487411cd30e6bd4a91cc5db0",
       "Tags": ""
     },
     "unreadable": [
@@ -53487,6 +53721,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "useActiveSearchFilters",
+    "path": "AssetManager/Src/Hooks/useActiveSearchFilters",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "735",
+      "SourceBytecodeSha256": "baf740172b7c33ac07bdabc70e8d74e233423a6f19341711aba6e2faa8de262c",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "useAlertVariants",
     "path": "AssetManager/Packages/_Index/Foundation/Foundation/Components/Alert/useAlertVariants",
     "properties": {
@@ -53583,6 +53833,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "useAssetTechnicalDetails",
+    "path": "AssetManager/Src/Hooks/useAssetTechnicalDetails",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1004",
+      "SourceBytecodeSha256": "72811263493367ce2e9ae3de0d8ad1920efe3734759a1fc6562bfa74c6d85347",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "useAsync",
     "path": "AssetManager/Packages/_Index/ReactUtils/ReactUtils/useAsync",
     "properties": {
@@ -53621,8 +53887,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1495",
-      "SourceBytecodeSha256": "7848ce006c2bd4cbf143454e8012fbe0180c29880297832a0b24de6aa1173970",
+      "SourceBytecodeBytes": "1354",
+      "SourceBytecodeSha256": "c0bc9f8a8ea025315287332d58b8293a40e65220ef4983e5c5dcfbc8687c2484",
       "Tags": ""
     },
     "unreadable": [
@@ -53957,8 +54223,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4633",
-      "SourceBytecodeSha256": "bb7e74b74cb699df1332ef86f634349c07bc0b9d630704f1bbaafb869a9dd49b",
+      "SourceBytecodeBytes": "4856",
+      "SourceBytecodeSha256": "d4addab276cc2db85a42b0ae83927baba42c121c56345c76cceb78f1567a5c49",
       "Tags": ""
     },
     "unreadable": [
@@ -53989,8 +54255,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1661",
-      "SourceBytecodeSha256": "9cb0a9567c72fb521c8b3195c4caca792b931f0634a466a9031708d25ad8f3aa",
+      "SourceBytecodeBytes": "1908",
+      "SourceBytecodeSha256": "e45afb983cd683a63452310429defcd67cc7ca2d09edf18e2df95cf5e8b8c031",
       "Tags": ""
     },
     "unreadable": [
@@ -54069,8 +54335,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1367",
-      "SourceBytecodeSha256": "656ea7f5485997f0a351947cc5d3116390f6d6a05438e033665c7101145ad316",
+      "SourceBytecodeBytes": "1770",
+      "SourceBytecodeSha256": "32267157b12eda429bd61f910aa0c31273654ab334334a4ca2cb714d99118954",
       "Tags": ""
     },
     "unreadable": [
@@ -54565,8 +54831,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "6049",
-      "SourceBytecodeSha256": "e547448e9364b8563b79670449b1466b9d928a8ff401e75d0b75cd14003ed898",
+      "SourceBytecodeBytes": "7042",
+      "SourceBytecodeSha256": "ce5c54339b4c773381e3a1decacdc64d87a26f4892ba42c4e463504aaf1364d0",
       "Tags": ""
     },
     "unreadable": [
@@ -55110,7 +55376,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "2437",
-      "SourceBytecodeSha256": "02db969086e815dc8ea309029d6d9bdcae3cc2ebe6457fe36e089981b81e60c4",
+      "SourceBytecodeSha256": "60531df0b185ff080b0e1c6f074be1ae4cf69a51e72421e74146926e7a1abd65",
       "Tags": ""
     },
     "unreadable": [
@@ -56421,8 +56687,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1758",
-      "SourceBytecodeSha256": "9ef1f454bf720f66d5e33898eb286394742d52ba487a629711069fbfc6743315",
+      "SourceBytecodeBytes": "2301",
+      "SourceBytecodeSha256": "ef0e423671581b5c993ee4d967da85bab0416a1004f9ce05097d9218f3949ac4",
       "Tags": ""
     },
     "unreadable": [
@@ -56438,7 +56704,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "2166",
-      "SourceBytecodeSha256": "1cd7028ddf1bbb8b36f2a6409c94ea91a1aadae2cb3369a7e44f57ad1822bffe",
+      "SourceBytecodeSha256": "eddb4eac73a37115ce469c513a8432de0c7333835173afcc50c06ba01ee7b125",
       "Tags": ""
     },
     "unreadable": [
@@ -57093,8 +57359,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1373",
-      "SourceBytecodeSha256": "a80aaeba9c3e0bd2a5891643f8055f9263b52e63d8ec50875706b7eb90465131",
+      "SourceBytecodeBytes": "1405",
+      "SourceBytecodeSha256": "41f55c51b21b7d302b3049f0fafc553c50282af034d21d6e27c1522d6d2ff1a9",
       "Tags": ""
     },
     "unreadable": [
@@ -57622,7 +57888,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "49",
-      "SourceBytecodeSha256": "6ea349afce7fb2e992c3690cf5d18a23fbf768483f7c47081685b809dfea4142",
+      "SourceBytecodeSha256": "83a5fe10636763a63dfad44555102722360dac771a249c3037aaea2104c87a5c",
       "Tags": ""
     },
     "unreadable": [
@@ -58501,8 +58767,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1745",
-      "SourceBytecodeSha256": "fc584cd73bcc869d7683efd3b7e1e113e6badb229aaa109e329f5c9939fcd889",
+      "SourceBytecodeBytes": "1684",
+      "SourceBytecodeSha256": "87f562d06ada5599b645cd142f3c88c7092d95c310c0739cbe1260f8a5f90d57",
       "Tags": ""
     },
     "unreadable": [
@@ -58517,8 +58783,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1926",
-      "SourceBytecodeSha256": "9e7c5533f3ce10c3e5f7f6de198120069ba85ee0a15c74ecb581a1a643cea71c",
+      "SourceBytecodeBytes": "1865",
+      "SourceBytecodeSha256": "e8eafe609a7f3bc72af9ae7ab0bea8346794adc8dc133cf4488694b9ba73e193",
       "Tags": ""
     },
     "unreadable": [
@@ -58533,8 +58799,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1924",
-      "SourceBytecodeSha256": "d425a1f763908aac654dc5800e81501435eadfd83fec919d04edee668ec8f4b1",
+      "SourceBytecodeBytes": "1863",
+      "SourceBytecodeSha256": "3677621cc6acc3b1e99792eef7b8f1a811df16e5fb24a976895099b1baccf123",
       "Tags": ""
     },
     "unreadable": [
