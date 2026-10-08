@@ -6049,11 +6049,34 @@
             "luapackages",
             "moments"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/08/16-41-02Z_live-settings",
+          "evidencePath": "2026/10/08/16-41-02Z_live-settings/changes.json",
+          "family": "LiveSettings",
+          "id": "421c9cfb497e2befe883bd05721ab0337639953f1ca72bccb1856699d84d1556",
+          "key": "DFFlagMomentsServiceFetchPostApi_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-08T16:41:02.300Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "api",
+            "fetch",
+            "moments",
+            "post"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-10-07T22:02:39.782Z",
+      "lastObservedAt": "2026-10-08T16:41:02.300Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
