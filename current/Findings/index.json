@@ -2992,11 +2992,37 @@
             "interface",
             "starter"
           ]
+        },
+        {
+          "after": "True;10139630272;10768492546;10761698214",
+          "before": "True;10139630272",
+          "concepts": [
+            "avatar",
+            "abilities"
+          ],
+          "eventPath": "2026/10/08/18-30-18Z_datasets",
+          "evidencePath": "2026/10/08/18-30-18Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "67838fd6d463b25be1b58cefb5f568df66ebf93ca62d4eade084173ae936a42c",
+          "key": "DFFlagAvatarAbilitiesUseStudioBeta2Asset_UniverseFilter",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-08T18:30:18.191Z",
+          "operation": "changed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abilities",
+            "asset",
+            "avatar",
+            "beta2",
+            "filter",
+            "universe"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "avatar-abilities",
-      "lastObservedAt": "2026-10-01T00:05:02.782Z",
+      "lastObservedAt": "2026-10-08T18:30:18.191Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T01:54:39.846Z",
@@ -6072,11 +6098,82 @@
             "moments",
             "post"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/08/18-30-18Z_datasets",
+          "evidencePath": "2026/10/08/18-30-18Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "169b3f1dc937cd229396ea814d3cf2b9a39e78c84d214a0bad39b12638f76f3d",
+          "key": "DFFlagMomentsServiceFetchPostApi",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-08T18:30:18.191Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "api",
+            "fetch",
+            "moments",
+            "post"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/08/18-30-18Z_datasets",
+          "evidencePath": "2026/10/08/18-30-18Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "51097eed3098c6ada4f173253d94246c9da72c9e7026ae00650827f5478879a5",
+          "key": "DFFlagMomentsServiceFetchPostApi_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-08T18:30:18.191Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "api",
+            "fetch",
+            "moments",
+            "post"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/08/18-30-18Z_datasets",
+          "evidencePath": "2026/10/08/18-30-18Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "de2ac8f22353fa1f8c55e661bad96ed8200f542252e4b053a91e249239f79d8d",
+          "key": "FFlagMomentsCreationMusicSkipMetadataFetch_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-08T18:30:18.191Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "fetch",
+            "metadata",
+            "moments",
+            "music",
+            "skip"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-10-08T16:41:02.300Z",
+      "lastObservedAt": "2026-10-08T18:30:18.191Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
@@ -6273,6 +6370,14 @@
           "signalIds": [
             "250ea4bea657b9264f2c71f1910eaefcaaf3db5d751e4e0104ffa2878068c37b",
             "5d09dadaaa97eabea7d69a44901a19f304e3618f4e102321c2ddf7c282e60ab1"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-10-08T18:30:18.191Z",
+          "signalIds": [
+            "169b3f1dc937cd229396ea814d3cf2b9a39e78c84d214a0bad39b12638f76f3d",
+            "421c9cfb497e2befe883bd05721ab0337639953f1ca72bccb1856699d84d1556"
           ],
           "type": "staged-to-non-staged"
         }

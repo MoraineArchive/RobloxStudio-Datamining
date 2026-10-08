@@ -1,0 +1,232 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-9b554450a0fc4e65",
+    "manifestFiles": 18772,
+    "packages": 34,
+    "version": "0.742.0.7421053"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "f1d40c0dcf1a81b9661e6c9f0b31196016905fe161bbea9aee492d597cc06860",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "c6a770bcb12bade9a7af86fcc2f8b8d64365397ed86304a0eb2ee38763676c97",
+      "semantic": {
+        "added": [
+          "DFFlagCDVisFixQueryable",
+          "DFFlagCapturePlayerGuiScreenshotAndBuildVideos_Staged",
+          "DFFlagCheckDMExistsForPIPS",
+          "DFFlagEditableMeshSerialFullReadReplacesMesh",
+          "DFFlagEditableMeshSerialRenderTriangleLimit",
+          "DFFlagMomentsServiceFetchPostApi",
+          "DFFlagPowerTraceFixAndroidLPM",
+          "DFFlagPowerTraceIncludePowerDraw",
+          "DFFlagRCCSetGameIdContextAttributeEarly_Staged",
+          "DFFlagRbxTransportRtcioNativeControlChannel2_Staged",
+          "DFIntConnectionClosedIoPointsThrottleHundredthsPercent",
+          "DFIntConnectionClosedProtocolPointsThrottleHundredthsPercent",
+          "DFIntConnectionClosedRoMarkPointsThrottleHundredthsPercent",
+          "FFlagAnimGraphUIInputIds2",
+          "FFlagAnimGraphUI_LoadNodeSizes",
+          "FFlagAnimGraphUI_UnifyNodeCorners",
+          "FFlagAssetExportNarrowInstanceAccess_Staged",
+          "FFlagAssetImporterVersionedAnimationUx_Staged",
+          "FFlagAssistantACPBatchHistoryReplay_Staged",
+          "FFlagAssistantExecLuauYieldHint2_Staged",
+          "FFlagAssistantGrepSearchKeepEmptyLines_Staged",
+          "FFlagAssistantTruncatePrimGenHeader_Staged",
+          "FFlagAssistantUseLLMErrorDetail_Staged",
+          "FFlagAudioTextToSpeechAutoLocalization",
+          "FFlagEditableRemoveIdVerification_Staged",
+          "FFlagEnableExpressionSyntaxHighlighting",
+          "FFlagEnableUserFacingCodeAssistStreaming_Staged",
+          "FFlagExpChatGlobalTabDefault_Staged",
+          "FFlagFixWebViewProtocolShowDomainAsTitle_Staged",
+          "FFlagFmodAAudioWaitForStateChange",
+          "FFlagLiveScriptingUriSignals_Staged",
+          "FFlagLuauDontUseInnermostScope",
+          "FFlagMakeupSingleAssetUploadEnabled2_Staged",
+          "FFlagMigrateTerrainEditorTelemetryToV2_Staged",
+          "FFlagMomentsCreationMusicSkipMetadataFetch_Staged",
+          "FFlagPromptCreateMakeupAsyncEnabled5_Staged",
+          "FFlagQueryDescendantsType_Staged",
+          "FFlagRealtimeMediaPermissionsOverWebRTC",
+          "FFlagSimWorldTouchListener_Staged",
+          "FFlagSkipGpuVoxelsWithoutVT_Staged",
+          "FFlagSlimLoadBalancerCommon3_Staged",
+          "FFlagStudioOpenInsertedScriptViaLSP_Staged",
+          "FFlagStudioPluginOpenScriptOrphanTelemetry_Staged",
+          "FFlagStudioReplaceGSTWithIdInPluginManager_Staged",
+          "FFlagStudioScriptModificationTracking1_Staged",
+          "FFlagUGCValidateAQCagePartPlacement_Staged",
+          "FFlagUGCValidateLCCageUVScoreCheck_Staged",
+          "FFlagUGCValidationEyebrowEyelashCategory_Staged",
+          "FStringIxpNewLayersForRegistration_Staged"
+        ],
+        "changed": [
+          {
+            "after": "True;10139630272;10768492546;10761698214",
+            "before": "True;10139630272",
+            "name": "DFFlagAvatarAbilitiesUseStudioBeta2Asset_UniverseFilter"
+          },
+          {
+            "after": "True;10139630272;10768492546;10761698214",
+            "before": "True;10139630272",
+            "name": "DFFlagClimbSensorUseLookAsNormal_UniverseFilter"
+          },
+          {
+            "after": "True;10139630272;10768492546;10761698214",
+            "before": "True;10139630272",
+            "name": "DFFlagPlayerControlStateAcceptOldSchema_UniverseFilter"
+          },
+          {
+            "after": "b2acd64fbe6d29c6cebc11cba07e80ef8d4a1028",
+            "before": "3c6fd37decf04d299d326fdf5683dfdda59e5053",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-08T18:29:34.828Z",
+            "before": "2026-10-08T16:49:42.501Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "True;10139630272;10768492546;10761698214",
+            "before": "True;10139630272",
+            "name": "FFlagAnimationSAIdleOnMovingPlatformFix_UniverseFilter"
+          },
+          {
+            "after": "True;10139630272;10768492546;10761698214",
+            "before": "True;10139630272",
+            "name": "FFlagAvatarSettingsClientInitializeScriptType_UniverseFilter"
+          },
+          {
+            "after": "True;10139630272;10768492546;10761698214",
+            "before": "True;10139630272",
+            "name": "FFlagAvatarSettingsCrouchSprintStrafe3_UniverseFilter"
+          },
+          {
+            "after": "True;10139630272;10768492546;10761698214",
+            "before": "True;10139630272",
+            "name": "FFlagAvatarSettingsTurning_UniverseFilter"
+          },
+          {
+            "after": "True;10139630272;10768492546;10761698214",
+            "before": "True;10139630272",
+            "name": "FFlagCclClientInitializeFrom2026Jun03AbilityManagerRepo3_UniverseFilter"
+          },
+          {
+            "after": "True;10139630272;10768492546;10761698214",
+            "before": "True;10139630272",
+            "name": "FFlagPlayerControlStateApplyInputOnClientNonSAuth2_UniverseFilter"
+          },
+          {
+            "after": "True;10139630272;10768492546;10761698214",
+            "before": "True;10139630272",
+            "name": "FFlagPlayerControlStateEnabled_UniverseFilter"
+          },
+          {
+            "after": "True;10139630272;10768492546;10761698214",
+            "before": "True;10139630272",
+            "name": "FFlagUserAbilitiesUserInterfaceA_UniverseFilter"
+          },
+          {
+            "after": "True;10139630272;10768492546;10761698214",
+            "before": "True;10139630272",
+            "name": "FFlagUserAbilitiesUserInterfaceB_UniverseFilter"
+          },
+          {
+            "after": "True;10139630272;10768492546;10761698214",
+            "before": "True;10139630272",
+            "name": "FFlagUserCCLNoSwimAnimationsFix_UniverseFilter"
+          },
+          {
+            "after": "True;10139630272;10768492546;10761698214",
+            "before": "True;10139630272",
+            "name": "FFlagUserDoubleJumpButtonFix_UniverseFilter"
+          },
+          {
+            "after": "True;10139630272;10768492546;10761698214",
+            "before": "True;10139630272",
+            "name": "FFlagUserPlayerScriptsCCLIntegrationD_UniverseFilter"
+          },
+          {
+            "after": "True;10139630272;10768492546;10761698214",
+            "before": "True;10139630272",
+            "name": "FFlagUserPlayerScriptsPlayerControlState2_UniverseFilter"
+          },
+          {
+            "after": "b2acd64fbe6d29c6cebc11cba07e80ef8d4a1028",
+            "before": "3c6fd37decf04d299d326fdf5683dfdda59e5053",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-08T18:29:34.828Z",
+            "before": "2026-10-08T16:49:42.501Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagCDVisFixQueryable_Staged",
+          "DFFlagCapturePlayerGuiScreenshotAndBuildVideos_IXP",
+          "DFFlagCheckDMExistsForPIPS_Staged",
+          "DFFlagMomentsServiceFetchPostApi_Staged",
+          "DFIntConnectionClosedIoPointsThrottleHundredthsPercent_Staged",
+          "DFIntConnectionClosedProtocolPointsThrottleHundredthsPercent_Staged",
+          "DFIntConnectionClosedRoMarkPointsThrottleHundredthsPercent_Staged",
+          "FFlagAnimGraphUIInputIds2_Staged",
+          "FFlagAnimGraphUINodeFieldLayout_Staged",
+          "FFlagAnimGraphUI_LoadNodeSizes_Staged",
+          "FFlagAnimGraphUI_UnifyNodeCorners_Staged",
+          "FFlagAudioTextToSpeechAutoLocalization_Staged",
+          "FFlagEnableExpressionSyntaxHighlighting_Staged",
+          "FFlagFmodAAudioWaitForStateChange_Staged",
+          "FFlagLuauDontUseInnermostScope_Staged",
+          "FFlagRealtimeMediaPermissionsOverWebRTC_Staged"
+        ],
+        "unchanged": 24854
+      }
+    },
+    "Web": {
+      "current": "e0b8fea9422164d3524b719d0b00b1251217edaa6a9aed1877b1f0297bd91c63",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-006.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-033.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-051.js",
+          "assets.create.roblox.com/page-0/script-052.js",
+          "assets.create.roblox.com/page-0/script-053.js",
+          "assets.create.roblox.com/page-0/script-057.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-077.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.create.roblox.com/page-0/script-085.js",
+          "assets.create.roblox.com/page-0/script-086.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 88
+      },
+      "previous": "4b6890c200f1974099b2511a35d99ede30ed33dc608409cbc26ed0a5fe1803e2",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
