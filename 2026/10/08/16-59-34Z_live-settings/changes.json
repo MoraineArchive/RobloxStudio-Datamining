@@ -1,0 +1,69 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-9b554450a0fc4e65",
+    "manifestFiles": 18772,
+    "packages": 34,
+    "version": "0.742.0.7421053"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "c6a770bcb12bade9a7af86fcc2f8b8d64365397ed86304a0eb2ee38763676c97",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "fa875429b7ae4624885579db7af5545da411865a4f256bb01552de3a3ab62de5",
+      "semantic": {
+        "added": [
+          "DFFlagCDVisFixQueryable_Staged",
+          "DFIntConnectionClosedIoPointsThrottleHundredthsPercent_Staged",
+          "DFIntConnectionClosedProtocolPointsThrottleHundredthsPercent_Staged",
+          "DFIntConnectionClosedRoMarkPointsThrottleHundredthsPercent_Staged",
+          "FFlagPreserveSerializedOverrides_Staged",
+          "FFlagWrapDeformerCoalesceStructuralInvalidationBeforeFetch_Staged"
+        ],
+        "changed": [
+          {
+            "after": "3c6fd37decf04d299d326fdf5683dfdda59e5053",
+            "before": "acf5694de5e185d5947f9ea1b87f6b73bf5e8abb",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-08T16:49:42.501Z",
+            "before": "2026-10-08T16:40:22.431Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "1;Ads.UI;Ads.HomeAds.MaxReachNxMFlagOnly.V6;1613757063;flagbank",
+            "before": "1;Ads.UI2;Ads.HomeAds.MaxReachNxMFlagOnly.V5;1613757063;flagbank",
+            "name": "FFlagLuaAppEnableNxMApportioningExtraLogging_IXP"
+          },
+          {
+            "after": "1;Ads.UI;Ads.HomeAds.MaxReachNxMFlagOnly.V6;1277680534;flagbank",
+            "before": "1;Ads.UI2;Ads.HomeAds.MaxReachNxMFlagOnly.V5;1277680534;flagbank",
+            "name": "FFlagLuaAppNxMApportioningDiagnosticIncludeLatency_IXP"
+          },
+          {
+            "after": "3c6fd37decf04d299d326fdf5683dfdda59e5053",
+            "before": "acf5694de5e185d5947f9ea1b87f6b73bf5e8abb",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-08T16:49:42.501Z",
+            "before": "2026-10-08T16:40:22.431Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [],
+        "unchanged": 24878
+      }
+    }
+  },
+  "schemaVersion": 1
+}
