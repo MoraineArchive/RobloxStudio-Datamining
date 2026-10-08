@@ -1,0 +1,97 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-9b554450a0fc4e65",
+    "manifestFiles": 18772,
+    "packages": 34,
+    "version": "0.742.0.7421053"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "fd3997018453e132601c82b13f77ad60325b8b70e2c36c3ad6f3617579655736",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "e5cfd82824b935a769f2dde4ea17dcf22636cafe80fe3405c414002c265a496d",
+      "semantic": {
+        "added": [
+          "DFFlagClimbSensorUseLookAsNormal",
+          "FFlagAppChatShareLinkV2Fallbacks_Staged",
+          "FFlagBuildExperienceChatCaptureGalleryNewestFirst_Staged",
+          "FFlagGen3dCompensateImportRotationRbxTexture2_Staged",
+          "FFlagGen3dTextureGenPersistPreferences_Staged",
+          "FFlagISRAttributeReplicationRobustness_Staged",
+          "FFlagLoadingSkeleton3DAnimatedFill_Staged",
+          "FFlagPromptsActionEventLogging",
+          "FFlagSplitHashNoRehashOnExistingKey_Staged"
+        ],
+        "changed": [
+          {
+            "after": "False",
+            "before": "True",
+            "name": "DFFlagDMChangeTrackerUsableBandwidthCheck"
+          },
+          {
+            "after": "9efa3a20727c39f826ebf4c9d57d2acfa2bb1496",
+            "before": "d53aa9332e46885ca69d04c10561c7778f20dc89",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-08T22:30:22.014Z",
+            "before": "2026-10-08T22:15:54.127Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "9efa3a20727c39f826ebf4c9d57d2acfa2bb1496",
+            "before": "d53aa9332e46885ca69d04c10561c7778f20dc89",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-08T22:30:22.014Z",
+            "before": "2026-10-08T22:15:54.127Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagClimbSensorUseLookAsNormal_Staged",
+          "DFFlagDMChangeTrackerUsableBandwidthCheck_Staged",
+          "FFlagPromptsActionEventLogging_Staged"
+        ],
+        "unchanged": 25000
+      }
+    },
+    "Web": {
+      "current": "1bb12a5f9e99aa3d110bd8c04fb90ce0baafff38c61801fa5037f0ebbb653e3b",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-006.js",
+          "assets.create.roblox.com/page-0/script-011.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-052.js",
+          "assets.create.roblox.com/page-0/script-070.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.create.roblox.com/page-0/script-085.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 94
+      },
+      "previous": "cfd69f759ebc0e71635bb872c63aa086eff15f4e08967728d3ca3900933e3435",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
