@@ -1,0 +1,63 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-9b554450a0fc4e65",
+    "manifestFiles": 18772,
+    "packages": 34,
+    "version": "0.742.0.7421053"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "dc0db91c8650e298cea1314e51ab4525ef3858e375fb2a2369acdbdfcbfde0c4",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "ddceda71f725d0a4c05e5fe60b55f12291e43ee7e4370acda53445af3aa0e181",
+      "semantic": {
+        "added": [
+          "FFlagAnimGraphUIInputIds2_Staged",
+          "FFlagAnimGraphUINodeFieldLayout_Staged",
+          "FFlagAnimGraphUI_LoadNodeSizes_Staged",
+          "FFlagAnimGraphUI_UnifyNodeCorners_Staged",
+          "FFlagAudioTextToSpeechAutoLocalization_Staged",
+          "FFlagEnableExpressionSyntaxHighlighting_Staged",
+          "FFlagFmodAAudioWaitForStateChange_Staged",
+          "FFlagLuauDontUseInnermostScope_Staged",
+          "FFlagRealtimeMediaPermissionsOverWebRTC_Staged",
+          "FStringLibMpHtmlAssetsBaseUrl_Staged"
+        ],
+        "changed": [
+          {
+            "after": "428226a4a05c5b91861765458cb2f28b2ac0dbcc",
+            "before": "27195b3dc1f8115d038c0809096c06d9d13234b3",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-08T16:26:53.617Z",
+            "before": "2026-10-08T05:02:39.368Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "428226a4a05c5b91861765458cb2f28b2ac0dbcc",
+            "before": "27195b3dc1f8115d038c0809096c06d9d13234b3",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-08T16:26:53.617Z",
+            "before": "2026-10-08T05:02:39.368Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [],
+        "unchanged": 24867
+      }
+    }
+  },
+  "schemaVersion": 1
+}
