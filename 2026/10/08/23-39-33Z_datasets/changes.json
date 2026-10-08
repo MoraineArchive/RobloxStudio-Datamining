@@ -1,0 +1,209 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-9b554450a0fc4e65",
+    "manifestFiles": 18772,
+    "packages": 34,
+    "version": "0.742.0.7421053"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "64346ac054818b1db946a827382338f36cf995ed168a2fae2a61f18615625959",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "fd3997018453e132601c82b13f77ad60325b8b70e2c36c3ad6f3617579655736",
+      "semantic": {
+        "added": [
+          "DFFlagBetterDecompressionTelemetry_Staged",
+          "DFFlagDoNotMutateNetworkStreamBeforeSendingIfSharedStream_Staged",
+          "DFFlagPlayerCharacterDestroyDelay",
+          "DFFlagRbxTransportQuicPacketReaderCloseAfterRecvError_Staged",
+          "DFFlagRbxTransportRtcioConnStartReentrant2",
+          "DFFlagUserRemoveIdRangeChecks",
+          "DFFlagWorkspaceReplicationModeControls_Staged",
+          "DFIntNetStreamRxByteAggregationCountThreshold_Staged",
+          "DFIntNetStreamRxByteAggregationTimeThresholdInSeconds_Staged",
+          "DFIntNetStreamRxCountAggregationCountThreshold_Staged",
+          "DFIntNetStreamRxCountAggregationTimeThresholdInSeconds_Staged",
+          "DFIntNetStreamTxByteAggregationCountThreshold_Staged",
+          "DFIntNetStreamTxByteAggregationTimeThresholdInSeconds_Staged",
+          "DFIntNetStreamTxCountAggregationCountThreshold_Staged",
+          "DFIntNetStreamTxCountAggregationTimeThresholdInSeconds_Staged",
+          "DFIntPlayerDestroyDelaySeconds",
+          "DFIntQuicNetStreamReceivedByteAggregationCountThreshold_Staged",
+          "DFIntQuicNetStreamReceivedByteAggregationTimeThresholdInSeconds_Staged",
+          "DFIntQuicNetStreamSentByteAggregationCountThreshold_Staged",
+          "DFIntQuicNetStreamSentByteAggregationTimeThresholdInSeconds_Staged",
+          "DFIntQuicPacketLostPacketAggregationTimeThresholdInSeconds_Staged",
+          "DFIntQuicPacketReceivedByteAggregationCountThreshold_Staged",
+          "DFIntQuicPacketReceivedByteAggregationTimeThresholdInSeconds_Staged",
+          "DFIntQuicPacketReceivedPacketAggregationCountThreshold_Staged",
+          "DFIntQuicPacketSendByteAggregationCountThreshold_Staged",
+          "DFIntQuicPacketSendByteAggregationTimeThresholdInSeconds_Staged",
+          "DFIntQuicWriteStreamErrAggregationCountThreshold_Staged",
+          "DFIntQuicWriteStreamErrAggregationTimeThresholdInSeconds_Staged",
+          "DFIntScriptModificationTrackingEventThrottleHundredthsPercent",
+          "FFlagAnimationSAIdleOnMovingPlatformFix",
+          "FFlagAppChatContextCardNameLoadingShimmer_Staged",
+          "FFlagAppChatInvalidGameLinkCard_Staged",
+          "FFlagEnableAppsFlyerSrnConversionKeysAndroid",
+          "FFlagGen3dTextureGenAssetIdUpload_Staged",
+          "FFlagGen3dTextureGenPreviewAssetIdUpload_Staged",
+          "FFlagGen3dToggleActionUpdateAsync_Staged",
+          "FFlagLibMpDataSourceTelemetry",
+          "FFlagLibMpExperimentalContentMode",
+          "FFlagLibMpExperimentalFileStream",
+          "FFlagLibMpExperimentalFileStreamToSlot",
+          "FFlagLibMpExperimentalMemoryStream",
+          "FFlagLibMpExperimentalV1Api",
+          "FFlagMiCollectOnThreadIdle_Staged",
+          "FFlagMicroProfilerLabelBufferMemoryTarget",
+          "FFlagMicroProfilerThreadLogMemoryTarget",
+          "FFlagMomentsOptimisticProfilePending",
+          "FFlagPerFocusGCDistance",
+          "FFlagSelectionHighlightManagerWeakInstanceTracking",
+          "FFlagTextureGenAutoSelectView_Staged",
+          "FFlagTextureGenComposerRevamp_Staged",
+          "FFlagTextureGenModelSelector_Staged",
+          "FFlagToolboxEnableUpdateAvatarItem4",
+          "FIntmi_option_page_commit_on_demand",
+          "FIntmi_option_purge_delay",
+          "FStringExpChatGlobalTabDefaultExperimentLayer_Staged",
+          "FStringMomentsCommentsIxpLayer"
+        ],
+        "changed": [
+          {
+            "after": "e3678709d71aff47c2bcb574f49078eb88f7da9b",
+            "before": "9efa3a20727c39f826ebf4c9d57d2acfa2bb1496",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-08T23:39:04.541Z",
+            "before": "2026-10-08T22:30:22.014Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagAppChatMigrateFriendshipStatuses"
+          },
+          {
+            "after": "True",
+            "before": "False",
+            "name": "FFlagLuaAppInlineRequireAppConfigurer"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagMigrateFriendshipStatusesPYMK_v1"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagMigrateFriendshipStatusesRemainingActions"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagMigrateFriendshipStatusesUserSearch"
+          },
+          {
+            "after": "True;SteadyState;10;15;Rollout;100;30;SteadyState;100;75;Promote;2026-10-08T23:30:38",
+            "before": "True;SteadyState;10;30;Revert;2026-10-08T22:21:41",
+            "name": "FFlagSplitHashNoRehashOnExistingKey_Staged"
+          },
+          {
+            "after": "1",
+            "before": "3",
+            "name": "FIntSentryErrorLevelQueueTimeLimitSeconds"
+          },
+          {
+            "after": "e3678709d71aff47c2bcb574f49078eb88f7da9b",
+            "before": "9efa3a20727c39f826ebf4c9d57d2acfa2bb1496",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-08T23:39:04.541Z",
+            "before": "2026-10-08T22:30:22.014Z",
+            "name": "FStringFlipTimeStampFastString"
+          },
+          {
+            "after": "Social.ConnectionsHub,App.AppPerf.Regression,AvatarMarketplace.SearchPageWidgetPlatform,AvatarMarketplace.Sorts,Consoles.App,DesignSystem.Font,ExperienceDetailPage.EnableSubscriptionPurchase,Growth.Notifications.GameInviteMenu,Notification.Toast,PlayerApp.GameJoin.UX,PlayerApp.HomepageUpsell.PhoneVerificationEntry,PlayerApp.HomePageUpsell.VNGApp,PlayerApp.Logout,PlayerApp.OmniSearchResultsPage.UX.Exposure,PlayerApp.PhoneVerification.Android,PlayerApp.PhoneVerification.iOS,Revenue.UA.Gamepass.RobuxUpsell,Universality.AppNav,Social.ProfileViewSocialLinks,Social.JoinGameCardViewProfile,HomePage.UpsellCard,AvatarMarketplace.WidgetPlatformSorts,Universality.FoundationColors,Universality.AppNav.2,AvatarExperience.UA.ActionBarView,Universality.MorePage,UniversalApp.MoreLayout.Exposure,Experience.Menu.Settings.Exposure,PlayerApp.HomePage.UX.TileLayer,Social.FriendsCarouselAddFriendsEntry,Social.PartyRollout,PlayerApp.HomePage.UX.WholePageRanking,Social.PartyVoice,PlatformExcellence.Consoles.Features,ProfileQRCodeScannerLayer,AvatarExperience.UA.SearchView,Social.ViewFriendSortInGameFriends,Social.AppChat,Social.CommunityProfileView,UIEcosystem.User,InExperience.Performance,CreatorSuccess.VirtualEvents,ContactImporter.DevicePermissionNeededModal.Exposure,PlayerApp.ConsoleAndVR.HomePage.UX.TileLayer,PlayerApp.Homepage.Serving.SDUI,Experience.Menu.VR,UIEcosystem.User.Migration,User.Communication.ConsoleVoice,Social.RM,Party.Coordination.ExperienceJoin2,PlayerApp.GameDetailsPage.Exposure,CoreServices.Thumbnail.ServeThumbnailsFromEdge,Experience.Menu.HelpPage.Exposure,Social.ProfilePeekView.Secondary,Economy.DeveloperMonetization.EdpVirtualProductsRanking,Universality.MorePage.Access,Party.ConversationPage,Party.PartySheet,Party.LandingPage,Party.EntryPoint,Party.Toast,Party.Push,PlayerApp.Badges.Exposure,Party.Coordination.UnifyCoplay,Social.SelfUserProfileCompletion,PartySchedule,AvatarMarketplace.TimedOption,ExperienceChat.SystemMessages,Portal.UniverseChat.NewInputBar-1781035962,AvatarExperience.UA.AllViews.Secondary,P13N.TopCharts.ChartsMigration,Social.MomentsMigration,Discovery.Homepage.NotInterestedCoachmark.Exposure,Ads.RewardedAds.PlayWithRewardBeta.Android,PlayerApp.Homepage.Serving.Evidence,PlayerApp.Homepage.Serving.EvidenceV2,Party.Coordination.ExperienceJoin3,PlayerApp.SearchResultsPage.PowerSearch,UniversalApp.PageLoad,UniverseChat.PresetChatAutocomplete,UniversalApp.SettingsRootPage,Ads.GamePreviewVideo,User.Communication.JoinGame.HasChatAccess.UserId",
+            "before": "Social.ConnectionsHub,App.AppPerf.Regression,AvatarMarketplace.SearchPageWidgetPlatform,AvatarMarketplace.Sorts,Consoles.App,DesignSystem.Font,ExperienceDetailPage.EnableSubscriptionPurchase,Growth.Notifications.GameInviteMenu,Notification.Toast,PlayerApp.GameJoin.UX,PlayerApp.HomepageUpsell.PhoneVerificationEntry,PlayerApp.HomePageUpsell.VNGApp,PlayerApp.Logout,PlayerApp.OmniSearchResultsPage.UX.Exposure,PlayerApp.PhoneVerification.Android,PlayerApp.PhoneVerification.iOS,Revenue.UA.Gamepass.RobuxUpsell,Universality.AppNav,Social.ProfileViewSocialLinks,Social.JoinGameCardViewProfile,HomePage.UpsellCard,AvatarMarketplace.WidgetPlatformSorts,Universality.FoundationColors,Universality.AppNav.2,AvatarExperience.UA.ActionBarView,Universality.MorePage,UniversalApp.MoreLayout.Exposure,Experience.Menu.Settings.Exposure,PlayerApp.HomePage.UX.TileLayer,Social.FriendsCarouselAddFriendsEntry,Social.PartyRollout,PlayerApp.HomePage.UX.WholePageRanking,Social.PartyVoice,PlatformExcellence.Consoles.Features,ProfileQRCodeScannerLayer,AvatarExperience.UA.SearchView,Social.ViewFriendSortInGameFriends,Social.AppChat,Social.CommunityProfileView,UIEcosystem.User,InExperience.Performance,CreatorSuccess.VirtualEvents,ContactImporter.DevicePermissionNeededModal.Exposure,PlayerApp.ConsoleAndVR.HomePage.UX.TileLayer,PlayerApp.Homepage.Serving.SDUI,Experience.Menu.VR,UIEcosystem.User.Migration,User.Communication.ConsoleVoice,Social.RM,Party.Coordination.ExperienceJoin2,PlayerApp.GameDetailsPage.Exposure,CoreServices.Thumbnail.ServeThumbnailsFromEdge,Experience.Menu.HelpPage.Exposure,Social.ProfilePeekView.Secondary,Economy.DeveloperMonetization.EdpVirtualProductsRanking,Universality.MorePage.Access,Party.ConversationPage,Party.PartySheet,Party.LandingPage,Party.EntryPoint,Party.Toast,Party.Push,PlayerApp.Badges.Exposure,Party.Coordination.UnifyCoplay,Social.SelfUserProfileCompletion,PartySchedule,AvatarMarketplace.TimedOption,ExperienceChat.SystemMessages,Portal.UniverseChat.NewInputBar-1781035962,AvatarExperience.UA.AllViews.Secondary,P13N.TopCharts.ChartsMigration,Social.MomentsMigration,Discovery.Homepage.NotInterestedCoachmark.Exposure,Ads.RewardedAds.PlayWithRewardBeta.Android,PlayerApp.Homepage.Serving.Evidence,PlayerApp.Homepage.Serving.EvidenceV2,Party.Coordination.ExperienceJoin3,PlayerApp.SearchResultsPage.PowerSearch,UniversalApp.PageLoad,UniverseChat.PresetChatAutocomplete,UniversalApp.SettingsRootPage,Ads.GamePreviewVideo,User.Communication.HasChatAccess.JoinGame.UserId",
+            "name": "FStringIxpNewLayersForRegistration"
+          }
+        ],
+        "removed": [
+          "DFFlagPlayerCharacterDestroyDelay_Staged",
+          "DFFlagRbxTransportRtcioConnStartReentrant2_Staged",
+          "DFIntPlayerDestroyDelaySeconds_Staged",
+          "DFIntScriptModificationTrackingEventThrottleHundredthsPercent_Staged",
+          "FFlagAnimationSAIdleOnMovingPlatformFix_Staged",
+          "FFlagAppChatMigrateFriendshipStatuses_Staged",
+          "FFlagDeviceSimulatorRefreshBetaFeature2_Staged",
+          "FFlagDeviceSimulatorToolbarPluginGui3_Staged",
+          "FFlagEnableAppsFlyerSrnConversionKeysAndroid_Staged",
+          "FFlagEnableDeviceSimulatorToolbar_Staged",
+          "FFlagGuiSelectionRepeatFInts_Staged",
+          "FFlagLibMpDataSourceTelemetry_Staged",
+          "FFlagLibMpExperimentalContentMode_Staged",
+          "FFlagLibMpExperimentalFileStreamToSlot_Staged",
+          "FFlagLibMpExperimentalFileStream_Staged",
+          "FFlagLibMpExperimentalMemoryStream_Staged",
+          "FFlagLibMpExperimentalV1Api_Staged",
+          "FFlagLuaAppInlineRequireAppConfigurer_Staged",
+          "FFlagMicroProfilerLabelBufferMemoryTarget_Staged",
+          "FFlagMicroProfilerThreadLogMemoryTarget_Staged",
+          "FFlagMigrateFriendshipStatusesPYMK_v1_Staged",
+          "FFlagMigrateFriendshipStatusesRemainingActions_Staged",
+          "FFlagMigrateFriendshipStatusesUserSearch_Staged",
+          "FFlagMomentsOptimisticProfilePending_Staged",
+          "FFlagPerFocusGCDistance_Staged",
+          "FFlagRenameEmulatorToSimulator_Staged",
+          "FFlagSelectionHighlightManagerWeakInstanceTracking_Staged",
+          "FFlagSimAeroCancelExpiredOccludedMeshTask_Staged",
+          "FFlagToolboxEnableUpdateAvatarItem4_Staged",
+          "FIntSentryErrorLevelQueueTimeLimitSeconds_Staged",
+          "FIntmi_option_page_commit_on_demand_Staged",
+          "FIntmi_option_purge_delay_Staged",
+          "FStringIxpNewLayersForRegistration_Staged",
+          "FStringMomentsCommentsIxpLayer_Staged"
+        ],
+        "unchanged": 24968
+      }
+    },
+    "Web": {
+      "current": "9887d671e71290a9b06d1e5f80043dbf19914cad0742935cbb42b317628c3ad2",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-006.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-052.js",
+          "assets.create.roblox.com/page-0/script-070.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.create.roblox.com/page-0/script-085.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 95
+      },
+      "previous": "1bb12a5f9e99aa3d110bd8c04fb90ce0baafff38c61801fa5037f0ebbb653e3b",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
