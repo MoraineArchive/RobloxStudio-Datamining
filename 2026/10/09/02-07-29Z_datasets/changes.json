@@ -1,0 +1,228 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-9b554450a0fc4e65",
+    "manifestFiles": 18772,
+    "packages": 34,
+    "version": "0.742.0.7421053"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "c0945b98ef20739eaa10bddac64b7f862360fa7744a047812d919806fe890be9",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "64346ac054818b1db946a827382338f36cf995ed168a2fae2a61f18615625959",
+      "semantic": {
+        "added": [
+          "DFFlagBetterDecompressionTelemetry",
+          "DFFlagDoNotMutateNetworkStreamBeforeSendingIfSharedStream",
+          "DFFlagRbxTransportQuicPacketReaderCloseAfterRecvError",
+          "DFFlagWorkspaceReplicationModeControls",
+          "DFIntNetStreamRxByteAggregationCountThreshold",
+          "DFIntNetStreamRxByteAggregationTimeThresholdInSeconds",
+          "DFIntNetStreamRxCountAggregationCountThreshold",
+          "DFIntNetStreamRxCountAggregationTimeThresholdInSeconds",
+          "DFIntNetStreamTxByteAggregationCountThreshold",
+          "DFIntNetStreamTxByteAggregationTimeThresholdInSeconds",
+          "DFIntNetStreamTxCountAggregationCountThreshold",
+          "DFIntNetStreamTxCountAggregationTimeThresholdInSeconds",
+          "DFIntQuicNetStreamReceivedByteAggregationCountThreshold",
+          "DFIntQuicNetStreamReceivedByteAggregationTimeThresholdInSeconds",
+          "DFIntQuicNetStreamSentByteAggregationCountThreshold",
+          "DFIntQuicNetStreamSentByteAggregationTimeThresholdInSeconds",
+          "DFIntQuicPacketLostPacketAggregationTimeThresholdInSeconds",
+          "DFIntQuicPacketReceivedByteAggregationCountThreshold",
+          "DFIntQuicPacketReceivedByteAggregationTimeThresholdInSeconds",
+          "DFIntQuicPacketReceivedPacketAggregationCountThreshold",
+          "DFIntQuicPacketSendByteAggregationCountThreshold",
+          "DFIntQuicPacketSendByteAggregationTimeThresholdInSeconds",
+          "DFIntQuicWriteStreamErrAggregationCountThreshold",
+          "DFIntQuicWriteStreamErrAggregationTimeThresholdInSeconds",
+          "FFlagAppChatContextCardNameLoadingShimmer",
+          "FFlagAppChatInvalidGameLinkCard",
+          "FFlagAppChatShareLinkV2Fallbacks",
+          "FFlagAssistantCapturePluginGuiTool",
+          "FFlagBuildExperienceChatCaptureGalleryNewestFirst",
+          "FFlagBuildExperienceChatHistoryPrefetch2",
+          "FFlagBuildExperienceConfirmStop",
+          "FFlagBuildExperienceRefreshChatDraftOnGameLeave",
+          "FFlagDeviceSimulatorToolbarPluginGui3",
+          "FFlagEnableDeviceSimulatorToolbar",
+          "FFlagExpChatPerfTrackerTabName",
+          "FFlagFRMDrawModerateQLProfile_IXP",
+          "FFlagFRMUseStaticTargetModes_IXP",
+          "FFlagFRMUseSteppedFrameTimeTarget_IXP",
+          "FFlagGameSettingsEditableApiRemoveIdVerification",
+          "FFlagGen3dCompensateImportRotationRbxTexture2",
+          "FFlagGen3dTextureGenAssetIdUpload",
+          "FFlagGen3dTextureGenBatchedPreview",
+          "FFlagGen3dTextureGenPersistPreferences",
+          "FFlagGen3dTextureGenPreviewAssetIdUpload",
+          "FFlagGen3dToggleActionUpdateAsync",
+          "FFlagISRAttributeReplicationRobustness",
+          "FFlagLoadingSkeleton3DAnimatedFill",
+          "FFlagMiCollectOnThreadIdle",
+          "FFlagMicroProfilerRefreshOldCachedLabels",
+          "FFlagMicroProfilerStoreLabelLiteralsInBuffer",
+          "FFlagMigrateDesyncCounterToTelemetryBindings",
+          "FFlagRenameEmulatorToSimulator",
+          "FFlagReportFRMQualityProfileTelemetry_IXP",
+          "FFlagRobloxPlusDynamicFreeTrialLength",
+          "FFlagRobloxPlusTrialDiscountTiming_Staged",
+          "FFlagRobloxSubscriptionProductsDirectFetch",
+          "FFlagSTUDIOPLAT43701EnableListPluginGuisAsync",
+          "FFlagSimAeroCancelExpiredOccludedMeshTask",
+          "FFlagSplitHashNoRehashOnExistingKey",
+          "FFlagStudioCapturePluginGuiById",
+          "FFlagTextureGenAutoSelectView",
+          "FFlagTextureGenComposerRevamp",
+          "FFlagTextureGenModelSelector",
+          "FFlagTextureGenReferenceImage",
+          "FIntAutomaticDRSHundredthPercent_IXP",
+          "FStringExpChatGlobalTabDefaultExperimentLayer"
+        ],
+        "changed": [
+          {
+            "after": "b53f2a25eec8d0b05593bdffaddfb622d0c97fd5",
+            "before": "e3678709d71aff47c2bcb574f49078eb88f7da9b",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-09T02:02:18.986Z",
+            "before": "2026-10-08T23:39:04.541Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "1;HarmonyExposure;PerformanceControlTestPostProcessingAlgorithms-1789366196207-1790119849840-17915026293-1791502882208;1458332433;flagbank",
+            "before": "1;HarmonyExposure;PerformanceControlTestPostProcessingAlgorithms-1789366196207-1790119849840;1896011377;flagbank",
+            "name": "FFlagCrashMetricRelaxAfterSuccessStreak_IXP"
+          },
+          {
+            "after": "1;HarmonyExposure;PerformanceControlTestPostProcessingAlgorithms-1789366196207-1790119849840-17915026293-1791502882208;1458332433;flagbank",
+            "before": "1;HarmonyExposure;PerformanceControlTestPostProcessingAlgorithms-1789366196207-1790119849840;1562157105;flagbank",
+            "name": "FFlagCrashMetricStorageAddPostProcessing2_IXP"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagDeviceSimulatorRefreshBetaFeature2"
+          },
+          {
+            "after": "1;HarmonyExposure;PerformanceControlTestPostProcessingAlgorithms-1789366196207-1790119849840-17915026293-1791502882208;1458332433;flagbank",
+            "before": "1;HarmonyExposure;PerformanceControlTestPostProcessingAlgorithms-1789366196207-1790119849840;451054129;flagbank",
+            "name": "FIntPerformanceControlCrashMetricAlgorithmType2_IXP"
+          },
+          {
+            "after": "1;HarmonyExposure;PerformanceControlTestPostProcessingAlgorithms-1789366196207-1790119849840-17915026293-1791502882208;1458332433;flagbank",
+            "before": "1;HarmonyExposure;PerformanceControlTestPostProcessingAlgorithms-1789366196207-1790119849840;23720017;flagbank",
+            "name": "FIntPerformanceControlCrashMetricPostProcessingAlgorithmType2_IXP"
+          },
+          {
+            "after": "b53f2a25eec8d0b05593bdffaddfb622d0c97fd5",
+            "before": "e3678709d71aff47c2bcb574f49078eb88f7da9b",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-09T02:02:18.986Z",
+            "before": "2026-10-08T23:39:04.541Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagBetterDecompressionTelemetry_Staged",
+          "DFFlagDoNotMutateNetworkStreamBeforeSendingIfSharedStream_Staged",
+          "DFFlagRbxTransportQuicPacketReaderCloseAfterRecvError_Staged",
+          "DFFlagWorkspaceReplicationModeControls_Staged",
+          "DFIntNetStreamRxByteAggregationCountThreshold_Staged",
+          "DFIntNetStreamRxByteAggregationTimeThresholdInSeconds_Staged",
+          "DFIntNetStreamRxCountAggregationCountThreshold_Staged",
+          "DFIntNetStreamRxCountAggregationTimeThresholdInSeconds_Staged",
+          "DFIntNetStreamTxByteAggregationCountThreshold_Staged",
+          "DFIntNetStreamTxByteAggregationTimeThresholdInSeconds_Staged",
+          "DFIntNetStreamTxCountAggregationCountThreshold_Staged",
+          "DFIntNetStreamTxCountAggregationTimeThresholdInSeconds_Staged",
+          "DFIntQuicNetStreamReceivedByteAggregationCountThreshold_Staged",
+          "DFIntQuicNetStreamReceivedByteAggregationTimeThresholdInSeconds_Staged",
+          "DFIntQuicNetStreamSentByteAggregationCountThreshold_Staged",
+          "DFIntQuicNetStreamSentByteAggregationTimeThresholdInSeconds_Staged",
+          "DFIntQuicPacketLostPacketAggregationTimeThresholdInSeconds_Staged",
+          "DFIntQuicPacketReceivedByteAggregationCountThreshold_Staged",
+          "DFIntQuicPacketReceivedByteAggregationTimeThresholdInSeconds_Staged",
+          "DFIntQuicPacketReceivedPacketAggregationCountThreshold_Staged",
+          "DFIntQuicPacketSendByteAggregationCountThreshold_Staged",
+          "DFIntQuicPacketSendByteAggregationTimeThresholdInSeconds_Staged",
+          "DFIntQuicWriteStreamErrAggregationCountThreshold_Staged",
+          "DFIntQuicWriteStreamErrAggregationTimeThresholdInSeconds_Staged",
+          "FFlagAppChatContextCardNameLoadingShimmer_Staged",
+          "FFlagAppChatInvalidGameLinkCard_Staged",
+          "FFlagAppChatShareLinkV2Fallbacks_Staged",
+          "FFlagBuildExperienceChatCaptureGalleryNewestFirst_Staged",
+          "FFlagBuildExperienceChatHistoryPrefetch2_Staged",
+          "FFlagBuildExperienceConfirmStop_Staged",
+          "FFlagBuildExperienceRefreshChatDraftOnGameLeave_Staged",
+          "FFlagExpChatPerfTrackerTabName_Staged",
+          "FFlagGameSettingsEditableApiRemoveIdVerification_Staged",
+          "FFlagGen3dCompensateImportRotationRbxTexture2_Staged",
+          "FFlagGen3dTextureGenAssetIdUpload_Staged",
+          "FFlagGen3dTextureGenPersistPreferences_Staged",
+          "FFlagGen3dTextureGenPreviewAssetIdUpload_Staged",
+          "FFlagGen3dToggleActionUpdateAsync_Staged",
+          "FFlagISRAttributeReplicationRobustness_Staged",
+          "FFlagLoadingSkeleton3DAnimatedFill_Staged",
+          "FFlagMiCollectOnThreadIdle_Staged",
+          "FFlagMicroProfilerRefreshOldCachedLabels_Staged",
+          "FFlagMicroProfilerStoreLabelLiteralsInBuffer_Staged",
+          "FFlagMigrateDesyncCounterToTelemetryBindings_Staged",
+          "FFlagRobloxSubscriptionProductsDirectFetch_Staged",
+          "FFlagSplitHashNoRehashOnExistingKey_Staged",
+          "FFlagTextureGenAutoSelectView_Staged",
+          "FFlagTextureGenComposerRevamp_Staged",
+          "FFlagTextureGenModelSelector_Staged",
+          "FStringExpChatGlobalTabDefaultExperimentLayer_Staged"
+        ],
+        "unchanged": 24977
+      }
+    },
+    "Web": {
+      "current": "cc4c62d0939f9ece8d5de49881c1ad41f5e2b748426ad311fc387bd0c807e39c",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-005.js",
+          "assets.create.roblox.com/page-0/script-006.js",
+          "assets.create.roblox.com/page-0/script-026.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-042.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-051.js",
+          "assets.create.roblox.com/page-0/script-052.js",
+          "assets.create.roblox.com/page-0/script-070.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.create.roblox.com/page-0/script-085.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 87
+      },
+      "previous": "9887d671e71290a9b06d1e5f80043dbf19914cad0742935cbb42b317628c3ad2",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
