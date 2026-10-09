@@ -1,0 +1,92 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-9b554450a0fc4e65",
+    "manifestFiles": 18772,
+    "packages": 34,
+    "version": "0.742.0.7421053"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "b370816301785b727cc961dba7b553267a4965542ccb218b74b536b482454cf5",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "e662ce427192ea67e5ebeb73dc89cbc0c3122f09d89d3535a562a3dac354eb1f",
+      "semantic": {
+        "added": [
+          "FFlagEnableCreatorEarlyAccessBannerInShop_Staged",
+          "FFlagMenuOfferTooltip_Staged",
+          "FFlagOfferNineDotActivityIndicator_Staged",
+          "FFlagOfferNotifyOnGlobalIcon_Staged",
+          "FFlagShowOfferBadge_Staged",
+          "FFlagStudioAccountSwitchingTelemetry_LoggedInUsersList"
+        ],
+        "changed": [
+          {
+            "after": "995b70e6f6681042918e114ed4f91a80c9dda003",
+            "before": "e831f3e6b448e7871248427052613f36f6eebe7b",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-09T22:25:17.530Z",
+            "before": "2026-10-09T20:57:43.530Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagVirtualCursorModularization5"
+          },
+          {
+            "after": "995b70e6f6681042918e114ed4f91a80c9dda003",
+            "before": "e831f3e6b448e7871248427052613f36f6eebe7b",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-09T22:25:17.530Z",
+            "before": "2026-10-09T20:57:43.530Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagStudioAccountSwitchingTelemetry_LoggedInUsersList_Staged",
+          "FFlagVirtualCursorModularization5_Staged"
+        ],
+        "unchanged": 25069
+      }
+    },
+    "Web": {
+      "current": "db1a4be12ef85acc712ea17a87264a52def1dd3a9d0d286a4f8902bdcaa9dd0e",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-006.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-047.js",
+          "assets.create.roblox.com/page-0/script-054.js",
+          "assets.create.roblox.com/page-0/script-065.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.create.roblox.com/page-0/script-085.js",
+          "assets.create.roblox.com/page-0/script-086.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 96
+      },
+      "previous": "6c22a5ecc72e732a52c9408e57f8d76bd27b8e31e5a412444ec9d2f4de64ed95",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
