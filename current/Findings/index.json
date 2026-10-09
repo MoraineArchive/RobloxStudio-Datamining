@@ -6612,11 +6612,79 @@
             "pending",
             "profile"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/09/18-01-00Z_datasets",
+          "evidencePath": "2026/10/09/18-01-00Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "095256ed72db671ed232b7ae044462f93576046f2d8fd5480fae66a8c23961a1",
+          "key": "FFlagMomentsCommentsIxpEnabled_IXP",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-09T18:01:00.995Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "comments",
+            "ixp",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/09/18-01-00Z_datasets",
+          "evidencePath": "2026/10/09/18-01-00Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "59f0b72c07e4dc8bcec5fe594f62ad5ed72d6a0a8ecf44e0a0a1f25c3fbd2100",
+          "key": "FFlagMomentsRefreshProfileOnPostStatus_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-09T18:01:00.995Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "moments",
+            "post",
+            "profile",
+            "refresh",
+            "status"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/09/18-01-00Z_datasets",
+          "evidencePath": "2026/10/09/18-01-00Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "73ef27ebbcc09c50f48c7af7a91f4a2743fe685c7c6bfef574f403bf3fb49a06",
+          "key": "FFlagMomentsComments2_IXP",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-09T18:01:00.995Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "comments2",
+            "ixp",
+            "moments"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-10-08T23:39:33.411Z",
+      "lastObservedAt": "2026-10-09T18:01:00.995Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
