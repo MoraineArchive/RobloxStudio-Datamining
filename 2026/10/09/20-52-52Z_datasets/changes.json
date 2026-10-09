@@ -1,0 +1,127 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-9b554450a0fc4e65",
+    "manifestFiles": 18772,
+    "packages": 34,
+    "version": "0.742.0.7421053"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "28ccb6bac12ec0655f9c88d560d5bf65f7fa778462b064ed3833926215a280a9",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "e7985bafe0f3e3cb92a67af382b15a7a2f8e0d285b5921aae461bda30253a2b1",
+      "semantic": {
+        "added": [
+          "DFFlagRbxTransportQuicEmptyPayloadNoFinFix3",
+          "DFFlagRbxTransportQuicStableStreamContexts",
+          "DFFlagRemoteProfilerCaptureAtFlip",
+          "DFIntDeferredRbxmDownloadFetchTimeoutMs",
+          "DFIntQuicPacketReceivedPacketAggregationTimeThresholdInSeconds",
+          "DFIntQuicPacketSendPacketAggregationCountThreshold",
+          "DFIntQuicPacketSendPacketAggregationTimeThresholdInSeconds",
+          "FFlagBuildExperiencePublishedShareLink",
+          "FFlagDMCTMigrateTextBoxCursorSelection",
+          "FFlagDMCTMigrateWorkspace",
+          "FFlagLuaAppPlayButtonPrivatePTEnableSingleButton",
+          "FFlagLuaAppPlayButtonPrivatePTSupport",
+          "FFlagLuauBufferCage_Staged",
+          "FFlagLuauCodeGenFastpcall2",
+          "FFlagLuauCodegenScopedSpillKeepLazy",
+          "FFlagMicroProfilerUiUseXHtmlDump",
+          "FFlagMomentsRefreshProfileOnPostStatus",
+          "FFlagStudioAccountSwitchingTelemetry_LoggedInUsersList_Staged",
+          "FFlagStudioReplaceGSTWithIdForPluginRelay",
+          "FFlagVirtualCursorModularization5_Staged",
+          "FIntmi_option_page_full_retain"
+        ],
+        "changed": [
+          {
+            "after": "fd0adce27fd1f9630e673138982d6711fc7d476c",
+            "before": "342b7d505f97cf7fddc5f988de3c820cf24aae6e",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-09T20:15:23.018Z",
+            "before": "2026-10-09T17:59:12.595Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagAssetExportStandaloneLazyLoad"
+          },
+          {
+            "after": "fd0adce27fd1f9630e673138982d6711fc7d476c",
+            "before": "342b7d505f97cf7fddc5f988de3c820cf24aae6e",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-09T20:15:23.018Z",
+            "before": "2026-10-09T17:59:12.595Z",
+            "name": "FStringFlipTimeStampFastString"
+          },
+          {
+            "after": "{\"Physics Compute Tunable\":{\"priority\":100,\"stepsPerTurn\":1,\"waitFramesAfterStep\":60},\"StreamingCompute\":{\"priority\":99,\"stepsPerTurn\":1,\"waitFramesAfterStep\":15}}",
+            "before": "{\"Physics Compute Tunable\":{\"priority\":100,\"stepsPerTurn\":1,\"waitFramesAfterStep\":60}}",
+            "name": "FStringPerformanceControlComputePrimaryTunableConfigJson"
+          }
+        ],
+        "removed": [
+          "DFFlagRbxTransportQuicEmptyPayloadNoFinFix3_Staged",
+          "DFFlagRbxTransportQuicStableStreamContexts_Staged",
+          "DFIntDeferredRbxmDownloadFetchTimeoutMs_Staged",
+          "FFlagAssetExportStandaloneLazyLoad_Staged",
+          "FFlagBuildExperiencePublishedShareLink_Staged",
+          "FFlagDMCTMigrateTextBoxCursorSelection_Staged",
+          "FFlagDMCTMigrateWorkspace_Staged",
+          "FFlagLuaAppPlayButtonPrivatePTEnableSingleButton_Staged",
+          "FFlagLuaAppPlayButtonPrivatePTSupport_Staged",
+          "FFlagLuauCodeGenFastpcall2_Staged",
+          "FFlagLuauCodegenScopedSpillKeepLazy_Staged",
+          "FFlagMicroProfilerUiUseXHtmlDump_Staged",
+          "FFlagMomentsRefreshProfileOnPostStatus_Staged",
+          "FFlagStudioReplaceGSTWithIdForPluginRelay_Staged",
+          "FIntmi_option_page_full_retain_Staged",
+          "FStringPerformanceControlComputePrimaryTunableConfigJson_Staged"
+        ],
+        "unchanged": 25049
+      }
+    },
+    "Web": {
+      "current": "44354f6065d4ed688081fb105f2076f492bc07996a394a095e0c75a8a4949e25",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-006.js",
+          "assets.create.roblox.com/page-0/script-024.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-047.js",
+          "assets.create.roblox.com/page-0/script-054.js",
+          "assets.create.roblox.com/page-0/script-065.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.create.roblox.com/page-0/script-085.js",
+          "assets.create.roblox.com/page-0/script-086.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 95
+      },
+      "previous": "e30b237bee799e40139729f0879ad53a456c38f789bd06e2342e825f89fc1adf",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
