@@ -1,0 +1,83 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-9b554450a0fc4e65",
+    "manifestFiles": 18772,
+    "packages": 34,
+    "version": "0.742.0.7421053"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "12432ae4811368e9513603bcd5275dd19fabd99eb266492068e33ad512ac27ba",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "b370816301785b727cc961dba7b553267a4965542ccb218b74b536b482454cf5",
+      "semantic": {
+        "added": [],
+        "changed": [
+          {
+            "after": "9f4ef5de94e251b7cc767893a160e9d0378e7e1c",
+            "before": "995b70e6f6681042918e114ed4f91a80c9dda003",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-10T00:27:40.939Z",
+            "before": "2026-10-09T22:25:17.530Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagEnableCreatorEarlyAccessBannerInShop"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagMenuOfferTooltip"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagOfferNineDotActivityIndicator"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagOfferNotifyOnGlobalIcon"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagShowOfferBadge"
+          },
+          {
+            "after": "9f4ef5de94e251b7cc767893a160e9d0378e7e1c",
+            "before": "995b70e6f6681042918e114ed4f91a80c9dda003",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-10T00:27:40.939Z",
+            "before": "2026-10-09T22:25:17.530Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagEnableCreatorEarlyAccessBannerInShop_Staged",
+          "FFlagMenuOfferTooltip_Staged",
+          "FFlagOfferNineDotActivityIndicator_Staged",
+          "FFlagOfferNotifyOnGlobalIcon_Staged",
+          "FFlagShowOfferBadge_Staged"
+        ],
+        "unchanged": 25066
+      }
+    }
+  },
+  "schemaVersion": 1
+}
