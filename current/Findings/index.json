@@ -6849,11 +6849,34 @@
             "comment",
             "moments"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/12/22-56-43Z_datasets",
+          "evidencePath": "2026/10/12/22-56-43Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "f4c99a6e1a96d98f3515a1a58080170e1255a6aa4fae4d22612bbf90c33dbe3c",
+          "key": "FFlagMomentsCreationBackCta_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-12T22:56:43.228Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "back",
+            "creation",
+            "cta",
+            "moments"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-10-12T20:08:33.520Z",
+      "lastObservedAt": "2026-10-12T22:56:43.228Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",

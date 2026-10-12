@@ -1,0 +1,165 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-9b554450a0fc4e65",
+    "manifestFiles": 18772,
+    "packages": 34,
+    "version": "0.742.0.7421053"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "6e69a960c459c435b6edc22c94e733a11824115ec05963f7212fdf91c9cca146",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "be3cb9408462748f365512204be8d58a64368a4a8eed35b440f35a5e9eb89848",
+      "semantic": {
+        "added": [
+          "DFFlagRemoveBasePartSizProperty",
+          "DFFlagReportLuauBufferCageAllocFailures",
+          "DFFlagSuperRemovePartShapProperty",
+          "FFlagAXSurfaceItemInfoRowPromptVR_Staged",
+          "FFlagApplicationFrameRatePolicy2",
+          "FFlagAssetExportStandaloneLazyLoad_Staged",
+          "FFlagAssistantPlaytestToolFix_Staged",
+          "FFlagBuildExperienceVersionHistoryPagination",
+          "FFlagCAP2861AssistantBridgeStandalone",
+          "FFlagDeviceSimulatorRetryBridgeSignalSetup",
+          "FFlagEditableAllowOnConfigLoadFailure",
+          "FFlagEnableAndroidUnifiedSystemBarControl_Staged",
+          "FFlagFoundationFixColorOnScrubbableNumberInput_Staged",
+          "FFlagHideOfferNotificationsWhenShopEmpty_Staged",
+          "FFlagLuaAppAddHasOneByTwoField_Staged",
+          "FFlagLuaAppEnableOneByTwoTileFunnelTelemetry_Staged",
+          "FFlagLuaAppMigrateGameEventsTelemetryService",
+          "FFlagLuauCompileCallFbRemap",
+          "FFlagRefetchBothOfferKeysAfterPurchase_Staged",
+          "FFlagRenderWebGLWasmCompatibilityFallbacks",
+          "FFlagSPMCBufferSupportGetHeadIndexApi",
+          "FFlagSchoolsNoSchoolEmailInterest_Staged",
+          "FFlagShareSheetHoldRecipientsWhileSending",
+          "FFlagShareSheetLocalizeStrings",
+          "FFlagShareSheetRemoveSnackbarClose",
+          "FFlagSimRuntimeContentServiceNoDmLock_Staged",
+          "FFlagSkipPaymentSessionForPlainRobux_Staged",
+          "FFlagSlimDisableCustomCharacter_Staged",
+          "FFlagSoundCacheReportPlayLoadLatency"
+        ],
+        "changed": [
+          {
+            "after": "96932664f2461a12b2b873c47620c6f1f38d0c9a",
+            "before": "d437f93c9e4f70315f1c91e45e3e1d3f100d383d",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-12T22:43:24.448Z",
+            "before": "2026-10-12T20:04:49.359Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False;15853290560;463915360;966642236",
+            "before": "False;6447798030;15853290560;463915360;966642236",
+            "name": "FFlagIASSinking_PlaceFilter"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagLuaAppEdpNonSduiBuildAttribution"
+          },
+          {
+            "after": "96932664f2461a12b2b873c47620c6f1f38d0c9a",
+            "before": "d437f93c9e4f70315f1c91e45e3e1d3f100d383d",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-12T22:43:24.448Z",
+            "before": "2026-10-12T20:04:49.359Z",
+            "name": "FStringFlipTimeStampFastString"
+          },
+          {
+            "after": "eyJ2ZXJzaW9uU3RhcnQiOiAiMC4zMDAuMC4xIiwgInZlcnNpb25FbmQiOiAiMC43MzkuMC43NDIxMDUzIiwgInBsYXRmb3JtcyI6IFsiV2luZG93cyIsICJNYWMiXSwgIm1lc3NhZ2UiOiB7fSwgInNodXRkb3duIjogdHJ1ZSwgImZvcmNlUmV0cnlTdGFydHVwVXBkYXRlIjogdHJ1ZX0=",
+            "before": "eyJ2ZXJzaW9uU3RhcnQiOiAiMC4zMDAuMC4xIiwgInZlcnNpb25FbmQiOiAiMC43MzguMTkuNzQxMTA1NiIsICJwbGF0Zm9ybXMiOiBbIldpbmRvd3MiLCAiTWFjIl0sICJtZXNzYWdlIjoge30sICJzaHV0ZG93biI6IHRydWUsICJmb3JjZVJldHJ5U3RhcnR1cFVwZGF0ZSI6IHRydWV9",
+            "name": "FStringStudioEmergencyMessageV4"
+          }
+        ],
+        "removed": [
+          "DFFlagRemoveBasePartSizProperty_Staged",
+          "DFFlagReportLuauBufferCageAllocFailures_Staged",
+          "DFFlagSuperRemovePartShapProperty_Staged",
+          "FFlagApplicationFrameRatePolicy2_Staged",
+          "FFlagBuildExperienceVersionHistoryPagination_Staged",
+          "FFlagCAP2861AssistantBridgeStandalone_Staged",
+          "FFlagEditableAllowOnConfigLoadFailure_Staged",
+          "FFlagLuaAppEdpNonSduiBuildAttribution_Staged",
+          "FFlagLuaAppMigrateGameEventsTelemetryService_Staged",
+          "FFlagLuauCompileCallFbRemap_Staged",
+          "FFlagMomentsCreationBackCta_Staged",
+          "FFlagRenderWebGLWasmCompatibilityFallbacks_Staged",
+          "FFlagShareSheetHoldRecipientsWhileSending_Staged",
+          "FFlagShareSheetLocalizeStrings_Staged",
+          "FFlagShareSheetRemoveSnackbarClose_Staged",
+          "FFlagSoundCacheReportPlayLoadLatency_Staged",
+          "FStringStudioEmergencyMessageV4_Staged"
+        ],
+        "unchanged": 25112
+      }
+    },
+    "Web": {
+      "current": "8e6ac3cafc4e1a0d6c9efffee285be07d2b04f6e96c7762e5bad9369ea06cd91",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-006.js",
+          "assets.create.roblox.com/page-0/script-012.js",
+          "assets.create.roblox.com/page-0/script-022.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-042.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-047.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-052.js",
+          "assets.create.roblox.com/page-0/script-054.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-070.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.create.roblox.com/page-0/script-077.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.create.roblox.com/page-0/script-085.js",
+          "assets.create.roblox.com/page-0/script-086.js",
+          "assets.create.roblox.com/page-0/script-087.js",
+          "assets.create.roblox.com/page-1/script-001.js",
+          "assets.create.roblox.com/page-1/script-003.js",
+          "assets.create.roblox.com/page-1/script-004.js",
+          "assets.create.roblox.com/page-1/script-008.js",
+          "assets.create.roblox.com/page-1/script-009.js",
+          "assets.create.roblox.com/page-1/script-011.js",
+          "assets.create.roblox.com/page-1/script-012.js",
+          "assets.create.roblox.com/page-1/script-013.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 69
+      },
+      "previous": "d50e1d2ee6673c0e3b31c498a92ceda54cc42c44f3e604f904b906d68841a9a1",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
