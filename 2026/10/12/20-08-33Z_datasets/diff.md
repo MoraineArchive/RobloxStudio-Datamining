@@ -1,0 +1,278 @@
+[![Moraine Roblox Datamining](https://github.com/MoraineArchive/Moraine-asset/blob/main/roblox/banner_roblox.png?raw=true)](https://github.com/MoraineArchive/Moraine-asset/blob/main/roblox/banner_roblox.png)
+
+# Roblox Studio Datamining Diff
+
+**Observed:** 12/10/2026, 22:08:33 CEST (20:08:33 UTC)
+
+## LiveSettings
+
+**File changes:** +0 ~1 -0
+
+- **Changed:** [`current.json`](../../../../current/LiveSettings/current.json)
+
+### Values
+
+- **Added:** `DFFlagEnableClientAuthorityCapable`
+- **Added:** `DFFlagLibMpApiOne`
+- **Added:** `DFFlagRemoveBasePartSizProperty_Staged`
+- **Added:** `DFFlagReportLuauBufferCageAllocFailures_Staged`
+- **Added:** `DFFlagRtcIoTransportConnApi3`
+- **Added:** `DFFlagSimFixAlignPositionNonFiniteTarget`
+- **Added:** `DFFlagSoundCacheFixEstimatorSampling`
+- **Added:** `DFFlagSoundCacheReportEvictionMetrics`
+- **Added:** `DFFlagSuperRemovePartShapProperty_Staged`
+- **Added:** `FFlagAbuseReportImproveErrorEventsV2`
+- **Added:** `FFlagAddPlayTesterPermission2`
+- **Added:** `FFlagAppChatConversationStore`
+- **Added:** `FFlagAppChatExtendConversationListRowDividers`
+- **Added:** `FFlagAppChatFoundationSearchInputV3_IXP`
+- **Added:** `FFlagAppChatIxpParallelScreenLayers`
+- **Added:** `FFlagAppChatUseFoundationConversationRow`
+- **Added:** `FFlagAppChatUseFoundationCustomConversationListRow`
+- **Added:** `FFlagAppChatWideAlwaysVisibleSearchBoxV1_IXP`
+- **Added:** `FFlagApplicationFrameRatePolicy2_Staged`
+- **Added:** `FFlagBuildExperienceSkipLatestQuestionnaireSubmission`
+- **Added:** `FFlagBuildExperienceVersionHistoryPagination_Staged`
+- **Added:** `FFlagBuildRemoveTeamTestEnabledCapabilityFlag`
+- **Added:** `FFlagCAP2861AssistantBridgeStandalone_Staged`
+- **Added:** `FFlagCOLLAB11513_EarlyTesterEligibilityFilter`
+- **Added:** `FFlagCOLLAB11513_EarlyTestersRoleAssigners`
+- **Added:** `FFlagEditableAllowOnConfigLoadFailure_Staged`
+- **Added:** `FFlagEnableMomentsCommentBlocking`
+- **Added:** `FFlagEnableSideSheet8_IXP`
+- **Added:** `FFlagFixAudioOcclusionWorkerShutdown`
+- **Added:** `FFlagFriendsChatIxpScreenExposure`
+- **Added:** `FFlagGen3dExportOriginBasePartCFrameFix`
+- **Added:** `FFlagGen3dTextureGenCancelAbortsJob`
+- **Added:** `FFlagGen3dTextureGenTelemetry`
+- **Added:** `FFlagIAMBindingMenu2`
+- **Added:** `FFlagIAMBooleanProperties`
+- **Added:** `FFlagIAMNodePropertyMenu`
+- **Added:** `FFlagLuaAppEdpNonSduiBuildAttribution_Staged`
+- **Added:** `FFlagLuaAppSponsoredGamePreviewVideoV2`
+- **Added:** `FFlagLuaStartPageReachStatus`
+- **Added:** `FFlagLuauCompileCallFbRemap_Staged`
+- **Added:** `FFlagLuauCompileFastpcall2`
+- **Added:** `FFlagLuauSplitIceHandler`
+- **Added:** `FFlagLuauTypeFunctionsAbsenceCache`
+- **Added:** `FFlagMomentsCommentsCreatorControl_IXP`
+- **Added:** `FFlagMomentsCreationBackCta_Staged`
+- **Added:** `FFlagORGS272_GroupGameEarlyTesters`
+- **Added:** `FFlagORGS288_EarlyTesterRoleNameUniverseId`
+- **Added:** `FFlagOffersMergeStoreResults`
+- **Added:** `FFlagPeopleListButtonOverflow_IXP`
+- **Added:** `FFlagRenderWebGLWasmCompatibilityFallbacks_Staged`
+- **Added:** `FFlagSduiViewportVisibilityComponent`
+- **Added:** `FFlagShareSheetHoldRecipientsWhileSending_Staged`
+- **Added:** `FFlagShareSheetLocalizeStrings_Staged`
+- **Added:** `FFlagShareSheetRemoveSnackbarClose_Staged`
+- **Added:** `FFlagSideSheetOpenPeoplePage_IXP`
+- **Added:** `FFlagSlimRendererHandleNullAnimationStream`
+- **Added:** `FFlagSlimReplicationFixAnimationDataEntityDestruction`
+- **Added:** `FFlagSoundCacheReportPlayLoadLatency_Staged`
+- **Added:** `FFlagTPGUploadCallbackFix`
+- **Added:** `FIntAccountUpgradeMinimumAge`
+- **Added:** `FStringStudioEmergencyMessageV4_Staged`
+- **Changed:** `DFFlagAvatarAbilitiesUseStudioBeta2Asset_PlaceFilter`
+  - Before: `True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852`
+  - After: `True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834`
+- **Changed:** `DFFlagAvatarAbilitiesUseStudioBeta2Asset_UniverseFilter`
+  - Before: `True;10139630272;10768492546;10761698214`
+  - After: `True;10139630272;10768492546;10761698214;10769634303;10770019413`
+- **Changed:** `DFFlagPlayerControlStateAcceptOldSchema_PlaceFilter`
+  - Before: `True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852`
+  - After: `True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834`
+- **Changed:** `DFFlagPlayerControlStateAcceptOldSchema_UniverseFilter`
+  - Before: `True;10139630272;10768492546;10761698214`
+  - After: `True;10139630272;10768492546;10761698214;10769634303;10770019413`
+- **Changed:** `DFFlagRemoteProfilerCaptureAtFlipUseXHtmlDump`
+  - Before: `True`
+  - After: `False`
+- **Changed:** `DFIntStudioPluginMemoryTelemetryPercent`
+  - Before: `0`
+  - After: `500`
+- **Changed:** `DFStringFlagRepoGitHashDynamicString`
+  - Before: `6359fd1e0df75855b1a4de80936028110de1650c`
+  - After: `d437f93c9e4f70315f1c91e45e3e1d3f100d383d`
+- **Changed:** `DFStringFlipTimeStampDynamicString`
+  - Before: `2026-10-12T16:08:38.532Z`
+  - After: `2026-10-12T20:04:49.359Z`
+- **Changed:** `FFlagAnimationSAIdleOnMovingPlatformFix_PlaceFilter`
+  - Before: `True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852`
+  - After: `True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834`
+- **Changed:** `FFlagAnimationSAIdleOnMovingPlatformFix_UniverseFilter`
+  - Before: `True;10139630272;10768492546;10761698214`
+  - After: `True;10139630272;10768492546;10761698214;10769634303;10770019413`
+- **Changed:** `FFlagAvatarSettingsClientInitializeScriptType_PlaceFilter`
+  - Before: `True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852`
+  - After: `True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834`
+- **Changed:** `FFlagAvatarSettingsClientInitializeScriptType_UniverseFilter`
+  - Before: `True;10139630272;10768492546;10761698214`
+  - After: `True;10139630272;10768492546;10761698214;10769634303;10770019413`
+- **Changed:** `FFlagAvatarSettingsCrouchSprintStrafe3_PlaceFilter`
+  - Before: `True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852`
+  - After: `True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834`
+- **Changed:** `FFlagAvatarSettingsCrouchSprintStrafe3_UniverseFilter`
+  - Before: `True;10139630272;10768492546;10761698214`
+  - After: `True;10139630272;10768492546;10761698214;10769634303;10770019413`
+- **Changed:** `FFlagAvatarSettingsTurning_PlaceFilter`
+  - Before: `True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852`
+  - After: `True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834`
+- **Changed:** `FFlagAvatarSettingsTurning_UniverseFilter`
+  - Before: `True;10139630272;10768492546;10761698214`
+  - After: `True;10139630272;10768492546;10761698214;10769634303;10770019413`
+- **Changed:** `FFlagCLI214028_UniverseFilter`
+  - Before: `True;2440500124;383310974;7178032757;1516533665;3936365689;274816972;210851291;5578556129;3508322461;1686885941;1727457149;10123059921;2954818192;833209132;2765784373;8659262047;10163906565;1198533421;8221095306;5129563181;5351931175;7084172542;9168386959;7882785167;7023488558;1116949753;10764369335;5352702811;5836869368;4925010421;5526904396;7028875382;6523512604;6298331310;1527252839;3508969520;189374243;2324662457;44636121;7130790664;9624601035;8739739464;290384992;3924708500;9107423630;10...`
+  - After: `True;2440500124;383310974;7178032757;1516533665;3936365689;274816972;210851291;5578556129;3508322461;1686885941;1727457149;10123059921;2954818192;833209132;2765784373;8659262047;10163906565;1198533421;8221095306;5129563181;5351931175;7084172542;9168386959;7882785167;7023488558;1116949753;10764369335;5352702811;5836869368;4925010421;5526904396;7028875382;6523512604;6298331310;1527252839;3508969520;189374243;2324662457;44636121;7130790664;9624601035;8739739464;290384992;3924708500;9107423630;10...`
+- **Changed:** `FFlagCLI214030EnforceData_UniverseFilter`
+  - Before: `True;10123059921;383310974;7178032757;1516533665;3936365689;274816972;210851291;5578556129;3508322461;1686885941;1727457149;2954818192;833209132;2765784373;8659262047;10163906565;1198533421;8221095306;5129563181;5351931175;7084172542;9168386959;7882785167;7023488558;1116949753;10764369335;5352702811;5836869368;4925010421;5526904396;7028875382;6523512604;6298331310;1527252839;3508969520;189374243;2324662457;44636121;7130790664;9624601035;8739739464;290384992;3924708500;9107423630;10292441778;8...`
+  - After: `True;10123059921;383310974;7178032757;1516533665;3936365689;274816972;210851291;5578556129;3508322461;1686885941;1727457149;2954818192;833209132;2765784373;8659262047;10163906565;1198533421;8221095306;5129563181;5351931175;7084172542;9168386959;7882785167;7023488558;1116949753;10764369335;5352702811;5836869368;4925010421;5526904396;7028875382;6523512604;6298331310;1527252839;3508969520;189374243;2324662457;44636121;7130790664;9624601035;8739739464;290384992;3924708500;9107423630;10292441778;8...`
+- **Changed:** `FFlagCLI214030EnforceSettings_UniverseFilter`
+  - Before: `True;290384992;383310974;7178032757;1516533665;3936365689;274816972;210851291;5578556129;3508322461;1686885941;1727457149;10123059921;2954818192;833209132;2765784373;8659262047;10163906565;1198533421;8221095306;5129563181;5351931175;7084172542;9168386959;7882785167;7023488558;1116949753;10764369335;5352702811;5836869368;4925010421;5526904396;7028875382;6523512604;6298331310;1527252839;3508969520;189374243;2324662457;44636121;7130790664;9624601035;8739739464;3924708500;9107423630;10292441778;8...`
+  - After: `True;290384992;383310974;7178032757;1516533665;3936365689;274816972;210851291;5578556129;3508322461;1686885941;1727457149;10123059921;2954818192;833209132;2765784373;8659262047;10163906565;1198533421;8221095306;5129563181;5351931175;7084172542;9168386959;7882785167;7023488558;1116949753;10764369335;5352702811;5836869368;4925010421;5526904396;7028875382;6523512604;6298331310;1527252839;3508969520;189374243;2324662457;44636121;7130790664;9624601035;8739739464;3924708500;9107423630;10292441778;8...`
+- **Changed:** `FFlagCclClientInitializeFrom2026Jun03AbilityManagerRepo3_PlaceFilter`
+  - Before: `True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852`
+  - After: `True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834`
+- **Changed:** `FFlagCclClientInitializeFrom2026Jun03AbilityManagerRepo3_UniverseFilter`
+  - Before: `True;10139630272;10768492546;10761698214`
+  - After: `True;10139630272;10768492546;10761698214;10769634303;10770019413`
+- **Changed:** `FFlagLuaAppEdpShowBuildTag`
+  - Before: `True`
+  - After: `False`
+- **Changed:** `FFlagLuaAppMigrateGameEventsTelemetryService_Staged`
+  - Before: `True;SteadyState;10;15;Rollout;100;30;SteadyState;100;75;Promote;true;1812528236;2026-10-12T16:08:37`
+  - After: `True;SteadyState;10;15;Rollout;100;30;SteadyState;100;75;Promote;true;1812528236;2026-10-12T18:28:33`
+- **Changed:** `FFlagPlayerControlStateApplyInputOnClientNonSAuth2_PlaceFilter`
+  - Before: `True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852`
+  - After: `True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834`
+- **Changed:** `FFlagPlayerControlStateApplyInputOnClientNonSAuth2_UniverseFilter`
+  - Before: `True;10139630272;10768492546;10761698214`
+  - After: `True;10139630272;10768492546;10761698214;10769634303;10770019413`
+- **Changed:** `FFlagPlayerControlStateEnabled_PlaceFilter`
+  - Before: `True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852`
+  - After: `True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834`
+- **Changed:** `FFlagPlayerControlStateEnabled_UniverseFilter`
+  - Before: `True;10139630272;10768492546;10761698214`
+  - After: `True;10139630272;10768492546;10761698214;10769634303;10770019413`
+- **Changed:** `FFlagUserAbilitiesUserInterfaceA_PlaceFilter`
+  - Before: `True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852`
+  - After: `True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834`
+- **Changed:** `FFlagUserAbilitiesUserInterfaceA_UniverseFilter`
+  - Before: `True;10139630272;10768492546;10761698214`
+  - After: `True;10139630272;10768492546;10761698214;10769634303;10770019413`
+- **Changed:** `FFlagUserAbilitiesUserInterfaceB_PlaceFilter`
+  - Before: `True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852`
+  - After: `True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834`
+- **Changed:** `FFlagUserAbilitiesUserInterfaceB_UniverseFilter`
+  - Before: `True;10139630272;10768492546;10761698214`
+  - After: `True;10139630272;10768492546;10761698214;10769634303;10770019413`
+- **Changed:** `FFlagUserCCLNoSwimAnimationsFix_PlaceFilter`
+  - Before: `True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852`
+  - After: `True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834`
+- **Changed:** `FFlagUserCCLNoSwimAnimationsFix_UniverseFilter`
+  - Before: `True;10139630272;10768492546;10761698214`
+  - After: `True;10139630272;10768492546;10761698214;10769634303;10770019413`
+- **Changed:** `FFlagUserDoubleJumpButtonFix_PlaceFilter`
+  - Before: `True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852`
+  - After: `True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834`
+- **Changed:** `FFlagUserDoubleJumpButtonFix_UniverseFilter`
+  - Before: `True;10139630272;10768492546;10761698214`
+  - After: `True;10139630272;10768492546;10761698214;10769634303;10770019413`
+- **Changed:** `FFlagUserPlayerScriptsCCLIntegrationD_PlaceFilter`
+  - Before: `True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852`
+  - After: `True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834`
+- **Changed:** `FFlagUserPlayerScriptsCCLIntegrationD_UniverseFilter`
+  - Before: `True;10139630272;10768492546;10761698214`
+  - After: `True;10139630272;10768492546;10761698214;10769634303;10770019413`
+- **Changed:** `FFlagUserPlayerScriptsPlayerControlState2_PlaceFilter`
+  - Before: `True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852`
+  - After: `True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834`
+- **Changed:** `FFlagUserPlayerScriptsPlayerControlState2_UniverseFilter`
+  - Before: `True;10139630272;10768492546;10761698214`
+  - After: `True;10139630272;10768492546;10761698214;10769634303;10770019413`
+- **Changed:** `FStringFlagRepoGitHashFastString`
+  - Before: `6359fd1e0df75855b1a4de80936028110de1650c`
+  - After: `d437f93c9e4f70315f1c91e45e3e1d3f100d383d`
+- **Changed:** `FStringFlipTimeStampFastString`
+  - Before: `2026-10-12T16:08:38.532Z`
+  - After: `2026-10-12T20:04:49.359Z`
+- **Removed:** `FFlagLuaAppEdpShowBuildTag_Staged`
+
+## Web
+
+**File changes:** +1 ~69 -3
+
+- **Added:** [`assets.create.roblox.com/page-0/script-089.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-089.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-002.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-002.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-003.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-003.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-004.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-004.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-005.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-005.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-006.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-006.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-007.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-007.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-008.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-008.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-009.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-009.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-012.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-012.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-013.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-013.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-014.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-014.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-016.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-016.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-017.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-017.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-019.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-019.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-022.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-022.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-025.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-025.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-026.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-026.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-027.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-027.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-028.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-028.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-031.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-031.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-032.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-032.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-034.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-034.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-035.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-035.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-036.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-036.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-037.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-037.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-040.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-040.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-044.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-044.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-047.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-047.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-048.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-048.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-052.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-052.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-053.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-053.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-054.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-054.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-062.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-062.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-063.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-063.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-065.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-065.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-066.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-066.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-067.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-067.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-068.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-068.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-069.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-069.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-070.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-070.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-071.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-071.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-072.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-072.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-073.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-073.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-074.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-074.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-075.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-075.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-076.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-076.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-077.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-077.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-078.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-078.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-079.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-079.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-080.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-080.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-081.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-081.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-082.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-082.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-083.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-083.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-084.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-084.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-085.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-085.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-086.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-086.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-087.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-087.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-088.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-088.js)
+- **Changed:** [`assets.create.roblox.com/page-1/script-001.js`](../../../../current/Web/assets.create.roblox.com/page-1/script-001.js)
+- **Changed:** [`assets.create.roblox.com/page-1/script-003.js`](../../../../current/Web/assets.create.roblox.com/page-1/script-003.js)
+- **Changed:** [`assets.create.roblox.com/page-1/script-004.js`](../../../../current/Web/assets.create.roblox.com/page-1/script-004.js)
+- **Changed:** [`assets.create.roblox.com/page-1/script-007.js`](../../../../current/Web/assets.create.roblox.com/page-1/script-007.js)
+- **Changed:** [`assets.create.roblox.com/page-1/script-009.js`](../../../../current/Web/assets.create.roblox.com/page-1/script-009.js)
+- **Changed:** [`assets.create.roblox.com/page-1/script-010.js`](../../../../current/Web/assets.create.roblox.com/page-1/script-010.js)
+- **Changed:** [`assets.create.roblox.com/page-1/script-011.js`](../../../../current/Web/assets.create.roblox.com/page-1/script-011.js)
+- **Changed:** [`assets.create.roblox.com/page-1/script-012.js`](../../../../current/Web/assets.create.roblox.com/page-1/script-012.js)
+- **Changed:** [`assets.create.roblox.com/page-1/script-013.js`](../../../../current/Web/assets.create.roblox.com/page-1/script-013.js)
+- **Changed:** [`assets.create.roblox.com/page-1/script-014.js`](../../../../current/Web/assets.create.roblox.com/page-1/script-014.js)
+- **Changed:** [`assets.json`](../../../../current/Web/assets.json)
+- **Removed:** `assets.create.roblox.com/page-1/script-015.js`
+- **Removed:** `assets.create.roblox.com/page-1/script-016.js`
+- **Removed:** `assets.create.roblox.com/page-1/script-017.js`
+

@@ -3076,11 +3076,63 @@
             "rbx",
             "uri"
           ]
+        },
+        {
+          "after": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834",
+          "before": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852",
+          "concepts": [
+            "avatar",
+            "abilities"
+          ],
+          "eventPath": "2026/10/12/20-08-33Z_datasets",
+          "evidencePath": "2026/10/12/20-08-33Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "0a3675c45a8d5f3fb00e619e491aaa4c92556fbfaea5bdb583e3a7011af24587",
+          "key": "DFFlagAvatarAbilitiesUseStudioBeta2Asset_PlaceFilter",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-12T20:08:33.520Z",
+          "operation": "changed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abilities",
+            "asset",
+            "avatar",
+            "beta2",
+            "filter",
+            "place"
+          ]
+        },
+        {
+          "after": "True;10139630272;10768492546;10761698214;10769634303;10770019413",
+          "before": "True;10139630272;10768492546;10761698214",
+          "concepts": [
+            "avatar",
+            "abilities"
+          ],
+          "eventPath": "2026/10/12/20-08-33Z_datasets",
+          "evidencePath": "2026/10/12/20-08-33Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "cdc5550fb5511d89655ae1fd6b59182bbf5664e4e4393bdae0387b91515cdaba",
+          "key": "DFFlagAvatarAbilitiesUseStudioBeta2Asset_UniverseFilter",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-12T20:08:33.520Z",
+          "operation": "changed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abilities",
+            "asset",
+            "avatar",
+            "beta2",
+            "filter",
+            "universe"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "avatar-abilities",
-      "lastObservedAt": "2026-10-08T22:03:41.613Z",
+      "lastObservedAt": "2026-10-12T20:08:33.520Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T01:54:39.846Z",
@@ -6728,11 +6780,80 @@
             "refresh",
             "status"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/12/20-08-33Z_datasets",
+          "evidencePath": "2026/10/12/20-08-33Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "a234313abd86c86cb94806eebe56564217246135cfe295010c618a6c556554a5",
+          "key": "FFlagMomentsCreationBackCta_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-12T20:08:33.520Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "back",
+            "creation",
+            "cta",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/12/20-08-33Z_datasets",
+          "evidencePath": "2026/10/12/20-08-33Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "aa15be2f7930d2a8a3f09f5f8f7792d0bf04e0d8f638f0eda12cb6d071292545",
+          "key": "FFlagMomentsCommentsCreatorControl_IXP",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-12T20:08:33.520Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "comments",
+            "control",
+            "creator",
+            "ixp",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/12/20-08-33Z_datasets",
+          "evidencePath": "2026/10/12/20-08-33Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "ed2ce2f73b10c750e4b8f275fa0135e4a124a0e81443e3a92568cb104c66ee6b",
+          "key": "FFlagEnableMomentsCommentBlocking",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-12T20:08:33.520Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "blocking",
+            "comment",
+            "moments"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-10-09T20:52:52.055Z",
+      "lastObservedAt": "2026-10-12T20:08:33.520Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
