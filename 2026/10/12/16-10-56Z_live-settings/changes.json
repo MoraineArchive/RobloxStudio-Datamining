@@ -1,0 +1,57 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-9b554450a0fc4e65",
+    "manifestFiles": 18772,
+    "packages": 34,
+    "version": "0.742.0.7421053"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "9d59e50c9dfa0b23dc3da07ac31a64bdf6ef335c97d35bfbd333f49e43dcd8a7",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "12432ae4811368e9513603bcd5275dd19fabd99eb266492068e33ad512ac27ba",
+      "semantic": {
+        "added": [
+          "FFlagLuaAppEdpShowBuildTag_Staged",
+          "FFlagLuaAppMigrateGameEventsTelemetryService_Staged"
+        ],
+        "changed": [
+          {
+            "after": "6359fd1e0df75855b1a4de80936028110de1650c",
+            "before": "9f4ef5de94e251b7cc767893a160e9d0378e7e1c",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-12T16:08:38.532Z",
+            "before": "2026-10-10T00:27:40.939Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "6359fd1e0df75855b1a4de80936028110de1650c",
+            "before": "9f4ef5de94e251b7cc767893a160e9d0378e7e1c",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-12T16:08:38.532Z",
+            "before": "2026-10-10T00:27:40.939Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagLuaAppMigrateGameEventsTelemetryService_IXP"
+        ],
+        "unchanged": 25070
+      }
+    }
+  },
+  "schemaVersion": 1
+}
