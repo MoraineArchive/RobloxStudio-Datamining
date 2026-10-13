@@ -1,5 +1,1151 @@
-;!function(){try { var e="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof global?global:"undefined"!=typeof window?window:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&((e._debugIds|| (e._debugIds={}))[n]="118889b0-8bcd-1df6-c70a-f9b5e9d9e652")}catch(e){}}();
-(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,185641,299362,e=>{"use strict";var t=e.i(721281),s=e.i(677753),r=function(e,t){return(r=Object.setPrototypeOf||({__proto__:[]})instanceof Array&&function(e,t){e.__proto__=t}||function(e,t){for(var s in t)Object.prototype.hasOwnProperty.call(t,s)&&(e[s]=t[s])})(e,t)};function i(e,t){if("function"!=typeof t&&null!==t)throw TypeError("Class extends value "+String(t)+" is not a constructor or null");function s(){this.constructor=e}r(e,t),e.prototype=null===t?Object.create(t):(s.prototype=t.prototype,new s)}function o(e,t,s,r){return new(s||(s=Promise))(function(i,o){function n(e){try{d(r.next(e))}catch(e){o(e)}}function a(e){try{d(r.throw(e))}catch(e){o(e)}}function d(e){var t;e.done?i(e.value):((t=e.value)instanceof s?t:new s(function(e){e(t)})).then(n,a)}d((r=r.apply(e,t||[])).next())})}function n(e,t){var s,r,i,o={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]},n=Object.create(("function"==typeof Iterator?Iterator:Object).prototype);return n.next=a(0),n.throw=a(1),n.return=a(2),"function"==typeof Symbol&&(n[Symbol.iterator]=function(){return this}),n;function a(a){return function(d){var u=[a,d];if(s)throw TypeError("Generator is already executing.");for(;n&&(n=0,u[0]&&(o=0)),o;)try{if(s=1,r&&(i=2&u[0]?r.return:u[0]?r.throw||((i=r.return)&&i.call(r),0):r.next)&&!(i=i.call(r,u[1])).done)return i;switch(r=0,i&&(u=[2&u[0],i.value]),u[0]){case 0:case 1:i=u;break;case 4:return o.label++,{value:u[1],done:!1};case 5:o.label++,r=u[1],u=[0];continue;case 7:u=o.ops.pop(),o.trys.pop();continue;default:if(!(i=(i=o.trys).length>0&&i[i.length-1])&&(6===u[0]||2===u[0])){o=0;continue}if(3===u[0]&&(!i||u[1]>i[0]&&u[1]<i[3])){o.label=u[1];break}if(6===u[0]&&o.label<i[1]){o.label=i[1],i=u;break}if(i&&o.label<i[2]){o.label=i[2],o.ops.push(u);break}i[2]&&o.ops.pop(),o.trys.pop();continue}u=t.call(e,o)}catch(e){u=[6,e],r=0}finally{s=i=0}if(5&u[0])throw u[1];return{value:u[0]?u[1]:void 0,done:!0}}}}function a(e,t){return null==e?e:{id:(0,s.exists)(e,"id")?e.id:void 0,name:(0,s.exists)(e,"name")?e.name:void 0,type:(0,s.exists)(e,"type")?e.type:void 0,hasVerifiedBadge:(0,s.exists)(e,"hasVerifiedBadge")?e.hasVerifiedBadge:void 0}}function d(e){var t;return null==(t=e)?t:{owned:(0,s.exists)(t,"owned")?t.owned:void 0,id:(0,s.exists)(t,"id")?t.id:void 0,name:(0,s.exists)(t,"name")?t.name:void 0,type:(0,s.exists)(t,"type")?t.type:void 0,supportsHeadShapes:(0,s.exists)(t,"supportsHeadShapes")?t.supportsHeadShapes:void 0,assetType:(0,s.exists)(t,"assetType")?t.assetType:void 0}}function u(e){var t;return null==(t=e)?t:{robuxDiscountAmount:(0,s.exists)(t,"robuxDiscountAmount")?t.robuxDiscountAmount:void 0,robuxDiscountPercentage:(0,s.exists)(t,"robuxDiscountPercentage")?t.robuxDiscountPercentage:void 0,discountCampaign:(0,s.exists)(t,"discountCampaign")?t.discountCampaign:void 0,localizedDiscountAttribution:(0,s.exists)(t,"localizedDiscountAttribution")?t.localizedDiscountAttribution:void 0}}"function"==typeof SuppressedError&&SuppressedError;function l(e,t){return null==e?e:{originalPrice:(0,s.exists)(e,"originalPrice")?e.originalPrice:void 0,totalDiscountPercentage:(0,s.exists)(e,"totalDiscountPercentage")?e.totalDiscountPercentage:void 0,totalDiscountAmount:(0,s.exists)(e,"totalDiscountAmount")?e.totalDiscountAmount:void 0,discounts:(0,s.exists)(e,"discounts")?e.discounts.map(u):void 0}}function c(e){var t,r,i,o,n;return null==(t=e)?t:{id:(0,s.exists)(t,"id")?t.id:void 0,name:(0,s.exists)(t,"name")?t.name:void 0,description:(0,s.exists)(t,"description")?t.description:void 0,bundleType:(0,s.exists)(t,"bundleType")?t.bundleType:void 0,isRecolorable:(0,s.exists)(t,"isRecolorable")?t.isRecolorable:void 0,items:(0,s.exists)(t,"items")?t.items.map(d):void 0,creator:(0,s.exists)(t,"creator")?a(t.creator):void 0,product:(0,s.exists)(t,"product")?null==(r=t.product)?r:{id:(0,s.exists)(r,"id")?r.id:void 0,type:(0,s.exists)(r,"type")?r.type:void 0,isPublicDomain:(0,s.exists)(r,"isPublicDomain")?r.isPublicDomain:void 0,isForSale:(0,s.exists)(r,"isForSale")?r.isForSale:void 0,priceInRobux:(0,s.exists)(r,"priceInRobux")?r.priceInRobux:void 0,isFree:(0,s.exists)(r,"isFree")?r.isFree:void 0,noPriceText:(0,s.exists)(r,"noPriceText")?r.noPriceText:void 0,premiumPricing:(0,s.exists)(r,"premiumPricing")?null==(i=r.premiumPricing)?i:{premiumDiscountPercentage:(0,s.exists)(i,"premiumDiscountPercentage")?i.premiumDiscountPercentage:void 0,premiumPriceInRobux:(0,s.exists)(i,"premiumPriceInRobux")?i.premiumPriceInRobux:void 0}:void 0}:void 0,itemRestrictions:(0,s.exists)(t,"itemRestrictions")?t.itemRestrictions:void 0,collectibleItemDetail:(0,s.exists)(t,"collectibleItemDetail")?null==(o=t.collectibleItemDetail)?o:{collectibleItemId:(0,s.exists)(o,"collectibleItemId")?o.collectibleItemId:void 0,collectibleProductId:(0,s.exists)(o,"collectibleProductId")?o.collectibleProductId:void 0,price:(0,s.exists)(o,"price")?o.price:void 0,lowestPrice:(0,s.exists)(o,"lowestPrice")?o.lowestPrice:void 0,lowestResalePrice:(0,s.exists)(o,"lowestResalePrice")?o.lowestResalePrice:void 0,totalQuantity:(0,s.exists)(o,"totalQuantity")?o.totalQuantity:void 0,unitsAvailable:(0,s.exists)(o,"unitsAvailable")?o.unitsAvailable:void 0,saleLocation:(0,s.exists)(o,"saleLocation")?null==(n=o.saleLocation)?n:{saleLocationType:(0,s.exists)(n,"saleLocationType")?n.saleLocationType:void 0,saleLocationTypeId:(0,s.exists)(n,"saleLocationTypeId")?n.saleLocationTypeId:void 0,universeIds:(0,s.exists)(n,"universeIds")?n.universeIds:void 0,enabledUniverseIds:(0,s.exists)(n,"enabledUniverseIds")?n.enabledUniverseIds:void 0}:void 0,hasResellers:(0,s.exists)(o,"hasResellers")?o.hasResellers:void 0,saleStatus:(0,s.exists)(o,"saleStatus")?o.saleStatus:void 0,quantityLimitPerUser:(0,s.exists)(o,"quantityLimitPerUser")?o.quantityLimitPerUser:void 0,offSaleDeadline:(0,s.exists)(o,"offSaleDeadline")?new Date(o.offSaleDeadline):void 0,collectibleItemType:(0,s.exists)(o,"collectibleItemType")?o.collectibleItemType:void 0,lowestAvailableResaleProductId:(0,s.exists)(o,"lowestAvailableResaleProductId")?o.lowestAvailableResaleProductId:void 0,lowestAvailableResaleItemInstanceId:(0,s.exists)(o,"lowestAvailableResaleItemInstanceId")?o.lowestAvailableResaleItemInstanceId:void 0,resaleRestriction:(0,s.exists)(o,"resaleRestriction")?o.resaleRestriction:void 0}:void 0,discountInformation:(0,s.exists)(t,"discountInformation")?l(t.discountInformation):void 0}}function v(e){var t;return null==(t=e)?t:{owned:(0,s.exists)(t,"owned")?t.owned:void 0,id:(0,s.exists)(t,"id")?t.id:void 0,name:(0,s.exists)(t,"name")?t.name:void 0,type:(0,s.exists)(t,"type")?t.type:void 0,supportsHeadShapes:(0,s.exists)(t,"supportsHeadShapes")?t.supportsHeadShapes:void 0,assetType:(0,s.exists)(t,"assetType")?t.assetType:void 0}}function p(e){var t;return null==(t=e)?t:{subcategory:(0,s.exists)(t,"subcategory")?t.subcategory:void 0,taxonomy:(0,s.exists)(t,"taxonomy")?t.taxonomy:void 0,assetTypeIds:(0,s.exists)(t,"assetTypeIds")?t.assetTypeIds:void 0,bundleTypeIds:(0,s.exists)(t,"bundleTypeIds")?t.bundleTypeIds:void 0,subcategoryId:(0,s.exists)(t,"subcategoryId")?t.subcategoryId:void 0,name:(0,s.exists)(t,"name")?t.name:void 0,shortName:(0,s.exists)(t,"shortName")?t.shortName:void 0}}function m(e){var t;return null==(t=e)?t:{category:(0,s.exists)(t,"category")?t.category:void 0,taxonomy:(0,s.exists)(t,"taxonomy")?t.taxonomy:void 0,assetTypeIds:(0,s.exists)(t,"assetTypeIds")?t.assetTypeIds:void 0,bundleTypeIds:(0,s.exists)(t,"bundleTypeIds")?t.bundleTypeIds:void 0,categoryId:(0,s.exists)(t,"categoryId")?t.categoryId:void 0,name:(0,s.exists)(t,"name")?t.name:void 0,orderIndex:(0,s.exists)(t,"orderIndex")?t.orderIndex:void 0,subcategories:(0,s.exists)(t,"subcategories")?t.subcategories.map(p):void 0,isSearchable:(0,s.exists)(t,"isSearchable")?t.isSearchable:void 0}}function h(e){var t;return null==(t=e)?t:{userId:(0,s.exists)(t,"userId")?t.userId:void 0,name:(0,s.exists)(t,"name")?t.name:void 0,isSelected:(0,s.exists)(t,"isSelected")?t.isSelected:void 0}}function I(e){var t;return null==(t=e)?t:{genre:(0,s.exists)(t,"genre")?t.genre:void 0,name:(0,s.exists)(t,"name")?t.name:void 0,isSelected:(0,s.exists)(t,"isSelected")?t.isSelected:void 0}}function f(e){var t;return null==(t=e)?t:{currencyType:(0,s.exists)(t,"currencyType")?t.currencyType:void 0,name:(0,s.exists)(t,"name")?t.name:void 0,excludePriceSorts:(0,s.exists)(t,"excludePriceSorts")?t.excludePriceSorts:void 0}}function y(e){var t;return null==(t=e)?t:{name:(0,s.exists)(t,"name")?t.name:void 0,filter:(0,s.exists)(t,"filter")?t.filter:void 0}}function g(e){var t;return null==(t=e)?t:{sortAggregation:(0,s.exists)(t,"sortAggregation")?t.sortAggregation:void 0,name:(0,s.exists)(t,"name")?t.name:void 0,isSelected:(0,s.exists)(t,"isSelected")?t.isSelected:void 0,hasSubMenu:(0,s.exists)(t,"hasSubMenu")?t.hasSubMenu:void 0,isPriceRelated:(0,s.exists)(t,"isPriceRelated")?t.isPriceRelated:void 0}}function b(e){var t;return null==(t=e)?t:{sortType:(0,s.exists)(t,"sortType")?t.sortType:void 0,sortOrder:(0,s.exists)(t,"sortOrder")?t.sortOrder:void 0,name:(0,s.exists)(t,"name")?t.name:void 0,isSelected:(0,s.exists)(t,"isSelected")?t.isSelected:void 0,hasSubMenu:(0,s.exists)(t,"hasSubMenu")?t.hasSubMenu:void 0,isPriceRelated:(0,s.exists)(t,"isPriceRelated")?t.isPriceRelated:void 0}}function x(e){var t;return null==(t=e)?t:{taxonomyId:(0,s.exists)(t,"taxonomyId")?t.taxonomyId:void 0,taxonomyName:(0,s.exists)(t,"taxonomyName")?t.taxonomyName:void 0}}function w(e){var t;return null==(t=e)?t:{days:(0,s.exists)(t,"days")?t.days:void 0,price:(0,s.exists)(t,"price")?t.price:void 0,discountInformation:(0,s.exists)(t,"discountInformation")?l(t.discountInformation):void 0,selected:(0,s.exists)(t,"selected")?t.selected:void 0}}function R(e){var t;return null==(t=e)?t:{id:(0,s.exists)(t,"id")?t.id:void 0,itemType:(0,s.exists)(t,"itemType")?t.itemType:void 0,assetType:(0,s.exists)(t,"assetType")?t.assetType:void 0,bundleType:(0,s.exists)(t,"bundleType")?t.bundleType:void 0,isRecolorable:(0,s.exists)(t,"isRecolorable")?t.isRecolorable:void 0,name:(0,s.exists)(t,"name")?t.name:void 0,description:(0,s.exists)(t,"description")?t.description:void 0,productId:(0,s.exists)(t,"productId")?t.productId:void 0,bundledItems:(0,s.exists)(t,"bundledItems")?t.bundledItems.map(d):void 0,itemStatus:(0,s.exists)(t,"itemStatus")?t.itemStatus:void 0,itemRestrictions:(0,s.exists)(t,"itemRestrictions")?t.itemRestrictions:void 0,creatorHasVerifiedBadge:(0,s.exists)(t,"creatorHasVerifiedBadge")?t.creatorHasVerifiedBadge:void 0,creatorType:(0,s.exists)(t,"creatorType")?t.creatorType:void 0,creatorTargetId:(0,s.exists)(t,"creatorTargetId")?t.creatorTargetId:void 0,creatorName:(0,s.exists)(t,"creatorName")?t.creatorName:void 0,price:(0,s.exists)(t,"price")?t.price:void 0,lowestPrice:(0,s.exists)(t,"lowestPrice")?t.lowestPrice:void 0,lowestResalePrice:(0,s.exists)(t,"lowestResalePrice")?t.lowestResalePrice:void 0,priceStatus:(0,s.exists)(t,"priceStatus")?t.priceStatus:void 0,unitsAvailableForConsumption:(0,s.exists)(t,"unitsAvailableForConsumption")?t.unitsAvailableForConsumption:void 0,favoriteCount:(0,s.exists)(t,"favoriteCount")?t.favoriteCount:void 0,offSaleDeadline:(0,s.exists)(t,"offSaleDeadline")?new Date(t.offSaleDeadline):void 0,collectibleItemId:(0,s.exists)(t,"collectibleItemId")?t.collectibleItemId:void 0,totalQuantity:(0,s.exists)(t,"totalQuantity")?t.totalQuantity:void 0,saleLocationType:(0,s.exists)(t,"saleLocationType")?t.saleLocationType:void 0,hasResellers:(0,s.exists)(t,"hasResellers")?t.hasResellers:void 0,isOffSale:(0,s.exists)(t,"isOffSale")?t.isOffSale:void 0,quantityLimitPerUser:(0,s.exists)(t,"quantityLimitPerUser")?t.quantityLimitPerUser:void 0,supportsHeadShapes:(0,s.exists)(t,"supportsHeadShapes")?t.supportsHeadShapes:void 0,timedOptions:(0,s.exists)(t,"timedOptions")?t.timedOptions.map(w):void 0}}function T(e){var t;return null==(t=e)?t:{bundledItems:(0,s.exists)(t,"bundledItems")?t.bundledItems.map(v):void 0,taxonomy:(0,s.exists)(t,"taxonomy")?t.taxonomy.map(x):void 0,itemCreatedUtc:(0,s.exists)(t,"itemCreatedUtc")?new Date(t.itemCreatedUtc):void 0,discountInformation:(0,s.exists)(t,"discountInformation")?l(t.discountInformation):void 0,id:(0,s.exists)(t,"id")?t.id:void 0,itemType:(0,s.exists)(t,"itemType")?t.itemType:void 0,assetType:(0,s.exists)(t,"assetType")?t.assetType:void 0,bundleType:(0,s.exists)(t,"bundleType")?t.bundleType:void 0,isRecolorable:(0,s.exists)(t,"isRecolorable")?t.isRecolorable:void 0,name:(0,s.exists)(t,"name")?t.name:void 0,description:(0,s.exists)(t,"description")?t.description:void 0,productId:(0,s.exists)(t,"productId")?t.productId:void 0,itemStatus:(0,s.exists)(t,"itemStatus")?t.itemStatus:void 0,itemRestrictions:(0,s.exists)(t,"itemRestrictions")?t.itemRestrictions:void 0,creatorHasVerifiedBadge:(0,s.exists)(t,"creatorHasVerifiedBadge")?t.creatorHasVerifiedBadge:void 0,creatorType:(0,s.exists)(t,"creatorType")?t.creatorType:void 0,creatorTargetId:(0,s.exists)(t,"creatorTargetId")?t.creatorTargetId:void 0,creatorName:(0,s.exists)(t,"creatorName")?t.creatorName:void 0,price:(0,s.exists)(t,"price")?t.price:void 0,lowestPrice:(0,s.exists)(t,"lowestPrice")?t.lowestPrice:void 0,lowestResalePrice:(0,s.exists)(t,"lowestResalePrice")?t.lowestResalePrice:void 0,priceStatus:(0,s.exists)(t,"priceStatus")?t.priceStatus:void 0,unitsAvailableForConsumption:(0,s.exists)(t,"unitsAvailableForConsumption")?t.unitsAvailableForConsumption:void 0,favoriteCount:(0,s.exists)(t,"favoriteCount")?t.favoriteCount:void 0,offSaleDeadline:(0,s.exists)(t,"offSaleDeadline")?new Date(t.offSaleDeadline):void 0,collectibleItemId:(0,s.exists)(t,"collectibleItemId")?t.collectibleItemId:void 0,totalQuantity:(0,s.exists)(t,"totalQuantity")?t.totalQuantity:void 0,saleLocationType:(0,s.exists)(t,"saleLocationType")?t.saleLocationType:void 0,hasResellers:(0,s.exists)(t,"hasResellers")?t.hasResellers:void 0,isOffSale:(0,s.exists)(t,"isOffSale")?t.isOffSale:void 0,quantityLimitPerUser:(0,s.exists)(t,"quantityLimitPerUser")?t.quantityLimitPerUser:void 0,supportsHeadShapes:(0,s.exists)(t,"supportsHeadShapes")?t.supportsHeadShapes:void 0,timedOptions:(0,s.exists)(t,"timedOptions")?t.timedOptions.map(w):void 0}}function P(e,t){return null==e?e:{elasticsearchQuery:(0,s.exists)(e,"elasticsearchQuery")?e.elasticsearchQuery:void 0,isFromCache:(0,s.exists)(e,"isFromCache")?e.isFromCache:void 0,indexName:(0,s.exists)(e,"indexName")?e.indexName:void 0,isTerminatedEarly:(0,s.exists)(e,"isTerminatedEarly")?e.isTerminatedEarly:void 0,isForceTerminationEnabledByRequest:(0,s.exists)(e,"isForceTerminationEnabledByRequest")?e.isForceTerminationEnabledByRequest:void 0,searchResultDataSource:(0,s.exists)(e,"searchResultDataSource")?e.searchResultDataSource:void 0,searchResultRelevanceScore:(0,s.exists)(e,"searchResultRelevanceScore")?e.searchResultRelevanceScore:void 0,searchResultEngagementScore:(0,s.exists)(e,"searchResultEngagementScore")?e.searchResultEngagementScore:void 0}}function S(e){var t;return null==(t=e)?t:{id:(0,s.exists)(t,"id")?t.id:void 0,itemType:(0,s.exists)(t,"itemType")?t.itemType:void 0}}var C={NUMBER_1:1,NUMBER_2:2};function A(e){if(void 0!==e)return null===e?null:{itemType:e.itemType,id:e.id}}function q(e){var t;return null==(t=e)?t:{id:(0,s.exists)(t,"id")?t.id:void 0,name:(0,s.exists)(t,"name")?t.name:void 0,bundleType:(0,s.exists)(t,"bundleType")?t.bundleType:void 0,creator:(0,s.exists)(t,"creator")?a(t.creator):void 0}}function U(e){var t;return null==(t=e)?t:{id:(0,s.exists)(t,"id")?t.id:void 0,itemType:(0,s.exists)(t,"itemType")?t.itemType:void 0,encryptedAdTrackingData:(0,s.exists)(t,"encryptedAdTrackingData")?t.encryptedAdTrackingData:void 0}}function E(e){var t;return null==(t=e)?t:{displayName:(0,s.exists)(t,"displayName")?t.displayName:void 0,originalTopicName:(0,s.exists)(t,"originalTopicName")?t.originalTopicName:void 0}}function F(e){if(void 0!==e)return null===e?null:{TargetId:e.targetId,ItemType:e.itemType}}function G(e,t){return null==e?e:{previousPageCursor:(0,s.exists)(e,"previousPageCursor")?e.previousPageCursor:void 0,nextPageCursor:(0,s.exists)(e,"nextPageCursor")?e.nextPageCursor:void 0,data:(0,s.exists)(e,"data")?e.data.map(q):void 0}}var B=s.BaseAPI;function D(){return null!==B&&B.apply(this,arguments)||this}i(D,B),D.prototype.v1AssetsAssetIdBundlesGetRaw=function(e,t){return o(this,void 0,void 0,function(){var r,i,o;return n(this,function(n){switch(n.label){case 0:if(null===e.assetId||void 0===e.assetId)throw new s.RequiredError("assetId","Required parameter requestParameters.assetId was null or undefined when calling v1AssetsAssetIdBundlesGet.");return r={},void 0!==e.limit&&(r.limit=e.limit),void 0!==e.cursor&&(r.cursor=e.cursor),void 0!==e.sortOrder&&(r.sortOrder=e.sortOrder),i={},[4,this.request({path:"/v1/assets/{assetId}/bundles".replace("{".concat("assetId","}"),encodeURIComponent(String(e.assetId))),schemaPath:"/v1/assets/{assetId}/bundles",method:"GET",headers:i,query:r},t)];case 1:return o=n.sent(),[2,new s.JSONApiResponse(o,function(e){return null==e?e:{previousPageCursor:(0,s.exists)(e,"previousPageCursor")?e.previousPageCursor:void 0,nextPageCursor:(0,s.exists)(e,"nextPageCursor")?e.nextPageCursor:void 0,data:(0,s.exists)(e,"data")?e.data.map(c):void 0}})]}})})},D.prototype.v1AssetsAssetIdBundlesGet=function(e,t){return o(this,void 0,void 0,function(){return n(this,function(s){switch(s.label){case 0:return[4,this.v1AssetsAssetIdBundlesGetRaw(e,t)];case 1:return[4,s.sent().value()];case 2:return[2,s.sent()]}})})},D.prototype.v1BundlesBundleIdDetailsGetRaw=function(e,t){return o(this,void 0,void 0,function(){var r,i,o;return n(this,function(n){switch(n.label){case 0:if(null===e.bundleId||void 0===e.bundleId)throw new s.RequiredError("bundleId","Required parameter requestParameters.bundleId was null or undefined when calling v1BundlesBundleIdDetailsGet.");return r={},i={},[4,this.request({path:"/v1/bundles/{bundleId}/details".replace("{".concat("bundleId","}"),encodeURIComponent(String(e.bundleId))),schemaPath:"/v1/bundles/{bundleId}/details",method:"GET",headers:i,query:r},t)];case 1:return o=n.sent(),[2,new s.JSONApiResponse(o,function(e){return c(e)})]}})})},D.prototype.v1BundlesBundleIdDetailsGet=function(e,t){return o(this,void 0,void 0,function(){return n(this,function(s){switch(s.label){case 0:return[4,this.v1BundlesBundleIdDetailsGetRaw(e,t)];case 1:return[4,s.sent().value()];case 2:return[2,s.sent()]}})})},D.prototype.v1BundlesBundleIdRecommendationsGetRaw=function(e,t){return o(this,void 0,void 0,function(){var r,i,o;return n(this,function(n){switch(n.label){case 0:if(null===e.bundleId||void 0===e.bundleId)throw new s.RequiredError("bundleId","Required parameter requestParameters.bundleId was null or undefined when calling v1BundlesBundleIdRecommendationsGet.");return r={},void 0!==e.numItems&&(r.numItems=e.numItems),i={},[4,this.request({path:"/v1/bundles/{bundleId}/recommendations".replace("{".concat("bundleId","}"),encodeURIComponent(String(e.bundleId))),schemaPath:"/v1/bundles/{bundleId}/recommendations",method:"GET",headers:i,query:r},t)];case 1:return o=n.sent(),[2,new s.JSONApiResponse(o,function(e){return null==e?e:{data:(0,s.exists)(e,"data")?e.data.map(c):void 0}})]}})})},D.prototype.v1BundlesBundleIdRecommendationsGet=function(e,t){return o(this,void 0,void 0,function(){return n(this,function(s){switch(s.label){case 0:return[4,this.v1BundlesBundleIdRecommendationsGetRaw(e,t)];case 1:return[4,s.sent().value()];case 2:return[2,s.sent()]}})})},D.prototype.v1BundlesDetailsGetRaw=function(e,t){return o(this,void 0,void 0,function(){var r,i,o;return n(this,function(n){switch(n.label){case 0:if(null===e.bundleIds||void 0===e.bundleIds)throw new s.RequiredError("bundleIds","Required parameter requestParameters.bundleIds was null or undefined when calling v1BundlesDetailsGet.");return r={},e.bundleIds&&(r.bundleIds=e.bundleIds.join(s.COLLECTION_FORMATS.csv)),i={},[4,this.request({path:"/v1/bundles/details",schemaPath:"/v1/bundles/details",method:"GET",headers:i,query:r},t)];case 1:return o=n.sent(),[2,new s.JSONApiResponse(o,function(e){return e.map(c)})]}})})},D.prototype.v1BundlesDetailsGet=function(e,t){return o(this,void 0,void 0,function(){return n(this,function(s){switch(s.label){case 0:return[4,this.v1BundlesDetailsGetRaw(e,t)];case 1:return[4,s.sent().value()];case 2:return[2,s.sent()]}})})},D.prototype.v1UsersUserIdBundlesBundleTypeGetRaw=function(e,t){return o(this,void 0,void 0,function(){var r,i,o;return n(this,function(n){switch(n.label){case 0:if(null===e.userId||void 0===e.userId)throw new s.RequiredError("userId","Required parameter requestParameters.userId was null or undefined when calling v1UsersUserIdBundlesBundleTypeGet.");if(null===e.bundleType||void 0===e.bundleType)throw new s.RequiredError("bundleType","Required parameter requestParameters.bundleType was null or undefined when calling v1UsersUserIdBundlesBundleTypeGet.");if(null===e.cursor||void 0===e.cursor)throw new s.RequiredError("cursor","Required parameter requestParameters.cursor was null or undefined when calling v1UsersUserIdBundlesBundleTypeGet.");return r={},void 0!==e.cursor&&(r.cursor=e.cursor),void 0!==e.limit&&(r.limit=e.limit),void 0!==e.sortOrder&&(r.sortOrder=e.sortOrder),i={},[4,this.request({path:"/v1/users/{userId}/bundles/{bundleType}".replace("{".concat("userId","}"),encodeURIComponent(String(e.userId))).replace("{".concat("bundleType","}"),encodeURIComponent(String(e.bundleType))),schemaPath:"/v1/users/{userId}/bundles/{bundleType}",method:"GET",headers:i,query:r},t)];case 1:return o=n.sent(),[2,new s.JSONApiResponse(o,function(e){return G(e)})]}})})},D.prototype.v1UsersUserIdBundlesBundleTypeGet=function(e,t){return o(this,void 0,void 0,function(){return n(this,function(s){switch(s.label){case 0:return[4,this.v1UsersUserIdBundlesBundleTypeGetRaw(e,t)];case 1:return[4,s.sent().value()];case 2:return[2,s.sent()]}})})},D.prototype.v1UsersUserIdBundlesGetRaw=function(e,t){return o(this,void 0,void 0,function(){var r,i,o;return n(this,function(n){switch(n.label){case 0:if(null===e.userId||void 0===e.userId)throw new s.RequiredError("userId","Required parameter requestParameters.userId was null or undefined when calling v1UsersUserIdBundlesGet.");return r={},void 0!==e.cursor&&(r.cursor=e.cursor),void 0!==e.limit&&(r.limit=e.limit),void 0!==e.sortOrder&&(r.sortOrder=e.sortOrder),i={},[4,this.request({path:"/v1/users/{userId}/bundles".replace("{".concat("userId","}"),encodeURIComponent(String(e.userId))),schemaPath:"/v1/users/{userId}/bundles",method:"GET",headers:i,query:r},t)];case 1:return o=n.sent(),[2,new s.JSONApiResponse(o,function(e){return G(e)})]}})})},D.prototype.v1UsersUserIdBundlesGet=function(e,t){return o(this,void 0,void 0,function(){return n(this,function(s){switch(s.label){case 0:return[4,this.v1UsersUserIdBundlesGetRaw(e,t)];case 1:return[4,s.sent().value()];case 2:return[2,s.sent()]}})})};var O=function(e){function t(){return null!==e&&e.apply(this,arguments)||this}return i(t,e),t.prototype.v1CatalogCheckItemConfigurationAccessGetRaw=function(e,t){return o(this,void 0,void 0,function(){var r,i,o;return n(this,function(n){switch(n.label){case 0:if(null===e.itemId||void 0===e.itemId)throw new s.RequiredError("itemId","Required parameter requestParameters.itemId was null or undefined when calling v1CatalogCheckItemConfigurationAccessGet.");if(null===e.itemType||void 0===e.itemType)throw new s.RequiredError("itemType","Required parameter requestParameters.itemType was null or undefined when calling v1CatalogCheckItemConfigurationAccessGet.");return r={},void 0!==e.itemId&&(r.itemId=e.itemId),void 0!==e.itemType&&(r.itemType=e.itemType),i={},[4,this.request({path:"/v1/catalog/check-item-configuration-access",schemaPath:"/v1/catalog/check-item-configuration-access",method:"GET",headers:i,query:r},t)];case 1:return o=n.sent(),[2,new s.JSONApiResponse(o,function(e){return null==e?e:{isAllowed:(0,s.exists)(e,"isAllowed")?e.isAllowed:void 0}})]}})})},t.prototype.v1CatalogCheckItemConfigurationAccessGet=function(e,t){return o(this,void 0,void 0,function(){return n(this,function(s){switch(s.label){case 0:return[4,this.v1CatalogCheckItemConfigurationAccessGetRaw(e,t)];case 1:return[4,s.sent().value()];case 2:return[2,s.sent()]}})})},t.prototype.v1CatalogItemsDetailsPostRaw=function(e,t){return o(this,void 0,void 0,function(){var r,i,o;return n(this,function(n){switch(n.label){case 0:if(null===e.model||void 0===e.model)throw new s.RequiredError("model","Required parameter requestParameters.model was null or undefined when calling v1CatalogItemsDetailsPost.");return r={},(i={})["Content-Type"]="application/json",[4,this.request({path:"/v1/catalog/items/details",schemaPath:"/v1/catalog/items/details",method:"POST",headers:i,query:r,body:function(e){if(void 0!==e)return null===e?null:{items:void 0===e.items?void 0:e.items.map(A)}}(e.model)},t)];case 1:return o=n.sent(),[2,new s.JSONApiResponse(o,function(e){return null==e?e:{data:(0,s.exists)(e,"data")?e.data.map(T):void 0}})]}})})},t.prototype.v1CatalogItemsDetailsPost=function(e,t){return o(this,void 0,void 0,function(){return n(this,function(s){switch(s.label){case 0:return[4,this.v1CatalogItemsDetailsPostRaw(e,t)];case 1:return[4,s.sent().value()];case 2:return[2,s.sent()]}})})},t.prototype.v1CatalogItemsItemIdDetailsGetRaw=function(e,t){return o(this,void 0,void 0,function(){var r,i,o;return n(this,function(n){switch(n.label){case 0:if(null===e.itemId||void 0===e.itemId)throw new s.RequiredError("itemId","Required parameter requestParameters.itemId was null or undefined when calling v1CatalogItemsItemIdDetailsGet.");if(null===e.itemType||void 0===e.itemType)throw new s.RequiredError("itemType","Required parameter requestParameters.itemType was null or undefined when calling v1CatalogItemsItemIdDetailsGet.");return r={},void 0!==e.itemType&&(r.itemType=e.itemType),i={},[4,this.request({path:"/v1/catalog/items/{itemId}/details".replace("{".concat("itemId","}"),encodeURIComponent(String(e.itemId))),schemaPath:"/v1/catalog/items/{itemId}/details",method:"GET",headers:i,query:r},t)];case 1:return o=n.sent(),[2,new s.JSONApiResponse(o,function(e){return null==e?e:{rootPlaceId:(0,s.exists)(e,"rootPlaceId")?e.rootPlaceId:void 0,universeName:(0,s.exists)(e,"universeName")?e.universeName:void 0,itemCreatedUtc:(0,s.exists)(e,"itemCreatedUtc")?new Date(e.itemCreatedUtc):void 0,isPBR:(0,s.exists)(e,"isPBR")?e.isPBR:void 0,taxonomy:(0,s.exists)(e,"taxonomy")?e.taxonomy.map(x):void 0,discountInformation:(0,s.exists)(e,"discountInformation")?l(e.discountInformation):void 0,isHighDefinition:(0,s.exists)(e,"isHighDefinition")?e.isHighDefinition:void 0,expectedSellerId:(0,s.exists)(e,"expectedSellerId")?e.expectedSellerId:void 0,owned:(0,s.exists)(e,"owned")?e.owned:void 0,isPurchasable:(0,s.exists)(e,"isPurchasable")?e.isPurchasable:void 0,creatingUniverseId:(0,s.exists)(e,"creatingUniverseId")?e.creatingUniverseId:void 0,expirationTime:(0,s.exists)(e,"expirationTime")?new Date(e.expirationTime):void 0,id:(0,s.exists)(e,"id")?e.id:void 0,itemType:(0,s.exists)(e,"itemType")?e.itemType:void 0,assetType:(0,s.exists)(e,"assetType")?e.assetType:void 0,bundleType:(0,s.exists)(e,"bundleType")?e.bundleType:void 0,isRecolorable:(0,s.exists)(e,"isRecolorable")?e.isRecolorable:void 0,name:(0,s.exists)(e,"name")?e.name:void 0,description:(0,s.exists)(e,"description")?e.description:void 0,productId:(0,s.exists)(e,"productId")?e.productId:void 0,bundledItems:(0,s.exists)(e,"bundledItems")?e.bundledItems.map(d):void 0,itemStatus:(0,s.exists)(e,"itemStatus")?e.itemStatus:void 0,itemRestrictions:(0,s.exists)(e,"itemRestrictions")?e.itemRestrictions:void 0,creatorHasVerifiedBadge:(0,s.exists)(e,"creatorHasVerifiedBadge")?e.creatorHasVerifiedBadge:void 0,creatorType:(0,s.exists)(e,"creatorType")?e.creatorType:void 0,creatorTargetId:(0,s.exists)(e,"creatorTargetId")?e.creatorTargetId:void 0,creatorName:(0,s.exists)(e,"creatorName")?e.creatorName:void 0,price:(0,s.exists)(e,"price")?e.price:void 0,lowestPrice:(0,s.exists)(e,"lowestPrice")?e.lowestPrice:void 0,lowestResalePrice:(0,s.exists)(e,"lowestResalePrice")?e.lowestResalePrice:void 0,priceStatus:(0,s.exists)(e,"priceStatus")?e.priceStatus:void 0,unitsAvailableForConsumption:(0,s.exists)(e,"unitsAvailableForConsumption")?e.unitsAvailableForConsumption:void 0,favoriteCount:(0,s.exists)(e,"favoriteCount")?e.favoriteCount:void 0,offSaleDeadline:(0,s.exists)(e,"offSaleDeadline")?new Date(e.offSaleDeadline):void 0,collectibleItemId:(0,s.exists)(e,"collectibleItemId")?e.collectibleItemId:void 0,totalQuantity:(0,s.exists)(e,"totalQuantity")?e.totalQuantity:void 0,saleLocationType:(0,s.exists)(e,"saleLocationType")?e.saleLocationType:void 0,hasResellers:(0,s.exists)(e,"hasResellers")?e.hasResellers:void 0,isOffSale:(0,s.exists)(e,"isOffSale")?e.isOffSale:void 0,quantityLimitPerUser:(0,s.exists)(e,"quantityLimitPerUser")?e.quantityLimitPerUser:void 0,supportsHeadShapes:(0,s.exists)(e,"supportsHeadShapes")?e.supportsHeadShapes:void 0,timedOptions:(0,s.exists)(e,"timedOptions")?e.timedOptions.map(w):void 0}})]}})})},t.prototype.v1CatalogItemsItemIdDetailsGet=function(e,t){return o(this,void 0,void 0,function(){return n(this,function(s){switch(s.label){case 0:return[4,this.v1CatalogItemsItemIdDetailsGetRaw(e,t)];case 1:return[4,s.sent().value()];case 2:return[2,s.sent()]}})})},t.prototype.v1CatalogMetadataGetRaw=function(e){return o(this,void 0,void 0,function(){var t,r,i;return n(this,function(o){switch(o.label){case 0:return t={},r={},[4,this.request({path:"/v1/catalog/metadata",schemaPath:"/v1/catalog/metadata",method:"GET",headers:r,query:t},e)];case 1:return i=o.sent(),[2,new s.JSONApiResponse(i,function(e){return null==e?e:{numberOfCatalogItemsToDisplayOnSplash:(0,s.exists)(e,"numberOfCatalogItemsToDisplayOnSplash")?e.numberOfCatalogItemsToDisplayOnSplash:void 0,numberOfCatalogItemsToDisplayOnSplashOnPhone:(0,s.exists)(e,"numberOfCatalogItemsToDisplayOnSplashOnPhone")?e.numberOfCatalogItemsToDisplayOnSplashOnPhone:void 0,isCatalogSortsFromApiEnabled:(0,s.exists)(e,"isCatalogSortsFromApiEnabled")?e.isCatalogSortsFromApiEnabled:void 0,is3dInEachItemCardAbTestingEnabled:(0,s.exists)(e,"is3dInEachItemCardAbTestingEnabled")?e.is3dInEachItemCardAbTestingEnabled:void 0,is3dInEachItemCardEnabled:(0,s.exists)(e,"is3dInEachItemCardEnabled")?e.is3dInEachItemCardEnabled:void 0,timeoutOn3dThumbnailRequestInMs:(0,s.exists)(e,"timeoutOn3dThumbnailRequestInMs")?e.timeoutOn3dThumbnailRequestInMs:void 0,isPremiumPriceOnItemTilesEnabled:(0,s.exists)(e,"isPremiumPriceOnItemTilesEnabled")?e.isPremiumPriceOnItemTilesEnabled:void 0,isPremiumIconOnItemTilesEnabled:(0,s.exists)(e,"isPremiumIconOnItemTilesEnabled")?e.isPremiumIconOnItemTilesEnabled:void 0,isPremiumSortEnabled:(0,s.exists)(e,"isPremiumSortEnabled")?e.isPremiumSortEnabled:void 0,isJustinUiChangesEnabled:(0,s.exists)(e,"isJustinUiChangesEnabled")?e.isJustinUiChangesEnabled:void 0,isCategoryReorgEnabled:(0,s.exists)(e,"isCategoryReorgEnabled")?e.isCategoryReorgEnabled:void 0,lCEnabledInEditorAndCatalog:(0,s.exists)(e,"LCEnabledInEditorAndCatalog")?e.LCEnabledInEditorAndCatalog:void 0,isAutocompleteEnabled:(0,s.exists)(e,"isAutocompleteEnabled")?e.isAutocompleteEnabled:void 0,autocompleteOmniSearchNumToDisplay:(0,s.exists)(e,"autocompleteOmniSearchNumToDisplay")?e.autocompleteOmniSearchNumToDisplay:void 0,autocompleteAvatarSearchNumToDisplay:(0,s.exists)(e,"autocompleteAvatarSearchNumToDisplay")?e.autocompleteAvatarSearchNumToDisplay:void 0,isCatalogAdsRowOnRecommendedPageEnabled:(0,s.exists)(e,"isCatalogAdsRowOnRecommendedPageEnabled")?e.isCatalogAdsRowOnRecommendedPageEnabled:void 0,isDynamicHeadsEnabled:(0,s.exists)(e,"isDynamicHeadsEnabled")?e.isDynamicHeadsEnabled:void 0,categoryOptimizationEnabled:(0,s.exists)(e,"categoryOptimizationEnabled")?e.categoryOptimizationEnabled:void 0,isCollectiblesEnabled:(0,s.exists)(e,"isCollectiblesEnabled")?e.isCollectiblesEnabled:void 0,isCurrentUserAllowedToCreateShares:(0,s.exists)(e,"isCurrentUserAllowedToCreateShares")?e.isCurrentUserAllowedToCreateShares:void 0,isRemoveAllSubcategoryEnabled:(0,s.exists)(e,"isRemoveAllSubcategoryEnabled")?e.isRemoveAllSubcategoryEnabled:void 0,isRecentMarketplaceUser:(0,s.exists)(e,"isRecentMarketplaceUser")?e.isRecentMarketplaceUser:void 0}})]}})})},t.prototype.v1CatalogMetadataGet=function(e){return o(this,void 0,void 0,function(){return n(this,function(t){switch(t.label){case 0:return[4,this.v1CatalogMetadataGetRaw(e)];case 1:return[4,t.sent().value()];case 2:return[2,t.sent()]}})})},t.prototype.v1CatalogSponsoredItemsGetRaw=function(e,t){return o(this,void 0,void 0,function(){var r,i,o;return n(this,function(n){switch(n.label){case 0:if(null===e.count||void 0===e.count)throw new s.RequiredError("count","Required parameter requestParameters.count was null or undefined when calling v1CatalogSponsoredItemsGet.");if(null===e.catalogCategoryType||void 0===e.catalogCategoryType)throw new s.RequiredError("catalogCategoryType","Required parameter requestParameters.catalogCategoryType was null or undefined when calling v1CatalogSponsoredItemsGet.");if(null===e.placementLocation||void 0===e.placementLocation)throw new s.RequiredError("placementLocation","Required parameter requestParameters.placementLocation was null or undefined when calling v1CatalogSponsoredItemsGet.");return r={},void 0!==e.count&&(r.Count=e.count),void 0!==e.catalogCategoryType&&(r.CatalogCategoryType=e.catalogCategoryType),void 0!==e.placementLocation&&(r.PlacementLocation=e.placementLocation),i={},[4,this.request({path:"/v1/catalog/sponsored-items",schemaPath:"/v1/catalog/sponsored-items",method:"GET",headers:i,query:r},t)];case 1:return o=n.sent(),[2,new s.JSONApiResponse(o,function(e){return null==e?e:{data:(0,s.exists)(e,"data")?e.data.map(U):void 0}})]}})})},t.prototype.v1CatalogSponsoredItemsGet=function(e,t){return o(this,void 0,void 0,function(){return n(this,function(s){switch(s.label){case 0:return[4,this.v1CatalogSponsoredItemsGetRaw(e,t)];case 1:return[4,s.sent().value()];case 2:return[2,s.sent()]}})})},t}(s.BaseAPI),N=(function(e){function t(){return null!==e&&e.apply(this,arguments)||this}i(t,e),t.prototype.v1AssetToCategoryGetRaw=function(e){return o(this,void 0,void 0,function(){var t,r,i;return n(this,function(o){switch(o.label){case 0:return t={},r={},[4,this.request({path:"/v1/asset-to-category",schemaPath:"/v1/asset-to-category",method:"GET",headers:r,query:t},e)];case 1:return i=o.sent(),[2,new s.JSONApiResponse(i)]}})})},t.prototype.v1AssetToCategoryGet=function(e){return o(this,void 0,void 0,function(){return n(this,function(t){switch(t.label){case 0:return[4,this.v1AssetToCategoryGetRaw(e)];case 1:return[4,t.sent().value()];case 2:return[2,t.sent()]}})})},t.prototype.v1AssetToSubcategoryGetRaw=function(e){return o(this,void 0,void 0,function(){var t,r,i;return n(this,function(o){switch(o.label){case 0:return t={},r={},[4,this.request({path:"/v1/asset-to-subcategory",schemaPath:"/v1/asset-to-subcategory",method:"GET",headers:r,query:t},e)];case 1:return i=o.sent(),[2,new s.JSONApiResponse(i)]}})})},t.prototype.v1AssetToSubcategoryGet=function(e){return o(this,void 0,void 0,function(){return n(this,function(t){switch(t.label){case 0:return[4,this.v1AssetToSubcategoryGetRaw(e)];case 1:return[4,t.sent().value()];case 2:return[2,t.sent()]}})})},t.prototype.v1CategoriesGetRaw=function(e){return o(this,void 0,void 0,function(){var t,r,i;return n(this,function(o){switch(o.label){case 0:return t={},r={},[4,this.request({path:"/v1/categories",schemaPath:"/v1/categories",method:"GET",headers:r,query:t},e)];case 1:return i=o.sent(),[2,new s.JSONApiResponse(i,function(e){return e.map(m)})]}})})},t.prototype.v1CategoriesGet=function(e){return o(this,void 0,void 0,function(){return n(this,function(t){switch(t.label){case 0:return[4,this.v1CategoriesGetRaw(e)];case 1:return[4,t.sent().value()];case 2:return[2,t.sent()]}})})},t.prototype.v1SubcategoriesGetRaw=function(e){return o(this,void 0,void 0,function(){var t,r,i;return n(this,function(o){switch(o.label){case 0:return t={},r={},[4,this.request({path:"/v1/subcategories",schemaPath:"/v1/subcategories",method:"GET",headers:r,query:t},e)];case 1:return i=o.sent(),[2,new s.JSONApiResponse(i)]}})})},t.prototype.v1SubcategoriesGet=function(e){return o(this,void 0,void 0,function(){return n(this,function(t){switch(t.label){case 0:return[4,this.v1SubcategoriesGetRaw(e)];case 1:return[4,t.sent().value()];case 2:return[2,t.sent()]}})})}}(s.BaseAPI),function(e){function t(){return null!==e&&e.apply(this,arguments)||this}i(t,e),t.prototype.v1FavoritesAssetsAssetIdCountGetRaw=function(e,t){return o(this,void 0,void 0,function(){var r,i,o;return n(this,function(n){switch(n.label){case 0:if(null===e.assetId||void 0===e.assetId)throw new s.RequiredError("assetId","Required parameter requestParameters.assetId was null or undefined when calling v1FavoritesAssetsAssetIdCountGet.");return r={},i={},[4,this.request({path:"/v1/favorites/assets/{assetId}/count".replace("{".concat("assetId","}"),encodeURIComponent(String(e.assetId))),schemaPath:"/v1/favorites/assets/{assetId}/count",method:"GET",headers:i,query:r},t)];case 1:return o=n.sent(),this.isJsonMime(o.headers.get("content-type"))?[2,new s.JSONApiResponse(o)]:[2,new s.TextApiResponse(o)]}})})},t.prototype.v1FavoritesAssetsAssetIdCountGet=function(e,t){return o(this,void 0,void 0,function(){return n(this,function(s){switch(s.label){case 0:return[4,this.v1FavoritesAssetsAssetIdCountGetRaw(e,t)];case 1:return[4,s.sent().value()];case 2:return[2,s.sent()]}})})},t.prototype.v1FavoritesBundlesBundleIdCountGetRaw=function(e,t){return o(this,void 0,void 0,function(){var r,i,o;return n(this,function(n){switch(n.label){case 0:if(null===e.bundleId||void 0===e.bundleId)throw new s.RequiredError("bundleId","Required parameter requestParameters.bundleId was null or undefined when calling v1FavoritesBundlesBundleIdCountGet.");return r={},i={},[4,this.request({path:"/v1/favorites/bundles/{bundleId}/count".replace("{".concat("bundleId","}"),encodeURIComponent(String(e.bundleId))),schemaPath:"/v1/favorites/bundles/{bundleId}/count",method:"GET",headers:i,query:r},t)];case 1:return o=n.sent(),this.isJsonMime(o.headers.get("content-type"))?[2,new s.JSONApiResponse(o)]:[2,new s.TextApiResponse(o)]}})})},t.prototype.v1FavoritesBundlesBundleIdCountGet=function(e,t){return o(this,void 0,void 0,function(){return n(this,function(s){switch(s.label){case 0:return[4,this.v1FavoritesBundlesBundleIdCountGetRaw(e,t)];case 1:return[4,s.sent().value()];case 2:return[2,s.sent()]}})})},t.prototype.v1FavoritesUsersUserIdAssetsAssetIdFavoriteDeleteRaw=function(e,t){return o(this,void 0,void 0,function(){var r,i,o;return n(this,function(n){switch(n.label){case 0:if(null===e.userId||void 0===e.userId)throw new s.RequiredError("userId","Required parameter requestParameters.userId was null or undefined when calling v1FavoritesUsersUserIdAssetsAssetIdFavoriteDelete.");if(null===e.assetId||void 0===e.assetId)throw new s.RequiredError("assetId","Required parameter requestParameters.assetId was null or undefined when calling v1FavoritesUsersUserIdAssetsAssetIdFavoriteDelete.");return r={},i={},[4,this.request({path:"/v1/favorites/users/{userId}/assets/{assetId}/favorite".replace("{".concat("userId","}"),encodeURIComponent(String(e.userId))).replace("{".concat("assetId","}"),encodeURIComponent(String(e.assetId))),schemaPath:"/v1/favorites/users/{userId}/assets/{assetId}/favorite",method:"DELETE",headers:i,query:r},t)];case 1:return o=n.sent(),[2,new s.JSONApiResponse(o)]}})})},t.prototype.v1FavoritesUsersUserIdAssetsAssetIdFavoriteDelete=function(e,t){return o(this,void 0,void 0,function(){return n(this,function(s){switch(s.label){case 0:return[4,this.v1FavoritesUsersUserIdAssetsAssetIdFavoriteDeleteRaw(e,t)];case 1:return[4,s.sent().value()];case 2:return[2,s.sent()]}})})},t.prototype.v1FavoritesUsersUserIdAssetsAssetIdFavoriteGetRaw=function(e,t){return o(this,void 0,void 0,function(){var r,i,o;return n(this,function(n){switch(n.label){case 0:if(null===e.userId||void 0===e.userId)throw new s.RequiredError("userId","Required parameter requestParameters.userId was null or undefined when calling v1FavoritesUsersUserIdAssetsAssetIdFavoriteGet.");if(null===e.assetId||void 0===e.assetId)throw new s.RequiredError("assetId","Required parameter requestParameters.assetId was null or undefined when calling v1FavoritesUsersUserIdAssetsAssetIdFavoriteGet.");return r={},i={},[4,this.request({path:"/v1/favorites/users/{userId}/assets/{assetId}/favorite".replace("{".concat("userId","}"),encodeURIComponent(String(e.userId))).replace("{".concat("assetId","}"),encodeURIComponent(String(e.assetId))),schemaPath:"/v1/favorites/users/{userId}/assets/{assetId}/favorite",method:"GET",headers:i,query:r},t)];case 1:return o=n.sent(),[2,new s.JSONApiResponse(o,function(e){return null==e?e:{assetId:(0,s.exists)(e,"assetId")?e.assetId:void 0,userId:(0,s.exists)(e,"userId")?e.userId:void 0,created:(0,s.exists)(e,"created")?new Date(e.created):void 0}})]}})})},t.prototype.v1FavoritesUsersUserIdAssetsAssetIdFavoriteGet=function(e,t){return o(this,void 0,void 0,function(){return n(this,function(s){switch(s.label){case 0:return[4,this.v1FavoritesUsersUserIdAssetsAssetIdFavoriteGetRaw(e,t)];case 1:return[4,s.sent().value()];case 2:return[2,s.sent()]}})})},t.prototype.v1FavoritesUsersUserIdAssetsAssetIdFavoritePostRaw=function(e,t){return o(this,void 0,void 0,function(){var r,i,o;return n(this,function(n){switch(n.label){case 0:if(null===e.userId||void 0===e.userId)throw new s.RequiredError("userId","Required parameter requestParameters.userId was null or undefined when calling v1FavoritesUsersUserIdAssetsAssetIdFavoritePost.");if(null===e.assetId||void 0===e.assetId)throw new s.RequiredError("assetId","Required parameter requestParameters.assetId was null or undefined when calling v1FavoritesUsersUserIdAssetsAssetIdFavoritePost.");return r={},i={},[4,this.request({path:"/v1/favorites/users/{userId}/assets/{assetId}/favorite".replace("{".concat("userId","}"),encodeURIComponent(String(e.userId))).replace("{".concat("assetId","}"),encodeURIComponent(String(e.assetId))),schemaPath:"/v1/favorites/users/{userId}/assets/{assetId}/favorite",method:"POST",headers:i,query:r},t)];case 1:return o=n.sent(),[2,new s.JSONApiResponse(o)]}})})},t.prototype.v1FavoritesUsersUserIdAssetsAssetIdFavoritePost=function(e,t){return o(this,void 0,void 0,function(){return n(this,function(s){switch(s.label){case 0:return[4,this.v1FavoritesUsersUserIdAssetsAssetIdFavoritePostRaw(e,t)];case 1:return[4,s.sent().value()];case 2:return[2,s.sent()]}})})},t.prototype.v1FavoritesUsersUserIdBundlesBundleIdFavoriteDeleteRaw=function(e,t){return o(this,void 0,void 0,function(){var r,i,o;return n(this,function(n){switch(n.label){case 0:if(null===e.userId||void 0===e.userId)throw new s.RequiredError("userId","Required parameter requestParameters.userId was null or undefined when calling v1FavoritesUsersUserIdBundlesBundleIdFavoriteDelete.");if(null===e.bundleId||void 0===e.bundleId)throw new s.RequiredError("bundleId","Required parameter requestParameters.bundleId was null or undefined when calling v1FavoritesUsersUserIdBundlesBundleIdFavoriteDelete.");return r={},i={},[4,this.request({path:"/v1/favorites/users/{userId}/bundles/{bundleId}/favorite".replace("{".concat("userId","}"),encodeURIComponent(String(e.userId))).replace("{".concat("bundleId","}"),encodeURIComponent(String(e.bundleId))),schemaPath:"/v1/favorites/users/{userId}/bundles/{bundleId}/favorite",method:"DELETE",headers:i,query:r},t)];case 1:return o=n.sent(),[2,new s.JSONApiResponse(o)]}})})},t.prototype.v1FavoritesUsersUserIdBundlesBundleIdFavoriteDelete=function(e,t){return o(this,void 0,void 0,function(){return n(this,function(s){switch(s.label){case 0:return[4,this.v1FavoritesUsersUserIdBundlesBundleIdFavoriteDeleteRaw(e,t)];case 1:return[4,s.sent().value()];case 2:return[2,s.sent()]}})})},t.prototype.v1FavoritesUsersUserIdBundlesBundleIdFavoriteGetRaw=function(e,t){return o(this,void 0,void 0,function(){var r,i,o;return n(this,function(n){switch(n.label){case 0:if(null===e.userId||void 0===e.userId)throw new s.RequiredError("userId","Required parameter requestParameters.userId was null or undefined when calling v1FavoritesUsersUserIdBundlesBundleIdFavoriteGet.");if(null===e.bundleId||void 0===e.bundleId)throw new s.RequiredError("bundleId","Required parameter requestParameters.bundleId was null or undefined when calling v1FavoritesUsersUserIdBundlesBundleIdFavoriteGet.");return r={},i={},[4,this.request({path:"/v1/favorites/users/{userId}/bundles/{bundleId}/favorite".replace("{".concat("userId","}"),encodeURIComponent(String(e.userId))).replace("{".concat("bundleId","}"),encodeURIComponent(String(e.bundleId))),schemaPath:"/v1/favorites/users/{userId}/bundles/{bundleId}/favorite",method:"GET",headers:i,query:r},t)];case 1:return o=n.sent(),[2,new s.JSONApiResponse(o,function(e){return null==e?e:{bundleId:(0,s.exists)(e,"bundleId")?e.bundleId:void 0,userId:(0,s.exists)(e,"userId")?e.userId:void 0,created:(0,s.exists)(e,"created")?new Date(e.created):void 0}})]}})})},t.prototype.v1FavoritesUsersUserIdBundlesBundleIdFavoriteGet=function(e,t){return o(this,void 0,void 0,function(){return n(this,function(s){switch(s.label){case 0:return[4,this.v1FavoritesUsersUserIdBundlesBundleIdFavoriteGetRaw(e,t)];case 1:return[4,s.sent().value()];case 2:return[2,s.sent()]}})})},t.prototype.v1FavoritesUsersUserIdBundlesBundleIdFavoritePostRaw=function(e,t){return o(this,void 0,void 0,function(){var r,i,o;return n(this,function(n){switch(n.label){case 0:if(null===e.userId||void 0===e.userId)throw new s.RequiredError("userId","Required parameter requestParameters.userId was null or undefined when calling v1FavoritesUsersUserIdBundlesBundleIdFavoritePost.");if(null===e.bundleId||void 0===e.bundleId)throw new s.RequiredError("bundleId","Required parameter requestParameters.bundleId was null or undefined when calling v1FavoritesUsersUserIdBundlesBundleIdFavoritePost.");return r={},i={},[4,this.request({path:"/v1/favorites/users/{userId}/bundles/{bundleId}/favorite".replace("{".concat("userId","}"),encodeURIComponent(String(e.userId))).replace("{".concat("bundleId","}"),encodeURIComponent(String(e.bundleId))),schemaPath:"/v1/favorites/users/{userId}/bundles/{bundleId}/favorite",method:"POST",headers:i,query:r},t)];case 1:return o=n.sent(),[2,new s.JSONApiResponse(o)]}})})},t.prototype.v1FavoritesUsersUserIdBundlesBundleIdFavoritePost=function(e,t){return o(this,void 0,void 0,function(){return n(this,function(s){switch(s.label){case 0:return[4,this.v1FavoritesUsersUserIdBundlesBundleIdFavoritePostRaw(e,t)];case 1:return[4,s.sent().value()];case 2:return[2,s.sent()]}})})},t.prototype.v1FavoritesUsersUserIdFavoritesAssetTypeIdAssetsGetRaw=function(e,t){return o(this,void 0,void 0,function(){var r,i,o;return n(this,function(n){switch(n.label){case 0:if(null===e.userId||void 0===e.userId)throw new s.RequiredError("userId","Required parameter requestParameters.userId was null or undefined when calling v1FavoritesUsersUserIdFavoritesAssetTypeIdAssetsGet.");if(null===e.assetTypeId||void 0===e.assetTypeId)throw new s.RequiredError("assetTypeId","Required parameter requestParameters.assetTypeId was null or undefined when calling v1FavoritesUsersUserIdFavoritesAssetTypeIdAssetsGet.");return r={},void 0!==e.limit&&(r.limit=e.limit),void 0!==e.cursor&&(r.cursor=e.cursor),void 0!==e.sortOrder&&(r.sortOrder=e.sortOrder),i={},[4,this.request({path:"/v1/favorites/users/{userId}/favorites/{assetTypeId}/assets".replace("{".concat("userId","}"),encodeURIComponent(String(e.userId))).replace("{".concat("assetTypeId","}"),encodeURIComponent(String(e.assetTypeId))),schemaPath:"/v1/favorites/users/{userId}/favorites/{assetTypeId}/assets",method:"GET",headers:i,query:r},t)];case 1:return o=n.sent(),[2,new s.JSONApiResponse(o,function(e){return null==e?e:{previousPageCursor:(0,s.exists)(e,"previousPageCursor")?e.previousPageCursor:void 0,nextPageCursor:(0,s.exists)(e,"nextPageCursor")?e.nextPageCursor:void 0,data:(0,s.exists)(e,"data")?e.data.map(R):void 0}})]}})})},t.prototype.v1FavoritesUsersUserIdFavoritesAssetTypeIdAssetsGet=function(e,t){return o(this,void 0,void 0,function(){return n(this,function(s){switch(s.label){case 0:return[4,this.v1FavoritesUsersUserIdFavoritesAssetTypeIdAssetsGetRaw(e,t)];case 1:return[4,s.sent().value()];case 2:return[2,s.sent()]}})})},t.prototype.v1FavoritesUsersUserIdFavoritesSubtypeIdBundlesGetRaw=function(e,t){return o(this,void 0,void 0,function(){var r,i,o;return n(this,function(n){switch(n.label){case 0:if(null===e.userId||void 0===e.userId)throw new s.RequiredError("userId","Required parameter requestParameters.userId was null or undefined when calling v1FavoritesUsersUserIdFavoritesSubtypeIdBundlesGet.");if(null===e.subtypeId||void 0===e.subtypeId)throw new s.RequiredError("subtypeId","Required parameter requestParameters.subtypeId was null or undefined when calling v1FavoritesUsersUserIdFavoritesSubtypeIdBundlesGet.");return r={},void 0!==e.itemsPerPage&&(r.itemsPerPage=e.itemsPerPage),void 0!==e.cursor&&(r.cursor=e.cursor),void 0!==e.isPrevious&&(r.isPrevious=e.isPrevious),i={},[4,this.request({path:"/v1/favorites/users/{userId}/favorites/{subtypeId}/bundles".replace("{".concat("userId","}"),encodeURIComponent(String(e.userId))).replace("{".concat("subtypeId","}"),encodeURIComponent(String(e.subtypeId))),schemaPath:"/v1/favorites/users/{userId}/favorites/{subtypeId}/bundles",method:"GET",headers:i,query:r},t)];case 1:return o=n.sent(),[2,new s.JSONApiResponse(o,function(e){return null==e?e:{favorites:(0,s.exists)(e,"favorites")?e.favorites.map(c):void 0,moreFavorites:(0,s.exists)(e,"moreFavorites")?e.moreFavorites:void 0,nextCursor:(0,s.exists)(e,"nextCursor")?e.nextCursor:void 0,previousCursor:(0,s.exists)(e,"previousCursor")?e.previousCursor:void 0}})]}})})},t.prototype.v1FavoritesUsersUserIdFavoritesSubtypeIdBundlesGet=function(e,t){return o(this,void 0,void 0,function(){return n(this,function(s){switch(s.label){case 0:return[4,this.v1FavoritesUsersUserIdFavoritesSubtypeIdBundlesGetRaw(e,t)];case 1:return[4,s.sent().value()];case 2:return[2,s.sent()]}})})}}(s.BaseAPI),function(e){function t(){return null!==e&&e.apply(this,arguments)||this}i(t,e),t.prototype.v1RecommendationsMetadataGetRaw=function(e,t){return o(this,void 0,void 0,function(){var r,i,o;return n(this,function(n){switch(n.label){case 0:return r={},void 0!==e.page&&(r.page=e.page),i={},[4,this.request({path:"/v1/recommendations/metadata",schemaPath:"/v1/recommendations/metadata",method:"GET",headers:i,query:r},t)];case 1:return o=n.sent(),[2,new s.JSONApiResponse(o,function(e){return null==e?e:{numOfRecommendationsDisplayed:(0,s.exists)(e,"numOfRecommendationsDisplayed")?e.numOfRecommendationsDisplayed:void 0,numOfRecommendationsRetrieved:(0,s.exists)(e,"numOfRecommendationsRetrieved")?e.numOfRecommendationsRetrieved:void 0,subject:(0,s.exists)(e,"subject")?e.subject:void 0,isV2EndpointEnabled:(0,s.exists)(e,"isV2EndpointEnabled")?e.isV2EndpointEnabled:void 0}})]}})})},t.prototype.v1RecommendationsMetadataGet=function(){return o(this,arguments,void 0,function(e,t){return void 0===e&&(e={}),n(this,function(s){switch(s.label){case 0:return[4,this.v1RecommendationsMetadataGetRaw(e,t)];case 1:return[4,s.sent().value()];case 2:return[2,s.sent()]}})})}}(s.BaseAPI),function(e){function t(){return null!==e&&e.apply(this,arguments)||this}return i(t,e),t.prototype.v1SearchItemsDetailsGetRaw=function(e,t){return o(this,void 0,void 0,function(){var r,i,o;return n(this,function(n){switch(n.label){case 0:return r={},void 0!==e.category&&(r.Category=e.category),void 0!==e.subcategory&&(r.Subcategory=e.subcategory),void 0!==e.sortAggregation&&(r.SortAggregation=e.sortAggregation),void 0!==e.sortType&&(r.SortType=e.sortType),void 0!==e.creatorType&&(r.CreatorType=e.creatorType),void 0!==e.creatorTargetId&&(r.CreatorTargetId=e.creatorTargetId),void 0!==e.creatorName&&(r.CreatorName=e.creatorName),void 0!==e.maxPrice&&(r.MaxPrice=e.maxPrice),void 0!==e.minPrice&&(r.MinPrice=e.minPrice),void 0!==e.keyword&&(r.Keyword=e.keyword),void 0!==e.includeNotForSale&&(r.IncludeNotForSale=e.includeNotForSale),void 0!==e.triggeredByTopicDiscovery&&(r.TriggeredByTopicDiscovery=e.triggeredByTopicDiscovery),void 0!==e.salesTypeFilter&&(r.SalesTypeFilter=e.salesTypeFilter),void 0!==e.topics&&(r.Topics=e.topics),void 0!==e.limit&&(r.limit=e.limit),void 0!==e.cursor&&(r.cursor=e.cursor),void 0!==e.sortOrder&&(r.sortOrder=e.sortOrder),i={},[4,this.request({path:"/v1/search/items/details",schemaPath:"/v1/search/items/details",method:"GET",headers:i,query:r},t)];case 1:return o=n.sent(),[2,new s.JSONApiResponse(o,function(e){return null==e?e:{keyword:(0,s.exists)(e,"keyword")?e.keyword:void 0,elasticsearchDebugInfo:(0,s.exists)(e,"elasticsearchDebugInfo")?P(e.elasticsearchDebugInfo):void 0,previousPageCursor:(0,s.exists)(e,"previousPageCursor")?e.previousPageCursor:void 0,nextPageCursor:(0,s.exists)(e,"nextPageCursor")?e.nextPageCursor:void 0,data:(0,s.exists)(e,"data")?e.data.map(R):void 0}})]}})})},t.prototype.v1SearchItemsDetailsGet=function(){return o(this,arguments,void 0,function(e,t){return void 0===e&&(e={}),n(this,function(s){switch(s.label){case 0:return[4,this.v1SearchItemsDetailsGetRaw(e,t)];case 1:return[4,s.sent().value()];case 2:return[2,s.sent()]}})})},t.prototype.v1SearchItemsGetRaw=function(e,t){return o(this,void 0,void 0,function(){var r,i,o;return n(this,function(n){switch(n.label){case 0:if(null===e.category||void 0===e.category)throw new s.RequiredError("category","Required parameter requestParameters.category was null or undefined when calling v1SearchItemsGet.");if(null===e.subcategory||void 0===e.subcategory)throw new s.RequiredError("subcategory","Required parameter requestParameters.subcategory was null or undefined when calling v1SearchItemsGet.");return r={},void 0!==e.category&&(r.Category=e.category),void 0!==e.subcategory&&(r.Subcategory=e.subcategory),void 0!==e.sortAggregation&&(r.SortAggregation=e.sortAggregation),void 0!==e.sortType&&(r.SortType=e.sortType),void 0!==e.creatorType&&(r.CreatorType=e.creatorType),void 0!==e.creatorTargetId&&(r.CreatorTargetId=e.creatorTargetId),void 0!==e.creatorName&&(r.CreatorName=e.creatorName),void 0!==e.maxPrice&&(r.MaxPrice=e.maxPrice),void 0!==e.minPrice&&(r.MinPrice=e.minPrice),void 0!==e.keyword&&(r.Keyword=e.keyword),void 0!==e.includeNotForSale&&(r.IncludeNotForSale=e.includeNotForSale),void 0!==e.triggeredByTopicDiscovery&&(r.TriggeredByTopicDiscovery=e.triggeredByTopicDiscovery),void 0!==e.salesTypeFilter&&(r.SalesTypeFilter=e.salesTypeFilter),void 0!==e.topics&&(r.Topics=e.topics),void 0!==e.limit&&(r.limit=e.limit),void 0!==e.cursor&&(r.cursor=e.cursor),void 0!==e.sortOrder&&(r.sortOrder=e.sortOrder),i={},[4,this.request({path:"/v1/search/items",schemaPath:"/v1/search/items",method:"GET",headers:i,query:r},t)];case 1:return o=n.sent(),[2,new s.JSONApiResponse(o,function(e){return null==e?e:{keyword:(0,s.exists)(e,"keyword")?e.keyword:void 0,elasticsearchDebugInfo:(0,s.exists)(e,"elasticsearchDebugInfo")?P(e.elasticsearchDebugInfo):void 0,previousPageCursor:(0,s.exists)(e,"previousPageCursor")?e.previousPageCursor:void 0,nextPageCursor:(0,s.exists)(e,"nextPageCursor")?e.nextPageCursor:void 0,data:(0,s.exists)(e,"data")?e.data.map(S):void 0}})]}})})},t.prototype.v1SearchItemsGet=function(e,t){return o(this,void 0,void 0,function(){return n(this,function(s){switch(s.label){case 0:return[4,this.v1SearchItemsGetRaw(e,t)];case 1:return[4,s.sent().value()];case 2:return[2,s.sent()]}})})},t.prototype.v1SearchNavigationMenuItemsGetRaw=function(e){return o(this,void 0,void 0,function(){var t,r,i;return n(this,function(o){switch(o.label){case 0:return t={},r={},[4,this.request({path:"/v1/search/navigation-menu-items",schemaPath:"/v1/search/navigation-menu-items",method:"GET",headers:r,query:t},e)];case 1:return i=o.sent(),[2,new s.JSONApiResponse(i,function(e){var t;return null==e?e:{categories:(0,s.exists)(e,"categories")?e.categories.map(m):void 0,genres:(0,s.exists)(e,"genres")?e.genres.map(I):void 0,sortMenu:(0,s.exists)(e,"sortMenu")?null==(t=e.sortMenu)?t:{sortOptions:(0,s.exists)(t,"sortOptions")?t.sortOptions.map(b):void 0,sortAggregations:(0,s.exists)(t,"sortAggregations")?t.sortAggregations.map(g):void 0}:void 0,creatorFilters:(0,s.exists)(e,"creatorFilters")?e.creatorFilters.map(h):void 0,priceFilters:(0,s.exists)(e,"priceFilters")?e.priceFilters.map(f):void 0,defaultGearSubcategory:(0,s.exists)(e,"defaultGearSubcategory")?e.defaultGearSubcategory:void 0,defaultCategory:(0,s.exists)(e,"defaultCategory")?e.defaultCategory:void 0,defaultCategoryIdForRecommendedSearch:(0,s.exists)(e,"defaultCategoryIdForRecommendedSearch")?e.defaultCategoryIdForRecommendedSearch:void 0,defaultCreator:(0,s.exists)(e,"defaultCreator")?e.defaultCreator:void 0,defaultCurrency:(0,s.exists)(e,"defaultCurrency")?e.defaultCurrency:void 0,defaultSortType:(0,s.exists)(e,"defaultSortType")?e.defaultSortType:void 0,defaultSortAggregation:(0,s.exists)(e,"defaultSortAggregation")?e.defaultSortAggregation:void 0,categoriesWithCreator:(0,s.exists)(e,"categoriesWithCreator")?e.categoriesWithCreator:void 0,isGenreAllowed:(0,s.exists)(e,"isGenreAllowed")?e.isGenreAllowed:void 0,robloxUserId:(0,s.exists)(e,"robloxUserId")?e.robloxUserId:void 0,robloxUserName:(0,s.exists)(e,"robloxUserName")?e.robloxUserName:void 0,gearSubcategory:(0,s.exists)(e,"gearSubcategory")?e.gearSubcategory:void 0,allCategories:(0,s.exists)(e,"allCategories")?e.allCategories:void 0,freeFilter:(0,s.exists)(e,"freeFilter")?e.freeFilter:void 0,customRobuxFilter:(0,s.exists)(e,"customRobuxFilter")?e.customRobuxFilter:void 0,robuxFilter:(0,s.exists)(e,"robuxFilter")?e.robuxFilter:void 0,salesTypeFilters:(0,s.exists)(e,"salesTypeFilters")?e.salesTypeFilters.map(y):void 0}})]}})})},t.prototype.v1SearchNavigationMenuItemsGet=function(e){return o(this,void 0,void 0,function(){return n(this,function(t){switch(t.label){case 0:return[4,this.v1SearchNavigationMenuItemsGetRaw(e)];case 1:return[4,t.sent().value()];case 2:return[2,t.sent()]}})})},t}(s.BaseAPI));(function(e){function t(){return null!==e&&e.apply(this,arguments)||this}i(t,e),t.prototype.v1TopicGetTopicsPostRaw=function(e,t){return o(this,void 0,void 0,function(){var r,i,o;return n(this,function(n){switch(n.label){case 0:if(null===e.model||void 0===e.model)throw new s.RequiredError("model","Required parameter requestParameters.model was null or undefined when calling v1TopicGetTopicsPost.");return r={},(i={})["Content-Type"]="application/json",[4,this.request({path:"/v1/topic/get-topics",schemaPath:"/v1/topic/get-topics",method:"POST",headers:i,query:r,body:function(e){if(void 0!==e)return null===e?null:{items:void 0===e.items?void 0:e.items.map(F),selectTopics:e.selectTopics,inputQuery:e.inputQuery,maxResult:e.maxResult,genderType:e.genderType}}(e.model)},t)];case 1:return o=n.sent(),[2,new s.JSONApiResponse(o,function(e){var t;return null==e?e:{topics:(0,s.exists)(e,"topics")?e.topics.map(E):void 0,error:(0,s.exists)(e,"error")?null==(t=e.error)?t:{message:(0,s.exists)(t,"Message")?t.Message:void 0,code:(0,s.exists)(t,"Code")?t.Code:void 0}:void 0}})]}})})},t.prototype.v1TopicGetTopicsPost=function(e,t){return o(this,void 0,void 0,function(){return n(this,function(s){switch(s.label){case 0:return[4,this.v1TopicGetTopicsPostRaw(e,t)];case 1:return[4,s.sent().value()];case 2:return[2,s.sent()]}})})},t.prototype.v1TopicMetadataGetRaw=function(e){return o(this,void 0,void 0,function(){var t,r,i;return n(this,function(o){switch(o.label){case 0:return t={},r={},[4,this.request({path:"/v1/topic/metadata",schemaPath:"/v1/topic/metadata",method:"GET",headers:r,query:t},e)];case 1:return i=o.sent(),[2,new s.JSONApiResponse(i,function(e){return null==e?e:{numOfItemsForTags:(0,s.exists)(e,"numOfItemsForTags")?e.numOfItemsForTags:void 0,enableTopicDiscoveryFlow:(0,s.exists)(e,"enableTopicDiscoveryFlow")?e.enableTopicDiscoveryFlow:void 0}})]}})})},t.prototype.v1TopicMetadataGet=function(e){return o(this,void 0,void 0,function(){return n(this,function(t){switch(t.label){case 0:return[4,this.v1TopicMetadataGetRaw(e)];case 1:return[4,t.sent().value()];case 2:return[2,t.sent()]}})})}})(s.BaseAPI),e.s(["CatalogApi",0,O,"RobloxCatalogApiCatalogSearchDetailedResponseItemCreatorTypeEnum",0,{NUMBER_0:0,NUMBER_1:1,NUMBER_2:2},"RobloxCatalogApiMultigetItemDetailsRequestItemItemTypeEnum",0,C,"SearchApi",0,N,"V1SearchItemsDetailsGetCreatorTypeEnum",0,{NUMBER_0:0,NUMBER_1:1,NUMBER_2:2},"V1SearchItemsDetailsGetLimitEnum",0,{NUMBER_10:10,NUMBER_28:28,NUMBER_30:30},"V1SearchItemsDetailsGetSortTypeEnum",0,{NUMBER_0:0,NUMBER_1:1,NUMBER_2:2,NUMBER_3:3,NUMBER_4:4,NUMBER_5:5}],299362);var M=e.i(272593);let L=new class{getAssetDetails(e){let t={items:[{itemType:C.NUMBER_1,id:e}]};return this.catalogAPI.v1CatalogItemsDetailsPost({model:t})}postAssetDetails(e){let t=[];return e.forEach(e=>{t.push({id:e,itemType:C.NUMBER_1})}),this.catalogAPI.v1CatalogItemsDetailsPost({model:{items:t}})}postBundleDetails(e){let t=[];return e.forEach(e=>{t.push({id:e,itemType:C.NUMBER_2})}),this.catalogAPI.v1CatalogItemsDetailsPost({model:{items:t}})}postItemDetails(e){let t=[];return e.forEach(e=>{t.push({id:e.id,itemType:e.itemType})}),this.catalogAPI.v1CatalogItemsDetailsPost({model:{items:t}})}getItems(e){return this.searchAPI.v1SearchItemsDetailsGet(e)}constructor(){(0,t._)(this,"catalogAPI",void 0),(0,t._)(this,"searchAPI",void 0);const e=(0,M.createClientConfiguration)("catalog","bedev1");this.catalogAPI=new O(e),this.searchAPI=new N(e)}};e.s(["default",0,L],185641)}]);
-
-//# debugId=118889b0-8bcd-1df6-c70a-f9b5e9d9e652
-//# sourceMappingURL=30i9as17r2oo0.js.map
+self.__BUILD_MANIFEST = {
+  "/": [
+    "static/chunks/0qxl-taeyamrb.js"
+  ],
+  "/404": [
+    "static/chunks/1zwj5r5qxwiqg.js"
+  ],
+  "/500": [
+    "static/chunks/2ilre1elqd5do.js"
+  ],
+  "/_error": [
+    "static/chunks/3hoth3tyn4rmh.js"
+  ],
+  "/build": [
+    "static/chunks/2gzi-kvrq-wpk.js"
+  ],
+  "/creator": [
+    "static/chunks/1hh3rcsdd8cuc.js"
+  ],
+  "/dashboard/account-information": [
+    "static/chunks/40rven_3w4wm2.js"
+  ],
+  "/dashboard/analytics": [
+    "static/chunks/04s6j02i1_p12.js"
+  ],
+  "/dashboard/analytics/ip-earnings": [
+    "static/chunks/2kbolvxs8ly8-.js"
+  ],
+  "/dashboard/analytics/studio-configs": [
+    "static/chunks/2gie9_4tl3-b-.js"
+  ],
+  "/dashboard/billing": [
+    "static/chunks/1w463ec-wwu2l.js"
+  ],
+  "/dashboard/creations": [
+    "static/chunks/1p-_u2j5-owsm.js"
+  ],
+  "/dashboard/creations/bundle/[id]/analytics": [
+    "static/chunks/2frbv7jsgo-m4.js"
+  ],
+  "/dashboard/creations/bundle/[id]/configure": [
+    "static/chunks/0uw4i7y2onjwx.js"
+  ],
+  "/dashboard/creations/bundle/[id]/publish": [
+    "static/chunks/1ywdkebnfnwf6.js"
+  ],
+  "/dashboard/creations/bundle/[id]/variants": [
+    "static/chunks/1z_vcx-0ihhz2.js"
+  ],
+  "/dashboard/creations/catalog/[id]/analytics": [
+    "static/chunks/384nwvmbflv_a.js"
+  ],
+  "/dashboard/creations/catalog/[id]/configure": [
+    "static/chunks/2vr1lozvsv-u_.js"
+  ],
+  "/dashboard/creations/catalog/[id]/publish": [
+    "static/chunks/1zl0aa-g3rz_1.js"
+  ],
+  "/dashboard/creations/catalog/[id]/variants": [
+    "static/chunks/1cqpyqhyvc6wa.js"
+  ],
+  "/dashboard/creations/experiences/[id]/access": [
+    "static/chunks/0zl3a0ola2igr.js"
+  ],
+  "/dashboard/creations/experiences/[id]/activity-history": [
+    "static/chunks/2e_72jkm18lwc.js"
+  ],
+  "/dashboard/creations/experiences/[id]/advanced-settings": [
+    "static/chunks/36t4-k28bjis1.js"
+  ],
+  "/dashboard/creations/experiences/[id]/alerts": [
+    "static/chunks/44fx6tad0dhx0.js"
+  ],
+  "/dashboard/creations/experiences/[id]/alerts/[alertId]/configure": [
+    "static/chunks/3c2a_m66gzs3y.js"
+  ],
+  "/dashboard/creations/experiences/[id]/alerts/create": [
+    "static/chunks/21k3rzbv9qj5l.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics": [
+    "static/chunks/2xi5kv3attxm1.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/acquisition": [
+    "static/chunks/3pdewqmbvdg4t.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/agent": [
+    "static/chunks/0_0dl47lfcf9_.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/ai-chat": [
+    "static/chunks/3c6nu_7pup2yv.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/assistant": [
+    "static/chunks/1iw_5pm965rcn.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/audience": [
+    "static/chunks/07u3w4bnzmjgz.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/crashes": [
+    "static/chunks/3dwlnkmiz1cj3.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/dashboards": [
+    "static/chunks/3obe7a-2shk2m.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/dashboards/[dashboardId]": [
+    "static/chunks/2gb9arjnzy1j2.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/dashboards/[dashboardId]/edit": [
+    "static/chunks/3xaxxgxgjvprj.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/dashboards/[dashboardId]/preview": [
+    "static/chunks/0d3y5feertut9.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/dashboards/[dashboardId]/tile/[tileId]/edit": [
+    "static/chunks/0_u087r4ec_xw.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/data-stores": [
+    "static/chunks/04_5qs8ndvff9.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/economy": [
+    "static/chunks/412yu1nsd7d_u.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/engagement": [
+    "static/chunks/1t9b2stv8oo_l.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/errors": [
+    "static/chunks/2u49seqh9ft46.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/experience-subscriptions": [
+    "static/chunks/2c3k2gn52yk1c.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/explore": [
+    "static/chunks/26wdf4fhwdlqs.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/funnels": [
+    "static/chunks/0ipig7xj81i_9.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/generative-ai": [
+    "static/chunks/3i9bf-wcs1rq0.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/http-service": [
+    "static/chunks/3b546gqvah0pw.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/immersive-ads": [
+    "static/chunks/2zk0c51t3awp7.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/journeys": [
+    "static/chunks/3m_4r3905ot69.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/journeys/create": [
+    "static/chunks/2bh7h9nwk8wfq.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/journeys/edit": [
+    "static/chunks/1cnayzxwi8k3u.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/journeys/view": [
+    "static/chunks/25eplv7b50xnf.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/memory-stores": [
+    "static/chunks/04xdzumiy6mbe.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/messaging-service": [
+    "static/chunks/3r-m3z3yq-d_r.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/monetization": [
+    "static/chunks/2d0gsinhco8dx.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/performance": [
+    "static/chunks/3_yrva710y3ho.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/retention": [
+    "static/chunks/0i8_bu1omscs_.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/select-eligibility": [
+    "static/chunks/1otilkh1pviqz.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/speech-to-text": [
+    "static/chunks/1vywzvs-s80d5.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/text-to-speech": [
+    "static/chunks/38c2h8q081esl.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/video-service": [
+    "static/chunks/38dpd78mqc3gu.js"
+  ],
+  "/dashboard/creations/experiences/[id]/associated-items": [
+    "static/chunks/0pfzkogyy4ldc.js"
+  ],
+  "/dashboard/creations/experiences/[id]/audience-reach": [
+    "static/chunks/1zb7nfiqmlu2d.js"
+  ],
+  "/dashboard/creations/experiences/[id]/avatar-creation-tokens/[tokenId]/configure": [
+    "static/chunks/3-jp_ebap3s1y.js"
+  ],
+  "/dashboard/creations/experiences/[id]/avatar-creation-tokens/create": [
+    "static/chunks/32vulc2r6bkyp.js"
+  ],
+  "/dashboard/creations/experiences/[id]/badges/[badgeId]/configure": [
+    "static/chunks/2v6zyb8vbg1uv.js"
+  ],
+  "/dashboard/creations/experiences/[id]/badges/[badgeId]/overview": [
+    "static/chunks/2v8-xn6xq_5km.js"
+  ],
+  "/dashboard/creations/experiences/[id]/badges/create": [
+    "static/chunks/2hirnnqlpz-i-.js"
+  ],
+  "/dashboard/creations/experiences/[id]/badges/reorder": [
+    "static/chunks/0h66-g-_ztkvz.js"
+  ],
+  "/dashboard/creations/experiences/[id]/chat": [
+    "static/chunks/1mum5g-2x5v2l.js"
+  ],
+  "/dashboard/creations/experiences/[id]/collaborators": [
+    "static/chunks/1xrkn_nea673r.js"
+  ],
+  "/dashboard/creations/experiences/[id]/communication-settings": [
+    "static/chunks/2t593z0yup_et.js"
+  ],
+  "/dashboard/creations/experiences/[id]/configs": [
+    "static/chunks/05p_wc_4g2gl8.js"
+  ],
+  "/dashboard/creations/experiences/[id]/configs/config-create": [
+    "static/chunks/3018eywg7s0iw.js"
+  ],
+  "/dashboard/creations/experiences/[id]/configs/history": [
+    "static/chunks/2c8z7u71ko9j4.js"
+  ],
+  "/dashboard/creations/experiences/[id]/configs/studio": [
+    "static/chunks/2prm-8if4cv_w.js"
+  ],
+  "/dashboard/creations/experiences/[id]/configure": [
+    "static/chunks/2apznc-2t9pvh.js"
+  ],
+  "/dashboard/creations/experiences/[id]/content-rating": [
+    "static/chunks/0qi9ugg9uoekh.js"
+  ],
+  "/dashboard/creations/experiences/[id]/created-places": [
+    "static/chunks/25stw-o3cpmsq.js"
+  ],
+  "/dashboard/creations/experiences/[id]/developer-products/[productId]/configure": [
+    "static/chunks/3b87y84gk6c__.js"
+  ],
+  "/dashboard/creations/experiences/[id]/developer-products/create": [
+    "static/chunks/2dyb3_6qom4a_.js"
+  ],
+  "/dashboard/creations/experiences/[id]/environments": [
+    "static/chunks/0whvs7ieqiaqc.js"
+  ],
+  "/dashboard/creations/experiences/[id]/environments/[environmentId]/configure": [
+    "static/chunks/3pddfdtinu15f.js"
+  ],
+  "/dashboard/creations/experiences/[id]/environments/new_environment": [
+    "static/chunks/2zvtfollp5u05.js"
+  ],
+  "/dashboard/creations/experiences/[id]/events": [
+    "static/chunks/2sogkrtk6j2ix.js"
+  ],
+  "/dashboard/creations/experiences/[id]/events/[eventId]/configure": [
+    "static/chunks/035fx04ts_7a_.js"
+  ],
+  "/dashboard/creations/experiences/[id]/events/create": [
+    "static/chunks/2fk4mmmy8ugpe.js"
+  ],
+  "/dashboard/creations/experiences/[id]/experience-questionnaire": [
+    "static/chunks/1dymvhmjnts_n.js"
+  ],
+  "/dashboard/creations/experiences/[id]/experience-subscriptions/[subscriptionId]/configure": [
+    "static/chunks/1rz969qezjyiv.js"
+  ],
+  "/dashboard/creations/experiences/[id]/experience-subscriptions/create": [
+    "static/chunks/3acaqr1hrty8h.js"
+  ],
+  "/dashboard/creations/experiences/[id]/experiments": [
+    "static/chunks/40ho32ewrjtuv.js"
+  ],
+  "/dashboard/creations/experiences/[id]/experiments/[experimentId]/experiment-details": [
+    "static/chunks/3_fkb5uinmibw.js"
+  ],
+  "/dashboard/creations/experiences/[id]/experiments/experiment-create": [
+    "static/chunks/3jv_kjruvy47b.js"
+  ],
+  "/dashboard/creations/experiences/[id]/extended-services": [
+    "static/chunks/1dkxas5nkj-wa.js"
+  ],
+  "/dashboard/creations/experiences/[id]/feedback": [
+    "static/chunks/2kwyxrlws7q1g.js"
+  ],
+  "/dashboard/creations/experiences/[id]/game-details": [
+    "static/chunks/0xicfe0-y11fh.js"
+  ],
+  "/dashboard/creations/experiences/[id]/game-join": [
+    "static/chunks/1tf4940odzkh9.js"
+  ],
+  "/dashboard/creations/experiences/[id]/leaderboard": [
+    "static/chunks/0ebrkqvsvj0e3.js"
+  ],
+  "/dashboard/creations/experiences/[id]/localization": [
+    "static/chunks/44un6k-91vnlr.js"
+  ],
+  "/dashboard/creations/experiences/[id]/localization/contribution-report": [
+    "static/chunks/3hodi-1ttws0g.js"
+  ],
+  "/dashboard/creations/experiences/[id]/localization/translation": [
+    "static/chunks/34ivgd4fzef5f.js"
+  ],
+  "/dashboard/creations/experiences/[id]/manage-audience": [
+    "static/chunks/2sd297y7xilsj.js"
+  ],
+  "/dashboard/creations/experiences/[id]/matchmaking": [
+    "static/chunks/2l9y5t1kl3-af.js"
+  ],
+  "/dashboard/creations/experiences/[id]/matchmaking/create-attribute": [
+    "static/chunks/21aq3gm8qc3am.js"
+  ],
+  "/dashboard/creations/experiences/[id]/matchmaking/create-configuration/[configurationId]": [
+    "static/chunks/3my4xarlhtkgr.js"
+  ],
+  "/dashboard/creations/experiences/[id]/matchmaking/edit-configuration/[configurationId]": [
+    "static/chunks/0neanjy3mszmu.js"
+  ],
+  "/dashboard/creations/experiences/[id]/matchmaking/edit-player-attribute/[attributeId]": [
+    "static/chunks/13ungxvizdcf6.js"
+  ],
+  "/dashboard/creations/experiences/[id]/matchmaking/edit-server-attribute/[attributeId]": [
+    "static/chunks/1pfim7gpze-yk.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/avatar-creation-tokens": [
+    "static/chunks/2lq2xww10-gdb.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/avatar-items": [
+    "static/chunks/290v-0i9h6v8v.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/commerce": [
+    "static/chunks/2i8w89hh34x-3.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/commerce/create-products": [
+    "static/chunks/25llz5okvuklf.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/commerce/draft-products": [
+    "static/chunks/0eifdwhxdn303.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/creator-rewards": [
+    "static/chunks/11q428ijjelzj.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/developer-products": [
+    "static/chunks/05ycqzs3yz6ov.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/developer-products/external-purchase-settings": [
+    "static/chunks/3woey2n06hara.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/hard-coded-prices": [
+    "static/chunks/3zdsn0-yidy1t.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/immersive-ads": [
+    "static/chunks/02_yuitgyl2b5.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/immersive-ads/create-placement": [
+    "static/chunks/2klvf3hul9gu3.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/managed-pricing": [
+    "static/chunks/1h3iu4rfc3hh_.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/managed-pricing/events/[eventId]/details": [
+    "static/chunks/1xedb-gp47ef3.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/overview": [
+    "static/chunks/0ghinxah8ka9m.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/passes": [
+    "static/chunks/113x363l54wjd.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/price-check": [
+    "static/chunks/0e9cknzjn4xbx.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/price-optimization": [
+    "static/chunks/06uwy_lrjhfr0.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/price-optimization/price-check": [
+    "static/chunks/44f82j44bsy3f.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/roblox-plus": [
+    "static/chunks/2zrol_-ry_qhq.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/shop": [
+    "static/chunks/2t4dgw4bsj27j.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/shop/developer-product-purchases-blocked": [
+    "static/chunks/0b3oxjint39dx.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/subscriptions": [
+    "static/chunks/049gp2j2v62jd.js"
+  ],
+  "/dashboard/creations/experiences/[id]/notifications": [
+    "static/chunks/0cbloxgg6c-ja.js"
+  ],
+  "/dashboard/creations/experiences/[id]/notifications/content/[contentId]/update": [
+    "static/chunks/0bdz63_ro39hh.js"
+  ],
+  "/dashboard/creations/experiences/[id]/notifications/content/create": [
+    "static/chunks/1hs75zqic6pcz.js"
+  ],
+  "/dashboard/creations/experiences/[id]/observability/client-sessions": [
+    "static/chunks/2zg8w6-emu5hl.js"
+  ],
+  "/dashboard/creations/experiences/[id]/observability/client-sessions/[sessionId]": [
+    "static/chunks/1ea8az6yu1cvt.js"
+  ],
+  "/dashboard/creations/experiences/[id]/observability/server-management": [
+    "static/chunks/2fwd188cqi-h4.js"
+  ],
+  "/dashboard/creations/experiences/[id]/observability/server-management/[placeId]/servers": [
+    "static/chunks/2jamx0ynn4xxn.js"
+  ],
+  "/dashboard/creations/experiences/[id]/observability/server-management/[placeId]/servers/[jobId]/details": [
+    "static/chunks/22kdi3dbn-kfj.js"
+  ],
+  "/dashboard/creations/experiences/[id]/overview": [
+    "static/chunks/30egs_7ukycl5.js"
+  ],
+  "/dashboard/creations/experiences/[id]/passes/[passId]/configure": [
+    "static/chunks/0v21yjc0u5pc3.js"
+  ],
+  "/dashboard/creations/experiences/[id]/passes/[passId]/promotions": [
+    "static/chunks/11arxi-7wexxk.js"
+  ],
+  "/dashboard/creations/experiences/[id]/passes/[passId]/sales": [
+    "static/chunks/406-_z1vqr5a5.js"
+  ],
+  "/dashboard/creations/experiences/[id]/passes/create": [
+    "static/chunks/1wesdyvlbhs85.js"
+  ],
+  "/dashboard/creations/experiences/[id]/permissions": [
+    "static/chunks/1zef-bnq7pvmg.js"
+  ],
+  "/dashboard/creations/experiences/[id]/places": [
+    "static/chunks/18s-gce512q1d.js"
+  ],
+  "/dashboard/creations/experiences/[id]/places/[placeId]/access": [
+    "static/chunks/2u7wxeohe6an_.js"
+  ],
+  "/dashboard/creations/experiences/[id]/places/[placeId]/configure": [
+    "static/chunks/2jgwl36i5mixh.js"
+  ],
+  "/dashboard/creations/experiences/[id]/places/[placeId]/icon": [
+    "static/chunks/0dgt-h1567jya.js"
+  ],
+  "/dashboard/creations/experiences/[id]/places/[placeId]/permissions": [
+    "static/chunks/3mhmec5oyfoly.js"
+  ],
+  "/dashboard/creations/experiences/[id]/places/[placeId]/thumbnails": [
+    "static/chunks/3hu6lg8c72vqm.js"
+  ],
+  "/dashboard/creations/experiences/[id]/places/[placeId]/version-history": [
+    "static/chunks/3yd5hcln71pfs.js"
+  ],
+  "/dashboard/creations/experiences/[id]/places/[placeId]/videos": [
+    "static/chunks/0xr2ajty382xt.js"
+  ],
+  "/dashboard/creations/experiences/[id]/places/manage": [
+    "static/chunks/0eac9h6w64s48.js"
+  ],
+  "/dashboard/creations/experiences/[id]/player-support": [
+    "static/chunks/38zwo_wkz0z5-.js"
+  ],
+  "/dashboard/creations/experiences/[id]/player-support/[ticketId]": [
+    "static/chunks/0eepa53dcj99v.js"
+  ],
+  "/dashboard/creations/experiences/[id]/publishing": [
+    "static/chunks/2y-pr-xp2p-1t.js"
+  ],
+  "/dashboard/creations/experiences/[id]/recommendation-service": [
+    "static/chunks/2bn9l1_s5fsjx.js"
+  ],
+  "/dashboard/creations/experiences/[id]/recommendation-service/configs": [
+    "static/chunks/30y90_lmul_zf.js"
+  ],
+  "/dashboard/creations/experiences/[id]/recommendation-service/create": [
+    "static/chunks/34q9myoh_in0f.js"
+  ],
+  "/dashboard/creations/experiences/[id]/recommendation-service/edit": [
+    "static/chunks/20rk-tha9sxnf.js"
+  ],
+  "/dashboard/creations/experiences/[id]/referral-reward-details": [
+    "static/chunks/0mf55qg3kd2na.js"
+  ],
+  "/dashboard/creations/experiences/[id]/referral-reward-details/create": [
+    "static/chunks/1bkjrahrzv8n6.js"
+  ],
+  "/dashboard/creations/experiences/[id]/safety/anti-cheat": [
+    "static/chunks/0hfm7t32fuc9x.js"
+  ],
+  "/dashboard/creations/experiences/[id]/safety/bans": [
+    "static/chunks/08qas-ipkz1r6.js"
+  ],
+  "/dashboard/creations/experiences/[id]/safety/bans/add": [
+    "static/chunks/1rdq9bvjz0hvv.js"
+  ],
+  "/dashboard/creations/experiences/[id]/safety/collaborators": [
+    "static/chunks/18jznkexhddfp.js"
+  ],
+  "/dashboard/creations/experiences/[id]/safety/overview": [
+    "static/chunks/2fmcscasvaf3b.js"
+  ],
+  "/dashboard/creations/experiences/[id]/secrets": [
+    "static/chunks/2f64erooq0b1q.js"
+  ],
+  "/dashboard/creations/experiences/[id]/server-management": [
+    "static/chunks/1oin2lkl9hkrx.js"
+  ],
+  "/dashboard/creations/experiences/[id]/server-management/[placeId]/servers": [
+    "static/chunks/23ec_sx2x708d.js"
+  ],
+  "/dashboard/creations/experiences/[id]/server-management/[placeId]/servers/[jobId]/details": [
+    "static/chunks/1_c_j0bap2t_-.js"
+  ],
+  "/dashboard/creations/experiences/[id]/social-links": [
+    "static/chunks/1apnyoh18504t.js"
+  ],
+  "/dashboard/creations/experiences/[id]/stats": [
+    "static/chunks/1ao-9o1a4ol5b.js"
+  ],
+  "/dashboard/creations/experiences/[id]/updates": [
+    "static/chunks/0_ystndr8zy2v.js"
+  ],
+  "/dashboard/creations/experiences/[id]/webhooks": [
+    "static/chunks/0tceye8mtyzfs.js"
+  ],
+  "/dashboard/creations/look/[id]/configure": [
+    "static/chunks/25j8sp7u08o1d.js"
+  ],
+  "/dashboard/creations/pricing": [
+    "static/chunks/2wcdd_4mtrxl_.js"
+  ],
+  "/dashboard/creations/showcases/[id]/manage": [
+    "static/chunks/367vfzvxi1140.js"
+  ],
+  "/dashboard/creations/showcases/create": [
+    "static/chunks/2p94z3zkl_eyw.js"
+  ],
+  "/dashboard/creations/store/[id]/configure": [
+    "static/chunks/22z_p5pipw2do.js"
+  ],
+  "/dashboard/creations/store/[id]/dependencies": [
+    "static/chunks/2jwj6apmawcr3.js"
+  ],
+  "/dashboard/creations/store/[id]/permissions": [
+    "static/chunks/0lmirrm4rpqyg.js"
+  ],
+  "/dashboard/creations/store/[id]/version-history": [
+    "static/chunks/3ta8xfnxwh00r.js"
+  ],
+  "/dashboard/creations/upload": [
+    "static/chunks/20gv3ow3h7ets.js"
+  ],
+  "/dashboard/credentials": [
+    "static/chunks/1sx7g1vcciop6.js"
+  ],
+  "/dashboard/devex": [
+    "static/chunks/3m-dswkcxo8oe.js"
+  ],
+  "/dashboard/devex/cashout": [
+    "static/chunks/343f6dv0rmabd.js"
+  ],
+  "/dashboard/devex/taxes": [
+    "static/chunks/25vewjnrmt16p.js"
+  ],
+  "/dashboard/devex/taxes/taxsubmission": [
+    "static/chunks/1o7vjjh3i7tqm.js"
+  ],
+  "/dashboard/finance/analytics": [
+    "static/chunks/0rywgt5dt7wq4.js"
+  ],
+  "/dashboard/finance/overview": [
+    "static/chunks/1--1ejp-xd-zi.js"
+  ],
+  "/dashboard/group/activity-history": [
+    "static/chunks/3oal-vrl7887r.js"
+  ],
+  "/dashboard/group/create": [
+    "static/chunks/1vx-6wovhbq40.js"
+  ],
+  "/dashboard/group/members": [
+    "static/chunks/3k5nq55edsa1t.js"
+  ],
+  "/dashboard/group/moderation": [
+    "static/chunks/0oq7dnnluebpv.js"
+  ],
+  "/dashboard/group/payouts": [
+    "static/chunks/3qvz-ololq955.js"
+  ],
+  "/dashboard/group/profile": [
+    "static/chunks/0_p27ktz9n88z.js"
+  ],
+  "/dashboard/group/revenue-share-agreements": [
+    "static/chunks/2_81c5-993-4n.js"
+  ],
+  "/dashboard/group/roles/[[...roleParams]]": [
+    "static/chunks/24sff2j25grje.js"
+  ],
+  "/dashboard/ip": [
+    "static/chunks/16cr8_75yw_vz.js"
+  ],
+  "/dashboard/ip/ip-library": [
+    "static/chunks/3injw3_x1gyfo.js"
+  ],
+  "/dashboard/ip/ip-library/[id]": [
+    "static/chunks/17bu-ia2bwk34.js"
+  ],
+  "/dashboard/ip/ip-library/[id]/add-ip": [
+    "static/chunks/43srr0ujlxh9s.js"
+  ],
+  "/dashboard/ip/ip-library/[id]/edit": [
+    "static/chunks/1p1tdwgk6byh6.js"
+  ],
+  "/dashboard/ip/ip-library/create": [
+    "static/chunks/0p6xg70_k_uvf.js"
+  ],
+  "/dashboard/issues-and-appeals": [
+    "static/chunks/2u9nu_s9vxb1n.js"
+  ],
+  "/dashboard/issues-and-appeals/[universeId]/[violationId]": [
+    "static/chunks/3k5ka1n_qg48q.js"
+  ],
+  "/dashboard/license-manager": [
+    "static/chunks/2rui6ha3q-11w.js"
+  ],
+  "/dashboard/license-manager/agreements/[agreementId]": [
+    "static/chunks/04ou8lwmajgrh.js"
+  ],
+  "/dashboard/license-manager/creator-agreements": [
+    "static/chunks/15qxby7np3u5e.js"
+  ],
+  "/dashboard/license-manager/creator-agreements/[id]": [
+    "static/chunks/3_mm4j-3v631v.js"
+  ],
+  "/dashboard/license-manager/license-listings/[id]": [
+    "static/chunks/41sq9gbfeekyc.js"
+  ],
+  "/dashboard/license-manager/license-listings/[id]/edit": [
+    "static/chunks/3a0usgykl_juc.js"
+  ],
+  "/dashboard/license-manager/license-listings/[id]/license/create": [
+    "static/chunks/3iu-uzh8m7iod.js"
+  ],
+  "/dashboard/license-manager/license-listings/create": [
+    "static/chunks/0jnp5s39oq_nw.js"
+  ],
+  "/dashboard/license-manager/license/[id]/edit": [
+    "static/chunks/05k68c07j287k.js"
+  ],
+  "/dashboard/license-manager/licenses": [
+    "static/chunks/2s53gjf1zpms_.js"
+  ],
+  "/dashboard/license-manager/matches": [
+    "static/chunks/2p1aiepzmp8ao.js"
+  ],
+  "/dashboard/license-manager/matches/[agreementCandidateId]": [
+    "static/chunks/3-acftpzppkvi.js"
+  ],
+  "/dashboard/payments": [
+    "static/chunks/1z-cg9l7o7w5u.js"
+  ],
+  "/dashboard/revenue-share-agreements": [
+    "static/chunks/0ty8pbyka-6wh.js"
+  ],
+  "/dashboard/rights-manager": [
+    "static/chunks/3yoje9ggcnv6e.js"
+  ],
+  "/dashboard/rights-manager/account": [
+    "static/chunks/407y25eu5_gyt.js"
+  ],
+  "/dashboard/rights-manager/accounts": [
+    "static/chunks/1veix-qigv-pk.js"
+  ],
+  "/dashboard/rights-manager/apply": [
+    "static/chunks/39u2550ip9jh1.js"
+  ],
+  "/dashboard/rights-manager/claims": [
+    "static/chunks/3h6jz-4jt36xi.js"
+  ],
+  "/dashboard/rights-manager/claims/[caseId]/items": [
+    "static/chunks/0d2l65h-32ajm.js"
+  ],
+  "/dashboard/rights-manager/claims/[caseId]/items/[claimItemId]": [
+    "static/chunks/09hwtoriull1d.js"
+  ],
+  "/dashboard/rights-manager/claims/create": [
+    "static/chunks/1f108i0ti7cgk.js"
+  ],
+  "/dashboard/rights-manager/claims/report-code": [
+    "static/chunks/0zpuqso84l-3a.js"
+  ],
+  "/dashboard/rights-manager/contents/[contentType]/[contentId]": [
+    "static/chunks/2xbrbfj9bhj9h.js"
+  ],
+  "/dashboard/rights-manager/matches": [
+    "static/chunks/0uhcpxs7si4m0.js"
+  ],
+  "/dashboard/rights-manager/register": [
+    "static/chunks/2odb2cuuuq8q3.js"
+  ],
+  "/dashboard/rights-manager/removal-requests": [
+    "static/chunks/1i9ockcjx27dl.js"
+  ],
+  "/dashboard/rights-manager/removal-requests/create": [
+    "static/chunks/3un6oqx-vdtam.js"
+  ],
+  "/dashboard/rights-manager/removal-requests/report-code": [
+    "static/chunks/2ox0csobh2v0a.js"
+  ],
+  "/dashboard/roblox-wallet": [
+    "static/chunks/06-7blvpjdysb.js"
+  ],
+  "/dashboard/roblox-wallet/rfi": [
+    "static/chunks/21_fh6wz8uk-x.js"
+  ],
+  "/dashboard/summary/[date]": [
+    "static/chunks/0wrc9ilxflv_h.js"
+  ],
+  "/dashboard/transactions": [
+    "static/chunks/0-bsfaomvzs32.js"
+  ],
+  "/dashboard/translator-portal": [
+    "static/chunks/31h0dn1z_x1a-.js"
+  ],
+  "/data-collection": [
+    "static/chunks/03_odak55sxri.js"
+  ],
+  "/error": [
+    "static/chunks/2eft3al752og3.js"
+  ],
+  "/explore/licenses": [
+    "static/chunks/1blz6z61i00em.js"
+  ],
+  "/explore/licenses/[listingId]": [
+    "static/chunks/1awo3m2b5l89d.js"
+  ],
+  "/explore/licenses/[listingId]/[licenseId]/request": [
+    "static/chunks/1ndxax5w48xfi.js"
+  ],
+  "/hire": [
+    "static/chunks/1i6ga-efzb0nj.js"
+  ],
+  "/hire/inbox": [
+    "static/chunks/2e0-fbj9-220k.js"
+  ],
+  "/hire/jobs/[jobId]": [
+    "static/chunks/09tuyj4i5wa32.js"
+  ],
+  "/hire/my-profile": [
+    "static/chunks/09nu3y547go5-.js"
+  ],
+  "/hire/my-profile/applied": [
+    "static/chunks/18fo0rzat8q2h.js"
+  ],
+  "/hire/my-studio": [
+    "static/chunks/3q-wo8lelrpkt.js"
+  ],
+  "/hire/my-studio/jobs": [
+    "static/chunks/1ruvchyjmy6b1.js"
+  ],
+  "/hire/my-studio/jobs/[jobId]": [
+    "static/chunks/1zejpmhp9hu51.js"
+  ],
+  "/hire/my-studio/jobs/[jobId]/edit": [
+    "static/chunks/23a0sza_4t5pr.js"
+  ],
+  "/hire/my-studio/onboard": [
+    "static/chunks/440x6h45dtqul.js"
+  ],
+  "/hire/my-studio/onboard/form": [
+    "static/chunks/44vselzitsshe.js"
+  ],
+  "/hire/my-studio/post-job": [
+    "static/chunks/2smgy6uxy85nb.js"
+  ],
+  "/hire/studios": [
+    "static/chunks/2-f-rycsqdlw6.js"
+  ],
+  "/hire/studios/[studioId]": [
+    "static/chunks/0nfg2ok5fpvlc.js"
+  ],
+  "/inspire": [
+    "static/chunks/0ysnnlrmoulb-.js"
+  ],
+  "/landing": [
+    "static/chunks/2k1s-fj5kfpwj.js"
+  ],
+  "/maintenance": [
+    "static/chunks/2xv3fb8evx88p.js"
+  ],
+  "/rewards": [
+    "static/chunks/1fz0u-8j54h7r.js"
+  ],
+  "/roadmap": [
+    "static/chunks/3nagn8jidrv4n.js"
+  ],
+  "/settings/advanced": [
+    "static/chunks/3ghv34sy46p4w.js"
+  ],
+  "/settings/data-collection": [
+    "static/chunks/0a0t2z86tou6a.js"
+  ],
+  "/settings/eligibility": [
+    "static/chunks/0nvum82l7iav2.js"
+  ],
+  "/settings/eligibility/audio-distribution": [
+    "static/chunks/2mrcojkppy9aa.js"
+  ],
+  "/settings/eligibility/creator-rewards": [
+    "static/chunks/1dc8xd8ynd92j.js"
+  ],
+  "/settings/eligibility/extended-services": [
+    "static/chunks/3q699xvtfz4we.js"
+  ],
+  "/settings/eligibility/paid-access": [
+    "static/chunks/2b3sqyso600md.js"
+  ],
+  "/settings/eligibility/priced-assets": [
+    "static/chunks/16xvxzq4b3bu9.js"
+  ],
+  "/settings/eligibility/public-publish": [
+    "static/chunks/14jdwm0zjffai.js"
+  ],
+  "/settings/eligibility/publishing-permissions": [
+    "static/chunks/1bljrru27b201.js"
+  ],
+  "/settings/eligibility/us-o18-devex-rate": [
+    "static/chunks/36k5lq9_34n6y.js"
+  ],
+  "/settings/notifications": [
+    "static/chunks/05ovm6aboj427.js"
+  ],
+  "/settings/notifications/[notificationCategory]": [
+    "static/chunks/1z6g0p-ckmufx.js"
+  ],
+  "/settings/preferences": [
+    "static/chunks/30kxoa5484bgl.js"
+  ],
+  "/settings/webhooks": [
+    "static/chunks/0rfqt2w8g3au6.js"
+  ],
+  "/unsubscribe": [
+    "static/chunks/2y11mzyo5zoui.js"
+  ],
+  "/unsupported-browser": [
+    "static/chunks/2wb9pzudme6qh.js"
+  ],
+  "/updates": [
+    "static/chunks/0scr313krw6mg.js"
+  ],
+  "/updates/roadmap": [
+    "static/chunks/09ghanshxdrxc.js"
+  ],
+  "__rewrites": {
+    "afterFiles": [],
+    "beforeFiles": [
+      {
+        "source": "/42336d33e3b5695aa502151706d619e534732947/_next/:path+",
+        "destination": "/_next/:path+"
+      }
+    ],
+    "fallback": []
+  },
+  "sortedPages": [
+    "/",
+    "/404",
+    "/500",
+    "/_app",
+    "/_error",
+    "/build",
+    "/creator",
+    "/dashboard/account-information",
+    "/dashboard/analytics",
+    "/dashboard/analytics/ip-earnings",
+    "/dashboard/analytics/studio-configs",
+    "/dashboard/billing",
+    "/dashboard/creations",
+    "/dashboard/creations/bundle/[id]/analytics",
+    "/dashboard/creations/bundle/[id]/configure",
+    "/dashboard/creations/bundle/[id]/publish",
+    "/dashboard/creations/bundle/[id]/variants",
+    "/dashboard/creations/catalog/[id]/analytics",
+    "/dashboard/creations/catalog/[id]/configure",
+    "/dashboard/creations/catalog/[id]/publish",
+    "/dashboard/creations/catalog/[id]/variants",
+    "/dashboard/creations/experiences/[id]/access",
+    "/dashboard/creations/experiences/[id]/activity-history",
+    "/dashboard/creations/experiences/[id]/advanced-settings",
+    "/dashboard/creations/experiences/[id]/alerts",
+    "/dashboard/creations/experiences/[id]/alerts/create",
+    "/dashboard/creations/experiences/[id]/alerts/[alertId]/configure",
+    "/dashboard/creations/experiences/[id]/analytics",
+    "/dashboard/creations/experiences/[id]/analytics/acquisition",
+    "/dashboard/creations/experiences/[id]/analytics/agent",
+    "/dashboard/creations/experiences/[id]/analytics/ai-chat",
+    "/dashboard/creations/experiences/[id]/analytics/assistant",
+    "/dashboard/creations/experiences/[id]/analytics/audience",
+    "/dashboard/creations/experiences/[id]/analytics/crashes",
+    "/dashboard/creations/experiences/[id]/analytics/dashboards",
+    "/dashboard/creations/experiences/[id]/analytics/dashboards/[dashboardId]",
+    "/dashboard/creations/experiences/[id]/analytics/dashboards/[dashboardId]/edit",
+    "/dashboard/creations/experiences/[id]/analytics/dashboards/[dashboardId]/preview",
+    "/dashboard/creations/experiences/[id]/analytics/dashboards/[dashboardId]/tile/[tileId]/edit",
+    "/dashboard/creations/experiences/[id]/analytics/data-stores",
+    "/dashboard/creations/experiences/[id]/analytics/economy",
+    "/dashboard/creations/experiences/[id]/analytics/engagement",
+    "/dashboard/creations/experiences/[id]/analytics/errors",
+    "/dashboard/creations/experiences/[id]/analytics/experience-subscriptions",
+    "/dashboard/creations/experiences/[id]/analytics/explore",
+    "/dashboard/creations/experiences/[id]/analytics/funnels",
+    "/dashboard/creations/experiences/[id]/analytics/generative-ai",
+    "/dashboard/creations/experiences/[id]/analytics/http-service",
+    "/dashboard/creations/experiences/[id]/analytics/immersive-ads",
+    "/dashboard/creations/experiences/[id]/analytics/journeys",
+    "/dashboard/creations/experiences/[id]/analytics/journeys/create",
+    "/dashboard/creations/experiences/[id]/analytics/journeys/edit",
+    "/dashboard/creations/experiences/[id]/analytics/journeys/view",
+    "/dashboard/creations/experiences/[id]/analytics/memory-stores",
+    "/dashboard/creations/experiences/[id]/analytics/messaging-service",
+    "/dashboard/creations/experiences/[id]/analytics/monetization",
+    "/dashboard/creations/experiences/[id]/analytics/performance",
+    "/dashboard/creations/experiences/[id]/analytics/retention",
+    "/dashboard/creations/experiences/[id]/analytics/select-eligibility",
+    "/dashboard/creations/experiences/[id]/analytics/speech-to-text",
+    "/dashboard/creations/experiences/[id]/analytics/text-to-speech",
+    "/dashboard/creations/experiences/[id]/analytics/video-service",
+    "/dashboard/creations/experiences/[id]/associated-items",
+    "/dashboard/creations/experiences/[id]/audience-reach",
+    "/dashboard/creations/experiences/[id]/avatar-creation-tokens/create",
+    "/dashboard/creations/experiences/[id]/avatar-creation-tokens/[tokenId]/configure",
+    "/dashboard/creations/experiences/[id]/badges/create",
+    "/dashboard/creations/experiences/[id]/badges/reorder",
+    "/dashboard/creations/experiences/[id]/badges/[badgeId]/configure",
+    "/dashboard/creations/experiences/[id]/badges/[badgeId]/overview",
+    "/dashboard/creations/experiences/[id]/chat",
+    "/dashboard/creations/experiences/[id]/collaborators",
+    "/dashboard/creations/experiences/[id]/communication-settings",
+    "/dashboard/creations/experiences/[id]/configs",
+    "/dashboard/creations/experiences/[id]/configs/config-create",
+    "/dashboard/creations/experiences/[id]/configs/history",
+    "/dashboard/creations/experiences/[id]/configs/studio",
+    "/dashboard/creations/experiences/[id]/configure",
+    "/dashboard/creations/experiences/[id]/content-rating",
+    "/dashboard/creations/experiences/[id]/created-places",
+    "/dashboard/creations/experiences/[id]/developer-products/create",
+    "/dashboard/creations/experiences/[id]/developer-products/[productId]/configure",
+    "/dashboard/creations/experiences/[id]/environments",
+    "/dashboard/creations/experiences/[id]/environments/new_environment",
+    "/dashboard/creations/experiences/[id]/environments/[environmentId]/configure",
+    "/dashboard/creations/experiences/[id]/events",
+    "/dashboard/creations/experiences/[id]/events/create",
+    "/dashboard/creations/experiences/[id]/events/[eventId]/configure",
+    "/dashboard/creations/experiences/[id]/experience-questionnaire",
+    "/dashboard/creations/experiences/[id]/experience-subscriptions/create",
+    "/dashboard/creations/experiences/[id]/experience-subscriptions/[subscriptionId]/configure",
+    "/dashboard/creations/experiences/[id]/experiments",
+    "/dashboard/creations/experiences/[id]/experiments/experiment-create",
+    "/dashboard/creations/experiences/[id]/experiments/[experimentId]/experiment-details",
+    "/dashboard/creations/experiences/[id]/extended-services",
+    "/dashboard/creations/experiences/[id]/feedback",
+    "/dashboard/creations/experiences/[id]/game-details",
+    "/dashboard/creations/experiences/[id]/game-join",
+    "/dashboard/creations/experiences/[id]/leaderboard",
+    "/dashboard/creations/experiences/[id]/localization",
+    "/dashboard/creations/experiences/[id]/localization/contribution-report",
+    "/dashboard/creations/experiences/[id]/localization/translation",
+    "/dashboard/creations/experiences/[id]/manage-audience",
+    "/dashboard/creations/experiences/[id]/matchmaking",
+    "/dashboard/creations/experiences/[id]/matchmaking/create-attribute",
+    "/dashboard/creations/experiences/[id]/matchmaking/create-configuration/[configurationId]",
+    "/dashboard/creations/experiences/[id]/matchmaking/edit-configuration/[configurationId]",
+    "/dashboard/creations/experiences/[id]/matchmaking/edit-player-attribute/[attributeId]",
+    "/dashboard/creations/experiences/[id]/matchmaking/edit-server-attribute/[attributeId]",
+    "/dashboard/creations/experiences/[id]/monetization/avatar-creation-tokens",
+    "/dashboard/creations/experiences/[id]/monetization/avatar-items",
+    "/dashboard/creations/experiences/[id]/monetization/commerce",
+    "/dashboard/creations/experiences/[id]/monetization/commerce/create-products",
+    "/dashboard/creations/experiences/[id]/monetization/commerce/draft-products",
+    "/dashboard/creations/experiences/[id]/monetization/creator-rewards",
+    "/dashboard/creations/experiences/[id]/monetization/developer-products",
+    "/dashboard/creations/experiences/[id]/monetization/developer-products/external-purchase-settings",
+    "/dashboard/creations/experiences/[id]/monetization/hard-coded-prices",
+    "/dashboard/creations/experiences/[id]/monetization/immersive-ads",
+    "/dashboard/creations/experiences/[id]/monetization/immersive-ads/create-placement",
+    "/dashboard/creations/experiences/[id]/monetization/managed-pricing",
+    "/dashboard/creations/experiences/[id]/monetization/managed-pricing/events/[eventId]/details",
+    "/dashboard/creations/experiences/[id]/monetization/overview",
+    "/dashboard/creations/experiences/[id]/monetization/passes",
+    "/dashboard/creations/experiences/[id]/monetization/price-check",
+    "/dashboard/creations/experiences/[id]/monetization/price-optimization",
+    "/dashboard/creations/experiences/[id]/monetization/price-optimization/price-check",
+    "/dashboard/creations/experiences/[id]/monetization/roblox-plus",
+    "/dashboard/creations/experiences/[id]/monetization/shop",
+    "/dashboard/creations/experiences/[id]/monetization/shop/developer-product-purchases-blocked",
+    "/dashboard/creations/experiences/[id]/monetization/subscriptions",
+    "/dashboard/creations/experiences/[id]/notifications",
+    "/dashboard/creations/experiences/[id]/notifications/content/create",
+    "/dashboard/creations/experiences/[id]/notifications/content/[contentId]/update",
+    "/dashboard/creations/experiences/[id]/observability/client-sessions",
+    "/dashboard/creations/experiences/[id]/observability/client-sessions/[sessionId]",
+    "/dashboard/creations/experiences/[id]/observability/server-management",
+    "/dashboard/creations/experiences/[id]/observability/server-management/[placeId]/servers",
+    "/dashboard/creations/experiences/[id]/observability/server-management/[placeId]/servers/[jobId]/details",
+    "/dashboard/creations/experiences/[id]/overview",
+    "/dashboard/creations/experiences/[id]/passes/create",
+    "/dashboard/creations/experiences/[id]/passes/[passId]/configure",
+    "/dashboard/creations/experiences/[id]/passes/[passId]/promotions",
+    "/dashboard/creations/experiences/[id]/passes/[passId]/sales",
+    "/dashboard/creations/experiences/[id]/permissions",
+    "/dashboard/creations/experiences/[id]/places",
+    "/dashboard/creations/experiences/[id]/places/manage",
+    "/dashboard/creations/experiences/[id]/places/[placeId]/access",
+    "/dashboard/creations/experiences/[id]/places/[placeId]/configure",
+    "/dashboard/creations/experiences/[id]/places/[placeId]/icon",
+    "/dashboard/creations/experiences/[id]/places/[placeId]/permissions",
+    "/dashboard/creations/experiences/[id]/places/[placeId]/thumbnails",
+    "/dashboard/creations/experiences/[id]/places/[placeId]/version-history",
+    "/dashboard/creations/experiences/[id]/places/[placeId]/videos",
+    "/dashboard/creations/experiences/[id]/player-support",
+    "/dashboard/creations/experiences/[id]/player-support/[ticketId]",
+    "/dashboard/creations/experiences/[id]/publishing",
+    "/dashboard/creations/experiences/[id]/recommendation-service",
+    "/dashboard/creations/experiences/[id]/recommendation-service/configs",
+    "/dashboard/creations/experiences/[id]/recommendation-service/create",
+    "/dashboard/creations/experiences/[id]/recommendation-service/edit",
+    "/dashboard/creations/experiences/[id]/referral-reward-details",
+    "/dashboard/creations/experiences/[id]/referral-reward-details/create",
+    "/dashboard/creations/experiences/[id]/safety/anti-cheat",
+    "/dashboard/creations/experiences/[id]/safety/bans",
+    "/dashboard/creations/experiences/[id]/safety/bans/add",
+    "/dashboard/creations/experiences/[id]/safety/collaborators",
+    "/dashboard/creations/experiences/[id]/safety/overview",
+    "/dashboard/creations/experiences/[id]/secrets",
+    "/dashboard/creations/experiences/[id]/server-management",
+    "/dashboard/creations/experiences/[id]/server-management/[placeId]/servers",
+    "/dashboard/creations/experiences/[id]/server-management/[placeId]/servers/[jobId]/details",
+    "/dashboard/creations/experiences/[id]/social-links",
+    "/dashboard/creations/experiences/[id]/stats",
+    "/dashboard/creations/experiences/[id]/updates",
+    "/dashboard/creations/experiences/[id]/webhooks",
+    "/dashboard/creations/look/[id]/configure",
+    "/dashboard/creations/pricing",
+    "/dashboard/creations/showcases/create",
+    "/dashboard/creations/showcases/[id]/manage",
+    "/dashboard/creations/store/[id]/configure",
+    "/dashboard/creations/store/[id]/dependencies",
+    "/dashboard/creations/store/[id]/permissions",
+    "/dashboard/creations/store/[id]/version-history",
+    "/dashboard/creations/upload",
+    "/dashboard/credentials",
+    "/dashboard/devex",
+    "/dashboard/devex/cashout",
+    "/dashboard/devex/taxes",
+    "/dashboard/devex/taxes/taxsubmission",
+    "/dashboard/finance/analytics",
+    "/dashboard/finance/overview",
+    "/dashboard/group/activity-history",
+    "/dashboard/group/create",
+    "/dashboard/group/members",
+    "/dashboard/group/moderation",
+    "/dashboard/group/payouts",
+    "/dashboard/group/profile",
+    "/dashboard/group/revenue-share-agreements",
+    "/dashboard/group/roles/[[...roleParams]]",
+    "/dashboard/ip",
+    "/dashboard/ip/ip-library",
+    "/dashboard/ip/ip-library/create",
+    "/dashboard/ip/ip-library/[id]",
+    "/dashboard/ip/ip-library/[id]/add-ip",
+    "/dashboard/ip/ip-library/[id]/edit",
+    "/dashboard/issues-and-appeals",
+    "/dashboard/issues-and-appeals/[universeId]/[violationId]",
+    "/dashboard/license-manager",
+    "/dashboard/license-manager/agreements/[agreementId]",
+    "/dashboard/license-manager/creator-agreements",
+    "/dashboard/license-manager/creator-agreements/[id]",
+    "/dashboard/license-manager/license/[id]/edit",
+    "/dashboard/license-manager/license-listings/create",
+    "/dashboard/license-manager/license-listings/[id]",
+    "/dashboard/license-manager/license-listings/[id]/edit",
+    "/dashboard/license-manager/license-listings/[id]/license/create",
+    "/dashboard/license-manager/licenses",
+    "/dashboard/license-manager/matches",
+    "/dashboard/license-manager/matches/[agreementCandidateId]",
+    "/dashboard/payments",
+    "/dashboard/revenue-share-agreements",
+    "/dashboard/rights-manager",
+    "/dashboard/rights-manager/account",
+    "/dashboard/rights-manager/accounts",
+    "/dashboard/rights-manager/apply",
+    "/dashboard/rights-manager/claims",
+    "/dashboard/rights-manager/claims/create",
+    "/dashboard/rights-manager/claims/report-code",
+    "/dashboard/rights-manager/claims/[caseId]/items",
+    "/dashboard/rights-manager/claims/[caseId]/items/[claimItemId]",
+    "/dashboard/rights-manager/contents/[contentType]/[contentId]",
+    "/dashboard/rights-manager/matches",
+    "/dashboard/rights-manager/register",
+    "/dashboard/rights-manager/removal-requests",
+    "/dashboard/rights-manager/removal-requests/create",
+    "/dashboard/rights-manager/removal-requests/report-code",
+    "/dashboard/roblox-wallet",
+    "/dashboard/roblox-wallet/rfi",
+    "/dashboard/summary/[date]",
+    "/dashboard/transactions",
+    "/dashboard/translator-portal",
+    "/data-collection",
+    "/error",
+    "/explore/licenses",
+    "/explore/licenses/[listingId]",
+    "/explore/licenses/[listingId]/[licenseId]/request",
+    "/hire",
+    "/hire/inbox",
+    "/hire/jobs/[jobId]",
+    "/hire/my-profile",
+    "/hire/my-profile/applied",
+    "/hire/my-studio",
+    "/hire/my-studio/jobs",
+    "/hire/my-studio/jobs/[jobId]",
+    "/hire/my-studio/jobs/[jobId]/edit",
+    "/hire/my-studio/onboard",
+    "/hire/my-studio/onboard/form",
+    "/hire/my-studio/post-job",
+    "/hire/studios",
+    "/hire/studios/[studioId]",
+    "/inspire",
+    "/landing",
+    "/maintenance",
+    "/rewards",
+    "/roadmap",
+    "/settings/advanced",
+    "/settings/data-collection",
+    "/settings/eligibility",
+    "/settings/eligibility/audio-distribution",
+    "/settings/eligibility/creator-rewards",
+    "/settings/eligibility/extended-services",
+    "/settings/eligibility/paid-access",
+    "/settings/eligibility/priced-assets",
+    "/settings/eligibility/public-publish",
+    "/settings/eligibility/publishing-permissions",
+    "/settings/eligibility/us-o18-devex-rate",
+    "/settings/notifications",
+    "/settings/notifications/[notificationCategory]",
+    "/settings/preferences",
+    "/settings/webhooks",
+    "/unsubscribe",
+    "/unsupported-browser",
+    "/updates",
+    "/updates/roadmap"
+  ]
+};self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()

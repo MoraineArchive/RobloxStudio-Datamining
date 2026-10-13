@@ -1,0 +1,199 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-9b554450a0fc4e65",
+    "manifestFiles": 18772,
+    "packages": 34,
+    "version": "0.742.0.7421053"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "25ebffdd6b89633f9fd3bc3eddd2a2ff256f28d1271b243eb5f7e8b329f55903",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "4bbfc5c2fbd202be54861fd81deea6fcbf25578108f42bb2b0ab282db79c4c59",
+      "semantic": {
+        "added": [
+          "DFFlagAbuseReportEnrichmentAddPresetInfoToChatHistory_Staged",
+          "DFFlagCurvedSurfaceGuiRaycastRespectsEnabled",
+          "DFFlagSimGroundControllerBalanceDerivedLocomotionLimit_Staged",
+          "DFFlagStreamJobTimeScalesWithPlayerCount",
+          "FFlagAXFixExpiredLookCheckoutNav_Staged",
+          "FFlagAXMakeAnalyticsOptionalInEquipOutfit_Staged",
+          "FFlagAddFriendsIgnoreAllMenuVR_Staged",
+          "FFlagDMCTMigrateBasePartNetwork_Staged",
+          "FFlagEnableOffersPrefetch_Staged",
+          "FFlagEnablePlusReferralDashboardDeepLink_Staged",
+          "FFlagEnableSubscriptionPurchaseReferrerId_Staged",
+          "FFlagEnableSurfaceAppearanceColorObjectExport_Staged",
+          "FFlagIEMSettingsGroups709_Staged",
+          "FFlagLuaAppSduiPassSortSubId_Staged",
+          "FFlagLuauCompileTableFoldFix_Staged",
+          "FFlagMeProfileEntryTooltipEnabled_IXP",
+          "FFlagMeTabBadgeEnabled_IXP",
+          "FFlagMomentsUseMomentsServiceForUpload_Staged",
+          "FFlagRemoveMobileHomeProfileHeader_v2_IXP",
+          "FFlagRenderFixEditableMeshExtentsCFrameLifetime_Staged",
+          "FFlagSduiChipSizeAndVariant_Staged",
+          "FFlagSduiIndividualFeedItemSpacing_Staged",
+          "FFlagSduiPageCanvasCollectionLayout_Staged",
+          "FFlagSetAttributeEarlyOut_Staged",
+          "FFlagSpatialUIHiddenPanelRaycastFix_Staged",
+          "FFlagStudioPublishLatestVersionLabel_IXP",
+          "FFlagStudioUnifiedPublishAction3_IXP",
+          "FFlagUserSearchCancelTileActivationOnHoldIntent2_Staged",
+          "FFlagUserSearchHideFriendActionsForBlockedUsers_Staged",
+          "FIntAnimationParallelMultiSubmitBatchSize_IXP",
+          "FIntAnimationParallelMultiSubmitBatchSize_Staged"
+        ],
+        "changed": [
+          {
+            "after": "19adbd34325417a5da7565cafca85fd626e74980",
+            "before": "ad010621d433ab16f4203e44c09ec3d100038c5d",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-13T17:56:21.354Z",
+            "before": "2026-10-13T01:52:28.582Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "1;HarmonyExposure;PerformanceControlTestPostProcessingAlgorithms-1789366196207-1790119849840-1791836708427;1458332433;flagbank",
+            "before": "1;HarmonyExposure;PerformanceControlTestPostProcessingAlgorithms-1789366196207-1790119849840-17915026293-1791502882208;1458332433;flagbank",
+            "name": "FFlagCrashMetricRelaxAfterSuccessStreak_IXP"
+          },
+          {
+            "after": "1;HarmonyExposure;PerformanceControlTestPostProcessingAlgorithms-1789366196207-1790119849840-1791836708427;1458332433;flagbank",
+            "before": "1;HarmonyExposure;PerformanceControlTestPostProcessingAlgorithms-1789366196207-1790119849840-17915026293-1791502882208;1458332433;flagbank",
+            "name": "FFlagCrashMetricStorageAddPostProcessing2_IXP"
+          },
+          {
+            "after": "1;HarmonyExposure;PerformanceControlTestPostProcessingAlgorithms-1789366196207-1790119849840-1791836708427;1458332433;flagbank",
+            "before": "1;HarmonyExposure;PerformanceControlTestPostProcessingAlgorithms-1789366196207-1790119849840-17915026293-1791502882208;1458332433;flagbank",
+            "name": "FIntPerformanceControlCrashMetricAlgorithmType2_IXP"
+          },
+          {
+            "after": "1;HarmonyExposure;PerformanceControlTestPostProcessingAlgorithms-1789366196207-1790119849840-1791836708427;1458332433;flagbank",
+            "before": "1;HarmonyExposure;PerformanceControlTestPostProcessingAlgorithms-1789366196207-1790119849840-17915026293-1791502882208;1458332433;flagbank",
+            "name": "FIntPerformanceControlCrashMetricPostProcessingAlgorithmType2_IXP"
+          },
+          {
+            "after": "19adbd34325417a5da7565cafca85fd626e74980",
+            "before": "ad010621d433ab16f4203e44c09ec3d100038c5d",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-13T17:56:21.354Z",
+            "before": "2026-10-13T01:52:28.582Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [],
+        "unchanged": 25138
+      }
+    },
+    "Web": {
+      "current": "c9f908f338484faa61f12ee06804ecd5cacf7712404e6c9ef08d46ffbdefe71a",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-002.js",
+          "assets.create.roblox.com/page-0/script-003.js",
+          "assets.create.roblox.com/page-0/script-004.js",
+          "assets.create.roblox.com/page-0/script-007.js",
+          "assets.create.roblox.com/page-0/script-008.js",
+          "assets.create.roblox.com/page-0/script-009.js",
+          "assets.create.roblox.com/page-0/script-010.js",
+          "assets.create.roblox.com/page-0/script-011.js",
+          "assets.create.roblox.com/page-0/script-012.js",
+          "assets.create.roblox.com/page-0/script-013.js",
+          "assets.create.roblox.com/page-0/script-014.js",
+          "assets.create.roblox.com/page-0/script-015.js",
+          "assets.create.roblox.com/page-0/script-016.js",
+          "assets.create.roblox.com/page-0/script-017.js",
+          "assets.create.roblox.com/page-0/script-018.js",
+          "assets.create.roblox.com/page-0/script-020.js",
+          "assets.create.roblox.com/page-0/script-021.js",
+          "assets.create.roblox.com/page-0/script-022.js",
+          "assets.create.roblox.com/page-0/script-023.js",
+          "assets.create.roblox.com/page-0/script-024.js",
+          "assets.create.roblox.com/page-0/script-025.js",
+          "assets.create.roblox.com/page-0/script-026.js",
+          "assets.create.roblox.com/page-0/script-027.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-029.js",
+          "assets.create.roblox.com/page-0/script-030.js",
+          "assets.create.roblox.com/page-0/script-031.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-035.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-037.js",
+          "assets.create.roblox.com/page-0/script-039.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-043.js",
+          "assets.create.roblox.com/page-0/script-045.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-047.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-049.js",
+          "assets.create.roblox.com/page-0/script-050.js",
+          "assets.create.roblox.com/page-0/script-051.js",
+          "assets.create.roblox.com/page-0/script-052.js",
+          "assets.create.roblox.com/page-0/script-053.js",
+          "assets.create.roblox.com/page-0/script-054.js",
+          "assets.create.roblox.com/page-0/script-055.js",
+          "assets.create.roblox.com/page-0/script-056.js",
+          "assets.create.roblox.com/page-0/script-057.js",
+          "assets.create.roblox.com/page-0/script-058.js",
+          "assets.create.roblox.com/page-0/script-059.js",
+          "assets.create.roblox.com/page-0/script-060.js",
+          "assets.create.roblox.com/page-0/script-061.js",
+          "assets.create.roblox.com/page-0/script-062.js",
+          "assets.create.roblox.com/page-0/script-063.js",
+          "assets.create.roblox.com/page-0/script-064.js",
+          "assets.create.roblox.com/page-0/script-065.js",
+          "assets.create.roblox.com/page-0/script-066.js",
+          "assets.create.roblox.com/page-0/script-067.js",
+          "assets.create.roblox.com/page-0/script-068.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-070.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.create.roblox.com/page-0/script-077.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [
+          "assets.create.roblox.com/page-0/script-085.js",
+          "assets.create.roblox.com/page-0/script-086.js",
+          "assets.create.roblox.com/page-0/script-087.js",
+          "assets.create.roblox.com/page-0/script-088.js",
+          "assets.create.roblox.com/page-0/script-089.js"
+        ],
+        "unchanged": 25
+      },
+      "previous": "aa8de17ee40bdd416e1bfb16c58e1ac54733aa51585815b663f60918de5e4259",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}

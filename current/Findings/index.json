@@ -6872,11 +6872,33 @@
             "cta",
             "moments"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/13/17-57-47Z_datasets",
+          "evidencePath": "2026/10/13/17-57-47Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "c976c8ef37cea95a974bdbe90dd1816783db592e92822bd23920dd12184ba510",
+          "key": "FFlagMomentsUseMomentsServiceForUpload_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-13T17:57:47.529Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "for",
+            "moments",
+            "upload"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-10-12T22:56:43.228Z",
+      "lastObservedAt": "2026-10-13T17:57:47.529Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
