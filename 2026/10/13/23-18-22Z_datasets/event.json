@@ -1,0 +1,24 @@
+{
+  "archivePath": "2026/10/13/23-18-22Z_datasets",
+  "commit": {
+    "body": "LiveSettings files +0 ~1 -0\nWeb files          +0 ~19 -0\nLiveSettings       +10 ~4 -7",
+    "subject": "14 October 2026 - Datamining update"
+  },
+  "findings": {
+    "new": 0,
+    "updated": 1
+  },
+  "guid": "version-9b554450a0fc4e65",
+  "id": "ccd38f40f9b7702a2cf8d812a46779af78d2977b791aee8609fff1ce5b77828d",
+  "observedAt": "2026-10-13T23:18:22.435Z",
+  "product": "Studio",
+  "schemaVersion": 1,
+  "surfaces": [
+    "LiveSettings",
+    "Web"
+  ],
+  "target": "WindowsStudio64",
+  "type": "datasets.changed",
+  "upstreamChange": true,
+  "version": "0.742.0.7421053"
+}

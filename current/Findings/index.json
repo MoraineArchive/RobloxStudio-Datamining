@@ -6962,11 +6962,33 @@
             "moments",
             "upload"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/13/23-18-22Z_datasets",
+          "evidencePath": "2026/10/13/23-18-22Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "36f01218ef5ac1c1af9a5a5205816463e811156ba6376febccea1fbc3e1d6f8c",
+          "key": "FFlagMomentsEngagementMetricsFeature_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-13T23:18:22.435Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "engagement",
+            "metrics",
+            "moments"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-10-13T22:32:09.370Z",
+      "lastObservedAt": "2026-10-13T23:18:22.435Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",

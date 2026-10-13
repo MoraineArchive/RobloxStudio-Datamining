@@ -1,0 +1,103 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-9b554450a0fc4e65",
+    "manifestFiles": 18772,
+    "packages": 34,
+    "version": "0.742.0.7421053"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "37d59117299576b77fcfbe5ada42e334b9e557ed0cee9616f72613a20f6bd520",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "d770e9b71b36b7bfd6431d5955e45f733418c6f88e280b1eccf4eae9c9ac0d59",
+      "semantic": {
+        "added": [
+          "DFFlagDebugCLI191972Gui_UniverseFilter",
+          "DFFlagFixReportSampledBwData",
+          "FFlagAXScrollTelemetryIntegration",
+          "FFlagAppChatTimestampInSubtitleConversationRow_IXP",
+          "FFlagLuaAppAddHasOneByTwoFieldSdui_Staged",
+          "FFlagLuaAppSkipStartupRouteHop",
+          "FFlagMomentsEngagementMetricsFeature_Staged",
+          "FFlagPhysicalPropertiesConsistentFloatKeys",
+          "FFlagUserCCLNoSwimAnimationsFix",
+          "FStringRenderMeshPerLodStreamingForceEnablePlaceIds"
+        ],
+        "changed": [
+          {
+            "after": "1197122c6ea05db0e2bd76a0c7f35d47df52b02f",
+            "before": "532aaddbcd7eadeb524fc06c7df9c31fffab7e4e",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-13T23:12:50.210Z",
+            "before": "2026-10-13T22:31:12.392Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "1197122c6ea05db0e2bd76a0c7f35d47df52b02f",
+            "before": "532aaddbcd7eadeb524fc06c7df9c31fffab7e4e",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-13T23:12:50.210Z",
+            "before": "2026-10-13T22:31:12.392Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagFixReportSampledBwData_Staged",
+          "FFlagAXScrollTelemetryIntegration_Staged",
+          "FFlagAppChatReadMessageListFromSignalsStore_IXP",
+          "FFlagLuaAppSkipStartupRouteHop_Staged",
+          "FFlagPhysicalPropertiesConsistentFloatKeys_Staged",
+          "FFlagUserCCLNoSwimAnimationsFix_Staged",
+          "FStringRenderMeshPerLodStreamingForceEnablePlaceIds_Staged"
+        ],
+        "unchanged": 25200
+      }
+    },
+    "Web": {
+      "current": "681da790f6884feb85bdb754e54627b32a05c74464bf9eac37de985de916352a",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-002.js",
+          "assets.create.roblox.com/page-0/script-022.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-051.js",
+          "assets.create.roblox.com/page-0/script-054.js",
+          "assets.create.roblox.com/page-0/script-068.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-1/script-001.js",
+          "assets.create.roblox.com/page-1/script-003.js",
+          "assets.create.roblox.com/page-1/script-004.js",
+          "assets.create.roblox.com/page-1/script-011.js",
+          "assets.create.roblox.com/page-1/script-013.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 82
+      },
+      "previous": "e45b02f4dadecf5844f4c03a0397d89c94cb666aa3f635f2b824ab034091d2d7",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
