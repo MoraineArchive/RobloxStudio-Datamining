@@ -1,0 +1,146 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-9b554450a0fc4e65",
+    "manifestFiles": 18772,
+    "packages": 34,
+    "version": "0.742.0.7421053"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "d770e9b71b36b7bfd6431d5955e45f733418c6f88e280b1eccf4eae9c9ac0d59",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "e5cd33a4e51b8d1d8a087220126aacea6a21b8826e11a632254ba3da08aad934",
+      "semantic": {
+        "added": [
+          "DFFlagBadgeServiceEnableStats_Staged",
+          "DFFlagCLI224256Fix",
+          "DFFlagFixReportSampledBwData_Staged",
+          "DFFlagJoinTicketV2UseBotScore",
+          "DFFlagSimCsgFixDedupeEdgeOrphanVerts",
+          "FFlagAXScrollTelemetryIntegration_Staged",
+          "FFlagAddFriendsPageHighlightUnseenRequests_v3",
+          "FFlagDMCTMigrateBasePartNetwork",
+          "FFlagDMCTMigrateHumanoidDescriptionAnimation",
+          "FFlagDMCTMigrateHumanoidDescriptionAppearance",
+          "FFlagDMCTMigrateHumanoidDescriptionScale",
+          "FFlagDMCTMigratePlayer",
+          "FFlagDMCTMigratePlayerCameraZoom",
+          "FFlagDMCTMigratePose",
+          "FFlagEnableDestroyLuaAppV2Experiment2",
+          "FFlagEnablePlusReferralDashboardDeepLink",
+          "FFlagEnableSubscriptionPurchaseReferrerId",
+          "FFlagFixEditableImageBlendTransparentSource_Staged",
+          "FFlagFixSplitHashCopyTombstoneCount_Staged",
+          "FFlagLuaAppSkipStartupRouteHop_Staged",
+          "FFlagLuauFindFullAncestryLooksIntoTypePacks",
+          "FFlagMicroProfilerExperimentalHttpApi",
+          "FFlagMigrateMassPackageUpdaterToPublishSM",
+          "FFlagMigrateVoiceApiClientTelemetryLoggerLegacyTelemetry",
+          "FFlagMomentsUseMomentsServiceForUpload",
+          "FFlagPhysicalPropertiesConsistentFloatKeys_Staged",
+          "FFlagPreEmptivelyDestroyLuaAppForAll",
+          "FFlagSduiVerticalFeedScrollTelemetry",
+          "FFlagSearchAllRegistryEntriesForAutoFocus_Staged",
+          "FFlagStratusConnectWithoutOrientationWait_Staged",
+          "FFlagStratusReconcileResolutionOnConnect_Staged",
+          "FFlagStyleEditorUDimFormatting",
+          "FFlagUIBoundsTracking2",
+          "FFlagUserCCLNoSwimAnimationsFix_Staged",
+          "FIntExplicitTextureRequestHundredthPercent_Staged",
+          "FStringRenderMeshPerLodStreamingForceEnablePlaceIds_Staged"
+        ],
+        "changed": [
+          {
+            "after": "False",
+            "before": "True",
+            "name": "DFFlagPartiallyCompressPhysicsPackets2"
+          },
+          {
+            "after": "532aaddbcd7eadeb524fc06c7df9c31fffab7e4e",
+            "before": "fc82213f3efe038303910ca15e6bfd873c2892d3",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-13T22:31:12.392Z",
+            "before": "2026-10-13T19:34:05.082Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagAXMakeupLayeringTooltipFTUX"
+          },
+          {
+            "after": "532aaddbcd7eadeb524fc06c7df9c31fffab7e4e",
+            "before": "fc82213f3efe038303910ca15e6bfd873c2892d3",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-13T22:31:12.392Z",
+            "before": "2026-10-13T19:34:05.082Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagJoinTicketV2UseBotScore_Staged",
+          "DFFlagSoundCacheUseBudgetUtilizationEstimator_Staged",
+          "FFlagAXMakeupLayeringTooltipFTUX_Staged",
+          "FFlagAddFriendsPageHighlightUnseenRequests_v3_Staged",
+          "FFlagDMCTMigrateBasePartNetwork_Staged",
+          "FFlagEnableDestroyLuaAppV2Experiment2_Staged",
+          "FFlagEnablePlusReferralDashboardDeepLink_Staged",
+          "FFlagEnableSubscriptionPurchaseReferrerId_Staged",
+          "FFlagFlyoutSidePanelUseAppPolicy_Staged",
+          "FFlagMigrateMassPackageUpdaterToPublishSM_Staged",
+          "FFlagMigrateVoiceApiClientTelemetryLoggerLegacyTelemetry_Staged",
+          "FFlagMomentsUseMomentsServiceForUpload_Staged",
+          "FFlagPreEmptivelyDestroyLuaAppForAll_Staged",
+          "FFlagSduiVerticalFeedScrollTelemetry_Staged",
+          "FFlagSimRuntimeContentServiceNoDmLock_Staged",
+          "FFlagUIBoundsTracking2_Staged"
+        ],
+        "unchanged": 25169
+      }
+    },
+    "Web": {
+      "current": "e45b02f4dadecf5844f4c03a0397d89c94cb666aa3f635f2b824ab034091d2d7",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-023.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-051.js",
+          "assets.create.roblox.com/page-0/script-068.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-1/script-001.js",
+          "assets.create.roblox.com/page-1/script-003.js",
+          "assets.create.roblox.com/page-1/script-004.js",
+          "assets.create.roblox.com/page-1/script-011.js",
+          "assets.create.roblox.com/page-1/script-013.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 84
+      },
+      "previous": "ac4dded06ed2157a0034fd146abd12522464af461700cc2f8912c5aefbb5fa42",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
