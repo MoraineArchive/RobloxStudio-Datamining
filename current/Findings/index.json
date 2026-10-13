@@ -6894,11 +6894,35 @@
             "moments",
             "upload"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/13/19-14-58Z_datasets",
+          "evidencePath": "2026/10/13/19-14-58Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "0024cc3a406b2a3ac239777b4e1cc12c7a141754cc1ad2a790f4f484833809b8",
+          "key": "DFFlagMomentsCreatePostCommentsControl",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-13T19:14:58.710Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "comments",
+            "control",
+            "create",
+            "moments",
+            "post"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-10-13T17:57:47.529Z",
+      "lastObservedAt": "2026-10-13T19:14:58.710Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",

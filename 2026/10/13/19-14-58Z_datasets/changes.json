@@ -1,0 +1,128 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-9b554450a0fc4e65",
+    "manifestFiles": 18772,
+    "packages": 34,
+    "version": "0.742.0.7421053"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "17c46fe381ceaeb0bc62d262d5f848b639d50591bd8ac4c4d579eaf65825c99f",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "25ebffdd6b89633f9fd3bc3eddd2a2ff256f28d1271b243eb5f7e8b329f55903",
+      "semantic": {
+        "added": [
+          "DFFlagAbuseReportEnrichmentAddPresetInfoToChatHistory",
+          "DFFlagEnableBatchDataModelClose",
+          "DFFlagJoinTicketV2UseBotScore_Staged",
+          "DFFlagMomentsCreatePostCommentsControl",
+          "FFlagAXMakeupLayeringTooltipFTUX_Staged",
+          "FFlagAddFriendsIgnoreAllMenuVR",
+          "FFlagAddFriendsPageHighlightUnseenRequests_v3_Staged",
+          "FFlagEnableDestroyLuaAppV2Experiment2_Staged",
+          "FFlagEnableOffersPrefetch",
+          "FFlagEnableSurfaceAppearanceColorObjectExport",
+          "FFlagExpChatAutocompleteLazyBuild_IXP",
+          "FFlagExpChatAutocompleteOptimization_IXP",
+          "FFlagFlyoutSidePanelUseAppPolicy_Staged",
+          "FFlagIEMSettingsGroups709",
+          "FFlagLuaAppSduiPassSortSubId",
+          "FFlagLuauCompileTableFoldFix",
+          "FFlagMigrateMassPackageUpdaterToPublishSM_Staged",
+          "FFlagMigrateVoiceApiClientTelemetryLoggerLegacyTelemetry_Staged",
+          "FFlagPreEmptivelyDestroyLuaAppForAll_Staged",
+          "FFlagRenderFixEditableMeshExtentsCFrameLifetime",
+          "FFlagSduiChipSizeAndVariant",
+          "FFlagSduiIndividualFeedItemSpacing",
+          "FFlagSduiPageCanvasCollectionLayout",
+          "FFlagSduiVerticalFeedScrollTelemetry_Staged",
+          "FFlagSetAttributeEarlyOut",
+          "FFlagSimRuntimeContentServiceNoDmLock_Staged",
+          "FFlagSpatialUIHiddenPanelRaycastFix",
+          "FFlagUIBoundsTracking2_Staged"
+        ],
+        "changed": [
+          {
+            "after": "False",
+            "before": "True",
+            "name": "DFFlagSimGroundControllerBalanceDerivedLocomotionLimit"
+          },
+          {
+            "after": "29e0e360a51076e15276b1aabf49ba4492488480",
+            "before": "19adbd34325417a5da7565cafca85fd626e74980",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-13T19:11:40.510Z",
+            "before": "2026-10-13T17:56:21.354Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "29e0e360a51076e15276b1aabf49ba4492488480",
+            "before": "19adbd34325417a5da7565cafca85fd626e74980",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-13T19:11:40.510Z",
+            "before": "2026-10-13T17:56:21.354Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagAbuseReportEnrichmentAddPresetInfoToChatHistory_Staged",
+          "DFFlagSimGroundControllerBalanceDerivedLocomotionLimit_Staged",
+          "FFlagAddFriendsIgnoreAllMenuVR_Staged",
+          "FFlagEnableOffersPrefetch_Staged",
+          "FFlagEnableSurfaceAppearanceColorObjectExport_Staged",
+          "FFlagIEMSettingsGroups709_Staged",
+          "FFlagLuaAppSduiPassSortSubId_Staged",
+          "FFlagLuauCompileTableFoldFix_Staged",
+          "FFlagRenderFixEditableMeshExtentsCFrameLifetime_Staged",
+          "FFlagSduiChipSizeAndVariant_Staged",
+          "FFlagSduiIndividualFeedItemSpacing_Staged",
+          "FFlagSduiPageCanvasCollectionLayout_Staged",
+          "FFlagSetAttributeEarlyOut_Staged",
+          "FFlagSpatialUIHiddenPanelRaycastFix_Staged",
+          "FIntAnimationParallelMultiSubmitBatchSize_Staged"
+        ],
+        "unchanged": 25157
+      }
+    },
+    "Web": {
+      "current": "9c1d8fcdfb56675a342de26bb746291d39aea19dd9f736f38ee031ce1482d1f4",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-022.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-051.js",
+          "assets.create.roblox.com/page-0/script-068.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 88
+      },
+      "previous": "c9f908f338484faa61f12ee06804ecd5cacf7712404e6c9ef08d46ffbdefe71a",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
