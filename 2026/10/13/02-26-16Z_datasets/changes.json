@@ -1,0 +1,135 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-9b554450a0fc4e65",
+    "manifestFiles": 18772,
+    "packages": 34,
+    "version": "0.742.0.7421053"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "4bbfc5c2fbd202be54861fd81deea6fcbf25578108f42bb2b0ab282db79c4c59",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "d9ead1259fd5901f14839fd0ad5bfb3d275a789e932f16129872e3066635ac2d",
+      "semantic": {
+        "added": [
+          "FFlagAXSurfaceItemInfoRowPromptVR",
+          "FFlagAssistantPlaytestToolFix",
+          "FFlagAudioDeviceOutputCanRenderWithoutPlayers",
+          "FFlagFoundationFixColorOnScrubbableNumberInput",
+          "FFlagHideOfferNotificationsWhenShopEmpty",
+          "FFlagLuaAppEnableOneByTwoTileFunnelTelemetry",
+          "FFlagMacMouseLockCenterSubtractWarpDelta2",
+          "FFlagSchoolsNoSchoolEmailInterest",
+          "FFlagSimRuntimeContentServiceNoDmLock",
+          "FFlagTextureGenScrollablePrompt"
+        ],
+        "changed": [
+          {
+            "after": "ad010621d433ab16f4203e44c09ec3d100038c5d",
+            "before": "24893a066ed01ccac1e7df0e73d094f5aed1ecf2",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-13T01:52:28.582Z",
+            "before": "2026-10-12T23:15:21.974Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "True",
+            "before": "False",
+            "name": "FFlagAssetExportStandaloneLazyLoad"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagEnableAndroidUnifiedSystemBarControl"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagSkipPaymentSessionForPlainRobux"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagSlimDisableCustomCharacter"
+          },
+          {
+            "after": "ad010621d433ab16f4203e44c09ec3d100038c5d",
+            "before": "24893a066ed01ccac1e7df0e73d094f5aed1ecf2",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-13T01:52:28.582Z",
+            "before": "2026-10-12T23:15:21.974Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagAXSurfaceItemInfoRowPromptVR_Staged",
+          "FFlagAssetExportStandaloneLazyLoad_Staged",
+          "FFlagAssistantPlaytestToolFix_Staged",
+          "FFlagAudioDeviceOutputCanRenderWithoutPlayers_Staged",
+          "FFlagEnableAndroidUnifiedSystemBarControl_Staged",
+          "FFlagFoundationFixColorOnScrubbableNumberInput_Staged",
+          "FFlagHideOfferNotificationsWhenShopEmpty_Staged",
+          "FFlagLuaAppAddHasOneByTwoField_Staged",
+          "FFlagLuaAppEnableOneByTwoTileFunnelTelemetry_Staged",
+          "FFlagMacMouseLockCenterSubtractWarpDelta2_Staged",
+          "FFlagSchoolsNoSchoolEmailInterest_Staged",
+          "FFlagSimRuntimeContentServiceNoDmLock_Staged",
+          "FFlagSkipPaymentSessionForPlainRobux_Staged",
+          "FFlagSlimDisableCustomCharacter_Staged",
+          "FFlagTextureGenScrollablePrompt_Staged"
+        ],
+        "unchanged": 25128
+      }
+    },
+    "Web": {
+      "current": "aa8de17ee40bdd416e1bfb16c58e1ac54733aa51585815b663f60918de5e4259",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-047.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-054.js",
+          "assets.create.roblox.com/page-0/script-070.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.create.roblox.com/page-0/script-077.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.create.roblox.com/page-0/script-085.js",
+          "assets.create.roblox.com/page-0/script-086.js",
+          "assets.create.roblox.com/page-0/script-087.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 83
+      },
+      "previous": "74cbcf5ce3c2c69a4a7c1fd03921a0b1cff7c55c9b7dc98011d5eff36454ad91",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
