@@ -3154,11 +3154,63 @@
             "filter",
             "place"
           ]
+        },
+        {
+          "after": "True;10139630272;10770019413;10769634303;10768492546;10761698214",
+          "before": "True;10139630272;10768492546;10761698214;10769634303;10770019413",
+          "concepts": [
+            "avatar",
+            "abilities"
+          ],
+          "eventPath": "2026/10/14/18-58-02Z_datasets",
+          "evidencePath": "2026/10/14/18-58-02Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "104ce877c6c187da01bcf4b6ae3daddd91f63371a70a55c937245929bd6aa56b",
+          "key": "DFFlagAvatarAbilitiesUseStudioBeta2Asset_UniverseFilter",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-14T18:58:02.227Z",
+          "operation": "changed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abilities",
+            "asset",
+            "avatar",
+            "beta2",
+            "filter",
+            "universe"
+          ]
+        },
+        {
+          "after": "True;78957164244171;114108261963852;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;124927841431570;134308462331388",
+          "before": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834;124927841431570;134308462331388",
+          "concepts": [
+            "avatar",
+            "abilities"
+          ],
+          "eventPath": "2026/10/14/18-58-02Z_datasets",
+          "evidencePath": "2026/10/14/18-58-02Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "7ea66ff29b5fa47c4e9882302909ffb4c38698bf7e32d968a0adb34ef79e5e51",
+          "key": "DFFlagAvatarAbilitiesUseStudioBeta2Asset_PlaceFilter",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-14T18:58:02.227Z",
+          "operation": "changed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abilities",
+            "asset",
+            "avatar",
+            "beta2",
+            "filter",
+            "place"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "avatar-abilities",
-      "lastObservedAt": "2026-10-14T18:19:49.164Z",
+      "lastObservedAt": "2026-10-14T18:58:02.227Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T01:54:39.846Z",
