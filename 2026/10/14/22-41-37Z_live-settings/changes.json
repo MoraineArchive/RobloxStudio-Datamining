@@ -1,0 +1,64 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-4f087c32742644ab",
+    "manifestFiles": 19132,
+    "packages": 34,
+    "version": "0.743.0.7431133"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "9467e4f65cc808104fc2556d976802f06f34f9f5029f4dec03c57577ecade7fa",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "4c24eb157babb1e65c75db2b29d5bae4b85be9b5dd27a12623fc98fda49377bf",
+      "semantic": {
+        "added": [
+          "FFlagAnimGraphUI_ValueNodeDebugOutputs_Staged",
+          "FFlagFlyoutRemoveMomentsForArgoEnabled",
+          "FFlagPeoplePageFixCardMenuZIndex",
+          "FFlagSubTabSizeSmall",
+          "FFlagUIBloxAddNavigationTabTooltipAndTruncation"
+        ],
+        "changed": [
+          {
+            "after": "260b5f3ef20b206337c2c56707fa73094ae4cfa0",
+            "before": "623b5a512ea8e5121c9587a6bca9db14437437dd",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-14T22:38:49.490Z",
+            "before": "2026-10-14T22:23:20.743Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "260b5f3ef20b206337c2c56707fa73094ae4cfa0",
+            "before": "623b5a512ea8e5121c9587a6bca9db14437437dd",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-14T22:38:49.490Z",
+            "before": "2026-10-14T22:23:20.743Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagFlyoutRemoveMomentsForArgoEnabled_Staged",
+          "FFlagLuaAppEnableOneByTwoTileFunnelTelemetrySdui_Staged",
+          "FFlagPeoplePageFixCardMenuZIndex_Staged",
+          "FFlagSubTabSizeSmall_Staged",
+          "FFlagUIBloxAddNavigationTabTooltipAndTruncation_Staged"
+        ],
+        "unchanged": 25253
+      }
+    }
+  },
+  "schemaVersion": 1
+}

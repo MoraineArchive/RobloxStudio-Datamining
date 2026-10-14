@@ -8002,11 +8002,59 @@
             "luapackages",
             "moments"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/14/22-41-37Z_live-settings",
+          "evidencePath": "2026/10/14/22-41-37Z_live-settings/changes.json",
+          "family": "LiveSettings",
+          "id": "503a220c2f6b37c14057b8627a4f4c14343e9572ae8f0e5e0a55f7bfc97a7ef2",
+          "key": "FFlagFlyoutRemoveMomentsForArgoEnabled_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-14T22:41:37.749Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "argo",
+            "flyout",
+            "for",
+            "moments",
+            "remove"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/14/22-41-37Z_live-settings",
+          "evidencePath": "2026/10/14/22-41-37Z_live-settings/changes.json",
+          "family": "LiveSettings",
+          "id": "af66361fc6adf1ea424ab71680ebcae0aaf947ca531209b0637d609a01bd716d",
+          "key": "FFlagFlyoutRemoveMomentsForArgoEnabled",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-14T22:41:37.749Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "argo",
+            "flyout",
+            "for",
+            "moments",
+            "remove"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-10-14T22:08:06.635Z",
+      "lastObservedAt": "2026-10-14T22:41:37.749Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
@@ -8259,6 +8307,14 @@
           "signalIds": [
             "36f01218ef5ac1c1af9a5a5205816463e811156ba6376febccea1fbc3e1d6f8c",
             "9a2fe682bd4fbedaaed94a1136dedd509a9b33d89760ca959c3707d193b62352"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-10-14T22:41:37.749Z",
+          "signalIds": [
+            "af66361fc6adf1ea424ab71680ebcae0aaf947ca531209b0637d609a01bd716d",
+            "c9f27b91cb023824eeda972d87ef239bafb60f7356d7a676736ae7078028b527"
           ],
           "type": "staged-to-non-staged"
         }
