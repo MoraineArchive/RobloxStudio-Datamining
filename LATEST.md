@@ -2,9 +2,9 @@
 
 # Latest Roblox Studio Datamining
 
-**Observed:** 14/10/2026, 20:58:02 CEST (18:58:02 UTC)
+**Observed:** 14/10/2026, 21:21:30 CEST (19:21:30 UTC)
 
-**Event:** [`2026/10/14/18-58-02Z_datasets/`](2026/10/14/18-58-02Z_datasets/)
+**Event:** [`2026/10/14/19-21-30Z_datasets/`](2026/10/14/19-21-30Z_datasets/)
 
 **Build:** [`0.742.0.7421053`](current/Build/version.json)
 
@@ -14,14 +14,14 @@
 
 ```text
 LiveSettings files +0 ~1 -0
-Web files          +0 ~19 -0
-LiveSettings       +0 ~34 -0
+Web files          +0 ~29 -0
+LiveSettings       +7 ~7 -11
 ```
 
 File counts describe canonical files. Nested semantic rows describe values or API/source records inside those files.
 
 ## Findings
 
-- Avatar abilities — strongly-correlated
+No correlated findings for this event.
 
-See the [summary](2026/10/14/18-58-02Z_datasets/summary.md), [diff](2026/10/14/18-58-02Z_datasets/diff.md), [findings](2026/10/14/18-58-02Z_datasets/findings.md), and [changes.json](2026/10/14/18-58-02Z_datasets/changes.json).
+See the [summary](2026/10/14/19-21-30Z_datasets/summary.md), [diff](2026/10/14/19-21-30Z_datasets/diff.md), [findings](2026/10/14/19-21-30Z_datasets/findings.md), and [changes.json](2026/10/14/19-21-30Z_datasets/changes.json).

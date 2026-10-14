@@ -1,0 +1,129 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-9b554450a0fc4e65",
+    "manifestFiles": 18772,
+    "packages": 34,
+    "version": "0.742.0.7421053"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "ee324ddeccf519ad9035c6cc34edf472062e4220656426f834332382d10e7781",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "95453b30ce3150d0b9e751004932d49d6e1a66cde0d4a72d6d419e8117042c67",
+      "semantic": {
+        "added": [
+          "DFFlagCollectionDontThrowOnBindingError",
+          "DFFlagCollectionsTelemetryCallbackListFields2",
+          "DFFlagRealtimeOnDemandDurableReplay_Staged",
+          "FFlagEnableCategoryLoggingInShop",
+          "FFlagLuaAppCompositionSearch_IXP",
+          "FFlagLuauCodegenA64ForgLoopArray",
+          "FFlagParseStableCategoryId"
+        ],
+        "changed": [
+          {
+            "after": "fe324c3c314bbfa53488dbf8900cfec9307ff115",
+            "before": "ebc554c9c9a566c3ce9fe3dc0869f86645453445",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-14T19:12:32.096Z",
+            "before": "2026-10-14T18:55:12.404Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "1;PlayerApp.SearchResultsPage.PowerSearch;P13N.Omnisearch.GameItemsOnEmphasizeTileAndNonNavigationalCarousel;1473338198;dev_controlled",
+            "before": "1;PlayerApp.SearchResultsPage.PowerSearch;OmniSearchGameItemsShadowTraffic2;100418201;dev_controlled",
+            "name": "FFlagLuaAppEnableSearchStreamingEndpoint_IXP"
+          },
+          {
+            "after": "1;PlayerApp.SearchResultsPage.PowerSearch;P13N.Omnisearch.GameItemsOnEmphasizeTileAndNonNavigationalCarousel;1473338198;dev_controlled",
+            "before": "1;PlayerApp.SearchResultsPage.PowerSearch;OmniSearchGameItemsShadowTraffic2;100418201;dev_controlled",
+            "name": "FFlagLuaAppSduiStreamingChunkedResponses_IXP"
+          },
+          {
+            "after": "1;PlayerApp.SearchResultsPage.PowerSearch;P13N.Omnisearch.GameItemsOnEmphasizeTileAndNonNavigationalCarousel;1473338198;dev_controlled",
+            "before": "1;PlayerApp.SearchResultsPage.PowerSearch;P13N.SearchResultsPage.SduiMigration-v6;431634167;dev_controlled",
+            "name": "FFlagUserSearchPresenceStoreMigration_v2_IXP"
+          },
+          {
+            "after": "fe324c3c314bbfa53488dbf8900cfec9307ff115",
+            "before": "ebc554c9c9a566c3ce9fe3dc0869f86645453445",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-14T19:12:32.096Z",
+            "before": "2026-10-14T18:55:12.404Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagClimbSensorUseLookAsNormal_PlaceFilter",
+          "DFFlagClimbSensorUseLookAsNormal_UniverseFilter",
+          "DFFlagCollectionDontThrowOnBindingError_Staged",
+          "DFFlagCollectionsTelemetryCallbackListFields2_Staged",
+          "FFlagAnimationSAIdleOnMovingPlatformFix_PlaceFilter",
+          "FFlagAnimationSAIdleOnMovingPlatformFix_UniverseFilter",
+          "FFlagEnableCategoryLoggingInShop_Staged",
+          "FFlagLuauCodegenA64ForgLoopArray_Staged",
+          "FFlagParseStableCategoryId_Staged",
+          "FFlagUserCCLNoSwimAnimationsFix_PlaceFilter",
+          "FFlagUserCCLNoSwimAnimationsFix_UniverseFilter"
+        ],
+        "unchanged": 25220
+      }
+    },
+    "Web": {
+      "current": "281c901636ae79f451e62d85657f0d9e6a2b719352a2dbe54078551d1ef2626c",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-011.js",
+          "assets.create.roblox.com/page-0/script-022.js",
+          "assets.create.roblox.com/page-0/script-024.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-049.js",
+          "assets.create.roblox.com/page-0/script-051.js",
+          "assets.create.roblox.com/page-0/script-054.js",
+          "assets.create.roblox.com/page-0/script-055.js",
+          "assets.create.roblox.com/page-0/script-056.js",
+          "assets.create.roblox.com/page-0/script-061.js",
+          "assets.create.roblox.com/page-0/script-062.js",
+          "assets.create.roblox.com/page-0/script-070.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.create.roblox.com/page-0/script-077.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 73
+      },
+      "previous": "098731fc86494c5e9e8a4d5814f71897c9de0c156edfeaca78ff7464525934b5",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
