@@ -1,0 +1,90 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-4f087c32742644ab",
+    "manifestFiles": 19132,
+    "packages": 34,
+    "version": "0.743.0.7431133"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "221c09d89fed7f40ad521f8ce1db97d62e5c174cb8f13c5acc6d3d4900d9ca1d",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "9467e4f65cc808104fc2556d976802f06f34f9f5029f4dec03c57577ecade7fa",
+      "semantic": {
+        "added": [
+          "DFFlagCSGPublishMinTriangleCountTeamCreateOnly_Staged",
+          "DFFlagCrashUploadToSentryStudioEnabled",
+          "DFFlagFixTweenServiceNullEngineContext",
+          "DFFlagGetDetailedNetworkAddressesAppleLinux",
+          "DFIntCrashUploadToSentryStudioPercentage",
+          "FFlagDeviceSimulatorStopWorkOnClose_Staged"
+        ],
+        "changed": [
+          {
+            "after": "f8c24427e3c81a62eb88b3fc3b038f84fb54066c",
+            "before": "260b5f3ef20b206337c2c56707fa73094ae4cfa0",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-14T23:07:05.340Z",
+            "before": "2026-10-14T22:38:49.490Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "f8c24427e3c81a62eb88b3fc3b038f84fb54066c",
+            "before": "260b5f3ef20b206337c2c56707fa73094ae4cfa0",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-14T23:07:05.340Z",
+            "before": "2026-10-14T22:38:49.490Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagCrashUploadToSentryStudioEnabled_Staged",
+          "DFFlagFixTweenServiceNullEngineContext_Staged",
+          "DFFlagGetDetailedNetworkAddressesAppleLinux_Staged",
+          "DFIntCrashUploadToSentryStudioPercentage_Staged"
+        ],
+        "unchanged": 25254
+      }
+    },
+    "Web": {
+      "current": "b927209e7e1ebd0627af29581f2c20220bd8ba3b2b3b9e63206f6487331fd839",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-051.js",
+          "assets.create.roblox.com/page-0/script-054.js",
+          "assets.create.roblox.com/page-0/script-068.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 89
+      },
+      "previous": "d279c9b8580146846000410865d96f5716f89ea7e1504eac777a2f4ff8dd25f2",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
