@@ -1,0 +1,204 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-9b554450a0fc4e65",
+    "manifestFiles": 18772,
+    "packages": 34,
+    "version": "0.742.0.7421053"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "c2869a35ad6e18ce16037ded12e70ff59990fb5ea4d5bc6d18e68835c8ceeb7b",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "a2b44f37c2bee15afce1782fd9d6215b754d3c9a16e049ca8cdd9097db8d5e83",
+      "semantic": {
+        "added": [
+          "DFFlagCollectionDontThrowOnBindingError_Staged",
+          "DFFlagCollectionsTelemetryCallbackListFields2_Staged",
+          "DFFlagEditableMeshSerialCapMapItems",
+          "DFFlagEditableMeshSerialCapVectorLengths",
+          "DFFlagRejectOutOfRangeAxisCode",
+          "DFFlagSimNarrowPhaseWorkerStackSizeCLI228794",
+          "DFFlagStreamingEnforceFrustumInstanceBudget_Staged",
+          "DFFlagStreamingExcludeRegionFinalizeFromInstanceBudget_Staged",
+          "FFlagAddFriendsBannersNewUI_exp_Staged",
+          "FFlagAssetProviderSubstringMatch406Errors_Staged",
+          "FFlagEnableCategoryLoggingInShop_Staged",
+          "FFlagFixNullEngineContextAPIDumper_Staged",
+          "FFlagFixOctreeUpdateMissingElement2_Staged",
+          "FFlagFlagRolloutTestStaticBool14_Staged",
+          "FFlagHierarchicalLogger2_Staged",
+          "FFlagInfoTableStableItemKeys_Staged",
+          "FFlagLuaAppSkipStartupRouteHop_Staged",
+          "FFlagLuauCodegenA64ForgLoopArray_Staged",
+          "FFlagParseStableCategoryId_Staged",
+          "FFlagSduiSettingsRootPage2_IXP",
+          "FFlagSduiSettingsRootPageLogExposure_IXP",
+          "FFlagUpgradedUIShadowsBetaFeature",
+          "FFlagWrapConnectedGeometryCsrFaceMap"
+        ],
+        "changed": [
+          {
+            "after": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834;124927841431570;134308462331388",
+            "before": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834",
+            "name": "DFFlagAvatarAbilitiesUseStudioBeta2Asset_PlaceFilter"
+          },
+          {
+            "after": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834;124927841431570;134308462331388",
+            "before": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834",
+            "name": "DFFlagPlayerControlStateAcceptOldSchema_PlaceFilter"
+          },
+          {
+            "after": "2f4c81e5aa4be69d2080b7a7d99efb7ba32cad8e",
+            "before": "3c629f1a5453b7988d6e97ddecd79539f0330e98",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-14T18:17:50.660Z",
+            "before": "2026-10-14T01:17:34.734Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834;124927841431570;134308462331388",
+            "before": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834",
+            "name": "FFlagAnimationSAIdleOnMovingPlatformFix_PlaceFilter"
+          },
+          {
+            "after": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834;124927841431570;134308462331388",
+            "before": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834",
+            "name": "FFlagAvatarSettingsClientInitializeScriptType_PlaceFilter"
+          },
+          {
+            "after": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834;124927841431570;134308462331388",
+            "before": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834",
+            "name": "FFlagAvatarSettingsCrouchSprintStrafe3_PlaceFilter"
+          },
+          {
+            "after": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834;124927841431570;134308462331388",
+            "before": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834",
+            "name": "FFlagAvatarSettingsTurning_PlaceFilter"
+          },
+          {
+            "after": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834;124927841431570;134308462331388",
+            "before": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834",
+            "name": "FFlagCclClientInitializeFrom2026Jun03AbilityManagerRepo3_PlaceFilter"
+          },
+          {
+            "after": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834;124927841431570;134308462331388",
+            "before": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834",
+            "name": "FFlagPlayerControlStateApplyInputOnClientNonSAuth2_PlaceFilter"
+          },
+          {
+            "after": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834;124927841431570;134308462331388",
+            "before": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834",
+            "name": "FFlagPlayerControlStateEnabled_PlaceFilter"
+          },
+          {
+            "after": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834;124927841431570;134308462331388",
+            "before": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834",
+            "name": "FFlagUserAbilitiesUserInterfaceA_PlaceFilter"
+          },
+          {
+            "after": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834;124927841431570;134308462331388",
+            "before": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834",
+            "name": "FFlagUserAbilitiesUserInterfaceB_PlaceFilter"
+          },
+          {
+            "after": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834;124927841431570;134308462331388",
+            "before": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834",
+            "name": "FFlagUserCCLNoSwimAnimationsFix_PlaceFilter"
+          },
+          {
+            "after": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834;124927841431570;134308462331388",
+            "before": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834",
+            "name": "FFlagUserDoubleJumpButtonFix_PlaceFilter"
+          },
+          {
+            "after": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834;124927841431570;134308462331388",
+            "before": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834",
+            "name": "FFlagUserPlayerScriptsCCLIntegrationD_PlaceFilter"
+          },
+          {
+            "after": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834;124927841431570;134308462331388",
+            "before": "True;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;78957164244171;114108261963852;88860002459743;117393659852834",
+            "name": "FFlagUserPlayerScriptsPlayerControlState2_PlaceFilter"
+          },
+          {
+            "after": "9000",
+            "before": "9500",
+            "name": "FIntExplicitTextureRequestHundredthPercent"
+          },
+          {
+            "after": "2f4c81e5aa4be69d2080b7a7d99efb7ba32cad8e",
+            "before": "3c629f1a5453b7988d6e97ddecd79539f0330e98",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-14T18:17:50.660Z",
+            "before": "2026-10-14T01:17:34.734Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [],
+        "unchanged": 25193
+      }
+    },
+    "Web": {
+      "current": "5728ef8dc5ee9d9871ae2afadeec9c4c0485a98a787fda8d5b62b3dba34c4012",
+      "files": {
+        "added": [
+          "assets.create.roblox.com/page-0/script-085.js"
+        ],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-004.js",
+          "assets.create.roblox.com/page-0/script-009.js",
+          "assets.create.roblox.com/page-0/script-017.js",
+          "assets.create.roblox.com/page-0/script-022.js",
+          "assets.create.roblox.com/page-0/script-023.js",
+          "assets.create.roblox.com/page-0/script-024.js",
+          "assets.create.roblox.com/page-0/script-026.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-049.js",
+          "assets.create.roblox.com/page-0/script-051.js",
+          "assets.create.roblox.com/page-0/script-054.js",
+          "assets.create.roblox.com/page-0/script-055.js",
+          "assets.create.roblox.com/page-0/script-060.js",
+          "assets.create.roblox.com/page-0/script-061.js",
+          "assets.create.roblox.com/page-0/script-068.js",
+          "assets.create.roblox.com/page-0/script-070.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-077.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-0/script-084.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 68
+      },
+      "previous": "24935db460e03fe2612d8aaba2707c3a8f9645f4ec7b6a970d9e8b8988fa2132",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
