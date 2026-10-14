@@ -1,0 +1,93 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-4f087c32742644ab",
+    "manifestFiles": 19132,
+    "packages": 34,
+    "version": "0.743.0.7431133"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "4c24eb157babb1e65c75db2b29d5bae4b85be9b5dd27a12623fc98fda49377bf",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "6b23034d3726afd678f6827f4bf7929813283a64a82296c2c52fb2faa1f60f81",
+      "semantic": {
+        "added": [
+          "DFFlagHttpNetworkType_Staged",
+          "DFFlagRemoteFunctionSandboxCheck",
+          "DFFlagSmoothClusterReleaseStaleOccluder_Staged",
+          "FFlagLuaAppEnableOneByTwoTileFunnelTelemetrySdui_Staged",
+          "FFlagPlayerDataServiceSkipShutdownWait_Staged",
+          "FFlagStudioDebuggerDisablePlaySoloCyclingSubmit_Staged",
+          "FFlagTerrainUnparentedGridAccess_Staged"
+        ],
+        "changed": [
+          {
+            "after": "623b5a512ea8e5121c9587a6bca9db14437437dd",
+            "before": "9682eda580e678dd5a03967059dc799e467f31f4",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-14T22:23:20.743Z",
+            "before": "2026-10-14T22:07:49.073Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "5000",
+            "before": "1000",
+            "name": "FIntMigrateComponentManagerToRuntimeInjectorHundredthPercent"
+          },
+          {
+            "after": "623b5a512ea8e5121c9587a6bca9db14437437dd",
+            "before": "9682eda580e678dd5a03967059dc799e467f31f4",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-14T22:23:20.743Z",
+            "before": "2026-10-14T22:07:49.073Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagRemoteFunctionSandboxCheck_Staged",
+          "FIntMigrateComponentManagerToRuntimeInjectorHundredthPercent_Staged"
+        ],
+        "unchanged": 25250
+      }
+    },
+    "Web": {
+      "current": "d279c9b8580146846000410865d96f5716f89ea7e1504eac777a2f4ff8dd25f2",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-051.js",
+          "assets.create.roblox.com/page-0/script-054.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 90
+      },
+      "previous": "bb018dbff41abb29682366bede3117e9bad18f2bf576035e0a476744bf637765",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}

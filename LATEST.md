@@ -2,9 +2,9 @@
 
 # Latest Roblox Studio Datamining
 
-**Observed:** 15/10/2026, 00:08:06 CEST (22:08:06 UTC)
+**Observed:** 15/10/2026, 00:27:10 CEST (22:27:10 UTC)
 
-**Event:** [`2026/10/14/22-08-06Z_build_version-4f087c32742644ab/`](2026/10/14/22-08-06Z_build_version-4f087c32742644ab/)
+**Event:** [`2026/10/14/22-27-10Z_datasets/`](2026/10/14/22-27-10Z_datasets/)
 
 **Build:** [`0.743.0.7431133`](current/Build/version.json)
 
@@ -13,34 +13,15 @@
 ## Summary
 
 ```text
-Build files        +0 ~3 -0
-API files          +0 ~3 -0
-Plugins files      +412 ~396 -126
-LuaPackages files  +599 ~135 -260
-Native files       +0 ~11 -0
-Resources files    +16 ~21 -1
-FastVariables files +0 ~3 -0
 LiveSettings files +0 ~1 -0
-Web files          +0 ~13 -0
-Packages           +0 ~15 -0
-Files              +627 ~303 -267
-API Classes        +4 ~1 -1
-API Members        +106 ~115 -14
-API Enums          +4 ~0 -1
-EnumItems          +22 ~13 -0
-Plugins sources    +261 ~275 -76
-LuaPackages sources +590 ~128 -255
-Resources          +16 ~7 -1
-FastVariables      +19 ~1519 -13
-LiveSettings       +33 ~20 -10
+Web files          +0 ~12 -0
+LiveSettings       +7 ~5 -2
 ```
 
 File counts describe canonical files. Nested semantic rows describe values or API/source records inside those files.
 
 ## Findings
 
-- Animated images — single-source
-- Avatar abilities — strongly-correlated
-- Moments capture/post API — strongly-correlated
+No correlated findings for this event.
 
-See the [summary](2026/10/14/22-08-06Z_build_version-4f087c32742644ab/summary.md), [diff](2026/10/14/22-08-06Z_build_version-4f087c32742644ab/diff.md), [findings](2026/10/14/22-08-06Z_build_version-4f087c32742644ab/findings.md), and [changes.json](2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json).
+See the [summary](2026/10/14/22-27-10Z_datasets/summary.md), [diff](2026/10/14/22-27-10Z_datasets/diff.md), [findings](2026/10/14/22-27-10Z_datasets/findings.md), and [changes.json](2026/10/14/22-27-10Z_datasets/changes.json).
