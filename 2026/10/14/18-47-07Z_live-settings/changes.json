@@ -1,0 +1,62 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-9b554450a0fc4e65",
+    "manifestFiles": 18772,
+    "packages": 34,
+    "version": "0.742.0.7421053"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "12e28309551ef73fe4bc008de33903ecb44d95af4756a35721124cff58c38dbf",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "c2869a35ad6e18ce16037ded12e70ff59990fb5ea4d5bc6d18e68835c8ceeb7b",
+      "semantic": {
+        "added": [
+          "DFFlagStreamingEnforceFrustumInstanceBudget",
+          "DFFlagStreamingExcludeRegionFinalizeFromInstanceBudget",
+          "DFFlagTextChatChannelDisplayMode_Staged",
+          "FFlagTextChatServiceProtectedChatEnabled8_PlaceFilter",
+          "FIntInputActionManagerBetaFeatureRolloutPercent_Staged"
+        ],
+        "changed": [
+          {
+            "after": "e8de9a7209c8973e82bed443b11a57aa642babb2",
+            "before": "2f4c81e5aa4be69d2080b7a7d99efb7ba32cad8e",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-14T18:43:05.146Z",
+            "before": "2026-10-14T18:17:50.660Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "e8de9a7209c8973e82bed443b11a57aa642babb2",
+            "before": "2f4c81e5aa4be69d2080b7a7d99efb7ba32cad8e",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-14T18:43:05.146Z",
+            "before": "2026-10-14T18:17:50.660Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagStreamingEnforceFrustumInstanceBudget_Staged",
+          "DFFlagStreamingExcludeRegionFinalizeFromInstanceBudget_Staged",
+          "FFlagFlagRolloutTestStaticBool14_Staged"
+        ],
+        "unchanged": 25229
+      }
+    }
+  },
+  "schemaVersion": 1
+}
