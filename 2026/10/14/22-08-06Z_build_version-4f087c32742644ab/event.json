@@ -1,0 +1,31 @@
+{
+  "archivePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+  "commit": {
+    "body": "Build files        +0 ~3 -0\nAPI files          +0 ~3 -0\nPlugins files      +412 ~396 -126\nLuaPackages files  +599 ~135 -260\nNative files       +0 ~11 -0\nResources files    +16 ~21 -1\nFastVariables files +0 ~3 -0\nLiveSettings files +0 ~1 -0\nWeb files          +0 ~13 -0\nPackages           +0 ~15 -0\nFiles              +627 ~303 -267\nAPI Classes        +4 ~1 -1\nAPI Members        +106 ~115 -14\nAPI Enums          +4 ~0 -1\nEnumItems          +22 ~13 -0\nPlugins sources    +261 ~275 -76\nLuaPackages sources +590 ~128 -255\nResources          +16 ~7 -1\nFastVariables      +19 ~1519 -13\nLiveSettings       +33 ~20 -10",
+    "subject": "15 October 2026 - Build 0.743.0.7431133 (version-4f087c32742644ab)"
+  },
+  "findings": {
+    "new": 0,
+    "updated": 3
+  },
+  "guid": "version-4f087c32742644ab",
+  "id": "18cca283acbf6a8cd632a627e5f8c41a62f0b0f7e17451c45d9718a084f70fee",
+  "observedAt": "2026-10-14T22:08:06.635Z",
+  "product": "Studio",
+  "schemaVersion": 1,
+  "surfaces": [
+    "Build",
+    "API",
+    "Plugins",
+    "LuaPackages",
+    "Native",
+    "Resources",
+    "FastVariables",
+    "LiveSettings",
+    "Web"
+  ],
+  "target": "WindowsStudio64",
+  "type": "build.changed",
+  "upstreamChange": true,
+  "version": "0.743.0.7431133"
+}

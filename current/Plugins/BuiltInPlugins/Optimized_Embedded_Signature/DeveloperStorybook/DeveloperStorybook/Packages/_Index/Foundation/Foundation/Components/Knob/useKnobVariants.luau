@@ -18,8 +18,6 @@ local getKnobSize = require(script.Parent.getKnobSize)
 local IconSize = require(Foundation.Enums.IconSize)
 type IconSize = IconSize.IconSize
 
-local Flags = require(Foundation.Utility.Flags)
-
 type KnobVariantProps = {
 	knob: {
 		tag: string,
@@ -59,9 +57,7 @@ end
 local function variantsFactory(tokens: Tokens)
 	local common = {
 		knob = {
-			tag = if Flags.FoundationToggleBetaUpdate
-				then "align-x-center align-y-center position-center-center anchor-center-center auto-xy radius-circle"
-				else "position-center-center anchor-center-center auto-xy radius-circle",
+			tag = "align-x-center align-y-center position-center-center anchor-center-center auto-xy radius-circle",
 		},
 		knobShadow = {
 			tag = "position-center-center anchor-center-center",
@@ -80,12 +76,12 @@ local function variantsFactory(tokens: Tokens)
 			shadowPadding = tokens.Padding.XSmall,
 		}),
 		[InputSize.Medium] = computeProps({
-			iconSize = if Flags.FoundationToggleBetaUpdate then IconSize.Small else IconSize.Medium,
+			iconSize = IconSize.Small,
 			size = getKnobSize(tokens, InputSize.Medium),
 			shadowPadding = tokens.Padding.Small,
 		}),
 		[InputSize.Large] = computeProps({
-			iconSize = if Flags.FoundationToggleBetaUpdate then IconSize.Small else IconSize.Large,
+			iconSize = IconSize.Small,
 			size = getKnobSize(tokens, InputSize.Large),
 			shadowPadding = tokens.Padding.Small,
 		}),

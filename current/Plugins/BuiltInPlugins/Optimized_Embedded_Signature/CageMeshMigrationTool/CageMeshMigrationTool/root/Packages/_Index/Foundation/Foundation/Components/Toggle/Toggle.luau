@@ -16,7 +16,6 @@ local useUncontrolledState = require(Components.InternalInput.useUncontrolledSta
 local BuilderIcons = require(Packages.BuilderIcons)
 local useTokens = require(Foundation.Providers.Style.useTokens)
 local withCommonProps = require(Foundation.Utility.withCommonProps)
-local withDefaults = require(Foundation.Utility.withDefaults)
 
 local ColorNamespace = require(Foundation.Enums.ColorNamespace)
 local ControlState = require(Foundation.Enums.ControlState)
@@ -33,7 +32,6 @@ type InputLabelSize = InputLabelSize.InputLabelSize
 local InputPlacement = require(Foundation.Enums.InputPlacement)
 type InputPlacement = InputPlacement.InputPlacement
 
-local Flags = require(Foundation.Utility.Flags)
 local useInputGroupDefaults = require(Components.InternalInputGroup.useInputGroupDefaults)
 
 local SPRING_PARAMETERS = {
@@ -68,9 +66,7 @@ local defaultProps = {
 local IS_INVERSE = { colorNamespace = ColorNamespace.Color }
 
 local function Toggle(toggleProps: ToggleProps, ref: React.Ref<GuiObject>?)
-	local props = if Flags.FoundationInputGroup
-		then useInputGroupDefaults(toggleProps, defaultProps)
-		else withDefaults(toggleProps, defaultProps)
+	local props = useInputGroupDefaults(toggleProps, defaultProps)
 	local tokens = useTokens()
 	local variantProps = useToggleVariants(tokens, props.size)
 	local isChecked, onActivated = useUncontrolledState(props.isChecked, props.onActivated)
@@ -116,7 +112,7 @@ local function Toggle(toggleProps: ToggleProps, ref: React.Ref<GuiObject>?)
 			label = {
 				text = props.label,
 				position = Constants.INPUT_PLACEMENT_TO_LABEL_ALIGNMENT[props.placement],
-				hint = if Flags.FoundationToggleBetaUpdate then props.hint else nil,
+				hint = props.hint,
 			},
 			customVariantProps = variantProps.input,
 			size = props.size,

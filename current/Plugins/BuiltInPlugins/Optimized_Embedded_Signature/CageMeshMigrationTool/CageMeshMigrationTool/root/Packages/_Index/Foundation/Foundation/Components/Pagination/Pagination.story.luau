@@ -602,7 +602,6 @@ return {
 		},
 		{
 			name = "Keyboard navigation",
-			summary = "Compare explicit paginationRef wiring with typical unwired vertical focus.",
 			story = KeyboardNavigationStory,
 		},
 	},

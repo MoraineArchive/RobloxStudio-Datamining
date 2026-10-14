@@ -37,6 +37,11 @@ export type InputGroupSize = typeof(InputSize.XSmall) | typeof(InputSize.Small) 
 local InputVariant = require(Foundation.Enums.InputVariant)
 type InputVariant = InputVariant.InputVariant
 
+export type IconConfig = string | {
+	name: string,
+	variant: IconVariant?,
+}
+
 export type IconAccessoryConfig = {
 	type: nil,
 	iconName: string,

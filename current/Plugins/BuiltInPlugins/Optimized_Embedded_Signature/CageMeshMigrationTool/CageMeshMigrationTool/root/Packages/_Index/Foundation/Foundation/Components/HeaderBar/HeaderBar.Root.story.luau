@@ -1,657 +1,204 @@
 local Foundation = script:FindFirstAncestor("Foundation")
 local Packages = Foundation.Parent
 
-local BuilderIcons = require(Packages.BuilderIcons)
 local React = require(Packages.React)
 
-local Avatar = require(Foundation.Components.Avatar)
-local Breakpoint = require(Foundation.Enums.Breakpoint)
-local BreakpointConfig = require(Foundation.Utility.Responsive.BreakpointConfig)
-local Button = require(Foundation.Components.Button)
-local ButtonVariant = require(Foundation.Enums.ButtonVariant)
-local Divider = require(Foundation.Components.Divider)
-local IconButton = require(Foundation.Components.IconButton)
-local InputSize = require(Foundation.Enums.InputSize)
-local Orientation = require(Foundation.Enums.Orientation)
-local SearchInput = require(Foundation.Components.SearchInput)
-local Text = require(Foundation.Components.Text)
+local HeaderBarStoryHelpers = require(Foundation.Components.HeaderBar.HeaderBarStoryHelpers)
+local StorySection = require(Foundation.Utility.Stories.Shared.StorySection)
 local View = require(Foundation.Components.View)
-local useBreakpoint = require(Foundation.Providers.Responsive.Hooks.useBreakpoint)
-local useTokens = require(Foundation.Providers.Style.useTokens)
 
-local HeaderBar = require(script.Parent)
+local Section = StorySection.Section
+local STORY_PAGE_TAG = StorySection.STORY_PAGE_COL_TAG
 
-type Breakpoint = Breakpoint.Breakpoint
+type ViewportPreset = HeaderBarStoryHelpers.ViewportPreset
 
 type Controls = {
 	hasBackground: boolean,
-	title: string,
+	hasLeading: boolean,
+	hasContent: boolean,
+	hasTrailing: boolean,
+	viewport: ViewportPreset,
 }
 
-type StoryProps = {
-	controls: Controls,
-}
+local HEIGHT_TIERS = HeaderBarStoryHelpers.HEIGHT_TIERS
+local WIDTH_TIERS = HeaderBarStoryHelpers.WIDTH_TIERS
 
-type StoryWrapperProps = Controls & {
-	children: React.Node?,
-}
+local VIEWPORT_ORDER = HeaderBarStoryHelpers.VIEWPORT_ORDER
+local VIEWPORT_BY_PRESET = HeaderBarStoryHelpers.VIEWPORT_BY_PRESET
 
-local function StoryWrapper(props: StoryWrapperProps): React.ReactNode
-	local tokens = useTokens()
+local CenteredDetailCell = HeaderBarStoryHelpers.CenteredDetailCell
+local ContentAndTrailingCell = HeaderBarStoryHelpers.ContentAndTrailingCell
+local ContentFillCell = HeaderBarStoryHelpers.ContentFillCell
+local ContentFillWithTrailingCell = HeaderBarStoryHelpers.ContentFillWithTrailingCell
+local GlobalNavigationCell = HeaderBarStoryHelpers.GlobalNavigationCell
+local SearchCell = HeaderBarStoryHelpers.SearchCell
 
-	-- We need to use a wrapper View with a different background
-	-- color since HeaderBar blends in with DevStorybook.
+local LabeledShell = HeaderBarStoryHelpers.LabeledShell
+local Shell = HeaderBarStoryHelpers.Shell
+local SlotPattern = HeaderBarStoryHelpers.SlotPattern
+local contentPlaceholder = HeaderBarStoryHelpers.contentPlaceholder
+local leadingPlaceholder = HeaderBarStoryHelpers.leadingPlaceholder
+local tierCells = HeaderBarStoryHelpers.tierCells
+local trailingPlaceholder = HeaderBarStoryHelpers.trailingPlaceholder
+
+local function PlaygroundStory(props: { controls: Controls }): React.ReactNode
+	local controls = props.controls
+	local viewport = VIEWPORT_BY_PRESET[controls.viewport]
+
 	return React.createElement(View, {
-		tag = "col gap-small size-full-0 auto-y padding-large",
-		backgroundStyle = if props.hasBackground then tokens.Inverse.Surface.Surface_0 else nil,
-	}, props.children)
+		tag = STORY_PAGE_TAG,
+	}, {
+		Shell = React.createElement(Shell, {
+			LayoutOrder = 1,
+			width = viewport.width,
+			breakpoint = viewport.breakpoint,
+			hasBackground = controls.hasBackground,
+			leading = if controls.hasLeading then leadingPlaceholder() else nil,
+			content = if controls.hasContent then contentPlaceholder() else nil,
+			trailing = if controls.hasTrailing then trailingPlaceholder() else nil,
+		}),
+	})
+end
+
+local function SizingStory(): React.ReactNode
+	return React.createElement(View, {
+		tag = STORY_PAGE_TAG,
+	}, {
+		Width = React.createElement(Section, {
+			LayoutOrder = 1,
+			name = "Width",
+			note = "HeaderBar has no width prop; it fills the parent. These cells are harness widths.",
+		}, tierCells(WIDTH_TIERS)),
+		Height = React.createElement(Section, {
+			LayoutOrder = 2,
+			name = "Height",
+			note = "Height is not a prop. HeaderBar reads viewport breakpoint and maps it to a size tag.",
+		}, tierCells(HEIGHT_TIERS)),
+	})
+end
+
+local function HasBackgroundStory(): React.ReactNode
+	return React.createElement(View, {
+		tag = STORY_PAGE_TAG,
+	}, {
+		Default = React.createElement(LabeledShell, {
+			LayoutOrder = 1,
+			label = "true",
+			hasPlaceholderSlots = true,
+		}),
+		Off = React.createElement(LabeledShell, {
+			LayoutOrder = 2,
+			label = "false",
+			hasBackground = false,
+			hasPlaceholderSlots = true,
+		}),
+	})
+end
+
+local function ContentStory(): React.ReactNode
+	return React.createElement(View, {
+		tag = STORY_PAGE_TAG,
+	}, {
+		Subparts = React.createElement(Section, {
+			LayoutOrder = 1,
+			name = "Subparts",
+		}, {
+			Leading = React.createElement(LabeledShell, {
+				LayoutOrder = 1,
+				label = "Leading",
+				leading = leadingPlaceholder(),
+			}),
+			Content = React.createElement(LabeledShell, {
+				LayoutOrder = 2,
+				label = "Content",
+				content = contentPlaceholder(),
+			}),
+			Trailing = React.createElement(LabeledShell, {
+				LayoutOrder = 3,
+				label = "Trailing",
+				trailing = trailingPlaceholder(),
+			}),
+		}),
+		FullComposition = React.createElement(Section, {
+			LayoutOrder = 2,
+			name = "Full composition",
+		}, {
+			LeadingAndTrailing = React.createElement(SlotPattern, {
+				LayoutOrder = 1,
+				label = "Leading and Trailing",
+				leading = leadingPlaceholder(),
+				trailing = trailingPlaceholder(),
+				Cell = GlobalNavigationCell,
+			}),
+			LeadingAndContent = React.createElement(SlotPattern, {
+				LayoutOrder = 2,
+				label = "Leading and Content",
+				leading = leadingPlaceholder(),
+				content = contentPlaceholder(),
+				Cell = CenteredDetailCell,
+			}),
+			ContentAndTrailing = React.createElement(SlotPattern, {
+				LayoutOrder = 3,
+				label = "Content and Trailing",
+				content = contentPlaceholder(),
+				trailing = trailingPlaceholder(),
+				Cell = ContentAndTrailingCell,
+			}),
+			LeadingContentAndTrailing = React.createElement(SlotPattern, {
+				LayoutOrder = 4,
+				label = "Leading, Content, and Trailing",
+				hasPlaceholderSlots = true,
+				Cell = SearchCell,
+			}),
+		}),
+		Overflow = React.createElement(Section, {
+			LayoutOrder = 3,
+			name = "Overflow",
+		}, {
+			ContentFillsWithoutTrailing = React.createElement(SlotPattern, {
+				LayoutOrder = 1,
+				label = "Content asks for the whole row, no Trailing",
+				leading = leadingPlaceholder(),
+				content = contentPlaceholder({ fill = true, isSubject = true }),
+				Cell = ContentFillCell,
+			}),
+			ContentFillsBesideTrailing = React.createElement(SlotPattern, {
+				LayoutOrder = 2,
+				label = "Content asks for the whole row beside Trailing",
+				leading = leadingPlaceholder(),
+				content = contentPlaceholder({ fill = true, isSubject = true }),
+				trailing = trailingPlaceholder(),
+				Cell = ContentFillWithTrailingCell,
+			}),
+		}),
+	})
 end
 
 return {
-	controls = {
-		hasBackground = true,
-		title = "Title",
-	},
+	summary = "A persistent top-level bar that arranges leading, content, and trailing slots in one responsive row.",
 	stories = {
 		{
 			name = "Playground",
-			story = function(props: StoryProps)
-				local isSearchOpen, setIsSearchOpen = React.useState(false)
-
-				return React.createElement(StoryWrapper, props.controls :: StoryWrapperProps, {
-					HeaderBar = React.createElement(HeaderBar.Root, {
-						hasBackground = props.controls.hasBackground,
-					}, {
-						Leading = React.createElement(HeaderBar.Leading, nil, {
-							Actions = React.createElement(HeaderBar.Actions, {
-								actions = {
-									{
-										id = "menu",
-										icon = BuilderIcons.Icon.ThreeBarsHorizontal,
-										onActivated = function()
-											print("Toggle menu")
-										end,
-									},
-								},
-							}),
-
-							Title = React.createElement(Text, {
-								tag = "auto-xy text-heading-medium content-emphasis",
-								Text = props.controls.title,
-								LayoutOrder = 2,
-							}),
-						}),
-
-						Content = React.createElement(HeaderBar.Content, nil, {
-							Search = if isSearchOpen
-								then React.createElement(SearchInput, {
-									text = "",
-									onChanged = function() end,
-								})
-								else nil,
-						}),
-
-						Trailing = React.createElement(HeaderBar.Trailing, nil, {
-							Actions = React.createElement(HeaderBar.Actions, {
-								actions = {
-									{
-										id = "search",
-										icon = BuilderIcons.Icon.MagnifyingGlass,
-										onActivated = function()
-											setIsSearchOpen(function(prev)
-												return not prev
-											end)
-										end,
-									},
-									{
-										id = "robux",
-										icon = BuilderIcons.Icon.Robux,
-										onActivated = function()
-											print("Robux")
-										end,
-									},
-									{
-										id = "notifications",
-										icon = BuilderIcons.Icon.Bell,
-										onActivated = function()
-											print("Notifications")
-										end,
-									},
-								},
-							}),
-						}),
-					}),
-				})
-			end,
+			story = PlaygroundStory :: unknown,
 		},
 		{
-			name = "Negative margins",
-			summary = "`HeaderBar.Actions` implicitly applies a negative margin so that the glyph of the left- or right-most IconButton will be aligned with the page content.",
-			story = function(props)
-				local leadingActions: { HeaderBar.HeaderBarAction } = {
-					{
-						id = "menu",
-						icon = BuilderIcons.Icon.ThreeBarsHorizontal,
-						onActivated = function()
-							print("Toggle menu")
-						end,
-					},
-				}
-				local trailingActions: { HeaderBar.HeaderBarAction } = {
-					{
-						id = "search",
-						icon = BuilderIcons.Icon.MagnifyingGlass,
-						onActivated = function()
-							print("Search")
-						end,
-					},
-					{
-						id = "robux",
-						icon = BuilderIcons.Icon.Robux,
-						onActivated = function()
-							print("Robux")
-						end,
-					},
-					{
-						id = "notifications",
-						icon = BuilderIcons.Icon.Bell,
-						onActivated = function()
-							print("Notifications")
-						end,
-					},
-				}
-
-				return React.createElement(StoryWrapper, props.controls :: StoryWrapperProps, {
-					LeadingAndTrailingActions = React.createElement(HeaderBar.Root, {
-						hasBackground = props.controls.hasBackground,
-						LayoutOrder = 1,
-					}, {
-						Leading = React.createElement(HeaderBar.Leading, nil, {
-							Actions = React.createElement(HeaderBar.Actions, {
-								actions = leadingActions,
-							}),
-							Title = React.createElement(Text, {
-								tag = "auto-xy text-heading-medium content-emphasis",
-								Text = props.controls.title,
-								LayoutOrder = 2,
-							}),
-						}),
-						Trailing = React.createElement(HeaderBar.Trailing, nil, {
-							Actions = React.createElement(HeaderBar.Actions, {
-								actions = trailingActions,
-							}),
-						}),
-					}),
-					TrailingActionsOnly = React.createElement(HeaderBar.Root, {
-						hasBackground = props.controls.hasBackground,
-						LayoutOrder = 2,
-					}, {
-						Leading = React.createElement(HeaderBar.Leading, nil, {
-							Title = React.createElement(Text, {
-								tag = "auto-xy text-heading-medium content-emphasis",
-								Text = props.controls.title,
-							}),
-						}),
-						Trailing = React.createElement(HeaderBar.Trailing, nil, {
-							Actions = React.createElement(HeaderBar.Actions, {
-								actions = trailingActions,
-							}),
-						}),
-					}),
-					TrailingButton = React.createElement(HeaderBar.Root, {
-						hasBackground = props.controls.hasBackground,
-						LayoutOrder = 3,
-					}, {
-						Leading = React.createElement(HeaderBar.Leading, nil, {
-							Actions = React.createElement(HeaderBar.Actions, {
-								actions = leadingActions,
-							}),
-							Title = React.createElement(Text, {
-								tag = "auto-xy text-heading-medium content-emphasis",
-								Text = props.controls.title,
-								LayoutOrder = 2,
-							}),
-						}),
-						Trailing = React.createElement(HeaderBar.Trailing, nil, {
-							Button = React.createElement(Button, {
-								text = "Sign in",
-								onActivated = function()
-									print("Sign in")
-								end,
-							}),
-						}),
-					}),
-				})
-			end,
+			name = "Sizing",
+			story = SizingStory,
 		},
 		{
-			name = "Dual-pane layout",
-			summary = "Shows how HeaderBar composition adapts across multiple panes. At Small breakpoints, the Primary pane collapses and can be opened from the Aside pane.",
-			story = function(props: StoryProps)
-				local controls = props.controls
-
-				local container, setContainer = React.useState(nil :: GuiObject?)
-				local breakpoint: Breakpoint = useBreakpoint(container)
-				local isMessageViewCollapsed = breakpoint == Breakpoint.XSmall or breakpoint == Breakpoint.Small
-				local isMessageViewVisible, setIsMessageViewVisible = React.useState(false)
-				local showChatHistory = not isMessageViewCollapsed or not isMessageViewVisible
-				local showMessageView = not isMessageViewCollapsed or isMessageViewVisible
-
-				return React.createElement(StoryWrapper, props.controls :: StoryWrapperProps, {
-					Story = React.createElement(View, {
-						tag = "row size-full-0 auto-y stroke-default bg-surface-0",
-						sizeConstraint = {
-							MaxSize = Vector2.new(math.huge, 300),
-						},
-						LayoutOrder = 1,
-						ref = setContainer,
-					}, {
-						ChatHistory = if showChatHistory
-							then React.createElement(View, {
-								tag = "col shrink size-full",
-								sizeConstraint = {
-									MaxSize = Vector2.new(BreakpointConfig.widths[Breakpoint.Small], math.huge),
-								},
-								LayoutOrder = 1,
-							}, {
-								HeaderBar = React.createElement(HeaderBar.Root, {
-									hasBackground = controls.hasBackground,
-									LayoutOrder = 1,
-								}, {
-									Leading = React.createElement(HeaderBar.Leading, nil, {
-										Title = React.createElement(Text, {
-											tag = "auto-xy text-heading-medium content-emphasis",
-											Text = controls.title,
-											LayoutOrder = 1,
-										}),
-									}),
-
-									Trailing = React.createElement(HeaderBar.Trailing, nil, {
-										Search = React.createElement(IconButton, {
-											icon = BuilderIcons.Icon.MagnifyingGlass,
-											onActivated = function()
-												print("Search activated")
-											end,
-											LayoutOrder = 1,
-										}),
-
-										Robux = React.createElement(IconButton, {
-											icon = BuilderIcons.Icon.Robux,
-											onActivated = function()
-												print("Robux activated")
-											end,
-											LayoutOrder = 2,
-										}),
-
-										Notifications = React.createElement(IconButton, {
-											icon = BuilderIcons.Icon.Bell,
-											onActivated = function()
-												print("Notifications activated")
-											end,
-											LayoutOrder = 3,
-										}),
-									}),
-								}),
-
-								Content = React.createElement(View, {
-									tag = "col fill gap-medium size-full-0 padding-large",
-									LayoutOrder = 2,
-								}, {
-									Description = React.createElement(Text, {
-										tag = "size-full-0 auto-y text-body-medium text-align-x-left content-default",
-										Text = "Recent conversations",
-										LayoutOrder = 1,
-									}),
-
-									ChatRow = React.createElement(Button, {
-										text = "Username",
-										variant = ButtonVariant.Standard,
-										size = InputSize.Medium,
-										width = UDim.new(1, 0),
-										onActivated = function()
-											setIsMessageViewVisible(true)
-										end,
-										LayoutOrder = 2,
-									}),
-								}),
-							})
-							else nil,
-
-						Divider = if isMessageViewCollapsed
-							then nil
-							else React.createElement(Divider, {
-								orientation = Orientation.Vertical,
-								LayoutOrder = 2,
-							}),
-
-						MessageView = if showMessageView
-							then React.createElement(View, {
-								tag = "col fill size-full",
-								LayoutOrder = 3,
-							}, {
-								HeaderBar = React.createElement(HeaderBar.Root, {
-									hasBackground = controls.hasBackground,
-									LayoutOrder = 1,
-								}, {
-									Leading = React.createElement(HeaderBar.Leading, nil, {
-										Back = if isMessageViewCollapsed
-											then React.createElement(IconButton, {
-												icon = BuilderIcons.Icon.ChevronLargeLeft,
-												isCircular = true,
-												onActivated = function()
-													setIsMessageViewVisible(false)
-												end,
-												LayoutOrder = 1,
-											})
-											else nil,
-
-										Account = React.createElement(View, {
-											tag = "row align-y-center gap-small auto-xy",
-											LayoutOrder = 2,
-										}, {
-											Avatar = React.createElement(Avatar, {
-												userId = 24813339,
-												size = InputSize.Medium,
-												LayoutOrder = 1,
-											}),
-
-											Text = React.createElement(View, {
-												tag = "col auto-xy",
-												LayoutOrder = 2,
-											}, {
-												Name = React.createElement(Text, {
-													tag = "auto-xy text-label-medium content-emphasis",
-													Text = "Username",
-													LayoutOrder = 1,
-												}),
-
-												Handle = React.createElement(Text, {
-													tag = "auto-xy text-body-small content-default",
-													Text = "@handle",
-													LayoutOrder = 2,
-												}),
-											}),
-										}),
-									}),
-
-									Trailing = React.createElement(HeaderBar.Trailing, nil, {
-										Button = React.createElement(Button, {
-											text = "Button",
-											variant = ButtonVariant.Standard,
-											size = InputSize.Medium,
-											onActivated = function()
-												print("Button activated")
-											end,
-											LayoutOrder = 1,
-										}),
-									}),
-								}),
-
-								Content = React.createElement(Text, {
-									tag = "fill size-full-0 padding-large text-body-medium text-align-x-left text-align-y-top content-default",
-									Text = "Conversation pane",
-									LayoutOrder = 2,
-								}),
-							})
-							else nil,
-					}),
-				})
-			end,
+			name = "hasBackground",
+			story = HasBackgroundStory,
 		},
 		{
-			name = "Menu leading accessory",
-			summary = "Shows when menu and logo content belongs in HeaderBar versus the surrounding navigation shell.",
-			story = function(props: StoryProps)
-				local controls = props.controls
-				local container, setContainer = React.useState(nil :: GuiObject?)
-				local breakpoint: Breakpoint = useBreakpoint(container)
-				local isMobile = breakpoint == Breakpoint.XSmall or breakpoint == Breakpoint.Small
-
-				return React.createElement(StoryWrapper, props.controls :: StoryWrapperProps, {
-					Story = if isMobile
-						then React.createElement(View, {
-							tag = "col size-full-0 auto-y stroke-default bg-surface-0",
-							LayoutOrder = 1,
-							ref = setContainer,
-						}, {
-							HeaderBar = React.createElement(HeaderBar.Root, {
-								hasBackground = controls.hasBackground,
-								LayoutOrder = 1,
-							}, {
-								Leading = React.createElement(HeaderBar.Leading, nil, {
-									Menu = React.createElement(IconButton, {
-										icon = BuilderIcons.Icon.ThreeBarsHorizontal,
-										onActivated = function()
-											print("Menu activated")
-										end,
-										LayoutOrder = 1,
-									}),
-
-									Logo = React.createElement(Text, {
-										tag = "auto-xy text-heading-medium content-emphasis",
-										Text = "ROBLOX",
-										LayoutOrder = 2,
-									}),
-								}),
-
-								Trailing = React.createElement(HeaderBar.Trailing, nil, {
-									Search = React.createElement(IconButton, {
-										icon = BuilderIcons.Icon.MagnifyingGlass,
-										onActivated = function()
-											print("Search activated")
-										end,
-										LayoutOrder = 1,
-									}),
-
-									Robux = React.createElement(IconButton, {
-										icon = BuilderIcons.Icon.Robux,
-										onActivated = function()
-											print("Robux activated")
-										end,
-										LayoutOrder = 2,
-									}),
-
-									Notifications = React.createElement(IconButton, {
-										icon = BuilderIcons.Icon.Bell,
-										onActivated = function()
-											print("Notifications activated")
-										end,
-										LayoutOrder = 3,
-									}),
-								}),
-							}),
-
-							Content = React.createElement(Text, {
-								tag = "auto-xy padding-large text-body-medium content-default",
-								Text = "Mobile menu lives in HeaderBar.",
-								LayoutOrder = 2,
-							}),
-						})
-						else React.createElement(View, {
-							tag = "row size-full-0 auto-y stroke-default bg-surface-0",
-							LayoutOrder = 1,
-							ref = setContainer,
-						}, {
-							NavRail = React.createElement(View, {
-								tag = "col gap-small padding-medium bg-surface-0",
-								Size = UDim2.new(0, 72, 1, 0),
-								LayoutOrder = 1,
-							}, {
-								Menu = React.createElement(IconButton, {
-									icon = BuilderIcons.Icon.ThreeBarsHorizontal,
-									onActivated = function()
-										print("Menu activated")
-									end,
-									LayoutOrder = 1,
-								}),
-							}),
-
-							Main = React.createElement(View, {
-								tag = "col size-full-0",
-								Size = UDim2.new(1, -72, 1, 0),
-								LayoutOrder = 2,
-							}, {
-								HeaderBar = React.createElement(HeaderBar.Root, {
-									hasBackground = controls.hasBackground,
-									LayoutOrder = 1,
-								}, {
-									Leading = React.createElement(HeaderBar.Leading, nil, {
-										Logo = React.createElement(Text, {
-											tag = "auto-xy text-heading-medium content-emphasis",
-											Text = "ROBLOX",
-											LayoutOrder = 1,
-										}),
-									}),
-
-									Trailing = React.createElement(HeaderBar.Trailing, nil, {
-										Search = React.createElement(IconButton, {
-											icon = BuilderIcons.Icon.MagnifyingGlass,
-											onActivated = function()
-												print("Search activated")
-											end,
-											LayoutOrder = 1,
-										}),
-
-										Robux = React.createElement(IconButton, {
-											icon = BuilderIcons.Icon.Robux,
-											onActivated = function()
-												print("Robux activated")
-											end,
-											LayoutOrder = 2,
-										}),
-
-										Notifications = React.createElement(IconButton, {
-											icon = BuilderIcons.Icon.Bell,
-											onActivated = function()
-												print("Notifications activated")
-											end,
-											LayoutOrder = 3,
-										}),
-									}),
-								}),
-
-								Content = React.createElement(Text, {
-									tag = "auto-xy padding-large text-body-medium content-default",
-									Text = "Collapsed nav leaves logo content in HeaderBar.",
-									LayoutOrder = 2,
-								}),
-							}),
-						}),
-				})
-			end,
+			name = "Content",
+			story = ContentStory,
 		},
-		{
-			name = "Title positioning",
-			summary = "Shows whether title content lives inside HeaderBar or below it in the page body.",
-			story = function(props: StoryProps)
-				local controls = props.controls
-				local container, setContainer = React.useState(nil :: GuiObject?)
-				local breakpoint: Breakpoint = useBreakpoint(container)
-				local titleInHeader = breakpoint == Breakpoint.XSmall or breakpoint == Breakpoint.Small
-
-				return React.createElement(StoryWrapper, props.controls :: StoryWrapperProps, {
-					Story = React.createElement(View, {
-						tag = "col size-full-0 auto-y stroke-default bg-surface-0",
-						LayoutOrder = 1,
-						ref = setContainer,
-					}, {
-						HeaderBar = React.createElement(HeaderBar.Root, {
-							hasBackground = controls.hasBackground,
-							LayoutOrder = 1,
-						}, {
-							Leading = React.createElement(HeaderBar.Leading, nil, {
-								Menu = if not titleInHeader
-									then React.createElement(IconButton, {
-										icon = BuilderIcons.Icon.ThreeBarsHorizontal,
-										onActivated = function()
-											print("Menu activated")
-										end,
-										LayoutOrder = 1,
-									})
-									else nil,
-								Breadcrumbs = if not titleInHeader
-									then React.createElement(View, {
-										tag = "row align-y-center gap-small auto-xy",
-										LayoutOrder = 2,
-									}, {
-										First = React.createElement(Text, {
-											tag = "auto-xy text-body-medium content-default",
-											Text = "Link",
-											LayoutOrder = 1,
-										}),
-										FirstSeparator = React.createElement(Text, {
-											tag = "auto-xy text-body-medium content-default",
-											Text = "/",
-											LayoutOrder = 2,
-										}),
-										Second = React.createElement(Text, {
-											tag = "auto-xy text-body-medium content-default",
-											Text = "Link",
-											LayoutOrder = 3,
-										}),
-										SecondSeparator = React.createElement(Text, {
-											tag = "auto-xy text-body-medium content-default",
-											Text = "/",
-											LayoutOrder = 4,
-										}),
-										Current = React.createElement(Text, {
-											tag = "auto-xy text-label-medium content-emphasis",
-											Text = "Link",
-											LayoutOrder = 5,
-										}),
-									})
-									else React.createElement(Text, {
-										tag = "auto-xy text-heading-medium content-emphasis",
-										Text = controls.title,
-										LayoutOrder = 1,
-									}),
-							}),
-							Trailing = React.createElement(HeaderBar.Trailing, nil, {
-								Search = React.createElement(IconButton, {
-									icon = BuilderIcons.Icon.MagnifyingGlass,
-									onActivated = function()
-										print("Search activated")
-									end,
-									LayoutOrder = 1,
-								}),
-								Robux = React.createElement(IconButton, {
-									icon = BuilderIcons.Icon.Robux,
-									onActivated = function()
-										print("Robux activated")
-									end,
-									LayoutOrder = 2,
-								}),
-								Notifications = React.createElement(IconButton, {
-									icon = BuilderIcons.Icon.Bell,
-									onActivated = function()
-										print("Notifications activated")
-									end,
-									LayoutOrder = 3,
-								}),
-							}),
-						}),
-						PageTitle = if titleInHeader
-							then nil
-							else React.createElement(View, {
-								tag = "row align-y-center size-full-1200 padding-x-large",
-								LayoutOrder = 2,
-							}, {
-								Title = React.createElement(Text, {
-									tag = "auto-xy text-heading-medium content-emphasis",
-									Text = controls.title,
-									LayoutOrder = 1,
-								}),
-							}),
-						Content = React.createElement(Text, {
-							tag = "auto-xy padding-large text-body-medium content-default",
-							Text = if titleInHeader
-								then "Title is inside HeaderBar."
-								else "Title is positioned below HeaderBar.",
-							LayoutOrder = 3,
-						}),
-					}),
-				})
-			end,
-		},
+	},
+	controls = {
+		hasBackground = true,
+		hasLeading = true,
+		hasContent = true,
+		hasTrailing = true,
+		viewport = VIEWPORT_ORDER,
 	},
 }

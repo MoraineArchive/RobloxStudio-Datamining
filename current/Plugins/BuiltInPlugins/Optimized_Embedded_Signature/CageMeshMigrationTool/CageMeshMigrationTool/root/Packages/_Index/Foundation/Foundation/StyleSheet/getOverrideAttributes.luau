@@ -1,7 +1,6 @@
 local Foundation = script:FindFirstAncestor("Foundation")
 local ColorMode = require(Foundation.Enums.ColorMode)
 local Device = require(Foundation.Enums.Device)
-local Flags = require(Foundation.Utility.Flags)
 local ThemeName = require(Foundation.Enums.ThemeName)
 local TokenProcessingUtilities = require(Foundation.Providers.Style.Tokens.TokenProcessingUtilities)
 local Tokens = require(Foundation.Providers.Style.Tokens)
@@ -35,7 +34,6 @@ end
 -- the user scale so overrides scale the same way as the base rule values do.
 --
 -- Keys are target token paths. Values: if a string, a source token path; otherwise a literal.
--- All of this runs only when FoundationTokenOverrides is enabled (see Flags).
 local function getOverrideAttributes(
 	themeName: ThemeName?,
 	colorMode: ColorMode,
@@ -44,15 +42,11 @@ local function getOverrideAttributes(
 ): OverrideAttributes
 	local result: OverrideAttributes = {}
 
-	if not Flags.FoundationTokenOverrides then
-		return result
-	end
-
 	if not overrides or not next(overrides) then
 		return result
 	end
 
-	local baseTokens = Tokens.getTokens(colorMode, device, 1, nil, if Flags.FoundationThemeName then themeName else nil)
+	local baseTokens = Tokens.getTokens(colorMode, device, 1, nil, themeName)
 
 	for targetPath, source in overrides do
 		local sourceValue = TokenProcessingUtilities.resolveTokenOverride(baseTokens, targetPath, source)

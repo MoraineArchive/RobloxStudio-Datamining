@@ -2215,11 +2215,352 @@
             "image",
             "property"
           ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "API",
+          "id": "0b75c32c23ee56a54ae1a0de249a1863afc418e0ca95ad4fc19c326a476baaee",
+          "key": "AnimatedImageTrack.Function.GetFrameNames",
+          "kind": "members",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "function",
+            "image",
+            "track"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "API",
+          "id": "185dfb80f71cc5642f1dcd768883b08006165e4a2ca901f74c42d23b3ada89f7",
+          "key": "AnimatedImageTrack.Property.TrackName",
+          "kind": "members",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "image",
+            "property",
+            "track"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "API",
+          "id": "23662407eb497bcf52b1a36f49f1f8dbc8f759bb54772eff899dcb765aa22436",
+          "key": "AnimatedImageService.Function.CreateTrack",
+          "kind": "members",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "function",
+            "image"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "API",
+          "id": "4954d0b44e00f1cfd410cf4e87040b6116853ee2960af02a49bdb71bc4bc6c93",
+          "key": "AnimatedImageService.Function.DestroyTrack",
+          "kind": "members",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "function",
+            "image"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "API",
+          "id": "59e2ba02171dac2cdc131b11e28cf738d452ce8d776076c2328401d02e98f9bb",
+          "key": "AnimatedImageService.Function.GetAnimatedImageClipsChangedSignal",
+          "kind": "members",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "added",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "function",
+            "image"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "API",
+          "id": "7e49ec24adb5709eda0b818daf3cb98955c328445a5ab92c9a82818a6ef263be",
+          "key": "AnimatedImageService.Function.GetAnimatedImageClipFramesAsync",
+          "kind": "members",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "added",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "function",
+            "image"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "API",
+          "id": "974c84ae8dcdb7031e69c853872f96ed7d8ea4f77d2ec6d36e5521c81929bf3b",
+          "key": "AnimatedImageService.Function.AddAnimatedImageClipAsync",
+          "kind": "members",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "added",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "function",
+            "image"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "API",
+          "id": "9a4572035aaf757089c225b1cd6118a4f462cb81c92be70570addff883c68bf3",
+          "key": "AnimatedImageService.Function.GetFrameNames",
+          "kind": "members",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "function",
+            "image"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "API",
+          "id": "aa5bb497694654b6e0e99ea6dc066bf890a4220449537df25dca0fef09295846",
+          "key": "AnimatedImageTrack.Property.Duration",
+          "kind": "members",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "image",
+            "property",
+            "track"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "API",
+          "id": "c39433a3a47325fe14110f360e622f26b7a5249274bbe9bb690e8c74a319ac65",
+          "key": "AnimatedImageService.Function.GetTrack",
+          "kind": "members",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "function",
+            "image"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "API",
+          "id": "ceb600adaec7f4f6bf518971a24f74410ef12af46b0d13477140397a0925deb3",
+          "key": "AnimatedImageTrack.Function.GetContent",
+          "kind": "members",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "function",
+            "image",
+            "track"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "API",
+          "id": "cf0cd8b3a5054c0096dcbd3a69948bba25c925dbcbcc412ad137ff3eb2d37e9b",
+          "key": "AnimatedImageTrack",
+          "kind": "classes",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "image",
+            "track"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "API",
+          "id": "d86a27f785d9897fe5cabf7e39823d87da4b64c9cf95871c6df0401941e0c188",
+          "key": "AnimatedImageTrack.Property.FrameCount",
+          "kind": "members",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "image",
+            "property",
+            "track"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "API",
+          "id": "e6ca5c536e9d8ce2e1711f02cec758062de22ab214fb6a2e3bc1a7466e70b5a2",
+          "key": "AnimatedImageService.Function.GetTracksChanged",
+          "kind": "members",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "function",
+            "image"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "API",
+          "id": "eb4ee0357532ede4d6ac5986249f22cc05e8187b1bbb06fc61476429b9cc520e",
+          "key": "AnimatedImageService.Function.Prewarm",
+          "kind": "members",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "function",
+            "image"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "API",
+          "id": "f5c73d4077a07a5da611159be9428c02c2e22cfc6e6b5c0915375a40f084c8da",
+          "key": "AnimatedImageService.Function.UnloadTracks",
+          "kind": "members",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "function",
+            "image"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "animated-images",
-      "lastObservedAt": "2026-10-07T22:02:39.782Z",
+      "lastObservedAt": "2026-10-14T22:08:06.635Z",
       "lifecycle": [],
       "status": "observed",
       "title": "Animated images"
@@ -3206,11 +3547,110 @@
             "filter",
             "place"
           ]
+        },
+        {
+          "concepts": [
+            "avatar",
+            "abilities"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "Source",
+          "id": "06f694824818a9a9e47c714341291ee2c997f2607653bf321e41a2596dea4a2b",
+          "key": "extracontent-scripts/PlayerScripts/StarterPlayer/PlayerModule/ControlModule/AvatarAbilitiesInterface.lua",
+          "kind": "file",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abilities",
+            "avatar",
+            "control",
+            "extracontent",
+            "interface",
+            "starter"
+          ]
+        },
+        {
+          "after": "True;10139630272;10770019413;10769634303;10769786660;10769920376;10769888690;10769922255;10769928435;10770723134;10770582633;10769909775;10769924064;10768492546;10761698214",
+          "before": "True;10139630272;10770019413;10769634303;10768492546;10761698214",
+          "concepts": [
+            "avatar",
+            "abilities"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "LiveSettings",
+          "id": "33371ee7766d9424d12ad05df603d735a872d5b6f12e04809c7fbdd590e90946",
+          "key": "DFFlagAvatarAbilitiesUseStudioBeta2Asset_UniverseFilter",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "changed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abilities",
+            "asset",
+            "avatar",
+            "beta2",
+            "filter",
+            "universe"
+          ]
+        },
+        {
+          "concepts": [
+            "avatar",
+            "abilities"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "Source",
+          "id": "cdca95f7c8817d86caaf14b6231bb3f73ec5ded30993c27bda65c3b46d830bc6",
+          "key": "extracontent-scripts/PlayerScripts/StarterPlayer/PlayerModule/ControlModule/AvatarAbilitiesInterface.lua",
+          "kind": "sources",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abilities",
+            "avatar",
+            "control",
+            "extracontent",
+            "interface",
+            "starter"
+          ]
+        },
+        {
+          "concepts": [
+            "avatar",
+            "abilities"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "Distribution",
+          "id": "d396d9aa5528aeeb2e1788083c72512a80712cda8872574a61a4b74bfba7339a",
+          "key": "ExtraContent/scripts/PlayerScripts/StarterPlayer/PlayerModule/ControlModule/AvatarAbilitiesInterface.lua",
+          "kind": "files",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abilities",
+            "avatar",
+            "content",
+            "control",
+            "extra",
+            "interface",
+            "starter"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "avatar-abilities",
-      "lastObservedAt": "2026-10-14T18:58:02.227Z",
+      "lastObservedAt": "2026-10-14T22:08:06.635Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T01:54:39.846Z",
@@ -7106,11 +7546,467 @@
             "metrics",
             "moments"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "Distribution",
+          "id": "0e2187f5d7a7d5275d0360e43c2824a5125b3378f4eb81c50cd429c279a37eac",
+          "key": "content-textures2/ui/Moments/text-color-picker.png",
+          "kind": "resources",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "color",
+            "content",
+            "moments",
+            "picker",
+            "text",
+            "textures2"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "Distribution",
+          "id": "1982149493f9d8daa614015fd69b41295788dc34e0ba8d4102312e11e9cae10e",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentsCommon/lock.toml",
+          "kind": "files",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "common",
+            "content",
+            "extra",
+            "index",
+            "lock",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "Distribution",
+          "id": "1d71281306855057ce6145d4046fadc6b77f9010fabbd308f0dce785206aabe0",
+          "key": "content/textures/ui/Moments/text-color-picker@3x.png",
+          "kind": "files",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "added",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "color",
+            "content",
+            "moments",
+            "picker",
+            "text",
+            "textures"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "Source",
+          "id": "3448b345797caff85cf1834d5ce8f31d7b54467c7761a1922bb629d83a3a5f42",
+          "key": "extracontent-luapackages/Packages/_Index/MomentsCommon/Foundation.lua",
+          "kind": "file",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "common",
+            "extracontent",
+            "foundation",
+            "index",
+            "luapackages",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "Source",
+          "id": "36de9736f35eadb92086bf0713e3d0c7df5a037ff96e9c5debf74b3fc75e58a8",
+          "key": "extracontent-luapackages/Packages/_Index/MomentsCreationFlow/Foundation.lua",
+          "kind": "file",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "extracontent",
+            "flow",
+            "foundation",
+            "index",
+            "luapackages",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "Source",
+          "id": "581c366d0439a7e3b369d228644933734bee800a40d927e0cf181e354dc94785",
+          "key": "extracontent-luapackages/Packages/_Index/MomentsCommon/Foundation.lua",
+          "kind": "sources",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "common",
+            "extracontent",
+            "foundation",
+            "index",
+            "luapackages",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "Distribution",
+          "id": "63ad0e7c88f8f09d89080c26e7ae2e262f60c43121c40706f2ff0be037d8884d",
+          "key": "files/content-textures2/ui/Moments/text-color-picker@3x.png",
+          "kind": "file",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "color",
+            "content",
+            "files",
+            "moments",
+            "picker",
+            "text",
+            "textures2"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "Distribution",
+          "id": "72eec44e63e0cd7d42fdc98458aed397bb5fcaaf95005c34cf49f43cceb86b6c",
+          "key": "files/content-textures2/ui/Moments/text-color-picker.png",
+          "kind": "file",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "color",
+            "content",
+            "files",
+            "moments",
+            "picker",
+            "text",
+            "textures2"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "Distribution",
+          "id": "7305e074c351669105975dbfe57a02e6870ced1c554526dccc9d893a1d4c409d",
+          "key": "content-textures2/ui/Moments/text-color-picker@2x.png",
+          "kind": "resources",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "color",
+            "content",
+            "moments",
+            "picker",
+            "text",
+            "textures2"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "Distribution",
+          "id": "745af0fc211ba9d14bb426eeb286f93d986a4c5e491797dccb7836e17689426f",
+          "key": "content/textures/ui/Moments/text-color-picker@2x.png",
+          "kind": "files",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "added",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "color",
+            "content",
+            "moments",
+            "picker",
+            "text",
+            "textures"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "Distribution",
+          "id": "81447fdce8f27a80c9fedd54b6038c743b0cbee3358464733ede5b810a785db8",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentsCommon/Foundation.lua",
+          "kind": "files",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "common",
+            "content",
+            "extra",
+            "foundation",
+            "index",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "Distribution",
+          "id": "958e7cacb4e3359160dcf96488bc7ee1da5699441d14784506f2a906483556a6",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentsCreationFlow/lock.toml",
+          "kind": "files",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "content",
+            "creation",
+            "extra",
+            "flow",
+            "index",
+            "lock",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "Distribution",
+          "id": "b1a7641891c9541275bd7726c958664059fdb0d861f519db8d3313c8d72670fc",
+          "key": "content-textures2/ui/Moments/text-color-picker@3x.png",
+          "kind": "resources",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "color",
+            "content",
+            "moments",
+            "picker",
+            "text",
+            "textures2"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "Distribution",
+          "id": "b8afa3ce3a49e4ff70710933636d296b1b35124d583986a173c164c084c49a15",
+          "key": "files/content-textures2/ui/Moments/text-color-picker@2x.png",
+          "kind": "file",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "color",
+            "content",
+            "files",
+            "moments",
+            "picker",
+            "text",
+            "textures2"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "LiveSettings",
+          "id": "c9f27b91cb023824eeda972d87ef239bafb60f7356d7a676736ae7078028b527",
+          "key": "FFlagFlyoutRemoveMomentsForArgoEnabled_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "argo",
+            "flyout",
+            "for",
+            "moments",
+            "remove"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "Distribution",
+          "id": "d87344b03413b0af75e6681040ffaab7ac4e2b31765c907cd3cce884bcc1c731",
+          "key": "content/textures/ui/Moments/text-color-picker.png",
+          "kind": "files",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "added",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "color",
+            "content",
+            "moments",
+            "picker",
+            "text",
+            "textures"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "Distribution",
+          "id": "e0c1873ee44309d9e5569c64886796745d28ac5cb872e25f47e3efcc12ab8970",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentsCreationFlow/Foundation.lua",
+          "kind": "files",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "content",
+            "creation",
+            "extra",
+            "flow",
+            "foundation",
+            "index",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab",
+          "evidencePath": "2026/10/14/22-08-06Z_build_version-4f087c32742644ab/changes.json",
+          "family": "Source",
+          "id": "f3cad682b1ab1f4649724e6f99431c337bdea495472554ddb00c31b8f4f22136",
+          "key": "extracontent-luapackages/Packages/_Index/MomentsCreationFlow/Foundation.lua",
+          "kind": "sources",
+          "observedAt": "2026-10-14T22:08:06.635Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "extracontent",
+            "flow",
+            "foundation",
+            "index",
+            "luapackages",
+            "moments"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-10-14T01:37:27.212Z",
+      "lastObservedAt": "2026-10-14T22:08:06.635Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",

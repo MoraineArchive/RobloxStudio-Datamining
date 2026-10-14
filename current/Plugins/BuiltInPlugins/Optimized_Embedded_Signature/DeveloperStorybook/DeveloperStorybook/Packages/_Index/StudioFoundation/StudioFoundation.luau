@@ -14,6 +14,7 @@ return {
 		FoundationProviderAdapter = FoundationProviderAdapter,
 	},
 	Contexts = {
+		DialogDmIdContext = require(script.Contexts.DialogDmIdContext),
 		StudioThemeContextProvider = require(script.Contexts.StudioThemeContextProvider),
 		ThemeContext = require(script.Contexts.ThemeContext),
 		Localization = require(script.Contexts.Localization),

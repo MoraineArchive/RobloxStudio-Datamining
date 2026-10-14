@@ -550,50 +550,100 @@ local function NumberInput(numberInputProps: NumberInputProps, ref: React.Ref<Gu
 		unfilledStyleTransparency = tokens.Color.Shift.Shift_100.Transparency
 	end
 
-	local scrubbableTransparencySequence = React.useMemo(
-		function()
-			return mapBindable(props.value, function(value)
-				local percentageScrubbed = 0
-				if value and props.maximum and props.minimum then
-					local currentValue = clampValueToRange(value)
-					if props.maximum == props.minimum then
-						percentageScrubbed = 1
-					else
-						percentageScrubbed = (currentValue - props.minimum) / (props.maximum - props.minimum)
-					end
-				end
+	local hasRange = math.abs(props.maximum) < math.huge and math.abs(props.minimum) < math.huge
+	local scrubbableTransparencySequence: Bindable<NumberSequence>
+	local scrubbableTransparencyOffset: Bindable<Vector2>
+	if Flags.FoundationNumberInputScrubbingUsesOffset then
+		scrubbableTransparencySequence = React.useMemo(function()
+			return NumberSequence.new({
+				NumberSequenceKeypoint.new(0, filledStyleTransparency),
+				NumberSequenceKeypoint.new(0.499, filledStyleTransparency),
+				NumberSequenceKeypoint.new(0.500, unfilledStyleTransparency),
+				NumberSequenceKeypoint.new(1, unfilledStyleTransparency),
+			})
+		end, { filledStyleTransparency, unfilledStyleTransparency })
 
-				if percentageScrubbed == 0 then
+		scrubbableTransparencyOffset = React.useMemo(
+			function()
+				return mapBindable(props.value, function(value)
+					local percentageScrubbed = 0
+					if value and hasRange then
+						local currentValue = clampValueToRange(value)
+						if props.maximum == props.minimum then
+							percentageScrubbed = 1
+						else
+							percentageScrubbed = (currentValue - props.minimum) / (props.maximum - props.minimum)
+						end
+					end
+
+					if percentageScrubbed <= 0 then
+						return Vector2.new(-1, 0)
+					end
+
+					if percentageScrubbed >= 1 then
+						return Vector2.new(1, 0)
+					end
+
+					return Vector2.new(percentageScrubbed - 0.5, 0)
+				end)
+			end,
+			{
+				props.value,
+				clampValueToRange,
+				props.maximum,
+				props.minimum,
+				hasRange,
+			} :: { unknown }
+		)
+	else
+		scrubbableTransparencySequence = React.useMemo(
+			function()
+				return mapBindable(props.value, function(value)
+					local percentageScrubbed = 0
+					if value and props.maximum and props.minimum then
+						local currentValue = clampValueToRange(value)
+						if props.maximum == props.minimum then
+							percentageScrubbed = 1
+						else
+							percentageScrubbed = (currentValue - props.minimum) / (props.maximum - props.minimum)
+						end
+					end
+
+					if percentageScrubbed == 0 then
+						return NumberSequence.new(unfilledStyleTransparency)
+					elseif percentageScrubbed == 1 then
+						return NumberSequence.new(filledStyleTransparency)
+					elseif percentageScrubbed > 0 or percentageScrubbed < 1 then
+						local numberSequenceKeypoints = {
+							NumberSequenceKeypoint.new(0, filledStyleTransparency),
+							NumberSequenceKeypoint.new(percentageScrubbed :: number, filledStyleTransparency),
+							NumberSequenceKeypoint.new(
+								math.min((percentageScrubbed :: number) + 0.001, 1),
+								unfilledStyleTransparency
+							),
+						}
+						if percentageScrubbed < 0.999 then
+							table.insert(
+								numberSequenceKeypoints,
+								NumberSequenceKeypoint.new(1, unfilledStyleTransparency)
+							)
+						end
+
+						return NumberSequence.new(numberSequenceKeypoints)
+					end
 					return NumberSequence.new(unfilledStyleTransparency)
-				elseif percentageScrubbed == 1 then
-					return NumberSequence.new(filledStyleTransparency)
-				elseif percentageScrubbed > 0 or percentageScrubbed < 1 then
-					local numberSequenceKeypoints = {
-						NumberSequenceKeypoint.new(0, filledStyleTransparency),
-						NumberSequenceKeypoint.new(percentageScrubbed :: number, filledStyleTransparency),
-						NumberSequenceKeypoint.new(
-							math.min((percentageScrubbed :: number) + 0.001, 1),
-							unfilledStyleTransparency
-						),
-					}
-					if percentageScrubbed < 0.999 then
-						table.insert(numberSequenceKeypoints, NumberSequenceKeypoint.new(1, unfilledStyleTransparency))
-					end
-
-					return NumberSequence.new(numberSequenceKeypoints)
-				end
-				return NumberSequence.new(unfilledStyleTransparency)
-			end)
-		end,
-		{
-			filledStyleTransparency,
-			unfilledStyleTransparency,
-			props.value,
-			clampValueToRange,
-			props.maximum,
-			props.minimum,
-		} :: { unknown }
-	)
+				end)
+			end,
+			{
+				filledStyleTransparency,
+				unfilledStyleTransparency,
+				props.value,
+				clampValueToRange,
+				props.maximum,
+				props.minimum,
+			} :: { unknown }
+		)
+	end
 
 	React.useEffect(function()
 		if not isFocused() and not ReactIs.isBinding(props.value) then
@@ -657,15 +707,23 @@ local function NumberInput(numberInputProps: NumberInputProps, ref: React.Ref<Gu
 					onDragEnded = if isScrubbable then onDragEnded else nil,
 					onReturnPressed = props.onReturnPressed,
 					ref = inputRef,
-					backgroundGradient = if isScrubbable and scrubbableTransparencySequence
-						then React.createElement("UIGradient", {
-							Color = if Flags.FoundationFixColorOnScrubbableNumberInput
-								then ColorSequence.new(bgColor)
-								else ColorSequence.new(tokens.Color.Shift.Shift_300.Color3),
-							Transparency = scrubbableTransparencySequence,
-							Rotation = 0,
-						})
-						else nil,
+					backgroundGradient = if Flags.FoundationNumberInputScrubbingUsesOffset
+						then (if isScrubbable and hasRange
+							then React.createElement("UIGradient", {
+								Color = ColorSequence.new(bgColor),
+								Transparency = scrubbableTransparencySequence,
+								Offset = scrubbableTransparencyOffset,
+							})
+							else nil)
+						else (if isScrubbable and scrubbableTransparencySequence
+							then React.createElement("UIGradient", {
+								Color = if Flags.FoundationFixColorOnScrubbableNumberInput
+									then ColorSequence.new(bgColor)
+									else ColorSequence.new(tokens.Color.Shift.Shift_300.Color3),
+								Transparency = scrubbableTransparencySequence,
+								Rotation = 0,
+							})
+							else nil),
 					trailingElement = if Flags.FoundationNumberInputBeta
 						then if props.trailingIcon
 							then React.createElement(

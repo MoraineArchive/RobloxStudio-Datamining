@@ -19,10 +19,18 @@ type BaseMenuItem = BaseMenu.BaseMenuItem
 type BaseMenuItemGroup = BaseMenu.BaseMenuItemGroup
 type BaseMenuItems = BaseMenu.BaseMenuItems
 
+local SIZE_ORDER: { InputSize } = {
+	InputSize.XSmall,
+	InputSize.Small,
+	InputSize.Medium,
+	InputSize.Large,
+}
+
 local exampleIcons = {}
 for uibloxIcon, _ in pairs(BuilderIcons.Migration["uiblox"]) do
 	table.insert(exampleIcons, uibloxIcon)
 end
+table.sort(exampleIcons)
 
 local function useMultiselect(items: { BaseMenuItem })
 	local state, setState = React.useState(items)
@@ -237,8 +245,9 @@ local function AllSizesStory()
 	return React.createElement(
 		View,
 		{ tag = "row wrap gap-xxlarge size-full-0 auto-y" },
-		Dash.map(InputSize, function(size)
+		Dash.map(SIZE_ORDER, function(size, index)
 			return React.createElement(BaseMenu.Root, {
+				LayoutOrder = index,
 				size = size,
 				items = BASE_ITEMS,
 				onActivated = Dash.noop(),
@@ -464,12 +473,11 @@ return {
 			story = CompositesStory,
 		},
 		{
-			name = "Overflow",
+			name = "Content",
 			story = OverflowStory,
 		},
 		{
 			name = "Scroll-to-selection",
-			summary = "Use scrollingFrameRef to scroll the menu to the selected item.",
 			story = ScrollToSelectionStory,
 		},
 		{
@@ -482,8 +490,8 @@ return {
 		},
 	},
 	controls = {
-		size = Dash.values(InputSize),
-		icon = Dash.values(exampleIcons),
+		size = SIZE_ORDER,
+		icon = exampleIcons,
 		hasIcon = true,
 	},
 }

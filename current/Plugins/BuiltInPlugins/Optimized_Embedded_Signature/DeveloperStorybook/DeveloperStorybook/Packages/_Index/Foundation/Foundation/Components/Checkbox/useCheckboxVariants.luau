@@ -21,8 +21,6 @@ type Tokens = Tokens.Tokens
 
 local VariantsContext = require(Foundation.Providers.Style.VariantsContext)
 
-local Flags = require(Foundation.Utility.Flags)
-
 type CheckboxVariantProps = {
 	input: InputVariantProps,
 	checkmark: { tag: string },
@@ -57,11 +55,9 @@ local function variantsFactory(tokens: Tokens)
 		},
 		[InputSize.Large] = {
 			input = {
-				size = if Flags.FoundationCheckboxBeta
-					then UDim2.fromOffset(tokens.Size.Size_600, tokens.Size.Size_600)
-					else UDim2.fromOffset(tokens.Size.Size_700, tokens.Size.Size_700),
+				size = UDim2.fromOffset(tokens.Size.Size_600, tokens.Size.Size_600),
 			},
-			checkmark = { tag = if Flags.FoundationCheckboxBeta then "size-600" else "size-700" },
+			checkmark = { tag = "size-600" },
 		},
 	}
 

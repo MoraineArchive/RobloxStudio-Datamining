@@ -6,6 +6,7 @@ local ReactUtils = require(Packages.ReactUtils)
 
 local Constants = require(Foundation.Constants)
 
+local GuiService = require(Foundation.Utility.Wrappers.Services).GuiService
 local InputMode = require(Foundation.Utility.Input.InputMode)
 local Types = require(Foundation.Components.Types)
 local View = require(Foundation.Components.View)
@@ -22,6 +23,8 @@ local calculateSliderPositionDelta = require(script.Parent.calculateSliderPositi
 local calculateSliderStepValue = require(script.Parent.calculateSliderStepValue)
 local calculateSliderValueFromPosition = require(script.Parent.calculateSliderValueFromPosition)
 local getGuiInputPosition = require(script.Parent.getGuiInputPosition)
+local getSelectionEntryDirection = require(script.Parent.getSelectionEntryDirection)
+local useSliderCaptureKeys = require(script.Parent.useSliderCaptureKeys)
 local useSliderDirectionalInput = require(script.Parent.useSliderDirectionalInput)
 
 local InputSize = require(Foundation.Enums.InputSize)
@@ -38,7 +41,7 @@ type SliderVariant = SliderVariant.SliderVariant
 
 local SliderType = require(Foundation.Enums.SliderType)
 
-local SliderKnob = require(script.Parent.SliderKnob)
+local SliderThumb = require(script.Parent.SliderThumb)
 
 local ColorNamespace = require(Foundation.Enums.ColorNamespace)
 local ControlState = require(Foundation.Enums.ControlState)
@@ -120,6 +123,31 @@ local DIRECTIONAL_SELECTION_GROUP: Types.SelectionGroup = {
 	SelectionBehaviorDown = Enum.SelectionBehavior.Escape,
 }
 
+local CAPTURED_SELECTION_GROUP: Types.SelectionGroup = {
+	SelectionBehaviorLeft = Enum.SelectionBehavior.Stop,
+	SelectionBehaviorRight = Enum.SelectionBehavior.Stop,
+	SelectionBehaviorUp = Enum.SelectionBehavior.Stop,
+	SelectionBehaviorDown = Enum.SelectionBehavior.Stop,
+}
+
+local FOCUSED_SELECTION_GROUP: Types.SelectionGroup = {
+	SelectionBehaviorLeft = Enum.SelectionBehavior.Escape,
+	SelectionBehaviorRight = Enum.SelectionBehavior.Escape,
+	SelectionBehaviorUp = Enum.SelectionBehavior.Escape,
+	SelectionBehaviorDown = Enum.SelectionBehavior.Escape,
+}
+
+-- The capture cursor is its own selection group so that directional input while
+-- captured cannot navigate off the knob onto another selectable inside the
+-- slider (the focus target). The root group's Stop only blocks leaving the
+-- group, not moving within it, so the knob traps every direction itself.
+local CAPTURE_CURSOR_SELECTION_GROUP: Types.SelectionGroup = {
+	SelectionBehaviorLeft = Enum.SelectionBehavior.Stop,
+	SelectionBehaviorRight = Enum.SelectionBehavior.Stop,
+	SelectionBehaviorUp = Enum.SelectionBehavior.Stop,
+	SelectionBehaviorDown = Enum.SelectionBehavior.Stop,
+}
+
 -- selene: allow(high_cyclomatic_complexity) -- try removing when cleaning up either FFlagFoundationSliderOffloadDraggingMath or FFlagFoundationSliderAsSeenOnTV
 local function Slider(sliderProps: SliderProps, forwardRef: React.Ref<GuiObject>?)
 	local props = withDefaults(sliderProps, defaultProps)
@@ -136,6 +164,17 @@ local function Slider(sliderProps: SliderProps, forwardRef: React.Ref<GuiObject>
 	local controlState, setControlState = React.useState(ControlState.Initialize :: ControlState)
 	local isDragging, setIsDragging = React.useState(false)
 	local isKnobVisible, setIsKnobVisible = React.useState(false)
+	local isCaptured, setIsCaptured
+	if Flags.FoundationSliderCapture then
+		isCaptured, setIsCaptured = React.useState(false)
+	end
+	local isMaxThumbActive, setIsMaxThumbActive
+	if Flags.FoundationSliderCapture then
+		isMaxThumbActive, setIsMaxThumbActive = React.useState(false)
+	end
+	local focusTargetRef = if Flags.FoundationSliderCapture then React.useRef(nil :: GuiObject?) else nil :: never
+	local captureTargetRef = if Flags.FoundationSliderCapture then React.useRef(nil :: GuiObject?) else nil :: never
+	local wasSelectedRef = if Flags.FoundationSliderCapture then React.useRef(false) else nil :: never
 	local rangeTrackIsMaxRef = if Flags.FoundationSliderBeta then React.useRef(false) else nil :: never
 	local rangeDragIsMaxKnob, setRangeDragIsMaxKnob
 	if Flags.FoundationSliderBeta then
@@ -221,8 +260,72 @@ local function Slider(sliderProps: SliderProps, forwardRef: React.Ref<GuiObject>
 		else nil :: never
 
 	local isSelected = if Flags.FoundationSliderKnobSelection
-		then controlState == ControlState.Selected or controlState == ControlState.SelectedPressed
+		then controlState == ControlState.Selected
+			or controlState == ControlState.SelectedPressed
+			or (Flags.FoundationSliderCapture and isCaptured)
 		else nil :: never
+	local onCapture = if Flags.FoundationSliderCapture
+		then React.useCallback(function()
+			if isCaptured then
+				if isRange then
+					setIsMaxThumbActive(not isMaxThumbActive)
+				end
+			else
+				setIsCaptured(true)
+			end
+		end, { isCaptured, isRange, isMaxThumbActive } :: { unknown })
+		else nil :: never
+	if Flags.FoundationSliderCapture then
+		useSliderCaptureKeys(isSelected and not props.isDisabled, onCapture)
+	end
+
+	if Flags.FoundationSliderCapture then
+		React.useEffect(function()
+			if props.isDisabled then
+				setIsCaptured(false)
+			end
+		end, { props.isDisabled })
+
+		React.useEffect(function()
+			local function redirectDragSelection()
+				local selectedObject = GuiService.SelectedObject
+				local isUnexpectedSliderSelection = selectedObject == ref.current
+					or (
+						selectedObject ~= nil
+						and ref.current ~= nil
+						and selectedObject:IsDescendantOf(ref.current)
+						and selectedObject ~= focusTargetRef.current
+						and selectedObject ~= captureTargetRef.current
+					)
+
+				if isUnexpectedSliderSelection then
+					GuiService.SelectedObject = focusTargetRef.current
+				end
+			end
+
+			redirectDragSelection()
+			local connection = GuiService:GetPropertyChangedSignal("SelectedObject"):Connect(redirectDragSelection)
+			return function()
+				connection:Disconnect()
+			end
+		end, {})
+
+		React.useEffect(function()
+			if not isCaptured then
+				return
+			end
+
+			GuiService.SelectedObject = captureTargetRef.current
+			local connection = GuiService:GetPropertyChangedSignal("SelectedObject"):Connect(function()
+				if GuiService.SelectedObject ~= captureTargetRef.current then
+					setIsCaptured(false)
+				end
+			end)
+			return function()
+				connection:Disconnect()
+			end
+		end, { isCaptured })
+	end
 
 	React.useEffect(
 		function()
@@ -288,6 +391,9 @@ local function Slider(sliderProps: SliderProps, forwardRef: React.Ref<GuiObject>
 	local onKnobDragStarted = if Flags.FoundationSliderBeta
 		then React.useCallback(function(isMaxKnob: boolean)
 			setRangeDragIsMaxKnob(isMaxKnob)
+			if Flags.FoundationSliderCapture then
+				setIsMaxThumbActive(isMaxKnob)
+			end
 			setIsDragging(true)
 			if props.onDragStarted then
 				props.onDragStarted()
@@ -420,6 +526,9 @@ local function Slider(sliderProps: SliderProps, forwardRef: React.Ref<GuiObject>
 					or (minFraction == maxFraction and fraction > maxFraction)
 
 				rangeTrackIsMaxRef.current = isMaxKnob
+				if Flags.FoundationSliderCapture then
+					setIsMaxThumbActive(isMaxKnob)
+				end
 				onKnobDragStarted(isMaxKnob)
 				seekRangeKnob(fraction, isMaxKnob)
 			end,
@@ -458,19 +567,58 @@ local function Slider(sliderProps: SliderProps, forwardRef: React.Ref<GuiObject>
 		end, { isRange, onKnobDragEnded } :: { unknown })
 		else nil :: never
 
+	local exitCapture = if Flags.FoundationSliderCapture
+		then React.useCallback(function()
+			setIsCaptured(false)
+			GuiService.SelectedObject = focusTargetRef.current
+		end, {})
+		else nil :: never
+
 	local directionalInputHandlers = if Flags.FoundationSliderAsSeenOnTV
-		then React.useMemo(function()
-			return {
-				getValue = function()
-					return value:getValue()
-				end,
-				onStep = function(newValue: number)
-					updateValue(
-						if props.step then calculateSliderStepValue(newValue, props.step, props.range) else newValue
-					)
-				end,
-			}
-		end, { value, updateValue, props.step, props.range } :: { unknown })
+		then React.useMemo(
+			function()
+				return {
+					getValue = function()
+						if Flags.FoundationSliderCapture and isRange then
+							local currentRange = rangeBinding:getValue()
+							return if isMaxThumbActive then currentRange.Max else currentRange.Min
+						end
+						return value:getValue()
+					end,
+					onStep = if Flags.FoundationSliderCapture
+						then function(newValue: number)
+							if isRange then
+								local currentRange = rangeBinding:getValue()
+								if isMaxThumbActive then
+									updateRange(NumberRange.new(currentRange.Min, math.max(newValue, currentRange.Min)))
+								else
+									updateRange(NumberRange.new(math.min(newValue, currentRange.Max), currentRange.Max))
+								end
+							else
+								updateValue(newValue)
+							end
+						end
+						else function(newValue: number)
+							local stepped = if props.step
+								then calculateSliderStepValue(newValue, props.step, props.range)
+								else newValue
+							updateValue(stepped)
+						end,
+					onExit = if Flags.FoundationSliderCapture then exitCapture else nil,
+				}
+			end,
+			{
+				value,
+				updateValue,
+				props.step,
+				props.range,
+				if Flags.FoundationSliderCapture then isRange else nil,
+				if Flags.FoundationSliderCapture then rangeBinding else nil,
+				if Flags.FoundationSliderCapture then isMaxThumbActive else nil,
+				if Flags.FoundationSliderCapture then updateRange else nil,
+				if Flags.FoundationSliderCapture then exitCapture else nil,
+			} :: { unknown }
+		)
 		else nil :: never
 
 	if Flags.FoundationSliderAsSeenOnTV then
@@ -478,8 +626,15 @@ local function Slider(sliderProps: SliderProps, forwardRef: React.Ref<GuiObject>
 			isSelected = controlState == ControlState.Selected or controlState == ControlState.SelectedPressed
 		end
 
+		local isDirectionalInputActive = isSelected and not props.isDisabled
+		if Flags.FoundationSliderCapture then
+			isDirectionalInputActive = isDirectionalInputActive and isCaptured
+		else
+			isDirectionalInputActive = isDirectionalInputActive and not isRange
+		end
+
 		useSliderDirectionalInput(
-			isSelected and not props.isDisabled and not isRange,
+			isDirectionalInputActive,
 			props.step,
 			props.range,
 			isVertical,
@@ -700,7 +855,15 @@ local function Slider(sliderProps: SliderProps, forwardRef: React.Ref<GuiObject>
 		if not isRange and not Flags.FoundationSliderOffloadDraggingMath and state == ControlState.Pressed then
 			onSeek()
 		end
-	end, { onSeek, isRange } :: { unknown })
+
+		if Flags.FoundationSliderCapture then
+			local isNowSelected = state == ControlState.Selected or state == ControlState.SelectedPressed
+			if isRange and isNowSelected and not wasSelectedRef.current then
+				setIsMaxThumbActive(getSelectionEntryDirection(isVertical) < 0)
+			end
+			wasSelectedRef.current = isNowSelected
+		end
+	end, { onSeek, isRange, isVertical } :: { unknown })
 
 	local presentationContext = if Flags.FoundationSliderKnobSelection then usePresentationContext() else nil :: never
 
@@ -774,7 +937,7 @@ local function Slider(sliderProps: SliderProps, forwardRef: React.Ref<GuiObject>
 			setCustomKnobSize(rbx.AbsoluteSize)
 		end, {})
 		else nil :: never
-	local minKnobAppearance: SliderKnob.KnobAppearance = if Flags.FoundationSliderBeta
+	local minKnobAppearance: SliderThumb.KnobAppearance = if Flags.FoundationSliderBeta
 		then React.useMemo(
 			function()
 				return {
@@ -800,7 +963,7 @@ local function Slider(sliderProps: SliderProps, forwardRef: React.Ref<GuiObject>
 			} :: { unknown }
 		)
 		else nil :: never
-	local maxKnobAppearance: SliderKnob.KnobAppearance = if Flags.FoundationSliderBeta
+	local maxKnobAppearance: SliderThumb.KnobAppearance = if Flags.FoundationSliderBeta
 		then React.useMemo(
 			function()
 				return {
@@ -837,40 +1000,66 @@ local function Slider(sliderProps: SliderProps, forwardRef: React.Ref<GuiObject>
 			return toFraction(currentRange.Max)
 		end)
 		else nil :: never
+	local showKnobSelection = if Flags.FoundationSliderKnobSelection
+		then isSelected and (not Flags.FoundationSliderCapture or isCaptured)
+		else nil :: never
+	local activeRangeFraction = if Flags.FoundationSliderCapture and isRange
+		then if isMaxThumbActive then maxFraction else minFraction
+		else nil :: never
+	local rangeKnobAnchorPoint = if Flags.FoundationSliderCapture and isRange
+		then if props.isContained
+			then activeRangeFraction:map(function(fraction: number)
+				return if isVertical then Vector2.new(0.5, 1 - fraction) else Vector2.new(fraction, 0.5)
+			end)
+			else Vector2.new(0.5, 0.5)
+		else nil :: never
+	local rangeKnobSize = if Flags.FoundationSliderCapture and isRange
+		then if props.knob
+			then customKnobSize:map(function(size: Vector2)
+				return UDim2.fromOffset(size.X, size.Y)
+			end)
+			else getKnobSize(tokens, props.size)
+		else nil :: never
+	local onCaptureTargetStateChanged = if Flags.FoundationSliderCapture
+		then React.useCallback(function(_state: ControlState) end, {})
+		else nil :: never
+	local isDirectionalInput = Flags.FoundationSliderCapture and lastInputMode == InputMode.Directional and isSelected
 
-	local dragDetector = if isRange
-		then React.createElement("UIDragDetector", {
-			DragStyle = Enum.UIDragDetectorDragStyle.Scriptable,
-			[React.Event.DragStart] = onRangeTrackDragStarted :: any,
-			[React.Event.DragContinue] = onRangeTrackDrag :: any,
-			[React.Event.DragEnd] = onRangeTrackDragEnded :: any,
-			SelectionModeDragSpeed = if Flags.FoundationSliderAsSeenOnTV then UDim2.new() else nil,
-			Enabled = not props.isDisabled,
-		})
-		else if Flags.FoundationSliderOffloadDraggingMath
+	local dragDetector = if isDirectionalInput
+		then nil
+		else if isRange
 			then React.createElement("UIDragDetector", {
-				ref = dragDetectorRef,
-				ReferenceUIInstance = trackInstance,
-				DragStyle = Enum.UIDragDetectorDragStyle.TranslateLine,
-				DragAxis = if isVertical then Vector2.new(0, 1) else Vector2.new(1, 0),
-				ResponseStyle = Enum.UIDragDetectorResponseStyle.CustomScale,
-				DragRelativity = Enum.UIDragDetectorDragRelativity.Absolute,
-				MinDragTranslation = if Flags.FoundationSliderBeta then minDragTranslation else nil,
-				MaxDragTranslation = if Flags.FoundationSliderBeta then maxDragTranslation else nil,
-				[React.Event.DragStart] = onDragStarted,
-				[React.Event.DragContinue] = onDrag,
-				[React.Event.DragEnd] = onDragEnded,
-				SelectionModeDragSpeed = if Flags.FoundationSliderAsSeenOnTV then UDim2.new() else nil,
-				Enabled = not props.isDisabled,
-			})
-			else React.createElement("UIDragDetector", {
 				DragStyle = Enum.UIDragDetectorDragStyle.Scriptable,
-				[React.Event.DragStart] = onDragStarted :: any,
-				[React.Event.DragContinue] = onDrag :: any,
-				[React.Event.DragEnd] = onDragEnded :: any,
+				[React.Event.DragStart] = onRangeTrackDragStarted :: any,
+				[React.Event.DragContinue] = onRangeTrackDrag :: any,
+				[React.Event.DragEnd] = onRangeTrackDragEnded :: any,
 				SelectionModeDragSpeed = if Flags.FoundationSliderAsSeenOnTV then UDim2.new() else nil,
 				Enabled = not props.isDisabled,
 			})
+			else if Flags.FoundationSliderOffloadDraggingMath
+				then React.createElement("UIDragDetector", {
+					ref = dragDetectorRef,
+					ReferenceUIInstance = trackInstance,
+					DragStyle = Enum.UIDragDetectorDragStyle.TranslateLine,
+					DragAxis = if isVertical then Vector2.new(0, 1) else Vector2.new(1, 0),
+					ResponseStyle = Enum.UIDragDetectorResponseStyle.CustomScale,
+					DragRelativity = Enum.UIDragDetectorDragRelativity.Absolute,
+					MinDragTranslation = if Flags.FoundationSliderBeta then minDragTranslation else nil,
+					MaxDragTranslation = if Flags.FoundationSliderBeta then maxDragTranslation else nil,
+					[React.Event.DragStart] = onDragStarted,
+					[React.Event.DragContinue] = onDrag,
+					[React.Event.DragEnd] = onDragEnded,
+					SelectionModeDragSpeed = if Flags.FoundationSliderAsSeenOnTV then UDim2.new() else nil,
+					Enabled = not props.isDisabled,
+				})
+				else React.createElement("UIDragDetector", {
+					DragStyle = Enum.UIDragDetectorDragStyle.Scriptable,
+					[React.Event.DragStart] = onDragStarted :: any,
+					[React.Event.DragContinue] = onDrag :: any,
+					[React.Event.DragEnd] = onDragEnded :: any,
+					SelectionModeDragSpeed = if Flags.FoundationSliderAsSeenOnTV then UDim2.new() else nil,
+					Enabled = not props.isDisabled,
+				})
 
 	local barChildren: { [string]: React.ReactNode } = if isRange
 		then {
@@ -890,11 +1079,12 @@ local function Slider(sliderProps: SliderProps, forwardRef: React.Ref<GuiObject>
 				end),
 				testId = `{props.testId}--fill`,
 			}),
-			MinKnob = React.createElement(SliderKnob, {
+			MinKnob = React.createElement(SliderThumb, {
 				trackRef = ref,
 				fraction = minFraction,
 				isVertical = isVertical,
 				isDisabled = props.isDisabled,
+				isDragEnabled = not isDirectionalInput,
 				knobAppearance = minKnobAppearance,
 				knob = props.knob,
 				isContained = props.isContained,
@@ -903,14 +1093,16 @@ local function Slider(sliderProps: SliderProps, forwardRef: React.Ref<GuiObject>
 				onDragStarted = onMinKnobDragStarted,
 				onDragEnded = onKnobDragEnded,
 				Visible = isKnobVisible,
+				onAbsoluteSizeChanged = if Flags.FoundationSliderCapture then onCustomKnobSizeChanged else nil,
 				LayoutOrder = 1,
 				testId = `{props.testId}--min`,
 			}),
-			MaxKnob = React.createElement(SliderKnob, {
+			MaxKnob = React.createElement(SliderThumb, {
 				trackRef = ref,
 				fraction = maxFraction,
 				isVertical = isVertical,
 				isDisabled = props.isDisabled,
+				isDragEnabled = not isDirectionalInput,
 				knobAppearance = maxKnobAppearance,
 				knob = props.knob,
 				isContained = props.isContained,
@@ -919,9 +1111,40 @@ local function Slider(sliderProps: SliderProps, forwardRef: React.Ref<GuiObject>
 				onDragStarted = onMaxKnobDragStarted,
 				onDragEnded = onKnobDragEnded,
 				Visible = isKnobVisible,
+				onAbsoluteSizeChanged = if Flags.FoundationSliderCapture then onCustomKnobSizeChanged else nil,
 				LayoutOrder = 2,
 				testId = `{props.testId}--max`,
 			}),
+			SelectionCursor = if Flags.FoundationSliderCapture and showKnobSelection
+				then React.createElement(
+					View,
+					{
+						Size = rangeKnobSize,
+						AnchorPoint = rangeKnobAnchorPoint,
+						Position = activeRangeFraction:map(function(fraction: number)
+							return if isVertical
+								then UDim2.fromScale(0.5, 1 - fraction)
+								else UDim2.fromScale(fraction, 0.5)
+						end),
+						ZIndex = 3,
+						selection = { Selectable = true },
+						selectionGroup = CAPTURE_CURSOR_SELECTION_GROUP,
+						cursor = CursorType.Invisible,
+						onStateChanged = onCaptureTargetStateChanged,
+						ref = captureTargetRef,
+						testId = `{props.testId}--selection-cursor`,
+					} :: View.ViewProps,
+					{
+						Cursor = React.createElement(CursorComponent, {
+							isVisible = true,
+							cornerRadius = UDim.new(0.5, 0),
+							offset = tokens.Padding.XSmall,
+							borderWidth = tokens.Stroke.Thicker,
+							colorNamespace = presentationContext.colorNamespace,
+						}),
+					}
+				)
+				else nil,
 		}
 		else {
 			Fill = React.createElement(View, {
@@ -934,25 +1157,36 @@ local function Slider(sliderProps: SliderProps, forwardRef: React.Ref<GuiObject>
 				end),
 				testId = `{props.testId}--fill`,
 			}, {
-				SelectionCursor = if Flags.FoundationSliderKnobSelection and isSelected
-					then React.createElement(View, {
-						Size = if props.knob
-							then customKnobSize:map(function(size: Vector2)
-								return UDim2.fromOffset(size.X, size.Y)
-							end)
-							else getKnobSize(tokens, props.size),
-						AnchorPoint = knobAnchorPoint,
-						Position = knobPosition,
-						testId = `{props.testId}--selection-cursor`,
-					}, {
-						Cursor = React.createElement(CursorComponent, {
-							isVisible = true,
-							cornerRadius = UDim.new(0.5, 0),
-							offset = tokens.Padding.XSmall,
-							borderWidth = tokens.Stroke.Thicker,
-							colorNamespace = presentationContext.colorNamespace,
-						}),
-					})
+				SelectionCursor = if showKnobSelection
+					then React.createElement(
+						View,
+						{
+							Size = if props.knob
+								then customKnobSize:map(function(size: Vector2)
+									return UDim2.fromOffset(size.X, size.Y)
+								end)
+								else getKnobSize(tokens, props.size),
+							AnchorPoint = knobAnchorPoint,
+							Position = knobPosition,
+							selection = if Flags.FoundationSliderCapture then { Selectable = true } else nil,
+							selectionGroup = if Flags.FoundationSliderCapture
+								then CAPTURE_CURSOR_SELECTION_GROUP
+								else nil,
+							cursor = if Flags.FoundationSliderCapture then CursorType.Invisible else nil,
+							onStateChanged = onCaptureTargetStateChanged,
+							ref = captureTargetRef,
+							testId = `{props.testId}--selection-cursor`,
+						} :: View.ViewProps,
+						{
+							Cursor = React.createElement(CursorComponent, {
+								isVisible = true,
+								cornerRadius = UDim.new(0.5, 0),
+								offset = tokens.Padding.XSmall,
+								borderWidth = tokens.Stroke.Thicker,
+								colorNamespace = presentationContext.colorNamespace,
+							}),
+						}
+					)
 					else nil,
 				Knob = if props.knob
 					then React.createElement(View, {
@@ -983,6 +1217,56 @@ local function Slider(sliderProps: SliderProps, forwardRef: React.Ref<GuiObject>
 		then if isVertical then UDim2.new(0, variant.bar.height, 1, 0) else UDim2.new(1, 0, 0, variant.bar.height)
 		else nil
 
+	local bar = React.createElement(View, {
+		tag = variant.bar.tag,
+		Size = barSize,
+		testId = `{props.testId}--bar`,
+	}, barChildren)
+	local sliderContent = {
+		DragDetector = dragDetector,
+		Bar = bar,
+	}
+
+	if Flags.FoundationSliderCapture then
+		return React.createElement(
+			View,
+			withCommonProps(
+				props,
+				{
+					Size = rootSize,
+					GroupTransparency = if props.isDisabled then Constants.DISABLED_TRANSPARENCY else nil,
+					selectionGroup = if isCaptured then CAPTURED_SELECTION_GROUP else FOCUSED_SELECTION_GROUP,
+					ref = if isRange
+						then ref
+						else if Flags.FoundationSliderOffloadDraggingMath then setTrackRef else ref,
+				} :: View.ViewProps
+			),
+			{
+				FocusTarget = React.createElement(
+					View,
+					{
+						Size = UDim2.fromScale(1, 1),
+						stateLayer = {
+							affordance = StateLayerAffordance.None,
+						},
+						cursor = if Flags.FoundationSliderKnobSelection
+							then if isCaptured then CursorType.Invisible else nil
+							else nil,
+						onStateChanged = onStateChanged,
+						isDisabled = props.isDisabled,
+						ref = focusTargetRef,
+						ZIndex = 0,
+						testId = `{props.testId}--focus-target`,
+					} :: View.ViewProps,
+					{
+						DragDetector = dragDetector,
+					}
+				),
+				Bar = bar,
+			}
+		)
+	end
+
 	return React.createElement(
 		View,
 		withCommonProps(
@@ -1007,14 +1291,7 @@ local function Slider(sliderProps: SliderProps, forwardRef: React.Ref<GuiObject>
 				ref = if isRange then ref else if Flags.FoundationSliderOffloadDraggingMath then setTrackRef else ref,
 			} :: View.ViewProps
 		),
-		{
-			DragDetector = dragDetector,
-			Bar = React.createElement(View, {
-				tag = variant.bar.tag,
-				Size = barSize,
-				testId = `{props.testId}--bar`,
-			}, barChildren),
-		}
+		sliderContent
 	)
 end
 

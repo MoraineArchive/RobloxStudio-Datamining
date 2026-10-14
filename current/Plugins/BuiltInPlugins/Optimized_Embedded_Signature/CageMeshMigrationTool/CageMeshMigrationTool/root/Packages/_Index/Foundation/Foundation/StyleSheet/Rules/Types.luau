@@ -55,7 +55,7 @@ export type Radii = { { name: string, size: UDim } }
 export type Sizes = { { name: string, size: UDim } }
 
 export type TextStyle = {
-	Font: Enum.Font,
+	Font: Font | Enum.Font,
 	TextSize: number,
 	LineHeight: number,
 }
@@ -83,9 +83,11 @@ export type FormattedTokens = {
 	gutters: Gutters,
 }
 
+-- Remove useFontFace when cleaning up FFlagFoundationFontFaceMigration
 export type RulesGenerator = (
 	tokens: Tokens,
-	formattedTokens: FormattedTokens
+	formattedTokens: FormattedTokens,
+	useFontFace: boolean?
 ) -> ({ StyleRule }, { StyleRule }, { StyleRule }, { StyleRule })
 
 return {}

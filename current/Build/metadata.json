@@ -3,32 +3,32 @@
   "provenance": [
     {
       "bytes": 103,
-      "sha256": "9cef0e1a8a1cc41558f554c4bff792127071e0af56a40da4df73d385512c0441",
+      "sha256": "457bfb5863a38d1ef82a175c10a6ab146fa0611ebcc2084f6434b6e4389111d7",
       "sourceType": "official",
       "sourceUrl": "https://clientsettings.roblox.com/v2/client-version/WindowsStudio64"
     },
     {
-      "buildGuid": "version-9b554450a0fc4e65",
-      "bytes": 2528,
-      "sha256": "a18feb6eaf31f40b36008c0319605f9192155fad72834a11b487c997eb4cb2bc",
+      "buildGuid": "version-4f087c32742644ab",
+      "bytes": 2530,
+      "sha256": "581181443ad4bcdb7ff644d57c62947f2d93181182ee9be9facffaa6350f8125",
       "sourceType": "official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-9b554450a0fc4e65-rbxPkgManifest.txt"
+      "sourceUrl": "https://setup.rbxcdn.com/version-4f087c32742644ab-rbxPkgManifest.txt"
     },
     {
-      "buildGuid": "version-9b554450a0fc4e65",
-      "bytes": 2169284,
-      "sha256": "07ccb0e3c0acde7341bdf7afd0439a2a39031e1a57a52220cb34b39f15ff70db",
+      "buildGuid": "version-4f087c32742644ab",
+      "bytes": 2226116,
+      "sha256": "8ae26b21cd6a1cff711fce37b762c71d53dd064f53942c0ca071fe4e22a6c92e",
       "sourceType": "official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-9b554450a0fc4e65-rbxManifest.txt"
+      "sourceUrl": "https://setup.rbxcdn.com/version-4f087c32742644ab-rbxManifest.txt"
     }
   ],
   "status": "available",
   "summary": {
     "engineRevision": 1,
-    "guid": "version-9b554450a0fc4e65",
-    "manifestFiles": 18772,
+    "guid": "version-4f087c32742644ab",
+    "manifestFiles": 19132,
     "packages": 34,
-    "version": "0.742.0.7421053"
+    "version": "0.743.0.7431133"
   },
   "target": "WindowsStudio64"
 }

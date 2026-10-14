@@ -101,8 +101,18 @@
   },
   {
     "class": "Folder",
+    "name": "DraggerFramework",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
     "name": "DraggerSchemaCore",
-    "path": "ScaleDragger/Packages/DraggerSchemaCore",
+    "path": "ScaleDragger/Packages/_Index/DraggerSchemaCore",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -133,16 +143,6 @@
     "class": "Folder",
     "name": "Expect",
     "path": "ScaleDragger/Packages/_Index/Expect",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
-    "name": "Flags",
-    "path": "ScaleDragger/Packages/DraggerFramework/Flags",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -441,6 +441,16 @@
   },
   {
     "class": "Folder",
+    "name": "Localization",
+    "path": "ScaleDragger/Src/Resources/Localization",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
     "name": "LuauPolyfill",
     "path": "ScaleDragger/Packages/_Index/LuauPolyfill",
     "properties": {
@@ -582,7 +592,17 @@
   {
     "class": "Folder",
     "name": "Resources",
-    "path": "ScaleDragger/Packages/DraggerFramework/Resources",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Resources",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Resources",
+    "path": "ScaleDragger/Src/Resources",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -633,6 +653,16 @@
     "class": "Folder",
     "name": "Shared",
     "path": "ScaleDragger/Packages/_Index/Shared",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Src",
+    "path": "ScaleDragger/Src",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -712,7 +742,18 @@
   {
     "class": "LocalizationTable",
     "name": "LocalizedStrings",
-    "path": "ScaleDragger/Packages/DraggerFramework/Resources/LocalizedStrings",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Resources/LocalizedStrings",
+    "properties": {
+      "AttributesSerialize": "",
+      "SourceLocaleId": "en-us",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "LocalizationTable",
+    "name": "LocalizedStrings",
+    "path": "ScaleDragger/Src/Resources/Localization/LocalizedStrings",
     "properties": {
       "AttributesSerialize": "",
       "SourceLocaleId": "en-us",
@@ -723,7 +764,18 @@
   {
     "class": "LocalizationTable",
     "name": "SourceStrings",
-    "path": "ScaleDragger/Packages/DraggerFramework/Resources/SourceStrings",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Resources/SourceStrings",
+    "properties": {
+      "AttributesSerialize": "",
+      "SourceLocaleId": "en-us",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "LocalizationTable",
+    "name": "SourceStrings",
+    "path": "ScaleDragger/Src/Resources/Localization/SourceStrings",
     "properties": {
       "AttributesSerialize": "",
       "SourceLocaleId": "en-us",
@@ -750,13 +802,13 @@
   {
     "class": "ModuleScript",
     "name": "addUndoWaypoint",
-    "path": "ScaleDragger/Packages/DraggerSchemaCore/addUndoWaypoint",
+    "path": "ScaleDragger/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/addUndoWaypoint",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "419",
-      "SourceBytecodeSha256": "f8268c80385fb4569fabed1391670d1d47914a3aa2ecc71bf271d1531c56df23",
+      "SourceBytecodeBytes": "401",
+      "SourceBytecodeSha256": "838b5c32beba1da2153e82643ff9df4464e14026e2e9420f5876765d897809e7",
       "Tags": ""
     },
     "unreadable": [
@@ -798,7 +850,7 @@
   {
     "class": "ModuleScript",
     "name": "Analytics",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/Analytics",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/Analytics",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -814,13 +866,13 @@
   {
     "class": "ModuleScript",
     "name": "AnimatedHoverBox",
-    "path": "ScaleDragger/Packages/DraggerFramework/Components/AnimatedHoverBox",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Components/AnimatedHoverBox",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3019",
-      "SourceBytecodeSha256": "6b81be005ea44db722ce42c6bd5d3c63d4f0fc438036465674e257fb0576bf59",
+      "SourceBytecodeBytes": "2988",
+      "SourceBytecodeSha256": "9fdbadfabdd760fd9972371c6bab3e0acf9a1f3652f942d69c3d29fb2c5fb42d",
       "Tags": ""
     },
     "unreadable": [
@@ -830,7 +882,7 @@
   {
     "class": "ModuleScript",
     "name": "AnimationTask",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/AnimationTask",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/AnimationTask",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -926,7 +978,7 @@
   {
     "class": "ModuleScript",
     "name": "assertGoodCFrame",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/assertGoodCFrame",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/assertGoodCFrame",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -1054,7 +1106,7 @@
   {
     "class": "ModuleScript",
     "name": "AttachmentMover",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/AttachmentMover",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/AttachmentMover",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -1086,13 +1138,13 @@
   {
     "class": "ModuleScript",
     "name": "beginBoxSelect",
-    "path": "ScaleDragger/Packages/DraggerSchemaCore/beginBoxSelect",
+    "path": "ScaleDragger/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/beginBoxSelect",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1071",
-      "SourceBytecodeSha256": "c91e7e6767e21189685d05dddc20ea0915453f0d4355e33ab2095d8a204506b0",
+      "SourceBytecodeBytes": "1053",
+      "SourceBytecodeSha256": "0b9efae8ef424d5142ccdeb4bad04d76cf454b884733f3fc134615cba3c91f13",
       "Tags": ""
     },
     "unreadable": [
@@ -1134,7 +1186,7 @@
   {
     "class": "ModuleScript",
     "name": "blackboxFindClosestMeshEdge",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/blackboxFindClosestMeshEdge",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/blackboxFindClosestMeshEdge",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -1182,7 +1234,7 @@
   {
     "class": "ModuleScript",
     "name": "BoundingBox",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/BoundingBox",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/BoundingBox",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -1198,13 +1250,13 @@
   {
     "class": "ModuleScript",
     "name": "BoundsChangedTracker",
-    "path": "ScaleDragger/Packages/DraggerSchemaCore/BoundsChangedTracker",
+    "path": "ScaleDragger/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/BoundsChangedTracker",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "6563",
-      "SourceBytecodeSha256": "89af2317c2db928aa542d4ba171b738c65736ede593b5551a9b09f294e526bea",
+      "SourceBytecodeBytes": "6530",
+      "SourceBytecodeSha256": "3cdcde3393d76b611880547424dbf5f57ae9c540a93d89b5c374d96892810a74",
       "Tags": ""
     },
     "unreadable": [
@@ -1587,8 +1639,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5317",
-      "SourceBytecodeSha256": "d6c58f54b4d4bc4f482c03c17f9bb65372cbcc0b8bb630fb4f69f6e6ab2e920b",
+      "SourceBytecodeBytes": "6125",
+      "SourceBytecodeSha256": "da549e930131ab343bda016118b74e95a6bbe9a22c267af4636118e8842a6539",
       "Tags": ""
     },
     "unreadable": [
@@ -1630,7 +1682,7 @@
   {
     "class": "ModuleScript",
     "name": "classifyPivot",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/classifyPivot",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/classifyPivot",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -1917,14 +1969,14 @@
   },
   {
     "class": "ModuleScript",
-    "name": "colors",
-    "path": "ScaleDragger/Packages/_Index/JestSnapshot/JestSnapshot/colors",
+    "name": "Colors",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/Colors",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "417",
-      "SourceBytecodeSha256": "0c83102719cdbb8c1ee114c628c0352f8dc860780357a2a675b2c4b6326843ef",
+      "SourceBytecodeBytes": "2345",
+      "SourceBytecodeSha256": "77dcaa494ae1a75775db39551ed52bd75ff9b5a538a445b18319dc1eeea8d004",
       "Tags": ""
     },
     "unreadable": [
@@ -1933,14 +1985,14 @@
   },
   {
     "class": "ModuleScript",
-    "name": "Colors",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/Colors",
+    "name": "colors",
+    "path": "ScaleDragger/Packages/_Index/JestSnapshot/JestSnapshot/colors",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2345",
-      "SourceBytecodeSha256": "77dcaa494ae1a75775db39551ed52bd75ff9b5a538a445b18319dc1eeea8d004",
+      "SourceBytecodeBytes": "417",
+      "SourceBytecodeSha256": "0c83102719cdbb8c1ee114c628c0352f8dc860780357a2a675b2c4b6326843ef",
       "Tags": ""
     },
     "unreadable": [
@@ -1998,13 +2050,13 @@
   {
     "class": "ModuleScript",
     "name": "Components",
-    "path": "ScaleDragger/Packages/DraggerFramework/Components",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Components",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1608",
-      "SourceBytecodeSha256": "36685ffb3f2bca6ce2eb6fe306a3e67edddb9d4bc6436c7e575e3c677ab0e9b1",
+      "SourceBytecodeBytes": "1812",
+      "SourceBytecodeSha256": "45c25c8c15953179d93a37bd867cd13616022a7a74dc2de6ff4040893a3cc924",
       "Tags": ""
     },
     "unreadable": [
@@ -2030,7 +2082,7 @@
   {
     "class": "ModuleScript",
     "name": "computeDraggedDistance",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/computeDraggedDistance",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/computeDraggedDistance",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -2046,7 +2098,7 @@
   {
     "class": "ModuleScript",
     "name": "computeHandlePositionDistance",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/computeHandlePositionDistance",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/computeHandlePositionDistance",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -2078,7 +2130,7 @@
   {
     "class": "ModuleScript",
     "name": "conciseNumberFormat",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/conciseNumberFormat",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/conciseNumberFormat",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -2574,7 +2626,7 @@
   {
     "class": "ModuleScript",
     "name": "CursorGroupName",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/CursorGroupName",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/CursorGroupName",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -2622,13 +2674,13 @@
   {
     "class": "ModuleScript",
     "name": "CylinderMajorLines",
-    "path": "ScaleDragger/Packages/DraggerFramework/Components/CylinderMajorLines",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Components/CylinderMajorLines",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2085",
-      "SourceBytecodeSha256": "9d2051908912f913c115ba197f1a5e7ef4d1e77b4d7c77f20d8b092cf738f717",
+      "SourceBytecodeBytes": "2054",
+      "SourceBytecodeSha256": "e52e2d0a434dce8680e054b460bd5e042168f16ec771c5c06c22289d4b76b385",
       "Tags": ""
     },
     "unreadable": [
@@ -2686,7 +2738,7 @@
   {
     "class": "ModuleScript",
     "name": "DebugFlags",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/DebugFlags",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/DebugFlags",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -2878,13 +2930,13 @@
   {
     "class": "ModuleScript",
     "name": "dispatchWorldClick",
-    "path": "ScaleDragger/Packages/DraggerSchemaCore/dispatchWorldClick",
+    "path": "ScaleDragger/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/dispatchWorldClick",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2674",
-      "SourceBytecodeSha256": "7e3a84323643c402431fd71b406a721fb903e8da6c6dd6e3be40181ee36710e8",
+      "SourceBytecodeBytes": "2626",
+      "SourceBytecodeSha256": "c2420a95cf528ff8ed2ee242cb6e99d9bde5af6dcbdf505a13f03398ca511a96",
       "Tags": ""
     },
     "unreadable": [
@@ -2894,13 +2946,13 @@
   {
     "class": "ModuleScript",
     "name": "DraggedPivot",
-    "path": "ScaleDragger/Packages/DraggerFramework/Components/DraggedPivot",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Components/DraggedPivot",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "787",
-      "SourceBytecodeSha256": "d142fe141080028d5997548860bae74c6c9a5510ccc31fe7b7369319afb37c8a",
+      "SourceBytecodeBytes": "756",
+      "SourceBytecodeSha256": "49e277e63fe0e8472e6daafea8730889c5ef6f0c6bde4cc484354aa591a432e5",
       "Tags": ""
     },
     "unreadable": [
@@ -2910,7 +2962,7 @@
   {
     "class": "ModuleScript",
     "name": "DraggerContext_FixtureImpl",
-    "path": "ScaleDragger/Packages/DraggerFramework/Implementation/DraggerContext_FixtureImpl",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Implementation/DraggerContext_FixtureImpl",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -2926,13 +2978,45 @@
   {
     "class": "ModuleScript",
     "name": "DraggerContext_PluginImpl",
-    "path": "ScaleDragger/Packages/DraggerFramework/Implementation/DraggerContext_PluginImpl",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Implementation/DraggerContext_PluginImpl",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "13092",
-      "SourceBytecodeSha256": "f0da2b5a6ad1dc45b9e2583d670eecdcb59fde0de9ecb1bb15b1095a4f425e13",
+      "SourceBytecodeBytes": "13087",
+      "SourceBytecodeSha256": "411e980f03e76d0996dda509b5b8351283307ccbcd30ed740960d28502dfb9f0",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "DraggerFramework",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "678",
+      "SourceBytecodeSha256": "8256ff190da8a53ad9f51e3dd12938e65e7dbcaf463018da1e1dcc271e289a62",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "DraggerFramework",
+    "path": "ScaleDragger/Packages/_Index/DraggerSchemaCore/DraggerFramework",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "185",
+      "SourceBytecodeSha256": "eb02f7b067c6b2a822a7713175b036fd3f63e08549b0c2c447eaf5d787e78452",
       "Tags": ""
     },
     "unreadable": [
@@ -2947,8 +3031,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "365",
-      "SourceBytecodeSha256": "227ead3763ff2c48a848b0f64a4f620e443cef3f0cabc330600e912131c281bf",
+      "SourceBytecodeBytes": "165",
+      "SourceBytecodeSha256": "063f59d44a0363795db1144fc0bda8440d9b81d6166fe9638e94738de7b6aac0",
       "Tags": ""
     },
     "unreadable": [
@@ -2958,7 +3042,7 @@
   {
     "class": "ModuleScript",
     "name": "DraggerSchema",
-    "path": "ScaleDragger/Packages/DraggerSchemaCore/DraggerSchema",
+    "path": "ScaleDragger/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/DraggerSchema",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -2973,8 +3057,40 @@
   },
   {
     "class": "ModuleScript",
+    "name": "DraggerSchemaCore",
+    "path": "ScaleDragger/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1801",
+      "SourceBytecodeSha256": "a1183339a222a8553de5c79607150e7dcd45fa2334c7dede264230e963af2df3",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "DraggerSchemaCore",
+    "path": "ScaleDragger/Packages/DraggerSchemaCore",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "166",
+      "SourceBytecodeSha256": "e7bf3ead9f67b40e26d3853a4b060859223bf09d01b33dfe05e5729bbb24a4e3",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "DraggerStates",
-    "path": "ScaleDragger/Packages/DraggerFramework/Implementation/DraggerStates",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Implementation/DraggerStates",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -2990,7 +3106,7 @@
   {
     "class": "ModuleScript",
     "name": "DraggerStateType",
-    "path": "ScaleDragger/Packages/DraggerFramework/Implementation/DraggerStateType",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Implementation/DraggerStateType",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -3006,13 +3122,13 @@
   {
     "class": "ModuleScript",
     "name": "DraggerToolComponent",
-    "path": "ScaleDragger/Packages/DraggerFramework/DraggerTools/DraggerToolComponent",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/DraggerTools/DraggerToolComponent",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5499",
-      "SourceBytecodeSha256": "fc4e96dd2c68d9c47e75a5ce0d58dc2bff4915e43ec23bbf29082d2fc6895867",
+      "SourceBytecodeBytes": "5468",
+      "SourceBytecodeSha256": "3b69568f8cedf966f351762d387c6f21ab2902822f8536bf55e7686af75e8168",
       "Tags": ""
     },
     "unreadable": [
@@ -3022,13 +3138,13 @@
   {
     "class": "ModuleScript",
     "name": "DraggerToolFixture",
-    "path": "ScaleDragger/Packages/DraggerFramework/DraggerTools/DraggerToolFixture",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/DraggerTools/DraggerToolFixture",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5546",
-      "SourceBytecodeSha256": "49b946efc5b5355644aa856ae507a509ceb8d9b80469ff0f0c0bc2411e11673e",
+      "SourceBytecodeBytes": "5515",
+      "SourceBytecodeSha256": "460e01f292b2d680c1f0fe63ac85f8ce1ef48f1528fb752c4dcb7bf0ba32a9de",
       "Tags": ""
     },
     "unreadable": [
@@ -3038,13 +3154,13 @@
   {
     "class": "ModuleScript",
     "name": "DraggerToolModel",
-    "path": "ScaleDragger/Packages/DraggerFramework/Implementation/DraggerToolModel",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Implementation/DraggerToolModel",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "16135",
-      "SourceBytecodeSha256": "7c251f8efa86c497421c5fe677637cc4b2ded0ab93237ca51dc23de69d637545",
+      "SourceBytecodeBytes": "16103",
+      "SourceBytecodeSha256": "c0581c43291f13f1706001062adc74389aa030fa45437f17eca70154235af4ce",
       "Tags": ""
     },
     "unreadable": [
@@ -3054,7 +3170,7 @@
   {
     "class": "ModuleScript",
     "name": "DraggerTools",
-    "path": "ScaleDragger/Packages/DraggerFramework/DraggerTools",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/DraggerTools",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -3070,7 +3186,7 @@
   {
     "class": "ModuleScript",
     "name": "DraggingFaceInstance",
-    "path": "ScaleDragger/Packages/DraggerFramework/Implementation/DraggerStates/DraggingFaceInstance",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Implementation/DraggerStates/DraggingFaceInstance",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -3086,7 +3202,7 @@
   {
     "class": "ModuleScript",
     "name": "DraggingHandle",
-    "path": "ScaleDragger/Packages/DraggerFramework/Implementation/DraggerStates/DraggingHandle",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Implementation/DraggerStates/DraggingHandle",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -3102,7 +3218,7 @@
   {
     "class": "ModuleScript",
     "name": "DraggingParts",
-    "path": "ScaleDragger/Packages/DraggerFramework/Implementation/DraggerStates/DraggingParts",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Implementation/DraggerStates/DraggingParts",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -3118,7 +3234,7 @@
   {
     "class": "ModuleScript",
     "name": "DragHelper",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/DragHelper",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/DragHelper",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -3134,7 +3250,7 @@
   {
     "class": "ModuleScript",
     "name": "DragSelecting",
-    "path": "ScaleDragger/Packages/DraggerFramework/Implementation/DraggerStates/DragSelecting",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Implementation/DraggerStates/DragSelecting",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -3150,13 +3266,13 @@
   {
     "class": "ModuleScript",
     "name": "DragSelectionView",
-    "path": "ScaleDragger/Packages/DraggerFramework/Components/DragSelectionView",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Components/DragSelectionView",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2223",
-      "SourceBytecodeSha256": "23e7749721aec14967eca0bf8835d7799cf59f39b6715c0b20110f738b16b885",
+      "SourceBytecodeBytes": "2192",
+      "SourceBytecodeSha256": "e41cce1ee7d36c4c9c5cd707c13f7f9cac3b3bc07ba26737f1cb957d6e249c7d",
       "Tags": ""
     },
     "unreadable": [
@@ -3166,7 +3282,7 @@
   {
     "class": "ModuleScript",
     "name": "DragSelector",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/DragSelector",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/DragSelector",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -3203,8 +3319,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1029",
-      "SourceBytecodeSha256": "b5db5b32aa889d004e2c4c7eb8f041170d82350995d9ab2fdd69c8ebc736d46e",
+      "SourceBytecodeBytes": "1024",
+      "SourceBytecodeSha256": "8ff70cabc38237a79f46228364c7ed449d29c82fb25bc47d879882a81d5a8f9f",
       "Tags": ""
     },
     "unreadable": [
@@ -3278,7 +3394,7 @@
   {
     "class": "ModuleScript",
     "name": "endBoxSelect",
-    "path": "ScaleDragger/Packages/DraggerSchemaCore/endBoxSelect",
+    "path": "ScaleDragger/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/endBoxSelect",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -3742,13 +3858,13 @@
   {
     "class": "ModuleScript",
     "name": "ExtrudeHandles",
-    "path": "ScaleDragger/Packages/DraggerFramework/Handles/ExtrudeHandles",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Handles/ExtrudeHandles",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "18743",
-      "SourceBytecodeSha256": "2c908e3c10c0633026823ef40bdf542e68ee1e979e1901815ef8a96e6d586864",
+      "SourceBytecodeBytes": "18711",
+      "SourceBytecodeSha256": "393c0acddf2876a57b3c697c0d0576f06f722d2e5b69bcc2110e14c418300b19",
       "Tags": ""
     },
     "unreadable": [
@@ -3758,13 +3874,13 @@
   {
     "class": "ModuleScript",
     "name": "ExtrudeHandlesImplementation",
-    "path": "ScaleDragger/Packages/DraggerSchemaCore/ExtrudeHandlesImplementation",
+    "path": "ScaleDragger/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/ExtrudeHandlesImplementation",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "13569",
-      "SourceBytecodeSha256": "063915a2390d6a24399a9a7006d031f1fbfa3a999c4db6fd9d4331a7a7273877",
+      "SourceBytecodeBytes": "13437",
+      "SourceBytecodeSha256": "631d2776955247e5738d57c54eb7f6878e1e15da402113acb521a13d422d40ca",
       "Tags": ""
     },
     "unreadable": [
@@ -3886,13 +4002,29 @@
   {
     "class": "ModuleScript",
     "name": "fixSlightlyOffgridOrientation",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/fixSlightlyOffgridOrientation",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/fixSlightlyOffgridOrientation",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "1685",
       "SourceBytecodeSha256": "34ca782bd9ee6f4b83ab94a10f724df501bd4b66efb55a60173ac4dcd9be5731",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Flags",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Flags",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1426",
+      "SourceBytecodeSha256": "a9e1c497b9a06eba532565cf36c17eb1f321a8951e643dfe6a8cc5032fefaaa1",
       "Tags": ""
     },
     "unreadable": [
@@ -3950,7 +4082,7 @@
   {
     "class": "ModuleScript",
     "name": "FloatingValueInput",
-    "path": "ScaleDragger/Packages/DraggerFramework/Components/FloatingValueInput",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Components/FloatingValueInput",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -4158,13 +4290,13 @@
   {
     "class": "ModuleScript",
     "name": "FreeformDragger",
-    "path": "ScaleDragger/Packages/DraggerSchemaCore/FreeformDragger",
+    "path": "ScaleDragger/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/FreeformDragger",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "14928",
-      "SourceBytecodeSha256": "8eda937099b69b37c6616fb2e569443109e318b31a6e6bc50938c3a7d1c6c0e9",
+      "SourceBytecodeBytes": "14706",
+      "SourceBytecodeSha256": "7c31752c7f966b6955883a7d5e4beb172a1f56f25d70045180c89d24165db073",
       "Tags": ""
     },
     "unreadable": [
@@ -4318,7 +4450,7 @@
   {
     "class": "ModuleScript",
     "name": "getBoundingBoxScale",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/getBoundingBoxScale",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/getBoundingBoxScale",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -4446,7 +4578,7 @@
   {
     "class": "ModuleScript",
     "name": "getEdgeHotspot",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/getEdgeHotspot",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/getEdgeHotspot",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -4462,7 +4594,7 @@
   {
     "class": "ModuleScript",
     "name": "getEngineFeatureDraggerServiceUseBoundingBoxes",
-    "path": "ScaleDragger/Packages/DraggerFramework/Flags/getEngineFeatureDraggerServiceUseBoundingBoxes",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getEngineFeatureDraggerServiceUseBoundingBoxes",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -4478,7 +4610,7 @@
   {
     "class": "ModuleScript",
     "name": "getFaceInstance",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/getFaceInstance",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/getFaceInstance",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -4494,7 +4626,7 @@
   {
     "class": "ModuleScript",
     "name": "getFFlagDraggerBetterAlignOrientationFalse",
-    "path": "ScaleDragger/Packages/DraggerFramework/Flags/getFFlagDraggerBetterAlignOrientationFalse",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getFFlagDraggerBetterAlignOrientationFalse",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -4510,7 +4642,7 @@
   {
     "class": "ModuleScript",
     "name": "getFFlagDraggerEditProcModels",
-    "path": "ScaleDragger/Packages/DraggerFramework/Flags/getFFlagDraggerEditProcModels",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getFFlagDraggerEditProcModels",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -4526,7 +4658,7 @@
   {
     "class": "ModuleScript",
     "name": "getFFlagDraggerFixAttachmentModelDoubleMovement",
-    "path": "ScaleDragger/Packages/DraggerFramework/Flags/getFFlagDraggerFixAttachmentModelDoubleMovement",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getFFlagDraggerFixAttachmentModelDoubleMovement",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -4542,7 +4674,7 @@
   {
     "class": "ModuleScript",
     "name": "getFFlagDraggerFrameworkRemoveRedundancies",
-    "path": "ScaleDragger/Packages/DraggerFramework/Flags/getFFlagDraggerFrameworkRemoveRedundancies",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getFFlagDraggerFrameworkRemoveRedundancies",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -4558,7 +4690,7 @@
   {
     "class": "ModuleScript",
     "name": "getFFlagDraggerHandlesIsEnabledFunction",
-    "path": "ScaleDragger/Packages/DraggerFramework/Flags/getFFlagDraggerHandlesIsEnabledFunction",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getFFlagDraggerHandlesIsEnabledFunction",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -4574,7 +4706,7 @@
   {
     "class": "ModuleScript",
     "name": "getFFlagDraggerInputBlocksViewUpdates",
-    "path": "ScaleDragger/Packages/DraggerFramework/Flags/getFFlagDraggerInputBlocksViewUpdates",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getFFlagDraggerInputBlocksViewUpdates",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -4590,7 +4722,7 @@
   {
     "class": "ModuleScript",
     "name": "getFFlagDraggerReenableCtrlSelect",
-    "path": "ScaleDragger/Packages/DraggerFramework/Flags/getFFlagDraggerReenableCtrlSelect",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getFFlagDraggerReenableCtrlSelect",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -4606,7 +4738,7 @@
   {
     "class": "ModuleScript",
     "name": "getFFlagDraggerRotateReference",
-    "path": "ScaleDragger/Packages/DraggerFramework/Flags/getFFlagDraggerRotateReference",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getFFlagDraggerRotateReference",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -4622,7 +4754,7 @@
   {
     "class": "ModuleScript",
     "name": "getFFlagDraggerSoftSnapHandleThinParts",
-    "path": "ScaleDragger/Packages/DraggerFramework/Flags/getFFlagDraggerSoftSnapHandleThinParts",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getFFlagDraggerSoftSnapHandleThinParts",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -4638,7 +4770,7 @@
   {
     "class": "ModuleScript",
     "name": "getFFlagImprovedCursors",
-    "path": "ScaleDragger/Packages/DraggerFramework/Flags/getFFlagImprovedCursors",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getFFlagImprovedCursors",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -4654,7 +4786,7 @@
   {
     "class": "ModuleScript",
     "name": "getFFlagNextGenDraggers",
-    "path": "ScaleDragger/Packages/DraggerFramework/Flags/getFFlagNextGenDraggers",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getFFlagNextGenDraggers",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -4670,7 +4802,7 @@
   {
     "class": "ModuleScript",
     "name": "getFFlagSBT4371DraggingOverEmptySpace",
-    "path": "ScaleDragger/Packages/DraggerFramework/Flags/getFFlagSBT4371DraggingOverEmptySpace",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getFFlagSBT4371DraggingOverEmptySpace",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -4686,7 +4818,7 @@
   {
     "class": "ModuleScript",
     "name": "getFFlagSBT4896NudgingWithNumpad",
-    "path": "ScaleDragger/Packages/DraggerFramework/Flags/getFFlagSBT4896NudgingWithNumpad",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getFFlagSBT4896NudgingWithNumpad",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -4702,7 +4834,7 @@
   {
     "class": "ModuleScript",
     "name": "getFFlagSBT4977DraggerTeleportsAssembly",
-    "path": "ScaleDragger/Packages/DraggerFramework/Flags/getFFlagSBT4977DraggerTeleportsAssembly",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getFFlagSBT4977DraggerTeleportsAssembly",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -4718,7 +4850,7 @@
   {
     "class": "ModuleScript",
     "name": "getFFlagSBT5424SelectThroughLocked",
-    "path": "ScaleDragger/Packages/DraggerFramework/Flags/getFFlagSBT5424SelectThroughLocked",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getFFlagSBT5424SelectThroughLocked",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -4750,7 +4882,7 @@
   {
     "class": "ModuleScript",
     "name": "getGeometry",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/getGeometry",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/getGeometry",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -4766,13 +4898,13 @@
   {
     "class": "ModuleScript",
     "name": "getHoverComponent",
-    "path": "ScaleDragger/Packages/DraggerSchemaCore/getHoverComponent",
+    "path": "ScaleDragger/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/getHoverComponent",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "239",
-      "SourceBytecodeSha256": "7d6cff53371a18b942e0e6bd36a65758d9ad88d07f626517793e520803607125",
+      "SourceBytecodeSha256": "68083d10e0e5e40fddcf1d46bf522723e486db4c2a8196530288497617bcb9c4",
       "Tags": ""
     },
     "unreadable": [
@@ -4798,13 +4930,13 @@
   {
     "class": "ModuleScript",
     "name": "getMouseTarget",
-    "path": "ScaleDragger/Packages/DraggerSchemaCore/getMouseTarget",
+    "path": "ScaleDragger/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/getMouseTarget",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2433",
-      "SourceBytecodeSha256": "4e05805016a0ef39d2cf2600b36b67d9fad7f234fc46b8681aab718d825e1f5b",
+      "SourceBytecodeBytes": "2403",
+      "SourceBytecodeSha256": "9420abe58a6f8a963c5f49df8b2e32741da6297d09b2cbff469070a2ee64730d",
       "Tags": ""
     },
     "unreadable": [
@@ -4814,13 +4946,13 @@
   {
     "class": "ModuleScript",
     "name": "getNextSelectables",
-    "path": "ScaleDragger/Packages/DraggerSchemaCore/getNextSelectables",
+    "path": "ScaleDragger/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/getNextSelectables",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "281",
-      "SourceBytecodeSha256": "07308a56693ef068480fdd6f86227be5466ffc0ee69eed581f5779d7ab9d02be",
+      "SourceBytecodeBytes": "263",
+      "SourceBytecodeSha256": "408e2682a58d9848162e29505ccded79086d9e6c92ada08d5d2593907ce4cd77",
       "Tags": ""
     },
     "unreadable": [
@@ -5006,7 +5138,7 @@
   {
     "class": "ModuleScript",
     "name": "getSelectableWithCache",
-    "path": "ScaleDragger/Packages/DraggerSchemaCore/getSelectableWithCache",
+    "path": "ScaleDragger/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/getSelectableWithCache",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -5022,7 +5154,7 @@
   {
     "class": "ModuleScript",
     "name": "getSelectionBoxComponent",
-    "path": "ScaleDragger/Packages/DraggerSchemaCore/getSelectionBoxComponent",
+    "path": "ScaleDragger/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/getSelectionBoxComponent",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -5054,13 +5186,13 @@
   {
     "class": "ModuleScript",
     "name": "getSingleSelectionInterface",
-    "path": "ScaleDragger/Packages/DraggerSchemaCore/getSingleSelectionInterface",
+    "path": "ScaleDragger/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/getSingleSelectionInterface",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1445",
-      "SourceBytecodeSha256": "974c90ca724f39552e006e01f6bd96be9d1bfbeacc9046f55fde9457f7760591",
+      "SourceBytecodeBytes": "1435",
+      "SourceBytecodeSha256": "063e4121313530f6e20d6bb3c9e09033036b1e25eaa880b1ef6d96f3afc20029",
       "Tags": ""
     },
     "unreadable": [
@@ -5102,7 +5234,7 @@
   {
     "class": "ModuleScript",
     "name": "getSoftSnaps",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/getSoftSnaps",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/getSoftSnaps",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -5118,13 +5250,13 @@
   {
     "class": "ModuleScript",
     "name": "getSummonTarget",
-    "path": "ScaleDragger/Packages/DraggerSchemaCore/getSummonTarget",
+    "path": "ScaleDragger/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/getSummonTarget",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1441",
-      "SourceBytecodeSha256": "3291852e38e5de3fb8376d7c9a12f68714956becb3c346c91cffbf486aee46e9",
+      "SourceBytecodeBytes": "1426",
+      "SourceBytecodeSha256": "2abd9f2691056a39f6c4e8abb0ee2e252b583044102f9548c3c0d4d52556721f",
       "Tags": ""
     },
     "unreadable": [
@@ -5214,13 +5346,13 @@
   {
     "class": "ModuleScript",
     "name": "Grid3D",
-    "path": "ScaleDragger/Packages/DraggerFramework/Components/Grid3D",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Components/Grid3D",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2281",
-      "SourceBytecodeSha256": "0c2d9cd3ebb4ee4e42e1e5f3961242045c056b8fbc86264e4df39d099335ab79",
+      "SourceBytecodeBytes": "2250",
+      "SourceBytecodeSha256": "60bdd717987352cedb2053b4175ef82c11f4422397e9a93b7776f5b0af2637a6",
       "Tags": ""
     },
     "unreadable": [
@@ -5246,7 +5378,7 @@
   {
     "class": "ModuleScript",
     "name": "Handles",
-    "path": "ScaleDragger/Packages/DraggerFramework/Handles",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Handles",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -5310,7 +5442,7 @@
   {
     "class": "ModuleScript",
     "name": "HotkeyHelpBuilder",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/HotkeyHelpBuilder",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/HotkeyHelpBuilder",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -5326,7 +5458,7 @@
   {
     "class": "ModuleScript",
     "name": "HotkeyUsageInfo",
-    "path": "ScaleDragger/Packages/DraggerFramework/Components/HotkeyUsageInfo",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Components/HotkeyUsageInfo",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -5342,7 +5474,7 @@
   {
     "class": "ModuleScript",
     "name": "HoverEscapeDetector",
-    "path": "ScaleDragger/Packages/DraggerSchemaCore/HoverEscapeDetector",
+    "path": "ScaleDragger/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/HoverEscapeDetector",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -5358,7 +5490,7 @@
   {
     "class": "ModuleScript",
     "name": "HoverSnapDisplay",
-    "path": "ScaleDragger/Packages/DraggerFramework/Components/HoverSnapDisplay",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Components/HoverSnapDisplay",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -5374,7 +5506,7 @@
   {
     "class": "ModuleScript",
     "name": "HoverTracker",
-    "path": "ScaleDragger/Packages/DraggerFramework/Implementation/HoverTracker",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Implementation/HoverTracker",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -5406,7 +5538,7 @@
   {
     "class": "ModuleScript",
     "name": "Implementation",
-    "path": "ScaleDragger/Packages/DraggerFramework/Implementation",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Implementation",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -5667,8 +5799,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1793",
-      "SourceBytecodeSha256": "6d2d318d6a88b2ac35a03ebba6d41c49f13522ef0a15b3be79d31fc1d64ba434",
+      "SourceBytecodeBytes": "1901",
+      "SourceBytecodeSha256": "0e13e84b8b9461e20cddcf5d7a028ec2cf4ec8631453cd1749e9a7c57f5da9bc",
       "Tags": ""
     },
     "unreadable": [
@@ -5774,7 +5906,7 @@
   {
     "class": "ModuleScript",
     "name": "isCli",
-    "path": "ScaleDragger/Packages/_Index/TestLoader/TestLoader/isCli",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/isCli",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -5790,7 +5922,7 @@
   {
     "class": "ModuleScript",
     "name": "isCli",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/isCli",
+    "path": "ScaleDragger/Packages/_Index/TestLoader/TestLoader/isCli",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -5806,7 +5938,7 @@
   {
     "class": "ModuleScript",
     "name": "isExclusiveSelectable",
-    "path": "ScaleDragger/Packages/DraggerSchemaCore/isExclusiveSelectable",
+    "path": "ScaleDragger/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/isExclusiveSelectable",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -5854,6 +5986,22 @@
   {
     "class": "ModuleScript",
     "name": "isFTF",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/isFTF",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "336",
+      "SourceBytecodeSha256": "e92ddc6e1c75b512b7af9bdf0f47595a474d5df96d28e75e715906e89660af64",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "isFTF",
     "path": "ScaleDragger/Packages/_Index/TestLoader/TestLoader/isFTF",
     "properties": {
       "AttributesSerialize": "",
@@ -5869,24 +6017,8 @@
   },
   {
     "class": "ModuleScript",
-    "name": "isFTF",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/isFTF",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "336",
-      "SourceBytecodeSha256": "e92ddc6e1c75b512b7af9bdf0f47595a474d5df96d28e75e715906e89660af64",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "isGoodRaycastResult",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/isGoodRaycastResult",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/isGoodRaycastResult",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -5982,7 +6114,7 @@
   {
     "class": "ModuleScript",
     "name": "isProtectedInstance",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/isProtectedInstance",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/isProtectedInstance",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -6110,13 +6242,13 @@
   {
     "class": "ModuleScript",
     "name": "jest.config",
-    "path": "ScaleDragger/Packages/_Index/SafeFlags/SafeFlags/jest.config",
+    "path": "ScaleDragger/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/jest.config",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "101",
-      "SourceBytecodeSha256": "8833a3edf93e62a17950c827aaa31af565c4834d93c0d0eb15fbb72d8c67e637",
+      "SourceBytecodeSha256": "909f8482f079992eed99e38c670583959866b956d2c92142e4e6d3eefd52fc67",
       "Tags": ""
     },
     "unreadable": [
@@ -6126,13 +6258,13 @@
   {
     "class": "ModuleScript",
     "name": "jest.config",
-    "path": "ScaleDragger/Packages/DraggerSchemaCore/jest.config",
+    "path": "ScaleDragger/Packages/_Index/SafeFlags/SafeFlags/jest.config",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "101",
-      "SourceBytecodeSha256": "909f8482f079992eed99e38c670583959866b956d2c92142e4e6d3eefd52fc67",
+      "SourceBytecodeSha256": "8833a3edf93e62a17950c827aaa31af565c4834d93c0d0eb15fbb72d8c67e637",
       "Tags": ""
     },
     "unreadable": [
@@ -6195,8 +6327,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "7918",
-      "SourceBytecodeSha256": "82608721e1ec5af8f634a9f45a92f0f8188fece4ebea651b87d8d11fd5f0f9e4",
+      "SourceBytecodeBytes": "8205",
+      "SourceBytecodeSha256": "a4c8e329c87ce73fe3c0cededdfd948a92a8e676177cec9f33937cd70eb53442",
       "Tags": ""
     },
     "unreadable": [
@@ -8142,7 +8274,7 @@
   {
     "class": "ModuleScript",
     "name": "JointMaker",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/JointMaker",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/JointMaker",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -8158,13 +8290,13 @@
   {
     "class": "ModuleScript",
     "name": "JointPairs",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/JointPairs",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/JointPairs",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "6808",
-      "SourceBytecodeSha256": "8c1077b6281733ce09d03ba09830e56b2a49167ac918e9ec272f10ed508ca51b",
+      "SourceBytecodeBytes": "6773",
+      "SourceBytecodeSha256": "a72ec5d970735ed3e483a45956d4548a23f5c1df27f356a8544153a2b78dd88b",
       "Tags": ""
     },
     "unreadable": [
@@ -8174,7 +8306,7 @@
   {
     "class": "ModuleScript",
     "name": "JointUtil",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/JointUtil",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/JointUtil",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -8270,13 +8402,13 @@
   {
     "class": "ModuleScript",
     "name": "LatLonGuide",
-    "path": "ScaleDragger/Packages/DraggerFramework/Components/LatLonGuide",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Components/LatLonGuide",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3719",
-      "SourceBytecodeSha256": "e262d78463631a12c0bc549a6b5a6670f7cfbff113dbbc33c9e980c12c82cd3f",
+      "SourceBytecodeBytes": "3688",
+      "SourceBytecodeSha256": "9f7cd6b19380cf88e6eba6062b2c82a567f728733db0534376bec6c65b623455",
       "Tags": ""
     },
     "unreadable": [
@@ -8318,13 +8450,13 @@
   {
     "class": "ModuleScript",
     "name": "LocalSpaceIndicator",
-    "path": "ScaleDragger/Packages/DraggerFramework/Components/LocalSpaceIndicator",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Components/LocalSpaceIndicator",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2520",
-      "SourceBytecodeSha256": "8419e4d7d4cf9d9d787bd11a5748c961e4e859e9432a7f9af2800d1f88baa3f0",
+      "SourceBytecodeBytes": "2489",
+      "SourceBytecodeSha256": "15e838fbf35384babd1fa8f26c1068003db0c2e6ce759a2ab9496492ef9b30d2",
       "Tags": ""
     },
     "unreadable": [
@@ -8931,8 +9063,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2478",
-      "SourceBytecodeSha256": "24326cb9f7b37f4330a9af61a2171b3e1f40c3d8619275e0a6ce5d43b20788d6",
+      "SourceBytecodeBytes": "2433",
+      "SourceBytecodeSha256": "a747ffedeb6d1b00edafee2de3423f4a57afc750b964af95e1510fee1f688ca4",
       "Tags": ""
     },
     "unreadable": [
@@ -9134,6 +9266,22 @@
   {
     "class": "ModuleScript",
     "name": "Math",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/Math",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "3566",
+      "SourceBytecodeSha256": "539107da707817ed864cd7ef4c2ded1935c7653db21587a4603291cde65e2bf0",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Math",
     "path": "ScaleDragger/Packages/_Index/LuauPolyfill/Math",
     "properties": {
       "AttributesSerialize": "",
@@ -9157,22 +9305,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "124",
       "SourceBytecodeSha256": "cddf5f8deca7f3708e0556761689f81bf8b10186a7c84aafae6013fd8d3e7d0c",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Math",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/Math",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "3566",
-      "SourceBytecodeSha256": "539107da707817ed864cd7ef4c2ded1935c7653db21587a4603291cde65e2bf0",
       "Tags": ""
     },
     "unreadable": [
@@ -9262,7 +9394,7 @@
   {
     "class": "ModuleScript",
     "name": "MockAnalytics",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/MockAnalytics",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/MockAnalytics",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -9310,13 +9442,13 @@
   {
     "class": "ModuleScript",
     "name": "MoveHandles",
-    "path": "ScaleDragger/Packages/DraggerFramework/Handles/MoveHandles",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Handles/MoveHandles",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "31408",
-      "SourceBytecodeSha256": "1d872b0f60d00e36aea767a080269318b1597c3a62530ddc81f0685736cd98d3",
+      "SourceBytecodeBytes": "31578",
+      "SourceBytecodeSha256": "95952ec646fa85896510c4472f2fefd015e537a93a88f993a5ce968b030df49a",
       "Tags": ""
     },
     "unreadable": [
@@ -9326,13 +9458,13 @@
   {
     "class": "ModuleScript",
     "name": "MoveHandleView",
-    "path": "ScaleDragger/Packages/DraggerFramework/Components/MoveHandleView",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Components/MoveHandleView",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5031",
-      "SourceBytecodeSha256": "d45a58b8a8b2061e5fa48b08a7c26313dc7b2962c6fd8d0d693b848556862655",
+      "SourceBytecodeBytes": "5075",
+      "SourceBytecodeSha256": "38d2f1fed64b0e97890db5d981e121f840bb8b6ce15780a1c610793114afd5c2",
       "Tags": ""
     },
     "unreadable": [
@@ -9342,13 +9474,13 @@
   {
     "class": "ModuleScript",
     "name": "MovePlanarHandleView",
-    "path": "ScaleDragger/Packages/DraggerFramework/Components/MovePlanarHandleView",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Components/MovePlanarHandleView",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3889",
-      "SourceBytecodeSha256": "53f773e4234f39d43644aa08b0c827fcd7341c48d0cef4ffca4caa8fa9374662",
+      "SourceBytecodeBytes": "3904",
+      "SourceBytecodeSha256": "1051458852c630ecaa9cf40656f562bbacdf90dd5225db9e13d3237dd1b919fd",
       "Tags": ""
     },
     "unreadable": [
@@ -9678,7 +9810,7 @@
   {
     "class": "ModuleScript",
     "name": "onExternalHover",
-    "path": "ScaleDragger/Packages/DraggerSchemaCore/onExternalHover",
+    "path": "ScaleDragger/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/onExternalHover",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -9699,8 +9831,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "36190",
-      "SourceBytecodeSha256": "1accddf97acdb2d7f84f9e7b9b1fbda410e0e39bed5289fb559465622a6ef188",
+      "SourceBytecodeBytes": "36181",
+      "SourceBytecodeSha256": "aaecc650f23d8438556eac7682ba73c0ccb2024ef947bf863b02cb5bb61c421d",
       "Tags": ""
     },
     "unreadable": [
@@ -9726,7 +9858,7 @@
   {
     "class": "ModuleScript",
     "name": "PartMover",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/PartMover",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/PartMover",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -9790,7 +9922,7 @@
   {
     "class": "ModuleScript",
     "name": "PendingDraggingHandle",
-    "path": "ScaleDragger/Packages/DraggerFramework/Implementation/DraggerStates/PendingDraggingHandle",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Implementation/DraggerStates/PendingDraggingHandle",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -9806,7 +9938,7 @@
   {
     "class": "ModuleScript",
     "name": "PendingDraggingParts",
-    "path": "ScaleDragger/Packages/DraggerFramework/Implementation/DraggerStates/PendingDraggingParts",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Implementation/DraggerStates/PendingDraggingParts",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -9822,7 +9954,7 @@
   {
     "class": "ModuleScript",
     "name": "PendingSelectNext",
-    "path": "ScaleDragger/Packages/DraggerFramework/Implementation/DraggerStates/PendingSelectNext",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Implementation/DraggerStates/PendingSelectNext",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -9891,8 +10023,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5865",
-      "SourceBytecodeSha256": "39a5be27fc4a6e90a02bccf4777bd0a1a0fbb4826cea535a186df8fe7b09b4ff",
+      "SourceBytecodeBytes": "5860",
+      "SourceBytecodeSha256": "c7a206565f2126a33a7cd93890c93dea1e0201a12b4d9398d120a318dd6e02e7",
       "Tags": ""
     },
     "unreadable": [
@@ -9902,13 +10034,13 @@
   {
     "class": "ModuleScript",
     "name": "PivotRing",
-    "path": "ScaleDragger/Packages/DraggerFramework/Components/PivotRing",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Components/PivotRing",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1360",
-      "SourceBytecodeSha256": "b29e1212e3bc59a4ae4e5a05cc94baecf52e8fa70b931b089f30ecf22c70a60a",
+      "SourceBytecodeBytes": "1329",
+      "SourceBytecodeSha256": "02e3a618bbedc2f25ef67f641f6ab7df995db74a14696514375d632ac905d904",
       "Tags": ""
     },
     "unreadable": [
@@ -10910,7 +11042,7 @@
   {
     "class": "ModuleScript",
     "name": "Ready",
-    "path": "ScaleDragger/Packages/DraggerFramework/Implementation/DraggerStates/Ready",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Implementation/DraggerStates/Ready",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -11438,6 +11570,38 @@
   {
     "class": "ModuleScript",
     "name": "Roact",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/Roact",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "174",
+      "SourceBytecodeSha256": "e150093c55fc50a9d10021039b1a11b135f203414a9bc9784541869452405df8",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Roact",
+    "path": "ScaleDragger/Packages/_Index/DraggerSchemaCore/Roact",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "174",
+      "SourceBytecodeSha256": "e150093c55fc50a9d10021039b1a11b135f203414a9bc9784541869452405df8",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Roact",
     "path": "ScaleDragger/Packages/_Index/Roact/Roact",
     "properties": {
       "AttributesSerialize": "",
@@ -11726,13 +11890,13 @@
   {
     "class": "ModuleScript",
     "name": "RotateBallHandleView",
-    "path": "ScaleDragger/Packages/DraggerFramework/Components/RotateBallHandleView",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Components/RotateBallHandleView",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1661",
-      "SourceBytecodeSha256": "d572f51d0415a05858d192faacd2ea1de770e627d0396d36c79182fad794da89",
+      "SourceBytecodeBytes": "1630",
+      "SourceBytecodeSha256": "1a5240e827c2deccc13933bc3abac48a0cd3ea30883b7321de74e8531f17e601",
       "Tags": ""
     },
     "unreadable": [
@@ -11742,13 +11906,13 @@
   {
     "class": "ModuleScript",
     "name": "RotateHandles",
-    "path": "ScaleDragger/Packages/DraggerFramework/Handles/RotateHandles",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Handles/RotateHandles",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "17390",
-      "SourceBytecodeSha256": "aaa4892ff0d96345217321e4fe16403751de80af977a1123ef137f0d24a2294c",
+      "SourceBytecodeBytes": "17358",
+      "SourceBytecodeSha256": "73070dfc8704bfdbf36325767e78106c27b9cc2e3a740771dbb0b0a705db0b70",
       "Tags": ""
     },
     "unreadable": [
@@ -11758,7 +11922,7 @@
   {
     "class": "ModuleScript",
     "name": "RotateHandleView",
-    "path": "ScaleDragger/Packages/DraggerFramework/Components/RotateHandleView",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Components/RotateHandleView",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -11773,8 +11937,24 @@
   },
   {
     "class": "ModuleScript",
+    "name": "RotestReporter",
+    "path": "ScaleDragger/Packages/_Index/TestLoader/TestLoader/RotestReporter",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1143",
+      "SourceBytecodeSha256": "de10d0f0159faf923aa610ea0be31f1291f3a15c58d50e4722df22d9096f61ec",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "roundRotation",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/roundRotation",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/roundRotation",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -11790,7 +11970,7 @@
   {
     "class": "ModuleScript",
     "name": "RulerView",
-    "path": "ScaleDragger/Packages/DraggerFramework/Components/RulerView",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Components/RulerView",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -11829,6 +12009,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "5151",
       "SourceBytecodeSha256": "5011973a9e32342fed3508394179c71c780de93c1ba557cef7fbec05e4468726",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "runJestAsync",
+    "path": "ScaleDragger/Packages/_Index/TestLoader/TestLoader/runJestAsync",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1777",
+      "SourceBytecodeSha256": "7f78765b1f46f6571ea8e1d7dc18e99ab79a001b53094cb6bf0a8326c485b303",
       "Tags": ""
     },
     "unreadable": [
@@ -11918,7 +12114,7 @@
   {
     "class": "ModuleScript",
     "name": "ScaleHandleView",
-    "path": "ScaleDragger/Packages/DraggerFramework/Components/ScaleHandleView",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Components/ScaleHandleView",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -11982,13 +12178,13 @@
   {
     "class": "ModuleScript",
     "name": "Selection",
-    "path": "ScaleDragger/Packages/DraggerSchemaCore/Selection",
+    "path": "ScaleDragger/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/Selection",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1018",
-      "SourceBytecodeSha256": "b913964127ba1f973ef32f848e45295d1e711daa760005309f97b4d33377f630",
+      "SourceBytecodeBytes": "987",
+      "SourceBytecodeSha256": "67f8b26661a1bdaa886c30e41bbb662ba33f440c678a77f82b45ee789ff288f3",
       "Tags": ""
     },
     "unreadable": [
@@ -11998,7 +12194,7 @@
   {
     "class": "ModuleScript",
     "name": "SelectionCycleCache",
-    "path": "ScaleDragger/Packages/DraggerFramework/Implementation/SelectionCycleCache",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Implementation/SelectionCycleCache",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -12014,13 +12210,13 @@
   {
     "class": "ModuleScript",
     "name": "SelectionDot",
-    "path": "ScaleDragger/Packages/DraggerFramework/Components/SelectionDot",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Components/SelectionDot",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1166",
-      "SourceBytecodeSha256": "d455c9fd8de7062751d80c9c5bec5d33b7e3c8084e4567b87ffc393044cde43d",
+      "SourceBytecodeBytes": "1135",
+      "SourceBytecodeSha256": "4b9ea498ac174ce00da429b3cc88eae04cb0d967d788d7a6bce852f8dd50533a",
       "Tags": ""
     },
     "unreadable": [
@@ -12030,7 +12226,7 @@
   {
     "class": "ModuleScript",
     "name": "SelectionHelper",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/SelectionHelper",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/SelectionHelper",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -12046,13 +12242,13 @@
   {
     "class": "ModuleScript",
     "name": "SelectionInfo",
-    "path": "ScaleDragger/Packages/DraggerSchemaCore/SelectionInfo",
+    "path": "ScaleDragger/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/SelectionInfo",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "22895",
-      "SourceBytecodeSha256": "9ac55ad05425e4525a79689456d6ca783f15b066067b392ff92a29b556092ee1",
+      "SourceBytecodeBytes": "23387",
+      "SourceBytecodeSha256": "32e6cdf9464a1e83065d6dd6478e77c2f16a4a0e03ddf3bebc3f3976acea5000",
       "Tags": ""
     },
     "unreadable": [
@@ -12062,7 +12258,7 @@
   {
     "class": "ModuleScript",
     "name": "SelectionWrapper",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/SelectionWrapper",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/SelectionWrapper",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -12094,13 +12290,13 @@
   {
     "class": "ModuleScript",
     "name": "setActivePoint",
-    "path": "ScaleDragger/Packages/DraggerSchemaCore/setActivePoint",
+    "path": "ScaleDragger/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/setActivePoint",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "294",
-      "SourceBytecodeSha256": "ce270e97c81239761ac99de42e6c9b6793eaf46d2ebce4c7a438f1ac93b57d10",
+      "SourceBytecodeBytes": "276",
+      "SourceBytecodeSha256": "d6902b41f0f268e1c3b9120751600d153f1f1bda3d435697ad4fd42edb8c4e63",
       "Tags": ""
     },
     "unreadable": [
@@ -12142,7 +12338,7 @@
   {
     "class": "ModuleScript",
     "name": "setHover",
-    "path": "ScaleDragger/Packages/DraggerSchemaCore/setHover",
+    "path": "ScaleDragger/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/setHover",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -12158,7 +12354,7 @@
   {
     "class": "ModuleScript",
     "name": "setInsertPoint",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/setInsertPoint",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/setInsertPoint",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -12254,7 +12450,7 @@
   {
     "class": "ModuleScript",
     "name": "shouldDragAsFace",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/shouldDragAsFace",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/shouldDragAsFace",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -12270,7 +12466,7 @@
   {
     "class": "ModuleScript",
     "name": "shouldSelectSubPart",
-    "path": "ScaleDragger/Packages/DraggerSchemaCore/shouldSelectSubPart",
+    "path": "ScaleDragger/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/shouldSelectSubPart",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -12286,7 +12482,7 @@
   {
     "class": "ModuleScript",
     "name": "Signal",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/Signal",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/Signal",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -12302,7 +12498,7 @@
   {
     "class": "ModuleScript",
     "name": "SimplePadding",
-    "path": "ScaleDragger/Packages/DraggerFramework/Components/SimplePadding",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Components/SimplePadding",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -12382,7 +12578,7 @@
   {
     "class": "ModuleScript",
     "name": "snapRotationToPrimaryDirection",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/snapRotationToPrimaryDirection",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/snapRotationToPrimaryDirection",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -12414,7 +12610,7 @@
   {
     "class": "ModuleScript",
     "name": "SoftSnapper",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/SoftSnapper",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/SoftSnapper",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -12494,13 +12690,13 @@
   {
     "class": "ModuleScript",
     "name": "SphereMajorLines",
-    "path": "ScaleDragger/Packages/DraggerFramework/Components/SphereMajorLines",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Components/SphereMajorLines",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2230",
-      "SourceBytecodeSha256": "8e9d04ad8fff4d318aa05948cf5c506ff3a306b85cae0a1cee6eb3840af9f789",
+      "SourceBytecodeBytes": "2199",
+      "SourceBytecodeSha256": "2ac3622718306a877f5651c8a6519057aabf94f6f133701c453d20532ded8809",
       "Tags": ""
     },
     "unreadable": [
@@ -12574,13 +12770,13 @@
   {
     "class": "ModuleScript",
     "name": "StandaloneSelectionBox",
-    "path": "ScaleDragger/Packages/DraggerFramework/Components/StandaloneSelectionBox",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Components/StandaloneSelectionBox",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1553",
-      "SourceBytecodeSha256": "6b51f7e6354c6d6fee4044880abacacaeba327ae5aaad2016e50fa8626335cc0",
+      "SourceBytecodeBytes": "1522",
+      "SourceBytecodeSha256": "e00ae4eab2b4ced2d72c7a8b529a1c32f662193c4ed01841321357b2a30f7252",
       "Tags": ""
     },
     "unreadable": [
@@ -12590,7 +12786,7 @@
   {
     "class": "ModuleScript",
     "name": "StandardCursor",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/StandardCursor",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/StandardCursor",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -12830,13 +13026,13 @@
   {
     "class": "ModuleScript",
     "name": "SummonedPivot",
-    "path": "ScaleDragger/Packages/DraggerFramework/Components/SummonedPivot",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Components/SummonedPivot",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "935",
-      "SourceBytecodeSha256": "697f40bb9e50440f08a12c17213aab89d17c2ca986f896634ed5856f008ecb4e",
+      "SourceBytecodeBytes": "904",
+      "SourceBytecodeSha256": "c878ac0eaa2d36c5302f98254f342ebf38c287be8754bfb876443d485575ec26",
       "Tags": ""
     },
     "unreadable": [
@@ -12846,13 +13042,13 @@
   {
     "class": "ModuleScript",
     "name": "SummonHandlesHider",
-    "path": "ScaleDragger/Packages/DraggerFramework/Components/SummonHandlesHider",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Components/SummonHandlesHider",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "932",
-      "SourceBytecodeSha256": "b60f85fd7724e1943494514ed5f5c48fdc7ac40c073c2974596a523c2f201bc2",
+      "SourceBytecodeBytes": "901",
+      "SourceBytecodeSha256": "f87c5b03b79904194055f628c08c9629a55633632e760d8b02a99f6d7d745194",
       "Tags": ""
     },
     "unreadable": [
@@ -12862,13 +13058,13 @@
   {
     "class": "ModuleScript",
     "name": "SummonHandlesNote",
-    "path": "ScaleDragger/Packages/DraggerFramework/Components/SummonHandlesNote",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Components/SummonHandlesNote",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2838",
-      "SourceBytecodeSha256": "9721cfd25dba709fa1a57a1d56a3b925128fc893193036b7774b5829295a16ff",
+      "SourceBytecodeBytes": "2807",
+      "SourceBytecodeSha256": "087310336696e5b07401371d9e39a62daa23b1af279a6da5da7122ece3f938ab",
       "Tags": ""
     },
     "unreadable": [
@@ -12990,13 +13186,13 @@
   {
     "class": "ModuleScript",
     "name": "TargetGridView",
-    "path": "ScaleDragger/Packages/DraggerFramework/Components/TargetGridView",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Components/TargetGridView",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "8231",
-      "SourceBytecodeSha256": "9a41c2543d2e3894c475a469318712d8a9bb62ba2e1c63ebd09effaa2a5bab18",
+      "SourceBytecodeBytes": "8208",
+      "SourceBytecodeSha256": "e74685cc2c64dd99a5030162ed2f108dfc05fdc9abbd0abbeba6798818adecc1",
       "Tags": ""
     },
     "unreadable": [
@@ -13006,13 +13202,13 @@
   {
     "class": "ModuleScript",
     "name": "TargetSoftSnapView",
-    "path": "ScaleDragger/Packages/DraggerFramework/Components/TargetSoftSnapView",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Components/TargetSoftSnapView",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2617",
-      "SourceBytecodeSha256": "a3d8f5982525162ec7ecd62fec062cd23de2ccb75e2a9e8d4ad4b8fca39bf4f7",
+      "SourceBytecodeBytes": "2586",
+      "SourceBytecodeSha256": "82da049ba2add2c44b3c9d315f778557cca16b7b7145ffab9d5237da8e5288d7",
       "Tags": ""
     },
     "unreadable": [
@@ -13054,7 +13250,7 @@
   {
     "class": "ModuleScript",
     "name": "TemporaryTransparency",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/TemporaryTransparency",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/TemporaryTransparency",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -13091,8 +13287,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "624",
-      "SourceBytecodeSha256": "1dcdd5a736dc042e047bf69658823c69f45e02c8f3ec862bdaf294d68662522a",
+      "SourceBytecodeBytes": "685",
+      "SourceBytecodeSha256": "2f84b8899ed052128eb5c7b84f4a22941d0a7edfb1fa1ceb049874552eec92b5",
       "Tags": ""
     },
     "unreadable": [
@@ -13108,7 +13304,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "159",
-      "SourceBytecodeSha256": "f851976d75105f55d1c57c7fb1dc541d726225a5f34e216bbc6301ec8be1e4fe",
+      "SourceBytecodeSha256": "b12cbfa16cbcc50e70a197fa4e2d03842e26665c693d2450e6395090d51dec83",
       "Tags": ""
     },
     "unreadable": [
@@ -13390,13 +13586,13 @@
   {
     "class": "ModuleScript",
     "name": "TransformHandlesImplementation",
-    "path": "ScaleDragger/Packages/DraggerSchemaCore/TransformHandlesImplementation",
+    "path": "ScaleDragger/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/TransformHandlesImplementation",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "6412",
-      "SourceBytecodeSha256": "b0f6c811dd77528075d95e01ebe675ea8022b2006c3e1e30e193d6a13e16cb3d",
+      "SourceBytecodeBytes": "6281",
+      "SourceBytecodeSha256": "b915a727f7180375a962f3785a6ea44c556f789302137eb27b437d4231bfc3d9",
       "Tags": ""
     },
     "unreadable": [
@@ -13525,6 +13721,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "44",
       "SourceBytecodeSha256": "8c23c4985910948bcb4917c12f286561e376e79a2c6f8f06ea19d46dd54be32a",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Types",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Types",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "39",
+      "SourceBytecodeSha256": "84c7a946409bb7b251d857a855ded9d83bff25754e3cf881db498c1c24372993",
       "Tags": ""
     },
     "unreadable": [
@@ -13725,22 +13937,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "Types",
-    "path": "ScaleDragger/Packages/DraggerFramework/Types",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "39",
-      "SourceBytecodeSha256": "84c7a946409bb7b251d857a855ded9d83bff25754e3cf881db498c1c24372993",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "UninitializedState.roblox",
     "path": "ScaleDragger/Packages/_Index/Shared/Shared/UninitializedState.roblox",
     "properties": {
@@ -13774,7 +13970,7 @@
   {
     "class": "ModuleScript",
     "name": "updateBoxSelect",
-    "path": "ScaleDragger/Packages/DraggerSchemaCore/updateBoxSelect",
+    "path": "ScaleDragger/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/updateBoxSelect",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -13790,7 +13986,7 @@
   {
     "class": "ModuleScript",
     "name": "Utility",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -13827,8 +14023,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "10321",
-      "SourceBytecodeSha256": "cac3ff3c8c00b8bd589ab8da33fcec6df169cd4ba08e620d1b55e99ed297f7c2",
+      "SourceBytecodeBytes": "10316",
+      "SourceBytecodeSha256": "a78ee354dd352715b3f8d0d3ead1659035f34a704425dd52202bb2405c4e2d80",
       "Tags": ""
     },
     "unreadable": [
@@ -13998,7 +14194,7 @@
   {
     "class": "ModuleScript",
     "name": "ViewChangeDetector",
-    "path": "ScaleDragger/Packages/DraggerFramework/Utility/ViewChangeDetector",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Utility/ViewChangeDetector",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -14046,13 +14242,13 @@
   {
     "class": "ModuleScript",
     "name": "WireframeHandleAdornment",
-    "path": "ScaleDragger/Packages/DraggerFramework/Components/WireframeHandleAdornment",
+    "path": "ScaleDragger/Packages/_Index/DraggerFramework/DraggerFramework/Components/WireframeHandleAdornment",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1355",
-      "SourceBytecodeSha256": "59718360648b8362f2efbca2597bb4b1675b27a095129fd9809d9ef4f0481b27",
+      "SourceBytecodeBytes": "1324",
+      "SourceBytecodeSha256": "f9cf18307e2559b234439a00a2d4467c1b0fda81139de3a31a5fafd004f5ff2b",
       "Tags": ""
     },
     "unreadable": [
@@ -14147,8 +14343,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1014",
-      "SourceBytecodeSha256": "b263527408dd7eb519f1451b632fc5f61e0f1fba5318ea0ca0a7d6041ed10cc1",
+      "SourceBytecodeBytes": "1066",
+      "SourceBytecodeSha256": "56e00484ceed75e21efe85f2d0c5e509c98a4b4b4f08e0e1f7cc7481741cdd8d",
       "Tags": ""
     },
     "unreadable": [

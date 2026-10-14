@@ -4,144 +4,236 @@ local Packages = Foundation.Parent
 local Dash = require(Packages.Dash)
 local React = require(Packages.React)
 
+local Badge = require(Foundation.Components.Badge)
+local BadgeShape = require(Foundation.Enums.BadgeShape)
+local BadgeSize = require(Foundation.Enums.BadgeSize)
+local MatrixGridShared = require(Foundation.Utility.Stories.Shared.MatrixGrid)
 local StatusBadge = require(Foundation.Components.StatusBadge)
 local StatusBadgeShape = require(Foundation.Enums.StatusBadgeShape)
 local StatusBadgeSize = require(Foundation.Enums.StatusBadgeSize)
 local StatusBadgeVariant = require(Foundation.Enums.StatusBadgeVariant)
-local Text = require(Foundation.Components.Text)
+local StorySection = require(Foundation.Utility.Stories.Shared.StorySection)
 local View = require(Foundation.Components.View)
 
+local MatrixGrid = MatrixGridShared.MatrixGrid
+local matrixLabel = MatrixGridShared.matrixLabel
+local Section = StorySection.Section
+
+type BadgeSize = BadgeSize.BadgeSize
 type StatusBadgeShape = StatusBadgeShape.StatusBadgeShape
 type StatusBadgeSize = StatusBadgeSize.StatusBadgeSize
 type StatusBadgeVariant = StatusBadgeVariant.StatusBadgeVariant
 
-type ExampleProps = {
-	LayoutOrder: number,
-	shape: StatusBadgeShape,
-	size: StatusBadgeSize,
-	variant: StatusBadgeVariant,
+local VARIANT_ORDER: { StatusBadgeVariant } = {
+	StatusBadgeVariant.Standard,
+	StatusBadgeVariant.Emphasis,
+	StatusBadgeVariant.Success,
+	StatusBadgeVariant.Warning,
+	StatusBadgeVariant.Alert,
 }
 
-local function Example(props: ExampleProps)
-	return React.createElement(View, {
-		tag = "col align-x-center gap-small auto-xy",
-		LayoutOrder = props.LayoutOrder,
-	}, {
-		Label = React.createElement(Text, {
-			Text = props.variant :: string,
-			tag = "auto-xy text-caption-small content-muted",
-			LayoutOrder = 1,
-		}),
-		Badge = React.createElement(StatusBadge, {
-			text = "Label",
-			shape = props.shape,
-			size = props.size,
-			variant = props.variant,
-			LayoutOrder = 2,
-		}),
-	})
-end
-
-type VariantRowProps = {
-	label: string,
-	LayoutOrder: number,
-	shape: StatusBadgeShape,
-	size: StatusBadgeSize,
+local SHAPE_ORDER: { StatusBadgeShape } = {
+	StatusBadgeShape.Utility,
+	StatusBadgeShape.Box,
 }
 
-local function VariantRow(props: VariantRowProps)
-	local examples: { [string]: React.ReactNode } = {}
+local SIZE_ORDER: { StatusBadgeSize } = {
+	StatusBadgeSize.XSmall,
+	StatusBadgeSize.Small,
+}
 
-	for index, variant in Dash.values(StatusBadgeVariant) do
-		examples[variant] = React.createElement(Example, {
-			LayoutOrder = index,
-			shape = props.shape,
+local VARIANT_HEADERS: { string } = MatrixGridShared.enumHeaders(VARIANT_ORDER)
+local SHAPE_HEADERS: { string } = MatrixGridShared.enumHeaders(SHAPE_ORDER)
+local SIZE_HEADERS: { string } = MatrixGridShared.enumHeaders(SIZE_ORDER)
+
+local DEFAULT_TEXT = "Label"
+local LONG_TEXT = "This is a longer label than the maximum content width allows"
+local BADGE_TEXT = "Badge"
+
+-- Box is the only shape the two components share; Utility has no Badge counterpart.
+local SIBLING_SIZES: { { size: StatusBadgeSize, badgeSize: BadgeSize } } = {
+	{ size = StatusBadgeSize.XSmall, badgeSize = BadgeSize.XSmall },
+	{ size = StatusBadgeSize.Small, badgeSize = BadgeSize.Small },
+}
+
+local LABEL_COLUMN_WIDTH = 80
+local CELL_COLUMN_WIDTH = 120
+-- Labels truncate at 200px of content, so a truncation cell needs room for the full footprint.
+local TRUNCATION_CELL_COLUMN_WIDTH = 240
+-- A pairing cell holds both components; the widest pair measures 151px, so the columns still align.
+local SIBLING_CELL_COLUMN_WIDTH = 170
+
+local function SiblingPair(props: { size: StatusBadgeSize, badgeSize: BadgeSize }): React.ReactNode
+	return React.createElement(View, {
+		tag = "row align-y-center gap-medium auto-xy",
+	}, {
+		Status = React.createElement(StatusBadge, {
+			text = DEFAULT_TEXT,
+			shape = StatusBadgeShape.Box,
 			size = props.size,
-			variant = variant :: StatusBadgeVariant,
-		})
-	end
-
-	return React.createElement(View, {
-		tag = "col gap-small auto-xy",
-		LayoutOrder = props.LayoutOrder,
-	}, {
-		Label = React.createElement(Text, {
-			Text = props.label,
-			tag = "auto-xy text-label-small content-default",
 			LayoutOrder = 1,
 		}),
-		Examples = React.createElement(View, {
-			tag = "row wrap gap-xlarge auto-xy",
+		Badge = React.createElement(Badge, {
+			text = BADGE_TEXT,
+			shape = BadgeShape.Box,
+			size = props.badgeSize,
 			LayoutOrder = 2,
-		}, examples),
-	})
-end
-
-local function PlaygroundStory(props)
-	return React.createElement(View, {
-		tag = "row align-x-center align-y-center size-full-2000 padding-large bg-surface-0",
-	}, {
-		Badge = React.createElement(StatusBadge, {
-			text = props.controls.text,
-			variant = props.controls.variant,
-			shape = props.controls.shape,
-			size = props.controls.size,
-			LayoutOrder = 1,
 		}),
 	})
 end
 
-local function SizesStory()
+local function PlaygroundStory(props: {
+	controls: {
+		text: string,
+		variant: StatusBadgeVariant,
+		shape: StatusBadgeShape,
+		size: StatusBadgeSize,
+	},
+}): React.ReactNode
+	return React.createElement(StatusBadge, {
+		text = props.controls.text,
+		variant = props.controls.variant,
+		shape = props.controls.shape,
+		size = props.controls.size,
+	})
+end
+
+local function VariantsStory(): React.ReactNode
 	return React.createElement(View, {
-		tag = "col gap-xlarge auto-xy padding-large bg-surface-0",
+		tag = "col gap-large auto-xy padding-y-large bg-surface-0",
 	}, {
-		Small = React.createElement(VariantRow, {
-			label = "Small",
-			LayoutOrder = 1,
-			shape = StatusBadgeShape.Utility,
-			size = StatusBadgeSize.Small,
-		}),
-		XSmall = React.createElement(VariantRow, {
-			label = "XSmall",
-			LayoutOrder = 2,
-			shape = StatusBadgeShape.Utility,
-			size = StatusBadgeSize.XSmall,
+		Matrix = React.createElement(MatrixGrid, {
+			showLabelColumn = false,
+			columnHeaders = VARIANT_HEADERS,
+			cellColumnWidth = CELL_COLUMN_WIDTH,
+			headerTextAlign = "left",
+			cellAlign = "left",
+			rows = {
+				{
+					cells = Dash.map(VARIANT_ORDER, function(variant)
+						return React.createElement(StatusBadge, {
+							text = DEFAULT_TEXT,
+							variant = variant,
+						})
+					end),
+				},
+			},
 		}),
 	})
 end
 
-local function ShapesStory()
+local function SizingStory(): React.ReactNode
 	return React.createElement(View, {
-		tag = "col gap-xlarge auto-xy padding-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
-		Utility = React.createElement(VariantRow, {
-			label = "Utility",
+		Size = React.createElement(Section, {
 			LayoutOrder = 1,
-			shape = StatusBadgeShape.Utility,
-			size = StatusBadgeSize.Small,
-		}),
-		Box = React.createElement(VariantRow, {
-			label = "Box",
-			LayoutOrder = 2,
-			shape = StatusBadgeShape.Box,
-			size = StatusBadgeSize.Small,
+			name = "Size",
+			contentTag = "auto-xy",
+		}, {
+			Matrix = React.createElement(MatrixGrid, {
+				showLabelColumn = false,
+				columnHeaders = SIZE_HEADERS,
+				cellColumnWidth = CELL_COLUMN_WIDTH,
+				headerTextAlign = "left",
+				cellAlign = "left",
+				rows = {
+					{
+						cells = Dash.map(SIZE_ORDER, function(size)
+							return React.createElement(StatusBadge, {
+								text = DEFAULT_TEXT,
+								size = size,
+							})
+						end),
+					},
+				},
+			}),
 		}),
 	})
 end
 
-local function LongLabelStory()
+local function ShapeStory(): React.ReactNode
 	return React.createElement(View, {
-		tag = "row gap-large auto-xy padding-large bg-surface-0",
+		tag = "col gap-large auto-xy padding-y-large bg-surface-0",
 	}, {
-		Utility = React.createElement(StatusBadge, {
-			text = "This status label is longer than the maximum width",
-			shape = StatusBadgeShape.Utility,
-			LayoutOrder = 1,
+		Matrix = React.createElement(MatrixGrid, {
+			labelColumnWidth = LABEL_COLUMN_WIDTH,
+			columnHeaders = SHAPE_HEADERS,
+			cellColumnWidth = CELL_COLUMN_WIDTH,
+			headerTextAlign = "left",
+			cellAlign = "left",
+			rows = Dash.map(SIZE_ORDER, function(size)
+				return {
+					label = matrixLabel(size),
+					cells = Dash.map(SHAPE_ORDER, function(shape)
+						return React.createElement(StatusBadge, {
+							text = DEFAULT_TEXT,
+							shape = shape,
+							size = size,
+						})
+					end),
+				}
+			end),
 		}),
-		Box = React.createElement(StatusBadge, {
-			text = "This status label is longer than the maximum width",
-			shape = StatusBadgeShape.Box,
-			LayoutOrder = 2,
+	})
+end
+
+local function ContentStory(): React.ReactNode
+	return React.createElement(View, {
+		tag = StorySection.STORY_PAGE_COL_TAG,
+	}, {
+		Truncation = React.createElement(Section, {
+			LayoutOrder = 1,
+			name = "Truncation",
+			contentTag = "auto-xy",
+		}, {
+			Matrix = React.createElement(MatrixGrid, {
+				showLabelColumn = false,
+				columnHeaders = SIZE_HEADERS,
+				cellColumnWidth = TRUNCATION_CELL_COLUMN_WIDTH,
+				headerTextAlign = "left",
+				cellAlign = "left",
+				rows = {
+					{
+						cells = Dash.map(SIZE_ORDER, function(size)
+							return React.createElement(StatusBadge, {
+								text = LONG_TEXT,
+								size = size,
+							})
+						end),
+					},
+				},
+			}),
+		}),
+	})
+end
+
+local function InContextStory(): React.ReactNode
+	return React.createElement(View, {
+		tag = StorySection.STORY_PAGE_COL_TAG,
+	}, {
+		Badges = React.createElement(Section, {
+			LayoutOrder = 1,
+			name = "Badge",
+			contentTag = "auto-xy",
+		}, {
+			Matrix = React.createElement(MatrixGrid, {
+				showLabelColumn = false,
+				columnHeaders = SIZE_HEADERS,
+				cellColumnWidth = SIBLING_CELL_COLUMN_WIDTH,
+				headerTextAlign = "left",
+				cellAlign = "left",
+				rows = {
+					{
+						cells = Dash.map(SIBLING_SIZES, function(sizes)
+							return React.createElement(SiblingPair, {
+								size = sizes.size,
+								badgeSize = sizes.badgeSize,
+							})
+						end),
+					},
+				},
+			}),
 		}),
 	})
 end
@@ -154,25 +246,30 @@ return {
 			story = PlaygroundStory :: unknown,
 		},
 		{
-			name = "Sizes",
-			summary = "Size comparison per-variant",
-			story = SizesStory,
+			name = "Variants",
+			story = VariantsStory,
 		},
 		{
-			name = "Shapes",
-			summary = "Shape comparison per-variant",
-			story = ShapesStory,
+			name = "Sizing",
+			story = SizingStory,
 		},
 		{
-			name = "Long labels",
-			summary = "Labels truncate after the component's maximum content width.",
-			story = LongLabelStory,
+			name = "Shape",
+			story = ShapeStory,
+		},
+		{
+			name = "Content",
+			story = ContentStory,
+		},
+		{
+			name = "In context",
+			story = InContextStory,
 		},
 	},
 	controls = {
-		text = "Label",
-		variant = Dash.values(StatusBadgeVariant),
-		shape = Dash.values(StatusBadgeShape),
-		size = Dash.values(StatusBadgeSize),
+		text = DEFAULT_TEXT,
+		variant = VARIANT_ORDER,
+		shape = SHAPE_ORDER,
+		size = SIZE_ORDER,
 	},
 }

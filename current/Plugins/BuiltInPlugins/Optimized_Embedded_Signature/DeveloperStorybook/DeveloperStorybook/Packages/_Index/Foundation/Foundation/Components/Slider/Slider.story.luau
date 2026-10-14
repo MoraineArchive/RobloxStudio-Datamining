@@ -7,6 +7,7 @@ local React = require(Packages.React)
 
 local IconName = BuilderIcons.Icon
 
+local Button = require(Foundation.Components.Button)
 local Flags = require(Foundation.Utility.Flags)
 local Icon = require(Foundation.Components.Icon)
 local InputSize = require(Foundation.Enums.InputSize)
@@ -479,6 +480,67 @@ local function ControlledExample(props: {
 	})
 end
 
+local function DirectionalCaptureExample(props: {
+	LayoutOrder: number,
+	isRange: boolean,
+}): React.ReactNode
+	local value, setValue = React.useBinding(0.5)
+	local rangeValue, setRangeValue = React.useBinding(NumberRange.new(0.25, 0.75))
+
+	return React.createElement(View, {
+		tag = "col gap-small auto-xy",
+		LayoutOrder = props.LayoutOrder,
+	}, {
+		Label = React.createElement(Text, {
+			Text = if props.isRange then "Range" else "Single",
+			tag = "auto-xy text-label-small",
+			LayoutOrder = 1,
+		}),
+		Controls = React.createElement(View, {
+			tag = "row align-y-center gap-small auto-xy",
+			LayoutOrder = 2,
+		}, {
+			Before = React.createElement(Button, {
+				text = "Before",
+				onActivated = function() end,
+				LayoutOrder = 1,
+			}),
+			Slider = if props.isRange
+				then React.createElement(Slider, {
+					type = SliderType.Range,
+					value = rangeValue,
+					onValueChanged = setRangeValue,
+					width = UDim.new(0, TRACK_OFFSET),
+					knobVisibility = Visibility.Always,
+					LayoutOrder = 2,
+				})
+				else React.createElement(Slider, {
+					value = value,
+					onValueChanged = setValue,
+					width = UDim.new(0, TRACK_OFFSET),
+					knobVisibility = Visibility.Always,
+					LayoutOrder = 2,
+				}),
+			After = React.createElement(Button, {
+				text = "After",
+				onActivated = function() end,
+				LayoutOrder = 3,
+			}),
+		}),
+		Value = React.createElement(Text, {
+			Text = if props.isRange
+				then rangeValue:map(function(current: NumberRange)
+					return string.format("%.2f – %.2f", current.Min, current.Max)
+				end)
+				else value:map(function(current: number)
+					return string.format("%.2f", current)
+				end),
+			tag = "auto-xy text-caption-small content-muted",
+			LayoutOrder = 3,
+		}),
+	})
+end
+
 local function ControlledStory(): React.ReactNode
 	return React.createElement(View, {
 		tag = `col gap-xxlarge {STORY_PAGE_TAG}`,
@@ -532,6 +594,23 @@ local function ControlledStory(): React.ReactNode
 				})
 			end)
 		),
+		DirectionalCapture = if Flags.FoundationSliderCapture
+			then React.createElement(Section, {
+				LayoutOrder = 4,
+				name = "Directional capture",
+				note = "Focus a Slider, press A or Enter to capture it, use its value-axis directions to adjust, and press B or Backspace to return focus to the whole control. A or Enter toggles the active Range thumb while captured.",
+				contentTag = "col gap-large auto-xy",
+			}, {
+				Single = React.createElement(DirectionalCaptureExample, {
+					LayoutOrder = 1,
+					isRange = false,
+				}),
+				Range = React.createElement(DirectionalCaptureExample, {
+					LayoutOrder = 2,
+					isRange = true,
+				}),
+			})
+			else nil,
 	})
 end
 

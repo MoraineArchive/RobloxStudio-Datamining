@@ -2,41 +2,41 @@
   "observationMode": "live",
   "provenance": [
     {
-      "buildGuid": "version-9b554450a0fc4e65",
-      "bytes": 101953345,
+      "buildGuid": "version-4f087c32742644ab",
+      "bytes": 104362830,
       "derivedFrom": "BuiltInPlugins.zip",
-      "sha256": "1cde3090d1b29bda7ac540cdcc84198be39adc6d998931eb4790cd120435dcf8",
+      "sha256": "34e709338407b6059a4965a0c46d8932f38989c33d0b0518b3a8dcb2e83be342",
       "sourceType": "derived-official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-9b554450a0fc4e65-BuiltInPlugins.zip"
+      "sourceUrl": "https://setup.rbxcdn.com/version-4f087c32742644ab-BuiltInPlugins.zip"
     },
     {
-      "buildGuid": "version-9b554450a0fc4e65",
-      "bytes": 104399784,
+      "buildGuid": "version-4f087c32742644ab",
+      "bytes": 114721024,
       "derivedFrom": "BuiltInStandalonePlugins.zip",
-      "sha256": "e46f2fec8ce520627fac82821ace087dfe9969786b6272b7555c0e50eb225480",
+      "sha256": "6c6cd7a7355f448457519fdccfcdf96b591f7c319067fc0f19e37da346568b82",
       "sourceType": "derived-official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-9b554450a0fc4e65-BuiltInStandalonePlugins.zip"
+      "sourceUrl": "https://setup.rbxcdn.com/version-4f087c32742644ab-BuiltInStandalonePlugins.zip"
     },
     {
-      "buildGuid": "version-9b554450a0fc4e65",
+      "buildGuid": "version-4f087c32742644ab",
       "bytes": 927300,
       "derivedFrom": "Plugins.zip",
       "sha256": "336c248303ef778dd1ceeddee133a43b44ad17034d4f3db48df3fe389d7688a5",
       "sourceType": "derived-official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-9b554450a0fc4e65-Plugins.zip"
+      "sourceUrl": "https://setup.rbxcdn.com/version-4f087c32742644ab-Plugins.zip"
     }
   ],
   "reason": "Some distributed models contain bytecode rather than original script source.",
   "status": "partial",
   "summary": {
     "engineRevision": 1,
-    "guid": "version-9b554450a0fc4e65",
-    "localizationFiles": 427,
-    "models": 107,
+    "guid": "version-4f087c32742644ab",
+    "localizationFiles": 445,
+    "models": 110,
     "packages": 3,
-    "sources": 5757,
-    "textFiles": 9141,
-    "unreadableScripts": 292855
+    "sources": 5942,
+    "textFiles": 9427,
+    "unreadableScripts": 309448
   },
   "target": "WindowsStudio64"
 }

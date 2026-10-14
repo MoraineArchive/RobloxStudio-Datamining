@@ -6,13 +6,11 @@ type InputSize = InputSize.InputSize
 local InputLabelSize = require(Foundation.Enums.InputLabelSize)
 type InputLabelSize = InputLabelSize.InputLabelSize
 
-local Flags = require(Foundation.Utility.Flags)
-
 local INPUT_TO_TEXT: { [InputSize]: InputLabelSize } = {
 	[InputSize.Large] = InputLabelSize.Large,
 	[InputSize.Medium] = InputLabelSize.Medium,
 	[InputSize.Small] = InputLabelSize.Small,
-	[InputSize.XSmall] = if Flags.FoundationInternalInputBeta then InputLabelSize.XSmall else InputLabelSize.Small,
+	[InputSize.XSmall] = InputLabelSize.XSmall,
 }
 
 --[[

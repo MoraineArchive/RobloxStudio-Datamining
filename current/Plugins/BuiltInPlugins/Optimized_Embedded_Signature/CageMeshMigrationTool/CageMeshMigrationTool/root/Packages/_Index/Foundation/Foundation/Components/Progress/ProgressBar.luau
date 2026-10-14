@@ -27,6 +27,8 @@ type ProgressSize = ProgressSize.ProgressSize
 
 type Bindable<T> = Types.Bindable<T>
 
+export type ProgressBarSize = typeof(ProgressSize.Small) | typeof(ProgressSize.Medium)
+
 local function getBarSequenceFromProgress(progressValue: number?)
 	local value = progressValue or 0
 	if value == 0 then
@@ -104,7 +106,7 @@ export type ProgressBarProps = {
 	-- Shape of the progress indicator, either "Bar" or "Circle"
 	shape: typeof(ProgressShape.Bar),
 	-- Size of the progress indicator
-	size: typeof(ProgressSize.Medium)?,
+	size: ProgressBarSize?,
 	-- Progress value shown (can be nil to show indeterminate progress)
 	value: Bindable<number>?,
 	-- Width of the progress bar when shape = "Bar"
@@ -118,7 +120,7 @@ export type ProgressBarProps = {
 } & Types.CommonProps
 
 local defaultProps = {
-	size = ProgressSize.Medium,
+	size = ProgressSize.Medium :: ProgressBarSize,
 	width = UDim.new(1, 0),
 	showLabel = false,
 	minValueLabel = "0",
@@ -131,8 +133,12 @@ local function ProgressBar(progressProps: ProgressBarProps & {
 	local props = withDefaults(progressProps, defaultProps)
 	local tokens = useTokens()
 	local preferences = usePreferences()
-	local variants =
-		useProgressVariants(tokens, if Flags.FoundationProgressBarBetaUpdate then ProgressSize.Medium else props.size)
+	local variants = useProgressVariants(
+		tokens,
+		if Flags.FoundationProgressBarBetaUpdate
+			then if props.size == ProgressSize.Small then ProgressSize.Small else ProgressSize.Medium
+			else props.size
+	)
 	local progress, isIndeterminate = useProgressBinding(props.value)
 	local rotation = useRotation(1)
 	local pulse = usePulseBinding(1 / Constants.INDETERMINATE_SHIMMER_SPEED)

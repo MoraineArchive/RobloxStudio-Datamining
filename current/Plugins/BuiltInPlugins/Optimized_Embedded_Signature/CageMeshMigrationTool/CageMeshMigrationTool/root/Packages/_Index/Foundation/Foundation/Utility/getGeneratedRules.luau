@@ -12,18 +12,10 @@ type ThemeName = ThemeName.ThemeName
 
 local TypographyVariants: { [ThemeName]: string } = require(Foundation.Generated.StyleRules.TypographyVariants)
 
-local requirePaths: { [typeof("Common") | ColorMode | Device]: () -> any } = {
+local requirePaths: { [typeof("Common") | Device]: () -> any } = {
 	Common = function()
 		return require(Foundation.Generated.StyleRules.CommonAttribute)
 	end,
-	-- TODO start: Remove when FoundationThemeName flag is cleaned up
-	Dark = function()
-		return require(Foundation.Generated.StyleRules.DarkAttribute)
-	end,
-	Light = function()
-		return require(Foundation.Generated.StyleRules.LightAttribute)
-	end,
-	-- TODO end: Remove when FoundationThemeName flag is cleaned up
 	Console = function()
 		return require(Foundation.Generated.StyleRules.ConsoleAttribute)
 	end,
@@ -32,7 +24,6 @@ local requirePaths: { [typeof("Common") | ColorMode | Device]: () -> any } = {
 	end,
 }
 
--- Color rules are baked per theme, so they are keyed by ThemeName then ColorMode.
 local colorRulePaths: { [ThemeName]: { [ColorMode]: () -> any } } = {
 	[ThemeName.CircuitRush] = {
 		Dark = function()
@@ -201,26 +192,36 @@ local typographyVariantPaths: { [string]: { [Device]: () -> any } } = {
 	},
 }
 
+local legacyTypographyVariantPaths: typeof(typographyVariantPaths) = {
+	[FontName.BuilderSans] = {
+		Desktop = function()
+			return require(Foundation.Generated.StyleRules.Legacy.Typography.BuilderSans.DesktopAttribute)
+		end,
+		Console = function()
+			return require(Foundation.Generated.StyleRules.Legacy.Typography.BuilderSans.ConsoleAttribute)
+		end,
+	},
+	[FontName.Cartoon] = {
+		Desktop = function()
+			return require(Foundation.Generated.StyleRules.Legacy.Typography.Cartoon.DesktopAttribute)
+		end,
+		Console = function()
+			return require(Foundation.Generated.StyleRules.Legacy.Typography.Cartoon.ConsoleAttribute)
+		end,
+	},
+}
+
 local function getGeneratedRules(themeNameInput: ThemeName?, colorMode: ColorMode, device: Device): any
 	local themeName: ThemeName = themeNameInput or ThemeName.Default
 	local colorModeRules, sizeRules, commonRules
 	commonRules = requirePaths["Common"]()
-
-	if Flags.FoundationThemeName then
-		local themeColorPaths = colorRulePaths[themeName] or colorRulePaths[ThemeName.Default]
-		colorModeRules = themeColorPaths[colorMode]()
-	else
-		if colorMode == ColorMode.Dark then
-			colorModeRules = requirePaths["Dark" :: ColorMode]()
-		elseif colorMode == ColorMode.Light then
-			colorModeRules = requirePaths["Light" :: ColorMode]()
-		end
-	end
+	local themeColorPaths = colorRulePaths[themeName] or colorRulePaths[ThemeName.Default]
+	colorModeRules = themeColorPaths[colorMode]()
 
 	if device == Device.Console and not Flags.FoundationDisableTokenScaling then
-		sizeRules = requirePaths["Console" :: Device]()
+		sizeRules = requirePaths[Device.Console]()
 	else
-		sizeRules = requirePaths["Desktop" :: Device]()
+		sizeRules = requirePaths[Device.Desktop]()
 	end
 
 	if not colorModeRules or not sizeRules or not commonRules then
@@ -236,21 +237,20 @@ local function getGeneratedRules(themeNameInput: ThemeName?, colorMode: ColorMod
 	for key, value in colorModeRules do
 		combinedRules[key] = value
 	end
+	local variant = TypographyVariants[themeName] or DEFAULT_TYPOGRAPHY_VARIANT
+	local variantPaths = if Flags.FoundationFontFaceMigration
+		then typographyVariantPaths[variant] or typographyVariantPaths[DEFAULT_TYPOGRAPHY_VARIANT]
+		else legacyTypographyVariantPaths[variant] or legacyTypographyVariantPaths[DEFAULT_TYPOGRAPHY_VARIANT]
+	local typographyDevice: Device = if device == Device.Console and not Flags.FoundationDisableTokenScaling
+		then Device.Console
+		else Device.Desktop
+	local getTypographyRules = variantPaths[typographyDevice]
 
-	if Flags.FoundationThemedTypography then
-		local variant = TypographyVariants[themeName] or DEFAULT_TYPOGRAPHY_VARIANT
-		local variantPaths = typographyVariantPaths[variant] or typographyVariantPaths[DEFAULT_TYPOGRAPHY_VARIANT]
-		local typographyDevice: Device = if device == Device.Console and not Flags.FoundationDisableTokenScaling
-			then Device.Console
-			else Device.Desktop
-		local getTypographyRules = variantPaths[typographyDevice]
-
-		if getTypographyRules then
-			local typographyRules = getTypographyRules()
-			if typographyRules then
-				for key, value in typographyRules do
-					combinedRules[key] = value
-				end
+	if getTypographyRules then
+		local typographyRules = getTypographyRules()
+		if typographyRules then
+			for key, value in typographyRules do
+				combinedRules[key] = value
 			end
 		end
 	end

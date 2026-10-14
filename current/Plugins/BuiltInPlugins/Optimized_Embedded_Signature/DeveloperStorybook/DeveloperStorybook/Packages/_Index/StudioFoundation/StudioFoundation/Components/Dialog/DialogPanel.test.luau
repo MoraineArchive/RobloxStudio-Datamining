@@ -13,6 +13,7 @@ local mockContext = require(Main.Util.mockContext)
 local MockPlugin = Framework.TestHelpers.Instances.MockPlugin
 local Plugin = Framework.ContextServices.Plugin
 local StudioUri = require(Main.Util.StudioUri)
+local DialogDmIdContext = require(Main.Contexts.DialogDmIdContext)
 local ThemeContext = require(Main.Contexts.ThemeContext)
 local describe = JestGlobals.describe
 local e = React.createElement
@@ -126,6 +127,59 @@ describe("DialogPanel", function()
 
 		expect(mockSetSizeAsync).toHaveBeenCalledTimes(2)
 		expect(mockSetSizeAsync).toHaveBeenLastCalledWith(expect.anything(), panelUri, Vector2.new(500, 400))
+	end)
+
+	itIfThemeContext("should qualify the panel id with dmId when provided", function()
+		local mockPlugin = MockPlugin.new()
+		local mockSetSizeAsync = jest.fn()
+		mockPlugin.mockComponents.Panels.SetSizeAsync = mockSetSizeAsync
+		local getSize, _ = Signals.createSignal(Vector2.new(400, 300))
+
+		render(createTestElement({
+			uri = dialogUri,
+			dmId = 5,
+			getSize = getSize,
+		}, nil, mockPlugin))
+
+		-- The native panel id must include the dmId so two DataModels showing the same URI do not
+		-- share (and fight over) a single native panel.
+		local panelUri = StudioUri.join(mockPlugin:GetUri(), {
+			Category = "Panels",
+			ItemId = `Dialog_{uriToTestId(dialogUri)}_5`,
+		})
+		expect(mockSetSizeAsync).toHaveBeenLastCalledWith(expect.anything(), panelUri, Vector2.new(400, 300))
+	end)
+
+	itIfThemeContext("should qualify the panel id with dmId from context", function()
+		local mockPlugin = MockPlugin.new()
+		local mockSetSizeAsync = jest.fn()
+		mockPlugin.mockComponents.Panels.SetSizeAsync = mockSetSizeAsync
+		local getSize, _ = Signals.createSignal(Vector2.new(400, 300))
+
+		-- Custom dialogs render through arbitrary components that can't forward a dmId prop, so
+		-- DialogPanel falls back to the context value.
+		render(mockContext({
+			Element = provide({
+				Plugin = Plugin.new(mockPlugin),
+			}, {
+				Element = e(
+					DialogDmIdContext.Provider,
+					{
+						value = 7,
+					},
+					e(DialogPanel, {
+						uri = dialogUri,
+						getSize = getSize,
+					})
+				),
+			}),
+		}))
+
+		local panelUri = StudioUri.join(mockPlugin:GetUri(), {
+			Category = "Panels",
+			ItemId = `Dialog_{uriToTestId(dialogUri)}_7`,
+		})
+		expect(mockSetSizeAsync).toHaveBeenLastCalledWith(expect.anything(), panelUri, Vector2.new(400, 300))
 	end)
 
 	itIfThemeContext("should render children into the PluginGui", function()

@@ -11,8 +11,11 @@ local ProgressBar = require(script.Parent.ProgressBar)
 local ProgressCircle = require(script.Parent.ProgressCircle)
 local ProgressShape = require(Foundation.Enums.ProgressShape)
 local ProgressSize = require(Foundation.Enums.ProgressSize)
+local StorySection = require(Foundation.Utility.Stories.Shared.StorySection)
 local Text = require(Foundation.Components.Text)
 local View = require(Foundation.Components.View)
+
+local Section = StorySection.Section
 
 type ProgressShape = ProgressShape.ProgressShape
 type ProgressSize = ProgressSize.ProgressSize
@@ -72,28 +75,6 @@ local REDUCED_MOTION_EXAMPLES: { { label: string, note: string, reducedMotion: b
 		reducedMotion = true,
 	},
 }
-
-local function Section(props: {
-	LayoutOrder: number,
-	name: string,
-	contentTag: string?,
-	children: React.ReactNode,
-})
-	return React.createElement(View, {
-		tag = "col gap-medium size-full-0 auto-y",
-		LayoutOrder = props.LayoutOrder,
-	}, {
-		Title = React.createElement(Text, {
-			Text = props.name,
-			tag = "auto-xy text-label-medium content-default",
-			LayoutOrder = 1,
-		}),
-		Content = React.createElement(View, {
-			tag = props.contentTag or "row gap-large auto-xy wrap",
-			LayoutOrder = 2,
-		}, props.children),
-	})
-end
 
 local function Subsection(props: {
 	LayoutOrder: number,
@@ -291,7 +272,7 @@ end
 
 local function SizingStory(): React.ReactNode
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		Size = React.createElement(Section, {
 			LayoutOrder = 1,
@@ -317,16 +298,25 @@ local function SizingStory(): React.ReactNode
 			),
 			Bar = React.createElement(Subsection, {
 				LayoutOrder = 2,
-				name = "Bar (Medium only)",
-				contentTag = "auto-xy",
+				name = if Flags.FoundationProgressBarBetaUpdate then "Bar (Small and Medium)" else "Bar (Medium only)",
+				note = if Flags.FoundationProgressBarBetaUpdate then "Larger sizes render as Medium." else nil,
+				contentTag = "col gap-large size-full-0 auto-y",
 			}, {
-				Medium = React.createElement(ProgressContainer, {
-					shape = ProgressShape.Bar,
-				}, {
-					Indicator = React.createElement(Progress, {
+				Small = if Flags.FoundationProgressBarBetaUpdate
+					then React.createElement(LabeledProgress, {
+						label = ProgressSize.Small :: string,
+						LayoutOrder = 1,
 						shape = ProgressShape.Bar,
+						size = ProgressSize.Small,
 						value = DEFAULT_VALUE,
-					}),
+					})
+					else nil,
+				Medium = React.createElement(LabeledProgress, {
+					label = ProgressSize.Medium :: string,
+					LayoutOrder = 2,
+					shape = ProgressShape.Bar,
+					size = ProgressSize.Medium,
+					value = DEFAULT_VALUE,
 				}),
 			}),
 		}),
@@ -371,7 +361,7 @@ end
 
 local function StatesStory(): React.ReactNode
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		Indeterminate = React.createElement(Section, {
 			LayoutOrder = 1,
@@ -472,7 +462,7 @@ end
 
 local function ControlledStory(): React.ReactNode
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		Example = React.createElement(ControlledProgressExample),
 	})
@@ -509,7 +499,7 @@ end
 
 local function ReducedMotionStory(): React.ReactNode
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		Indeterminate = React.createElement(
 			Section,
@@ -532,7 +522,7 @@ end
 
 local function ContentStory(): React.ReactNode
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		Value = React.createElement(Section, {
 			LayoutOrder = 1,
@@ -668,7 +658,6 @@ return {
 		{ name = "Controlled component", story = ControlledStory },
 		{
 			name = "Reduced motion",
-			summary = "Read from PreferencesProvider, not from props. Only the indeterminate state animates, so determinate progress is unaffected.",
 			story = ReducedMotionStory,
 		},
 		{ name = "Content", story = ContentStory },

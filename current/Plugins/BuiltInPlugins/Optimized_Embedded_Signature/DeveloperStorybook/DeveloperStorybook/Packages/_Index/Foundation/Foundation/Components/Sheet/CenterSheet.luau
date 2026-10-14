@@ -7,6 +7,7 @@ local ReactOtter = require(Packages.ReactOtter)
 local ReactRoblox = require(Packages.ReactRoblox)
 local useAnimatedBinding = ReactOtter.useAnimatedBinding
 local CloseAffordanceVariant = require(Foundation.Enums.CloseAffordanceVariant)
+local Flags = require(Foundation.Utility.Flags)
 local StateLayerAffordance = require(Foundation.Enums.StateLayerAffordance)
 local useOverlay = require(Foundation.Providers.Overlay.useOverlay)
 local useScaledValue = require(Foundation.Utility.useScaledValue)
@@ -304,7 +305,8 @@ local function CenterSheet(centerSheetProps: CenterSheetProps, ref: React.Ref<Gu
 								return value / animationOffset
 							end)
 							else nil,
-						onAbsoluteSizeChanged = if props.centerSheetHeight and setMaxAvailableHeight
+						onAbsoluteSizeChanged = if Flags.FoundationCenterSheetHeightFix
+								or (props.centerSheetHeight and setMaxAvailableHeight)
 							then function(rbx: GuiObject)
 								local padding = tokens.Margin.Medium * 2
 								setMaxAvailableHeight(math.min(rbx.AbsoluteSize.Y - padding, maxHeight))

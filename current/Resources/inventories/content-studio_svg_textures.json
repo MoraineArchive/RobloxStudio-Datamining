@@ -21348,6 +21348,24 @@
     "sha256": "5369ad466f067b06ebb757c556597784c7ba9d99f49738b933f97f04d8f5e4eb"
   },
   {
+    "bytes": 456,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/ViewportCamera.png",
+    "sha256": "6728eca7666f11fcd96cf89fc9a3cbabbcc89033d2bff79596128230c4abf82c"
+  },
+  {
+    "bytes": 598,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/ViewportCamera@2x.png",
+    "sha256": "4364e6b46697b50b209aaf144368da31707229195a6a051716dbfa303b91b2c2"
+  },
+  {
+    "bytes": 861,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/ViewportCamera@3x.png",
+    "sha256": "3b191d8a92886c99045f109567b9d65be12b9b9313a61f038cbb6797b24fc285"
+  },
+  {
     "bytes": 413,
     "extension": "png",
     "path": "Shared/InsertableObjects/Dark/Standard/ViewportFrame.png",
@@ -27972,6 +27990,24 @@
     "sha256": "fba08d6cf567639cdb72697d6d956fa3b147ef9cda43e89c7464ea22215937c7"
   },
   {
+    "bytes": 464,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/ViewportCamera.png",
+    "sha256": "f63d6975ff70807d86fc26897c6065e5b15c2316c76f21257802801a127ca53f"
+  },
+  {
+    "bytes": 632,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/ViewportCamera@2x.png",
+    "sha256": "15546028b627749adb3f98331596843b9d4601854bd77f15057e2932f1f771ae"
+  },
+  {
+    "bytes": 886,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/ViewportCamera@3x.png",
+    "sha256": "2a3424c8597e28f101fc2b7a7ddbbcb3b9419c9a28444ee29b5b29c0849642fc"
+  },
+  {
     "bytes": 411,
     "extension": "png",
     "path": "Shared/InsertableObjects/Light/Standard/ViewportFrame.png",
@@ -32652,6 +32688,24 @@
     "sha256": "f3fe59fd5b965c701ce6962a04ef3340cf0c1949df43f50eb598eb80f5b8beeb"
   },
   {
+    "bytes": 707,
+    "extension": "png",
+    "path": "Shared/Ribbon/Dark/Medium/RibbonUGCValidation.png",
+    "sha256": "37809aa61a071ec95c944f37af830ce625698bdb552ae96b83558d85fa5457c3"
+  },
+  {
+    "bytes": 998,
+    "extension": "png",
+    "path": "Shared/Ribbon/Dark/Medium/RibbonUGCValidation@2x.png",
+    "sha256": "420333d15353afc8d3642911578f3e86071d287886207e2767192252c0fd6e05"
+  },
+  {
+    "bytes": 1630,
+    "extension": "png",
+    "path": "Shared/Ribbon/Dark/Medium/RibbonUGCValidation@3x.png",
+    "sha256": "824a2325644122010a9d5e70d1c1e71e8fbfaa924d8cbd0d56ec320b40f341ee"
+  },
+  {
     "bytes": 554,
     "extension": "png",
     "path": "Shared/Ribbon/Dark/Medium/RibbonUIAspectRatioConstraint.png",
@@ -36970,6 +37024,24 @@
     "extension": "png",
     "path": "Shared/Ribbon/Light/Medium/RibbonTransform@3x.png",
     "sha256": "385587337aa13171e91f407dcd626e774a001dc92220f92fb61d4d0f4e0ff799"
+  },
+  {
+    "bytes": 714,
+    "extension": "png",
+    "path": "Shared/Ribbon/Light/Medium/RibbonUGCValidation.png",
+    "sha256": "38b1646b871669522c3803747894214aab14ec5503dd9a0473d50c7af93af9e4"
+  },
+  {
+    "bytes": 1018,
+    "extension": "png",
+    "path": "Shared/Ribbon/Light/Medium/RibbonUGCValidation@2x.png",
+    "sha256": "bd105c4badd9c67d849b7a57b6dc267e5ddc6f145b14007fa57f1d4d63e1d5d8"
+  },
+  {
+    "bytes": 1679,
+    "extension": "png",
+    "path": "Shared/Ribbon/Light/Medium/RibbonUGCValidation@3x.png",
+    "sha256": "59ae4f81f5737f52116982b75136be36bc9d2239d38af104dcc47bbed7862110"
   },
   {
     "bytes": 542,

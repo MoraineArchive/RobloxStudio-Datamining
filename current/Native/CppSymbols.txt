@@ -834,6 +834,7 @@
 ?GetControlPointIndicesCount@FbxCluster@fbxsdk@@QEBAHXZ	public: int __cdecl fbxsdk::FbxCluster::GetControlPointIndicesCount(void)const __ptr64
 ?GetControlPointWeights@FbxCluster@fbxsdk@@QEBAPEANXZ	public: double * __ptr64 __cdecl fbxsdk::FbxCluster::GetControlPointWeights(void)const __ptr64
 ?GetCount@?$FbxStringListT@VFbxStringListItem@fbxsdk@@@fbxsdk@@QEBAHXZ	public: int __cdecl fbxsdk::FbxStringListT<class fbxsdk::FbxStringListItem>::GetCount(void)const __ptr64
+?GetCount@FbxLayerElementArray@fbxsdk@@QEBAHXZ	public: int __cdecl fbxsdk::FbxLayerElementArray::GetCount(void)const __ptr64
 ?GetCurrentAnimationStack@FbxScene@fbxsdk@@QEAAPEAVFbxAnimStack@2@XZ	public: class fbxsdk::FbxAnimStack * __ptr64 __cdecl fbxsdk::FbxScene::GetCurrentAnimationStack(void) __ptr64
 ?GetCurrentThreadId@platform@details@Concurrency@@YAJXZ	long __cdecl Concurrency::details::platform::GetCurrentThreadId(void)
 ?GetCurve@FbxAnimCurveNode@fbxsdk@@QEAAPEAVFbxAnimCurve@2@IIPEBD@Z	public: class fbxsdk::FbxAnimCurve * __ptr64 __cdecl fbxsdk::FbxAnimCurveNode::GetCurve(unsigned int,unsigned int,char const * __ptr64) __ptr64
@@ -845,6 +846,7 @@
 ?GetDstProperty@FbxProperty@fbxsdk@@QEBA?AV12@H@Z	public: class fbxsdk::FbxProperty __cdecl fbxsdk::FbxProperty::GetDstProperty(int)const __ptr64
 ?GetElementBinormal@FbxGeometryBase@fbxsdk@@QEAAPEAVFbxLayerElementBinormal@2@H@Z	public: class fbxsdk::FbxLayerElementBinormal * __ptr64 __cdecl fbxsdk::FbxGeometryBase::GetElementBinormal(int) __ptr64
 ?GetElementBinormal@FbxGeometryBase@fbxsdk@@QEBAPEBVFbxLayerElementBinormal@2@H@Z	public: class fbxsdk::FbxLayerElementBinormal const * __ptr64 __cdecl fbxsdk::FbxGeometryBase::GetElementBinormal(int)const __ptr64
+?GetElementMaterial@FbxGeometryBase@fbxsdk@@QEAAPEAVFbxLayerElementMaterial@2@H@Z	public: class fbxsdk::FbxLayerElementMaterial * __ptr64 __cdecl fbxsdk::FbxGeometryBase::GetElementMaterial(int) __ptr64
 ?GetElementTangent@FbxGeometryBase@fbxsdk@@QEAAPEAVFbxLayerElementTangent@2@H@Z	public: class fbxsdk::FbxLayerElementTangent * __ptr64 __cdecl fbxsdk::FbxGeometryBase::GetElementTangent(int) __ptr64
 ?GetElementTangent@FbxGeometryBase@fbxsdk@@QEBAPEBVFbxLayerElementTangent@2@H@Z	public: class fbxsdk::FbxLayerElementTangent const * __ptr64 __cdecl fbxsdk::FbxGeometryBase::GetElementTangent(int)const __ptr64
 ?GetElementUVCount@FbxGeometryBase@fbxsdk@@QEBAHW4EType@FbxLayerElement@2@@Z	public: int __cdecl fbxsdk::FbxGeometryBase::GetElementUVCount(enum fbxsdk::FbxLayerElement::EType)const __ptr64
@@ -869,6 +871,7 @@
 ?GetLayerCount@FbxLayerContainer@fbxsdk@@QEBAHXZ	public: int __cdecl fbxsdk::FbxLayerContainer::GetLayerCount(void)const __ptr64
 ?GetLink@FbxCluster@fbxsdk@@QEAAPEAVFbxNode@2@XZ	public: class fbxsdk::FbxNode * __ptr64 __cdecl fbxsdk::FbxCluster::GetLink(void) __ptr64
 ?GetLocalTimeSpan@FbxAnimStack@fbxsdk@@QEBA?AVFbxTimeSpan@2@XZ	public: class fbxsdk::FbxTimeSpan __cdecl fbxsdk::FbxAnimStack::GetLocalTimeSpan(void)const __ptr64
+?GetMaterial@FbxNode@fbxsdk@@QEBAPEAVFbxSurfaceMaterial@2@H@Z	public: class fbxsdk::FbxSurfaceMaterial * __ptr64 __cdecl fbxsdk::FbxNode::GetMaterial(int)const __ptr64
 ?GetMaterialCount@FbxNode@fbxsdk@@QEBAHXZ	public: int __cdecl fbxsdk::FbxNode::GetMaterialCount(void)const __ptr64
 ?GetMesh@FbxNode@fbxsdk@@QEAAPEAVFbxMesh@2@XZ	public: class fbxsdk::FbxMesh * __ptr64 __cdecl fbxsdk::FbxNode::GetMesh(void) __ptr64
 ?GetName@FbxObject@fbxsdk@@QEBAPEBDXZ	public: char const * __ptr64 __cdecl fbxsdk::FbxObject::GetName(void)const __ptr64

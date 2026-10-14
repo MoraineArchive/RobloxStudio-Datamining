@@ -6,65 +6,67 @@ local React = require(Packages.React)
 local Services = require(Foundation.Utility.Wrappers.Services)
 
 local SliderStepDirection = require(script.Parent.SliderStepDirection)
+type SliderStepDirection = SliderStepDirection.SliderStepDirection
 local SliderStepSize = require(script.Parent.SliderStepSize)
 type SliderStepSize = SliderStepSize.SliderStepSize
 
 local Flags = require(Foundation.Utility.Flags)
+local calculateAdjacentStepValue = require(script.Parent.calculateAdjacentStepValue)
 local calculateDirectionalStepValue = require(script.Parent.calculateDirectionalStepValue)
+local constants = require(script.Parent.constants)
 
--- Pushing the thumbstick this far past center starts stepping; matches the
--- CoreScripts Settings Slider deadzone.
-local THUMBSTICK_DEADZONE = 0.8
--- Hold-to-repeat follows the platform convention for held navigation input: an
--- initial delay near the OS typematic delay (macOS 375ms, Linux 250ms,
--- Windows/Unity ~500ms) followed by a steady ~100ms interval (macOS 90ms, Linux
--- 91ms, Unity 100ms). L1/R1 page steps cover fast traversal, so the fine step
--- stays a predictable fixed rate rather than accelerating.
+local REVERSAL_SETTLE_REPORTS = 3
+-- Hold-to-repeat starts near the platform typematic convention, then continuous
+-- sliders accelerate through discrete cadence tiers. Stepped sliders retain one
+-- predictable logical step per 100ms interval.
 local INITIAL_REPEAT_DELAY = 0.4
 local REPEAT_INTERVAL = 0.1
+local MEDIUM_REPEAT_INTERVAL = 0.06
+local FAST_REPEAT_INTERVAL = 0.03
+local MEDIUM_REPEAT_START = 5
+local FAST_REPEAT_START = 15
 
 -- Page steps stay on the bumpers only. Page Up/Down are claimed by the engine to
 -- scroll an ancestor ScrollingFrame while the slider is the SelectedObject, and
 -- that core keybind can't be sunk, so binding them here would double-fire.
 local function getStepForKeyCode(keyCode: Enum.KeyCode, isVertical: boolean): { sign: number, size: SliderStepSize }?
-	if Flags.FoundationSliderBeta then
-		if keyCode == Enum.KeyCode.ButtonR1 then
+	if not Flags.FoundationSliderCapture then
+		if table.find(constants.coarseIncrement, keyCode) then
 			return { sign = 1, size = SliderStepSize.Page }
-		elseif keyCode == Enum.KeyCode.ButtonL1 then
+		elseif table.find(constants.coarseDecrement, keyCode) then
 			return { sign = -1, size = SliderStepSize.Page }
 		end
+	end
 
-		if isVertical then
-			if keyCode == Enum.KeyCode.Up or keyCode == Enum.KeyCode.DPadUp then
-				return { sign = 1, size = SliderStepSize.Step }
-			elseif keyCode == Enum.KeyCode.Down or keyCode == Enum.KeyCode.DPadDown then
-				return { sign = -1, size = SliderStepSize.Step }
-			end
-		else
-			if keyCode == Enum.KeyCode.Right or keyCode == Enum.KeyCode.DPadRight then
-				return { sign = 1, size = SliderStepSize.Step }
-			elseif keyCode == Enum.KeyCode.Left or keyCode == Enum.KeyCode.DPadLeft then
-				return { sign = -1, size = SliderStepSize.Step }
-			end
-		end
-	else
-		if keyCode == Enum.KeyCode.Right or keyCode == Enum.KeyCode.DPadRight then
-			return { sign = 1, size = SliderStepSize.Step }
-		elseif keyCode == Enum.KeyCode.Left or keyCode == Enum.KeyCode.DPadLeft then
-			return { sign = -1, size = SliderStepSize.Step }
-		elseif keyCode == Enum.KeyCode.ButtonR1 then
-			return { sign = 1, size = SliderStepSize.Page }
-		elseif keyCode == Enum.KeyCode.ButtonL1 then
-			return { sign = -1, size = SliderStepSize.Page }
-		end
+	local axis = if Flags.FoundationSliderBeta and isVertical then "vertical" else "horizontal"
+	if table.find(constants.stepIncrement[axis], keyCode) then
+		return { sign = 1, size = SliderStepSize.Step }
+	elseif table.find(constants.stepDecrement[axis], keyCode) then
+		return { sign = -1, size = SliderStepSize.Step }
 	end
 
 	return nil
 end
 
+local function isExitKey(keyCode: Enum.KeyCode): boolean
+	return table.find(constants.exit, keyCode) ~= nil
+end
+
+local function getRepeatInterval(repeatCount: number, step: number?): number
+	if not Flags.FoundationSliderCapture or (step ~= nil and step > 0) then
+		return REPEAT_INTERVAL
+	elseif repeatCount >= FAST_REPEAT_START then
+		return FAST_REPEAT_INTERVAL
+	elseif repeatCount >= MEDIUM_REPEAT_START then
+		return MEDIUM_REPEAT_INTERVAL
+	end
+	return REPEAT_INTERVAL
+end
+
 type Handlers = {
 	getValue: () -> number,
 	onStep: (newValue: number) -> (),
+	onExit: (() -> ())?,
 }
 
 local function useSliderDirectionalInput(
@@ -95,17 +97,30 @@ local function useSliderDirectionalInput(
 		local currentSign = 0
 		local currentSize: SliderStepSize = SliderStepSize.Step
 		local repeatThread: thread? = nil
+		local thumbstickSign = 0
+		local reversalReports = 0
 
 		local function performStep(sign: number, size: SliderStepSize)
 			local latest = latestRef.current
+			local direction: SliderStepDirection = if sign > 0
+				then SliderStepDirection.Increment
+				else SliderStepDirection.Decrement
 			latest.handlers.onStep(
-				calculateDirectionalStepValue(
-					latest.handlers.getValue(),
-					if sign > 0 then SliderStepDirection.Increment else SliderStepDirection.Decrement,
-					latest.range,
-					latest.step,
-					size
-				)
+				if Flags.FoundationSliderCapture
+					then calculateAdjacentStepValue(
+						latest.handlers.getValue(),
+						direction,
+						latest.range,
+						latest.step,
+						size
+					)
+					else calculateDirectionalStepValue(
+						latest.handlers.getValue(),
+						direction,
+						latest.range,
+						latest.step,
+						size
+					)
 			)
 		end
 
@@ -135,9 +150,11 @@ local function useSliderDirectionalInput(
 
 			repeatThread = task.spawn(function()
 				task.wait(INITIAL_REPEAT_DELAY)
+				local repeatCount = 0
 				while currentInput == input and currentSign == sign and currentSize == size do
 					performStep(sign, size)
-					task.wait(REPEAT_INTERVAL)
+					repeatCount += 1
+					task.wait(getRepeatInterval(repeatCount, latestRef.current.step))
 				end
 			end)
 		end
@@ -146,34 +163,55 @@ local function useSliderDirectionalInput(
 		-- L1/R1 bumpers arrive via InputBegan; the analog thumbstick only ever reports
 		-- through InputChanged, so both signals share this handler.
 		local function evaluateInput(input: InputObject)
+			if Flags.FoundationSliderCapture and isExitKey(input.KeyCode) then
+				local onExit = latestRef.current.handlers.onExit
+				if onExit then
+					onExit()
+				end
+				return
+			end
+
 			local stepConfig = getStepForKeyCode(input.KeyCode, isVertical)
 			if stepConfig then
 				startStepping(input, stepConfig.sign, stepConfig.size)
 				return
 			end
 
-			if input.KeyCode == Enum.KeyCode.Thumbstick1 then
-				if Flags.FoundationSliderBeta then
-					local stepAxis = if isVertical then input.Position.Y else input.Position.X
-					if math.abs(stepAxis) >= THUMBSTICK_DEADZONE then
-						startStepping(input, if stepAxis > 0 then 1 else -1, SliderStepSize.Step)
-					else
+			if table.find(constants.analogStep, input.KeyCode) then
+				local stepAxis = if Flags.FoundationSliderBeta and isVertical
+					then input.Position.Y
+					else input.Position.X
+				if math.abs(stepAxis) >= constants.thumbstickDeadzone then
+					local sign = if stepAxis > 0 then 1 else -1
+					local isReversal = thumbstickSign ~= 0 and sign ~= thumbstickSign
+					reversalReports = if isReversal then reversalReports + 1 else 0
+
+					if Flags.FoundationSliderCapture and isReversal and reversalReports < REVERSAL_SETTLE_REPORTS then
 						stopStepping(input)
+					else
+						thumbstickSign = sign
+						startStepping(input, sign, SliderStepSize.Step)
 					end
 				else
-					if math.abs(input.Position.X) >= THUMBSTICK_DEADZONE then
-						startStepping(input, if input.Position.X > 0 then 1 else -1, SliderStepSize.Step)
-					else
-						stopStepping(input)
-					end
+					thumbstickSign = 0
+					reversalReports = 0
+					stopStepping(input)
 				end
 			end
+		end
+
+		local function handleInputEnded(input: InputObject)
+			if table.find(constants.analogStep, input.KeyCode) then
+				thumbstickSign = 0
+				reversalReports = 0
+			end
+			stopStepping(input)
 		end
 
 		local connections: { RBXScriptConnection } = {
 			Services.UserInputService.InputBegan:Connect(evaluateInput),
 			Services.UserInputService.InputChanged:Connect(evaluateInput),
-			Services.UserInputService.InputEnded:Connect(stopStepping),
+			Services.UserInputService.InputEnded:Connect(handleInputEnded),
 		}
 
 		return function()

@@ -152,7 +152,6 @@ return {
 		},
 		{
 			name = "Platform matrix",
-			summary = "Preview the BuilderIcon mapped to each supported Enum.Platform value.",
 			story = PlatformMatrixStory,
 		},
 	},

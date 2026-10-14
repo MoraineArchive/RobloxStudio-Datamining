@@ -7,7 +7,6 @@ local React = require(Packages.React)
 local ButtonGroup = require(Foundation.Components.ButtonGroup)
 local ButtonVariant = require(Foundation.Enums.ButtonVariant)
 local EducationalTooltip = require(Foundation.Components.EducationalTooltip)
-local Flags = require(Foundation.Utility.Flags)
 local Image = require(Foundation.Components.Image)
 local MatrixGridShared = require(Foundation.Utility.Stories.Shared.MatrixGrid)
 local OverlayStoryAnchor = require(Foundation.Utility.Stories.Shared.OverlayStoryAnchor)
@@ -156,7 +155,7 @@ local function EducationalTooltipTarget(props: TooltipTargetProps): React.ReactN
 					setOpen(false, "Close affordance")
 				end
 				else nil,
-			onPressedOutside = if Flags.FoundationCoachmarkPressedOutside and props.hasPressOutsideDismiss
+			onPressedOutside = if props.hasPressOutsideDismiss
 				then function()
 					setOpen(false, "Press outside")
 				end

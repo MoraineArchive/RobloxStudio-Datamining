@@ -19,6 +19,7 @@ local getDisabledStyle = require(Foundation.Utility.getDisabledStyle)
 local getMultiLineTextHeight = require(Foundation.Utility.getMultiLineTextHeight)
 local isPluginSecurity = require(Foundation.Utility.isPluginSecurity)
 local mapBindable = require(Foundation.Utility.mapBindable)
+local normalizeFontFace = require(Foundation.Utility.normalizeFontFace)
 local truncateTextToCursor = require(script.Parent.truncateTextToCursor)
 local useBindable = require(Foundation.Utility.useBindable)
 local usePreferredInput = require(Foundation.Utility.usePreferredInput)
@@ -140,7 +141,8 @@ local TextBox = React.memo(React.forwardRef(function(props: TextBoxProps, ref: R
 			Selectable = false,
 			Active = if isBoundsChecker then false else nil,
 			Visible = if isBoundsChecker then false else nil,
-			Font = props.fontStyle.Font,
+			Font = if Flags.FoundationFontFaceMigration then nil else props.fontStyle.Font,
+			FontFace = if Flags.FoundationFontFaceMigration then normalizeFontFace(props.fontStyle.Font) else nil,
 			TextSize = props.fontStyle.FontSize,
 			LineHeight = props.fontStyle.LineHeight,
 			TextColor3 = if props.textStyle then props.textStyle.Color3 else nil,
@@ -197,20 +199,12 @@ local function InternalTextInput(textInputProps: TextInputProps, ref: React.Ref<
 	local dragStartPosition = React.useRef(nil :: Vector2?)
 	local lastScrollingFrameCanvasPosition = React.useRef(Vector2.zero)
 
-	local focus, setFocusState
-	local focusBinding, setFocusBinding
-	local setFocus
-
-	if Flags.FoundationRemoveSecondUIDDFromScrubbableTextboxes then
-		focus, setFocusState = React.useState(false)
-		focusBinding, setFocusBinding = React.useBinding(false)
-		setFocus = React.useCallback(function(value: boolean)
-			setFocusBinding(value)
-			setFocusState(value)
-		end, {})
-	else
-		focus, setFocus = React.useState(false)
-	end
+	local focus, setFocusState = React.useState(false)
+	local focusBinding, setFocusBinding = React.useBinding(false)
+	local setFocus = React.useCallback(function(value: boolean)
+		setFocusBinding(value)
+		setFocusState(value)
+	end, {})
 
 	local variantProps = useTextInputVariants(tokens, props.size, props.variant, props.radius, focus, props.hasError)
 	local containerProps = variantProps.container
@@ -682,10 +676,20 @@ local function InternalTextInput(textInputProps: TextInputProps, ref: React.Ref<
 			},
 			onActivated = if not props.isDisabled then focusTextBox else nil,
 			isDisabled = props.isDisabled,
-			backgroundStyle = if containerProps.bgStyle
+			-- if provided, backgroundGradient's Color and Transparency should have complete control (when not disabled)
+			backgroundStyle = if Flags.FoundationFixColorOnScrubbableNumberInput and props.backgroundGradient
 				then getDisabledStyle({
+					--selene: allow(roblox_internal_custom_color)
+					Color3 = Color3.new(1, 1, 1),
+					-- a value of 0 causes styling to override
+					Transparency = 0.001,
+				}, props.isDisabled)
+				elseif containerProps.bgStyle then getDisabledStyle({
 					Color3 = containerProps.bgStyle.Color3,
-					Transparency = if props.backgroundGradient then 0 else containerProps.bgStyle.Transparency,
+					Transparency = if not Flags.FoundationFixColorOnScrubbableNumberInput
+							and props.backgroundGradient
+						then 0
+						else containerProps.bgStyle.Transparency,
 				}, props.isDisabled)
 				else nil,
 			-- TODO: Update to border affordance
@@ -727,10 +731,7 @@ local function InternalTextInput(textInputProps: TextInputProps, ref: React.Ref<
 						isDisabled = props.isDisabled,
 						ref = textBoxRef,
 						tag = `{textBoxTag or ""} data-testid={props.testId}--textbox`,
-						Interactable = if Flags.FoundationRemoveSecondUIDDFromScrubbableTextboxes
-								and dragDetector ~= nil
-							then focusBinding
-							else nil,
+						Interactable = if dragDetector ~= nil then focusBinding else nil,
 						Size = if isScrollable then textBoxSizeFullHeight else nil,
 						automaticSize = (mapBindable(props.text, function(text)
 							return if isScrollable
@@ -747,9 +748,6 @@ local function InternalTextInput(textInputProps: TextInputProps, ref: React.Ref<
 						onInputChanged = onInputChanged,
 						onInputEnded = onInputEnded,
 					}, {
-						DragDetector = if not Flags.FoundationRemoveSecondUIDDFromScrubbableTextboxes
-							then dragDetector
-							else nil,
 
 						-- Used to check the text bounds for cursor refocusing --
 						BoundsChecker = if isScrollable
@@ -777,10 +775,7 @@ local function InternalTextInput(textInputProps: TextInputProps, ref: React.Ref<
 						padding = textBoxWrapperPadding,
 						ref = multilineMobileTextBoxRef,
 						tag = `{textBoxTag or ""} data-testid={props.testId}--mobile-textbox`,
-						Interactable = if Flags.FoundationRemoveSecondUIDDFromScrubbableTextboxes
-								and dragDetector ~= nil
-							then focusBinding
-							else nil,
+						Interactable = if dragDetector ~= nil then focusBinding else nil,
 						Size = textBoxSizeFullHeight,
 						onFocusLost = if isScrollable and isMobileDevice then onFocusLost else nil,
 						onTextChanged = onTextChange,

@@ -121,6 +121,16 @@
   },
   {
     "class": "Folder",
+    "name": "RoCaptcha",
+    "path": "Modules/Server/RoCaptcha",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
     "name": "Server",
     "path": "Modules/Server",
     "properties": {
@@ -587,18 +597,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "FFlagUserPresenceTokenRccCheckPermissionsLua",
-    "path": "Modules/Common/Flags/FFlagUserPresenceTokenRccCheckPermissionsLua",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "FFlagWhisperEmoteOnAvatarContextMenuWithExpChat",
     "path": "Modules/Common/Flags/FFlagWhisperEmoteOnAvatarContextMenuWithExpChat",
     "properties": {
@@ -661,6 +659,18 @@
     "class": "ModuleScript",
     "name": "FStringRccInExperienceNameEnabledAllowList",
     "path": "Modules/Common/Flags/FStringRccInExperienceNameEnabledAllowList",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "FStringRoCaptchaUniverseIds",
+    "path": "Modules/Common/Flags/FStringRoCaptchaUniverseIds",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -1031,6 +1041,30 @@
   },
   {
     "class": "ModuleScript",
+    "name": "RoCaptchaUtils.spec",
+    "path": "Modules/Server/RoCaptcha/RoCaptchaUtils.spec",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "RoCaptchaUtils",
+    "path": "Modules/Server/RoCaptcha/RoCaptchaUtils",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "SendChatAnalytics",
     "path": "Modules/Server/SendChatAnalytics",
     "properties": {
@@ -1381,6 +1415,16 @@
     "class": "StringValue",
     "name": ".robloxrc",
     "path": "Modules/Server/.robloxrc",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "StringValue",
+    "name": ".robloxrc",
+    "path": "Modules/Server/ClientChat/.robloxrc",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""

@@ -184,7 +184,8 @@ local function SizeRules(sizes: Sizes): { StyleRule }
 	return rules
 end
 
-local function TypographyRules(typography: Typography, nominalScale: number): { StyleRule }
+-- Remove useFontFace when cleaning up FFlagFoundationFontFaceMigration
+local function TypographyRules(typography: Typography, nominalScale: number, useFontFace: boolean?): { StyleRule }
 	local rules: { StyleRule } = {}
 
 	for name, type in typography do
@@ -194,7 +195,8 @@ local function TypographyRules(typography: Typography, nominalScale: number): { 
 		table.insert(rules, {
 			tag = `text-{name}`,
 			properties = {
-				Font = `$Font{pascalName}`,
+				Font = if useFontFace then nil :: never else `$Font{pascalName}`,
+				FontFace = if useFontFace then `$Font{pascalName}` else nil :: never,
 				TextSize = `$TextSize{pascalName}`,
 				LineHeight = type.LineHeight,
 			},
@@ -344,8 +346,7 @@ local ColorPurpose = {
 	None = {},
 }
 
-local function DefaultRules(tokens: Tokens): { StyleRule }
-	local fontValue = tokens.Typography.BodyLarge.Font
+local function GuiObjectDefaultRules(): { StyleRule }
 	return {
 		{
 			tag = "gui-object-defaults",
@@ -354,37 +355,19 @@ local function DefaultRules(tokens: Tokens): { StyleRule }
 				BackgroundTransparency = 1,
 			},
 		},
-		-- TODO: When FoundationThemedTypography is cleaned up, drop this
-		-- `text-defaults` rule (keep `gui-object-defaults`). The themed typography
-		-- bucket always supplies `text-defaults` via DefaultFontRules, so this copy
-		-- is only the flag-off baseline. Regenerate CommonAttribute after removing.
-		{
-			tag = "text-defaults",
-			priority = -1,
-			properties = {
-				Font = "$FontBodyLarge",
-			},
-			attributes = {
-				{
-					name = "FontBodyLarge",
-					value = fontValue,
-				},
-			},
-		},
 	}
 end
 
--- TODO: When FoundationThemedTypography is cleaned up, fold this back into
--- DefaultRules as the single `text-defaults` source (this helper only exists to
--- bake the font into the themed typography bucket without `gui-object-defaults`).
-local function DefaultFontRules(tokens: Tokens): { StyleRule }
+-- Remove useFontFace when cleaning up FFlagFoundationFontFaceMigration
+local function DefaultFontRules(tokens: Tokens, useFontFace: boolean?): { StyleRule }
 	local fontValue = tokens.Typography.BodyLarge.Font
 	return {
 		{
 			tag = "text-defaults",
 			priority = -1,
 			properties = {
-				Font = "$FontBodyLarge",
+				Font = if useFontFace then nil :: never else "$FontBodyLarge",
+				FontFace = if useFontFace then "$FontBodyLarge" else nil :: never,
 			},
 			attributes = {
 				{
@@ -1116,9 +1099,11 @@ local function AspectRatioRules(): { StyleRule }
 	return rules
 end
 
+-- Remove useFontFace when cleaning up FFlagFoundationFontFaceMigration
 local function rulesGenerator(
 	tokens: Tokens,
-	formattedTokens: FormattedTokens
+	formattedTokens: FormattedTokens,
+	useFontFace: boolean?
 ): ({ StyleRule }, { StyleRule }, { StyleRule }, { StyleRule })
 	local colors = formattedTokens.colors
 	local variants = formattedTokens.variants
@@ -1132,7 +1117,7 @@ local function rulesGenerator(
 	local margins = formattedTokens.margins
 
 	local common: { StyleRule } = Dash.joinArrays(
-		DefaultRules(tokens),
+		GuiObjectDefaultRules(),
 		EngineDefaultBypassRules(),
 		FlexItemRules(),
 		TextRules(),
@@ -1143,19 +1128,13 @@ local function rulesGenerator(
 		AspectRatioRules()
 	)
 
-	-- TODO: When FoundationThemedTypography is cleaned up, remove DefaultSizeRules
-	-- and TypographyRules from this `size` bucket. The themed typography bucket then
-	-- becomes the sole source of `text-size-defaults` and the `text-*` rules; these
-	-- are only the flag-off baseline. Regenerate Desktop/Console attributes after.
 	local size: { StyleRule } = Dash.joinArrays(
-		DefaultSizeRules(typography["body-large"], tokens.Config.Text.NominalScale),
 		ListLayoutRules(),
 		ListLayoutSpacingRules(gaps, gutters),
 		CornerRules(radii),
 		ShadowRules(tokens),
 		SizeRules(sizes),
 		StrokeSizeRules(strokes),
-		TypographyRules(typography, tokens.Config.Text.NominalScale),
 		PaddingRules(paddings, margins)
 	)
 
@@ -1168,9 +1147,9 @@ local function rulesGenerator(
 	)
 
 	local typographyRules: { StyleRule } = Dash.joinArrays(
-		DefaultFontRules(tokens),
+		DefaultFontRules(tokens, useFontFace),
 		DefaultSizeRules(typography["body-large"], tokens.Config.Text.NominalScale),
-		TypographyRules(typography, tokens.Config.Text.NominalScale)
+		TypographyRules(typography, tokens.Config.Text.NominalScale, useFontFace)
 	)
 
 	return common, size, colorMode, typographyRules

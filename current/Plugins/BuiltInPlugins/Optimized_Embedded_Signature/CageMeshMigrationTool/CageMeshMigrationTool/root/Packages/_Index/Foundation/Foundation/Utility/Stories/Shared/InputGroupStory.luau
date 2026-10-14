@@ -70,7 +70,7 @@ local function Section(props: {
 			LayoutOrder = 1,
 		}),
 		Content = React.createElement(View, {
-			tag = props.contentTag or "row gap-large auto-xy wrap",
+			tag = props.contentTag or "row gap-large align-y-top auto-xy wrap",
 			LayoutOrder = 2,
 		}, props.children),
 	})
@@ -222,7 +222,6 @@ local function create(options: Options)
 			},
 			{
 				name = "Placement",
-				summary = `placement positions each item's label relative to its {string.lower(options.itemName)}.`,
 				story = PlacementStory,
 			},
 		},

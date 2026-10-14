@@ -62,6 +62,8 @@ export type CoachmarkProps = {
 	}?,
 	align: PopoverAlign?,
 	side: PopoverSide?,
+	-- Whether the tooltip should have an arrow. Defaults to true.
+	hasArrow: boolean?,
 	-- Reference to the element that will serve as an anchor
 	anchorRef: React.Ref<PopoverAnchor>?,
 	children: ReactNode?,
@@ -74,6 +76,7 @@ local defaultProps = {
 	isOpen = false,
 	align = PopoverAlign.Start,
 	side = PopoverSide.Right,
+	hasArrow = true,
 	testId = "--foundation-coachmark",
 }
 
@@ -93,13 +96,18 @@ local function Coachmark(coachmarkProps: CoachmarkProps, ref: React.Ref<GuiObjec
 	local maxXSize = useScaledValue(
 		if Flags.FoundationEducationalTooltipRefresh then Constants.TOOLTIP_MAX_WIDTH else MAX_WIDTH_DEPRECATED
 	)
-	local minXSize = useScaledValue(MIN_WIDTH)
+	local scaledMinWidth = useScaledValue(MIN_WIDTH)
+	local minXSize = if Flags.FoundationEducationalTooltipMinMediaWidth
+		then if props.media then scaledMinWidth else tokens.Size.Size_3000
+		else scaledMinWidth
 	-- Size constraint for text elements when close affordance is present
-	local textSizeConstraint = if props.onClose
-		then {
-			MaxSize = Vector2.new(maxXSize - tokens.Size.Size_1200, math.huge),
-		}
-		else nil
+	local textSizeConstraint = if Flags.FoundationEducationalTooltipMinMediaWidth
+		then nil
+		else if props.onClose
+			then {
+				MaxSize = Vector2.new(maxXSize - tokens.Size.Size_1200, math.huge),
+			}
+			else nil
 
 	local actionButtons = React.useMemo(function(): { ButtonGroupItem | React.Node }
 		local items: { ButtonGroupItem | React.Node } = {}
@@ -130,6 +138,10 @@ local function Coachmark(coachmarkProps: CoachmarkProps, ref: React.Ref<GuiObjec
 		return items
 	end, { props.actions, props.testId } :: { unknown })
 
+	local needsCloseAffordancePadding = if Flags.FoundationEducationalTooltipMinMediaWidth
+		then props.onClose and not props.media
+		else nil
+
 	return React.createElement(Popover.Root, {
 		isOpen = props.isOpen,
 		testId = props.testId,
@@ -144,10 +156,10 @@ local function Coachmark(coachmarkProps: CoachmarkProps, ref: React.Ref<GuiObjec
 		Content = React.createElement(
 			Popover.Content,
 			{
-				hasArrow = true,
+				hasArrow = props.hasArrow,
 				align = props.align,
 				DO_NOT_USE_hasContentInputSink = true,
-				onPressedOutside = if Flags.FoundationCoachmarkPressedOutside then props.onPressedOutside else nil,
+				onPressedOutside = props.onPressedOutside,
 				side = {
 					position = props.side,
 					offset = tokens.Size.Size_200,
@@ -162,11 +174,10 @@ local function Coachmark(coachmarkProps: CoachmarkProps, ref: React.Ref<GuiObjec
 				PresentationContext.Provider,
 				{
 					-- lute-lint-ignore(noUnstableContextValue)
-					value = if Flags.FoundationStableContextValues
-						then INVERSE_PRESENTATION
-						else { colorNamespace = ColorNamespace.Inverse },
+					value = INVERSE_PRESENTATION,
 				},
 				React.createElement(View, {
+					testId = props.testId,
 					tag = if Flags.FoundationEducationalTooltipRefresh
 						then "col auto-xy"
 						else "col gap-medium auto-xy padding-bottom-medium",
@@ -198,9 +209,32 @@ local function Coachmark(coachmarkProps: CoachmarkProps, ref: React.Ref<GuiObjec
 						else nil,
 					ContentSection = React.createElement(View, {
 						LayoutOrder = 2,
-						tag = if Flags.FoundationEducationalTooltipRefresh
-							then "col auto-xy padding-medium"
-							else "col gap-xsmall auto-xy padding-x-medium padding-bottom-xsmall padding-top-medium",
+						tag = if Flags.FoundationEducationalTooltipMinMediaWidth
+							then {
+								[if Flags.FoundationEducationalTooltipRefresh
+									then "col auto-xy"
+									else "col gap-xsmall auto-xy"] = true,
+								[if Flags.FoundationEducationalTooltipRefresh
+									then "padding-medium"
+									else "padding-x-medium padding-bottom-xsmall padding-top-medium"] = not needsCloseAffordancePadding,
+							}
+							else if Flags.FoundationEducationalTooltipRefresh
+								then "col auto-xy padding-medium"
+								else "col gap-xsmall auto-xy padding-x-medium padding-bottom-xsmall padding-top-medium",
+						padding = if Flags.FoundationEducationalTooltipMinMediaWidth
+								and needsCloseAffordancePadding
+							then {
+								top = UDim.new(0, tokens.Padding.Medium),
+								bottom = UDim.new(
+									0,
+									if Flags.FoundationEducationalTooltipRefresh
+										then tokens.Padding.Medium
+										else tokens.Padding.XSmall
+								),
+								left = UDim.new(0, tokens.Padding.Medium),
+								right = UDim.new(0, tokens.Size.Size_1200),
+							}
+							else nil,
 					}, {
 						StepIndicator = if props.steps
 							then React.createElement(Text, {
@@ -209,7 +243,9 @@ local function Coachmark(coachmarkProps: CoachmarkProps, ref: React.Ref<GuiObjec
 								tag = if Flags.FoundationEducationalTooltipRefresh
 									then "auto-xy text-caption-medium text-align-x-left text-truncate-end content-inverse-default"
 									else "auto-xy text-label-small text-align-x-left text-truncate-end content-inverse-default",
-								sizeConstraint = textSizeConstraint,
+								sizeConstraint = if Flags.FoundationEducationalTooltipMinMediaWidth
+									then nil
+									else textSizeConstraint,
 								testId = `{props.testId}--step-indicator`,
 							})
 							else nil,
@@ -218,7 +254,9 @@ local function Coachmark(coachmarkProps: CoachmarkProps, ref: React.Ref<GuiObjec
 								LayoutOrder = 2,
 								Text = props.title,
 								tag = "auto-xy text-title-large text-align-x-left text-truncate-split content-inverse-emphasis",
-								sizeConstraint = textSizeConstraint,
+								sizeConstraint = if Flags.FoundationEducationalTooltipMinMediaWidth
+									then nil
+									else textSizeConstraint,
 								testId = `{props.testId}--header`,
 							})
 							else nil,
@@ -226,9 +264,15 @@ local function Coachmark(coachmarkProps: CoachmarkProps, ref: React.Ref<GuiObjec
 							then React.createElement(Text, {
 								LayoutOrder = 3,
 								Text = props.text,
-								tag = "size-full-0 auto-y text-body-medium text-wrap text-align-x-left content-inverse-default",
+								tag = if Flags.FoundationEducationalTooltipMinMediaWidth
+									then "auto-xy text-body-medium text-wrap text-align-x-left content-inverse-default"
+									else "size-full-0 auto-y text-body-medium text-wrap text-align-x-left content-inverse-default",
 								padding = if Flags.FoundationEducationalTooltipRefresh
-									then { top = UDim.new(0, tokens.Size.Size_100) }
+									then if Flags.FoundationEducationalTooltipMinMediaWidth
+										then if props.title ~= ""
+											then { top = UDim.new(0, tokens.Size.Size_100) }
+											else nil
+										else { top = UDim.new(0, tokens.Size.Size_100) }
 									else nil,
 								testId = `{props.testId}--text`,
 							})

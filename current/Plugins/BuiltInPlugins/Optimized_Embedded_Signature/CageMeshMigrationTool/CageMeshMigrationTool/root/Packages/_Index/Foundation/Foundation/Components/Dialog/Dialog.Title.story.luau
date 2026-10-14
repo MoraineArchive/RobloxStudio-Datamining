@@ -30,7 +30,6 @@ local function Playground(props: {
 	return React.createElement(RootStory, {
 		controls = {
 			size = props.controls.rootSize or DEFAULT_SIZE,
-			hasBackdrop = true,
 		},
 		children = minimalDialogChildren(props.controls.text or "Dialog title"),
 	})
@@ -101,6 +100,6 @@ return {
 	},
 	controls = {
 		text = "Dialog title",
-		rootSize = Dash.values(DialogSize),
+		rootSize = SIZE_ORDER,
 	},
 }

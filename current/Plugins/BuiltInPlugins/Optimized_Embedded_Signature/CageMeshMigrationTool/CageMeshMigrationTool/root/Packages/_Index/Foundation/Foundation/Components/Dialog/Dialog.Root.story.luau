@@ -118,7 +118,6 @@ local function ControlledExample(props: {
 		DialogRoot = if isOpen
 			then React.createElement(DialogExample, {
 				size = DEFAULT_SIZE,
-				hasBackdrop = props.hasOnClose,
 				onClose = if props.hasOnClose
 					then function(reason: OnCloseCallbackReason?)
 						dismiss(formatCloseReason(reason))
@@ -248,9 +247,7 @@ local function ContentStory()
 		}, {
 			Matrix = React.createElement(MatrixGrid, {
 				labelColumnWidth = FULL_COMPOSITION_MATRIX_LABEL_WIDTH,
-				columnHeaders = Dash.map(SIZE_ORDER, function(size)
-					return size
-				end),
+				columnHeaders = MatrixGridShared.enumHeaders(SIZE_ORDER),
 				cellColumnWidth = ACTIONS_MATRIX_CELL_WIDTH,
 				headerTextAlign = "left",
 				cellAlign = "left",
@@ -287,23 +284,6 @@ local function ContentStory()
 				},
 			}),
 		}),
-		Backdrop = React.createElement(Section, {
-			layoutOrder = 3,
-			name = "Backdrop",
-		}, {
-			WithBackdrop = React.createElement(LabeledDialogTrigger, {
-				label = "hasBackdrop = true",
-				layoutOrder = 1,
-				hasBackdrop = true,
-				children = minimalDialogChildren(),
-			}),
-			WithoutBackdrop = React.createElement(LabeledDialogTrigger, {
-				label = "hasBackdrop = false",
-				layoutOrder = 2,
-				hasBackdrop = false,
-				children = minimalDialogChildren(),
-			}),
-		}),
 	})
 end
 
@@ -320,18 +300,14 @@ return {
 		},
 		{
 			name = "Controlled component",
-			summary = "Parent owns open state; dismiss via onClose or action buttons.",
 			story = ControlledStory,
 		},
 		{
 			name = "Content",
-			summary = "Optional subparts and backdrop.",
 			story = ContentStory,
 		},
 	},
 	controls = {
-		size = Dash.values(DialogSize),
-		disablePortal = false,
-		hasBackdrop = true,
+		size = SIZE_ORDER,
 	},
 }

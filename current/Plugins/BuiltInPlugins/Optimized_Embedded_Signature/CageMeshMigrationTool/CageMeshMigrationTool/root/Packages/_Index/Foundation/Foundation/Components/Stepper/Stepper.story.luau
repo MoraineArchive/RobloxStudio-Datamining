@@ -9,11 +9,13 @@ local FillBehavior = require(Foundation.Enums.FillBehavior)
 local IconButton = require(Foundation.Components.IconButton)
 local InputSize = require(Foundation.Enums.InputSize)
 local Stepper = require(Foundation.Components.Stepper)
+local StorySection = require(Foundation.Utility.Stories.Shared.StorySection)
 local Text = require(Foundation.Components.Text)
 local Types = require(Foundation.Components.Types)
 local View = require(Foundation.Components.View)
 
 local IconName = BuilderIcons.Icon
+local Section = StorySection.Section
 
 type FillBehavior = FillBehavior.FillBehavior
 type InputSize = InputSize.InputSize
@@ -94,28 +96,6 @@ local MIXED_DESCRIPTION_STEPS: { Step } = Dash.map(MINIMAL_STEPS, function(step:
 	end
 	return step
 end)
-
-local function Section(props: {
-	LayoutOrder: number,
-	name: string,
-	contentTag: string?,
-	children: React.ReactNode,
-})
-	return React.createElement(View, {
-		tag = "col gap-medium size-full-0 auto-y",
-		LayoutOrder = props.LayoutOrder,
-	}, {
-		Title = React.createElement(Text, {
-			Text = props.name,
-			tag = "auto-xy text-label-medium content-default",
-			LayoutOrder = 1,
-		}),
-		Content = React.createElement(View, {
-			tag = props.contentTag or "col gap-large align-x-left auto-xy",
-			LayoutOrder = 2,
-		}, props.children),
-	})
-end
 
 -- Stepper's scroll container anchors its scrims to the nearest clipping ancestor, falling back to
 -- the whole page, and Stepper's own root opts out with `no-clip`. Without this wrapper, overflowing
@@ -230,7 +210,7 @@ end
 
 local function SizingStory(): React.ReactNode
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		Size = React.createElement(
 			Section,
@@ -274,11 +254,12 @@ end
 
 local function StatesStory(): React.ReactNode
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		StepStates = React.createElement(Section, {
 			LayoutOrder = 1,
 			name = "Step states",
+			contentTag = "col gap-large align-x-left auto-xy",
 		}, {
 			Current = React.createElement(LabeledStepper, {
 				LayoutOrder = 1,
@@ -374,11 +355,12 @@ end
 
 local function ControlledStory(): React.ReactNode
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		Stepping = React.createElement(Section, {
 			LayoutOrder = 1,
 			name = "Stepping through a flow",
+			contentTag = "col gap-large align-x-left auto-xy",
 		}, {
 			Example = React.createElement(ControlledStepperExample, {
 				LayoutOrder = 1,
@@ -388,6 +370,7 @@ local function ControlledStory(): React.ReactNode
 		Overflow = React.createElement(Section, {
 			LayoutOrder = 2,
 			name = "Overflow",
+			contentTag = "col gap-large align-x-left auto-xy",
 		}, {
 			-- Fit is required for the steps to outgrow the frame: under Fill they are scale-sized,
 			-- which never contributes to the scroll canvas, so the scrims would never engage.
@@ -404,11 +387,12 @@ end
 
 local function ContentStory(): React.ReactNode
 	return React.createElement(View, {
-		tag = "col gap-xxlarge size-full-0 auto-y padding-y-large bg-surface-0",
+		tag = StorySection.STORY_PAGE_COL_TAG,
 	}, {
 		Descriptions = React.createElement(Section, {
 			LayoutOrder = 1,
 			name = "Descriptions",
+			contentTag = "col gap-large align-x-left auto-xy",
 		}, {
 			LabelOnly = React.createElement(LabeledStepper, {
 				LayoutOrder = 1,
@@ -429,6 +413,7 @@ local function ContentStory(): React.ReactNode
 		LongText = React.createElement(Section, {
 			LayoutOrder = 2,
 			name = "Long text",
+			contentTag = "col gap-large align-x-left auto-xy",
 		}, {
 			Fill = React.createElement(LabeledStepper, {
 				LayoutOrder = 1,

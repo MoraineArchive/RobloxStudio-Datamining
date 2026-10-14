@@ -12,8 +12,11 @@ local ButtonVariant = require(Foundation.Enums.ButtonVariant)
 local InputSize = require(Foundation.Enums.InputSize)
 local PreferencesProvider = require(Foundation.Providers.Preferences)
 local Skeleton = require(Foundation.Components.Skeleton)
+local StorySection = require(Foundation.Utility.Stories.Shared.StorySection)
 local Text = require(Foundation.Components.Text)
 local View = require(Foundation.Components.View)
+
+local Section = StorySection.Section
 
 type StorySize = {
 	size: UDim2,
@@ -155,28 +158,6 @@ local DEFAULT_CONTROLS: StoryControls = {
 	[EXAMPLE_SIZE_CONTROL] = EXAMPLE_SIZE_LABELS,
 	[CUSTOM_SIZE_CONTROL] = CUSTOM_SIZE_PLACEHOLDER,
 }
-
-local function Section(props: {
-	LayoutOrder: number,
-	name: string,
-	contentTag: string?,
-	children: React.ReactNode,
-})
-	return React.createElement(View, {
-		tag = "col gap-medium size-full-0 auto-y",
-		LayoutOrder = props.LayoutOrder,
-	}, {
-		Title = React.createElement(Text, {
-			Text = props.name,
-			tag = "auto-xy text-label-medium content-default",
-			LayoutOrder = 1,
-		}),
-		Content = React.createElement(View, {
-			tag = props.contentTag or "row gap-large auto-xy wrap",
-			LayoutOrder = 2,
-		}, props.children),
-	})
-end
 
 local function LabeledSkeleton(props: {
 	label: string,
@@ -404,17 +385,15 @@ return {
 			story = SizingStory,
 		},
 		{
-			name = "Rounding",
+			name = "Shape",
 			story = RoundingStory,
 		},
 		{
 			name = "Reduced motion",
-			summary = "Compares the default scrolling shimmer with the reduced-motion pulse behavior.",
 			story = ReducedMotionStory,
 		},
 		{
 			name = "In context",
-			summary = "Common components shown alongside skeleton placeholders that match their dimensions.",
 			story = InContextStory,
 		},
 	},

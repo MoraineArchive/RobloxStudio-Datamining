@@ -11,16 +11,6 @@
   },
   {
     "class": "Folder",
-    "name": "__snapshots__",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-3.0.5/RbxDesignFoundations/__snapshots__",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
     "name": "__test__",
     "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/Style/__test__",
     "properties": {
@@ -221,8 +211,8 @@
   },
   {
     "class": "Folder",
-    "name": "Breadcrumb",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Utility/Stories/Planned/Breadcrumb",
+    "name": "BuilderIcons",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/BuilderIcons",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -231,8 +221,8 @@
   },
   {
     "class": "Folder",
-    "name": "BuilderIcons",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/BuilderIcons",
+    "name": "BuilderSans",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Legacy/Typography/BuilderSans",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -273,6 +263,16 @@
     "class": "Folder",
     "name": "Card",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Utility/Stories/Planned/Card",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Cartoon",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Legacy/Typography/Cartoon",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -1081,8 +1081,8 @@
   },
   {
     "class": "Folder",
-    "name": "Link",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Utility/Stories/Planned/Link",
+    "name": "Legacy",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Legacy",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -1531,8 +1531,8 @@
   },
   {
     "class": "Folder",
-    "name": "RbxDesignFoundations-31ab8d40-3.0.5",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-3.0.5",
+    "name": "RbxDesignFoundations-31ab8d40-4.0.11",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -1541,8 +1541,8 @@
   },
   {
     "class": "Folder",
-    "name": "RbxDesignFoundations-31ab8d40-4.0.7",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7",
+    "name": "RbxDesignFoundations-31ab8d40-5.0.0",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -2083,6 +2083,16 @@
     "class": "Folder",
     "name": "types",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Rodux-31ab8d40-4.0.0-rc.0/Rodux/types",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Typography",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Legacy/Typography",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -2637,18 +2647,6 @@
     "class": "ModuleScript",
     "name": "AccordionItem",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Accordion/Item/AccordionItem",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "AccordionPlayground",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Accordion/AccordionPlayground",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -3787,6 +3785,66 @@
   },
   {
     "class": "ModuleScript",
+    "name": "BannerContext.story",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/BannerContext/BannerContext.story",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "BannerContext",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/BannerContext",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "BannerContext",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/BannerContext/BannerContext",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "BannerContextPresentation",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Enums/BannerContextPresentation",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "BannerContextVariant",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Enums/BannerContextVariant",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "BaseComponents.storybook",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Utility/Stories/BaseComponents.storybook",
     "properties": {
@@ -4136,7 +4194,7 @@
   {
     "class": "ModuleScript",
     "name": "Breadcrumb.story",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Utility/Stories/Planned/Breadcrumb/Breadcrumb.story",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Breadcrumb/Breadcrumb.story",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -4149,6 +4207,42 @@
     "class": "ModuleScript",
     "name": "Breadcrumb",
     "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/Breadcrumb",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Breadcrumb",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Breadcrumb",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Breadcrumb",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Breadcrumb/Breadcrumb",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "BreadcrumbAccessory",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Breadcrumb/BreadcrumbAccessory",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -4449,6 +4543,18 @@
     "class": "ModuleScript",
     "name": "ButtonVariant",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Enums/ButtonVariant",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "calculateAdjacentStepValue",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Slider/calculateAdjacentStepValue",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -5132,7 +5238,19 @@
   {
     "class": "ModuleScript",
     "name": "CircuitRush",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/CircuitRush",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/CircuitRush",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "CircuitRush",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/CircuitRush",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -5204,7 +5322,19 @@
   {
     "class": "ModuleScript",
     "name": "Classic",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/Classic",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/Classic",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Classic",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/Classic",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -6008,6 +6138,30 @@
   {
     "class": "ModuleScript",
     "name": "ConsoleAttribute",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Legacy/Typography/BuilderSans/ConsoleAttribute",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ConsoleAttribute",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Legacy/Typography/Cartoon/ConsoleAttribute",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ConsoleAttribute",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Typography/BuilderSans/ConsoleAttribute",
     "properties": {
       "AttributesSerialize": "",
@@ -6093,6 +6247,18 @@
     "class": "ModuleScript",
     "name": "constants",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Progress/constants",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "constants",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Slider/constants",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -6428,7 +6594,19 @@
   {
     "class": "ModuleScript",
     "name": "CosmicDust",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/CosmicDust",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/CosmicDust",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "CosmicDust",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/CosmicDust",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -7172,7 +7350,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-3.0.5/RbxDesignFoundations/tokens/Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/CircuitRush/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -7184,7 +7362,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/CircuitRush/Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/Classic/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -7196,7 +7374,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/Classic/Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/CosmicDust/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -7208,7 +7386,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/CosmicDust/Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/Default/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -7220,7 +7398,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/Default/Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/ElectricLime/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -7232,7 +7410,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/ElectricLime/Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/HyperPlum/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -7244,7 +7422,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/HyperPlum/Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/InfernoBlast/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -7256,7 +7434,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/InfernoBlast/Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/Kids/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -7268,7 +7446,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/Kids/Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/KidsClassic/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -7280,7 +7458,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/KidsClassic/Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/KineticEnergy/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -7292,7 +7470,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/KineticEnergy/Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/LavaGlow/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -7304,7 +7482,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/LavaGlow/Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/NebulaDrift/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -7316,7 +7494,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/NebulaDrift/Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/NitroFrost/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -7328,7 +7506,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/NitroFrost/Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/PixelPop/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -7340,7 +7518,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/PixelPop/Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/PolarFreeze/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -7352,7 +7530,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/PolarFreeze/Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/QuantumPulse/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -7364,7 +7542,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/QuantumPulse/Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/StarBurst/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -7376,7 +7554,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/StarBurst/Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/SuperCharge/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -7388,7 +7566,211 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/SuperCharge/Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/CircuitRush/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/Classic/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/CosmicDust/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/Default/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/ElectricLime/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/HyperPlum/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/InfernoBlast/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/Kids/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/KidsClassic/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/KineticEnergy/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/LavaGlow/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/NebulaDrift/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/NitroFrost/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/PixelPop/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/PolarFreeze/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/QuantumPulse/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/StarBurst/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/SuperCharge/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -7425,18 +7807,6 @@
     "class": "ModuleScript",
     "name": "DarkAttribute",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Generated/StyleRules/CosmicDust/DarkAttribute",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "DarkAttribute",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Generated/StyleRules/DarkAttribute",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -8132,7 +8502,19 @@
   {
     "class": "ModuleScript",
     "name": "Default",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/Default",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/Default",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Default",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/Default",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -8312,6 +8694,30 @@
   {
     "class": "ModuleScript",
     "name": "DesktopAttribute",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Legacy/Typography/BuilderSans/DesktopAttribute",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "DesktopAttribute",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Legacy/Typography/Cartoon/DesktopAttribute",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "DesktopAttribute",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Typography/BuilderSans/DesktopAttribute",
     "properties": {
       "AttributesSerialize": "",
@@ -8337,6 +8743,18 @@
     "class": "ModuleScript",
     "name": "details",
     "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/RobloxAPI/APIS/ToolboxService/V1/Items/details",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "detectInputPlatform",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Utility/useInputPlatform/detectInputPlatform",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -9128,7 +9546,19 @@
   {
     "class": "ModuleScript",
     "name": "ElectricLime",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/ElectricLime",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/ElectricLime",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ElectricLime",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/ElectricLime",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -9452,7 +9882,19 @@
   {
     "class": "ModuleScript",
     "name": "enums",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/enums",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/enums",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "enums",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/enums",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -9957,6 +10399,18 @@
     "class": "ModuleScript",
     "name": "fetchAssetFormat",
     "path": "CageMeshMigrationTool/root/src/Util/fetchAssetFormat",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "FFlagNames",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Utility/Stories/Flags/FFlagNames",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -11695,6 +12149,30 @@
   },
   {
     "class": "ModuleScript",
+    "name": "getIconForKeyCode",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Utility/getIconForKeyCode",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "getIconForKeyCode",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Utility/getIconForKeyCode/getIconForKeyCode",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "getIconRichText.story",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Utility/getIconRichText/getIconRichText.story",
     "properties": {
@@ -12055,6 +12533,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "getSelectionEntryDirection",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Slider/getSelectionEntryDirection",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "getSharedVariants",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Button/getSharedVariants",
     "properties": {
@@ -12141,6 +12631,18 @@
     "class": "ModuleScript",
     "name": "getTestIdTag",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Utility/getTestIdTag",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "getTextBoundsAsync",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Utility/getTextBoundsAsync",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -12691,6 +13193,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "HeaderBarStoryHelpers",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/HeaderBar/HeaderBarStoryHelpers",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "HeaderBarTrailing",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/HeaderBar/Trailing/HeaderBarTrailing",
     "properties": {
@@ -12896,7 +13410,19 @@
   {
     "class": "ModuleScript",
     "name": "HyperPlum",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/HyperPlum",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/HyperPlum",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "HyperPlum",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/HyperPlum",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -13339,32 +13865,8 @@
   },
   {
     "class": "ModuleScript",
-    "name": "Indicator",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Avatar/Indicator",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "IndicatorShape",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Enums/IndicatorShape",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "IndicatorVariant",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Enums/IndicatorVariant",
+    "name": "InfernoBlast",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/InfernoBlast",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -13376,7 +13878,7 @@
   {
     "class": "ModuleScript",
     "name": "InfernoBlast",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/InfernoBlast",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/InfernoBlast",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -13723,6 +14225,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "InputPlatform",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Enums/InputPlatform",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "InputSize",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Enums/InputSize",
     "properties": {
@@ -14025,6 +14539,30 @@
     "class": "ModuleScript",
     "name": "InternalInputGroup",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/InternalInputGroup/InternalInputGroup",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "InternalNotice",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/InternalNotice",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "InternalNotice",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/InternalNotice/InternalNotice",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -14815,8 +15353,32 @@
   },
   {
     "class": "ModuleScript",
+    "name": "KeyCap",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Shortcut/KeyCap",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "KeyCodeCategories",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Utility/Stories/Shared/KeyCodeCategories",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "KeyCodeIconMappings",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Utility/getIconForKeyCode/KeyCodeIconMappings",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -14853,6 +15415,18 @@
     "class": "ModuleScript",
     "name": "KeyCodeReconciliation.story",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Utility/Stories/Internal/KeyCodeReconciliation/KeyCodeReconciliation.story",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "keyDisplay",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Shortcut/keyDisplay",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -14960,7 +15534,19 @@
   {
     "class": "ModuleScript",
     "name": "Kids",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/Kids",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/Kids",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Kids",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/Kids",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -14972,7 +15558,19 @@
   {
     "class": "ModuleScript",
     "name": "KidsClassic",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/KidsClassic",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/KidsClassic",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "KidsClassic",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/KidsClassic",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -14984,7 +15582,19 @@
   {
     "class": "ModuleScript",
     "name": "KineticEnergy",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/KineticEnergy",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/KineticEnergy",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "KineticEnergy",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/KineticEnergy",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -15080,7 +15690,19 @@
   {
     "class": "ModuleScript",
     "name": "LavaGlow",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/LavaGlow",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/LavaGlow",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "LavaGlow",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/LavaGlow",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -15224,7 +15846,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-3.0.5/RbxDesignFoundations/tokens/Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/CircuitRush/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -15236,7 +15858,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/CircuitRush/Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/Classic/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -15248,7 +15870,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/Classic/Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/CosmicDust/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -15260,7 +15882,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/CosmicDust/Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/Default/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -15272,7 +15894,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/Default/Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/ElectricLime/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -15284,7 +15906,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/ElectricLime/Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/HyperPlum/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -15296,7 +15918,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/HyperPlum/Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/InfernoBlast/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -15308,7 +15930,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/InfernoBlast/Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/Kids/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -15320,7 +15942,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/Kids/Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/KidsClassic/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -15332,7 +15954,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/KidsClassic/Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/KineticEnergy/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -15344,7 +15966,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/KineticEnergy/Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/LavaGlow/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -15356,7 +15978,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/LavaGlow/Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/NebulaDrift/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -15368,7 +15990,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/NebulaDrift/Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/NitroFrost/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -15380,7 +16002,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/NitroFrost/Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/PixelPop/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -15392,7 +16014,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/PixelPop/Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/PolarFreeze/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -15404,7 +16026,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/PolarFreeze/Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/QuantumPulse/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -15416,7 +16038,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/QuantumPulse/Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/StarBurst/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -15428,7 +16050,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/StarBurst/Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/SuperCharge/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -15440,7 +16062,211 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/SuperCharge/Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/CircuitRush/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/Classic/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/CosmicDust/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/Default/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/ElectricLime/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/HyperPlum/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/InfernoBlast/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/Kids/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/KidsClassic/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/KineticEnergy/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/LavaGlow/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/NebulaDrift/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/NitroFrost/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/PixelPop/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/PolarFreeze/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/QuantumPulse/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/StarBurst/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/SuperCharge/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -15584,18 +16410,6 @@
   {
     "class": "ModuleScript",
     "name": "LightAttribute",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Generated/StyleRules/LightAttribute",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "LightAttribute",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Generated/StyleRules/NebulaDrift/LightAttribute",
     "properties": {
       "AttributesSerialize": "",
@@ -15704,7 +16518,31 @@
   {
     "class": "ModuleScript",
     "name": "Link.story",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Utility/Stories/Planned/Link/Link.story",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Link/Link.story",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Link",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Link",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Link",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Link/Link",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -15741,6 +16579,18 @@
     "class": "ModuleScript",
     "name": "LinkText",
     "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/LinkText",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "LinkVariant",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Enums/LinkVariant",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -16747,8 +17597,68 @@
   },
   {
     "class": "ModuleScript",
+    "name": "Media.story",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Media/Media.story",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Media",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Media",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Media",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Media/Media",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "Media",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Tile/Media",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "MediaAspectRatio",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Enums/MediaAspectRatio",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "MediaOrientation",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Enums/MediaOrientation",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -16881,6 +17791,18 @@
     "class": "ModuleScript",
     "name": "Menu",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Menu/Menu",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "MenuStoryHelpers",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Menu/MenuStoryHelpers",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -17468,7 +18390,19 @@
   {
     "class": "ModuleScript",
     "name": "NebulaDrift",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/NebulaDrift",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/NebulaDrift",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "NebulaDrift",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/NebulaDrift",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -17516,7 +18450,19 @@
   {
     "class": "ModuleScript",
     "name": "NitroFrost",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/NitroFrost",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/NitroFrost",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "NitroFrost",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/NitroFrost",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -17637,6 +18583,18 @@
     "class": "ModuleScript",
     "name": "NoopRenderer",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Roact/Roact/NoopRenderer",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "normalizeFontFace",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Utility/normalizeFontFace",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -18151,18 +19109,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "OverflowScrollContainer.story",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Tabs/OverflowScrollContainer.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "OverflowScrollContainer",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/OverflowScrollContainer",
     "properties": {
@@ -18225,6 +19171,18 @@
     "class": "ModuleScript",
     "name": "OverlayProvider",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Providers/Overlay/OverlayProvider",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "OverlayStoryAnchor",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Utility/Stories/Shared/OverlayStoryAnchor",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -18632,7 +19590,31 @@
   {
     "class": "ModuleScript",
     "name": "PixelPop",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/PixelPop",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/PixelPop",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "PixelPop",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/PixelPop",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Placement",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Enums/Placement",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -18908,7 +19890,19 @@
   {
     "class": "ModuleScript",
     "name": "PolarFreeze",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/PolarFreeze",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/PolarFreeze",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "PolarFreeze",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/PolarFreeze",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -19089,6 +20083,18 @@
     "class": "ModuleScript",
     "name": "PopoverSide",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Enums/PopoverSide",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "PopoverStoryHelpers",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Popover/PopoverStoryHelpers",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -19736,7 +20742,19 @@
   {
     "class": "ModuleScript",
     "name": "QuantumPulse",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/QuantumPulse",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/QuantumPulse",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "QuantumPulse",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/QuantumPulse",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -20000,7 +21018,7 @@
   {
     "class": "ModuleScript",
     "name": "RbxDesignFoundations",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-3.0.5/RbxDesignFoundations",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -20012,7 +21030,7 @@
   {
     "class": "ModuleScript",
     "name": "RbxDesignFoundations",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -20023,8 +21041,8 @@
   },
   {
     "class": "ModuleScript",
-    "name": "RbxDesignFoundationsV3",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/RbxDesignFoundationsV3",
+    "name": "RbxDesignFoundationsV4",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/RbxDesignFoundationsV4",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -22879,6 +23897,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "Separator",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Shortcut/Separator",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "Services",
     "path": "CageMeshMigrationTool/root/Packages/_Index/BuilderIcons/BuilderIcons/Services",
     "properties": {
@@ -23359,6 +24389,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "SheetStoryHelpers",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Sheet/SheetStoryHelpers",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "SheetType",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Sheet/SheetType",
     "properties": {
@@ -23397,6 +24439,66 @@
     "class": "ModuleScript",
     "name": "Shimmer",
     "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/Shimmer",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Shortcut.story",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Shortcut/Shortcut.story",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Shortcut",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Shortcut",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Shortcut",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Shortcut/Shortcut",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ShortcutSeparator",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Enums/ShortcutSeparator",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ShortcutVariant",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Enums/ShortcutVariant",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -23815,6 +24917,42 @@
   },
   {
     "class": "ModuleScript",
+    "name": "SliderThumb.story",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Slider/SliderThumb.story",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "SliderThumb",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Slider/SliderThumb",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "SliderType",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Enums/SliderType",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "SliderVariant",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Enums/SliderVariant",
     "properties": {
@@ -24080,7 +25218,19 @@
   {
     "class": "ModuleScript",
     "name": "StarBurst",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/StarBurst",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/StarBurst",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "StarBurst",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/StarBurst",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -24765,6 +25915,18 @@
     "class": "ModuleScript",
     "name": "StoryMiddleware",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Utility/Stories/StoryMiddleware",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "StorySection",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Utility/Stories/Shared/StorySection",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -26360,7 +27522,19 @@
   {
     "class": "ModuleScript",
     "name": "SuperCharge",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/SuperCharge",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/SuperCharge",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "SuperCharge",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/SuperCharge",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -26373,6 +27547,18 @@
     "class": "ModuleScript",
     "name": "supportsStyleSheets",
     "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/Styling/supportsStyleSheets",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "SurfacePresets",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Utility/Stories/Shared/SurfacePresets",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -27919,18 +29105,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "tokens.test.snap",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-3.0.5/RbxDesignFoundations/__snapshots__/tokens.test.snap",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "Tokens",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Providers/Style/Tokens",
     "properties": {
@@ -27945,18 +29119,6 @@
     "class": "ModuleScript",
     "name": "tokens",
     "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-2.0.194/RbxDesignFoundations/tokens",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "tokens",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-3.0.5/RbxDesignFoundations/tokens",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -28712,7 +29874,19 @@
   {
     "class": "ModuleScript",
     "name": "types",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.7/RbxDesignFoundations/types",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/types",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "types",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/types",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -28939,6 +30113,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "useAbsoluteSize",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Utility/useAbsoluteSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "useAccessoryVariants",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Chip/useAccessoryVariants",
     "properties": {
@@ -29083,6 +30269,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "useBannerContextVariants",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/BannerContext/useBannerContextVariants",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "useBaseMenuItemVariants",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/BaseMenu/useBaseMenuItemVariants",
     "properties": {
@@ -29097,6 +30295,18 @@
     "class": "ModuleScript",
     "name": "useBindable",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Utility/useBindable",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "useBreadcrumbVariants",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Breadcrumb/useBreadcrumbVariants",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -29671,18 +30881,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "useIndicatorVariants",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Avatar/useIndicatorVariants",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "useInitializedValue",
     "path": "CageMeshMigrationTool/root/Packages/_Index/ReactUtils/ReactUtils/useInitializedValue",
     "properties": {
@@ -29755,6 +30953,30 @@
   },
   {
     "class": "ModuleScript",
+    "name": "useInputPlatform",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Utility/useInputPlatform",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "useInputPlatform",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Utility/useInputPlatform/useInputPlatform",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "useInputVariants",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/InternalInput/useInputVariants",
     "properties": {
@@ -29769,6 +30991,30 @@
     "class": "ModuleScript",
     "name": "useInteraction",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Motion/Motion/Utility/useInteraction",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "useInternalNoticeLayout",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/InternalNotice/useInternalNoticeLayout",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "useInternalNoticeVariantsProps",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/InternalNotice/useInternalNoticeVariantsProps",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -29829,6 +31075,18 @@
     "class": "ModuleScript",
     "name": "useLazyRef",
     "path": "CageMeshMigrationTool/root/Packages/_Index/ReactUtils/ReactUtils/useLazyRef",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "useLinkVariants",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Link/useLinkVariants",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -30583,8 +31841,32 @@
   },
   {
     "class": "ModuleScript",
+    "name": "useShortcutVariants",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Shortcut/useShortcutVariants",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "useSingleMonthCalendarState",
     "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/DateTimePicker/Calendar/useSingleMonthCalendarState",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "useSliderCaptureKeys",
+    "path": "CageMeshMigrationTool/root/Packages/_Index/Foundation/Foundation/Components/Slider/useSliderCaptureKeys",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",

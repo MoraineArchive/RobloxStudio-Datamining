@@ -3,7 +3,6 @@ local Packages = Foundation.Parent
 local Dash = require(Packages.Dash)
 local React = require(Packages.React)
 
-local Flags = require(Foundation.Utility.Flags)
 local Text = require(Foundation.Components.Text)
 local View = require(Foundation.Components.View)
 local useTokens = require(Foundation.Providers.Style.useTokens)
@@ -33,7 +32,7 @@ local function Story(props)
 			label = {
 				text = controls.labelText,
 				position = controls.labelPosition,
-				hint = if Flags.FoundationInternalInputBeta then controls.hintText else nil,
+				hint = controls.hintText,
 			},
 			customVariantProps = {
 				tag = "row align-x-center align-y-center gap-small",

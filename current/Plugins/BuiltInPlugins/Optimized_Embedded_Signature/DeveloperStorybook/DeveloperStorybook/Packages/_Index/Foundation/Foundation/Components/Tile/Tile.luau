@@ -3,7 +3,6 @@ local Packages = Foundation.Parent
 
 local React = require(Packages.React)
 
-local Flags = require(Foundation.Utility.Flags)
 local Types = require(Foundation.Components.Types)
 local View = require(Foundation.Components.View)
 local withCommonProps = require(Foundation.Utility.withCommonProps)
@@ -37,15 +36,13 @@ local defaultProps = {
 local function Tile(tileProps: TileProps, ref: React.Ref<GuiObject>?)
 	local props = withDefaults(tileProps, defaultProps)
 
-	local contextValue = if Flags.FoundationStableContextValues
-		then React.useMemo(function()
-			return {
-				isContained = props.isContained,
-				fillDirection = props.FillDirection,
-				testId = props.testId,
-			}
-		end, { props.isContained, props.FillDirection, props.testId } :: { unknown })
-		else nil
+	local contextValue = React.useMemo(function()
+		return {
+			isContained = props.isContained,
+			fillDirection = props.FillDirection,
+			testId = props.testId,
+		}
+	end, { props.isContained, props.FillDirection, props.testId } :: { unknown })
 
 	return React.createElement(
 		View,
@@ -69,13 +66,7 @@ local function Tile(tileProps: TileProps, ref: React.Ref<GuiObject>?)
 		{
 			TileContext = if props.children
 				then React.createElement(TileContext.Provider, {
-					value = if Flags.FoundationStableContextValues
-						then contextValue
-						else {
-							isContained = props.isContained,
-							fillDirection = props.FillDirection,
-							testId = props.testId,
-						},
+					value = contextValue,
 				}, props.children)
 				else nil,
 		}

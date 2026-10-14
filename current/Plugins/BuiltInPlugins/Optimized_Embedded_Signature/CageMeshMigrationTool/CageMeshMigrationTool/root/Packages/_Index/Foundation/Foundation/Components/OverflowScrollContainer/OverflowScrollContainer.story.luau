@@ -139,7 +139,7 @@ local function InputTypesStory(props: StoryProps)
 	)
 end
 
-local function SizesStory()
+local function SizingStory()
 	return React.createElement(
 		View,
 		{
@@ -208,36 +208,23 @@ return {
 		},
 		{
 			name = "Scrim states",
-			summary = "Both scrims held open at the controlled size, resting above hovered, so the "
-				.. "two treatments can be read side by side without pointing at either",
 			story = ScrimStatesStory,
 		},
 		{
 			name = "Input types",
-			summary = "Scrims held open at the controlled size for each preferred input, so the "
-				.. "direction affordance can be compared: a chevron for keyboard and mouse and for "
-				.. "touch, a shoulder-button glyph for gamepad",
 			story = InputTypesStory,
 		},
 		{
-			name = "Sizes",
-			summary = "Every supported size over rows of one fixed height, so the only thing that "
-				.. "changes down the list is the scrim's chevron. Size does not set the "
-				.. "container's height, which comes from the content, nor the scrim's width, "
-				.. "which follows the measured content height",
-			story = SizesStory,
+			name = "Sizing",
+			story = SizingStory,
 		},
 		{
 			name = "Row heights",
-			summary = "One size over rows of three different heights, scrims held open. The scrim "
-				.. "measures the row it overlays, so a taller row widens the scrim and grows the "
-				.. "chevron's square, while the chevron glyph itself stays fixed at the "
-				.. "controlled size",
 			story = RowHeightsStory,
 		},
 	},
 	controls = {
-		size = Dash.values(InputSize),
+		size = INPUT_SIZES,
 		forceHovered = false,
 		forceScrimsVisible = false,
 		preferredInput = {

@@ -27,8 +27,11 @@ type VariantProps = composeStyleVariant.VariantProps
 local Tokens = require(Foundation.Providers.Style.Tokens)
 type Tokens = Tokens.Tokens
 
+local Flags = require(Foundation.Utility.Flags)
+
 type InputVariantProps = {
 	container: {
+		fgStyle: ColorStyleValue?,
 		bgStyle: ColorStyleValue?,
 		strokeStyle: ColorStyleValue?,
 		strokeThickness: number?,
@@ -39,6 +42,7 @@ type InputVariantProps = {
 local function getInputVariantsFactory(tokens: Tokens)
 	local common: InputVariantProps = {
 		container = {
+			fgStyle = if Flags.FoundationFixColorOnScrubbableNumberInput then tokens.Color.Shift.Shift_200 else nil,
 			strokeStyle = tokens.Color.Stroke.Emphasis,
 			strokeThickness = tokens.Stroke.Standard,
 		},
@@ -55,12 +59,16 @@ local function getInputVariantsFactory(tokens: Tokens)
 		[InputVariant.Standard] = {},
 		[InputVariant.Contrast] = {
 			container = {
+				fgStyle = if Flags.FoundationFixColorOnScrubbableNumberInput
+					then tokens.Color.Shift.Shift_300
+					else nil :: never,
 				bgStyle = tokens.Color.Shift.Shift_200,
 				strokeStyle = Dash.None,
 			},
 		},
 		[InputVariant.Utility] = {
 			container = {
+				fgStyle = Dash.None,
 				bgStyle = Dash.None,
 				strokeStyle = Dash.None,
 			},

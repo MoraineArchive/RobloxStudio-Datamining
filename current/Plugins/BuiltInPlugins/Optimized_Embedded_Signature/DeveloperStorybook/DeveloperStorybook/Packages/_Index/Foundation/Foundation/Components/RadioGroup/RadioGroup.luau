@@ -4,7 +4,6 @@ local Packages = Foundation.Parent
 local React = require(Packages.React)
 
 local Types = require(Foundation.Components.Types)
-local View = require(Foundation.Components.View)
 local withCommonProps = require(Foundation.Utility.withCommonProps)
 local withDefaults = require(Foundation.Utility.withDefaults)
 
@@ -15,8 +14,6 @@ local InputSize = require(Foundation.Enums.InputSize)
 type InputSize = InputSize.InputSize
 local InputPlacement = require(Foundation.Enums.InputPlacement)
 type InputPlacement = InputPlacement.InputPlacement
-
-local Flags = require(Foundation.Utility.Flags)
 
 export type RadioGroupProps = {
 	-- The value of the currently checked radio item.
@@ -48,60 +45,28 @@ local function RadioGroup(radioGroupProps: RadioGroupProps, ref: React.Ref<GuiOb
 		props.onValueChanged(newValue)
 	end, { setValue, props.onValueChanged } :: { unknown })
 
-	local contextValue = if Flags.FoundationStableContextValues
-		then React.useMemo(function()
-			return {
-				value = value,
-				onValueChanged = onValueChanged,
-				Selectable = props.Selectable,
-				testId = props.testId,
-			}
-		end, { value, onValueChanged, props.Selectable, props.testId } :: { unknown })
-		else nil
-
-	if Flags.FoundationInputGroup then
-		return React.createElement(
-			InternalInputGroup,
-			withCommonProps(props, {
-				size = props.size,
-				placement = props.placement,
-				legend = props.legend,
-				ref = ref,
-			}),
-			{
-				RadioGroupContext = React.createElement(RadioGroupContext.Provider, {
-					value = if Flags.FoundationStableContextValues
-						then contextValue
-						else {
-							value = value,
-							onValueChanged = onValueChanged,
-							Selectable = props.Selectable,
-							testId = props.testId,
-						},
-				}, props.children :: React.ReactNode),
-			}
-		) :: React.ReactNode
-	else
-		return React.createElement(
-			View,
-			withCommonProps(props, {
-				tag = "col gap-medium auto-xy",
-				ref = ref,
-			}),
-			{
-				RadioGroupContext = React.createElement(RadioGroupContext.Provider, {
-					value = if Flags.FoundationStableContextValues
-						then contextValue
-						else {
-							value = value,
-							onValueChanged = onValueChanged,
-							Selectable = props.Selectable,
-							testId = props.testId,
-						},
-				}, props.children :: React.ReactNode),
-			}
-		)
-	end
+	local contextValue = React.useMemo(function()
+		return {
+			value = value,
+			onValueChanged = onValueChanged,
+			Selectable = props.Selectable,
+			testId = props.testId,
+		}
+	end, { value, onValueChanged, props.Selectable, props.testId } :: { unknown })
+	return React.createElement(
+		InternalInputGroup,
+		withCommonProps(props, {
+			size = props.size,
+			placement = props.placement,
+			legend = props.legend,
+			ref = ref,
+		}),
+		{
+			RadioGroupContext = React.createElement(RadioGroupContext.Provider, {
+				value = contextValue,
+			}, props.children :: React.ReactNode),
+		}
+	) :: React.ReactNode
 end
 
 return React.memo(React.forwardRef(RadioGroup))

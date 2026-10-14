@@ -1,8 +1,6 @@
 local Foundation = script:FindFirstAncestor("Foundation")
 local Packages = Foundation.Parent
 
-local Flags = require(Foundation.Utility.Flags)
-
 local Dash = require(Packages.Dash)
 local Otter = require(Packages.Otter)
 local React = require(Packages.React)
@@ -46,7 +44,9 @@ type OnCloseCallbackReason = OnCloseCallbackReason.OnCloseCallbackReason
 export type DialogProps = {
 	onClose: ((reason: OnCloseCallbackReason?) -> ())?,
 	size: DialogSize?,
+	-- **DEPRECATED**: Dialog should always use the overlay portal. Set `disablePortal` to false.
 	disablePortal: boolean?,
+	-- **DEPRECATED**: Dialog should always render with a backdrop. Set `hasBackdrop` to true.
 	hasBackdrop: boolean?,
 	children: React.ReactNode,
 	testId: string?,
@@ -230,7 +230,7 @@ local function Dialog(dialogProps: DialogInternalProps)
 
 	local content = React.createElement(View, {
 		ZIndex = elevation.zIndex,
-		tag = if Flags.FoundationDialogBetaUpdate then "size-full padding-y-xlarge" else "size-full",
+		tag = "size-full padding-y-xlarge",
 		testId = `{props.testId}--container`,
 	}, {
 		Backdrop = if props.hasBackdrop

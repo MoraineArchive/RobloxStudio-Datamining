@@ -1,66 +1,66 @@
 [
   {
-    "bytecodeOrUnreadable": 2820,
-    "instances": 3142,
+    "bytecodeOrUnreadable": 2928,
+    "instances": 3251,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/9SliceEditor.rbxm",
-    "sha256": "a3a9c2bc9fa242a6476cfa514bcb65c6e7f28413a3407e96165a21669d6e4b5e",
+    "sha256": "f801acc78e47e13bf5041d40d66dceb72eeddbcd85c2bbb88e14f86e3bae6326",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 4661,
-    "instances": 5233,
+    "bytecodeOrUnreadable": 4603,
+    "instances": 5173,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/AdaptiveAnimationSupport.rbxm",
-    "sha256": "31910e668b60ae31e045e508fe46cc2bcdcd50bcb150d3b346de52b3487be619",
+    "sha256": "e45be87ae0a7ef91acec12cb4cc25d87f83ea80db4c21efde36fdf2121a287f2",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2613,
-    "instances": 2894,
+    "bytecodeOrUnreadable": 2726,
+    "instances": 3008,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/AlignmentTool.rbxm",
-    "sha256": "a52945aee6976ea65c660a6c02eeadbc3f6b3f42f8fbf519eab5301628603395",
+    "sha256": "88c7e5d938d7a40ac5720bad347cad04cf9fdd5a4537c18fef35c5f1f3c42f4a",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3246,
-    "instances": 3584,
+    "bytecodeOrUnreadable": 3328,
+    "instances": 3670,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/AnimationClipEditor.rbxm",
-    "sha256": "e4e551344d6142f0a03707752586a5c309048d5b315decb3516ac24a804df29c",
+    "sha256": "51b176503116fdc4a198accf609e02802c73acdfa854b0d9ed23d0e883cabd36",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3211,
-    "instances": 3572,
+    "bytecodeOrUnreadable": 3290,
+    "instances": 3655,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/AssetImporter.rbxm",
-    "sha256": "8b5d10d48b26d82f5615f42fa8d31565650c94278ed540dd5573578a08240c5b",
+    "sha256": "a4c0c30a6ea1d5ef6b876ca11889c1c59524c645830b47c9e34a2e3224a718f8",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2610,
-    "instances": 2907,
+    "bytecodeOrUnreadable": 2720,
+    "instances": 3018,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/AudioDiscovery.rbxm",
-    "sha256": "e5b56b0e8186c27bd8baf6be9ea8bdb3763d82e05089bda5d5837379d7845d90",
+    "sha256": "6394a36d60382e8493ab39931f63fbb7bc63f51db3e6494f45a0a30069eb00a1",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2848,
-    "instances": 3162,
+    "bytecodeOrUnreadable": 2956,
+    "instances": 3271,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/AutomaticRun.rbxm",
-    "sha256": "298c96ce01f15ccd614026dcd30d9b7349b68a6cabb162d12e9b16372ab6bd29",
+    "sha256": "68a66bcef019fdec1211d7e70187bcdfefb5e5b2f2912f3a87d6254eac14f2aa",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 4205,
-    "instances": 4705,
+    "bytecodeOrUnreadable": 4282,
+    "instances": 4786,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/AvatarCompatibilityPreviewer.rbxm",
-    "sha256": "1bd624a7b35d043aa44e2b93d4f0fca945d29cd1389a6a9e6cea7f0470914c74",
+    "sha256": "840a7005844cb3c77c0cea5741840d04f85e01292bb3f560aa85f34723ec908d",
     "sources": 0
   },
   {
@@ -68,279 +68,271 @@
     "instances": 186,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/AvatarImporter.rbxm",
-    "sha256": "bc5ebf4418fd8d0191230ea15d887b9250c710e00b02382d7a8c832f78e6d562",
+    "sha256": "09a8f1e8cc1ce4aa3102ed2a1146a250bfe3997ff73fbf7336184c8da6b4699c",
     "sources": 0
   },
   {
     "bytecodeOrUnreadable": 0,
-    "instances": 2690,
+    "instances": 2797,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/CageMeshMigrationTool.rbxm",
-    "sha256": "85a88e50a8fb6cb3a098f05c5dede8029f84e370a1019593e7094d6254c14f12",
-    "sources": 2424
+    "sha256": "9431f4ac0d6c7138242130635a50f5bf80ecf9ad20c8b59d1e18652e2d767dc2",
+    "sources": 2530
   },
   {
-    "bytecodeOrUnreadable": 3136,
-    "instances": 3484,
+    "bytecodeOrUnreadable": 3244,
+    "instances": 3593,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/CompositorDebugger.rbxm",
-    "sha256": "b337a286d7503613a6f5f58532e2dcf4c00e49d6c37903aca1627b8c6e9e4f2d",
+    "sha256": "463fb440bfa95f9e81741293f33eaf65724873644b64d790f95ca49033852d63",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2810,
-    "instances": 3120,
+    "bytecodeOrUnreadable": 2925,
+    "instances": 3236,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/ConstraintTool.rbxm",
-    "sha256": "d31ac1904b4c8fe2e07f83418a8ce19d43aa0c42656131c659798ab927f8beee",
+    "sha256": "df44cbfd296df3e5c466d0ced5d3d92c9e9b9e7e4a6c9499604a23a5037de493",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2415,
-    "instances": 2691,
+    "bytecodeOrUnreadable": 2521,
+    "instances": 2798,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/ConvertToPackage.rbxm",
-    "sha256": "7c6a450c6da238b59f1270e810a89e5659b80b8dc6bc0884dd086c46bed07726",
+    "sha256": "4c24c5a19a501388d1e4131efb373a16bd3ca34712b7f0a0bac8942a6690fe95",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2494,
-    "instances": 2771,
-    "package": "BuiltInPlugins.zip",
-    "path": "Optimized_Embedded_Signature/DEPRECATED_AssetManager.rbxm",
-    "sha256": "544fd530c9de9e207af1fa392c05a07ed251746d16cd56befcd9da602fd58c6b",
-    "sources": 0
-  },
-  {
-    "bytecodeOrUnreadable": 2771,
-    "instances": 3061,
+    "bytecodeOrUnreadable": 2877,
+    "instances": 3168,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/DeveloperInspector.rbxm",
-    "sha256": "8a2e362005eabb7ca6b8e9e1e68622f7dfb90ecfb2abc6db4bcf4baa5a2fe75c",
+    "sha256": "fdbcc6877746a466c878a9427ce0211e9d56e8e4a933160d65f5da0a5306bcc7",
     "sources": 0
   },
   {
     "bytecodeOrUnreadable": 0,
-    "instances": 3695,
+    "instances": 3778,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/DeveloperStorybook.rbxm",
-    "sha256": "b9460f4d8aabfe2c442d7c5b5dfb28997b9cc037bae6c7b9c787485ce49948fd",
-    "sources": 3333
+    "sha256": "c494bbe43040350582a1c97e581d48a0f05bc214b5cdf8657579f82c37556706",
+    "sources": 3412
   },
   {
-    "bytecodeOrUnreadable": 2506,
-    "instances": 2785,
+    "bytecodeOrUnreadable": 2612,
+    "instances": 2892,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/DeviceEmulator.rbxm",
-    "sha256": "b85f198ff4594dbb47126f93ed1e068a070749eadcebf550228e30acabf350f1",
+    "sha256": "a8b3f5e4c7d1db33b498680851446ab57cc947d0ec560714b8da87c98b063ca4",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2424,
-    "instances": 2697,
+    "bytecodeOrUnreadable": 2530,
+    "instances": 2804,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/DraftsWidget.rbxm",
-    "sha256": "27fca88175c88683da5e91069da6922b0f08c795a6ee2eb3fd21c6d2e653afa5",
+    "sha256": "697c5af3df115d1b85c1efeaf77670c551ddb37859428e3a8e1d5274f81d7a39",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2758,
-    "instances": 3066,
+    "bytecodeOrUnreadable": 2866,
+    "instances": 3175,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/DynamicHeadExportTool.rbxm",
-    "sha256": "78c2980f07211b25bcfe69dc29f0a0b6249acd5e1d19e42a3b80c620f9881f4f",
+    "sha256": "1bb389322ea0899f584eb5bc7be1359ea82c6e73cf813a94142764700c5b0c9d",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2423,
-    "instances": 2696,
+    "bytecodeOrUnreadable": 2529,
+    "instances": 2803,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/EventEmulator.rbxm",
-    "sha256": "6faedab13539e03c3359528c340b0ec1a8ac63f906de8ae862909f2dc40c5a45",
+    "sha256": "544c92421299b132c301c0258c8934f0edbf7aefcaed71870c3c46fcc7a487ba",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2802,
-    "instances": 3133,
+    "bytecodeOrUnreadable": 2910,
+    "instances": 3242,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/ForceVisualizationControl.rbxm",
-    "sha256": "428ae26fc1e88932e0d0af5f6c174d4daf329a6f0cb8a72977d2f37231b4c8c1",
+    "sha256": "e5e349f57196c32bcc82d0c9c0451dc683350061ec21eec0deca9de1a54f4f93",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2672,
-    "instances": 2994,
+    "bytecodeOrUnreadable": 2747,
+    "instances": 3073,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/GameSettings.rbxm",
-    "sha256": "f47147c3a1c41b9ec61043a43186285f4c1195163eed6392f39b6c75c8eec0a8",
+    "sha256": "f06920b6a2f65423f5bb964e74cead072ac7264ce9d27a0096ec02b2f40e8d8c",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2460,
-    "instances": 2735,
+    "bytecodeOrUnreadable": 2566,
+    "instances": 2842,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/InternalAvatarTools.rbxm",
-    "sha256": "e7a85c643c2c3e3d683a56d40624ad12e745b66d7b453fe97bc33411b5b0d2c1",
+    "sha256": "d3fa2ded3f84e9737b969ade775632ae43271eb209726efdb8ffca0365a2ccb5",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3160,
-    "instances": 3514,
+    "bytecodeOrUnreadable": 3239,
+    "instances": 3597,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/KnowledgeTutorials.rbxm",
-    "sha256": "0ab73fcd6f21d1b5ab4fce0c5ed380bbc5bf48487fa8596bb49348788936015a",
+    "sha256": "dca64e6bf7a5f2c7f2f8b5a7f1d7fc36cb7d2f17e786f37fbb0240f05cafd2a8",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2725,
-    "instances": 3016,
+    "bytecodeOrUnreadable": 2845,
+    "instances": 3137,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/LayeredClothingEditor.rbxm",
-    "sha256": "41bb0905058cbb770cc9282a8d981a057654375a741cec11de2e08ff2a9fab42",
+    "sha256": "ff3d15218affbd8023d61706491a35fe37c6e15093de853b643187c9f49418ec",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3089,
-    "instances": 3448,
+    "bytecodeOrUnreadable": 3199,
+    "instances": 3559,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/LegacyChatDeprecation.rbxm",
-    "sha256": "f21b42e4c0b3fd19af913253c89d06985d196a26041dc94833348dcc8d838231",
+    "sha256": "2c5ad32536b7b8a7969baa1a9011182ae06d043afaadcd553703cc0756b68610",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2373,
-    "instances": 2632,
+    "bytecodeOrUnreadable": 2479,
+    "instances": 2739,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/LightGuides.rbxm",
-    "sha256": "af8c523f051c799d95d9cc2761352c78dd168bb64da5a655d2e036a88eb39d4e",
+    "sha256": "52c69f12b9073b0253685b054c09264816d2024a0891e409633edd8ba4cee318",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2395,
-    "instances": 2666,
+    "bytecodeOrUnreadable": 2501,
+    "instances": 2773,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/LocalizationTools.rbxm",
-    "sha256": "8fd67bb8657a8f4efd200a48ebe5b8245a237523bae2d2ae5db6826fcbcf4dc9",
+    "sha256": "9e171332d1780eb5d74d4c9eebff97fa9a2f4f0c5e326052de10b53a3079bf93",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2818,
-    "instances": 3124,
+    "bytecodeOrUnreadable": 2897,
+    "instances": 3207,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/ManageCollaborators.rbxm",
-    "sha256": "10312110c242b72aab94df35b8eea5e7441fe54333f3e9edd52aa58b4b71ec7c",
+    "sha256": "d96c9a75d062d6d1814a4136ff4429202d8395d8af914f5c8da098201cd78ef8",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2847,
-    "instances": 3164,
+    "bytecodeOrUnreadable": 2956,
+    "instances": 3274,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/MaterialGenerator.rbxm",
-    "sha256": "9d6e238ddd7755593fef12c50b810b9cc7a87e34d8c3c89734bd23cc67198c41",
+    "sha256": "67eb9f2deaede88ef2afa9b1805d210307ae19be533b94e64ce62f191bcd782a",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2898,
-    "instances": 3224,
+    "bytecodeOrUnreadable": 3007,
+    "instances": 3334,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/MaterialManager.rbxm",
-    "sha256": "658285f93ccdf29333a568b8e542860094461b878ff47bdd0238e7f9fade489b",
+    "sha256": "90d976653232e085c4adf42960ef91c75c8ac128d757c73b42169689ec0ccde0",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3214,
-    "instances": 3587,
+    "bytecodeOrUnreadable": 3294,
+    "instances": 3671,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/MaterialPicker.rbxm",
-    "sha256": "b70e3251eff36368bb56f57709effcb18cfdee9d5cf10875ee2be0dad3824557",
+    "sha256": "d3392e21787279f17e0640bb3c524195342c013ee2565375b86d17487daab91f",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 839,
-    "instances": 924,
+    "bytecodeOrUnreadable": 848,
+    "instances": 938,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/MoveDragger.rbxm",
-    "sha256": "7a39a658115565de155dac58071ae384cb91b7e4d90f70e724ccf5cc63bc7950",
+    "sha256": "ea5d8689ffe3d824a9da8e17d620bc2c648837f25eaa5211e6ad7cbcf36420b2",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2470,
-    "instances": 2748,
+    "bytecodeOrUnreadable": 2576,
+    "instances": 2855,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/NestedPackagePublisher.rbxm",
-    "sha256": "994f1d8147e920f0fb570851e53c813fbd7cbb40415a1f18e4755a2ec98aaf24",
+    "sha256": "aff532ce69afbc817b3227f6d7d923f49be9c28cb28bc3c3f44fb71d080fbcac",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3063,
-    "instances": 3413,
+    "bytecodeOrUnreadable": 3173,
+    "instances": 3524,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/PathEditor.rbxm",
-    "sha256": "201f0ed8157fd1089b042660190d28c3c669bc3ed2b063cda11d3efff493cc54",
+    "sha256": "7d01608d644403b172ddec777296b21e6cb5b4c841ef6bbec38ee6ba58511313",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2921,
-    "instances": 3239,
+    "bytecodeOrUnreadable": 3051,
+    "instances": 3372,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/PivotEditor.rbxm",
-    "sha256": "752e6972d2b232b88433fd7310127a552c607cec6a957e1e135e29e39d7ebec7",
+    "sha256": "8c98cdefce77de15382a17c9f4b764ee514bb825b82d83088a41d2956b44952a",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2428,
-    "instances": 2702,
+    "bytecodeOrUnreadable": 2534,
+    "instances": 2809,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/PlayerEmulator.rbxm",
-    "sha256": "46684909c2fdae1ff7c41735a82a911d82894109b04df5cf434a5c1aef9741bc",
+    "sha256": "2202b3ce444e7357f4864e388d88eedb2caf0aa632ebd9094d8b3b7cec5bb0a5",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2555,
-    "instances": 2835,
+    "bytecodeOrUnreadable": 2632,
+    "instances": 2916,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/PublishPlaceAs.rbxm",
-    "sha256": "234763bf50c97c89ae473b6ed7375a0f90a8ea83e1ce7032ace4ef30600ce0bf",
+    "sha256": "678d1f0f3176795c047bd9714885f281e625a254c01aa2cb70390430d822e718",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2751,
-    "instances": 3058,
+    "bytecodeOrUnreadable": 2859,
+    "instances": 3167,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/RigGenerator.rbxm",
-    "sha256": "6cda52e00df3608e90fec9c67e06693d2884e1b3babe705a4075c7c4f23987da",
+    "sha256": "e528e257da864d13d5f06fdf4b051c8603c1250bcd99d125e9f73b825dede9b7",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2676,
-    "instances": 2977,
+    "bytecodeOrUnreadable": 2784,
+    "instances": 3086,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/RoduxDevtools.rbxm",
-    "sha256": "01abe73b5ba2357aa9bb4137628a617a76c53de614eaaf1afee8a99a5b7df641",
+    "sha256": "4da7de157b34f126b75815975c0302e46918af918a15b99c6731067fb7e9be9c",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 839,
-    "instances": 924,
+    "bytecodeOrUnreadable": 848,
+    "instances": 938,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/RotateDragger.rbxm",
-    "sha256": "4eb09e2425b4cfd4d4742100672a85ae3590fe4f13d6bd38f638d7b79b303a7b",
+    "sha256": "d697b9f333ef118382f723b62fc7acbd56993b41f9ebd92e3aa828c5b400abf3",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 839,
-    "instances": 924,
+    "bytecodeOrUnreadable": 848,
+    "instances": 938,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/ScaleDragger.rbxm",
-    "sha256": "8f835683249f02d34998f9574e9925149ba9411d1d9f4a9baa48db7395f335c2",
+    "sha256": "c66e92c362817deaee123a78010e1d5275e8b731fe6e3c400eb69320d52bbf1f",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 754,
-    "instances": 842,
+    "bytecodeOrUnreadable": 841,
+    "instances": 924,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/SelectDragger.rbxm",
-    "sha256": "a003b6f79b004f77277790edd48971dbbc1cc25c2aaffd5affbffee693bb28a4",
+    "sha256": "23ec54468fe96af3436b2f4e5e6d61d182d513b59f0eb335f86cfef3bd55ea50",
     "sources": 0
   },
   {
@@ -352,83 +344,83 @@
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2890,
-    "instances": 3210,
+    "bytecodeOrUnreadable": 2998,
+    "instances": 3319,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/SocialPresence.rbxm",
-    "sha256": "824c9db1b687210547b346afb4107a8b08824ff37c4aa367732193efe6f0fd53",
+    "sha256": "aa5e5e357d8144f412d0857ff35887613604e8a508f76e1824a3be1d5adaede3",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3039,
-    "instances": 3377,
+    "bytecodeOrUnreadable": 3116,
+    "instances": 3458,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/StudioCameraUI.rbxm",
-    "sha256": "0094f06bae2016e0e8cb402298dab9d50f1e9616b64429b56cca7f11df2d503e",
+    "sha256": "2bc8d72952a11e0db62c5ffd1925f26f7478c1fb51970686f3e3bcce8fc1cb38",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3241,
-    "instances": 3606,
+    "bytecodeOrUnreadable": 3349,
+    "instances": 3715,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/StyleEditor.rbxm",
-    "sha256": "029112371439fe6fac092224bbce0b2b0a2aeeb063f152a48430906336a7756d",
+    "sha256": "ac75fecedc60c129f5a02a9ed09f9adba86f331d51fbf652f9f0724d64579607",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2921,
-    "instances": 3237,
+    "bytecodeOrUnreadable": 3026,
+    "instances": 3343,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/TagEditor.rbxm",
-    "sha256": "9773f6a7488887168fee5d335c05c8ef77b5e9f5f7e0a9d41c04d76b9357edb1",
+    "sha256": "ce65109f8fc5936c8b0ba194db856f7ff61bacfcaf935f69797e10575cdc0228",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3589,
-    "instances": 3983,
+    "bytecodeOrUnreadable": 3673,
+    "instances": 4072,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/TerrainEditor.rbxm",
-    "sha256": "9aec8c76ee994dc6867603c4d7e47453256a82a6032f9f081a48913d150a93f0",
+    "sha256": "13bcd5353faab59238dd7d628bb9f729e3b051bb7006b06c5e59976c9fe5c40a",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3166,
-    "instances": 3530,
+    "bytecodeOrUnreadable": 3245,
+    "instances": 3613,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/TerrainPaletteEditor.rbxm",
-    "sha256": "5f59a74c9a57951f515539d44007333497a97e8e6a209465183e3e86da77551d",
+    "sha256": "673e45e66db6d257ff14220c9c141bd6339ddbbf26f878f916613d7283ff7a80",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3033,
-    "instances": 3374,
+    "bytecodeOrUnreadable": 3112,
+    "instances": 3457,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/TextureGenerator.rbxm",
-    "sha256": "820a97cb4e3a0cbc461ad82a78bff9966cf8fbef8061ea6562d51ccc1362e02f",
+    "sha256": "d5c90c4870abcb7e76905efb8ac67e44164fbcf89835991edb206eeabed8bf90",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2664,
-    "instances": 2963,
+    "bytecodeOrUnreadable": 2772,
+    "instances": 3072,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/TextureViewer.rbxm",
-    "sha256": "2db41a66f5d51a50b2b01b7d9993df29ba376bff2de87e5d3c13105ca828d1c3",
+    "sha256": "2d37185d1c11b91bfd3826e4a938e4277878f8de61a665f1f3f7106a9bc383df",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 4893,
-    "instances": 5570,
+    "bytecodeOrUnreadable": 4975,
+    "instances": 5657,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/Toolbox.rbxm",
-    "sha256": "b50b858b8126bf6a41c6769f286cd41b7ac520c52637a5d642e7077556922e24",
+    "sha256": "56542cd5c69536bc4bb2391b09f89aada95db91d9815ec3cc99265928774c6e1",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 475,
-    "instances": 534,
+    "bytecodeOrUnreadable": 477,
+    "instances": 536,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/TutorialLinks.rbxm",
-    "sha256": "b52859b351ef4b3eeea7c3e37d86ed49ff2570f3299b6fc28a28509767ceb742",
+    "sha256": "a3ee0a3b9789c8f67545ce48549320c2cf3fa5002d69d83d44fa6ac3f9727f69",
     "sources": 0
   },
   {
@@ -440,11 +432,11 @@
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2661,
-    "instances": 2962,
+    "bytecodeOrUnreadable": 2769,
+    "instances": 3071,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/VRStatus.rbxm",
-    "sha256": "f02a444abccdea1582a51d47a3b368f0278e7c921e03a57f0becc2e2dba55805",
+    "sha256": "b4a11771b7b46e3a9e62c2907f9364e7b479c5cdab735517c8e8db324b8818c9",
     "sources": 0
   },
   {
@@ -456,227 +448,251 @@
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2740,
-    "instances": 3043,
+    "bytecodeOrUnreadable": 2848,
+    "instances": 3152,
     "package": "BuiltInPlugins.zip",
     "path": "Optimized_Embedded_Signature/WindControl.rbxm",
-    "sha256": "85f5bbafa292e02f620b6bf280e5d112863efa0a2cfa23532fd7008ba59af33c",
+    "sha256": "df53a0e33affccfc4278035f01b14a7011958fc32d04e0e4ced82ad253294f65",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3379,
-    "instances": 3765,
+    "bytecodeOrUnreadable": 3458,
+    "instances": 3848,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/ActivityFeed.rbxm",
-    "sha256": "16ac4eacfeca5a291ac80134d26bf48da59862502007498699b334333a03ab7c",
+    "sha256": "1156bb0bde1f4c60af5031ed9b485cd18b78ee51ecd4f32e671123bacd6c111a",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 4318,
-    "instances": 4873,
+    "bytecodeOrUnreadable": 4392,
+    "instances": 4949,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/AnimationGraphEditor.rbxm",
-    "sha256": "6348a8b30492ca02bd2c9127b6a4a23685cb7df6d62b5af419d9fc3a0440c106",
+    "sha256": "7092dd225a0529295c61ad843c2f2ac59d52bf9af88055bea90eb926b885e946",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3098,
-    "instances": 3460,
+    "bytecodeOrUnreadable": 3208,
+    "instances": 3571,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/AssetAccess.rbxm",
-    "sha256": "c0bdeb705ad45785c062b3def41b6699a4fa9031414eca2ccef28c69d24e70da",
+    "sha256": "104566f304def96b4e0c940a774ebc9fb860557650ec8c005ead6fe6338c320d",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3161,
-    "instances": 3520,
+    "bytecodeOrUnreadable": 3239,
+    "instances": 3602,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/AssetExport.rbxm",
-    "sha256": "267b9f8f99b94ffb4f387562889f9f4add39318c7b2b2eb5fa4d864c11b5309e",
+    "sha256": "b2a26a6cda82823fbd73726a02522d9bf02342056e0d44fef7ee4349c9d8a6b0",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3416,
-    "instances": 3854,
+    "bytecodeOrUnreadable": 3499,
+    "instances": 3941,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/AssetManager.rbxm",
-    "sha256": "c7d8925e9f1c09db3ad12d49cee78dcb4f412ac7ce62352af7483cd0cc610ea2",
+    "sha256": "67c0a54cef11006b543919fe9187732948b4fc715a9c4d859992da74b15e84b6",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3595,
-    "instances": 4086,
+    "bytecodeOrUnreadable": 3674,
+    "instances": 4169,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/AssetQualityValidation.rbxm",
-    "sha256": "e733de63d33b52428771ef76b8f4367fd8764fef9f53ca66701244c85a8095b4",
+    "sha256": "752ec78042777bf85981c3f6490a508d96a2b585e7562de70bf9d8afa7bce9cc",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 5108,
-    "instances": 5808,
+    "bytecodeOrUnreadable": 5227,
+    "instances": 5935,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/Assistant.rbxm",
-    "sha256": "644661e6c9e63328068220e03ce0f772e95de0db90557262fbe03f0156673e64",
+    "sha256": "a635ef056d3df555ea28e3e87e2b4d8af7f580a191e4769c51f49930fcb85d55",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2899,
-    "instances": 3231,
+    "bytecodeOrUnreadable": 3007,
+    "instances": 3340,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/AttenuationCurveEditor.rbxm",
-    "sha256": "347ee9e06af6c47e94eb0de832ecd3fe7036172bc333d4ad5b9681435e1ffaaa",
+    "sha256": "8290199079f0f32008a55a7e4484ba276591ed19542da0c65a958805495a6e3e",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3015,
-    "instances": 3358,
+    "bytecodeOrUnreadable": 3123,
+    "instances": 3467,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/AudioActions.rbxm",
-    "sha256": "fe8280a03df2de490ae5804f9f219f6b2811d59d72b4744de484dadbbf67629a",
+    "sha256": "1371748a91cdb63c83d4281ff6410fb35ca13b046c30a23fa14f03246bca1e64",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3028,
-    "instances": 3372,
+    "bytecodeOrUnreadable": 3199,
+    "instances": 3555,
+    "package": "BuiltInStandalonePlugins.zip",
+    "path": "Optimized_Embedded_Signature/AudioActivityMonitor.rbxm",
+    "sha256": "7102ea698316f5bf2e7701c2427c927e46c4def328d6a1c779da9726e2be9664",
+    "sources": 0
+  },
+  {
+    "bytecodeOrUnreadable": 3136,
+    "instances": 3481,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/AudioCompressorEditor.rbxm",
-    "sha256": "2270135e21a65dd1d97a8cfea3e54035bb3bb6a0bc4cceda78dc75f1fb81f02c",
+    "sha256": "ee188905ff875407f011157dcdff5d536e9eab7575f428115b851accc320f704",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3026,
-    "instances": 3370,
+    "bytecodeOrUnreadable": 3134,
+    "instances": 3479,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/AudioEqualizerEditor.rbxm",
-    "sha256": "1f9d797596f70dbfed046a4cb7e95e750656eb8466a299869dbea2b9be4e7566",
+    "sha256": "bfd536641ec1ef139f049ef882274fa14cb2d39d1cd018f8ecb88c513b7d77a9",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3264,
-    "instances": 3628,
+    "bytecodeOrUnreadable": 3343,
+    "instances": 3711,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/AudioPlayerEditor.rbxm",
-    "sha256": "ff2190d51a3da8aed6d9ae3e8067e7cdde2db3c906873e74515615f13a0cb16a",
+    "sha256": "f8d8047d959f03f3d12cd58cb597ad31ed541d3a7a38caef79706a89d155a290",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3434,
-    "instances": 3844,
+    "bytecodeOrUnreadable": 3194,
+    "instances": 3550,
+    "package": "BuiltInStandalonePlugins.zip",
+    "path": "Optimized_Embedded_Signature/AudioViewportVisualizations.rbxm",
+    "sha256": "356748a39c4be8cd6ae4bc7ff3cfeb27e5a98230e60469f77d7f06a54952875f",
+    "sources": 0
+  },
+  {
+    "bytecodeOrUnreadable": 3545,
+    "instances": 3958,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/AvatarSettings.rbxm",
-    "sha256": "8d578a705968699548081d4a3a908b93488d469d28a271d21b8d1da5fc918d27",
+    "sha256": "bdb6d6f8a97aa8be3afec257e825dcccec774a866a179344630af7ff65d40b31",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3047,
-    "instances": 3387,
+    "bytecodeOrUnreadable": 3124,
+    "instances": 3468,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/CancellableDialog.rbxm",
-    "sha256": "71a4202f0ce24dff7f5581cbd741aae152c0c47132ccc27541b8ad07048a6dc7",
+    "sha256": "31ba3e88b8a66d014fa1855f8dd71663052dec489ccd5fc612fd17f22d5468f7",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2474,
-    "instances": 2748,
+    "bytecodeOrUnreadable": 3055,
+    "instances": 3394,
+    "package": "BuiltInStandalonePlugins.zip",
+    "path": "Optimized_Embedded_Signature/CollectionDebugger.rbxm",
+    "sha256": "1f52f9f77e172cf931b7c3eb6d687d078e9eef6a6068d1987130486e55949f36",
+    "sources": 0
+  },
+  {
+    "bytecodeOrUnreadable": 2580,
+    "instances": 2855,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/CollisionGroupsEditor.rbxm",
-    "sha256": "380acd3449d1d6b7ab56ed539d392f5fcfde997452430cb41e03e58150ee86b6",
+    "sha256": "600b2e8c5924a9968f0cec5ba7e77a7a94edccec4475ea8ad863e3777b4b7871",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3040,
-    "instances": 3379,
+    "bytecodeOrUnreadable": 3117,
+    "instances": 3460,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/ConnectionIndicator.rbxm",
-    "sha256": "3864b08154c8106c7f2bd3fafc1ae477cf1d488e6f799c9a1d99c63544267bff",
+    "sha256": "88db9ca6d749a2b87e367e245a3e017f70b097792765605108d59c4258187a53",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3062,
-    "instances": 3407,
+    "bytecodeOrUnreadable": 3170,
+    "instances": 3516,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/ControlsEmulator.rbxm",
-    "sha256": "383a297aee97e70b671a5320cefeaefea0e6537e7639afa8693f9102bac4d379",
+    "sha256": "c12a8de0ee573e089ce09f1a33148aa6e303690c87afdc02e59a711e65968bbe",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3162,
-    "instances": 3521,
+    "bytecodeOrUnreadable": 3241,
+    "instances": 3604,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/CreatorConfig.rbxm",
-    "sha256": "8984ad210192c07450dd4122a419115f752706d6db6f3bf44a0e52ad317eb518",
+    "sha256": "74b143eefff84657b89cc78ae43a1c12547b052e5aa76bd958b8315001b6241a",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2566,
-    "instances": 2865,
+    "bytecodeOrUnreadable": 2672,
+    "instances": 2972,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/Debugger.rbxm",
-    "sha256": "d18feb9f37e59d374b20b95c004bc34b984bc06881f80a341395625c44e1df45",
+    "sha256": "840a25eb2abb1855e12b182a4a3868f805e9709d50932f2bc0aab35889350672",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3003,
-    "instances": 3344,
+    "bytecodeOrUnreadable": 3082,
+    "instances": 3427,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/DeviceSimulatorToolbar.rbxm",
-    "sha256": "36f77fb4a29b074e11d98af493dc91b1d9eb9a0d1cea6bae19ead392d5d3c78b",
+    "sha256": "d5841a73eb6f11880a1cb5feeed2aec2a344ec9744aba6c93fe1ae4aec270110",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3192,
-    "instances": 3552,
+    "bytecodeOrUnreadable": 3272,
+    "instances": 3636,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/Dialog.rbxm",
-    "sha256": "89a3f60168f3ee48cf2638d8c5ff08d60e36f39e33b9a85d2f5dddffa3813ef4",
+    "sha256": "911cf291a0e78ac20d7afd4f853bb438ed06fb0515d4b3c99cd41fc65b4171d2",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2904,
-    "instances": 3237,
+    "bytecodeOrUnreadable": 3012,
+    "instances": 3346,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/DirectionalCurveEditor.rbxm",
-    "sha256": "b79d6634d77b81731cc6a8aad03029f39fcc8016eb0d304e42f88367e2ea6052",
+    "sha256": "ea93e8985f5f9b3b617e68f6d5477a9e264d4db98ba8880d9409f117be457f40",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3250,
-    "instances": 3616,
+    "bytecodeOrUnreadable": 3365,
+    "instances": 3732,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/ExplorerPlugin.rbxm",
-    "sha256": "006cfb4a8a4228919a53430a884dbbba33c9796906d65b47cd3722c2c49bc78f",
+    "sha256": "01ecd5553d87e0dde157acf8dfcb0df512d800f7f492da67cb75c79f6328ca4d",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3075,
-    "instances": 3424,
+    "bytecodeOrUnreadable": 3183,
+    "instances": 3533,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/FindReplaceAll.rbxm",
-    "sha256": "c5f0ef57741ecc2a8bfc3047004be77787908ea90a3d584fac695e37a1d30443",
+    "sha256": "fd5a7d1db9d21d18bbb19bb39772b79f80db3fdf288a3ef88121cf42eefae4a5",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 5211,
-    "instances": 5757,
+    "bytecodeOrUnreadable": 5321,
+    "instances": 5868,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/Flipbook.rbxm",
-    "sha256": "bbf8878c72844086ebf1adeeb11b45e3c82718d25d0c85b92cb03c363b29b9c6",
+    "sha256": "4db9522df382f1653cc2250f4eb0a9a43e3ee4fcbba397150d59b30cdeea307d",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3166,
-    "instances": 3528,
+    "bytecodeOrUnreadable": 3246,
+    "instances": 3613,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/Footer.rbxm",
-    "sha256": "54dfa4ccd46a3ec924d87fed8bc04870d378d10990ac55c9ddcab03dbfb77bc3",
+    "sha256": "3f6109ff7f7e24980d5ec863c8f175e2ff3d505e8d1cf450660b6cbc135b07c9",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3308,
-    "instances": 3685,
+    "bytecodeOrUnreadable": 3387,
+    "instances": 3768,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/Gen3d.rbxm",
-    "sha256": "f8b666af090328e3c6ff6d435b31caf8bf4e7fb18951a3c8c0f4e99ad8d81c03",
+    "sha256": "ccdf63314f091828234c487d6ccb73da4f20c1263cd44a82c32f917a21d93c25",
     "sources": 0
   },
   {
@@ -688,139 +704,147 @@
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3262,
-    "instances": 3643,
+    "bytecodeOrUnreadable": 3384,
+    "instances": 3873,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/InputActionManager.rbxm",
-    "sha256": "c3ec0fc260d8f7e555b9f6677c58b46aeed5c1611e7109b6328583b0e46edc0a",
+    "sha256": "cda62e4386e3dee5d0fddee654ec6b18660a314b3fb6a2b1fe0215d2d62f5ef5",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3125,
-    "instances": 3482,
+    "bytecodeOrUnreadable": 3204,
+    "instances": 3565,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/LoginPage.rbxm",
-    "sha256": "f7cd246210beb865c9e3a1e301f205b58ff2ae1165a41755967e973fe8d9b562",
+    "sha256": "6b7c1ea7c09723b13945528aa4a8b1cf14c1a528e90f3315def567f479e581e6",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3024,
-    "instances": 3368,
+    "bytecodeOrUnreadable": 3132,
+    "instances": 3477,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/ModerationDialog.rbxm",
-    "sha256": "5c1cb26405a71465b7f170f879aea853f5e46ef042893ad07a20cfd72066ebe0",
+    "sha256": "fc4474e45522469f16ef6e9a19a97a030dc44c1081248d47fde9a4bfac5c02e9",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3117,
-    "instances": 3471,
+    "bytecodeOrUnreadable": 3196,
+    "instances": 3554,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/MultitouchEmulator.rbxm",
-    "sha256": "5481b675dce420720b812bdcb6d60a4ff9375f738d13a7ab5f1580d110af080e",
+    "sha256": "b1294584d1395861fba1266dc3d389e16e43b6bdb4aae389dff621a62dee89b5",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2704,
-    "instances": 3010,
+    "bytecodeOrUnreadable": 2812,
+    "instances": 3119,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/Notifications.rbxm",
-    "sha256": "438e4bf37092e430f211188cdb52421dfd19a85b0471d8175aa69d552e85f46b",
+    "sha256": "4c57881984d714b387233b0d9dda4eed83be82baae6043206dc793337b1072c8",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3137,
-    "instances": 3494,
+    "bytecodeOrUnreadable": 3216,
+    "instances": 3577,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/PartyEmulator.rbxm",
-    "sha256": "9f045dfc612fe389735f0f44b36f467327eacb0d85ed87beb8034bec3357b991",
+    "sha256": "63e2e824e49eec980321649ebe768c36ab1ef95a3843ee4c3cec9893ae6720ef",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3043,
-    "instances": 3393,
+    "bytecodeOrUnreadable": 3151,
+    "instances": 3502,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/PerformanceTools.rbxm",
-    "sha256": "e721e1db63b19b2cdc308a4fec6a614a90ec4dc1dc6721847a40e4e623d73c57",
+    "sha256": "afe086ee8925f54b560a605bc59ec3bd371d9bd3ada965883090402b6468903d",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3284,
-    "instances": 3651,
+    "bytecodeOrUnreadable": 3363,
+    "instances": 3734,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/PlaceAnnotations.rbxm",
-    "sha256": "9b43cf38b711f98be2bb3b985f6ee48e1ed1c35371e13a1bb32fe0d3f254fd6b",
+    "sha256": "04b464227c0c7a911d166eedae289209317f3d3b17e77a082685408487d63f70",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3217,
-    "instances": 3585,
+    "bytecodeOrUnreadable": 3296,
+    "instances": 3668,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/PlaceVersionHistory.rbxm",
-    "sha256": "83382f71b96465da5adea36fcd75f4c450ed3ceeee8cd66dfc86295fc08e30b3",
+    "sha256": "76cb8fba728ea36d76483e199020cb42f4165e44dde339b2be54bad86ec476be",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3354,
-    "instances": 3737,
+    "bytecodeOrUnreadable": 3433,
+    "instances": 3820,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/PluginManagement.rbxm",
-    "sha256": "0b19aff6ec052d9c00665367846de13f74388c16a630e6eb1518afde716ee60f",
+    "sha256": "182608c7a10cb939e2f34593913ecc0dc0c95b19fa13f602128acc49bc9a93d8",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3683,
-    "instances": 4181,
+    "bytecodeOrUnreadable": 3798,
+    "instances": 4297,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/PropertiesPlugin.rbxm",
-    "sha256": "e8e5b98e4d0a382eccc4a286fbdc88da5f11bfce5294e520770014ee53742ef9",
+    "sha256": "583a697a52d024e35126b64768ab155e3d8d1476c53b64be2ce804c8d252e9d3",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3242,
-    "instances": 3681,
+    "bytecodeOrUnreadable": 3319,
+    "instances": 3763,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/Reimport.rbxm",
-    "sha256": "9d6416abe95691a45bf3ced1362407d0ebcdc16a858c8e546a75189ab4a1d940",
+    "sha256": "2cfdbaa2abee36d1ef0696b1a615f702804439e7044529568dd82c9c0ffd8483",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3331,
-    "instances": 3702,
+    "bytecodeOrUnreadable": 3410,
+    "instances": 3785,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/Ribbon.rbxm",
-    "sha256": "396837643bb504ded1a54d7ce9a99610af11ba1bb2e44b1f2b2a1149db94eb2c",
+    "sha256": "47849717d982ae0ba860c8d776a8febf284ee8c77126f86fbc6c2ca2d8f8be02",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3183,
-    "instances": 3556,
+    "bytecodeOrUnreadable": 3262,
+    "instances": 3639,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/SceneAnalysis.rbxm",
-    "sha256": "c330ad84b1a9850f7437404216e79c2907489685d4a722f81e0288ce554b5f3c",
+    "sha256": "2da3649895b73553c707174dd51d69843139e6eb347eaee78c76ceea926ade5c",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3248,
-    "instances": 3598,
+    "bytecodeOrUnreadable": 3326,
+    "instances": 3680,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/StartPage.rbxm",
-    "sha256": "d608fd4d467bc37f154c919825e22d9e92f79b191dca76c5cf38ae46343e1eae",
+    "sha256": "818a2fbdabc6ee79b0605bd7a39a636803642be3eb07a37350b8c802f3f93f08",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3126,
-    "instances": 3482,
+    "bytecodeOrUnreadable": 3205,
+    "instances": 3565,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/SuperTemplate.rbxm",
-    "sha256": "f760a1e3d5ff357041b37eee8f7f638f94238e12a835c66981e9f5c938fe1078",
+    "sha256": "85b7974f952f2433688f4f1560c0d2095cc2b2fcaf89c7be251438bc515c9b73",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 3181,
-    "instances": 3550,
+    "bytecodeOrUnreadable": 680,
+    "instances": 768,
+    "package": "BuiltInStandalonePlugins.zip",
+    "path": "Optimized_Embedded_Signature/SystemMenu.rbxm",
+    "sha256": "75802b30ddbbc3008f09b87a4e5f893307399bf227895e849482ddd413944f92",
+    "sources": 0
+  },
+  {
+    "bytecodeOrUnreadable": 3260,
+    "instances": 3633,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/TeamCreateCollaborators.rbxm",
-    "sha256": "3d868bf5246cda8809b22cc79ca122e1286dcf27291561dfa28e2b688e4d7639",
+    "sha256": "9ccf1e30953ac61f8fec925666732e870ae8f87b77de0293bdf02871318ffbb1",
     "sources": 0
   },
   {
@@ -832,27 +856,27 @@
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2822,
-    "instances": 3140,
+    "bytecodeOrUnreadable": 2930,
+    "instances": 3249,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/Tutorials.rbxm",
-    "sha256": "62500800478da5c5c78f538ab0b20c74fa3066354bbf2e6114e52dc4b98e088d",
+    "sha256": "92cedf2304804ca08b0a418d5da7ad53b84f25e73705df5783c252f3417ad340",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2495,
-    "instances": 2777,
+    "bytecodeOrUnreadable": 2601,
+    "instances": 2884,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/UserInputPlayback.rbxm",
-    "sha256": "4f5c450cd3bcdf10bb88184963ee91bdf17966c5e72c72aa13128919e4bb9511",
+    "sha256": "739ea2720e64842645ec914f9f766eb0ab8c9be75ca89fe37959f987c265136a",
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 2999,
-    "instances": 3342,
+    "bytecodeOrUnreadable": 3108,
+    "instances": 3452,
     "package": "BuiltInStandalonePlugins.zip",
     "path": "Optimized_Embedded_Signature/VisualizationModes.rbxm",
-    "sha256": "5ce2cca3e665d0870cd2eed1fe9f3befc97d198031af39bef11c7214ab82179f",
+    "sha256": "850df3b34bad9fd0702e0bfade88071925579cc5076a9c8e8c52356256a32b6a",
     "sources": 0
   }
 ]

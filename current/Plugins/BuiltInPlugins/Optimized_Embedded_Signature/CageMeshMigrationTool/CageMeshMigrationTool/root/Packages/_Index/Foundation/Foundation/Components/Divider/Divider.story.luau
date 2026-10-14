@@ -101,7 +101,7 @@ local function OrientationStory()
 end
 
 return {
-	summary = "Divider is a simple visual element used to separate related content into distinct sections or groups.",
+	summary = "Divider is a simple visual element used to separate related content into distinct sections or groups. Variant applies to horizontal only.",
 	stories = {
 		{
 			name = "Playground",
@@ -109,7 +109,6 @@ return {
 		},
 		{
 			name = "Variants",
-			summary = "Variant applies to horizontal only.",
 			story = VariantsStory,
 		},
 		{

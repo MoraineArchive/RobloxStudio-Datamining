@@ -251,8 +251,8 @@
   },
   {
     "class": "Folder",
-    "name": "Breadcrumb",
-    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Utility/Stories/Planned/Breadcrumb",
+    "name": "BuilderIcons",
+    "path": "AnimationClipEditor/Packages/_Index/BuilderIcons",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -261,8 +261,8 @@
   },
   {
     "class": "Folder",
-    "name": "BuilderIcons",
-    "path": "AnimationClipEditor/Packages/_Index/BuilderIcons",
+    "name": "BuilderSans",
+    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Legacy/Typography/BuilderSans",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -293,6 +293,16 @@
     "class": "Folder",
     "name": "Card",
     "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Utility/Stories/Planned/Card",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Cartoon",
+    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Legacy/Typography/Cartoon",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -771,6 +781,16 @@
   },
   {
     "class": "Folder",
+    "name": "DraggerFramework",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
     "name": "Draggers",
     "path": "AnimationClipEditor/Src/Components/Draggers",
     "properties": {
@@ -792,7 +812,7 @@
   {
     "class": "Folder",
     "name": "DraggerSchemaCore",
-    "path": "AnimationClipEditor/Packages/DraggerSchemaCore",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerSchemaCore",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -993,16 +1013,6 @@
     "class": "Folder",
     "name": "Flags",
     "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Utility/Stories/Flags",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
-    "name": "Flags",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Flags",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -1443,6 +1453,16 @@
     "class": "Folder",
     "name": "LavaGlow",
     "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Generated/StyleRules/LavaGlow",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Legacy",
+    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Legacy",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -1961,6 +1981,16 @@
   },
   {
     "class": "Folder",
+    "name": "RbxDesignFoundations-31ab8d40-5.0.0",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
     "name": "React",
     "path": "AnimationClipEditor/Packages/_Index/React",
     "properties": {
@@ -2062,7 +2092,7 @@
   {
     "class": "Folder",
     "name": "Resources",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Resources",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Resources",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -2662,6 +2692,16 @@
   {
     "class": "Folder",
     "name": "Typography",
+    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Legacy/Typography",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Typography",
     "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Typography",
     "properties": {
       "AttributesSerialize": "",
@@ -3094,7 +3134,7 @@
   {
     "class": "LocalizationTable",
     "name": "LocalizedStrings",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Resources/LocalizedStrings",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Resources/LocalizedStrings",
     "properties": {
       "AttributesSerialize": "",
       "SourceLocaleId": "en-us",
@@ -3138,7 +3178,7 @@
   {
     "class": "LocalizationTable",
     "name": "SourceStrings",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Resources/SourceStrings",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Resources/SourceStrings",
     "properties": {
       "AttributesSerialize": "",
       "SourceLocaleId": "en-us",
@@ -3311,8 +3351,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1917",
-      "SourceBytecodeSha256": "aa6a0f8a5509b4fe9f8a9a2515453ff894b78213c7ac63408d5ef319f907a6c5",
+      "SourceBytecodeBytes": "1661",
+      "SourceBytecodeSha256": "94533e73528c7477b1ad72b35ac4368e0c118247c77d520b71c3a9b726ea14fc",
       "Tags": ""
     },
     "unreadable": [
@@ -3626,13 +3666,13 @@
   {
     "class": "ModuleScript",
     "name": "addUndoWaypoint",
-    "path": "AnimationClipEditor/Packages/DraggerSchemaCore/addUndoWaypoint",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/addUndoWaypoint",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "419",
-      "SourceBytecodeSha256": "f8268c80385fb4569fabed1391670d1d47914a3aa2ecc71bf271d1531c56df23",
+      "SourceBytecodeBytes": "401",
+      "SourceBytecodeSha256": "838b5c32beba1da2153e82643ff9df4464e14026e2e9420f5876765d897809e7",
       "Tags": ""
     },
     "unreadable": [
@@ -3727,8 +3767,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "11135",
-      "SourceBytecodeSha256": "0d58a1576cafb1d9b526973990e2f29d6a9dd1be9bc6d587f6f8832808ef5817",
+      "SourceBytecodeBytes": "12780",
+      "SourceBytecodeSha256": "96e16cb766db726833dbd4e8c50b41a13e257ebbd883176bdfddaeb4be8d4133",
       "Tags": ""
     },
     "unreadable": [
@@ -3775,8 +3815,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "6769",
-      "SourceBytecodeSha256": "f6007c1f5afb901b03684413053829bf6a18e95dfd4144b9c072ce4317a89fb7",
+      "SourceBytecodeBytes": "8753",
+      "SourceBytecodeSha256": "79f811bf1d5070f64fc85003c6861ecce2fea96de2a8bc2d5f1f846ea8c6861d",
       "Tags": ""
     },
     "unreadable": [
@@ -3978,7 +4018,7 @@
   {
     "class": "ModuleScript",
     "name": "Analytics",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/Analytics",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/Analytics",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -4026,13 +4066,13 @@
   {
     "class": "ModuleScript",
     "name": "AnimatedHoverBox",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Components/AnimatedHoverBox",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Components/AnimatedHoverBox",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3019",
-      "SourceBytecodeSha256": "6b81be005ea44db722ce42c6bd5d3c63d4f0fc438036465674e257fb0576bf59",
+      "SourceBytecodeBytes": "2988",
+      "SourceBytecodeSha256": "9fdbadfabdd760fd9972371c6bab3e0acf9a1f3652f942d69c3d29fb2c5fb42d",
       "Tags": ""
     },
     "unreadable": [
@@ -4111,8 +4151,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1604",
-      "SourceBytecodeSha256": "e82d3ca5b98da61b6ac9080b43e9857a9deebc8eb09a185a817ada6674a62d43",
+      "SourceBytecodeBytes": "1574",
+      "SourceBytecodeSha256": "25dc65db7c14d05b53fab43c63a4bb3c158c51f2e1feb27537ead84e3923b2d0",
       "Tags": ""
     },
     "unreadable": [
@@ -4127,8 +4167,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "12759",
-      "SourceBytecodeSha256": "a7f65756d9b3a7c25ddefc977d959d757a83244efd2474642e1a9cee514f7295",
+      "SourceBytecodeBytes": "12754",
+      "SourceBytecodeSha256": "e9b8fc43e9109431f6fce0541aaee43a7aa4be4968c7bf46443c94d73607e7e7",
       "Tags": ""
     },
     "unreadable": [
@@ -4250,7 +4290,7 @@
   {
     "class": "ModuleScript",
     "name": "AnimationTask",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/AnimationTask",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/AnimationTask",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -4522,7 +4562,7 @@
   {
     "class": "ModuleScript",
     "name": "assertGoodCFrame",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/assertGoodCFrame",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/assertGoodCFrame",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -5018,7 +5058,7 @@
   {
     "class": "ModuleScript",
     "name": "AttachmentMover",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/AttachmentMover",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/AttachmentMover",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -5039,8 +5079,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "22377",
-      "SourceBytecodeSha256": "6718b17dac8c5ce809c5e817dc2b3c2768d6fb93b39fa36792cff8967088b281",
+      "SourceBytecodeBytes": "22548",
+      "SourceBytecodeSha256": "6fbe2eb191c5e0fc9408b0215c227a06c0538abd0e2752249faea9115eaa423b",
       "Tags": ""
     },
     "unreadable": [
@@ -5599,8 +5639,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5060",
-      "SourceBytecodeSha256": "f353101443c0c8f926da7521969e4e29c1d8c32301ba10e94ceaa5637630b81f",
+      "SourceBytecodeBytes": "4703",
+      "SourceBytecodeSha256": "96e9ac4edcffc66eff021b4384c41ce91300cbb701e0beb10280e428550dec51",
       "Tags": ""
     },
     "unreadable": [
@@ -5663,8 +5703,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "9653",
-      "SourceBytecodeSha256": "44baf46823cca5b7441252751bc814c4e8971dda682828cca24f96a4368206ec",
+      "SourceBytecodeBytes": "9357",
+      "SourceBytecodeSha256": "339fdf9ea9881fd1dfee3ecbf6dec7ba16896a037e4d4354a2ad29ab3c95d508",
       "Tags": ""
     },
     "unreadable": [
@@ -5679,8 +5719,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2473",
-      "SourceBytecodeSha256": "96344028c6a61cb8ab9470a4021b1ddd75b4d67b11314a02a95ff72b85eb05e4",
+      "SourceBytecodeBytes": "2305",
+      "SourceBytecodeSha256": "cf36c3e4220de698f5277ad5de08e810451fc33cf72623ed24d9bd7ecab54dd8",
       "Tags": ""
     },
     "unreadable": [
@@ -5834,13 +5874,13 @@
   {
     "class": "ModuleScript",
     "name": "beginBoxSelect",
-    "path": "AnimationClipEditor/Packages/DraggerSchemaCore/beginBoxSelect",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/beginBoxSelect",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1071",
-      "SourceBytecodeSha256": "c91e7e6767e21189685d05dddc20ea0915453f0d4355e33ab2095d8a204506b0",
+      "SourceBytecodeBytes": "1053",
+      "SourceBytecodeSha256": "0b9efae8ef424d5142ccdeb4bad04d76cf454b884733f3fc134615cba3c91f13",
       "Tags": ""
     },
     "unreadable": [
@@ -5914,7 +5954,7 @@
   {
     "class": "ModuleScript",
     "name": "blackboxFindClosestMeshEdge",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/blackboxFindClosestMeshEdge",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/blackboxFindClosestMeshEdge",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -6042,7 +6082,7 @@
   {
     "class": "ModuleScript",
     "name": "BoundingBox",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/BoundingBox",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/BoundingBox",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -6064,7 +6104,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "6487",
-      "SourceBytecodeSha256": "0b2785df1ed33eb5b63d0397fdcf4960cf03ce42fbf9f3e98bfeedcc686e37dc",
+      "SourceBytecodeSha256": "360388a303eb983c46b6e8bcccefeaacc7a3153b1403106c5801aeb763032620",
       "Tags": ""
     },
     "unreadable": [
@@ -6074,13 +6114,13 @@
   {
     "class": "ModuleScript",
     "name": "BoundsChangedTracker",
-    "path": "AnimationClipEditor/Packages/DraggerSchemaCore/BoundsChangedTracker",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/BoundsChangedTracker",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "6563",
-      "SourceBytecodeSha256": "89af2317c2db928aa542d4ba171b738c65736ede593b5551a9b09f294e526bea",
+      "SourceBytecodeBytes": "6530",
+      "SourceBytecodeSha256": "3cdcde3393d76b611880547424dbf5f57ae9c540a93d89b5c374d96892810a74",
       "Tags": ""
     },
     "unreadable": [
@@ -6170,13 +6210,13 @@
   {
     "class": "ModuleScript",
     "name": "Breadcrumb.story",
-    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Utility/Stories/Planned/Breadcrumb/Breadcrumb.story",
+    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Components/Breadcrumb/Breadcrumb.story",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "604",
-      "SourceBytecodeSha256": "74758a9b5c86d3e4942204b4672289420135dd64178119384e09895454e03ae8",
+      "SourceBytecodeBytes": "5403",
+      "SourceBytecodeSha256": "cdf81256d5f9dc3b3f905d9b103342bac897b12c56de0f0cfbfca4b03cc05e39",
       "Tags": ""
     },
     "unreadable": [
@@ -6193,6 +6233,54 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "6497",
       "SourceBytecodeSha256": "fcea7346a0450485f0e2aac179b753d0d1e3e00e8b43aa076f56f7b6bb174c38",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Breadcrumb",
+    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Components/Breadcrumb",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "111",
+      "SourceBytecodeSha256": "595ea1a21fd58d5aa6c1a056000627656ad5c784aca3ca0b1203a97ae19f7ef7",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Breadcrumb",
+    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Components/Breadcrumb/Breadcrumb",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "5401",
+      "SourceBytecodeSha256": "3beb1dc88949618f373c77224f22a4d9e288189406fce624dba28a415ab88281",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "BreadcrumbAccessory",
+    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Components/Breadcrumb/BreadcrumbAccessory",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1715",
+      "SourceBytecodeSha256": "3a9b5483cfe0517f449d1ad6756f7fadeb3b4b65ce95d3aff37604387a405daf",
       "Tags": ""
     },
     "unreadable": [
@@ -6593,6 +6681,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "195",
       "SourceBytecodeSha256": "d05d5be941c12f36d85a72a9b82ae23c7b88de28c8a12b76db06ace3ed2fb45c",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "calculateAdjacentStepValue",
+    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Components/Slider/calculateAdjacentStepValue",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "941",
+      "SourceBytecodeSha256": "4046ad85e83f0a9666b08e852757543363d07e14e1ed26ee9e9c445a9201eee7",
       "Tags": ""
     },
     "unreadable": [
@@ -7151,8 +7255,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "10486",
-      "SourceBytecodeSha256": "b2650f04248012091f0b8ef97ebe67d41267345a005487ec2175f847ce98a53a",
+      "SourceBytecodeBytes": "10605",
+      "SourceBytecodeSha256": "77610da8c1f144011cd3e5a42a80f04604051cd0fd9d8326defc0b2d0db9a153",
       "Tags": ""
     },
     "unreadable": [
@@ -7407,8 +7511,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5798",
-      "SourceBytecodeSha256": "8e5978d1da9ef494d8cb35135969110a9a7b8b5c8204a9050f2299f5d491ea30",
+      "SourceBytecodeBytes": "5503",
+      "SourceBytecodeSha256": "2f011d4c73b3442088730189da90428ddeac1cc4ec6a0e5efa8400e1b82ad9f3",
       "Tags": ""
     },
     "unreadable": [
@@ -7455,8 +7559,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2537",
-      "SourceBytecodeSha256": "7ea0a18bd72bc040231def9f0d22a3d9f9698c72f5e71107ca72fbe3e8d687a9",
+      "SourceBytecodeBytes": "2310",
+      "SourceBytecodeSha256": "6322691f503de4e0a27f6f450428978f36f051a70d924e6ed74d03b995744fb3",
       "Tags": ""
     },
     "unreadable": [
@@ -7471,8 +7575,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4496",
-      "SourceBytecodeSha256": "43d025380cbc084782c9a8bd614e1be852d03537890644b0beea2aec1e07f485",
+      "SourceBytecodeBytes": "4309",
+      "SourceBytecodeSha256": "645bdb456cff2bc56b5a1a6e70ad26f5311b67cf17a072c204699ef3161d562d",
       "Tags": ""
     },
     "unreadable": [
@@ -7663,8 +7767,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4665",
-      "SourceBytecodeSha256": "9505ee277fa08811b79c139d3a48271eb37ac6b1f699e309157c9b5083ef3e37",
+      "SourceBytecodeBytes": "4442",
+      "SourceBytecodeSha256": "8a8308927bd76c915757ebc453537ecf6a096bbd317f88e0b8492ddde757800a",
       "Tags": ""
     },
     "unreadable": [
@@ -7771,6 +7875,22 @@
     "class": "ModuleScript",
     "name": "CircuitRush",
     "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/CircuitRush",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "177",
+      "SourceBytecodeSha256": "5a8d490224e43cdd48a92c6a28995fe027658ecfe61bf1783eff923d31604705",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "CircuitRush",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/CircuitRush",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -7913,8 +8033,24 @@
   },
   {
     "class": "ModuleScript",
+    "name": "Classic",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/Classic",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "177",
+      "SourceBytecodeSha256": "5a8d490224e43cdd48a92c6a28995fe027658ecfe61bf1783eff923d31604705",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "classifyPivot",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/classifyPivot",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/classifyPivot",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -8063,8 +8199,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "7170",
-      "SourceBytecodeSha256": "a664f1c4bf6915fa9f7dd14d7d0e28c0da3a2aaaa8113da86e27eecb6e2edd0a",
+      "SourceBytecodeBytes": "8139",
+      "SourceBytecodeSha256": "ea3e48c1f3faad7cf0fcaaae43effa84bc976c83d237825cba7c652ca367d07f",
       "Tags": ""
     },
     "unreadable": [
@@ -8602,7 +8738,7 @@
   {
     "class": "ModuleScript",
     "name": "Colors",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/Colors",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/Colors",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -8890,13 +9026,13 @@
   {
     "class": "ModuleScript",
     "name": "Components",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Components",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Components",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1608",
-      "SourceBytecodeSha256": "36685ffb3f2bca6ce2eb6fe306a3e67edddb9d4bc6436c7e575e3c677ab0e9b1",
+      "SourceBytecodeBytes": "1812",
+      "SourceBytecodeSha256": "45c25c8c15953179d93a37bd867cd13616022a7a74dc2de6ff4040893a3cc924",
       "Tags": ""
     },
     "unreadable": [
@@ -9002,7 +9138,7 @@
   {
     "class": "ModuleScript",
     "name": "computeDraggedDistance",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/computeDraggedDistance",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/computeDraggedDistance",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -9018,7 +9154,7 @@
   {
     "class": "ModuleScript",
     "name": "computeHandlePositionDistance",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/computeHandlePositionDistance",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/computeHandlePositionDistance",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -9050,7 +9186,7 @@
   {
     "class": "ModuleScript",
     "name": "conciseNumberFormat",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/conciseNumberFormat",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/conciseNumberFormat",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -9178,13 +9314,45 @@
   {
     "class": "ModuleScript",
     "name": "ConsoleAttribute",
-    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Typography/BuilderSans/ConsoleAttribute",
+    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Legacy/Typography/BuilderSans/ConsoleAttribute",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "11250",
-      "SourceBytecodeSha256": "82db865301403e37124bfbd4ec876bccdbed2fd19daca33ab320f070b3f74882",
+      "SourceBytecodeSha256": "f56c4e116a53fcefe525549c10e1d1915668dbe825b708d8f3604ca64df35ba8",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ConsoleAttribute",
+    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Legacy/Typography/Cartoon/ConsoleAttribute",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "11169",
+      "SourceBytecodeSha256": "efac71986b8bd5c9d01acef0a1842510c0fe68d036a6bfbef2762c9df9e46254",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ConsoleAttribute",
+    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Typography/BuilderSans/ConsoleAttribute",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "11899",
+      "SourceBytecodeSha256": "3a438750cdce9a6fcfad0b011cd1fc01d998d5524aac343d6f172c3c1062cc8b",
       "Tags": ""
     },
     "unreadable": [
@@ -9199,8 +9367,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "11169",
-      "SourceBytecodeSha256": "c7913768ca6ab2363135b2b3de50805f12265a7137aec047c61c33b2f5b62fe2",
+      "SourceBytecodeBytes": "11843",
+      "SourceBytecodeSha256": "1089c2065ea0a2802824bf96b8725e48df9e36a34361360a4f1cd1d2f2168290",
       "Tags": ""
     },
     "unreadable": [
@@ -9297,6 +9465,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "85",
       "SourceBytecodeSha256": "fc0c62d118c347a83efcf13c916d547818bbc056116be0d65bcfe9892eb4f33a",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "constants",
+    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Components/Slider/constants",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "982",
+      "SourceBytecodeSha256": "c652e77890a994afd2a0f331f7386d629e66eb8db764ce968e922c96cf94c905",
       "Tags": ""
     },
     "unreadable": [
@@ -9883,6 +10067,22 @@
     "class": "ModuleScript",
     "name": "CosmicDust",
     "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/CosmicDust",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "177",
+      "SourceBytecodeSha256": "5a8d490224e43cdd48a92c6a28995fe027658ecfe61bf1783eff923d31604705",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "CosmicDust",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/CosmicDust",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -10746,7 +10946,7 @@
   {
     "class": "ModuleScript",
     "name": "CursorGroupName",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/CursorGroupName",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/CursorGroupName",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -10970,13 +11170,13 @@
   {
     "class": "ModuleScript",
     "name": "CylinderMajorLines",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Components/CylinderMajorLines",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Components/CylinderMajorLines",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2085",
-      "SourceBytecodeSha256": "9d2051908912f913c115ba197f1a5e7ef4d1e77b4d7c77f20d8b092cf738f717",
+      "SourceBytecodeBytes": "2054",
+      "SourceBytecodeSha256": "e52e2d0a434dce8680e054b460bd5e042168f16ec771c5c06c22289d4b76b385",
       "Tags": ""
     },
     "unreadable": [
@@ -11281,6 +11481,294 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "89472",
       "SourceBytecodeSha256": "8703ca77f26a4b64905b845910a96ab5e9e95f89fcf3a48d5bf5f6e83c85ef0b",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/CircuitRush/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91431",
+      "SourceBytecodeSha256": "42a1dc1f0ba13bb1decda9f3a0302f97696b3e6762c804e8777b0287b01e6cc7",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/Classic/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91342",
+      "SourceBytecodeSha256": "6e8533f7e409d8b1e6ecc667f92a755c5ed815c44c721b3b9614facf5e9542e6",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/CosmicDust/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91430",
+      "SourceBytecodeSha256": "5e0ac9fe46ceb472348f06aba4053880634232bbb8999035492292431a572067",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/Default/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91430",
+      "SourceBytecodeSha256": "877fe19ad185317cee25cbf2ed05e693e5ec81cbdf2533e970c153277c6d7e50",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/ElectricLime/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91432",
+      "SourceBytecodeSha256": "b7983beb775da0fe44dd32763f1bffce7ae0fa046c55a8ff2d8dafb82a7677b0",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/HyperPlum/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91429",
+      "SourceBytecodeSha256": "86a0d6ae9bc862ad4ce2a8e15464a64ded8fe1f549760c9e8b80f51ebcd58b40",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/InfernoBlast/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91432",
+      "SourceBytecodeSha256": "b06902f9c3575b86a20660d1ce3e2b924e8fd588bbb771d951419f78ce0ebbfb",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/Kids/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91424",
+      "SourceBytecodeSha256": "debff6f321063ba1c6ab7833231f2889f25f359de5ecde0f83ce76cc179c9d5d",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/KidsClassic/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91346",
+      "SourceBytecodeSha256": "2b5be485759c3c5a2abe58c41b51b47c3b11dee3401d26a89ec719d83f56e4b7",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/KineticEnergy/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91433",
+      "SourceBytecodeSha256": "e9ab86d6953b126f0bdfb99798d6b0558d03b1b76ba89bab222e8042bfb0cb03",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/LavaGlow/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91428",
+      "SourceBytecodeSha256": "46984c3eadc7552da922d3b4e86aca070046bb77346537fb2c26e2fdccdcba18",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/NebulaDrift/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91431",
+      "SourceBytecodeSha256": "74d6f326a5182108a704d18124c83afb928a26c7b5c180ee5f407c9e4d7375ef",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/NitroFrost/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91430",
+      "SourceBytecodeSha256": "852dcc71c6545820aa5d0742f5c709f4f68924adcb98e576ecbdab4a7260104a",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/PixelPop/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91428",
+      "SourceBytecodeSha256": "ca4b7533ba203370b2c8856f0de352216179fb5ab308aa72a56bd50e3e6746cd",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/PolarFreeze/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91431",
+      "SourceBytecodeSha256": "d8b404873df1f3997568c8652ea4fa5c4f157ed923a830c5a3e118cf55ad7983",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/QuantumPulse/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91432",
+      "SourceBytecodeSha256": "a423648f68006d155b3d6d79c66d85a99510b146c780e4db8345c428e9cc2631",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/StarBurst/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91429",
+      "SourceBytecodeSha256": "98365135af5fc9a2dcf1d94a21c995e28fb578f5706918dc8a0588029390634b",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/SuperCharge/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91431",
+      "SourceBytecodeSha256": "47ad6b9279de69bab593c542ddea5d10b8620b2362552e2e7e9d3143fd6779f9",
       "Tags": ""
     },
     "unreadable": [
@@ -11919,8 +12407,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "18842",
-      "SourceBytecodeSha256": "3d84dc80700009f431de9f5056714d776faa7fda3689c326827e210bc47a4c08",
+      "SourceBytecodeBytes": "19108",
+      "SourceBytecodeSha256": "7b0be4b306755ea1b898edbb1e2b401799a1c3b4ff119faaf3dd51f715a231ff",
       "Tags": ""
     },
     "unreadable": [
@@ -12186,7 +12674,7 @@
   {
     "class": "ModuleScript",
     "name": "DebugFlags",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/DebugFlags",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/DebugFlags",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -12379,6 +12867,22 @@
     "class": "ModuleScript",
     "name": "Default",
     "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/Default",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "177",
+      "SourceBytecodeSha256": "5a8d490224e43cdd48a92c6a28995fe027658ecfe61bf1783eff923d31604705",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Default",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/Default",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -12746,13 +13250,45 @@
   {
     "class": "ModuleScript",
     "name": "DesktopAttribute",
-    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Typography/BuilderSans/DesktopAttribute",
+    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Legacy/Typography/BuilderSans/DesktopAttribute",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "11196",
-      "SourceBytecodeSha256": "55833533f599c3115123556d8ba212a07efd40b14e84de14b9142fc0c22e7148",
+      "SourceBytecodeSha256": "8061bbbc5d06bd19751de8d2b85832a94fd3763500d2bb95051e7a3e00bb0ad0",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "DesktopAttribute",
+    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Legacy/Typography/Cartoon/DesktopAttribute",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "11124",
+      "SourceBytecodeSha256": "08cff2aae07e4d1aa61c44b54e8df9e50f3d0846efa85f3e4939e1cdecf3d9b6",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "DesktopAttribute",
+    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Typography/BuilderSans/DesktopAttribute",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "11845",
+      "SourceBytecodeSha256": "dd65c4031758b74b67f6b052f8046cca330b56ed7c959814366e7941e8dc97da",
       "Tags": ""
     },
     "unreadable": [
@@ -12767,8 +13303,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "11124",
-      "SourceBytecodeSha256": "74f2182d83eebffa37ffdea53b582bb9aa285c290be0203e0b3521324dc42bed",
+      "SourceBytecodeBytes": "11798",
+      "SourceBytecodeSha256": "1036e1d2491e7b74ea449f992b9c4536ebceb51fc7773171e69cc8d2c6d1380e",
       "Tags": ""
     },
     "unreadable": [
@@ -13071,8 +13607,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "9215",
-      "SourceBytecodeSha256": "bc042fc17e5d0faad954af784e9ffcb70158baeac87833f6e9b35bd3310b5c6b",
+      "SourceBytecodeBytes": "9087",
+      "SourceBytecodeSha256": "4533c840ac87128633c3c8e10d083b4fe2f42813ae1ecf3e6094dead713a4451",
       "Tags": ""
     },
     "unreadable": [
@@ -13103,8 +13639,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2844",
-      "SourceBytecodeSha256": "646d97b3d6c201b1bb64666f6ae8d949e6da7ac04eaf4e531625900406c84c78",
+      "SourceBytecodeBytes": "1882",
+      "SourceBytecodeSha256": "b00579f7c045a815d34cfecdccd5d266f371c7ae21a1e1defac943780e96470e",
       "Tags": ""
     },
     "unreadable": [
@@ -13167,8 +13703,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1773",
-      "SourceBytecodeSha256": "a54bf6758bc24d684c075a81604be2dd69aacbdd3cb1c7ef8bf2dd22b4ddcdca",
+      "SourceBytecodeBytes": "1485",
+      "SourceBytecodeSha256": "e4e86762bed8c3c2a7d0b06ab9961c6362d8a5c3e64938c8204a8f367b1b5f00",
       "Tags": ""
     },
     "unreadable": [
@@ -13274,13 +13810,13 @@
   {
     "class": "ModuleScript",
     "name": "dispatchWorldClick",
-    "path": "AnimationClipEditor/Packages/DraggerSchemaCore/dispatchWorldClick",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/dispatchWorldClick",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2674",
-      "SourceBytecodeSha256": "7e3a84323643c402431fd71b406a721fb903e8da6c6dd6e3be40181ee36710e8",
+      "SourceBytecodeBytes": "2626",
+      "SourceBytecodeSha256": "c2420a95cf528ff8ed2ee242cb6e99d9bde5af6dcbdf505a13f03398ca511a96",
       "Tags": ""
     },
     "unreadable": [
@@ -13647,8 +14183,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5696",
-      "SourceBytecodeSha256": "77d1de3251788a20739479b7c5711a56d8e8fdf66cd1224e1720fdd42b22f774",
+      "SourceBytecodeBytes": "5691",
+      "SourceBytecodeSha256": "f83f075b390e03a2952cfb38a2c74346a3b0630ca5c2b98ce62d5af18a5ce72c",
       "Tags": ""
     },
     "unreadable": [
@@ -13818,13 +14354,13 @@
   {
     "class": "ModuleScript",
     "name": "DraggedPivot",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Components/DraggedPivot",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Components/DraggedPivot",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "787",
-      "SourceBytecodeSha256": "d142fe141080028d5997548860bae74c6c9a5510ccc31fe7b7369319afb37c8a",
+      "SourceBytecodeBytes": "756",
+      "SourceBytecodeSha256": "49e277e63fe0e8472e6daafea8730889c5ef6f0c6bde4cc484354aa591a432e5",
       "Tags": ""
     },
     "unreadable": [
@@ -13834,7 +14370,7 @@
   {
     "class": "ModuleScript",
     "name": "DraggerContext_FixtureImpl",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Implementation/DraggerContext_FixtureImpl",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Implementation/DraggerContext_FixtureImpl",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -13850,13 +14386,45 @@
   {
     "class": "ModuleScript",
     "name": "DraggerContext_PluginImpl",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Implementation/DraggerContext_PluginImpl",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Implementation/DraggerContext_PluginImpl",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "13092",
-      "SourceBytecodeSha256": "f0da2b5a6ad1dc45b9e2583d670eecdcb59fde0de9ecb1bb15b1095a4f425e13",
+      "SourceBytecodeBytes": "13087",
+      "SourceBytecodeSha256": "411e980f03e76d0996dda509b5b8351283307ccbcd30ed740960d28502dfb9f0",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "DraggerFramework",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "678",
+      "SourceBytecodeSha256": "8256ff190da8a53ad9f51e3dd12938e65e7dbcaf463018da1e1dcc271e289a62",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "DraggerFramework",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerSchemaCore/DraggerFramework",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "185",
+      "SourceBytecodeSha256": "eb02f7b067c6b2a822a7713175b036fd3f63e08549b0c2c447eaf5d787e78452",
       "Tags": ""
     },
     "unreadable": [
@@ -13871,8 +14439,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "365",
-      "SourceBytecodeSha256": "227ead3763ff2c48a848b0f64a4f620e443cef3f0cabc330600e912131c281bf",
+      "SourceBytecodeBytes": "165",
+      "SourceBytecodeSha256": "063f59d44a0363795db1144fc0bda8440d9b81d6166fe9638e94738de7b6aac0",
       "Tags": ""
     },
     "unreadable": [
@@ -13882,7 +14450,7 @@
   {
     "class": "ModuleScript",
     "name": "DraggerSchema",
-    "path": "AnimationClipEditor/Packages/DraggerSchemaCore/DraggerSchema",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/DraggerSchema",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -13904,7 +14472,39 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "1472",
-      "SourceBytecodeSha256": "a6dbc2b8bd29baabcb0fe2030ceb0c55e5e7227d6c23ab585dc2e8415181f5cd",
+      "SourceBytecodeSha256": "cbf4fe1e1da44d875b9f4020366d19f6080ae61212241d0545f52e7513453f70",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "DraggerSchemaCore",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1801",
+      "SourceBytecodeSha256": "a1183339a222a8553de5c79607150e7dcd45fa2334c7dede264230e963af2df3",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "DraggerSchemaCore",
+    "path": "AnimationClipEditor/Packages/DraggerSchemaCore",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "166",
+      "SourceBytecodeSha256": "e7bf3ead9f67b40e26d3853a4b060859223bf09d01b33dfe05e5729bbb24a4e3",
       "Tags": ""
     },
     "unreadable": [
@@ -13914,7 +14514,7 @@
   {
     "class": "ModuleScript",
     "name": "DraggerStates",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Implementation/DraggerStates",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Implementation/DraggerStates",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -13930,7 +14530,7 @@
   {
     "class": "ModuleScript",
     "name": "DraggerStateType",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Implementation/DraggerStateType",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Implementation/DraggerStateType",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -13946,13 +14546,13 @@
   {
     "class": "ModuleScript",
     "name": "DraggerToolComponent",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/DraggerTools/DraggerToolComponent",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/DraggerTools/DraggerToolComponent",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5499",
-      "SourceBytecodeSha256": "fc4e96dd2c68d9c47e75a5ce0d58dc2bff4915e43ec23bbf29082d2fc6895867",
+      "SourceBytecodeBytes": "5468",
+      "SourceBytecodeSha256": "3b69568f8cedf966f351762d387c6f21ab2902822f8536bf55e7686af75e8168",
       "Tags": ""
     },
     "unreadable": [
@@ -13962,13 +14562,13 @@
   {
     "class": "ModuleScript",
     "name": "DraggerToolFixture",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/DraggerTools/DraggerToolFixture",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/DraggerTools/DraggerToolFixture",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5546",
-      "SourceBytecodeSha256": "49b946efc5b5355644aa856ae507a509ceb8d9b80469ff0f0c0bc2411e11673e",
+      "SourceBytecodeBytes": "5515",
+      "SourceBytecodeSha256": "460e01f292b2d680c1f0fe63ac85f8ce1ef48f1528fb752c4dcb7bf0ba32a9de",
       "Tags": ""
     },
     "unreadable": [
@@ -13978,13 +14578,13 @@
   {
     "class": "ModuleScript",
     "name": "DraggerToolModel",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Implementation/DraggerToolModel",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Implementation/DraggerToolModel",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "16135",
-      "SourceBytecodeSha256": "7c251f8efa86c497421c5fe677637cc4b2ded0ab93237ca51dc23de69d637545",
+      "SourceBytecodeBytes": "16103",
+      "SourceBytecodeSha256": "c0581c43291f13f1706001062adc74389aa030fa45437f17eca70154235af4ce",
       "Tags": ""
     },
     "unreadable": [
@@ -13994,7 +14594,7 @@
   {
     "class": "ModuleScript",
     "name": "DraggerTools",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/DraggerTools",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/DraggerTools",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -14016,7 +14616,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "5756",
-      "SourceBytecodeSha256": "af26c2535c678736f71c2bccbda20ab87e00409ee5042daf964805abeae0f259",
+      "SourceBytecodeSha256": "98163ebfdfc3946f4257dc1153879e14bfa781a4f2a78f979a1caf5ce937969b",
       "Tags": ""
     },
     "unreadable": [
@@ -14042,7 +14642,7 @@
   {
     "class": "ModuleScript",
     "name": "DraggingFaceInstance",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Implementation/DraggerStates/DraggingFaceInstance",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Implementation/DraggerStates/DraggingFaceInstance",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -14058,7 +14658,7 @@
   {
     "class": "ModuleScript",
     "name": "DraggingHandle",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Implementation/DraggerStates/DraggingHandle",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Implementation/DraggerStates/DraggingHandle",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -14074,7 +14674,7 @@
   {
     "class": "ModuleScript",
     "name": "DraggingParts",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Implementation/DraggerStates/DraggingParts",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Implementation/DraggerStates/DraggingParts",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -14090,7 +14690,7 @@
   {
     "class": "ModuleScript",
     "name": "DragHelper",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/DragHelper",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/DragHelper",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -14138,7 +14738,7 @@
   {
     "class": "ModuleScript",
     "name": "DragSelecting",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Implementation/DraggerStates/DragSelecting",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Implementation/DraggerStates/DragSelecting",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -14154,13 +14754,13 @@
   {
     "class": "ModuleScript",
     "name": "DragSelectionView",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Components/DragSelectionView",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Components/DragSelectionView",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2223",
-      "SourceBytecodeSha256": "23e7749721aec14967eca0bf8835d7799cf59f39b6715c0b20110f738b16b885",
+      "SourceBytecodeBytes": "2192",
+      "SourceBytecodeSha256": "e41cce1ee7d36c4c9c5cd707c13f7f9cac3b3bc07ba26737f1cb957d6e249c7d",
       "Tags": ""
     },
     "unreadable": [
@@ -14170,7 +14770,7 @@
   {
     "class": "ModuleScript",
     "name": "DragSelector",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/DragSelector",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/DragSelector",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -14543,8 +15143,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "9536",
-      "SourceBytecodeSha256": "3f7a4dd229d439632d30b7dbc35f951658c91be82cc97facca0ab519a61212ab",
+      "SourceBytecodeBytes": "9430",
+      "SourceBytecodeSha256": "534e9bfe8ba2b0887f3c59ce887d68d02bfa3f4a103dea18ee199c683337ec91",
       "Tags": ""
     },
     "unreadable": [
@@ -14587,6 +15187,22 @@
     "class": "ModuleScript",
     "name": "ElectricLime",
     "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/ElectricLime",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "177",
+      "SourceBytecodeSha256": "5a8d490224e43cdd48a92c6a28995fe027658ecfe61bf1783eff923d31604705",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "ElectricLime",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/ElectricLime",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -14858,7 +15474,7 @@
   {
     "class": "ModuleScript",
     "name": "endBoxSelect",
-    "path": "AnimationClipEditor/Packages/DraggerSchemaCore/endBoxSelect",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/endBoxSelect",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -15099,6 +15715,22 @@
     "class": "ModuleScript",
     "name": "enums",
     "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/enums",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "442",
+      "SourceBytecodeSha256": "dc47f859b76c33b8800cf40dede2f08366d48579903feab46ca40567dc522581",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "enums",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/enums",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -15754,13 +16386,13 @@
   {
     "class": "ModuleScript",
     "name": "ExtrudeHandles",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Handles/ExtrudeHandles",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Handles/ExtrudeHandles",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "18743",
-      "SourceBytecodeSha256": "2c908e3c10c0633026823ef40bdf542e68ee1e979e1901815ef8a96e6d586864",
+      "SourceBytecodeBytes": "18711",
+      "SourceBytecodeSha256": "393c0acddf2876a57b3c697c0d0576f06f722d2e5b69bcc2110e14c418300b19",
       "Tags": ""
     },
     "unreadable": [
@@ -15770,13 +16402,13 @@
   {
     "class": "ModuleScript",
     "name": "ExtrudeHandlesImplementation",
-    "path": "AnimationClipEditor/Packages/DraggerSchemaCore/ExtrudeHandlesImplementation",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/ExtrudeHandlesImplementation",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "13569",
-      "SourceBytecodeSha256": "063915a2390d6a24399a9a7006d031f1fbfa3a999c4db6fd9d4331a7a7273877",
+      "SourceBytecodeBytes": "13437",
+      "SourceBytecodeSha256": "631d2776955247e5738d57c54eb7f6878e1e15da402113acb521a13d422d40ca",
       "Tags": ""
     },
     "unreadable": [
@@ -16319,8 +16951,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "841",
-      "SourceBytecodeSha256": "7205d35f43db215fae9078d768de625863a45caac0704a750512c1c10c514079",
+      "SourceBytecodeBytes": "861",
+      "SourceBytecodeSha256": "eec739512a71fd064cc4096163a0e144dcf786481462efcf4b9e6505abe83968",
       "Tags": ""
     },
     "unreadable": [
@@ -16762,7 +17394,7 @@
   {
     "class": "ModuleScript",
     "name": "fixSlightlyOffgridOrientation",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/fixSlightlyOffgridOrientation",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/fixSlightlyOffgridOrientation",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -16858,13 +17490,29 @@
   {
     "class": "ModuleScript",
     "name": "Flags",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Flags",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1426",
+      "SourceBytecodeSha256": "a9e1c497b9a06eba532565cf36c17eb1f321a8951e643dfe6a8cc5032fefaaa1",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Flags",
     "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Utility/Flags",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4718",
-      "SourceBytecodeSha256": "8667b3bf017fcbd6caa2f3bb11b4fda846647bfa7312a54cbf08bb7acb725daa",
+      "SourceBytecodeBytes": "4464",
+      "SourceBytecodeSha256": "311e7dc55e6da7ebba1ee93aa87c57752a90b17eb82ea011a4e54d1d66a25a9f",
       "Tags": ""
     },
     "unreadable": [
@@ -17002,7 +17650,7 @@
   {
     "class": "ModuleScript",
     "name": "FloatingValueInput",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Components/FloatingValueInput",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Components/FloatingValueInput",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -17616,7 +18264,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "179",
-      "SourceBytecodeSha256": "ae35d99736ae491f31ac0263a45edce44daede1a70a34080b322d22ce1b12980",
+      "SourceBytecodeSha256": "0c8d887fe46e29799ec7d3cfd17aaeada2cbb4e736623aed56c07f51a2e58d79",
       "Tags": ""
     },
     "unreadable": [
@@ -17632,7 +18280,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "179",
-      "SourceBytecodeSha256": "ae35d99736ae491f31ac0263a45edce44daede1a70a34080b322d22ce1b12980",
+      "SourceBytecodeSha256": "0c8d887fe46e29799ec7d3cfd17aaeada2cbb4e736623aed56c07f51a2e58d79",
       "Tags": ""
     },
     "unreadable": [
@@ -17648,7 +18296,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "179",
-      "SourceBytecodeSha256": "ae35d99736ae491f31ac0263a45edce44daede1a70a34080b322d22ce1b12980",
+      "SourceBytecodeSha256": "0c8d887fe46e29799ec7d3cfd17aaeada2cbb4e736623aed56c07f51a2e58d79",
       "Tags": ""
     },
     "unreadable": [
@@ -17663,8 +18311,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "14895",
-      "SourceBytecodeSha256": "fbfaaceb2baaa6f82f13e5bd98caeebbb41c92b238c64f98741df4ab8ebe086b",
+      "SourceBytecodeBytes": "15178",
+      "SourceBytecodeSha256": "96cfab9811c4767f482e630798e716aa406a00891f6b3419c1576c4e4a1bfe5a",
       "Tags": ""
     },
     "unreadable": [
@@ -17850,13 +18498,13 @@
   {
     "class": "ModuleScript",
     "name": "FreeformDragger",
-    "path": "AnimationClipEditor/Packages/DraggerSchemaCore/FreeformDragger",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/FreeformDragger",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "14928",
-      "SourceBytecodeSha256": "8eda937099b69b37c6616fb2e569443109e318b31a6e6bc50938c3a7d1c6c0e9",
+      "SourceBytecodeBytes": "14706",
+      "SourceBytecodeSha256": "7c31752c7f966b6955883a7d5e4beb172a1f56f25d70045180c89d24165db073",
       "Tags": ""
     },
     "unreadable": [
@@ -18287,8 +18935,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "545",
-      "SourceBytecodeSha256": "9407d3444534588688ff5943b6e1a3d43ba4b9441077fbb0e6028b7cf2473fc8",
+      "SourceBytecodeBytes": "558",
+      "SourceBytecodeSha256": "f7284ff981676d25c3a96d07a2730eaaadf9bf01bca0821e25a4ffc45617d8e7",
       "Tags": ""
     },
     "unreadable": [
@@ -18442,7 +19090,7 @@
   {
     "class": "ModuleScript",
     "name": "getBoundingBoxScale",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/getBoundingBoxScale",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/getBoundingBoxScale",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -18746,7 +19394,7 @@
   {
     "class": "ModuleScript",
     "name": "getEdgeHotspot",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/getEdgeHotspot",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/getEdgeHotspot",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -18762,7 +19410,7 @@
   {
     "class": "ModuleScript",
     "name": "getEngineFeatureDraggerServiceUseBoundingBoxes",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Flags/getEngineFeatureDraggerServiceUseBoundingBoxes",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getEngineFeatureDraggerServiceUseBoundingBoxes",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -18778,7 +19426,7 @@
   {
     "class": "ModuleScript",
     "name": "getFaceInstance",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/getFaceInstance",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/getFaceInstance",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -19306,7 +19954,7 @@
   {
     "class": "ModuleScript",
     "name": "getFFlagDraggerBetterAlignOrientationFalse",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Flags/getFFlagDraggerBetterAlignOrientationFalse",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getFFlagDraggerBetterAlignOrientationFalse",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -19322,7 +19970,7 @@
   {
     "class": "ModuleScript",
     "name": "getFFlagDraggerEditProcModels",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Flags/getFFlagDraggerEditProcModels",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getFFlagDraggerEditProcModels",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -19338,7 +19986,7 @@
   {
     "class": "ModuleScript",
     "name": "getFFlagDraggerFixAttachmentModelDoubleMovement",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Flags/getFFlagDraggerFixAttachmentModelDoubleMovement",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getFFlagDraggerFixAttachmentModelDoubleMovement",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -19354,7 +20002,7 @@
   {
     "class": "ModuleScript",
     "name": "getFFlagDraggerFrameworkRemoveRedundancies",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Flags/getFFlagDraggerFrameworkRemoveRedundancies",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getFFlagDraggerFrameworkRemoveRedundancies",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -19370,7 +20018,7 @@
   {
     "class": "ModuleScript",
     "name": "getFFlagDraggerHandlesIsEnabledFunction",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Flags/getFFlagDraggerHandlesIsEnabledFunction",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getFFlagDraggerHandlesIsEnabledFunction",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -19386,7 +20034,7 @@
   {
     "class": "ModuleScript",
     "name": "getFFlagDraggerInputBlocksViewUpdates",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Flags/getFFlagDraggerInputBlocksViewUpdates",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getFFlagDraggerInputBlocksViewUpdates",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -19402,7 +20050,7 @@
   {
     "class": "ModuleScript",
     "name": "getFFlagDraggerReenableCtrlSelect",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Flags/getFFlagDraggerReenableCtrlSelect",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getFFlagDraggerReenableCtrlSelect",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -19418,7 +20066,7 @@
   {
     "class": "ModuleScript",
     "name": "getFFlagDraggerRotateReference",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Flags/getFFlagDraggerRotateReference",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getFFlagDraggerRotateReference",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -19434,7 +20082,7 @@
   {
     "class": "ModuleScript",
     "name": "getFFlagDraggerSoftSnapHandleThinParts",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Flags/getFFlagDraggerSoftSnapHandleThinParts",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getFFlagDraggerSoftSnapHandleThinParts",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -19530,7 +20178,7 @@
   {
     "class": "ModuleScript",
     "name": "getFFlagImprovedCursors",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Flags/getFFlagImprovedCursors",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getFFlagImprovedCursors",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -19562,7 +20210,7 @@
   {
     "class": "ModuleScript",
     "name": "getFFlagNextGenDraggers",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Flags/getFFlagNextGenDraggers",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getFFlagNextGenDraggers",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -19594,7 +20242,7 @@
   {
     "class": "ModuleScript",
     "name": "getFFlagSBT4371DraggingOverEmptySpace",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Flags/getFFlagSBT4371DraggingOverEmptySpace",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getFFlagSBT4371DraggingOverEmptySpace",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -19610,7 +20258,7 @@
   {
     "class": "ModuleScript",
     "name": "getFFlagSBT4896NudgingWithNumpad",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Flags/getFFlagSBT4896NudgingWithNumpad",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getFFlagSBT4896NudgingWithNumpad",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -19626,7 +20274,7 @@
   {
     "class": "ModuleScript",
     "name": "getFFlagSBT4977DraggerTeleportsAssembly",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Flags/getFFlagSBT4977DraggerTeleportsAssembly",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getFFlagSBT4977DraggerTeleportsAssembly",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -19642,7 +20290,7 @@
   {
     "class": "ModuleScript",
     "name": "getFFlagSBT5424SelectThroughLocked",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Flags/getFFlagSBT5424SelectThroughLocked",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Flags/getFFlagSBT5424SelectThroughLocked",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -19759,8 +20407,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "7210",
-      "SourceBytecodeSha256": "373691b84935e040476ce21fa71fc6283aa2c6f2c28e305762ecc80e1ee4df09",
+      "SourceBytecodeBytes": "7965",
+      "SourceBytecodeSha256": "d1f802e3edb109ab733a80d7ca00adc8e94bc736f7f1184193e7eebd6aed642c",
       "Tags": ""
     },
     "unreadable": [
@@ -19770,7 +20418,7 @@
   {
     "class": "ModuleScript",
     "name": "getGeometry",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/getGeometry",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/getGeometry",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -19850,13 +20498,13 @@
   {
     "class": "ModuleScript",
     "name": "getHoverComponent",
-    "path": "AnimationClipEditor/Packages/DraggerSchemaCore/getHoverComponent",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/getHoverComponent",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "239",
-      "SourceBytecodeSha256": "7d6cff53371a18b942e0e6bd36a65758d9ad88d07f626517793e520803607125",
+      "SourceBytecodeSha256": "68083d10e0e5e40fddcf1d46bf522723e486db4c2a8196530288497617bcb9c4",
       "Tags": ""
     },
     "unreadable": [
@@ -20015,8 +20663,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "553",
-      "SourceBytecodeSha256": "ec9dd21054ec4303b436dcaff9fab6b207dddf494d6aa8b6817f3ec24b0e7fcd",
+      "SourceBytecodeBytes": "440",
+      "SourceBytecodeSha256": "e80c0ef7ecb26866efca42e4af71d27578335f33ae156fd3b3a9c2cceaee8e7a",
       "Tags": ""
     },
     "unreadable": [
@@ -20122,13 +20770,13 @@
   {
     "class": "ModuleScript",
     "name": "getMouseTarget",
-    "path": "AnimationClipEditor/Packages/DraggerSchemaCore/getMouseTarget",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/getMouseTarget",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2433",
-      "SourceBytecodeSha256": "4e05805016a0ef39d2cf2600b36b67d9fad7f234fc46b8681aab718d825e1f5b",
+      "SourceBytecodeBytes": "2403",
+      "SourceBytecodeSha256": "9420abe58a6f8a963c5f49df8b2e32741da6297d09b2cbff469070a2ee64730d",
       "Tags": ""
     },
     "unreadable": [
@@ -20170,13 +20818,13 @@
   {
     "class": "ModuleScript",
     "name": "getNextSelectables",
-    "path": "AnimationClipEditor/Packages/DraggerSchemaCore/getNextSelectables",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/getNextSelectables",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "281",
-      "SourceBytecodeSha256": "07308a56693ef068480fdd6f86227be5466ffc0ee69eed581f5779d7ab9d02be",
+      "SourceBytecodeBytes": "263",
+      "SourceBytecodeSha256": "408e2682a58d9848162e29505ccded79086d9e6c92ada08d5d2593907ce4cd77",
       "Tags": ""
     },
     "unreadable": [
@@ -20303,8 +20951,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1256",
-      "SourceBytecodeSha256": "3edd6fe3b6c704680fc668a9f917f8caac438020c19ddf0cc93958e318380560",
+      "SourceBytecodeBytes": "1146",
+      "SourceBytecodeSha256": "55735c1d02c4a60b8c0499d4f1747ca3f82d4cbe9e8aa3a3b1d6b429090dfcf7",
       "Tags": ""
     },
     "unreadable": [
@@ -20474,7 +21122,7 @@
   {
     "class": "ModuleScript",
     "name": "getSelectableWithCache",
-    "path": "AnimationClipEditor/Packages/DraggerSchemaCore/getSelectableWithCache",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/getSelectableWithCache",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -20506,7 +21154,7 @@
   {
     "class": "ModuleScript",
     "name": "getSelectionBoxComponent",
-    "path": "AnimationClipEditor/Packages/DraggerSchemaCore/getSelectionBoxComponent",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/getSelectionBoxComponent",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -20537,6 +21185,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "getSelectionEntryDirection",
+    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Components/Slider/getSelectionEntryDirection",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "3765",
+      "SourceBytecodeSha256": "408fb038ad2faadec3a5770bcee5386f8e612c3b154db069f375e71a7f34f66e",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "getSharedVariants",
     "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Components/Button/getSharedVariants",
     "properties": {
@@ -20554,13 +21218,13 @@
   {
     "class": "ModuleScript",
     "name": "getSingleSelectionInterface",
-    "path": "AnimationClipEditor/Packages/DraggerSchemaCore/getSingleSelectionInterface",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/getSingleSelectionInterface",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1445",
-      "SourceBytecodeSha256": "974c90ca724f39552e006e01f6bd96be9d1bfbeacc9046f55fde9457f7760591",
+      "SourceBytecodeBytes": "1435",
+      "SourceBytecodeSha256": "063e4121313530f6e20d6bb3c9e09033036b1e25eaa880b1ef6d96f3afc20029",
       "Tags": ""
     },
     "unreadable": [
@@ -20586,7 +21250,7 @@
   {
     "class": "ModuleScript",
     "name": "getSoftSnaps",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/getSoftSnaps",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/getSoftSnaps",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -20682,13 +21346,13 @@
   {
     "class": "ModuleScript",
     "name": "getSummonTarget",
-    "path": "AnimationClipEditor/Packages/DraggerSchemaCore/getSummonTarget",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/getSummonTarget",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1441",
-      "SourceBytecodeSha256": "3291852e38e5de3fb8376d7c9a12f68714956becb3c346c91cffbf486aee46e9",
+      "SourceBytecodeBytes": "1426",
+      "SourceBytecodeSha256": "2abd9f2691056a39f6c4e8abb0ee2e252b583044102f9548c3c0d4d52556721f",
       "Tags": ""
     },
     "unreadable": [
@@ -20751,8 +21415,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "365",
-      "SourceBytecodeSha256": "3fcbe143cf283c51eafb02658b1336f95ae7dccb6d4235dd0065b7379d8ba743",
+      "SourceBytecodeBytes": "2013",
+      "SourceBytecodeSha256": "e49087a075542db5c9a4c1443a93f47654bbada7abfe82857940220fb2646200",
       "Tags": ""
     },
     "unreadable": [
@@ -21082,13 +21746,13 @@
   {
     "class": "ModuleScript",
     "name": "Grid3D",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Components/Grid3D",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Components/Grid3D",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2281",
-      "SourceBytecodeSha256": "0c2d9cd3ebb4ee4e42e1e5f3961242045c056b8fbc86264e4df39d099335ab79",
+      "SourceBytecodeBytes": "2250",
+      "SourceBytecodeSha256": "60bdd717987352cedb2053b4175ef82c11f4422397e9a93b7776f5b0af2637a6",
       "Tags": ""
     },
     "unreadable": [
@@ -21402,7 +22066,7 @@
   {
     "class": "ModuleScript",
     "name": "Handles",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Handles",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Handles",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -21882,7 +22546,7 @@
   {
     "class": "ModuleScript",
     "name": "HotkeyHelpBuilder",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/HotkeyHelpBuilder",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/HotkeyHelpBuilder",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -21898,7 +22562,7 @@
   {
     "class": "ModuleScript",
     "name": "HotkeyUsageInfo",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Components/HotkeyUsageInfo",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Components/HotkeyUsageInfo",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -21978,7 +22642,7 @@
   {
     "class": "ModuleScript",
     "name": "HoverEscapeDetector",
-    "path": "AnimationClipEditor/Packages/DraggerSchemaCore/HoverEscapeDetector",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/HoverEscapeDetector",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -22010,7 +22674,7 @@
   {
     "class": "ModuleScript",
     "name": "HoverSnapDisplay",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Components/HoverSnapDisplay",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Components/HoverSnapDisplay",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -22026,7 +22690,7 @@
   {
     "class": "ModuleScript",
     "name": "HoverTracker",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Implementation/HoverTracker",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Implementation/HoverTracker",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -22091,6 +22755,22 @@
     "class": "ModuleScript",
     "name": "HyperPlum",
     "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/HyperPlum",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "177",
+      "SourceBytecodeSha256": "5a8d490224e43cdd48a92c6a28995fe027658ecfe61bf1783eff923d31604705",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "HyperPlum",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/HyperPlum",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -22682,7 +23362,7 @@
   {
     "class": "ModuleScript",
     "name": "Implementation",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Implementation",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Implementation",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -22923,6 +23603,22 @@
     "class": "ModuleScript",
     "name": "InfernoBlast",
     "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/InfernoBlast",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "177",
+      "SourceBytecodeSha256": "5a8d490224e43cdd48a92c6a28995fe027658ecfe61bf1783eff923d31604705",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "InfernoBlast",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/InfernoBlast",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -23311,8 +24007,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2917",
-      "SourceBytecodeSha256": "cd35c715f3fb143318bbc07daa9c6f43ca91c9f420571dadcac63422a88811d2",
+      "SourceBytecodeBytes": "2492",
+      "SourceBytecodeSha256": "4eda4c2bc6cc258e30dd61f02da13c40a0fdcf92856d58d3cf903febd83821cc",
       "Tags": ""
     },
     "unreadable": [
@@ -23775,8 +24471,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2199",
-      "SourceBytecodeSha256": "f83dc4ec3219d42e261ccdc425981abe33dd938d36962a3444411d83abd7e84d",
+      "SourceBytecodeBytes": "2081",
+      "SourceBytecodeSha256": "9c76569db42e3dc1f03c33d5acd62b6ec7da0986c7e3a4e75ff379247497a011",
       "Tags": ""
     },
     "unreadable": [
@@ -23807,8 +24503,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "6336",
-      "SourceBytecodeSha256": "1a24b9c17137da1d2b09217919702757998d33f2b029b64172e49335ef4f54e6",
+      "SourceBytecodeBytes": "5359",
+      "SourceBytecodeSha256": "b24fe1792fb4505019ef39e033b1f8395ddc76d491789c803f1ea017f164e060",
       "Tags": ""
     },
     "unreadable": [
@@ -23919,8 +24615,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "19407",
-      "SourceBytecodeSha256": "e6165d2b2fb165be46009021a7f0e96405fe958949b26cb9f1e729d1200fa8b1",
+      "SourceBytecodeBytes": "19152",
+      "SourceBytecodeSha256": "3c150a90d6c84aae6ce55f0a953a58b1cbf16a46299e1f7b67ce709ced18853a",
       "Tags": ""
     },
     "unreadable": [
@@ -24106,7 +24802,7 @@
   {
     "class": "ModuleScript",
     "name": "isCli",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/isCli",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/isCli",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -24186,7 +24882,7 @@
   {
     "class": "ModuleScript",
     "name": "isExclusiveSelectable",
-    "path": "AnimationClipEditor/Packages/DraggerSchemaCore/isExclusiveSelectable",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/isExclusiveSelectable",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -24266,7 +24962,7 @@
   {
     "class": "ModuleScript",
     "name": "isFTF",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/isFTF",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/isFTF",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -24282,7 +24978,7 @@
   {
     "class": "ModuleScript",
     "name": "isGoodRaycastResult",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/isGoodRaycastResult",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/isGoodRaycastResult",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -24490,7 +25186,7 @@
   {
     "class": "ModuleScript",
     "name": "isProtectedInstance",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/isProtectedInstance",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/isProtectedInstance",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -24922,6 +25618,22 @@
   {
     "class": "ModuleScript",
     "name": "jest.config",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/jest.config",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "101",
+      "SourceBytecodeSha256": "909f8482f079992eed99e38c670583959866b956d2c92142e4e6d3eefd52fc67",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "jest.config",
     "path": "AnimationClipEditor/Packages/_Index/FaceControlEditorComponent/FaceControlEditorComponent/jest.config",
     "properties": {
       "AttributesSerialize": "",
@@ -25009,22 +25721,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "152",
       "SourceBytecodeSha256": "2ec704f92755dd9c889a7b87a9b4b0106cd237291d7f69605ff9800435bbe34a",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "jest.config",
-    "path": "AnimationClipEditor/Packages/DraggerSchemaCore/jest.config",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "101",
-      "SourceBytecodeSha256": "909f8482f079992eed99e38c670583959866b956d2c92142e4e6d3eefd52fc67",
       "Tags": ""
     },
     "unreadable": [
@@ -25290,7 +25986,7 @@
   {
     "class": "ModuleScript",
     "name": "JointMaker",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/JointMaker",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/JointMaker",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -25306,13 +26002,13 @@
   {
     "class": "ModuleScript",
     "name": "JointPairs",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/JointPairs",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/JointPairs",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "6808",
-      "SourceBytecodeSha256": "8c1077b6281733ce09d03ba09830e56b2a49167ac918e9ec272f10ed508ca51b",
+      "SourceBytecodeBytes": "6773",
+      "SourceBytecodeSha256": "a72ec5d970735ed3e483a45956d4548a23f5c1df27f356a8544153a2b78dd88b",
       "Tags": ""
     },
     "unreadable": [
@@ -25322,7 +26018,7 @@
   {
     "class": "ModuleScript",
     "name": "JointUtil",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/JointUtil",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/JointUtil",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -25801,6 +26497,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "Kids",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/Kids",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "177",
+      "SourceBytecodeSha256": "5a8d490224e43cdd48a92c6a28995fe027658ecfe61bf1783eff923d31604705",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "KidsClassic",
     "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/KidsClassic",
     "properties": {
@@ -25817,8 +26529,40 @@
   },
   {
     "class": "ModuleScript",
+    "name": "KidsClassic",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/KidsClassic",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "177",
+      "SourceBytecodeSha256": "5a8d490224e43cdd48a92c6a28995fe027658ecfe61bf1783eff923d31604705",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "KineticEnergy",
     "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/KineticEnergy",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "177",
+      "SourceBytecodeSha256": "5a8d490224e43cdd48a92c6a28995fe027658ecfe61bf1783eff923d31604705",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "KineticEnergy",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/KineticEnergy",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -26010,13 +26754,13 @@
   {
     "class": "ModuleScript",
     "name": "LatLonGuide",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Components/LatLonGuide",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Components/LatLonGuide",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3719",
-      "SourceBytecodeSha256": "e262d78463631a12c0bc549a6b5a6670f7cfbff113dbbc33c9e980c12c82cd3f",
+      "SourceBytecodeBytes": "3688",
+      "SourceBytecodeSha256": "9f7cd6b19380cf88e6eba6062b2c82a567f728733db0534376bec6c65b623455",
       "Tags": ""
     },
     "unreadable": [
@@ -26027,6 +26771,22 @@
     "class": "ModuleScript",
     "name": "LavaGlow",
     "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/LavaGlow",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "177",
+      "SourceBytecodeSha256": "5a8d490224e43cdd48a92c6a28995fe027658ecfe61bf1783eff923d31604705",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "LavaGlow",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/LavaGlow",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -26577,6 +27337,294 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "89464",
       "SourceBytecodeSha256": "3865d7ff94418314ebb116b0bf6f1e6e3462b1ab0050e2f3946ac21d36a02b10",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/CircuitRush/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91423",
+      "SourceBytecodeSha256": "0533a22eab84fcf5b3c44d3c166f053998b9266cd0bad6a4eb6fe1dbd9e91182",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/Classic/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91343",
+      "SourceBytecodeSha256": "33599419770865d8698bb880eb89438a39b08f333b1ba3a107ac13bafd0ad75f",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/CosmicDust/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91422",
+      "SourceBytecodeSha256": "d1bfa81d8ab2b7c151620783e147b576e14b41e9fa66faad224ac6a77d5da4bf",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/Default/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91422",
+      "SourceBytecodeSha256": "355b525e16ccd4d9c473e7e723caa4f3cb9deb9d24e6e44a498dfd18d9acb635",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/ElectricLime/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91424",
+      "SourceBytecodeSha256": "ce5590d330aa0ca1f00fb4e3c765b556c596420193df1f6c1951ad3481bb914f",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/HyperPlum/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91421",
+      "SourceBytecodeSha256": "ebd92c849a63bf97ad8d4f2b8af4957f286a33ff460cdd9bcb50720710cebd93",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/InfernoBlast/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91424",
+      "SourceBytecodeSha256": "507528adbe1975ce6b13c695d54fb5f61890368f97b98839fe29c455709f7b4d",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/Kids/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91416",
+      "SourceBytecodeSha256": "b25bc4e962bbfdaadcf112252e587fb3364daf3e10ec0708d916026a82870bb4",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/KidsClassic/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91347",
+      "SourceBytecodeSha256": "de4539c00594b8f7b2caafae018ef850e93c61eddec119b65c4ced5dd28a92e1",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/KineticEnergy/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91425",
+      "SourceBytecodeSha256": "e95089eaa3785401d5e7c678a46fb1b185e75d84652e04031017dc729b0be0c9",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/LavaGlow/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91420",
+      "SourceBytecodeSha256": "16a8e74b51b9d47abf9a5e3679d5f8864b460518038a3b95d03decc3dab679ab",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/NebulaDrift/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91423",
+      "SourceBytecodeSha256": "84e7dcbfef8514941335ac1c4887ef3d1b26f2c6a68555f957ad7dfa26eb5628",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/NitroFrost/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91422",
+      "SourceBytecodeSha256": "06451627d30632ca8353131e27d6ba749990cf845d47378a6ddb882f1fd7a97c",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/PixelPop/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91420",
+      "SourceBytecodeSha256": "251946a60d3cbeed2f7c5d07fe533e31ef88d516c9fda31d1acf302a2f4e55d6",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/PolarFreeze/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91423",
+      "SourceBytecodeSha256": "c2e193f67ddfeb927c84488ae10c1d075a8a1bcfd95cdd6b114cb5f0035d01a8",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/QuantumPulse/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91424",
+      "SourceBytecodeSha256": "af46ba8211fadf24523fa4040eca595bb2627a814af308105125aa8d25c5bfe2",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/StarBurst/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91421",
+      "SourceBytecodeSha256": "95e39bae252f9664b1bf7c0e916e24b9f255840ac5a4fbf1eedfb92e263ad3a6",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/SuperCharge/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91423",
+      "SourceBytecodeSha256": "1ca9a8cc7e858e87be62a009d138ce6967e8702a9dfd30540ace9280d421ec05",
       "Tags": ""
     },
     "unreadable": [
@@ -27530,13 +28578,13 @@
   {
     "class": "ModuleScript",
     "name": "LocalSpaceIndicator",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Components/LocalSpaceIndicator",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Components/LocalSpaceIndicator",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2520",
-      "SourceBytecodeSha256": "8419e4d7d4cf9d9d787bd11a5748c961e4e859e9432a7f9af2800d1f88baa3f0",
+      "SourceBytecodeBytes": "2489",
+      "SourceBytecodeSha256": "15e838fbf35384babd1fa8f26c1068003db0c2e6ce759a2ab9496492ef9b30d2",
       "Tags": ""
     },
     "unreadable": [
@@ -28506,6 +29554,22 @@
   {
     "class": "ModuleScript",
     "name": "Math",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/Math",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "3566",
+      "SourceBytecodeSha256": "539107da707817ed864cd7ef4c2ded1935c7653db21587a4603291cde65e2bf0",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Math",
     "path": "AnimationClipEditor/Packages/_Index/LuauPolyfill/Math",
     "properties": {
       "AttributesSerialize": "",
@@ -28529,22 +29593,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "124",
       "SourceBytecodeSha256": "cddf5f8deca7f3708e0556761689f81bf8b10186a7c84aafae6013fd8d3e7d0c",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Math",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/Math",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "3566",
-      "SourceBytecodeSha256": "539107da707817ed864cd7ef4c2ded1935c7653db21587a4603291cde65e2bf0",
       "Tags": ""
     },
     "unreadable": [
@@ -28665,6 +29713,54 @@
   },
   {
     "class": "ModuleScript",
+    "name": "Media.story",
+    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Components/Media/Media.story",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "3869",
+      "SourceBytecodeSha256": "2a0638e6833675e479dfcc8bde89751d6b0a0d68bf27118d72abb161311ec62d",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Media",
+    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Components/Media",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "106",
+      "SourceBytecodeSha256": "582a7cf878a02122299fd30049e1582fa398377c412b3e96d865b37021288d09",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Media",
+    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Components/Media/Media",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1644",
+      "SourceBytecodeSha256": "2883d63f5c66bf1fc6165b48c88de91f94dcddedde230e746ab583a89bc697eb",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "Media",
     "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Components/Tile/Media",
     "properties": {
@@ -28681,6 +29777,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "MediaAspectRatio",
+    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Enums/MediaAspectRatio",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "175",
+      "SourceBytecodeSha256": "28e777b4e7504b6c3c12352813b6c166f1d1652b8cb4bc037cf834cff69c0df7",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "MediaControls",
     "path": "AnimationClipEditor/Src/Components/AnimationControlPanel/MediaControls",
     "properties": {
@@ -28689,6 +29801,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "4743",
       "SourceBytecodeSha256": "5643d2723d6c901cbf55cee1b71b2bfc0c8a41dbb5a3d679e8a4649e2b4c9493",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "MediaOrientation",
+    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Enums/MediaOrientation",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "74",
+      "SourceBytecodeSha256": "9aebf3c3a3c57593d4c8679ecb1d1a109495c700628f098ffa622a95d7c5ea07",
       "Tags": ""
     },
     "unreadable": [
@@ -29066,7 +30194,7 @@
   {
     "class": "ModuleScript",
     "name": "MockAnalytics",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/MockAnalytics",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/MockAnalytics",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -29658,13 +30786,13 @@
   {
     "class": "ModuleScript",
     "name": "MoveHandles",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Handles/MoveHandles",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Handles/MoveHandles",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "31408",
-      "SourceBytecodeSha256": "1d872b0f60d00e36aea767a080269318b1597c3a62530ddc81f0685736cd98d3",
+      "SourceBytecodeBytes": "31578",
+      "SourceBytecodeSha256": "95952ec646fa85896510c4472f2fefd015e537a93a88f993a5ce968b030df49a",
       "Tags": ""
     },
     "unreadable": [
@@ -29674,13 +30802,13 @@
   {
     "class": "ModuleScript",
     "name": "MoveHandleView",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Components/MoveHandleView",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Components/MoveHandleView",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5031",
-      "SourceBytecodeSha256": "d45a58b8a8b2061e5fa48b08a7c26313dc7b2962c6fd8d0d693b848556862655",
+      "SourceBytecodeBytes": "5075",
+      "SourceBytecodeSha256": "38d2f1fed64b0e97890db5d981e121f840bb8b6ce15780a1c610793114afd5c2",
       "Tags": ""
     },
     "unreadable": [
@@ -29690,13 +30818,13 @@
   {
     "class": "ModuleScript",
     "name": "MovePlanarHandleView",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Components/MovePlanarHandleView",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Components/MovePlanarHandleView",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3889",
-      "SourceBytecodeSha256": "53f773e4234f39d43644aa08b0c827fcd7341c48d0cef4ffca4caa8fa9374662",
+      "SourceBytecodeBytes": "3904",
+      "SourceBytecodeSha256": "1051458852c630ecaa9cf40656f562bbacdf90dd5225db9e13d3237dd1b919fd",
       "Tags": ""
     },
     "unreadable": [
@@ -29961,6 +31089,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "NebulaDrift",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/NebulaDrift",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "177",
+      "SourceBytecodeSha256": "5a8d490224e43cdd48a92c6a28995fe027658ecfe61bf1783eff923d31604705",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "Nested.style",
     "path": "AnimationClipEditor/Packages/_Index/DeveloperFramework/DeveloperFramework/Style/__test__/Nested.style",
     "properties": {
@@ -30075,6 +31219,22 @@
     "class": "ModuleScript",
     "name": "NitroFrost",
     "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/NitroFrost",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "177",
+      "SourceBytecodeSha256": "5a8d490224e43cdd48a92c6a28995fe027658ecfe61bf1783eff923d31604705",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "NitroFrost",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/NitroFrost",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -30511,8 +31671,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "18292",
-      "SourceBytecodeSha256": "7f8b886050e51d28dac5c96f114f5117fe11967c2632c36dd71e6defbb6b1cfa",
+      "SourceBytecodeBytes": "19431",
+      "SourceBytecodeSha256": "814d7c5fbca20707f28752f76f2bf622874178673f4e2706313b29e551bf4ecf",
       "Tags": ""
     },
     "unreadable": [
@@ -30794,7 +31954,7 @@
   {
     "class": "ModuleScript",
     "name": "onExternalHover",
-    "path": "AnimationClipEditor/Packages/DraggerSchemaCore/onExternalHover",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/onExternalHover",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -30879,8 +32039,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4287",
-      "SourceBytecodeSha256": "1915bf4bfb9076eee7c106e67cadc42b924897615a06f8428a9e1365094c9fa9",
+      "SourceBytecodeBytes": "3878",
+      "SourceBytecodeSha256": "a9f52468c7c1ea5e59da9342d11a965a5ded966630d734191b1c2704f1c53b90",
       "Tags": ""
     },
     "unreadable": [
@@ -31119,8 +32279,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2668",
-      "SourceBytecodeSha256": "ee7ecf153f097f7bd0f808cb0b0da4b33043df0615505452617d135f4833232a",
+      "SourceBytecodeBytes": "2530",
+      "SourceBytecodeSha256": "6d88375fae0fc788e01fdc6123e07e58cf095eb4d2a7c0016e90107cd6b3f032",
       "Tags": ""
     },
     "unreadable": [
@@ -31279,8 +32439,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4258",
-      "SourceBytecodeSha256": "70c50a04a55a015de804423b0bf3c64199ca6406dcd1f7e5973b7016504705d7",
+      "SourceBytecodeBytes": "4100",
+      "SourceBytecodeSha256": "80ae8c3de6baabd282cfee1faeb20c8ab34a611706feb037474ebfd7d003bba1",
       "Tags": ""
     },
     "unreadable": [
@@ -31583,8 +32743,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2226",
-      "SourceBytecodeSha256": "d74e049b7479242d0cf8b2379a538683d48dc588988789614de7fcdb1cbf48cd",
+      "SourceBytecodeBytes": "2149",
+      "SourceBytecodeSha256": "7b3009af82b1f6e4da3f798a85125542c7d60b0b86061c630b5705ee42a26f9b",
       "Tags": ""
     },
     "unreadable": [
@@ -31610,7 +32770,7 @@
   {
     "class": "ModuleScript",
     "name": "PartMover",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/PartMover",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/PartMover",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -31738,7 +32898,7 @@
   {
     "class": "ModuleScript",
     "name": "PendingDraggingHandle",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Implementation/DraggerStates/PendingDraggingHandle",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Implementation/DraggerStates/PendingDraggingHandle",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -31754,7 +32914,7 @@
   {
     "class": "ModuleScript",
     "name": "PendingDraggingParts",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Implementation/DraggerStates/PendingDraggingParts",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Implementation/DraggerStates/PendingDraggingParts",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -31770,7 +32930,7 @@
   {
     "class": "ModuleScript",
     "name": "PendingSelectNext",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Implementation/DraggerStates/PendingSelectNext",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Implementation/DraggerStates/PendingSelectNext",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -31898,13 +33058,13 @@
   {
     "class": "ModuleScript",
     "name": "PivotRing",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Components/PivotRing",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Components/PivotRing",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1360",
-      "SourceBytecodeSha256": "b29e1212e3bc59a4ae4e5a05cc94baecf52e8fa70b931b089f30ecf22c70a60a",
+      "SourceBytecodeBytes": "1329",
+      "SourceBytecodeSha256": "02e3a618bbedc2f25ef67f641f6ab7df995db74a14696514375d632ac905d904",
       "Tags": ""
     },
     "unreadable": [
@@ -31915,6 +33075,22 @@
     "class": "ModuleScript",
     "name": "PixelPop",
     "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/PixelPop",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "177",
+      "SourceBytecodeSha256": "5a8d490224e43cdd48a92c6a28995fe027658ecfe61bf1783eff923d31604705",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "PixelPop",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/PixelPop",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -32441,6 +33617,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "PolarFreeze",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/PolarFreeze",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "177",
+      "SourceBytecodeSha256": "5a8d490224e43cdd48a92c6a28995fe027658ecfe61bf1783eff923d31604705",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "pollUntil",
     "path": "AnimationClipEditor/Packages/_Index/DeveloperFramework/DeveloperFramework/Util/pollUntil",
     "properties": {
@@ -32527,8 +33719,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1282",
-      "SourceBytecodeSha256": "81e2fbe615c138107e5d2d44593570f52447fe5deec848392468b00d169f9094",
+      "SourceBytecodeBytes": "1041",
+      "SourceBytecodeSha256": "c8bd87682065c0fa0382e17023253705bfac609ee4d860d985c661f9f2fb11d6",
       "Tags": ""
     },
     "unreadable": [
@@ -32815,8 +34007,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1077",
-      "SourceBytecodeSha256": "b0e424d5e1e883f99861173fb816be3dcbc014e3b0306fba86f6e0eb2ea6c711",
+      "SourceBytecodeBytes": "887",
+      "SourceBytecodeSha256": "ac74691400d1238955875a1b464d3587876a9921158057277406620fc508eddc",
       "Tags": ""
     },
     "unreadable": [
@@ -33423,8 +34615,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5796",
-      "SourceBytecodeSha256": "d6bc52158e485d5cec0c04f0b346fbe3ba8d0a4a3b1db0493c19b2b7838fe816",
+      "SourceBytecodeBytes": "5791",
+      "SourceBytecodeSha256": "2fdad0e4aec2ad92fa7ee745643521bc63fa9d99ad1eb150615bd66d46fd0c88",
       "Tags": ""
     },
     "unreadable": [
@@ -33487,8 +34679,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "7090",
-      "SourceBytecodeSha256": "9976c91535e7340214cbf36cc53b893d2a0f577800ef9060e3fb47adddd0f17a",
+      "SourceBytecodeBytes": "7085",
+      "SourceBytecodeSha256": "ac00e6094011388e1ab3a174341676d69508b54cc8894b7e6b589eaa77ff13f3",
       "Tags": ""
     },
     "unreadable": [
@@ -33625,6 +34817,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "QuantumPulse",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/QuantumPulse",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "177",
+      "SourceBytecodeSha256": "5a8d490224e43cdd48a92c6a28995fe027658ecfe61bf1783eff923d31604705",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "QueuedOneShotCrossDMPluginInvoke",
     "path": "AnimationClipEditor/Packages/_Index/PluginLoader/PluginLoader/QueuedOneShotCrossDMPluginInvoke",
     "properties": {
@@ -33743,8 +34951,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "7206",
-      "SourceBytecodeSha256": "6f360fed68ee5d7e23f031dc6e73d17fa2bb2aa19dcff1d6fffa8c513a0eb124",
+      "SourceBytecodeBytes": "6450",
+      "SourceBytecodeSha256": "f34115ba5768638330733a1583db4b9d86bf9567378a2da32a1f0259d63f441f",
       "Tags": ""
     },
     "unreadable": [
@@ -33759,8 +34967,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4986",
-      "SourceBytecodeSha256": "0f5c40040ea5330f9805968f87eaa93604d0e50d646603513365758f91a17a6a",
+      "SourceBytecodeBytes": "4783",
+      "SourceBytecodeSha256": "1b3aaa57509aaf1e89cd0bb69dd543f2542edce0b73a946087271555cbdec396",
       "Tags": ""
     },
     "unreadable": [
@@ -33791,8 +34999,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2314",
-      "SourceBytecodeSha256": "a4f973d2c17d4aafdb78cef31c34d6a6c48c826cc1bc8c65993dfda8762fc2da",
+      "SourceBytecodeBytes": "1739",
+      "SourceBytecodeSha256": "e3b7b911e65709643a384a4b668ac3154009a374615a775d2a10c71b9493f98e",
       "Tags": ""
     },
     "unreadable": [
@@ -33823,8 +35031,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2309",
-      "SourceBytecodeSha256": "73bc24097866dbc51c1696be6af74790cc1e3d1ccc9837bda31b806c5c05f72a",
+      "SourceBytecodeBytes": "2084",
+      "SourceBytecodeSha256": "1a412a0d2556d2373a6e5531d25856c93eea0daa0975bfbe9885e444bf2334da",
       "Tags": ""
     },
     "unreadable": [
@@ -33983,8 +35191,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "228",
-      "SourceBytecodeSha256": "3b99ed1bb7198e6755c6c7da9c99792865709a12540c4617e445f200deadcc89",
+      "SourceBytecodeBytes": "227",
+      "SourceBytecodeSha256": "f19670b823108c1208720c91ba9ec4c5dcfce39820da319a85882003158011dc",
       "Tags": ""
     },
     "unreadable": [
@@ -34017,6 +35225,38 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "2143",
       "SourceBytecodeSha256": "6a262c5c1de55088aa33b1d3a7dca0932412896d5bccaeb4b6afe1f5cc832c6a",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "RbxDesignFoundations",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "2143",
+      "SourceBytecodeSha256": "6a262c5c1de55088aa33b1d3a7dca0932412896d5bccaeb4b6afe1f5cc832c6a",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "RbxDesignFoundationsV4",
+    "path": "AnimationClipEditor/Packages/_Index/Foundation/RbxDesignFoundationsV4",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "228",
+      "SourceBytecodeSha256": "3b99ed1bb7198e6755c6c7da9c99792865709a12540c4617e445f200deadcc89",
       "Tags": ""
     },
     "unreadable": [
@@ -35103,8 +36343,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "64568",
-      "SourceBytecodeSha256": "2316415eb251d7bc4a01c8a4cdd4d8d43794eedcd61990ba3881263496516716",
+      "SourceBytecodeBytes": "64558",
+      "SourceBytecodeSha256": "dd39d8617259ac80a920b206ed0924727a1e980b418d7b85df39d62b788e8c08",
       "Tags": ""
     },
     "unreadable": [
@@ -36106,7 +37346,7 @@
   {
     "class": "ModuleScript",
     "name": "Ready",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Implementation/DraggerStates/Ready",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Implementation/DraggerStates/Ready",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -36639,8 +37879,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1110",
-      "SourceBytecodeSha256": "78f77f985ccc8feecfc009368e9fc485c00093ceb63ce505b62719467290bbec",
+      "SourceBytecodeBytes": "880",
+      "SourceBytecodeSha256": "cce708051ae1252d7887cf40b3f1bf2fd552f623f7e5b115021d5954ca18c6e7",
       "Tags": ""
     },
     "unreadable": [
@@ -36992,7 +38232,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "7642",
-      "SourceBytecodeSha256": "0ebde049579b37e147ec5cead788e00caf11fb2ac1e7e3e14394cf7b887f89a0",
+      "SourceBytecodeSha256": "dcf33bf57fe92377594debf0841f5cf48be2dad2e5c0359764143bb067ec9efd",
       "Tags": ""
     },
     "unreadable": [
@@ -37003,6 +38243,38 @@
     "class": "ModuleScript",
     "name": "Roact",
     "path": "AnimationClipEditor/Packages/_Index/DeveloperFramework/Roact",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "180",
+      "SourceBytecodeSha256": "898096af864a953dcb7adc797abbc0cb3dcf7d3aaaf14f4bb1646c307b149271",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Roact",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/Roact",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "180",
+      "SourceBytecodeSha256": "898096af864a953dcb7adc797abbc0cb3dcf7d3aaaf14f4bb1646c307b149271",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Roact",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerSchemaCore/Roact",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -37450,13 +38722,13 @@
   {
     "class": "ModuleScript",
     "name": "RotateBallHandleView",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Components/RotateBallHandleView",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Components/RotateBallHandleView",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1661",
-      "SourceBytecodeSha256": "d572f51d0415a05858d192faacd2ea1de770e627d0396d36c79182fad794da89",
+      "SourceBytecodeBytes": "1630",
+      "SourceBytecodeSha256": "1a5240e827c2deccc13933bc3abac48a0cd3ea30883b7321de74e8531f17e601",
       "Tags": ""
     },
     "unreadable": [
@@ -37466,13 +38738,13 @@
   {
     "class": "ModuleScript",
     "name": "RotateHandles",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Handles/RotateHandles",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Handles/RotateHandles",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "17390",
-      "SourceBytecodeSha256": "aaa4892ff0d96345217321e4fe16403751de80af977a1123ef137f0d24a2294c",
+      "SourceBytecodeBytes": "17358",
+      "SourceBytecodeSha256": "73070dfc8704bfdbf36325767e78106c27b9cc2e3a740771dbb0b0a705db0b70",
       "Tags": ""
     },
     "unreadable": [
@@ -37482,7 +38754,7 @@
   {
     "class": "ModuleScript",
     "name": "RotateHandleView",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Components/RotateHandleView",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Components/RotateHandleView",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -37578,7 +38850,7 @@
   {
     "class": "ModuleScript",
     "name": "roundRotation",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/roundRotation",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/roundRotation",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -37610,7 +38882,7 @@
   {
     "class": "ModuleScript",
     "name": "RulerView",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Components/RulerView",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Components/RulerView",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -37962,7 +39234,7 @@
   {
     "class": "ModuleScript",
     "name": "ScaleHandleView",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Components/ScaleHandleView",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Components/ScaleHandleView",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -38255,8 +39527,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4280",
-      "SourceBytecodeSha256": "5b253f04439eee344fe3fe87e196ee14c723948c6a9b39c71ffd9bd50c821dbf",
+      "SourceBytecodeBytes": "4275",
+      "SourceBytecodeSha256": "d4883c5fc7ec646dc11999384f313ac12a1785acdddf39a2ee43424af38dfba8",
       "Tags": ""
     },
     "unreadable": [
@@ -38890,13 +40162,13 @@
   {
     "class": "ModuleScript",
     "name": "Selection",
-    "path": "AnimationClipEditor/Packages/DraggerSchemaCore/Selection",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/Selection",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1018",
-      "SourceBytecodeSha256": "b913964127ba1f973ef32f848e45295d1e711daa760005309f97b4d33377f630",
+      "SourceBytecodeBytes": "987",
+      "SourceBytecodeSha256": "67f8b26661a1bdaa886c30e41bbb662ba33f440c678a77f82b45ee789ff288f3",
       "Tags": ""
     },
     "unreadable": [
@@ -38938,7 +40210,7 @@
   {
     "class": "ModuleScript",
     "name": "SelectionCycleCache",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Implementation/SelectionCycleCache",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Implementation/SelectionCycleCache",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -38954,13 +40226,13 @@
   {
     "class": "ModuleScript",
     "name": "SelectionDot",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Components/SelectionDot",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Components/SelectionDot",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1166",
-      "SourceBytecodeSha256": "d455c9fd8de7062751d80c9c5bec5d33b7e3c8084e4567b87ffc393044cde43d",
+      "SourceBytecodeBytes": "1135",
+      "SourceBytecodeSha256": "4b9ea498ac174ce00da429b3cc88eae04cb0d967d788d7a6bce852f8dd50533a",
       "Tags": ""
     },
     "unreadable": [
@@ -38970,7 +40242,7 @@
   {
     "class": "ModuleScript",
     "name": "SelectionHelper",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/SelectionHelper",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/SelectionHelper",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -38986,13 +40258,13 @@
   {
     "class": "ModuleScript",
     "name": "SelectionInfo",
-    "path": "AnimationClipEditor/Packages/DraggerSchemaCore/SelectionInfo",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/SelectionInfo",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "22895",
-      "SourceBytecodeSha256": "9ac55ad05425e4525a79689456d6ca783f15b066067b392ff92a29b556092ee1",
+      "SourceBytecodeBytes": "23387",
+      "SourceBytecodeSha256": "32e6cdf9464a1e83065d6dd6478e77c2f16a4a0e03ddf3bebc3f3976acea5000",
       "Tags": ""
     },
     "unreadable": [
@@ -39034,7 +40306,7 @@
   {
     "class": "ModuleScript",
     "name": "SelectionWrapper",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/SelectionWrapper",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/SelectionWrapper",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -39290,13 +40562,13 @@
   {
     "class": "ModuleScript",
     "name": "setActivePoint",
-    "path": "AnimationClipEditor/Packages/DraggerSchemaCore/setActivePoint",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/setActivePoint",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "294",
-      "SourceBytecodeSha256": "ce270e97c81239761ac99de42e6c9b6793eaf46d2ebce4c7a438f1ac93b57d10",
+      "SourceBytecodeBytes": "276",
+      "SourceBytecodeSha256": "d6902b41f0f268e1c3b9120751600d153f1f1bda3d435697ad4fd42edb8c4e63",
       "Tags": ""
     },
     "unreadable": [
@@ -39754,7 +41026,7 @@
   {
     "class": "ModuleScript",
     "name": "setHover",
-    "path": "AnimationClipEditor/Packages/DraggerSchemaCore/setHover",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/setHover",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -39866,7 +41138,7 @@
   {
     "class": "ModuleScript",
     "name": "setInsertPoint",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/setInsertPoint",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/setInsertPoint",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -41290,7 +42562,7 @@
   {
     "class": "ModuleScript",
     "name": "shouldDragAsFace",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/shouldDragAsFace",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/shouldDragAsFace",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -41322,7 +42594,7 @@
   {
     "class": "ModuleScript",
     "name": "shouldSelectSubPart",
-    "path": "AnimationClipEditor/Packages/DraggerSchemaCore/shouldSelectSubPart",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/shouldSelectSubPart",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -41466,6 +42738,22 @@
   {
     "class": "ModuleScript",
     "name": "Signal",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/Signal",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "3021",
+      "SourceBytecodeSha256": "85148f0b7170828ae059f3f0e02ea636528bebd16a0fc5af5d8f99a25b70ed32",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Signal",
     "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Utility/Wrappers/Signal",
     "properties": {
       "AttributesSerialize": "",
@@ -41561,22 +42849,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "Signal",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/Signal",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "3021",
-      "SourceBytecodeSha256": "85148f0b7170828ae059f3f0e02ea636528bebd16a0fc5af5d8f99a25b70ed32",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "Signals",
     "path": "AnimationClipEditor/Packages/_Index/FaceControlEditorComponent/Signals",
     "properties": {
@@ -41648,7 +42920,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "862",
-      "SourceBytecodeSha256": "e5617cc1f6ea5b721c3b500bfeace0fd82659f63e8deff30488d98f05793dcbb",
+      "SourceBytecodeSha256": "0116c3c80c77261569205f6b53dd03a02187ed823a00c81f32a9391b14d42889",
       "Tags": ""
     },
     "unreadable": [
@@ -41722,7 +42994,7 @@
   {
     "class": "ModuleScript",
     "name": "SimplePadding",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Components/SimplePadding",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Components/SimplePadding",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -41983,8 +43255,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "17242",
-      "SourceBytecodeSha256": "3f347de2e1a6d18974d7a75c4ce173ca2a34b232649b9b0271bfe10fd988bf8c",
+      "SourceBytecodeBytes": "19314",
+      "SourceBytecodeSha256": "597956c4b3d1568c68bdb6679685fa33c2e45b801362d0b346107244fad77813",
       "Tags": ""
     },
     "unreadable": [
@@ -42047,40 +43319,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "25145",
-      "SourceBytecodeSha256": "0f13d5872f0ea37bbb01c7b72eae4ce407de8678a5123e811a52a69df36f7bc2",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "SliderKnob.story",
-    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Components/Slider/SliderKnob.story",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "4268",
-      "SourceBytecodeSha256": "f6432e48d5a5a013e7dd3cad87ec3e9a72ad76da59a054036301455f9eb706b7",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "SliderKnob",
-    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Components/Slider/SliderKnob",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "3594",
-      "SourceBytecodeSha256": "8ace82a7281bad4e4bdd596d7cd4499e5e95257388e50fe41476de388d2a2990",
+      "SourceBytecodeBytes": "30492",
+      "SourceBytecodeSha256": "d43458ed639b3c5e2e2ba17e9e6e5b3e146e28ce89fdaad3a60d4a7226e40b8e",
       "Tags": ""
     },
     "unreadable": [
@@ -42129,6 +43369,38 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "65",
       "SourceBytecodeSha256": "57901c0cbd2d27202fc5241597492d35695cee1c05291f9f1a0b9bb32e29da8a",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "SliderThumb.story",
+    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Components/Slider/SliderThumb.story",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "4272",
+      "SourceBytecodeSha256": "ca2f322eedec9f719f0f01ab9bb038d6768bd62992f5fc777e304da6c2eadaad",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "SliderThumb",
+    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Components/Slider/SliderThumb",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "3641",
+      "SourceBytecodeSha256": "fba648b39ffee79c9052df73e0374c18e908ef64587ca6787b432d7bfe548efb",
       "Tags": ""
     },
     "unreadable": [
@@ -42234,7 +43506,7 @@
   {
     "class": "ModuleScript",
     "name": "snapRotationToPrimaryDirection",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/snapRotationToPrimaryDirection",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/snapRotationToPrimaryDirection",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -42282,7 +43554,7 @@
   {
     "class": "ModuleScript",
     "name": "SoftSnapper",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/SoftSnapper",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/SoftSnapper",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -42458,13 +43730,13 @@
   {
     "class": "ModuleScript",
     "name": "SphereMajorLines",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Components/SphereMajorLines",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Components/SphereMajorLines",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2230",
-      "SourceBytecodeSha256": "8e9d04ad8fff4d318aa05948cf5c506ff3a306b85cae0a1cee6eb3840af9f789",
+      "SourceBytecodeBytes": "2199",
+      "SourceBytecodeSha256": "2ac3622718306a877f5651c8a6519057aabf94f6f133701c453d20532ded8809",
       "Tags": ""
     },
     "unreadable": [
@@ -42714,13 +43986,13 @@
   {
     "class": "ModuleScript",
     "name": "StandaloneSelectionBox",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Components/StandaloneSelectionBox",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Components/StandaloneSelectionBox",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1553",
-      "SourceBytecodeSha256": "6b51f7e6354c6d6fee4044880abacacaeba327ae5aaad2016e50fa8626335cc0",
+      "SourceBytecodeBytes": "1522",
+      "SourceBytecodeSha256": "e00ae4eab2b4ced2d72c7a8b529a1c32f662193c4ed01841321357b2a30f7252",
       "Tags": ""
     },
     "unreadable": [
@@ -42730,7 +44002,7 @@
   {
     "class": "ModuleScript",
     "name": "StandardCursor",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/StandardCursor",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/StandardCursor",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -42763,6 +44035,22 @@
     "class": "ModuleScript",
     "name": "StarBurst",
     "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/StarBurst",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "177",
+      "SourceBytecodeSha256": "5a8d490224e43cdd48a92c6a28995fe027658ecfe61bf1783eff923d31604705",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "StarBurst",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/StarBurst",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -43135,8 +44423,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "6650",
-      "SourceBytecodeSha256": "e81c132e0e1162bbf3d61d563510b072200bcad28a02186fb18b48820864e4c7",
+      "SourceBytecodeBytes": "6463",
+      "SourceBytecodeSha256": "7cc34b0c836326ee279fb0df0deab4fe4b6dc4c86a162a931f06e602884d2482",
       "Tags": ""
     },
     "unreadable": [
@@ -45376,7 +46664,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "2230",
-      "SourceBytecodeSha256": "19fb23ca5a1572b84b3327717911522775f7de6649c2556d7d1cf80ef8725372",
+      "SourceBytecodeSha256": "e729bc429e77821e9b5891885e512b42b288a1d5473b66c61831607899b5f346",
       "Tags": ""
     },
     "unreadable": [
@@ -45994,13 +47282,13 @@
   {
     "class": "ModuleScript",
     "name": "SummonedPivot",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Components/SummonedPivot",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Components/SummonedPivot",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "935",
-      "SourceBytecodeSha256": "697f40bb9e50440f08a12c17213aab89d17c2ca986f896634ed5856f008ecb4e",
+      "SourceBytecodeBytes": "904",
+      "SourceBytecodeSha256": "c878ac0eaa2d36c5302f98254f342ebf38c287be8754bfb876443d485575ec26",
       "Tags": ""
     },
     "unreadable": [
@@ -46010,13 +47298,13 @@
   {
     "class": "ModuleScript",
     "name": "SummonHandlesHider",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Components/SummonHandlesHider",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Components/SummonHandlesHider",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "932",
-      "SourceBytecodeSha256": "b60f85fd7724e1943494514ed5f5c48fdc7ac40c073c2974596a523c2f201bc2",
+      "SourceBytecodeBytes": "901",
+      "SourceBytecodeSha256": "f87c5b03b79904194055f628c08c9629a55633632e760d8b02a99f6d7d745194",
       "Tags": ""
     },
     "unreadable": [
@@ -46026,13 +47314,13 @@
   {
     "class": "ModuleScript",
     "name": "SummonHandlesNote",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Components/SummonHandlesNote",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Components/SummonHandlesNote",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2838",
-      "SourceBytecodeSha256": "9721cfd25dba709fa1a57a1d56a3b925128fc893193036b7774b5829295a16ff",
+      "SourceBytecodeBytes": "2807",
+      "SourceBytecodeSha256": "087310336696e5b07401371d9e39a62daa23b1af279a6da5da7122ece3f938ab",
       "Tags": ""
     },
     "unreadable": [
@@ -46043,6 +47331,22 @@
     "class": "ModuleScript",
     "name": "SuperCharge",
     "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/SuperCharge",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "177",
+      "SourceBytecodeSha256": "5a8d490224e43cdd48a92c6a28995fe027658ecfe61bf1783eff923d31604705",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "SuperCharge",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/SuperCharge",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -46335,8 +47639,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4857",
-      "SourceBytecodeSha256": "08bcf30be1756df7926f2b4a4d7d5c22882201485986dbd8339de30f22f27ada",
+      "SourceBytecodeBytes": "4679",
+      "SourceBytecodeSha256": "23da17490b3696e19395506db2acfb4e4627f1f22c3aef4ca44d2a90e660ab7d",
       "Tags": ""
     },
     "unreadable": [
@@ -46714,13 +48018,13 @@
   {
     "class": "ModuleScript",
     "name": "TargetGridView",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Components/TargetGridView",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Components/TargetGridView",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "8231",
-      "SourceBytecodeSha256": "9a41c2543d2e3894c475a469318712d8a9bb62ba2e1c63ebd09effaa2a5bab18",
+      "SourceBytecodeBytes": "8208",
+      "SourceBytecodeSha256": "e74685cc2c64dd99a5030162ed2f108dfc05fdc9abbd0abbeba6798818adecc1",
       "Tags": ""
     },
     "unreadable": [
@@ -46730,13 +48034,13 @@
   {
     "class": "ModuleScript",
     "name": "TargetSoftSnapView",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Components/TargetSoftSnapView",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Components/TargetSoftSnapView",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2617",
-      "SourceBytecodeSha256": "a3d8f5982525162ec7ecd62fec062cd23de2ccb75e2a9e8d4ad4b8fca39bf4f7",
+      "SourceBytecodeBytes": "2586",
+      "SourceBytecodeSha256": "82da049ba2add2c44b3c9d315f778557cca16b7b7145ffab9d5237da8e5288d7",
       "Tags": ""
     },
     "unreadable": [
@@ -46810,7 +48114,7 @@
   {
     "class": "ModuleScript",
     "name": "TemporaryTransparency",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/TemporaryTransparency",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/TemporaryTransparency",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -47743,8 +49047,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "520",
-      "SourceBytecodeSha256": "f53c39c55139a60556d60beab02763040ae772a442157da5cbaf0bb05ffcdd65",
+      "SourceBytecodeBytes": "703",
+      "SourceBytecodeSha256": "f64697e41ae0ed29eb4ee1d42bfc265a325ba232140be82435bb954b5377b084",
       "Tags": ""
     },
     "unreadable": [
@@ -48047,8 +49351,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1846",
-      "SourceBytecodeSha256": "f3ffe6db99aa41ded1128e342e101638259fa3d1317b87940a2ae33d015a0617",
+      "SourceBytecodeBytes": "1634",
+      "SourceBytecodeSha256": "97d442e831d7806e0261f59f9b791e22fc52c20461b4c1acc8259197e495f8c5",
       "Tags": ""
     },
     "unreadable": [
@@ -48527,8 +49831,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "6044",
-      "SourceBytecodeSha256": "b24c58687b39411cd96bea73488475ec6b3fe2f88b3e8cef8fa0b5273aa4083a",
+      "SourceBytecodeBytes": "5745",
+      "SourceBytecodeSha256": "d7d7bddcd57cbfef199e41029e61568f434ea52e628637bb35cda11e53de4b4e",
       "Tags": ""
     },
     "unreadable": [
@@ -48559,8 +49863,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3793",
-      "SourceBytecodeSha256": "461f9f928c81c9ae7b8f1d605036a923b72a7dafa1e2fa385a349044ee282492",
+      "SourceBytecodeBytes": "3563",
+      "SourceBytecodeSha256": "e6e244ff0e5f6181924d906e427fef0838178715742c68f50defc28b44c24cd7",
       "Tags": ""
     },
     "unreadable": [
@@ -48655,8 +49959,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4221",
-      "SourceBytecodeSha256": "f6be8bbaefbcccd46dcb1b61d3df2a07e0ecdbbfc6f22d0a20b6b7d8495882fa",
+      "SourceBytecodeBytes": "3922",
+      "SourceBytecodeSha256": "e2ad2458b035f14355a3ae0f57a7c8bc46ccf42a916c348df3adafb4b6bd13de",
       "Tags": ""
     },
     "unreadable": [
@@ -48959,8 +50263,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2526",
-      "SourceBytecodeSha256": "e63b7e20ab59ce6abb48f1701ec3b63477617262d76ed4857e0606a89f9691b2",
+      "SourceBytecodeBytes": "2469",
+      "SourceBytecodeSha256": "dc48473e3a8599eb59252f354be7c6e141e44cd031187d0c6f2bdffe4c0368b3",
       "Tags": ""
     },
     "unreadable": [
@@ -49418,13 +50722,13 @@
   {
     "class": "ModuleScript",
     "name": "TransformHandlesImplementation",
-    "path": "AnimationClipEditor/Packages/DraggerSchemaCore/TransformHandlesImplementation",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/TransformHandlesImplementation",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "6412",
-      "SourceBytecodeSha256": "b0f6c811dd77528075d95e01ebe675ea8022b2006c3e1e30e193d6a13e16cb3d",
+      "SourceBytecodeBytes": "6281",
+      "SourceBytecodeSha256": "b915a727f7180375a962f3785a6ea44c556f789302137eb27b437d4231bfc3d9",
       "Tags": ""
     },
     "unreadable": [
@@ -49439,8 +50743,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "7268",
-      "SourceBytecodeSha256": "bd0e8709815cb83855691ca82e21ea2fca755a1abd4c1b008f931c735c576343",
+      "SourceBytecodeBytes": "7253",
+      "SourceBytecodeSha256": "3e849bfe3d76bac6c55aa05df7a37a47283b913406b60d556c28b418d3bf69ae",
       "Tags": ""
     },
     "unreadable": [
@@ -50186,6 +51490,22 @@
   {
     "class": "ModuleScript",
     "name": "Types",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Types",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "39",
+      "SourceBytecodeSha256": "84c7a946409bb7b251d857a855ded9d83bff25754e3cf881db498c1c24372993",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Types",
     "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Components/Dialog/Types",
     "properties": {
       "AttributesSerialize": "",
@@ -50272,7 +51592,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "210",
-      "SourceBytecodeSha256": "9fdff7672144805c167856bbfc549a63a7c19b1882136f3e1db1d099b77350a6",
+      "SourceBytecodeSha256": "6cef9c67ea46a6e2fda7ad1abc623b0bb7dec4272ce73ebb6cecc0f73c382864",
       "Tags": ""
     },
     "unreadable": [
@@ -50378,6 +51698,22 @@
   {
     "class": "ModuleScript",
     "name": "types",
+    "path": "AnimationClipEditor/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/types",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "47",
+      "SourceBytecodeSha256": "a8241bfdf9e660c463a9d07bac75f16c5dd35cbe1a60d8994dabd7efc982bcaf",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "types",
     "path": "AnimationClipEditor/Packages/_Index/RoactRodux/RoactRodux/types",
     "properties": {
       "AttributesSerialize": "",
@@ -50401,22 +51737,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "44",
       "SourceBytecodeSha256": "96eb2f8f10dc7474684efa80195741c7834e206a2717115cf4178e3fa72bb9bb",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Types",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Types",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "39",
-      "SourceBytecodeSha256": "84c7a946409bb7b251d857a855ded9d83bff25754e3cf881db498c1c24372993",
       "Tags": ""
     },
     "unreadable": [
@@ -50666,7 +51986,7 @@
   {
     "class": "ModuleScript",
     "name": "updateBoxSelect",
-    "path": "AnimationClipEditor/Packages/DraggerSchemaCore/updateBoxSelect",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerSchemaCore/DraggerSchemaCore/updateBoxSelect",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -51113,6 +52433,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "useBreadcrumbVariants",
+    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Components/Breadcrumb/useBreadcrumbVariants",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "3018",
+      "SourceBytecodeSha256": "5be36bfa7dd807bd6d002a6ca7221c02b7d152d2468c043cb29e603cc832d5e4",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "useBreakpoint",
     "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Providers/Responsive/Hooks/useBreakpoint",
     "properties": {
@@ -51167,8 +52503,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2056",
-      "SourceBytecodeSha256": "7319f2aa82cbc87f5baf7c93e85b87e831ff1f3b40df031b1b4474cac5125eec",
+      "SourceBytecodeBytes": "1833",
+      "SourceBytecodeSha256": "49c7c02efa380286c8a6a6ec3ed4ab1a91ba3eb1c72c604ca32307ad2f163208",
       "Tags": ""
     },
     "unreadable": [
@@ -51551,8 +52887,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3709",
-      "SourceBytecodeSha256": "ff48c5f08c5d55e800db1e6315eba597bf31397ea2d44d90c318ce99cd390166",
+      "SourceBytecodeBytes": "3318",
+      "SourceBytecodeSha256": "48f27fcc5453437ffb3b2dd6b920488a5ec23b8c2b48cb8b6f1488d75533ac75",
       "Tags": ""
     },
     "unreadable": [
@@ -52031,8 +53367,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2083",
-      "SourceBytecodeSha256": "26c1a40d52f371d530ad0d4d843cb0be4736fbc0d36786d3cf45f4a3dfbf9136",
+      "SourceBytecodeBytes": "1371",
+      "SourceBytecodeSha256": "1679df3682445803188e055157305167a0791e305d42a09638bd05a4811f2bec",
       "Tags": ""
     },
     "unreadable": [
@@ -52079,8 +53415,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1607",
-      "SourceBytecodeSha256": "0e17173a53742b0eb34ca625db4b0f4168b96bb2caf5a5c31af886ade6db82b5",
+      "SourceBytecodeBytes": "1450",
+      "SourceBytecodeSha256": "dc9e81f53dab0827e2d942c92227bdff5e47c08a9e93909afd077dfff0307e39",
       "Tags": ""
     },
     "unreadable": [
@@ -52175,8 +53511,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2637",
-      "SourceBytecodeSha256": "7c4835fb0716a7a0936b32dff6b3083591e9096a83e9c1d2011fb620f232d32f",
+      "SourceBytecodeBytes": "2371",
+      "SourceBytecodeSha256": "d987635d266704aa830fd5cf64b890ec5d302cc8efba35244a43d3c3bc7d33ec",
       "Tags": ""
     },
     "unreadable": [
@@ -53007,8 +54343,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2006",
-      "SourceBytecodeSha256": "c6d22a28dd805f091232fa4327d9c4c7f77ee2e1debb358d9791d633535a2727",
+      "SourceBytecodeBytes": "1786",
+      "SourceBytecodeSha256": "429f7cb482e1c4d864fff3de2320786c66aaae3879edfc037e6039047cce738b",
       "Tags": ""
     },
     "unreadable": [
@@ -53369,14 +54705,30 @@
   },
   {
     "class": "ModuleScript",
+    "name": "useSliderCaptureKeys",
+    "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Components/Slider/useSliderCaptureKeys",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1116",
+      "SourceBytecodeSha256": "828c8736a92f929c4b7a14ba6d23fcc261f734865ea2fa65db5b9fd1bafac800",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "useSliderDirectionalInput",
     "path": "AnimationClipEditor/Packages/_Index/Foundation/Foundation/Components/Slider/useSliderDirectionalInput",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4416",
-      "SourceBytecodeSha256": "c90af069ec6a8e2a3ddec020266dbc1d22fae2275e6b0ac0297f00dc4a9d255f",
+      "SourceBytecodeBytes": "5043",
+      "SourceBytecodeSha256": "9e87a3abd71d20152f8e52a82627e80a363abca248fccf2b39eafcf1f62e517b",
       "Tags": ""
     },
     "unreadable": [
@@ -53439,8 +54791,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3823",
-      "SourceBytecodeSha256": "fd9f11d57facaec6a717daaa3bc245ba59c4e2c92e497caa2728474ccbba02a2",
+      "SourceBytecodeBytes": "3929",
+      "SourceBytecodeSha256": "1053d5c1b2e1437e6c38a2e5c798798e46ad7084071b79c6772e31b7c4e94bca",
       "Tags": ""
     },
     "unreadable": [
@@ -53519,8 +54871,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5160",
-      "SourceBytecodeSha256": "9d85c8699b8be8d445bdbead49a999109956b1f1ced96a808a42666cde1c1512",
+      "SourceBytecodeBytes": "5090",
+      "SourceBytecodeSha256": "5ee3cc6fb81c1c4f5cfc0022f516feb40d214295c42764760bdc5330f637e361",
       "Tags": ""
     },
     "unreadable": [
@@ -53930,7 +55282,7 @@
   {
     "class": "ModuleScript",
     "name": "Utility",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -54015,8 +55367,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "484",
-      "SourceBytecodeSha256": "461a15cfeea55f5ccb6c6eb9b299d375981f4b72dec98e293ad6339486dac0f9",
+      "SourceBytecodeBytes": "266",
+      "SourceBytecodeSha256": "38a1cb48658f426da0d92e45d43eb34b442fa1e90c89d54c9693263bc10cbeaf",
       "Tags": ""
     },
     "unreadable": [
@@ -54266,7 +55618,7 @@
   {
     "class": "ModuleScript",
     "name": "ViewChangeDetector",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Utility/ViewChangeDetector",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Utility/ViewChangeDetector",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -54671,8 +56023,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2111",
-      "SourceBytecodeSha256": "795d7aaac7765a3e36da6dcded26f74d4f662467e1788930022d4351a16876af",
+      "SourceBytecodeBytes": "1959",
+      "SourceBytecodeSha256": "0053b15bf888d3bcee67e3aaeda82440890de9b5699d4614acfc1279b87e51b1",
       "Tags": ""
     },
     "unreadable": [
@@ -54682,13 +56034,13 @@
   {
     "class": "ModuleScript",
     "name": "WireframeHandleAdornment",
-    "path": "AnimationClipEditor/Packages/DraggerFramework/Components/WireframeHandleAdornment",
+    "path": "AnimationClipEditor/Packages/_Index/DraggerFramework/DraggerFramework/Components/WireframeHandleAdornment",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1355",
-      "SourceBytecodeSha256": "59718360648b8362f2efbca2597bb4b1675b27a095129fd9809d9ef4f0481b27",
+      "SourceBytecodeBytes": "1324",
+      "SourceBytecodeSha256": "f9cf18307e2559b234439a00a2d4467c1b0fda81139de3a31a5fafd004f5ff2b",
       "Tags": ""
     },
     "unreadable": [

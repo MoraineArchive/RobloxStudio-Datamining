@@ -1,4 +1,5 @@
 ADVAPI32.dll
+COMCTL32.dll
 CRYPT32.dll
 EVR.dll
 GDI32.dll
@@ -48,7 +49,9 @@ bcrypt.dll
 d3d11.dll
 dbghelp.dll
 dd-win-prof.dll
+dwmapi.dll
 dxgi.dll
+gdiplus.dll
 libfbxsdk.dll
 mimalloc.dll
 msdmo.dll

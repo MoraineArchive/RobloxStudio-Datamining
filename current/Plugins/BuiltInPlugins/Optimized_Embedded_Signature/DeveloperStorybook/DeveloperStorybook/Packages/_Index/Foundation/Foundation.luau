@@ -74,6 +74,8 @@ local InputSize = require(script.Enums.InputSize)
 local InputVariant = require(script.Enums.InputVariant)
 local LinkVariant = require(script.Enums.LinkVariant)
 local ListItemInputType = require(script.Enums.ListItemInputType)
+local MediaAspectRatio = require(script.Enums.MediaAspectRatio)
+local MediaOrientation = require(script.Enums.MediaOrientation)
 local NumberInputControlsVariant = require(script.Enums.NumberInputControlsVariant)
 local OnChangeCallbackReason = require(script.Enums.OnChangeCallbackReason)
 local OnCloseCallbackReason = require(script.Enums.OnCloseCallbackReason)
@@ -147,6 +149,8 @@ export type InputSize = InputSize.InputSize
 export type InputVariant = InputVariant.InputVariant
 export type LinkVariant = LinkVariant.LinkVariant
 export type ListItemInputType = ListItemInputType.ListItemInputType
+export type MediaAspectRatio = MediaAspectRatio.MediaAspectRatio
+export type MediaOrientation = MediaOrientation.MediaOrientation
 export type NumberInputControlsVariant = NumberInputControlsVariant.NumberInputControlsVariant
 export type ScrubBehavior = ScrubBehavior.ScrubBehavior
 export type OnChangeCallbackReason = OnChangeCallbackReason.OnChangeCallbackReason
@@ -217,6 +221,10 @@ export type BaseMenuProps<Item = BaseMenuItem> = BaseMenu.BaseMenuProps<Item>
 export type BaseMenuItem = BaseMenu.BaseMenuItem
 export type BaseMenuItems<Item = BaseMenuItem> = BaseMenu.BaseMenuItems<Item>
 export type BaseMenuItemGroup<Item = BaseMenuItem> = BaseMenu.BaseMenuItemGroup<Item>
+
+local Breadcrumb = require(script.Components.Breadcrumb)
+export type BreadcrumbProps = Breadcrumb.BreadcrumbProps
+export type BreadcrumbItem = Breadcrumb.BreadcrumbItem
 
 local Button = require(script.Components.Button)
 export type ButtonProps = Button.ButtonProps
@@ -317,6 +325,11 @@ export type ListAccessoryProps = List.ListAccessoryProps
 
 local Loading = require(script.Components.Loading)
 export type LoadingProps = Loading.LoadingProps
+
+local Media = require(script.Components.Media)
+export type MediaProps = Media.MediaProps
+export type MediaContent = Media.MediaContent
+export type MediaImage = Media.MediaImage
 
 local Menu = require(script.Components.Menu)
 export type MenuProps = Menu.MenuProps
@@ -436,6 +449,7 @@ local Foundation = strict({
 	AvatarIcon = AvatarIcon,
 	AvatarIconGroup = AvatarIconGroup,
 	Badge = Badge,
+	Breadcrumb = Breadcrumb,
 	Button = Button,
 	ButtonGroup = ButtonGroup,
 	Checkbox = Checkbox,
@@ -464,6 +478,7 @@ local Foundation = strict({
 	Link = Link,
 	List = List,
 	Loading = Loading,
+	Media = Media,
 	Menu = Menu,
 	NumberInput = NumberInput,
 	OptionSelectorGroup = OptionSelectorGroup,
@@ -572,6 +587,8 @@ local Foundation = strict({
 		InputLabelSize = InputLabelSize,
 		LinkVariant = LinkVariant,
 		ListItemInputType = ListItemInputType,
+		MediaAspectRatio = MediaAspectRatio,
+		MediaOrientation = MediaOrientation,
 		NumberInputControlsVariant = NumberInputControlsVariant,
 		ScrubBehavior = ScrubBehavior,
 		OnChangeCallbackReason = OnChangeCallbackReason,

@@ -4,7 +4,6 @@ local Packages = Foundation.Parent
 local Dash = require(Packages.Dash)
 local React = require(Packages.React)
 
-local Flags = require(Foundation.Utility.Flags)
 local MatrixGridShared = require(Foundation.Utility.Stories.Shared.MatrixGrid)
 local StorySection = require(Foundation.Utility.Stories.Shared.StorySection)
 local Toggle = require(Foundation.Components.Toggle)
@@ -54,9 +53,8 @@ type StateFixture = {
 local STATE_ORDER: { StateFixture } = {
 	{ label = "isChecked = false", isChecked = false },
 	{ label = "isChecked = true", isChecked = true },
+	{ label = "hint", isChecked = false, hint = HINT },
 }
-
-local HINT_FIXTURE: StateFixture = { label = "hint", isChecked = false, hint = HINT }
 
 local SIZE_HEADERS = MatrixGridShared.enumHeaders(SIZE_ORDER)
 
@@ -88,7 +86,7 @@ local function PlaygroundStory(props: { controls: PlaygroundControls })
 	}, {
 		Toggle = React.createElement(Toggle, {
 			label = controls.label,
-			hint = if Flags.FoundationToggleBetaUpdate and controls.hint ~= "" then controls.hint else nil,
+			hint = if controls.hint ~= "" then controls.hint else nil,
 			isChecked = controls.isChecked,
 			isDisabled = controls.isDisabled,
 			size = controls.size,
@@ -167,10 +165,6 @@ end
 local function StatesStory()
 	local fixtures = table.clone(STATE_ORDER)
 
-	if Flags.FoundationToggleBetaUpdate then
-		table.insert(fixtures, HINT_FIXTURE)
-	end
-
 	return React.createElement(View, {
 		tag = `col gap-xxlarge auto-xy {STORY_FRAME_TAG}`,
 	}, {
@@ -228,8 +222,7 @@ local function ControlledStory()
 end
 
 local function wrappingCells(): { React.ReactNode }
-	local hint = if Flags.FoundationToggleBetaUpdate then LONG_HINT else nil
-
+	local hint = LONG_HINT
 	return Dash.map(PLACEMENT_ORDER, function(placement, index)
 		return React.createElement(LabeledCell, {
 			LayoutOrder = index,
@@ -259,13 +252,14 @@ local function ContentStory()
 	})
 end
 
-local controls: { [string]: unknown } = Dash.join({
+local controls: { [string]: unknown } = {
 	label = LABEL,
 	size = SIZE_ORDER,
 	placement = PLACEMENT_ORDER,
 	isChecked = false,
 	isDisabled = false,
-}, if Flags.FoundationToggleBetaUpdate then { hint = HINT } else {})
+	hint = HINT,
+}
 
 return {
 	summary = "Toggle turns a single boolean on or off, with an optional label and hint beside it.",

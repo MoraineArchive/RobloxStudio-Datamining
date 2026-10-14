@@ -12,4 +12,5 @@ return {
 	REIMPORT = require(script.plugins.Reimport),
 	ASSET_MANAGER = require(script.plugins.AssetManager),
 	TERRAIN = require(script.plugins.Terrain),
+	CONTENT_EDIT = require(script.plugins.ContentEdit),
 }

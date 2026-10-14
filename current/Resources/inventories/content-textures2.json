@@ -6774,6 +6774,24 @@
     "sha256": "b0b6f445bcceac8566bdee275df884e84f18940ccfaf0b14253cb213fcfd3078"
   },
   {
+    "bytes": 1416,
+    "extension": "png",
+    "path": "ui/Moments/text-color-picker.png",
+    "sha256": "0c1108fbf5c8f755842e212f4229982996b2f25eb9a338db0839a069d103091b"
+  },
+  {
+    "bytes": 2964,
+    "extension": "png",
+    "path": "ui/Moments/text-color-picker@2x.png",
+    "sha256": "0235b1e869bd49287cd1a86cf259ad7d69dba3e65d1fe8c950f4d77f7347252f"
+  },
+  {
+    "bytes": 4434,
+    "extension": "png",
+    "path": "ui/Moments/text-color-picker@3x.png",
+    "sha256": "b86bf5d280eb6c16656f6344ca8cb47ac2ff33122828296165cab335f60552d9"
+  },
+  {
     "bytes": 860,
     "extension": "png",
     "path": "ui/Motor.png",

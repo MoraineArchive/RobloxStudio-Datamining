@@ -81,7 +81,7 @@ local function DefaultStory()
 	}, children)
 end
 
-local function OverflowStory()
+local function ContentStory()
 	local children: { [string]: React.ReactNode } = {}
 
 	for page = 1, OVERFLOW_COUNT do
@@ -165,23 +165,19 @@ return {
 		},
 		{
 			name = "Interactive",
-			summary = "A stateful carousel navigation example that updates the active page on activation",
 			story = InteractiveStory,
 		},
 		{
 			name = "Default",
-			summary = "Default carousel indicator pages 1 through 5",
 			story = DefaultStory,
 		},
 		{
-			name = "Overflow",
-			summary = "Overflow carousel indicator pages 1 through 10",
-			story = OverflowStory,
+			name = "Pagination",
+			story = PaginationStory,
 		},
 		{
-			name = "Pagination",
-			summary = "Arrow buttons driving default and overflow carousel indicators",
-			story = PaginationStory,
+			name = "Content",
+			story = ContentStory,
 		},
 	},
 	controls = {

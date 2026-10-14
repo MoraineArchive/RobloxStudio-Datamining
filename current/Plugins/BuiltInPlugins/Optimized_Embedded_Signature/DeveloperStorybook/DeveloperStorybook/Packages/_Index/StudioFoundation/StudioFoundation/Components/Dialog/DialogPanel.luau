@@ -6,6 +6,7 @@ local Framework = require(Packages.Framework)
 local React = require(Packages.React)
 local ReactRoblox = require(Packages.ReactRoblox)
 local Signals = require(Packages.Signals)
+local DialogDmIdContext = require(Main.Contexts.DialogDmIdContext)
 local FoundationProviderAdapter = require(Main.Components.FoundationProviderAdapter)
 local StudioUri = require(Main.Util.StudioUri)
 local uriToTestId = require(Main.Util.uriToTestId)
@@ -24,6 +25,9 @@ export type Props = {
 	--- Defaults to true
 	modal: boolean?,
 	toolDialog: boolean?,
+	-- Disambiguates the native panel id when the same URI is shown by more than one DataModel; when
+	-- nil the id is derived from the URI alone.
+	dmId: number?,
 }
 
 local function DialogPanel(props: Props)
@@ -32,9 +36,14 @@ local function DialogPanel(props: Props)
 	local titleBarColor = tokens.Color.Surface.Surface_200.Color3
 
 	-- TODO (STUDIOPLAT-41649): This shouldn't be needed once PanelsManager:CreateAsync exists
+	-- Prefer the prop (regular dialogs thread it through our Dialog chain); custom dialogs are rendered
+	-- by third-party components that don't forward it, so fall back to context.
+	local contextDmId = React.useContext(DialogDmIdContext.Context)
+	local dmId = props.dmId or contextDmId
 	local dialogId = React.useMemo(function()
-		return `Dialog_{uriToTestId(props.uri)}`
-	end, { props.uri })
+		local baseId = `Dialog_{uriToTestId(props.uri)}`
+		return if dmId ~= nil then `{baseId}_{dmId}` else baseId
+	end, { props.uri, dmId } :: { unknown })
 
 	local panels = React.useMemo(function()
 		return plugin:GetPluginComponent("Panels") :: Panels

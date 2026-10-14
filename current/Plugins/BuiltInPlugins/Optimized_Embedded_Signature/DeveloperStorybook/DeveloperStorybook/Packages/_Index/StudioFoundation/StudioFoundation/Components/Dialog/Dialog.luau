@@ -22,6 +22,8 @@ type DialogEscapeButtonAction = Types.DialogEscapeButtonAction
 
 export type Props = {
 	uri: StudioUri,
+	-- Forwarded to DialogPanel so multiple DataModels showing the same URI get distinct native panels.
+	dmId: number?,
 
 	type: Types.DialogType, -- Not bindable since Icon's name and style properties aren't bindable
 	title: Bindable<string?>,
@@ -79,6 +81,7 @@ local function Dialog(props: Props)
 
 	return e(DialogPanel, {
 		uri = props.uri,
+		dmId = props.dmId,
 		getSize = getSize,
 		onClose = if wrappedDialogActions.escapeAction then wrappedDialogActions.escapeAction.onClose else nil,
 		modal = props.modal,
