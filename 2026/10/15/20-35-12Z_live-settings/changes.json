@@ -1,0 +1,62 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-4f087c32742644ab",
+    "manifestFiles": 19132,
+    "packages": 34,
+    "version": "0.743.0.7431133"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "03c74a6f60774279b7910b9c9e827666e1088cdb132deea103f1dfe759e70025",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "6bb07786ea0d746be121bebae54e5c6c3148a00e0b2465889770c690cadc7800",
+      "semantic": {
+        "added": [
+          "DFFlagEnableDynamicCollaboratorSafetyEvictionCheck_Staged",
+          "FFlagAllowCurrentUsernameOnSignup",
+          "FFlagAssetImportFixNonAsciiPaths_Staged",
+          "FFlagEnableCollaboratorSafetyEvictionCheck4_Staged",
+          "FFlagStudioReplaceGSTWithIdInAssetDataModelManager2_Staged",
+          "FFlagStudioUsePlaceCloserForCloses"
+        ],
+        "changed": [
+          {
+            "after": "5bbd406cad86d9811034c804399c2a6ae75dcbf6",
+            "before": "c589c8fe6dc4a9a669fac4f2edea3e781e7dde35",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-15T20:34:58.329Z",
+            "before": "2026-10-15T20:17:54.307Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "5bbd406cad86d9811034c804399c2a6ae75dcbf6",
+            "before": "c589c8fe6dc4a9a669fac4f2edea3e781e7dde35",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-15T20:34:58.329Z",
+            "before": "2026-10-15T20:17:54.307Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagAllowCurrentUsernameOnSignup_Staged",
+          "FFlagStudioUsePlaceCloserForCloses_Staged"
+        ],
+        "unchanged": 25308
+      }
+    }
+  },
+  "schemaVersion": 1
+}
