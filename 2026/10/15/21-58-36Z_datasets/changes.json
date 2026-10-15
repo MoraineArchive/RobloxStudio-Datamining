@@ -1,0 +1,157 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-4f087c32742644ab",
+    "manifestFiles": 19132,
+    "packages": 34,
+    "version": "0.743.0.7431133"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "27480e88b76bbe1101b0507579a5e95d0ce2d0545e0b8ec24f1c3da76996439c",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "03c74a6f60774279b7910b9c9e827666e1088cdb132deea103f1dfe759e70025",
+      "semantic": {
+        "added": [
+          "DFFlagConnectionClosedPlaceIdDiagnostics",
+          "DFFlagRbxTransportTelemetryWebTransport_Staged",
+          "DFFlagSlimModelsSnapshotNestedComposites_Staged",
+          "DFIntCSGAutosavePublishMinEditTimeSeconds_Staged",
+          "FFlagAmrRemoveAssetManagerServiceDependency",
+          "FFlagAssetImporterCreateQueueWidgetImmediately",
+          "FFlagAssistantCapToolResult2_Staged",
+          "FFlagAssistantNormalizeStudioToolNames_Staged",
+          "FFlagAssistantReadFileRejectRangeWithEntireFile_Staged",
+          "FFlagAssistantTextureGenModelSelection",
+          "FFlagCinExportUtilRefactor",
+          "FFlagEnableNavRailTooltipAndTruncation_Staged",
+          "FFlagEnableSupportTicketAssetIdsInPayload_Staged",
+          "FFlagExportInterfaceObjBugfixes",
+          "FFlagFixStyleQueryDirtyInsert_Staged",
+          "FFlagMarkdownAssistantParity_Staged",
+          "FFlagPackageOverridesBetaFeature2",
+          "FFlagPerformanceControlHitchRateEnable",
+          "FFlagPerformanceControlObserveLowPowerMode",
+          "FFlagSimRemoveBodyFromConstraint_Staged",
+          "FFlagSlimLoadBalancerCommonCleanupOrphanedAssets2_Staged",
+          "FFlagStableIdempotencyKeyForProductAndGamePass",
+          "FFlagStudioAssistantHandleImageEncodeErrors_Staged",
+          "FFlagStudioClassIconCustomFolder",
+          "FFlagStudioKeepSessionOnFailedWebMagicAuth",
+          "FFlagStudioReviewableTextEdits6",
+          "FFlagStudioSingletonTemplateUIThread",
+          "FFlagTerrainPerPlaceGrid2_Staged",
+          "FFlagUIAntiAliasClipRects2_Staged",
+          "FFlagUIParamStore",
+          "FFlagUpgradeCameraOnPaste",
+          "FIntMigrateComponentManagerToRuntimeInjectorHundredthPercent_Staged",
+          "FStringUpgradedUIShadowsBetaFeatureUrl"
+        ],
+        "changed": [
+          {
+            "after": "True",
+            "before": "False",
+            "name": "DFFlagEnableDynamicCollaboratorSafetyEvictionCheck"
+          },
+          {
+            "after": "88d3fa319831d36e146bd415d456bdac936f5918",
+            "before": "5bbd406cad86d9811034c804399c2a6ae75dcbf6",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-15T21:57:04.482Z",
+            "before": "2026-10-15T20:34:58.329Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "True",
+            "before": "False",
+            "name": "FFlagRbxTransportForwardConfig"
+          },
+          {
+            "after": "0",
+            "before": "10",
+            "name": "FIntmi_option_purge_delay"
+          },
+          {
+            "after": "88d3fa319831d36e146bd415d456bdac936f5918",
+            "before": "5bbd406cad86d9811034c804399c2a6ae75dcbf6",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-15T21:57:04.482Z",
+            "before": "2026-10-15T20:34:58.329Z",
+            "name": "FStringFlipTimeStampFastString"
+          },
+          {
+            "after": "95042539578838,105013649116616,106879559138642,112103095097238,115456750755285,120186877469605,133065200553359,133509390297950,136317777413667,137501165952196,72406902642490,73398450409488,82014955839102,83341261757797,83938041172379,85673741210377,89907221691016,90858957817875,92156980286760,98938102305897",
+            "before": "95042539578838",
+            "name": "FStringUGCValidationReferenceMeshIdWhitelistForIEC"
+          }
+        ],
+        "removed": [
+          "DFFlagEnableDynamicCollaboratorSafetyEvictionCheck_Staged",
+          "DFFlagRbxTransportSharedClientConfig_Staged",
+          "FFlagAmrRemoveAssetManagerServiceDependency_Staged",
+          "FFlagAssetImporterCreateQueueWidgetImmediately_Staged",
+          "FFlagAssistantTextureGenModelSelection_Staged",
+          "FFlagCinExportUtilRefactor_Staged",
+          "FFlagExportInterfaceObjBugfixes_Staged",
+          "FFlagPackageOverridesBetaFeature2_Staged",
+          "FFlagPerformanceControlHitchRateEnable_Staged",
+          "FFlagPerformanceControlObserveLowPowerMode_Staged",
+          "FFlagRbxTransportForwardConfig_Staged",
+          "FFlagStudioClassIconCustomFolder_Staged",
+          "FFlagStudioKeepSessionOnFailedWebMagicAuth_Staged",
+          "FFlagStudioReviewableTextEdits6_Staged",
+          "FFlagStudioSingletonTemplateUIThread_Staged",
+          "FFlagUIParamStore_Staged",
+          "FFlagUpgradeCameraOnPaste_Staged",
+          "FIntmi_option_purge_delay_Staged",
+          "FStringUpgradedUIShadowsBetaFeatureUrl_Staged"
+        ],
+        "unchanged": 25291
+      }
+    },
+    "Web": {
+      "current": "e084f904e67e6d2d36f113fb423c0327310bdd797395d611dd10da2f81ebc4fb",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-045.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-051.js",
+          "assets.create.roblox.com/page-0/script-054.js",
+          "assets.create.roblox.com/page-0/script-056.js",
+          "assets.create.roblox.com/page-0/script-060.js",
+          "assets.create.roblox.com/page-0/script-067.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 84
+      },
+      "previous": "9e14f9349f598ff0d616d6f74548ea5eb3e4235c45e3e821a8043d6f027e681f",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
