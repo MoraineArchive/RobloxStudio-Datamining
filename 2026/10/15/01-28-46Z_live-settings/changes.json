@@ -1,0 +1,59 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-4f087c32742644ab",
+    "manifestFiles": 19132,
+    "packages": 34,
+    "version": "0.743.0.7431133"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "a706037cbb18b00c248b9e01837fba0d2985d6d102acc7e4082f5c1163cca947",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "6c09398eebc47ca1e5af659dc1d970ee7a6a066bc05002455479819d63ef1d27",
+      "semantic": {
+        "added": [],
+        "changed": [
+          {
+            "after": "d9190e8bdeaca3c5c3f848843df0b28747afc6fd",
+            "before": "e474cc352fea747a7d1a4c172a33e77fe9b79a80",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-15T01:22:19.850Z",
+            "before": "2026-10-15T01:12:27.580Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagAssistantCapturePluginGuiTool"
+          },
+          {
+            "after": "d9190e8bdeaca3c5c3f848843df0b28747afc6fd",
+            "before": "e474cc352fea747a7d1a4c172a33e77fe9b79a80",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-15T01:22:19.850Z",
+            "before": "2026-10-15T01:12:27.580Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagAssistantCapturePluginGuiTool_Staged"
+        ],
+        "unchanged": 25261
+      }
+    }
+  },
+  "schemaVersion": 1
+}
