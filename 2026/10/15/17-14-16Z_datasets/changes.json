@@ -1,0 +1,99 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-4f087c32742644ab",
+    "manifestFiles": 19132,
+    "packages": 34,
+    "version": "0.743.0.7431133"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "9155f3b7e3237235d1fe1626d045aae48c98be03d25a6af27bd34b39afccb5b4",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "d3da1ddb54671c1943492e40ed3d12f0f83951c43958e88e751b785980ba05db",
+      "semantic": {
+        "added": [
+          "DFFlagCLI228903",
+          "DFFlagCSGPublishSkipInvalidTeamCreateUserId_Staged",
+          "DFFlagEnableImagePublish_Staged",
+          "DFFlagPublishAssetPrompt2_Staged",
+          "DFFlagTextShadowIgnoresRichTextAndSelectionColor_Staged",
+          "DFFlagUIGradientFixFirstLastStop2_Staged",
+          "FFlagCLI228902_Staged",
+          "FFlagFixMakeupCreationTokenPrices_Staged",
+          "FFlagMakeupSingleAssetUploadEnabled2_Staged",
+          "FFlagPromptCreateMakeupAsyncEnabled6_Staged",
+          "FFlagSduiPerSectionPoolSizing2_Staged",
+          "FFlagSduiProgressiveScrollMathFix_Staged",
+          "FFlagSimAvoidSubnormalInertiaInverse_Staged",
+          "FFlagStudioCheckTestServiceMode_Staged",
+          "FFlagUseVmEngineContextForInstanceCreation_Staged",
+          "FFlagVoxelGridFixUnionOccupancyOverflow_Staged",
+          "FIntExplicitTextureRequestHundredthPercent_Staged"
+        ],
+        "changed": [
+          {
+            "after": "685ca26b0439e9ca47fa66bb08b7e47d8ffcc2cb",
+            "before": "07bc8ddd267f47016f9a9bad86a19652ac69361d",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-15T17:13:03.817Z",
+            "before": "2026-10-15T02:02:25.759Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "685ca26b0439e9ca47fa66bb08b7e47d8ffcc2cb",
+            "before": "07bc8ddd267f47016f9a9bad86a19652ac69361d",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-15T17:13:03.817Z",
+            "before": "2026-10-15T02:02:25.759Z",
+            "name": "FStringFlipTimeStampFastString"
+          },
+          {
+            "after": "1;HarmonyExposure;PerformanceControlTestPostProcessingAlgorithms-1789366196207-1790119849840;1729117455;flagbank",
+            "before": "1;HarmonyExposure;PerformanceControlTestPostProcessingAlgorithms-1789366196207-1790119849840;350451862;flagbank",
+            "name": "FStringPerformanceControlExperimentName_IXP"
+          }
+        ],
+        "removed": [],
+        "unchanged": 25261
+      }
+    },
+    "Web": {
+      "current": "8f691e484c98797d6fd5a326f8e875cb45dccce193b61d17953c59b16c1a2699",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-051.js",
+          "assets.create.roblox.com/page-0/script-054.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 91
+      },
+      "previous": "884d6896131b9c05fa1dd3d2ea837fd2ca8f4da9a1f1576856cca561b4884c5e",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
