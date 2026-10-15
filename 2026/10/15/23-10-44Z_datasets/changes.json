@@ -1,0 +1,91 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-4f087c32742644ab",
+    "manifestFiles": 19132,
+    "packages": 34,
+    "version": "0.743.0.7431133"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "f267b9c31b79cb40713a13d680c3a12c94e82996c47a35b6bf618751e8c9d9f6",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "d6b8d9be934d61f615064d3eab763848a1cf8943d47388dc9eaae81ef6790a35",
+      "semantic": {
+        "added": [
+          "FFlagAssetImportFixNonAsciiPaths",
+          "FFlagAssistantLLMNotificationGapRecovery_Staged",
+          "FFlagStudioReplaceGSTWithIdInAssetDataModelManager2"
+        ],
+        "changed": [
+          {
+            "after": "67293b2f0f1e86d24a04b8a5d1f108deb6bb128c",
+            "before": "8ad181a59117b4f6c86a831ef6f573fa0b091673",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-15T22:37:56.982Z",
+            "before": "2026-10-15T22:12:54.290Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "True",
+            "before": "False",
+            "name": "FFlagEnableCollaboratorSafetyEvictionCheck4"
+          },
+          {
+            "after": "67293b2f0f1e86d24a04b8a5d1f108deb6bb128c",
+            "before": "8ad181a59117b4f6c86a831ef6f573fa0b091673",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-15T22:37:56.982Z",
+            "before": "2026-10-15T22:12:54.290Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagAssetImportFixNonAsciiPaths_Staged",
+          "FFlagEnableCollaboratorSafetyEvictionCheck4_Staged",
+          "FFlagStudioReplaceGSTWithIdInAssetDataModelManager2_Staged"
+        ],
+        "unchanged": 25326
+      }
+    },
+    "Web": {
+      "current": "658cda4d53efa22c17391aedef8010f4769cd4a32a4767d842c9d1e88814deac",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-045.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-051.js",
+          "assets.create.roblox.com/page-0/script-054.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 89
+      },
+      "previous": "e084f904e67e6d2d36f113fb423c0327310bdd797395d611dd10da2f81ebc4fb",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
