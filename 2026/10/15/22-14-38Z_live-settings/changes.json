@@ -1,0 +1,66 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-4f087c32742644ab",
+    "manifestFiles": 19132,
+    "packages": 34,
+    "version": "0.743.0.7431133"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "d6b8d9be934d61f615064d3eab763848a1cf8943d47388dc9eaae81ef6790a35",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "27480e88b76bbe1101b0507579a5e95d0ce2d0545e0b8ec24f1c3da76996439c",
+      "semantic": {
+        "added": [
+          "DFFlagSlimModelsSnapshotNestedComposites",
+          "DFIntRuntimeInjectorTelemetryThrottleHundredthsPercent_Staged",
+          "FFlagLuaAppEnableOneByTwoTileFunnelTelemetrySdui",
+          "FFlagLuaAppPlayWithRewardSkipIxpForShimmer",
+          "FFlagLuauCompileNoDebugConst",
+          "FFlagLuauUdtfTerseChunkNames",
+          "FIntmi_option_page_commit_on_demand_Staged"
+        ],
+        "changed": [
+          {
+            "after": "8ad181a59117b4f6c86a831ef6f573fa0b091673",
+            "before": "88d3fa319831d36e146bd415d456bdac936f5918",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-15T22:12:54.290Z",
+            "before": "2026-10-15T21:57:04.482Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "8ad181a59117b4f6c86a831ef6f573fa0b091673",
+            "before": "88d3fa319831d36e146bd415d456bdac936f5918",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-15T22:12:54.290Z",
+            "before": "2026-10-15T21:57:04.482Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagSlimModelsSnapshotNestedComposites_Staged",
+          "FFlagLuaAppEnableOneByTwoTileFunnelTelemetrySdui_Staged",
+          "FFlagLuaAppPlayWithRewardSkipIxpForShimmer_Staged",
+          "FFlagLuauCompileNoDebugConst_Staged",
+          "FFlagLuauUdtfTerseChunkNames_Staged"
+        ],
+        "unchanged": 25323
+      }
+    }
+  },
+  "schemaVersion": 1
+}
