@@ -1,0 +1,96 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-4f087c32742644ab",
+    "manifestFiles": 19132,
+    "packages": 34,
+    "version": "0.743.0.7431133"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "2d27544ae9c552a8ad490409e005df3db140befc3012da0222a890737617ba61",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "51eee6994ad5fc0400182c8b15cd0263c4b557cfeb42c058e8feb2c541798248",
+      "semantic": {
+        "added": [
+          "DFFlagUIGradientFixFirstLastStop2",
+          "FFlagAmrFoundationifyScopeOptions_Staged",
+          "FFlagAmrSaveToggledGroups_Staged",
+          "FFlagCLI228902",
+          "FFlagD3D11SharedTextureShaderResourceView_Staged",
+          "FFlagFixMakeupCreationTokenPrices",
+          "FFlagGraphicsD3D11HardwareBufferTextures_Staged",
+          "FFlagPromptCreateMakeupAsyncEnabled6"
+        ],
+        "changed": [
+          {
+            "after": "aaf602aa27362d55b4d55945480a6f16f4e039c7",
+            "before": "cc0683a41458bb56db753fbdf3f74d44e0fa39cd",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-15T18:13:46.782Z",
+            "before": "2026-10-15T17:59:21.826Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "True",
+            "before": "False",
+            "name": "FFlagMakeupSingleAssetUploadEnabled2"
+          },
+          {
+            "after": "aaf602aa27362d55b4d55945480a6f16f4e039c7",
+            "before": "cc0683a41458bb56db753fbdf3f74d44e0fa39cd",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-15T18:13:46.782Z",
+            "before": "2026-10-15T17:59:21.826Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagUIGradientFixFirstLastStop2_Staged",
+          "FFlagCLI228902_Staged",
+          "FFlagFixMakeupCreationTokenPrices_Staged",
+          "FFlagMakeupSingleAssetUploadEnabled2_Staged",
+          "FFlagPromptCreateMakeupAsyncEnabled6_Staged"
+        ],
+        "unchanged": 25276
+      }
+    },
+    "Web": {
+      "current": "6c1365cc6b40e8a08292c4ae639c640739c0cf0bccdbbdf2dbfe89da99ee9018",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-051.js",
+          "assets.create.roblox.com/page-0/script-054.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 91
+      },
+      "previous": "93132e0765d1138985195dc7d382eb4684b60e5dc315e04fdb03c4b8077ca684",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
