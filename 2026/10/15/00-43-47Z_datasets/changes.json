@@ -1,0 +1,140 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-4f087c32742644ab",
+    "manifestFiles": 19132,
+    "packages": 34,
+    "version": "0.743.0.7431133"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "bd49f04928f77797c8ae3b377c12cc9d080536c599d3ff4de3c6fac4502a8ff5",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "221c09d89fed7f40ad521f8ce1db97d62e5c174cb8f13c5acc6d3d4900d9ca1d",
+      "semantic": {
+        "added": [
+          "DFFlagCSGPublishMinTriangleCountTeamCreateOnly",
+          "DFFlagSmoothClusterReleaseStaleOccluder",
+          "FFlagAnimGraphUI_ValueNodeDebugOutputs",
+          "FFlagAssistantCapturePluginGuiTool_Staged",
+          "FFlagEnableTimeToLoginMetrics2_Staged",
+          "FFlagGen3dTextureCameraBackendCanvas_Staged",
+          "FFlagPlayerDataServiceSkipShutdownWait",
+          "FFlagStudioDebuggerDisablePlaySoloCyclingSubmit",
+          "FFlagStudioHandleLegacyLockExceptionInIsReplicatorPendingTasks_Staged",
+          "FFlagStudioHandleLegacyLockExceptionInViewStudio_Staged",
+          "FFlagStudioMCPProxyToken",
+          "FFlagStudioMCPTelemetryEnabled",
+          "FFlagTeamCreateEvictOnLuaKick",
+          "FFlagTerrainUnparentedGridAccess",
+          "FFlagUGCValidationStripAccessoryHandleAttributes",
+          "FFlagWrapLayerTakeoffRestoresHsrFaces"
+        ],
+        "changed": [
+          {
+            "after": "True",
+            "before": "False",
+            "name": "DFFlagHttpNetworkType"
+          },
+          {
+            "after": "True;10683865908;9950442110;4165164803;204387960;8580361332;5467837225;10062969908;6618224782;3906287814;6421895339;9326923393;6544763344;2152417643;1585046700;10766008731;8156335562;7436755782;7500518143",
+            "before": "True;10683865908;9950442110;4165164803;204387960;8580361332;5467837225;10062969908;6618224782;3906287814;6421895339;9326923393;6544763344;2152417643;1585046700;10766008731;8156335562",
+            "name": "DFFlagLogJourneyEventEnabled_UniverseFilter"
+          },
+          {
+            "after": "4ecb9be422a16d3674ed114d45f4fdc2cc9fa40b",
+            "before": "f8c24427e3c81a62eb88b3fc3b038f84fb54066c",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-15T00:42:53.547Z",
+            "before": "2026-10-14T23:07:05.340Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "(hls,1,720);105796526973604;136954310107221;95047916580305;94991053520125;124847392687570;75363643704406",
+            "before": "(hls,1,720);105796526973604;136954310107221;95047916580305;94991053520125;124847392687570",
+            "name": "DFStringVideoAcrPriorityList_PlaceFilter"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagUIBoundsTracking2"
+          },
+          {
+            "after": "4ecb9be422a16d3674ed114d45f4fdc2cc9fa40b",
+            "before": "f8c24427e3c81a62eb88b3fc3b038f84fb54066c",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-15T00:42:53.547Z",
+            "before": "2026-10-14T23:07:05.340Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagCSGPublishMinTriangleCountTeamCreateOnly_Staged",
+          "DFFlagHttpNetworkType_Staged",
+          "DFFlagSmoothClusterReleaseStaleOccluder_Staged",
+          "FFlagAnimGraphUI_ValueNodeDebugOutputs_Staged",
+          "FFlagPlayerDataServiceSkipShutdownWait_Staged",
+          "FFlagStudioDebuggerDisablePlaySoloCyclingSubmit_Staged",
+          "FFlagStudioMCPProxyToken_Staged",
+          "FFlagStudioMCPTelemetryEnabled_Staged",
+          "FFlagTeamCreateEvictOnLuaKick_Staged",
+          "FFlagTerrainUnparentedGridAccess_Staged",
+          "FFlagUGCValidationStripAccessoryHandleAttributes_Staged",
+          "FFlagUIBoundsTracking2_Staged",
+          "FFlagWrapLayerTakeoffRestoresHsrFaces_Staged"
+        ],
+        "unchanged": 25243
+      }
+    },
+    "Web": {
+      "current": "884d6896131b9c05fa1dd3d2ea837fd2ca8f4da9a1f1576856cca561b4884c5e",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-007.js",
+          "assets.create.roblox.com/page-0/script-015.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-046.js",
+          "assets.create.roblox.com/page-0/script-051.js",
+          "assets.create.roblox.com/page-0/script-054.js",
+          "assets.create.roblox.com/page-0/script-063.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-070.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 78
+      },
+      "previous": "b927209e7e1ebd0627af29581f2c20220bd8ba3b2b3b9e63206f6487331fd839",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
