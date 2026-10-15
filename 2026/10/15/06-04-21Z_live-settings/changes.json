@@ -1,0 +1,62 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-4f087c32742644ab",
+    "manifestFiles": 19132,
+    "packages": 34,
+    "version": "0.743.0.7431133"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "d3da1ddb54671c1943492e40ed3d12f0f83951c43958e88e751b785980ba05db",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "a706037cbb18b00c248b9e01837fba0d2985d6d102acc7e4082f5c1163cca947",
+      "semantic": {
+        "added": [
+          "FFlagEnableTimeToLoginMetrics2",
+          "FFlagGen3dTextureCameraBackendCanvas",
+          "FFlagStudioHandleLegacyLockExceptionInIsReplicatorPendingTasks",
+          "FFlagStudioHandleLegacyLockExceptionInViewStudio"
+        ],
+        "changed": [
+          {
+            "after": "07bc8ddd267f47016f9a9bad86a19652ac69361d",
+            "before": "d9190e8bdeaca3c5c3f848843df0b28747afc6fd",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-15T02:02:25.759Z",
+            "before": "2026-10-15T01:22:19.850Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "07bc8ddd267f47016f9a9bad86a19652ac69361d",
+            "before": "d9190e8bdeaca3c5c3f848843df0b28747afc6fd",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-15T02:02:25.759Z",
+            "before": "2026-10-15T01:22:19.850Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagEnableTimeToLoginMetrics2_Staged",
+          "FFlagGen3dTextureCameraBackendCanvas_Staged",
+          "FFlagStudioHandleLegacyLockExceptionInIsReplicatorPendingTasks_Staged",
+          "FFlagStudioHandleLegacyLockExceptionInViewStudio_Staged"
+        ],
+        "unchanged": 25258
+      }
+    }
+  },
+  "schemaVersion": 1
+}
