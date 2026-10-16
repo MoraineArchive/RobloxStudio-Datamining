@@ -1,0 +1,128 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-4f087c32742644ab",
+    "manifestFiles": 19132,
+    "packages": 34,
+    "version": "0.743.0.7431133"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "80b19c9095210bc2f4a1cc18d04feca677672488284f9c1f2a1de1a1aa210dd9",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "f267b9c31b79cb40713a13d680c3a12c94e82996c47a35b6bf618751e8c9d9f6",
+      "semantic": {
+        "added": [
+          "DFIntCSGAutosavePublishMinEditTimeSeconds",
+          "DFIntRuntimeInjectorTelemetryThrottleHundredthsPercent",
+          "FFlagAssistantCapToolResult2",
+          "FFlagAssistantNormalizeStudioToolNames",
+          "FFlagAssistantReadFileRejectRangeWithEntireFile",
+          "FFlagEnableNavRailTooltipAndTruncation",
+          "FFlagEnableSupportTicketAssetIdsInPayload",
+          "FFlagFixStyleQueryDirtyInsert",
+          "FFlagMarkdownAssistantParity",
+          "FFlagSimRemoveBodyFromConstraint",
+          "FFlagSlimLoadBalancerCommonCleanupOrphanedAssets2",
+          "FFlagStudioAssistantHandleImageEncodeErrors",
+          "FFlagToolboxInventoryDeprecationBanner_Staged",
+          "FFlagUIAntiAliasClipRects2"
+        ],
+        "changed": [
+          {
+            "after": "e5e2c1f32919d3888554a31d9640bd1ed1f52aed",
+            "before": "67293b2f0f1e86d24a04b8a5d1f108deb6bb128c",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-10-16T00:12:59.250Z",
+            "before": "2026-10-15T22:37:56.982Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "True",
+            "before": "False",
+            "name": "FFlagTerrainPerPlaceGrid2"
+          },
+          {
+            "after": "10000",
+            "before": "5000",
+            "name": "FIntMigrateComponentManagerToRuntimeInjectorHundredthPercent"
+          },
+          {
+            "after": "e5e2c1f32919d3888554a31d9640bd1ed1f52aed",
+            "before": "67293b2f0f1e86d24a04b8a5d1f108deb6bb128c",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-10-16T00:12:59.250Z",
+            "before": "2026-10-15T22:37:56.982Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFIntCSGAutosavePublishMinEditTimeSeconds_Staged",
+          "DFIntRuntimeInjectorTelemetryThrottleHundredthsPercent_Staged",
+          "FFlagAssistantCapToolResult2_Staged",
+          "FFlagAssistantNormalizeStudioToolNames_Staged",
+          "FFlagAssistantReadFileRejectRangeWithEntireFile_Staged",
+          "FFlagEnableNavRailTooltipAndTruncation_Staged",
+          "FFlagEnableSupportTicketAssetIdsInPayload_Staged",
+          "FFlagFixStyleQueryDirtyInsert_Staged",
+          "FFlagMarkdownAssistantParity_Staged",
+          "FFlagSimRemoveBodyFromConstraint_Staged",
+          "FFlagSlimLoadBalancerCommonCleanupOrphanedAssets2_Staged",
+          "FFlagStudioAssistantHandleImageEncodeErrors_Staged",
+          "FFlagTerrainPerPlaceGrid2_Staged",
+          "FFlagUIAntiAliasClipRects2_Staged",
+          "FIntMigrateComponentManagerToRuntimeInjectorHundredthPercent_Staged"
+        ],
+        "unchanged": 25313
+      }
+    },
+    "Web": {
+      "current": "9e53024191190b777f0ca24df52eb227ec0bc228a9c004b9138f7a6d5ddac956",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-045.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-051.js",
+          "assets.create.roblox.com/page-0/script-054.js",
+          "assets.create.roblox.com/page-0/script-059.js",
+          "assets.create.roblox.com/page-0/script-060.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-077.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-0/script-083.js",
+          "assets.create.roblox.com/page-1/script-001.js",
+          "assets.create.roblox.com/page-1/script-003.js",
+          "assets.create.roblox.com/page-1/script-004.js",
+          "assets.create.roblox.com/page-1/script-011.js",
+          "assets.create.roblox.com/page-1/script-012.js",
+          "assets.create.roblox.com/page-1/script-013.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 80
+      },
+      "previous": "658cda4d53efa22c17391aedef8010f4769cd4a32a4767d842c9d1e88814deac",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
