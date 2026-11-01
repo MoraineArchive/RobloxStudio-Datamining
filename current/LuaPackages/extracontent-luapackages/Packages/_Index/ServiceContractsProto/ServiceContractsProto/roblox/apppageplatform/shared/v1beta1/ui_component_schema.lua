@@ -49,6 +49,10 @@ type _Messages =
 		BadgeTileSchema_Props: _BadgeTileSchema_PropsMessage,
 		UserSearchTileSchema: _UserSearchTileSchemaMessage,
 		UserSearchTileSchema_Props: _UserSearchTileSchema_PropsMessage,
+		InteractableTileWrapperSchema: _InteractableTileWrapperSchemaMessage,
+		InteractableTileWrapperSchema_Props: _InteractableTileWrapperSchema_PropsMessage,
+		GroupForumPostPreviewSchema: _GroupForumPostPreviewSchemaMessage,
+		GroupForumPostPreviewSchema_Props: _GroupForumPostPreviewSchema_PropsMessage,
 		GameTileSchema: _GameTileSchemaMessage,
 		GameTileSchema_Props: _GameTileSchema_PropsMessage,
 		GameTileSchema_WebProps: _GameTileSchema_WebPropsMessage,
@@ -208,6 +212,8 @@ type _Messages =
 		FriendCarouselSchema_Props: _FriendCarouselSchema_PropsMessage,
 		PymkCarouselSchema: _PymkCarouselSchemaMessage,
 		PymkCarouselSchema_Props: _PymkCarouselSchema_PropsMessage,
+		FriendsOwnedChipSchema: _FriendsOwnedChipSchemaMessage,
+		FriendsOwnedChipSchema_Props: _FriendsOwnedChipSchema_PropsMessage,
 		HomeUserInfoWidgetSchema: _HomeUserInfoWidgetSchemaMessage,
 		HomeUserInfoWidgetSchema_Props: _HomeUserInfoWidgetSchema_PropsMessage,
 		CatalogItemCarouselSchema: _CatalogItemCarouselSchemaMessage,
@@ -282,13 +288,21 @@ type _Messages =
 		ContentRowSchema_Props: _ContentRowSchema_PropsMessage,
 		ListRootSchema: _ListRootSchemaMessage,
 		ListRootSchema_Props: _ListRootSchema_PropsMessage,
+		ExpandableListRootSchema: _ExpandableListRootSchemaMessage,
+		ExpandableListRootSchema_Props: _ExpandableListRootSchema_PropsMessage,
 		ListItemSchema: _ListItemSchemaMessage,
 		ListItemSchema_Props: _ListItemSchema_PropsMessage,
+		SearchAutocompleteSuggestionSchema: _SearchAutocompleteSuggestionSchemaMessage,
+		SearchAutocompleteSuggestionSchema_Props: _SearchAutocompleteSuggestionSchema_PropsMessage,
 		ListItemInputProp: _ListItemInputPropMessage,
 		ListItemInputControlProp: _ListItemInputControlPropMessage,
 		ListItemInputControlProp_ConditionalOption: _ListItemInputControlProp_ConditionalOptionMessage,
 		ListItemInputControlProp_ConditionalOptions: _ListItemInputControlProp_ConditionalOptionsMessage,
 		ListItemInputControlProp_ListItemInputControl: _ListItemInputControlProp_ListItemInputControlMessage,
+		AccordionSchema: _AccordionSchemaMessage,
+		AccordionSchema_Props: _AccordionSchema_PropsMessage,
+		AccordionItemSchema: _AccordionItemSchemaMessage,
+		AccordionItemSchema_Props: _AccordionItemSchema_PropsMessage,
 		AgeCheckUpsellRowSchema: _AgeCheckUpsellRowSchemaMessage,
 		AgeCheckUpsellRowSchema_Props: _AgeCheckUpsellRowSchema_PropsMessage,
 		FilterPillsCarouselSchema: _FilterPillsCarouselSchemaMessage,
@@ -311,6 +325,8 @@ type _Messages =
 		EventTileSchema_Props: _EventTileSchema_PropsMessage,
 		SheetFullBleedSchema: _SheetFullBleedSchemaMessage,
 		SheetFullBleedSchema_Props: _SheetFullBleedSchema_PropsMessage,
+		SheetSchema: _SheetSchemaMessage,
+		SheetSchema_Props: _SheetSchema_PropsMessage,
 		SubscriptionCellSchema: _SubscriptionCellSchemaMessage,
 		SubscriptionCellSchema_Props: _SubscriptionCellSchema_PropsMessage,
 		TooltipSchema: _TooltipSchemaMessage,
@@ -326,6 +342,8 @@ type _Messages =
 		SystemBannerSchema: _SystemBannerSchemaMessage,
 		SystemBannerSchema_Props: _SystemBannerSchema_PropsMessage,
 		SystemBannerSchema_WebProps: _SystemBannerSchema_WebPropsMessage,
+		BannerSchema: _BannerSchemaMessage,
+		BannerSchema_Props: _BannerSchema_PropsMessage,
 		FoundationInternalNoticeLink: _FoundationInternalNoticeLinkMessage,
 		FoundationInternalNoticeLinkProp: _FoundationInternalNoticeLinkPropMessage,
 		FoundationInternalNoticeLinkProp_ConditionalOption: _FoundationInternalNoticeLinkProp_ConditionalOptionMessage,
@@ -365,6 +383,7 @@ type _Messages =
 		SponsoredTwoByOneTileSchema_Props: _SponsoredTwoByOneTileSchema_PropsMessage,
 		ToggleSchema: _ToggleSchemaMessage,
 		ToggleSchema_Props: _ToggleSchema_PropsMessage,
+		ToggleSchema_WebProps: _ToggleSchema_WebPropsMessage,
 		SponsoredOneByTwoTileSchema: _SponsoredOneByTwoTileSchemaMessage,
 		SponsoredOneByTwoTileSchema_Props: _SponsoredOneByTwoTileSchema_PropsMessage,
 		ExperimentalComponentProp: _ExperimentalComponentPropMessage,
@@ -374,6 +393,12 @@ type _Messages =
 		SignUpFormSchema_Props: _SignUpFormSchema_PropsMessage,
 		ProgressSchema: _ProgressSchemaMessage,
 		ProgressSchema_Props: _ProgressSchema_PropsMessage,
+		ConfigDrivenFormSchema: _ConfigDrivenFormSchemaMessage,
+		ConfigDrivenFormSchema_Props: _ConfigDrivenFormSchema_PropsMessage,
+		ReactionsSchema: _ReactionsSchemaMessage,
+		ReactionsSchema_Props: _ReactionsSchema_PropsMessage,
+		CustomFormSchema: _CustomFormSchemaMessage,
+		CustomFormSchema_Props: _CustomFormSchema_PropsMessage,
 		UiComponentSchema: _UiComponentSchemaMessage,
 	}
 local messages: _Messages = {} :: _Messages
@@ -1755,6 +1780,136 @@ export type UserSearchTileSchema_Props = typeof(setmetatable(
 type _UserSearchTileSchema_PropsMessage = proto.Message<
 	UserSearchTileSchema_Props,
 	_UserSearchTileSchema_PropsPartialFields
+>
+
+type _InteractableTileWrapperSchemaImpl = {
+	__index: _InteractableTileWrapperSchemaImpl,
+	new: (fields: _InteractableTileWrapperSchemaPartialFields?) -> InteractableTileWrapperSchema,
+	encode: (self: InteractableTileWrapperSchema) -> buffer,
+	decode: (input: buffer) -> InteractableTileWrapperSchema,
+	jsonEncode: (self: InteractableTileWrapperSchema) -> { [string]: any },
+	jsonDecode: (input: { [string]: any }) -> InteractableTileWrapperSchema,
+	descriptor: proto.Descriptor,
+}
+
+type _InteractableTileWrapperSchemaFields = {
+	props: InteractableTileWrapperSchema_Props?,
+	shared: _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared?,
+}
+
+type _InteractableTileWrapperSchemaPartialFields = {
+	props: InteractableTileWrapperSchema_Props?,
+	shared: _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared?,
+}
+
+export type InteractableTileWrapperSchema = typeof(setmetatable(
+	{} :: _InteractableTileWrapperSchemaFields,
+	{} :: _InteractableTileWrapperSchemaImpl
+))
+type _InteractableTileWrapperSchemaMessage = proto.Message<
+	InteractableTileWrapperSchema,
+	_InteractableTileWrapperSchemaPartialFields
+>
+
+type _InteractableTileWrapperSchema_PropsImpl = {
+	__index: _InteractableTileWrapperSchema_PropsImpl,
+	new: (fields: _InteractableTileWrapperSchema_PropsPartialFields?) -> InteractableTileWrapperSchema_Props,
+	encode: (self: InteractableTileWrapperSchema_Props) -> buffer,
+	decode: (input: buffer) -> InteractableTileWrapperSchema_Props,
+	jsonEncode: (self: InteractableTileWrapperSchema_Props) -> { [string]: any },
+	jsonDecode: (input: { [string]: any }) -> InteractableTileWrapperSchema_Props,
+	descriptor: proto.Descriptor,
+}
+
+type _InteractableTileWrapperSchema_PropsFields = {
+	tile_component: NestedComponentProp?,
+	overflow_menu_component: LazyNestedComponentProp?,
+}
+
+type _InteractableTileWrapperSchema_PropsPartialFields = {
+	tile_component: NestedComponentProp?,
+	overflow_menu_component: LazyNestedComponentProp?,
+}
+
+export type InteractableTileWrapperSchema_Props = typeof(setmetatable(
+	{} :: _InteractableTileWrapperSchema_PropsFields,
+	{} :: _InteractableTileWrapperSchema_PropsImpl
+))
+type _InteractableTileWrapperSchema_PropsMessage = proto.Message<
+	InteractableTileWrapperSchema_Props,
+	_InteractableTileWrapperSchema_PropsPartialFields
+>
+
+type _GroupForumPostPreviewSchemaImpl = {
+	__index: _GroupForumPostPreviewSchemaImpl,
+	new: (fields: _GroupForumPostPreviewSchemaPartialFields?) -> GroupForumPostPreviewSchema,
+	encode: (self: GroupForumPostPreviewSchema) -> buffer,
+	decode: (input: buffer) -> GroupForumPostPreviewSchema,
+	jsonEncode: (self: GroupForumPostPreviewSchema) -> { [string]: any },
+	jsonDecode: (input: { [string]: any }) -> GroupForumPostPreviewSchema,
+	descriptor: proto.Descriptor,
+}
+
+type _GroupForumPostPreviewSchemaFields = {
+	props: GroupForumPostPreviewSchema_Props?,
+	shared: _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared?,
+}
+
+type _GroupForumPostPreviewSchemaPartialFields = {
+	props: GroupForumPostPreviewSchema_Props?,
+	shared: _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared?,
+}
+
+export type GroupForumPostPreviewSchema = typeof(setmetatable(
+	{} :: _GroupForumPostPreviewSchemaFields,
+	{} :: _GroupForumPostPreviewSchemaImpl
+))
+type _GroupForumPostPreviewSchemaMessage = proto.Message<
+	GroupForumPostPreviewSchema,
+	_GroupForumPostPreviewSchemaPartialFields
+>
+
+type _GroupForumPostPreviewSchema_PropsImpl = {
+	__index: _GroupForumPostPreviewSchema_PropsImpl,
+	new: (fields: _GroupForumPostPreviewSchema_PropsPartialFields?) -> GroupForumPostPreviewSchema_Props,
+	encode: (self: GroupForumPostPreviewSchema_Props) -> buffer,
+	decode: (input: buffer) -> GroupForumPostPreviewSchema_Props,
+	jsonEncode: (self: GroupForumPostPreviewSchema_Props) -> { [string]: any },
+	jsonDecode: (input: { [string]: any }) -> GroupForumPostPreviewSchema_Props,
+	descriptor: proto.Descriptor,
+}
+
+type _GroupForumPostPreviewSchema_PropsFields = {
+	title: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	body: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	creator_user_id: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	creator_display_name: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	creator_is_verified: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
+	creator_role_name: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	reply_count: _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop?,
+	layout_order: _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop?,
+	on_activated: _roblox_apppageplatform_shared_v1beta1_actions.ActionProp?,
+}
+
+type _GroupForumPostPreviewSchema_PropsPartialFields = {
+	title: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	body: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	creator_user_id: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	creator_display_name: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	creator_is_verified: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
+	creator_role_name: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	reply_count: _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop?,
+	layout_order: _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop?,
+	on_activated: _roblox_apppageplatform_shared_v1beta1_actions.ActionProp?,
+}
+
+export type GroupForumPostPreviewSchema_Props = typeof(setmetatable(
+	{} :: _GroupForumPostPreviewSchema_PropsFields,
+	{} :: _GroupForumPostPreviewSchema_PropsImpl
+))
+type _GroupForumPostPreviewSchema_PropsMessage = proto.Message<
+	GroupForumPostPreviewSchema_Props,
+	_GroupForumPostPreviewSchema_PropsPartialFields
 >
 
 type _GameTileSchemaImpl = {
@@ -4386,6 +4541,7 @@ type _OptionSelectorCollectionSchema_PropsFields = {
 	option_impression_event_name: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
 	skip_option_item_impressions_log: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
 	subtitle: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	header_component: NestedComponentProp?,
 }
 
 type _OptionSelectorCollectionSchema_PropsPartialFields = {
@@ -4404,6 +4560,7 @@ type _OptionSelectorCollectionSchema_PropsPartialFields = {
 	option_impression_event_name: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
 	skip_option_item_impressions_log: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
 	subtitle: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	header_component: NestedComponentProp?,
 }
 
 export type OptionSelectorCollectionSchema_Props = typeof(setmetatable(
@@ -7425,6 +7582,63 @@ export type PymkCarouselSchema_Props = typeof(setmetatable(
 ))
 type _PymkCarouselSchema_PropsMessage = proto.Message<PymkCarouselSchema_Props, _PymkCarouselSchema_PropsPartialFields>
 
+type _FriendsOwnedChipSchemaImpl = {
+	__index: _FriendsOwnedChipSchemaImpl,
+	new: (fields: _FriendsOwnedChipSchemaPartialFields?) -> FriendsOwnedChipSchema,
+	encode: (self: FriendsOwnedChipSchema) -> buffer,
+	decode: (input: buffer) -> FriendsOwnedChipSchema,
+	jsonEncode: (self: FriendsOwnedChipSchema) -> { [string]: any },
+	jsonDecode: (input: { [string]: any }) -> FriendsOwnedChipSchema,
+	descriptor: proto.Descriptor,
+}
+
+type _FriendsOwnedChipSchemaFields = {
+	props: FriendsOwnedChipSchema_Props?,
+	shared: _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared?,
+}
+
+type _FriendsOwnedChipSchemaPartialFields = {
+	props: FriendsOwnedChipSchema_Props?,
+	shared: _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared?,
+}
+
+export type FriendsOwnedChipSchema = typeof(setmetatable(
+	{} :: _FriendsOwnedChipSchemaFields,
+	{} :: _FriendsOwnedChipSchemaImpl
+))
+type _FriendsOwnedChipSchemaMessage = proto.Message<FriendsOwnedChipSchema, _FriendsOwnedChipSchemaPartialFields>
+
+type _FriendsOwnedChipSchema_PropsImpl = {
+	__index: _FriendsOwnedChipSchema_PropsImpl,
+	new: (fields: _FriendsOwnedChipSchema_PropsPartialFields?) -> FriendsOwnedChipSchema_Props,
+	encode: (self: FriendsOwnedChipSchema_Props) -> buffer,
+	decode: (input: buffer) -> FriendsOwnedChipSchema_Props,
+	jsonEncode: (self: FriendsOwnedChipSchema_Props) -> { [string]: any },
+	jsonDecode: (input: { [string]: any }) -> FriendsOwnedChipSchema_Props,
+	descriptor: proto.Descriptor,
+}
+
+type _FriendsOwnedChipSchema_PropsFields = {
+	item_id: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	item_type: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	layout_order: _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop?,
+}
+
+type _FriendsOwnedChipSchema_PropsPartialFields = {
+	item_id: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	item_type: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	layout_order: _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop?,
+}
+
+export type FriendsOwnedChipSchema_Props = typeof(setmetatable(
+	{} :: _FriendsOwnedChipSchema_PropsFields,
+	{} :: _FriendsOwnedChipSchema_PropsImpl
+))
+type _FriendsOwnedChipSchema_PropsMessage = proto.Message<
+	FriendsOwnedChipSchema_Props,
+	_FriendsOwnedChipSchema_PropsPartialFields
+>
+
 type _HomeUserInfoWidgetSchemaImpl = {
 	__index: _HomeUserInfoWidgetSchemaImpl,
 	new: (fields: _HomeUserInfoWidgetSchemaPartialFields?) -> HomeUserInfoWidgetSchema,
@@ -9835,6 +10049,7 @@ type _ContentRowSchema_PropsFields = {
 	position: _roblox_apppageplatform_shared_v1beta1_prop_types.UiScaledUDim2Prop?,
 	z_index: _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop?,
 	state_layer_affordance: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	selectable: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
 }
 
 type _ContentRowSchema_PropsPartialFields = {
@@ -9851,6 +10066,7 @@ type _ContentRowSchema_PropsPartialFields = {
 	position: _roblox_apppageplatform_shared_v1beta1_prop_types.UiScaledUDim2Prop?,
 	z_index: _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop?,
 	state_layer_affordance: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	selectable: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
 }
 
 export type ContentRowSchema_Props = typeof(setmetatable(
@@ -9920,6 +10136,71 @@ export type ListRootSchema_Props = typeof(setmetatable(
 ))
 type _ListRootSchema_PropsMessage = proto.Message<ListRootSchema_Props, _ListRootSchema_PropsPartialFields>
 
+type _ExpandableListRootSchemaImpl = {
+	__index: _ExpandableListRootSchemaImpl,
+	new: (fields: _ExpandableListRootSchemaPartialFields?) -> ExpandableListRootSchema,
+	encode: (self: ExpandableListRootSchema) -> buffer,
+	decode: (input: buffer) -> ExpandableListRootSchema,
+	jsonEncode: (self: ExpandableListRootSchema) -> { [string]: any },
+	jsonDecode: (input: { [string]: any }) -> ExpandableListRootSchema,
+	descriptor: proto.Descriptor,
+}
+
+type _ExpandableListRootSchemaFields = {
+	props: ExpandableListRootSchema_Props?,
+	shared: _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared?,
+}
+
+type _ExpandableListRootSchemaPartialFields = {
+	props: ExpandableListRootSchema_Props?,
+	shared: _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared?,
+}
+
+export type ExpandableListRootSchema = typeof(setmetatable(
+	{} :: _ExpandableListRootSchemaFields,
+	{} :: _ExpandableListRootSchemaImpl
+))
+type _ExpandableListRootSchemaMessage = proto.Message<ExpandableListRootSchema, _ExpandableListRootSchemaPartialFields>
+
+type _ExpandableListRootSchema_PropsImpl = {
+	__index: _ExpandableListRootSchema_PropsImpl,
+	new: (fields: _ExpandableListRootSchema_PropsPartialFields?) -> ExpandableListRootSchema_Props,
+	encode: (self: ExpandableListRootSchema_Props) -> buffer,
+	decode: (input: buffer) -> ExpandableListRootSchema_Props,
+	jsonEncode: (self: ExpandableListRootSchema_Props) -> { [string]: any },
+	jsonDecode: (input: { [string]: any }) -> ExpandableListRootSchema_Props,
+	descriptor: proto.Descriptor,
+}
+
+type _ExpandableListRootSchema_PropsFields = {
+	state_key: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	header: LazyNestedComponentProp?,
+	toggle: LazyNestedComponentProp?,
+	content: LazyNestedComponentProp?,
+	initially_expanded: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
+	layout_order: _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop?,
+	test_id: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+}
+
+type _ExpandableListRootSchema_PropsPartialFields = {
+	state_key: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	header: LazyNestedComponentProp?,
+	toggle: LazyNestedComponentProp?,
+	content: LazyNestedComponentProp?,
+	initially_expanded: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
+	layout_order: _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop?,
+	test_id: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+}
+
+export type ExpandableListRootSchema_Props = typeof(setmetatable(
+	{} :: _ExpandableListRootSchema_PropsFields,
+	{} :: _ExpandableListRootSchema_PropsImpl
+))
+type _ExpandableListRootSchema_PropsMessage = proto.Message<
+	ExpandableListRootSchema_Props,
+	_ExpandableListRootSchema_PropsPartialFields
+>
+
 type _ListItemSchemaImpl = {
 	__index: _ListItemSchemaImpl,
 	new: (fields: _ListItemSchemaPartialFields?) -> ListItemSchema,
@@ -9982,6 +10263,70 @@ export type ListItemSchema_Props = typeof(setmetatable(
 	{} :: _ListItemSchema_PropsImpl
 ))
 type _ListItemSchema_PropsMessage = proto.Message<ListItemSchema_Props, _ListItemSchema_PropsPartialFields>
+
+type _SearchAutocompleteSuggestionSchemaImpl = {
+	__index: _SearchAutocompleteSuggestionSchemaImpl,
+	new: (fields: _SearchAutocompleteSuggestionSchemaPartialFields?) -> SearchAutocompleteSuggestionSchema,
+	encode: (self: SearchAutocompleteSuggestionSchema) -> buffer,
+	decode: (input: buffer) -> SearchAutocompleteSuggestionSchema,
+	jsonEncode: (self: SearchAutocompleteSuggestionSchema) -> { [string]: any },
+	jsonDecode: (input: { [string]: any }) -> SearchAutocompleteSuggestionSchema,
+	descriptor: proto.Descriptor,
+}
+
+type _SearchAutocompleteSuggestionSchemaFields = {
+	props: SearchAutocompleteSuggestionSchema_Props?,
+	shared: _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared?,
+}
+
+type _SearchAutocompleteSuggestionSchemaPartialFields = {
+	props: SearchAutocompleteSuggestionSchema_Props?,
+	shared: _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared?,
+}
+
+export type SearchAutocompleteSuggestionSchema = typeof(setmetatable(
+	{} :: _SearchAutocompleteSuggestionSchemaFields,
+	{} :: _SearchAutocompleteSuggestionSchemaImpl
+))
+type _SearchAutocompleteSuggestionSchemaMessage = proto.Message<
+	SearchAutocompleteSuggestionSchema,
+	_SearchAutocompleteSuggestionSchemaPartialFields
+>
+
+type _SearchAutocompleteSuggestionSchema_PropsImpl = {
+	__index: _SearchAutocompleteSuggestionSchema_PropsImpl,
+	new: (fields: _SearchAutocompleteSuggestionSchema_PropsPartialFields?) -> SearchAutocompleteSuggestionSchema_Props,
+	encode: (self: SearchAutocompleteSuggestionSchema_Props) -> buffer,
+	decode: (input: buffer) -> SearchAutocompleteSuggestionSchema_Props,
+	jsonEncode: (self: SearchAutocompleteSuggestionSchema_Props) -> { [string]: any },
+	jsonDecode: (input: { [string]: any }) -> SearchAutocompleteSuggestionSchema_Props,
+	descriptor: proto.Descriptor,
+}
+
+type _SearchAutocompleteSuggestionSchema_PropsFields = {
+	title: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	is_rich: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
+	keyword: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	rich_icon: _roblox_apppageplatform_shared_v1beta1_prop_types.ImageStringProp?,
+	on_activated: _roblox_apppageplatform_shared_v1beta1_actions.ActionProp?,
+}
+
+type _SearchAutocompleteSuggestionSchema_PropsPartialFields = {
+	title: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	is_rich: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
+	keyword: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	rich_icon: _roblox_apppageplatform_shared_v1beta1_prop_types.ImageStringProp?,
+	on_activated: _roblox_apppageplatform_shared_v1beta1_actions.ActionProp?,
+}
+
+export type SearchAutocompleteSuggestionSchema_Props = typeof(setmetatable(
+	{} :: _SearchAutocompleteSuggestionSchema_PropsFields,
+	{} :: _SearchAutocompleteSuggestionSchema_PropsImpl
+))
+type _SearchAutocompleteSuggestionSchema_PropsMessage = proto.Message<
+	SearchAutocompleteSuggestionSchema_Props,
+	_SearchAutocompleteSuggestionSchema_PropsPartialFields
+>
 
 type _ListItemInputPropImpl = {
 	__index: _ListItemInputPropImpl,
@@ -10139,6 +10484,127 @@ export type ListItemInputControlProp_ListItemInputControl = typeof(setmetatable(
 type _ListItemInputControlProp_ListItemInputControlMessage = proto.Message<
 	ListItemInputControlProp_ListItemInputControl,
 	_ListItemInputControlProp_ListItemInputControlPartialFields
+>
+
+type _AccordionSchemaImpl = {
+	__index: _AccordionSchemaImpl,
+	new: (fields: _AccordionSchemaPartialFields?) -> AccordionSchema,
+	encode: (self: AccordionSchema) -> buffer,
+	decode: (input: buffer) -> AccordionSchema,
+	jsonEncode: (self: AccordionSchema) -> { [string]: any },
+	jsonDecode: (input: { [string]: any }) -> AccordionSchema,
+	descriptor: proto.Descriptor,
+}
+
+type _AccordionSchemaFields = {
+	props: AccordionSchema_Props?,
+	shared: _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared?,
+}
+
+type _AccordionSchemaPartialFields = {
+	props: AccordionSchema_Props?,
+	shared: _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared?,
+}
+
+export type AccordionSchema = typeof(setmetatable({} :: _AccordionSchemaFields, {} :: _AccordionSchemaImpl))
+type _AccordionSchemaMessage = proto.Message<AccordionSchema, _AccordionSchemaPartialFields>
+
+type _AccordionSchema_PropsImpl = {
+	__index: _AccordionSchema_PropsImpl,
+	new: (fields: _AccordionSchema_PropsPartialFields?) -> AccordionSchema_Props,
+	encode: (self: AccordionSchema_Props) -> buffer,
+	decode: (input: buffer) -> AccordionSchema_Props,
+	jsonEncode: (self: AccordionSchema_Props) -> { [string]: any },
+	jsonDecode: (input: { [string]: any }) -> AccordionSchema_Props,
+	descriptor: proto.Descriptor,
+}
+
+type _AccordionSchema_PropsFields = {
+	items: LazyNestedComponentListProp?,
+	size: _roblox_apppageplatform_shared_v1beta1_prop_types.InputSizeProp?,
+	is_contained: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
+	chevron_position: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	layout_order: _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop?,
+	test_id: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+}
+
+type _AccordionSchema_PropsPartialFields = {
+	items: LazyNestedComponentListProp?,
+	size: _roblox_apppageplatform_shared_v1beta1_prop_types.InputSizeProp?,
+	is_contained: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
+	chevron_position: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	layout_order: _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop?,
+	test_id: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+}
+
+export type AccordionSchema_Props = typeof(setmetatable(
+	{} :: _AccordionSchema_PropsFields,
+	{} :: _AccordionSchema_PropsImpl
+))
+type _AccordionSchema_PropsMessage = proto.Message<AccordionSchema_Props, _AccordionSchema_PropsPartialFields>
+
+type _AccordionItemSchemaImpl = {
+	__index: _AccordionItemSchemaImpl,
+	new: (fields: _AccordionItemSchemaPartialFields?) -> AccordionItemSchema,
+	encode: (self: AccordionItemSchema) -> buffer,
+	decode: (input: buffer) -> AccordionItemSchema,
+	jsonEncode: (self: AccordionItemSchema) -> { [string]: any },
+	jsonDecode: (input: { [string]: any }) -> AccordionItemSchema,
+	descriptor: proto.Descriptor,
+}
+
+type _AccordionItemSchemaFields = {
+	props: AccordionItemSchema_Props?,
+	shared: _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared?,
+}
+
+type _AccordionItemSchemaPartialFields = {
+	props: AccordionItemSchema_Props?,
+	shared: _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared?,
+}
+
+export type AccordionItemSchema = typeof(setmetatable({} :: _AccordionItemSchemaFields, {} :: _AccordionItemSchemaImpl))
+type _AccordionItemSchemaMessage = proto.Message<AccordionItemSchema, _AccordionItemSchemaPartialFields>
+
+type _AccordionItemSchema_PropsImpl = {
+	__index: _AccordionItemSchema_PropsImpl,
+	new: (fields: _AccordionItemSchema_PropsPartialFields?) -> AccordionItemSchema_Props,
+	encode: (self: AccordionItemSchema_Props) -> buffer,
+	decode: (input: buffer) -> AccordionItemSchema_Props,
+	jsonEncode: (self: AccordionItemSchema_Props) -> { [string]: any },
+	jsonDecode: (input: { [string]: any }) -> AccordionItemSchema_Props,
+	descriptor: proto.Descriptor,
+}
+
+type _AccordionItemSchema_PropsFields = {
+	text: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	description: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	icon: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	icon_variant: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	has_divider: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
+	is_expanded: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
+	content: NestedComponentListProp?,
+	layout_order: _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop?,
+}
+
+type _AccordionItemSchema_PropsPartialFields = {
+	text: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	description: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	icon: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	icon_variant: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	has_divider: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
+	is_expanded: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
+	content: NestedComponentListProp?,
+	layout_order: _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop?,
+}
+
+export type AccordionItemSchema_Props = typeof(setmetatable(
+	{} :: _AccordionItemSchema_PropsFields,
+	{} :: _AccordionItemSchema_PropsImpl
+))
+type _AccordionItemSchema_PropsMessage = proto.Message<
+	AccordionItemSchema_Props,
+	_AccordionItemSchema_PropsPartialFields
 >
 
 type _AgeCheckUpsellRowSchemaImpl = {
@@ -10918,6 +11384,80 @@ type _SheetFullBleedSchema_PropsMessage = proto.Message<
 	_SheetFullBleedSchema_PropsPartialFields
 >
 
+type _SheetSchemaImpl = {
+	__index: _SheetSchemaImpl,
+	new: (fields: _SheetSchemaPartialFields?) -> SheetSchema,
+	encode: (self: SheetSchema) -> buffer,
+	decode: (input: buffer) -> SheetSchema,
+	jsonEncode: (self: SheetSchema) -> { [string]: any },
+	jsonDecode: (input: { [string]: any }) -> SheetSchema,
+	descriptor: proto.Descriptor,
+}
+
+type _SheetSchemaFields = {
+	props: SheetSchema_Props?,
+	shared: _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared?,
+}
+
+type _SheetSchemaPartialFields = {
+	props: SheetSchema_Props?,
+	shared: _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared?,
+}
+
+export type SheetSchema = typeof(setmetatable({} :: _SheetSchemaFields, {} :: _SheetSchemaImpl))
+type _SheetSchemaMessage = proto.Message<SheetSchema, _SheetSchemaPartialFields>
+
+type _SheetSchema_PropsImpl = {
+	__index: _SheetSchema_PropsImpl,
+	new: (fields: _SheetSchema_PropsPartialFields?) -> SheetSchema_Props,
+	encode: (self: SheetSchema_Props) -> buffer,
+	decode: (input: buffer) -> SheetSchema_Props,
+	jsonEncode: (self: SheetSchema_Props) -> { [string]: any },
+	jsonDecode: (input: { [string]: any }) -> SheetSchema_Props,
+	descriptor: proto.Descriptor,
+}
+
+type _SheetSchema_PropsFields = {
+	is_open: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
+	prefer_center_sheet: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
+	size: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	on_close: _roblox_apppageplatform_shared_v1beta1_actions.ActionProp?,
+	center_sheet_height: _roblox_apppageplatform_shared_v1beta1_prop_types.FloatProp?,
+	snap_points: _roblox_apppageplatform_shared_v1beta1_prop_types.ArrayOfFloatProp?,
+	default_snap_point_index: _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop?,
+	on_snap_point_changed: _roblox_apppageplatform_shared_v1beta1_actions.ActionProp?,
+	header_component: NestedComponentProp?,
+	header_has_close_affordance: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
+	full_bleed_component: NestedComponentProp?,
+	content_components: NestedComponentListProp?,
+	content_is_full_bleed: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
+	content_is_reversed: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
+	action_components: NestedComponentListProp?,
+	test_id: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+}
+
+type _SheetSchema_PropsPartialFields = {
+	is_open: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
+	prefer_center_sheet: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
+	size: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	on_close: _roblox_apppageplatform_shared_v1beta1_actions.ActionProp?,
+	center_sheet_height: _roblox_apppageplatform_shared_v1beta1_prop_types.FloatProp?,
+	snap_points: _roblox_apppageplatform_shared_v1beta1_prop_types.ArrayOfFloatProp?,
+	default_snap_point_index: _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop?,
+	on_snap_point_changed: _roblox_apppageplatform_shared_v1beta1_actions.ActionProp?,
+	header_component: NestedComponentProp?,
+	header_has_close_affordance: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
+	full_bleed_component: NestedComponentProp?,
+	content_components: NestedComponentListProp?,
+	content_is_full_bleed: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
+	content_is_reversed: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
+	action_components: NestedComponentListProp?,
+	test_id: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+}
+
+export type SheetSchema_Props = typeof(setmetatable({} :: _SheetSchema_PropsFields, {} :: _SheetSchema_PropsImpl))
+type _SheetSchema_PropsMessage = proto.Message<SheetSchema_Props, _SheetSchema_PropsPartialFields>
+
 type _SubscriptionCellSchemaImpl = {
 	__index: _SubscriptionCellSchemaImpl,
 	new: (fields: _SubscriptionCellSchemaPartialFields?) -> SubscriptionCellSchema,
@@ -11381,6 +11921,90 @@ type _SystemBannerSchema_WebPropsMessage = proto.Message<
 	SystemBannerSchema_WebProps,
 	_SystemBannerSchema_WebPropsPartialFields
 >
+
+type _BannerSchemaImpl = {
+	__index: _BannerSchemaImpl,
+	new: (fields: _BannerSchemaPartialFields?) -> BannerSchema,
+	encode: (self: BannerSchema) -> buffer,
+	decode: (input: buffer) -> BannerSchema,
+	jsonEncode: (self: BannerSchema) -> { [string]: any },
+	jsonDecode: (input: { [string]: any }) -> BannerSchema,
+	descriptor: proto.Descriptor,
+}
+
+type _BannerSchemaFields = {
+	props: BannerSchema_Props?,
+	shared: _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared?,
+}
+
+type _BannerSchemaPartialFields = {
+	props: BannerSchema_Props?,
+	shared: _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared?,
+}
+
+export type BannerSchema = typeof(setmetatable({} :: _BannerSchemaFields, {} :: _BannerSchemaImpl))
+type _BannerSchemaMessage = proto.Message<BannerSchema, _BannerSchemaPartialFields>
+
+type _BannerSchema_PropsImpl = {
+	__index: _BannerSchema_PropsImpl,
+	new: (fields: _BannerSchema_PropsPartialFields?) -> BannerSchema_Props,
+	encode: (self: BannerSchema_Props) -> buffer,
+	decode: (input: buffer) -> BannerSchema_Props,
+	jsonEncode: (self: BannerSchema_Props) -> { [string]: any },
+	jsonDecode: (input: { [string]: any }) -> BannerSchema_Props,
+	descriptor: proto.Descriptor,
+}
+
+type _BannerSchema_PropsFields = {
+	size: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	density: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	title: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	description: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	media: _roblox_apppageplatform_shared_v1beta1_prop_types.ImageStringProp?,
+	media_width: _roblox_apppageplatform_shared_v1beta1_prop_types.FloatProp?,
+	thumbnail_image: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	thumbnail_icon: _roblox_apppageplatform_shared_v1beta1_prop_types.FoundationIconConfigProp?,
+	thumbnail_user_id: _roblox_apppageplatform_shared_v1beta1_prop_types.Int64Prop?,
+	thumbnail_user_presence: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	thumbnail_component: NestedComponentProp?,
+	primary_action: _roblox_apppageplatform_shared_v1beta1_actions.ActionProp?,
+	secondary_action_text: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	secondary_action: _roblox_apppageplatform_shared_v1beta1_actions.ActionProp?,
+	layout_order: _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop?,
+	position: _roblox_apppageplatform_shared_v1beta1_prop_types.UDim2Prop?,
+	z_index: _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop?,
+	anchor_point: _roblox_apppageplatform_shared_v1beta1_prop_types.Vector2Prop?,
+	visible: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
+	test_id: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	on_close: _roblox_apppageplatform_shared_v1beta1_actions.ActionProp?,
+}
+
+type _BannerSchema_PropsPartialFields = {
+	size: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	density: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	title: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	description: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	media: _roblox_apppageplatform_shared_v1beta1_prop_types.ImageStringProp?,
+	media_width: _roblox_apppageplatform_shared_v1beta1_prop_types.FloatProp?,
+	thumbnail_image: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	thumbnail_icon: _roblox_apppageplatform_shared_v1beta1_prop_types.FoundationIconConfigProp?,
+	thumbnail_user_id: _roblox_apppageplatform_shared_v1beta1_prop_types.Int64Prop?,
+	thumbnail_user_presence: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	thumbnail_component: NestedComponentProp?,
+	primary_action: _roblox_apppageplatform_shared_v1beta1_actions.ActionProp?,
+	secondary_action_text: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	secondary_action: _roblox_apppageplatform_shared_v1beta1_actions.ActionProp?,
+	layout_order: _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop?,
+	position: _roblox_apppageplatform_shared_v1beta1_prop_types.UDim2Prop?,
+	z_index: _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop?,
+	anchor_point: _roblox_apppageplatform_shared_v1beta1_prop_types.Vector2Prop?,
+	visible: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
+	test_id: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	on_close: _roblox_apppageplatform_shared_v1beta1_actions.ActionProp?,
+}
+
+export type BannerSchema_Props = typeof(setmetatable({} :: _BannerSchema_PropsFields, {} :: _BannerSchema_PropsImpl))
+type _BannerSchema_PropsMessage = proto.Message<BannerSchema_Props, _BannerSchema_PropsPartialFields>
 
 type _FoundationInternalNoticeLinkImpl = {
 	__index: _FoundationInternalNoticeLinkImpl,
@@ -12602,11 +13226,13 @@ type _ToggleSchemaImpl = {
 type _ToggleSchemaFields = {
 	props: ToggleSchema_Props?,
 	shared: _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared?,
+	web_props: ToggleSchema_WebProps?,
 }
 
 type _ToggleSchemaPartialFields = {
 	props: ToggleSchema_Props?,
 	shared: _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared?,
+	web_props: ToggleSchema_WebProps?,
 }
 
 export type ToggleSchema = typeof(setmetatable({} :: _ToggleSchemaFields, {} :: _ToggleSchemaImpl))
@@ -12646,6 +13272,30 @@ type _ToggleSchema_PropsPartialFields = {
 
 export type ToggleSchema_Props = typeof(setmetatable({} :: _ToggleSchema_PropsFields, {} :: _ToggleSchema_PropsImpl))
 type _ToggleSchema_PropsMessage = proto.Message<ToggleSchema_Props, _ToggleSchema_PropsPartialFields>
+
+type _ToggleSchema_WebPropsImpl = {
+	__index: _ToggleSchema_WebPropsImpl,
+	new: (fields: _ToggleSchema_WebPropsPartialFields?) -> ToggleSchema_WebProps,
+	encode: (self: ToggleSchema_WebProps) -> buffer,
+	decode: (input: buffer) -> ToggleSchema_WebProps,
+	jsonEncode: (self: ToggleSchema_WebProps) -> { [string]: any },
+	jsonDecode: (input: { [string]: any }) -> ToggleSchema_WebProps,
+	descriptor: proto.Descriptor,
+}
+
+type _ToggleSchema_WebPropsFields = {
+	aria_label: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+}
+
+type _ToggleSchema_WebPropsPartialFields = {
+	aria_label: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+}
+
+export type ToggleSchema_WebProps = typeof(setmetatable(
+	{} :: _ToggleSchema_WebPropsFields,
+	{} :: _ToggleSchema_WebPropsImpl
+))
+type _ToggleSchema_WebPropsMessage = proto.Message<ToggleSchema_WebProps, _ToggleSchema_WebPropsPartialFields>
 
 type _SponsoredOneByTwoTileSchemaImpl = {
 	__index: _SponsoredOneByTwoTileSchemaImpl,
@@ -12968,6 +13618,193 @@ export type ProgressSchema_Props = typeof(setmetatable(
 ))
 type _ProgressSchema_PropsMessage = proto.Message<ProgressSchema_Props, _ProgressSchema_PropsPartialFields>
 
+type _ConfigDrivenFormSchemaImpl = {
+	__index: _ConfigDrivenFormSchemaImpl,
+	new: (fields: _ConfigDrivenFormSchemaPartialFields?) -> ConfigDrivenFormSchema,
+	encode: (self: ConfigDrivenFormSchema) -> buffer,
+	decode: (input: buffer) -> ConfigDrivenFormSchema,
+	jsonEncode: (self: ConfigDrivenFormSchema) -> { [string]: any },
+	jsonDecode: (input: { [string]: any }) -> ConfigDrivenFormSchema,
+	descriptor: proto.Descriptor,
+}
+
+type _ConfigDrivenFormSchemaFields = {
+	props: ConfigDrivenFormSchema_Props?,
+	shared: _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared?,
+}
+
+type _ConfigDrivenFormSchemaPartialFields = {
+	props: ConfigDrivenFormSchema_Props?,
+	shared: _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared?,
+}
+
+export type ConfigDrivenFormSchema = typeof(setmetatable(
+	{} :: _ConfigDrivenFormSchemaFields,
+	{} :: _ConfigDrivenFormSchemaImpl
+))
+type _ConfigDrivenFormSchemaMessage = proto.Message<ConfigDrivenFormSchema, _ConfigDrivenFormSchemaPartialFields>
+
+type _ConfigDrivenFormSchema_PropsImpl = {
+	__index: _ConfigDrivenFormSchema_PropsImpl,
+	new: (fields: _ConfigDrivenFormSchema_PropsPartialFields?) -> ConfigDrivenFormSchema_Props,
+	encode: (self: ConfigDrivenFormSchema_Props) -> buffer,
+	decode: (input: buffer) -> ConfigDrivenFormSchema_Props,
+	jsonEncode: (self: ConfigDrivenFormSchema_Props) -> { [string]: any },
+	jsonDecode: (input: { [string]: any }) -> ConfigDrivenFormSchema_Props,
+	descriptor: proto.Descriptor,
+}
+
+type _ConfigDrivenFormSchema_PropsFields = {
+	version: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	layout: _roblox_apppageplatform_shared_v1beta1_prop_types.StructProp?,
+	saved: _roblox_apppageplatform_shared_v1beta1_prop_types.StructProp?,
+	catalogs: _roblox_apppageplatform_shared_v1beta1_prop_types.StructProp?,
+	capabilities: _roblox_apppageplatform_shared_v1beta1_prop_types.StructProp?,
+}
+
+type _ConfigDrivenFormSchema_PropsPartialFields = {
+	version: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	layout: _roblox_apppageplatform_shared_v1beta1_prop_types.StructProp?,
+	saved: _roblox_apppageplatform_shared_v1beta1_prop_types.StructProp?,
+	catalogs: _roblox_apppageplatform_shared_v1beta1_prop_types.StructProp?,
+	capabilities: _roblox_apppageplatform_shared_v1beta1_prop_types.StructProp?,
+}
+
+export type ConfigDrivenFormSchema_Props = typeof(setmetatable(
+	{} :: _ConfigDrivenFormSchema_PropsFields,
+	{} :: _ConfigDrivenFormSchema_PropsImpl
+))
+type _ConfigDrivenFormSchema_PropsMessage = proto.Message<
+	ConfigDrivenFormSchema_Props,
+	_ConfigDrivenFormSchema_PropsPartialFields
+>
+
+type _ReactionsSchemaImpl = {
+	__index: _ReactionsSchemaImpl,
+	new: (fields: _ReactionsSchemaPartialFields?) -> ReactionsSchema,
+	encode: (self: ReactionsSchema) -> buffer,
+	decode: (input: buffer) -> ReactionsSchema,
+	jsonEncode: (self: ReactionsSchema) -> { [string]: any },
+	jsonDecode: (input: { [string]: any }) -> ReactionsSchema,
+	descriptor: proto.Descriptor,
+}
+
+type _ReactionsSchemaFields = {
+	props: ReactionsSchema_Props?,
+	shared: _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared?,
+}
+
+type _ReactionsSchemaPartialFields = {
+	props: ReactionsSchema_Props?,
+	shared: _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared?,
+}
+
+export type ReactionsSchema = typeof(setmetatable({} :: _ReactionsSchemaFields, {} :: _ReactionsSchemaImpl))
+type _ReactionsSchemaMessage = proto.Message<ReactionsSchema, _ReactionsSchemaPartialFields>
+
+type _ReactionsSchema_PropsImpl = {
+	__index: _ReactionsSchema_PropsImpl,
+	new: (fields: _ReactionsSchema_PropsPartialFields?) -> ReactionsSchema_Props,
+	encode: (self: ReactionsSchema_Props) -> buffer,
+	decode: (input: buffer) -> ReactionsSchema_Props,
+	jsonEncode: (self: ReactionsSchema_Props) -> { [string]: any },
+	jsonDecode: (input: { [string]: any }) -> ReactionsSchema_Props,
+	descriptor: proto.Descriptor,
+}
+
+type _ReactionsSchema_PropsFields = {
+	reactions: _roblox_apppageplatform_shared_v1beta1_prop_types.ArrayOfStructProp?,
+	are_reaction_counts_visible: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
+}
+
+type _ReactionsSchema_PropsPartialFields = {
+	reactions: _roblox_apppageplatform_shared_v1beta1_prop_types.ArrayOfStructProp?,
+	are_reaction_counts_visible: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
+}
+
+export type ReactionsSchema_Props = typeof(setmetatable(
+	{} :: _ReactionsSchema_PropsFields,
+	{} :: _ReactionsSchema_PropsImpl
+))
+type _ReactionsSchema_PropsMessage = proto.Message<ReactionsSchema_Props, _ReactionsSchema_PropsPartialFields>
+
+type _CustomFormSchemaImpl = {
+	__index: _CustomFormSchemaImpl,
+	new: (fields: _CustomFormSchemaPartialFields?) -> CustomFormSchema,
+	encode: (self: CustomFormSchema) -> buffer,
+	decode: (input: buffer) -> CustomFormSchema,
+	jsonEncode: (self: CustomFormSchema) -> { [string]: any },
+	jsonDecode: (input: { [string]: any }) -> CustomFormSchema,
+	descriptor: proto.Descriptor,
+}
+
+type _CustomFormSchemaFields = {
+	props: CustomFormSchema_Props?,
+	shared: _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared?,
+}
+
+type _CustomFormSchemaPartialFields = {
+	props: CustomFormSchema_Props?,
+	shared: _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared?,
+}
+
+export type CustomFormSchema = typeof(setmetatable({} :: _CustomFormSchemaFields, {} :: _CustomFormSchemaImpl))
+type _CustomFormSchemaMessage = proto.Message<CustomFormSchema, _CustomFormSchemaPartialFields>
+
+type _CustomFormSchema_PropsImpl = {
+	__index: _CustomFormSchema_PropsImpl,
+	new: (fields: _CustomFormSchema_PropsPartialFields?) -> CustomFormSchema_Props,
+	encode: (self: CustomFormSchema_Props) -> buffer,
+	decode: (input: buffer) -> CustomFormSchema_Props,
+	jsonEncode: (self: CustomFormSchema_Props) -> { [string]: any },
+	jsonDecode: (input: { [string]: any }) -> CustomFormSchema_Props,
+	descriptor: proto.Descriptor,
+}
+
+type _CustomFormSchema_PropsFields = {
+	form_definition: _roblox_apppageplatform_shared_v1beta1_prop_types.StructProp?,
+	viewer_response: _roblox_apppageplatform_shared_v1beta1_prop_types.StructProp?,
+	results: _roblox_apppageplatform_shared_v1beta1_prop_types.StructProp?,
+	is_disabled: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
+	disabled_message: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	is_submitting: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
+	validation_errors: _roblox_apppageplatform_shared_v1beta1_prop_types.StructProp?,
+	submit_label: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	required_error_message: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	submission_error_message: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	on_submit: _roblox_apppageplatform_shared_v1beta1_actions.ActionProp?,
+	layout_order: _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop?,
+	test_id: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	results_summary: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	on_refresh_results: _roblox_apppageplatform_shared_v1beta1_actions.ActionProp?,
+	results_refresh_interval_seconds: _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop?,
+}
+
+type _CustomFormSchema_PropsPartialFields = {
+	form_definition: _roblox_apppageplatform_shared_v1beta1_prop_types.StructProp?,
+	viewer_response: _roblox_apppageplatform_shared_v1beta1_prop_types.StructProp?,
+	results: _roblox_apppageplatform_shared_v1beta1_prop_types.StructProp?,
+	is_disabled: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
+	disabled_message: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	is_submitting: _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp?,
+	validation_errors: _roblox_apppageplatform_shared_v1beta1_prop_types.StructProp?,
+	submit_label: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	required_error_message: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	submission_error_message: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	on_submit: _roblox_apppageplatform_shared_v1beta1_actions.ActionProp?,
+	layout_order: _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop?,
+	test_id: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	results_summary: _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp?,
+	on_refresh_results: _roblox_apppageplatform_shared_v1beta1_actions.ActionProp?,
+	results_refresh_interval_seconds: _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop?,
+}
+
+export type CustomFormSchema_Props = typeof(setmetatable(
+	{} :: _CustomFormSchema_PropsFields,
+	{} :: _CustomFormSchema_PropsImpl
+))
+type _CustomFormSchema_PropsMessage = proto.Message<CustomFormSchema_Props, _CustomFormSchema_PropsPartialFields>
+
 type _UiComponentSchemaImpl = {
 	__index: _UiComponentSchemaImpl,
 	new: (fields: _UiComponentSchemaPartialFields?) -> UiComponentSchema,
@@ -13090,6 +13927,18 @@ type _UiComponentSchemaFields = {
 		| { type: "progress", value: ProgressSchema }
 		| { type: "line_limited_text", value: LineLimitedTextSchema }
 		| { type: "user_search_tile", value: UserSearchTileSchema }
+		| { type: "custom_form", value: CustomFormSchema }
+		| { type: "accordion", value: AccordionSchema }
+		| { type: "accordion_item", value: AccordionItemSchema }
+		| { type: "config_driven_form", value: ConfigDrivenFormSchema }
+		| { type: "expandable_list_root", value: ExpandableListRootSchema }
+		| { type: "search_autocomplete_suggestion", value: SearchAutocompleteSuggestionSchema }
+		| { type: "reactions", value: ReactionsSchema }
+		| { type: "friends_owned_chip", value: FriendsOwnedChipSchema }
+		| { type: "banner", value: BannerSchema }
+		| { type: "sheet", value: SheetSchema }
+		| { type: "interactable_tile_wrapper", value: InteractableTileWrapperSchema }
+		| { type: "group_forum_post_preview", value: GroupForumPostPreviewSchema }
 	)?,
 }
 
@@ -13205,6 +14054,18 @@ type _UiComponentSchemaPartialFields = {
 		| { type: "progress", value: ProgressSchema }
 		| { type: "line_limited_text", value: LineLimitedTextSchema }
 		| { type: "user_search_tile", value: UserSearchTileSchema }
+		| { type: "custom_form", value: CustomFormSchema }
+		| { type: "accordion", value: AccordionSchema }
+		| { type: "accordion_item", value: AccordionItemSchema }
+		| { type: "config_driven_form", value: ConfigDrivenFormSchema }
+		| { type: "expandable_list_root", value: ExpandableListRootSchema }
+		| { type: "search_autocomplete_suggestion", value: SearchAutocompleteSuggestionSchema }
+		| { type: "reactions", value: ReactionsSchema }
+		| { type: "friends_owned_chip", value: FriendsOwnedChipSchema }
+		| { type: "banner", value: BannerSchema }
+		| { type: "sheet", value: SheetSchema }
+		| { type: "interactable_tile_wrapper", value: InteractableTileWrapperSchema }
+		| { type: "group_forum_post_preview", value: GroupForumPostPreviewSchema }
 	)?,
 }
 
@@ -20685,6 +21546,685 @@ do
 	messages.UserSearchTileSchema_Props = _UserSearchTileSchema_PropsImpl :: any -- Luau: Not sure why this intersection fails.
 
 	typeRegistry.default:register(messages.UserSearchTileSchema_Props)
+end
+
+do
+	local _InteractableTileWrapperSchemaImpl = {}
+	_InteractableTileWrapperSchemaImpl.__index = _InteractableTileWrapperSchemaImpl
+
+	function _InteractableTileWrapperSchemaImpl.new(
+		data: _InteractableTileWrapperSchemaPartialFields?
+	): InteractableTileWrapperSchema
+		return setmetatable({
+			props = if data == nil or data.props == nil then nil else data.props,
+			shared = if data == nil or data.shared == nil then nil else data.shared,
+		}, _InteractableTileWrapperSchemaImpl :: _InteractableTileWrapperSchemaImpl)
+	end
+
+	function _InteractableTileWrapperSchemaImpl.encode(self: InteractableTileWrapperSchema): buffer
+		local output = buffer.create(0)
+		local cursor = 0
+
+		if self.props ~= nil then
+			local encoded = self.props:encode()
+			output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.shared ~= nil then
+			local encoded = self.shared:encode()
+			output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		local shrunkBuffer = buffer.create(cursor)
+		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
+		return shrunkBuffer
+	end
+
+	function _InteractableTileWrapperSchemaImpl.decode(input: buffer): InteractableTileWrapperSchema
+		local self = _InteractableTileWrapperSchemaImpl.new()
+		local cursor = 0
+
+		while cursor < buffer.len(input) do
+			local field, wireType
+			field, wireType, cursor = proto.readTag(input, cursor)
+
+			if wireType == proto.wireTypes.varint then
+				-- No fields
+
+				local _
+				_, cursor = proto.readVarInt(input, cursor)
+			elseif wireType == proto.wireTypes.lengthDelimited then
+				if field == 1 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.props = messages.InteractableTileWrapperSchema_Props.decode(value)
+					continue
+				elseif field == 2 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.shared = _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared.decode(value)
+					continue
+				end
+
+				local length
+				length, cursor = proto.readVarInt(input, cursor)
+
+				cursor += length
+			elseif wireType == proto.wireTypes.i32 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed32(input, cursor)
+			elseif wireType == proto.wireTypes.i64 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed64(input, cursor)
+			else
+				error("Unsupported wire type: " .. wireType)
+			end
+		end
+
+		return self
+	end
+
+	function _InteractableTileWrapperSchemaImpl.jsonEncode(self: InteractableTileWrapperSchema): any
+		local output = {}
+
+		if self.props ~= nil then
+			output.props = self.props:jsonEncode()
+		end
+
+		if self.shared ~= nil then
+			output.shared = self.shared:jsonEncode()
+		end
+
+		return output
+	end
+
+	function _InteractableTileWrapperSchemaImpl.jsonDecode(input: { [string]: any }): InteractableTileWrapperSchema
+		local self = _InteractableTileWrapperSchemaImpl.new()
+
+		if input.props ~= nil then
+			self.props = messages.InteractableTileWrapperSchema_Props.jsonDecode(input.props)
+		end
+
+		if input.shared ~= nil then
+			self.shared =
+				_roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared.jsonDecode(input.shared)
+		end
+
+		return self
+	end
+
+	_InteractableTileWrapperSchemaImpl.descriptor = {
+		name = "InteractableTileWrapperSchema",
+		fullName = "roblox.apppageplatform.shared.v1beta1.InteractableTileWrapperSchema",
+	}
+
+	messages.InteractableTileWrapperSchema = _InteractableTileWrapperSchemaImpl :: any -- Luau: Not sure why this intersection fails.
+
+	typeRegistry.default:register(messages.InteractableTileWrapperSchema)
+end
+
+do
+	local _InteractableTileWrapperSchema_PropsImpl = {}
+	_InteractableTileWrapperSchema_PropsImpl.__index = _InteractableTileWrapperSchema_PropsImpl
+
+	function _InteractableTileWrapperSchema_PropsImpl.new(
+		data: _InteractableTileWrapperSchema_PropsPartialFields?
+	): InteractableTileWrapperSchema_Props
+		return setmetatable({
+			tile_component = if data == nil or data.tile_component == nil then nil else data.tile_component,
+			overflow_menu_component = if data == nil or data.overflow_menu_component == nil
+				then nil
+				else data.overflow_menu_component,
+		}, _InteractableTileWrapperSchema_PropsImpl :: _InteractableTileWrapperSchema_PropsImpl)
+	end
+
+	function _InteractableTileWrapperSchema_PropsImpl.encode(self: InteractableTileWrapperSchema_Props): buffer
+		local output = buffer.create(0)
+		local cursor = 0
+
+		if self.tile_component ~= nil then
+			local encoded = self.tile_component:encode()
+			output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.overflow_menu_component ~= nil then
+			local encoded = self.overflow_menu_component:encode()
+			output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		local shrunkBuffer = buffer.create(cursor)
+		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
+		return shrunkBuffer
+	end
+
+	function _InteractableTileWrapperSchema_PropsImpl.decode(input: buffer): InteractableTileWrapperSchema_Props
+		local self = _InteractableTileWrapperSchema_PropsImpl.new()
+		local cursor = 0
+
+		while cursor < buffer.len(input) do
+			local field, wireType
+			field, wireType, cursor = proto.readTag(input, cursor)
+
+			if wireType == proto.wireTypes.varint then
+				-- No fields
+
+				local _
+				_, cursor = proto.readVarInt(input, cursor)
+			elseif wireType == proto.wireTypes.lengthDelimited then
+				if field == 1 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.tile_component = messages.NestedComponentProp.decode(value)
+					continue
+				elseif field == 2 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.overflow_menu_component = messages.LazyNestedComponentProp.decode(value)
+					continue
+				end
+
+				local length
+				length, cursor = proto.readVarInt(input, cursor)
+
+				cursor += length
+			elseif wireType == proto.wireTypes.i32 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed32(input, cursor)
+			elseif wireType == proto.wireTypes.i64 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed64(input, cursor)
+			else
+				error("Unsupported wire type: " .. wireType)
+			end
+		end
+
+		return self
+	end
+
+	function _InteractableTileWrapperSchema_PropsImpl.jsonEncode(self: InteractableTileWrapperSchema_Props): any
+		local output = {}
+
+		if self.tile_component ~= nil then
+			output.tileComponent = self.tile_component:jsonEncode()
+		end
+
+		if self.overflow_menu_component ~= nil then
+			output.overflowMenuComponent = self.overflow_menu_component:jsonEncode()
+		end
+
+		return output
+	end
+
+	function _InteractableTileWrapperSchema_PropsImpl.jsonDecode(
+		input: { [string]: any }
+	): InteractableTileWrapperSchema_Props
+		local self = _InteractableTileWrapperSchema_PropsImpl.new()
+
+		if input.tile_component ~= nil then
+			self.tile_component = messages.NestedComponentProp.jsonDecode(input.tile_component)
+		end
+
+		if input.tileComponent ~= nil then
+			self.tile_component = messages.NestedComponentProp.jsonDecode(input.tileComponent)
+		end
+
+		if input.overflow_menu_component ~= nil then
+			self.overflow_menu_component = messages.LazyNestedComponentProp.jsonDecode(input.overflow_menu_component)
+		end
+
+		if input.overflowMenuComponent ~= nil then
+			self.overflow_menu_component = messages.LazyNestedComponentProp.jsonDecode(input.overflowMenuComponent)
+		end
+
+		return self
+	end
+
+	_InteractableTileWrapperSchema_PropsImpl.descriptor = {
+		name = "InteractableTileWrapperSchema_Props",
+		fullName = "roblox.apppageplatform.shared.v1beta1.Props",
+	}
+
+	messages.InteractableTileWrapperSchema_Props = _InteractableTileWrapperSchema_PropsImpl :: any -- Luau: Not sure why this intersection fails.
+
+	typeRegistry.default:register(messages.InteractableTileWrapperSchema_Props)
+end
+
+do
+	local _GroupForumPostPreviewSchemaImpl = {}
+	_GroupForumPostPreviewSchemaImpl.__index = _GroupForumPostPreviewSchemaImpl
+
+	function _GroupForumPostPreviewSchemaImpl.new(
+		data: _GroupForumPostPreviewSchemaPartialFields?
+	): GroupForumPostPreviewSchema
+		return setmetatable({
+			props = if data == nil or data.props == nil then nil else data.props,
+			shared = if data == nil or data.shared == nil then nil else data.shared,
+		}, _GroupForumPostPreviewSchemaImpl :: _GroupForumPostPreviewSchemaImpl)
+	end
+
+	function _GroupForumPostPreviewSchemaImpl.encode(self: GroupForumPostPreviewSchema): buffer
+		local output = buffer.create(0)
+		local cursor = 0
+
+		if self.props ~= nil then
+			local encoded = self.props:encode()
+			output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.shared ~= nil then
+			local encoded = self.shared:encode()
+			output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		local shrunkBuffer = buffer.create(cursor)
+		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
+		return shrunkBuffer
+	end
+
+	function _GroupForumPostPreviewSchemaImpl.decode(input: buffer): GroupForumPostPreviewSchema
+		local self = _GroupForumPostPreviewSchemaImpl.new()
+		local cursor = 0
+
+		while cursor < buffer.len(input) do
+			local field, wireType
+			field, wireType, cursor = proto.readTag(input, cursor)
+
+			if wireType == proto.wireTypes.varint then
+				-- No fields
+
+				local _
+				_, cursor = proto.readVarInt(input, cursor)
+			elseif wireType == proto.wireTypes.lengthDelimited then
+				if field == 1 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.props = messages.GroupForumPostPreviewSchema_Props.decode(value)
+					continue
+				elseif field == 2 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.shared = _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared.decode(value)
+					continue
+				end
+
+				local length
+				length, cursor = proto.readVarInt(input, cursor)
+
+				cursor += length
+			elseif wireType == proto.wireTypes.i32 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed32(input, cursor)
+			elseif wireType == proto.wireTypes.i64 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed64(input, cursor)
+			else
+				error("Unsupported wire type: " .. wireType)
+			end
+		end
+
+		return self
+	end
+
+	function _GroupForumPostPreviewSchemaImpl.jsonEncode(self: GroupForumPostPreviewSchema): any
+		local output = {}
+
+		if self.props ~= nil then
+			output.props = self.props:jsonEncode()
+		end
+
+		if self.shared ~= nil then
+			output.shared = self.shared:jsonEncode()
+		end
+
+		return output
+	end
+
+	function _GroupForumPostPreviewSchemaImpl.jsonDecode(input: { [string]: any }): GroupForumPostPreviewSchema
+		local self = _GroupForumPostPreviewSchemaImpl.new()
+
+		if input.props ~= nil then
+			self.props = messages.GroupForumPostPreviewSchema_Props.jsonDecode(input.props)
+		end
+
+		if input.shared ~= nil then
+			self.shared =
+				_roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared.jsonDecode(input.shared)
+		end
+
+		return self
+	end
+
+	_GroupForumPostPreviewSchemaImpl.descriptor = {
+		name = "GroupForumPostPreviewSchema",
+		fullName = "roblox.apppageplatform.shared.v1beta1.GroupForumPostPreviewSchema",
+	}
+
+	messages.GroupForumPostPreviewSchema = _GroupForumPostPreviewSchemaImpl :: any -- Luau: Not sure why this intersection fails.
+
+	typeRegistry.default:register(messages.GroupForumPostPreviewSchema)
+end
+
+do
+	local _GroupForumPostPreviewSchema_PropsImpl = {}
+	_GroupForumPostPreviewSchema_PropsImpl.__index = _GroupForumPostPreviewSchema_PropsImpl
+
+	function _GroupForumPostPreviewSchema_PropsImpl.new(
+		data: _GroupForumPostPreviewSchema_PropsPartialFields?
+	): GroupForumPostPreviewSchema_Props
+		return setmetatable({
+			title = if data == nil or data.title == nil then nil else data.title,
+			body = if data == nil or data.body == nil then nil else data.body,
+			creator_user_id = if data == nil or data.creator_user_id == nil then nil else data.creator_user_id,
+			creator_display_name = if data == nil or data.creator_display_name == nil
+				then nil
+				else data.creator_display_name,
+			creator_is_verified = if data == nil or data.creator_is_verified == nil
+				then nil
+				else data.creator_is_verified,
+			creator_role_name = if data == nil or data.creator_role_name == nil then nil else data.creator_role_name,
+			reply_count = if data == nil or data.reply_count == nil then nil else data.reply_count,
+			layout_order = if data == nil or data.layout_order == nil then nil else data.layout_order,
+			on_activated = if data == nil or data.on_activated == nil then nil else data.on_activated,
+		}, _GroupForumPostPreviewSchema_PropsImpl :: _GroupForumPostPreviewSchema_PropsImpl)
+	end
+
+	function _GroupForumPostPreviewSchema_PropsImpl.encode(self: GroupForumPostPreviewSchema_Props): buffer
+		local output = buffer.create(0)
+		local cursor = 0
+
+		if self.title ~= nil then
+			local encoded = self.title:encode()
+			output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.body ~= nil then
+			local encoded = self.body:encode()
+			output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.creator_user_id ~= nil then
+			local encoded = self.creator_user_id:encode()
+			output, cursor = proto.writeTag(output, cursor, 3, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.creator_display_name ~= nil then
+			local encoded = self.creator_display_name:encode()
+			output, cursor = proto.writeTag(output, cursor, 4, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.creator_is_verified ~= nil then
+			local encoded = self.creator_is_verified:encode()
+			output, cursor = proto.writeTag(output, cursor, 5, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.creator_role_name ~= nil then
+			local encoded = self.creator_role_name:encode()
+			output, cursor = proto.writeTag(output, cursor, 6, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.reply_count ~= nil then
+			local encoded = self.reply_count:encode()
+			output, cursor = proto.writeTag(output, cursor, 7, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.layout_order ~= nil then
+			local encoded = self.layout_order:encode()
+			output, cursor = proto.writeTag(output, cursor, 8, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.on_activated ~= nil then
+			local encoded = self.on_activated:encode()
+			output, cursor = proto.writeTag(output, cursor, 9, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		local shrunkBuffer = buffer.create(cursor)
+		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
+		return shrunkBuffer
+	end
+
+	function _GroupForumPostPreviewSchema_PropsImpl.decode(input: buffer): GroupForumPostPreviewSchema_Props
+		local self = _GroupForumPostPreviewSchema_PropsImpl.new()
+		local cursor = 0
+
+		while cursor < buffer.len(input) do
+			local field, wireType
+			field, wireType, cursor = proto.readTag(input, cursor)
+
+			if wireType == proto.wireTypes.varint then
+				-- No fields
+
+				local _
+				_, cursor = proto.readVarInt(input, cursor)
+			elseif wireType == proto.wireTypes.lengthDelimited then
+				if field == 1 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.title = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 2 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.body = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 3 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.creator_user_id = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 4 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.creator_display_name =
+						_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 5 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.creator_is_verified = _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.decode(value)
+					continue
+				elseif field == 6 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.creator_role_name = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 7 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.reply_count = _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.decode(value)
+					continue
+				elseif field == 8 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.layout_order = _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.decode(value)
+					continue
+				elseif field == 9 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.on_activated = _roblox_apppageplatform_shared_v1beta1_actions.ActionProp.decode(value)
+					continue
+				end
+
+				local length
+				length, cursor = proto.readVarInt(input, cursor)
+
+				cursor += length
+			elseif wireType == proto.wireTypes.i32 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed32(input, cursor)
+			elseif wireType == proto.wireTypes.i64 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed64(input, cursor)
+			else
+				error("Unsupported wire type: " .. wireType)
+			end
+		end
+
+		return self
+	end
+
+	function _GroupForumPostPreviewSchema_PropsImpl.jsonEncode(self: GroupForumPostPreviewSchema_Props): any
+		local output = {}
+
+		if self.title ~= nil then
+			output.title = self.title:jsonEncode()
+		end
+
+		if self.body ~= nil then
+			output.body = self.body:jsonEncode()
+		end
+
+		if self.creator_user_id ~= nil then
+			output.creatorUserId = self.creator_user_id:jsonEncode()
+		end
+
+		if self.creator_display_name ~= nil then
+			output.creatorDisplayName = self.creator_display_name:jsonEncode()
+		end
+
+		if self.creator_is_verified ~= nil then
+			output.creatorIsVerified = self.creator_is_verified:jsonEncode()
+		end
+
+		if self.creator_role_name ~= nil then
+			output.creatorRoleName = self.creator_role_name:jsonEncode()
+		end
+
+		if self.reply_count ~= nil then
+			output.replyCount = self.reply_count:jsonEncode()
+		end
+
+		if self.layout_order ~= nil then
+			output.layoutOrder = self.layout_order:jsonEncode()
+		end
+
+		if self.on_activated ~= nil then
+			output.onActivated = self.on_activated:jsonEncode()
+		end
+
+		return output
+	end
+
+	function _GroupForumPostPreviewSchema_PropsImpl.jsonDecode(
+		input: { [string]: any }
+	): GroupForumPostPreviewSchema_Props
+		local self = _GroupForumPostPreviewSchema_PropsImpl.new()
+
+		if input.title ~= nil then
+			self.title = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.title)
+		end
+
+		if input.body ~= nil then
+			self.body = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.body)
+		end
+
+		if input.creator_user_id ~= nil then
+			self.creator_user_id =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.creator_user_id)
+		end
+
+		if input.creatorUserId ~= nil then
+			self.creator_user_id =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.creatorUserId)
+		end
+
+		if input.creator_display_name ~= nil then
+			self.creator_display_name =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.creator_display_name)
+		end
+
+		if input.creatorDisplayName ~= nil then
+			self.creator_display_name =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.creatorDisplayName)
+		end
+
+		if input.creator_is_verified ~= nil then
+			self.creator_is_verified =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.jsonDecode(input.creator_is_verified)
+		end
+
+		if input.creatorIsVerified ~= nil then
+			self.creator_is_verified =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.jsonDecode(input.creatorIsVerified)
+		end
+
+		if input.creator_role_name ~= nil then
+			self.creator_role_name =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.creator_role_name)
+		end
+
+		if input.creatorRoleName ~= nil then
+			self.creator_role_name =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.creatorRoleName)
+		end
+
+		if input.reply_count ~= nil then
+			self.reply_count = _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.jsonDecode(input.reply_count)
+		end
+
+		if input.replyCount ~= nil then
+			self.reply_count = _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.jsonDecode(input.replyCount)
+		end
+
+		if input.layout_order ~= nil then
+			self.layout_order =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.jsonDecode(input.layout_order)
+		end
+
+		if input.layoutOrder ~= nil then
+			self.layout_order =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.jsonDecode(input.layoutOrder)
+		end
+
+		if input.on_activated ~= nil then
+			self.on_activated = _roblox_apppageplatform_shared_v1beta1_actions.ActionProp.jsonDecode(input.on_activated)
+		end
+
+		if input.onActivated ~= nil then
+			self.on_activated = _roblox_apppageplatform_shared_v1beta1_actions.ActionProp.jsonDecode(input.onActivated)
+		end
+
+		return self
+	end
+
+	_GroupForumPostPreviewSchema_PropsImpl.descriptor = {
+		name = "GroupForumPostPreviewSchema_Props",
+		fullName = "roblox.apppageplatform.shared.v1beta1.Props",
+	}
+
+	messages.GroupForumPostPreviewSchema_Props = _GroupForumPostPreviewSchema_PropsImpl :: any -- Luau: Not sure why this intersection fails.
+
+	typeRegistry.default:register(messages.GroupForumPostPreviewSchema_Props)
 end
 
 do
@@ -40530,6 +42070,7 @@ do
 				then nil
 				else data.skip_option_item_impressions_log,
 			subtitle = if data == nil or data.subtitle == nil then nil else data.subtitle,
+			header_component = if data == nil or data.header_component == nil then nil else data.header_component,
 		}, _OptionSelectorCollectionSchema_PropsImpl :: _OptionSelectorCollectionSchema_PropsImpl)
 	end
 
@@ -40624,6 +42165,12 @@ do
 		if self.subtitle ~= nil then
 			local encoded = self.subtitle:encode()
 			output, cursor = proto.writeTag(output, cursor, 16, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.header_component ~= nil then
+			local encoded = self.header_component:encode()
+			output, cursor = proto.writeTag(output, cursor, 17, proto.wireTypes.lengthDelimited)
 			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
 		end
 
@@ -40727,6 +42274,11 @@ do
 					value, cursor = proto.readBuffer(input, cursor)
 					self.subtitle = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
 					continue
+				elseif field == 17 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.header_component = messages.NestedComponentProp.decode(value)
+					continue
 				end
 
 				local length
@@ -40813,6 +42365,10 @@ do
 
 		if self.subtitle ~= nil then
 			output.subtitle = self.subtitle:jsonEncode()
+		end
+
+		if self.header_component ~= nil then
+			output.headerComponent = self.header_component:jsonEncode()
 		end
 
 		return output
@@ -40966,6 +42522,14 @@ do
 
 		if input.subtitle ~= nil then
 			self.subtitle = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.subtitle)
+		end
+
+		if input.header_component ~= nil then
+			self.header_component = messages.NestedComponentProp.jsonDecode(input.header_component)
+		end
+
+		if input.headerComponent ~= nil then
+			self.header_component = messages.NestedComponentProp.jsonDecode(input.headerComponent)
 		end
 
 		return self
@@ -59088,6 +60652,279 @@ do
 end
 
 do
+	local _FriendsOwnedChipSchemaImpl = {}
+	_FriendsOwnedChipSchemaImpl.__index = _FriendsOwnedChipSchemaImpl
+
+	function _FriendsOwnedChipSchemaImpl.new(data: _FriendsOwnedChipSchemaPartialFields?): FriendsOwnedChipSchema
+		return setmetatable({
+			props = if data == nil or data.props == nil then nil else data.props,
+			shared = if data == nil or data.shared == nil then nil else data.shared,
+		}, _FriendsOwnedChipSchemaImpl :: _FriendsOwnedChipSchemaImpl)
+	end
+
+	function _FriendsOwnedChipSchemaImpl.encode(self: FriendsOwnedChipSchema): buffer
+		local output = buffer.create(0)
+		local cursor = 0
+
+		if self.props ~= nil then
+			local encoded = self.props:encode()
+			output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.shared ~= nil then
+			local encoded = self.shared:encode()
+			output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		local shrunkBuffer = buffer.create(cursor)
+		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
+		return shrunkBuffer
+	end
+
+	function _FriendsOwnedChipSchemaImpl.decode(input: buffer): FriendsOwnedChipSchema
+		local self = _FriendsOwnedChipSchemaImpl.new()
+		local cursor = 0
+
+		while cursor < buffer.len(input) do
+			local field, wireType
+			field, wireType, cursor = proto.readTag(input, cursor)
+
+			if wireType == proto.wireTypes.varint then
+				-- No fields
+
+				local _
+				_, cursor = proto.readVarInt(input, cursor)
+			elseif wireType == proto.wireTypes.lengthDelimited then
+				if field == 1 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.props = messages.FriendsOwnedChipSchema_Props.decode(value)
+					continue
+				elseif field == 2 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.shared = _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared.decode(value)
+					continue
+				end
+
+				local length
+				length, cursor = proto.readVarInt(input, cursor)
+
+				cursor += length
+			elseif wireType == proto.wireTypes.i32 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed32(input, cursor)
+			elseif wireType == proto.wireTypes.i64 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed64(input, cursor)
+			else
+				error("Unsupported wire type: " .. wireType)
+			end
+		end
+
+		return self
+	end
+
+	function _FriendsOwnedChipSchemaImpl.jsonEncode(self: FriendsOwnedChipSchema): any
+		local output = {}
+
+		if self.props ~= nil then
+			output.props = self.props:jsonEncode()
+		end
+
+		if self.shared ~= nil then
+			output.shared = self.shared:jsonEncode()
+		end
+
+		return output
+	end
+
+	function _FriendsOwnedChipSchemaImpl.jsonDecode(input: { [string]: any }): FriendsOwnedChipSchema
+		local self = _FriendsOwnedChipSchemaImpl.new()
+
+		if input.props ~= nil then
+			self.props = messages.FriendsOwnedChipSchema_Props.jsonDecode(input.props)
+		end
+
+		if input.shared ~= nil then
+			self.shared =
+				_roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared.jsonDecode(input.shared)
+		end
+
+		return self
+	end
+
+	_FriendsOwnedChipSchemaImpl.descriptor = {
+		name = "FriendsOwnedChipSchema",
+		fullName = "roblox.apppageplatform.shared.v1beta1.FriendsOwnedChipSchema",
+	}
+
+	messages.FriendsOwnedChipSchema = _FriendsOwnedChipSchemaImpl :: any -- Luau: Not sure why this intersection fails.
+
+	typeRegistry.default:register(messages.FriendsOwnedChipSchema)
+end
+
+do
+	local _FriendsOwnedChipSchema_PropsImpl = {}
+	_FriendsOwnedChipSchema_PropsImpl.__index = _FriendsOwnedChipSchema_PropsImpl
+
+	function _FriendsOwnedChipSchema_PropsImpl.new(
+		data: _FriendsOwnedChipSchema_PropsPartialFields?
+	): FriendsOwnedChipSchema_Props
+		return setmetatable({
+			item_id = if data == nil or data.item_id == nil then nil else data.item_id,
+			item_type = if data == nil or data.item_type == nil then nil else data.item_type,
+			layout_order = if data == nil or data.layout_order == nil then nil else data.layout_order,
+		}, _FriendsOwnedChipSchema_PropsImpl :: _FriendsOwnedChipSchema_PropsImpl)
+	end
+
+	function _FriendsOwnedChipSchema_PropsImpl.encode(self: FriendsOwnedChipSchema_Props): buffer
+		local output = buffer.create(0)
+		local cursor = 0
+
+		if self.item_id ~= nil then
+			local encoded = self.item_id:encode()
+			output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.item_type ~= nil then
+			local encoded = self.item_type:encode()
+			output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.layout_order ~= nil then
+			local encoded = self.layout_order:encode()
+			output, cursor = proto.writeTag(output, cursor, 3, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		local shrunkBuffer = buffer.create(cursor)
+		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
+		return shrunkBuffer
+	end
+
+	function _FriendsOwnedChipSchema_PropsImpl.decode(input: buffer): FriendsOwnedChipSchema_Props
+		local self = _FriendsOwnedChipSchema_PropsImpl.new()
+		local cursor = 0
+
+		while cursor < buffer.len(input) do
+			local field, wireType
+			field, wireType, cursor = proto.readTag(input, cursor)
+
+			if wireType == proto.wireTypes.varint then
+				-- No fields
+
+				local _
+				_, cursor = proto.readVarInt(input, cursor)
+			elseif wireType == proto.wireTypes.lengthDelimited then
+				if field == 1 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.item_id = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 2 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.item_type = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 3 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.layout_order = _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.decode(value)
+					continue
+				end
+
+				local length
+				length, cursor = proto.readVarInt(input, cursor)
+
+				cursor += length
+			elseif wireType == proto.wireTypes.i32 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed32(input, cursor)
+			elseif wireType == proto.wireTypes.i64 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed64(input, cursor)
+			else
+				error("Unsupported wire type: " .. wireType)
+			end
+		end
+
+		return self
+	end
+
+	function _FriendsOwnedChipSchema_PropsImpl.jsonEncode(self: FriendsOwnedChipSchema_Props): any
+		local output = {}
+
+		if self.item_id ~= nil then
+			output.itemId = self.item_id:jsonEncode()
+		end
+
+		if self.item_type ~= nil then
+			output.itemType = self.item_type:jsonEncode()
+		end
+
+		if self.layout_order ~= nil then
+			output.layoutOrder = self.layout_order:jsonEncode()
+		end
+
+		return output
+	end
+
+	function _FriendsOwnedChipSchema_PropsImpl.jsonDecode(input: { [string]: any }): FriendsOwnedChipSchema_Props
+		local self = _FriendsOwnedChipSchema_PropsImpl.new()
+
+		if input.item_id ~= nil then
+			self.item_id = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.item_id)
+		end
+
+		if input.itemId ~= nil then
+			self.item_id = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.itemId)
+		end
+
+		if input.item_type ~= nil then
+			self.item_type = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.item_type)
+		end
+
+		if input.itemType ~= nil then
+			self.item_type = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.itemType)
+		end
+
+		if input.layout_order ~= nil then
+			self.layout_order =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.jsonDecode(input.layout_order)
+		end
+
+		if input.layoutOrder ~= nil then
+			self.layout_order =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.jsonDecode(input.layoutOrder)
+		end
+
+		return self
+	end
+
+	_FriendsOwnedChipSchema_PropsImpl.descriptor = {
+		name = "FriendsOwnedChipSchema_Props",
+		fullName = "roblox.apppageplatform.shared.v1beta1.Props",
+	}
+
+	messages.FriendsOwnedChipSchema_Props = _FriendsOwnedChipSchema_PropsImpl :: any -- Luau: Not sure why this intersection fails.
+
+	typeRegistry.default:register(messages.FriendsOwnedChipSchema_Props)
+end
+
+do
 	local _HomeUserInfoWidgetSchemaImpl = {}
 	_HomeUserInfoWidgetSchemaImpl.__index = _HomeUserInfoWidgetSchemaImpl
 
@@ -71977,6 +73814,7 @@ do
 			state_layer_affordance = if data == nil or data.state_layer_affordance == nil
 				then nil
 				else data.state_layer_affordance,
+			selectable = if data == nil or data.selectable == nil then nil else data.selectable,
 		}, _ContentRowSchema_PropsImpl :: _ContentRowSchema_PropsImpl)
 	end
 
@@ -72059,6 +73897,12 @@ do
 		if self.state_layer_affordance ~= nil then
 			local encoded = self.state_layer_affordance:encode()
 			output, cursor = proto.writeTag(output, cursor, 13, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.selectable ~= nil then
+			local encoded = self.selectable:encode()
+			output, cursor = proto.writeTag(output, cursor, 14, proto.wireTypes.lengthDelimited)
 			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
 		end
 
@@ -72147,6 +73991,11 @@ do
 					self.state_layer_affordance =
 						_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
 					continue
+				elseif field == 14 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.selectable = _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.decode(value)
+					continue
 				end
 
 				local length
@@ -72224,6 +74073,10 @@ do
 
 		if self.state_layer_affordance ~= nil then
 			output.stateLayerAffordance = self.state_layer_affordance:jsonEncode()
+		end
+
+		if self.selectable ~= nil then
+			output.selectable = self.selectable:jsonEncode()
 		end
 
 		return output
@@ -72323,6 +74176,10 @@ do
 		if input.stateLayerAffordance ~= nil then
 			self.state_layer_affordance =
 				_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.stateLayerAffordance)
+		end
+
+		if input.selectable ~= nil then
+			self.selectable = _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.jsonDecode(input.selectable)
 		end
 
 		return self
@@ -72720,6 +74577,365 @@ do
 	messages.ListRootSchema_Props = _ListRootSchema_PropsImpl :: any -- Luau: Not sure why this intersection fails.
 
 	typeRegistry.default:register(messages.ListRootSchema_Props)
+end
+
+do
+	local _ExpandableListRootSchemaImpl = {}
+	_ExpandableListRootSchemaImpl.__index = _ExpandableListRootSchemaImpl
+
+	function _ExpandableListRootSchemaImpl.new(data: _ExpandableListRootSchemaPartialFields?): ExpandableListRootSchema
+		return setmetatable({
+			props = if data == nil or data.props == nil then nil else data.props,
+			shared = if data == nil or data.shared == nil then nil else data.shared,
+		}, _ExpandableListRootSchemaImpl :: _ExpandableListRootSchemaImpl)
+	end
+
+	function _ExpandableListRootSchemaImpl.encode(self: ExpandableListRootSchema): buffer
+		local output = buffer.create(0)
+		local cursor = 0
+
+		if self.props ~= nil then
+			local encoded = self.props:encode()
+			output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.shared ~= nil then
+			local encoded = self.shared:encode()
+			output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		local shrunkBuffer = buffer.create(cursor)
+		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
+		return shrunkBuffer
+	end
+
+	function _ExpandableListRootSchemaImpl.decode(input: buffer): ExpandableListRootSchema
+		local self = _ExpandableListRootSchemaImpl.new()
+		local cursor = 0
+
+		while cursor < buffer.len(input) do
+			local field, wireType
+			field, wireType, cursor = proto.readTag(input, cursor)
+
+			if wireType == proto.wireTypes.varint then
+				-- No fields
+
+				local _
+				_, cursor = proto.readVarInt(input, cursor)
+			elseif wireType == proto.wireTypes.lengthDelimited then
+				if field == 1 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.props = messages.ExpandableListRootSchema_Props.decode(value)
+					continue
+				elseif field == 2 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.shared = _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared.decode(value)
+					continue
+				end
+
+				local length
+				length, cursor = proto.readVarInt(input, cursor)
+
+				cursor += length
+			elseif wireType == proto.wireTypes.i32 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed32(input, cursor)
+			elseif wireType == proto.wireTypes.i64 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed64(input, cursor)
+			else
+				error("Unsupported wire type: " .. wireType)
+			end
+		end
+
+		return self
+	end
+
+	function _ExpandableListRootSchemaImpl.jsonEncode(self: ExpandableListRootSchema): any
+		local output = {}
+
+		if self.props ~= nil then
+			output.props = self.props:jsonEncode()
+		end
+
+		if self.shared ~= nil then
+			output.shared = self.shared:jsonEncode()
+		end
+
+		return output
+	end
+
+	function _ExpandableListRootSchemaImpl.jsonDecode(input: { [string]: any }): ExpandableListRootSchema
+		local self = _ExpandableListRootSchemaImpl.new()
+
+		if input.props ~= nil then
+			self.props = messages.ExpandableListRootSchema_Props.jsonDecode(input.props)
+		end
+
+		if input.shared ~= nil then
+			self.shared =
+				_roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared.jsonDecode(input.shared)
+		end
+
+		return self
+	end
+
+	_ExpandableListRootSchemaImpl.descriptor = {
+		name = "ExpandableListRootSchema",
+		fullName = "roblox.apppageplatform.shared.v1beta1.ExpandableListRootSchema",
+	}
+
+	messages.ExpandableListRootSchema = _ExpandableListRootSchemaImpl :: any -- Luau: Not sure why this intersection fails.
+
+	typeRegistry.default:register(messages.ExpandableListRootSchema)
+end
+
+do
+	local _ExpandableListRootSchema_PropsImpl = {}
+	_ExpandableListRootSchema_PropsImpl.__index = _ExpandableListRootSchema_PropsImpl
+
+	function _ExpandableListRootSchema_PropsImpl.new(
+		data: _ExpandableListRootSchema_PropsPartialFields?
+	): ExpandableListRootSchema_Props
+		return setmetatable({
+			state_key = if data == nil or data.state_key == nil then nil else data.state_key,
+			header = if data == nil or data.header == nil then nil else data.header,
+			toggle = if data == nil or data.toggle == nil then nil else data.toggle,
+			content = if data == nil or data.content == nil then nil else data.content,
+			initially_expanded = if data == nil or data.initially_expanded == nil then nil else data.initially_expanded,
+			layout_order = if data == nil or data.layout_order == nil then nil else data.layout_order,
+			test_id = if data == nil or data.test_id == nil then nil else data.test_id,
+		}, _ExpandableListRootSchema_PropsImpl :: _ExpandableListRootSchema_PropsImpl)
+	end
+
+	function _ExpandableListRootSchema_PropsImpl.encode(self: ExpandableListRootSchema_Props): buffer
+		local output = buffer.create(0)
+		local cursor = 0
+
+		if self.state_key ~= nil then
+			local encoded = self.state_key:encode()
+			output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.header ~= nil then
+			local encoded = self.header:encode()
+			output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.toggle ~= nil then
+			local encoded = self.toggle:encode()
+			output, cursor = proto.writeTag(output, cursor, 3, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.content ~= nil then
+			local encoded = self.content:encode()
+			output, cursor = proto.writeTag(output, cursor, 4, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.initially_expanded ~= nil then
+			local encoded = self.initially_expanded:encode()
+			output, cursor = proto.writeTag(output, cursor, 5, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.layout_order ~= nil then
+			local encoded = self.layout_order:encode()
+			output, cursor = proto.writeTag(output, cursor, 6, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.test_id ~= nil then
+			local encoded = self.test_id:encode()
+			output, cursor = proto.writeTag(output, cursor, 7, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		local shrunkBuffer = buffer.create(cursor)
+		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
+		return shrunkBuffer
+	end
+
+	function _ExpandableListRootSchema_PropsImpl.decode(input: buffer): ExpandableListRootSchema_Props
+		local self = _ExpandableListRootSchema_PropsImpl.new()
+		local cursor = 0
+
+		while cursor < buffer.len(input) do
+			local field, wireType
+			field, wireType, cursor = proto.readTag(input, cursor)
+
+			if wireType == proto.wireTypes.varint then
+				-- No fields
+
+				local _
+				_, cursor = proto.readVarInt(input, cursor)
+			elseif wireType == proto.wireTypes.lengthDelimited then
+				if field == 1 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.state_key = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 2 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.header = messages.LazyNestedComponentProp.decode(value)
+					continue
+				elseif field == 3 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.toggle = messages.LazyNestedComponentProp.decode(value)
+					continue
+				elseif field == 4 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.content = messages.LazyNestedComponentProp.decode(value)
+					continue
+				elseif field == 5 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.initially_expanded = _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.decode(value)
+					continue
+				elseif field == 6 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.layout_order = _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.decode(value)
+					continue
+				elseif field == 7 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.test_id = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				end
+
+				local length
+				length, cursor = proto.readVarInt(input, cursor)
+
+				cursor += length
+			elseif wireType == proto.wireTypes.i32 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed32(input, cursor)
+			elseif wireType == proto.wireTypes.i64 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed64(input, cursor)
+			else
+				error("Unsupported wire type: " .. wireType)
+			end
+		end
+
+		return self
+	end
+
+	function _ExpandableListRootSchema_PropsImpl.jsonEncode(self: ExpandableListRootSchema_Props): any
+		local output = {}
+
+		if self.state_key ~= nil then
+			output.stateKey = self.state_key:jsonEncode()
+		end
+
+		if self.header ~= nil then
+			output.header = self.header:jsonEncode()
+		end
+
+		if self.toggle ~= nil then
+			output.toggle = self.toggle:jsonEncode()
+		end
+
+		if self.content ~= nil then
+			output.content = self.content:jsonEncode()
+		end
+
+		if self.initially_expanded ~= nil then
+			output.initiallyExpanded = self.initially_expanded:jsonEncode()
+		end
+
+		if self.layout_order ~= nil then
+			output.layoutOrder = self.layout_order:jsonEncode()
+		end
+
+		if self.test_id ~= nil then
+			output.testId = self.test_id:jsonEncode()
+		end
+
+		return output
+	end
+
+	function _ExpandableListRootSchema_PropsImpl.jsonDecode(input: { [string]: any }): ExpandableListRootSchema_Props
+		local self = _ExpandableListRootSchema_PropsImpl.new()
+
+		if input.state_key ~= nil then
+			self.state_key = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.state_key)
+		end
+
+		if input.stateKey ~= nil then
+			self.state_key = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.stateKey)
+		end
+
+		if input.header ~= nil then
+			self.header = messages.LazyNestedComponentProp.jsonDecode(input.header)
+		end
+
+		if input.toggle ~= nil then
+			self.toggle = messages.LazyNestedComponentProp.jsonDecode(input.toggle)
+		end
+
+		if input.content ~= nil then
+			self.content = messages.LazyNestedComponentProp.jsonDecode(input.content)
+		end
+
+		if input.initially_expanded ~= nil then
+			self.initially_expanded =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.jsonDecode(input.initially_expanded)
+		end
+
+		if input.initiallyExpanded ~= nil then
+			self.initially_expanded =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.jsonDecode(input.initiallyExpanded)
+		end
+
+		if input.layout_order ~= nil then
+			self.layout_order =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.jsonDecode(input.layout_order)
+		end
+
+		if input.layoutOrder ~= nil then
+			self.layout_order =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.jsonDecode(input.layoutOrder)
+		end
+
+		if input.test_id ~= nil then
+			self.test_id = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.test_id)
+		end
+
+		if input.testId ~= nil then
+			self.test_id = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.testId)
+		end
+
+		return self
+	end
+
+	_ExpandableListRootSchema_PropsImpl.descriptor = {
+		name = "ExpandableListRootSchema_Props",
+		fullName = "roblox.apppageplatform.shared.v1beta1.Props",
+	}
+
+	messages.ExpandableListRootSchema_Props = _ExpandableListRootSchema_PropsImpl :: any -- Luau: Not sure why this intersection fails.
+
+	typeRegistry.default:register(messages.ExpandableListRootSchema_Props)
 end
 
 do
@@ -73124,6 +75340,331 @@ do
 	messages.ListItemSchema_Props = _ListItemSchema_PropsImpl :: any -- Luau: Not sure why this intersection fails.
 
 	typeRegistry.default:register(messages.ListItemSchema_Props)
+end
+
+do
+	local _SearchAutocompleteSuggestionSchemaImpl = {}
+	_SearchAutocompleteSuggestionSchemaImpl.__index = _SearchAutocompleteSuggestionSchemaImpl
+
+	function _SearchAutocompleteSuggestionSchemaImpl.new(
+		data: _SearchAutocompleteSuggestionSchemaPartialFields?
+	): SearchAutocompleteSuggestionSchema
+		return setmetatable({
+			props = if data == nil or data.props == nil then nil else data.props,
+			shared = if data == nil or data.shared == nil then nil else data.shared,
+		}, _SearchAutocompleteSuggestionSchemaImpl :: _SearchAutocompleteSuggestionSchemaImpl)
+	end
+
+	function _SearchAutocompleteSuggestionSchemaImpl.encode(self: SearchAutocompleteSuggestionSchema): buffer
+		local output = buffer.create(0)
+		local cursor = 0
+
+		if self.props ~= nil then
+			local encoded = self.props:encode()
+			output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.shared ~= nil then
+			local encoded = self.shared:encode()
+			output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		local shrunkBuffer = buffer.create(cursor)
+		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
+		return shrunkBuffer
+	end
+
+	function _SearchAutocompleteSuggestionSchemaImpl.decode(input: buffer): SearchAutocompleteSuggestionSchema
+		local self = _SearchAutocompleteSuggestionSchemaImpl.new()
+		local cursor = 0
+
+		while cursor < buffer.len(input) do
+			local field, wireType
+			field, wireType, cursor = proto.readTag(input, cursor)
+
+			if wireType == proto.wireTypes.varint then
+				-- No fields
+
+				local _
+				_, cursor = proto.readVarInt(input, cursor)
+			elseif wireType == proto.wireTypes.lengthDelimited then
+				if field == 1 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.props = messages.SearchAutocompleteSuggestionSchema_Props.decode(value)
+					continue
+				elseif field == 2 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.shared = _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared.decode(value)
+					continue
+				end
+
+				local length
+				length, cursor = proto.readVarInt(input, cursor)
+
+				cursor += length
+			elseif wireType == proto.wireTypes.i32 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed32(input, cursor)
+			elseif wireType == proto.wireTypes.i64 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed64(input, cursor)
+			else
+				error("Unsupported wire type: " .. wireType)
+			end
+		end
+
+		return self
+	end
+
+	function _SearchAutocompleteSuggestionSchemaImpl.jsonEncode(self: SearchAutocompleteSuggestionSchema): any
+		local output = {}
+
+		if self.props ~= nil then
+			output.props = self.props:jsonEncode()
+		end
+
+		if self.shared ~= nil then
+			output.shared = self.shared:jsonEncode()
+		end
+
+		return output
+	end
+
+	function _SearchAutocompleteSuggestionSchemaImpl.jsonDecode(
+		input: { [string]: any }
+	): SearchAutocompleteSuggestionSchema
+		local self = _SearchAutocompleteSuggestionSchemaImpl.new()
+
+		if input.props ~= nil then
+			self.props = messages.SearchAutocompleteSuggestionSchema_Props.jsonDecode(input.props)
+		end
+
+		if input.shared ~= nil then
+			self.shared =
+				_roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared.jsonDecode(input.shared)
+		end
+
+		return self
+	end
+
+	_SearchAutocompleteSuggestionSchemaImpl.descriptor = {
+		name = "SearchAutocompleteSuggestionSchema",
+		fullName = "roblox.apppageplatform.shared.v1beta1.SearchAutocompleteSuggestionSchema",
+	}
+
+	messages.SearchAutocompleteSuggestionSchema = _SearchAutocompleteSuggestionSchemaImpl :: any -- Luau: Not sure why this intersection fails.
+
+	typeRegistry.default:register(messages.SearchAutocompleteSuggestionSchema)
+end
+
+do
+	local _SearchAutocompleteSuggestionSchema_PropsImpl = {}
+	_SearchAutocompleteSuggestionSchema_PropsImpl.__index = _SearchAutocompleteSuggestionSchema_PropsImpl
+
+	function _SearchAutocompleteSuggestionSchema_PropsImpl.new(
+		data: _SearchAutocompleteSuggestionSchema_PropsPartialFields?
+	): SearchAutocompleteSuggestionSchema_Props
+		return setmetatable({
+			title = if data == nil or data.title == nil then nil else data.title,
+			is_rich = if data == nil or data.is_rich == nil then nil else data.is_rich,
+			keyword = if data == nil or data.keyword == nil then nil else data.keyword,
+			rich_icon = if data == nil or data.rich_icon == nil then nil else data.rich_icon,
+			on_activated = if data == nil or data.on_activated == nil then nil else data.on_activated,
+		}, _SearchAutocompleteSuggestionSchema_PropsImpl :: _SearchAutocompleteSuggestionSchema_PropsImpl)
+	end
+
+	function _SearchAutocompleteSuggestionSchema_PropsImpl.encode(
+		self: SearchAutocompleteSuggestionSchema_Props
+	): buffer
+		local output = buffer.create(0)
+		local cursor = 0
+
+		if self.title ~= nil then
+			local encoded = self.title:encode()
+			output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.is_rich ~= nil then
+			local encoded = self.is_rich:encode()
+			output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.keyword ~= nil then
+			local encoded = self.keyword:encode()
+			output, cursor = proto.writeTag(output, cursor, 3, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.rich_icon ~= nil then
+			local encoded = self.rich_icon:encode()
+			output, cursor = proto.writeTag(output, cursor, 4, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.on_activated ~= nil then
+			local encoded = self.on_activated:encode()
+			output, cursor = proto.writeTag(output, cursor, 5, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		local shrunkBuffer = buffer.create(cursor)
+		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
+		return shrunkBuffer
+	end
+
+	function _SearchAutocompleteSuggestionSchema_PropsImpl.decode(
+		input: buffer
+	): SearchAutocompleteSuggestionSchema_Props
+		local self = _SearchAutocompleteSuggestionSchema_PropsImpl.new()
+		local cursor = 0
+
+		while cursor < buffer.len(input) do
+			local field, wireType
+			field, wireType, cursor = proto.readTag(input, cursor)
+
+			if wireType == proto.wireTypes.varint then
+				-- No fields
+
+				local _
+				_, cursor = proto.readVarInt(input, cursor)
+			elseif wireType == proto.wireTypes.lengthDelimited then
+				if field == 1 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.title = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 2 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.is_rich = _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.decode(value)
+					continue
+				elseif field == 3 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.keyword = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 4 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.rich_icon = _roblox_apppageplatform_shared_v1beta1_prop_types.ImageStringProp.decode(value)
+					continue
+				elseif field == 5 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.on_activated = _roblox_apppageplatform_shared_v1beta1_actions.ActionProp.decode(value)
+					continue
+				end
+
+				local length
+				length, cursor = proto.readVarInt(input, cursor)
+
+				cursor += length
+			elseif wireType == proto.wireTypes.i32 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed32(input, cursor)
+			elseif wireType == proto.wireTypes.i64 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed64(input, cursor)
+			else
+				error("Unsupported wire type: " .. wireType)
+			end
+		end
+
+		return self
+	end
+
+	function _SearchAutocompleteSuggestionSchema_PropsImpl.jsonEncode(
+		self: SearchAutocompleteSuggestionSchema_Props
+	): any
+		local output = {}
+
+		if self.title ~= nil then
+			output.title = self.title:jsonEncode()
+		end
+
+		if self.is_rich ~= nil then
+			output.isRich = self.is_rich:jsonEncode()
+		end
+
+		if self.keyword ~= nil then
+			output.keyword = self.keyword:jsonEncode()
+		end
+
+		if self.rich_icon ~= nil then
+			output.richIcon = self.rich_icon:jsonEncode()
+		end
+
+		if self.on_activated ~= nil then
+			output.onActivated = self.on_activated:jsonEncode()
+		end
+
+		return output
+	end
+
+	function _SearchAutocompleteSuggestionSchema_PropsImpl.jsonDecode(
+		input: { [string]: any }
+	): SearchAutocompleteSuggestionSchema_Props
+		local self = _SearchAutocompleteSuggestionSchema_PropsImpl.new()
+
+		if input.title ~= nil then
+			self.title = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.title)
+		end
+
+		if input.is_rich ~= nil then
+			self.is_rich = _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.jsonDecode(input.is_rich)
+		end
+
+		if input.isRich ~= nil then
+			self.is_rich = _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.jsonDecode(input.isRich)
+		end
+
+		if input.keyword ~= nil then
+			self.keyword = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.keyword)
+		end
+
+		if input.rich_icon ~= nil then
+			self.rich_icon =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.ImageStringProp.jsonDecode(input.rich_icon)
+		end
+
+		if input.richIcon ~= nil then
+			self.rich_icon =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.ImageStringProp.jsonDecode(input.richIcon)
+		end
+
+		if input.on_activated ~= nil then
+			self.on_activated = _roblox_apppageplatform_shared_v1beta1_actions.ActionProp.jsonDecode(input.on_activated)
+		end
+
+		if input.onActivated ~= nil then
+			self.on_activated = _roblox_apppageplatform_shared_v1beta1_actions.ActionProp.jsonDecode(input.onActivated)
+		end
+
+		return self
+	end
+
+	_SearchAutocompleteSuggestionSchema_PropsImpl.descriptor = {
+		name = "SearchAutocompleteSuggestionSchema_Props",
+		fullName = "roblox.apppageplatform.shared.v1beta1.Props",
+	}
+
+	messages.SearchAutocompleteSuggestionSchema_Props = _SearchAutocompleteSuggestionSchema_PropsImpl :: any -- Luau: Not sure why this intersection fails.
+
+	typeRegistry.default:register(messages.SearchAutocompleteSuggestionSchema_Props)
 end
 
 do
@@ -73826,6 +76367,724 @@ do
 	messages.ListItemInputControlProp_ListItemInputControl = _ListItemInputControlProp_ListItemInputControlImpl :: any -- Luau: Not sure why this intersection fails.
 
 	typeRegistry.default:register(messages.ListItemInputControlProp_ListItemInputControl)
+end
+
+do
+	local _AccordionSchemaImpl = {}
+	_AccordionSchemaImpl.__index = _AccordionSchemaImpl
+
+	function _AccordionSchemaImpl.new(data: _AccordionSchemaPartialFields?): AccordionSchema
+		return setmetatable({
+			props = if data == nil or data.props == nil then nil else data.props,
+			shared = if data == nil or data.shared == nil then nil else data.shared,
+		}, _AccordionSchemaImpl :: _AccordionSchemaImpl)
+	end
+
+	function _AccordionSchemaImpl.encode(self: AccordionSchema): buffer
+		local output = buffer.create(0)
+		local cursor = 0
+
+		if self.props ~= nil then
+			local encoded = self.props:encode()
+			output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.shared ~= nil then
+			local encoded = self.shared:encode()
+			output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		local shrunkBuffer = buffer.create(cursor)
+		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
+		return shrunkBuffer
+	end
+
+	function _AccordionSchemaImpl.decode(input: buffer): AccordionSchema
+		local self = _AccordionSchemaImpl.new()
+		local cursor = 0
+
+		while cursor < buffer.len(input) do
+			local field, wireType
+			field, wireType, cursor = proto.readTag(input, cursor)
+
+			if wireType == proto.wireTypes.varint then
+				-- No fields
+
+				local _
+				_, cursor = proto.readVarInt(input, cursor)
+			elseif wireType == proto.wireTypes.lengthDelimited then
+				if field == 1 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.props = messages.AccordionSchema_Props.decode(value)
+					continue
+				elseif field == 2 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.shared = _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared.decode(value)
+					continue
+				end
+
+				local length
+				length, cursor = proto.readVarInt(input, cursor)
+
+				cursor += length
+			elseif wireType == proto.wireTypes.i32 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed32(input, cursor)
+			elseif wireType == proto.wireTypes.i64 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed64(input, cursor)
+			else
+				error("Unsupported wire type: " .. wireType)
+			end
+		end
+
+		return self
+	end
+
+	function _AccordionSchemaImpl.jsonEncode(self: AccordionSchema): any
+		local output = {}
+
+		if self.props ~= nil then
+			output.props = self.props:jsonEncode()
+		end
+
+		if self.shared ~= nil then
+			output.shared = self.shared:jsonEncode()
+		end
+
+		return output
+	end
+
+	function _AccordionSchemaImpl.jsonDecode(input: { [string]: any }): AccordionSchema
+		local self = _AccordionSchemaImpl.new()
+
+		if input.props ~= nil then
+			self.props = messages.AccordionSchema_Props.jsonDecode(input.props)
+		end
+
+		if input.shared ~= nil then
+			self.shared =
+				_roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared.jsonDecode(input.shared)
+		end
+
+		return self
+	end
+
+	_AccordionSchemaImpl.descriptor = {
+		name = "AccordionSchema",
+		fullName = "roblox.apppageplatform.shared.v1beta1.AccordionSchema",
+	}
+
+	messages.AccordionSchema = _AccordionSchemaImpl :: any -- Luau: Not sure why this intersection fails.
+
+	typeRegistry.default:register(messages.AccordionSchema)
+end
+
+do
+	local _AccordionSchema_PropsImpl = {}
+	_AccordionSchema_PropsImpl.__index = _AccordionSchema_PropsImpl
+
+	function _AccordionSchema_PropsImpl.new(data: _AccordionSchema_PropsPartialFields?): AccordionSchema_Props
+		return setmetatable({
+			items = if data == nil or data.items == nil then nil else data.items,
+			size = if data == nil or data.size == nil then nil else data.size,
+			is_contained = if data == nil or data.is_contained == nil then nil else data.is_contained,
+			chevron_position = if data == nil or data.chevron_position == nil then nil else data.chevron_position,
+			layout_order = if data == nil or data.layout_order == nil then nil else data.layout_order,
+			test_id = if data == nil or data.test_id == nil then nil else data.test_id,
+		}, _AccordionSchema_PropsImpl :: _AccordionSchema_PropsImpl)
+	end
+
+	function _AccordionSchema_PropsImpl.encode(self: AccordionSchema_Props): buffer
+		local output = buffer.create(0)
+		local cursor = 0
+
+		if self.items ~= nil then
+			local encoded = self.items:encode()
+			output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.size ~= nil then
+			local encoded = self.size:encode()
+			output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.is_contained ~= nil then
+			local encoded = self.is_contained:encode()
+			output, cursor = proto.writeTag(output, cursor, 3, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.chevron_position ~= nil then
+			local encoded = self.chevron_position:encode()
+			output, cursor = proto.writeTag(output, cursor, 4, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.layout_order ~= nil then
+			local encoded = self.layout_order:encode()
+			output, cursor = proto.writeTag(output, cursor, 5, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.test_id ~= nil then
+			local encoded = self.test_id:encode()
+			output, cursor = proto.writeTag(output, cursor, 6, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		local shrunkBuffer = buffer.create(cursor)
+		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
+		return shrunkBuffer
+	end
+
+	function _AccordionSchema_PropsImpl.decode(input: buffer): AccordionSchema_Props
+		local self = _AccordionSchema_PropsImpl.new()
+		local cursor = 0
+
+		while cursor < buffer.len(input) do
+			local field, wireType
+			field, wireType, cursor = proto.readTag(input, cursor)
+
+			if wireType == proto.wireTypes.varint then
+				-- No fields
+
+				local _
+				_, cursor = proto.readVarInt(input, cursor)
+			elseif wireType == proto.wireTypes.lengthDelimited then
+				if field == 1 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.items = messages.LazyNestedComponentListProp.decode(value)
+					continue
+				elseif field == 2 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.size = _roblox_apppageplatform_shared_v1beta1_prop_types.InputSizeProp.decode(value)
+					continue
+				elseif field == 3 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.is_contained = _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.decode(value)
+					continue
+				elseif field == 4 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.chevron_position = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 5 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.layout_order = _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.decode(value)
+					continue
+				elseif field == 6 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.test_id = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				end
+
+				local length
+				length, cursor = proto.readVarInt(input, cursor)
+
+				cursor += length
+			elseif wireType == proto.wireTypes.i32 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed32(input, cursor)
+			elseif wireType == proto.wireTypes.i64 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed64(input, cursor)
+			else
+				error("Unsupported wire type: " .. wireType)
+			end
+		end
+
+		return self
+	end
+
+	function _AccordionSchema_PropsImpl.jsonEncode(self: AccordionSchema_Props): any
+		local output = {}
+
+		if self.items ~= nil then
+			output.items = self.items:jsonEncode()
+		end
+
+		if self.size ~= nil then
+			output.size = self.size:jsonEncode()
+		end
+
+		if self.is_contained ~= nil then
+			output.isContained = self.is_contained:jsonEncode()
+		end
+
+		if self.chevron_position ~= nil then
+			output.chevronPosition = self.chevron_position:jsonEncode()
+		end
+
+		if self.layout_order ~= nil then
+			output.layoutOrder = self.layout_order:jsonEncode()
+		end
+
+		if self.test_id ~= nil then
+			output.testId = self.test_id:jsonEncode()
+		end
+
+		return output
+	end
+
+	function _AccordionSchema_PropsImpl.jsonDecode(input: { [string]: any }): AccordionSchema_Props
+		local self = _AccordionSchema_PropsImpl.new()
+
+		if input.items ~= nil then
+			self.items = messages.LazyNestedComponentListProp.jsonDecode(input.items)
+		end
+
+		if input.size ~= nil then
+			self.size = _roblox_apppageplatform_shared_v1beta1_prop_types.InputSizeProp.jsonDecode(input.size)
+		end
+
+		if input.is_contained ~= nil then
+			self.is_contained =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.jsonDecode(input.is_contained)
+		end
+
+		if input.isContained ~= nil then
+			self.is_contained = _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.jsonDecode(input.isContained)
+		end
+
+		if input.chevron_position ~= nil then
+			self.chevron_position =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.chevron_position)
+		end
+
+		if input.chevronPosition ~= nil then
+			self.chevron_position =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.chevronPosition)
+		end
+
+		if input.layout_order ~= nil then
+			self.layout_order =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.jsonDecode(input.layout_order)
+		end
+
+		if input.layoutOrder ~= nil then
+			self.layout_order =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.jsonDecode(input.layoutOrder)
+		end
+
+		if input.test_id ~= nil then
+			self.test_id = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.test_id)
+		end
+
+		if input.testId ~= nil then
+			self.test_id = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.testId)
+		end
+
+		return self
+	end
+
+	_AccordionSchema_PropsImpl.descriptor = {
+		name = "AccordionSchema_Props",
+		fullName = "roblox.apppageplatform.shared.v1beta1.Props",
+	}
+
+	messages.AccordionSchema_Props = _AccordionSchema_PropsImpl :: any -- Luau: Not sure why this intersection fails.
+
+	typeRegistry.default:register(messages.AccordionSchema_Props)
+end
+
+do
+	local _AccordionItemSchemaImpl = {}
+	_AccordionItemSchemaImpl.__index = _AccordionItemSchemaImpl
+
+	function _AccordionItemSchemaImpl.new(data: _AccordionItemSchemaPartialFields?): AccordionItemSchema
+		return setmetatable({
+			props = if data == nil or data.props == nil then nil else data.props,
+			shared = if data == nil or data.shared == nil then nil else data.shared,
+		}, _AccordionItemSchemaImpl :: _AccordionItemSchemaImpl)
+	end
+
+	function _AccordionItemSchemaImpl.encode(self: AccordionItemSchema): buffer
+		local output = buffer.create(0)
+		local cursor = 0
+
+		if self.props ~= nil then
+			local encoded = self.props:encode()
+			output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.shared ~= nil then
+			local encoded = self.shared:encode()
+			output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		local shrunkBuffer = buffer.create(cursor)
+		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
+		return shrunkBuffer
+	end
+
+	function _AccordionItemSchemaImpl.decode(input: buffer): AccordionItemSchema
+		local self = _AccordionItemSchemaImpl.new()
+		local cursor = 0
+
+		while cursor < buffer.len(input) do
+			local field, wireType
+			field, wireType, cursor = proto.readTag(input, cursor)
+
+			if wireType == proto.wireTypes.varint then
+				-- No fields
+
+				local _
+				_, cursor = proto.readVarInt(input, cursor)
+			elseif wireType == proto.wireTypes.lengthDelimited then
+				if field == 1 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.props = messages.AccordionItemSchema_Props.decode(value)
+					continue
+				elseif field == 2 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.shared = _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared.decode(value)
+					continue
+				end
+
+				local length
+				length, cursor = proto.readVarInt(input, cursor)
+
+				cursor += length
+			elseif wireType == proto.wireTypes.i32 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed32(input, cursor)
+			elseif wireType == proto.wireTypes.i64 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed64(input, cursor)
+			else
+				error("Unsupported wire type: " .. wireType)
+			end
+		end
+
+		return self
+	end
+
+	function _AccordionItemSchemaImpl.jsonEncode(self: AccordionItemSchema): any
+		local output = {}
+
+		if self.props ~= nil then
+			output.props = self.props:jsonEncode()
+		end
+
+		if self.shared ~= nil then
+			output.shared = self.shared:jsonEncode()
+		end
+
+		return output
+	end
+
+	function _AccordionItemSchemaImpl.jsonDecode(input: { [string]: any }): AccordionItemSchema
+		local self = _AccordionItemSchemaImpl.new()
+
+		if input.props ~= nil then
+			self.props = messages.AccordionItemSchema_Props.jsonDecode(input.props)
+		end
+
+		if input.shared ~= nil then
+			self.shared =
+				_roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared.jsonDecode(input.shared)
+		end
+
+		return self
+	end
+
+	_AccordionItemSchemaImpl.descriptor = {
+		name = "AccordionItemSchema",
+		fullName = "roblox.apppageplatform.shared.v1beta1.AccordionItemSchema",
+	}
+
+	messages.AccordionItemSchema = _AccordionItemSchemaImpl :: any -- Luau: Not sure why this intersection fails.
+
+	typeRegistry.default:register(messages.AccordionItemSchema)
+end
+
+do
+	local _AccordionItemSchema_PropsImpl = {}
+	_AccordionItemSchema_PropsImpl.__index = _AccordionItemSchema_PropsImpl
+
+	function _AccordionItemSchema_PropsImpl.new(
+		data: _AccordionItemSchema_PropsPartialFields?
+	): AccordionItemSchema_Props
+		return setmetatable({
+			text = if data == nil or data.text == nil then nil else data.text,
+			description = if data == nil or data.description == nil then nil else data.description,
+			icon = if data == nil or data.icon == nil then nil else data.icon,
+			icon_variant = if data == nil or data.icon_variant == nil then nil else data.icon_variant,
+			has_divider = if data == nil or data.has_divider == nil then nil else data.has_divider,
+			is_expanded = if data == nil or data.is_expanded == nil then nil else data.is_expanded,
+			content = if data == nil or data.content == nil then nil else data.content,
+			layout_order = if data == nil or data.layout_order == nil then nil else data.layout_order,
+		}, _AccordionItemSchema_PropsImpl :: _AccordionItemSchema_PropsImpl)
+	end
+
+	function _AccordionItemSchema_PropsImpl.encode(self: AccordionItemSchema_Props): buffer
+		local output = buffer.create(0)
+		local cursor = 0
+
+		if self.text ~= nil then
+			local encoded = self.text:encode()
+			output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.description ~= nil then
+			local encoded = self.description:encode()
+			output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.icon ~= nil then
+			local encoded = self.icon:encode()
+			output, cursor = proto.writeTag(output, cursor, 3, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.icon_variant ~= nil then
+			local encoded = self.icon_variant:encode()
+			output, cursor = proto.writeTag(output, cursor, 4, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.has_divider ~= nil then
+			local encoded = self.has_divider:encode()
+			output, cursor = proto.writeTag(output, cursor, 5, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.is_expanded ~= nil then
+			local encoded = self.is_expanded:encode()
+			output, cursor = proto.writeTag(output, cursor, 6, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.content ~= nil then
+			local encoded = self.content:encode()
+			output, cursor = proto.writeTag(output, cursor, 7, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.layout_order ~= nil then
+			local encoded = self.layout_order:encode()
+			output, cursor = proto.writeTag(output, cursor, 8, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		local shrunkBuffer = buffer.create(cursor)
+		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
+		return shrunkBuffer
+	end
+
+	function _AccordionItemSchema_PropsImpl.decode(input: buffer): AccordionItemSchema_Props
+		local self = _AccordionItemSchema_PropsImpl.new()
+		local cursor = 0
+
+		while cursor < buffer.len(input) do
+			local field, wireType
+			field, wireType, cursor = proto.readTag(input, cursor)
+
+			if wireType == proto.wireTypes.varint then
+				-- No fields
+
+				local _
+				_, cursor = proto.readVarInt(input, cursor)
+			elseif wireType == proto.wireTypes.lengthDelimited then
+				if field == 1 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.text = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 2 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.description = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 3 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.icon = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 4 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.icon_variant = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 5 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.has_divider = _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.decode(value)
+					continue
+				elseif field == 6 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.is_expanded = _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.decode(value)
+					continue
+				elseif field == 7 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.content = messages.NestedComponentListProp.decode(value)
+					continue
+				elseif field == 8 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.layout_order = _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.decode(value)
+					continue
+				end
+
+				local length
+				length, cursor = proto.readVarInt(input, cursor)
+
+				cursor += length
+			elseif wireType == proto.wireTypes.i32 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed32(input, cursor)
+			elseif wireType == proto.wireTypes.i64 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed64(input, cursor)
+			else
+				error("Unsupported wire type: " .. wireType)
+			end
+		end
+
+		return self
+	end
+
+	function _AccordionItemSchema_PropsImpl.jsonEncode(self: AccordionItemSchema_Props): any
+		local output = {}
+
+		if self.text ~= nil then
+			output.text = self.text:jsonEncode()
+		end
+
+		if self.description ~= nil then
+			output.description = self.description:jsonEncode()
+		end
+
+		if self.icon ~= nil then
+			output.icon = self.icon:jsonEncode()
+		end
+
+		if self.icon_variant ~= nil then
+			output.iconVariant = self.icon_variant:jsonEncode()
+		end
+
+		if self.has_divider ~= nil then
+			output.hasDivider = self.has_divider:jsonEncode()
+		end
+
+		if self.is_expanded ~= nil then
+			output.isExpanded = self.is_expanded:jsonEncode()
+		end
+
+		if self.content ~= nil then
+			output.content = self.content:jsonEncode()
+		end
+
+		if self.layout_order ~= nil then
+			output.layoutOrder = self.layout_order:jsonEncode()
+		end
+
+		return output
+	end
+
+	function _AccordionItemSchema_PropsImpl.jsonDecode(input: { [string]: any }): AccordionItemSchema_Props
+		local self = _AccordionItemSchema_PropsImpl.new()
+
+		if input.text ~= nil then
+			self.text = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.text)
+		end
+
+		if input.description ~= nil then
+			self.description =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.description)
+		end
+
+		if input.icon ~= nil then
+			self.icon = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.icon)
+		end
+
+		if input.icon_variant ~= nil then
+			self.icon_variant =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.icon_variant)
+		end
+
+		if input.iconVariant ~= nil then
+			self.icon_variant =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.iconVariant)
+		end
+
+		if input.has_divider ~= nil then
+			self.has_divider = _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.jsonDecode(input.has_divider)
+		end
+
+		if input.hasDivider ~= nil then
+			self.has_divider = _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.jsonDecode(input.hasDivider)
+		end
+
+		if input.is_expanded ~= nil then
+			self.is_expanded = _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.jsonDecode(input.is_expanded)
+		end
+
+		if input.isExpanded ~= nil then
+			self.is_expanded = _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.jsonDecode(input.isExpanded)
+		end
+
+		if input.content ~= nil then
+			self.content = messages.NestedComponentListProp.jsonDecode(input.content)
+		end
+
+		if input.layout_order ~= nil then
+			self.layout_order =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.jsonDecode(input.layout_order)
+		end
+
+		if input.layoutOrder ~= nil then
+			self.layout_order =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.jsonDecode(input.layoutOrder)
+		end
+
+		return self
+	end
+
+	_AccordionItemSchema_PropsImpl.descriptor = {
+		name = "AccordionItemSchema_Props",
+		fullName = "roblox.apppageplatform.shared.v1beta1.Props",
+	}
+
+	messages.AccordionItemSchema_Props = _AccordionItemSchema_PropsImpl :: any -- Luau: Not sure why this intersection fails.
+
+	typeRegistry.default:register(messages.AccordionItemSchema_Props)
 end
 
 do
@@ -78840,6 +82099,618 @@ do
 end
 
 do
+	local _SheetSchemaImpl = {}
+	_SheetSchemaImpl.__index = _SheetSchemaImpl
+
+	function _SheetSchemaImpl.new(data: _SheetSchemaPartialFields?): SheetSchema
+		return setmetatable({
+			props = if data == nil or data.props == nil then nil else data.props,
+			shared = if data == nil or data.shared == nil then nil else data.shared,
+		}, _SheetSchemaImpl :: _SheetSchemaImpl)
+	end
+
+	function _SheetSchemaImpl.encode(self: SheetSchema): buffer
+		local output = buffer.create(0)
+		local cursor = 0
+
+		if self.props ~= nil then
+			local encoded = self.props:encode()
+			output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.shared ~= nil then
+			local encoded = self.shared:encode()
+			output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		local shrunkBuffer = buffer.create(cursor)
+		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
+		return shrunkBuffer
+	end
+
+	function _SheetSchemaImpl.decode(input: buffer): SheetSchema
+		local self = _SheetSchemaImpl.new()
+		local cursor = 0
+
+		while cursor < buffer.len(input) do
+			local field, wireType
+			field, wireType, cursor = proto.readTag(input, cursor)
+
+			if wireType == proto.wireTypes.varint then
+				-- No fields
+
+				local _
+				_, cursor = proto.readVarInt(input, cursor)
+			elseif wireType == proto.wireTypes.lengthDelimited then
+				if field == 1 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.props = messages.SheetSchema_Props.decode(value)
+					continue
+				elseif field == 2 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.shared = _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared.decode(value)
+					continue
+				end
+
+				local length
+				length, cursor = proto.readVarInt(input, cursor)
+
+				cursor += length
+			elseif wireType == proto.wireTypes.i32 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed32(input, cursor)
+			elseif wireType == proto.wireTypes.i64 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed64(input, cursor)
+			else
+				error("Unsupported wire type: " .. wireType)
+			end
+		end
+
+		return self
+	end
+
+	function _SheetSchemaImpl.jsonEncode(self: SheetSchema): any
+		local output = {}
+
+		if self.props ~= nil then
+			output.props = self.props:jsonEncode()
+		end
+
+		if self.shared ~= nil then
+			output.shared = self.shared:jsonEncode()
+		end
+
+		return output
+	end
+
+	function _SheetSchemaImpl.jsonDecode(input: { [string]: any }): SheetSchema
+		local self = _SheetSchemaImpl.new()
+
+		if input.props ~= nil then
+			self.props = messages.SheetSchema_Props.jsonDecode(input.props)
+		end
+
+		if input.shared ~= nil then
+			self.shared =
+				_roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared.jsonDecode(input.shared)
+		end
+
+		return self
+	end
+
+	_SheetSchemaImpl.descriptor = {
+		name = "SheetSchema",
+		fullName = "roblox.apppageplatform.shared.v1beta1.SheetSchema",
+	}
+
+	messages.SheetSchema = _SheetSchemaImpl :: any -- Luau: Not sure why this intersection fails.
+
+	typeRegistry.default:register(messages.SheetSchema)
+end
+
+do
+	local _SheetSchema_PropsImpl = {}
+	_SheetSchema_PropsImpl.__index = _SheetSchema_PropsImpl
+
+	function _SheetSchema_PropsImpl.new(data: _SheetSchema_PropsPartialFields?): SheetSchema_Props
+		return setmetatable({
+			is_open = if data == nil or data.is_open == nil then nil else data.is_open,
+			prefer_center_sheet = if data == nil or data.prefer_center_sheet == nil
+				then nil
+				else data.prefer_center_sheet,
+			size = if data == nil or data.size == nil then nil else data.size,
+			on_close = if data == nil or data.on_close == nil then nil else data.on_close,
+			center_sheet_height = if data == nil or data.center_sheet_height == nil
+				then nil
+				else data.center_sheet_height,
+			snap_points = if data == nil or data.snap_points == nil then nil else data.snap_points,
+			default_snap_point_index = if data == nil or data.default_snap_point_index == nil
+				then nil
+				else data.default_snap_point_index,
+			on_snap_point_changed = if data == nil or data.on_snap_point_changed == nil
+				then nil
+				else data.on_snap_point_changed,
+			header_component = if data == nil or data.header_component == nil then nil else data.header_component,
+			header_has_close_affordance = if data == nil or data.header_has_close_affordance == nil
+				then nil
+				else data.header_has_close_affordance,
+			full_bleed_component = if data == nil or data.full_bleed_component == nil
+				then nil
+				else data.full_bleed_component,
+			content_components = if data == nil or data.content_components == nil then nil else data.content_components,
+			content_is_full_bleed = if data == nil or data.content_is_full_bleed == nil
+				then nil
+				else data.content_is_full_bleed,
+			content_is_reversed = if data == nil or data.content_is_reversed == nil
+				then nil
+				else data.content_is_reversed,
+			action_components = if data == nil or data.action_components == nil then nil else data.action_components,
+			test_id = if data == nil or data.test_id == nil then nil else data.test_id,
+		}, _SheetSchema_PropsImpl :: _SheetSchema_PropsImpl)
+	end
+
+	function _SheetSchema_PropsImpl.encode(self: SheetSchema_Props): buffer
+		local output = buffer.create(0)
+		local cursor = 0
+
+		if self.is_open ~= nil then
+			local encoded = self.is_open:encode()
+			output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.prefer_center_sheet ~= nil then
+			local encoded = self.prefer_center_sheet:encode()
+			output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.size ~= nil then
+			local encoded = self.size:encode()
+			output, cursor = proto.writeTag(output, cursor, 3, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.on_close ~= nil then
+			local encoded = self.on_close:encode()
+			output, cursor = proto.writeTag(output, cursor, 4, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.center_sheet_height ~= nil then
+			local encoded = self.center_sheet_height:encode()
+			output, cursor = proto.writeTag(output, cursor, 5, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.snap_points ~= nil then
+			local encoded = self.snap_points:encode()
+			output, cursor = proto.writeTag(output, cursor, 6, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.default_snap_point_index ~= nil then
+			local encoded = self.default_snap_point_index:encode()
+			output, cursor = proto.writeTag(output, cursor, 7, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.on_snap_point_changed ~= nil then
+			local encoded = self.on_snap_point_changed:encode()
+			output, cursor = proto.writeTag(output, cursor, 8, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.header_component ~= nil then
+			local encoded = self.header_component:encode()
+			output, cursor = proto.writeTag(output, cursor, 9, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.header_has_close_affordance ~= nil then
+			local encoded = self.header_has_close_affordance:encode()
+			output, cursor = proto.writeTag(output, cursor, 10, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.full_bleed_component ~= nil then
+			local encoded = self.full_bleed_component:encode()
+			output, cursor = proto.writeTag(output, cursor, 11, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.content_components ~= nil then
+			local encoded = self.content_components:encode()
+			output, cursor = proto.writeTag(output, cursor, 12, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.content_is_full_bleed ~= nil then
+			local encoded = self.content_is_full_bleed:encode()
+			output, cursor = proto.writeTag(output, cursor, 13, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.content_is_reversed ~= nil then
+			local encoded = self.content_is_reversed:encode()
+			output, cursor = proto.writeTag(output, cursor, 14, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.action_components ~= nil then
+			local encoded = self.action_components:encode()
+			output, cursor = proto.writeTag(output, cursor, 15, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.test_id ~= nil then
+			local encoded = self.test_id:encode()
+			output, cursor = proto.writeTag(output, cursor, 16, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		local shrunkBuffer = buffer.create(cursor)
+		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
+		return shrunkBuffer
+	end
+
+	function _SheetSchema_PropsImpl.decode(input: buffer): SheetSchema_Props
+		local self = _SheetSchema_PropsImpl.new()
+		local cursor = 0
+
+		while cursor < buffer.len(input) do
+			local field, wireType
+			field, wireType, cursor = proto.readTag(input, cursor)
+
+			if wireType == proto.wireTypes.varint then
+				-- No fields
+
+				local _
+				_, cursor = proto.readVarInt(input, cursor)
+			elseif wireType == proto.wireTypes.lengthDelimited then
+				if field == 1 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.is_open = _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.decode(value)
+					continue
+				elseif field == 2 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.prefer_center_sheet = _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.decode(value)
+					continue
+				elseif field == 3 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.size = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 4 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.on_close = _roblox_apppageplatform_shared_v1beta1_actions.ActionProp.decode(value)
+					continue
+				elseif field == 5 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.center_sheet_height = _roblox_apppageplatform_shared_v1beta1_prop_types.FloatProp.decode(value)
+					continue
+				elseif field == 6 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.snap_points = _roblox_apppageplatform_shared_v1beta1_prop_types.ArrayOfFloatProp.decode(value)
+					continue
+				elseif field == 7 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.default_snap_point_index =
+						_roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.decode(value)
+					continue
+				elseif field == 8 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.on_snap_point_changed = _roblox_apppageplatform_shared_v1beta1_actions.ActionProp.decode(value)
+					continue
+				elseif field == 9 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.header_component = messages.NestedComponentProp.decode(value)
+					continue
+				elseif field == 10 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.header_has_close_affordance =
+						_roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.decode(value)
+					continue
+				elseif field == 11 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.full_bleed_component = messages.NestedComponentProp.decode(value)
+					continue
+				elseif field == 12 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.content_components = messages.NestedComponentListProp.decode(value)
+					continue
+				elseif field == 13 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.content_is_full_bleed =
+						_roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.decode(value)
+					continue
+				elseif field == 14 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.content_is_reversed = _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.decode(value)
+					continue
+				elseif field == 15 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.action_components = messages.NestedComponentListProp.decode(value)
+					continue
+				elseif field == 16 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.test_id = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				end
+
+				local length
+				length, cursor = proto.readVarInt(input, cursor)
+
+				cursor += length
+			elseif wireType == proto.wireTypes.i32 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed32(input, cursor)
+			elseif wireType == proto.wireTypes.i64 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed64(input, cursor)
+			else
+				error("Unsupported wire type: " .. wireType)
+			end
+		end
+
+		return self
+	end
+
+	function _SheetSchema_PropsImpl.jsonEncode(self: SheetSchema_Props): any
+		local output = {}
+
+		if self.is_open ~= nil then
+			output.isOpen = self.is_open:jsonEncode()
+		end
+
+		if self.prefer_center_sheet ~= nil then
+			output.preferCenterSheet = self.prefer_center_sheet:jsonEncode()
+		end
+
+		if self.size ~= nil then
+			output.size = self.size:jsonEncode()
+		end
+
+		if self.on_close ~= nil then
+			output.onClose = self.on_close:jsonEncode()
+		end
+
+		if self.center_sheet_height ~= nil then
+			output.centerSheetHeight = self.center_sheet_height:jsonEncode()
+		end
+
+		if self.snap_points ~= nil then
+			output.snapPoints = self.snap_points:jsonEncode()
+		end
+
+		if self.default_snap_point_index ~= nil then
+			output.defaultSnapPointIndex = self.default_snap_point_index:jsonEncode()
+		end
+
+		if self.on_snap_point_changed ~= nil then
+			output.onSnapPointChanged = self.on_snap_point_changed:jsonEncode()
+		end
+
+		if self.header_component ~= nil then
+			output.headerComponent = self.header_component:jsonEncode()
+		end
+
+		if self.header_has_close_affordance ~= nil then
+			output.headerHasCloseAffordance = self.header_has_close_affordance:jsonEncode()
+		end
+
+		if self.full_bleed_component ~= nil then
+			output.fullBleedComponent = self.full_bleed_component:jsonEncode()
+		end
+
+		if self.content_components ~= nil then
+			output.contentComponents = self.content_components:jsonEncode()
+		end
+
+		if self.content_is_full_bleed ~= nil then
+			output.contentIsFullBleed = self.content_is_full_bleed:jsonEncode()
+		end
+
+		if self.content_is_reversed ~= nil then
+			output.contentIsReversed = self.content_is_reversed:jsonEncode()
+		end
+
+		if self.action_components ~= nil then
+			output.actionComponents = self.action_components:jsonEncode()
+		end
+
+		if self.test_id ~= nil then
+			output.testId = self.test_id:jsonEncode()
+		end
+
+		return output
+	end
+
+	function _SheetSchema_PropsImpl.jsonDecode(input: { [string]: any }): SheetSchema_Props
+		local self = _SheetSchema_PropsImpl.new()
+
+		if input.is_open ~= nil then
+			self.is_open = _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.jsonDecode(input.is_open)
+		end
+
+		if input.isOpen ~= nil then
+			self.is_open = _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.jsonDecode(input.isOpen)
+		end
+
+		if input.prefer_center_sheet ~= nil then
+			self.prefer_center_sheet =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.jsonDecode(input.prefer_center_sheet)
+		end
+
+		if input.preferCenterSheet ~= nil then
+			self.prefer_center_sheet =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.jsonDecode(input.preferCenterSheet)
+		end
+
+		if input.size ~= nil then
+			self.size = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.size)
+		end
+
+		if input.on_close ~= nil then
+			self.on_close = _roblox_apppageplatform_shared_v1beta1_actions.ActionProp.jsonDecode(input.on_close)
+		end
+
+		if input.onClose ~= nil then
+			self.on_close = _roblox_apppageplatform_shared_v1beta1_actions.ActionProp.jsonDecode(input.onClose)
+		end
+
+		if input.center_sheet_height ~= nil then
+			self.center_sheet_height =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.FloatProp.jsonDecode(input.center_sheet_height)
+		end
+
+		if input.centerSheetHeight ~= nil then
+			self.center_sheet_height =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.FloatProp.jsonDecode(input.centerSheetHeight)
+		end
+
+		if input.snap_points ~= nil then
+			self.snap_points =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.ArrayOfFloatProp.jsonDecode(input.snap_points)
+		end
+
+		if input.snapPoints ~= nil then
+			self.snap_points =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.ArrayOfFloatProp.jsonDecode(input.snapPoints)
+		end
+
+		if input.default_snap_point_index ~= nil then
+			self.default_snap_point_index =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.jsonDecode(input.default_snap_point_index)
+		end
+
+		if input.defaultSnapPointIndex ~= nil then
+			self.default_snap_point_index =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.jsonDecode(input.defaultSnapPointIndex)
+		end
+
+		if input.on_snap_point_changed ~= nil then
+			self.on_snap_point_changed =
+				_roblox_apppageplatform_shared_v1beta1_actions.ActionProp.jsonDecode(input.on_snap_point_changed)
+		end
+
+		if input.onSnapPointChanged ~= nil then
+			self.on_snap_point_changed =
+				_roblox_apppageplatform_shared_v1beta1_actions.ActionProp.jsonDecode(input.onSnapPointChanged)
+		end
+
+		if input.header_component ~= nil then
+			self.header_component = messages.NestedComponentProp.jsonDecode(input.header_component)
+		end
+
+		if input.headerComponent ~= nil then
+			self.header_component = messages.NestedComponentProp.jsonDecode(input.headerComponent)
+		end
+
+		if input.header_has_close_affordance ~= nil then
+			self.header_has_close_affordance =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.jsonDecode(input.header_has_close_affordance)
+		end
+
+		if input.headerHasCloseAffordance ~= nil then
+			self.header_has_close_affordance =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.jsonDecode(input.headerHasCloseAffordance)
+		end
+
+		if input.full_bleed_component ~= nil then
+			self.full_bleed_component = messages.NestedComponentProp.jsonDecode(input.full_bleed_component)
+		end
+
+		if input.fullBleedComponent ~= nil then
+			self.full_bleed_component = messages.NestedComponentProp.jsonDecode(input.fullBleedComponent)
+		end
+
+		if input.content_components ~= nil then
+			self.content_components = messages.NestedComponentListProp.jsonDecode(input.content_components)
+		end
+
+		if input.contentComponents ~= nil then
+			self.content_components = messages.NestedComponentListProp.jsonDecode(input.contentComponents)
+		end
+
+		if input.content_is_full_bleed ~= nil then
+			self.content_is_full_bleed =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.jsonDecode(input.content_is_full_bleed)
+		end
+
+		if input.contentIsFullBleed ~= nil then
+			self.content_is_full_bleed =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.jsonDecode(input.contentIsFullBleed)
+		end
+
+		if input.content_is_reversed ~= nil then
+			self.content_is_reversed =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.jsonDecode(input.content_is_reversed)
+		end
+
+		if input.contentIsReversed ~= nil then
+			self.content_is_reversed =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.jsonDecode(input.contentIsReversed)
+		end
+
+		if input.action_components ~= nil then
+			self.action_components = messages.NestedComponentListProp.jsonDecode(input.action_components)
+		end
+
+		if input.actionComponents ~= nil then
+			self.action_components = messages.NestedComponentListProp.jsonDecode(input.actionComponents)
+		end
+
+		if input.test_id ~= nil then
+			self.test_id = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.test_id)
+		end
+
+		if input.testId ~= nil then
+			self.test_id = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.testId)
+		end
+
+		return self
+	end
+
+	_SheetSchema_PropsImpl.descriptor = {
+		name = "SheetSchema_Props",
+		fullName = "roblox.apppageplatform.shared.v1beta1.Props",
+	}
+
+	messages.SheetSchema_Props = _SheetSchema_PropsImpl :: any -- Luau: Not sure why this intersection fails.
+
+	typeRegistry.default:register(messages.SheetSchema_Props)
+end
+
+do
 	local _SubscriptionCellSchemaImpl = {}
 	_SubscriptionCellSchemaImpl.__index = _SubscriptionCellSchemaImpl
 
@@ -81278,6 +85149,709 @@ do
 	messages.SystemBannerSchema_WebProps = _SystemBannerSchema_WebPropsImpl :: any -- Luau: Not sure why this intersection fails.
 
 	typeRegistry.default:register(messages.SystemBannerSchema_WebProps)
+end
+
+do
+	local _BannerSchemaImpl = {}
+	_BannerSchemaImpl.__index = _BannerSchemaImpl
+
+	function _BannerSchemaImpl.new(data: _BannerSchemaPartialFields?): BannerSchema
+		return setmetatable({
+			props = if data == nil or data.props == nil then nil else data.props,
+			shared = if data == nil or data.shared == nil then nil else data.shared,
+		}, _BannerSchemaImpl :: _BannerSchemaImpl)
+	end
+
+	function _BannerSchemaImpl.encode(self: BannerSchema): buffer
+		local output = buffer.create(0)
+		local cursor = 0
+
+		if self.props ~= nil then
+			local encoded = self.props:encode()
+			output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.shared ~= nil then
+			local encoded = self.shared:encode()
+			output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		local shrunkBuffer = buffer.create(cursor)
+		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
+		return shrunkBuffer
+	end
+
+	function _BannerSchemaImpl.decode(input: buffer): BannerSchema
+		local self = _BannerSchemaImpl.new()
+		local cursor = 0
+
+		while cursor < buffer.len(input) do
+			local field, wireType
+			field, wireType, cursor = proto.readTag(input, cursor)
+
+			if wireType == proto.wireTypes.varint then
+				-- No fields
+
+				local _
+				_, cursor = proto.readVarInt(input, cursor)
+			elseif wireType == proto.wireTypes.lengthDelimited then
+				if field == 1 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.props = messages.BannerSchema_Props.decode(value)
+					continue
+				elseif field == 2 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.shared = _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared.decode(value)
+					continue
+				end
+
+				local length
+				length, cursor = proto.readVarInt(input, cursor)
+
+				cursor += length
+			elseif wireType == proto.wireTypes.i32 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed32(input, cursor)
+			elseif wireType == proto.wireTypes.i64 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed64(input, cursor)
+			else
+				error("Unsupported wire type: " .. wireType)
+			end
+		end
+
+		return self
+	end
+
+	function _BannerSchemaImpl.jsonEncode(self: BannerSchema): any
+		local output = {}
+
+		if self.props ~= nil then
+			output.props = self.props:jsonEncode()
+		end
+
+		if self.shared ~= nil then
+			output.shared = self.shared:jsonEncode()
+		end
+
+		return output
+	end
+
+	function _BannerSchemaImpl.jsonDecode(input: { [string]: any }): BannerSchema
+		local self = _BannerSchemaImpl.new()
+
+		if input.props ~= nil then
+			self.props = messages.BannerSchema_Props.jsonDecode(input.props)
+		end
+
+		if input.shared ~= nil then
+			self.shared =
+				_roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared.jsonDecode(input.shared)
+		end
+
+		return self
+	end
+
+	_BannerSchemaImpl.descriptor = {
+		name = "BannerSchema",
+		fullName = "roblox.apppageplatform.shared.v1beta1.BannerSchema",
+	}
+
+	messages.BannerSchema = _BannerSchemaImpl :: any -- Luau: Not sure why this intersection fails.
+
+	typeRegistry.default:register(messages.BannerSchema)
+end
+
+do
+	local _BannerSchema_PropsImpl = {}
+	_BannerSchema_PropsImpl.__index = _BannerSchema_PropsImpl
+
+	function _BannerSchema_PropsImpl.new(data: _BannerSchema_PropsPartialFields?): BannerSchema_Props
+		return setmetatable({
+			size = if data == nil or data.size == nil then nil else data.size,
+			density = if data == nil or data.density == nil then nil else data.density,
+			title = if data == nil or data.title == nil then nil else data.title,
+			description = if data == nil or data.description == nil then nil else data.description,
+			media = if data == nil or data.media == nil then nil else data.media,
+			media_width = if data == nil or data.media_width == nil then nil else data.media_width,
+			thumbnail_image = if data == nil or data.thumbnail_image == nil then nil else data.thumbnail_image,
+			thumbnail_icon = if data == nil or data.thumbnail_icon == nil then nil else data.thumbnail_icon,
+			thumbnail_user_id = if data == nil or data.thumbnail_user_id == nil then nil else data.thumbnail_user_id,
+			thumbnail_user_presence = if data == nil or data.thumbnail_user_presence == nil
+				then nil
+				else data.thumbnail_user_presence,
+			thumbnail_component = if data == nil or data.thumbnail_component == nil
+				then nil
+				else data.thumbnail_component,
+			primary_action = if data == nil or data.primary_action == nil then nil else data.primary_action,
+			secondary_action_text = if data == nil or data.secondary_action_text == nil
+				then nil
+				else data.secondary_action_text,
+			secondary_action = if data == nil or data.secondary_action == nil then nil else data.secondary_action,
+			layout_order = if data == nil or data.layout_order == nil then nil else data.layout_order,
+			position = if data == nil or data.position == nil then nil else data.position,
+			z_index = if data == nil or data.z_index == nil then nil else data.z_index,
+			anchor_point = if data == nil or data.anchor_point == nil then nil else data.anchor_point,
+			visible = if data == nil or data.visible == nil then nil else data.visible,
+			test_id = if data == nil or data.test_id == nil then nil else data.test_id,
+			on_close = if data == nil or data.on_close == nil then nil else data.on_close,
+		}, _BannerSchema_PropsImpl :: _BannerSchema_PropsImpl)
+	end
+
+	function _BannerSchema_PropsImpl.encode(self: BannerSchema_Props): buffer
+		local output = buffer.create(0)
+		local cursor = 0
+
+		if self.size ~= nil then
+			local encoded = self.size:encode()
+			output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.density ~= nil then
+			local encoded = self.density:encode()
+			output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.title ~= nil then
+			local encoded = self.title:encode()
+			output, cursor = proto.writeTag(output, cursor, 3, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.description ~= nil then
+			local encoded = self.description:encode()
+			output, cursor = proto.writeTag(output, cursor, 4, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.media ~= nil then
+			local encoded = self.media:encode()
+			output, cursor = proto.writeTag(output, cursor, 5, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.media_width ~= nil then
+			local encoded = self.media_width:encode()
+			output, cursor = proto.writeTag(output, cursor, 6, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.thumbnail_image ~= nil then
+			local encoded = self.thumbnail_image:encode()
+			output, cursor = proto.writeTag(output, cursor, 7, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.thumbnail_icon ~= nil then
+			local encoded = self.thumbnail_icon:encode()
+			output, cursor = proto.writeTag(output, cursor, 8, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.thumbnail_user_id ~= nil then
+			local encoded = self.thumbnail_user_id:encode()
+			output, cursor = proto.writeTag(output, cursor, 9, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.thumbnail_user_presence ~= nil then
+			local encoded = self.thumbnail_user_presence:encode()
+			output, cursor = proto.writeTag(output, cursor, 10, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.thumbnail_component ~= nil then
+			local encoded = self.thumbnail_component:encode()
+			output, cursor = proto.writeTag(output, cursor, 11, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.primary_action ~= nil then
+			local encoded = self.primary_action:encode()
+			output, cursor = proto.writeTag(output, cursor, 12, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.secondary_action_text ~= nil then
+			local encoded = self.secondary_action_text:encode()
+			output, cursor = proto.writeTag(output, cursor, 13, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.secondary_action ~= nil then
+			local encoded = self.secondary_action:encode()
+			output, cursor = proto.writeTag(output, cursor, 14, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.layout_order ~= nil then
+			local encoded = self.layout_order:encode()
+			output, cursor = proto.writeTag(output, cursor, 15, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.position ~= nil then
+			local encoded = self.position:encode()
+			output, cursor = proto.writeTag(output, cursor, 16, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.z_index ~= nil then
+			local encoded = self.z_index:encode()
+			output, cursor = proto.writeTag(output, cursor, 17, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.anchor_point ~= nil then
+			local encoded = self.anchor_point:encode()
+			output, cursor = proto.writeTag(output, cursor, 18, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.visible ~= nil then
+			local encoded = self.visible:encode()
+			output, cursor = proto.writeTag(output, cursor, 19, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.test_id ~= nil then
+			local encoded = self.test_id:encode()
+			output, cursor = proto.writeTag(output, cursor, 20, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.on_close ~= nil then
+			local encoded = self.on_close:encode()
+			output, cursor = proto.writeTag(output, cursor, 21, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		local shrunkBuffer = buffer.create(cursor)
+		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
+		return shrunkBuffer
+	end
+
+	function _BannerSchema_PropsImpl.decode(input: buffer): BannerSchema_Props
+		local self = _BannerSchema_PropsImpl.new()
+		local cursor = 0
+
+		while cursor < buffer.len(input) do
+			local field, wireType
+			field, wireType, cursor = proto.readTag(input, cursor)
+
+			if wireType == proto.wireTypes.varint then
+				-- No fields
+
+				local _
+				_, cursor = proto.readVarInt(input, cursor)
+			elseif wireType == proto.wireTypes.lengthDelimited then
+				if field == 1 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.size = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 2 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.density = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 3 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.title = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 4 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.description = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 5 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.media = _roblox_apppageplatform_shared_v1beta1_prop_types.ImageStringProp.decode(value)
+					continue
+				elseif field == 6 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.media_width = _roblox_apppageplatform_shared_v1beta1_prop_types.FloatProp.decode(value)
+					continue
+				elseif field == 7 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.thumbnail_image = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 8 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.thumbnail_icon =
+						_roblox_apppageplatform_shared_v1beta1_prop_types.FoundationIconConfigProp.decode(value)
+					continue
+				elseif field == 9 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.thumbnail_user_id = _roblox_apppageplatform_shared_v1beta1_prop_types.Int64Prop.decode(value)
+					continue
+				elseif field == 10 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.thumbnail_user_presence =
+						_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 11 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.thumbnail_component = messages.NestedComponentProp.decode(value)
+					continue
+				elseif field == 12 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.primary_action = _roblox_apppageplatform_shared_v1beta1_actions.ActionProp.decode(value)
+					continue
+				elseif field == 13 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.secondary_action_text =
+						_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 14 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.secondary_action = _roblox_apppageplatform_shared_v1beta1_actions.ActionProp.decode(value)
+					continue
+				elseif field == 15 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.layout_order = _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.decode(value)
+					continue
+				elseif field == 16 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.position = _roblox_apppageplatform_shared_v1beta1_prop_types.UDim2Prop.decode(value)
+					continue
+				elseif field == 17 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.z_index = _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.decode(value)
+					continue
+				elseif field == 18 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.anchor_point = _roblox_apppageplatform_shared_v1beta1_prop_types.Vector2Prop.decode(value)
+					continue
+				elseif field == 19 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.visible = _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.decode(value)
+					continue
+				elseif field == 20 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.test_id = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 21 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.on_close = _roblox_apppageplatform_shared_v1beta1_actions.ActionProp.decode(value)
+					continue
+				end
+
+				local length
+				length, cursor = proto.readVarInt(input, cursor)
+
+				cursor += length
+			elseif wireType == proto.wireTypes.i32 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed32(input, cursor)
+			elseif wireType == proto.wireTypes.i64 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed64(input, cursor)
+			else
+				error("Unsupported wire type: " .. wireType)
+			end
+		end
+
+		return self
+	end
+
+	function _BannerSchema_PropsImpl.jsonEncode(self: BannerSchema_Props): any
+		local output = {}
+
+		if self.size ~= nil then
+			output.size = self.size:jsonEncode()
+		end
+
+		if self.density ~= nil then
+			output.density = self.density:jsonEncode()
+		end
+
+		if self.title ~= nil then
+			output.title = self.title:jsonEncode()
+		end
+
+		if self.description ~= nil then
+			output.description = self.description:jsonEncode()
+		end
+
+		if self.media ~= nil then
+			output.media = self.media:jsonEncode()
+		end
+
+		if self.media_width ~= nil then
+			output.mediaWidth = self.media_width:jsonEncode()
+		end
+
+		if self.thumbnail_image ~= nil then
+			output.thumbnailImage = self.thumbnail_image:jsonEncode()
+		end
+
+		if self.thumbnail_icon ~= nil then
+			output.thumbnailIcon = self.thumbnail_icon:jsonEncode()
+		end
+
+		if self.thumbnail_user_id ~= nil then
+			output.thumbnailUserId = self.thumbnail_user_id:jsonEncode()
+		end
+
+		if self.thumbnail_user_presence ~= nil then
+			output.thumbnailUserPresence = self.thumbnail_user_presence:jsonEncode()
+		end
+
+		if self.thumbnail_component ~= nil then
+			output.thumbnailComponent = self.thumbnail_component:jsonEncode()
+		end
+
+		if self.primary_action ~= nil then
+			output.primaryAction = self.primary_action:jsonEncode()
+		end
+
+		if self.secondary_action_text ~= nil then
+			output.secondaryActionText = self.secondary_action_text:jsonEncode()
+		end
+
+		if self.secondary_action ~= nil then
+			output.secondaryAction = self.secondary_action:jsonEncode()
+		end
+
+		if self.layout_order ~= nil then
+			output.layoutOrder = self.layout_order:jsonEncode()
+		end
+
+		if self.position ~= nil then
+			output.position = self.position:jsonEncode()
+		end
+
+		if self.z_index ~= nil then
+			output.zIndex = self.z_index:jsonEncode()
+		end
+
+		if self.anchor_point ~= nil then
+			output.anchorPoint = self.anchor_point:jsonEncode()
+		end
+
+		if self.visible ~= nil then
+			output.visible = self.visible:jsonEncode()
+		end
+
+		if self.test_id ~= nil then
+			output.testId = self.test_id:jsonEncode()
+		end
+
+		if self.on_close ~= nil then
+			output.onClose = self.on_close:jsonEncode()
+		end
+
+		return output
+	end
+
+	function _BannerSchema_PropsImpl.jsonDecode(input: { [string]: any }): BannerSchema_Props
+		local self = _BannerSchema_PropsImpl.new()
+
+		if input.size ~= nil then
+			self.size = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.size)
+		end
+
+		if input.density ~= nil then
+			self.density = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.density)
+		end
+
+		if input.title ~= nil then
+			self.title = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.title)
+		end
+
+		if input.description ~= nil then
+			self.description =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.description)
+		end
+
+		if input.media ~= nil then
+			self.media = _roblox_apppageplatform_shared_v1beta1_prop_types.ImageStringProp.jsonDecode(input.media)
+		end
+
+		if input.media_width ~= nil then
+			self.media_width = _roblox_apppageplatform_shared_v1beta1_prop_types.FloatProp.jsonDecode(input.media_width)
+		end
+
+		if input.mediaWidth ~= nil then
+			self.media_width = _roblox_apppageplatform_shared_v1beta1_prop_types.FloatProp.jsonDecode(input.mediaWidth)
+		end
+
+		if input.thumbnail_image ~= nil then
+			self.thumbnail_image =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.thumbnail_image)
+		end
+
+		if input.thumbnailImage ~= nil then
+			self.thumbnail_image =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.thumbnailImage)
+		end
+
+		if input.thumbnail_icon ~= nil then
+			self.thumbnail_icon = _roblox_apppageplatform_shared_v1beta1_prop_types.FoundationIconConfigProp.jsonDecode(
+				input.thumbnail_icon
+			)
+		end
+
+		if input.thumbnailIcon ~= nil then
+			self.thumbnail_icon = _roblox_apppageplatform_shared_v1beta1_prop_types.FoundationIconConfigProp.jsonDecode(
+				input.thumbnailIcon
+			)
+		end
+
+		if input.thumbnail_user_id ~= nil then
+			self.thumbnail_user_id =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.Int64Prop.jsonDecode(input.thumbnail_user_id)
+		end
+
+		if input.thumbnailUserId ~= nil then
+			self.thumbnail_user_id =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.Int64Prop.jsonDecode(input.thumbnailUserId)
+		end
+
+		if input.thumbnail_user_presence ~= nil then
+			self.thumbnail_user_presence =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.thumbnail_user_presence)
+		end
+
+		if input.thumbnailUserPresence ~= nil then
+			self.thumbnail_user_presence =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.thumbnailUserPresence)
+		end
+
+		if input.thumbnail_component ~= nil then
+			self.thumbnail_component = messages.NestedComponentProp.jsonDecode(input.thumbnail_component)
+		end
+
+		if input.thumbnailComponent ~= nil then
+			self.thumbnail_component = messages.NestedComponentProp.jsonDecode(input.thumbnailComponent)
+		end
+
+		if input.primary_action ~= nil then
+			self.primary_action =
+				_roblox_apppageplatform_shared_v1beta1_actions.ActionProp.jsonDecode(input.primary_action)
+		end
+
+		if input.primaryAction ~= nil then
+			self.primary_action =
+				_roblox_apppageplatform_shared_v1beta1_actions.ActionProp.jsonDecode(input.primaryAction)
+		end
+
+		if input.secondary_action_text ~= nil then
+			self.secondary_action_text =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.secondary_action_text)
+		end
+
+		if input.secondaryActionText ~= nil then
+			self.secondary_action_text =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.secondaryActionText)
+		end
+
+		if input.secondary_action ~= nil then
+			self.secondary_action =
+				_roblox_apppageplatform_shared_v1beta1_actions.ActionProp.jsonDecode(input.secondary_action)
+		end
+
+		if input.secondaryAction ~= nil then
+			self.secondary_action =
+				_roblox_apppageplatform_shared_v1beta1_actions.ActionProp.jsonDecode(input.secondaryAction)
+		end
+
+		if input.layout_order ~= nil then
+			self.layout_order =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.jsonDecode(input.layout_order)
+		end
+
+		if input.layoutOrder ~= nil then
+			self.layout_order =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.jsonDecode(input.layoutOrder)
+		end
+
+		if input.position ~= nil then
+			self.position = _roblox_apppageplatform_shared_v1beta1_prop_types.UDim2Prop.jsonDecode(input.position)
+		end
+
+		if input.z_index ~= nil then
+			self.z_index = _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.jsonDecode(input.z_index)
+		end
+
+		if input.zIndex ~= nil then
+			self.z_index = _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.jsonDecode(input.zIndex)
+		end
+
+		if input.anchor_point ~= nil then
+			self.anchor_point =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.Vector2Prop.jsonDecode(input.anchor_point)
+		end
+
+		if input.anchorPoint ~= nil then
+			self.anchor_point =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.Vector2Prop.jsonDecode(input.anchorPoint)
+		end
+
+		if input.visible ~= nil then
+			self.visible = _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.jsonDecode(input.visible)
+		end
+
+		if input.test_id ~= nil then
+			self.test_id = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.test_id)
+		end
+
+		if input.testId ~= nil then
+			self.test_id = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.testId)
+		end
+
+		if input.on_close ~= nil then
+			self.on_close = _roblox_apppageplatform_shared_v1beta1_actions.ActionProp.jsonDecode(input.on_close)
+		end
+
+		if input.onClose ~= nil then
+			self.on_close = _roblox_apppageplatform_shared_v1beta1_actions.ActionProp.jsonDecode(input.onClose)
+		end
+
+		return self
+	end
+
+	_BannerSchema_PropsImpl.descriptor = {
+		name = "BannerSchema_Props",
+		fullName = "roblox.apppageplatform.shared.v1beta1.Props",
+	}
+
+	messages.BannerSchema_Props = _BannerSchema_PropsImpl :: any -- Luau: Not sure why this intersection fails.
+
+	typeRegistry.default:register(messages.BannerSchema_Props)
 end
 
 do
@@ -88071,6 +92645,7 @@ do
 		return setmetatable({
 			props = if data == nil or data.props == nil then nil else data.props,
 			shared = if data == nil or data.shared == nil then nil else data.shared,
+			web_props = if data == nil or data.web_props == nil then nil else data.web_props,
 		}, _ToggleSchemaImpl :: _ToggleSchemaImpl)
 	end
 
@@ -88087,6 +92662,12 @@ do
 		if self.shared ~= nil then
 			local encoded = self.shared:encode()
 			output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.web_props ~= nil then
+			local encoded = self.web_props:encode()
+			output, cursor = proto.writeTag(output, cursor, 3, proto.wireTypes.lengthDelimited)
 			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
 		end
 
@@ -88118,6 +92699,11 @@ do
 					local value
 					value, cursor = proto.readBuffer(input, cursor)
 					self.shared = _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared.decode(value)
+					continue
+				elseif field == 3 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.web_props = messages.ToggleSchema_WebProps.decode(value)
 					continue
 				end
 
@@ -88154,6 +92740,10 @@ do
 			output.shared = self.shared:jsonEncode()
 		end
 
+		if self.web_props ~= nil then
+			output.webProps = self.web_props:jsonEncode()
+		end
+
 		return output
 	end
 
@@ -88167,6 +92757,14 @@ do
 		if input.shared ~= nil then
 			self.shared =
 				_roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared.jsonDecode(input.shared)
+		end
+
+		if input.web_props ~= nil then
+			self.web_props = messages.ToggleSchema_WebProps.jsonDecode(input.web_props)
+		end
+
+		if input.webProps ~= nil then
+			self.web_props = messages.ToggleSchema_WebProps.jsonDecode(input.webProps)
 		end
 
 		return self
@@ -88440,6 +93038,108 @@ do
 	messages.ToggleSchema_Props = _ToggleSchema_PropsImpl :: any -- Luau: Not sure why this intersection fails.
 
 	typeRegistry.default:register(messages.ToggleSchema_Props)
+end
+
+do
+	local _ToggleSchema_WebPropsImpl = {}
+	_ToggleSchema_WebPropsImpl.__index = _ToggleSchema_WebPropsImpl
+
+	function _ToggleSchema_WebPropsImpl.new(data: _ToggleSchema_WebPropsPartialFields?): ToggleSchema_WebProps
+		return setmetatable({
+			aria_label = if data == nil or data.aria_label == nil then nil else data.aria_label,
+		}, _ToggleSchema_WebPropsImpl :: _ToggleSchema_WebPropsImpl)
+	end
+
+	function _ToggleSchema_WebPropsImpl.encode(self: ToggleSchema_WebProps): buffer
+		local output = buffer.create(0)
+		local cursor = 0
+
+		if self.aria_label ~= nil then
+			local encoded = self.aria_label:encode()
+			output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		local shrunkBuffer = buffer.create(cursor)
+		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
+		return shrunkBuffer
+	end
+
+	function _ToggleSchema_WebPropsImpl.decode(input: buffer): ToggleSchema_WebProps
+		local self = _ToggleSchema_WebPropsImpl.new()
+		local cursor = 0
+
+		while cursor < buffer.len(input) do
+			local field, wireType
+			field, wireType, cursor = proto.readTag(input, cursor)
+
+			if wireType == proto.wireTypes.varint then
+				-- No fields
+
+				local _
+				_, cursor = proto.readVarInt(input, cursor)
+			elseif wireType == proto.wireTypes.lengthDelimited then
+				if field == 1 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.aria_label = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				end
+
+				local length
+				length, cursor = proto.readVarInt(input, cursor)
+
+				cursor += length
+			elseif wireType == proto.wireTypes.i32 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed32(input, cursor)
+			elseif wireType == proto.wireTypes.i64 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed64(input, cursor)
+			else
+				error("Unsupported wire type: " .. wireType)
+			end
+		end
+
+		return self
+	end
+
+	function _ToggleSchema_WebPropsImpl.jsonEncode(self: ToggleSchema_WebProps): any
+		local output = {}
+
+		if self.aria_label ~= nil then
+			output.ariaLabel = self.aria_label:jsonEncode()
+		end
+
+		return output
+	end
+
+	function _ToggleSchema_WebPropsImpl.jsonDecode(input: { [string]: any }): ToggleSchema_WebProps
+		local self = _ToggleSchema_WebPropsImpl.new()
+
+		if input.aria_label ~= nil then
+			self.aria_label = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.aria_label)
+		end
+
+		if input.ariaLabel ~= nil then
+			self.aria_label = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.ariaLabel)
+		end
+
+		return self
+	end
+
+	_ToggleSchema_WebPropsImpl.descriptor = {
+		name = "ToggleSchema_WebProps",
+		fullName = "roblox.apppageplatform.shared.v1beta1.WebProps",
+	}
+
+	messages.ToggleSchema_WebProps = _ToggleSchema_WebPropsImpl :: any -- Luau: Not sure why this intersection fails.
+
+	typeRegistry.default:register(messages.ToggleSchema_WebProps)
 end
 
 do
@@ -90507,6 +95207,1167 @@ do
 end
 
 do
+	local _ConfigDrivenFormSchemaImpl = {}
+	_ConfigDrivenFormSchemaImpl.__index = _ConfigDrivenFormSchemaImpl
+
+	function _ConfigDrivenFormSchemaImpl.new(data: _ConfigDrivenFormSchemaPartialFields?): ConfigDrivenFormSchema
+		return setmetatable({
+			props = if data == nil or data.props == nil then nil else data.props,
+			shared = if data == nil or data.shared == nil then nil else data.shared,
+		}, _ConfigDrivenFormSchemaImpl :: _ConfigDrivenFormSchemaImpl)
+	end
+
+	function _ConfigDrivenFormSchemaImpl.encode(self: ConfigDrivenFormSchema): buffer
+		local output = buffer.create(0)
+		local cursor = 0
+
+		if self.props ~= nil then
+			local encoded = self.props:encode()
+			output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.shared ~= nil then
+			local encoded = self.shared:encode()
+			output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		local shrunkBuffer = buffer.create(cursor)
+		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
+		return shrunkBuffer
+	end
+
+	function _ConfigDrivenFormSchemaImpl.decode(input: buffer): ConfigDrivenFormSchema
+		local self = _ConfigDrivenFormSchemaImpl.new()
+		local cursor = 0
+
+		while cursor < buffer.len(input) do
+			local field, wireType
+			field, wireType, cursor = proto.readTag(input, cursor)
+
+			if wireType == proto.wireTypes.varint then
+				-- No fields
+
+				local _
+				_, cursor = proto.readVarInt(input, cursor)
+			elseif wireType == proto.wireTypes.lengthDelimited then
+				if field == 1 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.props = messages.ConfigDrivenFormSchema_Props.decode(value)
+					continue
+				elseif field == 2 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.shared = _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared.decode(value)
+					continue
+				end
+
+				local length
+				length, cursor = proto.readVarInt(input, cursor)
+
+				cursor += length
+			elseif wireType == proto.wireTypes.i32 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed32(input, cursor)
+			elseif wireType == proto.wireTypes.i64 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed64(input, cursor)
+			else
+				error("Unsupported wire type: " .. wireType)
+			end
+		end
+
+		return self
+	end
+
+	function _ConfigDrivenFormSchemaImpl.jsonEncode(self: ConfigDrivenFormSchema): any
+		local output = {}
+
+		if self.props ~= nil then
+			output.props = self.props:jsonEncode()
+		end
+
+		if self.shared ~= nil then
+			output.shared = self.shared:jsonEncode()
+		end
+
+		return output
+	end
+
+	function _ConfigDrivenFormSchemaImpl.jsonDecode(input: { [string]: any }): ConfigDrivenFormSchema
+		local self = _ConfigDrivenFormSchemaImpl.new()
+
+		if input.props ~= nil then
+			self.props = messages.ConfigDrivenFormSchema_Props.jsonDecode(input.props)
+		end
+
+		if input.shared ~= nil then
+			self.shared =
+				_roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared.jsonDecode(input.shared)
+		end
+
+		return self
+	end
+
+	_ConfigDrivenFormSchemaImpl.descriptor = {
+		name = "ConfigDrivenFormSchema",
+		fullName = "roblox.apppageplatform.shared.v1beta1.ConfigDrivenFormSchema",
+	}
+
+	messages.ConfigDrivenFormSchema = _ConfigDrivenFormSchemaImpl :: any -- Luau: Not sure why this intersection fails.
+
+	typeRegistry.default:register(messages.ConfigDrivenFormSchema)
+end
+
+do
+	local _ConfigDrivenFormSchema_PropsImpl = {}
+	_ConfigDrivenFormSchema_PropsImpl.__index = _ConfigDrivenFormSchema_PropsImpl
+
+	function _ConfigDrivenFormSchema_PropsImpl.new(
+		data: _ConfigDrivenFormSchema_PropsPartialFields?
+	): ConfigDrivenFormSchema_Props
+		return setmetatable({
+			version = if data == nil or data.version == nil then nil else data.version,
+			layout = if data == nil or data.layout == nil then nil else data.layout,
+			saved = if data == nil or data.saved == nil then nil else data.saved,
+			catalogs = if data == nil or data.catalogs == nil then nil else data.catalogs,
+			capabilities = if data == nil or data.capabilities == nil then nil else data.capabilities,
+		}, _ConfigDrivenFormSchema_PropsImpl :: _ConfigDrivenFormSchema_PropsImpl)
+	end
+
+	function _ConfigDrivenFormSchema_PropsImpl.encode(self: ConfigDrivenFormSchema_Props): buffer
+		local output = buffer.create(0)
+		local cursor = 0
+
+		if self.version ~= nil then
+			local encoded = self.version:encode()
+			output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.layout ~= nil then
+			local encoded = self.layout:encode()
+			output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.saved ~= nil then
+			local encoded = self.saved:encode()
+			output, cursor = proto.writeTag(output, cursor, 3, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.catalogs ~= nil then
+			local encoded = self.catalogs:encode()
+			output, cursor = proto.writeTag(output, cursor, 4, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.capabilities ~= nil then
+			local encoded = self.capabilities:encode()
+			output, cursor = proto.writeTag(output, cursor, 5, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		local shrunkBuffer = buffer.create(cursor)
+		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
+		return shrunkBuffer
+	end
+
+	function _ConfigDrivenFormSchema_PropsImpl.decode(input: buffer): ConfigDrivenFormSchema_Props
+		local self = _ConfigDrivenFormSchema_PropsImpl.new()
+		local cursor = 0
+
+		while cursor < buffer.len(input) do
+			local field, wireType
+			field, wireType, cursor = proto.readTag(input, cursor)
+
+			if wireType == proto.wireTypes.varint then
+				-- No fields
+
+				local _
+				_, cursor = proto.readVarInt(input, cursor)
+			elseif wireType == proto.wireTypes.lengthDelimited then
+				if field == 1 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.version = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 2 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.layout = _roblox_apppageplatform_shared_v1beta1_prop_types.StructProp.decode(value)
+					continue
+				elseif field == 3 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.saved = _roblox_apppageplatform_shared_v1beta1_prop_types.StructProp.decode(value)
+					continue
+				elseif field == 4 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.catalogs = _roblox_apppageplatform_shared_v1beta1_prop_types.StructProp.decode(value)
+					continue
+				elseif field == 5 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.capabilities = _roblox_apppageplatform_shared_v1beta1_prop_types.StructProp.decode(value)
+					continue
+				end
+
+				local length
+				length, cursor = proto.readVarInt(input, cursor)
+
+				cursor += length
+			elseif wireType == proto.wireTypes.i32 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed32(input, cursor)
+			elseif wireType == proto.wireTypes.i64 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed64(input, cursor)
+			else
+				error("Unsupported wire type: " .. wireType)
+			end
+		end
+
+		return self
+	end
+
+	function _ConfigDrivenFormSchema_PropsImpl.jsonEncode(self: ConfigDrivenFormSchema_Props): any
+		local output = {}
+
+		if self.version ~= nil then
+			output.version = self.version:jsonEncode()
+		end
+
+		if self.layout ~= nil then
+			output.layout = self.layout:jsonEncode()
+		end
+
+		if self.saved ~= nil then
+			output.saved = self.saved:jsonEncode()
+		end
+
+		if self.catalogs ~= nil then
+			output.catalogs = self.catalogs:jsonEncode()
+		end
+
+		if self.capabilities ~= nil then
+			output.capabilities = self.capabilities:jsonEncode()
+		end
+
+		return output
+	end
+
+	function _ConfigDrivenFormSchema_PropsImpl.jsonDecode(input: { [string]: any }): ConfigDrivenFormSchema_Props
+		local self = _ConfigDrivenFormSchema_PropsImpl.new()
+
+		if input.version ~= nil then
+			self.version = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.version)
+		end
+
+		if input.layout ~= nil then
+			self.layout = _roblox_apppageplatform_shared_v1beta1_prop_types.StructProp.jsonDecode(input.layout)
+		end
+
+		if input.saved ~= nil then
+			self.saved = _roblox_apppageplatform_shared_v1beta1_prop_types.StructProp.jsonDecode(input.saved)
+		end
+
+		if input.catalogs ~= nil then
+			self.catalogs = _roblox_apppageplatform_shared_v1beta1_prop_types.StructProp.jsonDecode(input.catalogs)
+		end
+
+		if input.capabilities ~= nil then
+			self.capabilities =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StructProp.jsonDecode(input.capabilities)
+		end
+
+		return self
+	end
+
+	_ConfigDrivenFormSchema_PropsImpl.descriptor = {
+		name = "ConfigDrivenFormSchema_Props",
+		fullName = "roblox.apppageplatform.shared.v1beta1.Props",
+	}
+
+	messages.ConfigDrivenFormSchema_Props = _ConfigDrivenFormSchema_PropsImpl :: any -- Luau: Not sure why this intersection fails.
+
+	typeRegistry.default:register(messages.ConfigDrivenFormSchema_Props)
+end
+
+do
+	local _ReactionsSchemaImpl = {}
+	_ReactionsSchemaImpl.__index = _ReactionsSchemaImpl
+
+	function _ReactionsSchemaImpl.new(data: _ReactionsSchemaPartialFields?): ReactionsSchema
+		return setmetatable({
+			props = if data == nil or data.props == nil then nil else data.props,
+			shared = if data == nil or data.shared == nil then nil else data.shared,
+		}, _ReactionsSchemaImpl :: _ReactionsSchemaImpl)
+	end
+
+	function _ReactionsSchemaImpl.encode(self: ReactionsSchema): buffer
+		local output = buffer.create(0)
+		local cursor = 0
+
+		if self.props ~= nil then
+			local encoded = self.props:encode()
+			output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.shared ~= nil then
+			local encoded = self.shared:encode()
+			output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		local shrunkBuffer = buffer.create(cursor)
+		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
+		return shrunkBuffer
+	end
+
+	function _ReactionsSchemaImpl.decode(input: buffer): ReactionsSchema
+		local self = _ReactionsSchemaImpl.new()
+		local cursor = 0
+
+		while cursor < buffer.len(input) do
+			local field, wireType
+			field, wireType, cursor = proto.readTag(input, cursor)
+
+			if wireType == proto.wireTypes.varint then
+				-- No fields
+
+				local _
+				_, cursor = proto.readVarInt(input, cursor)
+			elseif wireType == proto.wireTypes.lengthDelimited then
+				if field == 1 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.props = messages.ReactionsSchema_Props.decode(value)
+					continue
+				elseif field == 2 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.shared = _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared.decode(value)
+					continue
+				end
+
+				local length
+				length, cursor = proto.readVarInt(input, cursor)
+
+				cursor += length
+			elseif wireType == proto.wireTypes.i32 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed32(input, cursor)
+			elseif wireType == proto.wireTypes.i64 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed64(input, cursor)
+			else
+				error("Unsupported wire type: " .. wireType)
+			end
+		end
+
+		return self
+	end
+
+	function _ReactionsSchemaImpl.jsonEncode(self: ReactionsSchema): any
+		local output = {}
+
+		if self.props ~= nil then
+			output.props = self.props:jsonEncode()
+		end
+
+		if self.shared ~= nil then
+			output.shared = self.shared:jsonEncode()
+		end
+
+		return output
+	end
+
+	function _ReactionsSchemaImpl.jsonDecode(input: { [string]: any }): ReactionsSchema
+		local self = _ReactionsSchemaImpl.new()
+
+		if input.props ~= nil then
+			self.props = messages.ReactionsSchema_Props.jsonDecode(input.props)
+		end
+
+		if input.shared ~= nil then
+			self.shared =
+				_roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared.jsonDecode(input.shared)
+		end
+
+		return self
+	end
+
+	_ReactionsSchemaImpl.descriptor = {
+		name = "ReactionsSchema",
+		fullName = "roblox.apppageplatform.shared.v1beta1.ReactionsSchema",
+	}
+
+	messages.ReactionsSchema = _ReactionsSchemaImpl :: any -- Luau: Not sure why this intersection fails.
+
+	typeRegistry.default:register(messages.ReactionsSchema)
+end
+
+do
+	local _ReactionsSchema_PropsImpl = {}
+	_ReactionsSchema_PropsImpl.__index = _ReactionsSchema_PropsImpl
+
+	function _ReactionsSchema_PropsImpl.new(data: _ReactionsSchema_PropsPartialFields?): ReactionsSchema_Props
+		return setmetatable({
+			reactions = if data == nil or data.reactions == nil then nil else data.reactions,
+			are_reaction_counts_visible = if data == nil or data.are_reaction_counts_visible == nil
+				then nil
+				else data.are_reaction_counts_visible,
+		}, _ReactionsSchema_PropsImpl :: _ReactionsSchema_PropsImpl)
+	end
+
+	function _ReactionsSchema_PropsImpl.encode(self: ReactionsSchema_Props): buffer
+		local output = buffer.create(0)
+		local cursor = 0
+
+		if self.reactions ~= nil then
+			local encoded = self.reactions:encode()
+			output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.are_reaction_counts_visible ~= nil then
+			local encoded = self.are_reaction_counts_visible:encode()
+			output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		local shrunkBuffer = buffer.create(cursor)
+		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
+		return shrunkBuffer
+	end
+
+	function _ReactionsSchema_PropsImpl.decode(input: buffer): ReactionsSchema_Props
+		local self = _ReactionsSchema_PropsImpl.new()
+		local cursor = 0
+
+		while cursor < buffer.len(input) do
+			local field, wireType
+			field, wireType, cursor = proto.readTag(input, cursor)
+
+			if wireType == proto.wireTypes.varint then
+				-- No fields
+
+				local _
+				_, cursor = proto.readVarInt(input, cursor)
+			elseif wireType == proto.wireTypes.lengthDelimited then
+				if field == 1 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.reactions = _roblox_apppageplatform_shared_v1beta1_prop_types.ArrayOfStructProp.decode(value)
+					continue
+				elseif field == 2 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.are_reaction_counts_visible =
+						_roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.decode(value)
+					continue
+				end
+
+				local length
+				length, cursor = proto.readVarInt(input, cursor)
+
+				cursor += length
+			elseif wireType == proto.wireTypes.i32 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed32(input, cursor)
+			elseif wireType == proto.wireTypes.i64 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed64(input, cursor)
+			else
+				error("Unsupported wire type: " .. wireType)
+			end
+		end
+
+		return self
+	end
+
+	function _ReactionsSchema_PropsImpl.jsonEncode(self: ReactionsSchema_Props): any
+		local output = {}
+
+		if self.reactions ~= nil then
+			output.reactions = self.reactions:jsonEncode()
+		end
+
+		if self.are_reaction_counts_visible ~= nil then
+			output.areReactionCountsVisible = self.are_reaction_counts_visible:jsonEncode()
+		end
+
+		return output
+	end
+
+	function _ReactionsSchema_PropsImpl.jsonDecode(input: { [string]: any }): ReactionsSchema_Props
+		local self = _ReactionsSchema_PropsImpl.new()
+
+		if input.reactions ~= nil then
+			self.reactions =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.ArrayOfStructProp.jsonDecode(input.reactions)
+		end
+
+		if input.are_reaction_counts_visible ~= nil then
+			self.are_reaction_counts_visible =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.jsonDecode(input.are_reaction_counts_visible)
+		end
+
+		if input.areReactionCountsVisible ~= nil then
+			self.are_reaction_counts_visible =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.jsonDecode(input.areReactionCountsVisible)
+		end
+
+		return self
+	end
+
+	_ReactionsSchema_PropsImpl.descriptor = {
+		name = "ReactionsSchema_Props",
+		fullName = "roblox.apppageplatform.shared.v1beta1.Props",
+	}
+
+	messages.ReactionsSchema_Props = _ReactionsSchema_PropsImpl :: any -- Luau: Not sure why this intersection fails.
+
+	typeRegistry.default:register(messages.ReactionsSchema_Props)
+end
+
+do
+	local _CustomFormSchemaImpl = {}
+	_CustomFormSchemaImpl.__index = _CustomFormSchemaImpl
+
+	function _CustomFormSchemaImpl.new(data: _CustomFormSchemaPartialFields?): CustomFormSchema
+		return setmetatable({
+			props = if data == nil or data.props == nil then nil else data.props,
+			shared = if data == nil or data.shared == nil then nil else data.shared,
+		}, _CustomFormSchemaImpl :: _CustomFormSchemaImpl)
+	end
+
+	function _CustomFormSchemaImpl.encode(self: CustomFormSchema): buffer
+		local output = buffer.create(0)
+		local cursor = 0
+
+		if self.props ~= nil then
+			local encoded = self.props:encode()
+			output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.shared ~= nil then
+			local encoded = self.shared:encode()
+			output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		local shrunkBuffer = buffer.create(cursor)
+		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
+		return shrunkBuffer
+	end
+
+	function _CustomFormSchemaImpl.decode(input: buffer): CustomFormSchema
+		local self = _CustomFormSchemaImpl.new()
+		local cursor = 0
+
+		while cursor < buffer.len(input) do
+			local field, wireType
+			field, wireType, cursor = proto.readTag(input, cursor)
+
+			if wireType == proto.wireTypes.varint then
+				-- No fields
+
+				local _
+				_, cursor = proto.readVarInt(input, cursor)
+			elseif wireType == proto.wireTypes.lengthDelimited then
+				if field == 1 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.props = messages.CustomFormSchema_Props.decode(value)
+					continue
+				elseif field == 2 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.shared = _roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared.decode(value)
+					continue
+				end
+
+				local length
+				length, cursor = proto.readVarInt(input, cursor)
+
+				cursor += length
+			elseif wireType == proto.wireTypes.i32 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed32(input, cursor)
+			elseif wireType == proto.wireTypes.i64 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed64(input, cursor)
+			else
+				error("Unsupported wire type: " .. wireType)
+			end
+		end
+
+		return self
+	end
+
+	function _CustomFormSchemaImpl.jsonEncode(self: CustomFormSchema): any
+		local output = {}
+
+		if self.props ~= nil then
+			output.props = self.props:jsonEncode()
+		end
+
+		if self.shared ~= nil then
+			output.shared = self.shared:jsonEncode()
+		end
+
+		return output
+	end
+
+	function _CustomFormSchemaImpl.jsonDecode(input: { [string]: any }): CustomFormSchema
+		local self = _CustomFormSchemaImpl.new()
+
+		if input.props ~= nil then
+			self.props = messages.CustomFormSchema_Props.jsonDecode(input.props)
+		end
+
+		if input.shared ~= nil then
+			self.shared =
+				_roblox_apppageplatform_shared_v1beta1_component_shared.ComponentShared.jsonDecode(input.shared)
+		end
+
+		return self
+	end
+
+	_CustomFormSchemaImpl.descriptor = {
+		name = "CustomFormSchema",
+		fullName = "roblox.apppageplatform.shared.v1beta1.CustomFormSchema",
+	}
+
+	messages.CustomFormSchema = _CustomFormSchemaImpl :: any -- Luau: Not sure why this intersection fails.
+
+	typeRegistry.default:register(messages.CustomFormSchema)
+end
+
+do
+	local _CustomFormSchema_PropsImpl = {}
+	_CustomFormSchema_PropsImpl.__index = _CustomFormSchema_PropsImpl
+
+	function _CustomFormSchema_PropsImpl.new(data: _CustomFormSchema_PropsPartialFields?): CustomFormSchema_Props
+		return setmetatable({
+			form_definition = if data == nil or data.form_definition == nil then nil else data.form_definition,
+			viewer_response = if data == nil or data.viewer_response == nil then nil else data.viewer_response,
+			results = if data == nil or data.results == nil then nil else data.results,
+			is_disabled = if data == nil or data.is_disabled == nil then nil else data.is_disabled,
+			disabled_message = if data == nil or data.disabled_message == nil then nil else data.disabled_message,
+			is_submitting = if data == nil or data.is_submitting == nil then nil else data.is_submitting,
+			validation_errors = if data == nil or data.validation_errors == nil then nil else data.validation_errors,
+			submit_label = if data == nil or data.submit_label == nil then nil else data.submit_label,
+			required_error_message = if data == nil or data.required_error_message == nil
+				then nil
+				else data.required_error_message,
+			submission_error_message = if data == nil or data.submission_error_message == nil
+				then nil
+				else data.submission_error_message,
+			on_submit = if data == nil or data.on_submit == nil then nil else data.on_submit,
+			layout_order = if data == nil or data.layout_order == nil then nil else data.layout_order,
+			test_id = if data == nil or data.test_id == nil then nil else data.test_id,
+			results_summary = if data == nil or data.results_summary == nil then nil else data.results_summary,
+			on_refresh_results = if data == nil or data.on_refresh_results == nil then nil else data.on_refresh_results,
+			results_refresh_interval_seconds = if data == nil or data.results_refresh_interval_seconds == nil
+				then nil
+				else data.results_refresh_interval_seconds,
+		}, _CustomFormSchema_PropsImpl :: _CustomFormSchema_PropsImpl)
+	end
+
+	function _CustomFormSchema_PropsImpl.encode(self: CustomFormSchema_Props): buffer
+		local output = buffer.create(0)
+		local cursor = 0
+
+		if self.form_definition ~= nil then
+			local encoded = self.form_definition:encode()
+			output, cursor = proto.writeTag(output, cursor, 1, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.viewer_response ~= nil then
+			local encoded = self.viewer_response:encode()
+			output, cursor = proto.writeTag(output, cursor, 2, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.results ~= nil then
+			local encoded = self.results:encode()
+			output, cursor = proto.writeTag(output, cursor, 3, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.is_disabled ~= nil then
+			local encoded = self.is_disabled:encode()
+			output, cursor = proto.writeTag(output, cursor, 4, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.disabled_message ~= nil then
+			local encoded = self.disabled_message:encode()
+			output, cursor = proto.writeTag(output, cursor, 5, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.is_submitting ~= nil then
+			local encoded = self.is_submitting:encode()
+			output, cursor = proto.writeTag(output, cursor, 6, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.validation_errors ~= nil then
+			local encoded = self.validation_errors:encode()
+			output, cursor = proto.writeTag(output, cursor, 7, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.submit_label ~= nil then
+			local encoded = self.submit_label:encode()
+			output, cursor = proto.writeTag(output, cursor, 8, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.required_error_message ~= nil then
+			local encoded = self.required_error_message:encode()
+			output, cursor = proto.writeTag(output, cursor, 9, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.submission_error_message ~= nil then
+			local encoded = self.submission_error_message:encode()
+			output, cursor = proto.writeTag(output, cursor, 10, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.on_submit ~= nil then
+			local encoded = self.on_submit:encode()
+			output, cursor = proto.writeTag(output, cursor, 11, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.layout_order ~= nil then
+			local encoded = self.layout_order:encode()
+			output, cursor = proto.writeTag(output, cursor, 12, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.test_id ~= nil then
+			local encoded = self.test_id:encode()
+			output, cursor = proto.writeTag(output, cursor, 13, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.results_summary ~= nil then
+			local encoded = self.results_summary:encode()
+			output, cursor = proto.writeTag(output, cursor, 14, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.on_refresh_results ~= nil then
+			local encoded = self.on_refresh_results:encode()
+			output, cursor = proto.writeTag(output, cursor, 15, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		if self.results_refresh_interval_seconds ~= nil then
+			local encoded = self.results_refresh_interval_seconds:encode()
+			output, cursor = proto.writeTag(output, cursor, 16, proto.wireTypes.lengthDelimited)
+			output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+		end
+
+		local shrunkBuffer = buffer.create(cursor)
+		buffer.copy(shrunkBuffer, 0, output, 0, cursor)
+		return shrunkBuffer
+	end
+
+	function _CustomFormSchema_PropsImpl.decode(input: buffer): CustomFormSchema_Props
+		local self = _CustomFormSchema_PropsImpl.new()
+		local cursor = 0
+
+		while cursor < buffer.len(input) do
+			local field, wireType
+			field, wireType, cursor = proto.readTag(input, cursor)
+
+			if wireType == proto.wireTypes.varint then
+				-- No fields
+
+				local _
+				_, cursor = proto.readVarInt(input, cursor)
+			elseif wireType == proto.wireTypes.lengthDelimited then
+				if field == 1 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.form_definition = _roblox_apppageplatform_shared_v1beta1_prop_types.StructProp.decode(value)
+					continue
+				elseif field == 2 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.viewer_response = _roblox_apppageplatform_shared_v1beta1_prop_types.StructProp.decode(value)
+					continue
+				elseif field == 3 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.results = _roblox_apppageplatform_shared_v1beta1_prop_types.StructProp.decode(value)
+					continue
+				elseif field == 4 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.is_disabled = _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.decode(value)
+					continue
+				elseif field == 5 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.disabled_message = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 6 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.is_submitting = _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.decode(value)
+					continue
+				elseif field == 7 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.validation_errors = _roblox_apppageplatform_shared_v1beta1_prop_types.StructProp.decode(value)
+					continue
+				elseif field == 8 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.submit_label = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 9 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.required_error_message =
+						_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 10 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.submission_error_message =
+						_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 11 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.on_submit = _roblox_apppageplatform_shared_v1beta1_actions.ActionProp.decode(value)
+					continue
+				elseif field == 12 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.layout_order = _roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.decode(value)
+					continue
+				elseif field == 13 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.test_id = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 14 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.results_summary = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.decode(value)
+					continue
+				elseif field == 15 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.on_refresh_results = _roblox_apppageplatform_shared_v1beta1_actions.ActionProp.decode(value)
+					continue
+				elseif field == 16 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.results_refresh_interval_seconds =
+						_roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.decode(value)
+					continue
+				end
+
+				local length
+				length, cursor = proto.readVarInt(input, cursor)
+
+				cursor += length
+			elseif wireType == proto.wireTypes.i32 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed32(input, cursor)
+			elseif wireType == proto.wireTypes.i64 then
+				-- No fields
+
+				local _
+				_, cursor = proto.readFixed64(input, cursor)
+			else
+				error("Unsupported wire type: " .. wireType)
+			end
+		end
+
+		return self
+	end
+
+	function _CustomFormSchema_PropsImpl.jsonEncode(self: CustomFormSchema_Props): any
+		local output = {}
+
+		if self.form_definition ~= nil then
+			output.formDefinition = self.form_definition:jsonEncode()
+		end
+
+		if self.viewer_response ~= nil then
+			output.viewerResponse = self.viewer_response:jsonEncode()
+		end
+
+		if self.results ~= nil then
+			output.results = self.results:jsonEncode()
+		end
+
+		if self.is_disabled ~= nil then
+			output.isDisabled = self.is_disabled:jsonEncode()
+		end
+
+		if self.disabled_message ~= nil then
+			output.disabledMessage = self.disabled_message:jsonEncode()
+		end
+
+		if self.is_submitting ~= nil then
+			output.isSubmitting = self.is_submitting:jsonEncode()
+		end
+
+		if self.validation_errors ~= nil then
+			output.validationErrors = self.validation_errors:jsonEncode()
+		end
+
+		if self.submit_label ~= nil then
+			output.submitLabel = self.submit_label:jsonEncode()
+		end
+
+		if self.required_error_message ~= nil then
+			output.requiredErrorMessage = self.required_error_message:jsonEncode()
+		end
+
+		if self.submission_error_message ~= nil then
+			output.submissionErrorMessage = self.submission_error_message:jsonEncode()
+		end
+
+		if self.on_submit ~= nil then
+			output.onSubmit = self.on_submit:jsonEncode()
+		end
+
+		if self.layout_order ~= nil then
+			output.layoutOrder = self.layout_order:jsonEncode()
+		end
+
+		if self.test_id ~= nil then
+			output.testId = self.test_id:jsonEncode()
+		end
+
+		if self.results_summary ~= nil then
+			output.resultsSummary = self.results_summary:jsonEncode()
+		end
+
+		if self.on_refresh_results ~= nil then
+			output.onRefreshResults = self.on_refresh_results:jsonEncode()
+		end
+
+		if self.results_refresh_interval_seconds ~= nil then
+			output.resultsRefreshIntervalSeconds = self.results_refresh_interval_seconds:jsonEncode()
+		end
+
+		return output
+	end
+
+	function _CustomFormSchema_PropsImpl.jsonDecode(input: { [string]: any }): CustomFormSchema_Props
+		local self = _CustomFormSchema_PropsImpl.new()
+
+		if input.form_definition ~= nil then
+			self.form_definition =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StructProp.jsonDecode(input.form_definition)
+		end
+
+		if input.formDefinition ~= nil then
+			self.form_definition =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StructProp.jsonDecode(input.formDefinition)
+		end
+
+		if input.viewer_response ~= nil then
+			self.viewer_response =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StructProp.jsonDecode(input.viewer_response)
+		end
+
+		if input.viewerResponse ~= nil then
+			self.viewer_response =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StructProp.jsonDecode(input.viewerResponse)
+		end
+
+		if input.results ~= nil then
+			self.results = _roblox_apppageplatform_shared_v1beta1_prop_types.StructProp.jsonDecode(input.results)
+		end
+
+		if input.is_disabled ~= nil then
+			self.is_disabled = _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.jsonDecode(input.is_disabled)
+		end
+
+		if input.isDisabled ~= nil then
+			self.is_disabled = _roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.jsonDecode(input.isDisabled)
+		end
+
+		if input.disabled_message ~= nil then
+			self.disabled_message =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.disabled_message)
+		end
+
+		if input.disabledMessage ~= nil then
+			self.disabled_message =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.disabledMessage)
+		end
+
+		if input.is_submitting ~= nil then
+			self.is_submitting =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.jsonDecode(input.is_submitting)
+		end
+
+		if input.isSubmitting ~= nil then
+			self.is_submitting =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.BoolProp.jsonDecode(input.isSubmitting)
+		end
+
+		if input.validation_errors ~= nil then
+			self.validation_errors =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StructProp.jsonDecode(input.validation_errors)
+		end
+
+		if input.validationErrors ~= nil then
+			self.validation_errors =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StructProp.jsonDecode(input.validationErrors)
+		end
+
+		if input.submit_label ~= nil then
+			self.submit_label =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.submit_label)
+		end
+
+		if input.submitLabel ~= nil then
+			self.submit_label =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.submitLabel)
+		end
+
+		if input.required_error_message ~= nil then
+			self.required_error_message =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.required_error_message)
+		end
+
+		if input.requiredErrorMessage ~= nil then
+			self.required_error_message =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.requiredErrorMessage)
+		end
+
+		if input.submission_error_message ~= nil then
+			self.submission_error_message =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.submission_error_message)
+		end
+
+		if input.submissionErrorMessage ~= nil then
+			self.submission_error_message =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.submissionErrorMessage)
+		end
+
+		if input.on_submit ~= nil then
+			self.on_submit = _roblox_apppageplatform_shared_v1beta1_actions.ActionProp.jsonDecode(input.on_submit)
+		end
+
+		if input.onSubmit ~= nil then
+			self.on_submit = _roblox_apppageplatform_shared_v1beta1_actions.ActionProp.jsonDecode(input.onSubmit)
+		end
+
+		if input.layout_order ~= nil then
+			self.layout_order =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.jsonDecode(input.layout_order)
+		end
+
+		if input.layoutOrder ~= nil then
+			self.layout_order =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.jsonDecode(input.layoutOrder)
+		end
+
+		if input.test_id ~= nil then
+			self.test_id = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.test_id)
+		end
+
+		if input.testId ~= nil then
+			self.test_id = _roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.testId)
+		end
+
+		if input.results_summary ~= nil then
+			self.results_summary =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.results_summary)
+		end
+
+		if input.resultsSummary ~= nil then
+			self.results_summary =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.StringProp.jsonDecode(input.resultsSummary)
+		end
+
+		if input.on_refresh_results ~= nil then
+			self.on_refresh_results =
+				_roblox_apppageplatform_shared_v1beta1_actions.ActionProp.jsonDecode(input.on_refresh_results)
+		end
+
+		if input.onRefreshResults ~= nil then
+			self.on_refresh_results =
+				_roblox_apppageplatform_shared_v1beta1_actions.ActionProp.jsonDecode(input.onRefreshResults)
+		end
+
+		if input.results_refresh_interval_seconds ~= nil then
+			self.results_refresh_interval_seconds =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.jsonDecode(
+					input.results_refresh_interval_seconds
+				)
+		end
+
+		if input.resultsRefreshIntervalSeconds ~= nil then
+			self.results_refresh_interval_seconds =
+				_roblox_apppageplatform_shared_v1beta1_prop_types.Int32Prop.jsonDecode(
+					input.resultsRefreshIntervalSeconds
+				)
+		end
+
+		return self
+	end
+
+	_CustomFormSchema_PropsImpl.descriptor = {
+		name = "CustomFormSchema_Props",
+		fullName = "roblox.apppageplatform.shared.v1beta1.Props",
+	}
+
+	messages.CustomFormSchema_Props = _CustomFormSchema_PropsImpl :: any -- Luau: Not sure why this intersection fails.
+
+	typeRegistry.default:register(messages.CustomFormSchema_Props)
+end
+
+do
 	local _UiComponentSchemaImpl = {}
 	_UiComponentSchemaImpl.__index = _UiComponentSchemaImpl
 
@@ -90960,6 +96821,54 @@ do
 			elseif self.kind.type == "user_search_tile" then
 				local encoded = self.kind.value:encode()
 				output, cursor = proto.writeTag(output, cursor, 110, proto.wireTypes.lengthDelimited)
+				output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+			elseif self.kind.type == "custom_form" then
+				local encoded = self.kind.value:encode()
+				output, cursor = proto.writeTag(output, cursor, 111, proto.wireTypes.lengthDelimited)
+				output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+			elseif self.kind.type == "accordion" then
+				local encoded = self.kind.value:encode()
+				output, cursor = proto.writeTag(output, cursor, 112, proto.wireTypes.lengthDelimited)
+				output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+			elseif self.kind.type == "accordion_item" then
+				local encoded = self.kind.value:encode()
+				output, cursor = proto.writeTag(output, cursor, 113, proto.wireTypes.lengthDelimited)
+				output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+			elseif self.kind.type == "config_driven_form" then
+				local encoded = self.kind.value:encode()
+				output, cursor = proto.writeTag(output, cursor, 114, proto.wireTypes.lengthDelimited)
+				output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+			elseif self.kind.type == "expandable_list_root" then
+				local encoded = self.kind.value:encode()
+				output, cursor = proto.writeTag(output, cursor, 115, proto.wireTypes.lengthDelimited)
+				output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+			elseif self.kind.type == "search_autocomplete_suggestion" then
+				local encoded = self.kind.value:encode()
+				output, cursor = proto.writeTag(output, cursor, 116, proto.wireTypes.lengthDelimited)
+				output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+			elseif self.kind.type == "reactions" then
+				local encoded = self.kind.value:encode()
+				output, cursor = proto.writeTag(output, cursor, 117, proto.wireTypes.lengthDelimited)
+				output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+			elseif self.kind.type == "friends_owned_chip" then
+				local encoded = self.kind.value:encode()
+				output, cursor = proto.writeTag(output, cursor, 118, proto.wireTypes.lengthDelimited)
+				output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+			elseif self.kind.type == "banner" then
+				local encoded = self.kind.value:encode()
+				output, cursor = proto.writeTag(output, cursor, 119, proto.wireTypes.lengthDelimited)
+				output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+			elseif self.kind.type == "sheet" then
+				local encoded = self.kind.value:encode()
+				output, cursor = proto.writeTag(output, cursor, 120, proto.wireTypes.lengthDelimited)
+				output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+			elseif self.kind.type == "interactable_tile_wrapper" then
+				local encoded = self.kind.value:encode()
+				output, cursor = proto.writeTag(output, cursor, 121, proto.wireTypes.lengthDelimited)
+				output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
+			elseif self.kind.type == "group_forum_post_preview" then
+				local encoded = self.kind.value:encode()
+				output, cursor = proto.writeTag(output, cursor, 122, proto.wireTypes.lengthDelimited)
 				output, cursor = proto.writeBuffer(output, cursor, encoded, buffer.len(encoded))
 			end
 		end
@@ -91589,6 +97498,76 @@ do
 					value, cursor = proto.readBuffer(input, cursor)
 					self.kind = { type = "user_search_tile", value = messages.UserSearchTileSchema.decode(value) }
 					continue
+				elseif field == 111 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.kind = { type = "custom_form", value = messages.CustomFormSchema.decode(value) }
+					continue
+				elseif field == 112 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.kind = { type = "accordion", value = messages.AccordionSchema.decode(value) }
+					continue
+				elseif field == 113 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.kind = { type = "accordion_item", value = messages.AccordionItemSchema.decode(value) }
+					continue
+				elseif field == 114 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.kind = { type = "config_driven_form", value = messages.ConfigDrivenFormSchema.decode(value) }
+					continue
+				elseif field == 115 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.kind =
+						{ type = "expandable_list_root", value = messages.ExpandableListRootSchema.decode(value) }
+					continue
+				elseif field == 116 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.kind = {
+						type = "search_autocomplete_suggestion",
+						value = messages.SearchAutocompleteSuggestionSchema.decode(value),
+					}
+					continue
+				elseif field == 117 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.kind = { type = "reactions", value = messages.ReactionsSchema.decode(value) }
+					continue
+				elseif field == 118 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.kind = { type = "friends_owned_chip", value = messages.FriendsOwnedChipSchema.decode(value) }
+					continue
+				elseif field == 119 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.kind = { type = "banner", value = messages.BannerSchema.decode(value) }
+					continue
+				elseif field == 120 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.kind = { type = "sheet", value = messages.SheetSchema.decode(value) }
+					continue
+				elseif field == 121 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.kind = {
+						type = "interactable_tile_wrapper",
+						value = messages.InteractableTileWrapperSchema.decode(value),
+					}
+					continue
+				elseif field == 122 then
+					local value
+					value, cursor = proto.readBuffer(input, cursor)
+					self.kind = {
+						type = "group_forum_post_preview",
+						value = messages.GroupForumPostPreviewSchema.decode(value),
+					}
+					continue
 				end
 
 				local length
@@ -91837,6 +97816,30 @@ do
 				output.lineLimitedText = self.kind.value:jsonEncode()
 			elseif self.kind.type == "user_search_tile" then
 				output.userSearchTile = self.kind.value:jsonEncode()
+			elseif self.kind.type == "custom_form" then
+				output.customForm = self.kind.value:jsonEncode()
+			elseif self.kind.type == "accordion" then
+				output.accordion = self.kind.value:jsonEncode()
+			elseif self.kind.type == "accordion_item" then
+				output.accordionItem = self.kind.value:jsonEncode()
+			elseif self.kind.type == "config_driven_form" then
+				output.configDrivenForm = self.kind.value:jsonEncode()
+			elseif self.kind.type == "expandable_list_root" then
+				output.expandableListRoot = self.kind.value:jsonEncode()
+			elseif self.kind.type == "search_autocomplete_suggestion" then
+				output.searchAutocompleteSuggestion = self.kind.value:jsonEncode()
+			elseif self.kind.type == "reactions" then
+				output.reactions = self.kind.value:jsonEncode()
+			elseif self.kind.type == "friends_owned_chip" then
+				output.friendsOwnedChip = self.kind.value:jsonEncode()
+			elseif self.kind.type == "banner" then
+				output.banner = self.kind.value:jsonEncode()
+			elseif self.kind.type == "sheet" then
+				output.sheet = self.kind.value:jsonEncode()
+			elseif self.kind.type == "interactable_tile_wrapper" then
+				output.interactableTileWrapper = self.kind.value:jsonEncode()
+			elseif self.kind.type == "group_forum_post_preview" then
+				output.groupForumPostPreview = self.kind.value:jsonEncode()
 			end
 		end
 
@@ -92918,6 +98921,124 @@ do
 				{ type = "user_search_tile", value = messages.UserSearchTileSchema.jsonDecode(input.userSearchTile) }
 		end
 
+		if input.custom_form ~= nil then
+			self.kind = { type = "custom_form", value = messages.CustomFormSchema.jsonDecode(input.custom_form) }
+		end
+
+		if input.customForm ~= nil then
+			self.kind = { type = "custom_form", value = messages.CustomFormSchema.jsonDecode(input.customForm) }
+		end
+
+		if input.accordion ~= nil then
+			self.kind = { type = "accordion", value = messages.AccordionSchema.jsonDecode(input.accordion) }
+		end
+
+		if input.accordion_item ~= nil then
+			self.kind =
+				{ type = "accordion_item", value = messages.AccordionItemSchema.jsonDecode(input.accordion_item) }
+		end
+
+		if input.accordionItem ~= nil then
+			self.kind =
+				{ type = "accordion_item", value = messages.AccordionItemSchema.jsonDecode(input.accordionItem) }
+		end
+
+		if input.config_driven_form ~= nil then
+			self.kind = {
+				type = "config_driven_form",
+				value = messages.ConfigDrivenFormSchema.jsonDecode(input.config_driven_form),
+			}
+		end
+
+		if input.configDrivenForm ~= nil then
+			self.kind = {
+				type = "config_driven_form",
+				value = messages.ConfigDrivenFormSchema.jsonDecode(input.configDrivenForm),
+			}
+		end
+
+		if input.expandable_list_root ~= nil then
+			self.kind = {
+				type = "expandable_list_root",
+				value = messages.ExpandableListRootSchema.jsonDecode(input.expandable_list_root),
+			}
+		end
+
+		if input.expandableListRoot ~= nil then
+			self.kind = {
+				type = "expandable_list_root",
+				value = messages.ExpandableListRootSchema.jsonDecode(input.expandableListRoot),
+			}
+		end
+
+		if input.search_autocomplete_suggestion ~= nil then
+			self.kind = {
+				type = "search_autocomplete_suggestion",
+				value = messages.SearchAutocompleteSuggestionSchema.jsonDecode(input.search_autocomplete_suggestion),
+			}
+		end
+
+		if input.searchAutocompleteSuggestion ~= nil then
+			self.kind = {
+				type = "search_autocomplete_suggestion",
+				value = messages.SearchAutocompleteSuggestionSchema.jsonDecode(input.searchAutocompleteSuggestion),
+			}
+		end
+
+		if input.reactions ~= nil then
+			self.kind = { type = "reactions", value = messages.ReactionsSchema.jsonDecode(input.reactions) }
+		end
+
+		if input.friends_owned_chip ~= nil then
+			self.kind = {
+				type = "friends_owned_chip",
+				value = messages.FriendsOwnedChipSchema.jsonDecode(input.friends_owned_chip),
+			}
+		end
+
+		if input.friendsOwnedChip ~= nil then
+			self.kind = {
+				type = "friends_owned_chip",
+				value = messages.FriendsOwnedChipSchema.jsonDecode(input.friendsOwnedChip),
+			}
+		end
+
+		if input.banner ~= nil then
+			self.kind = { type = "banner", value = messages.BannerSchema.jsonDecode(input.banner) }
+		end
+
+		if input.sheet ~= nil then
+			self.kind = { type = "sheet", value = messages.SheetSchema.jsonDecode(input.sheet) }
+		end
+
+		if input.interactable_tile_wrapper ~= nil then
+			self.kind = {
+				type = "interactable_tile_wrapper",
+				value = messages.InteractableTileWrapperSchema.jsonDecode(input.interactable_tile_wrapper),
+			}
+		end
+
+		if input.interactableTileWrapper ~= nil then
+			self.kind = {
+				type = "interactable_tile_wrapper",
+				value = messages.InteractableTileWrapperSchema.jsonDecode(input.interactableTileWrapper),
+			}
+		end
+
+		if input.group_forum_post_preview ~= nil then
+			self.kind = {
+				type = "group_forum_post_preview",
+				value = messages.GroupForumPostPreviewSchema.jsonDecode(input.group_forum_post_preview),
+			}
+		end
+
+		if input.groupForumPostPreview ~= nil then
+			self.kind = {
+				type = "group_forum_post_preview",
+				value = messages.GroupForumPostPreviewSchema.jsonDecode(input.groupForumPostPreview),
+			}
+		end
+
 		return self
 	end
 
@@ -92966,6 +99087,10 @@ return {
 	BadgeTileSchema_Props = messages.BadgeTileSchema_Props,
 	UserSearchTileSchema = messages.UserSearchTileSchema,
 	UserSearchTileSchema_Props = messages.UserSearchTileSchema_Props,
+	InteractableTileWrapperSchema = messages.InteractableTileWrapperSchema,
+	InteractableTileWrapperSchema_Props = messages.InteractableTileWrapperSchema_Props,
+	GroupForumPostPreviewSchema = messages.GroupForumPostPreviewSchema,
+	GroupForumPostPreviewSchema_Props = messages.GroupForumPostPreviewSchema_Props,
 	GameTileSchema = messages.GameTileSchema,
 	GameTileSchema_Props = messages.GameTileSchema_Props,
 	GameTileSchema_WebProps = messages.GameTileSchema_WebProps,
@@ -93125,6 +99250,8 @@ return {
 	FriendCarouselSchema_Props = messages.FriendCarouselSchema_Props,
 	PymkCarouselSchema = messages.PymkCarouselSchema,
 	PymkCarouselSchema_Props = messages.PymkCarouselSchema_Props,
+	FriendsOwnedChipSchema = messages.FriendsOwnedChipSchema,
+	FriendsOwnedChipSchema_Props = messages.FriendsOwnedChipSchema_Props,
 	HomeUserInfoWidgetSchema = messages.HomeUserInfoWidgetSchema,
 	HomeUserInfoWidgetSchema_Props = messages.HomeUserInfoWidgetSchema_Props,
 	CatalogItemCarouselSchema = messages.CatalogItemCarouselSchema,
@@ -93199,13 +99326,21 @@ return {
 	ContentRowSchema_Props = messages.ContentRowSchema_Props,
 	ListRootSchema = messages.ListRootSchema,
 	ListRootSchema_Props = messages.ListRootSchema_Props,
+	ExpandableListRootSchema = messages.ExpandableListRootSchema,
+	ExpandableListRootSchema_Props = messages.ExpandableListRootSchema_Props,
 	ListItemSchema = messages.ListItemSchema,
 	ListItemSchema_Props = messages.ListItemSchema_Props,
+	SearchAutocompleteSuggestionSchema = messages.SearchAutocompleteSuggestionSchema,
+	SearchAutocompleteSuggestionSchema_Props = messages.SearchAutocompleteSuggestionSchema_Props,
 	ListItemInputProp = messages.ListItemInputProp,
 	ListItemInputControlProp = messages.ListItemInputControlProp,
 	ListItemInputControlProp_ConditionalOption = messages.ListItemInputControlProp_ConditionalOption,
 	ListItemInputControlProp_ConditionalOptions = messages.ListItemInputControlProp_ConditionalOptions,
 	ListItemInputControlProp_ListItemInputControl = messages.ListItemInputControlProp_ListItemInputControl,
+	AccordionSchema = messages.AccordionSchema,
+	AccordionSchema_Props = messages.AccordionSchema_Props,
+	AccordionItemSchema = messages.AccordionItemSchema,
+	AccordionItemSchema_Props = messages.AccordionItemSchema_Props,
 	AgeCheckUpsellRowSchema = messages.AgeCheckUpsellRowSchema,
 	AgeCheckUpsellRowSchema_Props = messages.AgeCheckUpsellRowSchema_Props,
 	FilterPillsCarouselSchema = messages.FilterPillsCarouselSchema,
@@ -93228,6 +99363,8 @@ return {
 	EventTileSchema_Props = messages.EventTileSchema_Props,
 	SheetFullBleedSchema = messages.SheetFullBleedSchema,
 	SheetFullBleedSchema_Props = messages.SheetFullBleedSchema_Props,
+	SheetSchema = messages.SheetSchema,
+	SheetSchema_Props = messages.SheetSchema_Props,
 	SubscriptionCellSchema = messages.SubscriptionCellSchema,
 	SubscriptionCellSchema_Props = messages.SubscriptionCellSchema_Props,
 	TooltipSchema = messages.TooltipSchema,
@@ -93243,6 +99380,8 @@ return {
 	SystemBannerSchema = messages.SystemBannerSchema,
 	SystemBannerSchema_Props = messages.SystemBannerSchema_Props,
 	SystemBannerSchema_WebProps = messages.SystemBannerSchema_WebProps,
+	BannerSchema = messages.BannerSchema,
+	BannerSchema_Props = messages.BannerSchema_Props,
 	FoundationInternalNoticeLink = messages.FoundationInternalNoticeLink,
 	FoundationInternalNoticeLinkProp = messages.FoundationInternalNoticeLinkProp,
 	FoundationInternalNoticeLinkProp_ConditionalOption = messages.FoundationInternalNoticeLinkProp_ConditionalOption,
@@ -93282,6 +99421,7 @@ return {
 	SponsoredTwoByOneTileSchema_Props = messages.SponsoredTwoByOneTileSchema_Props,
 	ToggleSchema = messages.ToggleSchema,
 	ToggleSchema_Props = messages.ToggleSchema_Props,
+	ToggleSchema_WebProps = messages.ToggleSchema_WebProps,
 	SponsoredOneByTwoTileSchema = messages.SponsoredOneByTwoTileSchema,
 	SponsoredOneByTwoTileSchema_Props = messages.SponsoredOneByTwoTileSchema_Props,
 	ExperimentalComponentProp = messages.ExperimentalComponentProp,
@@ -93290,5 +99430,11 @@ return {
 	SignUpFormSchema_Props = messages.SignUpFormSchema_Props,
 	ProgressSchema = messages.ProgressSchema,
 	ProgressSchema_Props = messages.ProgressSchema_Props,
+	ConfigDrivenFormSchema = messages.ConfigDrivenFormSchema,
+	ConfigDrivenFormSchema_Props = messages.ConfigDrivenFormSchema_Props,
+	ReactionsSchema = messages.ReactionsSchema,
+	ReactionsSchema_Props = messages.ReactionsSchema_Props,
+	CustomFormSchema = messages.CustomFormSchema,
+	CustomFormSchema_Props = messages.CustomFormSchema_Props,
 	UiComponentSchema = messages.UiComponentSchema,
 }

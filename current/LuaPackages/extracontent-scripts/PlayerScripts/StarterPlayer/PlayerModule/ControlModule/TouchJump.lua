@@ -6,8 +6,6 @@
 	// Description: Implements jump controls for touch devices. Use with Thumbstick and Thumbpad
 --]]
 
-local GuiService = game:GetService("GuiService")
-
 local CommonUtils = require(script.Parent.Parent:WaitForChild("CommonUtils"))
 
 local ConnectionUtil = CommonUtils.get("ConnectionUtil")
@@ -15,7 +13,6 @@ local CharacterUtil = CommonUtils.get("CharacterUtil")
 local FlagUtil = CommonUtils.get("FlagUtil")
 local FFlagUserPlayerScriptsCCLIntegrationD = FlagUtil.getUserFlag("UserPlayerScriptsCCLIntegrationD")
 local FFlagUserPlayerScriptsRefactor1 = FlagUtil.getUserFlag("UserPlayerScriptsRefactor1")
-local FFlagUserPlayerScriptsFireThroughScriptableBindings = FlagUtil.getUserFlag("UserPlayerScriptsFireThroughScriptableBindings")
 local FFlagUserPlayerScriptsFixTouchJumpVisibility = FlagUtil.getUserFlag("UserPlayerScriptsFixTouchJumpVisibility")
 
 local Players = game:GetService("Players")
@@ -34,7 +31,6 @@ local CONNECTIONS = {
 	HUMANOID_JUMP_POWER = "HUMANOID_JUMP_POWER",
 	HUMANOID_JUMP_HEIGHT = "HUMANOID_JUMP_HEIGHT",
 	HUMANOID = "HUMANOID",
-	MENU_OPENED = "MENU_OPENED", -- remove with FFlagUserPlayerScriptsFireThroughScriptableBindings
 	ACTIONS_RELOADED = "ACTIONS_RELOADED",
 }
 
@@ -62,10 +58,10 @@ local ActionController = require(script.Parent:WaitForChild("ActionController"))
 local TouchJump = setmetatable({}, ActionController)
 TouchJump.__index = TouchJump
 
-function TouchJump.new(data, playerData)
+function TouchJump.new(data)
 	local self = setmetatable(ActionController.new() :: any, TouchJump)
 
-	self.playerData = playerData -- DONT DO THIS THE MODULES SHOULD NOT BE STATEFUL
+	self.data = data -- DONT DO THIS THE MODULES SHOULD NOT BE STATEFUL
 	data.eventBus:subscribe(CONNECTIONS.ACTIONS_RELOADED):Connect(function()
 		self:Create()
 		if FFlagUserPlayerScriptsFixTouchJumpVisibility and self._active then
@@ -85,11 +81,6 @@ function TouchJump.new(data, playerData)
 end
 
 function TouchJump:_reset()
-	if not FFlagUserPlayerScriptsFireThroughScriptableBindings then
-		if self.playerData.actions.JumpAction then
-			self.playerData.actions.JumpAction:Fire(false)
-		end
-	end
 	if self.jumpButton then
 		if not FFlagUserPlayerScriptsCCLIntegrationD and AvatarAbilitiesInterface.isEnabled() then
 			self.jumpButton.Image = JUMP_BUTTON_IMAGES[1]
@@ -112,22 +103,9 @@ function TouchJump:EnableButton(enable)
 			self:Create()
 		end
 		self.jumpButton.Visible = true
-
-		if not FFlagUserPlayerScriptsFireThroughScriptableBindings then
-			-- stop jumping on menu open
-			self._connectionUtil:trackConnection(
-				CONNECTIONS.MENU_OPENED,
-				GuiService.MenuOpened:Connect(function()
-					self:_reset()
-				end)
-			)
-		end
 	else
 		if self.jumpButton then
 			self.jumpButton.Visible = false
-		end
-		if not FFlagUserPlayerScriptsFireThroughScriptableBindings then
-			self._connectionUtil:disconnect(CONNECTIONS.MENU_OPENED)
 		end
 	end
 	self:_reset()
@@ -267,12 +245,12 @@ function TouchJump:Create()
 
 	self.jumpButton.Parent = self.parentUIFrame
 
-	if not self.playerData.actions.JumpAction then
+	if not self.data.actions.JumpAction then
 		return
 	end
-	self.playerData.actions.JumpAction:WaitForChild("TouchBinding").UIButton = self.jumpButton
+	self.data.actions.JumpAction:WaitForChild("TouchBinding").UIButton = self.jumpButton
 
-	self.playerData.actions.JumpAction.Pressed:Connect(function()
+	self.data.actions.JumpAction.Pressed:Connect(function()
 		if not self.jumpButton then
 			return
 		end
@@ -284,7 +262,7 @@ function TouchJump:Create()
 		end
 	end)
 
-	self.playerData.actions.JumpAction.Released:Connect(function()
+	self.data.actions.JumpAction.Released:Connect(function()
 		if not self.jumpButton then
 			return
 		end

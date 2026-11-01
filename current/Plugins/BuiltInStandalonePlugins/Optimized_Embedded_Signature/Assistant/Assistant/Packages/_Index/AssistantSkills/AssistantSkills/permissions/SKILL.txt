@@ -1,0 +1,70 @@
+---
+name: permissions
+description: Diagnose and resolve permission errors encountered when operating over MCP, such as missing script capabilities, HTTP allowlist denials, un-granted Open Cloud scopes, and DataStoreService access failures. Use whenever an operation fails with a capability error, an "HTTP allowlist" denial, a "Scope has not been granted" error, a nil DataStoreService, or a 502 "Access forbidden" from a DataStore API.
+---
+
+# Resolving MCP Permission Errors
+
+**IMPORTANT: This skill applies ONLY when operating over MCP (the Model Context Protocol integration). It does NOT apply when running Assistant inside Roblox Studio directly.** The errors below, and their resolutions via the MCP Permissions dialog, are specific to the MCP connection. If you are running Assistant directly in Studio, these permission gates and the MCP Permissions tab do not apply and this guidance will not help.
+
+Most of these errors are resolved the same way: the user opens the **Assistant Settings dialog** and navigates to the **MCP Permissions tab** to grant the needed permission. After the user confirms they have adjusted the permissions, **retry the previously blocked operation** — it may now succeed.
+
+## Error types
+
+### 1. Script Capability error
+
+```
+Error: The current thread cannot call '<function>' (lacking capability <capability>)
+```
+
+This is a Script Capability–based permissions error, gated at the engine API call level. `<capability>` names the missing capability.
+
+- **Only the `Network` capability can be configured by users** in the MCP Permissions dialog.
+- If the missing capability is `Network`, ask the user to enable it in the MCP Permissions tab, then retry.
+- If the missing capability is anything other than `Network`, it cannot be granted through MCP Permissions — explain this to the user rather than directing them to the dialog.
+
+### 2. HTTP allowlist denial
+
+```
+Error: HttpService request denied: domain <domain> is not in the Assistant HTTP allowlist
+```
+
+The requested `<domain>` is not configured in the MCP Permissions domain allowlist. Ask the user to add the domain in the MCP Permissions dialog, then retry.
+
+### 3. Open Cloud scope not granted
+
+```
+Error getting token: Scope '<scope>' has not been granted
+```
+
+An Open Cloud OAuth scope has not been granted. This is resolved through the MCP Permissions dialog for supported Open Cloud scopes. Ask the user to grant `<scope>` there, then retry.
+
+See the **open-cloud-usage** skill for which Open Cloud scopes are supported.
+
+### 4. DataStoreService is nil
+
+If a call to `game:GetService("DataStoreService")` returns `nil`, a `universe-datastores.*` scope has not been enabled in the MCP Permissions dialog. Ask the user to enable the appropriate `universe-datastores` scope, then retry.
+
+### 5. DataStore API — 502 Access forbidden
+
+```
+Error: 502: API Services rejected request with error. Error code: 0 Reason: Access forbidden.
+```
+
+When a DataStoreService API call returns this, the specific `universe-datastores` scope for that operation has not been enabled. Ask the user to enable the matching scope in the MCP Permissions tab, then retry.
+
+## Do not circumvent permission controls
+
+Permission errors are intentional controls set by the user. **Never attempt to work around them.** In particular:
+
+- **Do not create or edit a script and then start a playtest (or otherwise run the game) to perform the blocked operation from game context.** Code running in a playtest may not be subject to the same MCP permission gates, so using it to reach a blocked API, domain, scope, or DataStore bypasses the user's permission settings.
+- Do not try alternative APIs, endpoints, domains, or execution contexts to achieve the same effect as the blocked operation.
+
+When an operation is blocked, stop, explain which permission is needed, and let the user decide whether to grant it.
+
+## General guidance
+
+- Direct the user to: **Assistant Settings dialog → MCP Permissions tab**.
+- Be specific about which permission, domain, or scope needs to be granted based on the error details.
+- Once the user confirms the permission has been adjusted, retry the previously blocked operation — it may now succeed.
+- If the user declines to grant the permission, accept that and do not pursue the operation by other means.

@@ -192,6 +192,12 @@ function PluginLoader:_onUserInteracted()
 	self._userInteractionSignal:Fire()
 end
 
+-- Marking interacted lets a subsequent waitForUserInteraction() return immediately. Used in the lazy loading path.
+-- Note that lazy loading almost always replaces the need for `waitForUserInteraction` since the FinishLoading trigger is the same as the waitForUserInteraction trigger. But we're keeping it around in some cases to simplify migration
+function PluginLoader:markUserInteracted()
+	self:_onUserInteracted()
+end
+
 function PluginLoader:registerButton(button: PluginToolbarButton): FlushOnConnectSignal
 	local signal = FlushOnConnectSignal.new()
 	local con = button.Click:Connect(function()

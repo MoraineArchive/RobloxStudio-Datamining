@@ -77,9 +77,6 @@ local Style = if not supportsStyleSheets then require(script.style) else nil
 local Dash = require(Framework.Parent.Dash)
 local assign = Dash.assign
 
-local getFFlagDevFrameworkPropertyCellLayoutOrderFix =
-	require(Framework.SharedFlags.getFFlagDevFrameworkPropertyCellLayoutOrderFix)
-
 local Tooltip = Roact.PureComponent:extend("Tooltip")
 Typecheck.wrap(Tooltip, script)
 
@@ -339,7 +336,7 @@ function Tooltip:render()
 		Size = props.Child and UDim2.fromScale(0, 0) or UDim2.fromScale(1, 1),
 		AutomaticSize = props.Child and Enum.AutomaticSize.XY or nil,
 		BackgroundTransparency = 1,
-		LayoutOrder = if getFFlagDevFrameworkPropertyCellLayoutOrderFix() then props.LayoutOrder else nil,
+		LayoutOrder = props.LayoutOrder,
 		[Roact.Event.MouseEnter] = self.mouseEnter,
 		[Roact.Event.MouseMoved] = self.mouseMoved,
 		[Roact.Event.MouseLeave] = self.mouseLeave,

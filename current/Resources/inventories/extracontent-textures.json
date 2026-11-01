@@ -1446,6 +1446,12 @@
     "sha256": "a3e94001ed760b2aecf68a4beaaf6cf64d02705429cb953356f8dae661ecdc86"
   },
   {
+    "bytes": 95631,
+    "extension": "jpg",
+    "path": "ui/LuaApp/graphic/home_background_halloween2026.jpg",
+    "sha256": "a8457f67e992c6102c6a294d1796393a3d91ad48885cdd7eda788c1670ba23fe"
+  },
+  {
     "bytes": 469,
     "extension": "png",
     "path": "ui/LuaApp/graphic/itemcardbkg_dark.png",

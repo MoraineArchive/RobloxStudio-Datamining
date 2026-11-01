@@ -84,6 +84,9 @@ export type ListItemProps = {
 	-- / Toggle / Radio) where `onActivated(checked)` activates ONLY the input and takes priority over the
 	-- item-level `onActivated`. Set one owner of activation, not both.
 	input: ListItemInput?,
+	-- Runs on the row's secondary activation: a right click, a touch long press, or the gamepad and keyboard
+	-- secondary shortcuts. Use it to open a context menu for the row; it does not change the trailing accessory.
+	onSecondaryActivated: ((self: GuiObject, inputObject: InputObject) -> ())?,
 } & Types.SelectionProps & Types.CommonProps
 
 local defaultProps = {}
@@ -225,6 +228,7 @@ local function ListItem(listItemProps: ListItemProps, ref: React.Ref<GuiObject>?
 		}, {
 			ListItemContainer = React.createElement(View, {
 				onActivated = onActivated,
+				onSecondaryActivated = props.onSecondaryActivated,
 				tag = {
 					["size-full-0 auto-y radius-medium"] = true,
 					["margin-x-small"] = listContext.hasMargin,

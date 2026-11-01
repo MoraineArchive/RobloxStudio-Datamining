@@ -10055,8 +10055,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "280",
-      "SourceBytecodeSha256": "da3e6a225de7e3a9765045a447ece7eb585847a5572e3d8aa81dc7e84bf76d9c",
+      "SourceBytecodeBytes": "343",
+      "SourceBytecodeSha256": "985d3c30c08fa0d496f3d4f1ce2619c625c4591ac7f2a2cb19d97d2e14db1491",
       "Tags": ""
     },
     "unreadable": [
@@ -10071,8 +10071,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4940",
-      "SourceBytecodeSha256": "3355d9d378539657887b96a30bb5d0fd8c80330381a58164704164c1f720cc44",
+      "SourceBytecodeBytes": "5020",
+      "SourceBytecodeSha256": "2735189a228c4864285ba143bdb9ae126be72a929d700d9171e870e8029c657d",
       "Tags": ""
     },
     "unreadable": [
@@ -10088,7 +10088,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "161",
-      "SourceBytecodeSha256": "5023b029c281c8bf6cefa3d4052f75601b960eac9fa5ac4a8ddbda0a5a8b3001",
+      "SourceBytecodeSha256": "a38e1220692460ce30a9e7ad7f528b178c6538fcf9b3ab505ce100bd16841a9f",
       "Tags": ""
     },
     "unreadable": [
@@ -10103,8 +10103,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5360",
-      "SourceBytecodeSha256": "e55c32d1df251b677d37b92d1b2ddf0f898cf82b00389dde16d95b081c84f216",
+      "SourceBytecodeBytes": "10253",
+      "SourceBytecodeSha256": "ab41881c95d7eff77b0f958e8fe57112583d8c6386bb22262dc4a106f199162d",
       "Tags": ""
     },
     "unreadable": [
@@ -10169,6 +10169,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "163",
       "SourceBytecodeSha256": "e2f7a03817d11e7b6123a38f717a4cef0ecabe356a2e6a61df515c9f2d7dead4",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "PreInitHandoff",
+    "path": "MoveDragger/Packages/_Index/PluginLoader/PluginLoader/PreInitHandoff",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "3109",
+      "SourceBytecodeSha256": "8a431840740e4bbc77bee5f671a4e443990d682ae3f0363509db769ef76df060",
       "Tags": ""
     },
     "unreadable": [
@@ -12009,6 +12025,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "5151",
       "SourceBytecodeSha256": "5011973a9e32342fed3508394179c71c780de93c1ba557cef7fbec05e4468726",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "runJest",
+    "path": "MoveDragger/Packages/_Index/TestLoader/TestLoader/runJest",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1772",
+      "SourceBytecodeSha256": "0355496b6c4b23814709698116b162ae1556f5b904a379bf24b2433b56ffc561",
       "Tags": ""
     },
     "unreadable": [

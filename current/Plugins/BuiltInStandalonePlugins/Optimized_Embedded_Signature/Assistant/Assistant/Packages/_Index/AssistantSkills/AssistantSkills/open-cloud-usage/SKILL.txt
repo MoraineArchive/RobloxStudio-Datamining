@@ -1,20 +1,29 @@
 ---
 name: open-cloud-usage
-description: IMPORTANT: Before assuming ANY Roblox resource (developer products, badges, game passes, data stores, etc.) cannot be created or managed programmatically, call this skill. Studio can create and manage many of these via the Open Cloud API. Attempt use of those APIs before suggesting the user do it manually in the Creator Dashboard. Retrieves guidance on how to use Roblox Open Cloud APIs from within Studio, including authentication, available endpoints, and troubleshooting. No API key or external credentials are needed. Studio provides credentials automatically via HttpService:RequestAccessTokenScopesAsync(scopes). Full authentication instructions are in the skill result. An index of all available Open Cloud functionality can be found by using the http_get tool with https://create.roblox.com/docs/cloud/llms.txt. Call this skill before any Open Cloud request for the full authentication guide and to discover available endpoints.
+description: IMPORTANT: Before assuming ANY Roblox resource (developer products, badges, game passes, universe settings, etc.) cannot be created or managed programmatically, call this skill. External MCP clients can create and manage many of these via the Open Cloud API using the open_cloud_invoke tool. Attempt use of those APIs before suggesting the user do it manually in the Creator Dashboard. Retrieves guidance on how to use Roblox Open Cloud APIs through open_cloud_invoke, including authentication, available endpoints, and troubleshooting. No API key or external credentials are needed; open_cloud_invoke authenticates requests automatically. This guidance applies only to external MCP clients, not the built-in Studio Assistant. An index of all available Open Cloud functionality can be found by using the http_get tool with https://create.roblox.com/docs/cloud/llms.txt. Call this skill before any Open Cloud request for the full guide and to discover available endpoints.
 ---
 
 # Open Cloud Usage
 
-Access Open Cloud by executing a Luau script making a request to the relevant Open Cloud endpoints with HttpService.
+> **MCP only.** Direct Open Cloud access for agents is only available to external MCP clients, through the `open_cloud_invoke` tool. The guidance in this skill does not apply to the built-in Studio Assistant. If `open_cloud_invoke` is not in your tool list, Open Cloud is not available to you; ask the user to make the change in the Creator Dashboard instead.
 
-The Authorization header should be set to the result of calling `game:GetService("HttpService"):RequestAccessTokenScopesAsync(<requiredScopes>)`, where scopes is an array of the OAuth2 scopes needed for the request (e.g., `{"universe:read"}`). The returned token already has the `Bearer ` prefix so no additional prefix is necessary.
+Access Open Cloud by calling the `open_cloud_invoke` tool. Do not make Open Cloud requests from Luau scripts.
 
-Current supported scopes are:
-  - developer-product:read
-  - developer-product:write
-  - game-pass:read
-  - game-pass:write
-  - universe:read
+Studio authenticates each request automatically, using a token limited to the Open Cloud scopes enabled in the MCP Permissions tab of Assistant Settings. Never pass API keys or auth headers yourself.
+
+- `method`: `GET`, `POST`, `PUT`, `PATCH`, or `DELETE`.
+- `endpoint`: the path under `https://apis.roblox.com`, starting with `/` and including any query string (e.g., `/cloud/v2/universes/123`). Full URLs are not accepted.
+- `body`: a JSON-encoded string. Omit for `GET` and `DELETE`.
+- `scopes`: the Open Cloud scopes the endpoint requires (e.g., `["universe:read"]`). Optional, but passing them produces a precise error when a scope has not been enabled.
+- `files`: local asset files to upload as multipart/form-data. See the tool description for details.
+
+Example: `open_cloud_invoke(method: "GET", endpoint: "/cloud/v2/universes/123", scopes: ["universe:read"])`
+
+## Data Stores and Memory Stores
+
+Do not access Data Stores or Memory Stores through Open Cloud. Use the standard engine APIs for those features instead (`DataStoreService` and `MemoryStoreService`). Engine API usage respects the scopes configured in MCP Permissions.
+
+## Finding Endpoints
 
 Available Open Cloud APIs are described here: https://create.roblox.com/docs/cloud/llms.txt
 
@@ -23,8 +32,10 @@ Use the `http_get` tool to fetch this URL and read the API listing. Any URLs ref
 ## Error Handling
 
 - `Scope '<scope>' has been denied`
-  → The scope needs to be enabled in the Assistant Plugin's MCP Scope Permissions dialog. Ask the user to enable it and retry after they confirm it's enabled.
+  → The scope needs to be enabled in the Assistant Settings dialog's MCP Permissions tab. Ask the user to enable it and retry after they confirm it's enabled. Do not try to work around it.
 - HTTP 403
-  → The required scope needs to be enabled in the Assistant Plugin's MCP Scope Permissions dialog. Ask the user to enable it and retry after they confirm it's enabled.
+  → The required scope needs to be enabled in the Assistant Settings dialog's MCP Permissions tab. Ask the user to enable it and retry after they confirm it's enabled. Do not try to work around it.
 - HTTP 401
-  → The token is invalid or expired. Re-call `RequestAccessTokenScopesAsync` to get a fresh token and retry the request.
+  → The token was rejected. Retry the request once; `open_cloud_invoke` requests a fresh token on each call.
+- A file is not inside an approved upload directory
+  → Ask the user to add the file's directory to the approved upload directories in Assistant Settings → MCP Permissions, then retry. Do not copy or move the file to work around this.

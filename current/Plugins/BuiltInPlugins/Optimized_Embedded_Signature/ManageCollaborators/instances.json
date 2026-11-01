@@ -251,16 +251,6 @@
   },
   {
     "class": "Folder",
-    "name": "Card",
-    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Utility/Stories/Planned/Card",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
     "name": "Cartoon",
     "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Legacy/Typography/Cartoon",
     "properties": {
@@ -991,6 +981,16 @@
   },
   {
     "class": "Folder",
+    "name": "Halloween2026",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Halloween2026",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
     "name": "Hooks",
     "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Providers/Cursor/Hooks",
     "properties": {
@@ -1163,16 +1163,6 @@
     "class": "Folder",
     "name": "Kids",
     "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Kids",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
-    "name": "KidsClassic",
-    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Generated/StyleRules/KidsClassic",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -1721,8 +1711,8 @@
   },
   {
     "class": "Folder",
-    "name": "RbxDesignFoundations-31ab8d40-5.0.0",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0",
+    "name": "RbxDesignFoundations-31ab8d40-5.2.0",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -2163,6 +2153,26 @@
     "class": "Folder",
     "name": "stylizer",
     "path": "ManageCollaborators/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Stories/General/stylizer",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Subcomponents",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Banner/Subcomponents",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Subcomponents",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Card/Subcomponents",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -3126,7 +3136,7 @@
   {
     "class": "ModuleScript",
     "name": "Actions",
-    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile/Actions",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED/Actions",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -3221,6 +3231,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "AddEarlyTesterMemberEligibility",
+    "path": "ManageCollaborators/Src/Actions/AddEarlyTesterMemberEligibility",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "312",
+      "SourceBytecodeSha256": "4900df52077916eb560a8578054ffb2060953dfb2fd499883725b125a9e46efb",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "AddEarlyTesterMembers",
     "path": "ManageCollaborators/Src/Actions/AddEarlyTesterMembers",
     "properties": {
@@ -3243,8 +3269,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2939",
-      "SourceBytecodeSha256": "a042333a422b27ec80f4fafc47007a34f1bf2335b45e7ef0688bf66a58502021",
+      "SourceBytecodeBytes": "2984",
+      "SourceBytecodeSha256": "7f6f7ff48faa25936f5de1774178bc1325356715d61409493dd82f09e44e8248",
       "Tags": ""
     },
     "unreadable": [
@@ -4789,6 +4815,54 @@
   },
   {
     "class": "ModuleScript",
+    "name": "Banner.story",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Banner/Banner.story",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "14484",
+      "SourceBytecodeSha256": "0f5c556e736eaf449f858525fe67f06286e2294e943b007d132af0d19ec45206",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Banner",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Banner",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "107",
+      "SourceBytecodeSha256": "ae36479136860a39e34ee24883cfafc13954d95482a680090443ebcf2f86afb3",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Banner",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Banner/Banner",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "2562",
+      "SourceBytecodeSha256": "4108a2521398cc1fc7ba3a567da605cdb8e157248a586d7117e7d401554a592e",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "BannerContext.story",
     "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/BannerContext/BannerContext.story",
     "properties": {
@@ -4861,6 +4935,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "73",
       "SourceBytecodeSha256": "275fe92cc04760df05adfd8411f94c50bea22a49f549ac6ae41725d0a43dd8ae",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "BannerSize",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Enums/BannerSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "68",
+      "SourceBytecodeSha256": "86d9d07bf2e617274c6e63e95555f9a8d2cd541b86b802b014ccc5c57c920661",
       "Tags": ""
     },
     "unreadable": [
@@ -5259,8 +5349,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "15593",
-      "SourceBytecodeSha256": "24f266086234f1ad25080f22a663020852ab2bd1db82852ba97d90e9bdc0f038",
+      "SourceBytecodeBytes": "17615",
+      "SourceBytecodeSha256": "09d9c82100680caf288fc0bd90afe222a9b611648a17b366bc3b7f711b697d84",
       "Tags": ""
     },
     "unreadable": [
@@ -5339,8 +5429,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5403",
-      "SourceBytecodeSha256": "cdf81256d5f9dc3b3f905d9b103342bac897b12c56de0f0cfbfca4b03cc05e39",
+      "SourceBytecodeBytes": "13473",
+      "SourceBytecodeSha256": "45ff5517ff724f9dcda41fce8283f88feb8e39188774a641f12f3cbacb700234",
       "Tags": ""
     },
     "unreadable": [
@@ -5387,8 +5477,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5401",
-      "SourceBytecodeSha256": "3beb1dc88949618f373c77224f22a4d9e288189406fce624dba28a415ab88281",
+      "SourceBytecodeBytes": "5846",
+      "SourceBytecodeSha256": "aaac687ac8e26c47ef30b289cabf57b341e31c04d594089a19e1881d7049f70c",
       "Tags": ""
     },
     "unreadable": [
@@ -5403,8 +5493,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1715",
-      "SourceBytecodeSha256": "3a9b5483cfe0517f449d1ad6756f7fadeb3b4b65ce95d3aff37604387a405daf",
+      "SourceBytecodeBytes": "1663",
+      "SourceBytecodeSha256": "62bfc06ad3bb91dad5135c227893308b2892d9a78072cb0b0849eae6fd58e747",
       "Tags": ""
     },
     "unreadable": [
@@ -5755,8 +5845,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2762",
-      "SourceBytecodeSha256": "8a8f9a924fc2193ed820c17652a087836fe04ed54c69c0bef8b550f0df4ec775",
+      "SourceBytecodeBytes": "2891",
+      "SourceBytecodeSha256": "37575cbdaf241a507751d2b8f6c168b26ec2283400be735336c30e7ad3925764",
       "Tags": ""
     },
     "unreadable": [
@@ -5877,22 +5967,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "calculateNextStepValue",
-    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Slider/calculateNextStepValue",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "248",
-      "SourceBytecodeSha256": "a160e7883a1f1f844b9e0cd0b01601cee3501afab1d06502ef4ee4f08e867659",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "calculateNumberInputValueFromPositions",
     "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/NumberInput/calculateNumberInputValueFromPositions",
     "properties": {
@@ -5901,22 +5975,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "396",
       "SourceBytecodeSha256": "f764007d887baa9fc4bda8cc02afd5d6b8b01c50a63f137a28e19eb6d815940c",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "calculatePixelsPerStep",
-    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Slider/calculatePixelsPerStep",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "157",
-      "SourceBytecodeSha256": "6c183b2eefafeb22aef684bbb36bb021dfa2bfdcad78a5ca0d06e3cdcc6d8be9",
       "Tags": ""
     },
     "unreadable": [
@@ -5941,22 +5999,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "calculateSliderPositionDelta",
-    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Slider/calculateSliderPositionDelta",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "136",
-      "SourceBytecodeSha256": "6a193c857adf4e6c7716fc7782faac4662012664ac46119fd1c95c82989ee2ad",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "calculateSliderStepValue",
     "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Slider/calculateSliderStepValue",
     "properties": {
@@ -5965,22 +6007,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "291",
       "SourceBytecodeSha256": "fcf9e2613d003ff3c0ba574557a4a0c9b032da088cffa17604917eccc7cc0804",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "calculateSliderValueFromDelta",
-    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Slider/calculateSliderValueFromDelta",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "224",
-      "SourceBytecodeSha256": "20db2cc20e72377b536d8a18a9fbb6a96c9f169a646ade340c7294eb80cf98dd",
       "Tags": ""
     },
     "unreadable": [
@@ -6165,6 +6191,38 @@
   },
   {
     "class": "ModuleScript",
+    "name": "CanManageEarlyTesters",
+    "path": "ManageCollaborators/Src/Selectors/CanManageEarlyTesters",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "474",
+      "SourceBytecodeSha256": "3f1542b32e706cffcc997d8b5840abf3670e9bc89a01d8441df921ebfc54de8b",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "CantInviteLabel",
+    "path": "ManageCollaborators/Src/Components/EarlyTesters/CantInviteLabel",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1453",
+      "SourceBytecodeSha256": "2fd2b4cff1bf9b7e60a1b16edd85dc3052db38dec998142ca3377c1fe8508033",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "CaptureFocus",
     "path": "ManageCollaborators/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/CaptureFocus",
     "properties": {
@@ -6182,13 +6240,189 @@
   {
     "class": "ModuleScript",
     "name": "Card.story",
-    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Utility/Stories/Planned/Card/Card.story",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Card/Card.story",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "592",
-      "SourceBytecodeSha256": "5dec782a1253157b584231e22489cae1fe036a1d6ea4aab40636aa3361dda044",
+      "SourceBytecodeBytes": "23684",
+      "SourceBytecodeSha256": "01ce925e5792a8772d023cdef31a0c705d84bfe96f07d61ade90cb8a958ece09",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Card",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Card",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "105",
+      "SourceBytecodeSha256": "abc4fe15f397e7d5bb60f57f3d050769583578dd9baef2c16cc5f95c359adcb4",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Card",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Card/Card",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "5158",
+      "SourceBytecodeSha256": "3bce4ad14e352658170e956c317239b840e8b8624105624179c129f0ad3d7dc7",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "CardActions",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Card/Subcomponents/CardActions",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1881",
+      "SourceBytecodeSha256": "95f223ddcb8db7359bd0d66eeb1c7cbceafc7031f04ad141e0060cea49d215c4",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "CardDensity",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Enums/CardDensity",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "90",
+      "SourceBytecodeSha256": "9afec56a88f68362849c597c71b42141145983b8c481a8d8c938d86a7176f215",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "CardHeader",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Card/Subcomponents/CardHeader",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "3159",
+      "SourceBytecodeSha256": "839b0b013e72ecd6b139ff14bace0916f42c6f3348490e71fb3e5f318ea8db18",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "CardHeaderSize",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Enums/CardHeaderSize",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "110",
+      "SourceBytecodeSha256": "be79bc18d83b733e1deb13f5341827ce0eb46d820020aac09bc81f206ba48f8b",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "CardHeight",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Enums/CardHeight",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "64",
+      "SourceBytecodeSha256": "e49910179ed3c0ff439a48237638f6900c17533ea2725e9853fe4ba9ec46e7e7",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "CardMedia",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Card/Subcomponents/CardMedia",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1118",
+      "SourceBytecodeSha256": "a03df25b89dddf971fc544c18e3a63e29123d92e8bd45ae07b4b286124141f3c",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "CardMediaAspectRatio",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Enums/CardMediaAspectRatio",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "175",
+      "SourceBytecodeSha256": "28e777b4e7504b6c3c12352813b6c166f1d1652b8cb4bc037cf834cff69c0df7",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "CardMediaPlacement",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Enums/CardMediaPlacement",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "66",
+      "SourceBytecodeSha256": "dcfc5221cdabca47268265d45ec333890a80215616a6d65e8520f8262dc09632",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "CardVariant",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Enums/CardVariant",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "73",
+      "SourceBytecodeSha256": "275fe92cc04760df05adfd8411f94c50bea22a49f549ac6ae41725d0a43dd8ae",
       "Tags": ""
     },
     "unreadable": [
@@ -6763,8 +6997,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3037",
-      "SourceBytecodeSha256": "2b373bfbd9804d96aa37c76cfa0e53c766a63a6565b5295dce6c404f21cb2f3a",
+      "SourceBytecodeBytes": "3156",
+      "SourceBytecodeSha256": "3cae4f0425f1563fbabcb16ccde30980de9316cd1364ff0942b2136de909ce51",
       "Tags": ""
     },
     "unreadable": [
@@ -6790,7 +7024,7 @@
   {
     "class": "ModuleScript",
     "name": "CircuitRush",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/CircuitRush",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/CircuitRush",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -6918,7 +7152,7 @@
   {
     "class": "ModuleScript",
     "name": "Classic",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/Classic",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/Classic",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -7067,8 +7301,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "8139",
-      "SourceBytecodeSha256": "ea3e48c1f3faad7cf0fcaaae43effa84bc976c83d237825cba7c652ca367d07f",
+      "SourceBytecodeBytes": "8892",
+      "SourceBytecodeSha256": "c8d63569bbfaaccfb18674b32543d5329955032941a2cd68f54727402a691aa1",
       "Tags": ""
     },
     "unreadable": [
@@ -7147,8 +7381,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "13781",
-      "SourceBytecodeSha256": "7e08bc97a465a04d9573d49ac8222014ab40477e44ef7fc98f44909d67c9b7f3",
+      "SourceBytecodeBytes": "14302",
+      "SourceBytecodeSha256": "e8180c7448fbd2e48549f6c83294e4ea6d419059f0daddad1bcc2b5880779dc3",
       "Tags": ""
     },
     "unreadable": [
@@ -7211,8 +7445,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "17303",
-      "SourceBytecodeSha256": "5feeb51ae6a4486a039318f0c6ad24cc9b7f8865ad03b29892e52c26fdea843e",
+      "SourceBytecodeBytes": "18181",
+      "SourceBytecodeSha256": "a83ea635f51ceb3b7cc30f0f25a463a5baea5b3c54c4ef31a1deec4965a25b76",
       "Tags": ""
     },
     "unreadable": [
@@ -7227,8 +7461,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "9089",
-      "SourceBytecodeSha256": "dae7b60359b42b3a967842867107b30cd22261529f3e747d5274a7525ac75083",
+      "SourceBytecodeBytes": "8906",
+      "SourceBytecodeSha256": "dc4bca20a1fa556bf1dd4e57ab2dcd95fd0d6b55ef625a956c47fc914de18cda",
       "Tags": ""
     },
     "unreadable": [
@@ -7867,8 +8101,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1537",
-      "SourceBytecodeSha256": "d527c069db8869f6978706f5e96dda3f1c9565e89af6d78bf65ec1f6d67e56c7",
+      "SourceBytecodeBytes": "1676",
+      "SourceBytecodeSha256": "dad3a4bc01e2484ce4271d5f9c761690169316621b1c7c3e990bdcf48c149182",
       "Tags": ""
     },
     "unreadable": [
@@ -7883,8 +8117,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1441",
-      "SourceBytecodeSha256": "f9ffa65e9426f851ad96c5a4c1a4cc86d9effd07ee94f7959c91ae0c11f4bcf0",
+      "SourceBytecodeBytes": "2521",
+      "SourceBytecodeSha256": "cfca1dd3c81f72cd6925aa27f984a2dc79fe28c85ec8bc312abfd3a4c8cfd8b7",
       "Tags": ""
     },
     "unreadable": [
@@ -8395,8 +8629,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1734",
-      "SourceBytecodeSha256": "3126591146e6d9a3b9e5cf8284c9f7243a8dfb969419eb51d3854cb08c5ba97f",
+      "SourceBytecodeBytes": "1314",
+      "SourceBytecodeSha256": "b7231f06227efdceed535ab61622effd84a60de6e8b7845c0ba186292ebab575",
       "Tags": ""
     },
     "unreadable": [
@@ -8411,8 +8645,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2367",
-      "SourceBytecodeSha256": "e50fe11b5a989619ae0d336a8b8b215a182569c0363d0ddc87b1a730588ab71e",
+      "SourceBytecodeBytes": "1917",
+      "SourceBytecodeSha256": "8032784aeb5e1425c0dc90b7dc96d79be2d3d6e1c0f300cddf4d4f034423bce5",
       "Tags": ""
     },
     "unreadable": [
@@ -8534,7 +8768,7 @@
   {
     "class": "ModuleScript",
     "name": "Content",
-    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile/Content",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED/Content",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -8773,22 +9007,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "CopyLinkButton",
-    "path": "ManageCollaborators/Src/Components/CopyLinkButton",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "9109",
-      "SourceBytecodeSha256": "a74780098a21ba1dddb79879ff1ea881bead7c4c379ad7fc0d8ce36a9a595125",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "CoreGuiDebugInterface",
     "path": "ManageCollaborators/Packages/_Index/DeveloperTools/DeveloperTools/Classes/CoreGuiDebugInterface",
     "properties": {
@@ -8886,7 +9104,7 @@
   {
     "class": "ModuleScript",
     "name": "CosmicDust",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/CosmicDust",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/CosmicDust",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -10102,7 +10320,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/CircuitRush/Dark",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/CircuitRush/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -10118,7 +10336,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/Classic/Dark",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/Classic/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -10134,7 +10352,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/CosmicDust/Dark",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/CosmicDust/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -10150,7 +10368,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/Default/Dark",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/Default/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -10166,7 +10384,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/ElectricLime/Dark",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/ElectricLime/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -10182,7 +10400,23 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/HyperPlum/Dark",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/Halloween2026/Dark",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91433",
+      "SourceBytecodeSha256": "728dd9bcdf3c1543088e2076d490d4fb2541f84d609a64aebc4f349191fdb9b6",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Dark",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/HyperPlum/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -10198,7 +10432,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/InfernoBlast/Dark",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/InfernoBlast/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -10214,7 +10448,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/Kids/Dark",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/Kids/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -10230,23 +10464,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/KidsClassic/Dark",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "91346",
-      "SourceBytecodeSha256": "2b5be485759c3c5a2abe58c41b51b47c3b11dee3401d26a89ec719d83f56e4b7",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Dark",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/KineticEnergy/Dark",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/KineticEnergy/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -10262,7 +10480,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/LavaGlow/Dark",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/LavaGlow/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -10278,7 +10496,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/NebulaDrift/Dark",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/NebulaDrift/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -10294,7 +10512,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/NitroFrost/Dark",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/NitroFrost/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -10310,7 +10528,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/PixelPop/Dark",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/PixelPop/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -10326,7 +10544,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/PolarFreeze/Dark",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/PolarFreeze/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -10342,7 +10560,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/QuantumPulse/Dark",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/QuantumPulse/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -10358,7 +10576,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/StarBurst/Dark",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/StarBurst/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -10374,7 +10592,7 @@
   {
     "class": "ModuleScript",
     "name": "Dark",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/SuperCharge/Dark",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/SuperCharge/Dark",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -10470,6 +10688,22 @@
   {
     "class": "ModuleScript",
     "name": "DarkAttribute",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Halloween2026/DarkAttribute",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "30084",
+      "SourceBytecodeSha256": "f3ed112c0757c085f60dfe24ebdb26cff80c02c0e1491b702afb0e4928914d70",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "DarkAttribute",
     "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Generated/StyleRules/HyperPlum/DarkAttribute",
     "properties": {
       "AttributesSerialize": "",
@@ -10503,22 +10737,6 @@
     "class": "ModuleScript",
     "name": "DarkAttribute",
     "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Kids/DarkAttribute",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "30120",
-      "SourceBytecodeSha256": "ab42777904b5bbebe0ead7ee69b910d796898aa69d1908e2536ed66ba7938429",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "DarkAttribute",
-    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Generated/StyleRules/KidsClassic/DarkAttribute",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -11446,7 +11664,7 @@
   {
     "class": "ModuleScript",
     "name": "Default",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/Default",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/Default",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -11483,8 +11701,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "6616",
-      "SourceBytecodeSha256": "20a32079cf0721477b0e7e5bc15a8e81845e70ee415293c4fa38a40aea48cb80",
+      "SourceBytecodeBytes": "7535",
+      "SourceBytecodeSha256": "443cf22564f751b98bc094e1de507c31d8a7e4890629847ea3f360c00a513d90",
       "Tags": ""
     },
     "unreadable": [
@@ -12875,8 +13093,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "10489",
-      "SourceBytecodeSha256": "481cc150c16c3c1dadabdff31ca4ba5b6f2d9f1dba38de8e5699672a4a25e27e",
+      "SourceBytecodeBytes": "10390",
+      "SourceBytecodeSha256": "69392f8d26922f40f9ea99a8514e7257e9ca07d5c92195feec71cf883c1f233b",
       "Tags": ""
     },
     "unreadable": [
@@ -12923,8 +13141,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4405",
-      "SourceBytecodeSha256": "553ca581561e65f201de061aa109c93f373d50db8c91a5b2c1b156862e498120",
+      "SourceBytecodeBytes": "4663",
+      "SourceBytecodeSha256": "30760b3660b602511bf0279a7e9ba43dbb2097992b5e25e52748c8482641f827",
       "Tags": ""
     },
     "unreadable": [
@@ -12939,8 +13157,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1335",
-      "SourceBytecodeSha256": "f0500c023820fe842d8bc0734e9db3329245f2c6a199bb804b96c6f6ee868bc8",
+      "SourceBytecodeBytes": "1621",
+      "SourceBytecodeSha256": "7f6cfdd5e6da775dc68a53a3893bff97197a4e2bf036fe57e15d1d441ee5019f",
       "Tags": ""
     },
     "unreadable": [
@@ -12971,8 +13189,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "6596",
-      "SourceBytecodeSha256": "ca70061adf9272b6554411083d6a61acef0370bde587f78b9f234d50a3f8e3cb",
+      "SourceBytecodeBytes": "7462",
+      "SourceBytecodeSha256": "354ced8c851be8f7a38c91afd7bbc75aa284a6cabe2498069e18aeb9047d0631",
       "Tags": ""
     },
     "unreadable": [
@@ -13003,8 +13221,24 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "7536",
-      "SourceBytecodeSha256": "9918abf1d98ae6accf918371dc2b402502f49d83c5ff5fb1c5a175f4f4ebbf25",
+      "SourceBytecodeBytes": "7985",
+      "SourceBytecodeSha256": "a922a18739fb59fdd9e05d7ade868ffc07fbd03ef66ae0cc764f0511b0d920a4",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "EarlyTestersTabOpenedEvent",
+    "path": "ManageCollaborators/Src/Util/Telemetry/EarlyTestersTabOpenedEvent",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "648",
+      "SourceBytecodeSha256": "c9577c2302e8fc87f8fda13ba1d9f99c564974e00bd0046bce162bbda72a2452",
       "Tags": ""
     },
     "unreadable": [
@@ -13067,8 +13301,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "9430",
-      "SourceBytecodeSha256": "534e9bfe8ba2b0887f3c59ce887d68d02bfa3f4a103dea18ee199c683337ec91",
+      "SourceBytecodeBytes": "10026",
+      "SourceBytecodeSha256": "422ed52089a3ade2da785d003ca77189df66b137e8c784b6a8e525d3ecac6dbf",
       "Tags": ""
     },
     "unreadable": [
@@ -13126,7 +13360,7 @@
   {
     "class": "ModuleScript",
     "name": "ElectricLime",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/ElectricLime",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/ElectricLime",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -13574,13 +13808,13 @@
   {
     "class": "ModuleScript",
     "name": "enums",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/enums",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/enums",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "442",
-      "SourceBytecodeSha256": "dc47f859b76c33b8800cf40dede2f08366d48579903feab46ca40567dc522581",
+      "SourceBytecodeBytes": "444",
+      "SourceBytecodeSha256": "eda35a78dc9a859c2d829cef9d58945039732367c59273ea3b120c8d5efd0b06",
       "Tags": ""
     },
     "unreadable": [
@@ -14123,8 +14357,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3529",
-      "SourceBytecodeSha256": "9554645046dae36a370288304421cd1999655073fa77ceecb5edd1e1f69dafd3",
+      "SourceBytecodeBytes": "3531",
+      "SourceBytecodeSha256": "5eb2daab5a716a86304389f8b9f065b301b1fd9a9539e4628ec68415e0c18219",
       "Tags": ""
     },
     "unreadable": [
@@ -14283,8 +14517,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "861",
-      "SourceBytecodeSha256": "eec739512a71fd064cc4096163a0e144dcf786481462efcf4b9e6505abe83968",
+      "SourceBytecodeBytes": "853",
+      "SourceBytecodeSha256": "040cd3628329f3570e39f61d8f1abbe2b8e0fd6500f88c27ed2b127f369afdcf",
       "Tags": ""
     },
     "unreadable": [
@@ -14747,8 +14981,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4464",
-      "SourceBytecodeSha256": "311e7dc55e6da7ebba1ee93aa87c57752a90b17eb82ea011a4e54d1d66a25a9f",
+      "SourceBytecodeBytes": "4470",
+      "SourceBytecodeSha256": "e90f765d9d9ad563aaac665243781a838c54203214b3a04a6fb3f1098e54eebb",
       "Tags": ""
     },
     "unreadable": [
@@ -14763,8 +14997,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "298",
-      "SourceBytecodeSha256": "200369dd020f8459067efa7a15a7b2608055517d57851c258b6c4d3394077eab",
+      "SourceBytecodeBytes": "380",
+      "SourceBytecodeSha256": "e32a4c42096e870b29e1a170c742c63b678aeda72a881e2600d65d1d848100d5",
       "Tags": ""
     },
     "unreadable": [
@@ -14966,7 +15200,7 @@
   {
     "class": "ModuleScript",
     "name": "Footer",
-    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile/Footer",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED/Footer",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -14987,8 +15221,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "6266",
-      "SourceBytecodeSha256": "c6d802dd472249f96149f52ee8c54e5c3922e2dad0a7e52df4df49902918693a",
+      "SourceBytecodeBytes": "9729",
+      "SourceBytecodeSha256": "a8397362cec1b958c4674ba1ef84582a28896eecf551a44828d409646a564054",
       "Tags": ""
     },
     "unreadable": [
@@ -15131,8 +15365,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5686",
-      "SourceBytecodeSha256": "eb4f03f0981283ac499f5d6039a0edb5730cbc51b47ed16114c85c25ffa7bd8c",
+      "SourceBytecodeBytes": "5535",
+      "SourceBytecodeSha256": "7d552764e02ff969b95790403641bf7dc2484a63ee4113c9186e32f20edc6dba",
       "Tags": ""
     },
     "unreadable": [
@@ -15323,8 +15557,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "10534",
-      "SourceBytecodeSha256": "aef441fa7c805e3340e3a56782f9f1bfa973aa4f6da827fb9d6a3790deb0e7ff",
+      "SourceBytecodeBytes": "10323",
+      "SourceBytecodeSha256": "ed6c2433bb22961c5b1b03f6956403fd3f1332ec80a3d77fe9b3fe4213199711",
       "Tags": ""
     },
     "unreadable": [
@@ -15340,7 +15574,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "179",
-      "SourceBytecodeSha256": "0c8d887fe46e29799ec7d3cfd17aaeada2cbb4e736623aed56c07f51a2e58d79",
+      "SourceBytecodeSha256": "8c48aef28d6b3756eaceb393e629dcdc521026926ab56d7284ebb3b6735bee4c",
       "Tags": ""
     },
     "unreadable": [
@@ -15355,8 +15589,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "15178",
-      "SourceBytecodeSha256": "96cfab9811c4767f482e630798e716aa406a00891f6b3419c1576c4e4a1bfe5a",
+      "SourceBytecodeBytes": "15813",
+      "SourceBytecodeSha256": "b35f78f2a5ad11c1c75fa18a30c089396559c142cf1d5bd184516d87dd70e65d",
       "Tags": ""
     },
     "unreadable": [
@@ -15388,7 +15622,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "179",
-      "SourceBytecodeSha256": "0c8d887fe46e29799ec7d3cfd17aaeada2cbb4e736623aed56c07f51a2e58d79",
+      "SourceBytecodeSha256": "8c48aef28d6b3756eaceb393e629dcdc521026926ab56d7284ebb3b6735bee4c",
       "Tags": ""
     },
     "unreadable": [
@@ -15404,7 +15638,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "159",
-      "SourceBytecodeSha256": "7bac428856477d9d463e86e7be0ff8eff1d9f4bcf600bbc1fb97497ba1cb93eb",
+      "SourceBytecodeSha256": "b9ebabeee2a4c44903bb9a2bacd5888d319341f318b7ba1b01b8af6c98b522a5",
       "Tags": ""
     },
     "unreadable": [
@@ -15853,6 +16087,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "3007",
       "SourceBytecodeSha256": "d559d4074c956ed3f43f974e861bec53d417f8be20c228f5aed4efbb5fd71a34",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "GameLinkCopiedEvent",
+    "path": "ManageCollaborators/Src/Util/Telemetry/GameLinkCopiedEvent",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "657",
+      "SourceBytecodeSha256": "ecc0735a2d507502cda7ce6397c9957b8ed187bfdfdddd36f0d65fcd447b9969",
       "Tags": ""
     },
     "unreadable": [
@@ -16405,6 +16655,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "getContentRoot",
+    "path": "ManageCollaborators/Packages/_Index/DeveloperFramework/DeveloperFramework/TestHelpers/getContentRoot",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "71",
+      "SourceBytecodeSha256": "b47377a34dab9d75228775af922fb1539d6f629d956917ff6e854e6f4deb91f2",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "GetCurrentUserIsBlockingCollaborators",
     "path": "ManageCollaborators/Src/Selectors/GetCurrentUserIsBlockingCollaborators",
     "properties": {
@@ -16549,22 +16815,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkAdjustTextFontSize",
-    "path": "ManageCollaborators/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkAdjustTextFontSize",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "215",
-      "SourceBytecodeSha256": "c239d247ba02ffdd923ad3b2971c4180e06c54ef4ad9ffbe32218caea99e2704",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "getFFlagDevFrameworkDesignVersionRename",
     "path": "ManageCollaborators/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkDesignVersionRename",
     "properties": {
@@ -16573,22 +16823,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "216",
       "SourceBytecodeSha256": "1f915e39c7a7fb22624b0e5bb25ae9bb9dcba2985d62f1e85093c433884839ca",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkDropdownItemDisabled",
-    "path": "ManageCollaborators/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkDropdownItemDisabled",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "217",
-      "SourceBytecodeSha256": "c34444f700ee0714e29f338b096be667bc4f4d25dde59b601fac0459ce891d7c",
       "Tags": ""
     },
     "unreadable": [
@@ -16741,22 +16975,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkPropertyCellLayoutOrderFix",
-    "path": "ManageCollaborators/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkPropertyCellLayoutOrderFix",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "223",
-      "SourceBytecodeSha256": "14953dce4718ef72b5532cea65d83e1db338579261b29b6b4012aefbdd874126",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "getFFlagDevFrameworkSliderInputValidation",
     "path": "ManageCollaborators/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkSliderInputValidation",
     "properties": {
@@ -16781,6 +16999,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "215",
       "SourceBytecodeSha256": "4aaa0399127fa4dc2f8a1afb97c4e9e3a117ace00937876ac16a08217545ae7e",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "getFFlagDevFrameworkUsePluginDesign",
+    "path": "ManageCollaborators/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkUsePluginDesign",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "212",
+      "SourceBytecodeSha256": "79c9036a39c06d0b353054015d9f3d7066fc98fdbb7cb96b804d943fd3297509",
       "Tags": ""
     },
     "unreadable": [
@@ -17003,8 +17237,24 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2021",
-      "SourceBytecodeSha256": "0daa8ee5b515ecba8e6840a019a523fdaa2d067dc5f38df3876981d128112034",
+      "SourceBytecodeBytes": "1681",
+      "SourceBytecodeSha256": "754d237a0fc21fa72892c9ab334569053c48bb25d870569f497d0253cf576f9d",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "GetFilterPillUserCollaborators",
+    "path": "ManageCollaborators/Src/Selectors/GetFilterPillUserCollaborators",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "798",
+      "SourceBytecodeSha256": "6f34706d76cc59aaaf86b250d55bf14b7b0d42ff65047a5c1c5fe238676d3ae8",
       "Tags": ""
     },
     "unreadable": [
@@ -17035,8 +17285,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "7965",
-      "SourceBytecodeSha256": "d1f802e3edb109ab733a80d7ca00adc8e94bc736f7f1184193e7eebd6aed642c",
+      "SourceBytecodeBytes": "7967",
+      "SourceBytecodeSha256": "76522cc0fe7c11ac7a979dcbb8eb7b3b472aa8400942c3d6c6f2c97b2696216d",
       "Tags": ""
     },
     "unreadable": [
@@ -17245,22 +17495,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "864",
       "SourceBytecodeSha256": "d52d47cc66349abf09b84becee72be5e430f5c2523b06ca86d986bb5988389b2",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "GetGroupMigrationStatus",
-    "path": "ManageCollaborators/Src/Networking/Requests/GetGroupMigrationStatus",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "633",
-      "SourceBytecodeSha256": "c07eb90fbfede60f646a461cc990aaf1de0545d5d3ba05cc5deb9e7e9c6d2f26",
       "Tags": ""
     },
     "unreadable": [
@@ -17531,8 +17765,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "211405",
-      "SourceBytecodeSha256": "5feb7d54ae8ea6574f80d642fb6914b7c54cacb392c73ce6ac987b7ae85c0a32",
+      "SourceBytecodeBytes": "203261",
+      "SourceBytecodeSha256": "b96037261bd81083ecf3ce0cf318060b8a8df51a1d7c76f9ab7089cfd277ad6f",
       "Tags": ""
     },
     "unreadable": [
@@ -17661,22 +17895,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "1172",
       "SourceBytecodeSha256": "c4f940cc567c0d96c8f4a066b078616e14c03d99fa6847e65aef75298e071561",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "GetMigrationStatus",
-    "path": "ManageCollaborators/Src/Selectors/GetMigrationStatus",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "132",
-      "SourceBytecodeSha256": "d170bb5cbb152bd3d5cb489c64d4defb11ed22c061664a92a4ef6fd263accecb",
       "Tags": ""
     },
     "unreadable": [
@@ -18491,8 +18709,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4133",
-      "SourceBytecodeSha256": "bb3174fedb56f23fb21e81ba8e83ebebd27a11c010270b7962970033195ac965",
+      "SourceBytecodeBytes": "3638",
+      "SourceBytecodeSha256": "541ba94c88d4d0c66cbe99693c2ff7c3e7b99d7b1ef70d58475abb9eb2239ebc",
       "Tags": ""
     },
     "unreadable": [
@@ -18523,24 +18741,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "6836",
-      "SourceBytecodeSha256": "b7cef8c24ea1efcdf0e27c0eaa8ab3a45626f92c19c48d6daa1c6111f5c58487",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "GranularPermissionsDataHandler",
-    "path": "ManageCollaborators/Src/Networking/Requests/GranularPermissionsDataHandler",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "1298",
-      "SourceBytecodeSha256": "13533b482e07c7b56ed80d6a3de0e760dac7a66e3b9dd9cdf9268eb98e0b3862",
+      "SourceBytecodeBytes": "3733",
+      "SourceBytecodeSha256": "1e4d994f836a118edfd5d53105453d259bcbfb14dfb3362be93737409966ef54",
       "Tags": ""
     },
     "unreadable": [
@@ -18619,8 +18821,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "12739",
-      "SourceBytecodeSha256": "a114408929f392ebeaa5519fe15a238d44e4bfec5f6bee5f73baddd18bb81597",
+      "SourceBytecodeBytes": "12612",
+      "SourceBytecodeSha256": "bd866ba283ae2ddfa9f2788d783a44be52c76ebc4eb5c86cbb94e0a7dd03f823",
       "Tags": ""
     },
     "unreadable": [
@@ -18827,8 +19029,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "8343",
-      "SourceBytecodeSha256": "d9d6ce4af18e73654dabd6d60c8724a1d8fcb42744a00361b7f80c2dd3f42e20",
+      "SourceBytecodeBytes": "8036",
+      "SourceBytecodeSha256": "1add6406a6e301f71c12fea2192ac45c61171b44719da27a2cd10cf1bbe07e7e",
       "Tags": ""
     },
     "unreadable": [
@@ -18891,8 +19093,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4532",
-      "SourceBytecodeSha256": "37deb7781645de6c7119f3edfc91cad6ba52df8cb63691f7afe16c86214b6883",
+      "SourceBytecodeBytes": "5175",
+      "SourceBytecodeSha256": "9c1b377496426666fe5315dc7de4f4d5dbf13c05a5e73869ea13ef7f56c1c331",
       "Tags": ""
     },
     "unreadable": [
@@ -18925,22 +19127,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "2276",
       "SourceBytecodeSha256": "1fb512eb19ba59ee5f72826a6ae8b6e37b9b780355b9275a5adc3cd747373788",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "GroupMigrationStatus",
-    "path": "ManageCollaborators/Src/Reducers/GroupMigrationStatus",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "795",
-      "SourceBytecodeSha256": "481310126c6f70622e4c088568c7a2ba51668c230d3cd24052d91d1fb41c798b",
       "Tags": ""
     },
     "unreadable": [
@@ -19061,6 +19247,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "Halloween2026",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/Halloween2026",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "177",
+      "SourceBytecodeSha256": "5a8d490224e43cdd48a92c6a28995fe027658ecfe61bf1783eff923d31604705",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "HardBreakElement",
     "path": "ManageCollaborators/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/InlineLayout/HardBreakElement",
     "properties": {
@@ -19142,7 +19344,7 @@
   {
     "class": "ModuleScript",
     "name": "Header",
-    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile/Header",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED/Header",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -19163,8 +19365,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1146",
-      "SourceBytecodeSha256": "d5ff79deaacd1491c2b0aedc3a1e47fe925824a504e16729f0eb103099338124",
+      "SourceBytecodeBytes": "802",
+      "SourceBytecodeSha256": "4bd94dbfe19e89fb0f6c70cfcb21bf0fcd5e32d149a7d79cc1b20c82451ad8a1",
       "Tags": ""
     },
     "unreadable": [
@@ -19686,7 +19888,7 @@
   {
     "class": "ModuleScript",
     "name": "HyperPlum",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/HyperPlum",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/HyperPlum",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -20123,8 +20325,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1851",
-      "SourceBytecodeSha256": "bd6ff387e28422018dbe6f5e4e3d58d708c53ee4a9a271ffdfeb30f830f94ff1",
+      "SourceBytecodeBytes": "2202",
+      "SourceBytecodeSha256": "8959ca0e9e1731889e7fdd9598244b87efc2c63dcd83492110c693bb75fa444f",
       "Tags": ""
     },
     "unreadable": [
@@ -20326,7 +20528,7 @@
   {
     "class": "ModuleScript",
     "name": "InfernoBlast",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/InfernoBlast",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/InfernoBlast",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -21461,6 +21663,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "IsEarlyTesterMemberEligibilityLoading",
+    "path": "ManageCollaborators/Src/Selectors/IsEarlyTesterMemberEligibilityLoading",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "657",
+      "SourceBytecodeSha256": "7e17fa14d8ab1531c49f0de9351d65a1c2261ab2d108da48d1e2177403780678",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "isEmpty",
     "path": "ManageCollaborators/Packages/_Index/Cryo/Cryo/isEmpty",
     "properties": {
@@ -21765,6 +21983,38 @@
   },
   {
     "class": "ModuleScript",
+    "name": "IsPlayTesterEligibilityLoading",
+    "path": "ManageCollaborators/Src/Selectors/IsPlayTesterEligibilityLoading",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "373",
+      "SourceBytecodeSha256": "d0801df858ce2387fa7960000089a6a04e61f211829b4ef5e67d84d9f252b831",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "IsPlayTesterEligible",
+    "path": "ManageCollaborators/Src/Util/IsPlayTesterEligible",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "314",
+      "SourceBytecodeSha256": "8066952a783280ab8dfdf28ff9dbadad13fe9e1e0c444b495723c697ad96c922",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "isPluginElevated",
     "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Providers/Plugin/isPluginElevated",
     "properties": {
@@ -22029,6 +22279,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "1169",
       "SourceBytecodeSha256": "ba1cc842434456e4baec097fcc4681bf3cec5493edce62aacf2fe7b745929009",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "IsViewerGroupOwner",
+    "path": "ManageCollaborators/Src/Selectors/IsViewerGroupOwner",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "248",
+      "SourceBytecodeSha256": "ed93203975631b8e14d31c61d05e0b41ec78ce62a8231d29c5096a7bf16d3a1e",
       "Tags": ""
     },
     "unreadable": [
@@ -22870,7 +23136,7 @@
   {
     "class": "ModuleScript",
     "name": "Kids",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/Kids",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/Kids",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -22887,22 +23153,6 @@
     "class": "ModuleScript",
     "name": "KidsClassic",
     "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-4.0.11/RbxDesignFoundations/KidsClassic",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "177",
-      "SourceBytecodeSha256": "5a8d490224e43cdd48a92c6a28995fe027658ecfe61bf1783eff923d31604705",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "KidsClassic",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/KidsClassic",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -22934,7 +23184,7 @@
   {
     "class": "ModuleScript",
     "name": "KineticEnergy",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/KineticEnergy",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/KineticEnergy",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -23110,7 +23360,7 @@
   {
     "class": "ModuleScript",
     "name": "LavaGlow",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/LavaGlow",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/LavaGlow",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -23638,7 +23888,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/CircuitRush/Light",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/CircuitRush/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -23654,7 +23904,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/Classic/Light",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/Classic/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -23670,7 +23920,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/CosmicDust/Light",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/CosmicDust/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -23686,7 +23936,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/Default/Light",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/Default/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -23702,7 +23952,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/ElectricLime/Light",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/ElectricLime/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -23718,7 +23968,23 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/HyperPlum/Light",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/Halloween2026/Light",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "91433",
+      "SourceBytecodeSha256": "728dd9bcdf3c1543088e2076d490d4fb2541f84d609a64aebc4f349191fdb9b6",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Light",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/HyperPlum/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -23734,7 +24000,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/InfernoBlast/Light",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/InfernoBlast/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -23750,7 +24016,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/Kids/Light",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/Kids/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -23766,23 +24032,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/KidsClassic/Light",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "91347",
-      "SourceBytecodeSha256": "de4539c00594b8f7b2caafae018ef850e93c61eddec119b65c4ced5dd28a92e1",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Light",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/KineticEnergy/Light",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/KineticEnergy/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -23798,7 +24048,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/LavaGlow/Light",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/LavaGlow/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -23814,7 +24064,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/NebulaDrift/Light",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/NebulaDrift/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -23830,7 +24080,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/NitroFrost/Light",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/NitroFrost/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -23846,7 +24096,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/PixelPop/Light",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/PixelPop/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -23862,7 +24112,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/PolarFreeze/Light",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/PolarFreeze/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -23878,7 +24128,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/QuantumPulse/Light",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/QuantumPulse/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -23894,7 +24144,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/StarBurst/Light",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/StarBurst/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -23910,7 +24160,7 @@
   {
     "class": "ModuleScript",
     "name": "Light",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/SuperCharge/Light",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/SuperCharge/Light",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -24006,6 +24256,22 @@
   {
     "class": "ModuleScript",
     "name": "LightAttribute",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Halloween2026/LightAttribute",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "30084",
+      "SourceBytecodeSha256": "f3ed112c0757c085f60dfe24ebdb26cff80c02c0e1491b702afb0e4928914d70",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "LightAttribute",
     "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Generated/StyleRules/HyperPlum/LightAttribute",
     "properties": {
       "AttributesSerialize": "",
@@ -24039,22 +24305,6 @@
     "class": "ModuleScript",
     "name": "LightAttribute",
     "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Generated/StyleRules/Kids/LightAttribute",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "30084",
-      "SourceBytecodeSha256": "85dfdd075357a1e0ee6affacbe8bc226bf2e1aef72064738e0daf3c721a3a27d",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "LightAttribute",
-    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Generated/StyleRules/KidsClassic/LightAttribute",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -24267,8 +24517,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "962",
-      "SourceBytecodeSha256": "260a744adaac5056e3ac3b6c176f9e6e604888ae3018f3a6e782d5b1f780f2d9",
+      "SourceBytecodeBytes": "2890",
+      "SourceBytecodeSha256": "87cd18da43fbadd14cb630da82604048f3205135212d60e6f3d9bed6b3c723b4",
       "Tags": ""
     },
     "unreadable": [
@@ -24325,22 +24575,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "LinkCopiedEvent",
-    "path": "ManageCollaborators/Src/Util/Telemetry/LinkCopiedEvent",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "675",
-      "SourceBytecodeSha256": "0f0cbc4f5350713c8877a6460781fa59b8a800027298685a5a040065f8a59336",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "LinkElement",
     "path": "ManageCollaborators/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/InlineLayout/LinkElement",
     "properties": {
@@ -24349,22 +24583,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "817",
       "SourceBytecodeSha256": "87159d86e6177319a2cd865cf61c8ca10ba6e2b0f063654a96784c89d64b0b3f",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "LinkFetchFailureEvent",
-    "path": "ManageCollaborators/Src/Util/Telemetry/LinkFetchFailureEvent",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "816",
-      "SourceBytecodeSha256": "d908d96f367f2598b2fe92b95cf67d4cf1cdc83a79d88fea6dcb35289681d5a2",
       "Tags": ""
     },
     "unreadable": [
@@ -24427,8 +24645,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "14355",
-      "SourceBytecodeSha256": "84fda7f947098ecffdfed60452ae5ab48739e8d03bb837459fa20497de182694",
+      "SourceBytecodeBytes": "16163",
+      "SourceBytecodeSha256": "9b1a6c5b413c397b2ff000745d7a8ca1fdab3de3d21afaab0bc12758c5ad640f",
       "Tags": ""
     },
     "unreadable": [
@@ -24603,8 +24821,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "9144",
-      "SourceBytecodeSha256": "993305df4fdcbe051456529f195b310f695783784b6d9edd872c5fc8b2ceb9bd",
+      "SourceBytecodeBytes": "9189",
+      "SourceBytecodeSha256": "098c3295c8d7716a4f85e2353c8aa76251cad6f791df038fba93ad6e9859616b",
       "Tags": ""
     },
     "unreadable": [
@@ -24645,14 +24863,30 @@
   },
   {
     "class": "ModuleScript",
+    "name": "LoadEarlyTesterMemberEligibility",
+    "path": "ManageCollaborators/Src/Thunks/LoadEarlyTesterMemberEligibility",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1237",
+      "SourceBytecodeSha256": "6e534abaf7198e9bac98543b7f83270306d2a19ce246cf319d02b17c606ef4ff",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "LoadGroupMembersPage",
     "path": "ManageCollaborators/Src/Thunks/LoadGroupMembersPage",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "975",
-      "SourceBytecodeSha256": "d291a8ae0c2d4626cff52d2e90d5c92b95755d5a9a2de716918b951e6067a5bb",
+      "SourceBytecodeBytes": "1114",
+      "SourceBytecodeSha256": "666adba9feae525ada837ac6c6baeb53d0b82b1d5f9659e6e87a1e2bedf24d7f",
       "Tags": ""
     },
     "unreadable": [
@@ -24795,8 +25029,24 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1138",
-      "SourceBytecodeSha256": "2536f1212be2f0383ca33157601104e042a6221231192caa088f5e2b47791044",
+      "SourceBytecodeBytes": "1277",
+      "SourceBytecodeSha256": "4c9b9b8a0279cbe0f3770511d7ec9ce23557b20225d4e8b28584c261f540af6a",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "LoadPlayTesterEligibility",
+    "path": "ManageCollaborators/Src/Thunks/LoadPlayTesterEligibility",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "919",
+      "SourceBytecodeSha256": "02b827bbea165336d0b22b72afb07d1f355fcae8793c9b6f8c601149fab649d6",
       "Tags": ""
     },
     "unreadable": [
@@ -24909,6 +25159,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "12869",
       "SourceBytecodeSha256": "bd368671ef386cedf1003bd60b5f26e772af73a4a4383151837e22675e75466d",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "LogEarlyTesterTelemetry",
+    "path": "ManageCollaborators/Src/Thunks/LogEarlyTesterTelemetry",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1511",
+      "SourceBytecodeSha256": "74c6da76c31bab99293d0417b01e9480cb41cb8864fc6745c3e6d1758c154f25",
       "Tags": ""
     },
     "unreadable": [
@@ -25179,8 +25445,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "13884",
-      "SourceBytecodeSha256": "24fb219c36886064bab195de033f7ecdce1f78eb40630edd7eaa74a744c8cc97",
+      "SourceBytecodeBytes": "11377",
+      "SourceBytecodeSha256": "4b583b9e1580302ef50c46c31e995305df215bdf325ce5e230b1dfad645cd52b",
       "Tags": ""
     },
     "unreadable": [
@@ -25195,8 +25461,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1964",
-      "SourceBytecodeSha256": "58181e0cb4e3399f83c759f410421d0049b3fa36bd5733399a3d92e61e79c8d5",
+      "SourceBytecodeBytes": "1824",
+      "SourceBytecodeSha256": "9b9aa7391318fe8ab0067a432dfc419af0c3ef41b49b2b2fa5bad407d77c957b",
       "Tags": ""
     },
     "unreadable": [
@@ -25307,8 +25573,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "11961",
-      "SourceBytecodeSha256": "4c39cb975ffd370c0c60d2a1265be580d6c88fac7aa32ed150cd50f040fb0add",
+      "SourceBytecodeBytes": "11605",
+      "SourceBytecodeSha256": "c2c834395acba1f7cfd593e8cf999443d801c8a5a5833645f53df85b004d6d75",
       "Tags": ""
     },
     "unreadable": [
@@ -25371,8 +25637,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4505",
-      "SourceBytecodeSha256": "74d95a0298246212cd630a75a929854995293ab65969a2be08730ca127599fbb",
+      "SourceBytecodeBytes": "4875",
+      "SourceBytecodeSha256": "fb91efac0d89552c134acb42c45666fa9ec5ec2c8e4eae995bdde44a8ed15a1d",
       "Tags": ""
     },
     "unreadable": [
@@ -25942,7 +26208,7 @@
   {
     "class": "ModuleScript",
     "name": "Media",
-    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile/Media",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED/Media",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -26317,22 +26583,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "34151",
       "SourceBytecodeSha256": "d195f7c960b90aabb40e02091a08cb0b808d6d347a84dbe8a0d0d8cbe19b0709",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "MigrationStatus",
-    "path": "ManageCollaborators/Src/Util/MigrationStatus",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "131",
-      "SourceBytecodeSha256": "030edafbb42567877c3fa00297b48b5c32750b9567c64295c3ecb47811f514e0",
       "Tags": ""
     },
     "unreadable": [
@@ -26805,22 +27055,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "modifiedType",
-    "path": "ManageCollaborators/Src/Util/modifiedType",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "967",
-      "SourceBytecodeSha256": "02f7eb7b220e9516eda435779a6521028dc0c219a368f48b278551b0b1e21143",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "ModuleLoader",
     "path": "ManageCollaborators/Packages/_Index/TestLoader/TestLoader/ModuleLoader",
     "properties": {
@@ -27126,7 +27360,7 @@
   {
     "class": "ModuleScript",
     "name": "NebulaDrift",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/NebulaDrift",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/NebulaDrift",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -27238,7 +27472,7 @@
   {
     "class": "ModuleScript",
     "name": "NitroFrost",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/NitroFrost",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/NitroFrost",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -27718,7 +27952,7 @@
   {
     "class": "ModuleScript",
     "name": "ObjectViewport",
-    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile/ObjectViewport",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED/ObjectViewport",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -28155,8 +28389,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5932",
-      "SourceBytecodeSha256": "3a8567cce98ca990705fe5d5331408596a137beda340cfa49705010fe882d6b9",
+      "SourceBytecodeBytes": "6059",
+      "SourceBytecodeSha256": "7808c646f116862b4330059728a8aa5ea1098466f1cdd1552880e62cbaad51fd",
       "Tags": ""
     },
     "unreadable": [
@@ -28715,8 +28949,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2409",
-      "SourceBytecodeSha256": "13f0d589aba0512df1606d55073f0835a5c40cafb3db9fa149b2d1a94f2c8dde",
+      "SourceBytecodeBytes": "2680",
+      "SourceBytecodeSha256": "7011522a307f0773d9d124ac2cb3465aac4b7cc21d563eddc05c8b374a737820",
       "Tags": ""
     },
     "unreadable": [
@@ -28731,8 +28965,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1892",
-      "SourceBytecodeSha256": "9e21a8aa1d053a707bd8b64b1fb6febf3b1be1cc0f132afbb766a05564fb1245",
+      "SourceBytecodeBytes": "2252",
+      "SourceBytecodeSha256": "ca44380dc90239a7b9a88e55b493c40ca3a81ef78c99c0814aefb44891b6eb96",
       "Tags": ""
     },
     "unreadable": [
@@ -28811,8 +29045,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "9157",
-      "SourceBytecodeSha256": "33479748924eb44f4ef23dfd5c2f7953efdab1686f29887a95c5008dfed2e79a",
+      "SourceBytecodeBytes": "8904",
+      "SourceBytecodeSha256": "239a8d2f55fc98bfacc5c58f46cde295a589d203a22fc88c5daa01200b5bfc9c",
       "Tags": ""
     },
     "unreadable": [
@@ -28827,8 +29061,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "41459",
-      "SourceBytecodeSha256": "5a7498eeb02c3227d83204e9cc1ba5e23fa2d6632f39b73478a71e5f1522224e",
+      "SourceBytecodeBytes": "32910",
+      "SourceBytecodeSha256": "363016ec01080fdb4d2be0c50f94d17b03cd1577d2b13c3b09cf26814074dbcb",
       "Tags": ""
     },
     "unreadable": [
@@ -28918,7 +29152,7 @@
   {
     "class": "ModuleScript",
     "name": "PixelPop",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/PixelPop",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/PixelPop",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -29067,8 +29301,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1862",
-      "SourceBytecodeSha256": "6a0e49e8b713449dcc9c034e9402b63b3dcb7e33e5a2d1f7d9bfb67bc4ac5387",
+      "SourceBytecodeBytes": "2372",
+      "SourceBytecodeSha256": "f01acf72a618f35a8ca9a6d073978c0e384acde7769823b8c298619a66fad75c",
       "Tags": ""
     },
     "unreadable": [
@@ -29259,8 +29493,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "280",
-      "SourceBytecodeSha256": "da3e6a225de7e3a9765045a447ece7eb585847a5572e3d8aa81dc7e84bf76d9c",
+      "SourceBytecodeBytes": "343",
+      "SourceBytecodeSha256": "985d3c30c08fa0d496f3d4f1ce2619c625c4591ac7f2a2cb19d97d2e14db1491",
       "Tags": ""
     },
     "unreadable": [
@@ -29275,8 +29509,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4940",
-      "SourceBytecodeSha256": "3355d9d378539657887b96a30bb5d0fd8c80330381a58164704164c1f720cc44",
+      "SourceBytecodeBytes": "5020",
+      "SourceBytecodeSha256": "2735189a228c4864285ba143bdb9ae126be72a929d700d9171e870e8029c657d",
       "Tags": ""
     },
     "unreadable": [
@@ -29292,7 +29526,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "161",
-      "SourceBytecodeSha256": "5023b029c281c8bf6cefa3d4052f75601b960eac9fa5ac4a8ddbda0a5a8b3001",
+      "SourceBytecodeSha256": "a38e1220692460ce30a9e7ad7f528b178c6538fcf9b3ab505ce100bd16841a9f",
       "Tags": ""
     },
     "unreadable": [
@@ -29307,8 +29541,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5360",
-      "SourceBytecodeSha256": "e55c32d1df251b677d37b92d1b2ddf0f898cf82b00389dde16d95b081c84f216",
+      "SourceBytecodeBytes": "10253",
+      "SourceBytecodeSha256": "ab41881c95d7eff77b0f958e8fe57112583d8c6386bb22262dc4a106f199162d",
       "Tags": ""
     },
     "unreadable": [
@@ -29414,7 +29648,7 @@
   {
     "class": "ModuleScript",
     "name": "PolarFreeze",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/PolarFreeze",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/PolarFreeze",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -29659,8 +29893,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "7309",
-      "SourceBytecodeSha256": "553acfd2128ff57855bb038160d24f8f91b5c6282f3314a4d5d23470b3c799a8",
+      "SourceBytecodeBytes": "7334",
+      "SourceBytecodeSha256": "eca7ba45d613f3eac4b182a3fecc4bd12a301d05f4f441150028eed209f0999d",
       "Tags": ""
     },
     "unreadable": [
@@ -29853,6 +30087,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "2032",
       "SourceBytecodeSha256": "40fc586887356ab4ee5bbf0459b82ce65288be27816d4ad590cea718dc4771c8",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "PreInitHandoff",
+    "path": "ManageCollaborators/Packages/_Index/PluginLoader/PluginLoader/PreInitHandoff",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "3109",
+      "SourceBytecodeSha256": "8a431840740e4bbc77bee5f671a4e443990d682ae3f0363509db769ef76df060",
       "Tags": ""
     },
     "unreadable": [
@@ -30411,8 +30661,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2166",
-      "SourceBytecodeSha256": "f73c481c9016df7530097f9730c766a2a7db47b311a493dbfb842bdc4b2f9814",
+      "SourceBytecodeBytes": "2038",
+      "SourceBytecodeSha256": "f82b44f2fe3434396ef5ab144229898bb5f5fcb81b4cb0962de756f0b4ffa140",
       "Tags": ""
     },
     "unreadable": [
@@ -30486,7 +30736,7 @@
   {
     "class": "ModuleScript",
     "name": "QuantumPulse",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/QuantumPulse",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/QuantumPulse",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -30828,7 +31078,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "227",
-      "SourceBytecodeSha256": "f19670b823108c1208720c91ba9ec4c5dcfce39820da319a85882003158011dc",
+      "SourceBytecodeSha256": "6d2dd093cb4e2282a6c3bb2ce53bb8b307f78c6bfa3eb6eafec615555998aee3",
       "Tags": ""
     },
     "unreadable": [
@@ -30870,13 +31120,13 @@
   {
     "class": "ModuleScript",
     "name": "RbxDesignFoundations",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2143",
-      "SourceBytecodeSha256": "6a262c5c1de55088aa33b1d3a7dca0932412896d5bccaeb4b6afe1f5cc832c6a",
+      "SourceBytecodeBytes": "2145",
+      "SourceBytecodeSha256": "051c29ae91c3eb5d6e2675f163f2212ce9fd91bf67ac43d5ee6ca4ddb0d49dda",
       "Tags": ""
     },
     "unreadable": [
@@ -34075,8 +34325,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4063",
-      "SourceBytecodeSha256": "0c1b51a5d39bc85ef09fd54ee9b963470cbc9be996168ce6112569d2cf45a2a7",
+      "SourceBytecodeBytes": "3955",
+      "SourceBytecodeSha256": "ca4bb6d4aa68dc379099a082893e7f408a2b920abe988d6f1daa73850be5e08d",
       "Tags": ""
     },
     "unreadable": [
@@ -34157,6 +34407,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "79",
       "SourceBytecodeSha256": "6740a1491d0688319cf902189686eea6528072ff6524c1d8c9dace7bd03ec2eb",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "runJest",
+    "path": "ManageCollaborators/Packages/_Index/TestLoader/TestLoader/runJest",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1772",
+      "SourceBytecodeSha256": "0355496b6c4b23814709698116b162ae1556f5b904a379bf24b2433b56ffc561",
       "Tags": ""
     },
     "unreadable": [
@@ -34427,8 +34693,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "8076",
-      "SourceBytecodeSha256": "e5322c81bb89564cf8eca8e724c298dfa7f132f3af7f63af35f84456d96fff22",
+      "SourceBytecodeBytes": "7153",
+      "SourceBytecodeSha256": "4ccbf852ebe8df0d3b3a904121b5c0e0d23ceabed9001ce3a53214bd775f23c1",
       "Tags": ""
     },
     "unreadable": [
@@ -34987,8 +35253,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "21734",
-      "SourceBytecodeSha256": "de855daca25bf38ea1023fda33c4f74aaf45020ac83690a3d152d5b433a81f9d",
+      "SourceBytecodeBytes": "22057",
+      "SourceBytecodeSha256": "68aa0b2316ab77265b3dd61c247baabb21e1a0afa258e8a052fe0605621fbe4b",
       "Tags": ""
     },
     "unreadable": [
@@ -35035,8 +35301,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1051",
-      "SourceBytecodeSha256": "29f3894b8509d7d40f2df00494903dbc8954fc9a684ae50afb9c855e89464447",
+      "SourceBytecodeBytes": "1190",
+      "SourceBytecodeSha256": "00593bdd41c3487cd49f22f5850cd79225f463d25e2fdf5cc83398b0268f1fd0",
       "Tags": ""
     },
     "unreadable": [
@@ -35669,6 +35935,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "SetEarlyTesterCanAssignRole",
+    "path": "ManageCollaborators/Src/Actions/SetEarlyTesterCanAssignRole",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "308",
+      "SourceBytecodeSha256": "95c5bb876b4fa4d8d1015a6359729700b07ab4fddfc632b7a8ef7483e32486e3",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "SetEarlyTesterCreatedRole",
     "path": "ManageCollaborators/Src/Actions/SetEarlyTesterCreatedRole",
     "properties": {
@@ -35925,22 +36207,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "SetGroupMigrationStatus",
-    "path": "ManageCollaborators/Src/Actions/SetGroupMigrationStatus",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "301",
-      "SourceBytecodeSha256": "3feb402d4155f7cc050b0c0649f6fc56e2107a8e63553021788370ca8d010eee",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "SetGroupOwnerId",
     "path": "ManageCollaborators/Src/Actions/SetGroupOwnerId",
     "properties": {
@@ -35997,6 +36263,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "839",
       "SourceBytecodeSha256": "c4807d18e320c99a9fc8a94f149e35a508f0befd9ef80d075f27b21d19d3aadd",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "SetPlayTesterEligibility",
+    "path": "ManageCollaborators/Src/Actions/SetPlayTesterEligibility",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "331",
+      "SourceBytecodeSha256": "5a294cf8a8557bfb89be10a1ea9c2434d9e37ef43f74bd1f5ed66366cf5f67f4",
       "Tags": ""
     },
     "unreadable": [
@@ -36091,8 +36373,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "313",
-      "SourceBytecodeSha256": "9d571a2a4edb2e43365c8e5fa26e5c127bdb0496f4472a037aab4c9c91299f43",
+      "SourceBytecodeBytes": "672",
+      "SourceBytecodeSha256": "defb894b3b5bf5968b36af9eae4925fc170ba36b2fcb05ad94ebb44c318d3786",
       "Tags": ""
     },
     "unreadable": [
@@ -36491,8 +36773,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2114",
-      "SourceBytecodeSha256": "62b314f008b2d336dcee62abf90f319db14f488752fda941ba753752f879bfaf",
+      "SourceBytecodeBytes": "7530",
+      "SourceBytecodeSha256": "2a22e3ca10acc41ce2c2e69691df7dec68592fceb9250c98af3f711367f62a6a",
       "Tags": ""
     },
     "unreadable": [
@@ -36603,8 +36885,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4965",
-      "SourceBytecodeSha256": "cead86501b7176fa1dbcedd6a565d0df57b94c415529d8835ed648b0066dbe16",
+      "SourceBytecodeBytes": "7398",
+      "SourceBytecodeSha256": "b5e9a8aa543df14687cfc4173b4f08621d819705226820f3ea060e8277233e02",
       "Tags": ""
     },
     "unreadable": [
@@ -36619,8 +36901,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1533",
-      "SourceBytecodeSha256": "ef87d9d4cf19f1ed910281a0e29f2aed03bbd65c1a5de7f51479797e404e2867",
+      "SourceBytecodeBytes": "1588",
+      "SourceBytecodeSha256": "f61b7edc512fe023ea5899e29f4f05d9f30a660d76012c73c72578360bd6acf6",
       "Tags": ""
     },
     "unreadable": [
@@ -36667,8 +36949,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "9923",
-      "SourceBytecodeSha256": "320554ec33ce97440925f944b50910a7b91e44104d475cd1d0eecc3ff38d32cd",
+      "SourceBytecodeBytes": "9980",
+      "SourceBytecodeSha256": "866f9c0ab1db9e303008d41de1e91f7730384ce276ee9dbb2c9db0ecfb6bff1b",
       "Tags": ""
     },
     "unreadable": [
@@ -37195,8 +37477,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4525",
-      "SourceBytecodeSha256": "48d133252bbea05563b01ace0d02ee0285bf0b71ab57ec4695ef4c4b1c3456a5",
+      "SourceBytecodeBytes": "4380",
+      "SourceBytecodeSha256": "0cea7e1033f7666f279189b359a607c85df7b2d5b094b1dd501189d2efb83dee",
       "Tags": ""
     },
     "unreadable": [
@@ -37403,8 +37685,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "19314",
-      "SourceBytecodeSha256": "597956c4b3d1568c68bdb6679685fa33c2e45b801362d0b346107244fad77813",
+      "SourceBytecodeBytes": "19020",
+      "SourceBytecodeSha256": "bfa6ffad6958d3b819cb6a3c5790bf877677f715c5e9f39171d37786b924fce7",
       "Tags": ""
     },
     "unreadable": [
@@ -37451,8 +37733,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "30492",
-      "SourceBytecodeSha256": "d43458ed639b3c5e2e2ba17e9e6e5b3e146e28ce89fdaad3a60d4a7226e40b8e",
+      "SourceBytecodeBytes": "27844",
+      "SourceBytecodeSha256": "fe04b1b94a7e5ccc6594a157e48de5530089dac83c7a4a6bab6b0baa1056c8be",
       "Tags": ""
     },
     "unreadable": [
@@ -37990,7 +38272,7 @@
   {
     "class": "ModuleScript",
     "name": "StarBurst",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/StarBurst",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/StarBurst",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -38315,8 +38597,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "6463",
-      "SourceBytecodeSha256": "7cc34b0c836326ee279fb0df0deab4fe4b6dc4c86a162a931f06e602884d2482",
+      "SourceBytecodeBytes": "7212",
+      "SourceBytecodeSha256": "8783c8d299a036cafb24ed4ba1bee4dbf0f8e4c5e8ada6243caf51a65b9c2550",
       "Tags": ""
     },
     "unreadable": [
@@ -38347,8 +38629,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3253",
-      "SourceBytecodeSha256": "260e0daee972b56f0607b66f6458c26503afc32fec6488fe0f5292fed4377759",
+      "SourceBytecodeBytes": "3519",
+      "SourceBytecodeSha256": "0867008cb7d1c3ad218f381532a31099d8a151d4f2d03af29ad86596868a5539",
       "Tags": ""
     },
     "unreadable": [
@@ -38379,8 +38661,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "99",
-      "SourceBytecodeSha256": "f0556891a951fb891647e400786bd6d41fa16188b63eaabcc933fc0077413562",
+      "SourceBytecodeBytes": "112",
+      "SourceBytecodeSha256": "ec44e3652f85ba4167b7f0db3ab8471df95fd69b84d7f9e8c749a0fe623c2766",
       "Tags": ""
     },
     "unreadable": [
@@ -39563,8 +39845,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2369",
-      "SourceBytecodeSha256": "d1972faf2289c8661baa4c7fa025b2260890ff3930fa53c61b397ccd8df37334",
+      "SourceBytecodeBytes": "2229",
+      "SourceBytecodeSha256": "8749fb53d2d6e73c921690cc0836066d5c08a803484f9f3e4a6666a2a0c80f0a",
       "Tags": ""
     },
     "unreadable": [
@@ -41003,8 +41285,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4850",
-      "SourceBytecodeSha256": "ff81594a1f490756a741ef24dd46537da334fdf716e4a431f424a4758d264d5d",
+      "SourceBytecodeBytes": "5276",
+      "SourceBytecodeSha256": "5bb7ed212e69caa9c8fbcc58584d2bec27fdba285c71882bb35c8e07714fa567",
       "Tags": ""
     },
     "unreadable": [
@@ -41142,7 +41424,7 @@
   {
     "class": "ModuleScript",
     "name": "SuperCharge",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/SuperCharge",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/SuperCharge",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -41995,8 +42277,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "667",
-      "SourceBytecodeSha256": "af2fb5c81f491842df3399f78b661f6a86768584ad8de1ea22c417e663b5beeb",
+      "SourceBytecodeBytes": "730",
+      "SourceBytecodeSha256": "ef33f88f353d7940c2a9be578011b6e7502c109cfc641898c319d927e4ba7108",
       "Tags": ""
     },
     "unreadable": [
@@ -42731,8 +43013,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "361",
-      "SourceBytecodeSha256": "15f52213c841e9caa4152bbb7e92148fe7110561da54ab9e2009d9fb7d201d00",
+      "SourceBytecodeBytes": "363",
+      "SourceBytecodeSha256": "9c125febfc9d61543d6ff38b131ff4f641a983a5b4506ca45422c793f5ae0698",
       "Tags": ""
     },
     "unreadable": [
@@ -42797,6 +43079,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "4083",
       "SourceBytecodeSha256": "2660a77a9c0fa15377b3882d69f5bf009c5833a4fe11d1540f7c0fc8c0dcc72a",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Thumbnail",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Banner/Subcomponents/Thumbnail",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "2360",
+      "SourceBytecodeSha256": "6d4af43625de073766b03f1e6993cedef031152c8b5ac259798b58a23c9d84bf",
       "Tags": ""
     },
     "unreadable": [
@@ -42949,14 +43247,14 @@
   },
   {
     "class": "ModuleScript",
-    "name": "Tile.Root.story",
-    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile/Tile.Root.story",
+    "name": "Tile_DEPRECATED",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "21501",
-      "SourceBytecodeSha256": "2c090ef36836600a269fb698c9212d59a489673032e3c456aaedd7e53d4a11d2",
+      "SourceBytecodeBytes": "417",
+      "SourceBytecodeSha256": "0995b5fa70a09bd841741a7c41c2f56382f8bf2e7307b3fa76314850fb94f2f0",
       "Tags": ""
     },
     "unreadable": [
@@ -42965,24 +43263,8 @@
   },
   {
     "class": "ModuleScript",
-    "name": "Tile",
-    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "406",
-      "SourceBytecodeSha256": "b7bb9170fe34bcd29b577284ff2779e0251500ccec07f92d1e25c1b44cd24ceb",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Tile",
-    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile/Tile",
+    "name": "Tile_DEPRECATED",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED/Tile_DEPRECATED",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -42997,14 +43279,30 @@
   },
   {
     "class": "ModuleScript",
-    "name": "TileActions",
-    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile/Actions/TileActions",
+    "name": "Tile.Root.story",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED/Tile.Root.story",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "660",
-      "SourceBytecodeSha256": "dcbd6739bd015c387fe8d81d6771ee353b4fb8e896481890977d87182c107864",
+      "SourceBytecodeBytes": "21520",
+      "SourceBytecodeSha256": "606744e0c449a50dfd77fa3d33b179ccfec297f8eb91fab476c9edabd4e285a0",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "TileActions",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED/Actions/TileActions",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "671",
+      "SourceBytecodeSha256": "33bbbeb61f776fca4d1e3bbf7dbb5385474a8015d457b5c287d9344fe2fb3031",
       "Tags": ""
     },
     "unreadable": [
@@ -43030,13 +43328,13 @@
   {
     "class": "ModuleScript",
     "name": "TileContent",
-    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile/Content/TileContent",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED/Content/TileContent",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1009",
-      "SourceBytecodeSha256": "235a2328ef75d65716f7996762c2d6987b690a65d386ae56ed2664b8f161a12f",
+      "SourceBytecodeBytes": "1020",
+      "SourceBytecodeSha256": "7a16c2f637f6a3294f0423c9f56c5d7940c27b1184fe9b0a2bcb390118ca12f1",
       "Tags": ""
     },
     "unreadable": [
@@ -43046,7 +43344,7 @@
   {
     "class": "ModuleScript",
     "name": "TileContext",
-    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile/TileContext",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED/TileContext",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -43062,13 +43360,13 @@
   {
     "class": "ModuleScript",
     "name": "TileFooter",
-    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile/Footer/TileFooter",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED/Footer/TileFooter",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "580",
-      "SourceBytecodeSha256": "cb4e5da3384a9aedad8f6d9b56ab4390027a15e1ff7b5ba46487d8fa40b26997",
+      "SourceBytecodeBytes": "591",
+      "SourceBytecodeSha256": "ee4fed6fb051d6f9e29321e45b9abec2d90cb21a300bb62879ee15bebcc96718",
       "Tags": ""
     },
     "unreadable": [
@@ -43078,13 +43376,13 @@
   {
     "class": "ModuleScript",
     "name": "TileHeader",
-    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile/Header/TileHeader",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED/Header/TileHeader",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2814",
-      "SourceBytecodeSha256": "d5c9abb88825f4de19909e44050c80cf70fc8d05eb11dfe8f1e6c5dd7c5acd0f",
+      "SourceBytecodeBytes": "2825",
+      "SourceBytecodeSha256": "7c8f39ed7b08cf082224b13664849c30f957f10c3f08052ef11834e3d5f88268",
       "Tags": ""
     },
     "unreadable": [
@@ -43094,13 +43392,13 @@
   {
     "class": "ModuleScript",
     "name": "TileMedia",
-    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile/Media/TileMedia",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED/Media/TileMedia",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3041",
-      "SourceBytecodeSha256": "e372338165a3464c7b3cc9d515030b159d858d19dd63a3b041ff017a6f2c2e16",
+      "SourceBytecodeBytes": "3052",
+      "SourceBytecodeSha256": "7c2137b3f426e7252556ac96063dbc68026c76c5d693b8622337f887708233c3",
       "Tags": ""
     },
     "unreadable": [
@@ -43739,8 +44037,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "7389",
-      "SourceBytecodeSha256": "2ead33ab17095cabf7bea2a740e72ff8b8cb3eff8dedd22e2e790dd725464fd6",
+      "SourceBytecodeBytes": "7259",
+      "SourceBytecodeSha256": "218016001094d519e60c4b4f0fa400f2e08ff60d9b965b3488655c27586cab30",
       "Tags": ""
     },
     "unreadable": [
@@ -44043,8 +44341,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1729",
-      "SourceBytecodeSha256": "2dc9769e392076657ab5b0e48acaee849eb7d3d85286fc9bad33b1411dcf0813",
+      "SourceBytecodeBytes": "2408",
+      "SourceBytecodeSha256": "ec38a7b7a9ffe352b3b87dc8fc147370df39e5c616b04f0482a4e4946503ff41",
       "Tags": ""
     },
     "unreadable": [
@@ -44806,7 +45104,7 @@
   {
     "class": "ModuleScript",
     "name": "types",
-    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.0.0/RbxDesignFoundations/types",
+    "path": "ManageCollaborators/Packages/_Index/RbxDesignFoundations-31ab8d40-5.2.0/RbxDesignFoundations/types",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -44892,7 +45190,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "44",
-      "SourceBytecodeSha256": "2e2a180e8694dd35f6c30f53b859a8a3ec2de21cb4590ee6e408420a32be5f93",
+      "SourceBytecodeSha256": "8e431cc6819eb594a71bf5011a5bc0bd5d4d03b6dd0142acf6963d345d19e332",
       "Tags": ""
     },
     "unreadable": [
@@ -44907,8 +45205,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "568",
-      "SourceBytecodeSha256": "4db642b918cc7311d45a35bc9898d700e0376836ca23c096ec8659e595080e8c",
+      "SourceBytecodeBytes": "570",
+      "SourceBytecodeSha256": "2c5b3686ec5b1a9e28a73b65ec74545f9a5af871c56984d32525f285308742d7",
       "Tags": ""
     },
     "unreadable": [
@@ -45085,6 +45383,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "865",
       "SourceBytecodeSha256": "257d899a62bb459928dbf66849112582960f5139445f5ae8cd1791f26a49d8f9",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "UpsellContent",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Banner/Subcomponents/UpsellContent",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "2049",
+      "SourceBytecodeSha256": "1dcecd41c34d92afedd3d169d8028642c6db49ae7afd24c70602321b6cfce2f5",
       "Tags": ""
     },
     "unreadable": [
@@ -45387,8 +45701,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3837",
-      "SourceBytecodeSha256": "bc9a34dfba972b4a5f1020dd69de409859a1e6723b31247de3d26a58c82fd002",
+      "SourceBytecodeBytes": "3917",
+      "SourceBytecodeSha256": "507692f164f83280cf8d7335d9c5c1f7b0ce23df8f058798464c271ead0479b9",
       "Tags": ""
     },
     "unreadable": [
@@ -45483,8 +45797,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3018",
-      "SourceBytecodeSha256": "5be36bfa7dd807bd6d002a6ca7221c02b7d152d2468c043cb29e603cc832d5e4",
+      "SourceBytecodeBytes": "2698",
+      "SourceBytecodeSha256": "3581378baf4ec65ecb4326450aaf8880d7294857090e6ab4b28db77de92a1746",
       "Tags": ""
     },
     "unreadable": [
@@ -45549,6 +45863,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "2466",
       "SourceBytecodeSha256": "71a5834b537a5c51e0a382dfc8a597f1f65e70688c59c4951d0c454ea7e5b288",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "useCardVariants",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Card/useCardVariants",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "4650",
+      "SourceBytecodeSha256": "755d59a7ff3873bfce4c8312f6e711755e0750a8f76ddae0fe5c65a1d957df84",
       "Tags": ""
     },
     "unreadable": [
@@ -45627,8 +45957,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1588",
-      "SourceBytecodeSha256": "f6afa50e971a2ce80c8727da1d34f7caaec86d37e870ea65cf6028ad3abd2666",
+      "SourceBytecodeBytes": "1807",
+      "SourceBytecodeSha256": "97089827b950ba2dc0b5c68bf623d7277a98ac957b1ea79215f3fc081d883d41",
       "Tags": ""
     },
     "unreadable": [
@@ -47819,8 +48149,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5090",
-      "SourceBytecodeSha256": "5ee3cc6fb81c1c4f5cfc0022f516feb40d214295c42764760bdc5330f637e361",
+      "SourceBytecodeBytes": "5882",
+      "SourceBytecodeSha256": "a212289ec76ce4a8c91930fca8e2ca7f24ccb00a85b5115e74b1a4ef6a525b42",
       "Tags": ""
     },
     "unreadable": [
@@ -48022,7 +48352,7 @@
   {
     "class": "ModuleScript",
     "name": "useTile",
-    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile/useTile",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED/useTile",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -48141,6 +48471,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "908",
       "SourceBytecodeSha256": "efe5e9a40540621512ef7caa0ef73c30c0273397124ca368691179ef0073832e",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "useUpsellContentVariants",
+    "path": "ManageCollaborators/Packages/_Index/Foundation/Foundation/Components/Banner/Subcomponents/useUpsellContentVariants",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1733",
+      "SourceBytecodeSha256": "fe7fb66cd7b006d0657591b211fc63f92323c3259fd3106c25766295d018cb9f",
       "Tags": ""
     },
     "unreadable": [
@@ -49275,8 +49621,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1205",
-      "SourceBytecodeSha256": "3ac8929ab4fb90db342632036665b08f16a88f4efd1f8d79544164d2035101ba",
+      "SourceBytecodeBytes": "1268",
+      "SourceBytecodeSha256": "dac05e3952f9185db98e18cee2d1f707152809a3884d0845f9f947e25af2b856",
       "Tags": ""
     },
     "unreadable": [

@@ -27,7 +27,7 @@ local Constants = require(Foundation.Constants)
 
 type StatusIndicatorVariantProps = {
 	container: { tag: string, backgroundStyle: ColorStyleValue?, size: UDim2? }, -- only populated if bg tag is non-compliant },
-	content: { tag: string, style: ColorStyleValue?, font: Font },
+	content: { tag: string, style: ColorStyleValue?, font: Font, typography: { FontSize: number, LineHeight: number }? },
 	ring: { tag: string, size: UDim2? }?,
 	stroke: Types.Stroke?,
 }
@@ -42,6 +42,7 @@ function variantsFactory(tokens: Tokens)
 			-- To-Do: Use tag for font when BuilderSansSemiBold is supported as token / tag
 			font = BuilderSansSemiBold,
 		},
+		stroke = if Flags.FoundationStatusIndicatorDesignUpdate then { Thickness = tokens.Stroke.Thicker } else nil,
 	}
 
 	local variants: { [StatusIndicatorVariant]: VariantProps } = {
@@ -69,27 +70,14 @@ function variantsFactory(tokens: Tokens)
 				style = tokens.LightMode.Content.Emphasis,
 			},
 		},
-		[StatusIndicatorVariant.Emphasis] = if Flags.FoundationActionEmphasisStatusIndicator
-			then {
-				container = {
-					tag = if Flags.FoundationSystemEmphasisNonActions
-						then "bg-system-emphasis"
-						else "bg-action-emphasis",
-				},
-				content = {
-					style = if Flags.FoundationSystemEmphasisNonActions
-						then tokens.DarkMode.Content.Emphasis
-						else tokens.Color.ActionEmphasis.Foreground,
-				},
-			}
-			else {
-				container = {
-					tag = "bg-system-emphasis",
-				},
-				content = {
-					style = tokens.DarkMode.Content.Emphasis,
-				},
+		[StatusIndicatorVariant.Emphasis] = {
+			container = {
+				tag = "bg-system-emphasis",
 			},
+			content = {
+				style = tokens.DarkMode.Content.Emphasis,
+			},
+		},
 		[StatusIndicatorVariant.Neutral] = {
 			container = {
 				tag = "bg-system-neutral",
@@ -124,7 +112,11 @@ function variantsFactory(tokens: Tokens)
 
 	local hasValue: { [boolean]: any } = {
 		[true] = {
-			container = { tag = "row align-x-center align-y-center size-400-400 auto-x padding-xsmall" },
+			container = {
+				tag = if Flags.FoundationStatusIndicatorDesignUpdate
+					then "row align-x-center align-y-center auto-x padding-xsmall"
+					else "row align-x-center align-y-center size-400-400 auto-x padding-xsmall",
+			},
 		},
 	}
 
@@ -150,17 +142,24 @@ function variantsFactory(tokens: Tokens)
 		[StatusIndicatorSize.XSmall] = {
 			container = { size = UDim2.fromOffset(tokens.Size.Size_150, tokens.Size.Size_150) },
 			ring = { size = UDim2.fromOffset(tokens.Size.Size_150 / 2, tokens.Size.Size_150 / 2) },
-			stroke = { Thickness = tokens.Stroke.Standard },
+			stroke = if Flags.FoundationStatusIndicatorDesignUpdate
+				then nil
+				else { Thickness = tokens.Stroke.Standard },
 		},
 		[StatusIndicatorSize.Small] = {
 			container = { size = UDim2.fromOffset(tokens.Size.Size_200, tokens.Size.Size_200) },
 			ring = { size = UDim2.fromOffset(tokens.Size.Size_200 / 2, tokens.Size.Size_200 / 2) },
-			stroke = { Thickness = tokens.Size.Size_50 },
+			stroke = if Flags.FoundationStatusIndicatorDesignUpdate then nil else { Thickness = tokens.Size.Size_50 },
 		},
 		[StatusIndicatorSize.Medium] = {
 			container = { size = UDim2.fromOffset(tokens.Size.Size_250, tokens.Size.Size_250) },
 			ring = { size = UDim2.fromOffset(tokens.Size.Size_250 / 2, tokens.Size.Size_250 / 2) },
-			stroke = { Thickness = tokens.Size.Size_50 },
+			stroke = if Flags.FoundationStatusIndicatorDesignUpdate then nil else { Thickness = tokens.Size.Size_50 },
+		},
+		[StatusIndicatorSize.Large] = {
+			container = { size = UDim2.fromOffset(tokens.Size.Size_500, tokens.Size.Size_500) },
+			ring = { size = UDim2.fromOffset(tokens.Size.Size_500 / 2, tokens.Size.Size_500 / 2) },
+			stroke = { Thickness = tokens.Stroke.Thicker },
 		},
 		[StatusIndicatorSize.Pictogram] = {
 			container = { size = UDim2.fromOffset(tokens.Size.Size_500, tokens.Size.Size_500) },
@@ -169,12 +168,30 @@ function variantsFactory(tokens: Tokens)
 		},
 	}
 
+	local numericDefault = {
+		container = { size = UDim2.fromOffset(tokens.Size.Size_400, tokens.Size.Size_400) },
+		content = { typography = tokens.Typography.LabelSmall },
+	}
+	local numericLarge = {
+		container = { size = UDim2.fromOffset(tokens.Size.Size_500, tokens.Size.Size_500) },
+		content = { typography = tokens.Typography.LabelMedium },
+	}
+
+	local numericSizes: { [StatusIndicatorSize]: VariantProps } = {
+		[StatusIndicatorSize.XSmall] = numericDefault,
+		[StatusIndicatorSize.Small] = numericDefault,
+		[StatusIndicatorSize.Medium] = numericDefault,
+		[StatusIndicatorSize.Large] = numericLarge,
+		[StatusIndicatorSize.Pictogram] = numericLarge,
+	}
+
 	return {
 		common = common,
 		variants = variants,
 		hasValue = hasValue,
 		shape = shape,
 		sizes = sizes,
+		numericSizes = if Flags.FoundationStatusIndicatorDesignUpdate then numericSizes else nil :: never,
 	}
 end
 
@@ -211,7 +228,10 @@ return function(
 		props.variants[variant],
 		props.hasValue[hasValue],
 		props.shape[shape],
-		if not hasValue then props.sizes[size] else {},
+		if Flags.FoundationStatusIndicatorDesignUpdate
+			then if hasValue then props.numericSizes[size] else props.sizes[size]
+			elseif not hasValue then props.sizes[size]
+			else {},
 		commonMask
 	)
 end

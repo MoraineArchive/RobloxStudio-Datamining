@@ -141,6 +141,14 @@ local function Coachmark(coachmarkProps: CoachmarkProps, ref: React.Ref<GuiObjec
 	local needsCloseAffordancePadding = if Flags.FoundationEducationalTooltipMinMediaWidth
 		then props.onClose and not props.media
 		else nil
+	local isBodyOnlyContent = if Flags.FoundationEducationalTooltipBodyOnlyContentLayout
+		then props.title == ""
+			and props.text ~= nil
+			and props.text ~= ""
+			and props.media == nil
+			and props.steps == nil
+			and (props.actions == nil or #props.actions == 0)
+		else false
 
 	return React.createElement(Popover.Root, {
 		isOpen = props.isOpen,
@@ -213,27 +221,47 @@ local function Coachmark(coachmarkProps: CoachmarkProps, ref: React.Ref<GuiObjec
 							then {
 								[if Flags.FoundationEducationalTooltipRefresh
 									then "col auto-xy"
-									else "col gap-xsmall auto-xy"] = true,
+									else "col gap-xsmall auto-xy"] = if Flags.FoundationEducationalTooltipBodyOnlyContentLayout
+									then not isBodyOnlyContent
+									else true,
+								["col align-y-center auto-xy"] = if Flags.FoundationEducationalTooltipBodyOnlyContentLayout
+									then isBodyOnlyContent
+									else false,
 								[if Flags.FoundationEducationalTooltipRefresh
 									then "padding-medium"
-									else "padding-x-medium padding-bottom-xsmall padding-top-medium"] = not needsCloseAffordancePadding,
+									else "padding-x-medium padding-bottom-xsmall padding-top-medium"] = not needsCloseAffordancePadding
+									and not isBodyOnlyContent,
 							}
 							else if Flags.FoundationEducationalTooltipRefresh
 								then "col auto-xy padding-medium"
 								else "col gap-xsmall auto-xy padding-x-medium padding-bottom-xsmall padding-top-medium",
-						padding = if Flags.FoundationEducationalTooltipMinMediaWidth
-								and needsCloseAffordancePadding
+						padding = if isBodyOnlyContent
 							then {
-								top = UDim.new(0, tokens.Padding.Medium),
-								bottom = UDim.new(
-									0,
-									if Flags.FoundationEducationalTooltipRefresh
-										then tokens.Padding.Medium
-										else tokens.Padding.XSmall
-								),
+								top = UDim.new(0, tokens.Padding.Small),
+								bottom = UDim.new(0, tokens.Padding.Small),
 								left = UDim.new(0, tokens.Padding.Medium),
-								right = UDim.new(0, tokens.Size.Size_1200),
+								right = UDim.new(
+									0,
+									if needsCloseAffordancePadding then tokens.Size.Size_1200 else tokens.Padding.Medium
+								),
 							}
+							else if Flags.FoundationEducationalTooltipMinMediaWidth
+									and needsCloseAffordancePadding
+								then {
+									top = UDim.new(0, tokens.Padding.Medium),
+									bottom = UDim.new(
+										0,
+										if Flags.FoundationEducationalTooltipRefresh
+											then tokens.Padding.Medium
+											else tokens.Padding.XSmall
+									),
+									left = UDim.new(0, tokens.Padding.Medium),
+									right = UDim.new(0, tokens.Size.Size_1200),
+								}
+								else nil,
+						-- Matches the Small CloseAffordance height so a single line centers against it
+						sizeConstraint = if isBodyOnlyContent
+							then { MinSize = Vector2.new(0, tokens.Size.Size_800) }
 							else nil,
 					}, {
 						StepIndicator = if props.steps

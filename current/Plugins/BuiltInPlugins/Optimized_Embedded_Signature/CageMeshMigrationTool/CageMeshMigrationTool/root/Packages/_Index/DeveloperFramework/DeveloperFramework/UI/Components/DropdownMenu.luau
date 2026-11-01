@@ -53,7 +53,6 @@ local SharedFlags = require(Framework.SharedFlags)
 local FFlagDevFrameworkDropdownMenuHeight = SharedFlags.getFFlagDevFrameworkDropdownMenuHeight()
 
 local FFlagDevFrameworkLimitDropdownHeight = game:DefineFastFlag("DevFrameworkLimitDropdownHeight", false)
-local FFlagDevFrameworkDropdownItemDisabled = SharedFlags.getFFlagDevFrameworkDropdownItemDisabled()
 
 local Util = require(Framework.Util)
 local prioritize = Util.prioritize
@@ -235,9 +234,7 @@ function DropdownMenu:init()
 			if item.Icon then
 				icon = item.Icon
 			end
-			if FFlagDevFrameworkDropdownItemDisabled then
-				isDisabled = item.Disabled == true
-			end
+			isDisabled = item.Disabled == true
 		else
 			imageStyle = {
 				Image = icon,
@@ -245,13 +242,13 @@ function DropdownMenu:init()
 		end
 
 		local textLabelTags = if supportsStyleSheets and isModern then "BuilderSans Muted" else ""
-		if FFlagDevFrameworkDropdownItemDisabled and isDisabled then
+		if isDisabled then
 			textLabelTags = textLabelTags .. " Disabled"
 		end
 
 		return Roact.createElement(Button, {
 			LayoutOrder = index,
-			OnClick = if FFlagDevFrameworkDropdownItemDisabled and isDisabled then function() end else activated,
+			OnClick = if isDisabled then function() end else activated,
 			OnMouseEnter = if FFlagDevFrameworkDropdownMenuHeight
 				then function()
 					if props.OnHoveredItemChanged then

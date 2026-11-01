@@ -1,4 +1,3 @@
-?$_Ph@$00@std@@V	public: virtual ?? ?? std::$00::$_Ph( ?? ) ?? 
 ?$task@E@Concurrency@@	 ?? Concurrency::E::$task
 ??0?$QList@VQItemSelectionRange@@@@QEAA@AEBV0@@Z	public: __cdecl QList<class QItemSelectionRange>::QList<class QItemSelectionRange>(class QList<class QItemSelectionRange> const & __ptr64) __ptr64
 ??0?$QVector@VQPointF@@@@QEAA@$$QEAV0@@Z	public: __cdecl QVector<class QPointF>::QVector<class QPointF>(class QVector<class QPointF> && __ptr64) __ptr64
@@ -101,7 +100,6 @@
 ??0QDateTime@@QEAA@$$QEAV0@@Z	public: __cdecl QDateTime::QDateTime(class QDateTime && __ptr64) __ptr64
 ??0QDateTime@@QEAA@AEBV0@@Z	public: __cdecl QDateTime::QDateTime(class QDateTime const & __ptr64) __ptr64
 ??0QDateTime@@QEAA@XZ	public: __cdecl QDateTime::QDateTime(void) __ptr64
-??0QDeadlineTimer@@QEAA@W4ForeverConstant@0@W4TimerType@Qt@@@Z	public: __cdecl QDeadlineTimer::QDeadlineTimer(enum QDeadlineTimer::ForeverConstant,enum Qt::TimerType) __ptr64
 ??0QDebug@@QEAA@PEAVQString@@@Z	public: __cdecl QDebug::QDebug(class QString * __ptr64) __ptr64
 ??0QDialog@@QEAA@PEAVQWidget@@V?$QFlags@W4WindowType@Qt@@@@@Z	public: __cdecl QDialog::QDialog(class QWidget * __ptr64,class QFlags<enum Qt::WindowType>) __ptr64
 ??0QDialogButtonBox@@QEAA@PEAVQWidget@@@Z	public: __cdecl QDialogButtonBox::QDialogButtonBox(class QWidget * __ptr64) __ptr64
@@ -132,6 +130,7 @@
 ??0QFont@@QEAA@XZ	public: __cdecl QFont::QFont(void) __ptr64
 ??0QFontDatabase@@QEAA@XZ	public: __cdecl QFontDatabase::QFontDatabase(void) __ptr64
 ??0QFontDialog@@QEAA@AEBVQFont@@PEAVQWidget@@@Z	public: __cdecl QFontDialog::QFontDialog(class QFont const & __ptr64,class QWidget * __ptr64) __ptr64
+??0QFontDialog@@QEAA@PEAVQWidget@@@Z	public: __cdecl QFontDialog::QFontDialog(class QWidget * __ptr64) __ptr64
 ??0QFontMetrics@@QEAA@AEBVQFont@@@Z	public: __cdecl QFontMetrics::QFontMetrics(class QFont const & __ptr64) __ptr64
 ??0QFontMetricsF@@QEAA@AEBVQFont@@@Z	public: __cdecl QFontMetricsF::QFontMetricsF(class QFont const & __ptr64) __ptr64
 ??0QFormLayout@@QEAA@PEAVQWidget@@@Z	public: __cdecl QFormLayout::QFormLayout(class QWidget * __ptr64) __ptr64
@@ -667,6 +666,7 @@
 ??5?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@AEAI@Z	public: class std::basic_istream<char,struct std::char_traits<char> > & __ptr64 __cdecl std::basic_istream<char,struct std::char_traits<char> >::operator>>(unsigned int & __ptr64) __ptr64
 ??5?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@AEAK@Z	public: class std::basic_istream<char,struct std::char_traits<char> > & __ptr64 __cdecl std::basic_istream<char,struct std::char_traits<char> >::operator>>(unsigned long & __ptr64) __ptr64
 ??5?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@AEAM@Z	public: class std::basic_istream<char,struct std::char_traits<char> > & __ptr64 __cdecl std::basic_istream<char,struct std::char_traits<char> >::operator>>(float & __ptr64) __ptr64
+??5?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@AEAN@Z	public: class std::basic_istream<char,struct std::char_traits<char> > & __ptr64 __cdecl std::basic_istream<char,struct std::char_traits<char> >::operator>>(double & __ptr64) __ptr64
 ??5?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@AEA_J@Z	public: class std::basic_istream<char,struct std::char_traits<char> > & __ptr64 __cdecl std::basic_istream<char,struct std::char_traits<char> >::operator>>(__int64 & __ptr64) __ptr64
 ??5?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@AEA_K@Z	public: class std::basic_istream<char,struct std::char_traits<char> > & __ptr64 __cdecl std::basic_istream<char,struct std::char_traits<char> >::operator>>(unsigned __int64 & __ptr64) __ptr64
 ??5?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@AEA_N@Z	public: class std::basic_istream<char,struct std::char_traits<char> > & __ptr64 __cdecl std::basic_istream<char,struct std::char_traits<char> >::operator>>(bool & __ptr64) __ptr64
@@ -766,20 +766,14 @@
 ?AVChannelArgs@grpc_core@@AEBV01@@Z	private: grpc_core __swift_2 grpc_core::AVChannelArgs()const __ptr64
 ?AVChannelArgs@grpc_core@@AEBV01@PEAVStatus@lts_20240116@absl@@@Z	private: grpc_core __swift_2 grpc_core::AVChannelArgs(class absl::lts_20240116::Status * __ptr64)const __ptr64
 ?AVChannelArgs@grpc_core@@V01@@Z	public: virtual 
-?AVComponentSpec@Component@RBX@@XZ	[thunk]:public: virtual ?? 
-?AVVariant@Reflection@RBX@@AEBV012@@Z	private: RBX::Reflection __swift_2 RBX::Reflection::AVVariant()const __ptr64
-?AW4CreationDecision@Component@RBX@@XZ	[thunk]:public: virtual ?? 
-?AW4EdgeIndex@Mesh@RBX@@AEBVEditableMeshData@12@W4012@@Z	private: unsigned char __swift_2 RBX::Mesh::AW4EdgeIndex(RBX::Mesh::itableMeshData,enum RBX::Mesh::AW4EdgeIndex)const __ptr64
-?AW4GeoGenResult@GeoGen@RBX@@AEBUInputConfig@12@PEAV?$DynamicBuffers@UDefaultSchema@GeoGen@RBX@@@12@AEBV?$BufferRanges@UDefaultSchema@GeoGen@RBX@@@12@AEAUGeometryInfo@DefaultSchema@12@@Z	private: unsigned int __swift_2 RBX::GeoGen::AW4GeoGenResult(RBX::GeoGen::putConfig,class RBX::GeoGen::DynamicBuffers<struct RBX::GeoGen::DefaultSchema> * __ptr64,class RBX::GeoGen::BufferRanges<struct RBX::GeoGen::DefaultSchema> const & __ptr64,struct RBX::GeoGen::DefaultSchema::GeometryInfo & __ptr64)const __ptr64
 ?AddChild@FbxNode@fbxsdk@@QEAA_NPEAV12@@Z	public: bool __cdecl fbxsdk::FbxNode::AddChild(class fbxsdk::FbxNode * __ptr64) __ptr64
 ?AddMaterial@FbxNode@fbxsdk@@QEAAHPEAVFbxSurfaceMaterial@2@@Z	public: int __cdecl fbxsdk::FbxNode::AddMaterial(class fbxsdk::FbxSurfaceMaterial * __ptr64) __ptr64
 ?BA@??CreateUDPPorts@AllocationSequence@webrtc@@AEAAXXZ@	 ?? `private: void __cdecl webrtc::AllocationSequence::CreateUDPPorts(void) __ptr64'::BA
-?BA@??UpdateTransceiverChannel@SdpOfferAnswerHandler@webrtc@@AEAA?AVRTCError@3@V?$scoped_refptr@V?$RtpTransceiverProxyWithInternal@VRtpTransceiver@webrtc@@@webrtc@@@3@AEBVContentInfo@3@PEBVContentGroup@3@@Z@	 ?? `private: class webrtc::RTCError __cdecl webrtc::SdpOfferAnswerHandler::UpdateTransceiverChannel(class webrtc::scoped_refptr<class webrtc::RtpTransceiverProxyWithInternal<class webrtc::RtpTransceiver> >,class webrtc::ContentInfo const & __ptr64,class webrtc::ContentGroup const * __ptr64) __ptr64'::BA
 ?BE@??GetNetworks@BasicPortAllocatorSession@webrtc@@AEAA?AV?$vector@PEBVNetwork@webrtc@@V?$allocator@PEBVNetwork@webrtc@@@std@@@std@@XZ@	 ?? `private: class std::vector<class webrtc::Network const * __ptr64,class std::allocator<class webrtc::Network const * __ptr64> > __cdecl webrtc::BasicPortAllocatorSession::GetNetworks(void) __ptr64'::BE
 ?BH@??GetNetworks@BasicPortAllocatorSession@webrtc@@AEAA?AV?$vector@PEBVNetwork@webrtc@@V?$allocator@PEBVNetwork@webrtc@@@std@@@std@@XZ@	 ?? `private: class std::vector<class webrtc::Network const * __ptr64,class std::allocator<class webrtc::Network const * __ptr64> > __cdecl webrtc::BasicPortAllocatorSession::GetNetworks(void) __ptr64'::BH
-?BM@??CreateTurnClientSocket@TurnPort@webrtc@@AEAA_NXZ@	 ?? `private: bool __cdecl webrtc::TurnPort::CreateTurnClientSocket(void) __ptr64'::BM
 ?Buffer@FbxString@fbxsdk@@QEAAPEADXZ	public: char * __ptr64 __cdecl fbxsdk::FbxString::Buffer(void) __ptr64
 ?Buffer@FbxString@fbxsdk@@QEBAPEBDXZ	public: char const * __ptr64 __cdecl fbxsdk::FbxString::Buffer(void)const __ptr64
+?CF@??CreateTurnClientSocket@TurnPort@webrtc@@AEAA_NXZ@	 ?? `private: bool __cdecl webrtc::TurnPort::CreateTurnClientSocket(void) __ptr64'::CF
 ?ClassId@FbxAnimCurve@fbxsdk@@2VFbxClassId@2@A	public: static class fbxsdk::FbxClassId fbxsdk::FbxAnimCurve::ClassId
 ?ClassId@FbxAnimCurveNode@fbxsdk@@2VFbxClassId@2@A	public: static class fbxsdk::FbxClassId fbxsdk::FbxAnimCurveNode::ClassId
 ?ClassId@FbxAnimLayer@fbxsdk@@2VFbxClassId@2@A	public: static class fbxsdk::FbxClassId fbxsdk::FbxAnimLayer::ClassId
@@ -924,7 +918,6 @@
 ?MultT@FbxAMatrix@fbxsdk@@QEBA?AVFbxVector4@2@AEBV32@@Z	public: class fbxsdk::FbxVector4 __cdecl fbxsdk::FbxAMatrix::MultT(class fbxsdk::FbxVector4 const & __ptr64)const __ptr64
 ?N@??CreateTurnPort@AllocationSequence@webrtc@@AEAAXAEBURelayServerConfig@3@H@Z@	 ?? `private: void __cdecl webrtc::AllocationSequence::CreateTurnPort(struct webrtc::RelayServerConfig const & __ptr64,int) __ptr64'::N
 ?Normalize@FbxVector4@fbxsdk@@QEAAXXZ	public: void __cdecl fbxsdk::FbxVector4::Normalize(void) __ptr64
-?O@??CreateChannels@SdpOfferAnswerHandler@webrtc@@AEAA?AVRTCError@3@AEBVSessionDescription@3@@Z@	 ?? `private: class webrtc::RTCError __cdecl webrtc::SdpOfferAnswerHandler::CreateChannels(class webrtc::SessionDescription const & __ptr64) __ptr64'::O
 ?ObjectType@FbxCriteria@fbxsdk@@SA?AV12@AEBVFbxClassId@2@@Z	public: static class fbxsdk::FbxCriteria __cdecl fbxsdk::FbxCriteria::ObjectType(class fbxsdk::FbxClassId const & __ptr64)
 ?QStringList_contains@QtPrivate@@YA_NPEBVQStringList@@AEBVQString@@W4CaseSensitivity@Qt@@@Z	bool __cdecl QtPrivate::QStringList_contains(class QStringList const * __ptr64,class QString const & __ptr64,enum Qt::CaseSensitivity)
 ?QStringList_join@QtPrivate@@YA?AVQString@@PEBVQStringList@@PEBVQChar@@H@Z	class QString __cdecl QtPrivate::QStringList_join(class QStringList const * __ptr64,class QChar const * __ptr64,int)
@@ -1463,7 +1456,6 @@
 ?createNode@QMapDataBase@@QEAAPEAUQMapNodeBase@@HHPEAU2@_N@Z	public: struct QMapNodeBase * __ptr64 __cdecl QMapDataBase::createNode(int,int,struct QMapNodeBase * __ptr64,bool) __ptr64
 ?createPopupMenu@QMainWindow@@UEAAPEAVQMenu@@XZ	public: virtual class QMenu * __ptr64 __cdecl QMainWindow::createPopupMenu(void) __ptr64
 ?createStandardContextMenu@QLineEdit@@QEAAPEAVQMenu@@XZ	public: class QMenu * __ptr64 __cdecl QLineEdit::createStandardContextMenu(void) __ptr64
-?createThreadImpl@QThread@@CAPEAV1@$$QEAV?$future@X@std@@@Z	private: static class QThread * __ptr64 __cdecl QThread::createThreadImpl(class std::future<void> && __ptr64)
 ?createWidget@QWidgetAction@@MEAAPEAVQWidget@@PEAV2@@Z	protected: virtual class QWidget * __ptr64 __cdecl QWidgetAction::createWidget(class QWidget * __ptr64) __ptr64
 ?crend@QString@@QEBA?AV?$reverse_iterator@PEBVQChar@@@std@@XZ	public: class std::reverse_iterator<class QChar const * __ptr64> __cdecl QString::crend(void)const __ptr64
 ?critical@QMessageBox@@SA?AW4StandardButton@1@PEAVQWidget@@AEBVQString@@1V?$QFlags@W4StandardButton@QMessageBox@@@@W421@@Z	public: static enum QMessageBox::StandardButton __cdecl QMessageBox::critical(class QWidget * __ptr64,class QString const & __ptr64,class QString const & __ptr64,class QFlags<enum QMessageBox::StandardButton>,enum QMessageBox::StandardButton)
@@ -2309,6 +2301,7 @@
 ?isEmpty@QRegExp@@QEBA_NXZ	public: bool __cdecl QRegExp::isEmpty(void)const __ptr64
 ?isEmpty@QSize@@QEBA_NXZ	public: bool __cdecl QSize::isEmpty(void)const __ptr64
 ?isEmpty@QSpacerItem@@UEBA_NXZ	public: virtual bool __cdecl QSpacerItem::isEmpty(void)const __ptr64
+?isEmpty@QString@@QEBA_NXZ	public: bool __cdecl QString::isEmpty(void)const __ptr64
 ?isEmpty@QTextDocument@@QEBA_NXZ	public: bool __cdecl QTextDocument::isEmpty(void)const __ptr64
 ?isEmpty@QTranslator@@UEBA_NXZ	public: virtual bool __cdecl QTranslator::isEmpty(void)const __ptr64
 ?isEmpty@QUrl@@QEBA_NXZ	public: bool __cdecl QUrl::isEmpty(void)const __ptr64
@@ -2548,6 +2541,7 @@
 ?menu@QAction@@QEBAPEAVQMenu@@XZ	public: class QMenu * __ptr64 __cdecl QAction::menu(void)const __ptr64
 ?menu@QToolButton@@QEBAPEAVQMenu@@XZ	public: class QMenu * __ptr64 __cdecl QToolButton::menu(void)const __ptr64
 ?menuAction@QMenu@@QEBAPEAVQAction@@XZ	public: class QAction * __ptr64 __cdecl QMenu::menuAction(void)const __ptr64
+?menuWidget@QMainWindow@@QEBAPEAVQWidget@@XZ	public: class QWidget * __ptr64 __cdecl QMainWindow::menuWidget(void)const __ptr64
 ?merge@QTextFormat@@QEAAXAEBV1@@Z	public: void __cdecl QTextFormat::merge(class QTextFormat const & __ptr64) __ptr64
 ?metaObject@DockDocumentPanel@Qtitan@@UEBAPEBUQMetaObject@@XZ	public: virtual struct QMetaObject const * __ptr64 __cdecl Qtitan::DockDocumentPanel::metaObject(void)const __ptr64
 ?metaObject@DockPanelManager@Qtitan@@UEBAPEBUQMetaObject@@XZ	public: virtual struct QMetaObject const * __ptr64 __cdecl Qtitan::DockPanelManager::metaObject(void)const __ptr64
@@ -3509,6 +3503,7 @@
 ?setCornerWidget@DockDocumentPanel@Qtitan@@QEAAXPEAVQWidget@@@Z	public: void __cdecl Qtitan::DockDocumentPanel::setCornerWidget(class QWidget * __ptr64) __ptr64
 ?setCurrentCharFormat@QPlainTextEdit@@QEAAXAEBVQTextCharFormat@@@Z	public: void __cdecl QPlainTextEdit::setCurrentCharFormat(class QTextCharFormat const & __ptr64) __ptr64
 ?setCurrentColor@QColorDialog@@QEAAXAEBVQColor@@@Z	public: void __cdecl QColorDialog::setCurrentColor(class QColor const & __ptr64) __ptr64
+?setCurrentFont@QFontDialog@@QEAAXAEBVQFont@@@Z	public: void __cdecl QFontDialog::setCurrentFont(class QFont const & __ptr64) __ptr64
 ?setCurrentFont@QTextEdit@@QEAAXAEBVQFont@@@Z	public: void __cdecl QTextEdit::setCurrentFont(class QFont const & __ptr64) __ptr64
 ?setCurrentIndex@QAbstractItemView@@QEAAXAEBVQModelIndex@@@Z	public: void __cdecl QAbstractItemView::setCurrentIndex(class QModelIndex const & __ptr64) __ptr64
 ?setCurrentIndex@QComboBox@@QEAAXH@Z	public: void __cdecl QComboBox::setCurrentIndex(int) __ptr64
@@ -3757,6 +3752,7 @@
 ?setOpenExternalLinks@QTextBrowser@@QEAAX_N@Z	public: void __cdecl QTextBrowser::setOpenExternalLinks(bool) __ptr64
 ?setOpenLinks@QTextBrowser@@QEAAX_N@Z	public: void __cdecl QTextBrowser::setOpenLinks(bool) __ptr64
 ?setOption@QFileDialog@@QEAAXW4Option@1@_N@Z	public: void __cdecl QFileDialog::setOption(enum QFileDialog::Option,bool) __ptr64
+?setOption@QFontDialog@@QEAAXW4FontDialogOption@1@_N@Z	public: void __cdecl QFontDialog::setOption(enum QFontDialog::FontDialogOption,bool) __ptr64
 ?setOrganizationDomain@QCoreApplication@@SAXAEBVQString@@@Z	public: static void __cdecl QCoreApplication::setOrganizationDomain(class QString const & __ptr64)
 ?setOrganizationName@QCoreApplication@@SAXAEBVQString@@@Z	public: static void __cdecl QCoreApplication::setOrganizationName(class QString const & __ptr64)
 ?setOrientation@QAbstractSlider@@QEAAXW4Orientation@Qt@@@Z	public: void __cdecl QAbstractSlider::setOrientation(enum Qt::Orientation) __ptr64
@@ -3875,7 +3871,6 @@
 ?setSpacing@QGridLayout@@QEAAXH@Z	public: void __cdecl QGridLayout::setSpacing(int) __ptr64
 ?setSpacing@QLayout@@QEAAXH@Z	public: void __cdecl QLayout::setSpacing(int) __ptr64
 ?setSpacing@QListView@@QEAAXH@Z	public: void __cdecl QListView::setSpacing(int) __ptr64
-?setStackSize@QThread@@QEAAXI@Z	public: void __cdecl QThread::setStackSize(unsigned int) __ptr64
 ?setStackingMode@QStackedLayout@@QEAAXW4StackingMode@1@@Z	public: void __cdecl QStackedLayout::setStackingMode(enum QStackedLayout::StackingMode) __ptr64
 ?setStaleLockTime@QLockFile@@QEAAXH@Z	public: void __cdecl QLockFile::setStaleLockTime(int) __ptr64
 ?setStandardButtons@QMessageBox@@QEAAXV?$QFlags@W4StandardButton@QMessageBox@@@@@Z	public: void __cdecl QMessageBox::setStandardButtons(class QFlags<enum QMessageBox::StandardButton>) __ptr64
@@ -4147,7 +4142,6 @@
 ?start@QElapsedTimer@@QEAAXXZ	public: void __cdecl QElapsedTimer::start(void) __ptr64
 ?start@QMovie@@QEAAXXZ	public: void __cdecl QMovie::start(void) __ptr64
 ?start@QProcess@@QEAAXAEBVQString@@AEBVQStringList@@V?$QFlags@W4OpenModeFlag@QIODevice@@@@@Z	public: void __cdecl QProcess::start(class QString const & __ptr64,class QStringList const & __ptr64,class QFlags<enum QIODevice::OpenModeFlag>) __ptr64
-?start@QThread@@QEAAXW4Priority@1@@Z	public: void __cdecl QThread::start(enum QThread::Priority) __ptr64
 ?start@QThreadPool@@QEAAXPEAVQRunnable@@H@Z	public: void __cdecl QThreadPool::start(class QRunnable * __ptr64,int) __ptr64
 ?start@QTimer@@QEAAXH@Z	public: void __cdecl QTimer::start(int) __ptr64
 ?start@QTimer@@QEAAXXZ	public: void __cdecl QTimer::start(void) __ptr64
@@ -4399,6 +4393,7 @@
 ?toString@QJsonValueRef@@QEBA?AVQString@@XZ	public: class QString __cdecl QJsonValueRef::toString(void)const __ptr64
 ?toString@QKeySequence@@QEBA?AVQString@@W4SequenceFormat@1@@Z	public: class QString __cdecl QKeySequence::toString(enum QKeySequence::SequenceFormat)const __ptr64
 ?toString@QLocale@@QEBA?AVQString@@AEBVQDateTime@@W4FormatType@1@@Z	public: class QString __cdecl QLocale::toString(class QDateTime const & __ptr64,enum QLocale::FormatType)const __ptr64
+?toString@QLocale@@QEBA?AVQString@@NDH@Z	public: class QString __cdecl QLocale::toString(double,char,int)const __ptr64
 ?toString@QUrl@@QEBA?AVQString@@V?$QUrlTwoFlags@W4UrlFormattingOption@QUrl@@W4ComponentFormattingOption@2@@@@Z	public: class QString __cdecl QUrl::toString(class QUrlTwoFlags<enum QUrl::UrlFormattingOption,enum QUrl::ComponentFormattingOption>)const __ptr64
 ?toString@QVariant@@QEBA?AVQString@@XZ	public: class QString __cdecl QVariant::toString(void)const __ptr64
 ?toStringList@QVariant@@QEBA?AVQStringList@@XZ	public: class QStringList __cdecl QVariant::toStringList(void)const __ptr64
@@ -4580,7 +4575,6 @@
 ?visualRegionForSelection@QListView@@MEBA?AVQRegion@@AEBVQItemSelection@@@Z	protected: virtual class QRegion __cdecl QListView::visualRegionForSelection(class QItemSelection const & __ptr64)const __ptr64
 ?visualRegionForSelection@QTableView@@MEBA?AVQRegion@@AEBVQItemSelection@@@Z	protected: virtual class QRegion __cdecl QTableView::visualRegionForSelection(class QItemSelection const & __ptr64)const __ptr64
 ?visualRegionForSelection@QTreeView@@MEBA?AVQRegion@@AEBVQItemSelection@@@Z	protected: virtual class QRegion __cdecl QTreeView::visualRegionForSelection(class QItemSelection const & __ptr64)const __ptr64
-?wait@QThread@@QEAA_NVQDeadlineTimer@@@Z	public: bool __cdecl QThread::wait(class QDeadlineTimer) __ptr64
 ?waitForBytesWritten@QLocalSocket@@UEAA_NH@Z	public: virtual bool __cdecl QLocalSocket::waitForBytesWritten(int) __ptr64
 ?waitForBytesWritten@QProcess@@UEAA_NH@Z	public: virtual bool __cdecl QProcess::waitForBytesWritten(int) __ptr64
 ?waitForConnected@QLocalSocket@@QEAA_NH@Z	public: bool __cdecl QLocalSocket::waitForConnected(int) __ptr64

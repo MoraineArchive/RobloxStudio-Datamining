@@ -720,6 +720,42 @@
     "sha256": "07e20171f20ddad4ceabbb9df872e1fae7a0c7d63280091a1a253f32c08a2522"
   },
   {
+    "bytes": 349,
+    "extension": "png",
+    "path": "Lua/AnimatedImageImporter/Dark/Standard/AsepriteLogo.png",
+    "sha256": "3af7606f15e1e86c0b4ba386753f98bf5e2e1499d7132fe6dbcd533416333b4d"
+  },
+  {
+    "bytes": 397,
+    "extension": "png",
+    "path": "Lua/AnimatedImageImporter/Dark/Standard/AsepriteLogo@2x.png",
+    "sha256": "81e17d5799e2b7d44f4f0255961793a2a0e27e89b1e277b87d475451ad3a8bc7"
+  },
+  {
+    "bytes": 448,
+    "extension": "png",
+    "path": "Lua/AnimatedImageImporter/Dark/Standard/AsepriteLogo@3x.png",
+    "sha256": "82dc97e38b44f29127a0caa1ba64bfb617c607c2a19bceebcd846b99ee0ac543"
+  },
+  {
+    "bytes": 349,
+    "extension": "png",
+    "path": "Lua/AnimatedImageImporter/Light/Standard/AsepriteLogo.png",
+    "sha256": "3af7606f15e1e86c0b4ba386753f98bf5e2e1499d7132fe6dbcd533416333b4d"
+  },
+  {
+    "bytes": 397,
+    "extension": "png",
+    "path": "Lua/AnimatedImageImporter/Light/Standard/AsepriteLogo@2x.png",
+    "sha256": "81e17d5799e2b7d44f4f0255961793a2a0e27e89b1e277b87d475451ad3a8bc7"
+  },
+  {
+    "bytes": 448,
+    "extension": "png",
+    "path": "Lua/AnimatedImageImporter/Light/Standard/AsepriteLogo@3x.png",
+    "sha256": "82dc97e38b44f29127a0caa1ba64bfb617c607c2a19bceebcd846b99ee0ac543"
+  },
+  {
     "bytes": 363,
     "extension": "png",
     "path": "Lua/AnimationEditor/Dark/Standard/MoveToTheBeginning.png",
@@ -7630,6 +7666,690 @@
     "extension": "png",
     "path": "Lua/PlaceAnnotations/Light/Standard/Resolve@3x.png",
     "sha256": "7df39dcc848daaa7c78e3bbb5db158d9b78211738c74a427549dd9064f406287"
+  },
+  {
+    "bytes": 893,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_BrushTypeCube.png",
+    "sha256": "deaafe916773c2d502ff1a4812c2f3ecd20dc5f76ad050819c4a619c1e3fce5d"
+  },
+  {
+    "bytes": 1435,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_BrushTypeCube@2x.png",
+    "sha256": "e4ed2252e4888677d389adee4c1d02b13da54319d288b6e4dc7e9d558fc13e39"
+  },
+  {
+    "bytes": 1973,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_BrushTypeCube@3x.png",
+    "sha256": "61cbbf2e1037560600e852d5737b1c2702cce23dcddd659be855b7049c887e0a"
+  },
+  {
+    "bytes": 820,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_BrushTypeCylinder.png",
+    "sha256": "f62516bec125b32f65ea293eb6e90f2dc9d76d0d1e0ab4028c71c165f3997650"
+  },
+  {
+    "bytes": 1424,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_BrushTypeCylinder@2x.png",
+    "sha256": "d8db326a9185fc231522ed728902814b690bc1f4b7b5e9421e38320e999216d6"
+  },
+  {
+    "bytes": 2007,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_BrushTypeCylinder@3x.png",
+    "sha256": "2ca037015e9439ff6c9edaa5f5bf69843edf23fe629ab4a5d6bbdbc27a1558e1"
+  },
+  {
+    "bytes": 1103,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_BrushTypeSphere.png",
+    "sha256": "0cfde583ce8182fbdcc43184e8ffd96d97b1d699d85a2ea53ce8fe45f9d7e723"
+  },
+  {
+    "bytes": 2089,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_BrushTypeSphere@2x.png",
+    "sha256": "90a254ac18bf36efc2de3b355bcb6afc3e3fbb728f9e1702d5c4fe436979af6c"
+  },
+  {
+    "bytes": 3035,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_BrushTypeSphere@3x.png",
+    "sha256": "53aa63a632cab56cf3ac74111037de969f20e24886447d0963398fd2e2645af6"
+  },
+  {
+    "bytes": 1102,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Clear.png",
+    "sha256": "17543b8d4378ec00af0f70e03ce8f56e3d7dedfc1de00ca7596ba9a519eb036c"
+  },
+  {
+    "bytes": 1916,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Clear@2x.png",
+    "sha256": "c6f1a195bd634794010e173e2e575136708e49a4f458bab7ccf5c70d5fc3def0"
+  },
+  {
+    "bytes": 2672,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Clear@3x.png",
+    "sha256": "1d0ea9ad4aa682865d260b5e50c4513f0d0e605ff93498909d34015c8eadacd0"
+  },
+  {
+    "bytes": 1099,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Convert.png",
+    "sha256": "4448cdd9bba5f8518bf93b115312fa7bc65f29cf404e9d5e9257832f3a8187a7"
+  },
+  {
+    "bytes": 1902,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Convert@2x.png",
+    "sha256": "252abb2aa5d864f04d1cc96adc6c22749d662281aab310cb99b48557e19a5f53"
+  },
+  {
+    "bytes": 2686,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Convert@3x.png",
+    "sha256": "f3d30afeb531790978de85008a879a7a9b64cb82257bc7d02fdc3a7d74446c40"
+  },
+  {
+    "bytes": 1019,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Delete.png",
+    "sha256": "1135c24226a7898e6b7ac06020d27fdcd71b2485f7e2f7c352f5f55b14bf5528"
+  },
+  {
+    "bytes": 1766,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Delete@2x.png",
+    "sha256": "33c5b3ea85fc5ca89711791816848e41ebfd0b6969c28f67c116ffb7d1f8854c"
+  },
+  {
+    "bytes": 2422,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Delete@3x.png",
+    "sha256": "018a85ea09800ebfc570474993d8f48e2b4dd92237172d0397b9a87e6936ca99"
+  },
+  {
+    "bytes": 1288,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Draw.png",
+    "sha256": "aead98a94a5331c10613720042b221b840d70b121e89c133b24ebe91f5a3140c"
+  },
+  {
+    "bytes": 2282,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Draw@2x.png",
+    "sha256": "93ed8c406b7da9e1b07f193cbebddca02bba6de9438468b347f5a75a51e5ad97"
+  },
+  {
+    "bytes": 3307,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Draw@3x.png",
+    "sha256": "be41f29fde81d8e96473cf2cbbc398066b0a6853773fbdd20ebcc90509cff99f"
+  },
+  {
+    "bytes": 1075,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Erode.png",
+    "sha256": "2dc1c5e61d6da65c38397735f1ed4ccca011829e41d5fd1c924cc18904f371e6"
+  },
+  {
+    "bytes": 1861,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Erode@2x.png",
+    "sha256": "4d466d3bcae9d7c53c9d8d4e6d523eac2fbf4756fd0cc4b6ac1a11e7051d1ec5"
+  },
+  {
+    "bytes": 2701,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Erode@3x.png",
+    "sha256": "651c89414e284d9e0646d33489bccad61633b4930976710915aaef859aa23cf0"
+  },
+  {
+    "bytes": 819,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_FillBelow.png",
+    "sha256": "748b234207663cd3787597fbb282988797b27dc6578b117bb1696f2111c051e1"
+  },
+  {
+    "bytes": 1381,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_FillBelow@2x.png",
+    "sha256": "80652c601fe745553236620af677b7dfc2b560e613c46d7383473c663e007142"
+  },
+  {
+    "bytes": 1969,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_FillBelow@3x.png",
+    "sha256": "e648a69ea6e38499de51f4b01916ddeab3208d928b2903b40582b51af82e5174"
+  },
+  {
+    "bytes": 848,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Flatten.png",
+    "sha256": "bb2229e1320276eaed3c6a00fdf28ec1a3b9040eea59573a1609ed99ef3d225b"
+  },
+  {
+    "bytes": 1316,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Flatten@2x.png",
+    "sha256": "67e8a60cbfc8044ab2eff373016ea6531ceeaca72b6c6873516bf0c316b2adf3"
+  },
+  {
+    "bytes": 1853,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Flatten@3x.png",
+    "sha256": "8a2bb4ce80350ddb50d952f7b94af5ad2f75728d7cde3ae46efd6321df58cfee"
+  },
+  {
+    "bytes": 1195,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Generate.png",
+    "sha256": "d8c7f361c1813769b06ab30f73b6c67b955d3f192a7c57fc765bc854d6576b0f"
+  },
+  {
+    "bytes": 2071,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Generate@2x.png",
+    "sha256": "d5b537ba031f696e5a72c879a29b22876466446275b5cfcbcebc9bee8da9d8b0"
+  },
+  {
+    "bytes": 2950,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Generate@3x.png",
+    "sha256": "4fae8427881b446689e9c7febd6485c371e05ba5d41d188961e7d174ab262c66"
+  },
+  {
+    "bytes": 1058,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Import.png",
+    "sha256": "c2c95140dded09d0af43ea0500d0c0e451bd7f423ba8350ba317cf446b3f36be"
+  },
+  {
+    "bytes": 1796,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Import@2x.png",
+    "sha256": "76928d899d49c8104b05aebda47b61c187839097fcddcee21476eaa369476803"
+  },
+  {
+    "bytes": 2576,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Import@3x.png",
+    "sha256": "608680260ef7c5cb2c5680a0581b245d042907db177d3fdfb1f779f20c2f78d0"
+  },
+  {
+    "bytes": 1147,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Paint.png",
+    "sha256": "feefec3457ee6833774b03d8d428af84041f06d35bf9a7112363440314618598"
+  },
+  {
+    "bytes": 2049,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Paint@2x.png",
+    "sha256": "e267f84f5404a4c6da3386a38a06460bbc7a068936f76104fb774809c6e44588"
+  },
+  {
+    "bytes": 2962,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Paint@3x.png",
+    "sha256": "a1de042c0d11ecf21de4f6ab8c649fc322c100277916db466300adac38540d31"
+  },
+  {
+    "bytes": 727,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_RemoveAbove.png",
+    "sha256": "30e6ae5667edcca78e24b84c1ba80e4ec96e6d2391df9dd4fba2bf4d1468208b"
+  },
+  {
+    "bytes": 1215,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_RemoveAbove@2x.png",
+    "sha256": "d848b4e6525ab8ea11fb6660df5d1aeedf41a6c621eaaa2e4369dfd53cf0acd0"
+  },
+  {
+    "bytes": 1765,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_RemoveAbove@3x.png",
+    "sha256": "9a20f5d99b6bfe68167c3bcdf2d44bc66912ddc2e6f4640a79c465cbff75c77b"
+  },
+  {
+    "bytes": 697,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_RemoveAboveFillBelow.png",
+    "sha256": "805e6c28f64feaf2407e42cce00180ebcbeeb26a65bfae5e1e54cc821275cedf"
+  },
+  {
+    "bytes": 1124,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_RemoveAboveFillBelow@2x.png",
+    "sha256": "801a0321b18a8a23bb59604720172c1f3581d791d711a695399c54a1b8854bbd"
+  },
+  {
+    "bytes": 1631,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_RemoveAboveFillBelow@3x.png",
+    "sha256": "85d59ec24ba334257f66347de6ee05796bc86aab8c75cc17473996dfbe2c275a"
+  },
+  {
+    "bytes": 946,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Sculpt.png",
+    "sha256": "b9a60c031cfe7daa1c3ee08599f3bc729b02a693a0b0ac57285bafe7dfb1bae5"
+  },
+  {
+    "bytes": 1551,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Sculpt@2x.png",
+    "sha256": "20d3001a6b017d91fdc1e07ac7eae5bc7d681447dbae9f20677d278a02c9e21a"
+  },
+  {
+    "bytes": 2174,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Sculpt@3x.png",
+    "sha256": "63291c62856529ee87c146dd941e57dcf3a1a2f2b51cc02935e6175887315abc"
+  },
+  {
+    "bytes": 925,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_SeaLevel.png",
+    "sha256": "8039e7e9adb1fbb6a4199d7131d8ade8af66da3322733272e605d6afa6a2698f"
+  },
+  {
+    "bytes": 1561,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_SeaLevel@2x.png",
+    "sha256": "93dc97372526e8ed521ca29b8d7328d4cc4c633ffa4438cdafd0aa800333655d"
+  },
+  {
+    "bytes": 2261,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_SeaLevel@3x.png",
+    "sha256": "1da554c874676fabb666ef7106e970fb14752858aa7ee015ee50dc7c30d096af"
+  },
+  {
+    "bytes": 1041,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Smooth.png",
+    "sha256": "72dce3c81fcf763462b05d2996a3cd39dc8052ceb22edcbbca19c79544ff5ac1"
+  },
+  {
+    "bytes": 1755,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Smooth@2x.png",
+    "sha256": "a1434914ffe385c4789430e2cab574a64e9feaf8642f714156b9b6d60ce0c486"
+  },
+  {
+    "bytes": 2544,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain_Smooth@3x.png",
+    "sha256": "8cf91544de83f5f56f19cac595536d8aeeeecba0a80acca5151d8be58ca4b7d6"
+  },
+  {
+    "bytes": 1003,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain.png",
+    "sha256": "c6f19f31201e7d8d94b44d2ffd58be80b1ba49fb9618156e8f97d728e39151bc"
+  },
+  {
+    "bytes": 1738,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain@2x.png",
+    "sha256": "c242cdbeffc5c1a93b4d51e1f2c12845c52293f21a0a39563e8e161688b904c4"
+  },
+  {
+    "bytes": 2497,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Dark/Large/Terrain@3x.png",
+    "sha256": "757446cc575f4421f30019c434177b285fdc450af56c6eecee769474cc8d31e3"
+  },
+  {
+    "bytes": 933,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_BrushTypeCube.png",
+    "sha256": "172a6b1324170f0e3f2851b3e8f34f40d87c02abc71b207d7cd3fc7dc35144f9"
+  },
+  {
+    "bytes": 1498,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_BrushTypeCube@2x.png",
+    "sha256": "464f92a5e3994f66a4bf98bf2fb414a8407636872ac0fd210041a842c269cdc3"
+  },
+  {
+    "bytes": 2049,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_BrushTypeCube@3x.png",
+    "sha256": "a238924289e23e6f54de0eef32b682bebb19d9764bc6f4eabd3980dd259119e9"
+  },
+  {
+    "bytes": 854,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_BrushTypeCylinder.png",
+    "sha256": "f9b67b5009b68dcc1aafb3bcfa85a56cac3412808bfe498a5708545926afa705"
+  },
+  {
+    "bytes": 1496,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_BrushTypeCylinder@2x.png",
+    "sha256": "353e9f8128ecbafb5565be719ca8e5a2a2994842cd54c25a481cd2870da8a2bb"
+  },
+  {
+    "bytes": 2087,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_BrushTypeCylinder@3x.png",
+    "sha256": "bfa4b1a35f5263b526b17a1524450596acd83960bab2af24e565ee9a6dd274c6"
+  },
+  {
+    "bytes": 1211,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_BrushTypeSphere.png",
+    "sha256": "a03b57cafc7671f785a0b6b866a6bf12048cca6b2a618b68ee28054eb55df81b"
+  },
+  {
+    "bytes": 2204,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_BrushTypeSphere@2x.png",
+    "sha256": "af7066630e6bc7e0b33c80636124dcc013ec14782fa9ea14d1702445c5c5f3c6"
+  },
+  {
+    "bytes": 3182,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_BrushTypeSphere@3x.png",
+    "sha256": "0dd5226b1a9ef4374753cf5ad20293fed503d687ad4f58dee1f26bca9df478dd"
+  },
+  {
+    "bytes": 1066,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Clear.png",
+    "sha256": "99f9d32e147e55c64a56e69de4b2b4254c329f5beea17ce50e7cb146af602b63"
+  },
+  {
+    "bytes": 1832,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Clear@2x.png",
+    "sha256": "90b91ffff8921a04907eae08924ba22c32c68aae07e31d989f6505575963bb9d"
+  },
+  {
+    "bytes": 2603,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Clear@3x.png",
+    "sha256": "514991b19f9afd12c6e46f4b200a9888211fc36633ef0399b2fb879a47ef3a6e"
+  },
+  {
+    "bytes": 1081,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Convert.png",
+    "sha256": "73c9d944d644cf24967f914e721c2b0d4c50138a12bee4da93393bb55359c7b3"
+  },
+  {
+    "bytes": 1874,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Convert@2x.png",
+    "sha256": "f690fa757fb0e5f526d4f6540eeb9ab6727e92c8debfcf654571d1e7d651e77f"
+  },
+  {
+    "bytes": 2676,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Convert@3x.png",
+    "sha256": "3f33e732d939ff34169130f82068bacc1f29b6c98e841f396c7cbe454d3e61b1"
+  },
+  {
+    "bytes": 1071,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Delete.png",
+    "sha256": "6b8a740b266f34b3eebfc2705064a20f6d1ebcf4241a699cdccaada2b222723d"
+  },
+  {
+    "bytes": 1871,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Delete@2x.png",
+    "sha256": "2005382ef32d7c1f7213bfa7bf882182da4707a81295bfc4caf17697cc33d4ec"
+  },
+  {
+    "bytes": 2557,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Delete@3x.png",
+    "sha256": "38a04b3900507641a411b5f5d862f91dfecaeecb897a22e1ba3e7b0f9a0317d5"
+  },
+  {
+    "bytes": 1235,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Draw.png",
+    "sha256": "4fa8fd580a4d8bc13c7c467e0a4a2d0b9cea12e47db421661c0b4fed2b1bc6c0"
+  },
+  {
+    "bytes": 2222,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Draw@2x.png",
+    "sha256": "cf9e0e7f8cb92c4f84e3de49153ec06d354a0ceb05e8d2ae379fbdf5728ddf6c"
+  },
+  {
+    "bytes": 3213,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Draw@3x.png",
+    "sha256": "e8888d13a8ac4b3cf8fe282ac8dfd4ebb0d16bac10244fc4f82f069716d03cae"
+  },
+  {
+    "bytes": 1109,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Erode.png",
+    "sha256": "f35a750a6fdae936e09cbb6761bf9b91e0849df3e23ce2aebd1576dbe9f72c44"
+  },
+  {
+    "bytes": 1868,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Erode@2x.png",
+    "sha256": "e1f35110f58cbf9a24fb838b807719628fe67495e9538e18cbb4c1666bdc1362"
+  },
+  {
+    "bytes": 2697,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Erode@3x.png",
+    "sha256": "515afac1b11706c8475f716c892625a3a384756070a1993a392fe7687ff57a49"
+  },
+  {
+    "bytes": 874,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_FillBelow.png",
+    "sha256": "e04503e62258793ed8bcef26dbbd214aca73fb05cede213b8895c54705945b40"
+  },
+  {
+    "bytes": 1452,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_FillBelow@2x.png",
+    "sha256": "7300891e60ab56fe970b40c8cd8e1823b1dd458da7cd2697f89fcdb414cfdb90"
+  },
+  {
+    "bytes": 2057,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_FillBelow@3x.png",
+    "sha256": "01671d7f34a14efee3daa6923d8811310794f930a91cf1d1f5209f956d2e4a17"
+  },
+  {
+    "bytes": 824,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Flatten.png",
+    "sha256": "099545af54721d86ff9f3170416d1f27f6ce9bae800005fed2334880c4e0b190"
+  },
+  {
+    "bytes": 1284,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Flatten@2x.png",
+    "sha256": "06f3134c3ae89b27143d7db7d1fcd00ca338403f4f4895e780b3b5bbacf0edcd"
+  },
+  {
+    "bytes": 1784,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Flatten@3x.png",
+    "sha256": "9f68aa09412156969fab6229b0226d01a65ee95f9f82b6d0aa96c065f5477109"
+  },
+  {
+    "bytes": 1147,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Generate.png",
+    "sha256": "b872c6dc00d1f47ae9c9b6405408772b50f590ac98a7fbf559cf44c92e82a41a"
+  },
+  {
+    "bytes": 2004,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Generate@2x.png",
+    "sha256": "45cf3862a7467efc5ca081813682755fecc78346b5ea5db22c69ea5ade3c4754"
+  },
+  {
+    "bytes": 2890,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Generate@3x.png",
+    "sha256": "7bea4f207695aeb4c0da86a0df3dee64b34608ca34802f5d0f50fe3319b6d004"
+  },
+  {
+    "bytes": 1037,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Import.png",
+    "sha256": "05c0018fba57d5051d295c521f7dfe5fdde9d2ec0de545e1e0e464c8b6b755de"
+  },
+  {
+    "bytes": 1745,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Import@2x.png",
+    "sha256": "343fa7c87739b35814af485a92cd8754238f9a3d7b279272997982a06224365a"
+  },
+  {
+    "bytes": 2545,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Import@3x.png",
+    "sha256": "d0a81fa8ba0bc2594898d7586c4d0be18ee64f3e63b69593f51e2417e467d663"
+  },
+  {
+    "bytes": 1119,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Paint.png",
+    "sha256": "6f0236e3a0362cd26552bb9fbcd32c8266405441efbc1d54a16c5b58239dcf0b"
+  },
+  {
+    "bytes": 1974,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Paint@2x.png",
+    "sha256": "f13d8c33c43d26138df8c80e5cbccaf602f38d58c3e931a315312754835980af"
+  },
+  {
+    "bytes": 2903,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Paint@3x.png",
+    "sha256": "cb6e58e0e0c7863903096c3f768b496d87e8eb5d3751a9d18be8c3ef9a51eafc"
+  },
+  {
+    "bytes": 786,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_RemoveAbove.png",
+    "sha256": "e80e8e1c1d832923dbf2c52af6dd44ae3b2f899a05d855a7bb3adda890000452"
+  },
+  {
+    "bytes": 1284,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_RemoveAbove@2x.png",
+    "sha256": "5338cda021d71c127d2208845c3ca6a822cddcc0c3aa4212a41916ea77b52066"
+  },
+  {
+    "bytes": 1838,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_RemoveAbove@3x.png",
+    "sha256": "db7837429bae531d987076d4e1bd544a10f79e063e0469ee0deef06cdf447689"
+  },
+  {
+    "bytes": 761,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_RemoveAboveFillBelow.png",
+    "sha256": "8480e29089a36ad96509b012d0fa6a59765c9a715e543caaa0943e76e44d5ef8"
+  },
+  {
+    "bytes": 1180,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_RemoveAboveFillBelow@2x.png",
+    "sha256": "9d92060f0aa1af08e524957e31c9f983019e48191c4a408fac264969e109c445"
+  },
+  {
+    "bytes": 1709,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_RemoveAboveFillBelow@3x.png",
+    "sha256": "57516b8f9b0746792a8410ceb01d075a33bb13628c89c72a983a5c9dce967a7a"
+  },
+  {
+    "bytes": 945,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Sculpt.png",
+    "sha256": "bbb0532d95ec230a581ff4bcf7214cd31e8f10607cbc20a59e16b71937ee7edb"
+  },
+  {
+    "bytes": 1539,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Sculpt@2x.png",
+    "sha256": "e5b2e2e844f53967978b7216b2cca6ed34fc2afbe27584bd6feace2974b0a909"
+  },
+  {
+    "bytes": 2171,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Sculpt@3x.png",
+    "sha256": "84dbf9bf91b21f5421c2049ee924cc8a871b6276049adca7030ec34fcd5cf8e8"
+  },
+  {
+    "bytes": 945,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_SeaLevel.png",
+    "sha256": "60ae9eaf0edb32506d321b2518ec72106516e5ceeeabc580dc2e14235410a801"
+  },
+  {
+    "bytes": 1595,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_SeaLevel@2x.png",
+    "sha256": "bb5d707790e71c857fa9c0b7fece72ac650e52932acb3da7fdbb43edf3545889"
+  },
+  {
+    "bytes": 2308,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_SeaLevel@3x.png",
+    "sha256": "4b3dd4644ad6cb6addd5484c2751442599ea6567bac281b1c7dda515dee204f1"
+  },
+  {
+    "bytes": 1058,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Smooth.png",
+    "sha256": "3cb3c8accbee8a2313d7e6aed072b11e56b0853e303f964930a57a35885a4be7"
+  },
+  {
+    "bytes": 1763,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Smooth@2x.png",
+    "sha256": "19162e148b16b336bcab9f612a3a17eed515bb69b5fae3c0911b67e437a979b5"
+  },
+  {
+    "bytes": 2546,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain_Smooth@3x.png",
+    "sha256": "236108b187be13dadae665184d71babf3e3e340877fdf5be39cb4ac826021884"
+  },
+  {
+    "bytes": 967,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain.png",
+    "sha256": "62e4478db86a7793ab1991ffec5cef13f294074456f3290fd576b784ebc545b7"
+  },
+  {
+    "bytes": 1651,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain@2x.png",
+    "sha256": "e9884a041ddd10d10a0d507b98465cf45c1e8e08fc0958c7db51cecb56cac274"
+  },
+  {
+    "bytes": 2386,
+    "extension": "png",
+    "path": "Lua/SdfTerrainEditor/Light/Large/Terrain@3x.png",
+    "sha256": "6d98392238b34524a9d53d7aa105a08397692cc8acceb33ef165706297ab1454"
   },
   {
     "bytes": 809,
@@ -16704,6 +17424,96 @@
     "sha256": "cdc9972e9aa995b7e7e5cca07fb1c00972d0fc881378ea954e72c0b47bf6c85a"
   },
   {
+    "bytes": 547,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/AvatarAccessoryRules.png",
+    "sha256": "24705af25fb1e8e8bced19e155d4f844b273a00801b5979dc46f52e48aea088f"
+  },
+  {
+    "bytes": 773,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/AvatarAccessoryRules@2x.png",
+    "sha256": "1647bb5cd150fdec28e1c9a63bd5118fd394fcd6e5ebce2b6ffec53421fb84af"
+  },
+  {
+    "bytes": 1080,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/AvatarAccessoryRules@3x.png",
+    "sha256": "46ccbffb1d5710a6b39c2229758b387d51bb54ab48c71471b2f40d3f6cb33bb7"
+  },
+  {
+    "bytes": 569,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/AvatarAnimationRules.png",
+    "sha256": "761b31eb21000442e70bbce7c5d9e708b5349b555a2be6b62215373b691e42ef"
+  },
+  {
+    "bytes": 849,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/AvatarAnimationRules@2x.png",
+    "sha256": "a5085152ed4feda9e10eb612a41d68690d831caab850dd257e3f7f3ad55359e3"
+  },
+  {
+    "bytes": 1144,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/AvatarAnimationRules@3x.png",
+    "sha256": "dace879107d78b9642c741175b77c6961da95bf6f764a610780dd7d461d4f9bb"
+  },
+  {
+    "bytes": 572,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/AvatarBodyRules.png",
+    "sha256": "aa01884ea111d7c1585dea4420afb1ab21a4cb92b22f7422484808feddad9b2c"
+  },
+  {
+    "bytes": 832,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/AvatarBodyRules@2x.png",
+    "sha256": "9d5fd1375bfa528c181d496a9f923be2798117331b14b3a7fd69a4ccf2cedc1c"
+  },
+  {
+    "bytes": 1111,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/AvatarBodyRules@3x.png",
+    "sha256": "9a90105adc92cbbbe56c2aed2a80423b350bf7c08ef43e7c6903d21285abbca8"
+  },
+  {
+    "bytes": 526,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/AvatarClothingRules.png",
+    "sha256": "e709cdd55c3ab243b18662b3a094c1dac664a8a20681ab0189688aaad48e039e"
+  },
+  {
+    "bytes": 741,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/AvatarClothingRules@2x.png",
+    "sha256": "0834f86bcd3d9b531e4f4d0f644dd289260250bd1226ce956d9015c13b567ae6"
+  },
+  {
+    "bytes": 1022,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/AvatarClothingRules@3x.png",
+    "sha256": "6101060ab70eade9cdcec34b641fd9da17d415c42b51a6a0e91e9d06b6bdd272"
+  },
+  {
+    "bytes": 614,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/AvatarCollisionRules.png",
+    "sha256": "67b7b3d94c89098672b4ae66cd2686ceee62010d5e889388c4ac1276a3bd331b"
+  },
+  {
+    "bytes": 994,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/AvatarCollisionRules@2x.png",
+    "sha256": "b993822b471cef2240b4c964a297380ceb71a373814d9612bf6298295f31d552"
+  },
+  {
+    "bytes": 1386,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/AvatarCollisionRules@3x.png",
+    "sha256": "6293e089014e7474a778a3a36a6e223e3c0af1e423f474cb8a13eda0602e95d8"
+  },
+  {
     "bytes": 491,
     "extension": "png",
     "path": "Shared/InsertableObjects/Dark/Standard/AvatarEditorService.png",
@@ -16720,6 +17530,24 @@
     "extension": "png",
     "path": "Shared/InsertableObjects/Dark/Standard/AvatarEditorService@3x.png",
     "sha256": "0ef0be55768c58155a3a605c942dbd36b84362b88011d35b58584a5885b7c2a1"
+  },
+  {
+    "bytes": 532,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/AvatarRules.png",
+    "sha256": "eae7f6673c891bae4856dcb7bf08d315385ad2640b572360c7ec4291aad39e54"
+  },
+  {
+    "bytes": 776,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/AvatarRules@2x.png",
+    "sha256": "807f40396a2d7496cfd0054d169b06dd90b2092bcb5105cf1f39f7bbf30fd953"
+  },
+  {
+    "bytes": 1013,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/AvatarRules@3x.png",
+    "sha256": "14bd106ee0c2f74751990baccda52f014207acb62c99b65b1174269a69617f89"
   },
   {
     "bytes": 611,
@@ -20646,6 +21474,24 @@
     "sha256": "b5dfd9db9e134af11e7e851e206027083877b42534c3d5c0c3f6a149add21321"
   },
   {
+    "bytes": 429,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/TextDocument.png",
+    "sha256": "ca2cbf4064c9c943f4369cf98abd01355c180e764f21cd02df46efca904a7e90"
+  },
+  {
+    "bytes": 563,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/TextDocument@2x.png",
+    "sha256": "9f8632dd268a0467af2d82a26c07268a4421d80b6d2f85bf11a6d0302f54d91d"
+  },
+  {
+    "bytes": 727,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/TextDocument@3x.png",
+    "sha256": "c12071af7df65df6ffd707269b9ab821fc570446a710f577b7f42b408bc4f0d7"
+  },
+  {
     "bytes": 441,
     "extension": "png",
     "path": "Shared/InsertableObjects/Dark/Standard/TextLabel.png",
@@ -23346,6 +24192,96 @@
     "sha256": "cdc9972e9aa995b7e7e5cca07fb1c00972d0fc881378ea954e72c0b47bf6c85a"
   },
   {
+    "bytes": 564,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/AvatarAccessoryRules.png",
+    "sha256": "900e9b5a266ffda4ce217a5c39012bbcf27c61a218cdd363378e3ea844e0a98c"
+  },
+  {
+    "bytes": 801,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/AvatarAccessoryRules@2x.png",
+    "sha256": "1dcb24fbb36b79bc8d465b26c84a87bb1d22f0ac04b44a3ec7eb2a2cc327815a"
+  },
+  {
+    "bytes": 1132,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/AvatarAccessoryRules@3x.png",
+    "sha256": "a9aa5e4e5cc5d90604f089a8a9b854da1f82a2e6cb40694ad1d545e1a42e159a"
+  },
+  {
+    "bytes": 601,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/AvatarAnimationRules.png",
+    "sha256": "34a712738a641105d1e3420beb44ef021a65608c88e7317c88bd85c71e50e2e6"
+  },
+  {
+    "bytes": 894,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/AvatarAnimationRules@2x.png",
+    "sha256": "61ef5bb690e018032375a3c751d27e394ed8c12fa878a9346adb51e865a8c146"
+  },
+  {
+    "bytes": 1218,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/AvatarAnimationRules@3x.png",
+    "sha256": "af2228a31b39df5b069ed817ef0d0e1042f35154fd064bc511a817294d5f0089"
+  },
+  {
+    "bytes": 601,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/AvatarBodyRules.png",
+    "sha256": "c2d7fc85c521ec9933e21ad6c84a5cf98190d4a6ad0820280be172d8fed4c28f"
+  },
+  {
+    "bytes": 866,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/AvatarBodyRules@2x.png",
+    "sha256": "4bbab95fd87891bc739240aed77f19e2cbbfcd48443f735b7c81d2cdb28c5e1f"
+  },
+  {
+    "bytes": 1159,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/AvatarBodyRules@3x.png",
+    "sha256": "d5947dcdd1fc6a7f574b38d21236283d3e410dbb334814ab47d119c208b769bd"
+  },
+  {
+    "bytes": 542,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/AvatarClothingRules.png",
+    "sha256": "1e75a032987f378ff09f443a4f3411918e3c3aee1f983fddc233d31a97de0025"
+  },
+  {
+    "bytes": 773,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/AvatarClothingRules@2x.png",
+    "sha256": "aa666ff1edeeb6b9da808db3fdf05685c378ea33ef6f4d71cc315a79e4eccd99"
+  },
+  {
+    "bytes": 1078,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/AvatarClothingRules@3x.png",
+    "sha256": "89200760b5fa227a9e7b3a2d280eaba06aca1a706e06589224ec90177538a789"
+  },
+  {
+    "bytes": 637,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/AvatarCollisionRules.png",
+    "sha256": "2d7368d108f684513af0351ef06b6ae217774f3d0fa599c9f62a85781291caad"
+  },
+  {
+    "bytes": 1053,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/AvatarCollisionRules@2x.png",
+    "sha256": "ea20da69914b1aac3860ab2396644c9739836f80e96662f93d205172317cfa29"
+  },
+  {
+    "bytes": 1475,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/AvatarCollisionRules@3x.png",
+    "sha256": "72c1eeb275b495342e2f71e98bb599b03061f0e468798f7269447516ffb35253"
+  },
+  {
     "bytes": 476,
     "extension": "png",
     "path": "Shared/InsertableObjects/Light/Standard/AvatarEditorService.png",
@@ -23362,6 +24298,24 @@
     "extension": "png",
     "path": "Shared/InsertableObjects/Light/Standard/AvatarEditorService@3x.png",
     "sha256": "d25db8dbcde2b2811bf053da45e0d328788a9db44d97375975d9dc8dddbd3441"
+  },
+  {
+    "bytes": 551,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/AvatarRules.png",
+    "sha256": "f000fc9c8052e6284a8d726845d5291a22284167a62fc871adf174d04fd6eb8e"
+  },
+  {
+    "bytes": 816,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/AvatarRules@2x.png",
+    "sha256": "745fe261b669012ac06665a75344a6f6a458d109cb9f3985720c9c62368101f2"
+  },
+  {
+    "bytes": 1066,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/AvatarRules@3x.png",
+    "sha256": "0f63b4d1c57fc59f0feac5fc741c7558a09884aa588a1506a8f1d02180ba52f2"
   },
   {
     "bytes": 601,
@@ -27286,6 +28240,24 @@
     "extension": "png",
     "path": "Shared/InsertableObjects/Light/Standard/TextChatService@3x.png",
     "sha256": "400fc85c8aa7e6809bcc0717155e39a2fc4754b7a4c8abed4efef8832c3e3363"
+  },
+  {
+    "bytes": 425,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/TextDocument.png",
+    "sha256": "2e0a5f664142c517b4a3f63b8cad2218bc26d942efb94c8f9df36f0292780cd3"
+  },
+  {
+    "bytes": 560,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/TextDocument@2x.png",
+    "sha256": "de2fb9226e2ffd6f384918ea8067f3c094b8dd4ce443ea01a191d90cc425ac90"
+  },
+  {
+    "bytes": 738,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/TextDocument@3x.png",
+    "sha256": "6626b6407d19cf67805634de93c2de49fa333be51d4b12ad23fd2f8b086f597c"
   },
   {
     "bytes": 446,

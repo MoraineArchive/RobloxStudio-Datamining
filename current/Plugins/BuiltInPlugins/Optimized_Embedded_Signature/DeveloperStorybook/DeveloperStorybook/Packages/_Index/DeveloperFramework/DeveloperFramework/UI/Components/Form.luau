@@ -30,7 +30,6 @@ local withContext = ContextServices.withContext
 local LayoutOrderIterator = require(Framework.Util.LayoutOrderIterator)
 
 local FFlagDevFrameworkFixMissingKeyErrors = require(Framework.SharedFlags.getFFlagDevFrameworkFixMissingKeyErrors)()
-local getFFlagDevFrameworkAdjustTextFontSize = require(Framework.SharedFlags.getFFlagDevFrameworkAdjustTextFontSize)
 
 local Util = Framework.Util
 local deepCopy = require(Util.deepCopy)
@@ -167,7 +166,7 @@ function Form:render()
 					}))
 				end,
 				Size = headerSize,
-				Style = (getFFlagDevFrameworkAdjustTextFontSize() and style.ExpandablePaneHeader) or "Section",
+				Style = style.ExpandablePaneHeader or "Section",
 				Text = section.Label,
 				VerticalAlignment = Enum.VerticalAlignment.Top,
 			}, properties),
@@ -209,7 +208,7 @@ function Form:render()
 				AutomaticSize = Enum.AutomaticSize.Y,
 				Layout = Enum.FillDirection.Vertical,
 				Size = UDim2.fromScale(1, 0),
-				Spacing = if getFFlagDevFrameworkAdjustTextFontSize() then style.Spacing else nil,
+				Spacing = style.Spacing,
 				VerticalAlignment = Enum.VerticalAlignment.Top,
 				[Roact.Change.AbsoluteSize] = function(ref)
 					self:setState({
@@ -225,7 +224,7 @@ function Form:render()
 				AutomaticSize = Enum.AutomaticSize.Y,
 				Layout = Enum.FillDirection.Vertical,
 				VerticalAlignment = Enum.VerticalAlignment.Top,
-				Spacing = if getFFlagDevFrameworkAdjustTextFontSize() then style.Spacing else nil,
+				Spacing = style.Spacing,
 				[Roact.Change.AbsoluteSize] = function(ref)
 					self:setState({
 						FormWidth = ref.AbsoluteSize.X,

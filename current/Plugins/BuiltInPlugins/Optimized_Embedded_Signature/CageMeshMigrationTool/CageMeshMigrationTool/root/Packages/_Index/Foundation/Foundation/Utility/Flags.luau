@@ -2,13 +2,13 @@
 local Foundation = script:FindFirstAncestor("Foundation")
 local Packages = Foundation.Parent
 local SafeFlags = require(Packages.SafeFlags)
-local FoundationSliderAsSeenOnTV = SafeFlags.createGetFFlag("FoundationSliderAsSeenOnTV")()
-local FoundationSliderKnobSelection = SafeFlags.createGetFFlag("FoundationSliderKnobSelection")()
-local FoundationSliderOffloadDraggingMath = SafeFlags.createGetFFlag("FoundationSliderOffloadDraggingMath2")()
 local FoundationStyleRulePseudoName = SafeFlags.createGetFFlag("FoundationStyleRulePseudoName")()
 local FoundationFixColorOnScrubbableNumberInput =
 	SafeFlags.createGetFFlag("FoundationFixColorOnScrubbableNumberInput")()
 local FoundationAlertLinkWrap = SafeFlags.createGetFFlag("FoundationAlertLinkWrap")()
+local FoundationEducationalTooltipRefresh = SafeFlags.createGetFFlag("FoundationEducationalTooltipRefresh2")()
+local FoundationEducationalTooltipMinMediaWidth =
+	SafeFlags.createGetFFlag("FoundationEducationalTooltipMinMediaWidth3")()
 
 return {
 	-- Foundation@1.47.0
@@ -19,9 +19,6 @@ return {
 
 	-- Foundation@1.78.0
 	FoundationDisableTokenScaling = SafeFlags.createGetFFlag("FoundationDisableTokenScaling2")(),
-
-	-- Foundation@1.84.0
-	FoundationActionEmphasisStatusIndicator = SafeFlags.createGetFFlag("FoundationActionEmphasisStatusIndicator")(),
 
 	-- Foundation@1.93.0
 	FoundationBaseMenuContentSizing = SafeFlags.createGetFFlag("FoundationBaseMenuContentSizing")(),
@@ -37,7 +34,6 @@ return {
 	-- Foundation@1.98.0
 	FoundationOptionSelectorGroupFixes = SafeFlags.createGetFFlag("FoundationOptionSelectorGroupFixes")(),
 	FoundationOverlayResilientMainGui = SafeFlags.createGetFFlag("FoundationOverlayResilientMainGui")(),
-	FoundationSliderAsSeenOnTV = FoundationSliderAsSeenOnTV,
 	FoundationWidgetManagerSnapshotFlush = SafeFlags.createGetFFlag("FoundationWidgetManagerSnapshotFlush")(),
 
 	-- Foundation@1.99.0
@@ -59,21 +55,16 @@ return {
 	FoundationPopoverContentAnchorFix = SafeFlags.createGetFFlag("FoundationPopoverContentAnchorFix")(),
 	FoundationPopoverRecomputeContentSize = SafeFlags.createGetFFlag("FoundationPopoverRecomputeContentSize")(),
 	FoundationProgressCircleRoundCaps = SafeFlags.createGetFFlag("FoundationProgressCircleRoundCaps")(),
-	FoundationUnifiedScrimScrolling = SafeFlags.createGetFFlag("FoundationUnifiedScrimScrolling")(),
 
 	-- Foundation@1.102.0
 	FoundationAnimatedHighlightSettling = SafeFlags.createGetFFlag("FoundationAnimatedHighlightSettling")(),
 	FoundationNumberInputScrubCallbackProps = SafeFlags.createGetFFlag("FoundationNumberInputScrubCallbackProps2")(),
 	FoundationPopoverPluginFocusable = SafeFlags.createGetFFlag("FoundationPopoverPluginFocusable")(),
-	FoundationSliderKnobSelection = FoundationSliderAsSeenOnTV and FoundationSliderKnobSelection,
 	FoundationTooltipBeta = SafeFlags.createGetFFlag("FoundationTooltipBeta3")(),
 
 	-- Foundation@1.104.0
 	FoundationProviderStableEmptyTable = SafeFlags.createGetFFlag("FoundationProviderStableEmptyTable")(),
 	FoundationStyleRulePseudoName = FoundationStyleRulePseudoName,
-
-	-- Foundation@1.107.0
-	FoundationSliderOffloadDraggingMath = FoundationSliderOffloadDraggingMath,
 
 	-- Foundation@1.109.0
 	FoundationKnobRaisedShadow = FoundationStyleRulePseudoName
@@ -82,7 +73,7 @@ return {
 
 	-- Foundation@1.110.0
 	FoundationAccordionBeta = SafeFlags.createGetFFlag("FoundationAccordionBeta")(),
-	FoundationSliderBeta = FoundationSliderOffloadDraggingMath and SafeFlags.createGetFFlag("FoundationSliderBeta3")(),
+	FoundationSliderBeta = SafeFlags.createGetFFlag("FoundationSliderBeta3")(),
 	FoundationSystemEmphasisNonActions = SafeFlags.createGetFFlag("FoundationSystemEmphasisNonActions")(),
 
 	-- Foundation@1.111.0
@@ -97,22 +88,31 @@ return {
 	FoundationCenterSheetHeightFix = SafeFlags.createGetFFlag("FoundationCenterSheetHeightFix")(),
 	FoundationNumberInputScrubbingUsesOffset = FoundationFixColorOnScrubbableNumberInput
 		and SafeFlags.createGetFFlag("FoundationNumberInputScrubbingUsesOffset")(),
-	FoundationSliderCapture = FoundationSliderAsSeenOnTV
-		and FoundationSliderKnobSelection
-		and SafeFlags.createGetFFlag("FoundationSliderCapture")(),
+	FoundationSliderCapture = SafeFlags.createGetFFlag("FoundationSliderCapture")(),
 
 	-- Foundation@1.114.0
 	FoundationAlertLinkWrap = SafeFlags.createGetFFlag("FoundationAlertLinkWrap")(),
 	FoundationAlertStackTrailingOnOverflow = FoundationAlertLinkWrap
 		and SafeFlags.createGetFFlag("FoundationAlertStackTrailingOnOverflow")(),
-	FoundationEducationalTooltipRefresh = SafeFlags.createGetFFlag("FoundationEducationalTooltipRefresh2")(),
-
-	-- Foundation@1.114.1
-	FoundationFontFaceMigration = SafeFlags.createGetFFlag("FoundationFontFaceMigration2")(),
+	FoundationEducationalTooltipRefresh = FoundationEducationalTooltipRefresh,
 
 	-- Foundation@1.114.2
-	FoundationEducationalTooltipMinMediaWidth = SafeFlags.createGetFFlag("FoundationEducationalTooltipMinMediaWidth3")(),
+	FoundationEducationalTooltipMinMediaWidth = FoundationEducationalTooltipMinMediaWidth,
 	FoundationStudioFontFaceMigration = SafeFlags.createGetFFlag("FoundationStudioFontFaceMigration")(),
+
+	-- Foundation@1.114.3
+	FoundationDontParentToFoundationModule = SafeFlags.createGetFFlag("FoundationDontParentToFoundationModule")(),
+	FoundationFontFaceMigration = SafeFlags.createGetFFlag("FoundationFontFaceMigration3")(),
+
+	-- Foundation@1.115.0
+	FoundationEducationalTooltipBodyOnlyContentLayout = FoundationEducationalTooltipRefresh
+		and FoundationEducationalTooltipMinMediaWidth
+		and SafeFlags.createGetFFlag("FoundationEducationalTooltipBodyOnlyContentLayout")(),
+	FoundationSheetReversedContent = SafeFlags.createGetFFlag("FoundationSheetReversedContent")(),
+
+	-- Foundation@1.116.0
+	FoundationStatusIndicatorDesignUpdate = SafeFlags.createGetFFlag("FoundationStatusIndicatorDesignUpdate")(),
+	FoundationUnifiedScrimScrolling = SafeFlags.createGetFFlag("FoundationUnifiedScrimScrolling2")(),
 
 	-- Unreleased flags
 }

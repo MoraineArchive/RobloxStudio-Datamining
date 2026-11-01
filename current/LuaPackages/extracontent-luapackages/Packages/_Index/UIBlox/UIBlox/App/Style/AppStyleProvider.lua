@@ -164,7 +164,8 @@ local function AppStyleProvider(props: Props)
 	}, Roact.oneChild(props.children :: any))
 
 	if not foundationProviderPresent then
-		if _G.ENVIRONMENT ~= "PRODUCTION" then
+		if _G.ENVIRONMENT ~= "PRODUCTION" and (_G.ENVIRONMENT == "DEVELOPMENT" or _G.__DEV__) then
+			local UIBlox = script.Parent.Parent.Parent -- LUAUFORGE: ignore(script-global)
 			local GlobalPackages = UIBlox:FindFirstAncestor("Packages")
 				or UIBlox:FindFirstAncestor("CorePackages") :: any
 

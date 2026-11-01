@@ -1,0 +1,979 @@
+{
+  "API": [
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 7669358,
+      "sha256": "0962f777e3085487e368ed019c35bdb07cd02f6659aa7212dc2ad6e24bb41efe",
+      "sourceType": "official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-API-Dump.json"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 8677424,
+      "sha256": "6c0ead61eaa8623a7cfc650db86fe5ddf128c5d79ed74f2ef2b5c08d7e6033e0",
+      "sourceType": "official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-Full-API-Dump.json"
+    }
+  ],
+  "Build": [
+    {
+      "bytes": 103,
+      "sha256": "a4b27f844be84a4d5ef4ac2b856d8ee3a806ee6fd450cc1d636485f0cd4b5ef3",
+      "sourceType": "official",
+      "sourceUrl": "https://clientsettings.roblox.com/v2/client-version/WindowsStudio64"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 2529,
+      "sha256": "2e57de262764c3c1a2a8c616ec1f0e7edd473859cc89a65f41ccd2ba1af5b7be",
+      "sourceType": "official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-rbxPkgManifest.txt"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 2243401,
+      "sha256": "b622e8dc7e77f24a9aed99a64dc0d2dd4f3efc21bab440dfe9c883faac732595",
+      "sourceType": "official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-rbxManifest.txt"
+    }
+  ],
+  "FastVariables": [
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 120313638,
+      "derivedFrom": "RobloxStudioBeta.exe",
+      "sha256": "804414bb9b99a7149bd914a4226da043c6eba7faa57bbf01a52bc68ed729280a",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-RobloxStudio.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 307051,
+      "derivedFrom": "content-configs.zip",
+      "sha256": "27dd55beae5f689783a17d9f94c1c568b28e714f87193c74ce1ce62649ff2bae",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-content-configs.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 620166,
+      "derivedFrom": "content-models.zip",
+      "sha256": "bd9d84b18399042e0478ccdc989081d48a82279a498b36efaa197a317e01df76",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-content-models.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 650142,
+      "derivedFrom": "content-qt_translations.zip",
+      "sha256": "66526e43d2c9c9a18141ac2d41a0629fec1f11a21ebd6a12a9997f33b0fcc8ff",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-content-qt_translations.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 9925925,
+      "derivedFrom": "extracontent-luapackages.zip",
+      "sha256": "276b9b1ab87f08d0c13f68d535de083b8ea14625cc2363d9178b69a60a31baee",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-extracontent-luapackages.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 16919229,
+      "derivedFrom": "extracontent-models.zip",
+      "sha256": "584240616e7ff6e3ba99ab0ab1a55a5c845fd5ff537b5b2d43f22596f5cfb349",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-extracontent-models.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 3311334,
+      "derivedFrom": "extracontent-scripts.zip",
+      "sha256": "94f44a11c13944ee273dd9f4969e1b653677d037ef696a7619b1ad31fd629895",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-extracontent-scripts.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 610717,
+      "derivedFrom": "extracontent-translations.zip",
+      "sha256": "16cd03787910fec0340c58cd4efd4ba47d1f00d61395c76693cd5db695db58a4",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-extracontent-translations.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 212559,
+      "derivedFrom": "studiocontent-models.zip",
+      "sha256": "0f5d7984686372cc18973f5b06207cf858ccea3cc689ce43c248b7a33d3b9d38",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-studiocontent-models.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 106988284,
+      "derivedFrom": "BuiltInPlugins.zip",
+      "sha256": "b923c35d69d62fb46799fbdbdd212200cf4e45445fd281a255261a42ae0552d4",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-BuiltInPlugins.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 119040275,
+      "derivedFrom": "BuiltInStandalonePlugins.zip",
+      "sha256": "cf8e2af748cde302f89c4fe54bf479eda325d44b8827da3b56884af0ec0d8742",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-BuiltInStandalonePlugins.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 927300,
+      "derivedFrom": "Plugins.zip",
+      "sha256": "336c248303ef778dd1ceeddee133a43b44ad17034d4f3db48df3fe389d7688a5",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-Plugins.zip"
+    }
+  ],
+  "LiveSettings": [
+    {
+      "bytes": 1516325,
+      "reference": "https://raw.githubusercontent.com/MaximumADHD/Roblox-FFlag-Tracker/main/README.md",
+      "sha256": "99e3cef7c11082a4de92a29f2778d330cb00c8758ce8dc6ea875c33958184875",
+      "sourceType": "official",
+      "sourceUrl": "https://clientsettings.roblox.com/v2/settings/application/PCStudioApp"
+    }
+  ],
+  "LuaPackages": [
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 307051,
+      "derivedFrom": "content-configs.zip",
+      "sha256": "27dd55beae5f689783a17d9f94c1c568b28e714f87193c74ce1ce62649ff2bae",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-content-configs.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 620166,
+      "derivedFrom": "content-models.zip",
+      "sha256": "bd9d84b18399042e0478ccdc989081d48a82279a498b36efaa197a317e01df76",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-content-models.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 650142,
+      "derivedFrom": "content-qt_translations.zip",
+      "sha256": "66526e43d2c9c9a18141ac2d41a0629fec1f11a21ebd6a12a9997f33b0fcc8ff",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-content-qt_translations.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 9925925,
+      "derivedFrom": "extracontent-luapackages.zip",
+      "sha256": "276b9b1ab87f08d0c13f68d535de083b8ea14625cc2363d9178b69a60a31baee",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-extracontent-luapackages.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 16919229,
+      "derivedFrom": "extracontent-models.zip",
+      "sha256": "584240616e7ff6e3ba99ab0ab1a55a5c845fd5ff537b5b2d43f22596f5cfb349",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-extracontent-models.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 3311334,
+      "derivedFrom": "extracontent-scripts.zip",
+      "sha256": "94f44a11c13944ee273dd9f4969e1b653677d037ef696a7619b1ad31fd629895",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-extracontent-scripts.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 610717,
+      "derivedFrom": "extracontent-translations.zip",
+      "sha256": "16cd03787910fec0340c58cd4efd4ba47d1f00d61395c76693cd5db695db58a4",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-extracontent-translations.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 212559,
+      "derivedFrom": "studiocontent-models.zip",
+      "sha256": "0f5d7984686372cc18973f5b06207cf858ccea3cc689ce43c248b7a33d3b9d38",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-studiocontent-models.zip"
+    }
+  ],
+  "Native": [
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 120313638,
+      "derivedFrom": "RobloxStudioBeta.exe",
+      "sha256": "804414bb9b99a7149bd914a4226da043c6eba7faa57bbf01a52bc68ed729280a",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-RobloxStudio.zip"
+    }
+  ],
+  "Plugins": [
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 106988284,
+      "derivedFrom": "BuiltInPlugins.zip",
+      "sha256": "b923c35d69d62fb46799fbdbdd212200cf4e45445fd281a255261a42ae0552d4",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-BuiltInPlugins.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 119040275,
+      "derivedFrom": "BuiltInStandalonePlugins.zip",
+      "sha256": "cf8e2af748cde302f89c4fe54bf479eda325d44b8827da3b56884af0ec0d8742",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-BuiltInStandalonePlugins.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 927300,
+      "derivedFrom": "Plugins.zip",
+      "sha256": "336c248303ef778dd1ceeddee133a43b44ad17034d4f3db48df3fe389d7688a5",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-Plugins.zip"
+    }
+  ],
+  "Resources": [
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 2529,
+      "sha256": "2e57de262764c3c1a2a8c616ec1f0e7edd473859cc89a65f41ccd2ba1af5b7be",
+      "sourceType": "official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-rbxPkgManifest.txt"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 2243401,
+      "sha256": "b622e8dc7e77f24a9aed99a64dc0d2dd4f3efc21bab440dfe9c883faac732595",
+      "sourceType": "official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-rbxManifest.txt"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 407,
+      "derivedFrom": "ApplicationConfig.zip",
+      "sha256": "5cc8509882515d50e8c65602516a5dbc291092b24bc6ce0b2105ada1f7733dbc",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-ApplicationConfig.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 24878547,
+      "derivedFrom": "content-api-docs.zip",
+      "sha256": "0d60013122d3f424eafddfcbd141e8daca1a382062f93353f816777ba2d6480f",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-content-api-docs.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 411902,
+      "derivedFrom": "content-avatar.zip",
+      "sha256": "bc1311a6cc1b7bc51ff02dc4bd571d9c12721f2c751196bc1cdb65114c9a9f9c",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-content-avatar.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 307051,
+      "derivedFrom": "content-configs.zip",
+      "sha256": "27dd55beae5f689783a17d9f94c1c568b28e714f87193c74ce1ce62649ff2bae",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-content-configs.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 443587,
+      "derivedFrom": "content-platform-dictionaries.zip",
+      "sha256": "c310f314a2fd3121513c1c080a58effc037c0049c80d701eb02699966f8b98aa",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-content-platform-dictionaries.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 650142,
+      "derivedFrom": "content-qt_translations.zip",
+      "sha256": "66526e43d2c9c9a18141ac2d41a0629fec1f11a21ebd6a12a9997f33b0fcc8ff",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-content-qt_translations.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 7430125,
+      "derivedFrom": "content-studio_svg_textures.zip",
+      "sha256": "50c5c0d524abb76b1dc7c531292c12faf173d36d04244f738fad176ea4adb9e2",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-content-studio_svg_textures.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 5747337,
+      "derivedFrom": "content-textures2.zip",
+      "sha256": "9ee8b87863cdf22aa83cbb7410b5762720faf24afac78be37fc72f52a335bdff",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-content-textures2.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 3716441,
+      "derivedFrom": "content-textures3.zip",
+      "sha256": "73c9d9a9333623a070ccc1e5f6cf325d83f1ef9ce35c4d255b66a1733f6e6a91",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-content-textures3.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 5956315,
+      "derivedFrom": "extracontent-textures.zip",
+      "sha256": "62305e2edf6ed7b83d75bf3532b0b92635cdcdbd2276e19c9803c6d4e0a1b202",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-extracontent-textures.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 13814217,
+      "derivedFrom": "shaders.zip",
+      "sha256": "b6777c0d7a98632555711ccc40446f2f657be6535485d8558354b6d69c9b0741",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-shaders.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 212559,
+      "derivedFrom": "studiocontent-models.zip",
+      "sha256": "0f5d7984686372cc18973f5b06207cf858ccea3cc689ce43c248b7a33d3b9d38",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-studiocontent-models.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 9138810,
+      "derivedFrom": "studiocontent-textures.zip",
+      "sha256": "db6ea5f981df42672773517b9ed81758ba45c3afb582203729088d280ae83b02",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-studiocontent-textures.zip"
+    },
+    {
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 120313638,
+      "derivedFrom": "RobloxStudio.zip",
+      "sha256": "804414bb9b99a7149bd914a4226da043c6eba7faa57bbf01a52bc68ed729280a",
+      "sourceType": "derived-official",
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-RobloxStudio.zip"
+    }
+  ],
+  "Web": [
+    {
+      "bytes": 28381,
+      "sha256": "db3e8f0a879db81978d2365146dcc4ed2b4ee90246626d96fc36d8d6d7077101",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/0-8gmdl4qfkz2.js"
+    },
+    {
+      "bytes": 146854,
+      "sha256": "e674366bf89ee466f86dadc26174bf691496b5b011bf883d4d9f8f8130ef10d8",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/009ts-395o27v.js"
+    },
+    {
+      "bytes": 70839,
+      "sha256": "21403b4b5b79aa39d4cb1db604de1055d36480e4d9893f4cae14cc5c0ba082cd",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/029r2--r5on58.js"
+    },
+    {
+      "bytes": 53553,
+      "sha256": "43ea49b2e5fd1e10c9bf58abd1abcdaf610edc2e1c0a8a5b091fc0d41c534dc9",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/03k4yb7n_4oj4.js"
+    },
+    {
+      "bytes": 120997,
+      "sha256": "cb1a635047fd0b936d96dc5bb4d71e1ab1d00e42f2f1d2e2e7d9419bdeffd3e0",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/04748jsv8ac9p.js"
+    },
+    {
+      "bytes": 28411,
+      "sha256": "edb0def7c3831f30884c850c751ed3063119fa3ce092ecb8d3c471bf2a3a22ba",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/04x87rdt9vx85.js"
+    },
+    {
+      "bytes": 74847,
+      "sha256": "689f0724aef1fa9b935676b302c0187c89906d14ecd53c5ff6841485db63b74e",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/06cswzpmiz9t3.js"
+    },
+    {
+      "bytes": 27472,
+      "sha256": "b53b3f4c993e6535a599ea70994f911b1f865972143e989a5d22052d149ae714",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/077sifrzzf6x5.js"
+    },
+    {
+      "bytes": 50826,
+      "sha256": "23a607ba5dd7c2facf945d5c714281364841e1471cf699c10dddd77ab0e7e542",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/088n4ncx9r23z.js"
+    },
+    {
+      "bytes": 37176,
+      "sha256": "5717ffb81fcb881d6659a44ebeb390e58e4684b2513d45aba8dcb0d86dc7d613",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/0cijvjiiwbj3u.js"
+    },
+    {
+      "bytes": 67758,
+      "sha256": "dee4ad228a53da02490cd260229a652cac905a74381c6249981753f9c2e14344",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/0dd81h1gx_gmv.js"
+    },
+    {
+      "bytes": 116493,
+      "sha256": "080c2ab579996412282bb29e8f7c6f016f228916977f31f47b30c54df65425ca",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/0dt7dp_48ao14.js"
+    },
+    {
+      "bytes": 475484,
+      "sha256": "bbb51827fcef65ec9ca23bc333634c9d0acd1bc593646643593fd5cfb0c0a959",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/0dxv17xr_p4hs.js"
+    },
+    {
+      "bytes": 28610,
+      "sha256": "b4b45eb6365a3ce3b2940dd1b6831d23d1fd340355448d87dd8e769cadd8f268",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/0lg0e-j1v17bg.js"
+    },
+    {
+      "bytes": 34779,
+      "sha256": "ae0f4ba336a139df4b209afcb348f6b97727cea65ce3f711f61d61e36af5f797",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/0lqbqq7_hinge.js"
+    },
+    {
+      "bytes": 29833,
+      "sha256": "0d1c4650ba7468346bbf8408f5948f6bf91166ea20615e653bf85afc5adfd6a1",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/0mtwern7obgp8.js"
+    },
+    {
+      "bytes": 30867,
+      "sha256": "4b547adea075693cd479df4d6fd243b42dc0a77e10bf4e6248f2bf6cbe0a3103",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/0pn-2wziaxf3f.js"
+    },
+    {
+      "bytes": 63350,
+      "sha256": "2eb7161925a10e97391dc97ba2b3d6d1ab46b65b00fa756580d34b543791d600",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/0t5aaws8ha2gy.js"
+    },
+    {
+      "bytes": 158025,
+      "sha256": "e2a93e5cd5dbd0a0b68798598b731c13da2d59e472032d594641922a37745915",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/0tbqnkbcrm802.js"
+    },
+    {
+      "bytes": 326322,
+      "sha256": "f4f5cfaf2eacb211abe3657352797f8cfdf220b9cf4f73477226e0bef0a31b28",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/0v_fmf6o46apo.js"
+    },
+    {
+      "bytes": 37868,
+      "sha256": "26f41f5326e866e07e8e6d6532f3dc343cb01ea8b455d1fb39a3cb9d6df55e54",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/1-i4nq-m7wnib.js"
+    },
+    {
+      "bytes": 38048,
+      "sha256": "b744eba693419a1943afbda40bed5bb14b00ad3a4851b2cd94bf50dffd4b778e",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/14_ezygdt9hcg.js"
+    },
+    {
+      "bytes": 88372,
+      "sha256": "df5a65c14886a6bb33f788fe2bac3a3c825ce03965b646540e3d1983d8dcc072",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/167yrxn3hgdiu.js"
+    },
+    {
+      "bytes": 78201,
+      "sha256": "182181aaad3e80a1323645494a11ed164d0718d9f7a91723157ab64764aa3606",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/16ajsts3a38-f.js"
+    },
+    {
+      "bytes": 22799,
+      "sha256": "8a877e43ff48159229cbce3c6b7f991243c6b7e37793881bb4690f4c39ea7247",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/16f8mk1phkase.js"
+    },
+    {
+      "bytes": 53534,
+      "sha256": "601eb435d68b84410d4829ea7b4aab582e7725941535eb456aa44003d0d6cd0f",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/17e4_lj96lyxg.js"
+    },
+    {
+      "bytes": 184171,
+      "sha256": "cd9cc242cda0f4f4e946409e1503448a788e81565a94b7999b60149878720001",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/18eftwu5ixi5h.js"
+    },
+    {
+      "bytes": 36681,
+      "sha256": "0fd25d61dbc84ee4d02ac00ceee3a7eaf3cc134b756cca7d6420f705383e0ae9",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/1a61jblmwyp8m.js"
+    },
+    {
+      "bytes": 105000,
+      "sha256": "f93db6b8db6860bf58c92e4f824091e9c9e3711703e31ec09d8fb7b6c61f636c",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/1choot-jpbm3q.js"
+    },
+    {
+      "bytes": 31415,
+      "sha256": "9a354fbc3cfd358cb36c0ed39d5e9b1d61e1899145d0e0aa040b4ef743f15106",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/1cl-wb0kc1ixi.js"
+    },
+    {
+      "bytes": 25697,
+      "sha256": "d629cf6157c71b4e9aefab1fc628d5b7b82c9c696da5affd11f24cbe45d20c0e",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/1cs7p5931f6yd.js"
+    },
+    {
+      "bytes": 32988,
+      "sha256": "9603ef96639328e19b85431b805a7e80656866d9c56e1d788783029950fa0f43",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/1fpp2risx687t.js"
+    },
+    {
+      "bytes": 75281,
+      "sha256": "d30c446a61eef91d4ad2114924f010d8cc59a3acdf3625472fb61e9c47844b3a",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/1i1013nmebhqy.js"
+    },
+    {
+      "bytes": 39198,
+      "sha256": "3f431f96b7a4df736868e9b3d2ecb695054e8f5955f392474bf0502d22f4eb9e",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/1ic4mc6dkoavr.js"
+    },
+    {
+      "bytes": 48718,
+      "sha256": "e726c93af7c97d34ef85d2d3aa4e8f1d53daa87711506c6278a4d30926c8bee9",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/1jkj50-iv1iq2.js"
+    },
+    {
+      "bytes": 40353,
+      "sha256": "223c14cd7aa0056a40e81dd580e5243d1dc86d02df323abc133c5e7c611939ea",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/1jul4w-s8tn7w.js"
+    },
+    {
+      "bytes": 21565,
+      "sha256": "64c54e793828a8dceacc9249bbd4715a8e8845df252a85db4d20a2a00a423fe9",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/1k1h4t7ab8ej4.js"
+    },
+    {
+      "bytes": 47051,
+      "sha256": "00991a742ec20328e4179210a57090549fe8522f7033ebe70266963531b99ddd",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/1o_f51g_p1q3e.js"
+    },
+    {
+      "bytes": 31680,
+      "sha256": "ed4eeaeeae05faf503bc16878955c620d18ee4e0a524b26c0798ce2ae1ea22f1",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/1pc_2iyq0loua.js"
+    },
+    {
+      "bytes": 1520,
+      "sha256": "ff8f1109dd52f3fc7e823c25b048f8a376c2ee96bb19ebe61715889026aa7d7f",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/1uvhb8_y57779.js"
+    },
+    {
+      "bytes": 72922,
+      "sha256": "130cb79bd28738093f4861959e33ab04506a9258889bb581ab48b61b5a6cd05d",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/1vu9wrvtrb2jq.js"
+    },
+    {
+      "bytes": 34750,
+      "sha256": "9f065a07781960e017ee0405a5e91a2a0ca89a736c80f1602dac4fb383e5f374",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/1wokcc1ixmlti.js"
+    },
+    {
+      "bytes": 36333,
+      "sha256": "10c7a491d39877f9a20d93f23b0cbfd1d709334c55f519bf86d17cd67bf66f08",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/1wrfoc7uhouzi.js"
+    },
+    {
+      "bytes": 154512,
+      "sha256": "baf64386c70a24e88b29c1983d0023648dfd8094fd12b4439a3b49cc8fb738ea",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/1zidpr_7vsc2l.js"
+    },
+    {
+      "bytes": 806547,
+      "sha256": "08201a4aa25089fa8023c5231d3b40291c0d7c753825d466071ed534ce8bedaf",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/22limuyafuho1.js"
+    },
+    {
+      "bytes": 80970,
+      "sha256": "67a203fba95a256d2d46012ad7fd7532d80b80e8114347aaba3a2d580ed1cae5",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/2749ioh7iyp9q.js"
+    },
+    {
+      "bytes": 29520,
+      "sha256": "49e8e6f040c5597ca9e3d9cf4142c0fd39a8719d378e0e86c845e7f0a2fef434",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/27_1gw756pdfj.js"
+    },
+    {
+      "bytes": 43869,
+      "sha256": "ee6bc8487e1df375b63df18a7c67a083d4240538cb79eca5891bcfaa0d38eec8",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/285t1zhxy390v.js"
+    },
+    {
+      "bytes": 32195,
+      "sha256": "76639fd03d9815946b3f1ad621f8f8cd8b933334eb229928ff344fbd40473640",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/2b30q00-bfxg4.js"
+    },
+    {
+      "bytes": 93818,
+      "sha256": "06fab2bdf227b60d0c2c6358c4a8553412bb5f431840f579b6da01d4b1da1e6e",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/2ekxpb9f4bk9j.js"
+    },
+    {
+      "bytes": 27396,
+      "sha256": "5a97c3c61098f855a5d4b1fe49ce4f2c6212545b0f5d35e16ec96562afe20d25",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/2el6em6auwuxo.js"
+    },
+    {
+      "bytes": 29749,
+      "sha256": "9c630c8e38780609208a73e1359d02cf9ca1d8683c0d569ec65749ee4ab5d59d",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/2fikja62v_ceq.js"
+    },
+    {
+      "bytes": 30249,
+      "sha256": "db78b2778725a641471036b6916f9d49f8275de15e423d922b915a49ac955436",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/2gizszd93l0i5.js"
+    },
+    {
+      "bytes": 126544,
+      "sha256": "b6beeeab23cda4e165190b3621fc2715b79705a3a3dd53b54ae6f3a9d88a1aab",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/2gx35t48iucv4.js"
+    },
+    {
+      "bytes": 45793,
+      "sha256": "d9f253bdb29f31003f370c82554aaf2c2bdbd1e42365d56ba7a0011a9df8b624",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/2h1r1u1wmgqz2.js"
+    },
+    {
+      "bytes": 62618,
+      "sha256": "b3274add5f29812b4da6334607db5c5861f6853ef482103c71ff422d6118a076",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/2i854f9633q2x.js"
+    },
+    {
+      "bytes": 34679,
+      "sha256": "f60167d05636c86408c99a254577bbb2d1171dc1c1a1844c69edd4db36c562f1",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/2ib62y-x2im6p.js"
+    },
+    {
+      "bytes": 27675,
+      "sha256": "d101bd88edb29730667408f5d83764a86d4bfafe94472d8e086477bbd1d6d425",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/2la-_v3w-jpwy.js"
+    },
+    {
+      "bytes": 51654,
+      "sha256": "7f87d7bab340e5fc409336d835a02efa18da1cfc0805813f0c3304736748b31d",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/2o8-5zp8vi2rb.js"
+    },
+    {
+      "bytes": 61476,
+      "sha256": "7d6c1b46a49c3b334183b32bf0f42909cfcee76fae0e421e3bb4a4f697c69536",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/2p6i-305ym3sm.js"
+    },
+    {
+      "bytes": 103372,
+      "sha256": "87bc8a5cb6c30d17c8c3d3e514d9b133c926955e0052b4152d6e8876a45b06b0",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/2p9fxmba85uic.js"
+    },
+    {
+      "bytes": 63283,
+      "sha256": "253a4fecf73a1f460c5696bcf1c6807100d085c162f7745773695e8c6acca0cb",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/2rk4n18t1wxn1.js"
+    },
+    {
+      "bytes": 34731,
+      "sha256": "76382d4ba683627362056768dc5c4dd3601ef8028df11a7605b322e0f2694237",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/2s8n765i7chcb.js"
+    },
+    {
+      "bytes": 682493,
+      "sha256": "6c620c6077b71203aed5c3a2e7c46cda421f8aaaed2ae5b4cbbec0c0210d816d",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/2wlwial9v5hfd.js"
+    },
+    {
+      "bytes": 44887,
+      "sha256": "32b454331197cd5ddf17a795f9bc78c3936dea891020f35809b36f105097e51b",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/2z5cmy0qd07-s.js"
+    },
+    {
+      "bytes": 1856,
+      "sha256": "7669c392e9f01e05f4b451042786ccc53394a0c3f333bad20f2115be5f28ab9f",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/3-7ptyw3r6ude.js"
+    },
+    {
+      "bytes": 28674,
+      "sha256": "2b81f0a7b45b35228e41de734d9f45fb18c1438e735aeadbb474a142bc4f0eba",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/3040wxf7ht838.js"
+    },
+    {
+      "bytes": 143664,
+      "sha256": "2c4c386da9dd9632c46595a5c6694c3dc74891d24d24736954133a462e771688",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/31np5a42lpa13.js"
+    },
+    {
+      "bytes": 62221,
+      "sha256": "ca3c1ef2e32234c5478be950cd48cf3569d684694c0345c2b50fb02d10a17599",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/31tutgilnwf2k.js"
+    },
+    {
+      "bytes": 864256,
+      "sha256": "0ccfb7aff2a3b53d08a52642bd24285764b4ed1d91778be6891859660ddf9d68",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/33b4iuoyna-v6.js"
+    },
+    {
+      "bytes": 100006,
+      "sha256": "fe310705824aca544351810c60afa1add272a94019a4b3df3bf2fb3fac9eb235",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/36hdbbpx4bjm7.js"
+    },
+    {
+      "bytes": 34439,
+      "sha256": "ed756d5f2919dbd7271408581b70b05533d138f3a0b5a10baa1bd4ae1db8f1d0",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/37jlf12fhjx9w.js"
+    },
+    {
+      "bytes": 69635,
+      "sha256": "6dba7876c2b1197dacc97d2b2b914618b26062f367718a19136eca4081da094b",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/3eb0_s6u2cuhp.js"
+    },
+    {
+      "bytes": 48383,
+      "sha256": "66fae84c9c5039d6851d8f8165013f96b2377f8462efa3bb44bd4866b81ae72c",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/3itsot62qcij-.js"
+    },
+    {
+      "bytes": 67396,
+      "sha256": "ab688d6a9295c5f3760936136ee8b790d33e881057b4ffaa8dab705da4db63cf",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/3mc57knjb20hs.js"
+    },
+    {
+      "bytes": 38439,
+      "sha256": "c84fcb63fb414162816a52617718188afcf4defaf32bcf395eee9faa84caa6dd",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/3osjw-4jio4_b.js"
+    },
+    {
+      "bytes": 336007,
+      "sha256": "3f64a6eccca8650a16eefdd26a4181e39be0be6aeb01d6f5e5b4cd0c4f23c5c5",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/3rv-xmr6x4ezc.js"
+    },
+    {
+      "bytes": 60332,
+      "sha256": "d32f4897dc5f5f27facddda44a3103068d379cd445d8d628e1e6432305e94ef8",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/3vymv7cfp4v6q.js"
+    },
+    {
+      "bytes": 67417,
+      "sha256": "af17753949b861fad9e5815b3794c57342484114181fcba73169c2229c023cdc",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/3xrqp1wekky3l.js"
+    },
+    {
+      "bytes": 13508,
+      "sha256": "8619559eea0cb5897c8e4940e0b606e36c9d238ae1544b57e62630320cc25b9e",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/turbopack-0c792h-4mxekh.js"
+    },
+    {
+      "bytes": 13969,
+      "sha256": "340d4f7811172ca151a95842f827ef52b212080b126d7ed1773b67648e85dda5",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/chunks/turbopack-3bqr71f7vqf80.js"
+    },
+    {
+      "bytes": 44622,
+      "sha256": "ff87c9b6b6a1c8b0444d9665f5f5139fc36521708d6eab95282f8ef5002f2f50",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/mlsQvietjLsGB6kx21JmH/_buildManifest.js"
+    },
+    {
+      "bytes": 96,
+      "sha256": "5483e3295dc35dfe29ea932efc85341c916f10ff78ff5b0e965e003710893a4a",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/mlsQvietjLsGB6kx21JmH/_clientMiddlewareManifest.js"
+    },
+    {
+      "bytes": 76,
+      "sha256": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/_next/static/mlsQvietjLsGB6kx21JmH/_ssgManifest.js"
+    },
+    {
+      "bytes": 292,
+      "sha256": "d1e254c0f397341fae3e1b17448b40ad0db523f1d528da7da83efc91d9532874",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/ddfea70d64a47100e71b4af4ebf37c8094c8f67f/browser-detect.js"
+    },
+    {
+      "bytes": 1347,
+      "sha256": "a2a0b3862649466bfd13e4ee7a81516e758557b624c8d225c4c13a908a26f897",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/docs/177b73ef60f8aa3fb9ebeeb019c7c0fea06f8d0f/_next/static/3z-w030xfWGRxr0QszLFt/_buildManifest.js"
+    },
+    {
+      "bytes": 168,
+      "sha256": "632291c74e0c35c622d7239e456716fb3e47ce583b50b85990f16a9182960bb9",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/docs/177b73ef60f8aa3fb9ebeeb019c7c0fea06f8d0f/_next/static/3z-w030xfWGRxr0QszLFt/_ssgManifest.js"
+    },
+    {
+      "bytes": 112276,
+      "sha256": "88b8d85a731b3da2e4f9a3443da204b03266e6d27ab093746d32226e64e7e88d",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/docs/177b73ef60f8aa3fb9ebeeb019c7c0fea06f8d0f/_next/static/chunks/2392-aceaeeef29387c29.js"
+    },
+    {
+      "bytes": 116044,
+      "sha256": "ce3e9e2e680c7a08719ac083038083a70876e984ee4f01a225ff563969862508",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/docs/177b73ef60f8aa3fb9ebeeb019c7c0fea06f8d0f/_next/static/chunks/3e0a8995-c3c528adafb95b0a.js"
+    },
+    {
+      "bytes": 116503,
+      "sha256": "a786106bbb0e8e1b5ee9bd7a6c60a7d0cc3ffc3528f9b8914efb1e6d987ec225",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/docs/177b73ef60f8aa3fb9ebeeb019c7c0fea06f8d0f/_next/static/chunks/422c2fb8-83118b137b9be2e0.js"
+    },
+    {
+      "bytes": 66654,
+      "sha256": "891294f506223791a76a062885f1405050030a2eefd1d977c0d66beb8c632d45",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/docs/177b73ef60f8aa3fb9ebeeb019c7c0fea06f8d0f/_next/static/chunks/5448-6d1891d962aef901.js"
+    },
+    {
+      "bytes": 436373,
+      "sha256": "9eab193890e2416e8c8faceee904b6dc04a46ef1b1eefdb238312e43a78de5db",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/docs/177b73ef60f8aa3fb9ebeeb019c7c0fea06f8d0f/_next/static/chunks/5544-91a51d4279bc7f42.js"
+    },
+    {
+      "bytes": 145795,
+      "sha256": "1be14422460e2ac0a1d98761fe294ed0e93ca9fc71a6d29b0bd2fa11e918a6bd",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/docs/177b73ef60f8aa3fb9ebeeb019c7c0fea06f8d0f/_next/static/chunks/7983-035c0d5d0ca08b13.js"
+    },
+    {
+      "bytes": 133583,
+      "sha256": "b467382b7e86424487edfadc4a615b4db1be1f2c040308af60106129a5b35238",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/docs/177b73ef60f8aa3fb9ebeeb019c7c0fea06f8d0f/_next/static/chunks/db5c8b81-5828c9641d0a3e0c.js"
+    },
+    {
+      "bytes": 139850,
+      "sha256": "0e14c547969383bfe8b2a3959a279ac46f5b94428171b4390368957b03cf5e9d",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/docs/177b73ef60f8aa3fb9ebeeb019c7c0fea06f8d0f/_next/static/chunks/framework-b9fd9bcc3ecde907.js"
+    },
+    {
+      "bytes": 136504,
+      "sha256": "85c951e75019c2914c9adde61772191384891328f9784eb7db49ee598bd137ff",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/docs/177b73ef60f8aa3fb9ebeeb019c7c0fea06f8d0f/_next/static/chunks/main-266d2f10ef51c461.js"
+    },
+    {
+      "bytes": 480753,
+      "sha256": "8f5a3c62d40c11ff11a706970e7fb7fbf0452576d4ce377b84a0acee5de96cb9",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/docs/177b73ef60f8aa3fb9ebeeb019c7c0fea06f8d0f/_next/static/chunks/pages/%5B%5B...slugs%5D%5D-e8613f875431ffc4.js"
+    },
+    {
+      "bytes": 4758576,
+      "sha256": "e27374105e9ac56afae698a4755fe90282974d6645eebcea23c0f46a81537966",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/docs/177b73ef60f8aa3fb9ebeeb019c7c0fea06f8d0f/_next/static/chunks/pages/_app-63974f8742a9d6fe.js"
+    },
+    {
+      "bytes": 112594,
+      "sha256": "0973c1d64c88adc8e3c950410cb58b288f72118d5965b78049438deb8f2f9683",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/docs/177b73ef60f8aa3fb9ebeeb019c7c0fea06f8d0f/_next/static/chunks/polyfills-42372ed130431b0a.js"
+    },
+    {
+      "bytes": 5144,
+      "sha256": "4031b34a9152cdb4b3b10331390032ad92309a54d5784a9c531f51338255f930",
+      "sourceType": "official",
+      "sourceUrl": "https://assets.create.roblox.com/docs/177b73ef60f8aa3fb9ebeeb019c7c0fea06f8d0f/_next/static/chunks/webpack-df978e64613e713e.js"
+    }
+  ]
+}

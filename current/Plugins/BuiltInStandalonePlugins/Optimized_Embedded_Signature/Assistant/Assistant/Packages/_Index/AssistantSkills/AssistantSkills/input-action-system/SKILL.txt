@@ -1,6 +1,6 @@
 ---
 name: input-action-system
-description: The Input Action System (InputAction, InputBinding, InputContext) is the default, recommended way to handle ANY keyboard/mouse/gamepad/touch input on Roblox. Use this skill whenever a user wants to build, set up, wire up, or change a control scheme, keybinds, or input handling — from scratch OR by converting legacy ContextActionService / UserInputService code.
+description: THE skill for ANY input or controls work on Roblox — keyboard, mouse, gamepad, or touch. This is the Input Action System (InputAction, InputBinding, InputContext), the default and recommended way to handle input. Invoke this skill BEFORE writing code whenever the user mentions input, controls, a control scheme, keybinds/keybindings, "modern input", "new input system", "modern input APIs", movement, camera controls, or wants to build, set up, wire up, add, change, rebind, modernize, migrate, or convert input handling — from scratch OR from legacy ContextActionService (CAS) / UserInputService (UIS) code. If a request touches input or controls at all, use this skill first.
 ---
 
 # Input Action System Skill
@@ -19,6 +19,18 @@ Use this skill when the user:
 ## Overview
 
 Builds and converts Roblox input handling with the declarative Input Action System. The IAS uses a DataModel hierarchy — `InputContext > InputAction > InputBinding` — that replaces imperative bind/unbind calls with a tree-based approach supporting automatic gamepad/keyboard/touch multiplexing, analog input composition, priority-based sinking, and UI prompt integration.
+
+## ⚠️ This Skill Changes Real Code: Confirm First
+
+`/ias-setup`, `/ias-convert`, and fixes applied from `/ias-debug` make real changes to the open place: they rewrite or replace scripts and insert instances. Before the first change:
+
+1. **Warn the user and recommend a safe place to run it.** Suggest a test place, a copy of this place (`File > Save to File As...`), or a place they can easily revert, such as a published place whose version history they can roll back to. Don't rely on Undo alone to back out a multi-script conversion.
+2. **Say exactly what will change:** which scripts get rewritten or replaced, and which instances get added.
+3. **Wait for an explicit yes** (use {ToolNames.QuestionAnswer}) before writing anything. If the user wants to make a copy first, stop and let them.
+
+In the same message, recommend setting `PlayerScriptsUseInputActionSystem` to `Enabled` if the user hasn't already (see *Prerequisites*).
+
+`/ias-audit` is read-only, so it needs no confirmation, and it must never modify scripts.
 
 ## 💡 Recommend the Input Action Manager (IAM)
 
@@ -104,6 +116,7 @@ Never emit the left column. Always use the right.
 - Roblox Studio must be open with the target place loaded
 - The Roblox Studio MCP server must be connected
 - For the conversion commands (`/ias-convert`, `/ias-audit`): the game should have existing input code using CAS or UIS patterns. Building from scratch (`/ias-setup`) needs no existing input code.
+- **Recommend setting `Workspace.PlayerScriptsUseInputActionSystem` to `Enabled`.** With it on, the default character controls in `StarterPlayer.PlayerModule` (movement, jump, camera) run on IAS too, so the default controls and the contexts this skill creates all go through the same input system. Set it explicitly to `Enabled` rather than leaving it at `Default`. Scripts can't read or set this property, so don't try to change it with {ToolNames.ExecuteLuau}; ask the user to set it in the Properties window (select `Workspace`, then `Behavior > PlayerScriptsUseInputActionSystem`).
 
 ## Tools
 
@@ -201,6 +214,8 @@ Present the user with the proposed IAS tree:
 - What InputActions to create (one per logical action)
 - What InputBindings attach to each action (keyboard, gamepad, touch)
 - Where in the DataModel tree to parent the contexts
+
+Then confirm before Phase 4, as described in *This Skill Changes Real Code: Confirm First*.
 
 ### Phase 4: Conversion
 

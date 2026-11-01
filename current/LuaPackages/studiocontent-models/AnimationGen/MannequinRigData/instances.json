@@ -1,0 +1,32 @@
+[
+  {
+    "class": "AnimationRigData",
+    "name": "AnimationRigData",
+    "path": "AnimationGenARD/AnimationRigData",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Generic:non-UTF8",
+      "label:non-UTF8",
+      "name:non-UTF8",
+      "parent:non-UTF8",
+      "postTransform:non-UTF8",
+      "preTransform:non-UTF8",
+      "transform:non-UTF8"
+    ]
+  },
+  {
+    "class": "Model",
+    "name": "AnimationGenARD",
+    "path": "AnimationGenARD",
+    "properties": {
+      "AttributesSerialize": "",
+      "ModelMeshData": "",
+      "SlimHash": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  }
+]

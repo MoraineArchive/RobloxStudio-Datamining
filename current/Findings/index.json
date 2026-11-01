@@ -1,7 +1,7 @@
 {
   "findings": [
     {
-      "classification": "single-source",
+      "classification": "correlated",
       "concepts": [
         "animated",
         "images"
@@ -2556,11 +2556,604 @@
             "function",
             "image"
           ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "Distribution",
+          "id": "17094dd784d548f5fc659c4e79a95770786d5827cfbeb997fb2062821c648994",
+          "key": "content/studio_svg_textures/Lua/AnimatedImageImporter/Dark/Standard/AsepriteLogo.png",
+          "kind": "files",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "aseprite",
+            "content",
+            "dark",
+            "image",
+            "importer",
+            "logo",
+            "standard",
+            "svg",
+            "textures"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "Distribution",
+          "id": "1bbc9faa6c0a7b79b0ad26ad49b5d682ea7d8befecbf956d884e2ce11f0efd18",
+          "key": "content/studio_svg_textures/Lua/AnimatedImageImporter/Light/Standard/AsepriteLogo@2x.png",
+          "kind": "files",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "aseprite",
+            "content",
+            "image",
+            "importer",
+            "light",
+            "logo",
+            "standard",
+            "svg",
+            "textures"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "Distribution",
+          "id": "24a2067fff9bca8903abf8b0d973a104655fae0d86199b4c8bd1cac6da057be7",
+          "key": "files/content-studio_svg_textures/Lua/AnimatedImageImporter/Dark/Standard/AsepriteLogo@3x.png",
+          "kind": "file",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "aseprite",
+            "content",
+            "dark",
+            "files",
+            "image",
+            "importer",
+            "logo",
+            "standard",
+            "svg",
+            "textures"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "Distribution",
+          "id": "35b142829d28cfbc324ebd642a81b16897c16b816677db0408f6113c82614a5e",
+          "key": "files/content-studio_svg_textures/Lua/AnimatedImageImporter/Light/Standard/AsepriteLogo.png",
+          "kind": "file",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "aseprite",
+            "content",
+            "files",
+            "image",
+            "importer",
+            "light",
+            "logo",
+            "standard",
+            "svg",
+            "textures"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "Distribution",
+          "id": "407f56a3f52175dd9b3a04ebd27203938bab68092cdfde45165091c78c226afb",
+          "key": "files/content-studio_svg_textures/Lua/AnimatedImageImporter/Light/Standard/AsepriteLogo@2x.png",
+          "kind": "file",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "aseprite",
+            "content",
+            "files",
+            "image",
+            "importer",
+            "light",
+            "logo",
+            "standard",
+            "svg",
+            "textures"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "Distribution",
+          "id": "47aa2a4ce47ba61ac28b931bd72eef251d30dc23d21539174518220d19a66764",
+          "key": "files/content-studio_svg_textures/Lua/AnimatedImageImporter/Dark/Standard/AsepriteLogo@2x.png",
+          "kind": "file",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "aseprite",
+            "content",
+            "dark",
+            "files",
+            "image",
+            "importer",
+            "logo",
+            "standard",
+            "svg",
+            "textures"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "Distribution",
+          "id": "56929ada3c410fba289a5eec3abfdaae0f5d06c07887ef762504a32c935bbd5e",
+          "key": "content/studio_svg_textures/Lua/AnimatedImageImporter/Dark/Standard/AsepriteLogo@2x.png",
+          "kind": "files",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "aseprite",
+            "content",
+            "dark",
+            "image",
+            "importer",
+            "logo",
+            "standard",
+            "svg",
+            "textures"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "Distribution",
+          "id": "5c8754e6d71e401eb5b85631ae6819513599930dcd113cc66542c929a3c3d240",
+          "key": "content-studio_svg_textures/Lua/AnimatedImageImporter/Light/Standard/AsepriteLogo@2x.png",
+          "kind": "resources",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "aseprite",
+            "content",
+            "image",
+            "importer",
+            "light",
+            "logo",
+            "standard",
+            "svg",
+            "textures"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "Distribution",
+          "id": "686e30fb596e456a1d5bd8a050ab36456a5d3c27be7d15a7902abae5e4a560c7",
+          "key": "content/studio_svg_textures/Lua/AnimatedImageImporter/Light/Standard/AsepriteLogo@3x.png",
+          "kind": "files",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "aseprite",
+            "content",
+            "image",
+            "importer",
+            "light",
+            "logo",
+            "standard",
+            "svg",
+            "textures"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "Distribution",
+          "id": "687f5b36cdf3c4bd0e403f14bd9741b35646519ad7788fc2f09949a8eb5c6ab7",
+          "key": "content/studio_svg_textures/Lua/AnimatedImageImporter/Dark/Standard/AsepriteLogo@3x.png",
+          "kind": "files",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "aseprite",
+            "content",
+            "dark",
+            "image",
+            "importer",
+            "logo",
+            "standard",
+            "svg",
+            "textures"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "Distribution",
+          "id": "72a5742b2f0a66e0bc3c5586a87630a60b3ebdd896d5650b83da13d5e92812bb",
+          "key": "content-studio_svg_textures/Lua/AnimatedImageImporter/Light/Standard/AsepriteLogo@3x.png",
+          "kind": "resources",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "aseprite",
+            "content",
+            "image",
+            "importer",
+            "light",
+            "logo",
+            "standard",
+            "svg",
+            "textures"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "Distribution",
+          "id": "802120292f0034dc4f5f6840789570c11c51bf4a0fc257a84060fefe7415a55d",
+          "key": "content-studio_svg_textures/Lua/AnimatedImageImporter/Dark/Standard/AsepriteLogo@3x.png",
+          "kind": "resources",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "aseprite",
+            "content",
+            "dark",
+            "image",
+            "importer",
+            "logo",
+            "standard",
+            "svg",
+            "textures"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "API",
+          "id": "92b28319cbe82ea26b3f7f5d6e6959077ff9eb21c86be5682bb13624eaeee9c8",
+          "key": "AnimatedImageService",
+          "kind": "classes",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "changed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "image"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "API",
+          "id": "9465939ca3c62e4c110de8ef81f3fa8808af7a656d2994d6411a7eb0b383424a",
+          "key": "AnimatedImageService.Property.UserCreatedTracks",
+          "kind": "members",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "image",
+            "property"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "Distribution",
+          "id": "97a79939029f9256396f653fff6e6f7a99a661217adfcf0177c2bea9fe564729",
+          "key": "files/content-studio_svg_textures/Lua/AnimatedImageImporter/Dark/Standard/AsepriteLogo.png",
+          "kind": "file",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "aseprite",
+            "content",
+            "dark",
+            "files",
+            "image",
+            "importer",
+            "logo",
+            "standard",
+            "svg",
+            "textures"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "Distribution",
+          "id": "a5dc24cfca4111d7f22ad654531952f772abfc908a44644603a4d410177a5f2f",
+          "key": "content-studio_svg_textures/Lua/AnimatedImageImporter/Dark/Standard/AsepriteLogo.png",
+          "kind": "resources",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "aseprite",
+            "content",
+            "dark",
+            "image",
+            "importer",
+            "logo",
+            "standard",
+            "svg",
+            "textures"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "API",
+          "id": "b1c30186f6131c477e3f709953e2959854f1c0d3e4461f4ce24c3a646b2c476e",
+          "key": "AnimatedImageService.Function.GetAnimatedImageFrameIndexAtTimeAsync",
+          "kind": "members",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "function",
+            "image"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "Distribution",
+          "id": "b36654434948712c5835ea30ed95ae3701d19c1c4a1f6286e29be64d4029c766",
+          "key": "content/studio_svg_textures/Lua/AnimatedImageImporter/Light/Standard/AsepriteLogo.png",
+          "kind": "files",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "aseprite",
+            "content",
+            "image",
+            "importer",
+            "light",
+            "logo",
+            "standard",
+            "svg",
+            "textures"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "Distribution",
+          "id": "c80e677b38a93d386ea9f5c74c0029dbddcb1d29c6d2a66b720ea0578c9ddfae",
+          "key": "content-studio_svg_textures/Lua/AnimatedImageImporter/Dark/Standard/AsepriteLogo@2x.png",
+          "kind": "resources",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "aseprite",
+            "content",
+            "dark",
+            "image",
+            "importer",
+            "logo",
+            "standard",
+            "svg",
+            "textures"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "Distribution",
+          "id": "d6972effe97e7b7b4d40a4b9211f7a43aa067059168c446aaf9924f8dd437595",
+          "key": "files/content-studio_svg_textures/Lua/AnimatedImageImporter/Light/Standard/AsepriteLogo@3x.png",
+          "kind": "file",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "aseprite",
+            "content",
+            "files",
+            "image",
+            "importer",
+            "light",
+            "logo",
+            "standard",
+            "svg",
+            "textures"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "API",
+          "id": "f54fb28859f899900346b1a8d536eac45b75aed14e56b2b1f2d876edf46482a0",
+          "key": "AnimatedImageService.Function.GetAnimatedImageClipsAsync",
+          "kind": "members",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "function",
+            "image"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "Distribution",
+          "id": "f9e81eef741b4b00c18af92a5b28a1a4cf477e7074389734ebf4f811ef9b05c4",
+          "key": "content-studio_svg_textures/Lua/AnimatedImageImporter/Light/Standard/AsepriteLogo.png",
+          "kind": "resources",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "aseprite",
+            "content",
+            "image",
+            "importer",
+            "light",
+            "logo",
+            "standard",
+            "svg",
+            "textures"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "animated-images",
-      "lastObservedAt": "2026-10-14T22:08:06.635Z",
+      "lastObservedAt": "2026-11-01T01:58:06.069Z",
       "lifecycle": [],
       "status": "observed",
       "title": "Animated images"
@@ -3646,11 +4239,63 @@
             "interface",
             "starter"
           ]
+        },
+        {
+          "after": "True;10139630272;10770019413;10769634303;10769786660;10769920376;10769888690;10769922255;10769928435;10770723134;10770582633;10769909775;10769924064;10771975609;10768492546;10761698214",
+          "before": "True;10139630272;10770019413;10769634303;10769786660;10769920376;10769888690;10769922255;10769928435;10770723134;10770582633;10769909775;10769924064;10768492546;10761698214",
+          "concepts": [
+            "avatar",
+            "abilities"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "25782c4c2490f79bda0b8476ef57b47818b1612e4dfa8d3261eca2180d69ec8a",
+          "key": "DFFlagAvatarAbilitiesUseStudioBeta2Asset_UniverseFilter",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "changed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abilities",
+            "asset",
+            "avatar",
+            "beta2",
+            "filter",
+            "universe"
+          ]
+        },
+        {
+          "after": "True;78957164244171;114108261963852;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;124927841431570;134308462331388;130055153509476;93746682938956;130776617911790;137238309924160",
+          "before": "True;78957164244171;114108261963852;76307118827763;136747632025032;129942045637891;78486662010358;114057946826872;97459740552813;124927841431570;134308462331388",
+          "concepts": [
+            "avatar",
+            "abilities"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "dd64ef7ea20f2298becb2da0da3ca7013a1aa73df61e736cb0ae8c44272d8f1b",
+          "key": "DFFlagAvatarAbilitiesUseStudioBeta2Asset_PlaceFilter",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "changed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abilities",
+            "asset",
+            "avatar",
+            "beta2",
+            "filter",
+            "place"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "avatar-abilities",
-      "lastObservedAt": "2026-10-14T22:08:06.635Z",
+      "lastObservedAt": "2026-11-01T01:58:06.069Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T01:54:39.846Z",
@@ -8050,11 +8695,1936 @@
             "moments",
             "remove"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "03fd5fc8e3b6cf77c13b55e452c65fb6cd703a368a9c4c7d3db7bce827c2d017",
+          "key": "FFlagMomentsHideZeroCommentCount",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "comment",
+            "count",
+            "hide",
+            "moments",
+            "zero"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "0489752e06b31a13a0b191ddff6881deaf8a85fc93000cb4d7fc81aba7e576db",
+          "key": "FFlagMomentsHydratePublishedFeedItem",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "feed",
+            "hydrate",
+            "item",
+            "moments",
+            "published"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "087254a6fee1e328352cb7d82a45aefa313a7bcd65de18daf920f4789cb32e63",
+          "key": "FIntMomentsFeedAnimationSpeed_IXP",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animation",
+            "feed",
+            "ixp",
+            "moments",
+            "speed"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "0c923b8ba4cc8ff63f5ddff2fa55b0dcfaccbdd5a206b03aa1f6d0839e64820b",
+          "key": "FFlagMomentsBlockingModalInOverlay",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "blocking",
+            "modal",
+            "moments",
+            "overlay"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "0f15b285796ef09da9c27151f8e33c674b1cba543e9e3989a36f38056ee37395",
+          "key": "FFlagMomentsTextOverlayModalTextFix",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "fix",
+            "modal",
+            "moments",
+            "overlay",
+            "text"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "1187b453581163a99e4820b5ade5bda75801a07f903d017d12b54334e5cbf5ea",
+          "key": "FFlagMomentsCommentsSheetFocusNavigation",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "comments",
+            "focus",
+            "moments",
+            "navigation",
+            "sheet"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "Source",
+          "id": "13c5e78f7019e5ae9de97720b19074b96430811f9f29d1abef2a4eb89692ffaa",
+          "key": "extracontent-luapackages/Packages/_Index/MomentsCreationFlow/Foundation.lua",
+          "kind": "sources",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "extracontent",
+            "flow",
+            "foundation",
+            "index",
+            "luapackages",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "Source",
+          "id": "1517d09e6b2101562f15be123b596868353c374820a8f0875f9209233c93af32",
+          "key": "extracontent-luapackages/Packages/_Index/MomentsCommon/Foundation.lua",
+          "kind": "file",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "common",
+            "extracontent",
+            "foundation",
+            "index",
+            "luapackages",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "18133f2c455c4a760e0ff23f77c8feed4a83eb4780d1b038dabfc059454fcff3",
+          "key": "FFlagMomentsTextOverlayOnPhotos",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "moments",
+            "overlay",
+            "photos",
+            "text"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "1c8849e63facc94e35f034950637efed13ee3a2c6a87855668b36bf7845128fc",
+          "key": "FFlagMomentsTextOverlayFixedContrast",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "contrast",
+            "fixed",
+            "moments",
+            "overlay",
+            "text"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "Distribution",
+          "id": "1da68529ee86268c5787c580683b8ab562da8b1cfe82fe3f97adfde9bade0bc0",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentsCommon/Foundation.lua",
+          "kind": "files",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "common",
+            "content",
+            "extra",
+            "foundation",
+            "index",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "2e4743254691a3423f25dea334ec11a2ae154ef5d7676e4cb3331a2f301304a1",
+          "key": "FFlagMomentsTextOverlayTopNav",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "moments",
+            "nav",
+            "overlay",
+            "text",
+            "top"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "2fde36714eb6b5f34265dcf36590cbc018654db097c1401f3edfa9c1550563c1",
+          "key": "FFlagMomentsOverlaysInTopShellOnly",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "moments",
+            "only",
+            "overlays",
+            "shell",
+            "top"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "34812043de8aa9c66a18568655a6a1970a582d3ddacbd99ead2ac1323bc057b1",
+          "key": "FFlagMomentsReactFeatureGate",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "gate",
+            "moments",
+            "react"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "387d5eb4ffa063e5f746aba79d6829ac2a6a7616ffc5a4a72f9fd8e4aa47ed6d",
+          "key": "FFlagMomentsTTSCompactActionBar",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "action",
+            "bar",
+            "compact",
+            "moments",
+            "tts"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "403267f76f3daab42e81e05ed71858f57b057e24919720fe074552e18e871388",
+          "key": "FFlagMomentsRenderUseVideoFrameSampler",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "frame",
+            "moments",
+            "render",
+            "sampler",
+            "video"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "42b380ba55d3723133dba218c33cf1d8306ab184692f03031b2f9b721ddf4a14",
+          "key": "FFlagLuaAppHomeMomentVideoFallback3",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "fallback3",
+            "home",
+            "moment",
+            "video"
+          ]
+        },
+        {
+          "after": "1;Engine.Video.VideoPlayback;Engine.Video.WatchPage1080p.DesktopAndConsole.V1;203171738;dev_controlled",
+          "before": "1;Engine.Video.WatchPage;Engine.Video.WatchPage1080p.V1;1870398846;dev_controlled",
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "454ae1c4e8ecba9bf749784f50a15762e90928398752665ea67ec8a647be3654",
+          "key": "DFStringVideoAbrSelectorConfigMomentsOverride_IXP",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "changed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abr",
+            "ixp",
+            "moments",
+            "override",
+            "selector",
+            "video"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "49dff63a7fb0b3c82479d8434894da5f0d64508a7a8528be7a74af5039542f71",
+          "key": "FFlagMomentsTTSTooManyDigitsError",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "digits",
+            "error",
+            "many",
+            "moments",
+            "too",
+            "tts"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "4bcb59f8882da67b276adea3b7057ed6e8339e7083fb27cc12857d1900ba612f",
+          "key": "FFlagMomentsAlignFeedNavArrowsWithHeader",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "align",
+            "arrows",
+            "feed",
+            "header",
+            "moments",
+            "nav",
+            "with"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "4dd8767680907e0b4248d4a12a3d94694ac6e0589124d51d4180d4ccd442d03e",
+          "key": "FFlagMomentsFixOverlayRemountImpressions",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "fix",
+            "impressions",
+            "moments",
+            "overlay",
+            "remount"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "Distribution",
+          "id": "56ae94a50e9fdd375633d3e4c22fef7d1739a946aa53140cbfebac827a84fe35",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentsCreationFlow/Foundation.lua",
+          "kind": "files",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "content",
+            "creation",
+            "extra",
+            "flow",
+            "foundation",
+            "index",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "58fd33529f5aaff23480766f5d2d1a58871e9a848c531a2fa620ac4514c1ae9c",
+          "key": "FFlagMomentsTTSPublishMetadataEdits",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "edits",
+            "metadata",
+            "moments",
+            "publish",
+            "tts"
+          ]
+        },
+        {
+          "after": "1;Moments.CreationTools;MomentsMusicV2_Phase1;1642690094;dev_controlled",
+          "before": "1;Moments.CreationTools;Moments.TTS.Phase3;1362288789;dev_controlled",
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "5a2720ca24323bca88dfb68299766d7f34de11934f4836b1bee17d7b83351cbb",
+          "key": "FFlagMomentsCreationToolsIxpEnabled_IXP",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "changed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "ixp",
+            "moments",
+            "tools"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "668d1d228062e1c8fc36dd7c68fba9119e6a4597964de42e29c848aeca2469c1",
+          "key": "FFlagMomentsFeedIxpEnabled",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "feed",
+            "ixp",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "674b8a950d92b3b0f1d817e47a53d9f9666288750d88724cb3930aef6455f6d4",
+          "key": "FFlagMomentsTabsBehindModalScrim",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "behind",
+            "modal",
+            "moments",
+            "scrim",
+            "tabs"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "6a92a9b36e43f431ac4af0f11040ca8598efa5b6072ed98131aa6a1a9c3b54c0",
+          "key": "FFlagCapturesInExpUseMomentsCreation",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "captures",
+            "creation",
+            "exp",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "Source",
+          "id": "6d6f40322e336a37750f8e8a5228779bd7cb8275625ee4085860f37abc9ec352",
+          "key": "extracontent-luapackages/Packages/_Index/MomentsCreationFlow/Foundation.lua",
+          "kind": "file",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "extracontent",
+            "flow",
+            "foundation",
+            "index",
+            "luapackages",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "74a1520370a7529a9e70df14ab5867df3af44384d7245673fe1bece8e466c236",
+          "key": "FFlagMomentsTTSPendingPreviewPlayback",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "moments",
+            "pending",
+            "playback",
+            "preview",
+            "tts"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "Source",
+          "id": "74e65501101a492bd5c0847ab226ddbc1b281f892bfed98db45c0bb1b656b4c6",
+          "key": "extracontent-luapackages/Packages/_Index/MomentsCommon/Foundation.lua",
+          "kind": "sources",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "common",
+            "extracontent",
+            "foundation",
+            "index",
+            "luapackages",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "770a5bdc95595b47b2454928be428dbcf8da600ea3ee448e4f102bb7a63fcdf8",
+          "key": "FFlagMomentsCreationFeatureGate",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "gate",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "793485db0e9a8033eea3ca6e28e2c41db671e3f293d2d3409a7b19a886425468",
+          "key": "FFlagMomentsPersistHeaderOnProfilePeek",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "header",
+            "moments",
+            "peek",
+            "persist",
+            "profile"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "7b0639a0a2d0515b00cdd6fca9b1011114ebff5cb9f298256a7df140075c3966",
+          "key": "FStringMomentsCreationToolsIxpLayer2",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "ixp",
+            "layer2",
+            "moments",
+            "tools"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "7b2a2b958e7eaf8d557e1dae9d88631e33a21df9e56f5dc3e652abf143e26ffb",
+          "key": "FFlagMomentsCommentActionsRealtime",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "actions",
+            "comment",
+            "moments",
+            "realtime"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "7c243bb0870838cfb8f24e8f1e8245378994f4efa02384acaa8a3b001211a5f3",
+          "key": "FFlagMomentsCommentsRevealAfterMeasure",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "after",
+            "comments",
+            "measure",
+            "moments",
+            "reveal"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "7e88f3dd6e55f749522390b6a154045be1416d1175ad864954ac48992ce142b9",
+          "key": "FFlagMomentsActionRailSpacing",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "action",
+            "moments",
+            "rail",
+            "spacing"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "8155f3b778cc80153781061a01313f2dac575a25070abbf26bb7b423ef89c50c",
+          "key": "FFlagMomentsCreationMusicPickerV2_IXP",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "ixp",
+            "moments",
+            "music",
+            "picker"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "8205cbb1692b6907adeef16827f1786c7a59037c3a36d9cea328775b1f46118e",
+          "key": "FFlagAppChatMomentShareCardPermissionContextFix",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "card",
+            "chat",
+            "context",
+            "fix",
+            "moment",
+            "permission",
+            "share"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "822ab37fae2669d98dd6ce7553af0170e0db74407cb27cd46065d81820ef4484",
+          "key": "FFlagMomentsUpdateReactionIllustrationQuality",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "illustration",
+            "moments",
+            "quality",
+            "reaction",
+            "update"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "845a40b2ded52faf40af5e00c5f76f6e5af7d079bd22fe0089c60473605651f8",
+          "key": "FFlagMomentsDeleteSnackbar",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "delete",
+            "moments",
+            "snackbar"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "86a1de8e62cdf995aa6bc392b4dc14be2a30246b017962dfe2e1fcd18279725c",
+          "key": "FFlagMomentsTextOverlayEdgeClipFix",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "clip",
+            "edge",
+            "fix",
+            "moments",
+            "overlay",
+            "text"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "8964aba6cd73312474edc1aa881673bbdfca0de8fb687891859fca9f27c4839d",
+          "key": "FFlagMomentsFtuxEducationScreenRefresh",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "education",
+            "ftux",
+            "moments",
+            "refresh",
+            "screen"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "89ac4f667dce322ce7f3a4ecf8ee7ec7c4b0e2f12049822a8c1b8bec0be05e3a",
+          "key": "FFlagMomentsCommentsScrollToPostedComment",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "comment",
+            "comments",
+            "moments",
+            "posted",
+            "scroll"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "89f6efcc8d96c2066a72698892e30d164e521dc77ed546ca89614be1c85fae5e",
+          "key": "FFlagMomentsTextOverlayChipGrowAboveKeyboard",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "above",
+            "chip",
+            "grow",
+            "keyboard",
+            "moments",
+            "overlay",
+            "text"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "8a562487c8375fc3f5b63ccd3bf27e4e0d399297edc002d0cb4d8e82873c8fc9",
+          "key": "FFlagLuaAppHomeMomentVideoPrecedence",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "home",
+            "moment",
+            "precedence",
+            "video"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "8ab165384ed24f960859e7fac882accc459841ba1776df4f29152793bdca0a08",
+          "key": "FFlagAppChatMomentShareCardEdgeCases",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "card",
+            "cases",
+            "chat",
+            "edge",
+            "moment",
+            "share"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "8fa397c77ec943f1ceb611d4ab8c405a51fe8ebf49906b8aa909327aecc5da9b",
+          "key": "FFlagLuaAppDiscoveryMomentVideoTelemetry",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "discovery",
+            "moment",
+            "telemetry",
+            "video"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "8ff7e7fd413b7aec9c59922ff819c7664c75d46b107824171bbaaefdf04669af",
+          "key": "FFlagAppChatMomentAssetCard",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "asset",
+            "card",
+            "chat",
+            "moment"
+          ]
+        },
+        {
+          "after": "False",
+          "before": "True",
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "9b8045eee4f63f0ac36cd3042303824918d7fab8fa48aa1b8da880dfa62d7fa8",
+          "key": "FFlagMomentsTTSCoachmark",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "changed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "coachmark",
+            "moments",
+            "tts"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "9eaaa47ce3886342deb26c14ab1df055936f023e47a9c34bba6a95095a8b3d1b",
+          "key": "FFlagMomentsNavigationEvent",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "event",
+            "moments",
+            "navigation"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "Distribution",
+          "id": "9f0a5d611431d9e13528164a6d63a9c2e533edaf965f889a0506cc2673c40ffa",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentsCreationFlow/lock.toml",
+          "kind": "files",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "content",
+            "creation",
+            "extra",
+            "flow",
+            "index",
+            "lock",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "a1fd114e8a391779071dc11c7f36152d98249550e0b9f958186df36ae9116f67",
+          "key": "FFlagMomentsCreationAudioSearchV2SortType_IXP",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "audio",
+            "creation",
+            "ixp",
+            "moments",
+            "search",
+            "sort",
+            "type"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "a2293019fdfefea286a71faf431f0d99b0393484eb4b74b553c47f7bb272fdfb",
+          "key": "FStringMomentsFeedIxpLayer",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "feed",
+            "ixp",
+            "layer",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "a3332bf626afbfcb42f433c230676227069702df1b98cf17075b9a3e597c82e8",
+          "key": "FFlagAppChatMomentShareCard",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "card",
+            "chat",
+            "moment",
+            "share"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "a65b7de1a7aafbef81450d5b718f6d0d14af33f24cd85579b7ebf6bf46d9320a",
+          "key": "FFlagMomentsFeedAboveNavBar",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "above",
+            "bar",
+            "feed",
+            "moments",
+            "nav"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "abf39f2f6eaf253ce2101332d57e59fb24d5d5c45309bc0d84fd259dff4d625a",
+          "key": "FStringMomentsCreationToolsIxpLayer3",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "ixp",
+            "layer3",
+            "moments",
+            "tools"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "af550dbaf5f6d4119cf2e0e44b1a785d0057f6c40f8909da3f645c1ad678a214",
+          "key": "FFlagMomentsTextOverlayColorPickerIcon",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "color",
+            "icon",
+            "moments",
+            "overlay",
+            "picker",
+            "text"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "b00a21947a3dbb41a6399c5660ac113bc20d8acffb031b8711da522f46fb3cf0",
+          "key": "FFlagMomentsUpdateReactionTrayOrder",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "moments",
+            "order",
+            "reaction",
+            "tray",
+            "update"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "b62782ac0849977f2662536ab21076b5c849b3a3c0388bc5f9e25f12c6493f1b",
+          "key": "FFlagMomentsImpressionPrimaryEntity",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "entity",
+            "impression",
+            "moments",
+            "primary"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "b62b32c979345eb27f6e6731608b9f50f034370ac3bbecf2c1a72fb71a68c1f2",
+          "key": "FFlagAppChatMomentShareCardUseFoundationImage",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "card",
+            "chat",
+            "foundation",
+            "image",
+            "moment",
+            "share"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "b94ff121353b1ff3273e18ef527e82fcf6012d6ef5fc20e7f2499c48489296c1",
+          "key": "FFlagMomentsAutoplayAmpPolicy3",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "amp",
+            "autoplay",
+            "moments",
+            "policy3"
+          ]
+        },
+        {
+          "after": "1;Engine.Video.VideoPlayback;Engine.Video.WatchPage1080p.DesktopAndConsole.V1;203171738;dev_controlled",
+          "before": "1;Engine.Video.WatchPage;Engine.Video.WatchPage1080p.V1;1870398846;dev_controlled",
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "c1402728d5977ae5c8d876872c210dda915ac462b9db7af51ece56e2ef9f8492",
+          "key": "DFStringVideoAcrPriorityListMoments_IXP",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "changed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "acr",
+            "ixp",
+            "list",
+            "moments",
+            "priority",
+            "video"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "c2286598a33662babfdf0f61c642bc0eb68c6e01af28507debd3b6dc0611881b",
+          "key": "FFlagAppChatMomentShareCardLoadingSkeletons",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "card",
+            "chat",
+            "loading",
+            "moment",
+            "share",
+            "skeletons"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "c3dd9ba00f982d453ff6f80c9dc8e326d7cafd488fad4c6bb1353b9411c3e2b9",
+          "key": "FFlagMomentsVideoPermissionContextFix",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "context",
+            "fix",
+            "moments",
+            "permission",
+            "video"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "c57f5020eeea710309b4929a30bb32188883797779d0b9c376cd222c0e362b09",
+          "key": "FIntMomentsFeedSnapSensitivityMilli_IXP",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "feed",
+            "ixp",
+            "milli",
+            "moments",
+            "sensitivity",
+            "snap"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "c79d27b248c6faced3db9814170fc1e0597fdae2fa7bbbbb84463f2ae91ba6c4",
+          "key": "FFlagMomentsLoadMoreKeepsPosition",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "keeps",
+            "load",
+            "moments",
+            "more",
+            "position"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "ca09a0f9aaf71f69d37389514942c1a4128ef9f671985bbd7b926c1c1929d82a",
+          "key": "FFlagMomentsImmersiveHeaderFadeOut",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "fade",
+            "header",
+            "immersive",
+            "moments",
+            "out"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "cf9b992806eeb031417fc379126cf84dd926a433604d69761099905038f2b53e",
+          "key": "FFlagMomentsCreationStartAudioOnLoad",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "audio",
+            "creation",
+            "load",
+            "moments",
+            "start"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "d22379ebbc3c58148cda283797e2fdea8e3e9b8ce1630f3b0d5ad8e55721d3cc",
+          "key": "FFlagMomentsTTSStartTimeScrubberFollow",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "follow",
+            "moments",
+            "scrubber",
+            "start",
+            "time",
+            "tts"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "d30ba897ce80dbd7f344373d0fb5ca516b1ce71abbe521f37289b918e451b20a",
+          "key": "FFlagMomentsFtuxTooltipCreateCopy",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "copy",
+            "create",
+            "ftux",
+            "moments",
+            "tooltip"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "d61a84d65c51a767c4c224e4abfd129ead7f7ca58d77077933f43c2fda8c0a44",
+          "key": "FFlagAppChatMomentShareCardNavigation",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "card",
+            "chat",
+            "moment",
+            "navigation",
+            "share"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "d7fb8e4fc96f0cdbee0c75e877ba93cf26d3d22419d9c89ae62afd92d220bc02",
+          "key": "FFlagMomentsReportButtonAnalytics",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "analytics",
+            "button",
+            "moments",
+            "report"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "e032ff535e807b0b770bdbacb2baf2f2500bca191b0bfcb93f3a3f88109195aa",
+          "key": "FFlagMomentsRenderPostAssets2_IXP",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "assets2",
+            "ixp",
+            "moments",
+            "post",
+            "render"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "e08b424b60c47d80da90494ffb7baaa66206477d5b365aa51416f7339d34406e",
+          "key": "FFlagMomentsPlayEvent",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "event",
+            "moments",
+            "play"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "e5632e0ee833a12b863a05c644705088ac8fc9a0daaeabf5972b2eaf43039d1a",
+          "key": "FFlagLuaAppEdpMomentVideo",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "edp",
+            "moment",
+            "video"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "Distribution",
+          "id": "e992a0ca350dc1868b429f423a7c9b7458cfbcce24c51ddd44bcd1c5c6fd3755",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentsCommon/lock.toml",
+          "kind": "files",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "common",
+            "content",
+            "extra",
+            "index",
+            "lock",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "ebd2c9357a2ba82bc1252278331e1703e9c7cb2e6a0f55429c0604368cb9e8eb",
+          "key": "FFlagMomentsGalleryCaptureOverlayUpdate",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "capture",
+            "gallery",
+            "moments",
+            "overlay",
+            "update"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "ee0cadd0b336e49e36299e4a90689935d1d95de501c794d777d723c379e1986a",
+          "key": "FFlagMomentsCommentsCountAnalytics",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "analytics",
+            "comments",
+            "count",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "f2c0493dadc93c327665e4b711346cf82f7a319858e387479c50802295eb909c",
+          "key": "FFlagMomentsCommentsCloseOnFeedJump",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "close",
+            "comments",
+            "feed",
+            "jump",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14",
+          "evidencePath": "2026/11/01/01-58-06Z_build_version-7062aec9dbe74b14/changes.json",
+          "family": "LiveSettings",
+          "id": "f9389123c5883fad35fa5a2f46266ee6f13c127c655a326b33714c0ecf1505fe",
+          "key": "FFlagMomentsTTSDraftRestore",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "draft",
+            "moments",
+            "restore",
+            "tts"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-10-14T22:41:37.749Z",
+      "lastObservedAt": "2026-11-01T01:58:06.069Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
@@ -8317,6 +10887,13 @@
             "c9f27b91cb023824eeda972d87ef239bafb60f7356d7a676736ae7078028b527"
           ],
           "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-11-01T01:58:06.069Z",
+          "signalIds": [
+            "9b8045eee4f63f0ac36cd3042303824918d7fab8fa48aa1b8da880dfa62d7fa8"
+          ],
+          "type": "boolean-transition"
         }
       ],
       "status": "observed",

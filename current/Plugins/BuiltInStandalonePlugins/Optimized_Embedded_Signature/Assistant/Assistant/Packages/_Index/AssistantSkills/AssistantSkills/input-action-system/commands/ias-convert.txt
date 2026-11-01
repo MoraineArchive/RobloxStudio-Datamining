@@ -49,7 +49,7 @@ Converts legacy CAS/UIS input code in specified scripts to the declarative Input
    - A before/after code snippet for the most complex conversion
    - Any callsites that need manual attention (GetButton, polling patterns)
 
-6. **Wait for user approval** — use `ask_questions` if the user hasn't confirmed.
+6. **Wait for user approval** — use `ask_questions` if the user hasn't confirmed. This conversion rewrites real scripts, so include the warning from *This Skill Changes Real Code: Confirm First* in the main skill: recommend a test place, a copy, or a place they can easily revert, and don't write until they say yes.
 
 7. **Write the converted code** — use `multi_edit` to rewrite the script(s).
 

@@ -157,7 +157,8 @@ ErrorSourceStrings.Keys = {
 	CurveAnim_LoopingNotEnabled = "Common.UGCValidation.ErrorLabel.CurveAnim_LoopingNotEnabled",
 	CurveAnim_StrictSchemaViolation = "Common.UGCValidation.ErrorLabel.CurveAnim_StrictSchemaViolation",
 	CurveAnim_DuplicateBodyPartFolder = "Common.UGCValidation.ErrorLabel.CurveAnim_DuplicateBodyPartFolder",
-	EmissiveMap_NotAllowed = "Common.UGCValidation.ErrorLabel.EmissiveMap_NotAllowed",
+	EmissiveMap_NotAllowedInExperience = "Common.UGCValidation.ErrorLabel.EmissiveMap_NotAllowedInExperience",
+	EmissiveMap_NotAllowedOnDecal = "Common.UGCValidation.ErrorLabel.EmissiveMap_NotAllowedOnDecal",
 	EmissiveArea_AboveThreshold = "Common.UGCValidation.ErrorLabel.EmissiveArea_AboveThreshold",
 	EmissiveArea_AboveThresholdNew = "Common.UGCValidation.ErrorLabel.EmissiveArea_AboveThresholdNew",
 	EmissiveArea_SurfaceAreaExceeded = "Common.UGCValidation.ErrorLabel.EmissiveArea_SurfaceAreaExceeded",
@@ -176,10 +177,13 @@ ErrorSourceStrings.Keys = {
 	InstanceTreeBannedName = "Common.UGCValidation.ErrorLabel.InstanceTreeBannedName",
 	DescendantIdNotOwned = "Common.UGCValidation.ErrorLabel.DescendantIdNotOwned",
 	DescendantIdNotApproved = "Common.UGCValidation.ErrorLabel.DescendantIdNotApproved",
+	DescendantIdNotPublished = "Common.UGCValidation.ErrorLabel.DescendantIdNotPublished",
 	DescendantIdFetchFailed = "Common.UGCValidation.ErrorLabel.DescendantIdFetchFailed",
 	DescendantIdsTooMany = "Common.UGCValidation.ErrorLabel.DescendantIdsTooMany",
 	DescendantIdMissing = "Common.UGCValidation.ErrorLabel.DescendantIdMissing",
 	DescendantIdMalformed = "Common.UGCValidation.ErrorLabel.DescendantIdMalformed",
+	DescendantIdVersionNotSupported = "Common.UGCValidation.ErrorLabel.DescendantIdVersionNotSupported",
+	DescendantIdAnimationVersionNotSupported = "Common.UGCValidation.ErrorLabel.DescendantIdAnimationVersionNotSupported",
 	ContentNotEditable = "Common.UGCValidation.ErrorLabel.ContentNotEditable",
 	AttachmentBoundsCalculationFailed = "Common.UGCValidation.ErrorLabel.AttachmentBoundsCalculationFailed",
 	AttachmentBoundsAssetCalculationFailed = "Common.UGCValidation.ErrorLabel.AttachmentBoundsAssetCalculationFailed",
@@ -303,6 +307,22 @@ ErrorSourceStrings.Keys = {
 	Extents_HeadBelowTorso = "Common.UGCValidation.ErrorLabel.Extents_HeadBelowTorso",
 	MeshSize_LoadFailed = "Common.UGCValidation.ErrorLabel.MeshSize_LoadFailed",
 	MeshSize_Mismatch = "Common.UGCValidation.ErrorLabel.MeshSize_Mismatch",
+	FacsJointCountBounded = "Common.UGCValidation.ErrorLabel.FacsJointCountBounded",
+
+	-- Dynamic head ML hybrid check (Measure_Dynamic_Head_ML_Hybrid)
+	-- Its FACS deformation stage (step2b) reuses the legacy DynamicHead*NotClose / *NotShown keys above,
+	-- or the FacsDeformation_* keys below when FFlagUGCValidateAQDynamicHeadMLHybridNewFacsMessages is on.
+	FacialFeaturePresence_EyesMissing = "Common.UGCValidation.ErrorLabel.FacialFeaturePresence_EyesMissing",
+	FacialFeaturePresence_MouthMissing = "Common.UGCValidation.ErrorLabel.FacialFeaturePresence_MouthMissing",
+	DynamicHeadCageMisalignedLeftEye = "Common.UGCValidation.ErrorLabel.DynamicHeadCageMisalignedLeftEye",
+	DynamicHeadCageMisalignedRightEye = "Common.UGCValidation.ErrorLabel.DynamicHeadCageMisalignedRightEye",
+	DynamicHeadCageMisalignedMouth = "Common.UGCValidation.ErrorLabel.DynamicHeadCageMisalignedMouth",
+	RenderedAnimation_RequiredExpressionsMissing = "Common.UGCValidation.ErrorLabel.RenderedAnimation_RequiredExpressionsMissing",
+	FacsDeformation_LeftEyeNotClose = "Common.UGCValidation.ErrorLabel.FacsDeformation_LeftEyeNotClose",
+	FacsDeformation_RightEyeNotClose = "Common.UGCValidation.ErrorLabel.FacsDeformation_RightEyeNotClose",
+	FacsDeformation_MouthNotOpen = "Common.UGCValidation.ErrorLabel.FacsDeformation_MouthNotOpen",
+	FacsDeformation_HappyNotShown = "Common.UGCValidation.ErrorLabel.FacsDeformation_HappyNotShown",
+	FacsDeformation_SadNotShown = "Common.UGCValidation.ErrorLabel.FacsDeformation_SadNotShown",
 }
 
 ErrorSourceStrings.Values = {
@@ -443,7 +463,8 @@ ErrorSourceStrings.Values = {
 	CurveAnim_LoopingNotEnabled = "CurveAnimation '{animationName}' does not have Loop enabled. Animations uploaded to the marketplace must loop. Please enable the Loop property.",
 	CurveAnim_StrictSchemaViolation = "CurveAnimation structure is invalid: {detail}. Please ensure the animation follows the expected schema.",
 	CurveAnim_DuplicateBodyPartFolder = "CurveAnimation contains duplicate body part folder '{bodyPartName}' at '{instancePath}'. Each body part may appear at most once in the animation hierarchy.",
-	EmissiveMap_NotAllowed = "This asset uses emissive maps which are only available to creators in the Trusted Creator Program. Please remove all emissive map content or join the program before uploading.",
+	EmissiveMap_NotAllowedInExperience = "Emissive maps aren't supported for items created in experiences. Remove EmissiveMaskContent from every SurfaceAppearance.",
+	EmissiveMap_NotAllowedOnDecal = "Decals can't be emissive. On '{InstancePath}', remove EmissiveMaskContent, set EmissiveStrength to 1, and set EmissiveTint to white.",
 	EmissiveArea_AboveThreshold = "Body part mesh '{meshName}' is {emissivePercentage}% emissive. Emissive coverage must not exceed {maxEmissivePercentage}%. Please reduce the emissive mask intensity or coverage.",
 	EmissiveArea_AboveThresholdNew = "{meshName} is too Emissive. Emissive area × intensity exceeds limit (currently {emissivePercentage}%, must be {maxEmissivePercentage}% or less). Shrink the glowing area or lower its EmissiveStrength.",
 	EmissiveArea_SurfaceAreaExceeded = "Mesh '{meshName}' has a weighted emissive surface area of {emissiveArea} square studs, which exceeds the maximum of {maxEmissiveArea} square studs. Please reduce the emissive mask intensity or coverage.",
@@ -462,10 +483,13 @@ ErrorSourceStrings.Values = {
 	InstanceTreeBannedName = "'{InstancePath}' has a name that is reserved and cannot be used in marketplace assets.",
 	DescendantIdNotOwned = "Asset {AssetId} ({InstanceFullName}.{FieldName}) is not owned by an authorized creator.",
 	DescendantIdNotApproved = "Asset(s) failed to pass moderation: {ModerationMessages}",
+	DescendantIdNotPublished = "Asset {AssetId} ({InstanceFullName}.{FieldName}) is not published. Publish it and try again.",
 	DescendantIdFetchFailed = "Failed to fetch moderation results for {InstanceFullName}. Make sure all assets are owned by the current user.",
 	DescendantIdsTooMany = "Upload of model has too many children assets (Meshes, Textures, etc.) and cannot be processed as is. You need to rearrange the model.",
 	DescendantIdMissing = "{InstanceFullName}.{FieldName} cannot be empty. Make sure a valid asset is assigned and try again.",
 	DescendantIdMalformed = "Could not parse ContentId in {InstanceFullName}.{FieldName}. Make sure you are using a valid URL with a valid ID and try again.",
+	DescendantIdVersionNotSupported = "{InstanceFullName}.{FieldName} uses version {Version} of asset {AssetId}, but only version 1 is supported right now. Use version 1 and try again.",
+	DescendantIdAnimationVersionNotSupported = "{InstanceFullName}.{FieldName} pins animation {AssetId} to version {Version}, but animations can't be pinned to a version yet. Remove '&version={Version}' and try again.",
 	ContentNotEditable = "{InstanceFullName}.{FieldName} still holds unsaved editable content. Save it as an asset before publishing and try again.",
 	AttachmentBoundsCalculationFailed = "Could not compute bounds for attachment '{AttachmentName}' in '{PartName}'. The mesh data may be missing or malformed; please re-import the asset and try again.",
 	AttachmentBoundsAssetCalculationFailed = "Could not compute mesh bounds for '{InstancePath}' before checking attachment positions. The mesh data may be missing or malformed; please re-import the asset and try again.",
@@ -598,6 +622,22 @@ ErrorSourceStrings.Values = {
 	AQSFail_AnimationTooShort = "Animation is too short ({duration} seconds). Emote animations must be longer than {minLength} seconds.",
 	AQSFail_CagePartPlacement = "Cage part placement violation in {cageName}: {upperPart} is not correctly positioned relative to {lowerPart}.",
 	AQSFail_CagePartVertexCount = "Cage part {partName} in {cageName} has {actualCount} vertices, expected approximately {expectedCount}. This may indicate missing or duplicated geometry in that cage region.",
+	FacsJointCountBounded = "Dynamic heads can have at most {maxFacsJointCount} FACS joints, but this head has {actualJointCount}. Please reduce the number of FACS joints and try again.",
+
+	-- Dynamic head ML hybrid check (Measure_Dynamic_Head_ML_Hybrid)
+	-- Its FACS deformation stage (step2b) reuses the legacy DynamicHead*NotClose / *NotShown keys above,
+	-- or the FacsDeformation_* keys below when FFlagUGCValidateAQDynamicHeadMLHybridNewFacsMessages is on.
+	FacialFeaturePresence_EyesMissing = "Base face is missing required eye features. Add eyes to the base face and try again.",
+	FacialFeaturePresence_MouthMissing = "Base face is missing a required mouth. Add a mouth to the base face and try again.",
+	DynamicHeadCageMisalignedLeftEye = "Dynamic Head cage left eye landmarks are misaligned with the mesh. Adjust the eye cage so the left eye mesh is within the projected cage area.",
+	DynamicHeadCageMisalignedRightEye = "Dynamic Head cage right eye landmarks are misaligned with the mesh. Adjust the eye cage so the right eye mesh is within the projected cage area.",
+	DynamicHeadCageMisalignedMouth = "Dynamic Head cage mouth landmarks are misaligned with the mesh. Adjust the mouth cage so the mouth mesh is within the projected cage area.",
+	RenderedAnimation_RequiredExpressionsMissing = "Rendered animation is missing one or more required facial expressions (eye close, mouth open, happy, sad).",
+	FacsDeformation_LeftEyeNotClose = "Cannot detect left eye close expression. Adjust the left eye cage or left eye-close FACS so the projected eye mesh deforms as expected.",
+	FacsDeformation_RightEyeNotClose = "Cannot detect right eye close expression. Adjust the right eye cage or right eye-close FACS so the projected eye mesh deforms as expected.",
+	FacsDeformation_MouthNotOpen = "Cannot detect mouth open expression. Adjust the mouth cage or mouth-open FACS so the projected mouth mesh deforms as expected.",
+	FacsDeformation_HappyNotShown = "Cannot detect happiness expression. Adjust the mouth cage or happy expression FACS so the projected mouth mesh deforms as expected.",
+	FacsDeformation_SadNotShown = "Cannot detect sadness expression. Adjust the mouth cage or sad expression FACS so the projected mouth mesh deforms as expected.",
 }
 
 return ErrorSourceStrings

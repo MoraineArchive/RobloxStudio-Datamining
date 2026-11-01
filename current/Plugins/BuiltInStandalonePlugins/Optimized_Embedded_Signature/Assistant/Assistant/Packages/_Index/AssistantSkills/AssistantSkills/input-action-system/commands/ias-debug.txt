@@ -190,7 +190,7 @@ for _, b in action:GetChildren() do
 end
 ```
 
-7. **Report** — state the symptom, the confirmed cause, the exact instance/property to change, and (if useful) a before/after. Prefer a minimal fix (flip `Enabled`, fix `Type`, move the context to a live location, switch a handler to polling) over rebuilding the tree.
+7. **Report** — state the symptom, the confirmed cause, the exact instance/property to change, and (if useful) a before/after. Prefer a minimal fix (flip `Enabled`, fix `Type`, move the context to a live location, switch a handler to polling) over rebuilding the tree. If you apply the fix yourself, confirm first, per *This Skill Changes Real Code: Confirm First* in the main skill.
 
 ## Notes
 

@@ -4236,6 +4236,28 @@
         },
         {
           "MemberType": "Function",
+          "Name": "GetAnimatedImageClipsAsync",
+          "Parameters": [
+            {
+              "Name": "content",
+              "Type": {
+                "Category": "DataType",
+                "Name": "Content"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Group",
+            "Name": "Array"
+          },
+          "Security": "RobloxScriptSecurity",
+          "Tags": [
+            "Yields"
+          ],
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "MemberType": "Function",
           "Name": "GetAnimatedImageClipsChangedSignal",
           "Parameters": [
             {
@@ -4254,6 +4276,42 @@
           "ThreadSafety": "Unsafe"
         },
         {
+          "MemberType": "Function",
+          "Name": "GetAnimatedImageFrameIndexAtTimeAsync",
+          "Parameters": [
+            {
+              "Name": "content",
+              "Type": {
+                "Category": "DataType",
+                "Name": "Content"
+              }
+            },
+            {
+              "Name": "clipName",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            },
+            {
+              "Name": "timePosition",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "double"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "int"
+          },
+          "Security": "RobloxScriptSecurity",
+          "Tags": [
+            "Yields"
+          ],
+          "ThreadSafety": "Unsafe"
+        },
+        {
           "Category": "Data",
           "Default": "ANIM\u0001",
           "MemberType": "Property",
@@ -4266,6 +4324,10 @@
             "CanLoad": true,
             "CanSave": true
           },
+          "Tags": [
+            "Hidden",
+            "NotScriptable"
+          ],
           "ThreadSafety": "ReadSafe",
           "ValueType": {
             "Category": "DataType",
@@ -4278,8 +4340,7 @@
       "Superclass": "Instance",
       "Tags": [
         "NotCreatable",
-        "Service",
-        "NotReplicated"
+        "Service"
       ]
     },
     {
@@ -4785,6 +4846,31 @@
             "Name": "ContentId"
           },
           "Security": "None",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "Animation"
+          ],
+          "MemberType": "Function",
+          "Name": "ReloadAnimationClipAsync",
+          "Parameters": [
+            {
+              "Name": "assetId",
+              "Type": {
+                "Category": "DataType",
+                "Name": "ContentId"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Class",
+            "Name": "AnimationClip"
+          },
+          "Security": "RobloxScriptSecurity",
+          "Tags": [
+            "Yields"
+          ],
           "ThreadSafety": "Unsafe"
         }
       ],
@@ -5663,6 +5749,20 @@
     {
       "Members": [
         {
+          "MemberType": "Event",
+          "Name": "Ended",
+          "Parameters": [],
+          "Security": "RobloxScriptSecurity",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "MemberType": "Event",
+          "Name": "Stopped",
+          "Parameters": [],
+          "Security": "RobloxScriptSecurity",
+          "ThreadSafety": "Unsafe"
+        },
+        {
           "MemberType": "Function",
           "Name": "Pause",
           "Parameters": [],
@@ -5705,13 +5805,9 @@
             "Write": "RobloxScriptSecurity"
           },
           "Serialization": {
-            "CanLoad": false,
-            "CanSave": false
+            "CanLoad": true,
+            "CanSave": true
           },
-          "Tags": [
-            "Hidden",
-            "NotReplicated"
-          ],
           "ThreadSafety": "ReadSafe",
           "ValueType": {
             "Category": "DataType",
@@ -5728,13 +5824,9 @@
             "Write": "RobloxScriptSecurity"
           },
           "Serialization": {
-            "CanLoad": false,
-            "CanSave": false
+            "CanLoad": true,
+            "CanSave": true
           },
-          "Tags": [
-            "Hidden",
-            "NotReplicated"
-          ],
           "ThreadSafety": "ReadSafe",
           "ValueType": {
             "Category": "Primitive",
@@ -5743,7 +5835,7 @@
         },
         {
           "Category": "Playback",
-          "Default": "0",
+          "Default": "1",
           "MemberType": "Property",
           "Name": "CurrentFrame",
           "Security": {
@@ -5755,7 +5847,6 @@
             "CanSave": false
           },
           "Tags": [
-            "Hidden",
             "NotReplicated"
           ],
           "ThreadSafety": "ReadSafe",
@@ -5774,13 +5865,9 @@
             "Write": "RobloxScriptSecurity"
           },
           "Serialization": {
-            "CanLoad": false,
-            "CanSave": false
+            "CanLoad": true,
+            "CanSave": true
           },
-          "Tags": [
-            "Hidden",
-            "NotReplicated"
-          ],
           "ThreadSafety": "ReadSafe",
           "ValueType": {
             "Category": "Primitive",
@@ -5798,10 +5885,9 @@
           },
           "Serialization": {
             "CanLoad": false,
-            "CanSave": false
+            "CanSave": true
           },
           "Tags": [
-            "Hidden",
             "ReadOnly",
             "NotReplicated"
           ],
@@ -5813,7 +5899,7 @@
         },
         {
           "Category": "Playback",
-          "Default": "true",
+          "Default": "false",
           "MemberType": "Property",
           "Name": "Loop",
           "Security": {
@@ -5821,13 +5907,9 @@
             "Write": "RobloxScriptSecurity"
           },
           "Serialization": {
-            "CanLoad": false,
-            "CanSave": false
+            "CanLoad": true,
+            "CanSave": true
           },
-          "Tags": [
-            "Hidden",
-            "NotReplicated"
-          ],
           "ThreadSafety": "ReadSafe",
           "ValueType": {
             "Category": "Primitive",
@@ -5844,13 +5926,9 @@
             "Write": "RobloxScriptSecurity"
           },
           "Serialization": {
-            "CanLoad": false,
-            "CanSave": false
+            "CanLoad": true,
+            "CanSave": true
           },
-          "Tags": [
-            "Hidden",
-            "NotReplicated"
-          ],
           "ThreadSafety": "ReadSafe",
           "ValueType": {
             "Category": "Primitive",
@@ -5871,7 +5949,6 @@
             "CanSave": false
           },
           "Tags": [
-            "Hidden",
             "NotReplicated"
           ],
           "ThreadSafety": "ReadSafe",
@@ -5891,11 +5968,8 @@
           },
           "Serialization": {
             "CanLoad": true,
-            "CanSave": false
+            "CanSave": true
           },
-          "Tags": [
-            "NotReplicated"
-          ],
           "ThreadSafety": "ReadSafe",
           "ValueType": {
             "Category": "Primitive",
@@ -5905,10 +5979,7 @@
       ],
       "MemoryCategory": "Gui",
       "Name": "AnimationPlayer",
-      "Superclass": "Instance",
-      "Tags": [
-        "NotCreatable"
-      ]
+      "Superclass": "Instance"
     },
     {
       "Members": [
@@ -10994,6 +11065,113 @@
     {
       "Members": [
         {
+          "Capabilities": [
+            "InternalTest"
+          ],
+          "MemberType": "Function",
+          "Name": "Call",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            },
+            {
+              "Default": "nil",
+              "Name": "args",
+              "Type": {
+                "Category": "Group",
+                "Name": "Dictionary"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "string"
+          },
+          "Security": "None",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "InternalTest"
+          ],
+          "MemberType": "Function",
+          "Name": "Close",
+          "Parameters": [],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "string"
+          },
+          "Security": "None",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "InternalTest"
+          ],
+          "MemberType": "Function",
+          "Name": "ExecuteLuau",
+          "Parameters": [
+            {
+              "Name": "source",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "string"
+          },
+          "Security": "None",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "InternalTest"
+          ],
+          "MemberType": "Function",
+          "Name": "RunTest",
+          "Parameters": [
+            {
+              "Name": "testName",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            },
+            {
+              "Default": "nil",
+              "Name": "args",
+              "Type": {
+                "Category": "Group",
+                "Name": "Dictionary"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "string"
+          },
+          "Security": "None",
+          "ThreadSafety": "Unsafe"
+        }
+      ],
+      "MemoryCategory": "Instances",
+      "Name": "AppHandle",
+      "Superclass": "Object",
+      "Tags": [
+        "NotCreatable",
+        "NotReplicated"
+      ]
+    },
+    {
+      "Members": [
+        {
           "MemberType": "Event",
           "Name": "OnBecomeActive",
           "Parameters": [],
@@ -14038,6 +14216,31 @@
           "ThreadSafety": "Unsafe"
         },
         {
+          "Capabilities": [
+            "AssetRead"
+          ],
+          "MemberType": "Function",
+          "Name": "GetLatestVersionUriAsync",
+          "Parameters": [
+            {
+              "Name": "asset",
+              "Type": {
+                "Category": "DataType",
+                "Name": "Content"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "DataType",
+            "Name": "Content"
+          },
+          "Security": "None",
+          "Tags": [
+            "Yields"
+          ],
+          "ThreadSafety": "Unsafe"
+        },
+        {
           "MemberType": "Function",
           "Name": "GetOpaqueContentMetadataMap",
           "Parameters": [
@@ -16113,7 +16316,7 @@
             ]
           },
           "Category": "Recording",
-          "Default": "true",
+          "Default": "false",
           "MemberType": "Property",
           "Name": "Active",
           "Security": {
@@ -16356,6 +16559,34 @@
           "ValueType": {
             "Category": "Class",
             "Name": "Player"
+          }
+        },
+        {
+          "Capabilities": {
+            "Read": [
+              "Audio",
+              "Input"
+            ]
+          },
+          "Category": "State",
+          "Default": "false",
+          "MemberType": "Property",
+          "Name": "Streaming",
+          "Security": {
+            "Read": "RobloxScriptSecurity",
+            "Write": "RobloxScriptSecurity"
+          },
+          "Serialization": {
+            "CanLoad": false,
+            "CanSave": false
+          },
+          "Tags": [
+            "Hidden"
+          ],
+          "ThreadSafety": "ReadSafe",
+          "ValueType": {
+            "Category": "Primitive",
+            "Name": "bool"
           }
         },
         {
@@ -19847,9 +20078,6 @@
             "CanLoad": true,
             "CanSave": true
           },
-          "Tags": [
-            "Hidden"
-          ],
           "ThreadSafety": "ReadSafe",
           "ValueType": {
             "Category": "DataType",
@@ -20956,6 +21184,33 @@
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
+          "Name": "MaxPageSize",
+          "Security": {
+            "Read": "None",
+            "Write": "None"
+          },
+          "Serialization": {
+            "CanLoad": true,
+            "CanSave": true
+          },
+          "ThreadSafety": "ReadSafe",
+          "ValueType": {
+            "Category": "Primitive",
+            "Name": "int"
+          }
+        },
+        {
+          "Capabilities": {
+            "Read": [
+              "AssetRead"
+            ],
+            "Write": [
+              "AssetRead"
+            ]
+          },
+          "Category": "Data",
+          "Default": "0",
+          "MemberType": "Property",
           "Name": "MinDuration",
           "Security": {
             "Read": "None",
@@ -20996,6 +21251,33 @@
           "ValueType": {
             "Category": "Primitive",
             "Name": "string"
+          }
+        },
+        {
+          "Capabilities": {
+            "Read": [
+              "AssetRead"
+            ],
+            "Write": [
+              "AssetRead"
+            ]
+          },
+          "Category": "Data",
+          "Default": "Relevance",
+          "MemberType": "Property",
+          "Name": "SortType",
+          "Security": {
+            "Read": "None",
+            "Write": "None"
+          },
+          "Serialization": {
+            "CanLoad": true,
+            "CanSave": true
+          },
+          "ThreadSafety": "ReadSafe",
+          "ValueType": {
+            "Category": "Enum",
+            "Name": "AudioSortType"
           }
         },
         {
@@ -21281,6 +21563,33 @@
           "ValueType": {
             "Category": "Primitive",
             "Name": "string"
+          }
+        },
+        {
+          "Capabilities": {
+            "Read": [
+              "Audio"
+            ]
+          },
+          "Category": "State",
+          "Default": "false",
+          "MemberType": "Property",
+          "Name": "Streaming",
+          "Security": {
+            "Read": "RobloxScriptSecurity",
+            "Write": "RobloxScriptSecurity"
+          },
+          "Serialization": {
+            "CanLoad": false,
+            "CanSave": false
+          },
+          "Tags": [
+            "Hidden"
+          ],
+          "ThreadSafety": "ReadSafe",
+          "ValueType": {
+            "Category": "Primitive",
+            "Name": "bool"
           }
         },
         {
@@ -23890,6 +24199,9 @@
     {
       "Members": [
         {
+          "Capabilities": [
+            "AvatarAppearance"
+          ],
           "MemberType": "Function",
           "Name": "willRemoveAccessory",
           "Parameters": [
@@ -23916,13 +24228,18 @@
           "ThreadSafety": "Unsafe"
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "PlayerChoice",
           "MemberType": "Property",
           "Name": "AccessoryMode",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -23935,13 +24252,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "BackAccessoryOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -23954,6 +24276,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "PlayerChoice",
           "MemberType": "Property",
@@ -23980,6 +24307,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -24006,6 +24338,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -24032,6 +24369,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -24058,6 +24400,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -24084,6 +24431,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -24110,6 +24462,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -24136,6 +24493,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -24162,6 +24524,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -24188,6 +24555,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -24214,6 +24586,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -24240,6 +24617,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -24266,6 +24648,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -24292,6 +24679,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -24318,6 +24710,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -24344,6 +24741,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -24370,6 +24772,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -24396,13 +24803,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "true",
           "MemberType": "Property",
           "Name": "EnableEmissives",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -24415,13 +24827,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "true",
           "MemberType": "Property",
           "Name": "EnableSound",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -24434,13 +24851,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "true",
           "MemberType": "Property",
           "Name": "EnableVFX",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -24453,13 +24875,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "FaceAccessoryOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -24472,13 +24899,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "FrontAccessoryOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -24491,13 +24923,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "HairAccessoryOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -24510,13 +24947,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "HeadAccessoryOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -24529,13 +24971,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0, 0, 0",
           "MemberType": "Property",
           "Name": "LimitBounds",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -24548,13 +24995,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "Remove",
           "MemberType": "Property",
           "Name": "LimitMethod",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -24567,13 +25019,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "NeckAccessoryOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -24586,13 +25043,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "ShoulderAccessoryOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -24605,13 +25067,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "WaistAccessoryOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -24631,6 +25098,11 @@
     {
       "Members": [
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "PlayerChoice",
           "MemberType": "Property",
@@ -24657,13 +25129,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "PlayerChoice",
           "MemberType": "Property",
           "Name": "AnimationPacksMode",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -24676,13 +25153,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "ClimbAnimationOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -24695,6 +25177,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -24721,6 +25208,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -24747,6 +25239,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -24773,6 +25270,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -24799,6 +25301,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -24825,6 +25332,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -24851,6 +25363,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -24873,6 +25390,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -24895,6 +25417,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -24921,6 +25448,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -24947,6 +25479,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -24973,6 +25510,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -24999,6 +25541,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -25025,6 +25572,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -25051,6 +25603,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -25077,6 +25634,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -25103,6 +25665,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -25129,6 +25696,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -25155,6 +25727,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -25181,6 +25758,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -25207,13 +25789,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "FallAnimationOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -25226,13 +25813,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "IdleAltAnimationOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -25245,13 +25837,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "IdleAnimationOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -25264,13 +25861,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "JumpAnimationOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -25283,13 +25885,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "MoodAnimationOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -25302,13 +25909,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "RunAnimationOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -25321,13 +25933,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "SwimAnimationOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -25340,13 +25957,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "SwimIdleAnimationOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -25359,13 +25981,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "WalkAnimationOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -25385,6 +26012,11 @@
     {
       "Members": [
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "PlayerChoice",
           "MemberType": "Property",
@@ -25411,13 +26043,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "R15",
           "MemberType": "Property",
           "Name": "AvatarType",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -25430,13 +26067,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "PlayerChoice",
           "MemberType": "Property",
           "Name": "BuildMode",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -25449,6 +26091,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -25471,6 +26118,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "AvatarReference",
           "MemberType": "Property",
@@ -25493,6 +26145,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0 1 ",
           "MemberType": "Property",
@@ -25519,13 +26176,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0 1 ",
           "MemberType": "Property",
           "Name": "CustomBuildBodyType",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -25538,13 +26200,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0.95 1 ",
           "MemberType": "Property",
           "Name": "CustomBuildHead",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -25557,13 +26224,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0.9 1.05 ",
           "MemberType": "Property",
           "Name": "CustomBuildHeight",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -25576,13 +26248,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0 1 ",
           "MemberType": "Property",
           "Name": "CustomBuildProportions",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -25595,13 +26272,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0.7 1 ",
           "MemberType": "Property",
           "Name": "CustomBuildWidth",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -25614,6 +26296,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -25636,6 +26323,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -25658,6 +26350,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -25680,6 +26377,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -25702,6 +26404,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -25724,6 +26431,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -25746,6 +26458,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -25772,6 +26489,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -25798,6 +26520,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0.95 1 ",
           "MemberType": "Property",
@@ -25824,6 +26551,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "5.5 5.5 ",
           "MemberType": "Property",
@@ -25850,6 +26582,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0.9 1.05 ",
           "MemberType": "Property",
@@ -25876,6 +26613,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -25902,6 +26644,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -25928,6 +26675,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -25954,6 +26706,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -25980,6 +26737,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -26006,6 +26768,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -26032,6 +26799,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0 1 ",
           "MemberType": "Property",
@@ -26058,6 +26830,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -26084,6 +26861,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -26110,6 +26892,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -26136,6 +26923,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -26162,6 +26954,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -26188,6 +26985,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -26214,6 +27016,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0.7 1 ",
           "MemberType": "Property",
@@ -26240,13 +27047,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "5.5 5.5 ",
           "MemberType": "Property",
           "Name": "CustomWorldHeight",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -26259,13 +27071,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "HeadOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -26278,6 +27095,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "true",
           "MemberType": "Property",
@@ -26300,13 +27122,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "LeftArmOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -26319,13 +27146,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "LeftLegOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -26338,13 +27170,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "RightArmOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -26357,13 +27194,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "RightLegOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -26376,13 +27218,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "PlayerChoice",
           "MemberType": "Property",
           "Name": "ScaleMode",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -26395,13 +27242,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "TorsoOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -26684,6 +27536,9 @@
     {
       "Members": [
         {
+          "Capabilities": [
+            "AvatarAppearance"
+          ],
           "MemberType": "Function",
           "Name": "WillLimitLayeredAccessoryAsync",
           "Parameters": [
@@ -26713,13 +27568,18 @@
           "ThreadSafety": "Unsafe"
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
-          "Name": "ClassicPantsAccessoryOverride",
+          "Name": "ClassicPantsOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -26732,13 +27592,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
-          "Name": "ClassicShirtsAccessoryOverride",
+          "Name": "ClassicShirtOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -26751,13 +27616,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
-          "Name": "ClassicTShirtsAccessoryOverride",
+          "Name": "ClassicTShirtOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -26770,13 +27640,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "PlayerChoice",
           "MemberType": "Property",
           "Name": "ClothingMode",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -26789,6 +27664,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -26804,7 +27684,7 @@
           "Tags": [
             "Deprecated",
             {
-              "PreferredDescriptorName": "ClassicPantsAccessoryOverride",
+              "PreferredDescriptorName": "ClassicPantsOverride",
               "ThreadSafety": "Unknown"
             }
           ],
@@ -26815,6 +27695,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -26830,7 +27715,7 @@
           "Tags": [
             "Deprecated",
             {
-              "PreferredDescriptorName": "ClassicPantsAccessoryOverride",
+              "PreferredDescriptorName": "ClassicPantsOverride",
               "ThreadSafety": "Unknown"
             }
           ],
@@ -26841,6 +27726,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -26856,7 +27746,7 @@
           "Tags": [
             "Deprecated",
             {
-              "PreferredDescriptorName": "ClassicShirtsAccessoryOverride",
+              "PreferredDescriptorName": "ClassicShirtOverride",
               "ThreadSafety": "Unknown"
             }
           ],
@@ -26867,6 +27757,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -26882,7 +27777,7 @@
           "Tags": [
             "Deprecated",
             {
-              "PreferredDescriptorName": "ClassicShirtsAccessoryOverride",
+              "PreferredDescriptorName": "ClassicShirtOverride",
               "ThreadSafety": "Unknown"
             }
           ],
@@ -26893,6 +27788,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -26908,7 +27808,7 @@
           "Tags": [
             "Deprecated",
             {
-              "PreferredDescriptorName": "ClassicTShirtsAccessoryOverride",
+              "PreferredDescriptorName": "ClassicTShirtOverride",
               "ThreadSafety": "Unknown"
             }
           ],
@@ -26919,6 +27819,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -26934,7 +27839,7 @@
           "Tags": [
             "Deprecated",
             {
-              "PreferredDescriptorName": "ClassicTShirtsAccessoryOverride",
+              "PreferredDescriptorName": "ClassicTShirtOverride",
               "ThreadSafety": "Unknown"
             }
           ],
@@ -26945,6 +27850,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "PlayerChoice",
           "MemberType": "Property",
@@ -26971,6 +27881,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -26997,6 +27912,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -27023,6 +27943,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -27049,6 +27974,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -27075,6 +28005,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -27090,7 +28025,7 @@
           "Tags": [
             "Deprecated",
             {
-              "PreferredDescriptorName": "LeftShoesAccessoryOverride",
+              "PreferredDescriptorName": "LeftShoeAccessoryOverride",
               "ThreadSafety": "Unknown"
             }
           ],
@@ -27101,6 +28036,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -27116,7 +28056,7 @@
           "Tags": [
             "Deprecated",
             {
-              "PreferredDescriptorName": "LeftShoesAccessoryOverride",
+              "PreferredDescriptorName": "LeftShoeAccessoryOverride",
               "ThreadSafety": "Unknown"
             }
           ],
@@ -27127,6 +28067,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -27153,6 +28098,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -27179,6 +28129,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -27194,7 +28149,7 @@
           "Tags": [
             "Deprecated",
             {
-              "PreferredDescriptorName": "RightShoesAccessoryOverride",
+              "PreferredDescriptorName": "RightShoeAccessoryOverride",
               "ThreadSafety": "Unknown"
             }
           ],
@@ -27205,6 +28160,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -27220,7 +28180,7 @@
           "Tags": [
             "Deprecated",
             {
-              "PreferredDescriptorName": "RightShoesAccessoryOverride",
+              "PreferredDescriptorName": "RightShoeAccessoryOverride",
               "ThreadSafety": "Unknown"
             }
           ],
@@ -27231,6 +28191,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -27257,6 +28222,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -27283,6 +28253,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -27309,6 +28284,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -27335,6 +28315,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -27361,6 +28346,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -27387,6 +28377,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "false",
           "MemberType": "Property",
@@ -27413,6 +28408,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
@@ -27439,13 +28439,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "DressSkirtAccessoryOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -27458,13 +28463,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "JacketAccessoryOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -27477,13 +28487,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
-          "Name": "LeftShoesAccessoryOverride",
+          "Name": "LeftShoeAccessoryOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -27496,13 +28511,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0, 0, 0",
           "MemberType": "Property",
           "Name": "LimitBounds",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -27515,13 +28535,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "PantsAccessoryOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -27534,13 +28559,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
-          "Name": "RightShoesAccessoryOverride",
+          "Name": "RightShoeAccessoryOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -27553,13 +28583,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "ShirtAccessoryOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -27572,13 +28607,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "ShortsAccessoryOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -27591,13 +28631,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "SweaterAccessoryOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -27610,13 +28655,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "0",
           "MemberType": "Property",
           "Name": "TShirtAccessoryOverride",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -27636,13 +28686,42 @@
     {
       "Members": [
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
+          "Category": "Data",
+          "Default": "true",
+          "MemberType": "Property",
+          "Name": "BodyPartsCollidableOnDeath",
+          "Security": {
+            "Read": "None",
+            "Write": "None"
+          },
+          "Serialization": {
+            "CanLoad": true,
+            "CanSave": true
+          },
+          "ThreadSafety": "ReadSafe",
+          "ValueType": {
+            "Category": "Primitive",
+            "Name": "bool"
+          }
+        },
+        {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "Default",
           "MemberType": "Property",
           "Name": "CollisionMode",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -27655,13 +28734,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "UseParts",
           "MemberType": "Property",
           "Name": "HitAndTouchDetectionMode",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -27674,6 +28758,11 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "InnerBoxColliders",
           "MemberType": "Property",
@@ -27696,13 +28785,18 @@
           }
         },
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "2, 3, 1",
           "MemberType": "Property",
           "Name": "SingleColliderSize",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -30725,6 +31819,11 @@
     {
       "Members": [
         {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Data",
           "Default": "R15",
           "MemberType": "Property",
@@ -37854,6 +38953,34 @@
             ]
           },
           "Category": "Data",
+          "Default": "false",
+          "MemberType": "Property",
+          "Name": "DoubleSided",
+          "Security": {
+            "Read": "RobloxScriptSecurity",
+            "Write": "RobloxScriptSecurity"
+          },
+          "Serialization": {
+            "CanLoad": true,
+            "CanSave": true
+          },
+          "Tags": [
+            "Hidden"
+          ],
+          "ThreadSafety": "ReadSafe",
+          "ValueType": {
+            "Category": "Primitive",
+            "Name": "bool"
+          }
+        },
+        {
+          "Capabilities": {
+            "Read": [
+              "Basic",
+              "UI"
+            ]
+          },
+          "Category": "Data",
           "Default": "Default",
           "MemberType": "Property",
           "Name": "Shading",
@@ -39433,99 +40560,6 @@
     {
       "Members": [
         {
-          "MemberType": "Event",
-          "Name": "AssetImported",
-          "Parameters": [
-            {
-              "Name": "assetType",
-              "Type": {
-                "Category": "Enum",
-                "Name": "AssetType"
-              }
-            },
-            {
-              "Name": "name",
-              "Type": {
-                "Category": "Primitive",
-                "Name": "string"
-              }
-            },
-            {
-              "Name": "id",
-              "Type": {
-                "Category": "Primitive",
-                "Name": "int64"
-              }
-            }
-          ],
-          "Security": "RobloxScriptSecurity",
-          "ThreadSafety": "Unsafe"
-        },
-        {
-          "MemberType": "Event",
-          "Name": "BulkImportFinished",
-          "Parameters": [
-            {
-              "Name": "state",
-              "Type": {
-                "Category": "Primitive",
-                "Name": "int"
-              }
-            }
-          ],
-          "Security": "RobloxScriptSecurity",
-          "ThreadSafety": "Unsafe"
-        },
-        {
-          "MemberType": "Event",
-          "Name": "BulkImportStarted",
-          "Parameters": [],
-          "Security": "RobloxScriptSecurity",
-          "ThreadSafety": "Unsafe"
-        },
-        {
-          "MemberType": "Function",
-          "Name": "LaunchBulkImport",
-          "Parameters": [
-            {
-              "Name": "assetTypeToImport",
-              "Type": {
-                "Category": "Primitive",
-                "Name": "int"
-              }
-            }
-          ],
-          "ReturnType": {
-            "Category": "Primitive",
-            "Name": "null"
-          },
-          "Security": "RobloxScriptSecurity",
-          "ThreadSafety": "Unsafe"
-        },
-        {
-          "MemberType": "Function",
-          "Name": "ShowBulkImportView",
-          "Parameters": [],
-          "ReturnType": {
-            "Category": "Primitive",
-            "Name": "null"
-          },
-          "Security": "RobloxScriptSecurity",
-          "ThreadSafety": "Unsafe"
-        }
-      ],
-      "MemoryCategory": "Instances",
-      "Name": "BulkImportService",
-      "Superclass": "Instance",
-      "Tags": [
-        "NotCreatable",
-        "Service",
-        "NotReplicated"
-      ]
-    },
-    {
-      "Members": [
-        {
           "Capabilities": {
             "Read": [
               "Basic"
@@ -39714,6 +40748,25 @@
           "ReturnType": {
             "Category": "Group",
             "Name": "Dictionary"
+          },
+          "Security": "RobloxScriptSecurity",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "MemberType": "Function",
+          "Name": "ReceiveIncomingCall",
+          "Parameters": [
+            {
+              "Name": "pushPayloadJson",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "null"
           },
           "Security": "RobloxScriptSecurity",
           "ThreadSafety": "Unsafe"
@@ -40724,7 +41777,7 @@
             ]
           },
           "Category": "Camera",
-          "Default": "300",
+          "Default": "35",
           "MemberType": "Property",
           "Name": "OrthographicSize",
           "Security": {
@@ -46461,6 +47514,204 @@
       ]
     },
     {
+      "Members": [
+        {
+          "MemberType": "Event",
+          "Name": "ReservationExpired",
+          "Parameters": [
+            {
+              "Name": "reservationToken",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            }
+          ],
+          "Security": "RobloxScriptSecurity",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "MemberType": "Function",
+          "Name": "CheckEligibilityAsync",
+          "Parameters": [
+            {
+              "Default": "",
+              "Name": "pool",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "bool"
+          },
+          "Security": "RobloxScriptSecurity",
+          "Tags": [
+            "Yields"
+          ],
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "MemberType": "Function",
+          "Name": "GetSessionElapsedTime",
+          "Parameters": [],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "double"
+          },
+          "Security": "RobloxScriptSecurity",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "MemberType": "Function",
+          "Name": "MakeReservationAsync",
+          "Parameters": [
+            {
+              "Name": "placeId",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "int64"
+              }
+            },
+            {
+              "Default": "",
+              "Name": "pool",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "string"
+          },
+          "Security": "RobloxScriptSecurity",
+          "Tags": [
+            "Yields"
+          ],
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "MemberType": "Function",
+          "Name": "ReleaseReservation",
+          "Parameters": [
+            {
+              "Name": "reservationToken",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "null"
+          },
+          "Security": "RobloxScriptSecurity",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Category": "Data",
+          "Default": "false",
+          "MemberType": "Property",
+          "Name": "IsCloudClient",
+          "Security": {
+            "Read": "RobloxScriptSecurity",
+            "Write": "RobloxScriptSecurity"
+          },
+          "Serialization": {
+            "CanLoad": false,
+            "CanSave": true
+          },
+          "Tags": [
+            "ReadOnly",
+            "NotReplicated"
+          ],
+          "ThreadSafety": "ReadSafe",
+          "ValueType": {
+            "Category": "Primitive",
+            "Name": "bool"
+          }
+        },
+        {
+          "Category": "Data",
+          "Default": "false",
+          "MemberType": "Property",
+          "Name": "IsRobloxRealityEnvironment",
+          "Security": {
+            "Read": "RobloxScriptSecurity",
+            "Write": "RobloxScriptSecurity"
+          },
+          "Serialization": {
+            "CanLoad": false,
+            "CanSave": true
+          },
+          "Tags": [
+            "ReadOnly",
+            "NotReplicated"
+          ],
+          "ThreadSafety": "ReadSafe",
+          "ValueType": {
+            "Category": "Primitive",
+            "Name": "bool"
+          }
+        },
+        {
+          "Category": "Data",
+          "Default": "false",
+          "MemberType": "Property",
+          "Name": "RobloxRealityFilterEnabled",
+          "Security": {
+            "Read": "RobloxScriptSecurity",
+            "Write": "RobloxScriptSecurity"
+          },
+          "Serialization": {
+            "CanLoad": true,
+            "CanSave": true
+          },
+          "ThreadSafety": "ReadSafe",
+          "ValueType": {
+            "Category": "Primitive",
+            "Name": "bool"
+          }
+        },
+        {
+          "Category": "Data",
+          "Default": "0",
+          "MemberType": "Property",
+          "Name": "SessionTimeLimit",
+          "Security": {
+            "Read": "RobloxScriptSecurity",
+            "Write": "RobloxScriptSecurity"
+          },
+          "Serialization": {
+            "CanLoad": false,
+            "CanSave": true
+          },
+          "Tags": [
+            "ReadOnly",
+            "NotReplicated"
+          ],
+          "ThreadSafety": "ReadSafe",
+          "ValueType": {
+            "Category": "Primitive",
+            "Name": "double"
+          }
+        }
+      ],
+      "MemoryCategory": "Instances",
+      "Name": "CloudClientService",
+      "Superclass": "Instance",
+      "Tags": [
+        "NotCreatable",
+        "Service",
+        "NotReplicated"
+      ]
+    },
+    {
       "Members": [],
       "MemoryCategory": "Instances",
       "Name": "CloudCRUDService",
@@ -47234,6 +48485,20 @@
             "Basic"
           ],
           "MemberType": "Function",
+          "Name": "GetAllCollections",
+          "Parameters": [],
+          "ReturnType": {
+            "Category": "Group",
+            "Name": "Array"
+          },
+          "Security": "RobloxScriptSecurity",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "Basic"
+          ],
+          "MemberType": "Function",
           "Name": "GetAllTags",
           "Parameters": [],
           "ReturnType": {
@@ -47270,6 +48535,28 @@
               "ThreadSafety": "Safe"
             }
           ],
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "Basic"
+          ],
+          "MemberType": "Function",
+          "Name": "GetCollections",
+          "Parameters": [
+            {
+              "Name": "instance",
+              "Type": {
+                "Category": "Class",
+                "Name": "Instance"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Group",
+            "Name": "Array"
+          },
+          "Security": "None",
           "ThreadSafety": "Unsafe"
         },
         {
@@ -48170,6 +49457,34 @@
     },
     {
       "Members": [
+        {
+          "Capabilities": {
+            "Read": [
+              "Basic",
+              "UI"
+            ]
+          },
+          "Category": "Data",
+          "Default": "false",
+          "MemberType": "Property",
+          "Name": "DoubleSided",
+          "Security": {
+            "Read": "RobloxScriptSecurity",
+            "Write": "RobloxScriptSecurity"
+          },
+          "Serialization": {
+            "CanLoad": true,
+            "CanSave": true
+          },
+          "Tags": [
+            "Hidden"
+          ],
+          "ThreadSafety": "ReadSafe",
+          "ValueType": {
+            "Category": "Primitive",
+            "Name": "bool"
+          }
+        },
         {
           "Capabilities": {
             "Read": [
@@ -49372,6 +50687,24 @@
             }
           ],
           "Security": "None",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "Input"
+          ],
+          "MemberType": "Event",
+          "Name": "OpenInputActionManagerSignal",
+          "Parameters": [
+            {
+              "Name": "selectedInputObjects",
+              "Type": {
+                "Category": "DataType",
+                "Name": "Instances"
+              }
+            }
+          ],
+          "Security": "RobloxScriptSecurity",
           "ThreadSafety": "Unsafe"
         },
         {
@@ -51133,6 +52466,28 @@
         },
         {
           "MemberType": "Function",
+          "Name": "HasField",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "bool"
+          },
+          "Security": "None",
+          "Tags": [
+            "NotBrowsable"
+          ],
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "MemberType": "Function",
           "Name": "SetField",
           "Parameters": [
             {
@@ -52100,6 +53455,34 @@
           "ValueType": {
             "Category": "Primitive",
             "Name": "float"
+          }
+        },
+        {
+          "Capabilities": {
+            "Read": [
+              "Basic",
+              "UI"
+            ]
+          },
+          "Category": "Data",
+          "Default": "false",
+          "MemberType": "Property",
+          "Name": "DoubleSided",
+          "Security": {
+            "Read": "RobloxScriptSecurity",
+            "Write": "RobloxScriptSecurity"
+          },
+          "Serialization": {
+            "CanLoad": true,
+            "CanSave": true
+          },
+          "Tags": [
+            "Hidden"
+          ],
+          "ThreadSafety": "ReadSafe",
+          "ValueType": {
+            "Category": "Primitive",
+            "Name": "bool"
           }
         },
         {
@@ -63367,7 +64750,7 @@
               "Name": "vertexIds",
               "Type": {
                 "Category": "Group",
-                "Name": "Array"
+                "Name": "Tuple"
               }
             }
           ],
@@ -63376,6 +64759,9 @@
             "Name": "int64"
           },
           "Security": "None",
+          "Tags": [
+            "CustomLuaState"
+          ],
           "ThreadSafety": "Unsafe"
         },
         {
@@ -67045,6 +68431,17 @@
         },
         {
           "MemberType": "Function",
+          "Name": "IsInExperience",
+          "Parameters": [],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "bool"
+          },
+          "Security": "RobloxScriptSecurity",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "MemberType": "Function",
           "Name": "LaunchExperience",
           "Parameters": [
             {
@@ -70228,6 +71625,282 @@
       "Members": [
         {
           "MemberType": "Function",
+          "Name": "CreateTable",
+          "Parameters": [
+            {
+              "Name": "schema",
+              "Type": {
+                "Category": "Group",
+                "Name": "Dictionary"
+              }
+            },
+            {
+              "Name": "rawFeatures",
+              "Type": {
+                "Category": "Group",
+                "Name": "Variant"
+              }
+            },
+            {
+              "Name": "offset",
+              "Type": {
+                "Category": "Group",
+                "Name": "Variant"
+              }
+            },
+            {
+              "Name": "scale",
+              "Type": {
+                "Category": "Group",
+                "Name": "Variant"
+              }
+            },
+            {
+              "Default": "nil",
+              "Name": "metadataColumns",
+              "Type": {
+                "Category": "Group",
+                "Name": "Dictionary"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Class",
+            "Name": "FeatureMatchingTable"
+          },
+          "Security": "None",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "InternalTest"
+          ],
+          "MemberType": "Function",
+          "Name": "Load",
+          "Parameters": [
+            {
+              "Name": "featureTable",
+              "Type": {
+                "Category": "Class",
+                "Name": "FeatureMatchingTable"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Class",
+            "Name": "FeatureMatchingSession"
+          },
+          "Security": "None",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "InternalTest"
+          ],
+          "MemberType": "Function",
+          "Name": "LoadAsync",
+          "Parameters": [
+            {
+              "Name": "source",
+              "Type": {
+                "Category": "DataType",
+                "Name": "Content"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Class",
+            "Name": "FeatureMatchingSession"
+          },
+          "Security": "None",
+          "Tags": [
+            "Yields"
+          ],
+          "ThreadSafety": "Unsafe"
+        }
+      ],
+      "MemoryCategory": "Instances",
+      "Name": "FeatureMatchingService",
+      "Superclass": "Instance",
+      "Tags": [
+        "NotCreatable",
+        "Service",
+        "NotReplicated"
+      ]
+    },
+    {
+      "Members": [
+        {
+          "Capabilities": [
+            "InternalTest"
+          ],
+          "MemberType": "Function",
+          "Name": "GetChannels",
+          "Parameters": [],
+          "ReturnType": {
+            "Category": "Group",
+            "Name": "Array"
+          },
+          "Security": "None",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "InternalTest"
+          ],
+          "MemberType": "Function",
+          "Name": "GetDimensionCount",
+          "Parameters": [],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "int"
+          },
+          "Security": "None",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "InternalTest"
+          ],
+          "MemberType": "Function",
+          "Name": "GetFeatureRow",
+          "Parameters": [
+            {
+              "Name": "row",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "int"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "DataType",
+            "Name": "buffer"
+          },
+          "Security": "None",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "InternalTest"
+          ],
+          "MemberType": "Function",
+          "Name": "GetFeatureRows",
+          "Parameters": [
+            {
+              "Name": "rows",
+              "Type": {
+                "Category": "Group",
+                "Name": "Array"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Group",
+            "Name": "Array"
+          },
+          "Security": "None",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "InternalTest"
+          ],
+          "MemberType": "Function",
+          "Name": "GetMetadataRow",
+          "Parameters": [
+            {
+              "Name": "row",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "int"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Group",
+            "Name": "Dictionary"
+          },
+          "Security": "None",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "InternalTest"
+          ],
+          "MemberType": "Function",
+          "Name": "GetRowCount",
+          "Parameters": [],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "int"
+          },
+          "Security": "None",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "InternalTest"
+          ],
+          "MemberType": "Function",
+          "Name": "GetSchemaName",
+          "Parameters": [],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "string"
+          },
+          "Security": "None",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "InternalTest"
+          ],
+          "MemberType": "Function",
+          "Name": "GetTagColumns",
+          "Parameters": [],
+          "ReturnType": {
+            "Category": "Group",
+            "Name": "Array"
+          },
+          "Security": "None",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "InternalTest"
+          ],
+          "MemberType": "Function",
+          "Name": "StandardizeQuery",
+          "Parameters": [
+            {
+              "Name": "query",
+              "Type": {
+                "Category": "DataType",
+                "Name": "buffer"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "DataType",
+            "Name": "buffer"
+          },
+          "Security": "None",
+          "ThreadSafety": "Unsafe"
+        }
+      ],
+      "MemoryCategory": "Instances",
+      "Name": "FeatureMatchingSession",
+      "Superclass": "Object",
+      "Tags": [
+        "NotCreatable",
+        "NotReplicated"
+      ]
+    },
+    {
+      "Members": [
+        {
+          "MemberType": "Function",
           "Name": "GetSchema",
           "Parameters": [],
           "ReturnType": {
@@ -71778,6 +73451,64 @@
             "Yields"
           ],
           "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": {
+            "Read": [
+              "Basic"
+            ]
+          },
+          "Category": "Output",
+          "Default": "0, 0, 0",
+          "MemberType": "Property",
+          "Name": "BuoyancyForce",
+          "Security": {
+            "Read": "None",
+            "Write": "None"
+          },
+          "Serialization": {
+            "CanLoad": false,
+            "CanSave": true
+          },
+          "SimulationAccess": true,
+          "Tags": [
+            "ReadOnly",
+            "NotReplicated"
+          ],
+          "ThreadSafety": "ReadSafe",
+          "ValueType": {
+            "Category": "DataType",
+            "Name": "Vector3"
+          }
+        },
+        {
+          "Capabilities": {
+            "Read": [
+              "Basic"
+            ]
+          },
+          "Category": "Output",
+          "Default": "0, 0, 0",
+          "MemberType": "Property",
+          "Name": "BuoyancyTorque",
+          "Security": {
+            "Read": "None",
+            "Write": "None"
+          },
+          "Serialization": {
+            "CanLoad": false,
+            "CanSave": true
+          },
+          "SimulationAccess": true,
+          "Tags": [
+            "ReadOnly",
+            "NotReplicated"
+          ],
+          "ThreadSafety": "ReadSafe",
+          "ValueType": {
+            "Category": "DataType",
+            "Name": "Vector3"
+          }
         },
         {
           "Capabilities": {
@@ -74073,6 +75804,39 @@
     },
     {
       "Members": [
+        {
+          "Capabilities": [
+            "CSG"
+          ],
+          "MemberType": "Function",
+          "Name": "BakeToMeshAsync",
+          "Parameters": [
+            {
+              "Name": "input",
+              "Type": {
+                "Category": "Class",
+                "Name": "Instance"
+              }
+            },
+            {
+              "Default": "nil",
+              "Name": "options",
+              "Type": {
+                "Category": "Group",
+                "Name": "Dictionary"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Class",
+            "Name": "MeshPart"
+          },
+          "Security": "None",
+          "Tags": [
+            "Yields"
+          ],
+          "ThreadSafety": "Unsafe"
+        },
         {
           "Capabilities": [
             "CSG"
@@ -84780,8 +86544,8 @@
             {
               "Name": "avatarRules",
               "Type": {
-                "Category": "Class",
-                "Name": "AvatarRules"
+                "Category": "Group",
+                "Name": "Variant"
               }
             }
           ],
@@ -84801,14 +86565,17 @@
           "ThreadSafety": "Unsafe"
         },
         {
+          "Capabilities": [
+            "AvatarAppearance"
+          ],
           "MemberType": "Function",
           "Name": "ApplyAvatarRulesAsync",
           "Parameters": [
             {
               "Name": "avatarRules",
               "Type": {
-                "Category": "Class",
-                "Name": "AvatarRules"
+                "Category": "Group",
+                "Name": "Variant"
               }
             }
           ],
@@ -84816,7 +86583,7 @@
             "Category": "Primitive",
             "Name": "null"
           },
-          "Security": "RobloxScriptSecurity",
+          "Security": "None",
           "Tags": [
             "Yields"
           ],
@@ -85794,6 +87561,29 @@
             "CanSave": true
           },
           "SimulationAccess": true,
+          "ThreadSafety": "ReadSafe",
+          "ValueType": {
+            "Category": "Primitive",
+            "Name": "bool"
+          }
+        },
+        {
+          "Category": "Data",
+          "Default": "true",
+          "MemberType": "Property",
+          "Name": "BodyPartsCollidableOnDeath",
+          "Security": {
+            "Read": "RobloxSecurity",
+            "Write": "RobloxSecurity"
+          },
+          "Serialization": {
+            "CanLoad": false,
+            "CanSave": false
+          },
+          "Tags": [
+            "Hidden",
+            "NotScriptable"
+          ],
           "ThreadSafety": "ReadSafe",
           "ValueType": {
             "Category": "Primitive",
@@ -92784,6 +94574,34 @@
             "Read": [
               "Basic",
               "UI"
+            ]
+          },
+          "Category": "Data",
+          "Default": "false",
+          "MemberType": "Property",
+          "Name": "DoubleSided",
+          "Security": {
+            "Read": "RobloxScriptSecurity",
+            "Write": "RobloxScriptSecurity"
+          },
+          "Serialization": {
+            "CanLoad": true,
+            "CanSave": true
+          },
+          "Tags": [
+            "Hidden"
+          ],
+          "ThreadSafety": "ReadSafe",
+          "ValueType": {
+            "Category": "Primitive",
+            "Name": "bool"
+          }
+        },
+        {
+          "Capabilities": {
+            "Read": [
+              "Basic",
+              "UI"
             ],
             "Write": [
               "Basic"
@@ -93768,6 +95586,34 @@
               "Input"
             ]
           },
+          "Category": "State Editing",
+          "Default": "false",
+          "MemberType": "Property",
+          "Name": "Editor",
+          "Security": {
+            "Read": "RobloxScriptSecurity",
+            "Write": "RobloxScriptSecurity"
+          },
+          "Serialization": {
+            "CanLoad": false,
+            "CanSave": false
+          },
+          "Tags": [
+            "NotReplicated",
+            "NotScriptable"
+          ],
+          "ThreadSafety": "ReadSafe",
+          "ValueType": {
+            "Category": "Primitive",
+            "Name": "bool"
+          }
+        },
+        {
+          "Capabilities": {
+            "Read": [
+              "Input"
+            ]
+          },
           "Category": "Behavior",
           "Default": "true",
           "MemberType": "Property",
@@ -94367,6 +96213,34 @@
               "Input"
             ]
           },
+          "Category": "State Editing",
+          "Default": "false",
+          "MemberType": "Property",
+          "Name": "Editor",
+          "Security": {
+            "Read": "RobloxScriptSecurity",
+            "Write": "RobloxScriptSecurity"
+          },
+          "Serialization": {
+            "CanLoad": false,
+            "CanSave": false
+          },
+          "Tags": [
+            "NotReplicated",
+            "NotScriptable"
+          ],
+          "ThreadSafety": "ReadSafe",
+          "ValueType": {
+            "Category": "Primitive",
+            "Name": "bool"
+          }
+        },
+        {
+          "Capabilities": {
+            "Read": [
+              "Input"
+            ]
+          },
           "Category": "Composite Directions",
           "Default": "None",
           "MemberType": "Property",
@@ -94805,6 +96679,34 @@
           },
           "Security": "RobloxScriptSecurity",
           "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": {
+            "Read": [
+              "Input"
+            ]
+          },
+          "Category": "State Editing",
+          "Default": "false",
+          "MemberType": "Property",
+          "Name": "Editor",
+          "Security": {
+            "Read": "RobloxScriptSecurity",
+            "Write": "RobloxScriptSecurity"
+          },
+          "Serialization": {
+            "CanLoad": false,
+            "CanSave": false
+          },
+          "Tags": [
+            "NotReplicated",
+            "NotScriptable"
+          ],
+          "ThreadSafety": "ReadSafe",
+          "ValueType": {
+            "Category": "Primitive",
+            "Name": "bool"
+          }
         },
         {
           "Capabilities": {
@@ -97473,6 +99375,47 @@
       ]
     },
     {
+      "Members": [
+        {
+          "Capabilities": [
+            "Consequences"
+          ],
+          "MemberType": "Callback",
+          "Name": "EvaluatePlayerDeviceTrust",
+          "Parameters": [
+            {
+              "Name": "player",
+              "Type": {
+                "Category": "Class",
+                "Name": "Player"
+              }
+            },
+            {
+              "Name": "measures",
+              "Type": {
+                "Category": "Group",
+                "Name": "Dictionary"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Group",
+            "Name": "Variant"
+          },
+          "Security": "None",
+          "ThreadSafety": "Unsafe"
+        }
+      ],
+      "MemoryCategory": "Instances",
+      "Name": "IntegrityService",
+      "Superclass": "Instance",
+      "Tags": [
+        "NotCreatable",
+        "Service",
+        "NotReplicated"
+      ]
+    },
+    {
       "Members": [],
       "MemoryCategory": "Instances",
       "Name": "IntentService",
@@ -99861,6 +101804,13 @@
             "CanLoad": true,
             "CanSave": true
           },
+          "Tags": [
+            "Deprecated",
+            {
+              "PreferredDescriptorName": "LightingStyle",
+              "ThreadSafety": "Unknown"
+            }
+          ],
           "ThreadSafety": "ReadSafe",
           "ValueType": {
             "Category": "Enum",
@@ -100479,6 +102429,51 @@
         },
         {
           "MemberType": "Function",
+          "Name": "CreateInternalDlic",
+          "Parameters": [
+            {
+              "Name": "url",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            },
+            {
+              "Name": "source",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "string?"
+          },
+          "Security": "RobloxScriptSecurity",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "MemberType": "Function",
+          "Name": "DetectDlic",
+          "Parameters": [
+            {
+              "Name": "deeplinkId",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "null"
+          },
+          "Security": "RobloxScriptSecurity",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "MemberType": "Function",
           "Name": "DetectUrl",
           "Parameters": [
             {
@@ -100565,6 +102560,32 @@
           "Parameters": [
             {
               "Name": "url",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "null"
+          },
+          "Security": "RobloxScriptSecurity",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "MemberType": "Function",
+          "Name": "RegisterLuaUrlWithPolicy",
+          "Parameters": [
+            {
+              "Name": "url",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            },
+            {
+              "Name": "policy",
               "Type": {
                 "Category": "Primitive",
                 "Name": "string"
@@ -105560,6 +107581,38 @@
         },
         {
           "MemberType": "Event",
+          "Name": "PromptNativePurchaseRequestedWithContext",
+          "Parameters": [
+            {
+              "Name": "userId",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "int64"
+              }
+            },
+            {
+              "Name": "productId",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            },
+            {
+              "Name": "context",
+              "Type": {
+                "Category": "Group",
+                "Name": "Dictionary"
+              }
+            }
+          ],
+          "Security": "RobloxSecurity",
+          "Tags": [
+            "Hidden"
+          ],
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "MemberType": "Event",
           "Name": "PromptNativePurchaseRequestedWithLocalPlayer",
           "Parameters": [
             {
@@ -107361,6 +109414,33 @@
               "Type": {
                 "Category": "Primitive",
                 "Name": "string"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "null"
+          },
+          "Security": "RobloxScriptSecurity",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "MemberType": "Function",
+          "Name": "PromptNativePurchaseWithContext",
+          "Parameters": [
+            {
+              "Name": "productId",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            },
+            {
+              "Default": "nil",
+              "Name": "context",
+              "Type": {
+                "Category": "Group",
+                "Name": "Dictionary"
               }
             }
           ],
@@ -117166,6 +119246,42 @@
           "Capabilities": [
             "Players"
           ],
+          "MemberType": "Event",
+          "Name": "TopicSubscriptionError",
+          "Parameters": [
+            {
+              "Name": "eventData",
+              "Type": {
+                "Category": "Group",
+                "Name": "Map"
+              }
+            }
+          ],
+          "Security": "RobloxScriptSecurity",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "Players"
+          ],
+          "MemberType": "Event",
+          "Name": "TopicTokenExpiry",
+          "Parameters": [
+            {
+              "Name": "eventData",
+              "Type": {
+                "Category": "Group",
+                "Name": "Map"
+              }
+            }
+          ],
+          "Security": "RobloxScriptSecurity",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "Players"
+          ],
           "MemberType": "Function",
           "Name": "ActionEnabled",
           "Parameters": [
@@ -119612,36 +121728,6 @@
             ]
           },
           "Category": "Part",
-          "Default": "__api_dump_write_only_property__",
-          "MemberType": "Property",
-          "Name": "shap",
-          "Security": {
-            "Read": "None",
-            "Write": "None"
-          },
-          "Serialization": {
-            "CanLoad": true,
-            "CanSave": false
-          },
-          "Tags": [
-            "Hidden",
-            "WriteOnly",
-            "NotReplicated",
-            "NotScriptable"
-          ],
-          "ThreadSafety": "ReadSafe",
-          "ValueType": {
-            "Category": "Enum",
-            "Name": "PartType"
-          }
-        },
-        {
-          "Capabilities": {
-            "Read": [
-              "Basic"
-            ]
-          },
-          "Category": "Part",
           "Default": "Block",
           "MemberType": "Property",
           "Name": "shape",
@@ -119728,6 +121814,165 @@
       "Superclass": "GuiBase3d",
       "Tags": [
         "NotCreatable"
+      ]
+    },
+    {
+      "Members": [
+        {
+          "Capabilities": [
+            "InternalTest"
+          ],
+          "MemberType": "Function",
+          "Name": "Click",
+          "Parameters": [
+            {
+              "Name": "x",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "double"
+              }
+            },
+            {
+              "Name": "y",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "double"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "string"
+          },
+          "Security": "None",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "InternalTest"
+          ],
+          "MemberType": "Function",
+          "Name": "InputText",
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            },
+            {
+              "Default": "false",
+              "Name": "enter",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "bool"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "string"
+          },
+          "Security": "None",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "InternalTest"
+          ],
+          "MemberType": "Function",
+          "Name": "Launch",
+          "Parameters": [
+            {
+              "Default": "nil",
+              "Name": "options",
+              "Type": {
+                "Category": "Group",
+                "Name": "Dictionary"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "string"
+          },
+          "Security": "None",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "InternalTest"
+          ],
+          "MemberType": "Function",
+          "Name": "Screenshot",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "string"
+          },
+          "Security": "None",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "InternalTest"
+          ],
+          "MemberType": "Function",
+          "Name": "Scroll",
+          "Parameters": [
+            {
+              "Name": "direction",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            },
+            {
+              "Default": "0.5",
+              "Name": "power",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "double"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "string"
+          },
+          "Security": "None",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "InternalTest"
+          ],
+          "MemberType": "Function",
+          "Name": "Shutdown",
+          "Parameters": [],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "string"
+          },
+          "Security": "None",
+          "ThreadSafety": "Unsafe"
+        }
+      ],
+      "MemoryCategory": "Instances",
+      "Name": "ParticipantHandle",
+      "Superclass": "Object",
+      "Tags": [
+        "NotCreatable",
+        "NotReplicated"
       ]
     },
     {
@@ -124213,6 +126458,9 @@
             "CanSave": true
           },
           "SimulationAccess": true,
+          "Tags": [
+            "NotReplicated"
+          ],
           "ThreadSafety": "ReadSafe",
           "ValueType": {
             "Category": "DataType",
@@ -124241,6 +126489,9 @@
             "CanSave": true
           },
           "SimulationAccess": true,
+          "Tags": [
+            "NotReplicated"
+          ],
           "ThreadSafety": "ReadSafe",
           "ValueType": {
             "Category": "DataType",
@@ -126470,6 +128721,27 @@
             "Players"
           ],
           "MemberType": "Event",
+          "Name": "DeviceTrustLevelReplicated",
+          "Parameters": [
+            {
+              "Name": "trust",
+              "Type": {
+                "Category": "Enum",
+                "Name": "PlayerDeviceTrustLevel"
+              }
+            }
+          ],
+          "Security": "RobloxSecurity",
+          "Tags": [
+            "Hidden"
+          ],
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "Players"
+          ],
+          "MemberType": "Event",
           "Name": "EmotesLoaded",
           "Parameters": [],
           "Security": "None",
@@ -128170,6 +130442,7 @@
         },
         {
           "Capabilities": [
+            "AvatarAppearance",
             "Players"
           ],
           "MemberType": "Function",
@@ -128178,8 +130451,8 @@
             {
               "Name": "avatarRules",
               "Type": {
-                "Category": "Class",
-                "Name": "AvatarRules"
+                "Category": "Group",
+                "Name": "Variant"
               }
             }
           ],
@@ -128187,7 +130460,7 @@
             "Category": "Primitive",
             "Name": "null"
           },
-          "Security": "RobloxScriptSecurity",
+          "Security": "None",
           "Tags": [
             "Yields"
           ],
@@ -130174,6 +132447,39 @@
         {
           "Capabilities": {
             "Read": [
+              "Players",
+              "Consequences"
+            ],
+            "Write": [
+              "Consequences"
+            ]
+          },
+          "Category": "Data",
+          "Default": "__api_dump_skipped_class__",
+          "MemberType": "Property",
+          "Name": "DeviceTrustLevel",
+          "Security": {
+            "Read": "None",
+            "Write": "None"
+          },
+          "Serialization": {
+            "CanLoad": false,
+            "CanSave": false
+          },
+          "Tags": [
+            "Hidden",
+            "ReadOnly",
+            "NotReplicated"
+          ],
+          "ThreadSafety": "ReadSafe",
+          "ValueType": {
+            "Category": "Enum",
+            "Name": "PlayerDeviceTrustLevel"
+          }
+        },
+        {
+          "Capabilities": {
+            "Read": [
               "Players"
             ]
           },
@@ -130932,30 +133238,6 @@
           "ValueType": {
             "Category": "Primitive",
             "Name": "float"
-          }
-        },
-        {
-          "Capabilities": {
-            "Read": [
-              "Players"
-            ]
-          },
-          "Category": "Data",
-          "Default": "__api_dump_skipped_class__",
-          "MemberType": "Property",
-          "Name": "StepIdOffset",
-          "Security": {
-            "Read": "RobloxSecurity",
-            "Write": "RobloxSecurity"
-          },
-          "Serialization": {
-            "CanLoad": true,
-            "CanSave": true
-          },
-          "ThreadSafety": "ReadSafe",
-          "ValueType": {
-            "Category": "Primitive",
-            "Name": "int"
           }
         },
         {
@@ -133910,7 +136192,11 @@
         {
           "Capabilities": {
             "Read": [
-              "Players"
+              "Players",
+              "PluginOrOpenCloud"
+            ],
+            "Write": [
+              "PluginOrOpenCloud"
             ]
           },
           "Category": "Behavior",
@@ -133925,9 +136211,6 @@
             "CanLoad": true,
             "CanSave": true
           },
-          "Tags": [
-            "NotScriptable"
-          ],
           "ThreadSafety": "ReadSafe",
           "ValueType": {
             "Category": "Primitive",
@@ -134347,7 +136630,11 @@
         {
           "Capabilities": {
             "Read": [
-              "Players"
+              "Players",
+              "PluginOrOpenCloud"
+            ],
+            "Write": [
+              "PluginOrOpenCloud"
             ]
           },
           "Category": "Behavior",
@@ -134362,9 +136649,6 @@
             "CanLoad": true,
             "CanSave": true
           },
-          "Tags": [
-            "NotScriptable"
-          ],
           "ThreadSafety": "ReadSafe",
           "ValueType": {
             "Category": "Primitive",
@@ -138585,6 +140869,20 @@
                 "Category": "Group",
                 "Name": "Array"
               }
+            },
+            {
+              "Name": "expectedShape",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "int"
+              }
+            },
+            {
+              "Name": "expectedSourceKind",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "int"
+              }
             }
           ],
           "Security": "RobloxSecurity",
@@ -138649,6 +140947,13 @@
                 "Category": "Group",
                 "Name": "Array"
               }
+            },
+            {
+              "Name": "expectedSourceKind",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "int"
+              }
             }
           ],
           "Security": "RobloxSecurity",
@@ -138700,6 +141005,42 @@
           "MemberType": "Event",
           "Name": "EffectivePathsChanged",
           "Parameters": [],
+          "Security": "RobloxScriptSecurity",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "MemberType": "Event",
+          "Name": "MutationFailed",
+          "Parameters": [
+            {
+              "Name": "operation",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            },
+            {
+              "Name": "path",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            },
+            {
+              "Name": "destinationPath",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            },
+            {
+              "Name": "message",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            }
+          ],
           "Security": "RobloxScriptSecurity",
           "ThreadSafety": "Unsafe"
         },
@@ -140388,6 +142729,34 @@
             ]
           },
           "Category": "Data",
+          "Default": "false",
+          "MemberType": "Property",
+          "Name": "DoubleSided",
+          "Security": {
+            "Read": "RobloxScriptSecurity",
+            "Write": "RobloxScriptSecurity"
+          },
+          "Serialization": {
+            "CanLoad": true,
+            "CanSave": true
+          },
+          "Tags": [
+            "Hidden"
+          ],
+          "ThreadSafety": "ReadSafe",
+          "ValueType": {
+            "Category": "Primitive",
+            "Name": "bool"
+          }
+        },
+        {
+          "Capabilities": {
+            "Read": [
+              "Basic",
+              "UI"
+            ]
+          },
+          "Category": "Data",
           "Default": "2",
           "MemberType": "Property",
           "Name": "Height",
@@ -141239,6 +143608,24 @@
             "InternalTest"
           ],
           "MemberType": "Event",
+          "Name": "Disconnected",
+          "Parameters": [
+            {
+              "Name": "expected",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "bool"
+              }
+            }
+          ],
+          "Security": "None",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "InternalTest"
+          ],
+          "MemberType": "Event",
           "Name": "OnMessage",
           "Parameters": [
             {
@@ -141492,6 +143879,37 @@
           "Default": "false",
           "MemberType": "Property",
           "Name": "IsConnected",
+          "Security": {
+            "Read": "None",
+            "Write": "None"
+          },
+          "Serialization": {
+            "CanLoad": false,
+            "CanSave": true
+          },
+          "Tags": [
+            "ReadOnly",
+            "NotReplicated"
+          ],
+          "ThreadSafety": "ReadSafe",
+          "ValueType": {
+            "Category": "Primitive",
+            "Name": "bool"
+          }
+        },
+        {
+          "Capabilities": {
+            "Read": [
+              "InternalTest"
+            ],
+            "Write": [
+              "InternalTest"
+            ]
+          },
+          "Category": "Data",
+          "Default": "false",
+          "MemberType": "Property",
+          "Name": "IsConnectionWeak",
           "Security": {
             "Read": "None",
             "Write": "None"
@@ -147335,6 +149753,44 @@
             "Basic"
           ],
           "MemberType": "Function",
+          "Name": "BindToAnimationParallel",
+          "Parameters": [
+            {
+              "Name": "function",
+              "Type": {
+                "Category": "DataType",
+                "Name": "Function"
+              }
+            },
+            {
+              "Default": "Hz30",
+              "Name": "frequency",
+              "Type": {
+                "Category": "Enum",
+                "Name": "StepFrequency"
+              }
+            },
+            {
+              "Default": "2000",
+              "Name": "priority",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "int"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "DataType",
+            "Name": "RBXScriptConnection"
+          },
+          "Security": "None",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "Basic"
+          ],
+          "MemberType": "Function",
           "Name": "BindToRenderStep",
           "Parameters": [
             {
@@ -147372,6 +149828,44 @@
           ],
           "MemberType": "Function",
           "Name": "BindToSimulation",
+          "Parameters": [
+            {
+              "Name": "function",
+              "Type": {
+                "Category": "DataType",
+                "Name": "Function"
+              }
+            },
+            {
+              "Default": "Hz30",
+              "Name": "frequency",
+              "Type": {
+                "Category": "Enum",
+                "Name": "StepFrequency"
+              }
+            },
+            {
+              "Default": "2000",
+              "Name": "priority",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "int"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "DataType",
+            "Name": "RBXScriptConnection"
+          },
+          "Security": "None",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "Basic"
+          ],
+          "MemberType": "Function",
+          "Name": "BindToSimulationParallel",
           "Parameters": [
             {
               "Name": "function",
@@ -147569,7 +150063,8 @@
         },
         {
           "Capabilities": [
-            "Basic"
+            "Basic",
+            "PluginOrOpenCloud"
           ],
           "MemberType": "Function",
           "Name": "IsEdit",
@@ -147578,7 +150073,7 @@
             "Category": "Primitive",
             "Name": "bool"
           },
-          "Security": "PluginSecurity",
+          "Security": "None",
           "ThreadSafety": "Safe"
         },
         {
@@ -147919,7 +150414,8 @@
         {
           "Capabilities": {
             "Read": [
-              "Basic"
+              "Basic",
+              "PluginOrOpenCloud"
             ]
           },
           "Category": "Data",
@@ -147927,7 +150423,7 @@
           "MemberType": "Property",
           "Name": "RunState",
           "Security": {
-            "Read": "PluginSecurity",
+            "Read": "None",
             "Write": "PluginSecurity"
           },
           "Serialization": {
@@ -148350,6 +150846,20 @@
         {
           "MemberType": "Function",
           "Name": "GetAudioMemoryAsync",
+          "Parameters": [],
+          "ReturnType": {
+            "Category": "Group",
+            "Name": "Dictionary"
+          },
+          "Security": "None",
+          "Tags": [
+            "Yields"
+          ],
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "MemberType": "Function",
+          "Name": "GetCollisionGeometryMemoryAsync",
           "Parameters": [],
           "ReturnType": {
             "Category": "Group",
@@ -150185,6 +152695,28 @@
         },
         {
           "MemberType": "Function",
+          "Name": "AddReadOnlyReasonsAsync",
+          "Parameters": [
+            {
+              "Name": "reasons",
+              "Type": {
+                "Category": "Group",
+                "Name": "Array"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "null"
+          },
+          "Security": "PluginSecurity",
+          "Tags": [
+            "Yields"
+          ],
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "MemberType": "Function",
           "Name": "CloseAsync",
           "Parameters": [],
           "ReturnType": {
@@ -150336,6 +152868,17 @@
         },
         {
           "MemberType": "Function",
+          "Name": "GetReadOnlyReasons",
+          "Parameters": [],
+          "ReturnType": {
+            "Category": "Group",
+            "Name": "Array"
+          },
+          "Security": "PluginSecurity",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "MemberType": "Function",
           "Name": "GetScript",
           "Parameters": [],
           "ReturnType": {
@@ -150468,6 +153011,17 @@
         },
         {
           "MemberType": "Function",
+          "Name": "IsReadOnly",
+          "Parameters": [],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "bool"
+          },
+          "Security": "PluginSecurity",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "MemberType": "Function",
           "Name": "MultiEditTextAsync",
           "Parameters": [
             {
@@ -150481,6 +153035,28 @@
           "ReturnType": {
             "Category": "Group",
             "Name": "Tuple"
+          },
+          "Security": "PluginSecurity",
+          "Tags": [
+            "Yields"
+          ],
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "MemberType": "Function",
+          "Name": "RemoveReadOnlyReasonsAsync",
+          "Parameters": [
+            {
+              "Name": "reasons",
+              "Type": {
+                "Category": "Group",
+                "Name": "Array"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "null"
           },
           "Security": "PluginSecurity",
           "Tags": [
@@ -150921,6 +153497,44 @@
               "Type": {
                 "Category": "Primitive",
                 "Name": "string"
+              }
+            },
+            {
+              "Default": "nil",
+              "Name": "options",
+              "Type": {
+                "Category": "Group",
+                "Name": "Dictionary"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Group",
+            "Name": "Tuple"
+          },
+          "Security": "RobloxScriptSecurity",
+          "Tags": [
+            "Yields"
+          ],
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "MemberType": "Function",
+          "Name": "OpenTextDocumentDocumentAsync",
+          "Parameters": [
+            {
+              "Name": "textDocument",
+              "Type": {
+                "Category": "Class",
+                "Name": "TextDocument"
+              }
+            },
+            {
+              "Default": "nil",
+              "Name": "options",
+              "Type": {
+                "Category": "Group",
+                "Name": "Dictionary"
               }
             }
           ],
@@ -157704,9 +160318,6 @@
             "CanLoad": true,
             "CanSave": true
           },
-          "Tags": [
-            "Hidden"
-          ],
           "ThreadSafety": "ReadSafe",
           "ValueType": {
             "Category": "DataType",
@@ -158697,6 +161308,24 @@
             "Audio"
           ],
           "MemberType": "Event",
+          "Name": "AudioDeviceInputAdded",
+          "Parameters": [
+            {
+              "Name": "audioDeviceInput",
+              "Type": {
+                "Category": "Class",
+                "Name": "AudioDeviceInput"
+              }
+            }
+          ],
+          "Security": "RobloxScriptSecurity",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "Audio"
+          ],
+          "MemberType": "Event",
           "Name": "AudioInstanceAdded",
           "Parameters": [
             {
@@ -158881,6 +161510,34 @@
             "Audio"
           ],
           "MemberType": "Function",
+          "Name": "DebugClearDetachedPlaybacks",
+          "Parameters": [],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "null"
+          },
+          "Security": "RobloxScriptSecurity",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "Audio"
+          ],
+          "MemberType": "Function",
+          "Name": "EnableDetachedPlaybackMetadata",
+          "Parameters": [],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "null"
+          },
+          "Security": "RobloxScriptSecurity",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "Audio"
+          ],
+          "MemberType": "Function",
           "Name": "EndRecording",
           "Parameters": [],
           "ReturnType": {
@@ -158917,6 +161574,20 @@
           "ReturnType": {
             "Category": "Group",
             "Name": "Array"
+          },
+          "Security": "RobloxScriptSecurity",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "Audio"
+          ],
+          "MemberType": "Function",
+          "Name": "GetDetachedPlaybackData",
+          "Parameters": [],
+          "ReturnType": {
+            "Category": "Group",
+            "Name": "Dictionary"
           },
           "Security": "RobloxScriptSecurity",
           "ThreadSafety": "Unsafe"
@@ -160129,6 +162800,34 @@
     },
     {
       "Members": [
+        {
+          "Capabilities": {
+            "Read": [
+              "Basic",
+              "UI"
+            ]
+          },
+          "Category": "Data",
+          "Default": "false",
+          "MemberType": "Property",
+          "Name": "DoubleSided",
+          "Security": {
+            "Read": "RobloxScriptSecurity",
+            "Write": "RobloxScriptSecurity"
+          },
+          "Serialization": {
+            "CanLoad": true,
+            "CanSave": true
+          },
+          "Tags": [
+            "Hidden"
+          ],
+          "ThreadSafety": "ReadSafe",
+          "ValueType": {
+            "Category": "Primitive",
+            "Name": "bool"
+          }
+        },
         {
           "Capabilities": {
             "Read": [
@@ -161762,7 +164461,11 @@
         {
           "Capabilities": {
             "Read": [
-              "Players"
+              "Players",
+              "PluginOrOpenCloud"
+            ],
+            "Write": [
+              "PluginOrOpenCloud"
             ]
           },
           "Category": "Controls",
@@ -161770,8 +164473,8 @@
           "MemberType": "Property",
           "Name": "CreateDefaultPlayerModule",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -162164,7 +164867,11 @@
         {
           "Capabilities": {
             "Read": [
+              "AvatarAppearance",
               "Players"
+            ],
+            "Write": [
+              "AvatarAppearance"
             ]
           },
           "Category": "Character",
@@ -162172,16 +164879,13 @@
           "MemberType": "Property",
           "Name": "PlaceAvatarRules",
           "Security": {
-            "Read": "RobloxScriptSecurity",
-            "Write": "RobloxScriptSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
             "CanSave": true
           },
-          "Tags": [
-            "Hidden"
-          ],
           "ThreadSafety": "ReadSafe",
           "ValueType": {
             "Category": "Class",
@@ -166573,8 +169277,8 @@
           "MemberType": "Property",
           "Name": "PluginDebuggingEnabled",
           "Security": {
-            "Read": "PluginSecurity",
-            "Write": "PluginSecurity"
+            "Read": "RobloxScriptSecurity",
+            "Write": "RobloxScriptSecurity"
           },
           "Serialization": {
             "CanLoad": true,
@@ -178509,7 +181213,7 @@
             ]
           },
           "Category": "Data",
-          "Default": "\u0001\u0005",
+          "Default": "",
           "MemberType": "Property",
           "Name": "SmoothGrid",
           "Security": {
@@ -180010,7 +182714,199 @@
       ]
     },
     {
-      "Members": [],
+      "Members": [
+        {
+          "Capabilities": [
+            "InternalTest"
+          ],
+          "MemberType": "Function",
+          "Name": "AwaitAllAsync",
+          "Parameters": [
+            {
+              "Name": "pendingIds",
+              "Type": {
+                "Category": "Group",
+                "Name": "Array"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Group",
+            "Name": "Array"
+          },
+          "Security": "None",
+          "Tags": [
+            "Yields"
+          ],
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "InternalTest"
+          ],
+          "MemberType": "Function",
+          "Name": "AwaitAnyAsync",
+          "Parameters": [
+            {
+              "Name": "pendingIds",
+              "Type": {
+                "Category": "Group",
+                "Name": "Array"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Group",
+            "Name": "Dictionary"
+          },
+          "Security": "None",
+          "Tags": [
+            "Yields"
+          ],
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "InternalTest"
+          ],
+          "MemberType": "Function",
+          "Name": "AwaitSignalAsync",
+          "Parameters": [
+            {
+              "Name": "topic",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Group",
+            "Name": "Dictionary"
+          },
+          "Security": "None",
+          "Tags": [
+            "Yields"
+          ],
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "InternalTest"
+          ],
+          "MemberType": "Function",
+          "Name": "BarrierAsync",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            },
+            {
+              "Name": "participantIds",
+              "Type": {
+                "Category": "Group",
+                "Name": "Array"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "null"
+          },
+          "Security": "None",
+          "Tags": [
+            "Yields"
+          ],
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "InternalTest"
+          ],
+          "MemberType": "Function",
+          "Name": "Participant",
+          "Parameters": [
+            {
+              "Name": "id",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Class",
+            "Name": "ParticipantHandle"
+          },
+          "Security": "None",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "InternalTest"
+          ],
+          "MemberType": "Function",
+          "Name": "Signal",
+          "Parameters": [
+            {
+              "Name": "topic",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            },
+            {
+              "Default": "nil",
+              "Name": "payload",
+              "Type": {
+                "Category": "Group",
+                "Name": "Dictionary"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "null"
+          },
+          "Security": "None",
+          "ThreadSafety": "Unsafe"
+        }
+      ],
+      "MemoryCategory": "Instances",
+      "Name": "TestCoordinatorService",
+      "Superclass": "Instance",
+      "Tags": [
+        "NotCreatable",
+        "Service",
+        "NotReplicated"
+      ]
+    },
+    {
+      "Members": [
+        {
+          "MemberType": "Function",
+          "Name": "Skip",
+          "Parameters": [
+            {
+              "Default": "",
+              "Name": "reason",
+              "Type": {
+                "Category": "Primitive",
+                "Name": "string"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "null"
+          },
+          "Security": "None",
+          "ThreadSafety": "Unsafe"
+        }
+      ],
       "MemoryCategory": "Instances",
       "Name": "TestExecutionContext",
       "Superclass": "Object",
@@ -180257,6 +183153,29 @@
           "ValueType": {
             "Category": "Primitive",
             "Name": "int"
+          }
+        },
+        {
+          "Category": "Data",
+          "Default": "__api_dump_class_not_creatable__",
+          "MemberType": "Property",
+          "Name": "SkipReason",
+          "Security": {
+            "Read": "None",
+            "Write": "None"
+          },
+          "Serialization": {
+            "CanLoad": false,
+            "CanSave": true
+          },
+          "Tags": [
+            "ReadOnly",
+            "NotReplicated"
+          ],
+          "ThreadSafety": "ReadSafe",
+          "ValueType": {
+            "Category": "Primitive",
+            "Name": "string"
           }
         },
         {
@@ -181110,19 +184029,18 @@
               }
             },
             {
+              "Name": "callback",
+              "Type": {
+                "Category": "DataType",
+                "Name": "Function"
+              }
+            },
+            {
               "Default": "nil",
               "Name": "options",
               "Type": {
                 "Category": "Group",
                 "Name": "Dictionary"
-              }
-            },
-            {
-              "Default": "nil",
-              "Name": "callback",
-              "Type": {
-                "Category": "DataType",
-                "Name": "Function"
               }
             }
           ],
@@ -182022,19 +184940,18 @@
               }
             },
             {
+              "Name": "callback",
+              "Type": {
+                "Category": "DataType",
+                "Name": "Function"
+              }
+            },
+            {
               "Default": "nil",
               "Name": "options",
               "Type": {
                 "Category": "Group",
                 "Name": "Dictionary"
-              }
-            },
-            {
-              "Default": "nil",
-              "Name": "callback",
-              "Type": {
-                "Category": "DataType",
-                "Name": "Function"
               }
             }
           ],
@@ -184668,10 +187585,7 @@
       ],
       "MemoryCategory": "Gui",
       "Name": "TextChannelWindow",
-      "Superclass": "GuiObject",
-      "Tags": [
-        "NotBrowsable"
-      ]
+      "Superclass": "GuiObject"
     },
     {
       "Members": [
@@ -185690,6 +188604,19 @@
             "Chat"
           ],
           "MemberType": "Event",
+          "Name": "ClientToServerChatIsLoadedSignal",
+          "Parameters": [],
+          "Security": "RobloxSecurity",
+          "Tags": [
+            "Hidden"
+          ],
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "Chat"
+          ],
+          "MemberType": "Event",
           "Name": "ClientToServerMessageReplicateSignalV2",
           "Parameters": [
             {
@@ -185984,6 +188911,24 @@
           "Tags": [
             "Hidden"
           ],
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "Chat"
+          ],
+          "MemberType": "Event",
+          "Name": "CoreMessageReceived",
+          "Parameters": [
+            {
+              "Name": "textChatMessage",
+              "Type": {
+                "Category": "Class",
+                "Name": "TextChatMessage"
+              }
+            }
+          ],
+          "Security": "RobloxScriptSecurity",
           "ThreadSafety": "Unsafe"
         },
         {
@@ -186621,6 +189566,20 @@
             "Chat"
           ],
           "MemberType": "Function",
+          "Name": "ChatIsLoaded",
+          "Parameters": [],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "null"
+          },
+          "Security": "RobloxScriptSecurity",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "Chat"
+          ],
+          "MemberType": "Function",
           "Name": "DisplayBubble",
           "Parameters": [
             {
@@ -186935,6 +189894,14 @@
               "Type": {
                 "Category": "Primitive",
                 "Name": "string"
+              }
+            },
+            {
+              "Default": "{}",
+              "Name": "specialEffects",
+              "Type": {
+                "Category": "Group",
+                "Name": "Array"
               }
             }
           ],
@@ -187405,13 +190372,21 @@
     {
       "Members": [
         {
+          "Capabilities": {
+            "Read": [
+              "PluginOrOpenCloud"
+            ],
+            "Write": [
+              "PluginOrOpenCloud"
+            ]
+          },
           "Category": "Data",
           "Default": "__api_dump_no_string_value__",
           "MemberType": "Property",
           "Name": "TextContent",
           "Security": {
-            "Read": "PluginSecurity",
-            "Write": "PluginSecurity"
+            "Read": "None",
+            "Write": "None"
           },
           "Serialization": {
             "CanLoad": true,
@@ -199154,8 +202129,8 @@
             "Write": "RobloxScriptSecurity"
           },
           "Serialization": {
-            "CanLoad": false,
-            "CanSave": false
+            "CanLoad": true,
+            "CanSave": true
           },
           "Tags": [
             "Hidden",
@@ -203012,6 +205987,20 @@
           "ThreadSafety": "Unsafe"
         },
         {
+          "Capabilities": [
+            "InternalTest"
+          ],
+          "MemberType": "Function",
+          "Name": "ClearMockInput",
+          "Parameters": [],
+          "ReturnType": {
+            "Category": "Primitive",
+            "Name": "null"
+          },
+          "Security": "None",
+          "ThreadSafety": "Unsafe"
+        },
+        {
           "MemberType": "Function",
           "Name": "GetCameraDevices",
           "Parameters": [],
@@ -203020,6 +206009,31 @@
             "Name": "Map"
           },
           "Security": "RobloxScriptSecurity",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "InternalTest"
+          ],
+          "MemberType": "Function",
+          "Name": "SetMockInputAsync",
+          "Parameters": [
+            {
+              "Name": "videoContent",
+              "Type": {
+                "Category": "DataType",
+                "Name": "Content"
+              }
+            }
+          ],
+          "ReturnType": {
+            "Category": "Group",
+            "Name": "Tuple"
+          },
+          "Security": "None",
+          "Tags": [
+            "Yields"
+          ],
           "ThreadSafety": "Unsafe"
         },
         {
@@ -209058,7 +212072,37 @@
             "Chat"
           ],
           "MemberType": "Function",
+          "Name": "lastVoiceChatRemoteOperations",
+          "Parameters": [],
+          "ReturnType": {
+            "Category": "Group",
+            "Name": "Dictionary"
+          },
+          "Security": "RobloxScriptSecurity",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "Audio",
+            "Chat"
+          ],
+          "MemberType": "Function",
           "Name": "lastVoiceChatStats",
+          "Parameters": [],
+          "ReturnType": {
+            "Category": "Group",
+            "Name": "Dictionary"
+          },
+          "Security": "RobloxScriptSecurity",
+          "ThreadSafety": "Unsafe"
+        },
+        {
+          "Capabilities": [
+            "Audio",
+            "Chat"
+          ],
+          "MemberType": "Function",
+          "Name": "lastVoiceChatSubscriptions",
           "Parameters": [],
           "ReturnType": {
             "Category": "Group",
@@ -215896,6 +218940,54 @@
               "AvatarAppearance"
             ]
           },
+          "Category": "Appearance",
+          "Default": "__api_dump_no_string_value__",
+          "MemberType": "Property",
+          "Name": "RotateScaleDeformationMap",
+          "Security": {
+            "Read": "None",
+            "Write": "PluginSecurity"
+          },
+          "Serialization": {
+            "CanLoad": true,
+            "CanSave": true
+          },
+          "ThreadSafety": "ReadSafe",
+          "ValueType": {
+            "Category": "DataType",
+            "Name": "Content"
+          }
+        },
+        {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
+          "Category": "Appearance",
+          "Default": "__api_dump_no_string_value__",
+          "MemberType": "Property",
+          "Name": "ScaleOnlyDeformationMap",
+          "Security": {
+            "Read": "None",
+            "Write": "PluginSecurity"
+          },
+          "Serialization": {
+            "CanLoad": true,
+            "CanSave": true
+          },
+          "ThreadSafety": "ReadSafe",
+          "ValueType": {
+            "Category": "DataType",
+            "Name": "Content"
+          }
+        },
+        {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
           "Category": "Tuning",
           "Default": "0",
           "MemberType": "Property",
@@ -215911,6 +219003,30 @@
           "Tags": [
             "Deprecated"
           ],
+          "ThreadSafety": "ReadSafe",
+          "ValueType": {
+            "Category": "Primitive",
+            "Name": "float"
+          }
+        },
+        {
+          "Capabilities": {
+            "Read": [
+              "AvatarAppearance"
+            ]
+          },
+          "Category": "Appearance",
+          "Default": "0",
+          "MemberType": "Property",
+          "Name": "TargetShaping",
+          "Security": {
+            "Read": "None",
+            "Write": "PluginSecurity"
+          },
+          "Serialization": {
+            "CanLoad": true,
+            "CanSave": true
+          },
           "ThreadSafety": "ReadSafe",
           "ValueType": {
             "Category": "Primitive",
@@ -218026,6 +221142,35 @@
     {
       "Items": [
         {
+          "Name": "LongestToShortest",
+          "Value": 6
+        },
+        {
+          "Name": "MostUsed",
+          "Value": 2
+        },
+        {
+          "Name": "RecentlyCreated",
+          "Value": 4
+        },
+        {
+          "Name": "Relevance",
+          "Value": 1
+        },
+        {
+          "Name": "ShortestToLongest",
+          "Value": 5
+        },
+        {
+          "Name": "Trending",
+          "Value": 3
+        }
+      ],
+      "Name": "AudioSortType"
+    },
+    {
+      "Items": [
+        {
           "Name": "Music",
           "Value": 1
         },
@@ -218705,14 +221850,23 @@
       "Items": [
         {
           "Name": "Default",
+          "Tags": [
+            "Deprecated"
+          ],
           "Value": 0
         },
         {
           "Name": "Disabled",
+          "Tags": [
+            "Deprecated"
+          ],
           "Value": 1
         },
         {
           "Name": "Enabled",
+          "Tags": [
+            "Deprecated"
+          ],
           "Value": 2
         }
       ],
@@ -221720,6 +224874,10 @@
           "Value": 2
         },
         {
+          "Name": "Bezier",
+          "Value": 11
+        },
+        {
           "Name": "Bounce",
           "Value": 6
         },
@@ -221758,6 +224916,10 @@
         {
           "Name": "Sine",
           "Value": 1
+        },
+        {
+          "Name": "Spring",
+          "Value": 12
         }
       ],
       "Name": "EasingStyle"
@@ -223029,6 +226191,10 @@
         {
           "Name": "None",
           "Value": 0
+        },
+        {
+          "Name": "NoReason",
+          "Value": 7
         },
         {
           "Name": "RemoteHangup",
@@ -227681,6 +230847,13 @@
           "Value": 1
         },
         {
+          "Name": "Capsule",
+          "Tags": [
+            "NotBrowsable"
+          ],
+          "Value": 5
+        },
+        {
           "Name": "CornerWedge",
           "Value": 4
         },
@@ -228174,6 +231347,44 @@
         }
       ],
       "Name": "PlayerDataLoadFailureBehavior"
+    },
+    {
+      "Items": [
+        {
+          "Name": "Accept",
+          "Value": 0
+        },
+        {
+          "Name": "Reject",
+          "Value": 1
+        }
+      ],
+      "Name": "PlayerDeviceTrustDecision"
+    },
+    {
+      "Items": [
+        {
+          "Name": "Full",
+          "Value": 4
+        },
+        {
+          "Name": "None",
+          "Value": 2
+        },
+        {
+          "Name": "Pending",
+          "Value": 0
+        },
+        {
+          "Name": "Standard",
+          "Value": 3
+        },
+        {
+          "Name": "Unknown",
+          "Value": 1
+        }
+      ],
+      "Name": "PlayerDeviceTrustLevel"
     },
     {
       "Items": [

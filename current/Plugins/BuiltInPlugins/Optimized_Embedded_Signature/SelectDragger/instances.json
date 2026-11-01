@@ -11843,6 +11843,22 @@
   },
   {
     "class": "ModuleScript",
+    "name": "runJest",
+    "path": "SelectDragger/Packages/_Index/TestLoader/TestLoader/runJest",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "1772",
+      "SourceBytecodeSha256": "0355496b6c4b23814709698116b162ae1556f5b904a379bf24b2433b56ffc561",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
     "name": "runJestAsync",
     "path": "SelectDragger/Packages/_Index/TestLoader/TestLoader/runJestAsync",
     "properties": {

@@ -29,7 +29,6 @@ local TextLabel = require(UI.Components.TextLabel)
 local SimpleTab = Roact.PureComponent:extend("SimpleTab")
 
 local FFlagSimpleTabNoAbsoluteSize = game:DefineFastFlag("SimpleTabNoAbsoluteSize", false)
-local getFFlagDevFrameworkAdjustTextFontSize = require(Framework.SharedFlags.getFFlagDevFrameworkAdjustTextFontSize)
 
 function SimpleTab:init()
 	self.onPress = function()
@@ -124,7 +123,7 @@ function SimpleTab:render()
 								LayoutOrder = 2,
 								Font = style.Font,
 								Text = label,
-								TextSize = if getFFlagDevFrameworkAdjustTextFontSize() then style.TextSize else nil,
+								TextSize = style.TextSize,
 								[React.Tag] = joinTags("X-Fit", if props.Disabled then "Disabled" else nil),
 							}
 							else {
@@ -132,7 +131,7 @@ function SimpleTab:render()
 								Font = style.Font,
 								AutomaticSize = Enum.AutomaticSize.XY,
 								Text = label,
-								TextSize = if getFFlagDevFrameworkAdjustTextFontSize() then style.TextSize else nil,
+								TextSize = style.TextSize,
 								LayoutOrder = 2,
 							}
 					),

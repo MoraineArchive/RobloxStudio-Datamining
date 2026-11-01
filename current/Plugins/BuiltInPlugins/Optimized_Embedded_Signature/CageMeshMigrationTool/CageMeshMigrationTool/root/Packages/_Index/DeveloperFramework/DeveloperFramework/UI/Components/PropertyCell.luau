@@ -43,9 +43,6 @@ local Components = Framework.UI.Components
 local Pane = require(Components.Pane)
 local Tooltip = require(Components.Tooltip)
 
-local getFFlagDevFrameworkPropertyCellLayoutOrderFix =
-	require(Framework.SharedFlags.getFFlagDevFrameworkPropertyCellLayoutOrderFix)
-
 local PropertyCell = Roact.PureComponent:extend("PropertyCell")
 
 function PropertyCell:render()
@@ -89,7 +86,7 @@ function PropertyCell:render()
 		return Roact.createElement(Tooltip, {
 			Child = pane,
 			Text = props.Tooltip,
-			LayoutOrder = if getFFlagDevFrameworkPropertyCellLayoutOrderFix() then props.LayoutOrder else nil,
+			LayoutOrder = props.LayoutOrder,
 		})
 	else
 		return pane

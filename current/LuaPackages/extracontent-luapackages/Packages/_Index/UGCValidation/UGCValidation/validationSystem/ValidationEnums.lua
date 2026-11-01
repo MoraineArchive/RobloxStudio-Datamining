@@ -61,6 +61,7 @@ ValidationEnums.ValidationModule = {
 	PropertiesSensible = "PropertiesSensible",
 	InstanceTreeMatchesSchema = "InstanceTreeMatchesSchema",
 	DescendantIdsAllowed = "DescendantIdsAllowed",
+	DescendantIdsPublished = "DescendantIdsPublished",
 	ScaleTypeValid = "ScaleTypeValid",
 	CollisionFidelityCorrect = "CollisionFidelityCorrect",
 	AttachmentBoundsValid = "AttachmentBoundsValid",
@@ -77,6 +78,7 @@ ValidationEnums.ValidationModule = {
 	DynamicHeadFacsPresent = "DynamicHeadFacsPresent",
 	DynamicHeadControlsActive = "DynamicHeadControlsActive",
 	FacsJointBoundsValid = "FacsJointBoundsValid",
+	FacsJointCountBounded = "FacsJointCountBounded",
 
 	-- HRD/DRD/Bone checks (introduced for R15+ launch)
 	HrdBonesFollowSchema = "HrdBonesFollowSchema",
@@ -296,6 +298,7 @@ ValidationEnums.AssetQualityCheck = {
 	Measure_Mesh_Island_ML = "Measure_Mesh_Island_ML",
 	Measure_Animation_Duration = "Measure_Animation_Duration",
 	Measure_Cage_Part_Placement = "Measure_Cage_Part_Placement",
+	Measure_Dynamic_Head_ML_Hybrid = "Measure_Dynamic_Head_ML_Hybrid",
 }
 finalizeEnumTable("AssetQualityCheck")
 

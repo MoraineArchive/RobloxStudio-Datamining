@@ -96,36 +96,20 @@
     "sources": 0
   },
   {
-    "bytecodeOrUnreadable": 40879,
-    "instances": 44762,
+    "bytecodeOrUnreadable": 43843,
+    "instances": 47802,
     "package": "extracontent-models.zip",
     "path": "DataModelPatch/DataModelPatch.rbxm",
-    "sha256": "d7106a1217a730a0c2d3525f2458e709933be54e273d6d7daa6f1d6bbbfa5fb7",
-    "sources": 0
-  },
-  {
-    "bytecodeOrUnreadable": 0,
-    "instances": 26,
-    "package": "extracontent-models.zip",
-    "path": "Photobooth/AbyssBlue.rbxm",
-    "sha256": "09d8e29e4ebf8cd656aa0ea2f2ca30e218ad1f8975b539006cca82ece933a353",
-    "sources": 0
-  },
-  {
-    "bytecodeOrUnreadable": 0,
-    "instances": 25,
-    "package": "extracontent-models.zip",
-    "path": "Photobooth/AbyssBlueLight.rbxm",
-    "sha256": "ceef3e60a744618faa2e14e4f12acde123ccc9446958f30c676b5db1571026c6",
+    "sha256": "6d04fc13321091792c6c90224769266d9213e619acea5fd3706ebe9cb83f5648",
     "sources": 0
   },
   {
     "bytecodeOrUnreadable": 1,
-    "instances": 131,
+    "instances": 132,
     "package": "extracontent-models.zip",
     "path": "ServerCoreScripts.rbxm",
-    "sha256": "c13b5dfeb5cbf22de5edeac01b21fc06563f1473b7657fdf5951a779f95e2c15",
-    "sources": 100
+    "sha256": "c02fdcf1283f0920b18a275c2cf81ed631a9816781349987a89c6c7d34950915",
+    "sources": 101
   },
   {
     "bytecodeOrUnreadable": 0,
@@ -133,6 +117,30 @@
     "package": "studiocontent-models.zip",
     "path": "AnimationEditor/AnimationEditorGUI.rbxm",
     "sha256": "7fc559d4d257fb8176443df3d00cba13f9a9dd14b66b206085dea31da4ab9f90",
+    "sources": 0
+  },
+  {
+    "bytecodeOrUnreadable": 0,
+    "instances": 1,
+    "package": "studiocontent-models.zip",
+    "path": "AnimationGen/BlockyRigData.rbxm",
+    "sha256": "1afdd0d1c6e59f35500a94b6e727d0ea8943ee1ee0df9c9d13fcfaa48bac2cba",
+    "sources": 0
+  },
+  {
+    "bytecodeOrUnreadable": 0,
+    "instances": 2,
+    "package": "studiocontent-models.zip",
+    "path": "AnimationGen/MannequinRigData.rbxm",
+    "sha256": "89c8915c85078e838a151b58f4b6504afee6e5bfa6e683df171331e0eb9b51fa",
+    "sources": 0
+  },
+  {
+    "bytecodeOrUnreadable": 0,
+    "instances": 1,
+    "package": "studiocontent-models.zip",
+    "path": "AnimationGen/RthroFemaleRigData.rbxm",
+    "sha256": "9ddd875529ed992ad94f1038205c084578b16efd76ca149f7757033a94023d2d",
     "sources": 0
   },
   {

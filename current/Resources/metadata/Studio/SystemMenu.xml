@@ -196,6 +196,9 @@
             <Action fflag="StudioEnableTerrainPalette4" name="terrainPaletteEditorAction"/>
             <Action fflag="EnableTextureGenerator2" name="textureGeneratorAction"/>
         </SubMenu>
+        <SubMenu fflag="EnableAudioActivityMonitorCpp" name="Audio" text="Studio.SystemMenu.Title.Audio">
+            <Action name="toggleAudioActivityMonitorAction"/>
+        </SubMenu>
         <SubMenu name="Avatar" text="Studio.SystemMenu.Title.Avatar">
             <Action name="animationEditorAction"/>
             <Action name="layeredClothingEditorAction"/>
@@ -229,6 +232,7 @@
             <Action fflag="SceneAnalysisServiceEnabled" name="toggleSceneAnalysisAction"/>
         </SubMenu>
         <SubMenu name="Script" text="Studio.SystemMenu.Title.Script">
+            <Action fflag="EnableCollectionDebuggerMenu" name="toggleCollectionDebugger"/>
             <Action name="viewCommandBarAction"/>
             <Action name="toggleDraftsDockAction"/>
             <Action name="toggleFindReplaceAllWidgetAction"/>

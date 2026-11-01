@@ -17,8 +17,6 @@ local PropertyCell = require(Framework.UI.Components.PropertyCell)
 local TextLabel = require(Framework.UI.Components.TextLabel)
 local Tooltip = require(Framework.UI.Components.Tooltip)
 
-local getFFlagDevFrameworkAdjustTextFontSize = require(Framework.SharedFlags.getFFlagDevFrameworkAdjustTextFontSize)
-
 local COMPONENT_NAME = "FormItem"
 
 local function validateAll()
@@ -296,10 +294,8 @@ function FormItem:render()
 						LabelText = Roact.createElement(TextLabel, {
 							Text = label,
 							TextXAlignment = Enum.TextXAlignment.Left,
-							Font = if getFFlagDevFrameworkAdjustTextFontSize() then style.FormItem.Font else nil,
-							TextSize = if getFFlagDevFrameworkAdjustTextFontSize()
-								then style.FormItem.TextSize
-								else nil,
+							Font = style.FormItem.Font,
+							TextSize = style.FormItem.TextSize,
 						}),
 					}),
 					HelpIcon = if helpImage

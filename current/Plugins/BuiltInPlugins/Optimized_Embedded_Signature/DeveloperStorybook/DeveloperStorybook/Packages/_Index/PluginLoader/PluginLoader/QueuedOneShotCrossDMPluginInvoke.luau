@@ -6,7 +6,7 @@
 	ONE SHOT ONLY. The item is never cleared, so once fired every later listen() fires immediately. Use
 	plugin:Invoke / plugin:OnInvoke directly for repeating events.
 
-	A preinit cannot require() this, so it has to inline the logic; keep the ordering below.
+	Must not require anything so that it can be included as a mapped dependency for preinit scripts. (TODO update AssetExport to require this module)
 ]]
 
 local QueuedOneShotCrossDMPluginInvoke = {}

@@ -813,6 +813,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "jest.config",
+    "path": "Modules/Server/jest.config",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "LegacyThumbnailUrls",
     "path": "Modules/Common/LegacyThumbnailUrls",
     "properties": {
@@ -1041,8 +1053,8 @@
   },
   {
     "class": "ModuleScript",
-    "name": "RoCaptchaUtils.spec",
-    "path": "Modules/Server/RoCaptcha/RoCaptchaUtils.spec",
+    "name": "RoCaptchaUtils.test",
+    "path": "Modules/Server/RoCaptcha/RoCaptchaUtils.test",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -1113,8 +1125,8 @@
   },
   {
     "class": "ModuleScript",
-    "name": "shouldShowFriendJoinedPlayerToast.spec",
-    "path": "Modules/Server/shouldShowFriendJoinedPlayerToast.spec",
+    "name": "shouldShowFriendJoinedPlayerToast.test",
+    "path": "Modules/Server/shouldShowFriendJoinedPlayerToast.test",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -1353,8 +1365,8 @@
   },
   {
     "class": "ModuleScript",
-    "name": "VRAvatarGesturesServer.spec",
-    "path": "Modules/Server/VR/VRAvatarGesturesServer.spec",
+    "name": "VRAvatarGesturesServer.test",
+    "path": "Modules/Server/VR/VRAvatarGesturesServer.test",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",

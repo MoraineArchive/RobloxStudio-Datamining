@@ -12,8 +12,6 @@ local deepCopy = Util.deepCopy
 local UIFolderData = require(Framework.UI.Components.UIFolderData)
 local Pane = require(UIFolderData.Pane.style)
 
-local getFFlagDevFrameworkAdjustTextFontSize = require(Framework.SharedFlags.getFFlagDevFrameworkAdjustTextFontSize)
-
 local Dash = require(Framework.Parent.Dash)
 local join = Dash.join
 
@@ -22,8 +20,6 @@ local pane = deepCopy(Pane)
 local box = pane["&Box"]
 local roundBox = pane["&RoundBox"]
 local borderBox = pane["&BorderBox"]
-
-local foundationDarkTheme = if getFFlagDevFrameworkAdjustTextFontSize() then foundationDark(1) else nil :: never
 
 local default = {
 	Content = {
@@ -71,18 +67,16 @@ return join(default, {
 			Background = StyleKey.Titlebar,
 		}),
 	}),
-	["&SectionTitleSmall"] = if getFFlagDevFrameworkAdjustTextFontSize()
-		then join(box, {
-			Header = join(default.Header, {
-				Background = StyleKey.Titlebar,
-				Text = {
-					Font = Enum.Font.BuilderSansBold,
-					TextColor = StyleKey.TitlebarText,
-					TextSize = foundationDarkTheme.Typography.TitleSmall.FontSize,
-				},
-			}),
-		})
-		else nil,
+	["&SectionTitleSmall"] = join(box, {
+		Header = join(default.Header, {
+			Background = StyleKey.Titlebar,
+			Text = {
+				Font = Enum.Font.BuilderSansBold,
+				TextColor = StyleKey.TitlebarText,
+				TextSize = foundationDark(1).Typography.TitleSmall.FontSize,
+			},
+		}),
+	}),
 	["&Title"] = join(box, {
 		Header = join(default.Header, {
 			Background = StyleKey.Titlebar,

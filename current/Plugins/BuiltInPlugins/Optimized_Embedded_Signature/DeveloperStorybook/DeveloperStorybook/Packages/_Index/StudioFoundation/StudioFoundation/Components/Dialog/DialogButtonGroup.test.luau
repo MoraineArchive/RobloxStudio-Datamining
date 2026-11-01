@@ -58,6 +58,12 @@ jest.mock(Main.Components.Dialog.useButtonGroupFairWidth, function()
 	end
 end)
 
+-- Must stay at file scope: resetting between describes would swap the React/Foundation modules
+-- out from under the already-rendering reconciler.
+afterAll(function()
+	jest.resetModules()
+end)
+
 local DialogButtonGroup = require(script.Parent.DialogButtonGroup)
 local mockContext = require(Main.Util.mockContext)
 
@@ -77,10 +83,6 @@ describe("DialogButtonGroup", function()
 	beforeEach(function()
 		mockShowTooltip.mockReset()
 		mockHideTooltip.mockReset()
-	end)
-
-	afterAll(function()
-		jest.resetModules()
 	end)
 
 	it("should render without errors", function()

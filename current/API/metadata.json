@@ -2,28 +2,28 @@
   "observationMode": "live",
   "provenance": [
     {
-      "buildGuid": "version-4f087c32742644ab",
-      "bytes": 7559477,
-      "sha256": "d93ecace993838655c2c41a555ae7e3792c0e6f74aeaa9b830746d3b57fa374c",
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 7669358,
+      "sha256": "0962f777e3085487e368ed019c35bdb07cd02f6659aa7212dc2ad6e24bb41efe",
       "sourceType": "official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-4f087c32742644ab-API-Dump.json"
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-API-Dump.json"
     },
     {
-      "buildGuid": "version-4f087c32742644ab",
-      "bytes": 8562360,
-      "sha256": "eef0ea9aa75bc639da8ead4b06c18a01192597d9bba817fa3b34c5738ea59dd5",
+      "buildGuid": "version-7062aec9dbe74b14",
+      "bytes": 8677424,
+      "sha256": "6c0ead61eaa8623a7cfc650db86fe5ddf128c5d79ed74f2ef2b5c08d7e6033e0",
       "sourceType": "official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-4f087c32742644ab-Full-API-Dump.json"
+      "sourceUrl": "https://setup.rbxcdn.com/version-7062aec9dbe74b14-Full-API-Dump.json"
     }
   ],
   "status": "available",
   "summary": {
-    "classes": 938,
+    "classes": 944,
     "engineRevision": 1,
-    "enums": 651,
+    "enums": 654,
     "fullStatus": "available",
-    "guid": "version-4f087c32742644ab",
-    "members": 7983
+    "guid": "version-7062aec9dbe74b14",
+    "members": 8076
   },
   "target": "WindowsStudio64"
 }

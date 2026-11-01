@@ -48,7 +48,6 @@ local GridCell = require(script.GridCell)
 local GroupHeader = require(script.GroupHeader)
 local GridStyle = require(script.style)
 
-local FFlagDevFrameworkGridOnLoadRange = game:DefineFastFlag("DevFrameworkGridOnLoadRange", false)
 local FFlagDevFrameworkFixMissingKeyErrors = require(Framework.SharedFlags.getFFlagDevFrameworkFixMissingKeyErrors)()
 local getFFlagGridDeferIncrementRender = require(Framework.SharedFlags.getFFlagGridDeferIncrementRender)
 
@@ -259,7 +258,7 @@ function Grid:didUpdate(prevProps)
 
 	if
 		prevProps.OnScrollUpdate ~= props.OnScrollUpdate
-		or (prevProps.OnLoadRange ~= props.OnLoadRange and FFlagDevFrameworkGridOnLoadRange)
+		or prevProps.OnLoadRange ~= props.OnLoadRange
 		or prevProps.SpecialCells ~= props.SpecialCells
 		or prevProps.CellGroups ~= props.CellGroups
 	then
@@ -293,7 +292,7 @@ function Grid:_update()
 		return
 	end
 
-	if FFlagDevFrameworkGridOnLoadRange and props.OnLoadRange and maxIndex >= #props.Cells then
+	if props.OnLoadRange and maxIndex >= #props.Cells then
 		props.OnLoadRange(minIndex, maxIndex)
 	end
 

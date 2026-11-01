@@ -49,6 +49,7 @@ local BadgeSize = require(script.Enums.BadgeSize)
 local BadgeVariant = require(script.Enums.BadgeVariant)
 local BannerContextPresentation = require(script.Enums.BannerContextPresentation)
 local BannerContextVariant = require(script.Enums.BannerContextVariant)
+local BannerSize = require(script.Enums.BannerSize)
 local Breakpoint = require(script.Enums.Breakpoint)
 local ButtonVariant = require(script.Enums.ButtonVariant)
 local CardDensity = require(script.Enums.CardDensity)
@@ -111,6 +112,7 @@ local StatusBadgeVariant = require(script.Enums.StatusBadgeVariant)
 local StatusIndicatorShape = require(script.Enums.StatusIndicatorShape)
 local StatusIndicatorSize = require(script.Enums.StatusIndicatorSize)
 local StatusIndicatorVariant = require(script.Enums.StatusIndicatorVariant)
+local TextOverflow = require(script.Enums.TextOverflow)
 -- **DEPRECATED**: Theme is deprecated. Use ColorMode instead.
 local Theme = require(script.Enums.Theme)
 local ThemeName = require(script.Enums.ThemeName)
@@ -124,6 +126,7 @@ export type AlertSeverity = AlertSeverity.AlertSeverity
 export type AlertVariant = AlertVariant.AlertVariant
 export type BannerContextPresentation = BannerContextPresentation.BannerContextPresentation
 export type BannerContextVariant = BannerContextVariant.BannerContextVariant
+export type BannerSize = BannerSize.BannerSize
 export type AvatarGroupType = AvatarGroupType.AvatarGroupType
 export type AvatarIconSize = AvatarIconSize.AvatarIconSize
 export type AvatarSize = AvatarSize.AvatarSize
@@ -192,6 +195,7 @@ export type StatusBadgeVariant = StatusBadgeVariant.StatusBadgeVariant
 export type StatusIndicatorShape = StatusIndicatorShape.StatusIndicatorShape
 export type StatusIndicatorSize = StatusIndicatorSize.StatusIndicatorSize
 export type StatusIndicatorVariant = StatusIndicatorVariant.StatusIndicatorVariant
+export type TextOverflow = TextOverflow.TextOverflow
 -- **DEPRECATED**: Theme is deprecated. Use ColorMode instead.
 export type Theme = Theme.Theme
 export type ThemeName = ThemeName.ThemeName
@@ -211,6 +215,9 @@ export type AlertProps = Alert.AlertProps
 
 local BannerContext = require(script.Components.BannerContext)
 export type BannerContextProps = BannerContext.BannerContextProps
+
+local Banner = require(script.Components.Banner)
+export type BannerProps = Banner.BannerProps
 
 local Avatar = require(script.Components.Avatar)
 export type AvatarProps = Avatar.AvatarProps
@@ -458,6 +465,7 @@ local Foundation = strict({
 	-- Components
 	Accordion = Accordion,
 	Alert = Alert,
+	Banner = Banner,
 	BannerContext = BannerContext,
 	Avatar = Avatar,
 	AvatarGroup = AvatarGroup,
@@ -564,6 +572,7 @@ local Foundation = strict({
 		AccessoryType = AccessoryType,
 		AlertSeverity = AlertSeverity,
 		AlertVariant = AlertVariant,
+		BannerSize = BannerSize,
 		BannerContextPresentation = BannerContextPresentation,
 		BannerContextVariant = BannerContextVariant,
 		AvatarGroupType = AvatarGroupType,
@@ -642,6 +651,7 @@ local Foundation = strict({
 		StatusIndicatorShape = StatusIndicatorShape,
 		StatusIndicatorSize = StatusIndicatorSize,
 		StatusIndicatorVariant = StatusIndicatorVariant,
+		TextOverflow = TextOverflow,
 		-- **DEPRECATED**: Theme is deprecated. Use ColorMode instead.
 		Theme = Theme,
 		ThemeName = ThemeName,

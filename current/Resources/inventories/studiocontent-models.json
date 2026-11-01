@@ -6,6 +6,24 @@
     "sha256": "7fc559d4d257fb8176443df3d00cba13f9a9dd14b66b206085dea31da4ab9f90"
   },
   {
+    "bytes": 1669,
+    "extension": "rbxm",
+    "path": "AnimationGen/BlockyRigData.rbxm",
+    "sha256": "1afdd0d1c6e59f35500a94b6e727d0ea8943ee1ee0df9c9d13fcfaa48bac2cba"
+  },
+  {
+    "bytes": 3830,
+    "extension": "rbxm",
+    "path": "AnimationGen/MannequinRigData.rbxm",
+    "sha256": "89c8915c85078e838a151b58f4b6504afee6e5bfa6e683df171331e0eb9b51fa"
+  },
+  {
+    "bytes": 1784,
+    "extension": "rbxm",
+    "path": "AnimationGen/RthroFemaleRigData.rbxm",
+    "sha256": "9ddd875529ed992ad94f1038205c084578b16efd76ca149f7757033a94023d2d"
+  },
+  {
     "bytes": 30492,
     "extension": "rbxm",
     "path": "AvatarCompatibilityPreviewer/bodyPreview.rbxm",

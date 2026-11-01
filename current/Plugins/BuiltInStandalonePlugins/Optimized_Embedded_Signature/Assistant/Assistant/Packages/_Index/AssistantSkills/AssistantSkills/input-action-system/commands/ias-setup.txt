@@ -37,7 +37,7 @@ Generates a complete Input Action System hierarchy from a natural-language descr
    - Different priorities (menu vs gameplay) → separate contexts
    - Different enable/disable lifecycle → separate contexts
 
-4. **Author the instance tree (edit time)** — build the declarative hierarchy as real instances under `ReplicatedStorage/Inputs`, then a small client `Script` connects handlers. The tree is data, not code.
+4. **Design the instance tree (edit time):** plan the declarative hierarchy of real instances under `ReplicatedStorage/Inputs`, plus a small client `Script` that connects handlers. The tree is data, not code. Don't insert anything yet; that happens in step 7, after the user confirms.
 
 **Preferred: instance tree**
 
@@ -53,7 +53,7 @@ ReplicatedStorage
 └── InputController                  (Script, RunContext=Client — connects handlers only)
 ```
 
-Create these via instance insertion on the edit DataModel (each node's properties set explicitly). Group every `InputContext` under one `Folder` named `Inputs`. Set: `InputContext.Enabled`, `.Priority`, `.Sink`; `InputAction.Type` (an `Enum.InputActionType` value); `InputBinding.KeyCode` (an `Enum.KeyCode`) — never `InputBinding.Type` for the key.
+When you insert them in step 7, create each one via instance insertion on the edit DataModel (each node's properties set explicitly). Group every `InputContext` under one `Folder` named `Inputs`. Set: `InputContext.Enabled`, `.Priority`, `.Sink`; `InputAction.Type` (an `Enum.InputActionType` value); `InputBinding.KeyCode` (an `Enum.KeyCode`) — never `InputBinding.Type` for the key.
 
 **Handler script (`Script` with `RunContext = Enum.RunContext.Client`, connects only — does NOT build the tree):**
 
@@ -122,14 +122,14 @@ end)
    | Menu/Pause | Escape / Tab | ButtonStart |
    | Switch weapon | 1/2/3 | ButtonL1/R1 |
 
-6. **Insert into the edit tree** — author the InputContext/InputAction/InputBinding instances under `ReplicatedStorage/Inputs` in the **edit** DataModel (via instance insertion / `multi_edit`), grouping every context under the one `Inputs` folder. Place the `InputController` `Script` (with `RunContext = Enum.RunContext.Client`) under `ReplicatedStorage` as well. The `ReplicatedStorage` tree is the same live instances in Edit and Play, so it registers directly with no copy step. Do NOT parent the context tree to a Starter service (template copies never register).
-
-7. **Ask about touch/mobile** — if the user hasn't mentioned mobile:
+6. **Ask about touch/mobile:** if the user hasn't mentioned mobile, ask now, before confirming, so the touch pieces are part of what the user approves in step 7. Plan them here; don't add them yet:
    - Ask if they want mobile touch support.
-   - If yes, add a `UIButton` binding to each relevant Bool action. Since `/ias-setup` authors at **edit time**, reference a `GuiButton` the user creates in **`StarterGui`** — the reference resolves to the live `PlayerGui` copy at runtime, so no runtime wiring is needed. (If instead binding from a runtime script, reference the live button in `PlayerGui`.) This is the reliable touch path and reuses the same action/handler as keyboard and gamepad. See migration Pattern 10a.
+   - If yes, plan a `UIButton` binding for each relevant Bool action. Since `/ias-setup` authors at **edit time**, reference a `GuiButton` the user creates in **`StarterGui`** — the reference resolves to the live `PlayerGui` copy at runtime, so no runtime wiring is needed. (If instead binding from a runtime script, reference the live button in `PlayerGui`.) This is the reliable touch path and reuses the same action/handler as keyboard and gamepad. See migration Pattern 10a.
    - For on-screen movement, either wire four Bool actions to four buttons, or feed an on-screen joystick's Vector2 into the Direction2D Move action through a `Scriptable` binding (`binding:Fire(vector2)` each frame). See Pattern 10b.
    - For touch drag/pinch, bind the touch KeyCodes directly: `TouchDelta` on a `Direction2D` action (drag), `TouchPinch` on a `Direction1D` action (pinch), `TouchPosition` on a `ViewportPosition` action (finger position). See Pattern 10c.
    - Suggest a ScreenGui structure for the mobile buttons.
+
+7. **Confirm, then insert into the edit tree:** confirm with the user first, per *This Skill Changes Real Code: Confirm First* in the main skill. List everything this will add to the real place: the `Inputs` folder with its contexts, actions, and bindings; the `InputController` script; and any touch bindings or GUI planned in step 6. Recommend a test place, a copy, or a place they can easily revert, and wait for a yes. Then author the InputContext/InputAction/InputBinding instances under `ReplicatedStorage/Inputs` in the **edit** DataModel (via instance insertion / `multi_edit`), grouping every context under the one `Inputs` folder. Place the `InputController` `Script` (with `RunContext = Enum.RunContext.Client`) under `ReplicatedStorage` as well. The `ReplicatedStorage` tree is the same live instances in Edit and Play, so it registers directly with no copy step. Do NOT parent the context tree to a Starter service (template copies never register). Add any touch bindings and GUI from step 6 in the same pass.
 
 8. **Validate** — enter Play mode and run the validation script to confirm all contexts/actions are registered.
 
