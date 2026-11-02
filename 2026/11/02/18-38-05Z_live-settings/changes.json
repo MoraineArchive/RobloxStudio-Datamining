@@ -1,0 +1,73 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-7062aec9dbe74b14",
+    "manifestFiles": 19286,
+    "packages": 34,
+    "version": "0.745.0.7451137"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "fc6f4d40c2fe8f96cd5748cf7f2e2691e32d8a6002826af45c94e4229999ad40",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "97777430424f9fe6d47f872d5fbdfaf475f24262bde53c890e8a93bb6ff197b5",
+      "semantic": {
+        "added": [
+          "DFFlagCloudClientRankedPopLatencyReport_Staged",
+          "DFFlagIXPExposureSignalAddPlaySessionId_Staged",
+          "DFFlagRbxTransportWasmFixConnOwnership",
+          "FFlagAppChatMigrateChatEventReceiver_Staged",
+          "FFlagAppChatMigrateChatExternalEventReceiver_Staged",
+          "FFlagAutomaticDRS5_Staged",
+          "FFlagAutomaticDRSDisableHighDPIFramebufferHalving5_Staged",
+          "FFlagBootcampCLI233395_Staged",
+          "FFlagDisableEventIngestLegacyTelemetry_Staged",
+          "FFlagDisableXboxPlatformLegacyTelemetry_Staged",
+          "FFlagEnableEarlyTestingJoinIOS_Staged",
+          "FFlagEnableEarlyTesting_Staged",
+          "FFlagFoundationStatusIndicatorDesignUpdate_Staged",
+          "FFlagGraphicsShadingLanguageEnum_Staged",
+          "FFlagRenderMeshLodFeedbackAllInstances2_Staged",
+          "FFlagSoundShimAmbientReverb2_Staged",
+          "FFlagWindowsUpdateControllerPassVersionGuidToInstaller_Staged"
+        ],
+        "changed": [
+          {
+            "after": "a347b30dc12d6ab968d9510de9e03d02d9626df6",
+            "before": "944ce7db3e8184361170ed8b34745cf28e3b7006",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-02T18:33:12.835Z",
+            "before": "2026-11-02T17:52:17.577Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "a347b30dc12d6ab968d9510de9e03d02d9626df6",
+            "before": "944ce7db3e8184361170ed8b34745cf28e3b7006",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-02T18:33:12.835Z",
+            "before": "2026-11-02T17:52:17.577Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagRbxTransportWasmFixConnOwnership_Staged",
+          "FFlagBuyRobuxLatencyIxpEnabled_IXP"
+        ],
+        "unchanged": 26354
+      }
+    }
+  },
+  "schemaVersion": 1
+}
