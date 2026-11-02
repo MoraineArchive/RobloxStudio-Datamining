@@ -10620,11 +10620,35 @@
             "restore",
             "tts"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/02/17-52-37Z_live-settings",
+          "evidencePath": "2026/11/02/17-52-37Z_live-settings/changes.json",
+          "family": "LiveSettings",
+          "id": "34b4934bebbfd692848be0130010cc8baa13a8c911d1ca0aca2956779e7a7d19",
+          "key": "FFlagMomentsFixDeleteToastCopy_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-02T17:52:37.332Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "copy",
+            "delete",
+            "fix",
+            "moments",
+            "toast"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-11-01T01:58:06.069Z",
+      "lastObservedAt": "2026-11-02T17:52:37.332Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",

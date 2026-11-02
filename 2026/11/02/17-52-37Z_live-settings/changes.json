@@ -1,0 +1,94 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-7062aec9dbe74b14",
+    "manifestFiles": 19286,
+    "packages": 34,
+    "version": "0.745.0.7451137"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "97777430424f9fe6d47f872d5fbdfaf475f24262bde53c890e8a93bb6ff197b5",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "a352e4969778d41c0407d631ab772a8f8866cee30fc0bd2379b211390a1960a1",
+      "semantic": {
+        "added": [
+          "DFFlagInstanceNullEngineContextSimCrashReportSeverity_Staged",
+          "DFFlagNullEngineContextPart4_Staged",
+          "DFFlagRbxTransportRtcioCreditChannelHeader_Staged",
+          "DFFlagRbxTransportWasmFixConnOwnership_Staged",
+          "DFFlagRealtimeMediaReportVideoCodec_Staged",
+          "FFlagBuyRobuxLatencyIxpEnabled_Staged",
+          "FFlagCloudClientReserve_Staged",
+          "FFlagCloudClientSessionApi_Staged",
+          "FFlagCloudClientSetGir_Staged",
+          "FFlagCollectionInRadiusSynchronousConvergence2_Staged",
+          "FFlagCollectionSharedWatcher2_Staged",
+          "FFlagCollectionStaleInstanceSafety_Staged",
+          "FFlagDevFrameworkUsePluginDesign_Staged",
+          "FFlagDisableRobloxExplorerWidgetLegacyTelemetry_Staged",
+          "FFlagEnableBuyRobuxNextJS_Staged",
+          "FFlagEnableBuyRobuxSdui_Staged",
+          "FFlagEnableHeadlessSubscriptionNativePurchaseCancelCallback_Staged",
+          "FFlagExperienceAgeRatingBadge2_Staged",
+          "FFlagFixRegionSetsClumpOccupancyLeak_Staged",
+          "FFlagFmodWebAndroidOverrideDspBufferSize_Staged",
+          "FFlagFontFaceAbuseReporting_Staged",
+          "FFlagLuaAppBootcampIntroUABOOTCAMP214_Staged",
+          "FFlagLuauCodegenIntegerCompare_Staged",
+          "FFlagMomentsFixDeleteToastCopy_Staged",
+          "FFlagProfilePlatformExperiencesGamesLabel_Staged",
+          "FFlagRealtimeMediaConnectionStatus_Staged",
+          "FFlagRenderWaterDemoteSHQ_Staged",
+          "FFlagSchoolsWaitlistInviteList_Staged",
+          "FFlagSduiAccordionComponent_Staged",
+          "FFlagSduiBuyRobuxHydration_Staged",
+          "FFlagSimDataModelContentInPlaySolo_Staged",
+          "FFlagSimWaterContactDragEnergyClamp_Staged",
+          "FFlagStreamingSetExtentsAllocationFree_Staged",
+          "FFlagTTranscoderRemoveOldFormats_Staged",
+          "FFlagTerrainSdfQuantizationClamp_Staged",
+          "FFlagUserListInviteCta_Staged",
+          "FLogCrashpadInitializationTelemetry_Staged",
+          "FStringTextureTranscodeRollout_Staged"
+        ],
+        "changed": [
+          {
+            "after": "944ce7db3e8184361170ed8b34745cf28e3b7006",
+            "before": "40f11c3b3f4f8d2fb0c6ad33d3855fa18169dd57",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-02T17:52:17.577Z",
+            "before": "2026-10-31T06:02:40.763Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "944ce7db3e8184361170ed8b34745cf28e3b7006",
+            "before": "40f11c3b3f4f8d2fb0c6ad33d3855fa18169dd57",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-02T17:52:17.577Z",
+            "before": "2026-10-31T06:02:40.763Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagEnableBuyRobuxNextJS_IXP",
+          "FFlagEnableBuyRobuxSdui_IXP"
+        ],
+        "unchanged": 26318
+      }
+    }
+  },
+  "schemaVersion": 1
+}
