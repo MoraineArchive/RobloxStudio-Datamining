@@ -10644,11 +10644,59 @@
             "moments",
             "toast"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/02/20-46-17Z_datasets",
+          "evidencePath": "2026/11/02/20-46-17Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "58b59e7b2eaf637cef7c91f173593e96202c239f6d9aee8b009c2309647b0a58",
+          "key": "FFlagMomentsFixDeleteToastCopy_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-02T20:46:17.162Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "copy",
+            "delete",
+            "fix",
+            "moments",
+            "toast"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/02/20-46-17Z_datasets",
+          "evidencePath": "2026/11/02/20-46-17Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "89c95eff0516faa0bedfcba2a65fbca81a76319e8b9e70d134ed40c7ea3d0303",
+          "key": "FFlagMomentsFixDeleteToastCopy",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-02T20:46:17.162Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "copy",
+            "delete",
+            "fix",
+            "moments",
+            "toast"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-11-02T17:52:37.332Z",
+      "lastObservedAt": "2026-11-02T20:46:17.162Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
@@ -10918,6 +10966,14 @@
             "9b8045eee4f63f0ac36cd3042303824918d7fab8fa48aa1b8da880dfa62d7fa8"
           ],
           "type": "boolean-transition"
+        },
+        {
+          "observedAt": "2026-11-02T20:46:17.162Z",
+          "signalIds": [
+            "34b4934bebbfd692848be0130010cc8baa13a8c911d1ca0aca2956779e7a7d19",
+            "89c95eff0516faa0bedfcba2a65fbca81a76319e8b9e70d134ed40c7ea3d0303"
+          ],
+          "type": "staged-to-non-staged"
         }
       ],
       "status": "observed",
