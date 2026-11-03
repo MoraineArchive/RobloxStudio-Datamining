@@ -1,0 +1,71 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-7062aec9dbe74b14",
+    "manifestFiles": 19286,
+    "packages": 34,
+    "version": "0.745.0.7451137"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "d1aa7acc1650a41f9343a83d347a0dad9156f622ef1cb20a80454eba0c81b720",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "962774988e08d2e8cc1a97c1732a09ec078a188b6e72256ef33736ae4ab62cd4",
+      "semantic": {
+        "added": [
+          "DFFlagEditableMeshSerialV1Write3_Staged",
+          "DFFlagLogJourneyEventEnabled_Staged",
+          "DFIntServerTimeClockTelemetryPointsHundredthsPercentage_Staged",
+          "FFlagAppIconResetToDefault_Staged",
+          "FFlagAppThemeClassicNativeApi_Staged",
+          "FFlagAssistantTextureGenAutoSelectView_Staged",
+          "FFlagBuildExperienceInGameShell_Staged",
+          "FFlagEnableLegacyDependencyInjectorIOS_Staged",
+          "FFlagFixPromptGameInviteUIMissingDisplayName_Staged",
+          "FFlagLuauMemoryCagePlatformScaling_Staged",
+          "FFlagLuauNonreentrantLookupTableProp_Staged",
+          "FFlagServerTimeClockTelemetry_Staged",
+          "FStringAutomaticDRSFramebufferTiers_Staged"
+        ],
+        "changed": [
+          {
+            "after": "69ab2d6be08700cb574d5f680217c300ed38ba14",
+            "before": "fa602858958c5031e8f310a12a24bbd34b8796c1",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-03T17:57:38.335Z",
+            "before": "2026-11-03T04:02:33.503Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "True;9707042192;9671070925;8491889239;9164570436;9859999587;5824195619;9876947216;10004846655;9605987780;10036955953;10123702430;10241252491;10382950395;10390927281;10390930030;10390933265;10538358999;10538473450;7738776082;8005766508;10643104390;10631479676;10762769249;10765877033;10766493343;10766485671;4391533696;2564505263;10767763406;10768893031;10765530630;10357239521;10275212796;10770936218;887403347;5990940444",
+            "before": "True;9707042192;9671070925;8491889239;9164570436;9859999587;5824195619;9876947216;10004846655;9605987780;10036955953;10123702430;10241252491;10382950395;10390927281;10390930030;10390933265;10538358999;10538473450;7738776082;8005766508;10643104390;10631479676;10762769249;10765877033;10766493343;10766485671;4391533696;2564505263;10767763406;10768893031;10765530630;10357239521;10275212796;10770936218",
+            "name": "FFlagLuaAppIsClickoutEnabledUniverse_UniverseFilter"
+          },
+          {
+            "after": "69ab2d6be08700cb574d5f680217c300ed38ba14",
+            "before": "fa602858958c5031e8f310a12a24bbd34b8796c1",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-03T17:57:38.335Z",
+            "before": "2026-11-03T04:02:33.503Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [],
+        "unchanged": 26454
+      }
+    }
+  },
+  "schemaVersion": 1
+}
