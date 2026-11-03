@@ -1,0 +1,75 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-7062aec9dbe74b14",
+    "manifestFiles": 19286,
+    "packages": 34,
+    "version": "0.745.0.7451137"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "118b5492494e47761b4bf11446bd2fa5c31e8cd1c99ab96e2dd68e864e78b6f9",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "54bad6c7324add75abe13dcc2a339de7461cbaa672e7357f2754bd1da0b8d26c",
+      "semantic": {
+        "added": [
+          "DFFlagDataStoreRequestEventIncludePlaceVersion",
+          "DFFlagGameServerNoRequestMarker",
+          "DFFlagJoinMemoryOpt",
+          "DFFlagUseCompressedPVSerialization_Staged",
+          "DFIntBadgeSlpInsightsRolloutPercentage",
+          "FFlagAcceptJsonBoolLaunchParams",
+          "FFlagAnimationGraphGenericPoseNodeTelemetry",
+          "FFlagIsStudioClientByProductKey",
+          "FFlagModelTranscoderMergeJointNamesFix",
+          "FFlagStreamingFocusDeadCharacterHead",
+          "FFlagTeamCreateViewerAllowList"
+        ],
+        "changed": [
+          {
+            "after": "46eda3efbcf0d8187dca386eeafa432a92450968",
+            "before": "683ec78f5fb04daa14d818926cfabb03bada1cbc",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-03T23:58:05.180Z",
+            "before": "2026-11-03T23:38:00.298Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "46eda3efbcf0d8187dca386eeafa432a92450968",
+            "before": "683ec78f5fb04daa14d818926cfabb03bada1cbc",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-03T23:58:05.180Z",
+            "before": "2026-11-03T23:38:00.298Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagDataStoreRequestEventIncludePlaceVersion_Staged",
+          "DFFlagGameServerNoRequestMarker_Staged",
+          "DFFlagJoinMemoryOpt_Staged",
+          "DFIntBadgeSlpInsightsRolloutPercentage_Staged",
+          "FFlagAcceptJsonBoolLaunchParams_Staged",
+          "FFlagAnimationGraphGenericPoseNodeTelemetry_Staged",
+          "FFlagIsStudioClientByProductKey_Staged",
+          "FFlagModelTranscoderMergeJointNamesFix_Staged",
+          "FFlagStreamingFocusDeadCharacterHead_Staged",
+          "FFlagTeamCreateViewerAllowList_Staged"
+        ],
+        "unchanged": 26536
+      }
+    }
+  },
+  "schemaVersion": 1
+}
