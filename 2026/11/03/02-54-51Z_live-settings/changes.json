@@ -1,0 +1,70 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-7062aec9dbe74b14",
+    "manifestFiles": 19286,
+    "packages": 34,
+    "version": "0.745.0.7451137"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "d5dffc72b6ecdffc7359708d43ab387e59023e078c50fd9b542abc318fe8de30",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "1b7adaea849b6e5c27c8cf5eb359b508e33a25fd9428c0ac328a8488c367e22a",
+      "semantic": {
+        "added": [
+          "DFFlagPopLatencyUseAllRegionsTurnFromVoiceService",
+          "FFlagAccountUpgradeMarketingConsent",
+          "FFlagExpChatEmojiDropdownShowAnalytics",
+          "FFlagExpChatPresetTrayDismissAnalytics",
+          "FFlagTeamCreateViewerLaunchParams"
+        ],
+        "changed": [
+          {
+            "after": "0e346c92fdefb88619b0baac331fa7899d7f9090",
+            "before": "c6c6c4c389b2614b98ae662fbade57768e1dca89",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-03T02:52:29.283Z",
+            "before": "2026-11-03T01:32:41.933Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagSearchAllRegistryEntriesForAutoFocus"
+          },
+          {
+            "after": "0e346c92fdefb88619b0baac331fa7899d7f9090",
+            "before": "c6c6c4c389b2614b98ae662fbade57768e1dca89",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-03T02:52:29.283Z",
+            "before": "2026-11-03T01:32:41.933Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagPopLatencyUseAllRegionsTurnFromVoiceService_Staged",
+          "FFlagAccountUpgradeMarketingConsent_Staged",
+          "FFlagExpChatEmojiDropdownShowAnalytics_Staged",
+          "FFlagExpChatPresetTrayDismissAnalytics_Staged",
+          "FFlagSearchAllRegistryEntriesForAutoFocus_Staged",
+          "FFlagTeamCreateViewerLaunchParams_Staged"
+        ],
+        "unchanged": 26450
+      }
+    }
+  },
+  "schemaVersion": 1
+}
