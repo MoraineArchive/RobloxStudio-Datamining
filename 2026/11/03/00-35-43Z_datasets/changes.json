@@ -1,0 +1,223 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-7062aec9dbe74b14",
+    "manifestFiles": 19286,
+    "packages": 34,
+    "version": "0.745.0.7451137"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "e934b629c999cc4e6fcb52e59917fc90886ff16d07b96dee3c544410ca78cacf",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "a8c0d31d1d68285d091d26c93f3513becf5e3588d38a88d0def7ac03689daabc",
+      "semantic": {
+        "added": [
+          "DFFlagCLI224327Fix",
+          "DFFlagCLI56775D",
+          "DFFlagLcCacheOptDefaultEnabled3",
+          "DFFlagLogUnusedMessages",
+          "DFFlagLuauGcHeapShrinkFix",
+          "DFFlagLuauOptimizeStringGsub",
+          "DFFlagRbxTransportNgtcp2ValidateLostPacketState",
+          "DFFlagStratusPopLatencyRegionSelect",
+          "DFFlagStratusSingleCallConnect",
+          "DFFlagVideoUniversalAppExcludeStudio",
+          "DFFlagVideoUsageContext",
+          "DFFlagVideoUseAssetRequest",
+          "FFlagAXCustomizeTabDeepLink2",
+          "FFlagAXFixCatalogSearchBarSafeArea",
+          "FFlagAXItemDetails3DPreviewEnabledForAll",
+          "FFlagAccountUpgradeMarketingConsent_Staged",
+          "FFlagAddIxpLayerUniverseChatPresetChatBadgePresetFTUX_Staged",
+          "FFlagAmrEnablePublishOption2",
+          "FFlagAppChatReadConversationListFromSignalsStore",
+          "FFlagAppChatUseBindingConversationFacePile",
+          "FFlagAppChatUseBindingViewRecyclerConversationRow",
+          "FFlagAppChatUseViewRecyclerConversationList",
+          "FFlagAssetProviderSupportAssetDeliveryUsageContext3_Staged",
+          "FFlagAssistantNumberRowPartialInput",
+          "FFlagAttributeTeamCreateViewerCollaborator_Staged",
+          "FFlagBuildExperienceInGameCaptureToChat",
+          "FFlagBuildExperienceInGameShell",
+          "FFlagBuildExperienceInstanceSelection",
+          "FFlagCOLLAB11633_LikelyCollaboratorsFromFriendsApi",
+          "FFlagColor3ContrastMethods",
+          "FFlagEnableLegacyLoginExternalIdentityOtherSignInOptions",
+          "FFlagEnablePlusWebviewDeepLink",
+          "FFlagEnableVoiceRewarmReArmV2",
+          "FFlagEnableWebRtcOnDemandPathLoad_Staged",
+          "FFlagExpChatEmojiDropdownShowAnalytics_Staged",
+          "FFlagExpChatPresetChatEmojiEffectExperimentEnabled",
+          "FFlagExpChatPresetChatEmojiTabExperimentEnabled",
+          "FFlagExpChatPresetTrayDismissAnalytics_Staged",
+          "FFlagFixEmotesMenuAvailability",
+          "FFlagFixGlyphProviderLineGapScaling",
+          "FFlagFlyoutLogOutUseConsoleDisconnect",
+          "FFlagFontFaceAX_Staged",
+          "FFlagFontFaceChallengeDialog_Staged",
+          "FFlagFontFaceConsoleOverscan_Staged",
+          "FFlagFontFacePlayerList_Staged",
+          "FFlagFontFaceSocialFriends_Staged",
+          "FFlagGraphicsShadingLanguageEnum",
+          "FFlagLuaAppPlayButtonPrivatePTEnableDualButton",
+          "FFlagLuauMemoryCageAutoScaling",
+          "FFlagLuauSharedBufferCage",
+          "FFlagMemoryStoreHashMapPagesOnDataModel_Staged",
+          "FFlagNetAssetGatherDeletedHandles",
+          "FFlagOffersPerKeyExpiryRefetch_Staged",
+          "FFlagPresetChatUseExpressionTrayOptionsEndpoint2",
+          "FFlagPymkCarouselPresenceStoreMigration_v2",
+          "FFlagRemoveReplicationFociById3",
+          "FFlagRenderTestBeamScrollFollowsVFXClock_Staged",
+          "FFlagRenderTestResetPostFXTemporalAtCountdown",
+          "FFlagRenderTestResetSSAOTemporalAtCountdown",
+          "FFlagRenderTestSunRaysFixedNoise_Staged",
+          "FFlagSduiExtendedCapabilitiesPrompts",
+          "FFlagSearchAllRegistryEntriesForAutoFocus_Staged",
+          "FFlagSignupFoundationTelemetry",
+          "FFlagSimCheckWorldInsteadOfContactManager",
+          "FFlagSimWaterContactWaveDamping",
+          "FFlagSimWorldTouchAndNoCollideCommands",
+          "FFlagSmoothClusterGetChunkWithoutOctree_Staged",
+          "FFlagStreamingSetRemoveNonSpatial",
+          "FFlagToolboxAvatarVersioningPagination",
+          "FFlagUIBoundsTracking3",
+          "FFlagUserPSUseBindToAnimation",
+          "FFlagUserSearchJoinPassStorePresence_Staged",
+          "FIntLuauMemoryCageIOSSizeMiB",
+          "FStringExpChatPresetChatBadgeFTUXExperimentLayer_Staged",
+          "FStringTextureTranscodeRollout_Staged"
+        ],
+        "changed": [
+          {
+            "after": "True",
+            "before": "False",
+            "name": "DFFlagCLI56775"
+          },
+          {
+            "after": "100",
+            "before": "1000",
+            "name": "DFIntAssetResolutionWorkflowStatsHundredthsPercent"
+          },
+          {
+            "after": "10000",
+            "before": "1000",
+            "name": "DFIntReportReplicateDestroySettingInfluxHundredthsPercentage"
+          },
+          {
+            "after": "b48bdc0ced7d97d630c31d4e2e30ddffc5d99e6c",
+            "before": "dd299e5c6bf5c5a4150123760a7ac565fd12072e",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-03T00:34:21.851Z",
+            "before": "2026-11-02T20:53:30.073Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagLuaAppGameEventsTelemetryServiceShadowTraffic"
+          },
+          {
+            "after": "b48bdc0ced7d97d630c31d4e2e30ddffc5d99e6c",
+            "before": "dd299e5c6bf5c5a4150123760a7ac565fd12072e",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-03T00:34:21.851Z",
+            "before": "2026-11-02T20:53:30.073Z",
+            "name": "FStringFlipTimeStampFastString"
+          },
+          {
+            "after": "eyJ2ZXJzaW9uU3RhcnQiOiAiMC4zMDAuMC4xIiwgInZlcnNpb25FbmQiOiAiMC43NDIuMC43NDUxMTM3IiwgInBsYXRmb3JtcyI6IFsiV2luZG93cyIsICJNYWMiXSwgIm1lc3NhZ2UiOiB7fSwgInNodXRkb3duIjogdHJ1ZSwgImZvcmNlUmV0cnlTdGFydHVwVXBkYXRlIjogdHJ1ZX0=",
+            "before": "eyJ2ZXJzaW9uU3RhcnQiOiAiMC4zMDAuMC4xIiwgInZlcnNpb25FbmQiOiAiMC43NDEuMC43NDQxMDc3IiwgInBsYXRmb3JtcyI6IFsiV2luZG93cyIsICJNYWMiXSwgIm1lc3NhZ2UiOiB7fSwgInNodXRkb3duIjogdHJ1ZSwgImZvcmNlUmV0cnlTdGFydHVwVXBkYXRlIjogdHJ1ZX0=",
+            "name": "FStringStudioEmergencyMessageV4"
+          }
+        ],
+        "removed": [
+          "DFFlagCLI224327Fix_Staged",
+          "DFFlagStratusPopLatencyRegionSelect_Staged",
+          "FFlagAXCustomizeTabDeepLink2_Staged",
+          "FFlagAppChatBindingFacePileUserTileParity_Staged",
+          "FFlagAppChatDerivedConversationLatestActivity_Staged",
+          "FFlagAppChatReadConversationListFromSignalsStore_Staged",
+          "FFlagAppChatUseBindingConversationFacePile_Staged",
+          "FFlagAppChatUseBindingViewRecyclerConversationRow_Staged",
+          "FFlagAppChatUseViewRecyclerConversationList_Staged",
+          "FFlagAssistantNumberRowPartialInput_Staged",
+          "FFlagBuildExperienceInGameCaptureToChat_Staged",
+          "FFlagBuildExperienceInGameShell_Staged",
+          "FFlagBuildExperienceInstanceSelection_Staged",
+          "FFlagColor3ContrastMethods_Staged",
+          "FFlagDMCTMigratePartOperationMedium_Staged",
+          "FFlagEnableLegacyLoginExternalIdentityOtherSignInOptions_Staged",
+          "FFlagEnablePlusWebviewDeepLink_Staged",
+          "FFlagEnableVoiceRewarmReArmV2_Staged",
+          "FFlagFixGlyphProviderLineGapScaling_Staged",
+          "FFlagGraphicsShadingLanguageEnum_Staged",
+          "FFlagLuaAppPlayButtonPrivatePTEnableDualButton_Staged",
+          "FFlagNetAssetGatherDeletedHandles_Staged",
+          "FFlagPresetChatUseExpressionTrayOptionsEndpoint2_Staged",
+          "FFlagPymkCarouselPresenceStoreMigration_v2_Staged",
+          "FFlagRenderTestResetSSAOTemporalAtCountdown_Staged",
+          "FFlagSduiExtendedCapabilitiesPrompts_Staged",
+          "FFlagSignupFoundationTelemetry_Staged",
+          "FFlagSimCheckWorldInsteadOfContactManager_Staged",
+          "FFlagSimWaterContactWaveDamping_Staged",
+          "FFlagSimWorldTouchAndNoCollideCommands_Staged",
+          "FFlagStreamingSetRemoveNonSpatial_Staged",
+          "FFlagUIBoundsTracking3_Staged",
+          "FFlagUserPSUseBindToAnimation_Staged"
+        ],
+        "unchanged": 26370
+      }
+    },
+    "Web": {
+      "current": "78ef86a7b412c78fbca83f40da5f143f7e92860bbac779cfcee4b4da202bfa25",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-052.js",
+          "assets.create.roblox.com/page-0/script-055.js",
+          "assets.create.roblox.com/page-0/script-056.js",
+          "assets.create.roblox.com/page-0/script-061.js",
+          "assets.create.roblox.com/page-0/script-062.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-070.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.create.roblox.com/page-0/script-077.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 78
+      },
+      "previous": "8b9a685844c18d4537a5e6ef04aef77e6136830decc132328dd1941a0160acbf",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
