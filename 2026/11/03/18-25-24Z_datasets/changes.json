@@ -1,0 +1,92 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-7062aec9dbe74b14",
+    "manifestFiles": 19286,
+    "packages": 34,
+    "version": "0.745.0.7451137"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "36e90cd22aa5aa241ca12f581401ab6394301e4554db4a253826ce143db8766d",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "d1aa7acc1650a41f9343a83d347a0dad9156f622ef1cb20a80454eba0c81b720",
+      "semantic": {
+        "added": [
+          "DFFlagHSRGenerationFaster_Staged",
+          "DFFlagLogJourneyEventEnabled",
+          "DFFlagPerformanceControlAddUniverseIdToHitchRate_Staged",
+          "FFlagCloudClientEligibilityReserve_Staged",
+          "FFlagDMCTMigrateScrollingFrame_Staged",
+          "FFlagFoundationBottomSheetOverlayShadow_Staged",
+          "FFlagFoundationCenterSheetOverlayShadow_Staged",
+          "FFlagFoundationDialogOverlayShadow_Staged",
+          "FFlagFoundationPopoverOverlayShadow_Staged",
+          "FFlagHomePromptsHandlerRestrictPromptStyles_Staged",
+          "FFlagRenderWaterDemoteSHQ_Staged",
+          "FFlagWindowsRawInputBroker_Staged"
+        ],
+        "changed": [
+          {
+            "after": "0477269ced34d74493d5f9806a215daae28e87f4",
+            "before": "69ab2d6be08700cb574d5f680217c300ed38ba14",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-03T18:25:09.098Z",
+            "before": "2026-11-03T17:57:38.335Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "0477269ced34d74493d5f9806a215daae28e87f4",
+            "before": "69ab2d6be08700cb574d5f680217c300ed38ba14",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-03T18:25:09.098Z",
+            "before": "2026-11-03T17:57:38.335Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagLogJourneyEventEnabled_Staged"
+        ],
+        "unchanged": 26467
+      }
+    },
+    "Web": {
+      "current": "80fbeda61c4beb7916d12ee5ea43e29e8d3ce08db4e3e4fe458594527977079f",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-050.js",
+          "assets.create.roblox.com/page-0/script-052.js",
+          "assets.create.roblox.com/page-0/script-055.js",
+          "assets.create.roblox.com/page-0/script-056.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 89
+      },
+      "previous": "7fc0e2e6b60fbaff8b2613de1d6a0a30f3161da8ff09bcf630453ebdf1d348f2",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
