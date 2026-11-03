@@ -1,0 +1,122 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-7062aec9dbe74b14",
+    "manifestFiles": 19286,
+    "packages": 34,
+    "version": "0.745.0.7451137"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "1b7adaea849b6e5c27c8cf5eb359b508e33a25fd9428c0ac328a8488c367e22a",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "e934b629c999cc4e6fcb52e59917fc90886ff16d07b96dee3c544410ca78cacf",
+      "semantic": {
+        "added": [
+          "DFFlagPopLatencyUseAllRegionsTurnFromVoiceService_Staged",
+          "FFlagAddIxpLayerUniverseChatPresetChatBadgePresetFTUX",
+          "FFlagAssetProviderSupportAssetDeliveryUsageContext3",
+          "FFlagAttributeTeamCreateViewerCollaborator",
+          "FFlagEnableWebRtcOnDemandPathLoad",
+          "FFlagFontFaceAX",
+          "FFlagFontFaceChallengeDialog",
+          "FFlagFontFaceConsoleOverscan",
+          "FFlagFontFacePlayerList",
+          "FFlagFontFaceSocialFriends",
+          "FFlagMemoryStoreHashMapPagesOnDataModel",
+          "FFlagOffersPerKeyExpiryRefetch",
+          "FFlagRakNetPerConnectionHandshakePassword_Staged",
+          "FFlagRenderTestBeamScrollFollowsVFXClock",
+          "FFlagRenderTestSunRaysFixedNoise",
+          "FFlagSmoothClusterGetChunkWithoutOctree",
+          "FFlagStudioStreamingLimitedRadiusGC_Staged",
+          "FFlagTeamCreateViewerConnection_Staged",
+          "FFlagTeamCreateViewerJoin_Staged",
+          "FFlagTeamCreateViewerLaunchParams_Staged",
+          "FFlagTeamCreateViewerStreaming_Staged",
+          "FFlagUserSearchJoinPassStorePresence",
+          "FStringExpChatPresetChatBadgeFTUXExperimentLayer"
+        ],
+        "changed": [
+          {
+            "after": "c6c6c4c389b2614b98ae662fbade57768e1dca89",
+            "before": "b48bdc0ced7d97d630c31d4e2e30ddffc5d99e6c",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-03T01:32:41.933Z",
+            "before": "2026-11-03T00:34:21.851Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "c6c6c4c389b2614b98ae662fbade57768e1dca89",
+            "before": "b48bdc0ced7d97d630c31d4e2e30ddffc5d99e6c",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-03T01:32:41.933Z",
+            "before": "2026-11-03T00:34:21.851Z",
+            "name": "FStringFlipTimeStampFastString"
+          },
+          {
+            "after": "[(7rdo,ktx2,/////Ck=)];SteadyState;10;15;Rollout;100;30;SteadyState;100;75;Promote;2026-11-03T01:00:59",
+            "before": "5000,[(8,ktx2),(7rdo,ktx2)],[(7rdo,ktx2)];SteadyState;10;15;Rollout;100;30;SteadyState;100;75;Promote;2026-11-02T23:42:01",
+            "name": "FStringTextureTranscodeRollout_Staged"
+          }
+        ],
+        "removed": [
+          "FFlagAddIxpLayerUniverseChatPresetChatBadgePresetFTUX_Staged",
+          "FFlagAssetProviderSupportAssetDeliveryUsageContext3_Staged",
+          "FFlagAttributeTeamCreateViewerCollaborator_Staged",
+          "FFlagEnableWebRtcOnDemandPathLoad_Staged",
+          "FFlagFontFaceAX_Staged",
+          "FFlagFontFaceChallengeDialog_Staged",
+          "FFlagFontFaceConsoleOverscan_Staged",
+          "FFlagFontFacePlayerList_Staged",
+          "FFlagFontFaceSocialFriends_Staged",
+          "FFlagMemoryStoreHashMapPagesOnDataModel_Staged",
+          "FFlagOffersPerKeyExpiryRefetch_Staged",
+          "FFlagRenderTestBeamScrollFollowsVFXClock_Staged",
+          "FFlagRenderTestSunRaysFixedNoise_Staged",
+          "FFlagSmoothClusterGetChunkWithoutOctree_Staged",
+          "FFlagUserSearchJoinPassStorePresence_Staged",
+          "FStringExpChatPresetChatBadgeFTUXExperimentLayer_Staged"
+        ],
+        "unchanged": 26433
+      }
+    },
+    "Web": {
+      "current": "25282b7768e1c022ce43f9cc93fc094e36a513346b2fbb7d0a5111c8b4afe8bd",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-052.js",
+          "assets.create.roblox.com/page-0/script-055.js",
+          "assets.create.roblox.com/page-0/script-056.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 90
+      },
+      "previous": "78ef86a7b412c78fbca83f40da5f143f7e92860bbac779cfcee4b4da202bfa25",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
