@@ -10692,11 +10692,83 @@
             "moments",
             "toast"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/03/21-32-24Z_datasets",
+          "evidencePath": "2026/11/03/21-32-24Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "3bec011bebd705a7729817e3198ffe11558bb4a69679a5db072750a529081a2c",
+          "key": "FFlagMomentsPostReviewTelemetry_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-03T21:32:24.469Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "moments",
+            "post",
+            "review",
+            "telemetry"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/03/21-32-24Z_datasets",
+          "evidencePath": "2026/11/03/21-32-24Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "4c941d156bf53756333ea8309ef514a189b568f5585f58addb0b6e5524e415f7",
+          "key": "FFlagMomentsResolvePublishedPostFeedItem_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-03T21:32:24.469Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "feed",
+            "item",
+            "moments",
+            "post",
+            "published",
+            "resolve"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/03/21-32-24Z_datasets",
+          "evidencePath": "2026/11/03/21-32-24Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "9067809f74065a270b13e1ebcfaea78f1a1945b49490761b98ee6b662b346a30",
+          "key": "FFlagMomentsPostUploadFailureReasons_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-03T21:32:24.469Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "failure",
+            "moments",
+            "post",
+            "reasons",
+            "upload"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-11-02T20:46:17.162Z",
+      "lastObservedAt": "2026-11-03T21:32:24.469Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",

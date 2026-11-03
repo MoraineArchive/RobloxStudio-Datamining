@@ -1,0 +1,192 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-7062aec9dbe74b14",
+    "manifestFiles": 19286,
+    "packages": 34,
+    "version": "0.745.0.7451137"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "885e277c5dd3e9278362461c814dac31df6a1ab09ec6aeedecc2883b4c40b31b",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "9609542cda3bde9d1d29942d7f90955b3c5492700f1f30f899ae1ce0dd9a9073",
+      "semantic": {
+        "added": [
+          "DFFlagAvatarRulesUseRigAttachmentCFrameInPart",
+          "DFFlagAvatarSettingsRelayPublishRefresh_Staged",
+          "DFFlagDMCTMigrateBubbleChatConfiguration_Staged",
+          "DFFlagEditableMeshSerialV1Write3",
+          "DFFlagFixStreamingReplicationFocusAutoComputedPrimaryPart",
+          "DFFlagHSRGenerationFaster",
+          "DFFlagPerformanceControlAddUniverseIdToHitchRate",
+          "DFFlagRbxTransportTelemetryArchitectureInfo_Staged",
+          "DFFlagRbxTransportWebTransportDraft07Settings",
+          "DFFlagRbxTransportWebTransportResetConnectionError",
+          "DFFlagSplitSerializationWriteOpaqueContent",
+          "DFFlagStreamingScrubClearedObjectFromPendingBuffers_Staged",
+          "DFFlagTelemetryAdditionalProfilerScopes",
+          "DFIntServerTimeClockTelemetryPointsHundredthsPercentage",
+          "FFlagAppIconResetToDefault",
+          "FFlagAppThemeClassicResetAppIcon2_Staged",
+          "FFlagAppThemeHalloween2026Featured_Staged",
+          "FFlagAssistantTextureGenAutoSelectView",
+          "FFlagAvatarRulesBodyExtentsUseVisualSize_Staged",
+          "FFlagAvatarRulesLuaTableInput_Staged",
+          "FFlagAvatarRulesOverridePerCategoryFallback_Staged",
+          "FFlagAvatarRulesRefuseMalformedChildren_Staged",
+          "FFlagAvatarSettingsAllowEmptyBodyParts_Staged",
+          "FFlagAvatarSettingsApplyRulesScopedSkips_Staged",
+          "FFlagBuildExperienceFreeLimitCard_Staged",
+          "FFlagBuildExperienceUseCommonTextArea_Staged",
+          "FFlagCloudClientEligibilityReserve",
+          "FFlagComposerFooter_Staged",
+          "FFlagDMCTMigrateScrollingFrame",
+          "FFlagDMCTMigrateSurfaceGui_Staged",
+          "FFlagEnableExternalIdentityService3_Staged",
+          "FFlagEnableLegacyDependencyInjectorIOS",
+          "FFlagEnableTeamCreateViewer_Staged",
+          "FFlagFixInGameMenuMoreButtonIcon_Staged",
+          "FFlagFixPromptGameInviteUIMissingDisplayName",
+          "FFlagFixUsernameValidationBackendCriteria",
+          "FFlagFoundationBottomSheetOverlayShadow",
+          "FFlagFoundationCenterSheetOverlayShadow",
+          "FFlagFoundationDialogOverlayShadow",
+          "FFlagFoundationPopoverOverlayShadow",
+          "FFlagHomePromptsHandlerRestrictPromptStyles",
+          "FFlagIGMDialogButtonsUseUIBloxButton_Staged",
+          "FFlagLuaAppMigrateItemEventsTelemetryService",
+          "FFlagLuaAppSduiEdpFallbackAttributionFromCache2_IXP",
+          "FFlagLuaAppSduiHomeFeedStats_Staged",
+          "FFlagLuauCodegenA64ReloadLargeConstOffset",
+          "FFlagLuauMemoryCagePlatformScaling",
+          "FFlagLuauNonreentrantLookupTableProp",
+          "FFlagLuauOneBitAssumedConstraintTracking_Staged",
+          "FFlagMomentsPostReviewTelemetry_Staged",
+          "FFlagMomentsPostUploadFailureReasons_Staged",
+          "FFlagMomentsResolvePublishedPostFeedItem_Staged",
+          "FFlagPCLRefactorFixR6MissingHumanoid_Staged",
+          "FFlagProfileCTAHydratePresenceFromMetadata_v2_Staged",
+          "FFlagRenderWaterDemoteSHQ",
+          "FFlagSduiCollectionCarouselPlaceholderItem_Staged",
+          "FFlagSeparateRakNetAndRbxTransportRouting_Staged",
+          "FFlagServerTimeClockTelemetry",
+          "FFlagSimBodyFromConstraintSleepCache",
+          "FFlagStudioAvatarSettingsToggleEditModeOnly_Staged",
+          "FFlagUseUserCtaCommonEnums_Staged",
+          "FIntLuauMemoryLowTierThresholdMiB_Staged",
+          "FIntLuauMemoryMidTierThresholdMiB",
+          "FStringAutomaticDRSFramebufferTiers"
+        ],
+        "changed": [
+          {
+            "after": "False",
+            "before": "True",
+            "name": "DFFlagLcCacheOptDefaultEnabled3"
+          },
+          {
+            "after": "7886ed8a6b10e90d7f809b135e9d40d313bd279e",
+            "before": "b294d503b6e70fe651a70eba839d9803deefdb77",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-03T21:32:11.419Z",
+            "before": "2026-11-03T18:40:52.365Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagAppThemeClassicNativeApi"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagBuildExperienceInGameShell"
+          },
+          {
+            "after": "7886ed8a6b10e90d7f809b135e9d40d313bd279e",
+            "before": "b294d503b6e70fe651a70eba839d9803deefdb77",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-03T21:32:11.419Z",
+            "before": "2026-11-03T18:40:52.365Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagEditableMeshSerialV1Write3_Staged",
+          "DFFlagHSRGenerationFaster_Staged",
+          "DFFlagPerformanceControlAddUniverseIdToHitchRate_Staged",
+          "DFIntServerTimeClockTelemetryPointsHundredthsPercentage_Staged",
+          "FFlagAppIconResetToDefault_Staged",
+          "FFlagAppThemeClassicNativeApi_Staged",
+          "FFlagAssistantTextureGenAutoSelectView_Staged",
+          "FFlagBuildExperienceInGameShell_Staged",
+          "FFlagCloudClientEligibilityReserve_Staged",
+          "FFlagDMCTMigrateScrollingFrame_Staged",
+          "FFlagEnableLegacyDependencyInjectorIOS_Staged",
+          "FFlagFixPromptGameInviteUIMissingDisplayName_Staged",
+          "FFlagFoundationBottomSheetOverlayShadow_Staged",
+          "FFlagFoundationCenterSheetOverlayShadow_Staged",
+          "FFlagFoundationDialogOverlayShadow_Staged",
+          "FFlagFoundationPopoverOverlayShadow_Staged",
+          "FFlagHomePromptsHandlerRestrictPromptStyles_Staged",
+          "FFlagLuauMemoryCagePlatformScaling_Staged",
+          "FFlagLuauNonreentrantLookupTableProp_Staged",
+          "FFlagRenderWaterDemoteSHQ_Staged",
+          "FFlagServerTimeClockTelemetry_Staged",
+          "FFlagWindowsRawInputBroker_Staged",
+          "FStringAutomaticDRSFramebufferTiers_Staged"
+        ],
+        "unchanged": 26453
+      }
+    },
+    "Web": {
+      "current": "3ab8292d58d359fec30c31f40abfc2bf8b6ac3e3f5b45b3a3dffd2018bc52526",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-010.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-052.js",
+          "assets.create.roblox.com/page-0/script-055.js",
+          "assets.create.roblox.com/page-0/script-056.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-070.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.create.roblox.com/page-0/script-077.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 78
+      },
+      "previous": "80fbeda61c4beb7916d12ee5ea43e29e8d3ce08db4e3e4fe458594527977079f",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
