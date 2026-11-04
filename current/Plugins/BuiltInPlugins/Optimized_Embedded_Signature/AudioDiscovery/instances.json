@@ -3089,22 +3089,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "adaptor",
-    "path": "AudioDiscovery/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/DEPRECATED_Button/adaptor",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "2441",
-      "SourceBytecodeSha256": "a6df3164bbdd596110264e15eb70801aa2c87a8f1902d402c80f837d50eb95ff",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "agreementsResolution",
     "path": "AudioDiscovery/Packages/_Index/DeveloperFramework/DeveloperFramework/RobloxAPI/APIS/UserAgreements/V1/agreementsResolution",
     "properties": {
@@ -3687,8 +3671,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "159",
-      "SourceBytecodeSha256": "fbc3df2eddd67c8438bbde9bd9995d37fa5959cd6f9e0d31d7547954f616e609",
+      "SourceBytecodeBytes": "748",
+      "SourceBytecodeSha256": "52ee72694eb9f50d6909467775039721e46753785ad3864ff3bb4e026bd5294d",
       "Tags": ""
     },
     "unreadable": [
@@ -3735,8 +3719,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "27242",
-      "SourceBytecodeSha256": "99445c5f78cdb56d1d6eaa0410cfe8a5162ec430b682b15c741db638b2b0cf8d",
+      "SourceBytecodeBytes": "27370",
+      "SourceBytecodeSha256": "904cdb7e8c634e9530e8226e18c9203e6f2aafce2ecf696dbb7d921a57a2ef52",
       "Tags": ""
     },
     "unreadable": [
@@ -3815,8 +3799,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "10160",
-      "SourceBytecodeSha256": "b06aa28ad8f955d6bfb3a0ccae266fffb32db9dd1a88ea754c163946932d46ea",
+      "SourceBytecodeBytes": "10377",
+      "SourceBytecodeSha256": "cc6dcf8b5d097399c1a37011e79978699b4e81c39317c47687560dcf16a91645",
       "Tags": ""
     },
     "unreadable": [
@@ -4103,8 +4087,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "7282",
-      "SourceBytecodeSha256": "c38a8674a7779a2778fc5ce105670879d1ce126492eaa8172802e2a9d30f6633",
+      "SourceBytecodeBytes": "7790",
+      "SourceBytecodeSha256": "e0b7cd75aa78aea42d05c6a6cb74b2ef6ae4ca605319d4f348a3db4a0826a6d4",
       "Tags": ""
     },
     "unreadable": [
@@ -9175,8 +9159,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3421",
-      "SourceBytecodeSha256": "d34cbcb9c07fc99a91884fbb29d87050236d70ed5db93b645654182f46a7b9d4",
+      "SourceBytecodeBytes": "3289",
+      "SourceBytecodeSha256": "5fea16d2a77f6364fac89893e73060e147fbef1a5b78fde3b9c6a9a49b5d20b6",
       "Tags": ""
     },
     "unreadable": [
@@ -11943,8 +11927,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2319",
-      "SourceBytecodeSha256": "c11e1632423081e0e04de51cdea9f7f36d63493a7d10179d639a10d4149945cb",
+      "SourceBytecodeBytes": "2425",
+      "SourceBytecodeSha256": "9e0df3997291074e638b3326e78a8537b55556ef998ef8fc09564ba496a35516",
       "Tags": ""
     },
     "unreadable": [
@@ -12007,8 +11991,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4409",
-      "SourceBytecodeSha256": "3a85fd5454d0ddf1d8ab1ee3c6532c025e21bfb9e74735c13d8c6d582ee0775d",
+      "SourceBytecodeBytes": "5836",
+      "SourceBytecodeSha256": "45b5948eff5e7f1a4891e6f73ef2d287b963c1681e35a9c1fda6c97606305d65",
       "Tags": ""
     },
     "unreadable": [
@@ -12199,8 +12183,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5980",
-      "SourceBytecodeSha256": "943704bd0a29f68f2f05a3abfae7cce6732c25dab75d7fe3753b245d41e946fa",
+      "SourceBytecodeBytes": "6086",
+      "SourceBytecodeSha256": "e08354e4cf739b6485517f8d897675dab0efcbaf5910e620ffee09aaaa559ae3",
       "Tags": ""
     },
     "unreadable": [
@@ -16161,22 +16145,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkDesignVersionRename",
-    "path": "AudioDiscovery/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkDesignVersionRename",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "216",
-      "SourceBytecodeSha256": "1f915e39c7a7fb22624b0e5bb25ae9bb9dcba2985d62f1e85093c433884839ca",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "getFFlagDevFrameworkDropdownMenuHeight",
     "path": "AudioDiscovery/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkDropdownMenuHeight",
     "properties": {
@@ -16249,22 +16217,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "213",
       "SourceBytecodeSha256": "f2bb6a6d56063dda948b055dd352b249b006cea07a6a76cfd590210065438ea9",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkIconButtonAsButton",
-    "path": "AudioDiscovery/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkIconButtonAsButton",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "215",
-      "SourceBytecodeSha256": "3fcb8527fb5377b9c0d0a9573955ad4fc0e6c7d13f5c30d2e972112360d4dbac",
       "Tags": ""
     },
     "unreadable": [
@@ -16441,6 +16393,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "209",
       "SourceBytecodeSha256": "81b9b26721cde37e710c74be53bf2306a92d3c736184d48b75e7c6b7e86b088f",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "getFFlagStudioDialogManagerTertiaryButtonVariant",
+    "path": "AudioDiscovery/Packages/_Index/StudioFoundation/StudioFoundation/SharedFlags/getFFlagStudioDialogManagerTertiaryButtonVariant",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "225",
+      "SourceBytecodeSha256": "823e8375e5b30c31d6ccf7615db41e0d3d20c2ec7d75aa35fbe6e9821f9c907f",
       "Tags": ""
     },
     "unreadable": [
@@ -17369,6 +17337,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "310",
       "SourceBytecodeSha256": "9baaca8df7ec9af1f95a822998c8cbb717818a692eb75544347df86563a841a8",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "getTertiaryActionTreatment",
+    "path": "AudioDiscovery/Packages/_Index/StudioFoundation/StudioFoundation/Components/Dialog/getTertiaryActionTreatment",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "482",
+      "SourceBytecodeSha256": "a66907b7d05aff26b83e9ee9636db7ab265eeb10d4024fecfb07213d27ac6b30",
       "Tags": ""
     },
     "unreadable": [
@@ -20633,6 +20617,22 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "352",
       "SourceBytecodeSha256": "74a013e4af010600cfb1b956fdc22acbc1e125a9a2e04a31021a5556f80d69b3",
+      "Tags": ""
+    },
+    "unreadable": [
+      "Source:compiled-bytecode"
+    ]
+  },
+  {
+    "class": "ModuleScript",
+    "name": "isTextLabelTruncatedAsync",
+    "path": "AudioDiscovery/Packages/_Index/StudioFoundation/StudioFoundation/Components/Dialog/isTextLabelTruncatedAsync",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "SourceBytecodeBytes": "514",
+      "SourceBytecodeSha256": "68f61311a3dc49d8e00306888b14892aeedbf0a763a8db71e272c4d3947c586f",
       "Tags": ""
     },
     "unreadable": [
@@ -33832,7 +33832,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "971",
-      "SourceBytecodeSha256": "3c267a07d8ced4361731530434c9d6eb1c27147068e839411651e8dbd0e85014",
+      "SourceBytecodeSha256": "d614c1068825ce289334c56d17e9274059bca60e814c4933b6021bdddbff582a",
       "Tags": ""
     },
     "unreadable": [
@@ -33848,7 +33848,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "190",
-      "SourceBytecodeSha256": "ca68569991a1df404170a0920499967a394b687225025dfbda12aae0a2cfe4e1",
+      "SourceBytecodeSha256": "4e742d223b0dfb2f3d6d5c1b9ba01ccca709c252cbff09af908314ae45e8d0f9",
       "Tags": ""
     },
     "unreadable": [
@@ -35527,8 +35527,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5747",
-      "SourceBytecodeSha256": "d205bece528f9d9d7689aa3d0700e36e4aec252d2f37e494e97711c3ed7fd6e2",
+      "SourceBytecodeBytes": "5876",
+      "SourceBytecodeSha256": "3b02ae36c34e2a73762bb5431300009f562957460126ec30f67031ae171488f4",
       "Tags": ""
     },
     "unreadable": [
@@ -36456,7 +36456,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "1553",
-      "SourceBytecodeSha256": "4a29890929c0e8825184f0071b80991276c3b9d6cea84cb64feabf880f78c04f",
+      "SourceBytecodeSha256": "af3b3dbc240231051511e5a5871722f64d8919f43212eeebe2e185ac67d5562d",
       "Tags": ""
     },
     "unreadable": [
@@ -36472,7 +36472,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "165",
-      "SourceBytecodeSha256": "a37daf898cfad5a63c41396540d677fb691bc20439ed8e0297898e958864d00d",
+      "SourceBytecodeSha256": "eefdd89622467f30b0159823499367a32bd531673f9a2be5aad2462e7ad9e917",
       "Tags": ""
     },
     "unreadable": [
@@ -42200,7 +42200,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "194",
-      "SourceBytecodeSha256": "b9ca4cd936ce0e0c18e7d0e0f51d050480b3065edb1f9245e4b8ec60bef4a567",
+      "SourceBytecodeSha256": "afdb14631047153928ab4aa65218ed66847bfd6a0f3680eeef6cadd5fa413ca9",
       "Tags": ""
     },
     "unreadable": [
@@ -42263,8 +42263,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "8262",
-      "SourceBytecodeSha256": "e09ccbeda383b3ae4d82a86412c9d4c2188b2b3e5eafaf0f8679eba747d15fbe",
+      "SourceBytecodeBytes": "8242",
+      "SourceBytecodeSha256": "529344eb126a88201742f82e002b012766d7e61c56a7e17bfffb7058c9575bb8",
       "Tags": ""
     },
     "unreadable": [
@@ -42903,8 +42903,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "2765",
-      "SourceBytecodeSha256": "fcb77b8d4b7124f3041755ccea08d8b91be900ff9e2611b12f9de40a0acefb66",
+      "SourceBytecodeBytes": "3106",
+      "SourceBytecodeSha256": "ebe56c1ac2c9ae2240449604c7ceda295cdd5121cb50b219d95ecba419cc1608",
       "Tags": ""
     },
     "unreadable": [

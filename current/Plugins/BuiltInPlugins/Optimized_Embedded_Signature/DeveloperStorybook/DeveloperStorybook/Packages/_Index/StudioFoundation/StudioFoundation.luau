@@ -5,6 +5,7 @@ local Types = require(script.Types)
 export type DialogAction = Types.DialogAction
 export type DialogEscapeButtonAction = Types.DialogEscapeButtonAction
 export type DialogProps = Dialog.Props
+export type DialogTertiaryActionVariant = Types.DialogTertiaryActionVariant
 export type DialogType = Types.DialogType
 export type FoundationProviderAdapterProps = FoundationProviderAdapter.FoundationProviderAdapterProps
 

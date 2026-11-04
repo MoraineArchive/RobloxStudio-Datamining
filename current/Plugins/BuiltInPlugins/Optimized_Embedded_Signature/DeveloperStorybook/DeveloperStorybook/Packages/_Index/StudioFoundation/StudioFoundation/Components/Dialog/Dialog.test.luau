@@ -29,6 +29,8 @@ local within = ReactTestingLibrary.within
 local FFlagStudioFoundationDialogDeviceSimFixes =
 	require(Main.SharedFlags.getFFlagStudioFoundationDialogDeviceSimFixes)()
 local FFlagStudioFoundationThemeContext = require(Main.SharedFlags.getFFlagStudioFoundationThemeContext)()
+local FFlagStudioDialogManagerTertiaryButtonVariant =
+	require(Main.SharedFlags.getFFlagStudioDialogManagerTertiaryButtonVariant)()
 -- Dialog renders DialogPanel's FoundationProviderAdapter, which resolves the theme from Studio settings
 -- on the legacy (flag-off) path, unavailable in headless tests, so skip these when the flag is off.
 local itIfThemeContext: any = if FFlagStudioFoundationThemeContext then it else it.skip
@@ -287,21 +289,28 @@ describe("Dialog", function()
 		expect(props.onClose).toBeNil()
 	end)
 
-	itIfThemeContext("should only pass the device simulator overrides to DialogView when the flag is on", function()
-		render(createTestElement({
-			uri = dialogUri,
-			type = "Default",
-			isContentFullBleed = true,
-			tertiaryActionVariant = "Utility",
-		}))
+	if FFlagStudioFoundationDialogDeviceSimFixes then
+		itIfThemeContext("should pass isContentFullBleed to DialogView", function()
+			render(createTestElement({
+				uri = dialogUri,
+				type = "Default",
+				isContentFullBleed = true,
+			}))
 
-		local props = getDialogViewProps()
-		if FFlagStudioFoundationDialogDeviceSimFixes then
+			local props = getDialogViewProps()
 			expect(props.isContentFullBleed).toBe(true)
-			expect(props.tertiaryActionVariant).toBe("Utility")
-		else
-			expect(props.isContentFullBleed).toBeNil()
-			expect(props.tertiaryActionVariant).toBeNil()
-		end
-	end)
+		end)
+	end
+
+	if FFlagStudioDialogManagerTertiaryButtonVariant then
+		itIfThemeContext("should pass tertiaryActionVariant to DialogView", function()
+			render(createTestElement({
+				uri = dialogUri,
+				type = "Default",
+				tertiaryActionVariant = "Utility",
+			}))
+
+			expect(getDialogViewProps().tertiaryActionVariant).toBe("Utility")
+		end)
+	end
 end)

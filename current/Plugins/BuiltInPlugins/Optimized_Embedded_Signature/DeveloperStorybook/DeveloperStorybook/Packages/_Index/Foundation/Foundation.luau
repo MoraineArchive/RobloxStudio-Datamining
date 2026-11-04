@@ -112,6 +112,7 @@ local StatusBadgeVariant = require(script.Enums.StatusBadgeVariant)
 local StatusIndicatorShape = require(script.Enums.StatusIndicatorShape)
 local StatusIndicatorSize = require(script.Enums.StatusIndicatorSize)
 local StatusIndicatorVariant = require(script.Enums.StatusIndicatorVariant)
+local TextOverflow = require(script.Enums.TextOverflow)
 -- **DEPRECATED**: Theme is deprecated. Use ColorMode instead.
 local Theme = require(script.Enums.Theme)
 local ThemeName = require(script.Enums.ThemeName)
@@ -194,6 +195,7 @@ export type StatusBadgeVariant = StatusBadgeVariant.StatusBadgeVariant
 export type StatusIndicatorShape = StatusIndicatorShape.StatusIndicatorShape
 export type StatusIndicatorSize = StatusIndicatorSize.StatusIndicatorSize
 export type StatusIndicatorVariant = StatusIndicatorVariant.StatusIndicatorVariant
+export type TextOverflow = TextOverflow.TextOverflow
 -- **DEPRECATED**: Theme is deprecated. Use ColorMode instead.
 export type Theme = Theme.Theme
 export type ThemeName = ThemeName.ThemeName
@@ -351,6 +353,11 @@ export type MediaProps = Media.MediaProps
 export type MediaContent = Media.MediaContent
 export type MediaImage = Media.MediaImage
 
+local Metadata = require(script.Components.Metadata)
+export type MetadataProps = Metadata.MetadataProps
+export type MetadataAccessory = Metadata.MetadataAccessory
+export type MetadataItem = Metadata.MetadataItem
+
 local Menu = require(script.Components.Menu)
 export type MenuProps = Menu.MenuProps
 export type MenuItem = Menu.MenuItem
@@ -501,6 +508,7 @@ local Foundation = strict({
 	List = List,
 	Loading = Loading,
 	Media = Media,
+	Metadata = Metadata,
 	Menu = Menu,
 	NumberInput = NumberInput,
 	OptionSelectorGroup = OptionSelectorGroup,
@@ -649,6 +657,7 @@ local Foundation = strict({
 		StatusIndicatorShape = StatusIndicatorShape,
 		StatusIndicatorSize = StatusIndicatorSize,
 		StatusIndicatorVariant = StatusIndicatorVariant,
+		TextOverflow = TextOverflow,
 		-- **DEPRECATED**: Theme is deprecated. Use ColorMode instead.
 		Theme = Theme,
 		ThemeName = ThemeName,

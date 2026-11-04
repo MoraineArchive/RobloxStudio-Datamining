@@ -44,6 +44,8 @@ local MediaPlayerSignal = require(Framework.UI.Components.MediaPlayerWrapper.Med
 local StatelessVideoPlayer = Roact.PureComponent:extend("StatelessVideoPlayer")
 Typecheck.wrap(StatelessVideoPlayer, script)
 
+local isTestEnvironment = require(Framework.TestHelpers.isTestEnvironment)
+
 local getFFlagDFVideoStudioPreviewPermissionFix =
 	require(Framework.SharedFlags.getFFlagDFVideoStudioPreviewPermissionFix)
 
@@ -135,7 +137,7 @@ end
 
 function StatelessVideoPlayer:didMount()
 	self.onResize()
-	if getFFlagDFVideoStudioPreviewPermissionFix() then
+	if getFFlagDFVideoStudioPreviewPermissionFix() and not isTestEnvironment() then
 		local videoFrame = self.videoRef:getValue()
 		if videoFrame then
 			videoFrame:SetStudioPreview(true)
@@ -146,7 +148,7 @@ function StatelessVideoPlayer:didMount()
 end
 
 function StatelessVideoPlayer:didUpdate(prevProps)
-	if getFFlagDFVideoStudioPreviewPermissionFix() then
+	if getFFlagDFVideoStudioPreviewPermissionFix() and not isTestEnvironment() then
 		if prevProps.VideoId == self.props.VideoId then
 			return
 		end
@@ -208,7 +210,9 @@ function StatelessVideoPlayer:render()
 				Position = UDim2.new(0.5, 0, 0, 0),
 				Size = UDim2.new(1, 0, 1, 0),
 				Looped = false,
-				Video = if getFFlagDFVideoStudioPreviewPermissionFix() then nil else props.VideoId,
+				Video = if getFFlagDFVideoStudioPreviewPermissionFix() or isTestEnvironment()
+					then nil
+					else props.VideoId,
 				[Roact.Ref] = self.videoRef,
 				[Roact.Event.Changed] = self.onVideoChange,
 				[Roact.Event.Ended] = props.OnEnd,

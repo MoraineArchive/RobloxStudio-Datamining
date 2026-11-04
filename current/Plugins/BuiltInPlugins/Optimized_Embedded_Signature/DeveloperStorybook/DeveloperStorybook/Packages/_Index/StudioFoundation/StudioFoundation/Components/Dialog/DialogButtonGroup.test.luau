@@ -23,6 +23,8 @@ local within = ReactTestingLibrary.within
 local FFlagStudioFoundationDialogDeviceSimFixes =
 	require(Main.SharedFlags.getFFlagStudioFoundationDialogDeviceSimFixes)()
 local FFlagStudioFoundationThemeContext = require(Main.SharedFlags.getFFlagStudioFoundationThemeContext)()
+local FFlagStudioDialogManagerTertiaryButtonVariant =
+	require(Main.SharedFlags.getFFlagStudioDialogManagerTertiaryButtonVariant)()
 -- Foundation buttons only get a non-zero width when the theme stylesheet is wired up, which happens
 -- on the flag-on path; skip click-dependent tests when the flag is off (matches SF's flag gating).
 local itIfThemeContext: any = if FFlagStudioFoundationThemeContext then it else it.skip
@@ -58,6 +60,20 @@ jest.mock(Main.Components.Dialog.useButtonGroupFairWidth, function()
 	end
 end)
 
+-- When true, measurement yields forever so tests can observe the in-flight measurement thread
+local mockMeasurementNeverFinishes = false
+local mockMeasurementThread: thread? = nil
+jest.mock(Main.Components.Dialog.isTextLabelTruncatedAsync, function()
+	local isTextLabelTruncatedAsync = jest.requireActual(Main.Components.Dialog.isTextLabelTruncatedAsync)
+	return function(label: TextLabel)
+		if mockMeasurementNeverFinishes then
+			mockMeasurementThread = coroutine.running()
+			coroutine.yield()
+		end
+		return isTextLabelTruncatedAsync(label)
+	end
+end)
+
 -- Must stay at file scope: resetting between describes would swap the React/Foundation modules
 -- out from under the already-rendering reconciler.
 afterAll(function()
@@ -83,6 +99,8 @@ describe("DialogButtonGroup", function()
 	beforeEach(function()
 		mockShowTooltip.mockReset()
 		mockHideTooltip.mockReset()
+		mockMeasurementNeverFinishes = false
+		mockMeasurementThread = nil
 	end)
 
 	it("should render without errors", function()
@@ -193,6 +211,60 @@ describe("DialogButtonGroup", function()
 		fireEvent.click(button) -- MouseEnter event doesn't work with Foundation onStateChanged, for whatever reason
 		expect(mockShowTooltip).toHaveBeenCalledTimes(1)
 	end)
+
+	if FFlagStudioDialogManagerTertiaryButtonVariant then
+		-- Link buttons utilize RichText for underline formatting on hover; this affects text bounds calculations
+		-- (see isTextLabelTruncatedAsync.lua)
+		itIfThemeContext("should not show a tooltip for a Link button whose text fits", function()
+			local rendered = render(createTestElement({
+				tertiaryAction = {
+					uri = StudioUri.fromWidget("Test", "LearnMore"),
+					text = "Learn more",
+					onActivated = function() end,
+				},
+				tertiaryActionVariant = "Link",
+			}))
+
+			fireEvent.click(rendered.getByTestId("--dialog-button-tertiary"))
+			expect(mockShowTooltip).never.toHaveBeenCalled()
+		end)
+
+		itIfThemeContext("should show a tooltip for a Link button whose text is truncated", function()
+			local rendered = render(createTestElement({
+				tertiaryAction = {
+					uri = StudioUri.fromWidget("Test", "LearnMore"),
+					text = "Learn more about this very long help topic",
+					onActivated = function() end,
+				},
+				tertiaryActionVariant = "Link",
+			}))
+
+			fireEvent.click(rendered.getByTestId("--dialog-button-tertiary"))
+			expect(mockShowTooltip).toHaveBeenCalledTimes(1)
+		end)
+
+		itIfThemeContext("should cancel an in-flight measurement when the button unmounts", function()
+			mockMeasurementNeverFinishes = true
+
+			local rendered = render(createTestElement({
+				tertiaryAction = {
+					uri = StudioUri.fromWidget("Test", "LearnMore"),
+					text = "Learn more about this very long help topic",
+					onActivated = function() end,
+				},
+				tertiaryActionVariant = "Link",
+			}))
+
+			fireEvent.click(rendered.getByTestId("--dialog-button-tertiary"))
+			local measurementThread = mockMeasurementThread :: thread
+			expect(coroutine.status(measurementThread)).toBe("suspended")
+
+			rendered.unmount()
+
+			-- task.cancel resets the thread, so it reports dead rather than suspended
+			expect(coroutine.status(measurementThread)).toBe("dead")
+		end)
+	end
 end)
 
 --[[
@@ -292,8 +364,8 @@ describe("DialogButtonGroup button variants", function()
 		return { uri = StudioUri.fromWidget("Test", name), text = name, onActivated = noop }
 	end
 
-	local function renderButtons(tertiaryActionVariant: ("Standard" | "Utility")?)
-		render(createTestElement({
+	local function renderButtons(tertiaryActionVariant: Types.DialogTertiaryActionVariant?)
+		return render(createTestElement({
 			primaryAction = makeAction("Primary"),
 			secondaryAction = makeAction("Secondary"),
 			tertiaryAction = makeAction("Tertiary"),
@@ -335,9 +407,67 @@ describe("DialogButtonGroup button variants", function()
 		expect(getVariant("Tertiary")).toBe("Utility")
 	end)
 
-	itIfNoDeviceSimFixes("should ignore tertiaryActionVariant when the flag is off", function()
-		renderButtons("Utility")
+	if FFlagStudioDialogManagerTertiaryButtonVariant then
+		it("should render a Utility tertiary button", function()
+			renderButtons("Utility")
 
-		expect(getVariant("Tertiary")).toBe("Standard")
-	end)
+			expect(getVariant("Tertiary")).toBe("Utility")
+		end)
+	else
+		itIfNoDeviceSimFixes("should ignore tertiaryActionVariant when the flag is off", function()
+			renderButtons("Utility")
+
+			expect(getVariant("Tertiary")).toBe("Standard")
+		end)
+	end
+
+	local function getLayout(rendered)
+		local group: GuiObject = rendered.getByTestId("--dialog-button-group")
+		local tertiaryWrapper: GuiObject = rendered.getByTestId("--dialog-button-tertiary-wrapper")
+		local primaryAndSecondary: GuiObject = rendered.getByTestId("--dialog-button-primary-secondary-group")
+		return group, tertiaryWrapper, primaryAndSecondary
+	end
+
+	if FFlagStudioDialogManagerTertiaryButtonVariant then
+		local itEach: any = it.each
+
+		itEach({
+			{ variant = "Link" },
+			{ variant = "Alert" },
+		})("should isolate a $variant tertiary button on the left", function(case)
+			local rendered = renderButtons(case.variant)
+			local group, tertiaryWrapper, primaryAndSecondary = getLayout(rendered)
+
+			expect(getVariant("Tertiary")).toBe(case.variant)
+			expect(tertiaryWrapper.LayoutOrder).toBeLessThan(primaryAndSecondary.LayoutOrder)
+			expect(group:HasTag("flex-x-between")).toBe(true)
+			expect(group:HasTag("align-x-right")).toBe(false)
+		end)
+
+		it("should keep the buttons right-aligned when a Link variant has no tertiary action", function()
+			local rendered = render(createTestElement({
+				primaryAction = makeAction("Primary"),
+				secondaryAction = makeAction("Secondary"),
+				tertiaryActionVariant = "Link",
+			}))
+
+			local group = rendered.getByTestId("--dialog-button-group") :: GuiObject
+			expect(group:HasTag("align-x-right")).toBe(true)
+			expect(group:HasTag("flex-x-between")).toBe(false)
+		end)
+
+		local groupedCases: { { name: string, variant: Types.DialogTertiaryActionVariant? } } = {
+			{ name = "no" },
+			{ name = "a Standard", variant = "Standard" },
+			{ name = "a Utility", variant = "Utility" },
+		}
+		itEach(groupedCases)("should keep the tertiary button grouped on the right with $name variant", function(case)
+			local rendered = renderButtons(case.variant)
+			local group, tertiaryWrapper, primaryAndSecondary = getLayout(rendered)
+
+			expect(tertiaryWrapper.LayoutOrder).toBeGreaterThan(primaryAndSecondary.LayoutOrder)
+			expect(group:HasTag("align-x-right")).toBe(true)
+			expect(group:HasTag("flex-x-between")).toBe(false)
+		end)
+	end
 end)

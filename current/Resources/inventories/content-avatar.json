@@ -372,10 +372,10 @@
     "sha256": "2a8c520427d460cdb790c68786aa064957eea12f00cccb2fd389c0f588ccb515"
   },
   {
-    "bytes": 32209,
+    "bytes": 32606,
     "extension": "lua",
     "path": "scripts/humanoidAnimateR15.lua",
-    "sha256": "1c925850c1726e89ef451305a4b8ce1e06acc9010a6598a4070dc0cd177d3242"
+    "sha256": "1c988b76796dade13ce0f14ee30550c09f93e64fe7a1e80ea4529414ae2994b8"
   },
   {
     "bytes": 48570,
@@ -402,10 +402,10 @@
     "sha256": "28b6861b7d4e2ea5a025e26b8be8e793e7433e975fb453b821b5c5ba04ab1196"
   },
   {
-    "bytes": 53985,
+    "bytes": 54988,
     "extension": "lua",
     "path": "scripts/humanoidAnimateSAuth/humanoidAnimateSAuth.lua",
-    "sha256": "c38f329ebfd7e08d0559dc4ce444900185b99251cf4157c7503975ee2bf5f987"
+    "sha256": "3bb49f6a111456dbd917fd2e8dfe4e0ce6f773dab429eeb4ae89b95dd8bf2b71"
   },
   {
     "bytes": 527,

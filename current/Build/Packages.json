@@ -6,16 +6,16 @@
     "uncompressedSize": 388
   },
   {
-    "checksum": "19feafbd6b00f0a914b4e08266262186",
-    "compressedSize": 106988284,
+    "checksum": "1fde09e37a36840d606c4312aaceb519",
+    "compressedSize": 104634735,
     "name": "BuiltInPlugins.zip",
-    "uncompressedSize": 107089767
+    "uncompressedSize": 104735997
   },
   {
-    "checksum": "e6a75f7f96c71fe9b94a215d844d37fe",
-    "compressedSize": 119040275,
+    "checksum": "8ed431a385ff7ff5923768a941fce87c",
+    "compressedSize": 109661981,
     "name": "BuiltInStandalonePlugins.zip",
-    "uncompressedSize": 119162436
+    "uncompressedSize": 109794715
   },
   {
     "checksum": "cfd9a87669f81ce3a0612ae342e64e33",
@@ -24,14 +24,14 @@
     "uncompressedSize": 244319130
   },
   {
-    "checksum": "5a42c025c62155a3fc5a56d2daeac79d",
-    "compressedSize": 411902,
+    "checksum": "db54659b6cae1dc4a8ec1cd0799a2386",
+    "compressedSize": 412299,
     "name": "content-avatar.zip",
-    "uncompressedSize": 1730807
+    "uncompressedSize": 1732207
   },
   {
-    "checksum": "79e23478b3ddcd4806b0029d1ab9c637",
-    "compressedSize": 307051,
+    "checksum": "996556c1b9254bdb9e8af5a0dcea9aab",
+    "compressedSize": 307053,
     "name": "content-configs.zip",
     "uncompressedSize": 1807046
   },
@@ -48,10 +48,10 @@
     "uncompressedSize": 1413471
   },
   {
-    "checksum": "edcdd98952ba768dfb23269dc84a4d40",
-    "compressedSize": 443587,
+    "checksum": "d2a2cd9d28845e809296d5acb291ae9a",
+    "compressedSize": 451264,
     "name": "content-platform-dictionaries.zip",
-    "uncompressedSize": 1491553
+    "uncompressedSize": 1520989
   },
   {
     "checksum": "8f379ec2b22ff106b837d79f7fdbf0d8",
@@ -102,22 +102,22 @@
     "uncompressedSize": 8780146
   },
   {
-    "checksum": "9f03620bcd1063bc8096901fe9af03f8",
-    "compressedSize": 9925925,
+    "checksum": "9fa632e13ae63d524f60624131e0fc15",
+    "compressedSize": 10019899,
     "name": "extracontent-luapackages.zip",
-    "uncompressedSize": 35656562
+    "uncompressedSize": 35772293
   },
   {
-    "checksum": "4e45a65e545771d2de35faf8fb2a7aff",
-    "compressedSize": 16919229,
+    "checksum": "66f9d08360d99a3c7da9c0195468672b",
+    "compressedSize": 17296499,
     "name": "extracontent-models.zip",
-    "uncompressedSize": 17030886
+    "uncompressedSize": 17407669
   },
   {
-    "checksum": "86a01e168cf3a4720a28438574998f9b",
-    "compressedSize": 3311334,
+    "checksum": "3433da85e2dd8b310279b5560db21a86",
+    "compressedSize": 3334958,
     "name": "extracontent-scripts.zip",
-    "uncompressedSize": 10389068
+    "uncompressedSize": 10463319
   },
   {
     "checksum": "eeb373c702b98d7ff02b9e6190f607a1",
@@ -132,13 +132,13 @@
     "uncompressedSize": 1919259
   },
   {
-    "checksum": "e0839a826761f73044803af36c59b3a0",
-    "compressedSize": 6023479,
+    "checksum": "ec7d91e210637da0ae8e9d422025c1dd",
+    "compressedSize": 6023775,
     "name": "Libraries.zip",
-    "uncompressedSize": 14985424
+    "uncompressedSize": 14985936
   },
   {
-    "checksum": "a368572f69a01e65bcc625e7bfff8c4e",
+    "checksum": "cba463cbfec1d7f9906b064fd2979e97",
     "compressedSize": 8607966,
     "name": "LibrariesQt5.zip",
     "uncompressedSize": 20268032
@@ -156,19 +156,19 @@
     "uncompressedSize": 4193416
   },
   {
-    "checksum": "fc8b526fe17bf6e88e6394cb48cc1bfa",
-    "compressedSize": 120313638,
+    "checksum": "adc4d8e0d3f7f5c5e28aa053f39ea01d",
+    "compressedSize": 121491632,
     "name": "RobloxStudio.zip",
-    "uncompressedSize": 255135336
+    "uncompressedSize": 257999773
   },
   {
-    "checksum": "563d8cc62e048b6cdf1bee62d5b10f4e",
-    "compressedSize": 13814217,
+    "checksum": "15d87cafdf6019bf696a393edb5ecfba",
+    "compressedSize": 13862631,
     "name": "shaders.zip",
-    "uncompressedSize": 87704513
+    "uncompressedSize": 88064896
   },
   {
-    "checksum": "b15a3ee2452cf6d779532e6d42e22602",
+    "checksum": "53664336fd7d3598465584a69c31ad8d",
     "compressedSize": 130569,
     "name": "ssl.zip",
     "uncompressedSize": 228725
@@ -192,15 +192,15 @@
     "uncompressedSize": 133918371
   },
   {
-    "checksum": "21e91b10aab6077deb9d5c8f918d08d2",
+    "checksum": "15c50b37f2da786a5049806a66758fee",
     "compressedSize": 83405,
     "name": "WebView2.zip",
     "uncompressedSize": 166000
   },
   {
-    "checksum": "33edb5a4ed7ff2d851b009472d14d59d",
-    "compressedSize": 1532149,
+    "checksum": "3fa357010ec47034fb409f3b4d8e7652",
+    "compressedSize": 1531906,
     "name": "WebView2RuntimeInstaller.zip",
-    "uncompressedSize": 1636484
+    "uncompressedSize": 1636320
   }
 ]

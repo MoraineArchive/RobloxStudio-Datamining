@@ -43,6 +43,7 @@ local withContext = ContextServices.withContext
 local FFlagDevFrameworkFixMissingKeyErrors = require(Framework.SharedFlags.getFFlagDevFrameworkFixMissingKeyErrors)()
 
 local Typecheck = require(Framework.Util.Typecheck)
+local isTestEnvironment = require(Framework.TestHelpers.isTestEnvironment)
 local AssetRenderUtil = require(Framework.Util.AssetRenderUtil)
 local AssetRenderType = AssetRenderUtil.AssetRenderType
 local Cryo = require(Framework.Parent.Cryo)
@@ -110,6 +111,15 @@ end
 function AssetRender:loadFontForTextLabelAndSetStateWhenDone()
 	local props = self.props
 	local style = props.Stylizer
+
+	-- GetTextBoundsAsync fetches the font and the engine logs ERR when that fetch fails.
+	-- loadFonts: true isn't enough because this is a cloud font
+	if isTestEnvironment() then
+		self:setState({
+			isFontLoaded = true,
+		})
+		return
+	end
 
 	task.spawn(function()
 		local params = Instance.new("GetTextBoundsParams")
@@ -253,7 +263,9 @@ function AssetRender:render()
 				fontTextLabel = Roact.createElement(TextLabel, {
 					AnchorPoint = Vector2.new(0.5, 0.5),
 					AutomaticSize = Enum.AutomaticSize.XY,
-					FontFace = Font.fromId(assetId),
+					FontFace = if isTestEnvironment()
+						then Font.fromEnum(Enum.Font.SourceSans)
+						else Font.fromId(assetId),
 					Position = UDim2.new(0.5, 0, 0.5, 0),
 					Size = UDim2.new(1, 0, 1, 0),
 					Text = style.RenderView.FontRenderView.Text,

@@ -23,8 +23,6 @@ local StudioMixins = require(Framework.Styling.StudioMixins)
 local LightThemeTokens = require(Framework.Styling.LightThemeTokens)
 local DarkThemeTokens = require(Framework.Styling.DarkThemeTokens)
 
-local FFlagDevFrameworkDesignVersionRename = require(Framework.SharedFlags.getFFlagDevFrameworkDesignVersionRename)()
-
 local getStudioSettings = require(Framework.Util.getStudioSettings)
 
 local CORE_COMPONENTS = {
@@ -33,7 +31,7 @@ local CORE_COMPONENTS = {
 	"TextLabel",
 }
 
-local VERSION_ATTRIBUTE_NAME = if FFlagDevFrameworkDesignVersionRename then "Version" else "RBX_Version"
+local VERSION_ATTRIBUTE_NAME = "RBX_Version"
 
 local function registerComponent(design: Folder, component: Instance)
 	local styles = component:FindFirstChild("styles")

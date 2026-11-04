@@ -91,6 +91,7 @@ local TextWithLinks = require(Framework.UI.Components.TextWithLinks)
 
 local getFFlagDFVideoStudioPreviewPermissionFix =
 	require(Framework.SharedFlags.getFFlagDFVideoStudioPreviewPermissionFix)
+local isTestEnvironment = require(Framework.TestHelpers.isTestEnvironment)
 local FFlagDevFrameworkFixMissingKeyErrors = require(Framework.SharedFlags.getFFlagDevFrameworkFixMissingKeyErrors)()
 
 local COMPONENT_NAME = "AssetPreview"
@@ -319,10 +320,12 @@ function AssetPreview:updateAssetInfoRows()
 				video:Destroy()
 			end)
 
-			if getFFlagDFVideoStudioPreviewPermissionFix() then
-				video:SetStudioPreview(true)
+			if not isTestEnvironment() then
+				if getFFlagDFVideoStudioPreviewPermissionFix() then
+					video:SetStudioPreview(true)
+				end
+				video.Video = string.format("rbxassetid://%d", asset.Id)
 			end
-			video.Video = string.format("rbxassetid://%d", asset.Id)
 		end)
 	end
 end

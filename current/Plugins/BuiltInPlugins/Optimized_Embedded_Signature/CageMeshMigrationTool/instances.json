@@ -2763,18 +2763,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "adaptor",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/DEPRECATED_Button/adaptor",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "agreementsResolution",
     "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/RobloxAPI/APIS/UserAgreements/V1/agreementsResolution",
     "properties": {
@@ -11979,18 +11967,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkDesignVersionRename",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkDesignVersionRename",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "getFFlagDevFrameworkDropdownMenuHeight",
     "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkDropdownMenuHeight",
     "properties": {
@@ -12041,18 +12017,6 @@
     "class": "ModuleScript",
     "name": "getFFlagDevFrameworkHighlighterHooks",
     "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkHighlighterHooks",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkIconButtonAsButton",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkIconButtonAsButton",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",

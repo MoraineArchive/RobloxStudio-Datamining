@@ -5,28 +5,34 @@ description: Import a 3D model from an external modelling program (Blender, Maya
 
 # Importing a Model from an External Program
 
-This skill moves a model from any modelling program into Studio in four stages: **export → upload → insert → verify and repair**. The importer regularly changes things on the way in: scale, rotation, colours, sometimes textures. **The verify stage is required, not optional.**
+Four stages: **export → upload → insert → verify and repair**. The importer regularly changes scale, rotation, colours and sometimes textures on the way in, so **verifying is required**.
 
-Before starting, call the `rbx-open-cloud-usage` skill for how `open_cloud_invoke` works. If any step fails with a permission or scope error, call the `rbx-permissions` skill. Never work around a permission error.
+Read `rbx-open-cloud-usage` (how `open_cloud_invoke` works) and `rbx-permissions` (checking and asking for permissions) first. Never work around a permission error.
 
 ## Tool call notes
 
 - `execute_luau` needs `datamodel_type: "Edit"` for everything in this skill.
 - `screen_capture` needs a `capture_id`.
 - The `skill` tool takes `skill_name`.
-- `http_get` only accepts docs URLs that end in `.md`.
-- To undo-proof a change, end each `execute_luau` edit with `game:GetService("ChangeHistoryService"):SetWaypoint("<description>")`.
+- End each `execute_luau` edit with `game:GetService("ChangeHistoryService"):SetWaypoint("<description>")`.
 
 ## 0. Settle the up-front questions
 
-Uploads create **permanent assets** on the user's account or group. Open Cloud cannot archive or delete Model or Image assets; they can only be removed by hand in the Creator Dashboard. So before the first upload, make sure the user has agreed to that and has told you which directory to export into.
+Uploads create **permanent assets**: Open Cloud can't archive or delete Model or Image assets; only the Creator Dashboard can.
+
+**Permissions needed:** **Publish & manage assets → `asset:write` and `asset:read`**, plus an approved upload folder. Probe the scopes first:
+
+```
+open_cloud_invoke(method: "GET", endpoint: "/cloud/v2/universes/<game.GameId>", scopes: ["asset:read", "asset:write"])
+```
 
 Ask once, together, for whatever you don't already know:
-- **The upload folder.** `open_cloud_invoke` only accepts files inside directories the user approved in **Assistant Settings → MCP Permissions**. No tool lists those directories.
-- **Consent to create assets.** Say whose account they will go on.
-- **A supplied file's location.** If the user named a file that isn't in an approved folder, raise that in the same message (see step 1).
+- **Any missing scope**, named by section and toggle.
+- **The upload folder** approved in MCP Permissions (no tool lists them). Write exports straight into it.
+- **Consent to create assets**, saying whose account they'll go on.
+- **A supplied file outside an approved folder:** ask the user to approve its folder or move the file there themselves. Don't copy or move it yourself.
 
-If the user already gave this information earlier in the conversation, use it and don't ask again. Some questions can only be asked after inspecting the model, such as detail reduction in step 2. Ask those when you get there. Upload only what is needed, and reuse asset IDs you already have rather than uploading again.
+Reuse anything the user already told you. Ask detail-reduction questions when step 2 finds the need. Upload only what's needed, and reuse asset IDs you already have.
 
 ## 1. Gather context
 
@@ -37,7 +43,6 @@ If the user already gave this information earlier in the conversation, use it an
             userId = game:GetService("StudioService"):GetUserId() }
    ```
    For `Enum.CreatorType.Group`, upload with `creationContext.creator.groupId` = `creatorId`. Otherwise upload with `userId`.
-3. Write exports **directly** into an approved directory. If the user hands you a file outside one, don't copy or move it yourself. Ask them either to approve its directory, or to move or re-export the file into an approved one themselves.
 
 ## 2. Inspect and export from the source program
 
@@ -114,7 +119,7 @@ The response is an operation. Poll `GET /assets/v1/operations/<operationId>` (sc
   - If the **Model** is still pending after that, tell the user its asset ID is waiting for moderation, and stop.
   - **Never upload again to get around a pending state**, because that only creates duplicate permanent assets.
 
-The same states apply to the **Image** uploads in 5b, but a rejected or still-pending image **doesn't stop the import**. Leave that part's texture unrepaired, note the image ID and its state for the report, and carry on with 5c–5f.
+For the **Image** uploads in 5b, a rejected or pending image **doesn't stop the import**: leave that texture unrepaired, note it for the report, and carry on.
 
 ## 4. Insert
 
@@ -246,7 +251,4 @@ Tell the user:
 
 ## Extending to other formats
 
-Steps 3–7 don't depend on the source program or the format. To support a new format:
-1. Check that `open_cloud_invoke` lists it.
-2. Add notes under step 2 on whether it is self-contained and how its textures and colours travel.
-3. Leave the rest unchanged. Step 5 catches whatever a new importer drops or changes.
+Steps 3–7 don't depend on the format. For a new one: check `open_cloud_invoke` accepts it, and add notes under step 2 on how its textures and colours travel. Step 5 catches whatever its importer drops.

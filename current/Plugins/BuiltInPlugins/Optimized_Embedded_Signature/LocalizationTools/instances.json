@@ -2869,22 +2869,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "adaptor",
-    "path": "LocalizationTools/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/DEPRECATED_Button/adaptor",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "2441",
-      "SourceBytecodeSha256": "a6df3164bbdd596110264e15eb70801aa2c87a8f1902d402c80f837d50eb95ff",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "agreementsResolution",
     "path": "LocalizationTools/Packages/_Index/DeveloperFramework/DeveloperFramework/RobloxAPI/APIS/UserAgreements/V1/agreementsResolution",
     "properties": {
@@ -3467,8 +3451,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "27242",
-      "SourceBytecodeSha256": "99445c5f78cdb56d1d6eaa0410cfe8a5162ec430b682b15c741db638b2b0cf8d",
+      "SourceBytecodeBytes": "27370",
+      "SourceBytecodeSha256": "904cdb7e8c634e9530e8226e18c9203e6f2aafce2ecf696dbb7d921a57a2ef52",
       "Tags": ""
     },
     "unreadable": [
@@ -3547,8 +3531,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "10160",
-      "SourceBytecodeSha256": "b06aa28ad8f955d6bfb3a0ccae266fffb32db9dd1a88ea754c163946932d46ea",
+      "SourceBytecodeBytes": "10377",
+      "SourceBytecodeSha256": "cc6dcf8b5d097399c1a37011e79978699b4e81c39317c47687560dcf16a91645",
       "Tags": ""
     },
     "unreadable": [
@@ -3803,8 +3787,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "7282",
-      "SourceBytecodeSha256": "c38a8674a7779a2778fc5ce105670879d1ce126492eaa8172802e2a9d30f6633",
+      "SourceBytecodeBytes": "7790",
+      "SourceBytecodeSha256": "e0b7cd75aa78aea42d05c6a6cb74b2ef6ae4ca605319d4f348a3db4a0826a6d4",
       "Tags": ""
     },
     "unreadable": [
@@ -8443,8 +8427,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3421",
-      "SourceBytecodeSha256": "d34cbcb9c07fc99a91884fbb29d87050236d70ed5db93b645654182f46a7b9d4",
+      "SourceBytecodeBytes": "3289",
+      "SourceBytecodeSha256": "5fea16d2a77f6364fac89893e73060e147fbef1a5b78fde3b9c6a9a49b5d20b6",
       "Tags": ""
     },
     "unreadable": [
@@ -14789,22 +14773,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkDesignVersionRename",
-    "path": "LocalizationTools/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkDesignVersionRename",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "216",
-      "SourceBytecodeSha256": "1f915e39c7a7fb22624b0e5bb25ae9bb9dcba2985d62f1e85093c433884839ca",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "getFFlagDevFrameworkDropdownMenuHeight",
     "path": "LocalizationTools/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkDropdownMenuHeight",
     "properties": {
@@ -14877,22 +14845,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "213",
       "SourceBytecodeSha256": "f2bb6a6d56063dda948b055dd352b249b006cea07a6a76cfd590210065438ea9",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkIconButtonAsButton",
-    "path": "LocalizationTools/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkIconButtonAsButton",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "215",
-      "SourceBytecodeSha256": "3fcb8527fb5377b9c0d0a9573955ad4fc0e6c7d13f5c30d2e972112360d4dbac",
       "Tags": ""
     },
     "unreadable": [
@@ -32539,8 +32491,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "5747",
-      "SourceBytecodeSha256": "d205bece528f9d9d7689aa3d0700e36e4aec252d2f37e494e97711c3ed7fd6e2",
+      "SourceBytecodeBytes": "5876",
+      "SourceBytecodeSha256": "3b02ae36c34e2a73762bb5431300009f562957460126ec30f67031ae171488f4",
       "Tags": ""
     },
     "unreadable": [
@@ -38779,8 +38731,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "8262",
-      "SourceBytecodeSha256": "e09ccbeda383b3ae4d82a86412c9d4c2188b2b3e5eafaf0f8679eba747d15fbe",
+      "SourceBytecodeBytes": "8242",
+      "SourceBytecodeSha256": "529344eb126a88201742f82e002b012766d7e61c56a7e17bfffb7058c9575bb8",
       "Tags": ""
     },
     "unreadable": [

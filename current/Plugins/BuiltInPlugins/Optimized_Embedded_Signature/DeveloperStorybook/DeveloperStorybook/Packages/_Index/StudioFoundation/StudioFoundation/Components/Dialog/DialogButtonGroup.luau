@@ -6,11 +6,15 @@ local Framework = require(Packages.Framework)
 local React = require(Packages.React)
 local useWidgetRef = require(Main.Hooks.useWidgetRef)
 local Types = require(Main.Types)
+local getTertiaryActionTreatment = require(Main.Components.Dialog.getTertiaryActionTreatment)
+local isTextLabelTruncatedAsync = require(Main.Components.Dialog.isTextLabelTruncatedAsync)
 local useBindable = require(Main.Hooks.useBindable)
 local useButtonGroupFairWidth = require(Main.Components.Dialog.useButtonGroupFairWidth)
 
 local FFlagStudioFoundationDialogDeviceSimFixes =
 	require(Main.SharedFlags.getFFlagStudioFoundationDialogDeviceSimFixes)()
+local FFlagStudioDialogManagerTertiaryButtonVariant =
+	require(Main.SharedFlags.getFFlagStudioDialogManagerTertiaryButtonVariant)()
 
 local counter = Framework.Util.counter
 local MAX_BUTTON_WIDTH = 120
@@ -22,7 +26,7 @@ type DialogAction = Types.DialogAction
 
 type ButtonProps = {
 	action: DialogAction,
-	variant: "Emphasis" | "Standard" | "Utility",
+	variant: "Emphasis" | Types.DialogTertiaryActionVariant,
 	measureRef: ((GuiObject?) -> ())?,
 	widthOverride: number?,
 	LayoutOrder: number,
@@ -39,20 +43,59 @@ local Button = React.memo(function(props: ButtonProps)
 		Location = "Below",
 	})
 
-	local onStateChanged = React.useCallback(function(newState: Foundation.ControlState)
-		if ref.current and newState == Foundation.Enums.ControlState.Hover then
-			local textElement = if ref.current:IsA("TextLabel")
-				then ref.current
-				else ref.current:FindFirstChildWhichIsA("TextLabel")
+	local measurementThreadRef
+	if FFlagStudioDialogManagerTertiaryButtonVariant then
+		measurementThreadRef = React.useRef<<thread?>>(nil)
+		React.useEffect(function()
+			return function()
+				if measurementThreadRef.current then
+					task.cancel(measurementThreadRef.current)
+				end
+			end
+		end, { measurementThreadRef })
+	end
 
-			if textElement and not textElement.TextFits then
-				show()
+	local onStateChanged
+	if FFlagStudioDialogManagerTertiaryButtonVariant then
+		onStateChanged = React.useCallback(function(newState: Foundation.ControlState)
+			if measurementThreadRef.current then
+				task.cancel(measurementThreadRef.current)
+			end
+
+			local textElement = if ref.current and newState == Foundation.Enums.ControlState.Hover
+				then if ref.current:IsA("TextLabel")
+					then ref.current
+					else ref.current:FindFirstChildWhichIsA("TextLabel")
+				else nil
+
+			if textElement then
+				-- Measuring yields; leaving hover or unmounting cancels it before the tooltip can show
+				measurementThreadRef.current = task.spawn(function()
+					if isTextLabelTruncatedAsync(textElement) then
+						show()
+					end
+				end)
 				return
 			end
-		end
 
-		hide()
-	end, { ref, show, hide })
+			hide()
+		end, { measurementThreadRef :: unknown, ref, show, hide })
+	else
+		onStateChanged = React.useCallback(function(newState: Foundation.ControlState)
+			if ref.current and newState == Foundation.Enums.ControlState.Hover then
+				local textElement = if ref.current:IsA("TextLabel")
+					then ref.current
+					else ref.current:FindFirstChildWhichIsA("TextLabel")
+
+				if textElement and not textElement.TextFits then
+					show()
+					return
+				end
+			end
+
+			hide()
+		end, { ref, show, hide })
+	end
 
 	local onActivated = React.useCallback(function()
 		props.action.onActivated(props.action.uri)
@@ -70,7 +113,9 @@ local Button = React.memo(function(props: ButtonProps)
 		tag = "auto-xy",
 		onStateChanged = onStateChanged,
 		LayoutOrder = props.LayoutOrder,
-		testId = if FFlagStudioFoundationDialogDeviceSimFixes then `{props.testId}-wrapper` else nil,
+		testId = if FFlagStudioDialogManagerTertiaryButtonVariant or FFlagStudioFoundationDialogDeviceSimFixes
+			then `{props.testId}-wrapper`
+			else nil,
 	}, {
 		Button = e(Foundation.Button, {
 			ref = ref,
@@ -94,7 +139,7 @@ export type Props = {
 	tertiaryAction: DialogAction?,
 
 	LayoutOrder: Bindable<number>?,
-	tertiaryActionVariant: ("Standard" | "Utility")?,
+	tertiaryActionVariant: Types.DialogTertiaryActionVariant?,
 }
 
 local function DialogButtonGroup(props: Props)
@@ -116,11 +161,30 @@ local function DialogButtonGroup(props: Props)
 		registerButton("tertiary", rbx)
 	end, { registerButton })
 
-	-- Atomically allocate two LayoutOrder values: PrimaryAndSecondary first, tertiary second (right, grouped)
-	local primaryAndSecondaryOrder, tertiaryOrder = count(), count()
+	local tertiaryActionTreatment
+	local primaryAndSecondaryOrder, tertiaryOrder
+	if FFlagStudioDialogManagerTertiaryButtonVariant then
+		tertiaryActionTreatment = getTertiaryActionTreatment(props.tertiaryAction, props.tertiaryActionVariant)
+
+		-- Tertiary comes before primary/secondary if it's isolated
+		if tertiaryActionTreatment.isIsolated then
+			tertiaryOrder, primaryAndSecondaryOrder = count(), count()
+		else
+			primaryAndSecondaryOrder, tertiaryOrder = count(), count()
+		end
+	else
+		-- Atomically allocate two LayoutOrder values: PrimaryAndSecondary first, tertiary second (right, grouped)
+		primaryAndSecondaryOrder, tertiaryOrder = count(), count()
+	end
 
 	return e(Foundation.View, {
-		tag = "row align-x-right items-stretch gap-small size-full-0 auto-y",
+		tag = if FFlagStudioDialogManagerTertiaryButtonVariant
+			then {
+				["row items-stretch gap-small size-full-0 auto-y"] = true,
+				["flex-x-between"] = tertiaryActionTreatment.isIsolated,
+				["align-x-right"] = not tertiaryActionTreatment.isIsolated,
+			}
+			else "row align-x-right items-stretch gap-small size-full-0 auto-y",
 		onAbsoluteSizeChanged = onContainerSizeChanged,
 		LayoutOrder = layoutOrder,
 		testId = "--dialog-button-group",
@@ -128,8 +192,10 @@ local function DialogButtonGroup(props: Props)
 		Tertiary = if props.tertiaryAction
 			then e(Button, {
 				action = props.tertiaryAction,
-				variant = FFlagStudioFoundationDialogDeviceSimFixes and props.tertiaryActionVariant
-					or Foundation.Enums.ButtonVariant.Standard,
+				variant = if FFlagStudioDialogManagerTertiaryButtonVariant
+					then tertiaryActionTreatment.variant
+					else FFlagStudioFoundationDialogDeviceSimFixes and props.tertiaryActionVariant
+						or Foundation.Enums.ButtonVariant.Standard,
 				measureRef = tertiaryRef,
 				widthOverride = if buttonWidths then buttonWidths.tertiary else nil,
 				LayoutOrder = tertiaryOrder,
@@ -139,7 +205,7 @@ local function DialogButtonGroup(props: Props)
 		PrimaryAndSecondary = e(Foundation.View, {
 			tag = "row items-stretch gap-small auto-xy",
 			LayoutOrder = primaryAndSecondaryOrder,
-			testId = if FFlagStudioFoundationDialogDeviceSimFixes
+			testId = if FFlagStudioDialogManagerTertiaryButtonVariant or FFlagStudioFoundationDialogDeviceSimFixes
 				then "--dialog-button-primary-secondary-group"
 				else nil,
 		}, {

@@ -20,9 +20,34 @@ local function sanitize(s: string): string
 end
 
 local function urlEncode(s: string): string
-	return string.gsub(s, "([^%w_%%%-%.%*%?%(%)#~/:=])", function(c)
-		return string.format("%%%02X", string.byte(c))
-	end)
+	-- Match bytes, not UTF-8 codepoints. FeatureTest's pattern matcher leaves
+	-- some lead bytes (for example 0xC2 in U+00A0) unencoded.
+	local parts = table.create(#s)
+	for i = 1, #s do
+		local byte = string.byte(s, i)
+		local unreserved = (byte >= 48 and byte <= 57)
+			or (byte >= 65 and byte <= 90)
+			or (byte >= 97 and byte <= 122)
+			or byte == 95 -- _
+			or byte == 37 -- %
+			or byte == 45 -- -
+			or byte == 46 -- .
+			or byte == 42 -- *
+			or byte == 63 -- ?
+			or byte == 40 -- (
+			or byte == 41 -- )
+			or byte == 35 -- #
+			or byte == 126 -- ~
+			or byte == 47 -- /
+			or byte == 58 -- :
+			or byte == 61 -- =
+		if unreserved then
+			table.insert(parts, string.sub(s, i, i))
+		else
+			table.insert(parts, string.format("%%%02X", byte))
+		end
+	end
+	return table.concat(parts)
 end
 
 local function map(node: Node): string

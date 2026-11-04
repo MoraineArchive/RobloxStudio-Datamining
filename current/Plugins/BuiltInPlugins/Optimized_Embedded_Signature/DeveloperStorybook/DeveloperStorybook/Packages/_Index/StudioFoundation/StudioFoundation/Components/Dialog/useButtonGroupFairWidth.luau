@@ -4,6 +4,9 @@ local Packages = Main.Parent
 local React = require(Packages.React)
 local computeFairWidths = require(Main.Components.Dialog.computeFairWidths)
 
+local FFlagStudioDialogManagerTertiaryButtonVariant =
+	require(Main.SharedFlags.getFFlagStudioDialogManagerTertiaryButtonVariant)()
+
 --[[
 	Hook that measures button widths and distributes available space fairly.
 
@@ -140,7 +143,20 @@ local function useButtonGroupFairWidth(gapSize: number, maxButtonWidth: number?)
 			end)
 		)
 
-		if textLabel then
+		if FFlagStudioDialogManagerTertiaryButtonVariant and textLabel then
+			-- Only remeasure on changes to visible content (ContentText)
+			local contentText = textLabel.ContentText
+			table.insert(
+				connections,
+				textLabel:GetPropertyChangedSignal("ContentText"):Connect(function()
+					-- ContentText's changed signal fires w/o comparing old/new values
+					if textLabel.ContentText ~= contentText then
+						contentText = textLabel.ContentText
+						resetAndRemeasure(id)
+					end
+				end)
+			)
+		elseif textLabel then
 			table.insert(
 				connections,
 				textLabel:GetPropertyChangedSignal("Text"):Connect(function()

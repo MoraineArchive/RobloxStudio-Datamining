@@ -306,6 +306,7 @@
 ??0QString@@QEAA@HVQChar@@@Z	public: __cdecl QString::QString(int,class QChar) __ptr64
 ??0QString@@QEAA@HW4Initialization@Qt@@@Z	public: __cdecl QString::QString(int,enum Qt::Initialization) __ptr64
 ??0QString@@QEAA@VQChar@@@Z	public: __cdecl QString::QString(class QChar) __ptr64
+??0QString@@QEAA@VQLatin1String@@@Z	public: __cdecl QString::QString(class QLatin1String) __ptr64
 ??0QString@@QEAA@XZ	public: __cdecl QString::QString(void) __ptr64
 ??0QStringListModel@@QEAA@AEBVQStringList@@PEAVQObject@@@Z	public: __cdecl QStringListModel::QStringListModel(class QStringList const & __ptr64,class QObject * __ptr64) __ptr64
 ??0QStyleOptionButton@@QEAA@XZ	public: __cdecl QStyleOptionButton::QStyleOptionButton(void) __ptr64
@@ -718,6 +719,7 @@
 ??8QFont@@QEBA_NAEBV0@@Z	public: bool __cdecl QFont::operator==(class QFont const & __ptr64)const __ptr64
 ??8QKeySequence@@QEBA_NAEBV0@@Z	public: bool __cdecl QKeySequence::operator==(class QKeySequence const & __ptr64)const __ptr64
 ??8QModelIndex@@QEBA_NAEBV0@@Z	public: bool __cdecl QModelIndex::operator==(class QModelIndex const & __ptr64)const __ptr64
+??8QString@@QEBA_NVQLatin1String@@@Z	public: bool __cdecl QString::operator==(class QLatin1String)const __ptr64
 ??8QTextBlock@@QEBA_NAEBV0@@Z	public: bool __cdecl QTextBlock::operator==(class QTextBlock const & __ptr64)const __ptr64
 ??9FbxAxisSystem@fbxsdk@@QEBA_NAEBV01@@Z	public: bool __cdecl fbxsdk::FbxAxisSystem::operator!=(class fbxsdk::FbxAxisSystem const & __ptr64)const __ptr64
 ??9QColor@@QEBA_NAEBV0@@Z	public: bool __cdecl QColor::operator!=(class QColor const & __ptr64)const __ptr64
@@ -2006,6 +2008,7 @@
 ?geometryChanged@QScreen@@QEAAXAEBVQRect@@@Z	public: void __cdecl QScreen::geometryChanged(class QRect const & __ptr64) __ptr64
 ?get@?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAHXZ	public: int __cdecl std::basic_istream<char,struct std::char_traits<char> >::get(void) __ptr64
 ?get@?$time_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@QEBA?AV?$istreambuf_iterator@DU?$char_traits@D@std@@@2@V32@0AEAVios_base@2@AEAHPEAUtm@@PEBD4@Z	public: class std::istreambuf_iterator<char,struct std::char_traits<char> > __cdecl std::time_get<char,class std::istreambuf_iterator<char,struct std::char_traits<char> > >::get(class std::istreambuf_iterator<char,struct std::char_traits<char> >,class std::istreambuf_iterator<char,struct std::char_traits<char> >,class std::ios_base & __ptr64,int & __ptr64,struct tm * __ptr64,char const * __ptr64,char const * __ptr64)const __ptr64
+?get@QWidgetPrivate@@SAPEAV1@PEAVQWidget@@@Z	public: static class QWidgetPrivate * __ptr64 __cdecl QWidgetPrivate::get(class QWidget * __ptr64)
 ?getAndRef@ExternalRefCountData@QtSharedPointer@@SAPEAU12@PEBVQObject@@@Z	public: static struct QtSharedPointer::ExternalRefCountData * __ptr64 __cdecl QtSharedPointer::ExternalRefCountData::getAndRef(class QObject const * __ptr64)
 ?getExistingDirectory@QFileDialog@@SA?AVQString@@PEAVQWidget@@AEBV2@1V?$QFlags@W4Option@QFileDialog@@@@@Z	public: static class QString __cdecl QFileDialog::getExistingDirectory(class QWidget * __ptr64,class QString const & __ptr64,class QString const & __ptr64,class QFlags<enum QFileDialog::Option>)
 ?getFIntStudioMaxDockCount@DockPanelManager@Qtitan@@SAHXZ	public: static int __cdecl Qtitan::DockPanelManager::getFIntStudioMaxDockCount(void)
@@ -2036,6 +2039,7 @@
 ?green@QColor@@QEBAHXZ	public: int __cdecl QColor::green(void)const __ptr64
 ?greenF@QColor@@QEBANXZ	public: double __cdecl QColor::greenF(void)const __ptr64
 ?handle@QSplitter@@QEBAPEAVQSplitterHandle@@H@Z	public: class QSplitterHandle * __ptr64 __cdecl QSplitter::handle(int)const __ptr64
+?handle@QWindow@@QEBAPEAVQPlatformWindow@@XZ	public: class QPlatformWindow * __ptr64 __cdecl QWindow::handle(void)const __ptr64
 ?hasAttribute@QDomElement@@QEBA_NAEBVQString@@@Z	public: bool __cdecl QDomElement::hasAttribute(class QString const & __ptr64)const __ptr64
 ?hasAttribute@QXmlStreamAttributes@@QEBA_NAEBVQString@@@Z	public: bool __cdecl QXmlStreamAttributes::hasAttribute(class QString const & __ptr64)const __ptr64
 ?hasChildren@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z	public: virtual bool __cdecl QAbstractItemModel::hasChildren(class QModelIndex const & __ptr64)const __ptr64
@@ -2524,6 +2528,7 @@
 ?mapToGlobal@QWidget@@QEBA?AVQPoint@@AEBV2@@Z	public: class QPoint __cdecl QWidget::mapToGlobal(class QPoint const & __ptr64)const __ptr64
 ?mapToSource@QSortFilterProxyModel@@UEBA?AVQModelIndex@@AEBV2@@Z	public: virtual class QModelIndex __cdecl QSortFilterProxyModel::mapToSource(class QModelIndex const & __ptr64)const __ptr64
 ?margin@QLabel@@QEBAHXZ	public: int __cdecl QLabel::margin(void)const __ptr64
+?marginsAdded@QRect@@QEBA?AV1@AEBVQMargins@@@Z	public: class QRect __cdecl QRect::marginsAdded(class QMargins const & __ptr64)const __ptr64
 ?markContentsDirty@QTextDocument@@QEAAXHH@Z	public: void __cdecl QTextDocument::markContentsDirty(int,int) __ptr64
 ?match@QAbstractItemModel@@UEBA?AV?$QList@VQModelIndex@@@@AEBVQModelIndex@@HAEBVQVariant@@HV?$QFlags@W4MatchFlag@Qt@@@@@Z	public: virtual class QList<class QModelIndex> __cdecl QAbstractItemModel::match(class QModelIndex const & __ptr64,int,class QVariant const & __ptr64,int,class QFlags<enum Qt::MatchFlag>)const __ptr64
 ?match@QRegularExpression@@QEBA?AVQRegularExpressionMatch@@AEBVQString@@HW4MatchType@1@V?$QFlags@W4MatchOption@QRegularExpression@@@@@Z	public: class QRegularExpressionMatch __cdecl QRegularExpression::match(class QString const & __ptr64,int,enum QRegularExpression::MatchType,class QFlags<enum QRegularExpression::MatchOption>)const __ptr64
@@ -2917,6 +2922,7 @@
 ?pixmap@QIcon@@QEBA?AVQPixmap@@PEAVQWindow@@AEBVQSize@@W4Mode@1@W4State@1@@Z	public: class QPixmap __cdecl QIcon::pixmap(class QWindow * __ptr64,class QSize const & __ptr64,enum QIcon::Mode,enum QIcon::State)const __ptr64
 ?pixmap@QLabel@@QEBA?AVQPixmap@@W4ReturnByValueConstant@Qt@@@Z	public: class QPixmap __cdecl QLabel::pixmap(enum Qt::ReturnByValueConstant)const __ptr64
 ?placeholderText@QLineEdit@@QEBA?AVQString@@XZ	public: class QString __cdecl QLineEdit::placeholderText(void)const __ptr64
+?platformNativeInterface@QGuiApplication@@SAPEAVQPlatformNativeInterface@@XZ	public: static class QPlatformNativeInterface * __ptr64 __cdecl QGuiApplication::platformNativeInterface(void)
 ?pointSize@QFont@@QEBAHXZ	public: int __cdecl QFont::pointSize(void)const __ptr64
 ?pointSizeF@QFont@@QEBANXZ	public: double __cdecl QFont::pointSizeF(void)const __ptr64
 ?polish@CommonStyle@Qtitan@@UEAAXPEAVQApplication@@@Z	public: virtual void __cdecl Qtitan::CommonStyle::polish(class QApplication * __ptr64) __ptr64
@@ -3335,6 +3341,7 @@
 ?saveStateToDevice@DockPanelManager@Qtitan@@QEAA_NPEAVQIODevice@@@Z	public: bool __cdecl Qtitan::DockPanelManager::saveStateToDevice(class QIODevice * __ptr64) __ptr64
 ?sbumpc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHXZ	public: int __cdecl std::basic_streambuf<char,struct std::char_traits<char> >::sbumpc(void) __ptr64
 ?scale@QGraphicsView@@QEAAXNN@Z	public: void __cdecl QGraphicsView::scale(double,double) __ptr64
+?scaleAndOrigin@QHighDpiScaling@@SA?AUScaleAndOrigin@1@PEBVQWindow@@PEAVQPoint@@@Z	public: static struct QHighDpiScaling::ScaleAndOrigin __cdecl QHighDpiScaling::scaleAndOrigin(class QWindow const * __ptr64,class QPoint * __ptr64)
 ?scaled@QImage@@QEBA?AV1@AEBVQSize@@W4AspectRatioMode@Qt@@W4TransformationMode@4@@Z	public: class QImage __cdecl QImage::scaled(class QSize const & __ptr64,enum Qt::AspectRatioMode,enum Qt::TransformationMode)const __ptr64
 ?scaled@QImage@@QEBA?AV1@HHW4AspectRatioMode@Qt@@W4TransformationMode@3@@Z	public: class QImage __cdecl QImage::scaled(int,int,enum Qt::AspectRatioMode,enum Qt::TransformationMode)const __ptr64
 ?scaled@QPixmap@@QEBA?AV1@AEBVQSize@@W4AspectRatioMode@Qt@@W4TransformationMode@4@@Z	public: class QPixmap __cdecl QPixmap::scaled(class QSize const & __ptr64,enum Qt::AspectRatioMode,enum Qt::TransformationMode)const __ptr64
@@ -4223,6 +4230,7 @@
 ?staticMetaObject@QTreeView@@2UQMetaObject@@B	public: static struct QMetaObject const QTreeView::staticMetaObject
 ?staticMetaObject@QTreeWidget@@2UQMetaObject@@B	public: static struct QMetaObject const QTreeWidget::staticMetaObject
 ?staticMetaObject@QWidget@@2UQMetaObject@@B	public: static struct QMetaObject const QWidget::staticMetaObject
+?staticMetaObject@QWidgetAction@@2UQMetaObject@@B	public: static struct QMetaObject const QWidgetAction::staticMetaObject
 ?staticMetaObject@QWindow@@2UQMetaObject@@B	public: static struct QMetaObject const QWindow::staticMetaObject
 ?staticQtMetaObject@QObject@@1UQMetaObject@@B	protected: static struct QMetaObject const QObject::staticQtMetaObject
 ?status@QDataStream@@QEBA?AW4Status@1@XZ	public: enum QDataStream::Status __cdecl QDataStream::status(void)const __ptr64
@@ -4417,6 +4425,7 @@
 ?toolTip@QWidget@@QEBA?AVQString@@XZ	public: class QString __cdecl QWidget::toolTip(void)const __ptr64
 ?top@QRect@@QEBAHXZ	public: int __cdecl QRect::top(void)const __ptr64
 ?top@QRectF@@QEBANXZ	public: double __cdecl QRectF::top(void)const __ptr64
+?topData@QWidgetPrivate@@QEBAPEAUQTLWExtra@@XZ	public: struct QTLWExtra * __ptr64 __cdecl QWidgetPrivate::topData(void)const __ptr64
 ?topDockWindow@DockPanelBase@Qtitan@@QEBAPEAVDockWindowBase@2@XZ	public: class Qtitan::DockWindowBase * __ptr64 __cdecl Qtitan::DockPanelBase::topDockWindow(void)const __ptr64
 ?topLeft@QRect@@QEBA?AVQPoint@@XZ	public: class QPoint __cdecl QRect::topLeft(void)const __ptr64
 ?topLeft@QRectF@@QEBA?AVQPointF@@XZ	public: class QPointF __cdecl QRectF::topLeft(void)const __ptr64

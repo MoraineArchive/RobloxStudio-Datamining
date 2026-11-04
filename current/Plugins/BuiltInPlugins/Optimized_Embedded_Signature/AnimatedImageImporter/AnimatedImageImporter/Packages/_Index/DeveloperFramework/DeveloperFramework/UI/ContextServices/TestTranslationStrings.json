@@ -1,0 +1,1 @@
+[{"key":"Studio.TestFramework.Spec.greeting_formal","values":{"es":"Hola","es-es":"Hola"}},{"key":"Studio.TestFramework.Spec.greeting_informal","values":{"es":"{friend}{days}","es-es":"¿Qué pasa {friend}? No te he visto en {days:int} días"}}]

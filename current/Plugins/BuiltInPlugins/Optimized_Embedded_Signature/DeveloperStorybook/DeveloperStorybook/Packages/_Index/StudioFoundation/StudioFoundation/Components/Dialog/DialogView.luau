@@ -13,6 +13,8 @@ local useDialogIconProps = require(Main.Components.Dialog.useDialogIconProps)
 
 local FFlagStudioFoundationDialogDeviceSimFixes =
 	require(Main.SharedFlags.getFFlagStudioFoundationDialogDeviceSimFixes)()
+local FFlagStudioDialogManagerTertiaryButtonVariant =
+	require(Main.SharedFlags.getFFlagStudioDialogManagerTertiaryButtonVariant)()
 
 local counter = Framework.Util.counter
 local e = React.createElement
@@ -37,7 +39,7 @@ export type Props = {
 	width: number?,
 
 	isContentFullBleed: boolean?,
-	tertiaryActionVariant: ("Standard" | "Utility")?,
+	tertiaryActionVariant: Types.DialogTertiaryActionVariant?,
 
 	onAbsoluteSizeChanged: ((rbx: GuiObject) -> ())?, -- Not bindable since View's onAbsoluteSizeChanged property isn't bindable
 
@@ -221,8 +223,10 @@ local function DialogView(props: Props)
 				primaryAction = props.primaryAction,
 				secondaryAction = props.secondaryAction,
 				tertiaryAction = props.tertiaryAction,
-				tertiaryActionVariant = FFlagStudioFoundationDialogDeviceSimFixes and props.tertiaryActionVariant
-					or nil,
+				tertiaryActionVariant = if FFlagStudioDialogManagerTertiaryButtonVariant
+						or FFlagStudioFoundationDialogDeviceSimFixes
+					then props.tertiaryActionVariant
+					else nil,
 			}),
 	})
 end

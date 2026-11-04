@@ -13,6 +13,8 @@ local FFlagStudioFoundationDialogWidthRenderFix =
 	require(Main.SharedFlags.getFFlagStudioFoundationDialogWidthRenderFix)()
 local FFlagStudioFoundationDialogDeviceSimFixes =
 	require(Main.SharedFlags.getFFlagStudioFoundationDialogDeviceSimFixes)()
+local FFlagStudioDialogManagerTertiaryButtonVariant =
+	require(Main.SharedFlags.getFFlagStudioDialogManagerTertiaryButtonVariant)()
 
 local e = React.createElement
 
@@ -46,7 +48,7 @@ export type Props = {
 	isContentFullBleed: boolean?,
 	--- Defaults to true
 	modal: boolean?,
-	tertiaryActionVariant: ("Standard" | "Utility")?,
+	tertiaryActionVariant: Types.DialogTertiaryActionVariant?,
 	toolDialog: boolean?,
 }
 
@@ -98,7 +100,8 @@ local function Dialog(props: Props)
 			tertiaryAction = wrappedDialogActions.tertiaryAction,
 			width = props.width,
 			isContentFullBleed = if FFlagStudioFoundationDialogDeviceSimFixes then props.isContentFullBleed else nil,
-			tertiaryActionVariant = if FFlagStudioFoundationDialogDeviceSimFixes
+			tertiaryActionVariant = if FFlagStudioDialogManagerTertiaryButtonVariant
+					or FFlagStudioFoundationDialogDeviceSimFixes
 				then props.tertiaryActionVariant
 				else nil,
 			onAbsoluteSizeChanged = onAbsoluteSizeChanged,

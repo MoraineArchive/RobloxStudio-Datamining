@@ -33,6 +33,7 @@ export type PanelHandler = {
 
 -- Dialog
 export type DialogType = "Default" | "Warning" | "Critical" | "Success"
+export type DialogTertiaryActionVariant = "Standard" | "Utility" | "Link" | "Alert"
 export type DialogAction = {
 	uri: StudioUri,
 	text: string,

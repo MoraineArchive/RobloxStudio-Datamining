@@ -21,40 +21,46 @@ $tIǁ
 <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.5-c014 79.151481, 2013/03/13-12:09:15        "> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmp:CreatorTool="Adobe Photoshop CC (Windows)" xmpMM:InstanceID="xmp.iid:F8DE8FD7272E11E489A6CDE46C99CA59" xmpMM:DocumentID="xmp.did:F8DE8FD8272E11E489A6CDE46C99CA59"> <xmpMM:DerivedFrom stRef:instanceID="xmp.iid:F8DE8FD5272E11E489A6CDE46C99CA59" stRef:documentID="xmp.did:F8DE8FD6272E11E489A6CDE46C99CA59"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?><n9c
 <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.5-c021 79.154911, 2013/10/29-11:47:16        "> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmpMM:OriginalDocumentID="xmp.did:2608BAA3C620681180838E23F0DC6224" xmpMM:DocumentID="xmp.did:18386D72AAF111E38B9D871882A8E559" xmpMM:InstanceID="xmp.iid:18386D71AAF111E38B9D871882A8E559" xmp:CreatorTool="Adobe Photoshop CC (Macintosh)"> <xmpMM:DerivedFrom stRef:instanceID="xmp.iid:701d8ce0-b046-4164-8450-f955e0cf5f04" stRef:documentID="xmp.did:2608BAA3C620681180838E23F0DC6224"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>L7nj
 ?س]?س]?س]?س]?
-@2ж}
-@4@ԁ
-@:`߅
-@:Е|
-@ʐev
-@Ҡ&}
-@Ұiv
+@20Ԑ
+@2Їz
+@2Оx
+@40Ԑ
+@:Оx
+@bОx
+@j0Ԑ
+@jЇz
+@jОx
+@ʰ<z
+@ڰ<z
 A+ŀ<$
 A+ɺ??
 A;ϸ?
 AHǃTl
 A\_^[]ù 
 A^_[ø
-A^_^][Ày(
 A_A\^]ø(
 A_A^A\_^[]À|$1
 A_A^A\_^[]À|$@
+A_A^A\_^[]Ð>ۆ
+A_A^A\_^[Ðq6
 A_A^A]A\^]ø(
 A_A^A]A\_^[]À|$9
+A_A^A]A\_^[]À|$P
 A_A^A]A\_^[]À|$a
 A_A^A]A\_^[]À}0
 A_A^A]A\_^[]À~ 
 A_A^A]A\_^[]ùP
 A_A^A]A\_^[]ú@
-A_A^A]A\_^[]餼t
+A_A^A]A\_^[ÐL*
 A_A^A]A\_^[ùP
 A_A^A]A\_^][ùx
 A_A^A]A\_^]Àz,
 A_A^A]A\_^]À|$a
-A_A^A]A\_^]Ð]ס
 A_A^A]A\_^]ù 
 A_A^A]A\_^]ù0
 A_A^A]A\_^]ùh
 A_A^A]A\_^]ùp
+A_A^A]A\_^]ú
 A_A^A]A\_^]þ 
 A_A^A]_^[]Ã|$P
 A_A^[]ø&
@@ -78,16 +84,16 @@ Ai͑,
 AiӅ{
 AiӚy
 AƆ '
-AƆ(1
-AƆ0M
-AƆ81
+AƆ T
+AƆ0+
+AƆ2K
 AƆ8I
-AƆH,
-AƆPW
-AƆQK
-AƆX*
-AƆXM
+AƆ@K
+AƆHN
 AƆ`'
+AƆhX
+AƆl+
+AƆpN
 AƇ(.
 AƇ@,
 AƇP-
@@ -96,9 +102,12 @@ AƇx+
 AǃPl
 AǅPd
 Aǅ`#
-AǆH?
-AǆX=
-Aǆe?
+Aǆ,>
+Aǆ0?
+AǆH=
+Aǆ`?
+Aǆh3
+Aǆx=
 AǇPd
 AǇx-
 C̙N还(
@@ -129,18 +138,20 @@ Hcٸ
 HsP"*Ҭ$
 Hǀ v
 HǁX=
-HǁX^
+Hǁp_
 Hǁx 
+HǂX8
 Hǃ u
+Hǃ(]
 Hǃ(u
 Hǃ@!
-Hǃ`X
-HǃpX
-HǄ$("
-HǄ$8#
+Hǃh%
+Hǃx3
+HǃxY
+HǄ$8"
 HǄ$H 
-HǄ$H"
-HǄ$h"
+HǄ$H#
+HǄ$x"
 Hǅ -
 Hǅ(-
 Hǅ(.
@@ -149,9 +160,10 @@ Hǅ(<
 Hǅ(=
 Hǅ(>
 Hǅ(?
+Hǅ8#
 Hǅ@,
 Hǅ@-
-HǅD*
+HǅH,
 HǅH-
 HǅH.
 HǅH/
@@ -159,6 +171,7 @@ HǅH<
 HǅH=
 HǅH>
 HǅH?
+HǅT*
 HǅX#
 HǅXI
 Hǅh-
@@ -170,23 +183,29 @@ Hǅh>
 Hǅh?
 Hǅp?
 Hǅx?
+Hǆ(]
 Hǆ4?
+Hǆ4d
 HǆL?
 HǇ0<
-HǇp^
-HǇx^
 I+Ā<0
 IDATΈ[
-Iǆ8?
-IǆH<
-IǆH=
+Iǆ ?
+Iǆ8=
+IǆP?
+Iǆh=
+IǆpL
 IǇ0&
 IǇP&
 IǇp&
 L#Ѐ|$ 
+N֭0屃g
 P+2Ǐf
-Pd`ͯ
+P2Їz
+P2Оx
+P4б{
 Português (Brasil)
+R&\Ǿ
 StudioDeviceSimulatorService: no device is active — call SetDeviceAsync() first
 That video is too long – try a video shorter than 15 seconds.
 Tiếng Việt
@@ -225,29 +244,25 @@ Yـ4B:\Client\dependencies\xiph-opus\celt\entenc.c
 [fZHRӶ&
 ^Dڮn
 ^[ø&
-_^Ð覡
-`2 ҄
-`2@ß
-`2@ԁ
-`2pş
-`4`ǅ
-`:ж}
-`<0߱
-`zж}
+`0:Їz
+`20Ԑ
+`2Pϕ
+`2Їz
+`2Оx
+`40Ԑ
+`:0Ԑ
+`:Оx
+`<PͲ
+`bОx
+`l Ӱ
+`rСy
 `}mٙ
-`ʀf~
-`ʐ0|
-`ʐev
-`ʰiv
-`Ҡ'}
-`Ԑov
-`ڐev
-`ڰiv
-b6̏_
+`ʠ5y
+`Ұ<z
+`ڰ<z
+fAǆ0K
 fAǇd,
 fD#ȸ
-fǅ( 
-fǅ(!
 fǅ("
 fǅ(#
 fǅ($
@@ -256,8 +271,7 @@ fǅ(&
 fǅ('
 fǅ((
 fǅ()
-fǅ8 
-fǅ8!
+fǅ(*
 fǅ8"
 fǅ8#
 fǅ8$
@@ -266,8 +280,7 @@ fǅ8&
 fǅ8'
 fǅ8(
 fǅ8)
-fǅH 
-fǅH!
+fǅ8*
 fǅH"
 fǅH#
 fǅH$
@@ -276,8 +289,7 @@ fǅH&
 fǅH'
 fǅH(
 fǅH)
-fǅX 
-fǅX!
+fǅH*
 fǅX"
 fǅX#
 fǅX$
@@ -286,8 +298,7 @@ fǅX&
 fǅX'
 fǅX(
 fǅX)
-fǅh 
-fǅh!
+fǅX*
 fǅh"
 fǅh#
 fǅh$
@@ -296,8 +307,7 @@ fǅh&
 fǅh'
 fǅh(
 fǅh)
-fǅx 
-fǅx!
+fǅh*
 fǅx"
 fǅx#
 fǅx$
@@ -306,54 +316,46 @@ fǅx&
 fǅx'
 fǅx(
 fǅx)
+fǅx*
 fǆd#
 hW@ˆ
 iȁ@ 
 khіD.ʧ
 layRǅ
 lȘ~#
-p2 ҄
-p2@ԁ
-p2pş
-p2ж}
-p4pş
-pjж}
-pҠ&}
+p2Оx
+p40Ԑ
+pbОx
+pʰ<z
 qD:?ǅ
 r݀~U
 r߃|$H
 ss!wڬ{
 să{|
-t Ɓe?
 t"AƆ
-t(膽A
-tA蹅$
+t2AƇ
 taǁ(u
 time(ms) - The time spent between “login success” and “user sees first frame of start page”.
-tzǃ@8
+tzǃP8
 tǀ{8
 t׀~q
 tـyA
 u"2Ҁ|$\
-u6谭.
-uV誊Q
-uW賏)
-uY蹃q
-uc腰_
-uc襢6
+u4返,
+uS褱I
+uV躠V
+uY蹂r
 uр~(
 uՀ|$(
 wyB)pԣʁʀ
 yz暍p
 yֈ>ǅ
 ï2➱2M
-Ƅ$ #
-Ƅ$0"
-Ƅ$@#
-Ƅ$P"
-Ƅ$p"
+Ƅ$ "
+Ƅ$0#
+Ƅ$P#
+Ƅ$`"
 ȟDg&J
-ȯHAdsLifecycleManager
 ʚ;ArenaAllocator::Realloc failed
 ʚ;No error.
 ̀|$ 
@@ -367,24 +369,10 @@ yֈ>ǅ
 β γ η μ ρ φ χ ψ
 β θ δ ζ λ ξ
 ι[H.
-Ѐ|$D
-Ђ0mv
-Є0mv
+Ѐ|$E
 Іdentity generated failed, not_before is after not_after.
 Б В Е П З О С Э
 Б В Е Ш З О С Э
-В0R{
-В0mv
-В@pv
-В`^v
-К0mv
-К0|v
-К`^v
-М`^v
-Т`^v
-Ф`^v
-Ъ0mv
-Ъ`^v
 р у ф
 х п н ш е з о с
 Ա Մ Ւ Ս Բ Գ Դ Օ
@@ -417,7 +405,6 @@ yֈ>ǅ
 ਇ ਈ ਉ ਏ ਓ ੳ ਿ ੀ
 ਕ ਗ ਙ ਚ ਜ ਤ ਧ ਸ
 ਠ ਰ ੦
-ਲ`^v
 ੦ ੧ ੨ ੩ ੭
 ઈ ઊ િ ી લી શ્ચિ જિ સી
 ખ ગ ઘ ઞ ઇ ઈ ઠ જ

@@ -46,12 +46,17 @@ type Icon = {
 }
 
 export type BadgeProps = {
+	-- Label shown inside the badge. Omit for an icon-only badge.
 	text: string?,
+	-- BuilderIcons name or icon config rendered with the label.
 	icon: (string | Icon)?,
+	-- Color treatment of the badge. Defaults to `BadgeVariant.Contrast`.
 	variant: BadgeVariant?,
+	-- Outline shape of the badge. Defaults to `BadgeShape.Pill`.
 	shape: BadgeShape?,
+	-- Size of the badge. Defaults to `BadgeSize.Small`.
 	size: BadgeSize?,
-	-- DEPRECATED
+	-- **DEPRECATED**: Badges are not interactive. Still accepted but ignored.
 	isDisabled: boolean?,
 } & Types.CommonProps
 
@@ -145,7 +150,7 @@ local function Badge(badgeProps: BadgeProps, ref: React.Ref<GuiObject>?)
 		View,
 		withCommonProps(props, {
 			backgroundStyle = variantProps.container.backgroundStyle,
-			stroke = if Flags.FoundationBadgeBetaUpdate then nil else variantProps.container.stroke,
+			stroke = variantProps.container.stroke,
 			tag = variantProps.container.tag,
 			ref = ref,
 		}),
