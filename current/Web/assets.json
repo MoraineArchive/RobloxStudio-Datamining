@@ -3,681 +3,673 @@
     "path": "assets.create.roblox.com/page-0/script-000.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "d1e254c0f397341fae3e1b17448b40ad0db523f1d528da7da83efc91d9532874",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/index.cjs.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/index.cjs.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/browser-detect.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/browser-detect.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-001.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "7669c392e9f01e05f4b451042786ccc53394a0c3f333bad20f2115be5f28ab9f",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/3podst0h8bl0w.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3podst0h8bl0w.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/3-7ptyw3r6ude.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3-7ptyw3r6ude.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-002.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "9917ac4487328f5ad4b4a72b4143d4ba1229f48c05df0838981918ac076a42e6",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/39r_thgmoqwze.js.map",
+    "sha256": "b37ccf212eeb2401911faad83a24a62e40894a471730cf85a25c5b1c7a9ac46f",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/0q9r7866362j2.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/38937kgc2f5vh.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/43uq3um1vdx_q.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-003.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "1049a91b616cf6891bff51dc6dcca6b777e14e6a0f859730df2eeddd50085b08",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0v5p-x8135bnz.js.map",
+    "sha256": "7bf8471d7010d72d0e03080a5e0dc8aa679d12083ccf3d656cf800c3b8d5f4f0",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/43_keb7pv14o0.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/2ph1xj-lvzmjg.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/2vczqwffalags.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-004.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "00991a742ec20328e4179210a57090549fe8522f7033ebe70266963531b99ddd",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/15k3s3lxsnrh2.js.map",
+    "sha256": "4df6a2c384da5eb910859a4989a7d1a96b26d6dd62738bd927150f778db9d8b2",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1tr-7h62fcaea.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/1o_f51g_p1q3e.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1th4mx7ws3jvn.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-005.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "7bf8471d7010d72d0e03080a5e0dc8aa679d12083ccf3d656cf800c3b8d5f4f0",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/43_keb7pv14o0.js.map",
+    "sha256": "491bbcda1a1d59fc0c26286169efe36c4d4e803f601fbfb3d0cb6c95ecfa9806",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/291h-ryf5x57s.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/2vczqwffalags.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/2hsw0lbgjd0es.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-006.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "26f41f5326e866e07e8e6d6532f3dc343cb01ea8b455d1fb39a3cb9d6df55e54",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/2zp2a-rmpl1bf.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/2zp2a-rmpl1bf.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/1-i4nq-m7wnib.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1-i4nq-m7wnib.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-007.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "9a354fbc3cfd358cb36c0ed39d5e9b1d61e1899145d0e0aa040b4ef743f15106",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0grfgrtyz6k75.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/0grfgrtyz6k75.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/1cl-wb0kc1ixi.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1cl-wb0kc1ixi.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-008.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "fc8e113774fd2cc6647614c192a7351fec4cc911975e61f6581a5577928be7b2",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/3g984yqhihhe1.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3g984yqhihhe1.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/054-jxxon88o0.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/054-jxxon88o0.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-009.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "21403b4b5b79aa39d4cb1db604de1055d36480e4d9893f4cae14cc5c0ba082cd",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0jw1ki8xslu0y.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/0jw1ki8xslu0y.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/029r2--r5on58.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/029r2--r5on58.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-010.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "224e217979c17be538cc245835b5601d68942a713c1a70dfb537db46015db6a8",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0z8mfqexg-iom.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/0z8mfqexg-iom.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0k4y34-3lyn1x.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/0k4y34-3lyn1x.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-011.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "31c1eb66c370f29336ef38ee3450526ceed3c382529c798ad00797f62785ddd4",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/1b6bi9k0_5v39.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1b6bi9k0_5v39.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/3q9nbfcawf7mc.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3q9nbfcawf7mc.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-012.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "c8997948712b484661ce1ea1ece51a27dc284a921f678dee1d52e5d727724148",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/29tm7a4vvsq6z.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/29tm7a4vvsq6z.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0yk7f3xm_4f7-.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/0yk7f3xm_4f7-.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-013.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "7f87d7bab340e5fc409336d835a02efa18da1cfc0805813f0c3304736748b31d",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/3bgtbfqcrjem2.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3bgtbfqcrjem2.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/2o8-5zp8vi2rb.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/2o8-5zp8vi2rb.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-014.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "5a97c3c61098f855a5d4b1fe49ce4f2c6212545b0f5d35e16ec96562afe20d25",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/1738nzb254ksh.js.map",
+    "sha256": "0d1c4650ba7468346bbf8408f5948f6bf91166ea20615e653bf85afc5adfd6a1",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/2h664j7dg8h60.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/2el6em6auwuxo.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/0mtwern7obgp8.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-015.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "0d1c4650ba7468346bbf8408f5948f6bf91166ea20615e653bf85afc5adfd6a1",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/2h664j7dg8h60.js.map",
+    "sha256": "3aa7d732ce78f9d3cb5ffe968b65da7ffc50b0418f6d2c5e5c8de8cb7aeb0b3e",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/0re8fcwuawp1n.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0mtwern7obgp8.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3cq82l5nx-jhd.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-016.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "ba4ff1c1ea6cf869854fc1b1d6a0d74b51ab980e1cc589c1827da22230172154",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/2ll4eujkb_djf.js.map",
+    "sha256": "5b11f1c8ea84dfc16ebf6470fde17d9532c701a3881d5b4c13d4e5454d8e0c80",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3symzi5t0s2l_.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0ygr6yu6g1ist.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/14atn-al2h1sv.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-017.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "5dab0e2d11a4f0d85744caab88d9071daa8708d3950affc54e36aa5339847306",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0ymlc1bhf4mu-.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/0ymlc1bhf4mu-.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/2150-mvr0qmoy.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/2150-mvr0qmoy.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-018.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "99654013637966e25d4d170df42cb776676565180564e7a220e951e49c332348",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/42_6auslaakpo.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/42_6auslaakpo.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0xzh_-_-86uds.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/0xzh_-_-86uds.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-019.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "ab5ba92348b38eca44528dba375d58eafa85f2eea133df5c6124fe76ef6a6a78",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/3uci03iyzmn6l.js.map",
+    "sha256": "0f8c67a1dea13d050acccca9ed1ddaf916b68a2fad0a87794a54a6162927df97",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/11nsf5lew9cby.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/3knd5kynz89ls.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3ssxev9hfy-z9.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-020.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "ae0f4ba336a139df4b209afcb348f6b97727cea65ce3f711f61d61e36af5f797",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/25hc1vlgt8eg2.js.map",
+    "sha256": "a9b1dd8e5e37b635099945231b5bd2f0391f71f192e621f758fdf8b0f6ead7a2",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3cot9kxydyd2d.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0lqbqq7_hinge.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3dqn8htvn3hyq.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-021.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "e56e8af14aeba429f0f76bfb71bb1c1337d89cc5e77dbda8e05b912ebcd41f2d",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/01f180-l40xt0.js.map",
+    "sha256": "cf3bba8da03d6fb9fab03e2ef502ac0533fcedbd888cc6c0d2bd77934fbe34ad",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/0x4dh88ivvc3x.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/1_9mgnz6bw-pg.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/00jz0ywzr6dkd.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-022.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "ed4eeaeeae05faf503bc16878955c620d18ee4e0a524b26c0798ce2ae1ea22f1",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/40wf1h5ursw6r.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/40wf1h5ursw6r.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/1pc_2iyq0loua.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1pc_2iyq0loua.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-023.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "13a268844915eb2cc54745ba45efad88e2299b580fc72eb8d9aad61c60bd8a71",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/33282oo93g0sb.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/33282oo93g0sb.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/1l_um5zkw0tey.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1l_um5zkw0tey.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-024.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "9e0f6b29e454ae7d9a92eb9d6fc2bb04d6e68f25e73704191705d0e9fa999698",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0j3ckh5n3g5c_.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/0j3ckh5n3g5c_.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/3r_v1hbk6x3nb.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3r_v1hbk6x3nb.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-025.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "249578e389a48644a28a14a651dd2fae9a74b4157d5275264d9292cc5560a570",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/073w9osr-n51i.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/073w9osr-n51i.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/2jr88e5j72ubr.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/2jr88e5j72ubr.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-026.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "75620e6a36de914a71c497d1c9a835c86b8c217b1067921cbb11df0c81810a2b",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/2wlzhkn4574jd.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/2wlzhkn4574jd.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/2jgs_me-r1-4n.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/2jgs_me-r1-4n.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-027.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "5717ffb81fcb881d6659a44ebeb390e58e4684b2513d45aba8dcb0d86dc7d613",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/1rgoo8t32bhae.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1rgoo8t32bhae.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0cijvjiiwbj3u.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/0cijvjiiwbj3u.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-028.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "ae10107852474b7cdb0e2c25993acbc7a0f2239f68567cc33e2d1fed15bfc735",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0k5ikifthtjb2.js.map",
+    "sha256": "d0486f5bb742405492219fda78afa6d99b5d3ada6ea399a3a631da72e9fb96be",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1ed4hu85aodpg.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0v4g-t7j9cnjv.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1yal-46mudpmd.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-029.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "2eb7161925a10e97391dc97ba2b3d6d1ab46b65b00fa756580d34b543791d600",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/13eh_okbmz7i8.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/13eh_okbmz7i8.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0t5aaws8ha2gy.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/0t5aaws8ha2gy.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-030.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "23a607ba5dd7c2facf945d5c714281364841e1471cf699c10dddd77ab0e7e542",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/2v6v_14hya76x.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/2v6v_14hya76x.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/088n4ncx9r23z.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/088n4ncx9r23z.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-031.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "d30821cb388f11f0eb9878e3141cf178217703ec961df1d5adb3b00e4f9166c3",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/2aktksj3of4nx.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/2aktksj3of4nx.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/04zp4q6gkjz34.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/04zp4q6gkjz34.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-032.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "af130576c9dd544b0ddf75385178910736e750e51d64ea2081e11441d1c04190",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0m8tdmu5pxofg.js.map",
+    "sha256": "2a6b59cc747a18ce39b7c9914b082a4614b2d5dd9cf4d281f3e008562d7a5864",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/01yh5un60iyvo.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/3utgcd_03gn72.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/2gikojimbpb84.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-033.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "ab688d6a9295c5f3760936136ee8b790d33e881057b4ffaa8dab705da4db63cf",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/25-wvbh13gpsq.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/25-wvbh13gpsq.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/3mc57knjb20hs.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3mc57knjb20hs.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-034.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "69b814a1dae1f749bcda777aadebacf46e9ba988e4bafda6d50735150982ec6a",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/388hbxt2pkj66.js.map",
+    "sha256": "8b17310f973cdce3efd48242ebd04bf874dd4d56345e61b58d52196020479931",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3agl-aab9_wwx.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/2h9h64tascddw.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/2x1ivu-wuqgco.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-035.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "f93db6b8db6860bf58c92e4f824091e9c9e3711703e31ec09d8fb7b6c61f636c",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0aa3_6j_t02wd.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/0aa3_6j_t02wd.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/1choot-jpbm3q.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1choot-jpbm3q.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-036.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "ef6dcde6acedc2381ae6d293c6b63dea3a91e3f77ba6dbb038b14054b65696d5",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/3h1w6a5c-bzm1.js.map",
+    "sha256": "60266bf58f97f33bfeff0ac84099c76b2ac03e1e7fb6820515c2ea24de9ef787",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3cud-d9fun6h7.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/3uu6kh5dfu_jm.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3v17856_p7lfi.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-037.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "7d6c1b46a49c3b334183b32bf0f42909cfcee76fae0e421e3bb4a4f697c69536",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/22tubew9t7sep.js.map",
+    "sha256": "4e0870c54109602152f3a99d26eb9e1e41b39886ffb562959a2d50595cd59773",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1ckktad-3f_bn.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/2p6i-305ym3sm.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1ebab9o94z17r.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-038.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "253a4fecf73a1f460c5696bcf1c6807100d085c162f7745773695e8c6acca0cb",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/1gznzzdgbt3tg.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1gznzzdgbt3tg.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/2rk4n18t1wxn1.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/2rk4n18t1wxn1.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-039.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "0f8c67a1dea13d050acccca9ed1ddaf916b68a2fad0a87794a54a6162927df97",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/11nsf5lew9cby.js.map",
+    "sha256": "ab5ba92348b38eca44528dba375d58eafa85f2eea133df5c6124fe76ef6a6a78",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3uci03iyzmn6l.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/3ssxev9hfy-z9.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3knd5kynz89ls.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-040.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "3cd494c6cb141f38db1753a25c58fe365e2cc2a0569e7e3a802f3ba7207fde9e",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/1akbc-eqcht4i.js.map",
+    "sha256": "2f65b190b0e043602d99ece4bf14a6880ea30ce9de7bd44e26cdc1b16322a488",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3fq3ywxl2bldr.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/41crzfo4-smog.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/18rv0m7ea5nlx.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-041.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "06fab2bdf227b60d0c2c6358c4a8553412bb5f431840f579b6da01d4b1da1e6e",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/3fxmpvavi8z3g.js.map",
+    "sha256": "12ea715b1747823c815cd49cd37b6f747988cd8ec65a0e43efa103ef2c01f088",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1qa-a_plxrvm-.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/2ekxpb9f4bk9j.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/28o5s9trh30_k.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-042.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "68baa6a083fd187aaefd5d2ed0f5aad899fd83e233fa26ef16468b05273f8d34",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0mvyuzuh9-ozy.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/0mvyuzuh9-ozy.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/3ja6k70_8ltq4.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3ja6k70_8ltq4.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-043.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "18b23d374774166e04abd66624c1a8189901568ea553ff360897202e6a66c2b0",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/34d_vbmay6cbq.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/34d_vbmay6cbq.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/3mfqn15vlaob4.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3mfqn15vlaob4.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-044.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "0ccfb7aff2a3b53d08a52642bd24285764b4ed1d91778be6891859660ddf9d68",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0esdx1oe5a0c7.js.map",
+    "sha256": "ad76be9fbdc0ba504ea611dea1338997b60207d11f6ace7a7cf24aadffabbe91",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3bb4bog0ybi2x.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/33b4iuoyna-v6.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/0tvvct2z9psg-.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-045.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "601eb435d68b84410d4829ea7b4aab582e7725941535eb456aa44003d0d6cd0f",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/1l9ijzsy468al.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1l9ijzsy468al.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/17e4_lj96lyxg.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/17e4_lj96lyxg.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-046.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "fbf10f7e6da27f171309da6fa0b5e40e53026aae0400c4235d572030f26a28d7",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/1muolhq85aufo.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1muolhq85aufo.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/1n2c1pxpfzqvi.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1n2c1pxpfzqvi.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-047.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "2e8a55d0f4d43f533d66f10e61138e74dc551e9483eff4fd93660a1a0ff5501b",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/050azueeg-ics.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/050azueeg-ics.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/12a39fuf7ds5r.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/12a39fuf7ds5r.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-048.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "511539b98b71e43c213a0023c1469e9c34b0fb53eec49b62f726d9acac777200",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/2g776142vtp3f.js.map",
+    "sha256": "ef6dcde6acedc2381ae6d293c6b63dea3a91e3f77ba6dbb038b14054b65696d5",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3h1w6a5c-bzm1.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/09zg49w53v-8c.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3uu6kh5dfu_jm.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-049.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "87bc8a5cb6c30d17c8c3d3e514d9b133c926955e0052b4152d6e8876a45b06b0",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/1xte1f_i_gs8c.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1xte1f_i_gs8c.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/2p9fxmba85uic.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/2p9fxmba85uic.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-050.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "fd6cce9c099a1172f44778f98dc624adef81145aa20759208883b8bdd61c66ed",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/3bhl3k8dd_oux.js.map",
+    "sha256": "10325faaa7c093c64dc838d5549a0c47ef6eafc6dfceaf02660e3b28cca5b4d2",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/0_k96aayoifkb.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/16h9c1l043e9w.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/0bgf3hczkg5iu.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-051.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "080c2ab579996412282bb29e8f7c6f016f228916977f31f47b30c54df65425ca",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0374u_eyxo-kd.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/0374u_eyxo-kd.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0dt7dp_48ao14.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/0dt7dp_48ao14.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-052.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "d8dfb33d4f6953fd0cbf688f4fe1c071aacad5af5137e3ac0a5c53c3ba60ffe9",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/191f_eu1sgywh.js.map",
+    "sha256": "5190681ef78f8f1413474051daf951a443252681de73c2b10984ffb026c3cefa",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/2w0yx6mbgnpef.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/turbopack-3ggsihsp7tz8s.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/turbopack-0obqweja2prpt.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-053.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "ff8f1109dd52f3fc7e823c25b048f8a376c2ee96bb19ebe61715889026aa7d7f",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0t2dj-s2tftd_.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/0t2dj-s2tftd_.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/1uvhb8_y57779.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1uvhb8_y57779.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-054.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "d101bd88edb29730667408f5d83764a86d4bfafe94472d8e086477bbd1d6d425",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0s2hcwwetrwin.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/0s2hcwwetrwin.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/2la-_v3w-jpwy.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/2la-_v3w-jpwy.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-055.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "364d90905a5bc43316f55668581296d8a18b02c7e867a78685b8f4d10dcb5d11",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0g8w0tpr349u_.js.map",
+    "sha256": "21ce2275d54694cc06958287b7b1cbaa4ceb104f6f95a437071758f993082dca",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/2z9gmpdybgyj4.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/3y7wefl7oa7io.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1dyktzpe1mw58.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-056.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "22279c178702b92b9ba22f2c29fab9718d647a49ab41de093e6b3b793ddde533",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/3w88hw3wuaahd.js.map",
+    "sha256": "7abf84dd25d2949cefc35f153c64974f72157111c1e0192e870820991ee8c26a",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1wjhaoene6cac.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/2d-hufso2l6dz.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/04xrqhusrczuu.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-057.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "acc1d981195d941ff20b63b66ecf37555bebf9456eb0e960f1d031edb621d946",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/25y4vvm0zg023.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/25y4vvm0zg023.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/11d5vjw7yc136.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/11d5vjw7yc136.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-058.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "dd38f216b5c18dd4ade70974bb38f1812a77c80be13e8bd86a2c64fac06b8065",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/1glday1ekd3so.js.map",
+    "sha256": "6bc040e456dbaa061f59fe0c8daf21a896c1e78bd4c3e8308c215e8451a145e8",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/2d9m0a8lhwvbc.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/1_9_7whbeofi7.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3y7k-qnxd6mud.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-059.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "826fd3aab359a9b83cb727b17ec7830132092d1c6a207d932032cf6ea7182267",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0iuqh08vm_iq_.js.map",
+    "sha256": "fc501a140a1de12836632b689bcd9ffcb124c975adce3b0d8138bbd2e06e3f67",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/440cbzqzk7a1t.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0waxxqkw9axeo.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3fhgr_mp0u991.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-060.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "fc501a140a1de12836632b689bcd9ffcb124c975adce3b0d8138bbd2e06e3f67",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/440cbzqzk7a1t.js.map",
+    "sha256": "335ec6ac48a8aa3181e9ca375ca5fca4b91194fc809692e6b3c1b4c8f73fc328",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/2an02pws7k4mp.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/3fhgr_mp0u991.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1z-ryhaowxrop.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-061.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "ed1b0eaf34b86b2ab5273c3c76e1762012590f99f8f8e634cb1cdcb665955f75",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/1ri8fvktsfae6.js.map",
+    "sha256": "5ba6bac96c46a62b2bd7e76f85d00c453f3f39973f0d40cfc62130324c21a6c9",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3_i0yezkve1u3.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/20-1ybzyxappl.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/12w4jmxakbpj6.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-062.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "150f4ad7a6c7648f4942ea51cb44461b3c315b3f7efa042bbf27be8767c2f8e0",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0pv1sadtsa1ze.js.map",
+    "sha256": "b579100de1b9a1f11c77cb91c97eb657a3079f36dcd5e608f2f6a2db5138f703",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/02wt6sb3yredy.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0k1hpxddzj4ns.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/0qb02ggzvbkb7.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-063.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "b579100de1b9a1f11c77cb91c97eb657a3079f36dcd5e608f2f6a2db5138f703",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/02wt6sb3yredy.js.map",
+    "sha256": "103793a8a2f4c5972d3d4c6599683c561da983561d946cf1ecc65f9a62a7c45e",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3pdyu9p6igw1e.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0qb02ggzvbkb7.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3t36kj_9_z-ld.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-064.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "103793a8a2f4c5972d3d4c6599683c561da983561d946cf1ecc65f9a62a7c45e",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/3pdyu9p6igw1e.js.map",
+    "sha256": "3207bf58ca34a06c750734c315c66016ee080c2b9e63b461c6ba063d50413978",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/37wvc783_0p7k.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/3t36kj_9_z-ld.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3vexr64nyibki.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-065.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "76639fd03d9815946b3f1ad621f8f8cd8b933334eb229928ff344fbd40473640",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0254kktjbt9z5.js.map",
+    "sha256": "264a173c19527f47a31e6f8052333a921ff443814b43130521f55e1f8217d389",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/2mymyas2ostjv.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/2b30q00-bfxg4.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/2xgyw453m6y_l.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-066.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "264a173c19527f47a31e6f8052333a921ff443814b43130521f55e1f8217d389",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/2mymyas2ostjv.js.map",
+    "sha256": "d835567237d0f186a97fea738944289da008ff332eb5f74e1d02bc1e0c302598",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/0_xsjh88etem2.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/2xgyw453m6y_l.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1so0wn99nq0qz.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-067.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "79a7b88c3bf8627f6b88411c2264b14778cd57e341755cb1cbe8e0e23942210e",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/2ju6q_1lmxfq0.js.map",
+    "sha256": "59a55303d3f108bb599b4114d0ba4561e9abb1f7073230d84c849758f4255526",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/31x7357tff5oj.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/1t4joex6v-wi8.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/26-4afvk_8qbq.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-068.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "335ec6ac48a8aa3181e9ca375ca5fca4b91194fc809692e6b3c1b4c8f73fc328",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/2an02pws7k4mp.js.map",
+    "sha256": "34be154d25068b90a5574e3db17c05516a9ffac36d49a0c174168f3b07b31cd6",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1ma47xyblx40u.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/1z-ryhaowxrop.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/2r96w3-cqig58.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-069.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "6c822938655b0e5850bfa745971bdb2d8841abc5feed773fb23edaf61c1c6729",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/3c5iy3jhh2-3e.js.map",
+    "sha256": "f1aa681148b8a19aab593cf92a66a156bed81d022c75e0663b575441597f8fd9",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/37zvjfvi-4d0r.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/3rtlxj2kilnry.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3lwla_k1s0d6m.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-070.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "e5690f53290cbb1a77428280490b32053602db3d71a7edb2c8c47da18cae0b51",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/3nk0qavz5ldka.js.map",
+    "sha256": "15a4b306c982ec302d15c9a081275ca0f9c18e94578b8b9f55c8ed82c28a7a98",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/317f6cv-jy9qy.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/2klx79k42lef6.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3dnyswbjlb7dq.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-071.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "b124ebbc72a92dfc3b898b7f36bdb578f339fae82650381801e3f69a806ccb77",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/3xcxj6revt7m0.js.map",
+    "sha256": "dec0461fe0ceb465bf7789edbb197023f5aaae87d4df7ca3e81eccca4b28dbfb",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1rg9-zi4r4mye.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/09xe73reg95qm.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1btyzq91yktnp.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-072.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "05c7f05dba0676d0982107c4006145e57b26134c20a46cf5552aa1d2bad4f3fa",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0z7m8negucszb.js.map",
+    "sha256": "b124ebbc72a92dfc3b898b7f36bdb578f339fae82650381801e3f69a806ccb77",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3xcxj6revt7m0.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/3s_cfxqj5kof0.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/09xe73reg95qm.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-073.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "f1aa681148b8a19aab593cf92a66a156bed81d022c75e0663b575441597f8fd9",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/37zvjfvi-4d0r.js.map",
+    "sha256": "05c7f05dba0676d0982107c4006145e57b26134c20a46cf5552aa1d2bad4f3fa",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/0z7m8negucszb.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/3lwla_k1s0d6m.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3s_cfxqj5kof0.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-074.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "333f5d48452675c5af77cbb822505d7b6a4fed09d29166b7d59aea5503daa8fa",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/1246c6uihkyt-.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1246c6uihkyt-.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/2g1v3b3fk6-6p.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/2g1v3b3fk6-6p.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-075.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "62b4a7d068a9caa6e89026ef02c8ca3a6667f872a112ebb083ac850ce18514c0",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/1s4rfdfci8vob.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1s4rfdfci8vob.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/1402nfnwvc5hc.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1402nfnwvc5hc.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-076.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "cfd0d72930c75d0fa0faf747e4c7bdf615c33752ce1edad7dc3039631429d473",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0g-jk3d27sa73.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/0g-jk3d27sa73.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/1r9rw14us35y0.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1r9rw14us35y0.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-077.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "72392190a63707610c5c326cf0b5b807a5f8980166b1088d51f88818c7619187",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/2v4nv_gs2auv9.js.map",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/2v4nv_gs2auv9.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/3-xm_srfyyr_j.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3-xm_srfyyr_j.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-078.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "85156de7c1b37536f863a96959e097947b10ee790c42a0d2b431a59fd9628cf0",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/0349kcxw6pqk4.js.map",
+    "sha256": "1c557e9202c5648773277b42f71f88c897ee8c18eb8b75aaa734ae311b964d1e",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/1q1kooq48_sih.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/1n2pft2jhv3db.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3v26ns5afd345.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-079.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "34be154d25068b90a5574e3db17c05516a9ffac36d49a0c174168f3b07b31cd6",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/1ma47xyblx40u.js.map",
+    "sha256": "d5992c845ed836dd2d25cecb5adf4ba86d974915273ed8a72419dbc7e163f4d5",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/0zvk7dufpu1vw.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/2r96w3-cqig58.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/0ft_eu851nlwg.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-080.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "dec0461fe0ceb465bf7789edbb197023f5aaae87d4df7ca3e81eccca4b28dbfb",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/1rg9-zi4r4mye.js.map",
+    "sha256": "5bfc1965832d98e7d05f1183565b4516becb740518a44e428eaa3f7eb5ddc591",
+    "sourceMap": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/3m9er7yq8q-fc.js.map",
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/1btyzq91yktnp.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/chunks/turbopack-3fxo1ab8xouvo.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-081.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "3efc73b622d4697e72a33f5cccf5fa88e23fabc9b8bcbf748af05396d4346e44",
-    "sourceMap": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/08ygqsl_rtr_0.js.map",
+    "sha256": "3df3f34e8444a81db2fd3ea64e902f461dce9e3e03e8efb8dc872b76ba116f6c",
+    "sourceMap": null,
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/chunks/turbopack-222-pd9f1aub3.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/v_VBMeYJc-XpgXZ7Ueh28/_buildManifest.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-082.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "ded831d9552ad72d3caacdc77c8e75a8f50009c38d2dca5e8c8e66fd1859ce0f",
+    "sha256": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
     "sourceMap": null,
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/3Of4k3-JeLPQdhNrglCzy/_buildManifest.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/v_VBMeYJc-XpgXZ7Ueh28/_ssgManifest.js"
   },
   {
     "path": "assets.create.roblox.com/page-0/script-083.js",
     "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
-    "sha256": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
-    "sourceMap": null,
-    "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/3Of4k3-JeLPQdhNrglCzy/_ssgManifest.js"
-  },
-  {
-    "path": "assets.create.roblox.com/page-0/script-084.js",
-    "relationship": "HTML bundle label where supplied; otherwise stable page/script position, not guaranteed semantic identity.",
     "sha256": "5483e3295dc35dfe29ea932efc85341c916f10ff78ff5b0e965e003710893a4a",
     "sourceMap": null,
     "sourcePage": "https://create.roblox.com/",
-    "url": "https://assets.create.roblox.com/8b296cf86800b4df61d36a3cdf2ab848a45cd4ea/_next/static/3Of4k3-JeLPQdhNrglCzy/_clientMiddlewareManifest.js"
+    "url": "https://assets.create.roblox.com/be4a7a92c384d13dfa88f35bbdb3ef1c8cd92e92/_next/static/v_VBMeYJc-XpgXZ7Ueh28/_clientMiddlewareManifest.js"
   },
   {
     "path": "assets.create.roblox.com/page-1/script-000.js",
@@ -789,7 +781,7 @@
     "sha256": "6ba6e3694be35efb7bc923d2ae008ca8f1969bf462cdba830f3d44f1225e44d6",
     "sourceMap": null,
     "sourcePage": "https://create.roblox.com/docs",
-    "url": "https://assets.create.roblox.com/docs/a62ccd309eb85cd3f9272a733f960c5e8e0722ac/_next/static/zKW6YbC7-DIUQwymOwqmn/_buildManifest.js"
+    "url": "https://assets.create.roblox.com/docs/a62ccd309eb85cd3f9272a733f960c5e8e0722ac/_next/static/uzRC3x-PLEYDTcCJELWkk/_buildManifest.js"
   },
   {
     "path": "assets.create.roblox.com/page-1/script-014.js",
@@ -797,6 +789,6 @@
     "sha256": "632291c74e0c35c622d7239e456716fb3e47ce583b50b85990f16a9182960bb9",
     "sourceMap": null,
     "sourcePage": "https://create.roblox.com/docs",
-    "url": "https://assets.create.roblox.com/docs/a62ccd309eb85cd3f9272a733f960c5e8e0722ac/_next/static/zKW6YbC7-DIUQwymOwqmn/_ssgManifest.js"
+    "url": "https://assets.create.roblox.com/docs/a62ccd309eb85cd3f9272a733f960c5e8e0722ac/_next/static/uzRC3x-PLEYDTcCJELWkk/_ssgManifest.js"
   }
 ]
