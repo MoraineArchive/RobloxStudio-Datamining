@@ -1,0 +1,106 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-fee454b8e2094ba9",
+    "manifestFiles": 19397,
+    "packages": 34,
+    "version": "0.746.0.7461264"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "ddc30ef72775f26ad73a02ed025724be4ee42e25c40bb2e1a173d176bfab615a",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "8e726a8f41d655ec0201624a9e2e649671a647fee0d4cad461044a24618ca94f",
+      "semantic": {
+        "added": [
+          "FFlagAdaptiveAnimationModelRotationFix",
+          "FFlagAddCompactionFallbackMessages_Staged",
+          "FFlagEnableV2MetricFilter",
+          "FFlagNetworkSimulationDelayJitterCap500ms_Staged",
+          "FFlagRbxTransportCacheTlsKeyingMaterial_Staged",
+          "FFlagRbxTransportUseStateReasonDirectly_Staged",
+          "FFlagSduiBannerComponent",
+          "SFFlagUserServerAuthorityDontSetAutoRotate_Staged"
+        ],
+        "changed": [
+          {
+            "after": "10000",
+            "before": "100",
+            "name": "DFIntAnimationGraphValueNodeCollectionRate"
+          },
+          {
+            "after": "50",
+            "before": "25",
+            "name": "DFIntBadgeSlpInsightsRolloutPercentage"
+          },
+          {
+            "after": "75;SteadyState;10;15;Rollout;100;30;SteadyState;100;15;Promote;2026-11-04T22:26:15",
+            "before": "50;SteadyState;10;15;Rollout;100;30;SteadyState;100;15;Promote;2026-11-04T21:03:47",
+            "name": "DFIntBadgeSlpInsightsRolloutPercentage_Staged"
+          },
+          {
+            "after": "aed86d0b9a97206f43d6387e91c10ee7bd0b2273",
+            "before": "5ea1b93226610716e0466e74289e56a8817de9b3",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-04T22:26:16.802Z",
+            "before": "2026-11-04T22:00:58.707Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "aed86d0b9a97206f43d6387e91c10ee7bd0b2273",
+            "before": "5ea1b93226610716e0466e74289e56a8817de9b3",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-04T22:26:16.802Z",
+            "before": "2026-11-04T22:00:58.707Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFIntAnimationGraphValueNodeCollectionRate_Staged",
+          "FFlagAXSduiCatalogItemGroupNilIdGuard_Staged",
+          "FFlagAdaptiveAnimationModelRotationFix_Staged",
+          "FFlagEnableV2MetricFilter_Staged",
+          "FFlagSduiBannerComponent_Staged"
+        ],
+        "unchanged": 26638
+      }
+    },
+    "Web": {
+      "current": "04254aa774c58cf28e26f5df21f736363d96bb53924e047099542474b3663689",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-052.js",
+          "assets.create.roblox.com/page-0/script-056.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 89
+      },
+      "previous": "c9c0d0bd10f8cd15b4dfdc4843ad4e6d5f491d847fa070325780486f5f66b0c8",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
