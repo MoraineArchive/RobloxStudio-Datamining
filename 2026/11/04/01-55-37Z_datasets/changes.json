@@ -1,0 +1,142 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-7062aec9dbe74b14",
+    "manifestFiles": 19286,
+    "packages": 34,
+    "version": "0.745.0.7451137"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "23d0c3ae8ca002d88124e3c9cdec89f0d5f3868f4e665ebb680c49d7ef9d01ae",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "118b5492494e47761b4bf11446bd2fa5c31e8cd1c99ab96e2dd68e864e78b6f9",
+      "semantic": {
+        "added": [
+          "DFFlagStreamingNullCheckSolverOnGcMessage",
+          "FFlagAXFixBodyShapePortraitSliderFreeze",
+          "FFlagAmpV2WizardServerParentFacing",
+          "FFlagAssetServiceFetchAssetWithFormat",
+          "FFlagClearInExperienceToastsOnGameLeave",
+          "FFlagDMCTMigratePartOperationMedium",
+          "FFlagDesktopExternalIdentityReportTimeoutAndLateCallback",
+          "FFlagDifferentiateJoinMetricsForChannelSend",
+          "FFlagFixBulkPurchaseInExperienceBuyRobux",
+          "FFlagFixCSGUVInFastCluster",
+          "FFlagFixNavigationInsetsOnHiddenTabBar",
+          "FFlagIASDeadzone",
+          "FFlagLegacyTextSubpixelRendering",
+          "FFlagLuaAppPrivatePlaytestEarlyTesting_Staged",
+          "FFlagSimCsgFixEmptyMeshPartColor",
+          "FIntLuauMemoryCageFixedSizeMiB"
+        ],
+        "changed": [
+          {
+            "after": "False",
+            "before": "True",
+            "name": "DFFlagUseCompressedPVSerialization"
+          },
+          {
+            "after": "53d84d9fc50c289ec55a421c7ce4d0c2b06c5526",
+            "before": "46eda3efbcf0d8187dca386eeafa432a92450968",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-04T01:43:33.015Z",
+            "before": "2026-11-03T23:58:05.180Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "53d84d9fc50c289ec55a421c7ce4d0c2b06c5526",
+            "before": "46eda3efbcf0d8187dca386eeafa432a92450968",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-04T01:43:33.015Z",
+            "before": "2026-11-03T23:58:05.180Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagStreamingNullCheckSolverOnGcMessage_Staged",
+          "DFFlagUseCompressedPVSerialization_Staged",
+          "FFlagAXFixBodyShapePortraitSliderFreeze_Staged",
+          "FFlagAmpV2WizardServerParentFacing_Staged",
+          "FFlagAssetServiceFetchAssetWithFormat_Staged",
+          "FFlagClearInExperienceToastsOnGameLeave_Staged",
+          "FFlagDMCTMigratePartOperationMedium_Staged",
+          "FFlagDesktopExternalIdentityReportTimeoutAndLateCallback_Staged",
+          "FFlagDifferentiateJoinMetricsForChannelSend_Staged",
+          "FFlagFixBulkPurchaseInExperienceBuyRobux_Staged",
+          "FFlagFixCSGUVInFastCluster_Staged",
+          "FFlagFixNavigationInsetsOnHiddenTabBar_Staged",
+          "FFlagIASDeadzone_Staged",
+          "FFlagLegacyTextSubpixelRendering_Staged",
+          "FFlagSimCsgFixEmptyMeshPartColor_Staged",
+          "FIntCoreScriptSentryRolloutPercentage_Staged",
+          "FIntLuauMemoryCageFixedSizeMiB_Staged"
+        ],
+        "unchanged": 26529
+      }
+    },
+    "Web": {
+      "current": "53e54622ab08834153401cfb134af4c4790eef23040bfa84ee19b38c14eb6b7b",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-024.js",
+          "assets.create.roblox.com/page-0/script-026.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-047.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-050.js",
+          "assets.create.roblox.com/page-0/script-052.js",
+          "assets.create.roblox.com/page-0/script-055.js",
+          "assets.create.roblox.com/page-0/script-056.js",
+          "assets.create.roblox.com/page-0/script-058.js",
+          "assets.create.roblox.com/page-0/script-067.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-070.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.create.roblox.com/page-0/script-077.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.create.roblox.com/page-1/script-001.js",
+          "assets.create.roblox.com/page-1/script-003.js",
+          "assets.create.roblox.com/page-1/script-004.js",
+          "assets.create.roblox.com/page-1/script-011.js",
+          "assets.create.roblox.com/page-1/script-012.js",
+          "assets.create.roblox.com/page-1/script-013.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 64
+      },
+      "previous": "8c91145a33fbd2c38f5f5b677d8e4c744206284d9379a2c5cdc6b00416002b0f",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
