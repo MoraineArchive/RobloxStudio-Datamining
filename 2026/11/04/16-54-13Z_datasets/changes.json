@@ -1,0 +1,76 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-7062aec9dbe74b14",
+    "manifestFiles": 19286,
+    "packages": 34,
+    "version": "0.745.0.7451137"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "1566a17eaee18b63abc62ab14cbff84243e0e08b0216866292da67fa3f6d5a89",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "6809678147aad75a9659b914c67e47183e5971c6be8c5cfeea7896c4c7a4ff96",
+      "semantic": {
+        "added": [],
+        "changed": [
+          {
+            "after": "cd4005d91653f329475fbf44e58b5134abde996d",
+            "before": "de9133d95cafb6f4a9ff7d5dcbe465db06102af3",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-04T16:20:44.558Z",
+            "before": "2026-11-04T04:02:11.062Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "cd4005d91653f329475fbf44e58b5134abde996d",
+            "before": "de9133d95cafb6f4a9ff7d5dcbe465db06102af3",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-04T16:20:44.558Z",
+            "before": "2026-11-04T04:02:11.062Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [],
+        "unchanged": 26546
+      }
+    },
+    "Web": {
+      "current": "1235638fd91bba5e3746663afa0b6f4b1fdf38fb396de2b7623576e064df214e",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-052.js",
+          "assets.create.roblox.com/page-0/script-055.js",
+          "assets.create.roblox.com/page-0/script-056.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 90
+      },
+      "previous": "53e54622ab08834153401cfb134af4c4790eef23040bfa84ee19b38c14eb6b7b",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
