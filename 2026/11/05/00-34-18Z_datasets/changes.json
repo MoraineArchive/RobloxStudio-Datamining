@@ -1,0 +1,221 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-fee454b8e2094ba9",
+    "manifestFiles": 19397,
+    "packages": 34,
+    "version": "0.746.0.7461264"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "1490c8f8c1e98e591cc5a4304772db3de94b9d2563600f25165f5750bf946ad2",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "ddc30ef72775f26ad73a02ed025724be4ee42e25c40bb2e1a173d176bfab615a",
+      "semantic": {
+        "added": [
+          "DFFlagEditableMeshRemoveBoneCompactInfluences",
+          "DFFlagFixAnimationMemoryOverhead",
+          "DFFlagMemoryStoreUpdateConflictRetry",
+          "DFFlagOofOwieMyStats",
+          "DFFlagSpeechToTextDisablePlatformToken",
+          "DFFlagStreamingHoldRadiusUntilCenterVisited",
+          "DFFlagTeleportGuiRestrictedClassesEnabled",
+          "DFIntInvalidTelemetryInputCounterThrottleHundredthsPercent",
+          "DFIntRobloxTelemetryHttpMetricsThrottleHundredthsPercent",
+          "FFlagAddCompactionFallbackMessages",
+          "FFlagAmrFlexPaneSizing",
+          "FFlagAssistantAnimationGenAlwaysShowFades",
+          "FFlagAssistantAnimationGenCombinedDragger",
+          "FFlagAssistantAnimationGenPausePlaybackOnCollapse_Staged",
+          "FFlagAssistantAnimationGenPausePlaybackOnUnmount_Staged",
+          "FFlagAssistantAnimationGenPluginGate_Staged",
+          "FFlagAssistantAnimationGenPoseR15PlusJoints_Staged",
+          "FFlagAssistantAnimationGenRemoveEditFormPrompt_Staged",
+          "FFlagAssistantAnimationGenSolveLimbRoots_Staged",
+          "FFlagAssistantAnimationGenSolveRetargetedPoses_Staged",
+          "FFlagAssistantAnimationGenTelemetry",
+          "FFlagAssistantAnimationGenTurnOffRetargetingForR15Plus",
+          "FFlagAssistantAnimationGenUndoRedo",
+          "FFlagAssistantAskInputFooterResolver",
+          "FFlagAssistantAskInputRequiredMarkers",
+          "FFlagAssistantToolPermissionQuestion",
+          "FFlagAssistantUseFoundationTextArea",
+          "FFlagCollectionDebugFeature",
+          "FFlagCollectionServiceGetAllCollections",
+          "FFlagCollectionsBatchedIterate3",
+          "FFlagDebugEncodeTransitiveDependencies",
+          "FFlagDebuggerPreemptionReportsLuaBreak",
+          "FFlagEnableCollectionDebugger",
+          "FFlagEnableCollectionDebuggerMenu",
+          "FFlagEnableCollectionDebuggerPlugin",
+          "FFlagEnableGetLatestVersionUriAsync",
+          "FFlagEngineYieldPolicy",
+          "FFlagGen3dTextureGenReapplyCachedAssetId",
+          "FFlagGen3dTextureGenReapplyImportRotationFix",
+          "FFlagLuaAppVideoLoadFailureFallback_Staged",
+          "FFlagLuauCodegenCmpAnySideEffecting",
+          "FFlagLuauPcallErrorContinuationReentry",
+          "FFlagLuauSkipUnusedTypeTraversals",
+          "FFlagNetworkSimulationDelayJitterCap500ms",
+          "FFlagPerformanceControlFixComputeManagerOnPlaceStartRace",
+          "FFlagPropertiesContentEmptyState",
+          "FFlagPropertiesContentPrefixOnlySelectionFix",
+          "FFlagRbxTransportCacheTlsKeyingMaterial",
+          "FFlagRbxTransportUseStateReasonDirectly",
+          "FFlagRenderStarsWriteNormalColor",
+          "FFlagScriptEditorReadOnlyApi2",
+          "FFlagSduiComponentsUseFoundationTokens",
+          "FFlagSimRuntimeContentAllowTeamCreate2_Staged",
+          "FFlagTTIDelayExperimentEnabled_Staged",
+          "FFlagVideoCaptureUseNewService6_Staged",
+          "FIntCoreScriptBacktraceErrorReportPercentage_Staged",
+          "SFFlagUserServerAuthorityDontSetAutoRotate"
+        ],
+        "changed": [
+          {
+            "after": "True",
+            "before": "False",
+            "name": "DFFlagFixExitImportanceWrongStorage"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "DFFlagTelemetryMultAsDouble"
+          },
+          {
+            "after": "75",
+            "before": "50",
+            "name": "DFIntBadgeSlpInsightsRolloutPercentage"
+          },
+          {
+            "after": "aaefa8edd339e17e57c85874ae799746a8fddeb2",
+            "before": "aed86d0b9a97206f43d6387e91c10ee7bd0b2273",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-05T00:28:03.482Z",
+            "before": "2026-11-04T22:26:16.802Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagFoundationCenterSheetOverlayShadow"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagFoundationDialogOverlayShadow"
+          },
+          {
+            "after": "aaefa8edd339e17e57c85874ae799746a8fddeb2",
+            "before": "aed86d0b9a97206f43d6387e91c10ee7bd0b2273",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-05T00:28:03.482Z",
+            "before": "2026-11-04T22:26:16.802Z",
+            "name": "FStringFlipTimeStampFastString"
+          },
+          {
+            "after": "[(8,ktx2),(7rdo,ktx2)]",
+            "before": "[(7rdo,ktx2,/////Ck=)]",
+            "name": "FStringTextureTranscodeRollout"
+          }
+        ],
+        "removed": [
+          "DFFlagFixAnimationMemoryOverhead_Staged",
+          "DFFlagFixExitImportanceWrongStorage_Staged",
+          "DFFlagMemoryStoreUpdateConflictRetry_Staged",
+          "DFFlagSpeechToTextDisablePlatformToken_Staged",
+          "DFFlagStreamingHoldRadiusUntilCenterVisited_Staged",
+          "DFFlagTelemetryMultAsDouble_Staged",
+          "DFIntBadgeSlpInsightsRolloutPercentage_Staged",
+          "DFIntInvalidTelemetryInputCounterThrottleHundredthsPercent_Staged",
+          "DFIntRobloxTelemetryHttpMetricsThrottleHundredthsPercent_Staged",
+          "FFlagAddCompactionFallbackMessages_Staged",
+          "FFlagAmrFlexPaneSizing_Staged",
+          "FFlagAssistantAnimationGenAlwaysShowFades_Staged",
+          "FFlagAssistantAnimationGenCombinedDragger_Staged",
+          "FFlagAssistantAnimationGenTelemetry_Staged",
+          "FFlagAssistantAnimationGenTurnOffRetargetingForR15Plus_Staged",
+          "FFlagAssistantAnimationGenUndoRedo_Staged",
+          "FFlagAssistantAskInputFooterResolver_Staged",
+          "FFlagAssistantAskInputRequiredMarkers_Staged",
+          "FFlagAssistantToolPermissionQuestion_Staged",
+          "FFlagAssistantUseFoundationTextArea_Staged",
+          "FFlagCollectionDebugFeature_Staged",
+          "FFlagCollectionServiceGetAllCollections_Staged",
+          "FFlagCollectionsBatchedIterate3_Staged",
+          "FFlagDebugEncodeTransitiveDependencies_Staged",
+          "FFlagDebuggerPreemptionReportsLuaBreak_Staged",
+          "FFlagEnableCollectionDebuggerMenu_Staged",
+          "FFlagEnableCollectionDebuggerPlugin_Staged",
+          "FFlagEnableCollectionDebugger_Staged",
+          "FFlagEnableGetLatestVersionUriAsync_Staged",
+          "FFlagEngineYieldPolicy_Staged",
+          "FFlagFoundationCenterSheetOverlayShadow_Staged",
+          "FFlagFoundationDialogOverlayShadow_Staged",
+          "FFlagGen3dTextureGenReapplyCachedAssetId_Staged",
+          "FFlagGen3dTextureGenReapplyImportRotationFix_Staged",
+          "FFlagLuauCageSplitData_Staged",
+          "FFlagLuauCodegenCmpAnySideEffecting_Staged",
+          "FFlagLuauPcallErrorContinuationReentry_Staged",
+          "FFlagLuauSkipUnusedTypeTraversals_Staged",
+          "FFlagNetworkSimulationDelayJitterCap500ms_Staged",
+          "FFlagPerformanceControlFixComputeManagerOnPlaceStartRace_Staged",
+          "FFlagPropertiesContentEmptyState_Staged",
+          "FFlagPropertiesContentPrefixOnlySelectionFix_Staged",
+          "FFlagRbxTransportCacheTlsKeyingMaterial_Staged",
+          "FFlagRbxTransportUseStateReasonDirectly_Staged",
+          "FFlagRenderStarsWriteNormalColor_Staged",
+          "FFlagScriptEditorReadOnlyApi2_Staged",
+          "FFlagSduiComponentsUseFoundationTokens_Staged",
+          "FFlagVideoCaptureUseNewService6_IXP",
+          "FStringTextureTranscodeRollout_Staged",
+          "SFFlagUserServerAuthorityDontSetAutoRotate_Staged"
+        ],
+        "unchanged": 26593
+      }
+    },
+    "Web": {
+      "current": "cac1a9f835d6d4cb3cf39636b8aea908adc1fd36c0453ae18ca0e88a4a8677d6",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-010.js",
+          "assets.create.roblox.com/page-0/script-023.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-052.js",
+          "assets.create.roblox.com/page-0/script-056.js",
+          "assets.create.roblox.com/page-0/script-064.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 83
+      },
+      "previous": "04254aa774c58cf28e26f5df21f736363d96bb53924e047099542474b3663689",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
