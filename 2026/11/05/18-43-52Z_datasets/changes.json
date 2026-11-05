@@ -1,0 +1,137 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-fee454b8e2094ba9",
+    "manifestFiles": 19397,
+    "packages": 34,
+    "version": "0.746.0.7461264"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "669000a2087f58c41799351f7e1049aa3362addc9f459103f89a9486defd3a0a",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "67bb58ca1d5ce35711cdc5c35436970b9b55fb4fb8d9dd95617aab37e4737c77",
+      "semantic": {
+        "added": [
+          "DFFlagCLI237093",
+          "DFFlagCLI237093A",
+          "DFFlagCLI237093B",
+          "DFFlagCLI237093C",
+          "DFFlagCLI237093D",
+          "DFFlagCLI237093E",
+          "DFFlagHumanoidScaleTightWriteGate",
+          "DFFlagUIShadowTextMode4",
+          "DFFlagUIShadowWorksWithUIGradient",
+          "DFFlagValidateEditableMeshData",
+          "FFlagAXFixBodyColorButtonStaleRanges_Staged",
+          "FFlagAXUseSignalsForLayeredClothingCurrentSort_Staged",
+          "FFlagActorPoolWithChangingConcurrency_Staged",
+          "FFlagAmrAssetDetailView_Staged",
+          "FFlagAssistantAnimationGenCustomRigPosing_Staged",
+          "FFlagAssistantAnimationGenEnableExternalMCP_Staged",
+          "FFlagAssistantAnimationGenEnablePublishForMCP_Staged",
+          "FFlagAssistantAnimationGenFixPoseSelect_Staged",
+          "FFlagAssistantAnimationGenForwardPromptVerbatim_Staged",
+          "FFlagAssistantGen3dAsyncAssetUpload_Staged",
+          "FFlagAvatarRulesBodyExtentsExcludeRootPart_Staged",
+          "FFlagAvatarSettingsPreviewStandardWalkAnimation_Staged",
+          "FFlagAvatarSettingsStandardPackClearRestoresStandardClip_Staged",
+          "FFlagAvatarSettingsWarnOnPlaceSave_Staged",
+          "FFlagBindToAnimationParallel_Staged",
+          "FFlagBindToSimulationParallel_Staged",
+          "FFlagCLI197983_Staged",
+          "FFlagCLI227568ReplicateStitchedAttributes_Staged",
+          "FFlagEnableLuauSystemMenu_Staged",
+          "FFlagEnableSystemMenuController4_Staged",
+          "FFlagLuauDoesCallErrorUnwrapsGroups_Staged",
+          "FFlagMomentsActionRailNarrowWidth_Staged",
+          "FFlagMomentsCommentRowRedesign_Staged",
+          "FFlagMomentsCreatorAttributionIxpEnabled_Staged",
+          "FFlagMomentsModeratedMomentPage_Staged",
+          "FFlagMomentsRecommendationContentType_Staged",
+          "FFlagMomentsServeEDPVideos4_Staged",
+          "FFlagMomentsSmartVideoFill_Staged",
+          "FFlagStudioCoalesceOverrideSelectionRefresh_Staged",
+          "FFlagStudioCustomWindowChrome4_Staged",
+          "FFlagStudioNederlandsLocale_Staged",
+          "FFlagStudioRestoreWindowShadowOnMac_Staged",
+          "FFlagTextureGenAsyncAssetUpload_Staged",
+          "FFlagTitleBarLessMainWindow2_Staged",
+          "FFlagUIGradientDither_Staged",
+          "FFlagUIGradientUses16BitStorage_Staged",
+          "FFlagUIShadowInset_Staged",
+          "FFlagUIShadowKnockout_Staged",
+          "FFlagUpgradedUIShadowsBetaFeature_Staged",
+          "FIntAnimationGenerationInAssistantBetaFeatureRolloutPercent_Staged",
+          "FIntTexturePackShadowUploadPropertySetsHundredthPercent_Staged",
+          "FStringMomentsCreatorAttributionIxpLayer_Staged"
+        ],
+        "changed": [
+          {
+            "after": "9f25613f3b971291b01931e847e8634589df519c",
+            "before": "b130089e91e3b0bd4ffa884f8b8367bc5fcb51ca",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-05T18:43:20.994Z",
+            "before": "2026-11-05T03:02:19.689Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "9f25613f3b971291b01931e847e8634589df519c",
+            "before": "b130089e91e3b0bd4ffa884f8b8367bc5fcb51ca",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-05T18:43:20.994Z",
+            "before": "2026-11-05T03:02:19.689Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [],
+        "unchanged": 26658
+      }
+    },
+    "Web": {
+      "current": "3ee6b04fa624b73416daabf9efb846c7afafa0390859ee9234e30e8bccc0551a",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-052.js",
+          "assets.create.roblox.com/page-0/script-056.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-070.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 82
+      },
+      "previous": "83ca9df3c225c11155c1bb449807dc6c44d24cf3ddbb1541121ef2148ddacb13",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
