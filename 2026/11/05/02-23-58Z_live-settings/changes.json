@@ -1,0 +1,85 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-fee454b8e2094ba9",
+    "manifestFiles": 19397,
+    "packages": 34,
+    "version": "0.746.0.7461264"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "d6287cea9f5bd555eaa8314affca1eabc662365e5e436d6c1c0b30c22f7e2b37",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "1490c8f8c1e98e591cc5a4304772db3de94b9d2563600f25165f5750bf946ad2",
+      "semantic": {
+        "added": [
+          "FFlagAssistantAnimationGenPausePlaybackOnCollapse",
+          "FFlagAssistantAnimationGenPausePlaybackOnUnmount",
+          "FFlagAssistantAnimationGenPluginGate",
+          "FFlagAssistantAnimationGenPoseR15PlusJoints",
+          "FFlagAssistantAnimationGenRemoveEditFormPrompt",
+          "FFlagAssistantAnimationGenSolveLimbRoots",
+          "FFlagAssistantAnimationGenSolveRetargetedPoses",
+          "FFlagDeviceSimulatorRefreshStateOnDeviceChange_Staged",
+          "FFlagIAMSortActions_Staged",
+          "FFlagInGameGraphicsFollowsSavedQuality_Staged",
+          "FFlagLuaAppVideoLoadFailureFallback",
+          "FFlagSimRuntimeContentAllowTeamCreate2",
+          "FFlagTTIDelayExperimentEnabled",
+          "FFlagVideoCaptureUseNewService6"
+        ],
+        "changed": [
+          {
+            "after": "3e948d675964ac9d11d7d846e8a0a4a16b3968c2",
+            "before": "aaefa8edd339e17e57c85874ae799746a8fddeb2",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-05T01:52:51.096Z",
+            "before": "2026-11-05T00:28:03.482Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "0",
+            "before": "10",
+            "name": "FIntCoreScriptBacktraceErrorReportPercentage"
+          },
+          {
+            "after": "3e948d675964ac9d11d7d846e8a0a4a16b3968c2",
+            "before": "aaefa8edd339e17e57c85874ae799746a8fddeb2",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-05T01:52:51.096Z",
+            "before": "2026-11-05T00:28:03.482Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagAssistantAnimationGenPausePlaybackOnCollapse_Staged",
+          "FFlagAssistantAnimationGenPausePlaybackOnUnmount_Staged",
+          "FFlagAssistantAnimationGenPluginGate_Staged",
+          "FFlagAssistantAnimationGenPoseR15PlusJoints_Staged",
+          "FFlagAssistantAnimationGenRemoveEditFormPrompt_Staged",
+          "FFlagAssistantAnimationGenSolveLimbRoots_Staged",
+          "FFlagAssistantAnimationGenSolveRetargetedPoses_Staged",
+          "FFlagLuaAppVideoLoadFailureFallback_Staged",
+          "FFlagSimRuntimeContentAllowTeamCreate2_Staged",
+          "FFlagTTIDelayExperimentEnabled_Staged",
+          "FFlagVideoCaptureUseNewService6_Staged",
+          "FIntCoreScriptBacktraceErrorReportPercentage_Staged"
+        ],
+        "unchanged": 26643
+      }
+    }
+  },
+  "schemaVersion": 1
+}
