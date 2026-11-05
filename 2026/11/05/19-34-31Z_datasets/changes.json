@@ -1,0 +1,198 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-fee454b8e2094ba9",
+    "manifestFiles": 19397,
+    "packages": 34,
+    "version": "0.746.0.7461264"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "5055df465e23698baa0d8eea277ebe11778653a5efff96ae6830af901377147d",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "9c7210d42a3131bf1e65544504c61868f424dee934d5181d620d9a22684c1455",
+      "semantic": {
+        "added": [
+          "FFlagAXSduiCatalogItemGroupNilIdGuard_Staged",
+          "FFlagActorPoolWithChangingConcurrency",
+          "FFlagAmrEnableSearchableMenu3_Staged",
+          "FFlagAndroidWebViewInsetDrivenOffset_Staged",
+          "FFlagAssistantAnimationGenCustomRigPosing",
+          "FFlagAssistantAnimationGenEnableExternalMCP",
+          "FFlagAssistantAnimationGenEnablePublishForMCP",
+          "FFlagAssistantAnimationGenFixPoseSelect",
+          "FFlagAssistantAnimationGenForwardPromptVerbatim",
+          "FFlagAssistantAvatarGenAccessoriesFromMeshParts_Staged",
+          "FFlagAssistantAvatarGenPlaceWithoutRotation_Staged",
+          "FFlagAvatarRulesBodyExtentsExcludeRootPart",
+          "FFlagAvatarSettingsPreviewStandardWalkAnimation",
+          "FFlagAvatarSettingsStandardPackClearRestoresStandardClip",
+          "FFlagAvatarSettingsWarnOnPlaceSave",
+          "FFlagEnableAndroidUnifiedSystemBarControl2_Staged",
+          "FFlagEnableIncomingCallBottomInsetAndroid_Staged",
+          "FFlagEnableOnScreenAPICheckDescendants_IXP",
+          "FFlagExpChatUnmountTranslationFTUX_Staged",
+          "FFlagFriendsChatServerSideConversationSearch4_Staged",
+          "FFlagLuauDoesCallErrorUnwrapsGroups",
+          "FFlagMomentsActionRailNarrowWidth",
+          "FFlagMomentsCommentRowRedesign",
+          "FFlagMomentsModeratedMomentPage",
+          "FFlagMomentsSmartVideoFill",
+          "FFlagSplitPaneEducationalTourTelemetry_IXP",
+          "FFlagStudioNederlandsLocale",
+          "FFlagUIGradientDither",
+          "FFlagUIGradientUses16BitStorage",
+          "FIntAnimationGenerationInAssistantBetaFeatureRolloutPercent",
+          "FStringStudioEmergencyMessageV4_Staged"
+        ],
+        "changed": [
+          {
+            "after": "ae32ed2b164bd74b48c798004e200d54996468fe",
+            "before": "3029d5f654f0ee163f70eb4565cab41f14a1d0ac",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-05T19:33:24.401Z",
+            "before": "2026-11-05T18:53:00.881Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "1;ConsumerApps.Platforms.SplitPane;ConsumerApps.Platforms.SplitPaneHighMemoryBucket-NoConsole;2102945944;flagbank",
+            "before": "1;ConsumerApps.Platforms.SplitPane;ConsumerApps.Platforms.SplitPaneHighMemoryBucket;1721728432;flagbank",
+            "name": "FFlagDetailsPageLayoutUseMeasuredSizeForInitialScroll_IXP"
+          },
+          {
+            "after": "1;ConsumerApps.Platforms.SplitPane;ConsumerApps.Platforms.SplitPaneHighMemoryBucket-NoConsole;2102945944;flagbank",
+            "before": "1;ConsumerApps.Platforms.SplitPane;ConsumerApps.Platforms.SplitPaneHighMemoryBucket;1721728432;flagbank",
+            "name": "FFlagEnableOnScreenAPIIntegration_IXP"
+          },
+          {
+            "after": "1;ConsumerApps.Platforms.SplitPane;ConsumerApps.Platforms.SplitPaneHighMemoryBucket-NoConsole;2102945944;flagbank",
+            "before": "1;ConsumerApps.Platforms.SplitPane;ConsumerApps.Platforms.SplitPaneHighMemoryBucket;1721728432;flagbank",
+            "name": "FFlagEnableSplitPaneAvatarOverlayV1_IXP"
+          },
+          {
+            "after": "1;ConsumerApps.Platforms.SplitPane;ConsumerApps.Platforms.SplitPaneHighMemoryBucket-NoConsole;2102945944;flagbank",
+            "before": "1;ConsumerApps.Platforms.SplitPane;ConsumerApps.Platforms.SplitPaneHighMemoryBucket;1721728432;flagbank",
+            "name": "FFlagEnableSplitPaneEDPFix_IXP"
+          },
+          {
+            "after": "1;ConsumerApps.Platforms.SplitPane;ConsumerApps.Platforms.SplitPaneHighMemoryBucket-NoConsole;2102945944;flagbank",
+            "before": "1;ConsumerApps.Platforms.SplitPane;ConsumerApps.Platforms.SplitPaneHighMemoryBucket;1721728432;flagbank",
+            "name": "FFlagEnableSplitPaneSessionL3_IXP"
+          },
+          {
+            "after": "1;ConsumerApps.Platforms.SplitPane;ConsumerApps.Platforms.SplitPaneHighMemoryBucket-NoConsole;2102945944;flagbank",
+            "before": "1;ConsumerApps.Platforms.SplitPane;ConsumerApps.Platforms.SplitPaneHighMemoryBucket;1721728432;flagbank",
+            "name": "FFlagEnableSplitPaneV1_IXP"
+          },
+          {
+            "after": "1;ConsumerApps.Platforms.SplitPane;ConsumerApps.Platforms.SplitPaneHighMemoryBucket-NoConsole;2102945944;flagbank",
+            "before": "1;ConsumerApps.Platforms.SplitPane;ConsumerApps.Platforms.SplitPaneHighMemoryBucket;1721728432;flagbank",
+            "name": "FFlagLuaAppEnableDeviceInsetBackground1_IXP"
+          },
+          {
+            "after": "1;ConsumerApps.Platforms.SplitPane;ConsumerApps.Platforms.SplitPaneHighMemoryBucket-NoConsole;2102945944;flagbank",
+            "before": "1;ConsumerApps.Platforms.SplitPane;ConsumerApps.Platforms.SplitPaneHighMemoryBucket;1721728432;flagbank",
+            "name": "FFlagSplitPaneEducationalTour_IXP"
+          },
+          {
+            "after": "1;ConsumerApps.Platforms.SplitPane;ConsumerApps.Platforms.SplitPaneHighMemoryBucket-NoConsole;2102945944;flagbank",
+            "before": "1;ConsumerApps.Platforms.SplitPane;ConsumerApps.Platforms.SplitPaneHighMemoryBucket;1721728432;flagbank",
+            "name": "FFlagSplitPaneExperimentVariants1_IXP"
+          },
+          {
+            "after": "1;ConsumerApps.Platforms.SplitPane;ConsumerApps.Platforms.SplitPaneHighMemoryBucket-NoConsole;2102945944;flagbank",
+            "before": "1;ConsumerApps.Platforms.SplitPane;ConsumerApps.Platforms.SplitPaneHighMemoryBucket;1721728432;flagbank",
+            "name": "FFlagSplitPaneFixClassicThemeHeader_IXP"
+          },
+          {
+            "after": "1;ConsumerApps.Platforms.SplitPane;ConsumerApps.Platforms.SplitPaneHighMemoryBucket-NoConsole;2102945944;flagbank",
+            "before": "1;ConsumerApps.Platforms.SplitPane;ConsumerApps.Platforms.SplitPaneHighMemoryBucket;1721728432;flagbank",
+            "name": "FFlagSplitPaneProfileMaxWidth_IXP"
+          },
+          {
+            "after": "1;ConsumerApps.Platforms.SplitPane;ConsumerApps.Platforms.SplitPaneHighMemoryBucket-NoConsole;2102945944;flagbank",
+            "before": "1;ConsumerApps.Platforms.SplitPane;ConsumerApps.Platforms.SplitPaneHighMemoryBucket;1721728432;flagbank",
+            "name": "FFlagSplitPaneVariantAvatarOnHomeOnly_IXP"
+          },
+          {
+            "after": "1;ConsumerApps.Platforms.SplitPane;ConsumerApps.Platforms.SplitPaneHighMemoryBucket-NoConsole;2102945944;flagbank",
+            "before": "1;ConsumerApps.Platforms.SplitPane;ConsumerApps.Platforms.SplitPaneHighMemoryBucket;1721728432;flagbank",
+            "name": "FFlagSplitPaneVariantCollapsedAutoOpen_IXP"
+          },
+          {
+            "after": "1;ConsumerApps.Platforms.SplitPane;ConsumerApps.Platforms.SplitPaneHighMemoryBucket-NoConsole;2102945944;flagbank",
+            "before": "1;ConsumerApps.Platforms.SplitPane;ConsumerApps.Platforms.SplitPaneHighMemoryBucket;1721728432;flagbank",
+            "name": "FFlagSplitPaneVariantDefaultCollapsed_IXP"
+          },
+          {
+            "after": "ae32ed2b164bd74b48c798004e200d54996468fe",
+            "before": "3029d5f654f0ee163f70eb4565cab41f14a1d0ac",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-05T19:33:24.401Z",
+            "before": "2026-11-05T18:53:00.881Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagActorPoolWithChangingConcurrency_Staged",
+          "FFlagAssistantAnimationGenCustomRigPosing_Staged",
+          "FFlagAssistantAnimationGenEnableExternalMCP_Staged",
+          "FFlagAssistantAnimationGenEnablePublishForMCP_Staged",
+          "FFlagAssistantAnimationGenFixPoseSelect_Staged",
+          "FFlagAssistantAnimationGenForwardPromptVerbatim_Staged",
+          "FFlagAvatarRulesBodyExtentsExcludeRootPart_Staged",
+          "FFlagAvatarSettingsPreviewStandardWalkAnimation_Staged",
+          "FFlagAvatarSettingsStandardPackClearRestoresStandardClip_Staged",
+          "FFlagAvatarSettingsWarnOnPlaceSave_Staged",
+          "FFlagLuauDoesCallErrorUnwrapsGroups_Staged",
+          "FFlagMomentsActionRailNarrowWidth_Staged",
+          "FFlagMomentsCommentRowRedesign_Staged",
+          "FFlagMomentsModeratedMomentPage_Staged",
+          "FFlagMomentsSmartVideoFill_Staged",
+          "FFlagStudioNederlandsLocale_Staged",
+          "FFlagUIGradientDither_Staged",
+          "FFlagUIGradientUses16BitStorage_Staged",
+          "FIntAnimationGenerationInAssistantBetaFeatureRolloutPercent_Staged"
+        ],
+        "unchanged": 26685
+      }
+    },
+    "Web": {
+      "current": "8ae7c28cae6da5250cd8b2ecbb078c627b31feaefa8e2bbf04f48c9d5f5f95e9",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-052.js",
+          "assets.create.roblox.com/page-0/script-056.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.create.roblox.com/page-0/script-081.js",
+          "assets.create.roblox.com/page-0/script-082.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 90
+      },
+      "previous": "aa40c3c53456b153edd9a93af4385d99c6731f81422a51460c5c9bb4a8e90c64",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
