@@ -23038,7 +23038,7 @@ D9.vBfff
 D9WirxeU
 D9g4t.D9g
 D9sPt7D8
-D9sPtXD85R
+D9sPtXD85
 D9sPtlD8
 D9wluOD8
 DAA11312
@@ -41709,6 +41709,7 @@ JUMP_IF_FALSY
 JUMP_IF_TRUTHY
 JUMP_SLOT_MATCH
 JUNoError
+JVRBX::Profiling::IBenchmarkCaptureComponent
 JWTAccessCredentials
 JXE8HXt2L
 JXKXWJYB
@@ -56727,7 +56728,6 @@ RBX::PluginMenu
 RBX::PluginToolbar
 RBX::PluginToolbarButton
 RBX::PresenceRobloxDocController
-RBX::Profiling::IBenchmarkCaptureComponent
 RBX::RESTRICTED_IStudioServiceHost
 RBX::Ray
 RBX::Reflection::PropertyDescriptor
@@ -73689,6 +73689,7 @@ StudioAssistantHandleImageEncodeErrors
 StudioAssistantMcpOriginated
 StudioAssistantPermissions
 StudioAssistantPermissionsDenyListIds
+StudioAssistantPermissionsNetworkAlwaysOn
 StudioAttachToWidgetUnparentsBeforeDestruction
 StudioAttachment
 StudioAudio
@@ -89969,7 +89970,7 @@ Win32_DiskPartition.DeviceID
 Win32_LogicalDisk.DeviceID
 Win32_LogicalDiskToPartition
 Win32_PageFileUsage
-Win64.746.55545
+Win64.746.55699
 WinAudioDecoder
 WinAudioEncoder
 WinCodecDriver::receiveFrameInternal
@@ -122355,7 +122356,6 @@ ts.clock_type
 ts.length
 ts.length-1
 ts8GptuH
-tsD85n0_
 tsD9sPtmD85
 tsH9ZHtbA
 ts_layer_id
@@ -122558,7 +122558,6 @@ uXfD9BpuQ
 uZH9O0tTH
 u_fA9r0uXfA9r
 u_packet
-uaL9-4EY
 ubo.alignedBufferPaddingSize
 udL98u_H
 udim2_value
@@ -122640,6 +122639,7 @@ ulpfec_header_reader_writer.cc
 ulpfec_payload_type
 ulpfec_receiver.cc
 umH9s0tgH9s
+umL9-qY7
 um_length
 unPoisonLegacyLockUsage
 unableRemove

@@ -9406,42 +9406,42 @@
     "BuiltInStandalonePlugins/Optimized_Embedded_Signature/VisualizationModes/VisualizationModes/Src/Resources/Localization/SourceStrings.json": "da40b567bee125a729a3e559a341fd0a0fd707ff3f2790cba492966cf0d81cf3",
     "BuiltInStandalonePlugins/Optimized_Embedded_Signature/VisualizationModes/instances.json": "fce1d9d6dfe42e7dcac021e35dffc079061dc3070e4029bf3d98f80a3a80f2fd",
     "index.json": "929d598a8f162b3bab283b2eef792b187309efb811c407de95116ad885a4c30d",
-    "metadata.json": "6c51991f4a0561c7bc4c0c58f3ce8e023f0689b2d8c0c4e1c719f415f3e364be"
+    "metadata.json": "27715a95494824240f1fce358af48384a5c213e2fcf23de03aaf88c7e2a68a91"
   },
-  "id": "09cba46b78d34bdf7768a9fde906e7b8f6192bed376cc83d8c6a8c15cc91133c",
+  "id": "96ccf91bca9725bf8ff01e2e8d65271f845e942131cb9c51d64335ef3542dd77",
   "observationMode": "live",
-  "observedAt": "2026-11-04T18:54:25.116Z",
+  "observedAt": "2026-11-05T22:22:21.395Z",
   "provenance": [
     {
-      "buildGuid": "version-fee454b8e2094ba9",
+      "buildGuid": "version-67c8b1dedbb74fed",
       "bytes": 104634735,
       "derivedFrom": "BuiltInPlugins.zip",
       "sha256": "8063dbeb0a4ec64649e594e9f1303e0ef7affe058dcf12f55c176b10079e5e3b",
       "sourceType": "derived-official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-fee454b8e2094ba9-BuiltInPlugins.zip"
+      "sourceUrl": "https://setup.rbxcdn.com/version-67c8b1dedbb74fed-BuiltInPlugins.zip"
     },
     {
-      "buildGuid": "version-fee454b8e2094ba9",
+      "buildGuid": "version-67c8b1dedbb74fed",
       "bytes": 109661981,
       "derivedFrom": "BuiltInStandalonePlugins.zip",
       "sha256": "438c672cedc318d318bd83e9e3705ed244ce73de9da61d6a2fc705d0aac41fd6",
       "sourceType": "derived-official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-fee454b8e2094ba9-BuiltInStandalonePlugins.zip"
+      "sourceUrl": "https://setup.rbxcdn.com/version-67c8b1dedbb74fed-BuiltInStandalonePlugins.zip"
     },
     {
-      "buildGuid": "version-fee454b8e2094ba9",
+      "buildGuid": "version-67c8b1dedbb74fed",
       "bytes": 927300,
       "derivedFrom": "Plugins.zip",
       "sha256": "336c248303ef778dd1ceeddee133a43b44ad17034d4f3db48df3fe389d7688a5",
       "sourceType": "derived-official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-fee454b8e2094ba9-Plugins.zip"
+      "sourceUrl": "https://setup.rbxcdn.com/version-67c8b1dedbb74fed-Plugins.zip"
     }
   ],
-  "sequence": 10,
+  "sequence": 11,
   "status": "partial",
   "summary": {
     "engineRevision": 1,
-    "guid": "version-fee454b8e2094ba9",
+    "guid": "version-67c8b1dedbb74fed",
     "localizationFiles": 455,
     "models": 112,
     "packages": 3,

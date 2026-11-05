@@ -2,36 +2,36 @@
   "hashes": {
     "API-Dump.json": "e209e1101f8ba4e5cbd358e234d67e6d33b11376c1db7c27eee32f18604f8c57",
     "Full-API-Dump.json": "dd40848dfd2630f90268a29d0a6d023e734abffbd39c861592bbb8a3a2bc14af",
-    "api-diff.json": "e34e1aefa87b9bb560d0dd1fe347b9b9c9323536bba6aba783a47aedb9d2dbfb",
-    "metadata.json": "5daccbc17222f5c0df8473bf516e514625994c20e260af33e06a290ec61a2027"
+    "api-diff.json": "059305514e44b0a20d3ddcf4a692f1781ffe18b5d703a86008b42381a9fbac16",
+    "metadata.json": "49806f549727be994575ffe223161889aaa82c5bc09fe4c9710e13b5ae48b950"
   },
-  "id": "9a4f21712aacb1a8e5250fd9bbdf683c94a22d6d990da3d4aeb405433fb4df8b",
+  "id": "d2b9bc01e52da4caf3979e74d4fc1b273a76161974a92152017a057a5787dc93",
   "observationMode": "live",
-  "observedAt": "2026-11-04T18:53:45.605Z",
+  "observedAt": "2026-11-05T22:21:43.345Z",
   "provenance": [
     {
-      "buildGuid": "version-fee454b8e2094ba9",
+      "buildGuid": "version-67c8b1dedbb74fed",
       "bytes": 7707805,
       "sha256": "909dc58a41c7d514447a58a4d4185c953b37b7199c075413fc148dbaff9f2681",
       "sourceType": "official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-fee454b8e2094ba9-API-Dump.json"
+      "sourceUrl": "https://setup.rbxcdn.com/version-67c8b1dedbb74fed-API-Dump.json"
     },
     {
-      "buildGuid": "version-fee454b8e2094ba9",
+      "buildGuid": "version-67c8b1dedbb74fed",
       "bytes": 8721015,
       "sha256": "6983b313405cf1e6f8c03fe621bcba0daa5a99cda70482adebddc0353997bfb4",
       "sourceType": "official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-fee454b8e2094ba9-Full-API-Dump.json"
+      "sourceUrl": "https://setup.rbxcdn.com/version-67c8b1dedbb74fed-Full-API-Dump.json"
     }
   ],
-  "sequence": 11,
+  "sequence": 12,
   "status": "available",
   "summary": {
     "classes": 945,
     "engineRevision": 1,
     "enums": 656,
     "fullStatus": "available",
-    "guid": "version-fee454b8e2094ba9",
+    "guid": "version-67c8b1dedbb74fed",
     "members": 8116
   },
   "surface": "API",

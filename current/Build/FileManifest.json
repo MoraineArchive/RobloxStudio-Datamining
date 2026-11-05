@@ -50691,7 +50691,7 @@
       "content",
       "ExtraContent"
     ],
-    "checksum": "74f0aea9edccaeffcf06fdadc5e41059",
+    "checksum": "bc38e24951edfc215ad2e9da4e01d89d",
     "path": "ExtraContent/models/DataModelPatch/DataModelPatch.rbxm"
   },
   {
@@ -80945,7 +80945,7 @@
     "categories": [
       "other"
     ],
-    "checksum": "d3150b88ec5de0a5247ed9d5f7681e0f",
+    "checksum": "409a570e3484de728b58c5cf6c0d5be1",
     "path": "NativeDialog.exe"
   },
   {
@@ -81459,21 +81459,21 @@
     "categories": [
       "other"
     ],
-    "checksum": "e63fe6b76d0c5fe82f4c9613f0f11ea3",
+    "checksum": "50bd37a3de969e016d0d201a966d9160",
     "path": "QtitanBase.dll"
   },
   {
     "categories": [
       "other"
     ],
-    "checksum": "12bc0b6ad1ba58ce1d29f4511df08275",
+    "checksum": "4827c5d1c4e79e1b39392c9b7402db89",
     "path": "QtitanDocking.dll"
   },
   {
     "categories": [
       "other"
     ],
-    "checksum": "70092e3d8619d0092f4b82f6ee41c660",
+    "checksum": "90f7072fc5a62e039d5a45bc2cd29707",
     "path": "QtitanOffice2016Style.dll"
   },
   {
@@ -81487,14 +81487,14 @@
     "categories": [
       "other"
     ],
-    "checksum": "b717204b1400bd95caee2515e9ea0e03",
+    "checksum": "e7e9c001a5fe99169283626043969d3a",
     "path": "RobloxCrashHandler.exe"
   },
   {
     "categories": [
       "other"
     ],
-    "checksum": "651d220e4814a51d9a1cb70113541389",
+    "checksum": "b3742d0d312ebabb47f9cbcf66a00026",
     "path": "RobloxStudioBeta.exe"
   },
   {
@@ -88157,7 +88157,7 @@
     "categories": [
       "other"
     ],
-    "checksum": "0472e34dced81d122848928e916c298e",
+    "checksum": "695cd19d41ffd303a1b8cd9e0586877a",
     "path": "StudioMCP.exe"
   },
   {
@@ -158477,14 +158477,14 @@
     "categories": [
       "other"
     ],
-    "checksum": "53b7a932c8d9378033a27b625e7d30df",
+    "checksum": "cc77918c947cebb3df0507d67ccd9619",
     "path": "mimalloc-redirect.dll"
   },
   {
     "categories": [
       "other"
     ],
-    "checksum": "1c60785f7299ef0b1a2a9d2f2e4fa486",
+    "checksum": "8d352a5d5aff8712ffc75ffa42a2762d",
     "path": "mimalloc.dll"
   },
   {

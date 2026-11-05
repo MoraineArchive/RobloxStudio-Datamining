@@ -108,10 +108,10 @@
     "uncompressedSize": 35772293
   },
   {
-    "checksum": "66f9d08360d99a3c7da9c0195468672b",
-    "compressedSize": 17296499,
+    "checksum": "51f03ce95a64432505b43d07cf0a55a0",
+    "compressedSize": 17324838,
     "name": "extracontent-models.zip",
-    "uncompressedSize": 17407669
+    "uncompressedSize": 17437220
   },
   {
     "checksum": "3433da85e2dd8b310279b5560db21a86",
@@ -132,13 +132,13 @@
     "uncompressedSize": 1919259
   },
   {
-    "checksum": "ec7d91e210637da0ae8e9d422025c1dd",
-    "compressedSize": 6023775,
+    "checksum": "64747db148deedfee5c672c41eaf16a4",
+    "compressedSize": 6023773,
     "name": "Libraries.zip",
     "uncompressedSize": 14985936
   },
   {
-    "checksum": "cba463cbfec1d7f9906b064fd2979e97",
+    "checksum": "a37420743fb19e165fee57a5e2e4f4a1",
     "compressedSize": 8607966,
     "name": "LibrariesQt5.zip",
     "uncompressedSize": 20268032
@@ -156,10 +156,10 @@
     "uncompressedSize": 4193416
   },
   {
-    "checksum": "adc4d8e0d3f7f5c5e28aa053f39ea01d",
-    "compressedSize": 121491632,
+    "checksum": "825c6d5f9fe3f41cac6f29b290a40753",
+    "compressedSize": 121490008,
     "name": "RobloxStudio.zip",
-    "uncompressedSize": 257999773
+    "uncompressedSize": 257999261
   },
   {
     "checksum": "15d87cafdf6019bf696a393edb5ecfba",
@@ -168,7 +168,7 @@
     "uncompressedSize": 88064896
   },
   {
-    "checksum": "53664336fd7d3598465584a69c31ad8d",
+    "checksum": "00c6ed972c3ad22d03bd5700716ce6cd",
     "compressedSize": 130569,
     "name": "ssl.zip",
     "uncompressedSize": 228725
@@ -192,7 +192,7 @@
     "uncompressedSize": 133918371
   },
   {
-    "checksum": "15c50b37f2da786a5049806a66758fee",
+    "checksum": "40261b575aeb8ae37b34098c1de16733",
     "compressedSize": 83405,
     "name": "WebView2.zip",
     "uncompressedSize": 166000

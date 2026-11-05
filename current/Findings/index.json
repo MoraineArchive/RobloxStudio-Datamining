@@ -4306,11 +4306,37 @@
             "translation",
             "util"
           ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/05/22-23-51Z_build_version-67c8b1dedbb74fed",
+          "evidencePath": "2026/11/05/22-23-51Z_build_version-67c8b1dedbb74fed/changes.json",
+          "family": "FastVariables",
+          "id": "e50c69be99156ad20a2122a8e9c88630fc45d82eb22797866c8161936cecd247",
+          "key": "C++:FFlagAssetImportServicePickAnimatedImageFileWithPrompt",
+          "kind": "variables",
+          "observedAt": "2026-11-05T22:23:51.565Z",
+          "operation": "changed",
+          "surface": "FastVariables",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "asset",
+            "file",
+            "image",
+            "import",
+            "pick",
+            "prompt",
+            "with"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "animated-images",
-      "lastObservedAt": "2026-11-04T18:56:04.831Z",
+      "lastObservedAt": "2026-11-05T22:23:51.565Z",
       "lifecycle": [],
       "status": "observed",
       "title": "Animated images"
@@ -5472,11 +5498,61 @@
             "rbx",
             "uri"
           ]
+        },
+        {
+          "concepts": [
+            "avatar",
+            "abilities"
+          ],
+          "eventPath": "2026/11/05/22-23-51Z_build_version-67c8b1dedbb74fed",
+          "evidencePath": "2026/11/05/22-23-51Z_build_version-67c8b1dedbb74fed/changes.json",
+          "family": "LiveSettings",
+          "id": "266c847615306ac0dda05a35ede92cc1e11b953611c13bf47c1a9e64d062bf89",
+          "key": "DFStringRbxAvatarAbilitiesStudioBeta2ContentUri_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-05T22:23:51.565Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abilities",
+            "avatar",
+            "beta2",
+            "content",
+            "rbx",
+            "uri"
+          ]
+        },
+        {
+          "after": "rbxassetid://90046778086349",
+          "before": "rbxassetid://134298046760445",
+          "concepts": [
+            "avatar",
+            "abilities"
+          ],
+          "eventPath": "2026/11/05/22-23-51Z_build_version-67c8b1dedbb74fed",
+          "evidencePath": "2026/11/05/22-23-51Z_build_version-67c8b1dedbb74fed/changes.json",
+          "family": "LiveSettings",
+          "id": "460f60ad2e8f623d036e9c4505b585d1eaad536b9ebb6f16ecdadd3401e7de23",
+          "key": "DFStringRbxAvatarAbilitiesStudioBeta2ContentUri",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-05T22:23:51.565Z",
+          "operation": "changed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abilities",
+            "avatar",
+            "beta2",
+            "content",
+            "rbx",
+            "uri"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "avatar-abilities",
-      "lastObservedAt": "2026-11-05T18:53:23.238Z",
+      "lastObservedAt": "2026-11-05T22:23:51.565Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T01:54:39.846Z",
@@ -5499,6 +5575,14 @@
           "signalIds": [
             "6cb78765f87bbb372f5f9503d8c0fe24fe8caf8dcbe6e7f1b579a230b25d9246",
             "b9d81a60ea419ee1b49b78e12c567c35090948a48ecc3463ccb3c30471be54ce"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-11-05T22:23:51.565Z",
+          "signalIds": [
+            "0609f0aae97cf1e2877211d42b89592efa66d7a10d3ed6e33c3db25008584f72",
+            "460f60ad2e8f623d036e9c4505b585d1eaad536b9ebb6f16ecdadd3401e7de23"
           ],
           "type": "staged-to-non-staged"
         }
@@ -14411,11 +14495,243 @@
             "moments",
             "page"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/05/22-23-51Z_build_version-67c8b1dedbb74fed",
+          "evidencePath": "2026/11/05/22-23-51Z_build_version-67c8b1dedbb74fed/changes.json",
+          "family": "LiveSettings",
+          "id": "013fdd7377535ef757fd3e84bfd417b2f48be15b08b0387b31d5ea2836e78dc1",
+          "key": "FFlagMomentsServeEDPVideos4_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-05T22:23:51.565Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "edp",
+            "moments",
+            "serve",
+            "videos4"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/05/22-23-51Z_build_version-67c8b1dedbb74fed",
+          "evidencePath": "2026/11/05/22-23-51Z_build_version-67c8b1dedbb74fed/changes.json",
+          "family": "LiveSettings",
+          "id": "28bd5d93d48fa06b3adba5dab0830905c64a92c4fa5e3da0c84f781c07b0f37b",
+          "key": "FFlagMomentsRenderPostAssets2",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-05T22:23:51.565Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "assets2",
+            "moments",
+            "post",
+            "render"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/05/22-23-51Z_build_version-67c8b1dedbb74fed",
+          "evidencePath": "2026/11/05/22-23-51Z_build_version-67c8b1dedbb74fed/changes.json",
+          "family": "LiveSettings",
+          "id": "3333db6ac0e273980d8c957def44a9560de235e7952924b843d74d03fc34e3ac",
+          "key": "FFlagMomentsCreatorAttributionIxpEnabled_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-05T22:23:51.565Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "attribution",
+            "creator",
+            "ixp",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/05/22-23-51Z_build_version-67c8b1dedbb74fed",
+          "evidencePath": "2026/11/05/22-23-51Z_build_version-67c8b1dedbb74fed/changes.json",
+          "family": "LiveSettings",
+          "id": "4e095a4b7b25ce799647bdf5f0a7c855485433364b9f2e449883b300915136f4",
+          "key": "FStringMomentsCreatorAttributionIxpLayer_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-05T22:23:51.565Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "attribution",
+            "creator",
+            "ixp",
+            "layer",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/05/22-23-51Z_build_version-67c8b1dedbb74fed",
+          "evidencePath": "2026/11/05/22-23-51Z_build_version-67c8b1dedbb74fed/changes.json",
+          "family": "LiveSettings",
+          "id": "61013e90ba67129fc0c849b203f94b1c8301b79bbf722d33abcccf3fa3ec665e",
+          "key": "FStringMomentsCreatorAttributionIxpLayer",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-05T22:23:51.565Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "attribution",
+            "creator",
+            "ixp",
+            "layer",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/05/22-23-51Z_build_version-67c8b1dedbb74fed",
+          "evidencePath": "2026/11/05/22-23-51Z_build_version-67c8b1dedbb74fed/changes.json",
+          "family": "LiveSettings",
+          "id": "612c35da4a834fae255bd3bc270be16c05c0593c9cfd32e288add53866f7821f",
+          "key": "FFlagMomentsCreatorAttributionIxpEnabled",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-05T22:23:51.565Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "attribution",
+            "creator",
+            "ixp",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/05/22-23-51Z_build_version-67c8b1dedbb74fed",
+          "evidencePath": "2026/11/05/22-23-51Z_build_version-67c8b1dedbb74fed/changes.json",
+          "family": "LiveSettings",
+          "id": "885251d08c491fa9680c22e98a504659dfb5100e64ce41a5e246cb342a3b07c0",
+          "key": "FFlagMomentsRecommendationContentType_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-05T22:23:51.565Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "content",
+            "moments",
+            "recommendation",
+            "type"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/05/22-23-51Z_build_version-67c8b1dedbb74fed",
+          "evidencePath": "2026/11/05/22-23-51Z_build_version-67c8b1dedbb74fed/changes.json",
+          "family": "LiveSettings",
+          "id": "98af0b9e60c1a0ba9b48a2193933cbe69b4b35d5692b7193d25628550abb2b19",
+          "key": "FFlagMomentsRecommendationContentType",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-05T22:23:51.565Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "content",
+            "moments",
+            "recommendation",
+            "type"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/05/22-23-51Z_build_version-67c8b1dedbb74fed",
+          "evidencePath": "2026/11/05/22-23-51Z_build_version-67c8b1dedbb74fed/changes.json",
+          "family": "LiveSettings",
+          "id": "c2282be6a9261541852604b999aaa2bb10b9853b587e0cdd12162242764f188c",
+          "key": "FFlagMomentsRenderPostAssets2_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-05T22:23:51.565Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "assets2",
+            "moments",
+            "post",
+            "render"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/05/22-23-51Z_build_version-67c8b1dedbb74fed",
+          "evidencePath": "2026/11/05/22-23-51Z_build_version-67c8b1dedbb74fed/changes.json",
+          "family": "LiveSettings",
+          "id": "f5b98e09c741a01f4ef435a3905dabab1ff9925ca131928aeaef72c16692bdfb",
+          "key": "FFlagMomentsServeEDPVideos4",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-05T22:23:51.565Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "edp",
+            "moments",
+            "serve",
+            "videos4"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-11-05T19:34:31.846Z",
+      "lastObservedAt": "2026-11-05T22:23:51.565Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
@@ -14747,6 +15063,46 @@
           "signalIds": [
             "d0652560739049ed4e27aee6aed5257d4e5f78b3141b94acb86ce9037efb893d",
             "e7829629e11c15ceae8861479451fc293ac42905a30f4cf89cba2e0fea0aa346"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-11-05T22:23:51.565Z",
+          "signalIds": [
+            "0b8e3cf055e90deddf1bfe97f7c67b4125f072eb83d7356880aa16890662ba38",
+            "612c35da4a834fae255bd3bc270be16c05c0593c9cfd32e288add53866f7821f"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-11-05T22:23:51.565Z",
+          "signalIds": [
+            "2ed786aee97d578dc83c04bcb9017f8d1224c68fac8ac02a5fab23eaa8c4effb",
+            "98af0b9e60c1a0ba9b48a2193933cbe69b4b35d5692b7193d25628550abb2b19"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-11-05T22:23:51.565Z",
+          "signalIds": [
+            "5ad07d310b17fcebbdcf17db1a210fe3eb3a80ea64f4ae11f251140104470f08",
+            "f5b98e09c741a01f4ef435a3905dabab1ff9925ca131928aeaef72c16692bdfb"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-11-05T22:23:51.565Z",
+          "signalIds": [
+            "61013e90ba67129fc0c849b203f94b1c8301b79bbf722d33abcccf3fa3ec665e",
+            "b2eda960c359ffc1a66b9165ffde1224e808541f5c4f8a223ad4701e3c23be5c"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-11-05T22:23:51.565Z",
+          "signalIds": [
+            "28bd5d93d48fa06b3adba5dab0830905c64a92c4fa5e3da0c84f781c07b0f37b",
+            "79de4e8cd7149a653cdb8a853d936c9314e81dc7928a7fd7ffd82d850d8f28c6"
           ],
           "type": "staged-to-non-staged"
         }

@@ -2,35 +2,35 @@
   "observationMode": "live",
   "provenance": [
     {
-      "buildGuid": "version-fee454b8e2094ba9",
+      "buildGuid": "version-67c8b1dedbb74fed",
       "bytes": 104634735,
       "derivedFrom": "BuiltInPlugins.zip",
       "sha256": "8063dbeb0a4ec64649e594e9f1303e0ef7affe058dcf12f55c176b10079e5e3b",
       "sourceType": "derived-official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-fee454b8e2094ba9-BuiltInPlugins.zip"
+      "sourceUrl": "https://setup.rbxcdn.com/version-67c8b1dedbb74fed-BuiltInPlugins.zip"
     },
     {
-      "buildGuid": "version-fee454b8e2094ba9",
+      "buildGuid": "version-67c8b1dedbb74fed",
       "bytes": 109661981,
       "derivedFrom": "BuiltInStandalonePlugins.zip",
       "sha256": "438c672cedc318d318bd83e9e3705ed244ce73de9da61d6a2fc705d0aac41fd6",
       "sourceType": "derived-official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-fee454b8e2094ba9-BuiltInStandalonePlugins.zip"
+      "sourceUrl": "https://setup.rbxcdn.com/version-67c8b1dedbb74fed-BuiltInStandalonePlugins.zip"
     },
     {
-      "buildGuid": "version-fee454b8e2094ba9",
+      "buildGuid": "version-67c8b1dedbb74fed",
       "bytes": 927300,
       "derivedFrom": "Plugins.zip",
       "sha256": "336c248303ef778dd1ceeddee133a43b44ad17034d4f3db48df3fe389d7688a5",
       "sourceType": "derived-official",
-      "sourceUrl": "https://setup.rbxcdn.com/version-fee454b8e2094ba9-Plugins.zip"
+      "sourceUrl": "https://setup.rbxcdn.com/version-67c8b1dedbb74fed-Plugins.zip"
     }
   ],
   "reason": "Some distributed models contain bytecode rather than original script source.",
   "status": "partial",
   "summary": {
     "engineRevision": 1,
-    "guid": "version-fee454b8e2094ba9",
+    "guid": "version-67c8b1dedbb74fed",
     "localizationFiles": 455,
     "models": 112,
     "packages": 3,
