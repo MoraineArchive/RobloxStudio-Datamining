@@ -5448,11 +5448,35 @@
             "filter",
             "place"
           ]
+        },
+        {
+          "concepts": [
+            "avatar",
+            "abilities"
+          ],
+          "eventPath": "2026/11/05/18-53-23Z_datasets",
+          "evidencePath": "2026/11/05/18-53-23Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "0609f0aae97cf1e2877211d42b89592efa66d7a10d3ed6e33c3db25008584f72",
+          "key": "DFStringRbxAvatarAbilitiesStudioBeta2ContentUri_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-05T18:53:23.238Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abilities",
+            "avatar",
+            "beta2",
+            "content",
+            "rbx",
+            "uri"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "avatar-abilities",
-      "lastObservedAt": "2026-11-01T01:58:06.069Z",
+      "lastObservedAt": "2026-11-05T18:53:23.238Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T01:54:39.846Z",
@@ -14178,11 +14202,34 @@
             "moments",
             "page"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/05/18-53-23Z_datasets",
+          "evidencePath": "2026/11/05/18-53-23Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "79de4e8cd7149a653cdb8a853d936c9314e81dc7928a7fd7ffd82d850d8f28c6",
+          "key": "FFlagMomentsRenderPostAssets2_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-05T18:53:23.238Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "assets2",
+            "moments",
+            "post",
+            "render"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-11-05T18:43:52.765Z",
+      "lastObservedAt": "2026-11-05T18:53:23.238Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
