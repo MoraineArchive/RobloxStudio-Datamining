@@ -1,0 +1,100 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-67c8b1dedbb74fed",
+    "manifestFiles": 19397,
+    "packages": 34,
+    "version": "0.746.0.7461269"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "ad62a834f177f6428149bd398759b9d33b39727908bb2be758b885520ebec280",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "38f1edd1bc833ac4db2e18b7286958d7ce63632ea3ac2d83c4267191215086a0",
+      "semantic": {
+        "added": [
+          "FFlagExpChatTCWMemoizeChatWindowBody_Staged",
+          "FFlagUserProfileMergeCachedNames",
+          "FStringAnimationGenerationInAssistantBetaFeatureUrl"
+        ],
+        "changed": [
+          {
+            "after": "e735c098f6c1bcda9c6f36128a4f64acc140dbbb",
+            "before": "3350f2ed17ec10cf87f3f184b211738741f0189b",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-06T00:27:38.642Z",
+            "before": "2026-11-06T00:08:14.631Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagSoftwareOcclusionPerVisualEngine2"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagSoftwareOcclusionPerVisualEngineFlaggingFix"
+          },
+          {
+            "after": "e735c098f6c1bcda9c6f36128a4f64acc140dbbb",
+            "before": "3350f2ed17ec10cf87f3f184b211738741f0189b",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-06T00:27:38.642Z",
+            "before": "2026-11-06T00:08:14.631Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagSoftwareOcclusionPerVisualEngine2_Staged",
+          "FFlagSoftwareOcclusionPerVisualEngineFlaggingFix_Staged",
+          "FFlagUserProfileMergeCachedNames_Staged",
+          "FStringAnimationGenerationInAssistantBetaFeatureUrl_Staged"
+        ],
+        "unchanged": 26759
+      }
+    },
+    "Web": {
+      "current": "854bec1f3959a25999ac0b1286a0798b3710244a42f51f1ed2cf15e459953ab1",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-001.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-035.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-050.js",
+          "assets.create.roblox.com/page-0/script-054.js",
+          "assets.create.roblox.com/page-0/script-066.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-077.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 83
+      },
+      "previous": "453a12227ea72f6c9e9ae3dba34c0bd5dc5e0481d6809b12299b6ad332969d11",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
