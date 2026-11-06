@@ -5548,11 +5548,37 @@
             "rbx",
             "uri"
           ]
+        },
+        {
+          "after": "True;10139630272;10770019413;10769634303;10769786660;10769920376;10769888690;10769922255;10769928435;10770723134;10770582633;10769909775;10769924064;10771975609;10774805165;10768492546;10761698214",
+          "before": "True;10139630272;10770019413;10769634303;10769786660;10769920376;10769888690;10769922255;10769928435;10770723134;10770582633;10769909775;10769924064;10771975609;10768492546;10761698214",
+          "concepts": [
+            "avatar",
+            "abilities"
+          ],
+          "eventPath": "2026/11/06/00-12-01Z_datasets",
+          "evidencePath": "2026/11/06/00-12-01Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "3421c7e433cedcdbab98fc363a6dda521f9b6a28bdce0e75bb68029558c7295a",
+          "key": "DFFlagAvatarAbilitiesUseStudioBeta2Asset_UniverseFilter",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-06T00:12:01.424Z",
+          "operation": "changed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abilities",
+            "asset",
+            "avatar",
+            "beta2",
+            "filter",
+            "universe"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "avatar-abilities",
-      "lastObservedAt": "2026-11-05T22:23:51.565Z",
+      "lastObservedAt": "2026-11-06T00:12:01.424Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T01:54:39.846Z",
