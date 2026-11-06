@@ -14899,11 +14899,105 @@
             "music",
             "picker"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/06/20-59-06Z_datasets",
+          "evidencePath": "2026/11/06/20-59-06Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "3055676c80f706e4c753d2d8ad607baf43863e78760164cf6ae8d7928fab715b",
+          "key": "FFlagMomentsCreationMusicEditorRedesign_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-06T20:59:06.573Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "editor",
+            "moments",
+            "music",
+            "redesign"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/06/20-59-06Z_datasets",
+          "evidencePath": "2026/11/06/20-59-06Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "477ce28b94bedb5f76a45d40ad89dd274454bf5a4cda661ecd69c01ffa7b0e3b",
+          "key": "FFlagMomentsCreationMusicPickerV2",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-06T20:59:06.573Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "moments",
+            "music",
+            "picker"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/06/20-59-06Z_datasets",
+          "evidencePath": "2026/11/06/20-59-06Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "72f066f531e62929dc14380e542b54f7ae295abee1fb512a6c3d762d84087397",
+          "key": "FFlagMomentsCreationMusicPickerV2_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-06T20:59:06.573Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "moments",
+            "music",
+            "picker"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/06/20-59-06Z_datasets",
+          "evidencePath": "2026/11/06/20-59-06Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "9baf106caa7d9bb3be9dd6b1a1752a105d5912f2e26b2f445d2f835208abe557",
+          "key": "FFlagMomentsCreationMusicEditorRedesign",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-06T20:59:06.573Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "editor",
+            "moments",
+            "music",
+            "redesign"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-11-06T20:52:25.125Z",
+      "lastObservedAt": "2026-11-06T20:59:06.573Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
@@ -15275,6 +15369,22 @@
           "signalIds": [
             "28bd5d93d48fa06b3adba5dab0830905c64a92c4fa5e3da0c84f781c07b0f37b",
             "79de4e8cd7149a653cdb8a853d936c9314e81dc7928a7fd7ffd82d850d8f28c6"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-11-06T20:59:06.573Z",
+          "signalIds": [
+            "312b68373e97f1b14c39d92e4b69b78587233a6c87d23a8379d7d5d4a5911a72",
+            "9baf106caa7d9bb3be9dd6b1a1752a105d5912f2e26b2f445d2f835208abe557"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-11-06T20:59:06.573Z",
+          "signalIds": [
+            "477ce28b94bedb5f76a45d40ad89dd274454bf5a4cda661ecd69c01ffa7b0e3b",
+            "f372d35e75eb69262a381e987847da9576aefc87a6df8f7b160bda0ef329d7c2"
           ],
           "type": "staged-to-non-staged"
         }
