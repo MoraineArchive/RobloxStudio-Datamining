@@ -1,0 +1,104 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-67c8b1dedbb74fed",
+    "manifestFiles": 19397,
+    "packages": 34,
+    "version": "0.746.0.7461269"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "75fd903ef0194e6424e8be4ca5232c4a6495d4e98548648ab1df3469f37e5654",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "5a43f3a7564d5f2ce6df48f307bb6fbfdc062d8fc4ba9c286b032473b3133d8f",
+      "semantic": {
+        "added": [
+          "DFFlagRbxTransportDetectRecvThreadOverloadByRate_Staged",
+          "DFFlagResumeSingleContinue_Staged",
+          "DFFlagStreamingDeferOldGridTerrainStreamOut_Staged",
+          "DFIntAutomaticAssetCaptureSenderClientToHttpMinHundrethsPercent",
+          "DFIntAutomaticAssetCaptureSenderClientToHttpOffset",
+          "DFIntAutomaticAssetCaptureSenderClientToHttpScale",
+          "DFIntAutomaticAssetCaptureSenderClientToHttpStaticRateHundrethsPercent",
+          "DFIntAutomaticAssetCaptureSenderClientToServerSampleRateHundrethsPercent",
+          "DFIntAutomaticAssetCaptureSenderMaxBytesPerSecondClient",
+          "DFIntAutomaticAssetCaptureSenderMaxBytesPerSecondServer",
+          "DFIntAutomaticAssetCaptureSenderMaxClientQueueSize",
+          "DFIntAutomaticAssetCaptureSenderMaxEntriesPerRemoteEvent",
+          "DFIntAutomaticAssetCaptureSenderMaxServerQueueSize",
+          "FFlagAXMemoizeEquippedLayeredMakeupAssets_Staged",
+          "FFlagLuaAppStableNavigateToGameDetails_Staged",
+          "FFlagLuauCageSplitData_Staged",
+          "FFlagLuauSkipDebugLocked_Staged",
+          "FFlagRbxTransportPeerClockTlsSeed_Staged",
+          "FFlagRbxTransportPeerClock_Staged",
+          "FFlagRbxTransportPhysicsClock_Staged",
+          "FFlagRbxTransportRtcIoAllowCertRotationInitFailure_Staged",
+          "FFlagSentryIxpEnrollmentsAsFeatureFlagsEnabled_Staged",
+          "FFlagSentryRolloutFlagsAsFeatureFlagsEnabled_Staged",
+          "FFlagSimWaterAwareAeroWake_Staged",
+          "FFlagSocialTabWrapperStableNavigationProps_Staged",
+          "FFlagTTranscoderDecalPixelated_Staged"
+        ],
+        "changed": [
+          {
+            "after": "ff6615c76733b49c8547011fce4a8bc033181a35",
+            "before": "4670eb478e83c9ff221954f68bc647a9a3730ae0",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-06T18:29:04.447Z",
+            "before": "2026-11-06T11:06:13.531Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "ff6615c76733b49c8547011fce4a8bc033181a35",
+            "before": "4670eb478e83c9ff221954f68bc647a9a3730ae0",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-06T18:29:04.447Z",
+            "before": "2026-11-06T11:06:13.531Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [],
+        "unchanged": 26772
+      }
+    },
+    "Web": {
+      "current": "85eac5829a9f884d367660d7036552391cb05b8e6e825499af2b6f56e2f8a857",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-050.js",
+          "assets.create.roblox.com/page-0/script-054.js",
+          "assets.create.roblox.com/page-0/script-068.js",
+          "assets.create.roblox.com/page-0/script-077.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 87
+      },
+      "previous": "5da83dd91f57bbbb38ba232584ea4b406cef1edc9c51c7623761bb749b8e6458",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
