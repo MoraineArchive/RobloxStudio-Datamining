@@ -14753,11 +14753,157 @@
             "serve",
             "videos4"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/06/20-52-25Z_datasets",
+          "evidencePath": "2026/11/06/20-52-25Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "08f841958aa3d281c8eb9ad4957dead7e93e1383ade2cf6744c77a443968f32e",
+          "key": "FFlagMomentsCreationAudioSearchV2SortType_IXP",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-06T20:52:25.125Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "audio",
+            "creation",
+            "ixp",
+            "moments",
+            "search",
+            "sort",
+            "type"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/06/20-52-25Z_datasets",
+          "evidencePath": "2026/11/06/20-52-25Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "2da6af727335a538fe5f4e240c6085cd4eaa3af143454211eb601ff08e73d028",
+          "key": "FFlagMomentsCreationMusicPickerV2_IXP",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-06T20:52:25.125Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "ixp",
+            "moments",
+            "music",
+            "picker"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/06/20-52-25Z_datasets",
+          "evidencePath": "2026/11/06/20-52-25Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "2f9787bb2c26659b5e6f214fed3e6d1ee3e0a99cac1e12b341cbb657f6bd5c3e",
+          "key": "FFlagMomentsImageWithSkeletonRetry_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-06T20:52:25.125Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "image",
+            "moments",
+            "retry",
+            "skeleton",
+            "with"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/06/20-52-25Z_datasets",
+          "evidencePath": "2026/11/06/20-52-25Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "312b68373e97f1b14c39d92e4b69b78587233a6c87d23a8379d7d5d4a5911a72",
+          "key": "FFlagMomentsCreationMusicEditorRedesign_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-06T20:52:25.125Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "editor",
+            "moments",
+            "music",
+            "redesign"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/06/20-52-25Z_datasets",
+          "evidencePath": "2026/11/06/20-52-25Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "7bb70f4a196d19ec8d3647f59d0fdf75e0ea139cd3c833f417a8079f046ed1e8",
+          "key": "FFlagMomentsCreationAudioSearchV2SortType",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-06T20:52:25.125Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "audio",
+            "creation",
+            "moments",
+            "search",
+            "sort",
+            "type"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/06/20-52-25Z_datasets",
+          "evidencePath": "2026/11/06/20-52-25Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "f372d35e75eb69262a381e987847da9576aefc87a6df8f7b160bda0ef329d7c2",
+          "key": "FFlagMomentsCreationMusicPickerV2_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-06T20:52:25.125Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "moments",
+            "music",
+            "picker"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-11-05T22:23:51.565Z",
+      "lastObservedAt": "2026-11-06T20:52:25.125Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
