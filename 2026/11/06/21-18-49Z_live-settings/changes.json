@@ -1,0 +1,68 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-67c8b1dedbb74fed",
+    "manifestFiles": 19397,
+    "packages": 34,
+    "version": "0.746.0.7461269"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "132f9134277c718a7cb9b1654539248a765f4e04971ae24d70ffb229de3faa8d",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "5756c08a685f9177991421f6f0441e2d09c5d105a2960e92964d9d532088f958",
+      "semantic": {
+        "added": [
+          "FFlagAXScrollTelemetryIntegration2",
+          "FFlagDisableAppInitializerLegacyTelemetry",
+          "FFlagDisableRCCJobProfilingInfoLegacyTelemetry",
+          "FFlagIntervalPerformanceTrackerPerIntervalSampleRate",
+          "FFlagLuauCodegenX64ConflictCheck2",
+          "FFlagMigrateBaseRemoteEventLegacyTelemetry",
+          "FFlagSafetyResourceBannerTelemetry"
+        ],
+        "changed": [
+          {
+            "after": "5c48b6614af9fe253cb759442aee4b3d7cfa8418",
+            "before": "e0dcb0019d314bb5d4c8f23dec1d845dd9603690",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-06T21:17:39.568Z",
+            "before": "2026-11-06T20:52:38.923Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "5c48b6614af9fe253cb759442aee4b3d7cfa8418",
+            "before": "e0dcb0019d314bb5d4c8f23dec1d845dd9603690",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-06T21:17:39.568Z",
+            "before": "2026-11-06T20:52:38.923Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagAXScrollTelemetryIntegration2_Staged",
+          "FFlagDisableAppInitializerLegacyTelemetry_Staged",
+          "FFlagDisableRCCJobProfilingInfoLegacyTelemetry_Staged",
+          "FFlagIntervalPerformanceTrackerPerIntervalSampleRate_Staged",
+          "FFlagLuauCodegenX64ConflictCheck2_Staged",
+          "FFlagMigrateBaseRemoteEventLegacyTelemetry_Staged",
+          "FFlagSafetyResourceBannerTelemetry_Staged"
+        ],
+        "unchanged": 26825
+      }
+    }
+  },
+  "schemaVersion": 1
+}
