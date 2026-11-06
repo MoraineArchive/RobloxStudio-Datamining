@@ -1,0 +1,104 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-67c8b1dedbb74fed",
+    "manifestFiles": 19397,
+    "packages": 34,
+    "version": "0.746.0.7461269"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "513b485df5d3925e10130f7bb7a28f9005bca5d34161f864acb00d9dc0bd7339",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "132f9134277c718a7cb9b1654539248a765f4e04971ae24d70ffb229de3faa8d",
+      "semantic": {
+        "added": [
+          "FFlagAnimGraphUI_ValueNodeInputProperties",
+          "FFlagBuildShareSheetFriendsSortAll",
+          "FFlagDeviceSimulatorDesktopPresetPlatforms",
+          "FFlagDeviceSimulatorNominalMemory",
+          "FFlagDeviceSimulatorPerformanceV1",
+          "FFlagFoundationBaseMenuAccessorySizing",
+          "FFlagMomentsImageWithSkeletonRetry",
+          "FFlagSduiReleaseSearchResultsPageState",
+          "FFlagStudioCopyInstancesAsJsonText",
+          "FFlagStudioDeviceSimulatorDynamicControlPresentation",
+          "FFlagStudioPasteJsonOntoInstances",
+          "FFlagUIGradientAtlasRenderTargetFlip",
+          "FStringFRMLockstepProfileOverride"
+        ],
+        "changed": [
+          {
+            "after": "6ce76cd872685fe0886f39187c803369a7fc800e",
+            "before": "5c48b6614af9fe253cb759442aee4b3d7cfa8418",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-06T21:57:51.197Z",
+            "before": "2026-11-06T21:17:39.568Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "6ce76cd872685fe0886f39187c803369a7fc800e",
+            "before": "5c48b6614af9fe253cb759442aee4b3d7cfa8418",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-06T21:57:51.197Z",
+            "before": "2026-11-06T21:17:39.568Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagAnimGraphUI_ValueNodeInputProperties_Staged",
+          "FFlagBuildShareSheetFriendsSortAll_Staged",
+          "FFlagDeviceSimulatorDesktopPresetPlatforms_Staged",
+          "FFlagDeviceSimulatorNominalMemory_Staged",
+          "FFlagDeviceSimulatorPerformanceV1_Staged",
+          "FFlagFoundationBaseMenuAccessorySizing_Staged",
+          "FFlagMomentsImageWithSkeletonRetry_Staged",
+          "FFlagSduiReleaseSearchResultsPageState_Staged",
+          "FFlagStudioCopyInstancesAsJsonText_Staged",
+          "FFlagStudioDeviceSimulatorDynamicControlPresentation_Staged",
+          "FFlagStudioPasteJsonOntoInstances_Staged",
+          "FFlagUIGradientAtlasRenderTargetFlip_Staged",
+          "FStringFRMLockstepProfileOverride_Staged"
+        ],
+        "unchanged": 26819
+      }
+    },
+    "Web": {
+      "current": "12d3931ae83ccc3e42efc0ae6a0c1d91fd035c67000c0ecc88ee71689b1a9c54",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-050.js",
+          "assets.create.roblox.com/page-0/script-054.js",
+          "assets.create.roblox.com/page-0/script-077.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 88
+      },
+      "previous": "f0299bfbd8fc6ec6115f204d8a774643770d2c362dc560b695c6a5484a383b85",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}

@@ -14993,11 +14993,59 @@
             "music",
             "redesign"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/06/23-33-11Z_datasets",
+          "evidencePath": "2026/11/06/23-33-11Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "754cc7f4e33e93d94dd01608e526e64f4b68ffc35b03a887af9604c5e76a4694",
+          "key": "FFlagMomentsImageWithSkeletonRetry_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-06T23:33:11.063Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "image",
+            "moments",
+            "retry",
+            "skeleton",
+            "with"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/06/23-33-11Z_datasets",
+          "evidencePath": "2026/11/06/23-33-11Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "91295b880f227e6fcfc4b35f7a1b267241ab15d2faa8d1c8c742a230b6c25fe2",
+          "key": "FFlagMomentsImageWithSkeletonRetry",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-06T23:33:11.063Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "image",
+            "moments",
+            "retry",
+            "skeleton",
+            "with"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-11-06T20:59:06.573Z",
+      "lastObservedAt": "2026-11-06T23:33:11.063Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
@@ -15385,6 +15433,14 @@
           "signalIds": [
             "477ce28b94bedb5f76a45d40ad89dd274454bf5a4cda661ecd69c01ffa7b0e3b",
             "f372d35e75eb69262a381e987847da9576aefc87a6df8f7b160bda0ef329d7c2"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-11-06T23:33:11.063Z",
+          "signalIds": [
+            "2f9787bb2c26659b5e6f214fed3e6d1ee3e0a99cac1e12b341cbb657f6bd5c3e",
+            "91295b880f227e6fcfc4b35f7a1b267241ab15d2faa8d1c8c742a230b6c25fe2"
           ],
           "type": "staged-to-non-staged"
         }
