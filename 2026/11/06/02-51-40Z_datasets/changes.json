@@ -1,0 +1,110 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-67c8b1dedbb74fed",
+    "manifestFiles": 19397,
+    "packages": 34,
+    "version": "0.746.0.7461269"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "fd3b56087f4908cdbb3502117f599d8572e3f12037c8b5254be060acd46c6add",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "7b34f433122ab8655a4750a7536edbf0b26fce02ff4523853459fb607c579562",
+      "semantic": {
+        "added": [
+          "DFFlagStreamingUnsubscribeKeepsCoarserTerrainLods",
+          "FFlagAACAssetPublishCommandsTelemetry",
+          "FFlagAddFriendsDeprecateUnusedReducers",
+          "FFlagAmrPublishDraftAssetsOnInsert",
+          "FFlagAmrPublishDraftsLatencyTelemetry",
+          "FFlagAppChatDebounceConversationFocusActivation_Staged",
+          "FFlagExpChatTCWMemoizeChatWindowBody",
+          "FFlagSQLiteMoveLog",
+          "FFlagSduiInteractableTileWrapper",
+          "FFlagShareSheetPeoplePickerEnabled2",
+          "FFlagStudioDialogManagerTertiaryButtonVariant",
+          "FFlagStudioPluginQWidgetCloseRequestFixes",
+          "FFlagUGCValidateNoMeshBelowFeet"
+        ],
+        "changed": [
+          {
+            "after": "949122e1a09ce6c156bfb5a483cf2f837f3fa78c",
+            "before": "1856dd3de10fe2fef9017be1bd5c031d71173d1e",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-06T02:47:16.454Z",
+            "before": "2026-11-06T00:47:42.071Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "949122e1a09ce6c156bfb5a483cf2f837f3fa78c",
+            "before": "1856dd3de10fe2fef9017be1bd5c031d71173d1e",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-06T02:47:16.454Z",
+            "before": "2026-11-06T00:47:42.071Z",
+            "name": "FStringFlipTimeStampFastString"
+          },
+          {
+            "after": "",
+            "before": "https://43bd00cc9b5cf2ece95b75b1bb788f27@sentry-relay.rbx.com/3",
+            "name": "FStringLuaAppSentryDsn"
+          }
+        ],
+        "removed": [
+          "DFFlagStreamingUnsubscribeKeepsCoarserTerrainLods_Staged",
+          "FFlagAACAssetPublishCommandsTelemetry_Staged",
+          "FFlagAACAssetPublishCommands_Staged",
+          "FFlagAddFriendsDeprecateUnusedReducers_Staged",
+          "FFlagAmrPublishDraftAssetsOnInsert_Staged",
+          "FFlagAmrPublishDraftsLatencyTelemetry_Staged",
+          "FFlagExpChatTCWMemoizeChatWindowBody_Staged",
+          "FFlagSQLiteMoveLog_Staged",
+          "FFlagSduiInteractableTileWrapper_Staged",
+          "FFlagShareSheetPeoplePickerEnabled2_Staged",
+          "FFlagStudioDialogManagerTertiaryButtonVariant_Staged",
+          "FFlagStudioPluginQWidgetCloseRequestFixes_Staged",
+          "FFlagUGCValidateNoMeshBelowFeet_Staged",
+          "FStringLuaAppSentryDsn_Staged"
+        ],
+        "unchanged": 26758
+      }
+    },
+    "Web": {
+      "current": "123cae20e570ae48f54cbe8da580015b00ea900f96adb9f9130b1a1266e68418",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-050.js",
+          "assets.create.roblox.com/page-0/script-054.js",
+          "assets.create.roblox.com/page-0/script-077.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 88
+      },
+      "previous": "28c75f156ce1856c7a91c475e525335b6c6b202b573f2d075870622e57f99217",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
