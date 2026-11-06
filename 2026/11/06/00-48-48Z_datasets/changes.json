@@ -1,0 +1,95 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-67c8b1dedbb74fed",
+    "manifestFiles": 19397,
+    "packages": 34,
+    "version": "0.746.0.7461269"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "7b34f433122ab8655a4750a7536edbf0b26fce02ff4523853459fb607c579562",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "ad62a834f177f6428149bd398759b9d33b39727908bb2be758b885520ebec280",
+      "semantic": {
+        "added": [
+          "DFFlagStreamingUnsubscribeKeepsCoarserTerrainLods_Staged",
+          "FFlagAmrPublishInsertUsesInventoryDraftState",
+          "FFlagAppIaScrollAwayDisableChat",
+          "FFlagSduiInteractableTileWrapper_Staged",
+          "FFlagToolboxAssetConfigSaveDefaults",
+          "FFlagUGCValidateNoMeshBelowFeet_Staged",
+          "FFlagUGCValidateTransitionMakeupBounds_PlaceFilter",
+          "FFlagVoiceVolumeControlsEnablePerUserVolumeInteractionTelemetry2",
+          "FIntUGCValidateMakeupMaxUBound_PlaceFilter",
+          "FIntUGCValidateMakeupMaxVBound_PlaceFilter",
+          "FIntUGCValidateMakeupMinUBound_PlaceFilter",
+          "FIntUGCValidateMakeupMinVBound_PlaceFilter",
+          "FStringLuaAppSentryDsn_Staged"
+        ],
+        "changed": [
+          {
+            "after": "1856dd3de10fe2fef9017be1bd5c031d71173d1e",
+            "before": "e735c098f6c1bcda9c6f36128a4f64acc140dbbb",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-06T00:47:42.071Z",
+            "before": "2026-11-06T00:27:38.642Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "1856dd3de10fe2fef9017be1bd5c031d71173d1e",
+            "before": "e735c098f6c1bcda9c6f36128a4f64acc140dbbb",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-06T00:47:42.071Z",
+            "before": "2026-11-06T00:27:38.642Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagAmrPublishInsertUsesInventoryDraftState_Staged",
+          "FFlagAppIaScrollAwayDisableChat_Staged",
+          "FFlagToolboxAssetConfigSaveDefaults_Staged",
+          "FFlagVoiceVolumeControlsEnablePerUserVolumeInteractionTelemetry2_Staged"
+        ],
+        "unchanged": 26760
+      }
+    },
+    "Web": {
+      "current": "28c75f156ce1856c7a91c475e525335b6c6b202b573f2d075870622e57f99217",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-050.js",
+          "assets.create.roblox.com/page-0/script-054.js",
+          "assets.create.roblox.com/page-0/script-077.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.create.roblox.com/page-0/script-079.js",
+          "assets.create.roblox.com/page-0/script-080.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 88
+      },
+      "previous": "854bec1f3959a25999ac0b1286a0798b3710244a42f51f1ed2cf15e459953ab1",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
