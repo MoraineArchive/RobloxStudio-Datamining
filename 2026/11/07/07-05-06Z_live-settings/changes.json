@@ -1,0 +1,65 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-67c8b1dedbb74fed",
+    "manifestFiles": 19397,
+    "packages": 34,
+    "version": "0.746.0.7461269"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "696da448d88878b6d76a006df442c988c1ca4eb712148d2350353a86dcf1c257",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "15e0788e7d264032a97c2dad6c2af05f3c8b3d282d32f5e0ef3e9cee96a33f92",
+      "semantic": {
+        "added": [],
+        "changed": [
+          {
+            "after": "False",
+            "before": "True",
+            "name": "DFFlagFixAnimationMemoryOverhead"
+          },
+          {
+            "after": "6f53704d3cb693b18a11a109f5c568554714dc5b",
+            "before": "b97f9145717538a38d6ed634b7c9993d060803e5",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-07T05:02:26.154Z",
+            "before": "2026-11-07T02:24:27.675Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagStudioNederlandsLocale"
+          },
+          {
+            "after": "6f53704d3cb693b18a11a109f5c568554714dc5b",
+            "before": "b97f9145717538a38d6ed634b7c9993d060803e5",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-07T05:02:26.154Z",
+            "before": "2026-11-07T02:24:27.675Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagFixAnimationMemoryOverhead_Staged",
+          "FFlagStudioNederlandsLocale_Staged"
+        ],
+        "unchanged": 26830
+      }
+    }
+  },
+  "schemaVersion": 1
+}
