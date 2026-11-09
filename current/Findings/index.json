@@ -15041,11 +15041,35 @@
             "skeleton",
             "with"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/09/18-44-26Z_datasets",
+          "evidencePath": "2026/11/09/18-44-26Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "19f9ccbcf2d4aabf65a4b4516d76c614ad2431e148104800d50bc3ef11cf5c0b",
+          "key": "FFlagMomentsHideOfficialContentLabel_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-09T18:44:26.833Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "content",
+            "hide",
+            "label",
+            "moments",
+            "official"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-11-06T23:33:11.063Z",
+      "lastObservedAt": "2026-11-09T18:44:26.833Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
