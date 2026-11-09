@@ -1,0 +1,23 @@
+{
+  "archivePath": "2026/11/09/18-59-05Z_live-settings",
+  "commit": {
+    "body": "LiveSettings files +0 ~1 -0\nLiveSettings       +6 ~5 -3",
+    "subject": "9 November 2026 - LIVE settings update"
+  },
+  "findings": {
+    "new": 0,
+    "updated": 0
+  },
+  "guid": "version-67c8b1dedbb74fed",
+  "id": "3914e290bf954370bd0ff00d646918f0bb3f41db26af6e35d3d75d7ac6c749b6",
+  "observedAt": "2026-11-09T18:59:05.572Z",
+  "product": "Studio",
+  "schemaVersion": 1,
+  "surfaces": [
+    "LiveSettings"
+  ],
+  "target": "WindowsStudio64",
+  "type": "live-settings.changed",
+  "upstreamChange": true,
+  "version": "0.746.0.7461269"
+}

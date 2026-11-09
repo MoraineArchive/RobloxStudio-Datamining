@@ -1,0 +1,68 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-67c8b1dedbb74fed",
+    "manifestFiles": 19397,
+    "packages": 34,
+    "version": "0.746.0.7461269"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "98807078d21ab6004f15f038c83e80193f2d8c7d3fdcb5409b8fc17fd3f4880d",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "cf23d1f058b28c15e7b61ee83afedd1f8131ecef4be697360c1e138abed4b21c",
+      "semantic": {
+        "added": [
+          "DFFlagDecompressPacketNoThrowSizeRead_Staged",
+          "DFFlagExpChatTelemetryHistoricalField_Staged",
+          "DFFlagHapticEffectGetWaveformKeys",
+          "DFFlagSimDeferTerrainWeldRemoval",
+          "DFFlagTextChatHistoryReplayTelemetry_Staged",
+          "FFlagAdditionalBandwidthReportingFixing_Staged"
+        ],
+        "changed": [
+          {
+            "after": "c421361dea1228285243fef8336b184bc807be6c",
+            "before": "c0a45bb0e29d9bd28d456f909261b8e6116accf7",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-09T18:57:33.778Z",
+            "before": "2026-11-09T18:43:25.699Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "c421361dea1228285243fef8336b184bc807be6c",
+            "before": "c0a45bb0e29d9bd28d456f909261b8e6116accf7",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-09T18:57:33.778Z",
+            "before": "2026-11-09T18:43:25.699Z",
+            "name": "FStringFlipTimeStampFastString"
+          },
+          {
+            "after": "eyJ2ZXJzaW9uU3RhcnQiOiAiMC4zMDAuMC4xIiwgInZlcnNpb25FbmQiOiAiMC43NDUuMC43NDYxMjY5IiwgInBsYXRmb3JtcyI6IFsiV2luZG93cyIsICJNYWMiXSwgIm1lc3NhZ2UiOiB7fSwgInNodXRkb3duIjogdHJ1ZSwgImZvcmNlUmV0cnlTdGFydHVwVXBkYXRlIjogdHJ1ZX0=",
+            "before": "eyJ2ZXJzaW9uU3RhcnQiOiAiMC4zMDAuMC4xIiwgInZlcnNpb25FbmQiOiAiMC43NDQuMC43NDYxMjY0IiwgInBsYXRmb3JtcyI6IFsiV2luZG93cyIsICJNYWMiXSwgIm1lc3NhZ2UiOiB7fSwgInNodXRkb3duIjogdHJ1ZSwgImZvcmNlUmV0cnlTdGFydHVwVXBkYXRlIjogdHJ1ZX0=",
+            "name": "FStringStudioEmergencyMessageV4"
+          }
+        ],
+        "removed": [
+          "DFFlagHapticEffectGetWaveformKeys_Staged",
+          "DFFlagSimDeferTerrainWeldRemoval_Staged",
+          "FStringStudioEmergencyMessageV4_Staged"
+        ],
+        "unchanged": 26878
+      }
+    }
+  },
+  "schemaVersion": 1
+}
