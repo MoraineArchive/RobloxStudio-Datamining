@@ -1,0 +1,200 @@
+[![Moraine Roblox Datamining](https://github.com/MoraineArchive/Moraine-asset/blob/main/roblox/banner_roblox.png?raw=true)](https://github.com/MoraineArchive/Moraine-asset/blob/main/roblox/banner_roblox.png)
+
+# Roblox Studio Datamining Diff
+
+**Observed:** 09/11/2026, 23:44:42 CET (22:44:42 UTC)
+
+## LiveSettings
+
+**File changes:** +0 ~1 -0
+
+- **Changed:** [`current.json`](../../../../current/LiveSettings/current.json)
+
+### Values
+
+- **Added:** `DFFlagAndroidLowMemoryAsyncMarshal_Staged`
+- **Added:** `DFFlagCompressedPVUsePackedVector_Staged`
+- **Added:** `DFFlagEnableChatAbuseReportTimestamp`
+- **Added:** `DFFlagEnableNewRollingCategoryStats3_Staged`
+- **Added:** `DFFlagEnableRobloxLabsCnDomain`
+- **Added:** `DFFlagInputReplicatorSkipStaleControlStates`
+- **Added:** `DFFlagKeepJoinPauseUntilCharacter`
+- **Added:** `DFFlagMMFDiscardAfterDecode_Staged`
+- **Added:** `DFFlagNetworkStatsItemReparentGuard`
+- **Added:** `DFFlagRbxTransportBaseClientBlockingEventWait`
+- **Added:** `DFFlagRbxTransportSentinelWireChannelIdCheck`
+- **Added:** `DFFlagRbxTransportStatsPanel`
+- **Added:** `DFFlagRccEnableMultiplexing3`
+- **Added:** `DFFlagSQLiteDontReportCacheName`
+- **Added:** `DFFlagSatPolyPolyContactEnabled2`
+- **Added:** `DFFlagTempMitigation230672_DeleteAfterClientRollout_Staged`
+- **Added:** `DFFlagVideoPlayerReleasePlaybackSlotOnEnd`
+- **Added:** `DFFlagVoiceChatInlineMuteMetadataState`
+- **Added:** `DFFlagWrapDecompInTryCatch`
+- **Added:** `DFIntDLICPointsThrottleHundredthsPercentage`
+- **Added:** `DFIntQuicHandshakeTotalTimeStatAggregationTimeThresholdInSeconds_Staged`
+- **Added:** `FFlagAXAvatarEditorServiceTelemetryV2_Staged`
+- **Added:** `FFlagAdditionalBandwidthReportingFixing`
+- **Added:** `FFlagAmpV2WizardParentModeNavTheme`
+- **Added:** `FFlagAnimGraphUIDisallowParameterNodeDeletionOnNodeDelete_Staged`
+- **Added:** `FFlagAnimGraphUIRevertInputPanelParameterOverride2_Staged`
+- **Added:** `FFlagAnimationRigV22`
+- **Added:** `FFlagAppChatBatchConversationPageUpsert`
+- **Added:** `FFlagAppChatLandingModalTelemetry_Staged`
+- **Added:** `FFlagAppChatLandingNotifBtnTelemetry_Staged`
+- **Added:** `FFlagAppChatMessageListV2ScrollToStartOnOpen_Staged`
+- **Added:** `FFlagAudioSpeechToTextEnableStreaming_Staged`
+- **Added:** `FFlagAudioSpeechToTextPlatformStreamingUseCustomParameters_Staged`
+- **Added:** `FFlagBuildExperienceAnswerForm2`
+- **Added:** `FFlagBuildExperienceBuyMoreRobuxCardLayout`
+- **Added:** `FFlagBuildExperienceChatCardEmphasis2_Staged`
+- **Added:** `FFlagBuildExperienceDeveloperProductContext`
+- **Added:** `FFlagBuildExperienceModelPicker4`
+- **Added:** `FFlagBuildWithGroups3`
+- **Added:** `FFlagClearDescendantOfDataModelOnParentDestroy_Staged`
+- **Added:** `FFlagCollectionWatcherSelectorBacktracking_Staged`
+- **Added:** `FFlagEnableAccountInfoDeeplinkPage_Staged`
+- **Added:** `FFlagEnableAchievementServiceIsAchievementAvailable_Staged`
+- **Added:** `FFlagEnableManualVad_Staged`
+- **Added:** `FFlagEnablePioneerUX_Staged`
+- **Added:** `FFlagExpChatDictationStreamingAudio_Staged`
+- **Added:** `FFlagExpChatPresetButtonGlobalTabFix`
+- **Added:** `FFlagExpChatPresetFullWidthButtonFixes`
+- **Added:** `FFlagFixOneByTwoAndroidBackNavigation_Staged`
+- **Added:** `FFlagFixUIDragDetectorVirtualCursorDragOnSelectedObjects2_Staged`
+- **Added:** `FFlagGImageHeaderOnlySizeWebp_Staged`
+- **Added:** `FFlagGameJoinCardOptionalActions_Staged`
+- **Added:** `FFlagGateLoginStreaksByAchievementAvailability_Staged`
+- **Added:** `FFlagGltfExportShapeNameFromReflection`
+- **Added:** `FFlagGraphicsMetalPrePassConstantUpload_Staged`
+- **Added:** `FFlagGraphicsMetalSynchronizedDebugReadback_Staged`
+- **Added:** `FFlagGraphicsTextureCopySourceMipDimensions_Staged`
+- **Added:** `FFlagISRSchemaReduceRedundantCode_Staged`
+- **Added:** `FFlagInputReplicatorDedupRedundantFrames`
+- **Added:** `FFlagLDP1117FixCrossPluginEditing`
+- **Added:** `FFlagLoadPlaceForScriptPopulateContextInfo_Staged`
+- **Added:** `FFlagLogTelemetrySinkSkipReportOnDestroy_Staged`
+- **Added:** `FFlagLuaAppPrivatePlaytestWithoutBuildMode`
+- **Added:** `FFlagLuaAppSponsoredTileBadgeContentPadding_Staged`
+- **Added:** `FFlagLuaStartPageRefreshRecentsOnRegistryUpdate3`
+- **Added:** `FFlagLuauBufferSweep`
+- **Added:** `FFlagLuauInlinerNamecallSelfFromMove`
+- **Added:** `FFlagLuauLoadExplicitGcDisable`
+- **Added:** `FFlagLuauSandboxFreezesVectorMetatable_Staged`
+- **Added:** `FFlagMergeMeshesRootUploadConditionally_Staged`
+- **Added:** `FFlagMomentsTextOverlayChipGrowWidth_Staged`
+- **Added:** `FFlagMomentsTextOverlayDragToDeleteRefinement_Staged`
+- **Added:** `FFlagMomentsTextOverlayToolbarWhileTyping_Staged`
+- **Added:** `FFlagMoveAdConsentReceiverToAccountManagement`
+- **Added:** `FFlagMoveSduiUpdateUserSettingsToAccountManagement`
+- **Added:** `FFlagPgsRolloutEnabled4_Staged`
+- **Added:** `FFlagPioneerLeaveOnInExpFaeDownAge2_Staged`
+- **Added:** `FFlagPlaytestModeTooltipOncePerWeek`
+- **Added:** `FFlagPlaytestModeTooltipOnlyPrivateTesters`
+- **Added:** `FFlagPurchasePromptSkipThirdPartyCheckForMissingCreator`
+- **Added:** `FFlagRenderIC2DeferredRebindNoStale`
+- **Added:** `FFlagRenderSSAOFrameIndexWrapFix`
+- **Added:** `FFlagRenderSSAOPerInstanceHbaoState`
+- **Added:** `FFlagSDUIContentRowSelectable_Staged`
+- **Added:** `FFlagSduiSettingsFocusRef_Staged`
+- **Added:** `FFlagSimStoreMotor6DRotationAsQuaternion_Staged`
+- **Added:** `FFlagSlimDeriveBakedSkeletonInstanceHashes_Staged`
+- **Added:** `FFlagSlimFixKeepSkinnedLevelStats_Staged`
+- **Added:** `FFlagStudioNederlandsLocale_Staged`
+- **Added:** `FFlagTaskThreadClearCallbackOnStop`
+- **Added:** `FFlagUFRDialogContentCutoffFix_Staged`
+- **Added:** `FFlagUserListDefaultCtaWidths_Staged`
+- **Added:** `FFlagUserListSurfacePresenceWins_Staged`
+- **Added:** `FFlagVoiceChatFixTaggedEventAllocation`
+- **Added:** `FFlagVulkanDisableAfbcForSmallMipmappedRGBA8`
+- **Added:** `FIntFrameRateMSToReduceTouchEvents`
+- **Added:** `FIntTexturePackUsePropertySetAddressesHundredthPercent_Staged`
+- **Added:** `FStringPlaytestModeTooltipLearnMoreUrl`
+- **Changed:** `DFIntCaptureGalleryPermissionPromptCooldownSeconds`
+  - Before: `10`
+  - After: `60`
+- **Changed:** `DFStringFlagRepoGitHashDynamicString`
+  - Before: `53e57c1e7ea76db47076bb277e74524b8da3d391`
+  - After: `8215d37f7688eaaa2123bbe5802f44a1e736e8a3`
+- **Changed:** `DFStringFlipTimeStampDynamicString`
+  - Before: `2026-11-09T20:23:26.230Z`
+  - After: `2026-11-09T22:43:22.438Z`
+- **Changed:** `FFlagLuaAppIsClickoutEnabledUniverse_UniverseFilter`
+  - Before: `True;9707042192;9671070925;8491889239;9164570436;9859999587;5824195619;9876947216;10004846655;9605987780;10036955953;10123702430;10241252491;10382950395;10390927281;10390930030;10390933265;10538358999;10538473450;7738776082;8005766508;10643104390;10631479676;10762769249;10765877033;10766493343;10766485671;4391533696;2564505263;10767763406;10768893031;10765530630;10357239521;10275212796;10770936218;887403347;5990940444;985731078;1235188606;5456952508;1299885893;4832841559;7681040001;4256727482`
+  - After: `True;9707042192;9671070925;8491889239;9164570436;9859999587;5824195619;9876947216;10004846655;9605987780;10036955953;10123702430;10241252491;10382950395;10390927281;10390930030;10390933265;10538358999;10538473450;7738776082;8005766508;10643104390;10631479676;10762769249;10765877033;10766493343;10766485671;4391533696;2564505263;10767763406;10768893031;10765530630;10357239521;10275212796;10770936218;887403347;5990940444;985731078;1235188606;5456952508;1299885893;4832841559;7681040001;4256727482...`
+- **Changed:** `FFlagReportFRMQualityProfileTelemetry`
+  - Before: `True`
+  - After: `False`
+- **Changed:** `FFlagSideSheetOpenPeoplePageRestoreChat`
+  - Before: `True`
+  - After: `False`
+- **Changed:** `FStringFlagRepoGitHashFastString`
+  - Before: `53e57c1e7ea76db47076bb277e74524b8da3d391`
+  - After: `8215d37f7688eaaa2123bbe5802f44a1e736e8a3`
+- **Changed:** `FStringFlipTimeStampFastString`
+  - Before: `2026-11-09T20:23:26.230Z`
+  - After: `2026-11-09T22:43:22.438Z`
+- **Removed:** `DFFlagEnableRobloxLabsCnDomain_Staged`
+- **Removed:** `DFFlagInputReplicatorSkipStaleControlStates_Staged`
+- **Removed:** `DFFlagKeepJoinPauseUntilCharacter_Staged`
+- **Removed:** `DFFlagSQLiteDontReportCacheName_Staged`
+- **Removed:** `DFFlagSatPolyPolyContactEnabled2_Staged`
+- **Removed:** `DFFlagVoiceChatInlineMuteMetadataState_Staged`
+- **Removed:** `DFIntCaptureGalleryPermissionPromptCooldownSeconds_Staged`
+- **Removed:** `DFIntDLICPointsThrottleHundredthsPercentage_Staged`
+- **Removed:** `FFlagAdditionalBandwidthReportingFixing_Staged`
+- **Removed:** `FFlagAmpV2WizardParentModeNavTheme_Staged`
+- **Removed:** `FFlagAnimationRigV22_Staged`
+- **Removed:** `FFlagAppChatBatchConversationPageUpsert_Staged`
+- **Removed:** `FFlagBuildExperienceAnswerForm2_Staged`
+- **Removed:** `FFlagBuildExperienceBuyMoreRobuxCardLayout_Staged`
+- **Removed:** `FFlagBuildExperienceModelPicker4_Staged`
+- **Removed:** `FFlagExpChatPresetButtonGlobalTabFix_Staged`
+- **Removed:** `FFlagExpChatPresetFullWidthButtonFixes_Staged`
+- **Removed:** `FFlagFriendsPageUserListEnabled_v2_IXP`
+- **Removed:** `FFlagGltfExportShapeNameFromReflection_Staged`
+- **Removed:** `FFlagInputReplicatorDedupRedundantFrames_Staged`
+- **Removed:** `FFlagLDP1117FixCrossPluginEditing_Staged`
+- **Removed:** `FFlagLuaStartPageRefreshRecentsOnRegistryUpdate3_Staged`
+- **Removed:** `FFlagLuauBufferSweep_Staged`
+- **Removed:** `FFlagLuauInlinerNamecallSelfFromMove_Staged`
+- **Removed:** `FFlagLuauLoadExplicitGcDisable_Staged`
+- **Removed:** `FFlagMoveAdConsentReceiverToAccountManagement_Staged`
+- **Removed:** `FFlagMoveSduiUpdateUserSettingsToAccountManagement_Staged`
+- **Removed:** `FFlagPlaytestModeTooltipOncePerWeek_Staged`
+- **Removed:** `FFlagPlaytestModeTooltipOnlyPrivateTesters_Staged`
+- **Removed:** `FFlagPurchasePromptSkipThirdPartyCheckForMissingCreator_Staged`
+- **Removed:** `FFlagRenderIC2DeferredRebindNoStale_Staged`
+- **Removed:** `FFlagRenderSSAOFrameIndexWrapFix_Staged`
+- **Removed:** `FFlagRenderSSAOPerInstanceHbaoState_Staged`
+- **Removed:** `FFlagReportFRMQualityProfileTelemetry_Staged`
+- **Removed:** `FFlagSideSheetOpenPeoplePageRestoreChat_Staged`
+- **Removed:** `FFlagStudioArchiveSiblingRecoveryFilesOnCloudSave_Staged`
+- **Removed:** `FFlagVoiceChatFixTaggedEventAllocation_Staged`
+- **Removed:** `FFlagVulkanDisableAfbcForSmallMipmappedRGBA8_Staged`
+- **Removed:** `FIntFrameRateMSToReduceTouchEvents_Staged`
+- **Removed:** `FStringPlaytestModeTooltipLearnMoreUrl_Staged`
+
+## Web
+
+**File changes:** +0 ~18 -0
+
+- **Changed:** [`assets.create.roblox.com/page-0/script-028.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-028.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-032.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-032.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-040.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-040.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-044.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-044.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-050.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-050.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-054.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-054.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-068.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-068.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-069.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-069.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-070.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-070.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-071.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-071.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-072.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-072.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-073.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-073.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-074.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-074.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-077.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-077.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-078.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-078.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-079.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-079.js)
+- **Changed:** [`assets.create.roblox.com/page-0/script-080.js`](../../../../current/Web/assets.create.roblox.com/page-0/script-080.js)
+- **Changed:** [`assets.json`](../../../../current/Web/assets.json)
+
