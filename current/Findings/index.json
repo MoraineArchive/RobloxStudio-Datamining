@@ -15188,11 +15188,187 @@
             "typing",
             "while"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/10/02-03-08Z_datasets",
+          "evidencePath": "2026/11/10/02-03-08Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "20433a7b23fc1a75e84e66eda1abe422e88d9891f105f0549718641ae947c223",
+          "key": "FFlagMomentsTextOverlayDragToDeleteRefinement_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-10T02:03:08.687Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "delete",
+            "drag",
+            "moments",
+            "overlay",
+            "refinement",
+            "text"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/10/02-03-08Z_datasets",
+          "evidencePath": "2026/11/10/02-03-08Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "36a9308fa37f23fb4a4e8479d91695b9bdaa5c4776dec2068441e081c22a6f7f",
+          "key": "FFlagMomentsTextOverlayChipGrowWidth",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-10T02:03:08.687Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "chip",
+            "grow",
+            "moments",
+            "overlay",
+            "text",
+            "width"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/10/02-03-08Z_datasets",
+          "evidencePath": "2026/11/10/02-03-08Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "43b8eecb4bc88684992896d4b6350aca7c730b7fdb01bc1c89f6325e7d9857b2",
+          "key": "FFlagMomentsTextOverlayChipGrowWidth_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-10T02:03:08.687Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "chip",
+            "grow",
+            "moments",
+            "overlay",
+            "text",
+            "width"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/10/02-03-08Z_datasets",
+          "evidencePath": "2026/11/10/02-03-08Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "ba539cdc2a665a8c3ed0338cbe431c508a65e89f39d5acaab0de2ebfb88f7fb8",
+          "key": "FFlagMomentsTextOverlayToolbarWhileTyping",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-10T02:03:08.687Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "moments",
+            "overlay",
+            "text",
+            "toolbar",
+            "typing",
+            "while"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/10/02-03-08Z_datasets",
+          "evidencePath": "2026/11/10/02-03-08Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "dd713afb66959139e88d3d51361453f114a1de3adffc5d4785783bb56e709a7e",
+          "key": "FFlagMomentsTextOverlayToolbarWhileTyping_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-10T02:03:08.687Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "moments",
+            "overlay",
+            "text",
+            "toolbar",
+            "typing",
+            "while"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/10/02-03-08Z_datasets",
+          "evidencePath": "2026/11/10/02-03-08Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "e8df9c37c34d79e1ebeac71d89d2a0e34fa407e6ecfc742b24e247fe6cbf6d84",
+          "key": "FFlagMomentsTextOverlayDragToDeleteRefinement",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-10T02:03:08.687Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "delete",
+            "drag",
+            "moments",
+            "overlay",
+            "refinement",
+            "text"
+          ]
+        },
+        {
+          "after": "1628829780,2067243959,3280509951,4687549151,7174205022,2019102623,1062804083,10067664364,2599596967,3843067818,2582554444,505306092,4643512175,7715672989,3617978804,4133982699,1952015525,2834440085,11009846505,10841243710,10651120443,10790642201,8701752815,1084451707,9051314586,2539415890,4317977297,10378728341,10721965329,10881619547,10881625733,10872034609,11045762650,11079552711,10811481253,11122864167,7329014419,7328963867,4339800076,8810552972,11640991817",
+          "before": "1628829780,2067243959,3280509951,4687549151,7174205022,2019102623,1062804083,10067664364,2599596967,3843067818,2582554444,505306092,4643512175,7715672989,3617978804,4133982699,1952015525,2834440085,11009846505,10841243710,10651120443,10790642201,8701752815,1084451707,9051314586,2539415890,4317977297,10378728341,10721965329,10881619547,10881625733,10872034609,11045762650,11079552711,10811481253,11122864167,7329014419,7328963867,4339800076,8810552972",
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/10/02-03-08Z_datasets",
+          "evidencePath": "2026/11/10/02-03-08Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "edcfa1f76cfdf1bd217e1ac91fcc3b64ce1100f5c7dd51bf42302682032d80c5",
+          "key": "FStringMomentsDebugModeAllowList",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-10T02:03:08.687Z",
+          "operation": "changed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "allow",
+            "debug",
+            "list",
+            "mode",
+            "moments"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-11-09T22:44:42.556Z",
+      "lastObservedAt": "2026-11-10T02:03:08.687Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
@@ -15596,6 +15772,30 @@
           "signalIds": [
             "19f9ccbcf2d4aabf65a4b4516d76c614ad2431e148104800d50bc3ef11cf5c0b",
             "d8e62fb60555b332dfb86c3d1d5897b616cb458caf79a2d0cdf10cf5f648f418"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-11-10T02:03:08.687Z",
+          "signalIds": [
+            "49f639b65212421c7b0b9d1e889829098f3c6f09379f897784a1a6f557f30e59",
+            "e8df9c37c34d79e1ebeac71d89d2a0e34fa407e6ecfc742b24e247fe6cbf6d84"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-11-10T02:03:08.687Z",
+          "signalIds": [
+            "36a9308fa37f23fb4a4e8479d91695b9bdaa5c4776dec2068441e081c22a6f7f",
+            "8deeb977c751d3fb4278182a277e3a81d69786a282623fd8e1f49f5daaec6afc"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-11-10T02:03:08.687Z",
+          "signalIds": [
+            "a2c371ebc8bc88de54762c573836add38c1404c88b8e28c8d9706865d6ba08cb",
+            "ba539cdc2a665a8c3ed0338cbe431c508a65e89f39d5acaab0de2ebfb88f7fb8"
           ],
           "type": "staged-to-non-staged"
         }

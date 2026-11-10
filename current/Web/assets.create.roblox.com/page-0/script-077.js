@@ -1,5 +1,1175 @@
-;!function(){try { var e="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof global?global:"undefined"!=typeof window?window:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&((e._debugIds|| (e._debugIds={}))[n]="7608a253-a7ed-6216-9476-a4aee704a026")}catch(e){}}();
-(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,425810,e=>{"use strict";var t,s=((t=s||{}).ExperienceLinks="ExperienceLinks",t.MarketplaceLinks="MarketplaceLinks",t);e.s(["default",0,s])},72171,384403,262693,e=>{"use strict";var t=e.i(721281),s=e.i(601362),n=function(e,t){return(n=Object.setPrototypeOf||({__proto__:[]})instanceof Array&&function(e,t){e.__proto__=t}||function(e,t){for(var s in t)Object.prototype.hasOwnProperty.call(t,s)&&(e[s]=t[s])})(e,t)};function a(e,t,s,n){return new(s||(s=Promise))(function(a,i){function r(e){try{l(n.next(e))}catch(e){i(e)}}function o(e){try{l(n.throw(e))}catch(e){i(e)}}function l(e){var t;e.done?a(e.value):((t=e.value)instanceof s?t:new s(function(e){e(t)})).then(r,o)}l((n=n.apply(e,t||[])).next())})}function i(e,t){var s,n,a,i={label:0,sent:function(){if(1&a[0])throw a[1];return a[1]},trys:[],ops:[]},r=Object.create(("function"==typeof Iterator?Iterator:Object).prototype);return r.next=o(0),r.throw=o(1),r.return=o(2),"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r;function o(o){return function(l){var u=[o,l];if(s)throw TypeError("Generator is already executing.");for(;r&&(r=0,u[0]&&(i=0)),i;)try{if(s=1,n&&(a=2&u[0]?n.return:u[0]?n.throw||((a=n.return)&&a.call(n),0):n.next)&&!(a=a.call(n,u[1])).done)return a;switch(n=0,a&&(u=[2&u[0],a.value]),u[0]){case 0:case 1:a=u;break;case 4:return i.label++,{value:u[1],done:!1};case 5:i.label++,n=u[1],u=[0];continue;case 7:u=i.ops.pop(),i.trys.pop();continue;default:if(!(a=(a=i.trys).length>0&&a[a.length-1])&&(6===u[0]||2===u[0])){i=0;continue}if(3===u[0]&&(!a||u[1]>a[0]&&u[1]<a[3])){i.label=u[1];break}if(6===u[0]&&i.label<a[1]){i.label=a[1],a=u;break}if(a&&i.label<a[2]){i.label=a[2],i.ops.push(u);break}a[2]&&i.ops.pop(),i.trys.pop();continue}u=t.call(e,i)}catch(e){u=[6,e],n=0}finally{s=a=0}if(5&u[0])throw u[1];return{value:u[0]?u[1]:void 0,done:!0}}}}function r(e){var t;return null==(t=e)?t:{linkId:t.linkId,gdlLinkId:t.gdlLinkId,shareUrl:t.shareUrl,linkType:t.linkType,linkName:(0,s.exists)(t,"linkName")?t.linkName:void 0,ownerUserId:(0,s.exists)(t,"ownerUserId")?t.ownerUserId:void 0,ownerGroupId:(0,s.exists)(t,"ownerGroupId")?t.ownerGroupId:void 0,targetId:t.targetId,targetName:(0,s.exists)(t,"targetName")?t.targetName:void 0,targetType:t.targetType,status:t.status,createdTime:(0,s.exists)(t,"createdTime")?null===t.createdTime?null:new Date(t.createdTime):void 0}}"function"==typeof SuppressedError&&SuppressedError;var o=function(e){function t(){return null!==e&&e.apply(this,arguments)||this}return function(e,t){if("function"!=typeof t&&null!==t)throw TypeError("Class extends value "+String(t)+" is not a constructor or null");function s(){this.constructor=e}n(e,t),e.prototype=null===t?Object.create(t):(s.prototype=t.prototype,new s)}(t,e),t.prototype.creatorLinksCreateLinkRaw=function(e,t){return a(this,void 0,void 0,function(){var n,a,o;return i(this,function(i){switch(i.label){case 0:return n={},(a={})["Content-Type"]="application/json",[4,this.request({path:"/v1/creator-links",schemaPath:"/v1/creator-links",method:"POST",headers:a,query:n,body:function(e){if(void 0!==e)return null===e?null:{ownerUserId:e.ownerUserId,ownerGroupId:e.ownerGroupId,targetId:e.targetId,targetType:e.targetType,linkName:e.linkName}}(e.creatorLinksCreateLinkRequest)},t)];case 1:return o=i.sent(),[2,new s.JSONApiResponse(o,function(e){return r(e)})]}})})},t.prototype.creatorLinksCreateLink=function(){return a(this,arguments,void 0,function(e,t){return void 0===e&&(e={}),i(this,function(s){switch(s.label){case 0:return[4,this.creatorLinksCreateLinkRaw(e,t)];case 1:return[4,s.sent().value()];case 2:return[2,s.sent()]}})})},t.prototype.creatorLinksDeleteLinkRaw=function(e,t){return a(this,void 0,void 0,function(){var n,a,r;return i(this,function(i){switch(i.label){case 0:if(null===e.linkId||void 0===e.linkId)throw new s.RequiredError("linkId","Required parameter requestParameters.linkId was null or undefined when calling creatorLinksDeleteLink.");return n={},a={},[4,this.request({path:"/v1/creator-links/{linkId}".replace("{".concat("linkId","}"),encodeURIComponent(String(e.linkId))),schemaPath:"/v1/creator-links/{linkId}",method:"DELETE",headers:a,query:n},t)];case 1:return r=i.sent(),[2,new s.VoidApiResponse(r)]}})})},t.prototype.creatorLinksDeleteLink=function(e,t){return a(this,void 0,void 0,function(){return i(this,function(s){switch(s.label){case 0:return[4,this.creatorLinksDeleteLinkRaw(e,t)];case 1:return s.sent(),[2]}})})},t.prototype.creatorLinksGetLinkRaw=function(e,t){return a(this,void 0,void 0,function(){var n,a,o;return i(this,function(i){switch(i.label){case 0:if(null===e.linkId||void 0===e.linkId)throw new s.RequiredError("linkId","Required parameter requestParameters.linkId was null or undefined when calling creatorLinksGetLink.");return n={},a={},[4,this.request({path:"/v1/creator-links/{linkId}".replace("{".concat("linkId","}"),encodeURIComponent(String(e.linkId))),schemaPath:"/v1/creator-links/{linkId}",method:"GET",headers:a,query:n},t)];case 1:return o=i.sent(),[2,new s.JSONApiResponse(o,function(e){return r(e)})]}})})},t.prototype.creatorLinksGetLink=function(e,t){return a(this,void 0,void 0,function(){return i(this,function(s){switch(s.label){case 0:return[4,this.creatorLinksGetLinkRaw(e,t)];case 1:return[4,s.sent().value()];case 2:return[2,s.sent()]}})})},t.prototype.creatorLinksListLinksRaw=function(e,t){return a(this,void 0,void 0,function(){var n,a,o;return i(this,function(i){switch(i.label){case 0:return n={},void 0!==e.ownerUserId&&(n.ownerUserId=e.ownerUserId),void 0!==e.ownerGroupId&&(n.ownerGroupId=e.ownerGroupId),void 0!==e.targetId&&(n.targetId=e.targetId),void 0!==e.targetType&&(n.targetType=e.targetType),void 0!==e.status&&(n.status=e.status),void 0!==e.pageSize&&(n.pageSize=e.pageSize),void 0!==e.pageToken&&(n.pageToken=e.pageToken),a={},[4,this.request({path:"/v1/creator-links",schemaPath:"/v1/creator-links",method:"GET",headers:a,query:n},t)];case 1:return o=i.sent(),[2,new s.JSONApiResponse(o,function(e){return null==e?e:{links:e.links.map(r),nextPageToken:(0,s.exists)(e,"nextPageToken")?e.nextPageToken:void 0}})]}})})},t.prototype.creatorLinksListLinks=function(){return a(this,arguments,void 0,function(e,t){return void 0===e&&(e={}),i(this,function(s){switch(s.label){case 0:return[4,this.creatorLinksListLinksRaw(e,t)];case 1:return[4,s.sent().value()];case 2:return[2,s.sent()]}})})},t}(s.BaseAPI),l=e.i(272593),u=e.i(185915);let c={MissingAuthenticatedUser:"MissingAuthenticatedUser",InvalidRequest:"InvalidRequest",OwnerRequired:"OwnerRequired",TargetIdRequired:"TargetIdRequired",TargetTypeInvalid:"TargetTypeInvalid",TargetTypeNotSupported:"TargetTypeNotSupported",TargetFilterIncomplete:"TargetFilterIncomplete",LinkIdInvalid:"LinkIdInvalid",LinkNameTooLong:"LinkNameTooLong",PageSizeInvalid:"PageSizeInvalid",PageTokenInvalid:"PageTokenInvalid",LinkNotFound:"LinkNotFound",ItemNotFound:"ItemNotFound",UserCannotConfigureItem:"UserCannotConfigureItem",OwnerNotItemCreator:"OwnerNotItemCreator",UserCannotViewLink:"UserCannotViewLink",UserCannotDeleteLink:"UserCannotDeleteLink",UserCannotListLinks:"UserCannotListLinks",ItemNotApproved:"ItemNotApproved",ItemDelisted:"ItemDelisted",ItemNotOnMarketplace:"ItemNotOnMarketplace",ItemLinkLimitReached:"ItemLinkLimitReached",DailyLinkLimitReached:"DailyLinkLimitReached",LinkNameModerated:"LinkNameModerated",TextFilterUnavailable:"TextFilterUnavailable",ItemFree:"ItemFree"},d=async e=>{try{var t;let s=await (null==(t=(0,u.default)(e))?void 0:t.clone().json());if("object"==typeof s&&null!==s&&"errorCode"in s){let e;return(e=s.errorCode,"string"==typeof e&&Object.values(c).includes(e))?s.errorCode:void 0}return}catch(e){return}},m=new class{createLink(e){return this.creatorLinksApi.creatorLinksCreateLink({creatorLinksCreateLinkRequest:e})}listLinks(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};return this.creatorLinksApi.creatorLinksListLinks(e)}getLink(e){return this.creatorLinksApi.creatorLinksGetLink({linkId:e})}deleteLink(e){return this.creatorLinksApi.creatorLinksDeleteLink({linkId:e})}constructor(){(0,t._)(this,"creatorLinksApi",void 0),this.creatorLinksApi=new o((0,l.createClientConfiguration)("creator-links","bedev2"))}};e.s(["CreatorLinkErrorCode",0,c,"default",0,m,"readCreatorLinkErrorCode",0,d],72171);var p=e.i(630986),y=e.i(182012),A=e.i(795621);let f=["creator-links"];e.s(["getCreatorLinksPageQueryKey",0,e=>[...f,"list","page",e],"useCreateCreatorLinkMutation",0,function(e){let t=(0,A.useQueryClient)();return(0,y.useMutation)({mutationFn:t=>e.createLink(t),onSuccess:()=>t.invalidateQueries({queryKey:[...f,"list"]})})},"useCreatorLinksInfiniteQuery",0,function(e,t){let s=!(arguments.length>2)||void 0===arguments[2]||arguments[2];return(0,p.useInfiniteQuery)({queryKey:[...f,"list",t],initialPageParam:void 0,queryFn:s=>{let{pageParam:n}=s;return e.listLinks({...t,pageToken:n})},getNextPageParam:e=>{var t;return null!=(t=e.nextPageToken)?t:void 0},enabled:s})},"useDeleteCreatorLinkMutation",0,function(e){let t=(0,A.useQueryClient)();return(0,y.useMutation)({mutationFn:t=>e.deleteLink(t),onSuccess:()=>t.invalidateQueries({queryKey:f})})}],384403);var T=e.i(676089);let h=new Set([T.RobloxItemConfigurationApiModelsMarketplaceItemSaleLocationSaleLocationTypeEnum.NUMBER_1,T.RobloxItemConfigurationApiModelsMarketplaceItemSaleLocationSaleLocationTypeEnum.NUMBER_3,T.RobloxItemConfigurationApiModelsMarketplaceItemSaleLocationSaleLocationTypeEnum.NUMBER_4]);function g(e){let{moderationStatus:t,isDelisted:s,saleLocationType:n}=e;return t===T.RobloxItemConfigurationApiMarketplaceItemModerationStatusEnum.NUMBER_3&&!s&&h.has(n)}e.s(["default",0,function(e){return!e.isArchived&&g({moderationStatus:e.bundleModerationStatus,isDelisted:e.isDelisted,saleLocationType:e.saleLocationType})},"hasMarketplaceShareLinkStatus",0,g],262693)},865186,627168,e=>{"use strict";var t=e.i(221628),s=e.i(79187),n=e.i(537068),a=e.i(732749),i=e.i(215955);let r=e=>{let{itemKey:s,title:r,onClick:o,href:l,value:u,...c}=e,d=()=>{i.default.logClickEvent({eventName:"clickContextMenuItem.".concat(s)}),null==o||o()};return l&&!c.disabled?(0,t.jsx)(a.MenuItem,{value:null!=u?u:s,title:r,onSelect:d,asChild:!0,...c,children:(0,t.jsx)(n.default,{href:l,className:"no-underline"})}):(0,t.jsx)(a.MenuItem,{value:null!=u?u:s,title:r,onSelect:d,...c})};e.s(["default",0,r],627168),e.s(["default",0,e=>{let{onOpenDialog:n}=e,{translate:a}=(0,s.useTranslation)();return(0,t.jsx)(r,{onClick:n,itemKey:"Action.AddToFolder",title:a("Action.AddToFolder")})}],865186)},522676,112283,223175,852427,638810,818061,863799,e=>{"use strict";var t=e.i(221628),s=e.i(416340),n=e.i(79187),a=e.i(459703),i=e.i(881670),r=e.i(627168),o=e.i(543339);let l=(0,n.withTranslation)(e=>{let{creation:i,handleClose:l}=e,{translate:u}=(0,n.useTranslation)(),{enqueue:c}=(0,a.useSnackbar)(),d=(0,o.useItemShareLinkTarget)(i),{onlyLink:m}=(0,o.useItemShareLinks)(d),p=(0,s.useCallback)(()=>{m&&(navigator.clipboard.writeText(m.shareUrl),c({message:u("Label.CopiedToClipboard"),autoHide:!0,anchorOrigin:{vertical:"bottom",horizontal:"center"}})),l()},[c,l,m,u]);return d&&m?(0,t.jsx)(r.default,{onClick:p,itemKey:"Action.CopyShareLink",title:u("Action.CopyShareLink")}):null},[i.TranslationNamespace.ShareLinksManagement]);e.s(["default",0,l],522676);var u=e.i(745873),c=e.i(818704);let d=(0,n.withTranslation)(e=>{let{creation:s,onOpenDialog:a,handleClose:l}=e,{translate:d,translateWithNamespace:m}=(0,n.useTranslation)(),p=(0,u.useCurrentGroup)(),y=(0,o.useItemShareLinkTarget)(s),{hasSeveralLinks:A}=(0,o.useItemShareLinks)(y);return y?(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(r.default,{onClick:a,itemKey:"Action.CreateShareLink",title:d("Action.CreateShareLink")}),A&&(0,t.jsx)(r.default,{href:(0,c.getMarketplaceShareLinksUrl)(null==p?void 0:p.id,y),onClick:l,itemKey:"Label.ViewShareLinks",title:m(i.TranslationNamespace.ShareLinkAnalytics,"Label.ViewShareLinks")})]}):null},[i.TranslationNamespace.ShareLinksManagement,i.TranslationNamespace.ShareLinkAnalytics]);e.s(["default",0,d],112283);var m=e.i(589624),p=e.i(86027);e.s(["default",0,e=>{let{creation:s,handleClose:a,isDisabled:i}=e,{translate:o}=(0,n.useTranslation)(),l=(0,m.useRouter)();return(0,t.jsx)(r.default,{"data-testid":"experience-menu-item-migrate-server",onClick:()=>{var e;(0,p.resolveServerManagementUrl)(null!=(e=s.universeId)?e:0).then(e=>l.push(e)),a()},itemKey:"Action.RestartServers",disabled:i,title:o("Action.RestartServers")})}],223175);var y=e.i(100419),A=e.i(613268),f=e.i(773057),T=e.i(475360),h=e.i(759283);e.s(["default",0,e=>{let{itemType:i,creation:o,removeItem:l,handleClose:u,isDisabled:c}=e,[d,m]=(0,s.useState)(!1),{open:p,close:g,configure:v}=(0,y.useDialog)(),{translate:I,translateHTML:E}=(0,n.useTranslation)(),{enqueue:k,close:b}=(0,a.useSnackbar)(),C=(0,s.useCallback)(e=>{k({message:e,anchorOrigin:{vertical:"bottom",horizontal:"center"},autoHideDuration:h.toastDurationTime,autoHide:!0,onClose:b})},[k,b]),B=(0,s.useCallback)(()=>{g()},[g]),R=(0,s.useCallback)(async()=>{var e,t;let s;if(m(!0),i===T.Item.Game)s=f.default.setUniverseConfiguration(null!=(e=o.universeId)?e:0,!o.isArchived);else{let e=Number(null!=(t=o.assetId)?t:0);s=o.isArchived?f.default.restoreAsset(e):f.default.archiveAsset(e)}try{await s,l(),C(o.isArchived?I("Message.RestoreSuccess"):I("Message.ArchiveSuccess"))}catch(e){C(I("Response.UnknownError"))}finally{m(!1),B(),u()}},[i,o,l,C,I,u,B]),M=(0,s.useMemo)(()=>(0,t.jsx)(A.DialogTemplate,{onConfirm:R,onCancel:g,title:I("Action.Confirm"),content:E("Description.Archive",null,{lineBreak:(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)("br",{}),(0,t.jsx)("br",{})]})}),confirmText:I("Action.OK"),cancelText:I("Action.Cancel"),loading:d}),[d,R,I,E,g]),S=(0,s.useCallback)(()=>{v(M),p()},[M,v,p]);(0,s.useEffect)(()=>{d&&v(M)},[d,M,v]);let x=o.isArchived?"Action.Restore":"Action.Archive";return(0,t.jsx)(r.default,{onClick:o.isArchived||!o.isActive?R:S,disabled:d||c,itemKey:x,title:I(x)})}],852427);var g=e.i(968892),v=e.i(973047),I=e.i(322489),E=e.i(227987),k=e.i(266213),b=e.i(976663),C=e.i(105098);let B=function(e){let{lookId:a,showDeleteLookDialog:i,setShowDeleteLookDialog:r,setDeleteCompleted:o,lookType:l}=e,{translate:u}=(0,n.useTranslation)(),{lookDetail:c}=(0,C.default)(),d=(0,m.useRouter)(),[p,y]=(0,s.useState)(""),[A,f]=(0,s.useState)(!1),T=(0,s.useMemo)(()=>{var e;return(0,b.default)(null!=(e=null!=l?l:null==c?void 0:c.lookType)?e:k.default.Makeup)},[l,null==c?void 0:c.lookType]),h=async()=>{r(!1);try{await I.default.deleteLook(a),d.push(T)}catch(t){let e=await (0,E.default)(t);switch(null==e?void 0:e.code){case void 0:default:y("Message.UnknownError");break;case 400:y("Message.InvalidRequest");break;case 403:y("Message.Forbidden");break;case 404:y("Message.NotFound");break;case 429:y("Message.TooManyRequests")}f(!0)}o&&o(!0)};return(0,t.jsxs)("div",{children:[(0,t.jsx)(v.Dialog,{open:A,onOpenChange:e=>{e||f(!1)},size:"Medium",isModal:!0,hasCloseAffordance:!1,children:(0,t.jsxs)(v.DialogContent,{children:[(0,t.jsxs)(v.DialogBody,{children:[(0,t.jsx)(v.DialogTitle,{className:"text-heading-medium margin-y-none padding-bottom-small",children:u("Message.DeleteUnsuccessful")}),(0,t.jsx)("span",{className:"text-body-medium",children:"".concat(u("Message.DeleteErrorMsgPrefix")," ").concat(u(p))})]}),(0,t.jsx)(v.DialogFooter,{children:(0,t.jsx)("div",{className:"flex justify-end gap-medium",children:(0,t.jsx)(g.Button,{variant:"Emphasis",type:"button","aria-label":u("Action.Ok"),onClick:()=>f(!1),children:u("Action.Ok")})})})]})}),(0,t.jsx)(v.Dialog,{open:i,onOpenChange:e=>{e||r(!1)},size:"Medium",isModal:!0,hasCloseAffordance:!1,children:(0,t.jsxs)(v.DialogContent,{children:[(0,t.jsxs)(v.DialogBody,{children:[(0,t.jsx)(v.DialogTitle,{className:"text-heading-medium margin-y-none padding-bottom-small",children:u("Heading.DeleteLook")}),(0,t.jsx)("span",{className:"text-body-medium",children:u("Message.DeleteLookDescription")})]}),(0,t.jsx)(v.DialogFooter,{children:(0,t.jsxs)("div",{className:"flex justify-end gap-small",children:[(0,t.jsx)(g.Button,{variant:"Standard",type:"button",onClick:()=>r(!1),children:u("Action.Cancel")}),(0,t.jsx)(g.Button,{variant:"Alert",type:"button",onClick:h,children:u("Action.Delete")})]})})]})})]})};e.s(["default",0,B],638810),e.s(["default",0,e=>{let{lookId:a,lookType:i}=e,[o,l]=(0,s.useState)(!1),[u,c]=(0,s.useState)(null),{translate:d}=(0,n.useTranslation)();return((0,s.useEffect)(()=>{u&&window.location.reload()},[u,o]),a)?(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(r.default,{onClick:()=>{l(!0)},itemKey:"Action.DeleteLook",title:d("Action.Delete")}),(0,t.jsx)(B,{lookId:a,lookType:i,showDeleteLookDialog:o,setShowDeleteLookDialog:l,setDeleteCompleted:c})]}):null}],818061);var R=e.i(913893);e.s(["default",0,function(e){let{creation:i,handleClose:o,removeItem:l,itemType:u}=e,[c,d]=(0,s.useState)(!1),{open:p,close:f,configure:h}=(0,y.useDialog)(),{translate:g}=(0,n.useTranslation)(),{enqueue:v,close:I}=(0,a.useSnackbar)(),k=(0,m.useRouter)(),b=(0,s.useMemo)(()=>{var e,t;return null!=(e=null==(t=k.pathname)?void 0:t.includes("/look/"))&&e},[k.pathname]),C=(0,s.useCallback)(e=>{v({message:e,anchorOrigin:{vertical:"bottom",horizontal:"center"},autoHide:!0,onClose:I})},[v,I]),B=(0,s.useCallback)(async()=>{try{var e,t;d(!0);let s=+(u===T.Item.CatalogAsset?null!=(e=i.assetId)?e:0:null!=(t=i.bundleId)?t:0);if(u===T.Item.CatalogAsset&&i.isLimited2){C(g("Message.UnableToArchiveLimitedItem")),f();return}await R.default.delistItem(u===T.Item.Bundle,s),l(),C(g("Message.ItemArchived")),f()}catch(t){let e=await (0,E.default)(t);(null==e?void 0:e.code)===3?C(g("Message.ItemTooNew")):C(g("Message.ArchiveFailed"))}finally{d(!1),f(),o()}},[u,i.assetId,i.bundleId,i.isLimited2,l,C,g,f,o]),M=(0,s.useMemo)(()=>(0,t.jsx)(A.DialogTemplate,{onConfirm:B,onCancel:f,title:g("Label.ConfirmArchive"),content:g("Description.MarketplaceArchive"),confirmText:g("Action.Archive"),cancelText:g("Action.Cancel")}),[B,g,f]),S=(0,s.useCallback)(()=>{h(M),p()},[M,h,p]);return(0,s.useEffect)(()=>{c&&h(M)},[c,M,h]),!i.isDelisted&&!b&&(0,t.jsx)("div",{children:(0,t.jsx)(r.default,{onClick:S,disabled:c,itemKey:"Action.ArchiveInMarketplace",title:g("Action.ArchiveInMarketplace")})})}],863799)},543339,e=>{"use strict";var t=e.i(416340),s=e.i(355600),n=e.i(157310),a=e.i(795621),i=e.i(72171),r=e.i(913893),o=e.i(475360),l=e.i(745873),u=e.i(384403),c=e.i(812141),d=e.i(262693);let m=(e,t)=>{let n={...e,status:"active",pageSize:2,ownerGroupId:t};return(0,s.queryOptions)({queryKey:(0,u.getCreatorLinksPageQueryKey)(n),queryFn:()=>i.default.listLinks(n),staleTime:3e4})};e.s(["useItemShareLinkTarget",0,function(e){let s,{data:n}=(0,c.default)(r.default),a=void 0!==n&&"isMarketplaceAffiliateLinkUiEnabled"in n&&!0===n.isMarketplaceAffiliateLinkUiEnabled,i=e.itemType===o.Item.Bundle;i?s=e.bundleId:e.itemType===o.Item.CatalogAsset&&(s=e.assetId);let l=a&&void 0!==s&&!e.isIEC&&(0,d.default)(e);return(0,t.useMemo)(()=>l&&void 0!==s?{targetType:i?"bundle":"asset",targetId:String(s)}:void 0,[i,l,s])},"useItemShareLinks",0,function(e){var t;let s=(0,l.useCurrentGroup)(),{data:a}=(0,n.useQuery)({...m(null!=e?e:{targetType:"asset",targetId:""},null==s?void 0:s.id),enabled:void 0!==e}),i=null!=(t=null==a?void 0:a.links)?t:[],r=!!(null==a?void 0:a.nextPageToken);return{links:i,hasMoreLinks:r,onlyLink:1!==i.length||r?void 0:i[0],hasSeveralLinks:i.length>1||r}},"usePrefetchItemShareLinks",0,function(e){let s=(0,a.useQueryClient)(),n=(0,l.useCurrentGroup)();return(0,t.useCallback)(()=>{e&&s.prefetchQuery(m(e,null==n?void 0:n.id))},[null==n?void 0:n.id,s,e])}])},976663,e=>{"use strict";var t=e.i(671376),s=e.i(266213),n=e.i(927868),a=e.i(949599);let i=t.Asset.HairAccessory;function r(e,t,s){let n=new URLSearchParams;return n.append("activeTab",null!=e?e:i),void 0!==t&&n.append("filterIndex",t.toString()),void 0!==s&&n.append("groupId",s.toString()),"".concat("/dashboard/creations","?").concat(n.toString())}e.s(["default",0,function(e,i){if(e===s.default.Avatar)return r(t.Asset.AvatarLooks,0,i);if(e){let o=Object.entries(a.AvatarMenuMap).find(i=>{let[,r]=i;return r.some(i=>{var r;return void 0!==i.assetType&&(0,n.isValidEnumValue)(t.Asset,e)&&i.assetType===e||a.BundleType[null!=(r=i.bundleType)?r:-1]===e||void 0!==i.lookType&&(0,n.isValidEnumValue)(s.default,e)&&i.lookType===e})});if(o){let[l,u]=o;return r(l,u.findIndex(i=>{var r;return void 0!==i.assetType&&(0,n.isValidEnumValue)(t.Asset,e)&&i.assetType===e||a.BundleType[null!=(r=i.bundleType)?r:-1]===e||void 0!==i.lookType&&(0,n.isValidEnumValue)(s.default,e)&&i.lookType===e}),i)}}return r(void 0,void 0,i)}])},419698,337660,e=>{"use strict";var t=e.i(221628),s=e.i(416340),n=e.i(589624),a=e.i(880343),i=e.i(732749),r=e.i(79187),o=e.i(459703),l=e.i(814975),u=e.i(97782),c=e.i(449588),d=e.i(475360),m=e.i(759283),p=e.i(729055),y=e.i(726474),A=e.i(878065),f=e.i(86027),T=e.i(865186),h=e.i(522676),g=e.i(112283),v=e.i(652919),I=e.i(223175),E=e.i(852427),k=e.i(818061),b=e.i(863799),C=e.i(613268),B=e.i(100419),R=e.i(605050),M=e.i(773057),S=e.i(202142),x=e.i(627168);let L=e=>{let{creation:n,updateItemPrivacy:a,handleClose:i,isDisabled:l}=e,[u,c]=(0,s.useState)(!1),{open:d,close:p,configure:y}=(0,B.useDialog)(),{translate:A}=(0,r.useTranslation)(),{enqueue:f,close:T}=(0,o.useSnackbar)(),h=(0,s.useCallback)(e=>{f({message:e,anchorOrigin:{vertical:"bottom",horizontal:"center"},autoHideDuration:m.toastDurationTime,autoHide:!0,onClose:T})},[f,T]),g=(0,s.useCallback)(()=>{p()},[p]),v=(0,s.useCallback)(async()=>{var e,t;c(!0);let s=n.isActive?M.default.deactivateGame(null!=(e=n.universeId)?e:0):M.default.activateGame(null!=(t=n.universeId)?t:0);try{let e;await s;let t=n.universeId;if(t)try{let s=await R.default.coreContentGetUniverseChipStatus({universeId:t});(0,S.isReachStatusReady)(s)&&(e=s)}catch(t){e=void 0}a(!n.isActive,e),h(A("Message.PrivacyUpdateSuccess"))}catch(e){h(A("Response.UnknownError"))}finally{c(!1),g(),i()}},[n,g,h,A,i,a]),I=(0,s.useMemo)(()=>(0,t.jsx)(C.DialogTemplate,{onConfirm:v,onCancel:p,title:A("Action.Confirm"),content:A("Description.MakePrivate"),confirmText:A("Action.OK"),cancelText:A("Action.Cancel"),loading:u}),[u,v,A,p]),E=(0,s.useCallback)(()=>{y(I),d()},[I,d,y]);(0,s.useEffect)(()=>{u&&y(I)},[u,I,y]);let k=n.isActive?"Action.MakePrivate":"Action.MakePublic";return(0,t.jsx)(x.default,{onClick:n.isActive?E:v,itemKey:k,disabled:u||l,title:A(k)})};var w=e.i(182012),D=e.i(676089),U=e.i(913893);let _=e=>{let{creation:n,handleClose:a,removeItem:i}=e,{translate:l}=(0,r.useTranslation)(),{enqueue:u,close:c}=(0,o.useSnackbar)(),p=(0,s.useCallback)(e=>e===d.Item.CatalogAsset?D.RobloxItemConfigurationApiModelsFolderFolderItemItemTypeEnum.Asset:e===d.Item.Bundle?D.RobloxItemConfigurationApiModelsFolderFolderItemItemTypeEnum.Bundle:D.RobloxItemConfigurationApiModelsFolderFolderItemItemTypeEnum.Unknown,[]),y=(0,s.useCallback)(e=>{u({message:e,anchorOrigin:{vertical:"bottom",horizontal:"center"},autoHideDuration:m.toastDurationTime,autoHide:!0,onClose:c})},[u,c]),{mutate:A,isPending:f}=(0,w.useMutation)({mutationFn:async e=>{let{itemId:t,itemType:s,containingFolderId:n}=e,a=p(s);return U.default.removeItemFromFolder(t.toString(),a,n.toString())},onSuccess:()=>{y(l("Message.ItemRemovedFromFolder")),i(),a()},onError:()=>{y(l("Message.ItemRemovalFromFolderFailed"))}}),T=(0,s.useCallback)(()=>{let{assetId:e,bundleId:t,containingFolderId:s,itemType:a}=n,i=a===d.Item.CatalogAsset?null!=e?e:0:null!=t?t:0;s&&A({itemId:i,itemType:a,containingFolderId:s})},[n,A]);return(0,t.jsx)(x.default,{onClick:T,disabled:f,itemKey:"Action.RemoveItemFromFolder",title:l("Action.RemoveItemFromFolder")})};var N=e.i(925997),P=e.i(213067),F=e.i(896579),V=e.i(114209),j=e.i(779714);let G=e=>{let{creation:n,removeItem:a,handleClose:i,isDisabled:l}=e,[u,c]=(0,s.useState)(!1),{open:d,close:m,configure:p}=(0,B.useDialog)(),{enqueue:y,close:A}=(0,o.useSnackbar)(),{translate:f}=(0,r.useTranslation)(),{gameDetails:T}=(0,V.useCurrentGame)(),h=(0,s.useCallback)((e,s)=>{s?y({message:e,anchorOrigin:{vertical:"bottom",horizontal:"center"},autoHide:!0,onClose:A}):y({children:(0,t.jsx)(N.Alert,{severity:"error",children:e}),autoHide:!0,onClose:A})},[y,A]),g=(0,s.useCallback)(async()=>{c(!0);try{if(void 0===n.universeId||void 0===n.placeId||void 0===n.name)throw new P.default(j.default.UnknownError,f("Response.UnknownError"));let e={universeId:n.universeId,placeId:n.placeId};await F.default.removePlaceFromUniverse(e),a(),h(f("Message.RemovedSuccess",{placeName:n.name}),!0)}catch(t){let e=f("Response.UnknownError");if(t instanceof P.default&&Object.values(j.default).includes(t.code)){let s=t.code,n=j.default[s];e=f("Error.".concat(n))}h(e,!1)}finally{c(!1),m(),i()}},[m,a,n.name,n.placeId,n.universeId,i,h,f]),v=(0,s.useMemo)(()=>{var e,s;return(0,t.jsx)(C.DialogTemplate,{color:"destructive",onConfirm:g,onCancel:m,title:f("Title.RemovePlace"),content:f("Description.RemovePlaces",{placeName:null!=(e=n.name)?e:"",experienceName:null!=(s=null==T?void 0:T.name)?s:""}),confirmText:f("Action.Remove"),cancelText:f("Action.Cancel"),loading:u})},[g,m,f,n.name,null==T?void 0:T.name,u]),I=(0,s.useCallback)(()=>{p(v),d()},[p,d,v]);return(0,s.useEffect)(()=>{u&&p(v)},[p,u,v]),(0,t.jsx)(x.default,{"data-testid":"experience-menu-item-remove-place",onClick:I,itemKey:"Action.RemovePlaces",disabled:l,title:f("Action.RemovePlaces")})};var O=e.i(731942),K=e.i(240803),q=e.i(203014),H=e.i(696564);let Q=e=>{let{creation:n,updateItem:a,handleClose:i}=e,{status:l,collectibleItemId:u}=n,{translate:c}=(0,r.useTranslation)(),[d,p]=(0,s.useState)(!1),{enqueue:y,close:A}=(0,o.useSnackbar)(),f=(0,s.useCallback)(e=>{y({message:e,anchorOrigin:{vertical:"bottom",horizontal:"center"},autoHideDuration:m.toastDurationTime,autoHide:!0,onClose:A})},[y,A]),T=(0,s.useCallback)(async()=>{p(!0);try{if(u){let e={saleLocationType:(0,H.mapSaleLocationToType)(H.SaleLocationEnum.MarketplaceAndAllExperiences),places:[]};await U.default.updateCollectibleInformation(u,e,!1,0,!1,1,0,!1),f(c("Message.TakeOffSaleSuccess")),a({...n,status:O.ItemStatus.OffSale,price:null})}else f(c("Message.TakeOffSaleFailed"))}catch(e){e instanceof P.default&&Object.values(K.PublishError).includes(e.code)?f(c(q.default[e.code])):f(c("Message.TakeOffSaleFailed"))}finally{p(!1),i()}},[u,n,i,f,c,a]);return l===O.ItemStatus.OnSale||l===O.ItemStatus.Free?(0,t.jsx)(x.default,{onClick:T,disabled:d,itemKey:"Action.TakeOffSale",title:c("Action.TakeOffSale")}):null};e.s(["default",0,e=>{var C,B,R,M;let S,{itemType:w,creation:D,removeItem:U,updateItemPrivacy:N,updateItem:P,url:F,handleClose:V,creatorIsEligibleForGuidelines:j=!0,toggleEnableItem:O,isMarketplaceAssetType:K,isVariantAllowed:q,openShareLinkDialog:H,openAddToFolderDialog:W}=e,{translate:z}=(0,r.useTranslation)(),{enqueue:J,close:Y}=(0,o.useSnackbar)(),{user:Z}=(0,l.useAuthentication)(),$=(0,n.useRouter)(),X=(0,s.useMemo)(()=>!!O&&void 0!==D.universeProductConfigEnabled,[O,D.universeProductConfigEnabled]),{data:ee,isError:et}=(0,A.useGetActivationEligibilityForUniverse)(w===d.Item.Game?D.universeId:void 0),es=!!et||null!=(C=null==ee?void 0:ee.isEligible)&&C,en=(0,s.useMemo)(()=>w===d.Item.Game&&!D.isArchived&&(!!D.isActive||es),[w,D.isArchived,D.isActive,es]),[ea,ei]=(0,s.useState)(!1),er=(0,s.useMemo)(()=>{switch(w){case d.Item.Bundle:return D.bundleId;case d.Item.Look:return D.lookId;default:return D.assetId}},[w,D.bundleId,D.lookId,D.assetId]),eo=(0,s.useCallback)(e=>{J({message:(0,t.jsx)("span",{"data-testid":"success-message",children:e}),anchorOrigin:{vertical:"bottom",horizontal:"center"},autoHideDuration:m.toastDurationTime,autoHide:!0,onClose:Y})},[J,Y]),el=(0,s.useCallback)((e,t)=>{navigator.clipboard.writeText(null!=e?e:"").then(()=>{t&&eo(z("Message.CopySuccess",{item:t}))}),V()},[eo,z,V]),eu=()=>{switch(w){case d.Item.Game:return"Action.CopyStartPlaceID";case d.Item.Bundle:return"Action.CopyBundleID";case d.Item.AvatarCreationToken:return"Action.CopyTokenID";case d.Item.Look:return"Action.CopyLookID";default:return"Action.CopyAssetID"}},ec=!!(F&&!X&&!D.isIEC),ed=w===d.Item.Game,em=w===d.Item.CatalogAsset||w===d.Item.LibraryAsset&&!X,ep=w===d.Item.Game&&!D.isArchived,ey=(w===d.Item.CatalogAsset||w===d.Item.Bundle)&&!X&&!D.isIEC&&(null==Z?void 0:Z.id)===D.userId;void 0!==er&&(S=w===d.Item.Bundle?y.dashboard.getBundleAnalyticsUrl(Number(er)):y.dashboard.getCatalogAnalyticsUrl(Number(er)));let eA=w===d.Item.CatalogAsset||w===d.Item.Bundle,ef=!!(F&&!X&&!D.isIEC),eT=w===d.Item.Game,eh=w!==d.Item.Places&&w!==d.Item.CreatedPlaces&&!X,eg=eA&&!D.isIEC&&!X&&!!H,ev=eA&&!D.isIEC&&!X,eI=w===d.Item.CatalogAsset&&X,eE=!!K&&w!==d.Item.AvatarCreationToken&&!D.isIEC,ek=eA&&!X&&void 0===D.containingFolderId&&!!W,eb=void 0!==D.containingFolderId,eC=(w===d.Item.Places||w===d.Item.CreatedPlaces)&&!D.isStartPlace,eB=w===d.Item.Look&&!!D.lookId,eR=ey&&void 0!==S,eM=ec||ed||em||eh,eS=ef||eT,ex=eR||!!q||eg||ev||eI,eL=en||ep||!!D.isDirectlyArchivable||eC||w===d.Item.Places||eE||ek||eb||eB,ew=(0,t.jsxs)(t.Fragment,{children:[ec&&(0,t.jsx)(x.default,{itemKey:"Action.CopyURL",title:z("Action.CopyURL"),disabled:!j,onClick:()=>el(F,z("Label.URL"))}),ed&&(0,t.jsx)(x.default,{itemKey:"Action.CopyUniverseID",title:z("Action.CopyUniverseID"),disabled:!j,onClick:()=>el(String(D.universeId),z("Label.UniverseID"))}),em&&(0,t.jsx)(x.default,{itemKey:"Action.CopyAssetURI",title:z("Action.CopyAssetURI"),onClick:()=>el("rbxassetid://".concat(D.assetId),z("Label.AssetURI"))}),eh&&(0,t.jsx)(x.default,{itemKey:eu(),title:z(eu()),disabled:!j,onClick:()=>{let e,t="Label.AssetID";switch(w){case d.Item.DeveloperProduct:e=D.productId;break;case d.Item.Bundle:t="Label.BundleID",e=D.bundleId;break;case d.Item.AvatarCreationToken:t="Label.TokenID",e=D.assetId;break;case d.Item.Look:t="Label.LookID",e=D.lookId;break;default:e=D.assetId}el(String(e),z(t))}}),eg&&(0,t.jsx)(h.default,{creation:D,handleClose:V})]}),eD=(0,t.jsxs)(t.Fragment,{children:[ef&&(0,t.jsx)(x.default,{itemKey:"Action.OpenInNewTab",title:z("Action.OpenInNewTab"),disabled:!j,onClick:()=>{var e;null==(e=window.open(F,"_blank"))||e.focus(),V()}}),eT&&(0,t.jsx)(x.default,{itemKey:"Action.OpenExperienceDetails",title:z("Action.OpenExperienceDetails"),disabled:!j,trailing:(0,t.jsx)(a.Icon,{name:"icon-regular-arrow-up-right-from-square",size:"Small"}),onClick:()=>{var e,t,s;null==(s=window.open(null!=(e=(0,p.getUrlForItemType)(d.Item.Game,Number(null!=(t=D.assetId)?t:0)))?e:"","_blank"))||s.focus(),V()}})]}),eU=(0,t.jsxs)(t.Fragment,{children:[q&&(0,t.jsx)(x.default,{itemKey:"Action.AddVariant",title:"Lorem ipsum",onClick:()=>{ei(!0)}}),eg&&H&&(0,t.jsx)(g.default,{creation:D,onOpenDialog:H,handleClose:V}),eR&&(0,t.jsx)(x.default,{itemKey:"Action.Analytics",title:z("Action.Analytics"),href:S}),ev&&(0,t.jsx)(b.default,{creation:D,handleClose:V,removeItem:U,itemType:w}),eI&&(0,t.jsx)(x.default,{itemKey:D.universeProductConfigEnabled?"Label.DisableSale":"Label.EnableSale",title:D.universeProductConfigEnabled?z("Label.DisableSale"):z("Label.EnableSale"),className:D.universeProductConfigEnabled?"content-action-alert":void 0,onClick:()=>{null==O||O(!D.universeProductConfigEnabled),V()}})]}),e_=(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(x.default,{"data-testid":"experience-menu-item-localization",itemKey:"Action.ConfigureLocalization",title:z("Action.ConfigureLocalization"),disabled:!j,href:"/dashboard/creations/experiences/".concat(D.universeId,"/localization")}),(0,t.jsx)(x.default,{"data-testid":"experience-menu-item-badge",itemKey:"Action.CreateBadge",title:z("Action.CreateBadge"),disabled:!j,href:"/dashboard/creations/experiences/".concat(D.universeId,"/badges/create")}),(0,t.jsx)(x.default,{"data-testid":"experience-menu-item-devEx",itemKey:"Action.ViewRealTimeStats",title:z("Action.ViewRealTimeStats"),disabled:!j,href:(0,c.default)(u.analyticsPerformanceNavigationItem,{},null!=(B=D.universeId)?B:0)})]}),eN=(0,t.jsxs)(t.Fragment,{children:[en&&(0,t.jsx)(L,{creation:D,updateItemPrivacy:N,handleClose:V,isDisabled:!j}),ep&&(0,t.jsx)(x.default,{itemKey:"Action.RestartServersSubmenu",title:z("SelectablePlacesTable.Button.RestartServers"),disabled:!j,onClick:()=>{var e;(0,f.resolveServerManagementUrl)(null!=(e=D.universeId)?e:0).then(e=>$.push(e)),V()}}),D.isDirectlyArchivable&&(0,t.jsx)(E.default,{itemType:w,creation:D,removeItem:U,handleClose:V,isDisabled:!j}),eC&&(0,t.jsx)(G,{creation:D,removeItem:U,handleClose:V,isDisabled:!j}),w===d.Item.Places&&(0,t.jsx)(I.default,{creation:D,handleClose:V,isDisabled:!j}),eE&&(0,t.jsx)(Q,{creation:D,updateItem:P,handleClose:V}),ek&&W&&(0,t.jsx)(T.default,{onOpenDialog:W}),eb&&(0,t.jsx)(_,{creation:D,handleClose:V,removeItem:U}),eB&&(0,t.jsx)(k.default,{lookId:null!=(R=null==(M=D.lookId)?void 0:M.toString())?R:"",lookType:D.lookType})]}),eP={key:"open",isShown:eS,items:eD},eF={key:"copy",isShown:eM,items:ew},eV=(w===d.Item.Game?[eP,eF,{key:"experience",isShown:!0,items:e_},{key:"manage",isShown:eL,items:eN}]:[eP,eF,{key:"actions",isShown:ex||eL,items:(0,t.jsxs)(t.Fragment,{children:[eU,eN]})}]).filter(e=>e.isShown);return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(i.Menu,{size:"Medium",children:eV.map((e,n)=>(0,t.jsxs)(s.Fragment,{children:[n>0&&(0,t.jsx)(i.MenuSeparator,{}),(0,t.jsx)(i.MenuSection,{children:e.items})]},e.key))}),q&&void 0!==er&&(0,t.jsx)(v.default,{showAddVariantDialog:ea,setShowAddVariantDialog:ei,itemType:w,itemId:Number(er)})]})}],419698),e.s(["default",0,()=>{let[e,t]=(0,s.useState)(!1),{ref:n}=(0,B.useDialog)(),a=(0,s.useCallback)(e=>{(e||!n.current)&&t(e)},[n]);return{isMenuOpen:e,setIsMenuOpen:t,onMenuOpenChange:a}}],337660)},202142,e=>{"use strict";var t=e.i(221628),s=e.i(283703);let n=["icon-filled-lock-closed","icon-filled-triangle-exclamation","icon-filled-globe-detailed"];function a(e){return!!(null==e?void 0:e.iconName)&&!!e.variant&&!!e.translatedStatus}e.s(["default",0,e=>{let{reachStatus:i}=e;if(!a(i))return null;let{iconName:r,variant:o,translatedStatus:l}=i;return(0,t.jsx)(s.Badge,{label:l,icon:n.some(e=>e===r)?r:void 0,variant:s.badgeVariants.some(e=>e===o)?o:void 0})},"isReachStatusReady",0,a])},779714,e=>{"use strict";var t,s=((t=s||{})[t.UnknownError=0]="UnknownError",t[t.InvalidRequest=1]="InvalidRequest",t[t.Forbidden=2]="Forbidden",t[t.NotFound=3]="NotFound",t[t.Unauthorized=4]="Unauthorized",t[t.Conflict=5]="Conflict",t[t.InternalError=6]="InternalError",t);e.s(["default",0,s])},652919,e=>{"use strict";var t=e.i(221628),s=e.i(416340),n=e.i(79187),a=e.i(611043),i=e.i(547710),r=e.i(464508),o=e.i(613268),l=e.i(418162);e.s(["default",0,function(e){let{showAddVariantDialog:u,setShowAddVariantDialog:c,itemType:d,itemId:m}=e,{translate:p}=(0,n.useTranslation)(),y=(0,s.useCallback)(async()=>{c(!1),window.location.href=(0,l.getPublishPageUrl)(d,m)},[c,d,m]);return(0,t.jsx)(i.Dialog,{onClose:()=>c(!1),open:u,children:(0,t.jsx)(o.DialogTemplate,{onConfirm:y,confirmText:p("Action.Continue"),onCancel:()=>c(!1),cancelText:p("Action.Cancel"),title:"Lorem ipsum",content:(0,t.jsx)(r.DialogContentText,{children:(0,t.jsx)(a.Typography,{variant:"body1",children:"Lorem ipsum"})})})})}])},696564,e=>{"use strict";var t,s,n,a=e.i(676089),i=e.i(913893),r=e.i(671376),o=e.i(814768),l=((t={})[t.Invalid=0]="Invalid",t[t.MarketplaceAndAllExperiences=1]="MarketplaceAndAllExperiences",t[t.ExperiencesAndDevAPIOnly=2]="ExperiencesAndDevAPIOnly",t[t.MarketplaceOnly=3]="MarketplaceOnly",t[t.MarketplaceAndExperiencesById=4]="MarketplaceAndExperiencesById",t),u=((s={})[s.Invalid=0]="Invalid",s[s.Marketplace=1]="Marketplace",s[s.InExperience=2]="InExperience",s),c=((n={}).Days3="Days3",n.Days7="Days7",n.Days14="Days14",n.Permanent="Permanent",n);let d=Object.values(c),m=[],p=[],y=[],A=[];async function f(){if(m.length>0&&p.length>0)return;let e=await i.default.getAllowedAssetTypes(a.V1PermissionsItemTypesGetActionEnum.NUMBER_4,[a.V1PermissionsItemTypesGetTargetTypesEnum.NUMBER_0,a.V1PermissionsItemTypesGetTargetTypesEnum.NUMBER_1]);e.allowedAssetTypes&&e.allowedAssetTypes.forEach(e=>{m.push(e)}),e.allowedBundleTypes&&e.allowedBundleTypes.forEach(e=>{p.push((0,o.default)(e))})}async function T(){if(y.length>0&&A.length>0)return;let e=await i.default.getAllowedAssetTypes(a.V1PermissionsItemTypesGetActionEnum.NUMBER_5,[a.V1PermissionsItemTypesGetTargetTypesEnum.NUMBER_0,a.V1PermissionsItemTypesGetTargetTypesEnum.NUMBER_1]);e.allowedAssetTypes&&e.allowedAssetTypes.forEach(e=>{let t=e;"TshirtAccessory"===e&&(t="TShirtAccessory"),y.push(t)}),e.allowedBundleTypes&&e.allowedBundleTypes.forEach(e=>{A.push((0,o.default)(e))})}e.s(["DefaultMaxCollectiblePrice",0,0x3b9ac9ff,"DurationOptions",0,d,"DurationOptionsEnum",()=>c,"PUBLISHING_ADVANCE_THRESHOLD",0,.3,"PurchasePlatformEnum",()=>u,"SaleLocationEnum",()=>l,"ValidTimedOptionsAssetTypes",0,y,"ValidTimedOptionsBundleTypes",0,A,"ValidWearTimeAssetTypes",0,m,"ValidWearTimeBundleTypes",0,p,"getValidTimedOptionsTypes",0,T,"getValidWearTimeTypes",0,f,"mapAssetTypeToString",0,function(e){switch(e){case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_1:return r.Asset.Image.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_2:return r.Asset.TShirt.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_3:return r.Asset.Audio.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_4:return r.Asset.Mesh.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_8:return r.Asset.Hat.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_9:return r.Asset.Place.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_10:return r.Asset.Model.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_11:return r.Asset.Shirt.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_12:return r.Asset.Pants.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_13:return r.Asset.Decal.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_24:return r.Asset.Animation.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_38:return r.Asset.Plugin.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_40:return r.Asset.MeshPart.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_41:return r.Asset.HairAccessory.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_42:return r.Asset.FaceAccessory.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_43:return r.Asset.NeckAccessory.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_44:return r.Asset.ShoulderAccessory.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_45:return r.Asset.FrontAccessory.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_46:return r.Asset.BackAccessory.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_47:return r.Asset.WaistAccessory.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_61:return r.Asset.EmoteAnimation.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_62:return r.Asset.Video.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_64:return r.Asset.TShirtAccessory.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_65:return r.Asset.ShirtAccessory.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_66:return r.Asset.PantsAccessory.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_67:return r.Asset.JacketAccessory.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_68:return r.Asset.SweaterAccessory.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_69:return r.Asset.ShortsAccessory.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_72:return r.Asset.DressSkirtAccessory.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_73:return r.Asset.FontFamily.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_76:return r.Asset.EyebrowAccessory.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_77:return r.Asset.EyelashAccessory.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_88:return r.Asset.FaceMakeup.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_89:return r.Asset.LipMakeup.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_90:return r.Asset.EyeMakeup.toString();case a.RobloxItemConfigurationApiAssetDetailsAssetTypeEnum.NUMBER_92:return r.Asset.AvatarBackground.toString();default:return"Invalid"}},"mapBundleTypeToString",0,function(e){switch(e){case a.RobloxItemConfigurationApiBundleDetailsBundleTypeEnum.NUMBER_1:return"Body";case a.RobloxItemConfigurationApiBundleDetailsBundleTypeEnum.NUMBER_2:return"DynamicHead";case a.RobloxItemConfigurationApiBundleDetailsBundleTypeEnum.NUMBER_3:return"Shoes";case a.RobloxItemConfigurationApiBundleDetailsBundleTypeEnum.NUMBER_4:return"AvatarAnimations";default:return"Invalid"}},"mapDurationToDays",0,function(e){switch(e){case"Permanent":default:return 0;case"Days3":return 3;case"Days14":return 14;case"Days7":return 7}},"mapDurationToEnum",0,function(e){switch(e){case 3:return"Days3";case 7:return"Days7";case 14:return"Days14";default:return"Permanent"}},"mapDurationToString",0,function(e){switch(e){case"Permanent":return"Permanent";case"Days14":return"Days14";case"Days7":return"Days7";case"Days3":return"Days3";default:return""}},"mapSaleLocationToType",0,function(e){switch(e){case 1:return a.RobloxItemConfigurationApiModelsRequestCollectiblesSaleLocationConfigurationModelSaleLocationTypeEnum.NUMBER_1;case 2:return a.RobloxItemConfigurationApiModelsRequestCollectiblesSaleLocationConfigurationModelSaleLocationTypeEnum.NUMBER_2;case 3:return a.RobloxItemConfigurationApiModelsRequestCollectiblesSaleLocationConfigurationModelSaleLocationTypeEnum.NUMBER_3;case 4:return a.RobloxItemConfigurationApiModelsRequestCollectiblesSaleLocationConfigurationModelSaleLocationTypeEnum.NUMBER_4;default:return a.RobloxItemConfigurationApiModelsRequestCollectiblesSaleLocationConfigurationModelSaleLocationTypeEnum.NUMBER_0}}])},418162,e=>{"use strict";var t=e.i(692993),s=e.i(676089),n=e.i(671376),a=e.i(759283),i=e.i(927868),r=e.i(949599),o=e.i(696564);let l={[n.Asset.Place]:{asset:n.Asset.Place,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_9},[n.Asset.TShirt]:{asset:n.Asset.TShirt,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_2},[n.Asset.Shirt]:{asset:n.Asset.Shirt,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_11},[n.Asset.Pants]:{asset:n.Asset.Pants,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_12},[n.Asset.Hat]:{asset:n.Asset.Hat,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_8},[n.Asset.HairAccessory]:{asset:n.Asset.HairAccessory,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_41},[n.Asset.FaceAccessory]:{asset:n.Asset.FaceAccessory,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_42},[n.Asset.NeckAccessory]:{asset:n.Asset.NeckAccessory,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_43},[n.Asset.ShoulderAccessory]:{asset:n.Asset.ShoulderAccessory,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_44},[n.Asset.FrontAccessory]:{asset:n.Asset.FrontAccessory,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_45},[n.Asset.BackAccessory]:{asset:n.Asset.BackAccessory,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_46},[n.Asset.WaistAccessory]:{asset:n.Asset.WaistAccessory,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_47},[n.Asset.TShirtAccessory]:{asset:n.Asset.TShirtAccessory,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_64},[n.Asset.ShirtAccessory]:{asset:n.Asset.ShirtAccessory,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_65},[n.Asset.PantsAccessory]:{asset:n.Asset.PantsAccessory,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_66},[n.Asset.JacketAccessory]:{asset:n.Asset.JacketAccessory,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_67},[n.Asset.SweaterAccessory]:{asset:n.Asset.SweaterAccessory,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_68},[n.Asset.ShortsAccessory]:{asset:n.Asset.ShortsAccessory,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_69},[n.Asset.DressSkirtAccessory]:{asset:n.Asset.DressSkirtAccessory,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_72},[n.Asset.EmoteAnimation]:{asset:n.Asset.EmoteAnimation,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_61},[n.Asset.AllCatalogAsset]:{asset:n.Asset.AllCatalogAsset,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_0},[n.Asset.AvatarLooks]:{asset:n.Asset.AvatarLooks,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_0},[n.Asset.Showcase]:{asset:n.Asset.Showcase,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_0},[n.Asset.Decal]:{asset:n.Asset.Decal,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_13},[n.Asset.Image]:{asset:n.Asset.Image,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_1},[n.Asset.Audio]:{asset:n.Asset.Audio,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_3},[n.Asset.Model]:{asset:n.Asset.Model,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_10},[n.Asset.Mesh]:{asset:n.Asset.Mesh,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_4},[n.Asset.MeshPart]:{asset:n.Asset.MeshPart,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_40},[n.Asset.Plugin]:{asset:n.Asset.Plugin,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_38},[n.Asset.Animation]:{asset:n.Asset.Animation,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_24},[n.Asset.Video]:{asset:n.Asset.Video,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_62},[n.Asset.FontFamily]:{asset:n.Asset.FontFamily,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_73},[n.Asset.StorePreviewVideo]:{asset:n.Asset.StorePreviewVideo,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_0},[n.Asset.GamePreviewVideo]:{asset:n.Asset.GamePreviewVideo,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_0},[n.Asset.MyExperiences]:{asset:n.Asset.MyExperiences,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_0},[n.Asset.SharedExperiences]:{asset:n.Asset.SharedExperiences,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_0},[n.Asset.ShareLink]:{asset:n.Asset.ShareLink,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_0},[n.Asset.Moments]:{asset:n.Asset.Moments,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_0},[n.Asset.Event]:{asset:n.Asset.Event,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_0},[n.Asset.UpcomingEvent]:{asset:n.Asset.UpcomingEvent,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_0},[n.Asset.DraftEvent]:{asset:n.Asset.DraftEvent,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_0},[n.Asset.PastEvent]:{asset:n.Asset.PastEvent,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_0},[n.Asset.EyebrowAccessory]:{asset:n.Asset.EyebrowAccessory,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_76},[n.Asset.EyelashAccessory]:{asset:n.Asset.EyelashAccessory,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_77},[n.Asset.FaceMakeup]:{asset:n.Asset.FaceMakeup,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_88},[n.Asset.LipMakeup]:{asset:n.Asset.LipMakeup,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_89},[n.Asset.EyeMakeup]:{asset:n.Asset.EyeMakeup,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_90},[n.Asset.AvatarBackground]:{asset:n.Asset.AvatarBackground,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_92},[n.Asset.TextDocument]:{asset:n.Asset.TextDocument,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_0},[n.Asset.AssetPermissionRequests]:{asset:n.Asset.AssetPermissionRequests,apiType:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_0}},u=e=>{let t=Object.values(l).find(t=>t.apiType===e);return null==t?void 0:t.asset},c=e=>{switch(e){case s.RobloxItemConfigurationApiBundleDetailsBundleTypeEnum.NUMBER_0:return r.BundleType.Unknown;case s.RobloxItemConfigurationApiBundleDetailsBundleTypeEnum.NUMBER_1:return r.BundleType.Body;case s.RobloxItemConfigurationApiBundleDetailsBundleTypeEnum.NUMBER_2:return r.BundleType.DynamicHead;case s.RobloxItemConfigurationApiBundleDetailsBundleTypeEnum.NUMBER_3:return r.BundleType.Shoes;case s.RobloxItemConfigurationApiBundleDetailsBundleTypeEnum.NUMBER_4:return r.BundleType.AvatarAnimations;default:return r.BundleType.Unknown}},d=e=>{switch(e){case s.RobloxItemConfigurationApiModelsResponseBundleBundleInfoBundleTypeEnum.Unknown:return r.BundleType.Unknown;case s.RobloxItemConfigurationApiModelsResponseBundleBundleInfoBundleTypeEnum.Body:return r.BundleType.Body;case s.RobloxItemConfigurationApiModelsResponseBundleBundleInfoBundleTypeEnum.DynamicHead:return r.BundleType.DynamicHead;case s.RobloxItemConfigurationApiModelsResponseBundleBundleInfoBundleTypeEnum.Shoes:return r.BundleType.Shoes;case s.RobloxItemConfigurationApiModelsResponseBundleBundleInfoBundleTypeEnum.AvatarAnimations:return r.BundleType.AvatarAnimations;default:return r.BundleType.Unknown}};n.Asset.TShirt,n.Asset.Shirt,n.Asset.Pants;let m=new Set([n.Asset.TShirt,n.Asset.Pants,n.Asset.Shirt].map(e=>e.toLowerCase())),p=(e,s)=>{if(null==e)return!1;let n=e.status!==t.AgreementStatus.Active&&e.status!==t.AgreementStatus.Accepted,a=null!=e.endTime&&e.endTime.getTime()<=s.getTime();return n||a};e.s(["getAgreementDisplayName",0,e=>{var t,s,n,a,i,r;return null!=(t=null!=(s=null!=(n=null==e||null==(a=e.license)?void 0:a.name)?n:null==e||null==(i=e.listing)?void 0:i.name)?s:null==e||null==(r=e.license)?void 0:r.listingName)?t:void 0},"getAgreementWindow",0,e=>{var t,s;let n=null!=(t=null==e?void 0:e.endTime)?t:null;if(null!=n)return{startTime:null!=(s=null==e?void 0:e.startTime)?s:null,endTime:n}},"getConfigurePageUrl",0,function(e,t){return"/dashboard/creations/".concat(a.itemTypeToPath[e],"/").concat(t,"/configure")},"getEffectiveAgreementWindow",0,(e,t)=>e?{startTime:null!=e.startTime?new Date(Math.max(e.startTime.getTime(),t.getTime())):null,endTime:e.endTime}:void 0,"getIsDurableType",0,function(e,t){if(void 0!==e){if("number"==typeof e){let t=u(e);return!!t&&o.ValidWearTimeAssetTypes.includes(t)}return o.ValidWearTimeAssetTypes.includes(e)}if(void 0!==t){if((0,i.isValidEnumValue)(s.RobloxItemConfigurationApiBundleDetailsBundleTypeEnum,t))return o.ValidWearTimeBundleTypes.includes(c(t));if((0,i.isValidEnumValue)(s.RobloxItemConfigurationApiModelsResponseBundleBundleInfoBundleTypeEnum,t))return o.ValidWearTimeBundleTypes.includes(d(t));if((0,i.isValidEnumValue)(r.BundleType,t))return o.ValidWearTimeBundleTypes.includes(t)}return!1},"getIsRentableType",0,function(e,t){if(void 0!==e){if("number"==typeof e){let t=u(e);return!!t&&o.ValidTimedOptionsAssetTypes.includes(t)}return o.ValidTimedOptionsAssetTypes.includes(e)}if(void 0!==t){if((0,i.isValidEnumValue)(s.RobloxItemConfigurationApiBundleDetailsBundleTypeEnum,t))return o.ValidTimedOptionsBundleTypes.includes(c(t));if((0,i.isValidEnumValue)(s.RobloxItemConfigurationApiModelsResponseBundleBundleInfoBundleTypeEnum,t))return o.ValidTimedOptionsBundleTypes.includes(d(t));if((0,i.isValidEnumValue)(r.BundleType,t))return o.ValidTimedOptionsBundleTypes.includes(t)}return!1},"getItemTypeChipIconSrc",0,function(e,t){let s=e.toLowerCase(),n=m.has(s)?"".concat(s,"accessory"):s;return"".concat("".concat("https://assets.create.roblox.com/b51f5eff3c86bac5bf3aa8e576e9de533cfa03e8/assets","/unifiedFeeSystem"),"/").concat(t?"".concat(n,".svg"):"".concat(n,"_black.svg"))},"getPublishPageUrl",0,function(e,t){return"/dashboard/creations/".concat(a.itemTypeToPath[e],"/").concat(t,"/publish")},"getTaxonomyDisplayName",0,function(e,t){let s,n=t((s=e.replaceAll(/[^a-zA-Z0-9]/g,""),"Label.Taxonomy".concat(s)));return null==n||""===n?e:n},"isAgreementQuotaExceeded",0,e=>(null==e?void 0:e.revenueTargetsCount)!=null&&null!=e.maxRevenueTargets&&e.revenueTargetsCount>=e.maxRevenueTargets,"isAgreementSaleBlocked",0,p,"isImmediateOnSaleAllowed",0,(e,s)=>null==e||e.status===t.AgreementStatus.Active&&!p(e,s),"translateAssetType",0,e=>{var t,n;return null!=(t=null==(n=l[e])?void 0:n.apiType)?t:s.V1ItemsByCreatorGetAssetTypeEnum.NUMBER_0},"translateAssetTypeToAsset",0,u,"translateBundleDetailsToBundleInfoType",0,e=>{switch(e){case s.RobloxItemConfigurationApiBundleDetailsBundleTypeEnum.NUMBER_0:return s.RobloxItemConfigurationApiModelsResponseBundleBundleInfoBundleTypeEnum.Unknown;case s.RobloxItemConfigurationApiBundleDetailsBundleTypeEnum.NUMBER_1:return s.RobloxItemConfigurationApiModelsResponseBundleBundleInfoBundleTypeEnum.Body;case s.RobloxItemConfigurationApiBundleDetailsBundleTypeEnum.NUMBER_2:return s.RobloxItemConfigurationApiModelsResponseBundleBundleInfoBundleTypeEnum.DynamicHead;case s.RobloxItemConfigurationApiBundleDetailsBundleTypeEnum.NUMBER_3:return s.RobloxItemConfigurationApiModelsResponseBundleBundleInfoBundleTypeEnum.Shoes;case s.RobloxItemConfigurationApiBundleDetailsBundleTypeEnum.NUMBER_4:return s.RobloxItemConfigurationApiModelsResponseBundleBundleInfoBundleTypeEnum.AvatarAnimations;default:return s.RobloxItemConfigurationApiModelsResponseBundleBundleInfoBundleTypeEnum.Unknown}},"translateBundleInfoTypeToBundleType",0,d,"translateBundleTypeToBundleTypeString",0,e=>{switch(e){case r.BundleType.Body:return"Body";case r.BundleType.DynamicHead:return"DynamicHead";case r.BundleType.Shoes:return"Shoes";case r.BundleType.AvatarAnimations:return"AvatarAnimations";case r.BundleType.Unknown:default:return"Unknown"}}])},814768,266213,949599,e=>{"use strict";var t,s,n=e.i(671376),a=e.i(475360),i=((t=i||{}).Makeup="Makeup",t.Avatar="Avatar",t);e.s(["default",0,i],266213);var r=((s={})[s.Unknown=0]="Unknown",s[s.Body=1]="Body",s[s.DynamicHead=2]="DynamicHead",s[s.Shoes=3]="Shoes",s[s.AvatarAnimations=4]="AvatarAnimations",s);let o={[n.Asset.HairAccessory]:"Label.Body",[n.Asset.TShirt]:"Label.Classic",[n.Asset.Hat]:"Label.Accessory",[n.Asset.TShirtAccessory]:"Label.Clothing",[n.Asset.EmoteAnimation]:"Label.Animation",[n.Asset.AllCatalogAsset]:"Label.Folder",[n.Asset.EyeMakeup]:"Label.Makeup"},l={[n.Asset.HairAccessory]:[{assetType:n.Asset.HairAccessory,nameKey:"Label.HairAccessories"},{itemType:a.Item.Bundle,id:2,nameKey:"Label.Bodies",bundleType:1},{itemType:a.Item.Bundle,id:2,nameKey:"Label.DynamicHeads",bundleType:2}],[n.Asset.TShirt]:[{assetType:n.Asset.TShirt,nameKey:"Label.ClassicTShirts"},{assetType:n.Asset.Shirt,nameKey:"Label.ClassicShirts"},{assetType:n.Asset.Pants,nameKey:"Label.ClassicPants"}],[n.Asset.Hat]:[{assetType:n.Asset.Hat,nameKey:"Label.Hats"},{assetType:n.Asset.HairAccessory,nameKey:"Label.HairAccessories"},{assetType:n.Asset.FaceAccessory,nameKey:"Label.FaceAccessories"},{assetType:n.Asset.NeckAccessory,nameKey:"Label.NeckAccessories"},{assetType:n.Asset.ShoulderAccessory,nameKey:"Label.ShoulderAccessories"},{assetType:n.Asset.FrontAccessory,nameKey:"Label.FrontAccessories"},{assetType:n.Asset.BackAccessory,nameKey:"Label.BackAccessories"},{assetType:n.Asset.WaistAccessory,nameKey:"Label.WaistAccessories"}],[n.Asset.TShirtAccessory]:[{assetType:n.Asset.TShirtAccessory,nameKey:"Label.TShirts"},{assetType:n.Asset.ShirtAccessory,nameKey:"Label.Shirts"},{assetType:n.Asset.PantsAccessory,nameKey:"Label.Pants"},{assetType:n.Asset.JacketAccessory,nameKey:"Label.Jackets"},{assetType:n.Asset.SweaterAccessory,nameKey:"Label.Sweaters"},{assetType:n.Asset.ShortsAccessory,nameKey:"Label.ShortsAccessories"},{assetType:n.Asset.DressSkirtAccessory,nameKey:"Label.Skirts"},{itemType:a.Item.Bundle,nameKey:"Label.Shoes",bundleType:3}],[n.Asset.EmoteAnimation]:[{assetType:n.Asset.EmoteAnimation,nameKey:"Label.Emote"},{itemType:a.Item.Bundle,nameKey:"Label.AvatarAnimations",bundleType:4}],[n.Asset.EyeMakeup]:[{assetType:n.Asset.EyeMakeup,nameKey:"Label.EyeMakeupAccessories"},{assetType:n.Asset.LipMakeup,nameKey:"Label.LipMakeupAccessories"},{assetType:n.Asset.FaceMakeup,nameKey:"Label.FaceMakeupAccessories"},{assetType:n.Asset.EyebrowAccessory,nameKey:"Label.EyebrowAccessories"},{assetType:n.Asset.EyelashAccessory,nameKey:"Label.EyelashAccessories"},{lookType:i.Makeup,nameKey:"Label.Looks"}],[n.Asset.AvatarBackground]:[{assetType:n.Asset.AvatarBackground,nameKey:"Label.Backgrounds"}]},u=new Set([n.Asset.TShirtAccessory,n.Asset.PantsAccessory,n.Asset.SweaterAccessory]),c=[n.Asset.TShirtAccessory,n.Asset.ShirtAccessory,n.Asset.PantsAccessory,n.Asset.JacketAccessory,n.Asset.SweaterAccessory,n.Asset.ShortsAccessory,n.Asset.DressSkirtAccessory],d=[n.Asset.EyeMakeup,n.Asset.LipMakeup,n.Asset.FaceMakeup,n.Asset.EyebrowAccessory,n.Asset.EyelashAccessory],m=[n.Asset.Hat,n.Asset.HairAccessory,n.Asset.FaceAccessory,n.Asset.NeckAccessory,n.Asset.ShoulderAccessory,n.Asset.FrontAccessory,n.Asset.BackAccessory,n.Asset.WaistAccessory];e.s(["ACCESSORY_ASSET_TYPES",0,m,"AvatarItemDropdownTitles",0,o,"AvatarMenuMap",0,l,"BundleType",()=>r,"CLOTHING_ASSET_TYPES",0,c,"FolderItemsApiLimit",0,30,"GetItemsByCreatorApiLimit",0,30,"MAKEUP_ASSET_TYPES",0,d,"MaxItemsPerFolderAddRequest",0,50,"ORIGINAL_TIMED_OPTIONS_ASSET_TYPES",0,u,"RecentsDropdownOption",0,{nameKey:"Label.Recents",isRecents:!0}],949599),e.s(["default",0,e=>{switch(e){case"Body":return r.Body;case"DynamicHead":return r.DynamicHead;case"Shoes":return r.Shoes;case"AvatarAnimations":return r.AvatarAnimations;default:return r.Unknown}}],814768)},203014,e=>{"use strict";var t=e.i(853916);let s={[t.default.UnknownError]:"Response.UnknownError",[t.default.InvalidFile]:"Error.Publish.InvalidFile",[t.default.MissingFile]:"Error.Publish.MissingFile",[t.default.TooManyAttempts]:"Error.Publish.TooManyAttempts",[t.default.InvalidItem]:"Error.Publish.InvalidItem",[t.default.InvalidPermissions]:"Error.Publish.InvalidPermissions",[t.default.NoRootPlace]:"Error.Publish.NoRootPlace",[t.default.InvalidAssetType]:"Error.Publish.InvalidAssetType",[t.default.InvalidQuotaResourceType]:"Error.Publish.InvalidQuotaResourceType"};e.s(["default",0,s])},240803,853916,e=>{"use strict";var t,s=((t={})[t.UnknownError=0]="UnknownError",t[t.InvalidFile=1]="InvalidFile",t[t.MissingFile=2]="MissingFile",t[t.TooManyAttempts=3]="TooManyAttempts",t[t.InvalidItem=4]="InvalidItem",t[t.InvalidPermissions=5]="InvalidPermissions",t[t.NoRootPlace=6]="NoRootPlace",t[t.InvalidAssetType=7]="InvalidAssetType",t[t.InvalidQuotaResourceType=8]="InvalidQuotaResourceType",t);e.s(["default",0,s],853916),e.s(["PublishError",0,s],240803)},878065,e=>{"use strict";var t=e.i(711367),s=e.i(157310),n=e.i(773057),a=e.i(745891);let i=e=>["universe",e];e.s(["universeConfigurationQueryKey",0,i,"useGetActivationEligibilityForUniverse",0,e=>(0,s.useQuery)({queryKey:["universe",e,"activationEligibility"],queryFn:async()=>e?n.default.getActivationEligibilityForUniverse(e):{},enabled:!!e}),"useGetUniverseConfiguration",0,e=>(0,s.useQuery)({queryKey:i(e),queryFn:e?()=>(0,a.getUniverseConfiguration)(e):t.skipToken})])},745891,e=>{"use strict";var t=e.i(432242);let s=(0,e.i(272593).createClientConfiguration)("develop","bedev1"),n=new t.UniverseSettingsApi(s);e.s(["getUniverseConfiguration",0,e=>n.v1UniversesUniverseIdConfigurationGet({universeId:e})])},812141,e=>{"use strict";var t=e.i(182012),s=e.i(157310);let n={},a=e=>["folders",null!=e?e:null];e.s(["default",0,function(e){return(0,s.useQuery)({queryKey:["metadata"],queryFn:async()=>{try{let t=await e.getCollectiblesMetadata();return null!=t?t:n}catch(e){return n}}})},"getFoldersQueryKey",0,a,"useAddItemToFolderMutation",0,function(e,s){let{onSuccess:n,onError:a}=s;return(0,t.useMutation)({mutationFn:t=>e.addItemToFolder(t.itemId,t.itemType,t.folderId),onSuccess:n,onError:a})},"useCreateFolderMutation",0,function(e,s){let{onSuccess:n,onError:a}=s;return(0,t.useMutation)({mutationFn:t=>e.createFolder(t.name,void 0,t.groupId),onSuccess:e=>{var t;return n(null!=(t=e.folderId)?t:"")},onError:a})},"useGetFolders",0,function(e,t){let n=!(arguments.length>2)||void 0===arguments[2]||arguments[2];return(0,s.useQuery)({queryKey:a(t),queryFn:()=>e.getFolders(t),enabled:n})},"useUpdateFolderMutation",0,function(e,s){let{onSuccess:n,onError:a}=s;return(0,t.useMutation)({mutationFn:t=>e.updateFolder(t.folderId,t.name),onSuccess:n,onError:a})}])},818704,e=>{"use strict";var t=e.i(425810),s=e.i(134449),n=e.i(726474);let a=["asset","bundle","look"];e.s(["getMarketplaceShareLinksUrl",0,(e,a)=>{let i=new URLSearchParams({[s.default.ShareLinksTab]:t.default.MarketplaceLinks,...a});return"".concat(n.dashboard.getUrl(void 0===e?void 0:String(e),void 0,"ShareLink"),"&").concat(i.toString())},"parseMarketplaceShareLinkTarget",0,(e,t)=>e&&a.includes(e)&&t&&/^[1-9][0-9]*$/.test(t)?{targetType:e,targetId:t}:void 0])},725260,e=>{"use strict";var t=e.i(169336),s=e.i(477763),n=e.i(416340),a=e.i(226319),i=e.i(928277),r=e.i(221628),o=e.i(636042),l=e.i(442632);function u(e){return(0,t.g)("MuiDialogContentText",e)}(0,i.g)("MuiDialogContentText",["root"]);let c=["children","className"],d=(0,a.s)(o.T,{shouldForwardProp:e=>(0,a.r)(e)||"classes"===e,name:"MuiDialogContentText",slot:"Root",overridesResolver:(e,t)=>t.root})({}),m=n.forwardRef(function(e,n){let i=(0,l.u)({props:e,name:"MuiDialogContentText"}),{className:o}=i,m=(0,t._)(i,c),p=(e=>{let{classes:t}=e,n=(0,a.a)({root:["root"]},u,t);return(0,s._)({},t,n)})(m);return(0,r.jsx)(d,(0,s._)({component:"p",variant:"body1",color:"text.secondary",ref:n,ownerState:m,className:(0,a.c)(p.root,o)},i,{classes:p}))});e.s(["D",0,m])},464508,e=>{"use strict";var t=e.i(725260);e.s(["DialogContentText",()=>t.D])},100419,e=>{"use strict";var t=e.i(30941),s=e.i(416340),n=e.i(669925);e.i(221628),e.i(149285);var a=(0,s.createContext)({ref:{current:null},configure:function(){throw Error("useDialog was invoked without DialogProvider")},open:function(){throw Error("useDialog was invoked without DialogProvider")},close:function(){throw Error("useDialog was invoked without DialogProvider")}});e.s(["default",0,function(e){var i=e.children,r=(0,t.a)(e,["children"]),o=(0,s.useRef)(null),l=(0,s.useState)({props:{},children:void 0}),u=l[0],c=l[1],d=(0,s.useState)(!1),m=d[0],p=d[1],y=(0,s.useCallback)(function(){p(!0)},[p]),A=(0,s.useCallback)(function(){p(!1)},[p]),f=(0,s.useCallback)(function(e,t){void 0===t&&(t={}),c({props:t,children:e})},[c]),T=(0,s.useMemo)(function(){return{ref:o,open:y,close:A,configure:f}},[A,f,y]);return s.default.createElement(s.default.Fragment,null,s.default.createElement(a.Provider,{value:T},i),s.default.createElement(n.default,(0,t._)({},u.props,r,{"aria-labelledby":u.props.id,"aria-describedby":"dialog-content-text-describe-id",open:m,onClose:A,ref:o}),u.children))},"useDialog",0,function(){var e=(0,s.useContext)(a);return{ref:e.ref,open:e.open,close:e.close,configure:e.configure}}])},613268,e=>{"use strict";var t=e.i(416340),s=e.i(460773),n=e.i(856082),a=e.i(199169),i=e.i(287982),r=e.i(725260);e.i(221628),e.s(["DialogTemplate",0,function(e){var o=e.id;e.variant;var l=e.title,u=e.color,c=e.loading,d=void 0!==c&&c,m=e.content,p=e.confirmText,y=e.cancelText,A=e.onCancel,f=e.onConfirm;return t.default.createElement("div",null,t.default.createElement(s.default,{id:o},l),t.default.createElement(n.default,null,t.default.createElement(r.D,{id:"dialog-content-text-describe-id"},m)),t.default.createElement(a.default,null,t.default.createElement(i.default,{size:"large",variant:"outlined","aria-label":y,color:"secondary",onClick:A,disabled:d},y),t.default.createElement(i.default,{size:"large",variant:"contained",loading:d,"aria-label":p,color:void 0===u?"primaryBrand":u,onClick:f},p)))}],613268)},51899,e=>{"use strict";var t,s,n,a,i,r,o,l,u,c,d,m,p,y,A=e.i(416340),f=e.i(711300),T=e.i(634203),h=e.i(35877),g=e.i(422898),v=e.i(630844),I=e.i(665564),E=e.i(468612),k=e.i(211089),b=e.i(711367);function C(e,t){let s=new Set(t);return e.filter(e=>!s.has(e))}var B=(t=new WeakMap,s=new WeakMap,n=new WeakMap,a=new WeakMap,i=new WeakMap,r=new WeakMap,o=new WeakMap,l=new WeakMap,u=new WeakMap,c=new WeakSet,d=new WeakSet,m=new WeakSet,p=new WeakSet,y=new WeakSet,class extends k.Subscribable{onSubscribe(){1===this.listeners.size&&(0,f._)(this,i).forEach(e=>{e.subscribe(t=>{(0,g._)(this,p,x).call(this,e,t)})})}onUnsubscribe(){this.listeners.size||this.destroy()}destroy(){this.listeners=new Set,(0,f._)(this,i).forEach(e=>{e.destroy()})}setQueries(e,t){(0,h._)(this,n,e),(0,h._)(this,a,t),I.notifyManager.batch(()=>{let e=(0,f._)(this,i),t=(0,g._)(this,m,S).call(this,(0,f._)(this,n));(0,h._)(this,u,t),t.forEach(e=>e.observer.setOptions(e.defaultedQueryOptions));let a=t.map(e=>e.observer),r=a.map(e=>e.getCurrentResult()),o=e.length!==a.length,l=a.some((t,s)=>t!==e[s]),c=o||l,d=!!c||r.some((e,t)=>{let n=(0,f._)(this,s)[t];return!n||!(0,b.shallowEqualObjects)(e,n)});(c||d)&&(c&&(0,h._)(this,i,a),(0,h._)(this,s,r),this.hasListeners()&&(c&&(C(e,a).forEach(e=>{e.destroy()}),C(a,e).forEach(e=>{e.subscribe(t=>{(0,g._)(this,p,x).call(this,e,t)})})),(0,g._)(this,y,L).call(this)))})}getCurrentResult(){return(0,f._)(this,s)}getQueries(){return(0,f._)(this,i).map(e=>e.getCurrentQuery())}getObservers(){return(0,f._)(this,i)}getOptimisticResult(e,t){let s=(0,g._)(this,m,S).call(this,e),n=s.map(e=>e.observer.getOptimisticResult(e.defaultedQueryOptions));return[n,e=>(0,g._)(this,d,M).call(this,null!=e?e:n,t),()=>(0,g._)(this,c,R).call(this,n,s)]}constructor(e,A,f){super(),(0,v._)(this,c),(0,v._)(this,d),(0,v._)(this,m),(0,v._)(this,p),(0,v._)(this,y),(0,T._)(this,t,{writable:!0,value:void 0}),(0,T._)(this,s,{writable:!0,value:void 0}),(0,T._)(this,n,{writable:!0,value:void 0}),(0,T._)(this,a,{writable:!0,value:void 0}),(0,T._)(this,i,{writable:!0,value:void 0}),(0,T._)(this,r,{writable:!0,value:void 0}),(0,T._)(this,o,{writable:!0,value:void 0}),(0,T._)(this,l,{writable:!0,value:void 0}),(0,T._)(this,u,{writable:!0,value:[]}),(0,h._)(this,t,e),(0,h._)(this,a,f),(0,h._)(this,n,[]),(0,h._)(this,i,[]),(0,h._)(this,s,[]),this.setQueries(A)}});function R(e,t){return t.map((s,n)=>{let a=e[n];return s.defaultedQueryOptions.notifyOnChangeProps?a:s.observer.trackResult(a,e=>{t.forEach(t=>{t.observer.trackProp(e)})})})}function M(e,t){return t?((0,f._)(this,r)&&(0,f._)(this,s)===(0,f._)(this,l)&&t===(0,f._)(this,o)||((0,h._)(this,o,t),(0,h._)(this,l,(0,f._)(this,s)),(0,h._)(this,r,(0,b.replaceEqualDeep)((0,f._)(this,r),t(e)))),(0,f._)(this,r)):e}function S(e){let s=new Map((0,f._)(this,i).map(e=>[e.options.queryHash,e])),n=[];return e.forEach(e=>{let a=(0,f._)(this,t).defaultQueryOptions(e),i=s.get(a.queryHash);i?n.push({defaultedQueryOptions:a,observer:i}):n.push({defaultedQueryOptions:a,observer:new E.QueryObserver((0,f._)(this,t),a)})}),n}function x(e,t){let n=(0,f._)(this,i).indexOf(e);if(-1!==n){var a;let e;(0,h._)(this,s,(a=(0,f._)(this,s),(e=a.slice(0))[n]=t,e)),(0,g._)(this,y,L).call(this)}}function L(){if(this.hasListeners()){var e;let t=(0,f._)(this,r),n=(0,g._)(this,c,R).call(this,(0,f._)(this,s),(0,f._)(this,u));t!==(0,g._)(this,d,M).call(this,n,null==(e=(0,f._)(this,a))?void 0:e.combine)&&I.notifyManager.batch(()=>{this.listeners.forEach(e=>{e((0,f._)(this,s))})})}}var w=e.i(795621),D=e.i(980385),U=e.i(554314),_=e.i(114467),N=e.i(903481);e.s(["useQueries",0,function(e,t){let{queries:s,...n}=e,a=(0,w.useQueryClient)(t),i=(0,D.useIsRestoring)(),r=(0,U.useQueryErrorResetBoundary)(),o=A.useMemo(()=>s.map(e=>{let t=a.defaultQueryOptions(e);return t._optimisticResults=i?"isRestoring":"optimistic",t}),[s,a,i]);o.forEach(e=>{(0,N.ensureSuspenseTimers)(e),(0,_.ensurePreventErrorBoundaryRetry)(e,r)}),(0,_.useClearResetErrorBoundary)(r);let[l]=A.useState(()=>new B(a,o,n)),[u,c,d]=l.getOptimisticResult(o,n.combine),m=!i&&!1!==n.subscribed;A.useSyncExternalStore(A.useCallback(e=>m?l.subscribe(I.notifyManager.batchCalls(e)):b.noop,[l,m]),()=>l.getCurrentResult(),()=>l.getCurrentResult()),A.useEffect(()=>{l.setQueries(o,n)},[o,n,l]);let p=u.some((e,t)=>(0,N.shouldSuspend)(o[t],e))?u.flatMap((e,t)=>{let s=o[t];if(s){let t=new E.QueryObserver(a,s);if((0,N.shouldSuspend)(s,e))return(0,N.fetchOptimistic)(s,t,r);(0,N.willFetch)(e,i)&&(0,N.fetchOptimistic)(s,t,r)}return[]}):[];if(p.length>0)throw Promise.all(p);let y=u.find((e,t)=>{let s=o[t];return s&&(0,_.getHasError)({result:e,errorResetBoundary:r,throwOnError:s.throwOnError,query:a.getQueryCache().get(s.queryHash),suspense:s.suspense})});if(null==y?void 0:y.error)throw y.error;return c(d())}],51899)}]);
-
-//# debugId=7608a253-a7ed-6216-9476-a4aee704a026
-//# sourceMappingURL=2aa5to89jgukt.js.map
+self.__BUILD_MANIFEST = {
+  "/": [
+    "static/chunks/2h7ffzvmu2yx-.js"
+  ],
+  "/404": [
+    "static/chunks/07yzl9v3v-bmn.js"
+  ],
+  "/500": [
+    "static/chunks/1j9d-y9odzsuv.js"
+  ],
+  "/_error": [
+    "static/chunks/1vhh54w9rr9z5.js"
+  ],
+  "/build": [
+    "static/chunks/2vqto21ebuhr-.js"
+  ],
+  "/creator": [
+    "static/chunks/2pv7jglmkarlt.js"
+  ],
+  "/dashboard/account-information": [
+    "static/chunks/3tl5y82-5eoyo.js"
+  ],
+  "/dashboard/analytics": [
+    "static/chunks/2b-hl81g8fl2z.js"
+  ],
+  "/dashboard/analytics/ip-earnings": [
+    "static/chunks/3aigp_xv98j1u.js"
+  ],
+  "/dashboard/analytics/studio-configs": [
+    "static/chunks/025y4za73-3f8.js"
+  ],
+  "/dashboard/billing": [
+    "static/chunks/3sqi5fsyq5spb.js"
+  ],
+  "/dashboard/creations": [
+    "static/chunks/0mjhylt8rdwhd.js"
+  ],
+  "/dashboard/creations/bundle/[id]/analytics": [
+    "static/chunks/1wh75aa6yiuu3.js"
+  ],
+  "/dashboard/creations/bundle/[id]/configure": [
+    "static/chunks/2doypt64ysdp1.js"
+  ],
+  "/dashboard/creations/bundle/[id]/publish": [
+    "static/chunks/0_bblm8y_xlo7.js"
+  ],
+  "/dashboard/creations/bundle/[id]/variants": [
+    "static/chunks/0361q3acvj51y.js"
+  ],
+  "/dashboard/creations/catalog/[id]/analytics": [
+    "static/chunks/441b__xs6rfk-.js"
+  ],
+  "/dashboard/creations/catalog/[id]/configure": [
+    "static/chunks/3-s7pue0qsqwe.js"
+  ],
+  "/dashboard/creations/catalog/[id]/publish": [
+    "static/chunks/0s_pc1qxjyvfp.js"
+  ],
+  "/dashboard/creations/catalog/[id]/variants": [
+    "static/chunks/05ngv1qeq5n94.js"
+  ],
+  "/dashboard/creations/experiences/[id]/access": [
+    "static/chunks/1_od5wh32cep4.js"
+  ],
+  "/dashboard/creations/experiences/[id]/activity-history": [
+    "static/chunks/1calj3p0rzcnw.js"
+  ],
+  "/dashboard/creations/experiences/[id]/advanced-settings": [
+    "static/chunks/04znm7iyw4znw.js"
+  ],
+  "/dashboard/creations/experiences/[id]/alerts": [
+    "static/chunks/1ye--7zi-y9g3.js"
+  ],
+  "/dashboard/creations/experiences/[id]/alerts/[alertId]/configure": [
+    "static/chunks/00qi2auqrt9og.js"
+  ],
+  "/dashboard/creations/experiences/[id]/alerts/create": [
+    "static/chunks/0bcpb4rx1b5o-.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics": [
+    "static/chunks/1mqot414pn7ia.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/acquisition": [
+    "static/chunks/42_ocjdsvsjel.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/agent": [
+    "static/chunks/02h1o0gfny2mk.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/ai-chat": [
+    "static/chunks/2xfffv5fiih-4.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/assistant": [
+    "static/chunks/3yzg6zoe72koo.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/audience": [
+    "static/chunks/0rw4sk2hbnnmk.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/crashes": [
+    "static/chunks/0timtllpcug04.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/dashboards": [
+    "static/chunks/2ehm8tppr56mo.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/dashboards/[dashboardId]": [
+    "static/chunks/16y837kp8op5e.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/dashboards/[dashboardId]/edit": [
+    "static/chunks/09x4eo08mtkcj.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/dashboards/[dashboardId]/preview": [
+    "static/chunks/184_au5ghf3tv.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/dashboards/[dashboardId]/tile/[tileId]/edit": [
+    "static/chunks/3qb_mkn1e-vhi.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/data-stores": [
+    "static/chunks/22y6pcqnt71tw.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/economy": [
+    "static/chunks/209wm3p208a3j.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/engagement": [
+    "static/chunks/20z5z92h_rc47.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/errors": [
+    "static/chunks/3710bmq_sgcx1.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/experience-subscriptions": [
+    "static/chunks/3g92g_op1aycs.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/explore": [
+    "static/chunks/1lrbov0ebxded.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/funnels": [
+    "static/chunks/3jpz4grffgrcv.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/generative-ai": [
+    "static/chunks/0w0jawx9k8qzs.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/http-service": [
+    "static/chunks/29xgsk9i0mg9b.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/immersive-ads": [
+    "static/chunks/0mp5wheb95m6x.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/journeys": [
+    "static/chunks/3qn1j7oq2tk1k.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/journeys/create": [
+    "static/chunks/2gm0ec3wduufl.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/journeys/edit": [
+    "static/chunks/0unjn11iq6pbn.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/journeys/view": [
+    "static/chunks/17sd3340bwkhw.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/memory-stores": [
+    "static/chunks/2bnd-6jggmcgb.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/messaging-service": [
+    "static/chunks/0imj5b2o0br63.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/monetization": [
+    "static/chunks/1o8ri_fcj3d21.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/performance": [
+    "static/chunks/27liyu3w2yyxt.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/queue-service": [
+    "static/chunks/3x51t_iqa07yd.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/retention": [
+    "static/chunks/2flw7pe3btyz3.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/select-eligibility": [
+    "static/chunks/3ydlnuy8wv40t.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/speech-to-text": [
+    "static/chunks/20gl4ab6sc17s.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/text-to-speech": [
+    "static/chunks/3z6ounph7058z.js"
+  ],
+  "/dashboard/creations/experiences/[id]/analytics/video-service": [
+    "static/chunks/12qi6j4inxtsg.js"
+  ],
+  "/dashboard/creations/experiences/[id]/associated-items": [
+    "static/chunks/10c7lmv_op7dv.js"
+  ],
+  "/dashboard/creations/experiences/[id]/audience-reach": [
+    "static/chunks/2gck5kgv-fgat.js"
+  ],
+  "/dashboard/creations/experiences/[id]/avatar-creation-tokens/[tokenId]/configure": [
+    "static/chunks/21-0lmj6jkrlw.js"
+  ],
+  "/dashboard/creations/experiences/[id]/avatar-creation-tokens/create": [
+    "static/chunks/26ftzrpvo7gi0.js"
+  ],
+  "/dashboard/creations/experiences/[id]/badges/[badgeId]/configure": [
+    "static/chunks/0j4lx-9uipaad.js"
+  ],
+  "/dashboard/creations/experiences/[id]/badges/[badgeId]/overview": [
+    "static/chunks/1m4n_sb8338iv.js"
+  ],
+  "/dashboard/creations/experiences/[id]/badges/create": [
+    "static/chunks/0tpts04h1rzff.js"
+  ],
+  "/dashboard/creations/experiences/[id]/badges/reorder": [
+    "static/chunks/09mm0pd9gun35.js"
+  ],
+  "/dashboard/creations/experiences/[id]/chat": [
+    "static/chunks/2c6t-lztoviqa.js"
+  ],
+  "/dashboard/creations/experiences/[id]/collaborators": [
+    "static/chunks/44kjn15su2vq-.js"
+  ],
+  "/dashboard/creations/experiences/[id]/communication-settings": [
+    "static/chunks/3yjp933xfhmmn.js"
+  ],
+  "/dashboard/creations/experiences/[id]/configs": [
+    "static/chunks/3f5z3kva5oyet.js"
+  ],
+  "/dashboard/creations/experiences/[id]/configs/config-create": [
+    "static/chunks/0z7eec7w9nn_f.js"
+  ],
+  "/dashboard/creations/experiences/[id]/configs/history": [
+    "static/chunks/2l82sqwysxhdp.js"
+  ],
+  "/dashboard/creations/experiences/[id]/configs/studio": [
+    "static/chunks/3gkx7mc3bpmbj.js"
+  ],
+  "/dashboard/creations/experiences/[id]/configure": [
+    "static/chunks/0grljgwshxeh2.js"
+  ],
+  "/dashboard/creations/experiences/[id]/content-rating": [
+    "static/chunks/42e8uk-ael578.js"
+  ],
+  "/dashboard/creations/experiences/[id]/created-places": [
+    "static/chunks/3v8_cm6akaxee.js"
+  ],
+  "/dashboard/creations/experiences/[id]/developer-products/[productId]/configure": [
+    "static/chunks/43v45qj248hi1.js"
+  ],
+  "/dashboard/creations/experiences/[id]/developer-products/create": [
+    "static/chunks/01-vcp2yx37cx.js"
+  ],
+  "/dashboard/creations/experiences/[id]/environments": [
+    "static/chunks/2ia1tec_r0d1k.js"
+  ],
+  "/dashboard/creations/experiences/[id]/environments/[environmentId]/configure": [
+    "static/chunks/3cuwk228xpgb_.js"
+  ],
+  "/dashboard/creations/experiences/[id]/environments/new_environment": [
+    "static/chunks/2rkidncdow8kl.js"
+  ],
+  "/dashboard/creations/experiences/[id]/events": [
+    "static/chunks/09r6-y0_-_jr2.js"
+  ],
+  "/dashboard/creations/experiences/[id]/events/[eventId]/configure": [
+    "static/chunks/0k0vcxsv6yhb9.js"
+  ],
+  "/dashboard/creations/experiences/[id]/events/create": [
+    "static/chunks/0omlhq1h8j1rs.js"
+  ],
+  "/dashboard/creations/experiences/[id]/experience-questionnaire": [
+    "static/chunks/2ub7wj2c7fudh.js"
+  ],
+  "/dashboard/creations/experiences/[id]/experience-subscriptions/[subscriptionId]/configure": [
+    "static/chunks/0fow0_gi3rtzj.js"
+  ],
+  "/dashboard/creations/experiences/[id]/experience-subscriptions/create": [
+    "static/chunks/2ydwz6rjq17sr.js"
+  ],
+  "/dashboard/creations/experiences/[id]/experiments": [
+    "static/chunks/31_q35np_r2rq.js"
+  ],
+  "/dashboard/creations/experiences/[id]/experiments/[experimentId]/experiment-details": [
+    "static/chunks/1r5xfncpen38c.js"
+  ],
+  "/dashboard/creations/experiences/[id]/experiments/experiment-create": [
+    "static/chunks/00dmd2-zgap_h.js"
+  ],
+  "/dashboard/creations/experiences/[id]/extended-services": [
+    "static/chunks/26ftt6mn2eash.js"
+  ],
+  "/dashboard/creations/experiences/[id]/feedback": [
+    "static/chunks/0bmfzzhwdmng_.js"
+  ],
+  "/dashboard/creations/experiences/[id]/game-details": [
+    "static/chunks/07qh3byhbh0qn.js"
+  ],
+  "/dashboard/creations/experiences/[id]/game-join": [
+    "static/chunks/00grmm-bq26u9.js"
+  ],
+  "/dashboard/creations/experiences/[id]/leaderboard": [
+    "static/chunks/1a89izpqfa_z1.js"
+  ],
+  "/dashboard/creations/experiences/[id]/localization": [
+    "static/chunks/2ofn6s4slsum2.js"
+  ],
+  "/dashboard/creations/experiences/[id]/localization/contribution-report": [
+    "static/chunks/0nhk2aevefz5y.js"
+  ],
+  "/dashboard/creations/experiences/[id]/localization/translation": [
+    "static/chunks/17cnwdx0lffvp.js"
+  ],
+  "/dashboard/creations/experiences/[id]/manage-audience": [
+    "static/chunks/22g_ehykiq5y-.js"
+  ],
+  "/dashboard/creations/experiences/[id]/matchmaking": [
+    "static/chunks/28hpydas2q4lk.js"
+  ],
+  "/dashboard/creations/experiences/[id]/matchmaking/create-attribute": [
+    "static/chunks/2gz88abhfo2y5.js"
+  ],
+  "/dashboard/creations/experiences/[id]/matchmaking/create-configuration/[configurationId]": [
+    "static/chunks/1-zl57zvy8sct.js"
+  ],
+  "/dashboard/creations/experiences/[id]/matchmaking/edit-configuration/[configurationId]": [
+    "static/chunks/11b6502lcfk3q.js"
+  ],
+  "/dashboard/creations/experiences/[id]/matchmaking/edit-player-attribute/[attributeId]": [
+    "static/chunks/09tnivi26m1a1.js"
+  ],
+  "/dashboard/creations/experiences/[id]/matchmaking/edit-server-attribute/[attributeId]": [
+    "static/chunks/2noz7xawtz75b.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/avatar-creation-tokens": [
+    "static/chunks/0lqzpvbcnluzl.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/avatar-items": [
+    "static/chunks/1ngxgrnvl7xlc.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/commerce": [
+    "static/chunks/3qay2fzlte6ju.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/commerce/create-products": [
+    "static/chunks/14vlf2544j25-.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/commerce/draft-products": [
+    "static/chunks/0cv_6ysg4uhlz.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/creator-rewards": [
+    "static/chunks/06eqfq_t44z34.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/developer-products": [
+    "static/chunks/3h79vhyytwj6i.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/developer-products/external-purchase-settings": [
+    "static/chunks/0dw2w_qp5yufs.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/hard-coded-prices": [
+    "static/chunks/0e-s71zc10t4j.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/immersive-ads": [
+    "static/chunks/1jtvz994qutkx.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/immersive-ads/create-placement": [
+    "static/chunks/3ty8tgom095c4.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/managed-pricing": [
+    "static/chunks/0kp10se0l9vbu.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/managed-pricing/events/[eventId]/details": [
+    "static/chunks/0i3zryinldc6o.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/overview": [
+    "static/chunks/2enhghzj36ecp.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/passes": [
+    "static/chunks/11s73gh5ui82u.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/price-check": [
+    "static/chunks/0341--8o0zjtd.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/price-optimization": [
+    "static/chunks/3jc5uicndo0kb.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/price-optimization/price-check": [
+    "static/chunks/067q7lzkn-ce-.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/roblox-plus": [
+    "static/chunks/41_9n8phh8its.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/shop": [
+    "static/chunks/1_s0i0_nn9ys0.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/shop/developer-product-purchases-blocked": [
+    "static/chunks/1220yvpok2nnv.js"
+  ],
+  "/dashboard/creations/experiences/[id]/monetization/subscriptions": [
+    "static/chunks/32_ns9sd-6d4m.js"
+  ],
+  "/dashboard/creations/experiences/[id]/notifications": [
+    "static/chunks/0j25x7jmw7k1l.js"
+  ],
+  "/dashboard/creations/experiences/[id]/notifications/content/[contentId]/update": [
+    "static/chunks/1c0ghtinhd2qv.js"
+  ],
+  "/dashboard/creations/experiences/[id]/notifications/content/create": [
+    "static/chunks/1l5o3_kxgm1ul.js"
+  ],
+  "/dashboard/creations/experiences/[id]/observability/client-sessions": [
+    "static/chunks/41at5u6-9xelb.js"
+  ],
+  "/dashboard/creations/experiences/[id]/observability/client-sessions/[sessionId]": [
+    "static/chunks/2ecpy--1xok4r.js"
+  ],
+  "/dashboard/creations/experiences/[id]/observability/data-captures": [
+    "static/chunks/365zuzb00-7ph.js"
+  ],
+  "/dashboard/creations/experiences/[id]/observability/data-captures/[dataCaptureKey]/edit": [
+    "static/chunks/2833ezc61f9mg.js"
+  ],
+  "/dashboard/creations/experiences/[id]/observability/data-captures/create": [
+    "static/chunks/07xa13s83n-km.js"
+  ],
+  "/dashboard/creations/experiences/[id]/observability/server-management": [
+    "static/chunks/2prrtn3-3c8-h.js"
+  ],
+  "/dashboard/creations/experiences/[id]/observability/server-management/[placeId]/servers": [
+    "static/chunks/3hr8g85mlr_z-.js"
+  ],
+  "/dashboard/creations/experiences/[id]/observability/server-management/[placeId]/servers/[jobId]/details": [
+    "static/chunks/1ylmkogxr0vkg.js"
+  ],
+  "/dashboard/creations/experiences/[id]/overview": [
+    "static/chunks/0s5zk4vrmenjt.js"
+  ],
+  "/dashboard/creations/experiences/[id]/passes/[passId]/configure": [
+    "static/chunks/3jc2_xmv6w4cx.js"
+  ],
+  "/dashboard/creations/experiences/[id]/passes/[passId]/promotions": [
+    "static/chunks/33zw82yxtja3o.js"
+  ],
+  "/dashboard/creations/experiences/[id]/passes/[passId]/sales": [
+    "static/chunks/3cmsxqxknx_rc.js"
+  ],
+  "/dashboard/creations/experiences/[id]/passes/create": [
+    "static/chunks/2epuqmvubxz8i.js"
+  ],
+  "/dashboard/creations/experiences/[id]/permissions": [
+    "static/chunks/0kg0jg5yxmorj.js"
+  ],
+  "/dashboard/creations/experiences/[id]/places": [
+    "static/chunks/103u-46hoo95-.js"
+  ],
+  "/dashboard/creations/experiences/[id]/places/[placeId]/access": [
+    "static/chunks/085bjm9shzw2t.js"
+  ],
+  "/dashboard/creations/experiences/[id]/places/[placeId]/configure": [
+    "static/chunks/2ouov_g8d_e9i.js"
+  ],
+  "/dashboard/creations/experiences/[id]/places/[placeId]/icon": [
+    "static/chunks/1ahra9pfefdpe.js"
+  ],
+  "/dashboard/creations/experiences/[id]/places/[placeId]/permissions": [
+    "static/chunks/1pi58uo9m3ozt.js"
+  ],
+  "/dashboard/creations/experiences/[id]/places/[placeId]/thumbnails": [
+    "static/chunks/344756wvs2ilg.js"
+  ],
+  "/dashboard/creations/experiences/[id]/places/[placeId]/version-history": [
+    "static/chunks/2d0_93ullx4r0.js"
+  ],
+  "/dashboard/creations/experiences/[id]/places/[placeId]/videos": [
+    "static/chunks/3izdp6sk9jo9c.js"
+  ],
+  "/dashboard/creations/experiences/[id]/places/manage": [
+    "static/chunks/0u4s4qt-5jvp9.js"
+  ],
+  "/dashboard/creations/experiences/[id]/player-support": [
+    "static/chunks/0cectdepmtjtf.js"
+  ],
+  "/dashboard/creations/experiences/[id]/player-support/[ticketId]": [
+    "static/chunks/0to6ogylh0py_.js"
+  ],
+  "/dashboard/creations/experiences/[id]/publishing": [
+    "static/chunks/0g--q2mo3p6xz.js"
+  ],
+  "/dashboard/creations/experiences/[id]/recommendation-service": [
+    "static/chunks/1nb4x__f9i3w5.js"
+  ],
+  "/dashboard/creations/experiences/[id]/recommendation-service/configs": [
+    "static/chunks/12s2d5uinnx_a.js"
+  ],
+  "/dashboard/creations/experiences/[id]/recommendation-service/create": [
+    "static/chunks/1nma5_uzielft.js"
+  ],
+  "/dashboard/creations/experiences/[id]/recommendation-service/edit": [
+    "static/chunks/3c8xr1zm-q4ws.js"
+  ],
+  "/dashboard/creations/experiences/[id]/referral-reward-details": [
+    "static/chunks/2o2o-yi72fqv4.js"
+  ],
+  "/dashboard/creations/experiences/[id]/referral-reward-details/create": [
+    "static/chunks/0prm0a0-171ti.js"
+  ],
+  "/dashboard/creations/experiences/[id]/safety/anti-cheat": [
+    "static/chunks/3itb6j2pvyquz.js"
+  ],
+  "/dashboard/creations/experiences/[id]/safety/bans": [
+    "static/chunks/2kepz3vbkdnh6.js"
+  ],
+  "/dashboard/creations/experiences/[id]/safety/bans/add": [
+    "static/chunks/2j2n1351o11yi.js"
+  ],
+  "/dashboard/creations/experiences/[id]/safety/collaborators": [
+    "static/chunks/36atwzktlzgkw.js"
+  ],
+  "/dashboard/creations/experiences/[id]/safety/issues-and-appeals": [
+    "static/chunks/2p-bct2kv60jr.js"
+  ],
+  "/dashboard/creations/experiences/[id]/safety/issues-and-appeals/[violationId]": [
+    "static/chunks/0lhf22w6t3uz6.js"
+  ],
+  "/dashboard/creations/experiences/[id]/safety/overview": [
+    "static/chunks/141h54ahs1po4.js"
+  ],
+  "/dashboard/creations/experiences/[id]/secrets": [
+    "static/chunks/3kyiub38aeuz4.js"
+  ],
+  "/dashboard/creations/experiences/[id]/server-management": [
+    "static/chunks/3430e66ajxtz0.js"
+  ],
+  "/dashboard/creations/experiences/[id]/server-management/[placeId]/servers": [
+    "static/chunks/26tlby222426k.js"
+  ],
+  "/dashboard/creations/experiences/[id]/server-management/[placeId]/servers/[jobId]/details": [
+    "static/chunks/3ilov0v2ux6ot.js"
+  ],
+  "/dashboard/creations/experiences/[id]/social-links": [
+    "static/chunks/0i_nftfgb7e35.js"
+  ],
+  "/dashboard/creations/experiences/[id]/stats": [
+    "static/chunks/0jowa1jv9bzsx.js"
+  ],
+  "/dashboard/creations/experiences/[id]/updates": [
+    "static/chunks/43mzdi-hnqhzp.js"
+  ],
+  "/dashboard/creations/experiences/[id]/webhooks": [
+    "static/chunks/18_dqb5sirto6.js"
+  ],
+  "/dashboard/creations/look/[id]/configure": [
+    "static/chunks/27wm-vh51abhc.js"
+  ],
+  "/dashboard/creations/pricing": [
+    "static/chunks/3g3ct36-dxwp1.js"
+  ],
+  "/dashboard/creations/showcases/[id]/manage": [
+    "static/chunks/3-39nqtlbh1_y.js"
+  ],
+  "/dashboard/creations/showcases/create": [
+    "static/chunks/0ax82dc8ome6-.js"
+  ],
+  "/dashboard/creations/store/[id]/configure": [
+    "static/chunks/1__w_5y7v_hca.js"
+  ],
+  "/dashboard/creations/store/[id]/dependencies": [
+    "static/chunks/31guomjelv-6o.js"
+  ],
+  "/dashboard/creations/store/[id]/permissions": [
+    "static/chunks/3dqoiyeav7wmi.js"
+  ],
+  "/dashboard/creations/store/[id]/version-history": [
+    "static/chunks/0e8kzttm_zinh.js"
+  ],
+  "/dashboard/creations/upload": [
+    "static/chunks/1roqarqmre1h_.js"
+  ],
+  "/dashboard/credentials": [
+    "static/chunks/08bv3cs5le2fv.js"
+  ],
+  "/dashboard/devex": [
+    "static/chunks/0_1wuo63z4p8j.js"
+  ],
+  "/dashboard/devex/cashout": [
+    "static/chunks/3f860mqv3d71k.js"
+  ],
+  "/dashboard/devex/taxes": [
+    "static/chunks/02v5p50ujthqx.js"
+  ],
+  "/dashboard/devex/taxes/taxsubmission": [
+    "static/chunks/1nibt4wb_8zgm.js"
+  ],
+  "/dashboard/finance/analytics": [
+    "static/chunks/34qesxmd8an7p.js"
+  ],
+  "/dashboard/finance/overview": [
+    "static/chunks/1gsl_ucjzja9a.js"
+  ],
+  "/dashboard/group/activity-history": [
+    "static/chunks/28lg5gkub8qd0.js"
+  ],
+  "/dashboard/group/create": [
+    "static/chunks/2apjay6geu26k.js"
+  ],
+  "/dashboard/group/members": [
+    "static/chunks/04pk5m7p-scay.js"
+  ],
+  "/dashboard/group/moderation": [
+    "static/chunks/3n277x0gqgu6y.js"
+  ],
+  "/dashboard/group/payouts": [
+    "static/chunks/2mg_-23i1r1s0.js"
+  ],
+  "/dashboard/group/profile": [
+    "static/chunks/3e8k4h9mu8-zn.js"
+  ],
+  "/dashboard/group/revenue-share-agreements": [
+    "static/chunks/0px5id-g4laxs.js"
+  ],
+  "/dashboard/group/roles/[[...roleParams]]": [
+    "static/chunks/3rram6ao109f3.js"
+  ],
+  "/dashboard/ip": [
+    "static/chunks/23-656ssxjclk.js"
+  ],
+  "/dashboard/ip/ip-library": [
+    "static/chunks/09sq6d2vxc5fv.js"
+  ],
+  "/dashboard/ip/ip-library/[id]": [
+    "static/chunks/0h598_val4qzd.js"
+  ],
+  "/dashboard/ip/ip-library/[id]/add-ip": [
+    "static/chunks/2m0bmzshc0zdk.js"
+  ],
+  "/dashboard/ip/ip-library/[id]/edit": [
+    "static/chunks/07figp6zfebr8.js"
+  ],
+  "/dashboard/ip/ip-library/create": [
+    "static/chunks/112xw2eg6w1fc.js"
+  ],
+  "/dashboard/ip/license-requests": [
+    "static/chunks/0teqcjjmbpzbn.js"
+  ],
+  "/dashboard/ip/matches": [
+    "static/chunks/016n2g1c8ldzo.js"
+  ],
+  "/dashboard/license-manager": [
+    "static/chunks/3gi1h8s3kdkag.js"
+  ],
+  "/dashboard/license-manager/agreements/[agreementId]": [
+    "static/chunks/0ouodxz2ck5oi.js"
+  ],
+  "/dashboard/license-manager/creator-agreements": [
+    "static/chunks/2xlp6uxb5w02t.js"
+  ],
+  "/dashboard/license-manager/creator-agreements/[id]": [
+    "static/chunks/1xtbogh9__swv.js"
+  ],
+  "/dashboard/license-manager/license-listings/[id]": [
+    "static/chunks/0rw9vbms001wd.js"
+  ],
+  "/dashboard/license-manager/license-listings/[id]/edit": [
+    "static/chunks/1k4kjjr9pb_s-.js"
+  ],
+  "/dashboard/license-manager/license-listings/[id]/license/create": [
+    "static/chunks/31i_gvz0xraz1.js"
+  ],
+  "/dashboard/license-manager/license-listings/create": [
+    "static/chunks/3mhd1d60hohfp.js"
+  ],
+  "/dashboard/license-manager/license/[id]/edit": [
+    "static/chunks/3xrf55ql3ihxp.js"
+  ],
+  "/dashboard/license-manager/licenses": [
+    "static/chunks/110vgi9llvcm-.js"
+  ],
+  "/dashboard/license-manager/matches": [
+    "static/chunks/3qosccrxie80w.js"
+  ],
+  "/dashboard/license-manager/matches/[agreementCandidateId]": [
+    "static/chunks/2nbe-6s-v2_wm.js"
+  ],
+  "/dashboard/payments": [
+    "static/chunks/02495tvh-a4yh.js"
+  ],
+  "/dashboard/revenue-share-agreements": [
+    "static/chunks/3m1aey0e1zufj.js"
+  ],
+  "/dashboard/rights-manager": [
+    "static/chunks/2c4ip5y0gb_be.js"
+  ],
+  "/dashboard/rights-manager/account": [
+    "static/chunks/0r0ymaz66-5eh.js"
+  ],
+  "/dashboard/rights-manager/accounts": [
+    "static/chunks/1odv9dq14tx5u.js"
+  ],
+  "/dashboard/rights-manager/apply": [
+    "static/chunks/0i5pzcrmchefb.js"
+  ],
+  "/dashboard/rights-manager/claims": [
+    "static/chunks/13ck9dwgkltuy.js"
+  ],
+  "/dashboard/rights-manager/claims/[caseId]/items": [
+    "static/chunks/34-5f0r5evazi.js"
+  ],
+  "/dashboard/rights-manager/claims/[caseId]/items/[claimItemId]": [
+    "static/chunks/20-c97q2t7y-n.js"
+  ],
+  "/dashboard/rights-manager/claims/create": [
+    "static/chunks/1e9sydcrwc55x.js"
+  ],
+  "/dashboard/rights-manager/claims/report-code": [
+    "static/chunks/4014c2lnl481n.js"
+  ],
+  "/dashboard/rights-manager/contents/[contentType]/[contentId]": [
+    "static/chunks/05a4b92n3wdyc.js"
+  ],
+  "/dashboard/rights-manager/matches": [
+    "static/chunks/3j5dsfpkhogtk.js"
+  ],
+  "/dashboard/rights-manager/register": [
+    "static/chunks/2bldig__4555h.js"
+  ],
+  "/dashboard/rights-manager/removal-requests": [
+    "static/chunks/0r-_16gjvwtq1.js"
+  ],
+  "/dashboard/rights-manager/removal-requests/create": [
+    "static/chunks/36p935hf1gbcc.js"
+  ],
+  "/dashboard/rights-manager/removal-requests/report-code": [
+    "static/chunks/1i0tw8qqfpuoh.js"
+  ],
+  "/dashboard/roblox-wallet": [
+    "static/chunks/2yyrrvyklrmwh.js"
+  ],
+  "/dashboard/roblox-wallet/rfi": [
+    "static/chunks/3ttq2qj_zkjpq.js"
+  ],
+  "/dashboard/summary/[date]": [
+    "static/chunks/3twwioeaazp5e.js"
+  ],
+  "/dashboard/transactions": [
+    "static/chunks/3xck7nrg648-x.js"
+  ],
+  "/dashboard/translator-portal": [
+    "static/chunks/03cq1nkzt86x6.js"
+  ],
+  "/data-collection": [
+    "static/chunks/237cdoix81p_6.js"
+  ],
+  "/error": [
+    "static/chunks/0-recx5_lnhf9.js"
+  ],
+  "/explore/licenses": [
+    "static/chunks/3b-u-iiwk6fem.js"
+  ],
+  "/explore/licenses/[listingId]": [
+    "static/chunks/1a6k817d88-n0.js"
+  ],
+  "/explore/licenses/[listingId]/[licenseId]/request": [
+    "static/chunks/1xbu48k_yga75.js"
+  ],
+  "/hire": [
+    "static/chunks/1ghhx21pii-al.js"
+  ],
+  "/hire/inbox": [
+    "static/chunks/3y58jkp423oue.js"
+  ],
+  "/hire/jobs/[jobId]": [
+    "static/chunks/1kwncdbvetzfj.js"
+  ],
+  "/hire/my-profile": [
+    "static/chunks/3osjczeiwv7x-.js"
+  ],
+  "/hire/my-profile/applied": [
+    "static/chunks/3ql4ibrs5mz3x.js"
+  ],
+  "/hire/my-studio": [
+    "static/chunks/0l25u-at8p3a4.js"
+  ],
+  "/hire/my-studio/jobs": [
+    "static/chunks/0ox7zhdz51ff4.js"
+  ],
+  "/hire/my-studio/jobs/[jobId]": [
+    "static/chunks/2ahxlde9xco0q.js"
+  ],
+  "/hire/my-studio/jobs/[jobId]/edit": [
+    "static/chunks/3n7o1aovtv3cs.js"
+  ],
+  "/hire/my-studio/onboard": [
+    "static/chunks/0c6nkvqq4-bmz.js"
+  ],
+  "/hire/my-studio/onboard/form": [
+    "static/chunks/0sgy7ntsdlprb.js"
+  ],
+  "/hire/my-studio/post-job": [
+    "static/chunks/2sqjykl-6xgvk.js"
+  ],
+  "/hire/studios": [
+    "static/chunks/1bjh4x7b0hxht.js"
+  ],
+  "/hire/studios/[studioId]": [
+    "static/chunks/06tv5p0wvz-vk.js"
+  ],
+  "/inspire": [
+    "static/chunks/0sbjfjvdhs-jb.js"
+  ],
+  "/landing": [
+    "static/chunks/2lkku-9utfvg6.js"
+  ],
+  "/maintenance": [
+    "static/chunks/2ga6a23r_n7_f.js"
+  ],
+  "/rewards": [
+    "static/chunks/2u0spyxejbokz.js"
+  ],
+  "/roadmap": [
+    "static/chunks/1cf6n1-2oczym.js"
+  ],
+  "/settings/advanced": [
+    "static/chunks/1-yo9vkc_6rud.js"
+  ],
+  "/settings/data-collection": [
+    "static/chunks/3b_y__ggqkpof.js"
+  ],
+  "/settings/eligibility": [
+    "static/chunks/2hdj8vbw_6_8k.js"
+  ],
+  "/settings/eligibility/audio-distribution": [
+    "static/chunks/2hs0xyzxdo0du.js"
+  ],
+  "/settings/eligibility/creator-rewards": [
+    "static/chunks/2fefhcwb2_p_l.js"
+  ],
+  "/settings/eligibility/extended-services": [
+    "static/chunks/2iz0-f-mkx0vb.js"
+  ],
+  "/settings/eligibility/paid-access": [
+    "static/chunks/3c2cq_01v5dx9.js"
+  ],
+  "/settings/eligibility/priced-assets": [
+    "static/chunks/1zktt11oil6h4.js"
+  ],
+  "/settings/eligibility/public-publish": [
+    "static/chunks/0bnjsgudo5gh4.js"
+  ],
+  "/settings/eligibility/publishing-permissions": [
+    "static/chunks/2jccm4nam5_0e.js"
+  ],
+  "/settings/eligibility/us-o18-devex-rate": [
+    "static/chunks/0_au4enzedzjd.js"
+  ],
+  "/settings/notifications": [
+    "static/chunks/25rjk6tfu-4ci.js"
+  ],
+  "/settings/notifications/[notificationCategory]": [
+    "static/chunks/167x8rtkvn1bf.js"
+  ],
+  "/settings/preferences": [
+    "static/chunks/30a0gmgcmwdc3.js"
+  ],
+  "/settings/webhooks": [
+    "static/chunks/033mmooshn78_.js"
+  ],
+  "/unsubscribe": [
+    "static/chunks/02leol11z_e26.js"
+  ],
+  "/unsupported-browser": [
+    "static/chunks/0pndl-bamh-j6.js"
+  ],
+  "/updates": [
+    "static/chunks/1oji01ja9c7ll.js"
+  ],
+  "/updates/roadmap": [
+    "static/chunks/3u3mpw-5wi-ad.js"
+  ],
+  "__rewrites": {
+    "afterFiles": [],
+    "beforeFiles": [
+      {
+        "source": "/39e966e332c295e1cac825b6a9d1fb5b8378eda8/_next/:path+",
+        "destination": "/_next/:path+"
+      }
+    ],
+    "fallback": []
+  },
+  "sortedPages": [
+    "/",
+    "/404",
+    "/500",
+    "/_app",
+    "/_error",
+    "/build",
+    "/creator",
+    "/dashboard/account-information",
+    "/dashboard/analytics",
+    "/dashboard/analytics/ip-earnings",
+    "/dashboard/analytics/studio-configs",
+    "/dashboard/billing",
+    "/dashboard/creations",
+    "/dashboard/creations/bundle/[id]/analytics",
+    "/dashboard/creations/bundle/[id]/configure",
+    "/dashboard/creations/bundle/[id]/publish",
+    "/dashboard/creations/bundle/[id]/variants",
+    "/dashboard/creations/catalog/[id]/analytics",
+    "/dashboard/creations/catalog/[id]/configure",
+    "/dashboard/creations/catalog/[id]/publish",
+    "/dashboard/creations/catalog/[id]/variants",
+    "/dashboard/creations/experiences/[id]/access",
+    "/dashboard/creations/experiences/[id]/activity-history",
+    "/dashboard/creations/experiences/[id]/advanced-settings",
+    "/dashboard/creations/experiences/[id]/alerts",
+    "/dashboard/creations/experiences/[id]/alerts/create",
+    "/dashboard/creations/experiences/[id]/alerts/[alertId]/configure",
+    "/dashboard/creations/experiences/[id]/analytics",
+    "/dashboard/creations/experiences/[id]/analytics/acquisition",
+    "/dashboard/creations/experiences/[id]/analytics/agent",
+    "/dashboard/creations/experiences/[id]/analytics/ai-chat",
+    "/dashboard/creations/experiences/[id]/analytics/assistant",
+    "/dashboard/creations/experiences/[id]/analytics/audience",
+    "/dashboard/creations/experiences/[id]/analytics/crashes",
+    "/dashboard/creations/experiences/[id]/analytics/dashboards",
+    "/dashboard/creations/experiences/[id]/analytics/dashboards/[dashboardId]",
+    "/dashboard/creations/experiences/[id]/analytics/dashboards/[dashboardId]/edit",
+    "/dashboard/creations/experiences/[id]/analytics/dashboards/[dashboardId]/preview",
+    "/dashboard/creations/experiences/[id]/analytics/dashboards/[dashboardId]/tile/[tileId]/edit",
+    "/dashboard/creations/experiences/[id]/analytics/data-stores",
+    "/dashboard/creations/experiences/[id]/analytics/economy",
+    "/dashboard/creations/experiences/[id]/analytics/engagement",
+    "/dashboard/creations/experiences/[id]/analytics/errors",
+    "/dashboard/creations/experiences/[id]/analytics/experience-subscriptions",
+    "/dashboard/creations/experiences/[id]/analytics/explore",
+    "/dashboard/creations/experiences/[id]/analytics/funnels",
+    "/dashboard/creations/experiences/[id]/analytics/generative-ai",
+    "/dashboard/creations/experiences/[id]/analytics/http-service",
+    "/dashboard/creations/experiences/[id]/analytics/immersive-ads",
+    "/dashboard/creations/experiences/[id]/analytics/journeys",
+    "/dashboard/creations/experiences/[id]/analytics/journeys/create",
+    "/dashboard/creations/experiences/[id]/analytics/journeys/edit",
+    "/dashboard/creations/experiences/[id]/analytics/journeys/view",
+    "/dashboard/creations/experiences/[id]/analytics/memory-stores",
+    "/dashboard/creations/experiences/[id]/analytics/messaging-service",
+    "/dashboard/creations/experiences/[id]/analytics/monetization",
+    "/dashboard/creations/experiences/[id]/analytics/performance",
+    "/dashboard/creations/experiences/[id]/analytics/queue-service",
+    "/dashboard/creations/experiences/[id]/analytics/retention",
+    "/dashboard/creations/experiences/[id]/analytics/select-eligibility",
+    "/dashboard/creations/experiences/[id]/analytics/speech-to-text",
+    "/dashboard/creations/experiences/[id]/analytics/text-to-speech",
+    "/dashboard/creations/experiences/[id]/analytics/video-service",
+    "/dashboard/creations/experiences/[id]/associated-items",
+    "/dashboard/creations/experiences/[id]/audience-reach",
+    "/dashboard/creations/experiences/[id]/avatar-creation-tokens/create",
+    "/dashboard/creations/experiences/[id]/avatar-creation-tokens/[tokenId]/configure",
+    "/dashboard/creations/experiences/[id]/badges/create",
+    "/dashboard/creations/experiences/[id]/badges/reorder",
+    "/dashboard/creations/experiences/[id]/badges/[badgeId]/configure",
+    "/dashboard/creations/experiences/[id]/badges/[badgeId]/overview",
+    "/dashboard/creations/experiences/[id]/chat",
+    "/dashboard/creations/experiences/[id]/collaborators",
+    "/dashboard/creations/experiences/[id]/communication-settings",
+    "/dashboard/creations/experiences/[id]/configs",
+    "/dashboard/creations/experiences/[id]/configs/config-create",
+    "/dashboard/creations/experiences/[id]/configs/history",
+    "/dashboard/creations/experiences/[id]/configs/studio",
+    "/dashboard/creations/experiences/[id]/configure",
+    "/dashboard/creations/experiences/[id]/content-rating",
+    "/dashboard/creations/experiences/[id]/created-places",
+    "/dashboard/creations/experiences/[id]/developer-products/create",
+    "/dashboard/creations/experiences/[id]/developer-products/[productId]/configure",
+    "/dashboard/creations/experiences/[id]/environments",
+    "/dashboard/creations/experiences/[id]/environments/new_environment",
+    "/dashboard/creations/experiences/[id]/environments/[environmentId]/configure",
+    "/dashboard/creations/experiences/[id]/events",
+    "/dashboard/creations/experiences/[id]/events/create",
+    "/dashboard/creations/experiences/[id]/events/[eventId]/configure",
+    "/dashboard/creations/experiences/[id]/experience-questionnaire",
+    "/dashboard/creations/experiences/[id]/experience-subscriptions/create",
+    "/dashboard/creations/experiences/[id]/experience-subscriptions/[subscriptionId]/configure",
+    "/dashboard/creations/experiences/[id]/experiments",
+    "/dashboard/creations/experiences/[id]/experiments/experiment-create",
+    "/dashboard/creations/experiences/[id]/experiments/[experimentId]/experiment-details",
+    "/dashboard/creations/experiences/[id]/extended-services",
+    "/dashboard/creations/experiences/[id]/feedback",
+    "/dashboard/creations/experiences/[id]/game-details",
+    "/dashboard/creations/experiences/[id]/game-join",
+    "/dashboard/creations/experiences/[id]/leaderboard",
+    "/dashboard/creations/experiences/[id]/localization",
+    "/dashboard/creations/experiences/[id]/localization/contribution-report",
+    "/dashboard/creations/experiences/[id]/localization/translation",
+    "/dashboard/creations/experiences/[id]/manage-audience",
+    "/dashboard/creations/experiences/[id]/matchmaking",
+    "/dashboard/creations/experiences/[id]/matchmaking/create-attribute",
+    "/dashboard/creations/experiences/[id]/matchmaking/create-configuration/[configurationId]",
+    "/dashboard/creations/experiences/[id]/matchmaking/edit-configuration/[configurationId]",
+    "/dashboard/creations/experiences/[id]/matchmaking/edit-player-attribute/[attributeId]",
+    "/dashboard/creations/experiences/[id]/matchmaking/edit-server-attribute/[attributeId]",
+    "/dashboard/creations/experiences/[id]/monetization/avatar-creation-tokens",
+    "/dashboard/creations/experiences/[id]/monetization/avatar-items",
+    "/dashboard/creations/experiences/[id]/monetization/commerce",
+    "/dashboard/creations/experiences/[id]/monetization/commerce/create-products",
+    "/dashboard/creations/experiences/[id]/monetization/commerce/draft-products",
+    "/dashboard/creations/experiences/[id]/monetization/creator-rewards",
+    "/dashboard/creations/experiences/[id]/monetization/developer-products",
+    "/dashboard/creations/experiences/[id]/monetization/developer-products/external-purchase-settings",
+    "/dashboard/creations/experiences/[id]/monetization/hard-coded-prices",
+    "/dashboard/creations/experiences/[id]/monetization/immersive-ads",
+    "/dashboard/creations/experiences/[id]/monetization/immersive-ads/create-placement",
+    "/dashboard/creations/experiences/[id]/monetization/managed-pricing",
+    "/dashboard/creations/experiences/[id]/monetization/managed-pricing/events/[eventId]/details",
+    "/dashboard/creations/experiences/[id]/monetization/overview",
+    "/dashboard/creations/experiences/[id]/monetization/passes",
+    "/dashboard/creations/experiences/[id]/monetization/price-check",
+    "/dashboard/creations/experiences/[id]/monetization/price-optimization",
+    "/dashboard/creations/experiences/[id]/monetization/price-optimization/price-check",
+    "/dashboard/creations/experiences/[id]/monetization/roblox-plus",
+    "/dashboard/creations/experiences/[id]/monetization/shop",
+    "/dashboard/creations/experiences/[id]/monetization/shop/developer-product-purchases-blocked",
+    "/dashboard/creations/experiences/[id]/monetization/subscriptions",
+    "/dashboard/creations/experiences/[id]/notifications",
+    "/dashboard/creations/experiences/[id]/notifications/content/create",
+    "/dashboard/creations/experiences/[id]/notifications/content/[contentId]/update",
+    "/dashboard/creations/experiences/[id]/observability/client-sessions",
+    "/dashboard/creations/experiences/[id]/observability/client-sessions/[sessionId]",
+    "/dashboard/creations/experiences/[id]/observability/data-captures",
+    "/dashboard/creations/experiences/[id]/observability/data-captures/create",
+    "/dashboard/creations/experiences/[id]/observability/data-captures/[dataCaptureKey]/edit",
+    "/dashboard/creations/experiences/[id]/observability/server-management",
+    "/dashboard/creations/experiences/[id]/observability/server-management/[placeId]/servers",
+    "/dashboard/creations/experiences/[id]/observability/server-management/[placeId]/servers/[jobId]/details",
+    "/dashboard/creations/experiences/[id]/overview",
+    "/dashboard/creations/experiences/[id]/passes/create",
+    "/dashboard/creations/experiences/[id]/passes/[passId]/configure",
+    "/dashboard/creations/experiences/[id]/passes/[passId]/promotions",
+    "/dashboard/creations/experiences/[id]/passes/[passId]/sales",
+    "/dashboard/creations/experiences/[id]/permissions",
+    "/dashboard/creations/experiences/[id]/places",
+    "/dashboard/creations/experiences/[id]/places/manage",
+    "/dashboard/creations/experiences/[id]/places/[placeId]/access",
+    "/dashboard/creations/experiences/[id]/places/[placeId]/configure",
+    "/dashboard/creations/experiences/[id]/places/[placeId]/icon",
+    "/dashboard/creations/experiences/[id]/places/[placeId]/permissions",
+    "/dashboard/creations/experiences/[id]/places/[placeId]/thumbnails",
+    "/dashboard/creations/experiences/[id]/places/[placeId]/version-history",
+    "/dashboard/creations/experiences/[id]/places/[placeId]/videos",
+    "/dashboard/creations/experiences/[id]/player-support",
+    "/dashboard/creations/experiences/[id]/player-support/[ticketId]",
+    "/dashboard/creations/experiences/[id]/publishing",
+    "/dashboard/creations/experiences/[id]/recommendation-service",
+    "/dashboard/creations/experiences/[id]/recommendation-service/configs",
+    "/dashboard/creations/experiences/[id]/recommendation-service/create",
+    "/dashboard/creations/experiences/[id]/recommendation-service/edit",
+    "/dashboard/creations/experiences/[id]/referral-reward-details",
+    "/dashboard/creations/experiences/[id]/referral-reward-details/create",
+    "/dashboard/creations/experiences/[id]/safety/anti-cheat",
+    "/dashboard/creations/experiences/[id]/safety/bans",
+    "/dashboard/creations/experiences/[id]/safety/bans/add",
+    "/dashboard/creations/experiences/[id]/safety/collaborators",
+    "/dashboard/creations/experiences/[id]/safety/issues-and-appeals",
+    "/dashboard/creations/experiences/[id]/safety/issues-and-appeals/[violationId]",
+    "/dashboard/creations/experiences/[id]/safety/overview",
+    "/dashboard/creations/experiences/[id]/secrets",
+    "/dashboard/creations/experiences/[id]/server-management",
+    "/dashboard/creations/experiences/[id]/server-management/[placeId]/servers",
+    "/dashboard/creations/experiences/[id]/server-management/[placeId]/servers/[jobId]/details",
+    "/dashboard/creations/experiences/[id]/social-links",
+    "/dashboard/creations/experiences/[id]/stats",
+    "/dashboard/creations/experiences/[id]/updates",
+    "/dashboard/creations/experiences/[id]/webhooks",
+    "/dashboard/creations/look/[id]/configure",
+    "/dashboard/creations/pricing",
+    "/dashboard/creations/showcases/create",
+    "/dashboard/creations/showcases/[id]/manage",
+    "/dashboard/creations/store/[id]/configure",
+    "/dashboard/creations/store/[id]/dependencies",
+    "/dashboard/creations/store/[id]/permissions",
+    "/dashboard/creations/store/[id]/version-history",
+    "/dashboard/creations/upload",
+    "/dashboard/credentials",
+    "/dashboard/devex",
+    "/dashboard/devex/cashout",
+    "/dashboard/devex/taxes",
+    "/dashboard/devex/taxes/taxsubmission",
+    "/dashboard/finance/analytics",
+    "/dashboard/finance/overview",
+    "/dashboard/group/activity-history",
+    "/dashboard/group/create",
+    "/dashboard/group/members",
+    "/dashboard/group/moderation",
+    "/dashboard/group/payouts",
+    "/dashboard/group/profile",
+    "/dashboard/group/revenue-share-agreements",
+    "/dashboard/group/roles/[[...roleParams]]",
+    "/dashboard/ip",
+    "/dashboard/ip/ip-library",
+    "/dashboard/ip/ip-library/create",
+    "/dashboard/ip/ip-library/[id]",
+    "/dashboard/ip/ip-library/[id]/add-ip",
+    "/dashboard/ip/ip-library/[id]/edit",
+    "/dashboard/ip/license-requests",
+    "/dashboard/ip/matches",
+    "/dashboard/license-manager",
+    "/dashboard/license-manager/agreements/[agreementId]",
+    "/dashboard/license-manager/creator-agreements",
+    "/dashboard/license-manager/creator-agreements/[id]",
+    "/dashboard/license-manager/license/[id]/edit",
+    "/dashboard/license-manager/license-listings/create",
+    "/dashboard/license-manager/license-listings/[id]",
+    "/dashboard/license-manager/license-listings/[id]/edit",
+    "/dashboard/license-manager/license-listings/[id]/license/create",
+    "/dashboard/license-manager/licenses",
+    "/dashboard/license-manager/matches",
+    "/dashboard/license-manager/matches/[agreementCandidateId]",
+    "/dashboard/payments",
+    "/dashboard/revenue-share-agreements",
+    "/dashboard/rights-manager",
+    "/dashboard/rights-manager/account",
+    "/dashboard/rights-manager/accounts",
+    "/dashboard/rights-manager/apply",
+    "/dashboard/rights-manager/claims",
+    "/dashboard/rights-manager/claims/create",
+    "/dashboard/rights-manager/claims/report-code",
+    "/dashboard/rights-manager/claims/[caseId]/items",
+    "/dashboard/rights-manager/claims/[caseId]/items/[claimItemId]",
+    "/dashboard/rights-manager/contents/[contentType]/[contentId]",
+    "/dashboard/rights-manager/matches",
+    "/dashboard/rights-manager/register",
+    "/dashboard/rights-manager/removal-requests",
+    "/dashboard/rights-manager/removal-requests/create",
+    "/dashboard/rights-manager/removal-requests/report-code",
+    "/dashboard/roblox-wallet",
+    "/dashboard/roblox-wallet/rfi",
+    "/dashboard/summary/[date]",
+    "/dashboard/transactions",
+    "/dashboard/translator-portal",
+    "/data-collection",
+    "/error",
+    "/explore/licenses",
+    "/explore/licenses/[listingId]",
+    "/explore/licenses/[listingId]/[licenseId]/request",
+    "/hire",
+    "/hire/inbox",
+    "/hire/jobs/[jobId]",
+    "/hire/my-profile",
+    "/hire/my-profile/applied",
+    "/hire/my-studio",
+    "/hire/my-studio/jobs",
+    "/hire/my-studio/jobs/[jobId]",
+    "/hire/my-studio/jobs/[jobId]/edit",
+    "/hire/my-studio/onboard",
+    "/hire/my-studio/onboard/form",
+    "/hire/my-studio/post-job",
+    "/hire/studios",
+    "/hire/studios/[studioId]",
+    "/inspire",
+    "/landing",
+    "/maintenance",
+    "/rewards",
+    "/roadmap",
+    "/settings/advanced",
+    "/settings/data-collection",
+    "/settings/eligibility",
+    "/settings/eligibility/audio-distribution",
+    "/settings/eligibility/creator-rewards",
+    "/settings/eligibility/extended-services",
+    "/settings/eligibility/paid-access",
+    "/settings/eligibility/priced-assets",
+    "/settings/eligibility/public-publish",
+    "/settings/eligibility/publishing-permissions",
+    "/settings/eligibility/us-o18-devex-rate",
+    "/settings/notifications",
+    "/settings/notifications/[notificationCategory]",
+    "/settings/preferences",
+    "/settings/webhooks",
+    "/unsubscribe",
+    "/unsupported-browser",
+    "/updates",
+    "/updates/roadmap"
+  ]
+};self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()
