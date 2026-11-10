@@ -1,0 +1,189 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-63eb6055af4e4688",
+    "manifestFiles": 19240,
+    "packages": 34,
+    "version": "0.747.0.7471481"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "b61bd0c8fd578de5fccf582ce1cea76892908aa711f00824f94042ff354081f4",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "409daf282f1d2f9b7461db21973d4cddb51a99560b705b6e1d4d50c4fc60d3b6",
+      "semantic": {
+        "added": [
+          "DFFlagAuroraStopPredictionForDirtyMechanisms",
+          "DFFlagDMCTMigrateHumanoidMoveDirection",
+          "DFFlagLuauOptimizeStringSplit_Staged",
+          "DFFlagNetworkStreamingBufferShrinkEnabled",
+          "DFFlagPublishImageSnapshotAtPrompt_Staged",
+          "DFFlagRbsReserveEngineAliases",
+          "DFFlagRbxTransportDetectRecvThreadOverload2",
+          "DFFlagSurfaceGuiUseVisualSizeForRayCast",
+          "DFIntAudioSpeechToTextPlatformStreamingVadHoldMs",
+          "FFlagAXCatalogDeepLinkSearchProps_Staged",
+          "FFlagAXCatalogSearchKeepFilters_Staged",
+          "FFlagAXMoreBulkPurchaseCounters",
+          "FFlagAmrHeaderDividerHoverThicken_Staged",
+          "FFlagAnimGraphUIKeepParameterNoodlesOnDrag_Staged",
+          "FFlagAnimGraphUIScrollableParameterPane_Staged",
+          "FFlagAnimGraphUITimestampFrames_Staged",
+          "FFlagAnimGraphUI_Localization2_Staged",
+          "FFlagAnimGraphUI_ToolbarAvoidParameterPane_Staged",
+          "FFlagAnimationSAuthHighSlotNotifications",
+          "FFlagAppChatFixMessageItemListStaleRefs_Staged",
+          "FFlagAppChatIncrementalMessageItemList_Staged",
+          "FFlagAppChatMessageListV2FollowIncoming_Staged",
+          "FFlagAppChatMessageListV2ScrollParity_Staged",
+          "FFlagAppChatRemoveAliasesSlice",
+          "FFlagAppChatSignalsActionHandlers",
+          "FFlagAppChatSignalsReplyStore",
+          "FFlagAppChatUseDataHydrationForPlaceInfos",
+          "FFlagAppChatUseSignalsForLastEntryPoint",
+          "FFlagAssistantMcpListStudiosTool_Staged",
+          "FFlagAssistantMcpSubmitFeedbackTool_Staged",
+          "FFlagAssistantSavePlaceTool_Staged",
+          "FFlagAuroraRollbackAttributeChangedSignals_Staged",
+          "FFlagCinReportImportAutomationSignals_Staged",
+          "FFlagCinUploadSessionInstanceApi_Staged",
+          "FFlagCollectionDebugRequiresRobloxScript",
+          "FFlagDMCTMigrateHumanoidSkipLockProperties_Staged",
+          "FFlagDMCTMigrateSoundTimePosition_Staged",
+          "FFlagDMCTMigrateWorkspaceAuthorityForced_Staged",
+          "FFlagEDPTTIParityDefinitions_Staged",
+          "FFlagEnableRenderNativeChallenge",
+          "FFlagEnableRoCaptchaChallenge",
+          "FFlagExpChatHistoricalMessagesUnibarUnread_IXP",
+          "FFlagExpChatRenderHistoricalMessages_IXP",
+          "FFlagExpChatVirtualizeSystemMessages_Staged",
+          "FFlagExplorerIconContent_Staged",
+          "FFlagFixFastClusterMeshDecalUVs",
+          "FFlagFixR15RigLabelParentMatch",
+          "FFlagFlyoutProfileEntryExposureLogging_IXP",
+          "FFlagFmodFixWavParsing_Staged",
+          "FFlagFormattingIfExpressionLookbackSkipsComments_Staged",
+          "FFlagFriendsPageUserListCtaEnabled_IXP",
+          "FFlagGltfExportHumanoidHeadBindFromRig2",
+          "FFlagHeapProfilerShutdownFix_Staged",
+          "FFlagLuaStartPageGroupSelector3",
+          "FFlagLuauIsYieldableSimplify_Staged",
+          "FFlagLuauOnlyCheckWidthSubtypingForReadOnlyProperty_Staged",
+          "FFlagPerformanceControlUseWeakSubsystemRefs_Staged",
+          "FFlagPromptsHandlerFetchOncePerSession_Staged",
+          "FFlagReleaseAdaptiveConfigClientOnShutdown_Staged",
+          "FFlagScriptEditorReadOnlyApi2_Staged",
+          "FFlagSduiLeaderboardComponent",
+          "FFlagSduiSetPageScopeFieldAction",
+          "FFlagSduiSettingsRootPage2_Staged",
+          "FFlagSlimLoaderRetryUnknownFailures_Staged",
+          "FFlagStudioAssistantPermissionsGameIdSub",
+          "FFlagStudioMCPListStudiosFanOut_Staged",
+          "FFlagStudioPlaceSaver_Staged",
+          "FFlagStudioPreserveAssetVersionFromUrls",
+          "FFlagTTranscoderNewIoInterface",
+          "FFlagTextureCompositorEagerRebake",
+          "FFlagUGCValidateMeshScaleErrorMessage",
+          "FFlagVoxelGridV2ValidateChunkHeader",
+          "FFlagVoxelJobManagerPersistentJobPool_Staged",
+          "FIntAssetAccessControllerGetAssetPublishStatesBatchSize",
+          "FIntTexturePackUsePropertySetAddressesHundredthPercent_Staged"
+        ],
+        "changed": [
+          {
+            "after": "9b5372d1ed833b4e412f1fde4ceb64b444e2d8f0",
+            "before": "26fdc540894c43552a2e3e4d89fcee752a61e8fe",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-10T20:15:55.081Z",
+            "before": "2026-11-10T18:01:45.689Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "1;Universality.MorePage.Exposure;Social.Profile.FlyoutProfileEntryToMeTab;522204785;dev_controlled",
+            "before": "1;Roblox.ProjectArgo;Social.Profile.FlyoutProfileEntryToMeTab;522204785;flagbank",
+            "name": "FFlagFlyoutProfileEntryGoesToMeTab_IXP"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagRenderAPI979Property3"
+          },
+          {
+            "after": "9b5372d1ed833b4e412f1fde4ceb64b444e2d8f0",
+            "before": "26fdc540894c43552a2e3e4d89fcee752a61e8fe",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-10T20:15:55.081Z",
+            "before": "2026-11-10T18:01:45.689Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagAuroraStopPredictionForDirtyMechanisms_Staged",
+          "DFFlagEnableNewRollingCategoryStats3_Staged",
+          "DFFlagRbxTransportDetectRecvThreadOverload2_Staged",
+          "DFIntTextChatServiceMaxMessageLength_UniverseFilter",
+          "FFlagAnimationSAuthHighSlotNotifications_Staged",
+          "FFlagCollectionDebugRequiresRobloxScript_Staged",
+          "FFlagEnableRenderNativeChallenge_Staged",
+          "FFlagEnableRoCaptchaChallenge_Staged",
+          "FFlagFixFastClusterMeshDecalUVs_Staged",
+          "FFlagFixR15RigLabelParentMatch_Staged",
+          "FFlagLuaStartPageGroupSelector3_Staged",
+          "FFlagRenderAPI979Property3_Staged",
+          "FFlagStudioAssistantPermissionsGameIdSub_Staged",
+          "FFlagStudioPreserveAssetVersionFromUrls_Staged",
+          "FFlagTTranscoderNewIoInterface_Staged",
+          "FFlagTextureCompositorEagerRebake_Staged",
+          "FIntAssetAccessControllerGetAssetPublishStatesBatchSize_Staged"
+        ],
+        "unchanged": 27016
+      }
+    },
+    "Web": {
+      "current": "1b046d8ffd0f78da1b72a4d9cadc745e903ff1c089af3622005fdcca1e20753e",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-047.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-049.js",
+          "assets.create.roblox.com/page-0/script-064.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.create.roblox.com/page-0/script-077.js",
+          "assets.create.roblox.com/page-1/script-001.js",
+          "assets.create.roblox.com/page-1/script-003.js",
+          "assets.create.roblox.com/page-1/script-004.js",
+          "assets.create.roblox.com/page-1/script-011.js",
+          "assets.create.roblox.com/page-1/script-013.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 76
+      },
+      "previous": "c4f48fe9561be118522f652f98e916f0dbd5d357f2d56100b0b81b178826bf96",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
