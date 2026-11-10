@@ -1,0 +1,275 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-63eb6055af4e4688",
+    "manifestFiles": 19240,
+    "packages": 34,
+    "version": "0.747.0.7471481"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "1b0cf9acefff26ffc6d028eea5e6b5a6ed55cfc6e5718366130c18377e2dbd74",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "56a6a98bc62f7c1ccf87b1a177e47684a7269fb7a6794c3799bf84ed7efc4639",
+      "semantic": {
+        "added": [
+          "DFFlagCLI214028HardBlockError_Staged",
+          "DFFlagCreatorConfigPerRepositoryJobs_Staged",
+          "DFFlagLuauOptimizeStringSplit",
+          "DFFlagPublishImageSnapshotAtPrompt",
+          "DFFlagRbxTransportQuicClientPmtudFix_Staged",
+          "DFFlagSimAdaptiveRemoveVelocityCriteriaHistoryDependence",
+          "DFFlagValidateEditableMeshDataDeserialize",
+          "DFIntTextChatHistoricalMessageReceivedSamplePermyriad_Staged",
+          "FFlagAXCatalogDeepLinkSearchProps",
+          "FFlagAXCatalogSearchKeepFilters",
+          "FFlagAXInspectAndBuyAvatarBackground_IXP",
+          "FFlagAXInspectAndBuyAvatarBackground_Staged",
+          "FFlagAXItemDetailsDescriptionLinks_IXP",
+          "FFlagAXUnifiedAutocompleteEndpoint_IXP",
+          "FFlagAXUnifiedAutocompleteExposureLogging_IXP",
+          "FFlagAimKnownAssetCacheVersioning_Staged",
+          "FFlagAnimGraphStateMachine2_UniverseFilter",
+          "FFlagAppChatFixMessageItemListStaleRefs",
+          "FFlagAppChatIncrementalMessageItemList",
+          "FFlagAppChatMessageListV2FollowIncoming",
+          "FFlagAppChatMessageListV2ScrollParity",
+          "FFlagAppChatUseDataHydrationForChatTimeouts_Staged",
+          "FFlagAppChatUseSignalsForAppLoaded_Staged",
+          "FFlagAppChatUseSignalsForExternalNavigationRequest_Staged",
+          "FFlagAssistantMcpListStudiosTool",
+          "FFlagAssistantMcpSubmitFeedbackTool",
+          "FFlagAssistantSavePlaceTool",
+          "FFlagBuildTabUsesCanViewBuild_Staged",
+          "FFlagCinReportImportAutomationSignals",
+          "FFlagDMCTMigrateHumanoidSkipLockProperties",
+          "FFlagDisableModelingServiceRegisterLegacyTelemetry_Staged",
+          "FFlagEDPTTIParityDefinitions",
+          "FFlagEdpConsoleUseAbuseReportRevampFlow_Staged",
+          "FFlagEnablePGSAnalytics3_Staged",
+          "FFlagExpChatMessageHistoryExperiment_Staged",
+          "FFlagExpChatOpenExpressionTrayExposure_Staged",
+          "FFlagExplorerIconContent",
+          "FFlagFixR15RigLabelParentMatch_Staged",
+          "FFlagFixUninitializedStatsForRbxTransport_Staged",
+          "FFlagFmodFixWavParsing",
+          "FFlagFormattingIfExpressionLookbackSkipsComments",
+          "FFlagGameJoinCardContent_Staged",
+          "FFlagHSRPublishAwaitGeneration_Staged",
+          "FFlagHeapProfilerShutdownFix",
+          "FFlagHomePageRefetchOnDataHydrationAccountReset2",
+          "FFlagLuaAppAllowNilHookDepsCleanup",
+          "FFlagLuauBufferCageCrashDetection_Staged",
+          "FFlagLuauIsYieldableSimplify",
+          "FFlagLuauOnlyCheckWidthSubtypingForReadOnlyProperty",
+          "FFlagOffersShopScopedNotification_Staged",
+          "FFlagPeoplePageAvatarBackground_IXP",
+          "FFlagPeoplePageAvatarBackground_Staged",
+          "FFlagPerformanceControlUseWeakSubsystemRefs",
+          "FFlagPresenceLocationType_Staged",
+          "FFlagProfilePlatformPresenceStoreMigration_v1",
+          "FFlagPromptsHandlerFetchOncePerSession",
+          "FFlagSduiApiStoreUpdateInputData_Staged",
+          "FFlagSduiArrayMapEmptyWhileHydrationNotReady",
+          "FFlagSduiContentRowTrailingHoverPointerOnly_Staged",
+          "FFlagSduiFreshInputDataSignalOnRebuild",
+          "FFlagSduiSharedLocalizedLiterals",
+          "FFlagSimEditableMeshQuads14_Staged",
+          "FFlagSlimLoaderRetryUnknownFailures",
+          "FFlagSocialExperienceJoinPresenceStoreMigration_v1",
+          "FFlagStudioAssistantPermissionsUnsavedAllowlist_Staged",
+          "FFlagStudioClassIconCustomFolder_Staged",
+          "FFlagStudioCopyInstancesAsJsonText_Staged",
+          "FFlagStudioMCPListStudiosFanOut",
+          "FFlagStudioPasteJsonOntoInstances_Staged",
+          "FFlagStudioPlayStartFocusOnlyWhenFrontmost_Staged",
+          "FFlagTagEditorVersionedUris_Staged",
+          "FFlagTextChatReceivePolicy2_Staged",
+          "FFlagUsesPgsModuleForCountryEligibility3_Staged",
+          "FIntmi_option_commit_retry_on_oom_Staged",
+          "FIntmi_option_page_retire_max_size_Staged",
+          "FStringRenderMeshPerLodStreamingForceDisablePlaceIds_Staged",
+          "FStringRenderMeshPerLodStreamingForceEnablePlaceIds_Staged"
+        ],
+        "changed": [
+          {
+            "after": "1;HarmonyExposure;HarmonyLPMTest2-1794344711311;1267634743;flagbank",
+            "before": "1;HarmonyExposure;HarmonyLPMTest2;1632253563;flagbank",
+            "name": "DFFlagPerformanceControlCutComputeBudgetInLowPower_IXP"
+          },
+          {
+            "after": "1;HarmonyExposure;HarmonyLPMTest2-1794344711311;1267634743;flagbank",
+            "before": "1;HarmonyExposure;HarmonyLPMTest2;1632253563;flagbank",
+            "name": "DFFlagPerformanceControlCutMemoryBudgetInLowPower_IXP"
+          },
+          {
+            "after": "1;HarmonyExposure;HarmonyLPMTest2-1794344711311;1267634743;flagbank",
+            "before": "1;HarmonyExposure;HarmonyLPMTest2;1632253563;flagbank",
+            "name": "DFFlagPerformanceControlForceComputeThrottleInLowPower_IXP"
+          },
+          {
+            "after": "1;HarmonyExposure;HarmonyLPMTest2-1794344711311;1267634743;flagbank",
+            "before": "1;HarmonyExposure;HarmonyLPMTest2;1632253563;flagbank",
+            "name": "DFIntPerformanceControlLowPowerComputeBudgetPercent_IXP"
+          },
+          {
+            "after": "1;HarmonyExposure;HarmonyLPMTest2-1794344711311;1267634743;flagbank",
+            "before": "1;HarmonyExposure;HarmonyLPMTest2;1632253563;flagbank",
+            "name": "DFIntPerformanceControlLowPowerMemoryBudgetPercent_IXP"
+          },
+          {
+            "after": "e591b88469704fe80434e2df3365535b943b1431",
+            "before": "0d8df6a412e2215d7ebd770cff0e96d20ae9ba43",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-10T23:15:07.289Z",
+            "before": "2026-11-10T20:37:44.536Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "1;Party.LandingPage.ConversationRows;AppChatRemoveConversationListDividerV2;893141464;dev_controlled",
+            "before": "1;Party.LandingPage;AppChatRemoveConversationListDivider;648887814;dev_controlled",
+            "name": "FFlagAppChatRemoveConversationListDivider_IXP"
+          },
+          {
+            "after": "1;HarmonyExposure;HarmonyLPMTest2-1794344711311;1267634743;flagbank",
+            "before": "1;HarmonyExposure;HarmonyLPMTest2;1632253563;flagbank",
+            "name": "FFlagPerformanceControlComputePrimaryTunablesEnabled3_IXP"
+          },
+          {
+            "after": "1;HarmonyExposure;HarmonyLPMTest2-1794344711311;1267634743;flagbank",
+            "before": "1;HarmonyExposure;HarmonyLPMTest2;1632253563;flagbank",
+            "name": "FFlagPerformanceControlManageComputeEnabled10_IXP"
+          },
+          {
+            "after": "1;HarmonyExposure;HarmonyLPMTest2-1794344711311;1267634743;flagbank",
+            "before": "1;HarmonyExposure;HarmonyLPMTest2;1632253563;flagbank",
+            "name": "FFlagPerformanceControlObserveLowPowerMode_IXP"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagScriptEditorReadOnlyApi2"
+          },
+          {
+            "after": "True;99152327248780;92921802220793;120308518813948",
+            "before": "True;99152327248780;92921802220793",
+            "name": "FFlagUGCValidateTransitionMakeupBounds_PlaceFilter"
+          },
+          {
+            "after": "1000;SteadyState;10;15;Rollout;100;30;SteadyState;100;75;Promote;2026-11-10T23:11:24",
+            "before": "2000;SteadyState;10;15;Rollout;100;30;SteadyState;100;75;Promote;2026-11-10T19:51:39",
+            "name": "FIntTexturePackUsePropertySetAddressesHundredthPercent_Staged"
+          },
+          {
+            "after": "3759770;99152327248780;92921802220793;120308518813948",
+            "before": "3759770;99152327248780;92921802220793",
+            "name": "FIntUGCValidateMakeupMaxUBound_PlaceFilter"
+          },
+          {
+            "after": "867187;99152327248780;92921802220793;120308518813948",
+            "before": "867187;99152327248780;92921802220793",
+            "name": "FIntUGCValidateMakeupMaxVBound_PlaceFilter"
+          },
+          {
+            "after": "3238280;99152327248780;92921802220793;120308518813948",
+            "before": "3238280;99152327248780;92921802220793",
+            "name": "FIntUGCValidateMakeupMinUBound_PlaceFilter"
+          },
+          {
+            "after": "190429;99152327248780;92921802220793;120308518813948",
+            "before": "190429;99152327248780;92921802220793",
+            "name": "FIntUGCValidateMakeupMinVBound_PlaceFilter"
+          },
+          {
+            "after": "e591b88469704fe80434e2df3365535b943b1431",
+            "before": "0d8df6a412e2215d7ebd770cff0e96d20ae9ba43",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-10T23:15:07.289Z",
+            "before": "2026-11-10T20:37:44.536Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagLuauOptimizeStringSplit_Staged",
+          "DFFlagPublishImageSnapshotAtPrompt_Staged",
+          "DFFlagSimAdaptiveRemoveVelocityCriteriaHistoryDependence_Staged",
+          "FFlagAXCatalogDeepLinkSearchProps_Staged",
+          "FFlagAXCatalogSearchKeepFilters_Staged",
+          "FFlagAXItemDetailsDescriptionLinks_Staged",
+          "FFlagAppChatFixMessageItemListStaleRefs_Staged",
+          "FFlagAppChatIncrementalMessageItemList_Staged",
+          "FFlagAppChatMessageListV2FollowIncoming_Staged",
+          "FFlagAppChatMessageListV2ScrollParity_Staged",
+          "FFlagAssistantMcpListStudiosTool_Staged",
+          "FFlagAssistantMcpSubmitFeedbackTool_Staged",
+          "FFlagAssistantSavePlaceTool_Staged",
+          "FFlagCinReportImportAutomationSignals_Staged",
+          "FFlagDMCTMigrateHumanoidSkipLockProperties_Staged",
+          "FFlagEDPTTIParityDefinitions_Staged",
+          "FFlagExplorerIconContent_Staged",
+          "FFlagFmodFixWavParsing_Staged",
+          "FFlagFormattingIfExpressionLookbackSkipsComments_Staged",
+          "FFlagHeapProfilerShutdownFix_Staged",
+          "FFlagLuaAppAllowNilHookDepsCleanup_Staged",
+          "FFlagLuauIsYieldableSimplify_Staged",
+          "FFlagLuauOnlyCheckWidthSubtypingForReadOnlyProperty_Staged",
+          "FFlagPerformanceControlUseWeakSubsystemRefs_Staged",
+          "FFlagPromptsHandlerFetchOncePerSession_Staged",
+          "FFlagScriptEditorReadOnlyApi2_Staged",
+          "FFlagSlimLoaderRetryUnknownFailures_Staged",
+          "FFlagStudioMCPListStudiosFanOut_Staged",
+          "FStringFRMLockstepProfileOverride_IXP"
+        ],
+        "unchanged": 27051
+      }
+    },
+    "Web": {
+      "current": "e853cd2cb03219307389b8aa28ce0a20b955de156cc7ccaa99d71adbe3106b31",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-002.js",
+          "assets.create.roblox.com/page-0/script-006.js",
+          "assets.create.roblox.com/page-0/script-012.js",
+          "assets.create.roblox.com/page-0/script-026.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-045.js",
+          "assets.create.roblox.com/page-0/script-047.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-049.js",
+          "assets.create.roblox.com/page-0/script-064.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.create.roblox.com/page-0/script-077.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 74
+      },
+      "previous": "1b046d8ffd0f78da1b72a4d9cadc745e903ff1c089af3622005fdcca1e20753e",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
