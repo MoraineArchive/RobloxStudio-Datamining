@@ -1,0 +1,80 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-67c8b1dedbb74fed",
+    "manifestFiles": 19397,
+    "packages": 34,
+    "version": "0.746.0.7461269"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "8939111f155294586766839c0d963a028d1e82a6b5d1e428c79ddf23dc180ad0",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "961eff44800658f17557a047e76aa86d9184dbaeb25f2cd7990dced175f3049c",
+      "semantic": {
+        "added": [
+          "FFlagAppChatCoalesceSendMessageWrites",
+          "FFlagAppChatConversationListViewRecyclerConsoleProps",
+          "FFlagAppChatGuardOsaScrollToIndex",
+          "FFlagAppChatGuiVisibleUsesStyledTransparency",
+          "FFlagAudioSpeechToTextPlatformEnableVolumeCheck",
+          "FFlagAudioSpeechToTextPlatformStreamingDisableSpeechToTextVAD",
+          "FFlagGuiObjectDragEndKeepAlive"
+        ],
+        "changed": [
+          {
+            "after": "dcf27317fcb58442bc57442e6f4bebd9b3b897a1",
+            "before": "03b4bff6672eb344c8f8b1a437900c125d9aa130",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-10T03:02:26.236Z",
+            "before": "2026-11-10T02:16:22.284Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagSlimAnimatorEligibility"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagTexturePackGameServerPropertySets"
+          },
+          {
+            "after": "dcf27317fcb58442bc57442e6f4bebd9b3b897a1",
+            "before": "03b4bff6672eb344c8f8b1a437900c125d9aa130",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-10T03:02:26.236Z",
+            "before": "2026-11-10T02:16:22.284Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagAppChatCoalesceSendMessageWrites_Staged",
+          "FFlagAppChatConversationListViewRecyclerConsoleProps_Staged",
+          "FFlagAppChatGuardOsaScrollToIndex_Staged",
+          "FFlagAppChatGuiVisibleUsesStyledTransparency_Staged",
+          "FFlagAudioSpeechToTextPlatformEnableVolumeCheck_Staged",
+          "FFlagAudioSpeechToTextPlatformStreamingDisableSpeechToTextVAD_Staged",
+          "FFlagGuiObjectDragEndKeepAlive_Staged",
+          "FFlagSlimAnimatorEligibility_Staged",
+          "FFlagTexturePackGameServerPropertySets_Staged"
+        ],
+        "unchanged": 27010
+      }
+    }
+  },
+  "schemaVersion": 1
+}
