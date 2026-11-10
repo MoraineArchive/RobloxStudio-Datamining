@@ -1,0 +1,87 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-63eb6055af4e4688",
+    "manifestFiles": 19240,
+    "packages": 34,
+    "version": "0.747.0.7471481"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "56a6a98bc62f7c1ccf87b1a177e47684a7269fb7a6794c3799bf84ed7efc4639",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "b61bd0c8fd578de5fccf582ce1cea76892908aa711f00824f94042ff354081f4",
+      "semantic": {
+        "added": [
+          "DFFlagSimAdaptiveRemoveVelocityCriteriaHistoryDependence_Staged",
+          "FFlagAXItemDetailsDescriptionLinks_Staged",
+          "FFlagAmrHeaderDividerHoverThicken",
+          "FFlagAnimGraphUIKeepParameterNoodlesOnDrag",
+          "FFlagAnimGraphUIScrollableParameterPane",
+          "FFlagAnimGraphUITimestampFrames",
+          "FFlagAnimGraphUI_Localization2",
+          "FFlagAnimGraphUI_ToolbarAvoidParameterPane",
+          "FFlagAuroraRollbackAttributeChangedSignals",
+          "FFlagCinUploadSessionInstanceApi",
+          "FFlagDMCTMigrateSoundTimePosition",
+          "FFlagDMCTMigrateWorkspaceAuthorityForced",
+          "FFlagExpChatVirtualizeSystemMessages",
+          "FFlagLuaAppAllowNilHookDepsCleanup_Staged",
+          "FFlagReleaseAdaptiveConfigClientOnShutdown",
+          "FFlagSduiSettingsRootPage2",
+          "FFlagStudioPlaceSaver",
+          "FFlagVoxelJobManagerPersistentJobPool"
+        ],
+        "changed": [
+          {
+            "after": "0d8df6a412e2215d7ebd770cff0e96d20ae9ba43",
+            "before": "9b5372d1ed833b4e412f1fde4ceb64b444e2d8f0",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-10T20:37:44.536Z",
+            "before": "2026-11-10T20:15:55.081Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "0d8df6a412e2215d7ebd770cff0e96d20ae9ba43",
+            "before": "9b5372d1ed833b4e412f1fde4ceb64b444e2d8f0",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-10T20:37:44.536Z",
+            "before": "2026-11-10T20:15:55.081Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagAmrHeaderDividerHoverThicken_Staged",
+          "FFlagAnimGraphUIKeepParameterNoodlesOnDrag_Staged",
+          "FFlagAnimGraphUIScrollableParameterPane_Staged",
+          "FFlagAnimGraphUITimestampFrames_Staged",
+          "FFlagAnimGraphUI_Localization2_Staged",
+          "FFlagAnimGraphUI_ToolbarAvoidParameterPane_Staged",
+          "FFlagAuroraRollbackAttributeChangedSignals_Staged",
+          "FFlagCinUploadSessionInstanceApi_Staged",
+          "FFlagDMCTMigrateSoundTimePosition_Staged",
+          "FFlagDMCTMigrateWorkspaceAuthorityForced_Staged",
+          "FFlagExpChatVirtualizeSystemMessages_Staged",
+          "FFlagReleaseAdaptiveConfigClientOnShutdown_Staged",
+          "FFlagSduiSettingsRootPage2_Staged",
+          "FFlagStudioPlaceSaver_Staged",
+          "FFlagVoxelJobManagerPersistentJobPool_Staged"
+        ],
+        "unchanged": 27078
+      }
+    }
+  },
+  "schemaVersion": 1
+}
