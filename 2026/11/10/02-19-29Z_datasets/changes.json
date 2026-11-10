@@ -1,0 +1,90 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-67c8b1dedbb74fed",
+    "manifestFiles": 19397,
+    "packages": 34,
+    "version": "0.746.0.7461269"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "961eff44800658f17557a047e76aa86d9184dbaeb25f2cd7990dced175f3049c",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "4f654e79f85aa4407eea0a53c6964bec1162f8134a9430eb0e16cfc4811d5490",
+      "semantic": {
+        "added": [
+          "DFIntAudioSpeechToTextPlatformLowerThresholdDb",
+          "DFIntAudioSpeechToTextPlatformUpperThresholdDb",
+          "DFIntAudioSpeechToTextSpeechPlatformProbabilityThresholdx1000",
+          "FFlagAppChatGetDeepValuePreserveFalse",
+          "FFlagAppChatMessageListV2StableRowCallbacks",
+          "FFlagFixNavRailForDeviceSafeInsets"
+        ],
+        "changed": [
+          {
+            "after": "03b4bff6672eb344c8f8b1a437900c125d9aa130",
+            "before": "4c2f807c6caf2253439559cc3e0c30338b92a32e",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-10T02:16:22.284Z",
+            "before": "2026-11-10T02:02:48.230Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "03b4bff6672eb344c8f8b1a437900c125d9aa130",
+            "before": "4c2f807c6caf2253439559cc3e0c30338b92a32e",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-10T02:16:22.284Z",
+            "before": "2026-11-10T02:02:48.230Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFIntAudioSpeechToTextPlatformLowerThresholdDb_Staged",
+          "DFIntAudioSpeechToTextPlatformUpperThresholdDb_Staged",
+          "DFIntAudioSpeechToTextSpeechPlatformProbabilityThresholdx1000_Staged",
+          "FFlagAppChatGetDeepValuePreserveFalse_Staged",
+          "FFlagAppChatMessageListV2StableRowCallbacks_Staged",
+          "FFlagFixNavRailForDeviceSafeInsets_Staged"
+        ],
+        "unchanged": 27015
+      }
+    },
+    "Web": {
+      "current": "0711a04df9dc7de456c7004b4d75f6ea9419b9c8e385ed2cbc363a623572842b",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-049.js",
+          "assets.create.roblox.com/page-0/script-064.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.create.roblox.com/page-0/script-077.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 85
+      },
+      "previous": "0e153a98ed3efb5315712229b30ea861ed786ea1dff56f371d9fd5e867dfff08",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
