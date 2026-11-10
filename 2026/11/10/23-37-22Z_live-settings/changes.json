@@ -1,0 +1,84 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-63eb6055af4e4688",
+    "manifestFiles": 19240,
+    "packages": 34,
+    "version": "0.747.0.7471481"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "532bba4bde10db14e92fe8aec2c377d9f5c199a48cf5bfa9c59176689d28ffda",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "1b0cf9acefff26ffc6d028eea5e6b5a6ed55cfc6e5718366130c18377e2dbd74",
+      "semantic": {
+        "added": [
+          "FFlagAppChatUseDataHydrationForChatTimeouts",
+          "FFlagAppChatUseSignalsForAppLoaded",
+          "FFlagEnablePGSAnalytics3",
+          "FFlagExpChatMEUpdatedSystemMessage_Staged",
+          "FFlagUserAbilitiesUserInterfaceA_Staged",
+          "FFlagUsesPgsModuleForCountryEligibility3",
+          "FIntPushNotificationsUpsellPromptsClientAttributesTimeoutMs_Staged"
+        ],
+        "changed": [
+          {
+            "after": "070d430e9708bbb41feb1918d404db713b102ec6",
+            "before": "e591b88469704fe80434e2df3365535b943b1431",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-10T23:35:32.051Z",
+            "before": "2026-11-10T23:15:07.289Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagStudioCopyInstancesAsJsonText"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagStudioPasteJsonOntoInstances"
+          },
+          {
+            "after": "True;SteadyState;10;15;Rollout;100;30;SteadyState;100;75;Promote;2026-11-10T23:30:21",
+            "before": "True;SteadyState;10;30;Revert;2026-11-10T22:56:15",
+            "name": "FFlagTextChatReceivePolicy2_Staged"
+          },
+          {
+            "after": "070d430e9708bbb41feb1918d404db713b102ec6",
+            "before": "e591b88469704fe80434e2df3365535b943b1431",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-10T23:35:32.051Z",
+            "before": "2026-11-10T23:15:07.289Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagAXInspectAndBuyAvatarBackground_Staged",
+          "FFlagAppChatUseDataHydrationForChatTimeouts_Staged",
+          "FFlagAppChatUseSignalsForAppLoaded_Staged",
+          "FFlagEnablePGSAnalytics3_Staged",
+          "FFlagPeoplePageAvatarBackground_Staged",
+          "FFlagStudioCopyInstancesAsJsonText_Staged",
+          "FFlagStudioPasteJsonOntoInstances_Staged",
+          "FFlagUsesPgsModuleForCountryEligibility3_Staged"
+        ],
+        "unchanged": 27133
+      }
+    }
+  },
+  "schemaVersion": 1
+}
