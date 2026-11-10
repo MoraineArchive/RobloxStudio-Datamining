@@ -36,6 +36,7 @@
         <Action name="betaFeaturesAction"/>
         <Action internal="true" name="flagEditorAction"/>
         <Action fflag="DebugStudioAllowFlagEditor" name="flagEditorAction"/>
+        <Action fflag="StudioFlagEditorSetting,!DebugStudioAllowFlagEditor" name="flagEditorAction"/>
         <Action name="shortcutHelpAction"/>
         <Separator/>
         <Action name="fileOpenAutoSavesAction"/>
@@ -229,7 +230,7 @@
             <Action name="testPhysicsStatsAction"/>
             <Action name="testRenderStatsAction"/>
             <Action name="testStatsAction"/>
-            <Action fflag="SceneAnalysisServiceEnabled" name="toggleSceneAnalysisAction"/>
+            <Action name="toggleSceneAnalysisAction"/>
         </SubMenu>
         <SubMenu name="Script" text="Studio.SystemMenu.Title.Script">
             <Action fflag="EnableCollectionDebuggerMenu" name="toggleCollectionDebugger"/>
@@ -246,7 +247,7 @@
         <SubMenu internal="true" fflag="DebugLoadDenyListedPlugins" name="UI" text="Studio.SystemMenu.Title.UI">
             <Action name="toggleInspectorAction"/>
             <Action name="toggleStorybookAction"/>
-            <Action fflag="StudioToggleUserInputPlaybackAction" name="toggleUserInputPlaybackAction"/>
+            <Action name="toggleUserInputPlaybackAction"/>
         </SubMenu>
         <Action name="resetViewAction"/>
         <Separator/>

@@ -1,11 +1,5 @@
 -- NOTE: CHANGING KEYS HERE?
 -- Increment STUDIO_DESIGN_VERSION in src/Styling/registerPluginStyles.lua
-local Framework = script.Parent.Parent
-local FoundationDark = require(Framework.Style.Themes.FoundationDark)
-local foundationDarkTheme = FoundationDark(1)
-
-local getFFlagDevFrameworkFixInputBackground = require(Framework.SharedFlags.getFFlagDevFrameworkFixInputBackground)
-
 local rule = require(script.Parent.createStyleRule)
 
 return {
@@ -138,9 +132,7 @@ return {
 	}),
 	rule(".X-Input", {
 		BackgroundColor3 = "$FilledInputBackground",
-		BackgroundTransparency = if not getFFlagDevFrameworkFixInputBackground()
-			then foundationDarkTheme.Color.Shift.Shift_200.Transparency
-			else 0,
+		BackgroundTransparency = 0,
 	}, {
 		rule("::UICorner", {
 			CornerRadius = UDim.new(0, 4),

@@ -1011,16 +1011,6 @@
   },
   {
     "class": "Folder",
-    "name": "InputTypes",
-    "path": "Notifications/Packages/_Index/Rhodium/Rhodium/InputTypes",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
     "name": "InstanceOf",
     "path": "Notifications/Packages/_Index/InstanceOf",
     "properties": {
@@ -1911,16 +1901,6 @@
   },
   {
     "class": "Folder",
-    "name": "Rhodium",
-    "path": "Notifications/Packages/_Index/Rhodium",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
     "name": "RoactCompat",
     "path": "Notifications/Packages/_Index/RoactCompat",
     "properties": {
@@ -2223,16 +2203,6 @@
     "class": "Folder",
     "name": "Tables",
     "path": "Notifications/Packages/_Index/DeveloperFramework/DeveloperFramework/RobloxAPI/LocalizationTables/V1/LocalizationTable/Tables~Folder-0",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
-    "name": "TagUtils",
-    "path": "Notifications/Packages/_Index/TagUtils",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -5701,22 +5671,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "195",
       "SourceBytecodeSha256": "d05d5be941c12f36d85a72a9b82ae23c7b88de28c8a12b76db06ace3ed2fb45c",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "By",
-    "path": "Notifications/Packages/_Index/Rhodium/Rhodium/By",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "135",
-      "SourceBytecodeSha256": "f349d864463cd27868bbcba84265349f499925a4bec82274adb979ca3b62c664",
       "Tags": ""
     },
     "unreadable": [
@@ -10579,8 +10533,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "6418",
-      "SourceBytecodeSha256": "2c102414f59bf85a9225676411a1aff8f2bc1e31f7205bcf19fd458e7f5bb65e",
+      "SourceBytecodeBytes": "6271",
+      "SourceBytecodeSha256": "892612bd9e900f4e024ea0579f97e0214e643e78f663f03a3c1b3703848f0102",
       "Tags": ""
     },
     "unreadable": [
@@ -10595,8 +10549,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4921",
-      "SourceBytecodeSha256": "812e1431b708aa7c5ff14a3b2c48565c697bd3530bdc9981e8ef1836bc0e5a62",
+      "SourceBytecodeBytes": "4529",
+      "SourceBytecodeSha256": "98db2bda8722c3bab401ba569c9903b10e5ddd394a8be58b4fb17a34d2c34a1a",
       "Tags": ""
     },
     "unreadable": [
@@ -12451,8 +12405,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "8801",
-      "SourceBytecodeSha256": "7eda55aaa10f2c8607fc99b60d330d7ca9735a222f0368b55a5ae610d681d620",
+      "SourceBytecodeBytes": "8931",
+      "SourceBytecodeSha256": "4a4732fe9818f9c79f454fd9c6f22edce75968f974cda4cfeea567679f12359c",
       "Tags": ""
     },
     "unreadable": [
@@ -12627,8 +12581,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "10390",
-      "SourceBytecodeSha256": "69392f8d26922f40f9ea99a8514e7257e9ca07d5c92195feec71cf883c1f233b",
+      "SourceBytecodeBytes": "9468",
+      "SourceBytecodeSha256": "19bdb0914a1eb40dccd92149acf96ddd58c8d48e018d62fd9a933307b7c42fbf",
       "Tags": ""
     },
     "unreadable": [
@@ -12789,22 +12743,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "177",
       "SourceBytecodeSha256": "5a8d490224e43cdd48a92c6a28995fe027658ecfe61bf1783eff923d31604705",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Element",
-    "path": "Notifications/Packages/_Index/Rhodium/Rhodium/Element",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "7305",
-      "SourceBytecodeSha256": "56c525c4af7588e7815c15e9de8f2f45b939259f3a87f8860cd48a841fd53cbc",
       "Tags": ""
     },
     "unreadable": [
@@ -14221,22 +14159,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "FindBy",
-    "path": "Notifications/Packages/_Index/Rhodium/Rhodium/FindBy",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "738",
-      "SourceBytecodeSha256": "13769834618612752399670a555043f4b38a716fb2a8d05a477388d88f3db143",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "findIndex",
     "path": "Notifications/Packages/_Index/Collections/Collections/Array/findIndex",
     "properties": {
@@ -15501,22 +15423,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "GamePad",
-    "path": "Notifications/Packages/_Index/Rhodium/Rhodium/InputTypes/GamePad",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "3041",
-      "SourceBytecodeSha256": "82d8a2f9324c0f5dcc2eaf3152d3792eb391de0384668fb664169081d318ad9e",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "games",
     "path": "Notifications/Packages/_Index/DeveloperFramework/DeveloperFramework/RobloxAPI/GameInternationalization/V1/AutoLocalization/games",
     "properties": {
@@ -15685,38 +15591,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "3654",
       "SourceBytecodeSha256": "01edd0368e2bc25e21b70e0573ce49aaee6d5e0b64f1c9bf6e61f58ba7ced874",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getAll",
-    "path": "Notifications/Packages/_Index/TagUtils/TagUtils/getAll",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "640",
-      "SourceBytecodeSha256": "d06a5d1a76f466b16df717cb7ccfbe95efdd1bb579d40589ee508bf72dcf2806",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getAny",
-    "path": "Notifications/Packages/_Index/TagUtils/TagUtils/getAny",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "606",
-      "SourceBytecodeSha256": "d3463fd194bb176d0cc9b32b9afb7e1d5114e12c901fdae943dd916e6056e249",
       "Tags": ""
     },
     "unreadable": [
@@ -16109,38 +15983,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkDropdownMenuHeight",
-    "path": "Notifications/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkDropdownMenuHeight",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "215",
-      "SourceBytecodeSha256": "3ad7dda2e9d36425aeb9634d806b5345c7f266444ee254d0bbc28b9b2a6f1ee1",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkFixInputBackground",
-    "path": "Notifications/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkFixInputBackground",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "215",
-      "SourceBytecodeSha256": "0f42fb5814c8e6d705244f029dbb3d68feb914413e72eb5b1c15d7231fd4bba3",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "getFFlagDevFrameworkFixMissingKeyErrors",
     "path": "Notifications/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkFixMissingKeyErrors",
     "properties": {
@@ -16148,7 +15990,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "217",
-      "SourceBytecodeSha256": "f11aac6f33664cfd77fa1e29199e157a3d93b04c4da799e33af478f2f081ff87",
+      "SourceBytecodeSha256": "e05c5dd661df27a5506a33a2e2bc31c55425eda96f657ac03db8843a63a21118",
       "Tags": ""
     },
     "unreadable": [
@@ -16189,22 +16031,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkOptionalComponentsFolder",
-    "path": "Notifications/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkOptionalComponentsFolder",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "221",
-      "SourceBytecodeSha256": "140b5585e247c48890cc522cde59bcefddaca70e43337f92bc8f5f053cacc3a9",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "getFFlagDevFrameworkParentStylesToDm",
     "path": "Notifications/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkParentStylesToDm",
     "properties": {
@@ -16229,22 +16055,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "213",
       "SourceBytecodeSha256": "acd421b226a52f69e78da96cff1bac995453003aebafbb021cdf9f8d0e93dc16",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkSliderInputValidation",
-    "path": "Notifications/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkSliderInputValidation",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "218",
-      "SourceBytecodeSha256": "26a8826f9f97edfa4160c7dc816f1338bd3c033ba5b251e83e4f813920e75400",
       "Tags": ""
     },
     "unreadable": [
@@ -17285,22 +17095,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "632",
       "SourceBytecodeSha256": "e0781c12dbae827db6575598e7262a8533671711e1a4336aa0175a2ba51e4a60",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getUnique",
-    "path": "Notifications/Packages/_Index/TagUtils/TagUtils/getUnique",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "577",
-      "SourceBytecodeSha256": "3173011cbe6a11aa59c7881a07313f4e35e03db96797b47b2933b13a2ac9b92f",
       "Tags": ""
     },
     "unreadable": [
@@ -19461,22 +19255,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "88",
       "SourceBytecodeSha256": "ac50b4ee2f956af09bb1880b6e6a97e6070ee21ad98cf03726658cd7c145f997",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "InputVisualizer",
-    "path": "Notifications/Packages/_Index/Rhodium/Rhodium/InputVisualizer",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "2333",
-      "SourceBytecodeSha256": "70706f8e92edc89f9f4e2229c6d2b094b128ffa89eb92d37742c7f23610a613e",
       "Tags": ""
     },
     "unreadable": [
@@ -22061,22 +21839,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "Keyboard",
-    "path": "Notifications/Packages/_Index/Rhodium/Rhodium/InputTypes/Keyboard",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "763",
-      "SourceBytecodeSha256": "145461a58b4b3f36469c0cf284d92a5d778be4d97fa147425b421c1120b7c8d2",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "KeyboardListener",
     "path": "Notifications/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/KeyboardListener",
     "properties": {
@@ -23683,8 +23445,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "6339",
-      "SourceBytecodeSha256": "37a264c0e6c9ae2bc430d7132ca6f3474efd485bccc4a5e8de18a2ddddf7d765",
+      "SourceBytecodeBytes": "6207",
+      "SourceBytecodeSha256": "10d2b29daa2cdf8b92e427246ea70bbb2fa03f50a7b5411a60409d408dfbb6fb",
       "Tags": ""
     },
     "unreadable": [
@@ -23699,8 +23461,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4827",
-      "SourceBytecodeSha256": "7ed17c485b5f783a2a60930e0089b795e616f4d7ffbf3070463f7749cedc9b38",
+      "SourceBytecodeBytes": "4557",
+      "SourceBytecodeSha256": "ea208a5d8f65c8fe49d0448dc7eb123dbdbf8af3c3121b7efe5a5e65c248ceb3",
       "Tags": ""
     },
     "unreadable": [
@@ -24805,22 +24567,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "161",
       "SourceBytecodeSha256": "0411e91e25f819d9f574b41cdd0152c35dbb05e6f4bbd82045291f17c7b66832",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "LuauTagUtils",
-    "path": "Notifications/Packages/_Index/Rhodium/LuauTagUtils",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "177",
-      "SourceBytecodeSha256": "6029b348c1e571cb2c0c13f8ec07083e00eefa0132efc36a238401841675ee10",
       "Tags": ""
     },
     "unreadable": [
@@ -26517,22 +26263,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "1772",
       "SourceBytecodeSha256": "379f57fdb34b7861edfd8eaa042a526bae5f3dc6001c3981f2537dbd92298833",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Mouse",
-    "path": "Notifications/Packages/_Index/Rhodium/Rhodium/InputTypes/Mouse",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "3273",
-      "SourceBytecodeSha256": "d240dd90f629dc442e9963662a6c5524a0b08e8a79499b199ec103250943706e",
       "Tags": ""
     },
     "unreadable": [
@@ -29091,8 +28821,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1071",
-      "SourceBytecodeSha256": "66ee0662b7dc2768a0757b59636350225395a5c3f33a6f48c9171352c4a02326",
+      "SourceBytecodeBytes": "1096",
+      "SourceBytecodeSha256": "7c48dd743ad414eb4f1bd4dd54005c3bcb06a8a194040f4d7e93b19e6c7ec440",
       "Tags": ""
     },
     "unreadable": [
@@ -32947,8 +32677,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3333",
-      "SourceBytecodeSha256": "52a2d387cbcb41eb56e3115b045de79cc10a075aaba85d2f3c731d69cb46e4b7",
+      "SourceBytecodeBytes": "3192",
+      "SourceBytecodeSha256": "eb861970d8a5c885fe2b10bd50d4a8d3a714f67f8b9afaad338d3bf65185c572",
       "Tags": ""
     },
     "unreadable": [
@@ -32997,22 +32727,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "1849",
       "SourceBytecodeSha256": "f52c99f3334246a209e19fab94eeba3bdede68111b1b88ab74af4a3ecd65000c",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "RemoteRhodium",
-    "path": "Notifications/Packages/_Index/Rhodium/Rhodium/RemoteRhodium",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "1201",
-      "SourceBytecodeSha256": "99503a3736812caf5f68b891e529dc613e92de857a045b706990f4237d6d22b1",
       "Tags": ""
     },
     "unreadable": [
@@ -33413,38 +33127,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "230",
       "SourceBytecodeSha256": "0d5e004bb4d5200f4adcab3b2cb862c3dab1aa21af53f27de1cce77b9f276410",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Rhodium",
-    "path": "Notifications/Packages/_Index/Rhodium/Rhodium",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "358",
-      "SourceBytecodeSha256": "1307a07f95f26cd20388dc79e5e46f96c74371fecca864af4f1acc41aa846a11",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Rhodium",
-    "path": "Notifications/Packages/Dev/Rhodium",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "166",
-      "SourceBytecodeSha256": "ec0b69cbbc62f90210af6cb9234f96e98613438cd71fc68d3c014ec9d0f0e988",
       "Tags": ""
     },
     "unreadable": [
@@ -34979,8 +34661,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "10675",
-      "SourceBytecodeSha256": "09ccfd16a4b39cd82f2af033e8a1c3273b3daeed5907f810c3e7525d64f16b75",
+      "SourceBytecodeBytes": "9581",
+      "SourceBytecodeSha256": "5be578a88ef4cffe0a9b1ff29f17271e4d2203ce75829f211432613a7ab85d36",
       "Tags": ""
     },
     "unreadable": [
@@ -36259,8 +35941,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3417",
-      "SourceBytecodeSha256": "6b73770dbc896bbf220aaddb006e8ac50eca7d03e130ad16d8873179b104f326",
+      "SourceBytecodeBytes": "2815",
+      "SourceBytecodeSha256": "50380e96fb89a6dd7affcf98a73d6d225aad2153ab9a4c594eb4b8f03fab7545",
       "Tags": ""
     },
     "unreadable": [
@@ -37891,8 +37573,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4375",
-      "SourceBytecodeSha256": "bca6bce7224cce414705df43ab6caa4255d88dfbf2f94076bde99e0ac7d83e0b",
+      "SourceBytecodeBytes": "3895",
+      "SourceBytecodeSha256": "4b35cb49e39db90f180bbb0cabbe528b1b1ecbbdcbeae7e1b132d99ca0e8fd1d",
       "Tags": ""
     },
     "unreadable": [
@@ -37907,8 +37589,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4769",
-      "SourceBytecodeSha256": "42066f535b4bd95a12ac8db0f86d905c1a92538ee274946180218b0d2fc7b2cb",
+      "SourceBytecodeBytes": "4445",
+      "SourceBytecodeSha256": "196f63437289d3a064b096d17ce67ee5b26726f7fd5a225fc0bb1bba486fc0eb",
       "Tags": ""
     },
     "unreadable": [
@@ -39475,8 +39157,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1702",
-      "SourceBytecodeSha256": "7f89ca6d70ae8491d11e8e3bdf3fe99b7502a38796a74f68da5af764b27029d5",
+      "SourceBytecodeBytes": "1324",
+      "SourceBytecodeSha256": "186945f14df36492162f0ef14d9ce05a85a3d04ffb62e3d9afd8a5c772ef8c45",
       "Tags": ""
     },
     "unreadable": [
@@ -40339,8 +40021,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "14862",
-      "SourceBytecodeSha256": "69616c3571e7056ce19a20ad91560c8d7518d2815fecedd5193824732b5f1ed0",
+      "SourceBytecodeBytes": "14804",
+      "SourceBytecodeSha256": "6e468668f6990707285408fc7f4971d2f5f788bff24baad57d68cb502c8bf3b4",
       "Tags": ""
     },
     "unreadable": [
@@ -40581,22 +40263,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "368",
       "SourceBytecodeSha256": "8f7754b66d1b6e6371511a5e183fc00542b9f8ed872a20abf04050367ae7a4e0",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "TagUtils",
-    "path": "Notifications/Packages/_Index/TagUtils/TagUtils",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "238",
-      "SourceBytecodeSha256": "3aba0ea476fe1c049ecce62ef9435d7983fa072361f5a797b923a176c8634f3f",
       "Tags": ""
     },
     "unreadable": [
@@ -41085,22 +40751,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "Text",
-    "path": "Notifications/Packages/_Index/Rhodium/Rhodium/InputTypes/Text",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "401",
-      "SourceBytecodeSha256": "e344eef675d0a05103b14185394fa4c6b18a08f9b0f93c496514c8076b4feaf3",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "TextArea.story",
     "path": "Notifications/Packages/_Index/Foundation/Foundation/Components/TextArea/TextArea.story",
     "properties": {
@@ -41219,8 +40869,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "22091",
-      "SourceBytecodeSha256": "3500d6ba564edb59b7d91b7d67a73c7f7a2cd77c7039858d8b7539be3c69d84a",
+      "SourceBytecodeBytes": "21765",
+      "SourceBytecodeSha256": "85e04370cbb2885da16bbb6dfb93a3502213ecf705519130932486ec2e2c8629",
       "Tags": ""
     },
     "unreadable": [
@@ -41731,8 +41381,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "6445",
-      "SourceBytecodeSha256": "0b8837abb3d4399aad07903724e0f3788676fa4a39070c241e42c3a12b402848",
+      "SourceBytecodeBytes": "6327",
+      "SourceBytecodeSha256": "02eeadcb6b33be32c3e1198dadac628564db952f86dc15e7f0a2c41cdf82307e",
       "Tags": ""
     },
     "unreadable": [
@@ -42677,22 +42327,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "12089",
       "SourceBytecodeSha256": "3fa85be9210aa57e3f11f66fab29589663f802d5a6b2f48e7b6dd82a51a9bdc9",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Touch",
-    "path": "Notifications/Packages/_Index/Rhodium/Rhodium/InputTypes/Touch",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "1990",
-      "SourceBytecodeSha256": "099dea976e902ec17740cc4454bc4cf2e7ac6e79e5b421604f820842c4eff2f7",
       "Tags": ""
     },
     "unreadable": [
@@ -47389,38 +47023,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "VirtualInput",
-    "path": "Notifications/Packages/_Index/Rhodium/Rhodium/VirtualInput",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "662",
-      "SourceBytecodeSha256": "5996b7a65211886c17a82eac133b6c9df471361ddee757cecd2c48dacd22f41b",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "VirtualInputUtils",
-    "path": "Notifications/Packages/_Index/Rhodium/Rhodium/VirtualInputUtils",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "1350",
-      "SourceBytecodeSha256": "3894777150a353940e3fefbda695659cd0595a5fcb055ab108dd5c3b91140c27",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "Visibility",
     "path": "Notifications/Packages/_Index/Foundation/Foundation/Enums/Visibility",
     "properties": {
@@ -47997,22 +47599,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "XPath",
-    "path": "Notifications/Packages/_Index/Rhodium/Rhodium/XPath",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "9491",
-      "SourceBytecodeSha256": "98088a2ea4903ce7d45f9df02077e16bd04b0fd2a9b5d8e8a21d0e9c22cd2d70",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "zip",
     "path": "Notifications/Packages/_Index/Dash-31ab8d40-2.1.0/Dash/zip",
     "properties": {
@@ -48249,16 +47835,6 @@
     "class": "StringValue",
     "name": ".robloxrc",
     "path": "Notifications/Packages/_Index/RegExp/RegExp/.robloxrc",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "StringValue",
-    "name": ".robloxrc",
-    "path": "Notifications/Packages/_Index/Rhodium/Rhodium/.robloxrc",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""

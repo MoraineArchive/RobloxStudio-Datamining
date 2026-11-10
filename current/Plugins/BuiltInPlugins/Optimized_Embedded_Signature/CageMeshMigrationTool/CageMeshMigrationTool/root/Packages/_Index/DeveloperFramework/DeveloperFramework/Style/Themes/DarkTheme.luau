@@ -14,8 +14,6 @@ local foundationDarkTheme = FoundationDark(1)
 
 local getStudioColorClassTheme = require(Framework.Style.ColorSystem.getStudioColorClassTheme)
 
-local getFFlagDevFrameworkFixInputBackground = require(Framework.SharedFlags.getFFlagDevFrameworkFixInputBackground)
-
 -- When getting colors for dark theme, using Studio Color Classes is preferred
 local studioColorClassTheme = getStudioColorClassTheme("Dark")
 
@@ -36,9 +34,7 @@ return join(studioColorClassTheme, {
 	[StyleKey.BrightText] = Colors.White,
 	[StyleKey.Button] = Colors.Gray,
 	[StyleKey.ButtonText] = ColorSystem.Gray[10],
-	[StyleKey.ButtonHover] = if getFFlagDevFrameworkFixInputBackground()
-		then SHIFT_200
-		else Colors.lighter(Colors.Gray, 0.26),
+	[StyleKey.ButtonHover] = SHIFT_200,
 	[StyleKey.ButtonDisabled] = Colors.lighter(Colors.Black, 0.26),
 	[StyleKey.ButtonTextDisabled] = ColorSystem.Gray[60],
 	[StyleKey.ButtonPressed] = Colors.lighter(Colors.Black, 0.16),

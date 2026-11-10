@@ -7,7 +7,7 @@ local Promise = require(script.Parent.Promise)
 
 local FFlagDevFrameworkPollUntilTaskApi = require(Framework.SharedFlags.getFFlagDevFrameworkPollUntilTaskApi)()
 
-export type Poller = () -> boolean
+export type Poller = () -> any
 
 if FFlagDevFrameworkPollUntilTaskApi then
 	local function pollUntil(fn: Poller, stopAfterSeconds: number?)
@@ -15,15 +15,22 @@ if FFlagDevFrameworkPollUntilTaskApi then
 
 		return Promise.new(function(fulfill, reject)
 			task.spawn(function()
-				while os.clock() < endTime do
-					local result = fn()
+				while true do
+					local success, result = pcall(fn)
+					if not success then
+						reject(result)
+						return
+					end
 					if result then
 						fulfill(result)
 						return
 					end
+					if os.clock() >= endTime then
+						break
+					end
 					task.wait()
 				end
-				reject("Timeout reached")
+				reject()
 			end)
 		end)
 	end

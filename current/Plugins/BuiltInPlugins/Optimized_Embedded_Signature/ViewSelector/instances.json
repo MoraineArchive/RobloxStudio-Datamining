@@ -1,10 +1,247 @@
 [
   {
+    "class": "Decal",
+    "name": "00n",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/Viewport/Model/00n",
+    "properties": {
+      "AttributesSerialize": "",
+      "MetalnessMap": "",
+      "NormalMap": "",
+      "RoughnessMap": "",
+      "Tags": "",
+      "Texture": "rbxasset://textures/ViewSelector/front.png",
+      "TexturePack": "",
+      "TexturePackMetadata": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Decal",
+    "name": "00p",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/Viewport/Model/00p",
+    "properties": {
+      "AttributesSerialize": "",
+      "MetalnessMap": "",
+      "NormalMap": "",
+      "RoughnessMap": "",
+      "Tags": "",
+      "Texture": "rbxasset://textures/ViewSelector/back.png",
+      "TexturePack": "",
+      "TexturePackMetadata": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Decal",
+    "name": "0n0",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/Viewport/Model/0n0",
+    "properties": {
+      "AttributesSerialize": "",
+      "MetalnessMap": "",
+      "NormalMap": "",
+      "RoughnessMap": "",
+      "Tags": "",
+      "Texture": "rbxasset://textures/ViewSelector/bottom.png",
+      "TexturePack": "",
+      "TexturePackMetadata": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Decal",
+    "name": "0p0",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/Viewport/Model/0p0",
+    "properties": {
+      "AttributesSerialize": "",
+      "MetalnessMap": "",
+      "NormalMap": "",
+      "RoughnessMap": "",
+      "Tags": "",
+      "Texture": "rbxasset://textures/ViewSelector/top.png",
+      "TexturePack": "",
+      "TexturePackMetadata": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Decal",
+    "name": "n00",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/Viewport/Model/n00",
+    "properties": {
+      "AttributesSerialize": "",
+      "MetalnessMap": "",
+      "NormalMap": "",
+      "RoughnessMap": "",
+      "Tags": "",
+      "Texture": "rbxasset://textures/ViewSelector/left.png",
+      "TexturePack": "",
+      "TexturePackMetadata": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Decal",
+    "name": "p00",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/Viewport/Model/p00",
+    "properties": {
+      "AttributesSerialize": "",
+      "MetalnessMap": "",
+      "NormalMap": "",
+      "RoughnessMap": "",
+      "Tags": "",
+      "Texture": "rbxasset://textures/ViewSelector/right.png",
+      "TexturePack": "",
+      "TexturePackMetadata": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "FileMesh",
+    "name": "Mesh",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/Viewport/Model/x/Mesh",
+    "properties": {
+      "AttributesSerialize": "",
+      "MeshId": "rbxasset://models/ViewSelector/Axis.mesh",
+      "Tags": "",
+      "TextureId": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "FileMesh",
+    "name": "Mesh",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/Viewport/Model/y/Mesh",
+    "properties": {
+      "AttributesSerialize": "",
+      "MeshId": "rbxasset://models/ViewSelector/Axis.mesh",
+      "Tags": "",
+      "TextureId": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "FileMesh",
+    "name": "Mesh",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/Viewport/Model/z/Mesh",
+    "properties": {
+      "AttributesSerialize": "",
+      "MeshId": "rbxasset://models/ViewSelector/Axis.mesh",
+      "Tags": "",
+      "TextureId": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Assets",
+    "path": "ViewSelector/Assets",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
     "class": "Folder",
     "name": "ViewSelector",
     "path": "ViewSelector",
     "properties": {
       "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Frame",
+    "name": "ArrowButtons",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/ArrowButtons",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Frame",
+    "name": "Panel",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Frame",
+    "name": "Slider",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/CamSpeed/Slider",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ImageButton",
+    "name": "DownArrow",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/ArrowButtons/DownArrow",
+    "properties": {
+      "AttributesSerialize": "",
+      "HoverImage": "",
+      "Image": "rbxasset://textures/ViewSelector/face_arrow.png",
+      "PressedImage": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ImageButton",
+    "name": "EventReceiver",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/Viewport/EventReceiver",
+    "properties": {
+      "AttributesSerialize": "",
+      "HoverImage": "",
+      "Image": "",
+      "PressedImage": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ImageButton",
+    "name": "LeftArrow",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/ArrowButtons/LeftArrow",
+    "properties": {
+      "AttributesSerialize": "",
+      "HoverImage": "",
+      "Image": "rbxasset://textures/ViewSelector/face_arrow.png",
+      "PressedImage": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ImageButton",
+    "name": "RightArrow",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/ArrowButtons/RightArrow",
+    "properties": {
+      "AttributesSerialize": "",
+      "HoverImage": "",
+      "Image": "rbxasset://textures/ViewSelector/face_arrow.png",
+      "PressedImage": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ImageButton",
+    "name": "UpArrow",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/ArrowButtons/UpArrow",
+    "properties": {
+      "AttributesSerialize": "",
+      "HoverImage": "",
+      "Image": "rbxasset://textures/ViewSelector/face_arrow.png",
+      "PressedImage": "",
       "Tags": ""
     },
     "unreadable": []
@@ -21,6 +258,205 @@
     "unreadable": []
   },
   {
+    "class": "MeshPart",
+    "name": "Model",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/Viewport/Model",
+    "properties": {
+      "AeroMeshData": "",
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "MeshId": "rbxasset://models/ViewSelector/Basic.mesh",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "nnn",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/Viewport/Model/nnn",
+    "properties": {
+      "AeroMeshData": "",
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "MeshId": "rbxasset://models/ViewSelector/Corner.mesh",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "nnp",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/Viewport/Model/nnp",
+    "properties": {
+      "AeroMeshData": "",
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "MeshId": "rbxasset://models/ViewSelector/Corner.mesh",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "npn",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/Viewport/Model/npn",
+    "properties": {
+      "AeroMeshData": "",
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "MeshId": "rbxasset://models/ViewSelector/Corner.mesh",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "npp",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/Viewport/Model/npp",
+    "properties": {
+      "AeroMeshData": "",
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "MeshId": "rbxasset://models/ViewSelector/Corner.mesh",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "pnn",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/Viewport/Model/pnn",
+    "properties": {
+      "AeroMeshData": "",
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "MeshId": "rbxasset://models/ViewSelector/Corner.mesh",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "pnp",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/Viewport/Model/pnp",
+    "properties": {
+      "AeroMeshData": "",
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "MeshId": "rbxasset://models/ViewSelector/Corner.mesh",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "ppn",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/Viewport/Model/ppn",
+    "properties": {
+      "AeroMeshData": "",
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "MeshId": "rbxasset://models/ViewSelector/Corner.mesh",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "MeshPart",
+    "name": "ppp",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/Viewport/Model/ppp",
+    "properties": {
+      "AeroMeshData": "",
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "MeshId": "rbxasset://models/ViewSelector/Corner.mesh",
+      "PhysicalConfigData": "",
+      "PhysicsData": "",
+      "Tags": "",
+      "TextureID": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Part",
+    "name": "x",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/Viewport/Model/x",
+    "properties": {
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Part",
+    "name": "y",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/Viewport/Model/y",
+    "properties": {
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Part",
+    "name": "z",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/Viewport/Model/z",
+    "properties": {
+      "AttributesSerialize": "",
+      "CollisionGroup": "Default",
+      "MaterialVariantSerialized": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ScreenGui",
+    "name": "ViewSelectorScreenGui",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
     "class": "Script",
     "name": "Main",
     "path": "ViewSelector/Main",
@@ -28,12 +464,108 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "21827",
-      "SourceBytecodeSha256": "7508819b8febe1c8d48563e2e58769f688fb0c5b432bfd3568d1df5c0f3e04e8",
+      "SourceBytecodeBytes": "22061",
+      "SourceBytecodeSha256": "10ce7de32eea1610040da54e55eb6db6bc4fc89159da07f1d81853f1202f7625",
       "Tags": ""
     },
     "unreadable": [
       "Source:compiled-bytecode"
     ]
+  },
+  {
+    "class": "TextButton",
+    "name": "CamSpeed",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/CamSpeed",
+    "properties": {
+      "AttributesSerialize": "",
+      "LocalizationMatchIdentifier": "",
+      "LocalizationMatchedSourceText": "",
+      "OpenTypeFeatures": "",
+      "Tags": "",
+      "Text": "0"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextLabel",
+    "name": "X",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/X",
+    "properties": {
+      "AttributesSerialize": "",
+      "LocalizationMatchIdentifier": "",
+      "LocalizationMatchedSourceText": "",
+      "OpenTypeFeatures": "",
+      "Tags": "",
+      "Text": "X"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextLabel",
+    "name": "Y",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/Y",
+    "properties": {
+      "AttributesSerialize": "",
+      "LocalizationMatchIdentifier": "",
+      "LocalizationMatchedSourceText": "",
+      "OpenTypeFeatures": "",
+      "Tags": "",
+      "Text": "Y"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "TextLabel",
+    "name": "Z",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/Z",
+    "properties": {
+      "AttributesSerialize": "",
+      "LocalizationMatchIdentifier": "",
+      "LocalizationMatchedSourceText": "",
+      "OpenTypeFeatures": "",
+      "Tags": "",
+      "Text": "Z"
+    },
+    "unreadable": []
+  },
+  {
+    "class": "UICorner",
+    "name": "UICorner",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/CamSpeed/Slider/UICorner",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "UICorner",
+    "name": "UICorner",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/CamSpeed/UICorner",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "UIStroke",
+    "name": "UIStroke",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/CamSpeed/UIStroke",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ViewportFrame",
+    "name": "Viewport",
+    "path": "ViewSelector/Assets/ViewSelectorScreenGui/Panel/Viewport",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
   }
 ]

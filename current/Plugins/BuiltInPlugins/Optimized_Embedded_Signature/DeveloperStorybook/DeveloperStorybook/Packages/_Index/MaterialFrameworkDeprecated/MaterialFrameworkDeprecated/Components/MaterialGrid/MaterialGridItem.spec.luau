@@ -1,6 +1,3 @@
--- Verifies the label scrim color is gated by getFFlagMaterialGridItemLabelFoundationStyle:
--- off keeps the legacy hardcoded surface color; on switches to the Style-driven value.
-
 local main = script:FindFirstAncestor("MaterialFrameworkDeprecated")
 local Packages = main.Parent
 
@@ -18,11 +15,8 @@ local mockContext = require(main.TestHelpers.mockContext)
 local guiTestUtils = require(main.TestHelpers.waitForGuiLayout)
 local waitForGuiLayout = guiTestUtils.waitForGuiLayout
 
-local getFFlagMaterialGridItemLabelFoundationStyle = require(main.Flags.getFFlagMaterialGridItemLabelFoundationStyle)
-
 local MaterialGridItem = require(script.Parent.MaterialGridItem)
 
-local LABEL_SCRIM_SURFACE_0 = Color3.fromHex("#121215")
 local STYLE_SCRIM_COLOR = Color3.fromRGB(10, 20, 30)
 
 local defaultStyle = {
@@ -64,13 +58,11 @@ local function createTestElement()
 end
 
 describe("MaterialGridItem label scrim", function()
-	it("uses the scrim color matching the current flag state", function()
+	it("uses the Style-provided scrim color", function()
 		local result = render(createTestElement())
 		waitForGuiLayout(result.container)
 
-		local expectedColor = if getFFlagMaterialGridItemLabelFoundationStyle()
-			then STYLE_SCRIM_COLOR
-			else LABEL_SCRIM_SURFACE_0
+		local expectedColor = STYLE_SCRIM_COLOR
 
 		local scrim = result.getByTestId("MaterialGridItemScrim") :: Frame
 		expect(scrim.BackgroundColor3).toEqual(expectedColor)

@@ -59,8 +59,6 @@ local getMaterialColor = require(Util.getMaterialColor)
 local Constants = main.Constants
 local BASE_MATERIALS_WITH_METALNESS = require(Constants.BASE_MATERIALS_WITH_METALNESS)
 
-local getFFlagMaterialGridTerrainEditorItemUx = require(main.Flags.getFFlagMaterialGridTerrainEditorItemUx)
-
 -- Terrain Editor list/grid UX: narrower FOV + distance compensation + corrected corner-on orientation.
 -- ViewportFrame Camera default; corner-on cube uses a narrower FOV so the front vertex is less stretched by perspective.
 local DEFAULT_PREVIEW_CAMERA_FOV = 70
@@ -240,14 +238,11 @@ local function MaterialPreview(props: _Props)
 	-- Enable sky box for metallic base materials so they have something to reflect
 	local shouldEnableSky = BASE_MATERIALS_WITH_METALNESS[baseMaterial] and materialVariantName == ""
 
-	-- CubeCornerOn (corner toward camera + matched FOV/distance) is Terrain Editor grid UX only.
-	local terrainEditorItemUx = getFFlagMaterialGridTerrainEditorItemUx()
-
 	-- Only construct a new template model if we need one
 	React.useEffect(function()
 		if
 			props.MaterialPreviewGeometryType == MaterialPreviewGeometryType.Cube
-			or (terrainEditorItemUx and props.MaterialPreviewGeometryType == MaterialPreviewGeometryType.CubeCornerOn)
+			or props.MaterialPreviewGeometryType == MaterialPreviewGeometryType.CubeCornerOn
 		then
 			setTemplateInstance(getCubeTemplate())
 			return nil
@@ -356,14 +351,7 @@ local function MaterialPreview(props: _Props)
 		if props.MaterialPreviewGeometryType == MaterialPreviewGeometryType.Dominus then
 			renderPart.CFrame = CFrame.Angles(0, math.rad(30), 0) * CFrame.Angles(math.rad(15), 0, 0)
 		elseif props.MaterialPreviewGeometryType == MaterialPreviewGeometryType.CubeCornerOn then
-			if terrainEditorItemUx then
-				-- `Angles(rx, ry, rz)` = radians on world X, then Y, then Z. Corner toward +Z (camera) needs
-				-- pitch -atan2(1,√2) on X and yaw 45° on Y.
-				renderPart.CFrame = CFrame.Angles(-math.atan2(1, math.sqrt(2)), math.rad(45), 0)
-			else
-				-- Same Part template as Cube; flag off means match standard face-on cube preview.
-				renderPart.CFrame = CFrame.new()
-			end
+			renderPart.CFrame = CFrame.Angles(-math.atan2(1, math.sqrt(2)), math.rad(45), 0)
 		elseif props.MaterialPreviewGeometryType == MaterialPreviewGeometryType.Cube then
 			renderPart.CFrame = CFrame.new()
 		end
@@ -374,7 +362,6 @@ local function MaterialPreview(props: _Props)
 		materialColor,
 		props.MaterialPreviewGeometryType,
 		props.OverrideTransparency,
-		terrainEditorItemUx,
 	})
 
 	local componentProps = Dash.join({
@@ -387,12 +374,9 @@ local function MaterialPreview(props: _Props)
 
 	local cornerRadius = prioritize(props.CornerRadius, style.CornerRadius)
 
-	local previewCameraFov = if terrainEditorItemUx
-		then getPreviewCameraFieldOfView(props.MaterialPreviewGeometryType)
-		else nil
-	local previewInitialDistance = if terrainEditorItemUx
-		then initialDistance * getPreviewCameraDistanceMultiplier(props.MaterialPreviewGeometryType)
-		else initialDistance
+	local previewCameraFov = getPreviewCameraFieldOfView(props.MaterialPreviewGeometryType)
+	local previewInitialDistance = initialDistance
+		* getPreviewCameraDistanceMultiplier(props.MaterialPreviewGeometryType)
 
 	return React.createElement(Pane, componentProps, {
 		AssetRenderModel = React.createElement(AssetRenderModel, {

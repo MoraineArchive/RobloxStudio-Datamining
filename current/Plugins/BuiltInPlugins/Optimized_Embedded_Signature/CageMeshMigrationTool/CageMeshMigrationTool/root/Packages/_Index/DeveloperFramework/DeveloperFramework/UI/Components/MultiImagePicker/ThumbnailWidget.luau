@@ -56,8 +56,7 @@ local MultiImagePickerTypes = require(script.Parent.types)
 
 local LOCALIZATION_PROJECT_NAME = Resources.LOCALIZATION_PROJECT_NAME
 
-local FFlagDevFrameworkMultiImageRenameFix = game:DefineFastFlag("DevFrameworkMultiImageRenameFix", false)
-local COMPONENT_NAME = if FFlagDevFrameworkMultiImageRenameFix then "MultiImagePicker" else "MulitImagePicker"
+local COMPONENT_NAME = "MultiImagePicker"
 
 export type Props = {
 	AltTextError: MultiImagePickerTypes.AltTextErrorType?,

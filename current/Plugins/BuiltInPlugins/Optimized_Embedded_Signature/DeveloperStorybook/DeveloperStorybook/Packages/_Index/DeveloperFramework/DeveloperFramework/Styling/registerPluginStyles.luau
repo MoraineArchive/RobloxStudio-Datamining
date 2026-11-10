@@ -11,9 +11,6 @@ local createStudioDesign = require(script.Parent.createStudioDesign)
 local getStudioSettings = require(Framework.Util.getStudioSettings)
 local StudioThemeFallback = require(Framework.Style.StudioThemeFallback)
 
-local getFFlagDevFrameworkOptionalComponentsFolder =
-	require(Framework.SharedFlags.getFFlagDevFrameworkOptionalComponentsFolder)
-
 type Connection = {
 	Disconnect: () -> (),
 }
@@ -102,9 +99,7 @@ local function registerPluginStyles(
 	pluginDesign.Parent = pluginStyleFolder
 
 	-- Iterate through components defined in plugin to check if they have individual stylesheets
-	local components = if getFFlagDevFrameworkOptionalComponentsFolder()
-		then pluginRoot.Src:FindFirstChild("Components")
-		else pluginRoot.Src.Components
+	local components = pluginRoot.Src:FindFirstChild("Components")
 	if components then
 		for _, descendant in components:GetDescendants() do
 			if descendant:IsA("ModuleScript") and descendant.Name == "styles" then

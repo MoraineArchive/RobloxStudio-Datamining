@@ -6,8 +6,6 @@ local StyleKey = Framework.Style.StyleKey
 
 local ViewType = require(main.Enums.ViewType)
 
-local getFFlagMaterialGridItemLabelFoundationStyle = require(main.Flags.getFFlagMaterialGridItemLabelFoundationStyle)
-
 local LABEL_PADDING = UDim.new(0, 6)
 
 local style = {
@@ -33,11 +31,9 @@ local style = {
 	Padding = 0,
 	ShimmerSizeOffset = 2,
 	SnapshotSize = UDim2.fromOffset(64, 64),
-	-- Foundation Typography.BodyMedium.FontSize (size-400) when getFFlagMaterialGridItemLabelFoundationStyle is on.
-	TextSize = if getFFlagMaterialGridItemLabelFoundationStyle() then 14 else 20,
+	TextSize = 14,
 	TooltipDelay = 0.3,
 	ViewType = ViewType.Grid,
-	-- Grid cell label; list material name (MaterialGridItem; ignored by deprecated item modules).
 	ItemLabelTextColor = StyleKey.MainText,
 	ItemLabelScrimColor = StyleKey.MainBackground,
 	ListItemLabelTextColor = StyleKey.MainText,

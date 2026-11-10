@@ -12,6 +12,7 @@
         <Action name="betaFeaturesAction"/>
         <Action internal="true" name="flagEditorAction"/>
         <Action fflag="DebugStudioAllowFlagEditor" name="flagEditorAction"/>
+        <Action fflag="StudioFlagEditorSetting,!DebugStudioAllowFlagEditor" name="flagEditorAction"/>
         <Action name="shortcutHelpAction"/>
         <Separator/>
         <Action name="fileOpenAutoSavesAction"/>

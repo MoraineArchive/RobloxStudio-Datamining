@@ -19,8 +19,6 @@ local StyleKey = require(Framework.Style.StyleKey)
 
 local getStudioColorClassTheme = require(Framework.Style.ColorSystem.getStudioColorClassTheme)
 
-local getFFlagDevFrameworkFixInputBackground = require(Framework.SharedFlags.getFFlagDevFrameworkFixInputBackground)
-
 -- When getting colors for light theme, using Studio Color Classes is preferred
 local studioColorClassTheme = getStudioColorClassTheme("Light")
 
@@ -41,7 +39,7 @@ return join(studioColorClassTheme, {
 	[StyleKey.BrightText] = Colors.Black,
 	[StyleKey.Button] = Colors.White,
 	[StyleKey.ButtonText] = Colors.Black,
-	[StyleKey.ButtonHover] = if getFFlagDevFrameworkFixInputBackground() then SHIFT_200 else ColorSystem.Gray[20],
+	[StyleKey.ButtonHover] = SHIFT_200,
 	[StyleKey.ButtonDisabled] = Colors.White,
 	[StyleKey.ButtonTextDisabled] = ColorSystem.Gray[60],
 	[StyleKey.ButtonPressed] = ColorSystem.Gray[40],

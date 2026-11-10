@@ -4332,11 +4332,110 @@
             "prompt",
             "with"
           ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/10/17-49-53Z_build_version-63eb6055af4e4688",
+          "evidencePath": "2026/11/10/17-49-53Z_build_version-63eb6055af4e4688/changes.json",
+          "family": "Distribution",
+          "id": "642d09d52f7ee58040573c9b717bddb6f56d4926b7728fefe988094dc893df05",
+          "key": "BuiltInPlugins/Optimized_Embedded_Signature/AnimatedImageImporter.rbxm",
+          "kind": "files",
+          "observedAt": "2026-11-10T17:49:53.656Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "built",
+            "embedded",
+            "image",
+            "importer",
+            "optimized",
+            "plugins",
+            "signature"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/10/17-49-53Z_build_version-63eb6055af4e4688",
+          "evidencePath": "2026/11/10/17-49-53Z_build_version-63eb6055af4e4688/changes.json",
+          "family": "API",
+          "id": "6c6a99420c8b867da56738bb7696289a2b417228526b358105c2550ccfee3ed3",
+          "key": "AnimatedImageService",
+          "kind": "classes",
+          "observedAt": "2026-11-10T17:49:53.656Z",
+          "operation": "changed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "image"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/10/17-49-53Z_build_version-63eb6055af4e4688",
+          "evidencePath": "2026/11/10/17-49-53Z_build_version-63eb6055af4e4688/changes.json",
+          "family": "FastVariables",
+          "id": "6e57644813f6cafd260029ee86426937771cda5fa69c34787201cc8a0f374fa1",
+          "key": "C++:FFlagAssetImportServicePickAnimatedImageFileWithPrompt",
+          "kind": "variables",
+          "observedAt": "2026-11-10T17:49:53.656Z",
+          "operation": "changed",
+          "surface": "FastVariables",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "asset",
+            "file",
+            "image",
+            "import",
+            "pick",
+            "prompt",
+            "with"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/10/17-49-53Z_build_version-63eb6055af4e4688",
+          "evidencePath": "2026/11/10/17-49-53Z_build_version-63eb6055af4e4688/changes.json",
+          "family": "Source",
+          "id": "c2ba3242ce6121b3eed44914b29cfb002dfd01142f5fa24915d64c1792946471",
+          "key": "BuiltInPlugins/Optimized_Embedded_Signature/AnimatedImageImporter/instances.json",
+          "kind": "file",
+          "observedAt": "2026-11-10T17:49:53.656Z",
+          "operation": "changed",
+          "surface": "Plugins",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "built",
+            "embedded",
+            "image",
+            "importer",
+            "instances",
+            "optimized",
+            "plugins",
+            "signature"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "animated-images",
-      "lastObservedAt": "2026-11-05T22:23:51.565Z",
+      "lastObservedAt": "2026-11-10T17:49:53.656Z",
       "lifecycle": [],
       "status": "observed",
       "title": "Animated images"
@@ -5574,11 +5673,84 @@
             "filter",
             "universe"
           ]
+        },
+        {
+          "concepts": [
+            "avatar",
+            "abilities"
+          ],
+          "eventPath": "2026/11/10/17-49-53Z_build_version-63eb6055af4e4688",
+          "evidencePath": "2026/11/10/17-49-53Z_build_version-63eb6055af4e4688/changes.json",
+          "family": "Source",
+          "id": "33555d5c60ab2c51c7cae7d044c96eb0822cb2706faf36fde5c0b35a521e9a84",
+          "key": "extracontent-scripts/PlayerScripts/StarterPlayer/PlayerModule/ControlModule/AvatarAbilitiesInterface.lua",
+          "kind": "file",
+          "observedAt": "2026-11-10T17:49:53.656Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abilities",
+            "avatar",
+            "control",
+            "extracontent",
+            "interface",
+            "starter"
+          ]
+        },
+        {
+          "concepts": [
+            "avatar",
+            "abilities"
+          ],
+          "eventPath": "2026/11/10/17-49-53Z_build_version-63eb6055af4e4688",
+          "evidencePath": "2026/11/10/17-49-53Z_build_version-63eb6055af4e4688/changes.json",
+          "family": "Distribution",
+          "id": "3fad14993cf52eb772b49204b61e8cd76e86b556dc21b4aba077d7991e16e04f",
+          "key": "ExtraContent/scripts/PlayerScripts/StarterPlayer/PlayerModule/ControlModule/AvatarAbilitiesInterface.lua",
+          "kind": "files",
+          "observedAt": "2026-11-10T17:49:53.656Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abilities",
+            "avatar",
+            "content",
+            "control",
+            "extra",
+            "interface",
+            "starter"
+          ]
+        },
+        {
+          "concepts": [
+            "avatar",
+            "abilities"
+          ],
+          "eventPath": "2026/11/10/17-49-53Z_build_version-63eb6055af4e4688",
+          "evidencePath": "2026/11/10/17-49-53Z_build_version-63eb6055af4e4688/changes.json",
+          "family": "Source",
+          "id": "9d7586f6249c5834836a8f2fdac1d26ee65a94de39da8e33d92d86b38bc3af68",
+          "key": "extracontent-scripts/PlayerScripts/StarterPlayer/PlayerModule/ControlModule/AvatarAbilitiesInterface.lua",
+          "kind": "sources",
+          "observedAt": "2026-11-10T17:49:53.656Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abilities",
+            "avatar",
+            "control",
+            "extracontent",
+            "interface",
+            "starter"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "avatar-abilities",
-      "lastObservedAt": "2026-11-06T00:12:01.424Z",
+      "lastObservedAt": "2026-11-10T17:49:53.656Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T01:54:39.846Z",
@@ -15364,11 +15536,215 @@
             "mode",
             "moments"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/10/17-49-53Z_build_version-63eb6055af4e4688",
+          "evidencePath": "2026/11/10/17-49-53Z_build_version-63eb6055af4e4688/changes.json",
+          "family": "Distribution",
+          "id": "3106283c274ffd7bc159ae2d12892fb902d5b6a1e0662c34b9934813cf80c82b",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentsCreationFlow/Foundation.lua",
+          "kind": "files",
+          "observedAt": "2026-11-10T17:49:53.656Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "content",
+            "creation",
+            "extra",
+            "flow",
+            "foundation",
+            "index",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/10/17-49-53Z_build_version-63eb6055af4e4688",
+          "evidencePath": "2026/11/10/17-49-53Z_build_version-63eb6055af4e4688/changes.json",
+          "family": "Source",
+          "id": "3d18105db8339d1e2fd1e5a3cbcf71904a09763a08748b9a68a589680491b37e",
+          "key": "extracontent-luapackages/Packages/_Index/MomentsCommon/Foundation.lua",
+          "kind": "file",
+          "observedAt": "2026-11-10T17:49:53.656Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "common",
+            "extracontent",
+            "foundation",
+            "index",
+            "luapackages",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/10/17-49-53Z_build_version-63eb6055af4e4688",
+          "evidencePath": "2026/11/10/17-49-53Z_build_version-63eb6055af4e4688/changes.json",
+          "family": "Source",
+          "id": "469437b9dfe1bd8a89ad8df7e1104cf44e17e8eff151db650afd877718e116b2",
+          "key": "extracontent-luapackages/Packages/_Index/MomentsCreationFlow/Foundation.lua",
+          "kind": "sources",
+          "observedAt": "2026-11-10T17:49:53.656Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "extracontent",
+            "flow",
+            "foundation",
+            "index",
+            "luapackages",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/10/17-49-53Z_build_version-63eb6055af4e4688",
+          "evidencePath": "2026/11/10/17-49-53Z_build_version-63eb6055af4e4688/changes.json",
+          "family": "Source",
+          "id": "5169ce689fc8ca6d858b4d14b3904d5ec8d94d15bea0112770ba331a63b3231e",
+          "key": "extracontent-luapackages/Packages/_Index/MomentsCreationFlow/Foundation.lua",
+          "kind": "file",
+          "observedAt": "2026-11-10T17:49:53.656Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "extracontent",
+            "flow",
+            "foundation",
+            "index",
+            "luapackages",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/10/17-49-53Z_build_version-63eb6055af4e4688",
+          "evidencePath": "2026/11/10/17-49-53Z_build_version-63eb6055af4e4688/changes.json",
+          "family": "Distribution",
+          "id": "629810c4e3bb561a3b14865f37f77cdc99c1f1a5a9f8a022761d3f788c26f4d2",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentsCommon/lock.toml",
+          "kind": "files",
+          "observedAt": "2026-11-10T17:49:53.656Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "common",
+            "content",
+            "extra",
+            "index",
+            "lock",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/10/17-49-53Z_build_version-63eb6055af4e4688",
+          "evidencePath": "2026/11/10/17-49-53Z_build_version-63eb6055af4e4688/changes.json",
+          "family": "Distribution",
+          "id": "b5d7340db7b8e43079c507aea15cfca100a51bfdd349f4adc87e52d321da9a5f",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentsCommon/Foundation.lua",
+          "kind": "files",
+          "observedAt": "2026-11-10T17:49:53.656Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "common",
+            "content",
+            "extra",
+            "foundation",
+            "index",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/10/17-49-53Z_build_version-63eb6055af4e4688",
+          "evidencePath": "2026/11/10/17-49-53Z_build_version-63eb6055af4e4688/changes.json",
+          "family": "Source",
+          "id": "b75239d68e7fa477618d9f518522d6d178ccd8456fd1b76cf427979fb331ae8f",
+          "key": "extracontent-luapackages/Packages/_Index/MomentsCommon/Foundation.lua",
+          "kind": "sources",
+          "observedAt": "2026-11-10T17:49:53.656Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "common",
+            "extracontent",
+            "foundation",
+            "index",
+            "luapackages",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/10/17-49-53Z_build_version-63eb6055af4e4688",
+          "evidencePath": "2026/11/10/17-49-53Z_build_version-63eb6055af4e4688/changes.json",
+          "family": "Distribution",
+          "id": "f44dce53920c60f347a7212ad9236189e4bda307b0705b2b12c71bd08704c780",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentsCreationFlow/lock.toml",
+          "kind": "files",
+          "observedAt": "2026-11-10T17:49:53.656Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "content",
+            "creation",
+            "extra",
+            "flow",
+            "index",
+            "lock",
+            "moments"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-11-10T02:03:08.687Z",
+      "lastObservedAt": "2026-11-10T17:49:53.656Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",

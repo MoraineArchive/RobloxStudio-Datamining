@@ -1188,6 +1188,24 @@
     "sha256": "a4232545f24e7ebbbdde7a84ff390f44f9aee3afa64aa61bcdbc4c35e034f49a"
   },
   {
+    "bytes": 15933,
+    "extension": "png",
+    "path": "ui/LuaApp/graphic/app_icon_Classic.png",
+    "sha256": "90d2301c325102cee4b2c767bd9f15174d20f22d1fb788c5904d2e2f24a1211b"
+  },
+  {
+    "bytes": 8989,
+    "extension": "png",
+    "path": "ui/LuaApp/graphic/app_icon_Default.png",
+    "sha256": "7a20ace71ef712579fba0a134fd9adb23a7cf1151e8819c941e5458730f94c86"
+  },
+  {
+    "bytes": 53279,
+    "extension": "png",
+    "path": "ui/LuaApp/graphic/app_icon_Halloween2026.png",
+    "sha256": "b6ccee1864b710237767b5ec1a00da132eee1600055adf7b93d1754dccacf7f5"
+  },
+  {
     "bytes": 151006,
     "extension": "png",
     "path": "ui/LuaApp/graphic/Auth/builderman.png",

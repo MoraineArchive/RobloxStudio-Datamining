@@ -1011,16 +1011,6 @@
   },
   {
     "class": "Folder",
-    "name": "InputTypes",
-    "path": "DeviceEmulator/Packages/_Index/Rhodium/Rhodium/InputTypes",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
     "name": "InstanceOf",
     "path": "DeviceEmulator/Packages/_Index/InstanceOf",
     "properties": {
@@ -1713,16 +1703,6 @@
     "class": "Folder",
     "name": "Responsive",
     "path": "DeviceEmulator/Packages/_Index/Foundation/Foundation/Utility/Responsive",
-    "properties": {
-      "AttributesSerialize": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "Folder",
-    "name": "Rhodium",
-    "path": "DeviceEmulator/Packages/_Index/Rhodium",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -10219,8 +10199,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "6418",
-      "SourceBytecodeSha256": "2c102414f59bf85a9225676411a1aff8f2bc1e31f7205bcf19fd458e7f5bb65e",
+      "SourceBytecodeBytes": "6271",
+      "SourceBytecodeSha256": "892612bd9e900f4e024ea0579f97e0214e643e78f663f03a3c1b3703848f0102",
       "Tags": ""
     },
     "unreadable": [
@@ -10235,8 +10215,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4921",
-      "SourceBytecodeSha256": "812e1431b708aa7c5ff14a3b2c48565c697bd3530bdc9981e8ef1836bc0e5a62",
+      "SourceBytecodeBytes": "4529",
+      "SourceBytecodeSha256": "98db2bda8722c3bab401ba569c9903b10e5ddd394a8be58b4fb17a34d2c34a1a",
       "Tags": ""
     },
     "unreadable": [
@@ -12027,8 +12007,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "8801",
-      "SourceBytecodeSha256": "7eda55aaa10f2c8607fc99b60d330d7ca9735a222f0368b55a5ae610d681d620",
+      "SourceBytecodeBytes": "8931",
+      "SourceBytecodeSha256": "4a4732fe9818f9c79f454fd9c6f22edce75968f974cda4cfeea567679f12359c",
       "Tags": ""
     },
     "unreadable": [
@@ -12203,8 +12183,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "10390",
-      "SourceBytecodeSha256": "69392f8d26922f40f9ea99a8514e7257e9ca07d5c92195feec71cf883c1f233b",
+      "SourceBytecodeBytes": "9468",
+      "SourceBytecodeSha256": "19bdb0914a1eb40dccd92149acf96ddd58c8d48e018d62fd9a933307b7c42fbf",
       "Tags": ""
     },
     "unreadable": [
@@ -12365,22 +12345,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "177",
       "SourceBytecodeSha256": "5a8d490224e43cdd48a92c6a28995fe027658ecfe61bf1783eff923d31604705",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Element",
-    "path": "DeviceEmulator/Packages/_Index/Rhodium/Rhodium/Element",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "6361",
-      "SourceBytecodeSha256": "2d8b865d35eda7df5e147cf3cfe2f16ff69d961856f545caf6d267689c99729e",
       "Tags": ""
     },
     "unreadable": [
@@ -15029,22 +14993,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "GamePad",
-    "path": "DeviceEmulator/Packages/_Index/Rhodium/Rhodium/InputTypes/GamePad",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "2866",
-      "SourceBytecodeSha256": "c8eb87d9a4914661294eedc388bc3d4562fd34cdb2c617d4ed5bf4bde0d6debb",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "games",
     "path": "DeviceEmulator/Packages/_Index/DeveloperFramework/DeveloperFramework/RobloxAPI/GameInternationalization/V1/AutoLocalization/games",
     "properties": {
@@ -15589,38 +15537,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkDropdownMenuHeight",
-    "path": "DeviceEmulator/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkDropdownMenuHeight",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "215",
-      "SourceBytecodeSha256": "3ad7dda2e9d36425aeb9634d806b5345c7f266444ee254d0bbc28b9b2a6f1ee1",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkFixInputBackground",
-    "path": "DeviceEmulator/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkFixInputBackground",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "215",
-      "SourceBytecodeSha256": "0f42fb5814c8e6d705244f029dbb3d68feb914413e72eb5b1c15d7231fd4bba3",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "getFFlagDevFrameworkFixMissingKeyErrors",
     "path": "DeviceEmulator/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkFixMissingKeyErrors",
     "properties": {
@@ -15628,7 +15544,7 @@
       "LinkedSource": "",
       "ScriptGuid": "",
       "SourceBytecodeBytes": "217",
-      "SourceBytecodeSha256": "f11aac6f33664cfd77fa1e29199e157a3d93b04c4da799e33af478f2f081ff87",
+      "SourceBytecodeSha256": "e05c5dd661df27a5506a33a2e2bc31c55425eda96f657ac03db8843a63a21118",
       "Tags": ""
     },
     "unreadable": [
@@ -15669,22 +15585,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkOptionalComponentsFolder",
-    "path": "DeviceEmulator/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkOptionalComponentsFolder",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "221",
-      "SourceBytecodeSha256": "140b5585e247c48890cc522cde59bcefddaca70e43337f92bc8f5f053cacc3a9",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "getFFlagDevFrameworkParentStylesToDm",
     "path": "DeviceEmulator/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkParentStylesToDm",
     "properties": {
@@ -15709,22 +15609,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "213",
       "SourceBytecodeSha256": "acd421b226a52f69e78da96cff1bac995453003aebafbb021cdf9f8d0e93dc16",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkSliderInputValidation",
-    "path": "DeviceEmulator/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkSliderInputValidation",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "218",
-      "SourceBytecodeSha256": "26a8826f9f97edfa4160c7dc816f1338bd3c033ba5b251e83e4f813920e75400",
       "Tags": ""
     },
     "unreadable": [
@@ -18805,22 +18689,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "InputVisualizer",
-    "path": "DeviceEmulator/Packages/_Index/Rhodium/Rhodium/InputVisualizer",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "2361",
-      "SourceBytecodeSha256": "1a05b397f927e83e2caa780bc3b7493621400fe11d793b94ba117873ef2f7775",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "inspect",
     "path": "DeviceEmulator/Packages/_Index/Collections/Collections/inspect",
     "properties": {
@@ -20365,22 +20233,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "557",
       "SourceBytecodeSha256": "177c1c3a4ae7b371ebeea1148a7ff240460524917fc85f55244eca5248776e00",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Keyboard",
-    "path": "DeviceEmulator/Packages/_Index/Rhodium/Rhodium/InputTypes/Keyboard",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "675",
-      "SourceBytecodeSha256": "84885af32f100bab64f56701f9ae4e08b58afa09d8009f54ba3578cd045a5763",
       "Tags": ""
     },
     "unreadable": [
@@ -22043,8 +21895,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "6339",
-      "SourceBytecodeSha256": "37a264c0e6c9ae2bc430d7132ca6f3474efd485bccc4a5e8de18a2ddddf7d765",
+      "SourceBytecodeBytes": "6207",
+      "SourceBytecodeSha256": "10d2b29daa2cdf8b92e427246ea70bbb2fa03f50a7b5411a60409d408dfbb6fb",
       "Tags": ""
     },
     "unreadable": [
@@ -22059,8 +21911,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4827",
-      "SourceBytecodeSha256": "7ed17c485b5f783a2a60930e0089b795e616f4d7ffbf3070463f7749cedc9b38",
+      "SourceBytecodeBytes": "4557",
+      "SourceBytecodeSha256": "ea208a5d8f65c8fe49d0448dc7eb123dbdbf8af3c3121b7efe5a5e65c248ceb3",
       "Tags": ""
     },
     "unreadable": [
@@ -24413,22 +24265,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "1772",
       "SourceBytecodeSha256": "379f57fdb34b7861edfd8eaa042a526bae5f3dc6001c3981f2537dbd92298833",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Mouse",
-    "path": "DeviceEmulator/Packages/_Index/Rhodium/Rhodium/InputTypes/Mouse",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "3313",
-      "SourceBytecodeSha256": "cff7d7f0115613f4207faaa380399c543523809c24b91dfc8d2c32cebec5944f",
       "Tags": ""
     },
     "unreadable": [
@@ -26795,8 +26631,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1071",
-      "SourceBytecodeSha256": "66ee0662b7dc2768a0757b59636350225395a5c3f33a6f48c9171352c4a02326",
+      "SourceBytecodeBytes": "1096",
+      "SourceBytecodeSha256": "7c48dd743ad414eb4f1bd4dd54005c3bcb06a8a194040f4d7e93b19e6c7ec440",
       "Tags": ""
     },
     "unreadable": [
@@ -30235,8 +30071,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3333",
-      "SourceBytecodeSha256": "52a2d387cbcb41eb56e3115b045de79cc10a075aaba85d2f3c731d69cb46e4b7",
+      "SourceBytecodeBytes": "3192",
+      "SourceBytecodeSha256": "eb861970d8a5c885fe2b10bd50d4a8d3a714f67f8b9afaad338d3bf65185c572",
       "Tags": ""
     },
     "unreadable": [
@@ -30285,22 +30121,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "2401",
       "SourceBytecodeSha256": "d5ff393ed209760558e8c8e42c3f72370d9d44f51f904bc0ea7a83bb27500ca7",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "RemoteRhodium",
-    "path": "DeviceEmulator/Packages/_Index/Rhodium/Rhodium/RemoteRhodium",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "1717",
-      "SourceBytecodeSha256": "15d800071cb158849ee82ecd5dbddb1c1796b54ea82dd3b51ccd183d5e2fd408",
       "Tags": ""
     },
     "unreadable": [
@@ -30637,38 +30457,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "181",
       "SourceBytecodeSha256": "df860f5e2410f697d4759ea742d2e09c424e62f1afa68a173f578103f6626c9b",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Rhodium",
-    "path": "DeviceEmulator/Packages/_Index/Rhodium/Rhodium",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "303",
-      "SourceBytecodeSha256": "0c61a709b9ef95c5c63283bd6ae61fa2cff378b914e7c0d6bf9f580e0a39345c",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Rhodium",
-    "path": "DeviceEmulator/Packages/Dev/Rhodium",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "166",
-      "SourceBytecodeSha256": "783c72268545470cb942a5943a4e3787b3c1ccb87a2052276b7b959692917f69",
       "Tags": ""
     },
     "unreadable": [
@@ -32155,8 +31943,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "10675",
-      "SourceBytecodeSha256": "09ccfd16a4b39cd82f2af033e8a1c3273b3daeed5907f810c3e7525d64f16b75",
+      "SourceBytecodeBytes": "9581",
+      "SourceBytecodeSha256": "5be578a88ef4cffe0a9b1ff29f17271e4d2203ce75829f211432613a7ab85d36",
       "Tags": ""
     },
     "unreadable": [
@@ -33451,8 +33239,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "3417",
-      "SourceBytecodeSha256": "6b73770dbc896bbf220aaddb006e8ac50eca7d03e130ad16d8873179b104f326",
+      "SourceBytecodeBytes": "2815",
+      "SourceBytecodeSha256": "50380e96fb89a6dd7affcf98a73d6d225aad2153ab9a4c594eb4b8f03fab7545",
       "Tags": ""
     },
     "unreadable": [
@@ -35051,8 +34839,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4375",
-      "SourceBytecodeSha256": "bca6bce7224cce414705df43ab6caa4255d88dfbf2f94076bde99e0ac7d83e0b",
+      "SourceBytecodeBytes": "3895",
+      "SourceBytecodeSha256": "4b35cb49e39db90f180bbb0cabbe528b1b1ecbbdcbeae7e1b132d99ca0e8fd1d",
       "Tags": ""
     },
     "unreadable": [
@@ -35067,8 +34855,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "4769",
-      "SourceBytecodeSha256": "42066f535b4bd95a12ac8db0f86d905c1a92538ee274946180218b0d2fc7b2cb",
+      "SourceBytecodeBytes": "4445",
+      "SourceBytecodeSha256": "196f63437289d3a064b096d17ce67ee5b26726f7fd5a225fc0bb1bba486fc0eb",
       "Tags": ""
     },
     "unreadable": [
@@ -36635,8 +36423,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "1702",
-      "SourceBytecodeSha256": "7f89ca6d70ae8491d11e8e3bdf3fe99b7502a38796a74f68da5af764b27029d5",
+      "SourceBytecodeBytes": "1324",
+      "SourceBytecodeSha256": "186945f14df36492162f0ef14d9ce05a85a3d04ffb62e3d9afd8a5c772ef8c45",
       "Tags": ""
     },
     "unreadable": [
@@ -37419,8 +37207,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "14862",
-      "SourceBytecodeSha256": "69616c3571e7056ce19a20ad91560c8d7518d2815fecedd5193824732b5f1ed0",
+      "SourceBytecodeBytes": "14804",
+      "SourceBytecodeSha256": "6e468668f6990707285408fc7f4971d2f5f788bff24baad57d68cb502c8bf3b4",
       "Tags": ""
     },
     "unreadable": [
@@ -38037,22 +37825,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "Text",
-    "path": "DeviceEmulator/Packages/_Index/Rhodium/Rhodium/InputTypes/Text",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "390",
-      "SourceBytecodeSha256": "3d0428739ecefd1e4eef4b73c848f9772f0f94d430047abee378039a7553c93f",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "TextArea.story",
     "path": "DeviceEmulator/Packages/_Index/Foundation/Foundation/Components/TextArea/TextArea.story",
     "properties": {
@@ -38171,8 +37943,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "22091",
-      "SourceBytecodeSha256": "3500d6ba564edb59b7d91b7d67a73c7f7a2cd77c7039858d8b7539be3c69d84a",
+      "SourceBytecodeBytes": "21765",
+      "SourceBytecodeSha256": "85e04370cbb2885da16bbb6dfb93a3502213ecf705519130932486ec2e2c8629",
       "Tags": ""
     },
     "unreadable": [
@@ -38667,8 +38439,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "6445",
-      "SourceBytecodeSha256": "0b8837abb3d4399aad07903724e0f3788676fa4a39070c241e42c3a12b402848",
+      "SourceBytecodeBytes": "6327",
+      "SourceBytecodeSha256": "02eeadcb6b33be32c3e1198dadac628564db952f86dc15e7f0a2c41cdf82307e",
       "Tags": ""
     },
     "unreadable": [
@@ -39597,22 +39369,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "762",
       "SourceBytecodeSha256": "8050200adfed55798a6825019645be52d32d90c508f0625da0c1c0ad0637f032",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Touch",
-    "path": "DeviceEmulator/Packages/_Index/Rhodium/Rhodium/InputTypes/Touch",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "1847",
-      "SourceBytecodeSha256": "f3295467e76730dbc16c022c3adca3510bfb78bb17e3563f3bb8d010e2a20840",
       "Tags": ""
     },
     "unreadable": [
@@ -44037,38 +43793,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "VirtualInput",
-    "path": "DeviceEmulator/Packages/_Index/Rhodium/Rhodium/VirtualInput",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "662",
-      "SourceBytecodeSha256": "5996b7a65211886c17a82eac133b6c9df471361ddee757cecd2c48dacd22f41b",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "VirtualInputUtils",
-    "path": "DeviceEmulator/Packages/_Index/Rhodium/Rhodium/VirtualInputUtils",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "1287",
-      "SourceBytecodeSha256": "ad2be05dee777ff1d79c90a7be1287a29d2613e60d9391fddf9dea3344a5338d",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
     "name": "Visibility",
     "path": "DeviceEmulator/Packages/_Index/Foundation/Foundation/Enums/Visibility",
     "properties": {
@@ -44589,22 +44313,6 @@
       "ScriptGuid": "",
       "SourceBytecodeBytes": "423",
       "SourceBytecodeSha256": "3a4fb149570288dc77a1bba39a964dfc658781a94e69716b9a90d1bb56c73a66",
-      "Tags": ""
-    },
-    "unreadable": [
-      "Source:compiled-bytecode"
-    ]
-  },
-  {
-    "class": "ModuleScript",
-    "name": "XPath",
-    "path": "DeviceEmulator/Packages/_Index/Rhodium/Rhodium/XPath",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "SourceBytecodeBytes": "15546",
-      "SourceBytecodeSha256": "22c75247d7d1ecb0a06f36d1479180b6edff1b50897e5dc0d652e9b1dd159474",
       "Tags": ""
     },
     "unreadable": [

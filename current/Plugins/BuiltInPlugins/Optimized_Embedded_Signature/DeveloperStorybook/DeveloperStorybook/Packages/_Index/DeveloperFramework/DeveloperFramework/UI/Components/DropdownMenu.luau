@@ -26,8 +26,6 @@
 		number MaxHeight: The maximum height of the menu area (defaults to style if not provided)
 		table Icons: A table containing icons to render, only used if OnRenderItem is not utilized.
 		number ItemHeight: The height of each item in dropdown.
-		number HoveredItemIndex: The index of currently hovered item.
-		callback OnHoveredItemChanged: When the index of the hovered item changes.
 		boolean TextWrapped: Whether the text label should wrap.
 		string Variant: An optional parameter to determine the look of the component. 'modern'
 		boolean DropFromSide: Whether the dropdown flies out to the side of the component.
@@ -49,14 +47,10 @@ local withContext = ContextServices.withContext
 local React = if Framework.Parent:FindFirstChild("React") then require(Framework.Parent.React) else nil
 local supportsStyleSheets = require(Framework.Styling.supportsStyleSheets)
 
-local SharedFlags = require(Framework.SharedFlags)
-local FFlagDevFrameworkDropdownMenuHeight = SharedFlags.getFFlagDevFrameworkDropdownMenuHeight()
-
 local FFlagDevFrameworkLimitDropdownHeight = game:DefineFastFlag("DevFrameworkLimitDropdownHeight", false)
 
 local Util = require(Framework.Util)
 local prioritize = Util.prioritize
-local StyleModifier = Util.StyleModifier
 local Typecheck = require(Framework.Util.Typecheck)
 
 local Dash = require(Framework.Parent.Dash)
@@ -199,24 +193,7 @@ function DropdownMenu:init()
 	end
 	self.changeTokens = {}
 
-	if FFlagDevFrameworkDropdownMenuHeight then
-		self.onInputBegan = function(_rbx, input)
-			local props = self.props
-			local index = props.HoveredItemIndex
-			if input.KeyCode == Enum.KeyCode.Down then
-				props.OnHoveredItemChanged(math.min(#props.Items, index + 1))
-			elseif input.KeyCode == Enum.KeyCode.Up then
-				props.OnHoveredItemChanged(math.max(1, index - 1))
-			elseif input.KeyCode == Enum.KeyCode.Return then
-				props.OnItemActivated(props.Items[index])
-				if props.OnFocusLost then
-					props.OnFocusLost()
-				end
-			end
-		end
-	end
-
-	self.defaultOnRenderItem = function(item, index: number, activated: () -> nil, hovered: boolean)
+	self.defaultOnRenderItem = function(item, index: number, activated: () -> nil)
 		local props = self.props
 		local icons = props.Icons
 
@@ -249,15 +226,7 @@ function DropdownMenu:init()
 		return Roact.createElement(Button, {
 			LayoutOrder = index,
 			OnClick = if isDisabled then function() end else activated,
-			OnMouseEnter = if FFlagDevFrameworkDropdownMenuHeight
-				then function()
-					if props.OnHoveredItemChanged then
-						props.OnHoveredItemChanged(index)
-					end
-				end
-				else nil,
 			Size = UDim2.new(1, 0, 0, itemHeight),
-			StyleModifier = if FFlagDevFrameworkDropdownMenuHeight and hovered then StyleModifier.Hover else nil,
 			Style = if isModern then "ModernDropdown" else nil,
 		}, {
 			ImageContainer = if icon
@@ -360,7 +329,7 @@ function DropdownMenu:renderMenu()
 	for index, item in ipairs(items) do
 		listElements[tostring(index)] = onRenderItem(item, index, function()
 			onItemActivated(item, index)
-		end, if FFlagDevFrameworkDropdownMenuHeight then index == props.HoveredItemIndex else nil)
+		end, nil)
 	end
 
 	local children = {
@@ -409,7 +378,6 @@ function DropdownMenu:renderMenu()
 			Position = UDim2.fromOffset(BORDER_SIZE, BORDER_SIZE),
 			TextTransparency = 1,
 			ZIndex = -1,
-			[Roact.Event.InputBegan] = if FFlagDevFrameworkDropdownMenuHeight then self.onInputBegan else nil,
 			[Roact.Event.MouseEnter] = props.OnMouseEnter,
 			[Roact.Event.MouseLeave] = props.OnMouseLeave,
 		}),

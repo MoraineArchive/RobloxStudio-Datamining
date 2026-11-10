@@ -6,11 +6,7 @@ Full reference for the Studio Network Simulator as driven from Luau. For behavio
 
 The Network Simulator shapes the traffic of a Studio **playtest** to imitate a slower or lossier connection — adding latency, jitter, and packet loss in each direction. It does not change your real internet connection; it delays/drops packets on the playtest's UDP socket so you can see how your game feels on, say, a 3G phone.
 
-The six knobs live on `settings().Network` and are **always available in Studio** — they are engine settings, independent of any beta. The **New Device Simulator** beta only adds the *toolbar UI* (a network pill LAN/Wired/Wifi/4G/3G + "Network simulation" popover); it does not enable or gate the underlying settings.
-
-### The beta is optional (toolbar UI only)
-
-This skill drives `settings().Network` directly, so it works **with or without** the beta. **Do not use `settings().Network` existence as a beta check** — the read always succeeds and says nothing about the beta; there is no reliable Luau signal for it. The beta only matters when a *human* needs the toolbar (e.g. to Apply a saved custom preset so the skill can read it back). To enable it (no Luau API): *File → Beta Features → check "New Device Simulator" → Save → restart Studio* — this flips the plugin FFlags `EnableDeviceSimulatorToolbar` / `EnableDeviceSimulatorRegistry` that render the UI.
+The six knobs live on `settings().Network` and are **always available in Studio** — they are engine settings. The Device Simulator toolbar (a network pill LAN/Wired/Wifi/4G/3G + "Network simulation" popover) is a UI over the same values.
 
 ---
 
@@ -229,14 +225,13 @@ Relevant engine/plugin FFlags: `EnableDeviceSimulatorToolbar`, `EnableDeviceSimu
 
 ## Known limitations
 
-1. **No beta needed** — `settings().Network` is always available; the "New Device Simulator" beta only adds a toolbar UI. Don't use the property's existence as a beta check.
-2. **Loss max is 0.5%** — `0.5` = 0.5%, not 50%. Loss is a weak lever and there's no bandwidth knob, so this sim mainly stresses latency/jitter.
-3. **Silent clamping** — out-of-range writes clamp without error; read back to confirm.
-4. **Playtest-only effect** — applies during a local playtest (Play) or Team Test; no shaping while just editing (incl. Team Create editing).
-5. **Persists across restarts** — `PERSISTENT_LOCAL_INTERNAL`, saved to local Studio settings (global across places, not in the place file). Only `/network-reset` clears it; a restart does not. Record the current values at the start; at the end, ask whether to restore them or clear to 0.
-6. **NetworkPing is a client stat** — read `Stats.PerformanceStats.Ping` via `execute_luau` with `datamodel_type = "Client"` during a playtest. `:GetValue()` is `Plugin` security, so a LocalScript reads `-1`.
-7. **Saved custom presets are unreadable AND unwritable from the skill** — `plugin` is nil in `execute_luau` (confirmed), and there's no reflected preset API. Ask the user to Apply the preset in the toolbar then read `settings().Network`, or paste values.
-8. **Values are 32-bit `float`** — fractional loss values carry float32 imprecision (e.g. `0.3` reads back as `0.30000001192092896`). Format for display and use a tolerance when matching a read-back to a preset.
+1. **Loss max is 0.5%** — `0.5` = 0.5%, not 50%. Loss is a weak lever and there's no bandwidth knob, so this sim mainly stresses latency/jitter.
+2. **Silent clamping** — out-of-range writes clamp without error; read back to confirm.
+3. **Playtest-only effect** — applies during a local playtest (Play) or Team Test; no shaping while just editing (incl. Team Create editing).
+4. **Persists across restarts** — `PERSISTENT_LOCAL_INTERNAL`, saved to local Studio settings (global across places, not in the place file). Only `/network-reset` clears it; a restart does not. Record the current values at the start; at the end, ask whether to restore them or clear to 0.
+5. **NetworkPing is a client stat** — read `Stats.PerformanceStats.Ping` via `execute_luau` with `datamodel_type = "Client"` during a playtest. `:GetValue()` is `Plugin` security, so a LocalScript reads `-1`.
+6. **Saved custom presets are unreadable AND unwritable from the skill** — `plugin` is nil in `execute_luau` (confirmed), and there's no reflected preset API. Ask the user to Apply the preset in the toolbar then read `settings().Network`, or paste values.
+7. **Values are 32-bit `float`** — fractional loss values carry float32 imprecision (e.g. `0.3` reads back as `0.30000001192092896`). Format for display and use a tolerance when matching a read-back to a preset.
 
 ## Error handling
 
@@ -244,7 +239,7 @@ Always `pcall`. Likely failures:
 
 | Symptom | Cause | Fix |
 |---------|-------|-----|
-| Write to a knob errors | Rare build/flag issue (NOT the beta — properties are always present) | Report the error; don't tell the user to "enable the beta" |
+| Write to a knob errors | Rare build/flag issue (properties are always present) | Report the error |
 | Value doesn't match what you set | Silent clamp | Re-read; report the clamped value |
 | No latency effect while playing | Editing (incl. Team Create edit), not an actual playtest | Use a local playtest (Play) or Team Test |
 | `PerformanceStats.Ping` reads `-1` | Reading from a LocalScript (Plugin security) | Read via `execute_luau` with `datamodel_type = "Client"` |

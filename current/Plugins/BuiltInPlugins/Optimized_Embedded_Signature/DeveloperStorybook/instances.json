@@ -2571,8 +2571,28 @@
   },
   {
     "class": "Folder",
+    "name": "ThumbLayout",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/InternalSlider/ThumbLayout",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
     "name": "Thunks",
     "path": "DeveloperStorybook/Src/Thunks",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Tile",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Tile",
     "properties": {
       "AttributesSerialize": "",
       "Tags": ""
@@ -3351,18 +3371,6 @@
     "class": "ModuleScript",
     "name": "Actions",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Sheet/Actions",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Actions",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED/Actions",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -4417,6 +4425,30 @@
   },
   {
     "class": "ModuleScript",
+    "name": "Backdrop",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Backdrop",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Backdrop",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Backdrop/Backdrop",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "BackgroundStyleContext",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Providers/Style/BackgroundStyleContext",
     "properties": {
@@ -4731,6 +4763,42 @@
     "class": "ModuleScript",
     "name": "BaseTheme",
     "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/Style/Themes/BaseTheme",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "BaseTile",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Tile/BaseTile",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "BaseTileContent",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Tile/BaseTileContent",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "BaseTileMedia",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Tile/BaseTileMedia",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -7623,18 +7691,6 @@
     "class": "ModuleScript",
     "name": "Content",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Sheet/Content",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Content",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED/Content",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -12854,18 +12910,6 @@
   {
     "class": "ModuleScript",
     "name": "Footer",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED/Footer",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Footer",
     "path": "DeveloperStorybook/Src/Components/Footer",
     "properties": {
       "AttributesSerialize": "",
@@ -14197,30 +14241,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkDropdownMenuHeight",
-    "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkDropdownMenuHeight",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkFixInputBackground",
-    "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkFixInputBackground",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "getFFlagDevFrameworkFixMissingKeyErrors",
     "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkFixMissingKeyErrors",
     "properties": {
@@ -14257,18 +14277,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkOptionalComponentsFolder",
-    "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkOptionalComponentsFolder",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "getFFlagDevFrameworkParentStylesToDm",
     "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkParentStylesToDm",
     "properties": {
@@ -14283,18 +14291,6 @@
     "class": "ModuleScript",
     "name": "getFFlagDevFrameworkPollUntilTaskApi",
     "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkPollUntilTaskApi",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkSliderInputValidation",
-    "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkSliderInputValidation",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -14401,44 +14397,8 @@
   },
   {
     "class": "ModuleScript",
-    "name": "getFFlagMaterialGridItemLabelFoundationStyle",
-    "path": "DeveloperStorybook/Packages/_Index/MaterialFrameworkDeprecated/MaterialFrameworkDeprecated/Flags/getFFlagMaterialGridItemLabelFoundationStyle",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "getFFlagMaterialGridShowTooltipWithLabel",
     "path": "DeveloperStorybook/Packages/_Index/MaterialFrameworkDeprecated/MaterialFrameworkDeprecated/Flags/getFFlagMaterialGridShowTooltipWithLabel",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getFFlagMaterialGridTerrainEditorItemUx",
-    "path": "DeveloperStorybook/Packages/_Index/MaterialFrameworkDeprecated/MaterialFrameworkDeprecated/Flags/getFFlagMaterialGridTerrainEditorItemUx",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getFFlagMaterialGridUseItemIds",
-    "path": "DeveloperStorybook/Packages/_Index/MaterialFrameworkDeprecated/MaterialFrameworkDeprecated/Flags/getFFlagMaterialGridUseItemIds",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -15481,6 +15441,30 @@
   },
   {
     "class": "ModuleScript",
+    "name": "getThumbOffset",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/InternalSlider/ThumbLayout/getThumbOffset",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "getThumbTravel",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/InternalSlider/ThumbLayout/getThumbTravel",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "getToolbarDirection",
     "path": "DeveloperStorybook/Packages/_Index/ViewportToolingFramework/ViewportToolingFramework/Util/getToolbarDirection",
     "properties": {
@@ -15903,18 +15887,6 @@
     "class": "ModuleScript",
     "name": "Header",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Sheet/Header",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Header",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED/Header",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -17521,8 +17493,8 @@
   },
   {
     "class": "ModuleScript",
-    "name": "InternalBackdrop",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/InternalBackdrop",
+    "name": "InternalDrawer",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/InternalDrawer",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -17533,8 +17505,68 @@
   },
   {
     "class": "ModuleScript",
-    "name": "InternalBackdrop",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/InternalBackdrop/InternalBackdrop",
+    "name": "InternalDrawer",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/InternalDrawer/InternalDrawer",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "InternalDrawerBackdrop",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Enums/InternalDrawerBackdrop",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "InternalDrawerLayout",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Enums/InternalDrawerLayout",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "InternalDrawerOverlay",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/InternalDrawer/InternalDrawerOverlay",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "InternalDrawerShadow",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Enums/InternalDrawerShadow",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "InternalDrawerSide",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Enums/InternalDrawerSide",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -23101,44 +23133,8 @@
   },
   {
     "class": "ModuleScript",
-    "name": "MaterialGridItemDeprecated",
-    "path": "DeveloperStorybook/Packages/_Index/MaterialFrameworkDeprecated/MaterialFrameworkDeprecated/Components/MaterialGrid/MaterialGridItemDeprecated",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "MaterialListItem",
     "path": "DeveloperStorybook/Packages/_Index/MaterialFrameworkDeprecated/MaterialFrameworkDeprecated/Components/MaterialGrid/MaterialListItem",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "MaterialListItemDeprecated.spec",
-    "path": "DeveloperStorybook/Packages/_Index/MaterialFrameworkDeprecated/MaterialFrameworkDeprecated/Components/MaterialGrid/MaterialListItemDeprecated.spec",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "MaterialListItemDeprecated",
-    "path": "DeveloperStorybook/Packages/_Index/MaterialFrameworkDeprecated/MaterialFrameworkDeprecated/Components/MaterialGrid/MaterialListItemDeprecated",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -23331,18 +23327,6 @@
     "class": "ModuleScript",
     "name": "Media",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Media/Media",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Media",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED/Media",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -23571,6 +23555,18 @@
     "class": "ModuleScript",
     "name": "Metadata",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Metadata/Metadata",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "MetadataSize",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Enums/MetadataSize",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -24169,6 +24165,42 @@
   },
   {
     "class": "ModuleScript",
+    "name": "NavigationBar",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/NavigationBar",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "NavigationBar",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/NavigationBar/NavigationBar",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "NavigationBarTab",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/NavigationBar/NavigationBarTab",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "NavPaginationLayout",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Pagination/Nav/NavPaginationLayout",
     "properties": {
@@ -24675,18 +24707,6 @@
     "class": "ModuleScript",
     "name": "objectIs",
     "path": "DeveloperStorybook/Packages/_Index/Shared/Shared/objectIs",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "ObjectViewport",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED/ObjectViewport",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -31081,6 +31101,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "ScrollBarVisibility",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Enums/ScrollBarVisibility",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "ScrollingFrame.story",
     "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/ScrollingFrame/ScrollingFrame.story",
     "properties": {
@@ -35893,6 +35925,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "TabItemAccessory",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Tabs/TabItemAccessory",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "Table.story",
     "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/Table/Table.story",
     "properties": {
@@ -37093,32 +37137,8 @@
   },
   {
     "class": "ModuleScript",
-    "name": "Tile_DEPRECATED",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "Tile_DEPRECATED",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED/Tile_DEPRECATED",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "TileActions",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED/Actions/TileActions",
+    "name": "TileAspectRatio",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Enums/TileAspectRatio",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -37131,66 +37151,6 @@
     "class": "ModuleScript",
     "name": "TileBox",
     "path": "DeveloperStorybook/Packages/_Index/DeveloperFramework/DeveloperFramework/UI/Components/DraggableTileList/TileBox",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "TileContent",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED/Content/TileContent",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "TileContext",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED/TileContext",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "TileFooter",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED/Footer/TileFooter",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "TileHeader",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED/Header/TileHeader",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "TileMedia",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED/Media/TileMedia",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -37837,6 +37797,30 @@
   },
   {
     "class": "ModuleScript",
+    "name": "toThumbFraction",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/InternalSlider/ThumbLayout/toThumbFraction",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "toThumbTrackFraction",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/InternalSlider/ThumbLayout/toThumbTrackFraction",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "Tracing",
     "path": "DeveloperStorybook/Packages/_Index/Scheduler/Scheduler/Tracing",
     "properties": {
@@ -38415,6 +38399,18 @@
     "class": "ModuleScript",
     "name": "Types",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Dialog/Types",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "Types",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/InternalDrawer/Types",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -39829,18 +39825,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "useIconButtonPadding",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/IconButton/useIconButtonPadding",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "useIconButtonVariants",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/IconButton/useIconButtonVariants",
     "properties": {
@@ -39975,6 +39959,18 @@
     "class": "ModuleScript",
     "name": "useInteraction",
     "path": "DeveloperStorybook/Packages/_Index/Motion/Motion/Utility/useInteraction",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "useInternalDrawerVariants",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/InternalDrawer/useInternalDrawerVariants",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -40143,6 +40139,18 @@
     "class": "ModuleScript",
     "name": "useMenuItemHover",
     "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/BaseMenu/useMenuItemHover",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "useMetadataVariants",
+    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Metadata/useMetadataVariants",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -41199,18 +41207,6 @@
     "class": "ModuleScript",
     "name": "useThemeName",
     "path": "DeveloperStorybook/Packages/_Index/StudioFoundation/StudioFoundation/Hooks/useThemeName",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "useTile",
-    "path": "DeveloperStorybook/Packages/_Index/Foundation/Foundation/Components/Tile_DEPRECATED/useTile",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",

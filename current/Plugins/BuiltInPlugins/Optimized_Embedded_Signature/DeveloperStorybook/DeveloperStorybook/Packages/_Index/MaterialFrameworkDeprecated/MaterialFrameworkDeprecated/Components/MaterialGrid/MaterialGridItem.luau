@@ -1,10 +1,6 @@
 --[[
 	Item component used in MaterialGrid when ViewType equals Grid.
 
-	MaterialGrid chooses between this module and MaterialGridItemDeprecated via
-	getFFlagMaterialGridTerrainEditorItemUx in MaterialGrid.init (CellComponent). This
-	file is only loaded for the new UX path; do not gate behavior on that flag here.
-
 	Required Props:
 		Vector2 CanvasPosition: The current scroll canvas position; used for tooltip placement.
 		number GridItemSize: The pixel size of the grid cell; used for tooltip placement.
@@ -50,7 +46,6 @@ local Framework = require(Packages.Framework)
 local React = require(Packages.React)
 local createNextOrder = require(main.Util.createNextOrder)
 
-local getFFlagMaterialGridItemLabelFoundationStyle = require(main.Flags.getFFlagMaterialGridItemLabelFoundationStyle)
 local getFFlagMaterialGridShowTooltipWithLabel = require(main.Flags.getFFlagMaterialGridShowTooltipWithLabel)
 
 local UI = Framework.UI
@@ -118,12 +113,6 @@ type _Style = {
 	TooltipDelay: number,
 }
 
--- #121215 — same RGB as Foundation dark `Color.Surface.Surface_0` / `bg-surface-0`.
--- TODO: When MaterialFramework takes a Foundation dependency, use
--- `require(Packages.Foundation.Providers.Style.Tokens).defaultTokens.Color.Surface.Surface_0`
--- (or `getTokens` + theme) instead of this literal.
-local LABEL_SCRIM_SURFACE_0 = Color3.fromHex("#121215")
-
 local function noop() end
 
 local function MaterialGridItem(props: Props, ref)
@@ -134,9 +123,7 @@ local function MaterialGridItem(props: Props, ref)
 	local itemsDisabled = props.ItemsDisabled == true
 	local shouldShowLabel = props.ShowGridLabels ~= false and props.Text and props.Text ~= ""
 
-	local scrimColor = if getFFlagMaterialGridItemLabelFoundationStyle()
-		then style.ItemLabelScrimColor
-		else LABEL_SCRIM_SURFACE_0
+	local scrimColor = style.ItemLabelScrimColor
 
 	-- Bottom-anchored on the swatch; scrim height matches the text (LabelArea sizes to the label).
 	local labelAreaElement = React.useMemo(function()

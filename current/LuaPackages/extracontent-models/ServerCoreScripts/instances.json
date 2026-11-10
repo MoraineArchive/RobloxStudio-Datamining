@@ -597,6 +597,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "FFlagRoCaptchaReturnToServerInstance",
+    "path": "Modules/Common/Flags/FFlagRoCaptchaReturnToServerInstance",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "FFlagWhisperEmoteOnAvatarContextMenuWithExpChat",
     "path": "Modules/Common/Flags/FFlagWhisperEmoteOnAvatarContextMenuWithExpChat",
     "properties": {

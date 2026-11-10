@@ -13,7 +13,6 @@
 		number LayoutOrder: The layout order of this component in a list.
 		boolean Enabled: Enables component if true
 		number Width: The width of the select input
-		number MenuHeight: The maximum menu height when displaying.
 		string PlaceholderText: A placeholder to display if there is no item selected.
 		callback OnRenderItem: A function used to render a dropdown menu item.
 		callback OnMouseEnter: A function that is called when the mouse hovers over the dropdown.
@@ -57,9 +56,6 @@ local join = Dash.join
 local React = if Framework.Parent:FindFirstChild("React") then require(Framework.Parent.React) else nil
 
 local supportsStyleSheets = require(Framework.Styling.supportsStyleSheets)
-local SharedFlags = require(Framework.SharedFlags)
-local FFlagDevFrameworkDropdownMenuHeight = SharedFlags.getFFlagDevFrameworkDropdownMenuHeight()
-
 local UI = Framework.UI
 local Container = require(UI.Components.Container)
 local DropdownMenu = require(UI.Components.DropdownMenu)
@@ -106,7 +102,6 @@ end
 function SelectInput:init()
 	self.state = {
 		isOpen = false,
-		hoveredItemIndex = if FFlagDevFrameworkDropdownMenuHeight then 1 else nil,
 		isHovered = false,
 	}
 
@@ -134,32 +129,6 @@ function SelectInput:init()
 		if isMainPress and self.props.Enabled == true then
 			self:setState({
 				isOpen = true,
-			})
-		end
-		if
-			FFlagDevFrameworkDropdownMenuHeight
-			and input.UserInputType == Enum.UserInputType.Keyboard
-			and self.state.isOpen
-			and self.props.Enabled
-		then
-			local props = self.props
-			local index = self.state.hoveredItemIndex
-
-			if input.KeyCode == Enum.KeyCode.Down then
-				self.onHoveredItemChanged(math.min(#props.Items, index + 1))
-			elseif input.KeyCode == Enum.KeyCode.Up then
-				self.onHoveredItemChanged(math.max(1, index - 1))
-			elseif input.KeyCode == Enum.KeyCode.Return then
-				props.OnItemActivated(props.Items[index])
-				self.focusLost()
-			end
-		end
-	end
-
-	if FFlagDevFrameworkDropdownMenuHeight then
-		self.onHoveredItemChanged = function(index: number)
-			self:setState({
-				hoveredItemIndex = index,
 			})
 		end
 	end
@@ -310,12 +279,9 @@ function SelectInput:render()
 		Width = props.Width,
 		UseAutoWidth = props.UseAutoWidth,
 		Hide = not isOpen,
-		HoveredItemIndex = if FFlagDevFrameworkDropdownMenuHeight then state.hoveredItemIndex else nil,
 		Icons = icons,
 		ItemHeight = props.ItemHeight,
 		Items = items,
-		MaxHeight = if FFlagDevFrameworkDropdownMenuHeight then props.MenuHeight else nil,
-		OnHoveredItemChanged = if FFlagDevFrameworkDropdownMenuHeight then self.onHoveredItemChanged else nil,
 		OnFocusLost = self.focusLost,
 		OnItemActivated = props.OnItemActivated,
 		OnRenderItem = props.OnRenderItem,

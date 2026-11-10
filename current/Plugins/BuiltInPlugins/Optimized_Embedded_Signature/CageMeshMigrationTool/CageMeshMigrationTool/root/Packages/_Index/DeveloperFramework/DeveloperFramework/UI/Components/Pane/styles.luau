@@ -1,8 +1,5 @@
 local Framework = script:FindFirstAncestor("UI").Parent
 local rule = require(Framework.Styling.createStyleRule)
-local FoundationDark = require(Framework.Style.Themes.FoundationDark)
-local foundationDarkTheme = FoundationDark(1)
-local getFFlagDevFrameworkFixInputBackground = require(Framework.SharedFlags.getFFlagDevFrameworkFixInputBackground)
 
 return rule(".Component-Pane", {
 	BackgroundTransparency = 1,
@@ -56,9 +53,7 @@ return rule(".Component-Pane", {
 	}),
 	rule(".Row", {
 		BackgroundColor3 = "$FilledInputBackground",
-		BackgroundTransparency = if not getFFlagDevFrameworkFixInputBackground()
-			then foundationDarkTheme.Color.Shift.Shift_200.Transparency
-			else 0,
+		BackgroundTransparency = 0,
 	}, {
 		rule(":hover", {
 			BackgroundColor3 = "$ForegroundContrast",
@@ -70,8 +65,6 @@ return rule(".Component-Pane", {
 	}),
 	rule(".Input", {
 		BackgroundColor3 = "$FilledInputBackground",
-		BackgroundTransparency = if not getFFlagDevFrameworkFixInputBackground()
-			then foundationDarkTheme.Color.Shift.Shift_200.Transparency
-			else 0,
+		BackgroundTransparency = 0,
 	}),
 })

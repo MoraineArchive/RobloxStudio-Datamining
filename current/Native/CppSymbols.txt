@@ -158,8 +158,10 @@
 ??0QIcon@@QEAA@XZ	public: __cdecl QIcon::QIcon(void) __ptr64
 ??0QImage@@QEAA@$$QEAV0@@Z	public: __cdecl QImage::QImage(class QImage && __ptr64) __ptr64
 ??0QImage@@QEAA@AEBV0@@Z	public: __cdecl QImage::QImage(class QImage const & __ptr64) __ptr64
+??0QImage@@QEAA@AEBVQSize@@W4Format@0@@Z	public: __cdecl QImage::QImage(class QSize const & __ptr64,enum QImage::Format) __ptr64
 ??0QImage@@QEAA@AEBVQString@@PEBD@Z	public: __cdecl QImage::QImage(class QString const & __ptr64,char const * __ptr64) __ptr64
 ??0QImage@@QEAA@HHW4Format@0@@Z	public: __cdecl QImage::QImage(int,int,enum QImage::Format) __ptr64
+??0QImage@@QEAA@PEBEHHHW4Format@0@P6AXPEAX@Z2@Z	public: __cdecl QImage::QImage(unsigned char const * __ptr64,int,int,int,enum QImage::Format,void (__cdecl*)(void * __ptr64),void * __ptr64) __ptr64
 ??0QImage@@QEAA@XZ	public: __cdecl QImage::QImage(void) __ptr64
 ??0QImageReader@@QEAA@AEBVQString@@AEBVQByteArray@@@Z	public: __cdecl QImageReader::QImageReader(class QString const & __ptr64,class QByteArray const & __ptr64) __ptr64
 ??0QIntValidator@@QEAA@HHPEAVQObject@@@Z	public: __cdecl QIntValidator::QIntValidator(int,int,class QObject * __ptr64) __ptr64
@@ -235,6 +237,7 @@
 ??0QPixmap@@QEAA@HH@Z	public: __cdecl QPixmap::QPixmap(int,int) __ptr64
 ??0QPixmap@@QEAA@XZ	public: __cdecl QPixmap::QPixmap(void) __ptr64
 ??0QPlainTextEdit@@QEAA@PEAVQWidget@@@Z	public: __cdecl QPlainTextEdit::QPlainTextEdit(class QWidget * __ptr64) __ptr64
+??0QPoint@@QEAA@HH@Z	public: __cdecl QPoint::QPoint(int,int) __ptr64
 ??0QPoint@@QEAA@XZ	public: __cdecl QPoint::QPoint(void) __ptr64
 ??0QPolygon@@QEAA@XZ	public: __cdecl QPolygon::QPolygon(void) __ptr64
 ??0QPolygonF@@QEAA@$$QEAV0@@Z	public: __cdecl QPolygonF::QPolygonF(class QPolygonF && __ptr64) __ptr64
@@ -1389,6 +1392,7 @@
 ?constData@QString@@QEBAPEBVQChar@@XZ	public: class QChar const * __ptr64 __cdecl QString::constData(void)const __ptr64
 ?constData@QVariant@@QEBAPEBXXZ	public: void const * __ptr64 __cdecl QVariant::constData(void)const __ptr64
 ?constEnd@QJsonObject@@QEBA?AVconst_iterator@1@XZ	public: class QJsonObject::const_iterator __cdecl QJsonObject::constEnd(void)const __ptr64
+?constScanLine@QImage@@QEBAPEBEH@Z	public: unsigned char const * __ptr64 __cdecl QImage::constScanLine(int)const __ptr64
 ?contains@QGraphicsPixmapItem@@UEBA_NAEBVQPointF@@@Z	public: virtual bool __cdecl QGraphicsPixmapItem::contains(class QPointF const & __ptr64)const __ptr64
 ?contains@QJsonObject@@QEBA_NAEBVQString@@@Z	public: bool __cdecl QJsonObject::contains(class QString const & __ptr64)const __ptr64
 ?contains@QRect@@QEBA_NAEBV1@_N@Z	public: bool __cdecl QRect::contains(class QRect const & __ptr64,bool)const __ptr64
@@ -1424,6 +1428,7 @@
 ?convertFromImage@QPixmap@@QEAA_NAEBVQImage@@V?$QFlags@W4ImageConversionFlag@Qt@@@@@Z	public: bool __cdecl QPixmap::convertFromImage(class QImage const & __ptr64,class QFlags<enum Qt::ImageConversionFlag>) __ptr64
 ?convertToFormat_helper@QImage@@IEBA?AV1@W4Format@1@V?$QFlags@W4ImageConversionFlag@Qt@@@@@Z	protected: class QImage __cdecl QImage::convertToFormat_helper(enum QImage::Format,class QFlags<enum Qt::ImageConversionFlag>)const __ptr64
 ?convertToFormat_inplace@QImage@@IEAA_NW4Format@1@V?$QFlags@W4ImageConversionFlag@Qt@@@@@Z	protected: bool __cdecl QImage::convertToFormat_inplace(enum QImage::Format,class QFlags<enum Qt::ImageConversionFlag>) __ptr64
+?copy@QImage@@QEBA?AV1@AEBVQRect@@@Z	public: class QImage __cdecl QImage::copy(class QRect const & __ptr64)const __ptr64
 ?copy@QImage@@QEBA?AV1@HHHH@Z	public: class QImage __cdecl QImage::copy(int,int,int,int)const __ptr64
 ?copy@QPixmap@@QEBA?AV1@AEBVQRect@@@Z	public: class QPixmap __cdecl QPixmap::copy(class QRect const & __ptr64)const __ptr64
 ?copy@QPixmap@@QEBA?AV1@HHHH@Z	public: class QPixmap __cdecl QPixmap::copy(int,int,int,int)const __ptr64
@@ -1444,6 +1449,7 @@
 ?country@QLocale@@QEBA?AW4Country@1@XZ	public: enum QLocale::Country __cdecl QLocale::country(void)const __ptr64
 ?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A	class std::basic_ostream<char,struct std::char_traits<char> > std::cout
 ?crbegin@QString@@QEBA?AV?$reverse_iterator@PEBVQChar@@@std@@XZ	public: class std::reverse_iterator<class QChar const * __ptr64> __cdecl QString::crbegin(void)const __ptr64
+?createAlphaMask@QImage@@QEBA?AV1@V?$QFlags@W4ImageConversionFlag@Qt@@@@@Z	public: class QImage __cdecl QImage::createAlphaMask(class QFlags<enum Qt::ImageConversionFlag>)const __ptr64
 ?createData@QMapDataBase@@SAPEAU1@XZ	public: static struct QMapDataBase * __ptr64 __cdecl QMapDataBase::createData(void)
 ?createEditor@QAbstractItemDelegate@@UEBAPEAVQWidget@@PEAV2@AEBVQStyleOptionViewItem@@AEBVQModelIndex@@@Z	public: virtual class QWidget * __ptr64 __cdecl QAbstractItemDelegate::createEditor(class QWidget * __ptr64,class QStyleOptionViewItem const & __ptr64,class QModelIndex const & __ptr64)const __ptr64
 ?createEditor@QStyledItemDelegate@@UEBAPEAVQWidget@@PEAV2@AEBVQStyleOptionViewItem@@AEBVQModelIndex@@@Z	public: virtual class QWidget * __ptr64 __cdecl QStyledItemDelegate::createEditor(class QWidget * __ptr64,class QStyleOptionViewItem const & __ptr64,class QModelIndex const & __ptr64)const __ptr64
@@ -1852,6 +1858,7 @@
 ?fileSelected@QFileDialog@@QEAAXAEBVQString@@@Z	public: void __cdecl QFileDialog::fileSelected(class QString const & __ptr64) __ptr64
 ?fill@QImage@@QEAAXAEBVQColor@@@Z	public: void __cdecl QImage::fill(class QColor const & __ptr64) __ptr64
 ?fill@QImage@@QEAAXI@Z	public: void __cdecl QImage::fill(unsigned int) __ptr64
+?fill@QImage@@QEAAXW4GlobalColor@Qt@@@Z	public: void __cdecl QImage::fill(enum Qt::GlobalColor) __ptr64
 ?fill@QPixmap@@QEAAXAEBVQColor@@@Z	public: void __cdecl QPixmap::fill(class QColor const & __ptr64) __ptr64
 ?fillPath@QPainter@@QEAAXAEBVQPainterPath@@AEBVQBrush@@@Z	public: void __cdecl QPainter::fillPath(class QPainterPath const & __ptr64,class QBrush const & __ptr64) __ptr64
 ?fillRect@QPainter@@QEAAXAEBVQRect@@AEBVQBrush@@@Z	public: void __cdecl QPainter::fillRect(class QRect const & __ptr64,class QBrush const & __ptr64) __ptr64
@@ -1971,6 +1978,7 @@
 ?fromBase64Encoding@QByteArray@@SA?AVFromBase64Result@1@$$QEAV1@V?$QFlags@W4Base64Option@QByteArray@@@@@Z	public: static class QByteArray::FromBase64Result __cdecl QByteArray::fromBase64Encoding(class QByteArray && __ptr64,class QFlags<enum QByteArray::Base64Option>)
 ?fromHsvF@QColor@@SA?AV1@NNNN@Z	public: static class QColor __cdecl QColor::fromHsvF(double,double,double,double)
 ?fromHtml@QTextDocumentFragment@@SA?AV1@AEBVQString@@@Z	public: static class QTextDocumentFragment __cdecl QTextDocumentFragment::fromHtml(class QString const & __ptr64)
+?fromImage@QBitmap@@SA?AV1@$$QEAVQImage@@V?$QFlags@W4ImageConversionFlag@Qt@@@@@Z	public: static class QBitmap __cdecl QBitmap::fromImage(class QImage && __ptr64,class QFlags<enum Qt::ImageConversionFlag>)
 ?fromImage@QPixmap@@SA?AV1@AEBVQImage@@V?$QFlags@W4ImageConversionFlag@Qt@@@@@Z	public: static class QPixmap __cdecl QPixmap::fromImage(class QImage const & __ptr64,class QFlags<enum Qt::ImageConversionFlag>)
 ?fromImageInPlace@QPixmap@@KA?AV1@AEAVQImage@@V?$QFlags@W4ImageConversionFlag@Qt@@@@@Z	protected: static class QPixmap __cdecl QPixmap::fromImageInPlace(class QImage & __ptr64,class QFlags<enum Qt::ImageConversionFlag>)
 ?fromImageReader@QPixmap@@SA?AV1@PEAVQImageReader@@V?$QFlags@W4ImageConversionFlag@Qt@@@@@Z	public: static class QPixmap __cdecl QPixmap::fromImageReader(class QImageReader * __ptr64,class QFlags<enum Qt::ImageConversionFlag>)
@@ -2032,6 +2040,7 @@
 ?globalMatch@QRegularExpression@@QEBA?AVQRegularExpressionMatchIterator@@AEBVQString@@HW4MatchType@1@V?$QFlags@W4MatchOption@QRegularExpression@@@@@Z	public: class QRegularExpressionMatchIterator __cdecl QRegularExpression::globalMatch(class QString const & __ptr64,int,enum QRegularExpression::MatchType,class QFlags<enum QRegularExpression::MatchOption>)const __ptr64
 ?globalPos@QMouseEvent@@QEBA?AVQPoint@@XZ	public: class QPoint __cdecl QMouseEvent::globalPos(void)const __ptr64
 ?glyphIndexesForString@QRawFont@@QEBA?AV?$QVector@I@@AEBVQString@@@Z	public: class QVector<unsigned int> __cdecl QRawFont::glyphIndexesForString(class QString const & __ptr64)const __ptr64
+?good@ios_base@std@@QEBA_NXZ	public: bool __cdecl std::ios_base::good(void)const __ptr64
 ?gptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ	protected: char * __ptr64 __cdecl std::basic_streambuf<char,struct std::char_traits<char> >::gptr(void)const __ptr64
 ?grabKeyboard@QWidget@@QEAAXXZ	public: void __cdecl QWidget::grabKeyboard(void) __ptr64
 ?grabMouse@QWidget@@QEAAXXZ	public: void __cdecl QWidget::grabMouse(void) __ptr64
@@ -2380,6 +2389,7 @@
 ?isValid@QVariant@@QEBA_NXZ	public: bool __cdecl QVariant::isValid(void)const __ptr64
 ?isVisible@QAction@@QEBA_NXZ	public: bool __cdecl QAction::isVisible(void)const __ptr64
 ?isVisible@QTextBlock@@QEBA_NXZ	public: bool __cdecl QTextBlock::isVisible(void)const __ptr64
+?isVisible@QWidget@@QEBA_NXZ	public: bool __cdecl QWidget::isVisible(void)const __ptr64
 ?isVisibleTo@QWidget@@QEBA_NPEBV1@@Z	public: bool __cdecl QWidget::isVisibleTo(class QWidget const * __ptr64)const __ptr64
 ?isWarningEnabled@QLoggingCategory@@QEBA_NXZ	public: bool __cdecl QLoggingCategory::isWarningEnabled(void)const __ptr64
 ?isWidgetType@QObject@@QEBA_NXZ	public: bool __cdecl QObject::isWidgetType(void)const __ptr64
@@ -3300,6 +3310,7 @@
 ?returnPressed@QLineEdit@@QEAAXXZ	public: void __cdecl QLineEdit::returnPressed(void) __ptr64
 ?revert@QAbstractItemModel@@UEAAXXZ	public: virtual void __cdecl QAbstractItemModel::revert(void) __ptr64
 ?revert@QAbstractProxyModel@@UEAAXXZ	public: virtual void __cdecl QAbstractProxyModel::revert(void) __ptr64
+?rgb@QColor@@QEBAIXZ	public: unsigned int __cdecl QColor::rgb(void)const __ptr64
 ?rgba@QColor@@QEBAIXZ	public: unsigned int __cdecl QColor::rgba(void)const __ptr64
 ?right@QRect@@QEBAHXZ	public: int __cdecl QRect::right(void)const __ptr64
 ?right@QRectF@@QEBANXZ	public: double __cdecl QRectF::right(void)const __ptr64

@@ -51,11 +51,8 @@ local Pane = UI.Pane
 
 local prioritize = Framework.Util.prioritize
 
-local getFFlagMaterialGridTerrainEditorItemUx = require(main.Flags.getFFlagMaterialGridTerrainEditorItemUx)
 local MaterialGridItem = require(script.MaterialGridItem)
-local MaterialGridItemDeprecated = require(script.MaterialGridItemDeprecated) :: any
 local MaterialListItem = require(script.MaterialListItem)
-local MaterialListItemDeprecated = require(script.MaterialListItemDeprecated) :: any
 
 local ViewType = require(main.Enums.ViewType)
 
@@ -66,7 +63,6 @@ local RunService = game:GetService("RunService")
 
 local getFFlagMaterialGridExtraProps = require(main.Flags.getFFlagMaterialGridExtraProps)
 local getFFlagMaterialGridShowTooltipWithLabel = require(main.Flags.getFFlagMaterialGridShowTooltipWithLabel)
-local getFFlagMaterialGridUseItemIds = require(main.Flags.getFFlagMaterialGridUseItemIds)
 
 export type Item = {
 	Id: any?,
@@ -166,14 +162,14 @@ local function getItemIdentifier(item: Item, hasExplicitId: boolean): any
 end
 
 local function itemMatchesIdentifier(item: Item, hasExplicitId: boolean, identifier: any): boolean
-	if getFFlagMaterialGridUseItemIds() and hasExplicitId and item.Id == identifier then
+	if hasExplicitId and item.Id == identifier then
 		return true
 	end
 	return item.Material ~= nil and getSerializedMaterialIdentifier(item.Material) == identifier
 end
 
 local function getItemText(item: Item, localization): string?
-	if getFFlagMaterialGridUseItemIds() and item.Text then
+	if item.Text then
 		return item.Text
 	elseif item.Material then
 		return getMaterialName(item.Material, localization)
@@ -331,95 +327,12 @@ local function MaterialGrid(props: Props)
 	elseif props.SelectedItem then
 		local convertedSelectedItems, selectedItemHasExplicitId = convertToItems({ props.SelectedItem })
 		local convertedSelectedItem = convertedSelectedItems[1]
-		if getFFlagMaterialGridUseItemIds() then
-			selectedItemId = getItemIdentifier(convertedSelectedItem, selectedItemHasExplicitId[convertedSelectedItem])
-		else
-			selectedItemId = convertedSelectedItem.Id or convertedSelectedItem.Material
-		end
+		selectedItemId = getItemIdentifier(convertedSelectedItem, selectedItemHasExplicitId[convertedSelectedItem])
 	end
 
 	local appliedItemId
 	if props.AppliedItemId then
 		appliedItemId = props.AppliedItemId
-	end
-
-	local function getItemPropsDeprecated(item: Item, index: number, position: UDim2, size: UDim2)
-		local material = item.Material
-
-		local selected
-		local applied
-		local text
-		if not item.Loading then
-			selected = itemMatchesIdentifier(item, hasExplicitId[item], selectedItemId)
-			applied = itemMatchesIdentifier(item, hasExplicitId[item], appliedItemId)
-			text = getItemText(item, localization)
-		end
-
-		return {
-			Applied = applied,
-			CanvasPosition = tooltipCanvasPosition,
-			ShouldCenterTooltip = props.ShouldCenterTooltip,
-			ContainerXBounds = props.ContainerXBounds,
-			ContainerYBounds = props.ContainerYBounds,
-			CustomPreview = if props.CustomPreviews then props.CustomPreviews[material] else nil,
-			InitialDistance = props.InitialDistance,
-			GridItemSize = gridItemSize,
-			HoverEffectsEnabled = hoverEffectsEnabled,
-			InstantTooltipEnabled = instantTooltipEnabled,
-			LayoutOrder = index,
-			Loading = item.Loading,
-			Material = material,
-			MaterialPreviewGeometryType = props.MaterialPreviewGeometryType,
-			OverrideColor = item.OverrideColor,
-			OverrideTransparency = item.OverrideTransparency,
-			OnClick = function()
-				if props.OnSnapshotTaken then
-					takeDummySnapshot()
-				end
-				if props.OnClick then
-					props.OnClick(item)
-				end
-			end,
-			OnMouseEnter = function()
-				onMouseEnter()
-
-				if props.OnSnapshotTaken then
-					setCurrentDummyMaterial(material)
-				end
-				if props.OnMouseEnter then
-					props.OnMouseEnter(item)
-				end
-			end,
-			OnMouseLeave = function()
-				onMouseLeave()
-
-				if props.OnMouseLeave then
-					props.OnMouseLeave(item)
-				end
-			end,
-			OnRenderChildren = if props.OnRenderItemChildren
-				then function()
-					return props.OnRenderItemChildren(item)
-				end
-				else nil,
-			OnRightClick = function()
-				if props.OnRightClick then
-					props.OnRightClick(item)
-				end
-			end,
-			OnMouseMoved = onMouseMoved,
-			OnTooltipShown = onTooltipShown,
-			Position = position,
-			Selected = selected,
-			ShowGridLabels = props.ShowGridLabels,
-			ShowTooltipWithLabel = if getFFlagMaterialGridShowTooltipWithLabel()
-				then props.ShowTooltipWithLabel
-				else nil,
-			Size = size,
-			Style = style,
-			Text = text,
-			TooltipDelay = tooltipDelay,
-		}
 	end
 
 	local onClickForItem = React.useCallback(function(item: Item)
@@ -546,36 +459,28 @@ local function MaterialGrid(props: Props)
 	end
 
 	local function renderGrid()
-		local materialGridItem = if getFFlagMaterialGridTerrainEditorItemUx()
-			then MaterialGridItem
-			else MaterialGridItemDeprecated
-		local cellProps = if getFFlagMaterialGridTerrainEditorItemUx() then getItemProps else getItemPropsDeprecated
 		return React.createElement(Grid, {
 			AutomaticSize = if getFFlagMaterialGridExtraProps() then props.AutomaticSize else nil,
 			InitialCanvasPosition = gridCanvasPosition.current,
-			CellComponent = materialGridItem,
+			CellComponent = MaterialGridItem,
 			CellGroups = props.CellGroups,
 			CellGroupHeader = props.CellGroupHeader,
 			CellPadding = UDim2.fromOffset(style.GridItemPadding, style.GridItemPadding),
 			CellSize = UDim2.fromOffset(gridItemSize, gridItemSize),
 			Cells = items,
-			GetCellProps = cellProps,
+			GetCellProps = getItemProps,
 			OnScrollUpdate = createOnScrollUpdate(ViewType.Grid),
 			ScrollingDirection = if getFFlagMaterialGridExtraProps() then props.ScrollingDirection else nil,
 		})
 	end
 
 	local function renderList()
-		local materialListItem = if getFFlagMaterialGridTerrainEditorItemUx()
-			then MaterialListItem
-			else MaterialListItemDeprecated
-		local cellProps = if getFFlagMaterialGridTerrainEditorItemUx() then getItemProps else getItemPropsDeprecated
 		return React.createElement(List, {
 			AutomaticSize = if getFFlagMaterialGridExtraProps() then props.AutomaticSize else nil,
 			InitialCanvasPosition = listCanvasPosition.current,
-			GetRowProps = cellProps,
+			GetRowProps = getItemProps,
 			OnScrollUpdate = createOnScrollUpdate(ViewType.List),
-			RowComponent = materialListItem,
+			RowComponent = MaterialListItem,
 			RowHeight = listItemHeight,
 			Rows = items,
 			ScrollingDirection = if getFFlagMaterialGridExtraProps() then props.ScrollingDirection else nil,

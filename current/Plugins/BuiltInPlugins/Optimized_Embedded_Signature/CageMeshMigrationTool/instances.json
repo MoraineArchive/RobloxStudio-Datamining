@@ -11967,30 +11967,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkDropdownMenuHeight",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkDropdownMenuHeight",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkFixInputBackground",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkFixInputBackground",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "getFFlagDevFrameworkFixMissingKeyErrors",
     "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkFixMissingKeyErrors",
     "properties": {
@@ -12027,18 +12003,6 @@
   },
   {
     "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkOptionalComponentsFolder",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkOptionalComponentsFolder",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
     "name": "getFFlagDevFrameworkParentStylesToDm",
     "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkParentStylesToDm",
     "properties": {
@@ -12053,18 +12017,6 @@
     "class": "ModuleScript",
     "name": "getFFlagDevFrameworkPollUntilTaskApi",
     "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkPollUntilTaskApi",
-    "properties": {
-      "AttributesSerialize": "",
-      "LinkedSource": "",
-      "ScriptGuid": "",
-      "Tags": ""
-    },
-    "unreadable": []
-  },
-  {
-    "class": "ModuleScript",
-    "name": "getFFlagDevFrameworkSliderInputValidation",
-    "path": "CageMeshMigrationTool/root/Packages/_Index/DeveloperFramework/DeveloperFramework/SharedFlags/getFFlagDevFrameworkSliderInputValidation",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",

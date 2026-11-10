@@ -1,6 +1,6 @@
 ---
 name: network-simulator
-description: Simulate, emulate, or throttle network conditions in Roblox Studio — latency, ping, jitter, and packet loss — for playtesting. ALWAYS use this skill when the user says things like "simulate 4G/3G/5G/Wi-Fi", "test on a slow/laggy/bad connection", "add latency/ping", "throttle the network", "network throttling", "packet loss", "high ping", "how does my game feel on a bad connection", "measure input delay / responsiveness", "how long until the server catches up", "client-server desync", "hits not registering", "slow join / long loading on mobile", "rubber-banding", or names a preset (Ideal Fiber, Wired, Home Wi-Fi, 4G/LTE, 3G). This skill is self-contained — the complete API and preset values are here; apply via settings().Network directly. It drives `settings().Network` via execute_luau (apply/verify) and measures real ping, action→result response time, server catch-up, and client-server consistency in a playtest — this works with or without any beta. Recommend enabling the "New Device Simulator" beta for the optional toolbar UI (`settings().Network` is always available regardless).
+description: Simulate, emulate, or throttle network conditions in Roblox Studio — latency, ping, jitter, and packet loss — for playtesting. ALWAYS use this skill when the user says things like "simulate 4G/3G/5G/Wi-Fi", "test on a slow/laggy/bad connection", "add latency/ping", "throttle the network", "network throttling", "packet loss", "high ping", "how does my game feel on a bad connection", "measure input delay / responsiveness", "how long until the server catches up", "client-server desync", "hits not registering", "slow join / long loading on mobile", "rubber-banding", or names a preset (Ideal Fiber, Wired, Home Wi-Fi, 4G/LTE, 3G). This skill is self-contained — the complete API and preset values are here; apply via settings().Network directly. It drives `settings().Network` via execute_luau (apply/verify) and measures real ping, action→result response time, server catch-up, and client-server consistency in a playtest.
 ---
 
 # Network Simulator Skill
@@ -15,20 +15,13 @@ Use this skill whenever the user wants to simulate or test network conditions. T
 - User reports a symptom that is often caused by a bad connection, even without mentioning the network: delayed feedback after input, hits not registering, long join/loading times, rubber-banding, or errors that only happen on mobile/slow connections. See "Common bad-network issues and how to debug them".
 - Keywords: `simulate 4G/3G/5G/wifi`, `network simulator`, `throttle`, `network throttling`, `latency`, `ping`, `high ping`, `lag`, `laggy`, `input delay`, `responsiveness`, `response time`, `rubber-banding`, `desync`, `server catch-up`, `client-server consistency`, `hit registration`, `hits not registering`, `join time`, `slow loading`, `jitter`, `packet loss`, `bad connection`, `slow connection`, `NetworkSettings`, `settings().Network`, and preset names (`Ideal Fiber`, `Wired Broadband`, `Home Wi-Fi`, `Standard Mobile (4G/LTE)`, `Bad Connection (3G)`)
 
-**First action every time:** read the current `settings().Network` values (they're always available — no beta needed); this skill is the mechanism.
+**First action every time:** read the current `settings().Network` values (they're always available); this skill is the mechanism.
 
-## Recommend the beta for the toolbar UI (but it's not required)
+## The Device Simulator toolbar
 
-`settings().Network` and its six properties are **always available in Studio** — they're engine settings, not gated by the beta. The **New Device Simulator** beta only adds the *toolbar UI* (the network pill + "Network simulation" popover) for humans; it does **not** enable/disable the underlying knobs. The skill applies and measures conditions purely through `settings().Network`, so it works **with or without** the beta.
+The Device Simulator toolbar shows the current network profile (the LAN/Wifi/4G/3G pill) and a **Network simulation** popover where the user can adjust, apply, and save presets. It uses the same `settings().Network` values, so whatever you apply shows up there. The skill doesn't need the toolbar. The user only needs it for the saved-preset fallback (select the preset in the popover and click Apply).
 
-**Still, prompt the user to enable the beta** — the toolbar UI makes the experience much better: they can see the active pill (LAN/Wifi/4G/3G), watch/adjust the values you set, and save their own presets. On the first network request in a conversation, suggest it (then proceed either way):
-
-> For the best experience, enable the **New Device Simulator** beta so you get the network toolbar — you'll see the active profile and can tweak or save presets. In Studio: **File → Beta Features → check "New Device Simulator" → Save → restart Studio.** I can apply and measure conditions either way, so just say the word and I'll start.
-
-- **Don't try to detect the beta by reading `settings().Network`** — that read always succeeds (the properties exist regardless) and tells you nothing about the beta. There's no reliable Luau check, so just recommend it and move on; never block on it.
-- The beta is genuinely *needed* only when you ask the user to interact with the toolbar — e.g. the saved-preset fallback ("select your preset in the popover and click Apply"). That popover only exists if the beta is on.
-
-Start commands by **reading the current `settings().Network` values** (to see any existing shaping — see the ⚠️ note under "How It Works"), not by testing for the beta.
+Start commands by **reading the current `settings().Network` values** (to see any existing shaping — see the ⚠️ note under "How It Works").
 
 ## Commands
 

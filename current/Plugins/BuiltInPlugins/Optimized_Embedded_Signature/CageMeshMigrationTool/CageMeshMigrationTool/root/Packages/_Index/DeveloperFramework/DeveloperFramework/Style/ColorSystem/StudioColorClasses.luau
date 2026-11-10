@@ -4,33 +4,24 @@
 ]]
 local Framework = script:FindFirstAncestor("Style").Parent
 local ColorSystem = require(script.Parent)
-
-local getFFlagDevFrameworkFixInputBackground = require(Framework.SharedFlags.getFFlagDevFrameworkFixInputBackground)
+local blendColors = require(Framework.Parent.Foundation).Utility.blendColors
 
 local FoundationDark = require(Framework.Style.Themes.FoundationDark)
 local foundationDarkTheme = FoundationDark(1)
 local FoundationLight = require(Framework.Style.Themes.FoundationLight)
 local foundationLightTheme = FoundationLight(1)
 
-local LIGHT_SHIFT_200 = foundationLightTheme.Color.Shift.Shift_200.Color3:Lerp(
-	foundationLightTheme.LightMode.Surface.Surface_100.Color3,
-	foundationLightTheme.Color.Shift.Shift_200.Transparency
-)
+local LIGHT_SHIFT_200 =
+	blendColors(foundationLightTheme.LightMode.Surface.Surface_100, foundationLightTheme.Color.Shift.Shift_200).Color3
 
-local DARK_SHIFT_200 = foundationDarkTheme.Color.Shift.Shift_200.Color3:Lerp(
-	foundationDarkTheme.DarkMode.Surface.Surface_100.Color3,
-	foundationDarkTheme.Color.Shift.Shift_200.Transparency
-)
+local DARK_SHIFT_200 =
+	blendColors(foundationDarkTheme.DarkMode.Surface.Surface_100, foundationDarkTheme.Color.Shift.Shift_200).Color3
 
-local LIGHT_SHIFT_300 = foundationLightTheme.Color.Shift.Shift_300.Color3:Lerp(
-	foundationLightTheme.LightMode.Surface.Surface_100.Color3,
-	foundationLightTheme.Color.Shift.Shift_300.Transparency
-)
+local LIGHT_SHIFT_300 =
+	blendColors(foundationLightTheme.LightMode.Surface.Surface_100, foundationLightTheme.Color.Shift.Shift_300).Color3
 
-local DARK_SHIFT_300 = foundationDarkTheme.Color.Shift.Shift_300.Color3:Lerp(
-	foundationDarkTheme.DarkMode.Surface.Surface_100.Color3,
-	foundationDarkTheme.Color.Shift.Shift_300.Transparency
-)
+local DARK_SHIFT_300 =
+	blendColors(foundationDarkTheme.DarkMode.Surface.Surface_100, foundationDarkTheme.Color.Shift.Shift_300).Color3
 return {
 	-- Background classes are used for large containers that appear recessed in the visual hierarchy.
 	Background = {
@@ -137,8 +128,8 @@ return {
 	Action = {
 		-- backdrop color for components in hover state
 		Hover = {
-			Dark = if getFFlagDevFrameworkFixInputBackground() then DARK_SHIFT_200 else ColorSystem.Gray[70],
-			Light = if getFFlagDevFrameworkFixInputBackground() then LIGHT_SHIFT_200 else ColorSystem.Gray[40],
+			Dark = DARK_SHIFT_200,
+			Light = LIGHT_SHIFT_200,
 		},
 		-- fill color for components in enabled state
 		Enabled = {
@@ -152,8 +143,8 @@ return {
 		},
 		-- backdrop color for components in activated state
 		Activated = {
-			Dark = if getFFlagDevFrameworkFixInputBackground() then DARK_SHIFT_300 else ColorSystem.Gray[110],
-			Light = if getFFlagDevFrameworkFixInputBackground() then LIGHT_SHIFT_300 else ColorSystem.Gray[50],
+			Dark = DARK_SHIFT_300,
+			Light = LIGHT_SHIFT_300,
 		},
 		-- border color for components in focus state
 		FocusBorder = {
@@ -238,8 +229,8 @@ return {
 	-- Other classes are classes that do not belong in any other categories, or classes that are used for edge cases.
 	Other = {
 		FilledInputBackground = {
-			Dark = if getFFlagDevFrameworkFixInputBackground() then DARK_SHIFT_200 else ColorSystem.Gray[70],
-			Light = if getFFlagDevFrameworkFixInputBackground() then LIGHT_SHIFT_200 else ColorSystem.Gray[20],
+			Dark = DARK_SHIFT_200,
+			Light = LIGHT_SHIFT_200,
 		},
 		-- divider/border style
 		Divider = {

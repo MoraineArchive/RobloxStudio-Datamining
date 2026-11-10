@@ -303,12 +303,6 @@ function TextInput:init()
 		self.textChanged(item.Value)
 	end
 
-	self.autocompleteItemChanged = function(index: number)
-		self:setState({
-			autocompleteSelectedIndex = index,
-		})
-	end
-
 	self.autocompleteMouseLeave = function()
 		self:setState({
 			autocompleteSelectedIndex = Roact.None,
@@ -486,18 +480,10 @@ function TextInput:render()
 		if not width and self.ref then
 			width = self.ref.current.AbsoluteSize.X
 		end
-		local hoveredItemIndex
-		if #state.autocompleteItems == 1 then
-			hoveredItemIndex = 1
-		else
-			hoveredItemIndex = state.autocompleteSelectedIndex
-		end
 		local autocompleteProps = join({
 			Items = state.autocompleteItems,
-			OnHoveredItemChanged = self.autocompleteItemChanged,
 			OnMouseLeave = self.autocompleteMouseLeave,
 			Hide = not state.isFocused,
-			HoveredItemIndex = hoveredItemIndex,
 			Width = width,
 			Position = props.Position,
 			OnItemActivated = self.autocompleteItemSelected,

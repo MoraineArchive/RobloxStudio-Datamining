@@ -2,7 +2,7 @@ List the built-in network presets and apply one by name.
 
 ## What to do
 
-1. Connect to Studio (multi-instance: `list_roblox_studios` + `set_active_studio`). Read and record the current `settings().Network` values as the starting values (always available — no beta needed; the read is not a beta check).
+1. Connect to Studio (multi-instance: `list_roblox_studios` + `set_active_studio`). Read and record the current `settings().Network` values as the starting values (always available).
 
 2. **If the user just wants to see the options**, list the built-in presets from SKILL.md "Presets" as a **bullet list** (one bullet per preset with its in/out latency/jitter/loss) — **not a Markdown table** (can't render) and **not a fenced code block** (renders gray/de-emphasized). Include any custom values they've defined this session, and the units note (loss is a percent; 0.5 = 0.5%).
 

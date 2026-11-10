@@ -4,7 +4,7 @@ Apply one network preset (or custom values) and verify it took effect.
 
 1. Connect to Studio — if multiple instances are open, call `list_roblox_studios` and `set_active_studio` first.
 
-2. **Read and record the current state first** — via `execute_luau`, read all six `settings().Network` values and keep them as the starting values (SKILL.md "Ending a test"). These are **always available (no beta needed)**, so don't treat a successful read as a "beta check" — it isn't one. On the first network request in the conversation, **suggest enabling the New Device Simulator beta** for the toolbar UI (see SKILL.md), then proceed either way. **If shaping is already applied** (non-zero — settings persist across restarts / from the toolbar), tell the user the current values before changing anything; don't assume it's zeroed.
+2. **Read and record the current state first** — via `execute_luau`, read all six `settings().Network` values and keep them as the starting values (SKILL.md "Ending a test"). **If shaping is already applied** (non-zero — settings persist across restarts / from the toolbar), tell the user the current values before changing anything; don't assume it's zeroed.
 
 3. **Resolve the preset** (see SKILL.md "Presets"):
    - Built-in name or fuzzy term → use the built-in values.

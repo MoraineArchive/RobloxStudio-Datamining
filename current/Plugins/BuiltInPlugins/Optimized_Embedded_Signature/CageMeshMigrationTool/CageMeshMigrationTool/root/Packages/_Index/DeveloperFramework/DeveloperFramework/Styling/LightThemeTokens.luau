@@ -1,25 +1,18 @@
 local Framework = script.Parent.Parent
+local blendColors = require(Framework.Parent.Foundation).Utility.blendColors
 local FoundationLight = require(Framework.Style.Themes.FoundationLight)
 local foundationLightTheme = FoundationLight(1)
 
-local getFFlagDevFrameworkFixInputBackground = require(Framework.SharedFlags.getFFlagDevFrameworkFixInputBackground)
-
 -- Old UI doesn't support transparency on backgrounds, so derive approximate colors
 --  based on blending the tokens color/transparency with the Surface_100 color.
-local MUTED_ACTION = foundationLightTheme.Color.ActionSoftEmphasis.Background.Color3:Lerp(
-	foundationLightTheme.LightMode.Surface.Surface_100.Color3,
-	foundationLightTheme.Color.ActionSoftEmphasis.Background.Transparency
-)
-local SHIFT_200 = foundationLightTheme.Color.Shift.Shift_200.Color3:Lerp(
-	foundationLightTheme.LightMode.Surface.Surface_100.Color3,
-	foundationLightTheme.Color.Shift.Shift_200.Transparency
-)
-local SHIFT_300 = if getFFlagDevFrameworkFixInputBackground()
-	then foundationLightTheme.Color.Shift.Shift_300.Color3:Lerp(
-		foundationLightTheme.LightMode.Surface.Surface_100.Color3,
-		foundationLightTheme.Color.Shift.Shift_300.Transparency
-	)
-	else nil
+local MUTED_ACTION = blendColors(
+	foundationLightTheme.LightMode.Surface.Surface_100,
+	foundationLightTheme.Color.ActionSoftEmphasis.Background
+).Color3
+local SHIFT_200 =
+	blendColors(foundationLightTheme.LightMode.Surface.Surface_100, foundationLightTheme.Color.Shift.Shift_200).Color3
+local SHIFT_300 =
+	blendColors(foundationLightTheme.LightMode.Surface.Surface_100, foundationLightTheme.Color.Shift.Shift_300).Color3
 
 local tokens = {
 	BackgroundDefault = "$Gray40",
@@ -39,10 +32,10 @@ local tokens = {
 	ErrorMain = "$Red90",
 	SuccessMain = "$Green80",
 	WarningMain = "$Yellow90",
-	ActionHover = if getFFlagDevFrameworkFixInputBackground() then SHIFT_200 else "$Gray40",
+	ActionHover = SHIFT_200,
 	ActionEnabled = "$Gray80",
 	ActionSelected = MUTED_ACTION,
-	ActionActivated = if getFFlagDevFrameworkFixInputBackground() then SHIFT_300 else "$Gray50",
+	ActionActivated = SHIFT_300,
 	ActionFocusBorder = "$Blue70",
 	PrimaryMain = "$Blue70",
 	PrimaryHoverBackground = "$Blue50",

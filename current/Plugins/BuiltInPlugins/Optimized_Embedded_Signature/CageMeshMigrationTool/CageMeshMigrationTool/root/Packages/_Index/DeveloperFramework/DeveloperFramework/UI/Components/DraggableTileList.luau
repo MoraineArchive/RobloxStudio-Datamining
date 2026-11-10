@@ -53,6 +53,7 @@ export type Props = {
 	ShowEmptyBoxes: boolean?,
 	AnimationSpeed: number?,
 	GetTileProps: (any) -> { [string]: any },
+	GetTileId: ((any) -> string)?,
 }
 
 type _Props = Props & {
@@ -233,17 +234,23 @@ function DraggableTileList:init()
 		return self:getDefaultTileProps(tile)
 	end
 
-	self.createBoxContainer = function(position, zIndex, layoutOrder, tile)
+	self.createBoxContainer = function(position, zIndex, layoutOrder, tile, tileIndex)
 		local props: _Props = self.props
 		local tileComponent = props.TileComponent
 		local getTileProps = props.GetTileProps or self.getTileProps
 		local boxProps = getTileProps(tile)
+		local key = nil
+		if FFlagDevFrameworkFixMissingKeyErrors and isRoact17 then
+			if tile == nil then
+				key = `Empty_{layoutOrder}`
+			elseif props.GetTileId then
+				key = `Tile_{props.GetTileId(tile)}`
+			else
+				key = `TileIndex_{tileIndex}`
+			end
+		end
 		return Roact.createElement(Pane, {
-			key = if FFlagDevFrameworkFixMissingKeyErrors
-					and isRoact17
-					and self.props.GetTileId
-				then self.props.GetTileId(tile)
-				else nil,
+			key = key,
 			Size = UDim2.new(1, 0, 1.0 / self.numBoxesToDisplay, 0),
 			Position = position,
 			LayoutOrder = layoutOrder,
@@ -353,20 +360,20 @@ function DraggableTileList:render()
 			if i == self.draggingIndex then
 				local y = dragPositionY + self.clickOffsetY
 				y = math.clamp(y, 0, self.getMaxY())
-				local box = self.createBoxContainer(UDim2.new(0, 0, 0, y), 100, 1, tile)
+				local box = self.createBoxContainer(UDim2.new(0, 0, 0, y), 100, 1, tile, i)
 				table.insert(children, box)
 			else
 				if index == blankIndex then
 					index += 1
 				end
 				local pos = self.updateMotorAndGetPosition(i, index, speed)
-				local box = self.createBoxContainer(pos, 99, index + 1, tile)
+				local box = self.createBoxContainer(pos, 99, index + 1, tile, i)
 				table.insert(children, box)
 				index += 1
 			end
 		else
 			local pos = self.updateMotorAndGetPosition(i, i, speed)
-			local box = self.createBoxContainer(pos, 99, i + 1, tile)
+			local box = self.createBoxContainer(pos, 99, i + 1, tile, i)
 			table.insert(children, box)
 		end
 	end

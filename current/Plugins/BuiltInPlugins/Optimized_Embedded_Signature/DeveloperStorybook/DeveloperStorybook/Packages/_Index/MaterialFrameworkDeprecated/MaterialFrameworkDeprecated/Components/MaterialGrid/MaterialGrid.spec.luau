@@ -309,134 +309,87 @@ describe("MaterialGrid", function()
 			expect(labelCount).toBeGreaterThanOrEqual(#THREE_LABELED_MATERIALS)
 		end)
 
-		describe("when MaterialGridUseItemIds is disabled", function()
-			local previousUseItemIds: boolean
+		it("should use explicit item IDs and labels for duplicate materials", function()
+			local firstItem = { Id = 4, Material = Enum.Material.Rock, Text = "Cliff" }
+			local onClick = jest.fn()
+			local result = render(createTestElement({
+				Items = {
+					firstItem,
+					{ Id = 17, Material = Enum.Material.Rock, Text = "Boulder" },
+				},
+				OnClick = onClick,
+				SelectedItemId = 17,
+				ShowGridLabels = true,
+				Size = UDim2.new(0, 400, 0, 200),
+			}))
+			waitForGuiLayout(result.container)
 
-			beforeEach(function()
-				previousUseItemIds = game:SetFastFlagForTesting("MaterialGridUseItemIds", false)
+			expect(result.getByText("Cliff")).toBeDefined()
+			expect(result.getByText("Boulder")).toBeDefined()
+			local scroller = findFirstScrollingFrame(result.container)
+			expect(scroller).never.toBeNil()
+			local swatches = getAllGridSwatchTextButtonsUnder(scroller :: Instance)
+			expect(#swatches).toBe(2)
+			expect(countDistinctUIStrokeBorderColors(swatches)).toBe(2)
+
+			ReactRoblox.act(function()
+				dispatchRobloxEvent(swatches[1], "clickWithoutValidation", nil :: any)
 			end)
-
-			afterEach(function()
-				game:SetFastFlagForTesting("MaterialGridUseItemIds", previousUseItemIds)
-			end)
-
-			it("should preserve derived labels and serialized material identity", function()
-				local result = render(createTestElement({
-					Items = {
-						{ Id = 4, Material = Enum.Material.Rock, Text = "Cliff" },
-						{ Id = 17, Material = Enum.Material.Rock, Text = "Boulder" },
-					},
-					SelectedItemId = 17,
-					ShowGridLabels = true,
-					Size = UDim2.new(0, 400, 0, 200),
-				}))
-				waitForGuiLayout(result.container)
-
-				local customLabelCount = countMatchingInTree(result.container, function(instance)
-					return instance:IsA("TextLabel") and (instance.Text == "Cliff" or instance.Text == "Boulder")
-				end)
-				expect(customLabelCount).toBe(0)
-				local scroller = findFirstScrollingFrame(result.container)
-				expect(scroller).never.toBeNil()
-				local swatches = getAllGridSwatchTextButtonsUnder(scroller :: Instance)
-				expect(countDistinctUIStrokeBorderColors(swatches)).toBe(1)
-			end)
+			expect(onClick.mock.calls[1][1]).toBe(firstItem)
 		end)
 
-		describe("when MaterialGridUseItemIds is enabled", function()
-			local previousUseItemIds: boolean
+		it("should preserve serialized identity for raw material items", function()
+			local result = render(createTestElement({
+				Items = { Enum.Material.Rock, Enum.Material.Sand },
+				SelectedItemId = getSerializedMaterialIdentifier(Enum.Material.Sand),
+				Size = UDim2.new(0, 400, 0, 200),
+			}))
+			waitForGuiLayout(result.container)
 
-			beforeEach(function()
-				previousUseItemIds = game:SetFastFlagForTesting("MaterialGridUseItemIds", true)
+			local scroller = findFirstScrollingFrame(result.container)
+			expect(scroller).never.toBeNil()
+			local swatches = getAllGridSwatchTextButtonsUnder(scroller :: Instance)
+			expect(#swatches).toBe(2)
+			expect(countDistinctUIStrokeBorderColors(swatches)).toBe(2)
+		end)
+
+		it("should preserve serialized identity for items with explicit IDs", function()
+			local result = render(createTestElement({
+				Items = {
+					{ Id = 4, Material = Enum.Material.Rock },
+					{ Id = 17, Material = Enum.Material.Sand },
+				},
+				SelectedItemId = getSerializedMaterialIdentifier(Enum.Material.Sand),
+				Size = UDim2.new(0, 400, 0, 200),
+			}))
+			waitForGuiLayout(result.container)
+
+			local scroller = findFirstScrollingFrame(result.container)
+			expect(scroller).never.toBeNil()
+			local swatches = getAllGridSwatchTextButtonsUnder(scroller :: Instance)
+			expect(#swatches).toBe(2)
+			expect(countDistinctUIStrokeBorderColors(swatches)).toBe(2)
+		end)
+
+		it("should derive a label when explicit text is absent", function()
+			local result = render(createTestElement({
+				Items = {
+					{ Id = 4, Material = Enum.Material.Rock },
+				},
+				ShowGridLabels = true,
+				Size = UDim2.new(0, 400, 0, 200),
+			}))
+
+			-- Lest resolves SourceStrings to the label "Rock". FeatureTest's translator
+			-- does not, so the label text is not the material name there.
+			local plugin = script:FindFirstAncestorWhichIsA("Plugin")
+			local isFTF = plugin ~= nil and pcall(function()
+				return plugin:GetPluginComponent("FTFUtil")
 			end)
-
-			afterEach(function()
-				game:SetFastFlagForTesting("MaterialGridUseItemIds", previousUseItemIds)
-			end)
-
-			it("should use explicit item IDs and labels for duplicate materials", function()
-				local firstItem = { Id = 4, Material = Enum.Material.Rock, Text = "Cliff" }
-				local onClick = jest.fn()
-				local result = render(createTestElement({
-					Items = {
-						firstItem,
-						{ Id = 17, Material = Enum.Material.Rock, Text = "Boulder" },
-					},
-					OnClick = onClick,
-					SelectedItemId = 17,
-					ShowGridLabels = true,
-					Size = UDim2.new(0, 400, 0, 200),
-				}))
-				waitForGuiLayout(result.container)
-
-				expect(result.getByText("Cliff")).toBeDefined()
-				expect(result.getByText("Boulder")).toBeDefined()
-				local scroller = findFirstScrollingFrame(result.container)
-				expect(scroller).never.toBeNil()
-				local swatches = getAllGridSwatchTextButtonsUnder(scroller :: Instance)
-				expect(#swatches).toBe(2)
-				expect(countDistinctUIStrokeBorderColors(swatches)).toBe(2)
-
-				ReactRoblox.act(function()
-					dispatchRobloxEvent(swatches[1], "clickWithoutValidation", nil :: any)
-				end)
-				expect(onClick.mock.calls[1][1]).toBe(firstItem)
-			end)
-
-			it("should preserve serialized identity for raw material items", function()
-				local result = render(createTestElement({
-					Items = { Enum.Material.Rock, Enum.Material.Sand },
-					SelectedItemId = getSerializedMaterialIdentifier(Enum.Material.Sand),
-					Size = UDim2.new(0, 400, 0, 200),
-				}))
-				waitForGuiLayout(result.container)
-
-				local scroller = findFirstScrollingFrame(result.container)
-				expect(scroller).never.toBeNil()
-				local swatches = getAllGridSwatchTextButtonsUnder(scroller :: Instance)
-				expect(#swatches).toBe(2)
-				expect(countDistinctUIStrokeBorderColors(swatches)).toBe(2)
-			end)
-
-			it("should preserve serialized identity for items with explicit IDs", function()
-				local result = render(createTestElement({
-					Items = {
-						{ Id = 4, Material = Enum.Material.Rock },
-						{ Id = 17, Material = Enum.Material.Sand },
-					},
-					SelectedItemId = getSerializedMaterialIdentifier(Enum.Material.Sand),
-					Size = UDim2.new(0, 400, 0, 200),
-				}))
-				waitForGuiLayout(result.container)
-
-				local scroller = findFirstScrollingFrame(result.container)
-				expect(scroller).never.toBeNil()
-				local swatches = getAllGridSwatchTextButtonsUnder(scroller :: Instance)
-				expect(#swatches).toBe(2)
-				expect(countDistinctUIStrokeBorderColors(swatches)).toBe(2)
-			end)
-
-			it("should derive a label when explicit text is absent", function()
-				local result = render(createTestElement({
-					Items = {
-						{ Id = 4, Material = Enum.Material.Rock },
-					},
-					ShowGridLabels = true,
-					Size = UDim2.new(0, 400, 0, 200),
-				}))
-
-				-- Lest resolves SourceStrings to the label "Rock". FeatureTest's translator
-				-- does not, so the label text is not the material name there.
-				local plugin = script:FindFirstAncestorWhichIsA("Plugin")
-				local isFTF = plugin ~= nil
-					and pcall(function()
-						return plugin:GetPluginComponent("FTFUtil")
-					end)
-				if isFTF then
-					return
-				end
-				expect(result.getByText("Rock")).toBeDefined()
-			end)
+			if isFTF then
+				return
+			end
+			expect(result.getByText("Rock")).toBeDefined()
 		end)
 
 		describe("when MaterialGridShowTooltipWithLabel is on", function()
@@ -491,47 +444,32 @@ describe("MaterialGrid", function()
 		end)
 
 		it("should render when ItemsDisabled is true in grid view", function()
-			-- --flags-off uses deprecated items, which do not apply ItemsDisabled to Active/Selectable; force the new item path.
-			local previousUx = game:SetFastFlagForTesting("MaterialGridTerrainEditorItemUx", true)
-			local ok, err = pcall(function()
-				local result = render(createTestElement({
-					Items = THREE_LABELED_MATERIALS,
-					ItemsDisabled = true,
-					Size = UDim2.new(0, 400, 0, 200),
-				}))
-				waitForGuiLayout(result.container)
-				expectRenderedContent(result.container)
-				local scroller = findFirstScrollingFrame(result.container)
-				expect(scroller).never.toBeNil()
-				for _, sw in getAllGridSwatchTextButtonsUnder(scroller :: Instance) do
-					expect(sw.Active).toBe(false)
-					expect(sw.Selectable).toBe(false)
-				end
-			end)
-			game:SetFastFlagForTesting("MaterialGridTerrainEditorItemUx", previousUx)
-			if not ok then
-				error(err)
+			local result = render(createTestElement({
+				Items = THREE_LABELED_MATERIALS,
+				ItemsDisabled = true,
+				Size = UDim2.new(0, 400, 0, 200),
+			}))
+			waitForGuiLayout(result.container)
+			expectRenderedContent(result.container)
+			local scroller = findFirstScrollingFrame(result.container)
+			expect(scroller).never.toBeNil()
+			for _, sw in getAllGridSwatchTextButtonsUnder(scroller :: Instance) do
+				expect(sw.Active).toBe(false)
+				expect(sw.Selectable).toBe(false)
 			end
 		end)
 
 		it("should render when ItemsDisabled is true in list view", function()
-			local previousUx = game:SetFastFlagForTesting("MaterialGridTerrainEditorItemUx", true)
-			local ok, err = pcall(function()
-				local result = render(createTestElement({
-					Items = THREE_LABELED_MATERIALS,
-					ItemsDisabled = true,
-					Size = UDim2.new(0, 200, 0, 300),
-					ViewType = ViewType.List,
-				}))
-				waitForGuiLayout(result.container)
-				expectRenderedContent(result.container)
-				local row = findListRowGuiButton(result.container)
-				expect(row).never.toBeNil()
-			end)
-			game:SetFastFlagForTesting("MaterialGridTerrainEditorItemUx", previousUx)
-			if not ok then
-				error(err)
-			end
+			local result = render(createTestElement({
+				Items = THREE_LABELED_MATERIALS,
+				ItemsDisabled = true,
+				Size = UDim2.new(0, 200, 0, 300),
+				ViewType = ViewType.List,
+			}))
+			waitForGuiLayout(result.container)
+			expectRenderedContent(result.container)
+			local row = findListRowGuiButton(result.container)
+			expect(row).never.toBeNil()
 		end)
 
 		it("should render when SelectedItem is set", function()
@@ -565,7 +503,7 @@ describe("MaterialGrid", function()
 			expect(countDistinctUIStrokeBorderColors(swatches)).toBeGreaterThanOrEqual(1)
 		end)
 
-		it("should render an item with OverrideColor and OverrideTransparency (deprecated item path)", function()
+		it("should render an item with OverrideColor and OverrideTransparency", function()
 			local result = render(createTestElement({
 				Items = {
 					{
@@ -640,18 +578,7 @@ describe("MaterialGrid", function()
 			}))
 		end)
 
-		-- --flags-off uses deprecated items which do not block clicks when ItemsDisabled; new path does.
-		describe("ItemsDisabled and OnClick (MaterialGridTerrainEditorItemUx on)", function()
-			local previousTerrainUxFlag: boolean
-
-			beforeEach(function()
-				previousTerrainUxFlag = game:SetFastFlagForTesting("MaterialGridTerrainEditorItemUx", true)
-			end)
-
-			afterEach(function()
-				game:SetFastFlagForTesting("MaterialGridTerrainEditorItemUx", previousTerrainUxFlag)
-			end)
-
+		describe("ItemsDisabled and OnClick", function()
 			it("should not call OnClick when ItemsDisabled is true", function()
 				local onClick = jest.fn()
 				local result = render(createTestElement({

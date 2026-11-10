@@ -138,11 +138,6 @@ function Table:init()
 		end
 	end
 	self:_flushRenderRow()
-	self.getDefaultRowKey = if FFlagDevFrameworkFixTableMissingKeyErrors
-		then nil
-		else function(row)
-			return "Row " .. (self.rowToIndex[row] or tostring(row))
-		end
 	self.onSizeChange = function(rbx)
 		local props = self.props
 		local style = if supportsStyleSheets then props.Style or {} else props.Stylizer
@@ -276,11 +271,18 @@ function Table:_flushRenderRow()
 		if props.GetRowHeight then
 			adjustedRowHeight = props.GetRowHeight(row, rowHeight)
 		end
+		local rowId = if FFlagDevFrameworkFixTableMissingKeyErrors
+				and isRoact17
+				and props.GetRowId
+			then props.GetRowId(row)
+			else nil
 		return {
-			key = if FFlagDevFrameworkFixTableMissingKeyErrors
-					and isRoact17
-					and self.props.GetRowId
-				then self.props.GetRowId(row)
+			-- Grid already supplies keys for scrolling rows, unless the caller supplies a stable ID.
+			key = if FFlagDevFrameworkFixTableMissingKeyErrors and isRoact17
+				then if rowId
+					then tostring(rowId)
+					elseif not (props.Scroll or self:useVariableWidth()) then tostring(index)
+					else nil
 				else nil,
 			CellProps = props.CellProps,
 			CellComponent = props.CellComponent,

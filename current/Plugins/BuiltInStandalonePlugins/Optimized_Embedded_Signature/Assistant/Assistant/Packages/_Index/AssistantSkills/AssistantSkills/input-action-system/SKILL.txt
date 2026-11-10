@@ -1,6 +1,6 @@
 ---
 name: input-action-system
-description: THE skill for ANY input or controls work on Roblox — keyboard, mouse, gamepad, or touch. This is the Input Action System (InputAction, InputBinding, InputContext), the default and recommended way to handle input. Invoke this skill BEFORE writing code whenever the user mentions input, controls, a control scheme, keybinds/keybindings, "modern input", "new input system", "modern input APIs", movement, camera controls, or wants to build, set up, wire up, add, change, rebind, modernize, migrate, or convert input handling — from scratch OR from legacy ContextActionService (CAS) / UserInputService (UIS) code. If a request touches input or controls at all, use this skill first.
+description: The skill for any input or controls work on Roblox, whether keyboard, mouse, gamepad, or touch. This is the Input Action System, or IAS (InputAction, InputBinding, InputContext), the default and recommended way to handle input. Invoke this skill BEFORE writing code whenever the user mentions input, controls, a control scheme, keybinds/keybindings, "modern input", "new input system", "modern input APIs", movement, camera controls, or wants to build, set up, wire up, add, change, rebind, modernize, migrate, or convert input handling — from scratch OR from legacy ContextActionService (CAS) / UserInputService (UIS) code. Also use it when the user asks what IAS is, how it works, or how it compares to CAS or UIS. If a request touches input or controls at all, use this skill first.
 ---
 
 # Input Action System Skill

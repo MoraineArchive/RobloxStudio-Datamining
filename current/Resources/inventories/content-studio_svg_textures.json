@@ -16146,6 +16146,24 @@
     "sha256": "11e3fad1204b335441158ded4142bef037a64aab5820e2f487c95cf8e8660905"
   },
   {
+    "bytes": 594,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Large/ParticleEmitter2D.png",
+    "sha256": "4b4409c8108a5e878043ba0ec6f0e31ad538d0b0062b70d3975e1969840bdb0c"
+  },
+  {
+    "bytes": 878,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Large/ParticleEmitter2D@2x.png",
+    "sha256": "284d5217966e90e4fb5a75235ad7fc0ff01bce0137545d97063fc296f8f715bf"
+  },
+  {
+    "bytes": 1176,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Large/ParticleEmitter2D@3x.png",
+    "sha256": "11e3fad1204b335441158ded4142bef037a64aab5820e2f487c95cf8e8660905"
+  },
+  {
     "bytes": 728,
     "extension": "png",
     "path": "Shared/InsertableObjects/Dark/Large/PlaneConstraint.png",
@@ -16846,6 +16864,24 @@
     "extension": "png",
     "path": "Shared/InsertableObjects/Dark/Standard/AnimationFromVideoCreatorService@3x.png",
     "sha256": "d62a19d3e35752862e7537fa0d65098ab40b3201ef132455c37bfba67f70a546"
+  },
+  {
+    "bytes": 513,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/AnimationPlayer.png",
+    "sha256": "b03d4174ba8d11c1eb6c670cb26f04a8bdd5fb1f0496c5a3e50e10f36311aba0"
+  },
+  {
+    "bytes": 808,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/AnimationPlayer@2x.png",
+    "sha256": "e3a01410de3fdd8a449186dd311709a2fbcbafbe4476ce8224540e9d5625120a"
+  },
+  {
+    "bytes": 1144,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/AnimationPlayer@3x.png",
+    "sha256": "899780fe6365f1d8d92f15a100a48a23b03bb06c961100f2970b56f18fe3ec11"
   },
   {
     "bytes": 557,
@@ -19854,6 +19890,24 @@
     "sha256": "641ab888c9b3896f3a1d2d992bf9c932cf87f3a850060e25c02c5016c4cbef22"
   },
   {
+    "bytes": 425,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/ParticleEmitter2D.png",
+    "sha256": "cbd2be349968a4d344d3aa64166744f27f60318d992cdc3690a12982e4cf04f0"
+  },
+  {
+    "bytes": 594,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/ParticleEmitter2D@2x.png",
+    "sha256": "4b4409c8108a5e878043ba0ec6f0e31ad538d0b0062b70d3975e1969840bdb0c"
+  },
+  {
+    "bytes": 752,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/ParticleEmitter2D@3x.png",
+    "sha256": "641ab888c9b3896f3a1d2d992bf9c932cf87f3a850060e25c02c5016c4cbef22"
+  },
+  {
     "bytes": 536,
     "extension": "png",
     "path": "Shared/InsertableObjects/Dark/Standard/Path2D.png",
@@ -21708,6 +21762,24 @@
     "sha256": "af8fc0fefb340350ff8aae954b3609510c6e2113d9942d66fb28876bdb5f75a2"
   },
   {
+    "bytes": 455,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/UIBlur.png",
+    "sha256": "f002e3b6267157be7ffebe9ff888b9f259e5ad2a5772a21b9b7abd2f7e700fc3"
+  },
+  {
+    "bytes": 718,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/UIBlur@2x.png",
+    "sha256": "35a768756f12056a8173321c7962231b8569013c51278a0576aa192dfa045ab3"
+  },
+  {
+    "bytes": 951,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Dark/Standard/UIBlur@3x.png",
+    "sha256": "d687f61f042c2a77018142f3ede6ce67e927d738a85b9c64317978168dd67335"
+  },
+  {
     "bytes": 395,
     "extension": "png",
     "path": "Shared/InsertableObjects/Dark/Standard/UICorner.png",
@@ -22914,6 +22986,24 @@
     "sha256": "5d1c482ae6b7c9d95a02c51ea6f7ca558bf737b42cb836970e8a4a64ea5684a4"
   },
   {
+    "bytes": 607,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Large/ParticleEmitter2D.png",
+    "sha256": "fd3fed406d61e0047d38b69c3333fe1e4f43d28f996d104dee28a8cdec7717f0"
+  },
+  {
+    "bytes": 903,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Large/ParticleEmitter2D@2x.png",
+    "sha256": "6dafe67dcbb7eda2861cd618d7646a4d0f9d84a2db2771739e2715ed392db18b"
+  },
+  {
+    "bytes": 1200,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Large/ParticleEmitter2D@3x.png",
+    "sha256": "5d1c482ae6b7c9d95a02c51ea6f7ca558bf737b42cb836970e8a4a64ea5684a4"
+  },
+  {
     "bytes": 718,
     "extension": "png",
     "path": "Shared/InsertableObjects/Light/Large/PlaneConstraint.png",
@@ -23614,6 +23704,24 @@
     "extension": "png",
     "path": "Shared/InsertableObjects/Light/Standard/AnimationFromVideoCreatorService@3x.png",
     "sha256": "d186db8fe56d6f0e65c9434c39a09051cb265c004159d74b632d049b4e865f1a"
+  },
+  {
+    "bytes": 545,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/AnimationPlayer.png",
+    "sha256": "88272b32235e770c4958e6bc229783b8336a627ed4e82579b995392817008228"
+  },
+  {
+    "bytes": 842,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/AnimationPlayer@2x.png",
+    "sha256": "c3e4b7ef04c3b0d7052a03c99c3ab6415c0394603426854da7743560b654f05a"
+  },
+  {
+    "bytes": 1219,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/AnimationPlayer@3x.png",
+    "sha256": "66ec2d37cc022e370aa7ec24b2cf9f90069a65e6bf06107e6cf144cebc25afab"
   },
   {
     "bytes": 575,
@@ -26622,6 +26730,24 @@
     "sha256": "5b950d6868ebf2da9f81cd7c3c1c1c714a34566717e95b4636a00f0ea22d59de"
   },
   {
+    "bytes": 423,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/ParticleEmitter2D.png",
+    "sha256": "12fcccbb7ac2f569bc7fb49dda705536aee0864bd62496e60eb6208e9012f699"
+  },
+  {
+    "bytes": 607,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/ParticleEmitter2D@2x.png",
+    "sha256": "fd3fed406d61e0047d38b69c3333fe1e4f43d28f996d104dee28a8cdec7717f0"
+  },
+  {
+    "bytes": 776,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/ParticleEmitter2D@3x.png",
+    "sha256": "5b950d6868ebf2da9f81cd7c3c1c1c714a34566717e95b4636a00f0ea22d59de"
+  },
+  {
     "bytes": 541,
     "extension": "png",
     "path": "Shared/InsertableObjects/Light/Standard/Path2D.png",
@@ -28474,6 +28600,24 @@
     "extension": "png",
     "path": "Shared/InsertableObjects/Light/Standard/UIAspectRatioConstraint@3x.png",
     "sha256": "6dba37ce78e9c9fb69ca94affda102a6d9e50e42c9465edf2452baa5f9e191b1"
+  },
+  {
+    "bytes": 470,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/UIBlur.png",
+    "sha256": "b6f2de6ac82d2a53a7e31d39765e3058056d49767c593f4b171f2c3d0b800b49"
+  },
+  {
+    "bytes": 752,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/UIBlur@2x.png",
+    "sha256": "b47d0d8a8705dfb988353ec31635ca99a5851739461f3b8643499ad188193c6d"
+  },
+  {
+    "bytes": 999,
+    "extension": "png",
+    "path": "Shared/InsertableObjects/Light/Standard/UIBlur@3x.png",
+    "sha256": "1f6f07121125bc80c6c10d1f6d06288c3917c6f470ae4f2b0bab504583399b08"
   },
   {
     "bytes": 396,
@@ -33696,6 +33840,24 @@
     "sha256": "40f5f072cc64d5ecadd7c2583cd0abcb83b926657629f57a4bdcfa57f1737a23"
   },
   {
+    "bytes": 733,
+    "extension": "png",
+    "path": "Shared/Ribbon/Dark/Medium/RibbonUIBlur.png",
+    "sha256": "05c2e586a6143cf2abedbadf084bb5ee0bbcfcd2bc6808b24eb6ef938f8b27d3"
+  },
+  {
+    "bytes": 1088,
+    "extension": "png",
+    "path": "Shared/Ribbon/Dark/Medium/RibbonUIBlur@2x.png",
+    "sha256": "3a5511695f7561fd8aba4c29d0be4bc358739005955fad7642ed79d6caab10b1"
+  },
+  {
+    "bytes": 1490,
+    "extension": "png",
+    "path": "Shared/Ribbon/Dark/Medium/RibbonUIBlur@3x.png",
+    "sha256": "f556fb49942e54b6d6e3badff01937de195e3a09a0d7f21e79f9dfbeca338415"
+  },
+  {
     "bytes": 525,
     "extension": "png",
     "path": "Shared/Ribbon/Dark/Medium/RibbonUICorner.png",
@@ -38032,6 +38194,24 @@
     "extension": "png",
     "path": "Shared/Ribbon/Light/Medium/RibbonUIAspectRatioConstraint@3x.png",
     "sha256": "4e6590f627cf0ee1ff6b4c849d550cfece09e2a8da530bd3b7793a5538db3f4c"
+  },
+  {
+    "bytes": 760,
+    "extension": "png",
+    "path": "Shared/Ribbon/Light/Medium/RibbonUIBlur.png",
+    "sha256": "262e3bf80c6199da448346758e143c5bea68a26b4bd7ed08d577be188ad5b159"
+  },
+  {
+    "bytes": 1140,
+    "extension": "png",
+    "path": "Shared/Ribbon/Light/Medium/RibbonUIBlur@2x.png",
+    "sha256": "a1f8439c9dbc366e78d7e7300ed4153d5791879c97a3c32dc2f36cffb29de6a9"
+  },
+  {
+    "bytes": 1574,
+    "extension": "png",
+    "path": "Shared/Ribbon/Light/Medium/RibbonUIBlur@3x.png",
+    "sha256": "b8dcbc9c9de7c11eab6fc461fe33ed35845709e6a6f0b3c93ad9d758ddf906e2"
   },
   {
     "bytes": 546,

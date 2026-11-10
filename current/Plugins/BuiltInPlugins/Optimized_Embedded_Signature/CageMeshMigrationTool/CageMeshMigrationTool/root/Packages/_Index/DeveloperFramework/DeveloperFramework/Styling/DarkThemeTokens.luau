@@ -1,28 +1,19 @@
 local Framework = script.Parent.Parent
+local blendColors = require(Framework.Parent.Foundation).Utility.blendColors
 
 local FoundationDark = require(Framework.Style.Themes.FoundationDark)
 local foundationDarkTheme = FoundationDark(1)
 
-local FFlagDevFrameworkFixTextContrast = game:DefineFastFlag("DevFrameworkFixTextContrast", false)
-
-local getFFlagDevFrameworkFixInputBackground = require(Framework.SharedFlags.getFFlagDevFrameworkFixInputBackground)
-
 -- Old UI doesn't support transparency on backgrounds, so derive approximate colors
 --  based on blending the tokens color/transparency with the Surface_100 color.
-local MUTED_ACTION = foundationDarkTheme.Color.ActionSoftEmphasis.Background.Color3:Lerp(
-	foundationDarkTheme.DarkMode.Surface.Surface_100.Color3,
-	foundationDarkTheme.Color.ActionSoftEmphasis.Background.Transparency
-)
-local SHIFT_200 = foundationDarkTheme.Color.Shift.Shift_200.Color3:Lerp(
-	foundationDarkTheme.DarkMode.Surface.Surface_100.Color3,
-	foundationDarkTheme.Color.Shift.Shift_200.Transparency
-)
-local SHIFT_300 = if getFFlagDevFrameworkFixInputBackground()
-	then foundationDarkTheme.Color.Shift.Shift_300.Color3:Lerp(
-		foundationDarkTheme.DarkMode.Surface.Surface_100.Color3,
-		foundationDarkTheme.Color.Shift.Shift_300.Transparency
-	)
-	else nil
+local MUTED_ACTION = blendColors(
+	foundationDarkTheme.DarkMode.Surface.Surface_100,
+	foundationDarkTheme.Color.ActionSoftEmphasis.Background
+).Color3
+local SHIFT_200 =
+	blendColors(foundationDarkTheme.DarkMode.Surface.Surface_100, foundationDarkTheme.Color.Shift.Shift_200).Color3
+local SHIFT_300 =
+	blendColors(foundationDarkTheme.DarkMode.Surface.Surface_100, foundationDarkTheme.Color.Shift.Shift_300).Color3
 
 local tokens = {
 	BackgroundDefault = "$Gray120",
@@ -32,7 +23,7 @@ local tokens = {
 	ForegroundContrast = "$Gray80",
 	TextPrimary = "$Gray40",
 	TextSecondary = "$Gray60",
-	TextContrast = if FFlagDevFrameworkFixTextContrast then "$Black" else "$White",
+	TextContrast = "$Black",
 	TextLink = "$Blue50",
 	TextLinkHover = "$Blue30",
 	TextDisabled = "$Gray70",
@@ -42,10 +33,10 @@ local tokens = {
 	ErrorMain = "$Red50",
 	SuccessMain = "$Green60",
 	WarningMain = "$Yellow65",
-	ActionHover = if getFFlagDevFrameworkFixInputBackground() then SHIFT_200 else "$Gray70",
+	ActionHover = SHIFT_200,
 	ActionEnabled = "$Gray40",
 	ActionSelected = MUTED_ACTION,
-	ActionActivated = if getFFlagDevFrameworkFixInputBackground() then SHIFT_300 else "$Gray110",
+	ActionActivated = SHIFT_300,
 	ActionFocusBorder = "$Blue70",
 	PrimaryMain = "$Blue70",
 	PrimaryHoverBackground = "$Blue50",

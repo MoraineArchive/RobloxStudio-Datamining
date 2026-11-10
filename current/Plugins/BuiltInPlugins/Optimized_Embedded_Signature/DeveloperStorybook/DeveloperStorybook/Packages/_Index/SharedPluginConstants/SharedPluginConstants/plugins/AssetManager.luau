@@ -60,6 +60,9 @@ export type OpenFromExternalTriggerConfig = {
 	ScopeId: number?,
 	-- How to lay out the opened inventory. Keeps Asset Manager's current layout if omitted.
 	ViewType: ViewType?,
+	-- Items to select and scroll to once the opened inventory loads. Only items shown in the opened inventory, with
+	-- the requested filters applied, can be selected; Asset Manager tells the user if any couldn't be found.
+	Selection: { { Id: number, Type: CreatorInventoryItemType } }?,
 }
 
 local ASSET_MANAGER = {

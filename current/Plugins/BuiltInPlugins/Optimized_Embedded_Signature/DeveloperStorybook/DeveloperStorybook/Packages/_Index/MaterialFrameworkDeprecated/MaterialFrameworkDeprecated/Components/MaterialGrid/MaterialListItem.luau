@@ -1,12 +1,6 @@
 --[[
 	Item component used in MaterialGrid when ViewType equals List.
 
-	MaterialGrid chooses between this module and MaterialListItemDeprecated via
-	getFFlagMaterialGridTerrainEditorItemUx in MaterialGrid.init (RowComponent). This
-	file is only loaded for the new UX path. Pass MaterialPreviewGeometryType through for
-	template selection; FOV / corner-on camera tuning is gated inside MaterialPreview via
-	the same flag.
-
 	Required Props:
 		callback OnClick: Called when the grid item is clicked.
 		UDim2 Position: The position of the component. Set by MaterialGrid.

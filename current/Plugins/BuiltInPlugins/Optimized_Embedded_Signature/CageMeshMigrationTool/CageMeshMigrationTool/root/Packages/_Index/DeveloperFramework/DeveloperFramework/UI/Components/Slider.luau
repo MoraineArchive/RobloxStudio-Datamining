@@ -25,8 +25,6 @@
 
 local Framework = script:FindFirstAncestor("UI").Parent
 local Roact = require(Framework.Parent.Roact)
-local Util = require(Framework.Util) -- Remove with FFlagDevFrameworkSliderInputValidation
-local Immutable = Util.Immutable
 local Typecheck = require(Framework.Util.Typecheck)
 local numberToString = require(Framework.Util.numberToString)
 
@@ -37,61 +35,41 @@ local Pane = require(UI.Components.Pane)
 local RangeSlider = require(UI.Components.RangeSlider)
 local TextInput = require(UI.Components.TextInput)
 
-local getFFlagDevFrameworkSliderInputValidation =
-	require(Framework.SharedFlags.getFFlagDevFrameworkSliderInputValidation)
-
 local Slider = Roact.PureComponent:extend("Slider")
 Typecheck.wrap(Slider, script)
 
-if getFFlagDevFrameworkSliderInputValidation() then
-	Slider.defaultProps = {
-		InputPrecision = 3,
-	}
+Slider.defaultProps = {
+	InputPrecision = 3,
+}
 
-	function Slider:init()
-		self.textInputRef = Roact.createRef()
+function Slider:init()
+	self.textInputRef = Roact.createRef()
 
-		-- Always have a last valid value.
-		self.lastValidValue = self.props.Value
-	end
+	-- Always have a last valid value.
+	self.lastValidValue = self.props.Value
 end
 
 function Slider:render()
 	local props = self.props
 
-	local rangedSliderProps
-	if getFFlagDevFrameworkSliderInputValidation() then
-		rangedSliderProps = Dash.join(
-			Dash.omit(props, {
-				"OnValueChanged",
-				"InputPrecision",
-				"ShowInput",
-				"Value",
-			}),
-			{
-				HideLowerKnob = true,
-				LowerRangeValue = props.Min,
-				UpperRangeValue = props.Value,
-				OnValuesChanged = function(_minValue, maxValue)
-					if self.props.OnValueChanged then
-						self.props.OnValueChanged(maxValue)
-					end
-				end,
-			}
-		)
-	else
-		rangedSliderProps =
-			Immutable.JoinDictionaries(Immutable.RemoveFromDictionary(props, "ShowInput", "Value", "OnValueChanged"), {
-				HideLowerKnob = true,
-				LowerRangeValue = props.Min,
-				UpperRangeValue = props.Value,
-				OnValuesChanged = function(_minValue, maxValue)
-					if self.props.OnValueChanged then
-						self.props.OnValueChanged(maxValue)
-					end
-				end,
-			})
-	end
+	local rangedSliderProps = Dash.join(
+		Dash.omit(props, {
+			"OnValueChanged",
+			"InputPrecision",
+			"ShowInput",
+			"Value",
+		}),
+		{
+			HideLowerKnob = true,
+			LowerRangeValue = props.Min,
+			UpperRangeValue = props.Value,
+			OnValuesChanged = function(_minValue, maxValue)
+				if self.props.OnValueChanged then
+					self.props.OnValueChanged(maxValue)
+				end
+			end,
+		}
+	)
 
 	if props.ShowInput then
 		rangedSliderProps.Size = UDim2.new(1, -60, 1, 0)
@@ -99,13 +77,7 @@ function Slider:render()
 
 	local slider = Roact.createElement(RangeSlider, rangedSliderProps)
 	if props.ShowInput then
-		local text = numberToString(
-			props.Value,
-			if getFFlagDevFrameworkSliderInputValidation() then props.InputPrecision else props.InputPrecision or 2
-		)
-		if getFFlagDevFrameworkSliderInputValidation() then
-			self.lastValidInput = props.Value
-		end
+		local text = numberToString(props.Value, props.InputPrecision)
 
 		return Roact.createElement(Pane, {
 			HorizontalAlignment = Enum.HorizontalAlignment.Left,
@@ -137,28 +109,24 @@ function Slider:render()
 							props.OnInputEnded()
 						end
 					end
-					if getFFlagDevFrameworkSliderInputValidation() then
-						local textBox = self.textInputRef.current
-						if textBox then
-							textBox.Text = numberToString(num or self.lastValidValue, props.InputPrecision)
-						end
+					local textBox = self.textInputRef.current
+					if textBox then
+						textBox.Text = numberToString(num or self.lastValidValue, props.InputPrecision)
 					end
 				end,
-				OnFormatText = if getFFlagDevFrameworkSliderInputValidation()
-					then function(text: string)
-						local match = string.match(text, "^%s*[-]?[0-9]*[.]?[0-9]*%s*$")
-						if match then
-							if match ~= "" then
-								local parsedNumber: number? = tonumber(match)
-								if parsedNumber ~= nil then
-									self.lastValidValue = parsedNumber
-								end
+				OnFormatText = function(text: string)
+					local match = string.match(text, "^%s*[-]?[0-9]*[.]?[0-9]*%s*$")
+					if match then
+						if match ~= "" then
+							local parsedNumber: number? = tonumber(match)
+							if parsedNumber ~= nil then
+								self.lastValidValue = parsedNumber
 							end
-							return match
 						end
-						return numberToString(self.lastValidValue, props.InputPrecision)
+						return match
 					end
-					else nil,
+					return numberToString(self.lastValidValue, props.InputPrecision)
+				end,
 				StyleModifier = props.StyleModifier,
 			}),
 			Slider = slider,

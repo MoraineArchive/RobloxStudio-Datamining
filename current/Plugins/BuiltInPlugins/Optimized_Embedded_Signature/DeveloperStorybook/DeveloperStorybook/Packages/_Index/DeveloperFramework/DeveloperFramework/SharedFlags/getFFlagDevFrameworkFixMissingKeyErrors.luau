@@ -1,5 +1,5 @@
-game:DefineFastFlag("DevFrameworkFixMissingKeyErrors2", false)
+game:DefineFastFlag("DevFrameworkFixMissingKeyErrors3", false)
 
 return function()
-	return game:GetFastFlag("DevFrameworkFixMissingKeyErrors2")
+	return game:GetFastFlag("DevFrameworkFixMissingKeyErrors3")
 end
