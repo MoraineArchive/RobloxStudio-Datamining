@@ -1,0 +1,62 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-67c8b1dedbb74fed",
+    "manifestFiles": 19397,
+    "packages": 34,
+    "version": "0.746.0.7461269"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "d2876b469e8c0ccacb284ff93f30bd9b2435599821cf4ba359f64b5d112e6755",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "8939111f155294586766839c0d963a028d1e82a6b5d1e428c79ddf23dc180ad0",
+      "semantic": {
+        "added": [
+          "FFlagAppChatGroupedVariantNeighbourIds",
+          "FFlagAppChatMessageModelOnDemand",
+          "FFlagAppChatParseMessageTimestampsOnce",
+          "FFlagAudioSpeechToTextPlatformStreamingEnableVolumeCheck"
+        ],
+        "changed": [
+          {
+            "after": "55c831ebc702231c23f1c4fb2c5aefbcb7488305",
+            "before": "dcf27317fcb58442bc57442e6f4bebd9b3b897a1",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-10T04:02:43.662Z",
+            "before": "2026-11-10T03:02:26.236Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "55c831ebc702231c23f1c4fb2c5aefbcb7488305",
+            "before": "dcf27317fcb58442bc57442e6f4bebd9b3b897a1",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-10T04:02:43.662Z",
+            "before": "2026-11-10T03:02:26.236Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagAppChatGroupedVariantNeighbourIds_Staged",
+          "FFlagAppChatMessageModelOnDemand_Staged",
+          "FFlagAppChatParseMessageTimestampsOnce_Staged",
+          "FFlagAudioSpeechToTextPlatformStreamingEnableVolumeCheck_Staged"
+        ],
+        "unchanged": 27015
+      }
+    }
+  },
+  "schemaVersion": 1
+}
