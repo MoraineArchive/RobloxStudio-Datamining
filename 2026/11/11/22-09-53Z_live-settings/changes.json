@@ -1,0 +1,68 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-63eb6055af4e4688",
+    "manifestFiles": 19240,
+    "packages": 34,
+    "version": "0.747.0.7471481"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "1bf2deb79415dae41bec53038f1f6fcae36abecdde3695cb2b46f6b06320e081",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "add4ca8a84ebcebb9346235d02a54865c8690905cebe3edafaa869738a57e888",
+      "semantic": {
+        "added": [
+          "DFFlagDebugAudioInputPlatformStreamingOverrideGainControl_Staged",
+          "DFFlagDebugAudioInputPlatformStreamingOverrideNoiseSuppression_Staged",
+          "DFFlagDebugDictationEchoCancellation_Staged",
+          "DFFlagDebugDictationGainControl_Staged",
+          "DFFlagDebugDictationNoiseSuppression_Staged",
+          "DFFlagDebugDictationOverrideEchoCancellation_Staged",
+          "DFFlagDebugDictationOverrideGainControl_Staged",
+          "DFFlagDebugDictationOverrideNoiseSuppression_Staged",
+          "DFFlagDebugEnableAudioInputProcessingOverrides_Staged",
+          "DFFlagDestroyCharacterClientToo_Staged",
+          "FFlagAudioSpeechToTextCancelRequestErase",
+          "FFlagOptionalNavigation_Staged",
+          "FFlagPackageMetadataSkipUnsupportedCreatorTypes_Staged"
+        ],
+        "changed": [
+          {
+            "after": "085786f04cd62374ba56d1afa19c8241dec1bc52",
+            "before": "8fe33c62b31d3a0b45ac44da66a2f0fdd98affd5",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-11T21:59:41.022Z",
+            "before": "2026-11-11T21:26:26.037Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "085786f04cd62374ba56d1afa19c8241dec1bc52",
+            "before": "8fe33c62b31d3a0b45ac44da66a2f0fdd98affd5",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-11T21:59:41.022Z",
+            "before": "2026-11-11T21:26:26.037Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagAudioSpeechToTextCancelRequestErase_Staged"
+        ],
+        "unchanged": 27205
+      }
+    }
+  },
+  "schemaVersion": 1
+}
