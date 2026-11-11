@@ -1,0 +1,126 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-63eb6055af4e4688",
+    "manifestFiles": 19240,
+    "packages": 34,
+    "version": "0.747.0.7471481"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "d1f967212f6e74306bd44fa0e51b2eefd215bb44ac12e468b5b167e92a90dec2",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "1bf2deb79415dae41bec53038f1f6fcae36abecdde3695cb2b46f6b06320e081",
+      "semantic": {
+        "added": [
+          "DFFlagCLI231811_Staged",
+          "DFFlagDebugAudioInputPlatformStreamingOverrideGainControl",
+          "DFFlagDebugAudioInputPlatformStreamingOverrideNoiseSuppression",
+          "DFFlagDebugDictationEchoCancellation",
+          "DFFlagDebugDictationGainControl",
+          "DFFlagDebugDictationNoiseSuppression",
+          "DFFlagDebugDictationOverrideEchoCancellation",
+          "DFFlagDebugDictationOverrideGainControl",
+          "DFFlagDebugDictationOverrideNoiseSuppression",
+          "DFFlagDebugEnableAudioInputProcessingOverrides",
+          "DFFlagNormalizeDefaultRedirectCacheReadPolicy_Staged",
+          "FFlagEnableFmodRVideoOpusMp4Container",
+          "FFlagEnableFmodRVideoOpusOggContainer",
+          "FFlagEnableFmodRVideoOpusWebmContainer",
+          "FFlagEnableRecreatePinShortcutCoroutine",
+          "FFlagFmodAAudioAlwaysJoinMixer",
+          "FFlagFmodAAudioMixerRingGuard",
+          "FFlagFmodUseOpenSlOnApi28And29",
+          "FFlagPlayerContextualMenuFitToViewport",
+          "FFlagRVideoAudioTimingFixes",
+          "FFlagRVideoCheckContainerSignature",
+          "FFlagSimTurbulenceReuseRandomSamples",
+          "FFlagStudioPropertyCellVersionedAssetId"
+        ],
+        "changed": [
+          {
+            "after": "2182d8a2febca8679964828626311c3c4998c2b3",
+            "before": "085786f04cd62374ba56d1afa19c8241dec1bc52",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-11T23:06:10.337Z",
+            "before": "2026-11-11T21:59:41.022Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "2182d8a2febca8679964828626311c3c4998c2b3",
+            "before": "085786f04cd62374ba56d1afa19c8241dec1bc52",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-11T23:06:10.337Z",
+            "before": "2026-11-11T21:59:41.022Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagDebugAudioInputPlatformStreamingOverrideGainControl_Staged",
+          "DFFlagDebugAudioInputPlatformStreamingOverrideNoiseSuppression_Staged",
+          "DFFlagDebugDictationEchoCancellation_Staged",
+          "DFFlagDebugDictationGainControl_Staged",
+          "DFFlagDebugDictationNoiseSuppression_Staged",
+          "DFFlagDebugDictationOverrideEchoCancellation_Staged",
+          "DFFlagDebugDictationOverrideGainControl_Staged",
+          "DFFlagDebugDictationOverrideNoiseSuppression_Staged",
+          "DFFlagDebugEnableAudioInputProcessingOverrides_Staged",
+          "FFlagEnableFmodRVideoOpusMp4Container_Staged",
+          "FFlagEnableFmodRVideoOpusOggContainer_Staged",
+          "FFlagEnableFmodRVideoOpusWebmContainer_Staged",
+          "FFlagEnableRecreatePinShortcutCoroutine_Staged",
+          "FFlagFmodAAudioAlwaysJoinMixer_Staged",
+          "FFlagFmodAAudioMixerRingGuard_Staged",
+          "FFlagFmodUseOpenSlOnApi28And29_Staged",
+          "FFlagPlayerContextualMenuFitToViewport_Staged",
+          "FFlagRVideoAudioTimingFixes_Staged",
+          "FFlagRVideoCheckContainerSignature_Staged",
+          "FFlagSimTurbulenceReuseRandomSamples_Staged",
+          "FFlagStudioPropertyCellVersionedAssetId_Staged"
+        ],
+        "unchanged": 27197
+      }
+    },
+    "Web": {
+      "current": "7d474d8f6667b9630aa1f23b3ee4eb2e8bcf6888407dcb52d8c07265f6bf6111",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-021.js",
+          "assets.create.roblox.com/page-0/script-026.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-049.js",
+          "assets.create.roblox.com/page-0/script-056.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 80
+      },
+      "previous": "ca0066350dd35653958b1c3712b3d8f90429c1a729dcaea0facc8a2c49c0c051",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
