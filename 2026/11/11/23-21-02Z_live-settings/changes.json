@@ -1,0 +1,64 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-63eb6055af4e4688",
+    "manifestFiles": 19240,
+    "packages": 34,
+    "version": "0.747.0.7471481"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "af2e25c19445d85e9f5719b6c7794fd87a2bce5a424491b559f11a2ec4f8a0eb",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "d1f967212f6e74306bd44fa0e51b2eefd215bb44ac12e468b5b167e92a90dec2",
+      "semantic": {
+        "added": [
+          "FFlagFlyoutEnableSwitchAccountTooltip",
+          "FFlagHiddenFriendsSortHeaderRemoveFlyoutDependency",
+          "FFlagLuauCompileRequireNoInline_Staged",
+          "FFlagUserOrthographicOcculusion_Staged",
+          "FFlagVirtualCursorModularization6",
+          "FIntFlyoutAccountSwitcherTooltipMaxShows"
+        ],
+        "changed": [
+          {
+            "after": "14344e7dc48e448e160c0a98fe9f9ab94877590c",
+            "before": "2182d8a2febca8679964828626311c3c4998c2b3",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-11T23:18:00.414Z",
+            "before": "2026-11-11T23:06:10.337Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "14344e7dc48e448e160c0a98fe9f9ab94877590c",
+            "before": "2182d8a2febca8679964828626311c3c4998c2b3",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-11T23:18:00.414Z",
+            "before": "2026-11-11T23:06:10.337Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagFlyoutEnableSwitchAccountTooltip_Staged",
+          "FFlagHiddenFriendsSortHeaderRemoveFlyoutDependency_Staged",
+          "FFlagVirtualCursorModularization6_Staged",
+          "FIntFlyoutAccountSwitcherTooltipMaxShows_Staged"
+        ],
+        "unchanged": 27216
+      }
+    }
+  },
+  "schemaVersion": 1
+}
