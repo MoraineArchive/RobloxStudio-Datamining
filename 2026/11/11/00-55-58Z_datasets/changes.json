@@ -1,0 +1,145 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-63eb6055af4e4688",
+    "manifestFiles": 19240,
+    "packages": 34,
+    "version": "0.747.0.7471481"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "f303d0390a1006d7dd15ad958e16ae66536dcb5e89ac69d7b2cc81186d367ff8",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "532bba4bde10db14e92fe8aec2c377d9f5c199a48cf5bfa9c59176689d28ffda",
+      "semantic": {
+        "added": [
+          "DFFlagCLI214028HardBlockError",
+          "DFFlagCreatorConfigPerRepositoryJobs",
+          "DFFlagRbxTransportQuicClientPmtudFix",
+          "DFIntTextChatHistoricalMessageReceivedSamplePermyriad",
+          "FFlagAimKnownAssetCacheVersioning",
+          "FFlagAppChatUseSignalsForExternalNavigationRequest",
+          "FFlagBuildTabUsesCanViewBuild",
+          "FFlagCLI214028",
+          "FFlagCLI214028HardBlock",
+          "FFlagCLI214030EnforceData",
+          "FFlagCLI214030EnforceDataHard",
+          "FFlagCLI214030EnforceSettings",
+          "FFlagCLI214030EnforceSettingsHard",
+          "FFlagDisableModelingServiceRegisterLegacyTelemetry",
+          "FFlagEditableMeshQuadsBetaFeature_Staged",
+          "FFlagEdpConsoleUseAbuseReportRevampFlow",
+          "FFlagExpChatMessageHistoryExperiment",
+          "FFlagFixUninitializedStatsForRbxTransport",
+          "FFlagGameJoinCardContent",
+          "FFlagHSRPublishAwaitGeneration",
+          "FFlagLuauBufferCageCrashDetection",
+          "FFlagOffersShopScopedNotification",
+          "FFlagPresenceLocationType",
+          "FFlagSduiApiStoreUpdateInputData",
+          "FFlagSduiContentRowTrailingHoverPointerOnly",
+          "FFlagSimEditableMeshQuads14",
+          "FFlagStudioAssistantPermissionsUnsavedAllowlist",
+          "FFlagStudioPlayStartFocusOnlyWhenFrontmost",
+          "FFlagVoxelGridRejectOutOfTreeCodes_Staged",
+          "FIntmi_option_page_retire_max_size"
+        ],
+        "changed": [
+          {
+            "after": "86c307ac850437671a2d58e19b3938902234a771",
+            "before": "070d430e9708bbb41feb1918d404db713b102ec6",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-11T00:53:09.536Z",
+            "before": "2026-11-10T23:35:32.051Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagFixR15RigLabelParentMatch"
+          },
+          {
+            "after": "86c307ac850437671a2d58e19b3938902234a771",
+            "before": "070d430e9708bbb41feb1918d404db713b102ec6",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-11T00:53:09.536Z",
+            "before": "2026-11-10T23:35:32.051Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagCLI214028HardBlockError_Staged",
+          "DFFlagCreatorConfigPerRepositoryJobs_Staged",
+          "DFFlagRbxTransportQuicClientPmtudFix_Staged",
+          "DFIntTextChatHistoricalMessageReceivedSamplePermyriad_Staged",
+          "FFlagAimKnownAssetCacheVersioning_Staged",
+          "FFlagAppChatUseSignalsForExternalNavigationRequest_Staged",
+          "FFlagBuildTabUsesCanViewBuild_Staged",
+          "FFlagCLI214028HardBlock_UniverseFilter",
+          "FFlagCLI214028_UniverseFilter",
+          "FFlagCLI214030EnforceData_UniverseFilter",
+          "FFlagCLI214030EnforceSettings_UniverseFilter",
+          "FFlagDisableModelingServiceRegisterLegacyTelemetry_Staged",
+          "FFlagEdpConsoleUseAbuseReportRevampFlow_Staged",
+          "FFlagExpChatMessageHistoryExperiment_Staged",
+          "FFlagFixR15RigLabelParentMatch_Staged",
+          "FFlagFixUninitializedStatsForRbxTransport_Staged",
+          "FFlagGameJoinCardContent_Staged",
+          "FFlagHSRPublishAwaitGeneration_Staged",
+          "FFlagLuauBufferCageCrashDetection_Staged",
+          "FFlagOffersShopScopedNotification_Staged",
+          "FFlagPresenceLocationType_Staged",
+          "FFlagSduiApiStoreUpdateInputData_Staged",
+          "FFlagSduiContentRowTrailingHoverPointerOnly_Staged",
+          "FFlagSimEditableMeshQuads14_Staged",
+          "FFlagStudioAssistantPermissionsUnsavedAllowlist_Staged",
+          "FFlagStudioClassIconCustomFolder_Staged",
+          "FFlagStudioPlayStartFocusOnlyWhenFrontmost_Staged",
+          "FFlagTagEditorVersionedUris_Staged",
+          "FIntmi_option_page_retire_max_size_Staged"
+        ],
+        "unchanged": 27113
+      }
+    },
+    "Web": {
+      "current": "3c5b228fe2424562d2d5cecd2386d3f300855f835d5eeb2c1e5a9b032e16889d",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-049.js",
+          "assets.create.roblox.com/page-0/script-064.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.create.roblox.com/page-0/script-077.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 82
+      },
+      "previous": "e853cd2cb03219307389b8aa28ce0a20b955de156cc7ccaa99d71adbe3106b31",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
