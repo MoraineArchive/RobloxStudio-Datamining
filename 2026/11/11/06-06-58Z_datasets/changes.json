@@ -1,0 +1,148 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-63eb6055af4e4688",
+    "manifestFiles": 19240,
+    "packages": 34,
+    "version": "0.747.0.7471481"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "cd7c78ca6f359b684365d3df65acfc19311157eddca97783e0adb6e4f03c273c",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "70f21eedb4d274169eb4fadde036728e18fbd9f609fb8502c34a60c1e08aceda",
+      "semantic": {
+        "added": [
+          "DFFlagConnectionClosedServerIpDiagnostics",
+          "FFlagExpChatMEUpdatedSystemMessage",
+          "FFlagExpChatOpenExpressionTrayExposure",
+          "FFlagTextChatReceivePolicy2",
+          "FFlagUserAbilitiesUserInterfaceA",
+          "FFlagVoxelGridRejectOutOfTreeCodes",
+          "FIntPushNotificationsUpsellPromptsClientAttributesTimeoutMs",
+          "FStringRenderMeshPerLodStreamingForceDisablePlaceIds"
+        ],
+        "changed": [
+          {
+            "after": "58aef34dbcafe0bf8ffde8581d0824e2d444f5ab",
+            "before": "b51598c793715d76dce82d95199080e9e16f275c",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-11T03:02:20.631Z",
+            "before": "2026-11-11T00:59:57.266Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagEditableMeshQuadsBetaFeature"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagExpChatUseInternalTextChatAPIs"
+          },
+          {
+            "after": "1000",
+            "before": "500",
+            "name": "FIntTexturePackUsePropertySetAddressesHundredthPercent"
+          },
+          {
+            "after": "58aef34dbcafe0bf8ffde8581d0824e2d444f5ab",
+            "before": "b51598c793715d76dce82d95199080e9e16f275c",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-11T03:02:20.631Z",
+            "before": "2026-11-11T00:59:57.266Z",
+            "name": "FStringFlipTimeStampFastString"
+          },
+          {
+            "after": "",
+            "before": "4639625707",
+            "name": "FStringRenderMeshPerLodStreamingForceEnablePlaceIds"
+          }
+        ],
+        "removed": [
+          "DFFlagConnectionClosedServerIpDiagnostics_Staged",
+          "FFlagEditableMeshQuadsBetaFeature_Staged",
+          "FFlagExpChatMEUpdatedSystemMessage_Staged",
+          "FFlagExpChatOpenExpressionTrayExposure_Staged",
+          "FFlagTextChatReceivePolicy2_Staged",
+          "FFlagUserAbilitiesUserInterfaceA_Staged",
+          "FFlagVoxelGridRejectOutOfTreeCodes_Staged",
+          "FIntPushNotificationsUpsellPromptsClientAttributesTimeoutMs_Staged",
+          "FIntTexturePackUsePropertySetAddressesHundredthPercent_Staged",
+          "FStringRenderMeshPerLodStreamingForceDisablePlaceIds_Staged",
+          "FStringRenderMeshPerLodStreamingForceEnablePlaceIds_Staged"
+        ],
+        "unchanged": 27130
+      }
+    },
+    "Web": {
+      "current": "938b4b69cbe79bc148c87208cd32f5f940d2919315d3fca35f794f74ed0c1b8a",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-001.js",
+          "assets.create.roblox.com/page-0/script-010.js",
+          "assets.create.roblox.com/page-0/script-014.js",
+          "assets.create.roblox.com/page-0/script-020.js",
+          "assets.create.roblox.com/page-0/script-021.js",
+          "assets.create.roblox.com/page-0/script-027.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-039.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-045.js",
+          "assets.create.roblox.com/page-0/script-047.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-049.js",
+          "assets.create.roblox.com/page-0/script-054.js",
+          "assets.create.roblox.com/page-0/script-055.js",
+          "assets.create.roblox.com/page-0/script-056.js",
+          "assets.create.roblox.com/page-0/script-057.js",
+          "assets.create.roblox.com/page-0/script-058.js",
+          "assets.create.roblox.com/page-0/script-060.js",
+          "assets.create.roblox.com/page-0/script-061.js",
+          "assets.create.roblox.com/page-0/script-062.js",
+          "assets.create.roblox.com/page-0/script-063.js",
+          "assets.create.roblox.com/page-0/script-064.js",
+          "assets.create.roblox.com/page-0/script-065.js",
+          "assets.create.roblox.com/page-0/script-066.js",
+          "assets.create.roblox.com/page-0/script-067.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-070.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.create.roblox.com/page-0/script-077.js",
+          "assets.create.roblox.com/page-0/script-078.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [
+          "assets.create.roblox.com/page-0/script-079.js"
+        ],
+        "unchanged": 55
+      },
+      "previous": "cccb30452a654e4ee9f7705c977df9cdb1e14e872ce77b5003f1d3fbd6ba92df",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
