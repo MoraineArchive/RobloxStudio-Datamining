@@ -1,0 +1,187 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-63eb6055af4e4688",
+    "manifestFiles": 19240,
+    "packages": 34,
+    "version": "0.747.0.7471481"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "add4ca8a84ebcebb9346235d02a54865c8690905cebe3edafaa869738a57e888",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "cd7c78ca6f359b684365d3df65acfc19311157eddca97783e0adb6e4f03c273c",
+      "semantic": {
+        "added": [
+          "DFFlagAvatarCreationBuildRigBeforeAccessories",
+          "DFFlagDRSUseAreaScaleDirectly",
+          "DFFlagDestroyCharacterClientToo",
+          "DFFlagGetLatestVersionUriAsyncUseAssetsApi",
+          "DFFlagPlayerCharacterDestroyBehaviorDefaultEnabled",
+          "DFFlagRbxTransportWasmHandshakeTelemetry",
+          "DFFlagTextChatDeliverHistoryReplay_PlaceFilter",
+          "DFFlagValidateEditableMeshDataSpatialQuery",
+          "DFFlagVoiceChatPlatformMuteBlockUntilLoaded",
+          "DFIntCharacterDestroyDelaySeconds",
+          "DFIntTransportParamsParserResultPointsThrottleHundredthsPercent",
+          "FFlagAmpWizardRetryKeepsNameSpace",
+          "FFlagAmrAddToExperience",
+          "FFlagAmrStudioToastsIntegration",
+          "FFlagAppIaHomeSubTabUnderlineFix",
+          "FFlagAudioSpeechToTextCancelRequestErase_Staged",
+          "FFlagAutomaticDRSPlaceDenyListEnabled",
+          "FFlagBuildExperienceDevProductRecovery",
+          "FFlagBuildExperienceManageGamePass",
+          "FFlagBuildExperienceManageSubscription",
+          "FFlagBuildExperienceMonetizationFailureCauses",
+          "FFlagBuildExperienceMonetizationKindRegionalPricing",
+          "FFlagBuildExperienceMonetizationManageKinds",
+          "FFlagBuildExperienceMonetizationMultiKind",
+          "FFlagBuildExperienceMonetizationProductEditing",
+          "FFlagCLI221489Fix",
+          "FFlagCloudClientDecodeFrameRateCeiling",
+          "FFlagCloudClientLibWebrtcRequestKeyFrame",
+          "FFlagCloudClientMediaCodecFlexibleYuv",
+          "FFlagCloudClientWebrtcNonBlockingHandoff",
+          "FFlagContentAllowSerialization_Migration",
+          "FFlagCreatorAgentChatMonetizationToolHelpers",
+          "FFlagDataHydrationPreserveIncompleteCatalogResults",
+          "FFlagEnableAutomaticDRS",
+          "FFlagEnableFmodRVideoOpusMp4Container_Staged",
+          "FFlagEnableFmodRVideoOpusOggContainer_Staged",
+          "FFlagEnableFmodRVideoOpusWebmContainer_Staged",
+          "FFlagEnableNativeOmniPrefetch4",
+          "FFlagEnableRecreatePinShortcutCoroutine_Staged",
+          "FFlagExpChatPresetTrayPresetOnlyDisclaimer",
+          "FFlagFlyoutEnableSwitchAccountTooltip_Staged",
+          "FFlagFmodAAudioAlwaysJoinMixer_Staged",
+          "FFlagFmodAAudioMixerRingGuard_Staged",
+          "FFlagFmodUseOpenSlOnApi28And29_Staged",
+          "FFlagHiddenFriendsSortHeaderRemoveFlyoutDependency_Staged",
+          "FFlagISRTrackClientAuthorityPropertyChangesBeforeOwnership",
+          "FFlagLuaAppCloudClientStreamSurvivesRemount",
+          "FFlagLuauDoNotCrashOnRecursiveSetType",
+          "FFlagMediaSelectorErrorLogging",
+          "FFlagPlayerContextualMenuFitToViewport_Staged",
+          "FFlagRVideoAudioTimingFixes_Staged",
+          "FFlagRVideoCheckContainerSignature_Staged",
+          "FFlagRbxTransportRnaLazyIoInit",
+          "FFlagReplicatorStatsRbxTransportBandwidth",
+          "FFlagSimTurbulenceReuseRandomSamples_Staged",
+          "FFlagSlimFixShadowUploadMissingPartCrash",
+          "FFlagSpecialShapeReverse",
+          "FFlagStudioPropertyCellVersionedAssetId_Staged",
+          "FFlagStudioPublishStateMachinePreAssets",
+          "FFlagStudioTeleportsCounterTelemetry",
+          "FFlagTextureCompositorInvalidateAllJobHumanoids",
+          "FFlagToolboxHideSpecialAttributeForNonAvatarItems_Staged",
+          "FFlagUIBackdropOcclusionCulling",
+          "FFlagUseTransportParamsParser",
+          "FFlagVideo2AudioOutputBufferFix",
+          "FFlagVideo2FramePreservePlaying",
+          "FFlagVirtualCursorModularization6_Staged",
+          "FFlagWrapDeformerDropSolvedContextOnUnregister",
+          "FIntFlyoutAccountSwitcherTooltipMaxShows_Staged"
+        ],
+        "changed": [
+          {
+            "after": "False",
+            "before": "True",
+            "name": "DFFlagAuroraStopPredictionForDirtyMechanisms"
+          },
+          {
+            "after": "1;HarmonyExposure;HarmonyLPMTest3;912987079;flagbank",
+            "before": "1;HarmonyExposure;HarmonyLPMTest2-1794344711311;1267634743;flagbank",
+            "name": "DFFlagPerformanceControlCutMemoryBudgetInLowPower_IXP"
+          },
+          {
+            "after": "1;HarmonyExposure;HarmonyLPMTest3;912987079;flagbank",
+            "before": "1;HarmonyExposure;HarmonyLPMTest2-1794344711311;1267634743;flagbank",
+            "name": "DFFlagPerformanceControlForceComputeThrottleInLowPower_IXP"
+          },
+          {
+            "after": "1;HarmonyExposure;HarmonyLPMTest3;912987079;flagbank",
+            "before": "1;HarmonyExposure;HarmonyLPMTest2-1794344711311;1267634743;flagbank",
+            "name": "DFIntPerformanceControlLowPowerMemoryBudgetPercent_IXP"
+          },
+          {
+            "after": "8fe33c62b31d3a0b45ac44da66a2f0fdd98affd5",
+            "before": "58aef34dbcafe0bf8ffde8581d0824e2d444f5ab",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-11T21:26:26.037Z",
+            "before": "2026-11-11T03:02:20.631Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "2500",
+            "before": "1000",
+            "name": "FIntTexturePackUsePropertySetAddressesHundredthPercent"
+          },
+          {
+            "after": "Audio,Video,Mesh,Image,TexturePack,Animation,TextDocument",
+            "before": "Audio,Video,Mesh,Image,TexturePack,Animation",
+            "name": "FStringAssetAccessEligibleAssetTypesCSV"
+          },
+          {
+            "after": "8fe33c62b31d3a0b45ac44da66a2f0fdd98affd5",
+            "before": "58aef34dbcafe0bf8ffde8581d0824e2d444f5ab",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-11T21:26:26.037Z",
+            "before": "2026-11-11T03:02:20.631Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagPerformanceControlCutComputeBudgetInLowPower_IXP",
+          "DFIntPerformanceControlLowPowerComputeBudgetPercent_IXP",
+          "FFlagPerformanceControlComputePrimaryTunablesEnabled3_IXP",
+          "FFlagPerformanceControlManageComputeEnabled10_IXP",
+          "FFlagPerformanceControlObserveLowPowerMode_IXP"
+        ],
+        "unchanged": 27131
+      }
+    },
+    "Web": {
+      "current": "ca0066350dd35653958b1c3712b3d8f90429c1a729dcaea0facc8a2c49c0c051",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-023.js",
+          "assets.create.roblox.com/page-0/script-026.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-047.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-049.js",
+          "assets.create.roblox.com/page-0/script-056.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 79
+      },
+      "previous": "938b4b69cbe79bc148c87208cd32f5f940d2919315d3fca35f794f74ed0c1b8a",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
