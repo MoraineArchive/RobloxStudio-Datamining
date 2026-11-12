@@ -1,0 +1,100 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-63eb6055af4e4688",
+    "manifestFiles": 19240,
+    "packages": 34,
+    "version": "0.747.0.7471481"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "201b27d41999015cf2cc725e7d109e95ecdc1309bcaa801ad61810473adaa974",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "9246ad480e5d79d233026ae44d08ece18f5b2a967ffb41611e8836992f10a857",
+      "semantic": {
+        "added": [
+          "DFFlagDLICAdmitSeedlessDetects_Staged",
+          "DFFlagEnableSendItemLimit_Staged",
+          "DFFlagRCCMonitoringActionReport_Staged",
+          "DFFlagRCCMonitoringIncludeRegionInSessionInfo_Staged",
+          "DFFlagStyleTransitionColorSpace_Staged",
+          "FFlagAnimationSAStepBindToAnimation_Staged",
+          "FFlagEnableGroupAnnouncementReporting_Staged",
+          "FFlagFixDeviceInsetBackgroundSplitPaneWidth_Staged",
+          "FFlagLightingDefaultTechnologyFuture_Staged",
+          "FFlagLuauEarlyExitUnifierInstantiation_Staged",
+          "FFlagPropertiesWidgetHideContentIds_Staged",
+          "FFlagScriptEditorActiveDocumentApi_Staged",
+          "FFlagSduiRequestPushNotificationPermissionActionHandler_Staged",
+          "FFlagSimAeroValidateSerializedMesh_Staged",
+          "FFlagSimPhysicalConfigDataEngineAccessors_Staged",
+          "FFlagSimPrimalInitializeIslandSleepState_Staged",
+          "FFlagSongDetailsPageDesignPass3_Staged",
+          "FFlagSplitPaneBadgesSeeAllSupportRegion_Staged",
+          "FFlagSplitPaneDevStoreSeeAllSupportRegion_Staged",
+          "FFlagSplitPaneHostChromeYieldsInExpanded_Staged",
+          "FFlagSplitPaneProfileChipFixes_Staged",
+          "FFlagTM2FixDegenerateOBBDivByZero_Staged",
+          "FFlagUseTransportParamsParser_Staged"
+        ],
+        "changed": [
+          {
+            "after": "1d9cc0c300010f7a2d59bdf9ec84be274450768d",
+            "before": "0d4211be3c1fbdaf2aa8550580f5ea23c000eae6",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-12T18:53:32.708Z",
+            "before": "2026-11-12T04:02:22.890Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "1d9cc0c300010f7a2d59bdf9ec84be274450768d",
+            "before": "0d4211be3c1fbdaf2aa8550580f5ea23c000eae6",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-12T18:53:32.708Z",
+            "before": "2026-11-12T04:02:22.890Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [],
+        "unchanged": 27238
+      }
+    },
+    "Web": {
+      "current": "c38536a7d5247c45ab2bae5864237c099e1345ee39760a9d61b526f91bc65888",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-049.js",
+          "assets.create.roblox.com/page-0/script-060.js",
+          "assets.create.roblox.com/page-0/script-063.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 83
+      },
+      "previous": "1ca4882f28b4930918988abe5d81874d53d78d4f33fc80ae2f912203d04dc1ab",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
