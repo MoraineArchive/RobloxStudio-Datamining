@@ -1,0 +1,159 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-63eb6055af4e4688",
+    "manifestFiles": 19240,
+    "packages": 34,
+    "version": "0.747.0.7471481"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "dbcbea49ff12b15a05f354f8749accb8c233529046ac2d96bf30cb6d630d5154",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "af2e25c19445d85e9f5719b6c7794fd87a2bce5a424491b559f11a2ec4f8a0eb",
+      "semantic": {
+        "added": [
+          "DFFlagCLI231811",
+          "DFFlagGamePassFreeTrialRedeemEnabled_API1463",
+          "DFFlagNormalizeDefaultRedirectCacheReadPolicy",
+          "DFFlagServerAuthorityEraseSmoothStepOffsetsOnPlayerRemoving",
+          "DFFlagServerAuthorityPredictionStatusUseActualNetworkOwner",
+          "FFlagCloudClientDecodeFrameRateLadder",
+          "FFlagEnableExperienceAssetCreatorTypeRead",
+          "FFlagEnableGroupsSdui",
+          "FFlagGroupAnnouncementsSdui",
+          "FFlagGroupForumsDiscoverySdui",
+          "FFlagGroupPeekEngagementTelemetry",
+          "FFlagInputReplicatorMetrics",
+          "FFlagLuauCompileRequireNoInline",
+          "FFlagOptionalNavigation",
+          "FFlagPackageMetadataSkipUnsupportedCreatorTypes",
+          "FFlagPluginImportUseAssetImporter",
+          "FFlagRbxStorageRemoveOldCache_Staged",
+          "FFlagSduiCustomFormEnabled",
+          "FFlagSduiMarkdownTextComponentEnabled",
+          "FFlagSduiReactionsComponent",
+          "FFlagShowLargerOfferBannerOnDesktop2",
+          "FFlagShowSchoolCollegeName",
+          "FFlagSkipVoiceInTeamCreateViewer",
+          "FFlagToolboxHideSpecialAttributeForNonAvatarItems"
+        ],
+        "changed": [
+          {
+            "after": "False",
+            "before": "True",
+            "name": "DFFlagDestroyCharacterClientToo"
+          },
+          {
+            "after": "5312f2be43ec657ac7571cd6205332f694beba02",
+            "before": "14344e7dc48e448e160c0a98fe9f9ab94877590c",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-12T02:52:29.127Z",
+            "before": "2026-11-11T23:18:00.414Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagLegacyTextSubpixelRendering"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagUserOrthographicOcculusion"
+          },
+          {
+            "after": "0",
+            "before": "10",
+            "name": "FIntRbxStorageDeleteOldCacheMB"
+          },
+          {
+            "after": "5312f2be43ec657ac7571cd6205332f694beba02",
+            "before": "14344e7dc48e448e160c0a98fe9f9ab94877590c",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-12T02:52:29.127Z",
+            "before": "2026-11-11T23:18:00.414Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagCLI231811_Staged",
+          "DFFlagDestroyCharacterClientToo_Staged",
+          "DFFlagNormalizeDefaultRedirectCacheReadPolicy_Staged",
+          "FFlagLuauCompileRequireNoInline_Staged",
+          "FFlagOptionalNavigation_Staged",
+          "FFlagPackageMetadataSkipUnsupportedCreatorTypes_Staged",
+          "FFlagToolboxHideSpecialAttributeForNonAvatarItems_Staged",
+          "FFlagUserOrthographicOcculusion_Staged"
+        ],
+        "unchanged": 27210
+      }
+    },
+    "Web": {
+      "current": "dd47974b5764a8bd8d16f5b275d2e58e597cbde47bd0e8489399b81f05f918f2",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-007.js",
+          "assets.create.roblox.com/page-0/script-026.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-047.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-049.js",
+          "assets.create.roblox.com/page-0/script-051.js",
+          "assets.create.roblox.com/page-0/script-052.js",
+          "assets.create.roblox.com/page-0/script-053.js",
+          "assets.create.roblox.com/page-0/script-055.js",
+          "assets.create.roblox.com/page-0/script-056.js",
+          "assets.create.roblox.com/page-0/script-057.js",
+          "assets.create.roblox.com/page-0/script-058.js",
+          "assets.create.roblox.com/page-0/script-059.js",
+          "assets.create.roblox.com/page-0/script-060.js",
+          "assets.create.roblox.com/page-0/script-061.js",
+          "assets.create.roblox.com/page-0/script-062.js",
+          "assets.create.roblox.com/page-0/script-063.js",
+          "assets.create.roblox.com/page-0/script-064.js",
+          "assets.create.roblox.com/page-0/script-065.js",
+          "assets.create.roblox.com/page-0/script-066.js",
+          "assets.create.roblox.com/page-0/script-067.js",
+          "assets.create.roblox.com/page-0/script-068.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-070.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.create.roblox.com/page-0/script-077.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [
+          "assets.create.roblox.com/page-0/script-078.js"
+        ],
+        "unchanged": 56
+      },
+      "previous": "7d474d8f6667b9630aa1f23b3ee4eb2e8bcf6888407dcb52d8c07265f6bf6111",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
