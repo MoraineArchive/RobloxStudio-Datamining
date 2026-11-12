@@ -1,0 +1,125 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-63eb6055af4e4688",
+    "manifestFiles": 19240,
+    "packages": 34,
+    "version": "0.747.0.7471481"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "0b3771b1d11caf5d35e464966f0e3fa02fb7faa5e8322cb12688ae1b9d2b6336",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "3a609fe070074d9c5eb25cab578675be8e72c8eb5068d025c46c07735a646cd7",
+      "semantic": {
+        "added": [
+          "FFlagAACAssetPublishBatchEndpoint",
+          "FFlagAXCloneLCSortOrderingTable",
+          "FFlagAXFixSelectUserRobloxSubscriptionNil",
+          "FFlagAXGuardParticleEmitterFolderAccess",
+          "FFlagAXIgnoreNaNBodyColorSliderValue",
+          "FFlagAinGrantLatencyTelemetry_Staged",
+          "FFlagAppChatFullPlaintextBeforeGameCards",
+          "FFlagAppChatUseSignalsForChatSettings",
+          "FFlagAssetImportServicePickAnimatedImageFileWithPrompt",
+          "FFlagAssetVersionChangedRTNNamespace_Staged",
+          "FFlagEditableImageFromRobloxScriptAcceptsMoreFormats",
+          "FFlagEnableAndroidOpenNotificationSettings",
+          "FFlagLuaAppFeatureTileAdPlayerAdClickoutEvent",
+          "FFlagLuaAppStableStyleProviderElements",
+          "FFlagMarketplaceAssetStoreKeepOnAccountReset_Staged",
+          "FFlagPushPermissionRequestOpensAndroidSettings",
+          "FFlagRCCTeamTestRemoteLogsEnabled_Staged",
+          "FFlagScriptEditorClampSelectRange",
+          "FFlagSduiGameTileEnableHoverInVR",
+          "FFlagStudioSaveLocalAsync",
+          "FFlagTeamTestCoordinatorEvents_Staged",
+          "FFlagTeamTestLogStream_Staged",
+          "FFlagUGCValidateAQDisableLegacyDynamicHead_Staged",
+          "FFlagUGCValidateAQDynamicHeadMLHybridWarnings_Staged",
+          "FFlagUserListSurfaceExtensions_v2_Staged",
+          "FStringAndroidOpenNotificationSettingsMinVersion"
+        ],
+        "changed": [
+          {
+            "after": "8521e35d02a7a5cb63006aeb51b51b19aae1ba16",
+            "before": "84779ff0564cd42316e55fe7fa9476af2592b037",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-12T21:44:25.032Z",
+            "before": "2026-11-12T21:08:23.066Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "8521e35d02a7a5cb63006aeb51b51b19aae1ba16",
+            "before": "84779ff0564cd42316e55fe7fa9476af2592b037",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-12T21:44:25.032Z",
+            "before": "2026-11-12T21:08:23.066Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagAACAssetPublishBatchEndpoint_Staged",
+          "FFlagAXCloneLCSortOrderingTable_Staged",
+          "FFlagAXFixSelectUserRobloxSubscriptionNil_Staged",
+          "FFlagAXGuardParticleEmitterFolderAccess_Staged",
+          "FFlagAXIgnoreNaNBodyColorSliderValue_Staged",
+          "FFlagAppChatFullPlaintextBeforeGameCards_Staged",
+          "FFlagAppChatUseSignalsForChatSettings_Staged",
+          "FFlagAssetImportServicePickAnimatedImageFileWithPrompt_Staged",
+          "FFlagEditableImageFromRobloxScriptAcceptsMoreFormats_Staged",
+          "FFlagEnableAndroidOpenNotificationSettings_Staged",
+          "FFlagEnableGetFriendsInServer_Staged",
+          "FFlagEnableGetFriendsInUniverse_Staged",
+          "FFlagLuaAppFeatureTileAdPlayerAdClickoutEvent_Staged",
+          "FFlagLuaAppStableStyleProviderElements_Staged",
+          "FFlagPushPermissionRequestOpensAndroidSettings_Staged",
+          "FFlagScriptEditorClampSelectRange_Staged",
+          "FFlagSduiGameTileEnableHoverInVR_Staged",
+          "FFlagStudioSaveLocalAsync_Staged",
+          "FStringAndroidOpenNotificationSettingsMinVersion_Staged"
+        ],
+        "unchanged": 27288
+      }
+    },
+    "Web": {
+      "current": "26acc7bf514d16341f915d5362832466df5db6f4caf3d5b770792b2f600db7a7",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-049.js",
+          "assets.create.roblox.com/page-0/script-059.js",
+          "assets.create.roblox.com/page-0/script-060.js",
+          "assets.create.roblox.com/page-0/script-063.js",
+          "assets.create.roblox.com/page-0/script-064.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 81
+      },
+      "previous": "3dd429d5f5577f2b96c89620e0dbe73a375b896e8aeebb47e2f411da89943f1a",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}

@@ -4457,12 +4457,73 @@
             "prompt",
             "with"
           ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/12/21-45-24Z_datasets",
+          "evidencePath": "2026/11/12/21-45-24Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "5f26443df31979530b0c0668835c66e1d9d6c57078c9ead4b4be9330a70cd2b0",
+          "key": "FFlagAssetImportServicePickAnimatedImageFileWithPrompt_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-12T21:45:24.953Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "asset",
+            "file",
+            "image",
+            "import",
+            "pick",
+            "prompt",
+            "with"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/12/21-45-24Z_datasets",
+          "evidencePath": "2026/11/12/21-45-24Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "8cbb0998075ff29dc7ab637bf70f73d1eab9745fa2b110cfbd78c3deecc4332f",
+          "key": "FFlagAssetImportServicePickAnimatedImageFileWithPrompt",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-12T21:45:24.953Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "asset",
+            "file",
+            "image",
+            "import",
+            "pick",
+            "prompt",
+            "with"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "animated-images",
-      "lastObservedAt": "2026-11-12T20:14:28.422Z",
-      "lifecycle": [],
+      "lastObservedAt": "2026-11-12T21:45:24.953Z",
+      "lifecycle": [
+        {
+          "observedAt": "2026-11-12T21:45:24.953Z",
+          "signalIds": [
+            "4d6f7affb148d86ce69ce1332e55e90a5ccb7728007ab9d60b3226760d251920",
+            "8cbb0998075ff29dc7ab637bf70f73d1eab9745fa2b110cfbd78c3deecc4332f"
+          ],
+          "type": "staged-to-non-staged"
+        }
+      ],
       "status": "observed",
       "title": "Animated images"
     },
