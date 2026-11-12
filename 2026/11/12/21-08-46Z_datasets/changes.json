@@ -1,0 +1,146 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-63eb6055af4e4688",
+    "manifestFiles": 19240,
+    "packages": 34,
+    "version": "0.747.0.7471481"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "3a609fe070074d9c5eb25cab578675be8e72c8eb5068d025c46c07735a646cd7",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "ef0f9cb8588363aa8401f3d7a27888e5b906aa3da5bdec647ecd25590f78f7ff",
+      "semantic": {
+        "added": [
+          "DFFlagDebugAudioInputPlatformStreamingOverrideEchoCancellation",
+          "DFFlagDebugAudioInputPlatformStreamingOverrideHighPassFilter",
+          "DFIntAudioSpeechToTextPlatformStreamingLowerThresholdDb",
+          "DFIntAudioSpeechToTextPlatformStreamingSpeechProbabilityThresholdx1000",
+          "DFIntAudioSpeechToTextPlatformStreamingUpperThresholdDb",
+          "FFlagAXFetchCartPricingForLooksExposure_IXP",
+          "FFlagAnimationPlayerApplyRestartFrameOnReset_Staged",
+          "FFlagAnimationPlayerParameterAPI_Staged",
+          "FFlagEnableGetFriendsInServer_Staged",
+          "FFlagEnableGetFriendsInUniverse_Staged",
+          "FFlagEnableHandheldTouchInStudioEmulator_Staged",
+          "FFlagFixDeviceInsetBackgroundSplitPaneWidth",
+          "FFlagFoundationAnimatedHighlightSettling_Staged",
+          "FFlagKidsNotApprovedPageTreatment2_Staged",
+          "FFlagLibMpHttpCountersOnlyNoScopesOne_Staged",
+          "FFlagLibMpRemoteCaptureCompleteFramesOne_Staged",
+          "FFlagLightingDefaultTechnologyFuture",
+          "FFlagMomentsCommentsAttachSheetScroller_Staged",
+          "FFlagMomentsFeedErrorStateRedesign_Staged",
+          "FFlagPropertiesWidgetHideContentIds",
+          "FFlagPurchasePromptFetchCartPricingForLooks3_IXP",
+          "FFlagScriptEditorActiveDocumentApi",
+          "FFlagSduiViewStateLayerAffordance_Staged",
+          "FFlagSimPhysicalConfigDataEngineAccessors",
+          "FFlagSimPrimalInitializeIslandSleepState",
+          "FFlagSplitPaneBadgesSeeAllSupportRegion",
+          "FFlagSplitPaneDevStoreSeeAllSupportRegion",
+          "FFlagSplitPaneHostChromeYieldsInExpanded",
+          "FFlagSplitPaneProfileChipFixes",
+          "FFlagStudioAnimationPlayerParametersItem_Staged",
+          "FFlagUserSearchRefreshPendingFriendshipStatus_Staged",
+          "FFlagViewRecyclerReact08_Staged",
+          "FStringAXFetchCartPricingForLooksLayerName_Staged"
+        ],
+        "changed": [
+          {
+            "after": "84779ff0564cd42316e55fe7fa9476af2592b037",
+            "before": "93414cc45529cfc02b4c4e37dba85db844b3bdc1",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-12T21:08:23.066Z",
+            "before": "2026-11-12T20:13:45.251Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagUseTransportParamsParser"
+          },
+          {
+            "after": "0",
+            "before": "2500",
+            "name": "FIntTexturePackUsePropertySetAddressesHundredthPercent"
+          },
+          {
+            "after": "84779ff0564cd42316e55fe7fa9476af2592b037",
+            "before": "93414cc45529cfc02b4c4e37dba85db844b3bdc1",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-12T21:08:23.066Z",
+            "before": "2026-11-12T20:13:45.251Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagDebugAudioInputPlatformStreamingOverrideEchoCancellation_Staged",
+          "DFFlagDebugAudioInputPlatformStreamingOverrideHighPassFilter_Staged",
+          "DFIntAudioSpeechToTextPlatformStreamingLowerThresholdDb_Staged",
+          "DFIntAudioSpeechToTextPlatformStreamingSpeechProbabilityThresholdx1000_Staged",
+          "DFIntAudioSpeechToTextPlatformStreamingUpperThresholdDb_Staged",
+          "FFlagFixDeviceInsetBackgroundSplitPaneWidth_Staged",
+          "FFlagLightingDefaultTechnologyFuture_Staged",
+          "FFlagPropertiesWidgetHideContentIds_Staged",
+          "FFlagScriptEditorActiveDocumentApi_Staged",
+          "FFlagSimPhysicalConfigDataEngineAccessors_Staged",
+          "FFlagSimPrimalInitializeIslandSleepState_Staged",
+          "FFlagSplitPaneBadgesSeeAllSupportRegion_Staged",
+          "FFlagSplitPaneDevStoreSeeAllSupportRegion_Staged",
+          "FFlagSplitPaneHostChromeYieldsInExpanded_Staged",
+          "FFlagSplitPaneProfileChipFixes_Staged",
+          "FFlagUseTransportParamsParser_Staged",
+          "FIntTexturePackUsePropertySetAddressesHundredthPercent_Staged"
+        ],
+        "unchanged": 27272
+      }
+    },
+    "Web": {
+      "current": "3dd429d5f5577f2b96c89620e0dbe73a375b896e8aeebb47e2f411da89943f1a",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-049.js",
+          "assets.create.roblox.com/page-0/script-060.js",
+          "assets.create.roblox.com/page-0/script-063.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.create.roblox.com/page-1/script-001.js",
+          "assets.create.roblox.com/page-1/script-003.js",
+          "assets.create.roblox.com/page-1/script-004.js",
+          "assets.create.roblox.com/page-1/script-009.js",
+          "assets.create.roblox.com/page-1/script-010.js",
+          "assets.create.roblox.com/page-1/script-011.js",
+          "assets.create.roblox.com/page-1/script-012.js",
+          "assets.create.roblox.com/page-1/script-013.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 75
+      },
+      "previous": "7cc531ad6ca704454393b20163fc8796e698d11f054634eed79124eb8a1d6763",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}

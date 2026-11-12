@@ -15766,11 +15766,59 @@
             "lock",
             "moments"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/12/21-08-46Z_datasets",
+          "evidencePath": "2026/11/12/21-08-46Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "6c05502620507e0c6ec8bd1e22a56859ec53e13936371ba650ed662a08543d12",
+          "key": "FFlagMomentsFeedErrorStateRedesign_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-12T21:08:46.808Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "error",
+            "feed",
+            "moments",
+            "redesign",
+            "state"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/12/21-08-46Z_datasets",
+          "evidencePath": "2026/11/12/21-08-46Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "a8db662d4fdb152760644f9542c43ab4e864a44208881ee19d58a5c0dff2c79c",
+          "key": "FFlagMomentsCommentsAttachSheetScroller_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-12T21:08:46.808Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "attach",
+            "comments",
+            "moments",
+            "scroller",
+            "sheet"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-11-10T17:49:53.656Z",
+      "lastObservedAt": "2026-11-12T21:08:46.808Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
