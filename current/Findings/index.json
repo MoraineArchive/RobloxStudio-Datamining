@@ -4431,11 +4431,37 @@
             "plugins",
             "signature"
           ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/12/20-14-28Z_datasets",
+          "evidencePath": "2026/11/12/20-14-28Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "4d6f7affb148d86ce69ce1332e55e90a5ccb7728007ab9d60b3226760d251920",
+          "key": "FFlagAssetImportServicePickAnimatedImageFileWithPrompt_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-12T20:14:28.422Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "asset",
+            "file",
+            "image",
+            "import",
+            "pick",
+            "prompt",
+            "with"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "animated-images",
-      "lastObservedAt": "2026-11-10T17:49:53.656Z",
+      "lastObservedAt": "2026-11-12T20:14:28.422Z",
       "lifecycle": [],
       "status": "observed",
       "title": "Animated images"

@@ -1,0 +1,132 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-63eb6055af4e4688",
+    "manifestFiles": 19240,
+    "packages": 34,
+    "version": "0.747.0.7471481"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "ef0f9cb8588363aa8401f3d7a27888e5b906aa3da5bdec647ecd25590f78f7ff",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "201b27d41999015cf2cc725e7d109e95ecdc1309bcaa801ad61810473adaa974",
+      "semantic": {
+        "added": [
+          "DFFlagDLICAdmitSeedlessDetects",
+          "DFFlagDebugAudioInputPlatformStreamingOverrideEchoCancellation_Staged",
+          "DFFlagDebugAudioInputPlatformStreamingOverrideHighPassFilter_Staged",
+          "DFFlagRCCMonitoringActionReport",
+          "DFFlagRCCMonitoringIncludeRegionInSessionInfo",
+          "DFFlagStyleTransitionColorSpace",
+          "DFIntAudioSpeechToTextPlatformStreamingLowerThresholdDb_Staged",
+          "DFIntAudioSpeechToTextPlatformStreamingSpeechProbabilityThresholdx1000_Staged",
+          "DFIntAudioSpeechToTextPlatformStreamingUpperThresholdDb_Staged",
+          "FFlagAACAssetPublishBatchEndpoint_Staged",
+          "FFlagAXCatalogSpecialFeaturesFilter_IXP",
+          "FFlagAXCloneLCSortOrderingTable_Staged",
+          "FFlagAXFilterAndSortViewExposureLogging_IXP",
+          "FFlagAXFixSelectUserRobloxSubscriptionNil_Staged",
+          "FFlagAXGuardParticleEmitterFolderAccess_Staged",
+          "FFlagAXIgnoreNaNBodyColorSliderValue_Staged",
+          "FFlagAnimationSAStepBindToAnimation",
+          "FFlagAppChatFullPlaintextBeforeGameCards_Staged",
+          "FFlagAppChatMessageItemListCurrentOnSwitch_Staged",
+          "FFlagAppChatScrollToLatest_IXP",
+          "FFlagAppChatUseSignalsForChatSettings_Staged",
+          "FFlagAssetImportServicePickAnimatedImageFileWithPrompt_Staged",
+          "FFlagEditableImageFromRobloxScriptAcceptsMoreFormats_Staged",
+          "FFlagEnableAndroidOpenNotificationSettings_Staged",
+          "FFlagEnableDLICInternalIngressSeeding4_Staged",
+          "FFlagEnableGroupAnnouncementReporting",
+          "FFlagExpChatDictationExplicitFinish2_Staged",
+          "FFlagLuaAppFeatureTileAdPlayerAdClickoutEvent_Staged",
+          "FFlagLuaAppSetCachedUserInLaunchThread_Staged",
+          "FFlagLuaAppStableStyleProviderElements_Staged",
+          "FFlagLuauEarlyExitUnifierInstantiation",
+          "FFlagPushPermissionRequestOpensAndroidSettings_Staged",
+          "FFlagRealtimeOnDemandDurableReplay2_Staged",
+          "FFlagScriptEditorClampSelectRange_Staged",
+          "FFlagSduiGameTileEnableHoverInVR_Staged",
+          "FFlagSimAeroValidateSerializedMesh",
+          "FFlagSongDetailsPageDesignPass3",
+          "FFlagStudioSaveLocalAsync_Staged",
+          "FIntAppChatScrollToLatestThresholdPercent_IXP",
+          "FIntTexturePackUsePropertySetAddressesHundredthPercent_Staged",
+          "FStringAXFilterAndSortViewExposureLayer_IXP",
+          "FStringAndroidOpenNotificationSettingsMinVersion_Staged"
+        ],
+        "changed": [
+          {
+            "after": "93414cc45529cfc02b4c4e37dba85db844b3bdc1",
+            "before": "1d9cc0c300010f7a2d59bdf9ec84be274450768d",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-12T20:13:45.251Z",
+            "before": "2026-11-12T18:53:32.708Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "93414cc45529cfc02b4c4e37dba85db844b3bdc1",
+            "before": "1d9cc0c300010f7a2d59bdf9ec84be274450768d",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-12T20:13:45.251Z",
+            "before": "2026-11-12T18:53:32.708Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagDLICAdmitSeedlessDetects_Staged",
+          "DFFlagEnableSendItemLimit_Staged",
+          "DFFlagRCCMonitoringActionReport_Staged",
+          "DFFlagRCCMonitoringIncludeRegionInSessionInfo_Staged",
+          "DFFlagStyleTransitionColorSpace_Staged",
+          "FFlagAnimationSAStepBindToAnimation_Staged",
+          "FFlagEnableGroupAnnouncementReporting_Staged",
+          "FFlagLuauEarlyExitUnifierInstantiation_Staged",
+          "FFlagSduiRequestPushNotificationPermissionActionHandler_Staged",
+          "FFlagSimAeroValidateSerializedMesh_Staged",
+          "FFlagSongDetailsPageDesignPass3_Staged",
+          "FFlagTM2FixDegenerateOBBDivByZero_Staged"
+        ],
+        "unchanged": 27249
+      }
+    },
+    "Web": {
+      "current": "7cc531ad6ca704454393b20163fc8796e698d11f054634eed79124eb8a1d6763",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-049.js",
+          "assets.create.roblox.com/page-0/script-060.js",
+          "assets.create.roblox.com/page-0/script-063.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 83
+      },
+      "previous": "c38536a7d5247c45ab2bae5864237c099e1345ee39760a9d61b526f91bc65888",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
