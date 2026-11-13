@@ -1,0 +1,113 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-63eb6055af4e4688",
+    "manifestFiles": 19240,
+    "packages": 34,
+    "version": "0.747.0.7471481"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "5b1126240abb13142223344d0f5fada59fea7219c180aad4b490f34d8afb3e0a",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "c1a9cb652b46e8a7bd4555d393ea70b530bd0697822f75d5404af9e511ebdb8f",
+      "semantic": {
+        "added": [
+          "DFFlagMicroProfilerHttpUseXHtmlDump",
+          "DFFlagPerformanceControlMemoryBudgetDebugPrint_Staged",
+          "DFFlagRemoteProfilerCaptureAtFlipUseXHtmlDump_Staged",
+          "FFlagAXFixVirtualizedFeedUpdateDepth",
+          "FFlagApplyAvatarRulesRequireRootPart",
+          "FFlagAvatarPreviewerAvatarCreationSelectablePrompt_Staged",
+          "FFlagAvatarSettingsApplyRulesKeepExplicitRules",
+          "FFlagAvatarSettingsCollidersOwnAccessories",
+          "FFlagAvatarSettingsIgnoreNonPositiveCustomWorldHeight",
+          "FFlagAvatarSettingsUnsavedDialogHoldResolution_Staged",
+          "FFlagStudioValidateRuntimeInjectorParity_Staged",
+          "FFlagUseTeleportForLuaSwitchServerImpl",
+          "FFlagWrapDeformerAltMeshLifecycleFix"
+        ],
+        "changed": [
+          {
+            "after": "03f01fd87cec469d21ee6e305e0d1094212d3e7e",
+            "before": "5fc5435ff40748800452f544974e3a3466449bd5",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-13T01:10:03.475Z",
+            "before": "2026-11-13T00:13:23.741Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "03f01fd87cec469d21ee6e305e0d1094212d3e7e",
+            "before": "5fc5435ff40748800452f544974e3a3466449bd5",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-13T01:10:03.475Z",
+            "before": "2026-11-13T00:13:23.741Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagMicroProfilerHttpUseXHtmlDump_Staged",
+          "FFlagAXFixVirtualizedFeedUpdateDepth_Staged",
+          "FFlagApplyAvatarRulesRequireRootPart_Staged",
+          "FFlagAvatarSettingsApplyRulesKeepExplicitRules_Staged",
+          "FFlagAvatarSettingsCollidersOwnAccessories_Staged",
+          "FFlagAvatarSettingsIgnoreNonPositiveCustomWorldHeight_Staged",
+          "FFlagUseTeleportForLuaSwitchServerImpl_Staged",
+          "FFlagWrapDeformerAltMeshLifecycleFix_Staged"
+        ],
+        "unchanged": 27351
+      }
+    },
+    "Web": {
+      "current": "162eda546beb70166e79df999911f1601b1b33cd4220521789351fcb117d6973",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-010.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-043.js",
+          "assets.create.roblox.com/page-0/script-047.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-049.js",
+          "assets.create.roblox.com/page-0/script-056.js",
+          "assets.create.roblox.com/page-0/script-060.js",
+          "assets.create.roblox.com/page-0/script-061.js",
+          "assets.create.roblox.com/page-0/script-062.js",
+          "assets.create.roblox.com/page-0/script-063.js",
+          "assets.create.roblox.com/page-0/script-064.js",
+          "assets.create.roblox.com/page-0/script-065.js",
+          "assets.create.roblox.com/page-0/script-066.js",
+          "assets.create.roblox.com/page-0/script-067.js",
+          "assets.create.roblox.com/page-0/script-068.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-070.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 69
+      },
+      "previous": "4c3d60164b2d5f2747907ac24d705c4d05b8923270ffa97e72ebb1f8637c4153",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
