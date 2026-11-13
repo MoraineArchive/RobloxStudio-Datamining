@@ -1,0 +1,110 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-63eb6055af4e4688",
+    "manifestFiles": 19240,
+    "packages": 34,
+    "version": "0.747.0.7471481"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "3b0d11b4b886d25349c861f39c32e9a2be56448d0ddd4e0ac746237f2d1fe928",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "5b1126240abb13142223344d0f5fada59fea7219c180aad4b490f34d8afb3e0a",
+      "semantic": {
+        "added": [
+          "DFFlagPerformanceControlMemoryBudgetDebugPrint",
+          "FFlagAudioDeviceInputReplaceAudioNodes2",
+          "FFlagLuaAppEdpFallbackPrimaryActivation",
+          "FFlagLuaAppPlayButtonCoalescePlayabilityFetch",
+          "FFlagSignupFoundationFields3",
+          "FFlagSquadLobbyActionBarFixMicLevelRerender2",
+          "FFlagStudioDeviceEmulatorFrameOverlayIgnoresDisabled",
+          "FFlagStudioDeviceEmulatorSmoothFrameCorners",
+          "FFlagStudioUnifiedActivitySession"
+        ],
+        "changed": [
+          {
+            "after": "True",
+            "before": "False",
+            "name": "DFFlagRemoteProfilerCaptureAtFlipUseXHtmlDump"
+          },
+          {
+            "after": "c67cd3c3b7ad8b6904221d8b22d47f0604fa3f6c",
+            "before": "03f01fd87cec469d21ee6e305e0d1094212d3e7e",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-13T02:07:35.362Z",
+            "before": "2026-11-13T01:10:03.475Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagLuaAppStratusDisableUAHotkeys"
+          },
+          {
+            "after": "c67cd3c3b7ad8b6904221d8b22d47f0604fa3f6c",
+            "before": "03f01fd87cec469d21ee6e305e0d1094212d3e7e",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-13T02:07:35.362Z",
+            "before": "2026-11-13T01:10:03.475Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagPerformanceControlMemoryBudgetDebugPrint_Staged",
+          "DFFlagRemoteProfilerCaptureAtFlipUseXHtmlDump_Staged",
+          "FFlagAudioDeviceInputReplaceAudioNodes2_Staged",
+          "FFlagLuaAppEdpFallbackPrimaryActivation_Staged",
+          "FFlagLuaAppPlayButtonCoalescePlayabilityFetch_Staged",
+          "FFlagLuaAppStratusDisableUAHotkeys_Staged",
+          "FFlagSignupFoundationFields3_Staged",
+          "FFlagSquadLobbyActionBarFixMicLevelRerender2_Staged",
+          "FFlagStudioDeviceEmulatorFrameOverlayIgnoresDisabled_Staged",
+          "FFlagStudioDeviceEmulatorSmoothFrameCorners_Staged",
+          "FFlagStudioUnifiedActivitySession_Staged"
+        ],
+        "unchanged": 27351
+      }
+    },
+    "Web": {
+      "current": "4b83e19c2e357ef32321dd5a60f120006d7ee6d8ffdf18b70084abe27ce0fd85",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-049.js",
+          "assets.create.roblox.com/page-0/script-058.js",
+          "assets.create.roblox.com/page-0/script-060.js",
+          "assets.create.roblox.com/page-0/script-064.js",
+          "assets.create.roblox.com/page-0/script-068.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 81
+      },
+      "previous": "162eda546beb70166e79df999911f1601b1b33cd4220521789351fcb117d6973",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
