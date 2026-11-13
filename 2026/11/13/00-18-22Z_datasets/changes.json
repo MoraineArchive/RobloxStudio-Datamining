@@ -1,0 +1,189 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-63eb6055af4e4688",
+    "manifestFiles": 19240,
+    "packages": 34,
+    "version": "0.747.0.7471481"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "c1a9cb652b46e8a7bd4555d393ea70b530bd0697822f75d5404af9e511ebdb8f",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "0b3771b1d11caf5d35e464966f0e3fa02fb7faa5e8322cb12688ae1b9d2b6336",
+      "semantic": {
+        "added": [
+          "DFFlagAssetProviderPrewarmReduceTelemetryCost",
+          "DFFlagCLI229089",
+          "DFFlagCharacterAppearanceApplyHoldsParent",
+          "DFFlagDebugDictationOverrideHighPassFilter",
+          "DFFlagEnableSendItemLimit",
+          "DFFlagMicroProfilerHttpUseXHtmlDump_Staged",
+          "DFFlagSimAeroIncreaseStateMachineCoverage",
+          "DFFlagSimResimSkipExcludedContacts",
+          "DFIntAssetProviderPrewarmLookupTelemetryHundredthsPercent",
+          "FFlagAXFixVirtualizedFeedUpdateDepth_Staged",
+          "FFlagAinGrantLatencyTelemetry",
+          "FFlagAnimationPlayerApplyRestartFrameOnReset",
+          "FFlagAnimationPlayerParameterAPI",
+          "FFlagAppChatMessageItemListCurrentOnSwitch",
+          "FFlagApplyAvatarRulesRequireRootPart_Staged",
+          "FFlagAssetProviderPrewarmParseOnFibers",
+          "FFlagAssetVersionChangedRTNNamespace",
+          "FFlagAudioDeviceInputReplaceAudioNodes2_Staged",
+          "FFlagAuthValidatorRebindTextBoxRef",
+          "FFlagAvatarSettingsApplyRulesKeepExplicitRules_Staged",
+          "FFlagAvatarSettingsCollidersOwnAccessories_Staged",
+          "FFlagAvatarSettingsIgnoreNonPositiveCustomWorldHeight_Staged",
+          "FFlagEnableDLICInternalIngressSeeding4",
+          "FFlagEnableDestroyLuaAppV2Experiment2_Staged",
+          "FFlagEnableHandheldTouchInStudioEmulator",
+          "FFlagEnableTestServiceRegistrationAPI7",
+          "FFlagExpChatDictationExplicitFinish2",
+          "FFlagFoundationAnimatedHighlightSettling",
+          "FFlagKidsNotApprovedPageTreatment2",
+          "FFlagLibMpHttpCountersOnlyNoScopesOne",
+          "FFlagLibMpRemoteCaptureCompleteFramesOne",
+          "FFlagLuaAppEdpFallbackPrimaryActivation_Staged",
+          "FFlagLuaAppPlayButtonCoalescePlayabilityFetch_Staged",
+          "FFlagLuaAppSetCachedUserInLaunchThread",
+          "FFlagLuaAppStratusDisableUAHotkeys_Staged",
+          "FFlagLuauModularityBetaFeature",
+          "FFlagMarketplaceAssetStoreKeepOnAccountReset",
+          "FFlagMomentsCommentsAttachSheetScroller",
+          "FFlagMomentsFeedErrorStateRedesign",
+          "FFlagRCCTeamTestRemoteLogsEnabled",
+          "FFlagReactCommitTraversalTrims_IXP",
+          "FFlagReactEnableAllocationTrims_IXP",
+          "FFlagReactEnableHookDoubleBuffering_IXP",
+          "FFlagReactFixEagerReducerError_IXP",
+          "FFlagReactFixGetInstanceFromNode_IXP",
+          "FFlagReactKeepSyncQueueOnError_IXP",
+          "FFlagReactReentrantSafeSignals_IXP",
+          "FFlagReactSkipHostSiblingLookup_IXP",
+          "FFlagReactWorkLoopTrims_IXP",
+          "FFlagRealtimeDurableReplaySeqNumLifetimeFix_Staged",
+          "FFlagRealtimeOnDemandDurableReplay2",
+          "FFlagSduiViewStateLayerAffordance",
+          "FFlagSignupFoundationFields3_Staged",
+          "FFlagSquadLobbyActionBarFixMicLevelRerender2_Staged",
+          "FFlagStudioAnimationPlayerParametersItem",
+          "FFlagStudioDeviceEmulatorFrameOverlayIgnoresDisabled_Staged",
+          "FFlagStudioDeviceEmulatorSmoothFrameCorners_Staged",
+          "FFlagStudioUnifiedActivitySession_Staged",
+          "FFlagTeamTestCoordinatorEvents",
+          "FFlagTeamTestLogStream",
+          "FFlagUGCValidateAQDisableLegacyDynamicHead",
+          "FFlagUGCValidateAQDynamicHeadMLHybridWarnings",
+          "FFlagUseTeleportForLuaSwitchServerImpl_Staged",
+          "FFlagUserListSurfaceExtensions_v2",
+          "FFlagUserSearchRefreshPendingFriendshipStatus",
+          "FFlagViewRecyclerReact08",
+          "FFlagWrapDeformerAltMeshLifecycleFix_Staged",
+          "FIntLuauModularityBetaFeatureRoleSet",
+          "FIntLuauModularityBetaFeatureRolloutPercent",
+          "FStringAXFetchCartPricingForLooksLayerName",
+          "FStringLuauModularityBetaFeatureUrl",
+          "SFFlagUserAbilitiesUserInterfaceC",
+          "SFFlagUserAbilitiesUserInterfaceC_UniverseFilter"
+        ],
+        "changed": [
+          {
+            "after": "5fc5435ff40748800452f544974e3a3466449bd5",
+            "before": "8521e35d02a7a5cb63006aeb51b51b19aae1ba16",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-13T00:13:23.741Z",
+            "before": "2026-11-12T21:44:25.032Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "1;Party.ConversationPage.Performance;AppChatSignalsMessageStoreReadsV3;1558392083;dev_controlled",
+            "before": "1;Party.ConversationPage.Performance;AppChatSignalsMessageStoreReadsV2;768691267;dev_controlled",
+            "name": "FFlagAppChatReadMessageListFromSignalsStore_IXP"
+          },
+          {
+            "after": "1;Party.ConversationPage.Performance;AppChatSignalsMessageStoreReadsV3;1558392083;dev_controlled",
+            "before": "1;Party.ConversationPage.Performance;AppChatSignalsMessageStoreReadsV2;768691267;dev_controlled",
+            "name": "FFlagAppChatUseViewRecyclerMessageList_IXP"
+          },
+          {
+            "after": "5fc5435ff40748800452f544974e3a3466449bd5",
+            "before": "8521e35d02a7a5cb63006aeb51b51b19aae1ba16",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-13T00:13:23.741Z",
+            "before": "2026-11-12T21:44:25.032Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagAinGrantLatencyTelemetry_Staged",
+          "FFlagAnimationPlayerApplyRestartFrameOnReset_Staged",
+          "FFlagAnimationPlayerParameterAPI_Staged",
+          "FFlagAppChatMessageItemListCurrentOnSwitch_Staged",
+          "FFlagAssetVersionChangedRTNNamespace_Staged",
+          "FFlagEnableDLICInternalIngressSeeding4_Staged",
+          "FFlagEnableHandheldTouchInStudioEmulator_Staged",
+          "FFlagExpChatDictationExplicitFinish2_Staged",
+          "FFlagFoundationAnimatedHighlightSettling_Staged",
+          "FFlagKidsNotApprovedPageTreatment2_Staged",
+          "FFlagLibMpHttpCountersOnlyNoScopesOne_Staged",
+          "FFlagLibMpRemoteCaptureCompleteFramesOne_Staged",
+          "FFlagLuaAppSetCachedUserInLaunchThread_Staged",
+          "FFlagMarketplaceAssetStoreKeepOnAccountReset_Staged",
+          "FFlagMomentsCommentsAttachSheetScroller_Staged",
+          "FFlagMomentsFeedErrorStateRedesign_Staged",
+          "FFlagRCCTeamTestRemoteLogsEnabled_Staged",
+          "FFlagRealtimeOnDemandDurableReplay2_Staged",
+          "FFlagSduiViewStateLayerAffordance_Staged",
+          "FFlagStudioAnimationPlayerParametersItem_Staged",
+          "FFlagTeamTestCoordinatorEvents_Staged",
+          "FFlagTeamTestLogStream_Staged",
+          "FFlagUGCValidateAQDisableLegacyDynamicHead_Staged",
+          "FFlagUGCValidateAQDynamicHeadMLHybridWarnings_Staged",
+          "FFlagUserListSurfaceExtensions_v2_Staged",
+          "FFlagUserSearchRefreshPendingFriendshipStatus_Staged",
+          "FFlagViewRecyclerReact08_Staged",
+          "FStringAXFetchCartPricingForLooksLayerName_Staged"
+        ],
+        "unchanged": 27284
+      }
+    },
+    "Web": {
+      "current": "4c3d60164b2d5f2747907ac24d705c4d05b8923270ffa97e72ebb1f8637c4153",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-049.js",
+          "assets.create.roblox.com/page-0/script-060.js",
+          "assets.create.roblox.com/page-0/script-063.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 83
+      },
+      "previous": "26acc7bf514d16341f915d5362832466df5db6f4caf3d5b770792b2f600db7a7",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
