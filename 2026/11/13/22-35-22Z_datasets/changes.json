@@ -1,0 +1,150 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-63eb6055af4e4688",
+    "manifestFiles": 19240,
+    "packages": 34,
+    "version": "0.747.0.7471481"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "f303845e322991baf20bd9cc31e30bc0ac9681ed5c7a92e2188b4d579b00c51c",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "d023b3e4586b0e2f7fe125c99b88750eb04355d3b060906ef2ae688ae75e58fa",
+      "semantic": {
+        "added": [
+          "DFFlagMomentsCreatePostPublishTracking",
+          "DFFlagSimPrimalZeroDeactivatingUnilateralPenalty",
+          "DFIntRCCMonitoringActionReportRolloutPermyriad",
+          "FFlagAXRemoveUnusedCharacterUpdatesLockedRoduxSlice",
+          "FFlagAXUseSignalsForLayeredClothingEntryPage",
+          "FFlagAXUseSignalsForLayeredClothingLastSavedSort",
+          "FFlagAnimGraphUI_SyncNodeDragPosition",
+          "FFlagAvatarRulesBodyExtentsIgnoreInnerBox",
+          "FFlagAvatarSettingsClampLegacyBuildScales",
+          "FFlagAvatarSettingsSingleColliderFloorSensor",
+          "FFlagFriendsListStableEmptyOnlineFriends",
+          "FFlagLrInlineDeltas",
+          "FFlagLuaStartPageTableContextMenu4",
+          "FFlagMeshContentProviderFutureApi2",
+          "FFlagMomentsCreationCompactPanelSquareCorners",
+          "FFlagMomentsCreationSessionId",
+          "FFlagMomentsTextOverlayFontSliderTouchArea",
+          "FFlagPlaceSettingsService",
+          "FFlagRealtimeDurableReplayerNotificationProcessorLifetimeFix",
+          "FFlagSduiErrorPaths",
+          "FFlagSduiSheetComponent2",
+          "FFlagSplitPaneOpaqueExpandedPages",
+          "FFlagTranslationQStringRemovalGroupA",
+          "FFlagTranslationQStringRemovalGroupB",
+          "FFlagTranslationQStringRemovalGroupC",
+          "FFlagTranslationQStringRemovalGroupD",
+          "FFlagTranslationQStringRemovalGroupE",
+          "FStringHomePromptsHandlerPromptStyles",
+          "SFFlagAnimGraphFixLoopedClipDoubleAdvance"
+        ],
+        "changed": [
+          {
+            "after": "False",
+            "before": "True",
+            "name": "DFFlagEnableVipOwnerNotPresentJoinError"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "DFFlagStyleTransitionColorSpace"
+          },
+          {
+            "after": "ce03b7007500e1867b7cda60e147ee1676ae44ef",
+            "before": "a7d202aaad6c3c71e32201a3d14b3ae4cb78c6dc",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-13T22:02:48.442Z",
+            "before": "2026-11-13T18:20:09.087Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagAddVipOwnerNotPresentConnectionError"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagFmodUseOpenSlOnApi28And29"
+          },
+          {
+            "after": "True",
+            "before": "False",
+            "name": "FFlagSearchAllRegistryEntriesForAutoFocus"
+          },
+          {
+            "after": "ce03b7007500e1867b7cda60e147ee1676ae44ef",
+            "before": "a7d202aaad6c3c71e32201a3d14b3ae4cb78c6dc",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-13T22:02:48.442Z",
+            "before": "2026-11-13T18:20:09.087Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFIntRCCMonitoringActionReportRolloutPermyriad_Staged",
+          "FFlagFmodUseOpenSlOnApi28And29_Staged",
+          "FFlagLrInlineDeltas_Staged",
+          "FFlagMeshContentProviderFutureApi2_Staged",
+          "FFlagSearchAllRegistryEntriesForAutoFocus_Staged",
+          "FFlagSplitPaneOpaqueExpandedPages_Staged",
+          "FFlagTranslationQStringRemovalGroupA_Staged",
+          "FFlagTranslationQStringRemovalGroupB_Staged",
+          "FFlagTranslationQStringRemovalGroupC_Staged",
+          "FFlagTranslationQStringRemovalGroupD_Staged",
+          "FFlagTranslationQStringRemovalGroupE_Staged",
+          "FStringHomePromptsHandlerPromptStyles_Staged",
+          "SFFlagAnimGraphFixLoopedClipDoubleAdvance_Staged"
+        ],
+        "unchanged": 27355
+      }
+    },
+    "Web": {
+      "current": "ac9096b43887415b56745b2fdf5c8092899b48402586a70e02ad11e40a4746af",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-049.js",
+          "assets.create.roblox.com/page-0/script-064.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-072.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.create.roblox.com/page-1/script-001.js",
+          "assets.create.roblox.com/page-1/script-003.js",
+          "assets.create.roblox.com/page-1/script-004.js",
+          "assets.create.roblox.com/page-1/script-011.js",
+          "assets.create.roblox.com/page-1/script-013.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 78
+      },
+      "previous": "5489f64e4def58c7a713e673bd18abca9124191b20adf5bc56c62938033a8192",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}

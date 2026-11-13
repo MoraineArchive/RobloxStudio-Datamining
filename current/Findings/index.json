@@ -15971,11 +15971,108 @@
             "scroller",
             "sheet"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/13/22-35-22Z_datasets",
+          "evidencePath": "2026/11/13/22-35-22Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "3de75770e97e0cdd3e726a6756ee3c82ef8696fe695f7424c0398bab0adddd5b",
+          "key": "FFlagMomentsCreationCompactPanelSquareCorners",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-13T22:35:22.370Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "compact",
+            "corners",
+            "creation",
+            "moments",
+            "panel",
+            "square"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/13/22-35-22Z_datasets",
+          "evidencePath": "2026/11/13/22-35-22Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "423535ce732c687a7c153b05064f41e3eb30c85d2ee7fcec05a81a1a24556ed5",
+          "key": "DFFlagMomentsCreatePostPublishTracking",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-13T22:35:22.370Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "create",
+            "moments",
+            "post",
+            "publish",
+            "tracking"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/13/22-35-22Z_datasets",
+          "evidencePath": "2026/11/13/22-35-22Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "6142b17ecf7e36ebb3d255eb74662a86298c047972eca23713813d69db28b6d9",
+          "key": "FFlagMomentsTextOverlayFontSliderTouchArea",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-13T22:35:22.370Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "area",
+            "font",
+            "moments",
+            "overlay",
+            "slider",
+            "text",
+            "touch"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/13/22-35-22Z_datasets",
+          "evidencePath": "2026/11/13/22-35-22Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "e4d49c41d6aa9aba7e04dac3720712878a2af0e9f7aad790f445e5879e10743d",
+          "key": "FFlagMomentsCreationSessionId",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-13T22:35:22.370Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "moments",
+            "session"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-11-13T00:18:22.925Z",
+      "lastObservedAt": "2026-11-13T22:35:22.370Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
