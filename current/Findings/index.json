@@ -16068,11 +16068,36 @@
             "moments",
             "session"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/16/20-24-39Z_datasets",
+          "evidencePath": "2026/11/16/20-24-39Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "a4f105a89ae6d9c0d66a5e2555e38f00cbca9c8a2615ad3b06fdce2e9ada11b8",
+          "key": "FFlagMomentsUpdateExperienceActionLabelText_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-16T20:24:39.099Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "action",
+            "experience",
+            "label",
+            "moments",
+            "text",
+            "update"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-11-13T22:35:22.370Z",
+      "lastObservedAt": "2026-11-16T20:24:39.099Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",

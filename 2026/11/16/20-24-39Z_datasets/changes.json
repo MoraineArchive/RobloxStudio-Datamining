@@ -1,0 +1,185 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-63eb6055af4e4688",
+    "manifestFiles": 19240,
+    "packages": 34,
+    "version": "0.747.0.7471481"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "dfe7d45f27bf96b9ad7d68c6cdae917932cb4431dc6bb3df3150e1bafd06a56d",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "5b12572cb8b7534dcfbc27986dc9680735986ef29cbf6fa34661a8b0ac662e37",
+      "semantic": {
+        "added": [
+          "DFFlagAccessCodeV2LegacyReserveResultGameCode_Staged",
+          "DFFlagCLI229090",
+          "DFFlagCLI229090Disconnect_Staged",
+          "DFFlagCanSupportTweenInfoWithCurveParamsNetworkSerialization",
+          "DFFlagCanSupportTweenInfoWithCurveParamsSerialization",
+          "DFFlagCheckPartOperationChangedForPIPS",
+          "DFFlagEmptyMeshPartBoxFidelitySyncFix",
+          "DFFlagFixTeleportToDisconnectedPlayer_Staged",
+          "DFFlagLcCacheOptDefaultEnabled4",
+          "DFFlagMpSkipOverflowLabelForUnnamedScopes",
+          "DFFlagNullEngineContextPart5",
+          "DFFlagRM3T0VFInvokeScreenshotTriggerOnTimerInit",
+          "DFFlagRM3Tier0VisualFilterMonitoringEnabled",
+          "DFFlagRbxTransportAuthGateOnJoinTicketV2",
+          "DFFlagRtcIoSharedConnSlotUseResourcesHelper",
+          "DFFlagStreamingLargeSetProfilerLabels",
+          "DFFlagSyncPCDRequestIdFromPCDFix",
+          "EnablePushNotificationSettingsMethodsForAndroid",
+          "FFlagAXEnableRefinementControlBarZIndex_Staged",
+          "FFlagAXItemDetailsSduiActions",
+          "FFlagAXItemDetailsSduiBodyActions4_Staged",
+          "FFlagAXSduiCatalogItemTypeIds_Staged",
+          "FFlagAnimGraphUI_TriggerParamButton",
+          "FFlagApplicationFrameRatePolicy3_Staged",
+          "FFlagAssistantCapturePluginGuiFocusPanel_Staged",
+          "FFlagAssistantGameTreeYield",
+          "FFlagAssistantShorterCapturePluginGuiDescription",
+          "FFlagAssistantTextureGenMcpPreviewReference_Staged",
+          "FFlagBuildExperienceHistoryPollTelemetry",
+          "FFlagCloudClientProtobufWebViewMessages_Staged",
+          "FFlagDisablePhysicsGameSteppedPerNOUStat_Staged",
+          "FFlagEnableExperienceAssetCreatorTypeWrite",
+          "FFlagEnableFlyoutNavRailBumperNavigation_Staged",
+          "FFlagExhaustiveDataModelCreatorTypeChecks",
+          "FFlagExpChatReportHistoricalRenders_Staged",
+          "FFlagFFlagEnableFontStylisticAlternativesOnSocialScreens",
+          "FFlagFixMechanismInterpolationParentSpace",
+          "FFlagFmodPlaybackSilenceNewRenderGroupInstantly",
+          "FFlagLuaAppAddUniverseIdToEngagementEvents2",
+          "FFlagLuaAppDevStoreSeeAllAdvertiseCapabilities_Staged",
+          "FFlagLuaAppExperienceLeaderboardSeeAllEnabled2_Staged",
+          "FFlagLuaAppSduiLandingPageEnabled",
+          "FFlagLuaEnableGenreLandingDeeplink",
+          "FFlagLuauCodegenMetatableCache_Staged",
+          "FFlagLuauCodegenMultiLaneDot_Staged",
+          "FFlagLuauCodegenUseOptionBuilder_Staged",
+          "FFlagLuauCompileLoopUnrollNegativeZero_Staged",
+          "FFlagLuauFixNormalizeFunctionIntersections",
+          "FFlagLuauSaltedInterningTable_Staged",
+          "FFlagMacBrowserServiceExecuteJavaScript_Staged",
+          "FFlagMigrateAsyncComponentToAsyncBinding_Staged",
+          "FFlagMomentsUpdateExperienceActionLabelText_Staged",
+          "FFlagNetworkSchemaServerEngineNetConfigOnly_Staged",
+          "FFlagSduiAddCollectibleItemDataHydration",
+          "FFlagSduiCatalogItemCard",
+          "FFlagSduiLeaderboardComponent_Staged",
+          "FFlagSduiMilestoneCountActions_Staged",
+          "FFlagSettingsSelectorStepOnPressOnly",
+          "FFlagSimApplyPoseAcceptsQuaternion_Staged",
+          "FFlagSocialFollowAttribution_Staged",
+          "FFlagStudioDataModelProxyIgnoreWriteOnlyProperties",
+          "FFlagStudioFoundationDialogContext",
+          "FFlagStudioPanelsResolveFullPluginGuiId_Staged",
+          "FFlagStudioPluginCaptureFromOwnWindow",
+          "FFlagStylingTransitionsBezierSpringRead_Staged",
+          "FFlagTTranscoderImprovements",
+          "FFlagTerrainEditorExpandedTerrainShutdownTeamCreate2_Staged",
+          "FFlagTextFilterEducationRecentCopyEnabled_Staged",
+          "FFlagTexturePackCustomMips",
+          "FFlagToolboxAssetConfigDeferFailureDialog",
+          "FFlagToolboxExperienceCreatorTypeAssetConfig",
+          "FFlagToolboxExperienceCreatorTypeLegacyTabs",
+          "FFlagToolboxExperienceCreatorTypeMarketplaceAssetConfig",
+          "FFlagUseFriendsListOrderedByIdPresenceImpressionEventsEnabled_Staged",
+          "FFlagUserProfileStoreSplitPlatformFields_Staged",
+          "FFlagUserTileAvatarOverlayIcon",
+          "FFlagVoxelPool2FixPageOverAllocation_Staged",
+          "FFlagWASMTextBoxUpdateInDMTask",
+          "FFlagWebKeyCodeDisplayStringFromLayout",
+          "FLogStudioCreatorTypeParsing"
+        ],
+        "changed": [
+          {
+            "after": "False",
+            "before": "True",
+            "name": "DFFlagEditableMeshAddFaceSignatureChangeHint"
+          },
+          {
+            "after": "745",
+            "before": "743",
+            "name": "DFIntJoinLimitOsx"
+          },
+          {
+            "after": "745",
+            "before": "743",
+            "name": "DFIntJoinLimitWin32x64"
+          },
+          {
+            "after": "331efaf4a1cc412bcf77c466c4885b71460d93c8",
+            "before": "d2327631cb1451cc16d7fa31bb0cd094f67abdb1",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-16T20:24:03.287Z",
+            "before": "2026-11-16T07:02:21.347Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "331efaf4a1cc412bcf77c466c4885b71460d93c8",
+            "before": "d2327631cb1451cc16d7fa31bb0cd094f67abdb1",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-16T20:24:03.287Z",
+            "before": "2026-11-16T07:02:21.347Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagProfileCTAHydratePresenceFromMetadata_v2_IXP"
+        ],
+        "unchanged": 27385
+      }
+    },
+    "Web": {
+      "current": "1c4b433cefe0aad18197d00da5f45253d72c028f1a3674007f60f0f204d90ec4",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-020.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-049.js",
+          "assets.create.roblox.com/page-0/script-050.js",
+          "assets.create.roblox.com/page-0/script-061.js",
+          "assets.create.roblox.com/page-0/script-064.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.create.roblox.com/page-1/script-001.js",
+          "assets.create.roblox.com/page-1/script-003.js",
+          "assets.create.roblox.com/page-1/script-004.js",
+          "assets.create.roblox.com/page-1/script-011.js",
+          "assets.create.roblox.com/page-1/script-012.js",
+          "assets.create.roblox.com/page-1/script-013.js",
+          "assets.create.roblox.com/page-1/script-014.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 73
+      },
+      "previous": "49448318df4d3387d796d20d7a4699c263c823e785d901d4c9eaf14d160911d4",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
