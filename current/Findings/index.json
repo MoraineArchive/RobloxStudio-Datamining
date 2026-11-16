@@ -16093,11 +16093,130 @@
             "text",
             "update"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/16/22-33-47Z_datasets",
+          "evidencePath": "2026/11/16/22-33-47Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "3de0949421fa1ed68fe854b8fd62731fcbf2376c0494ef33a123f0b6b30f493d",
+          "key": "FFlagMomentsCommentDeepLinks_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-16T22:33:47.470Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "comment",
+            "deep",
+            "links",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/16/22-33-47Z_datasets",
+          "evidencePath": "2026/11/16/22-33-47Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "41b7112262d0ed1c3f538903d392e13544606d5bc025610e38710c822e36149a",
+          "key": "FFlagMomentsCommentTranslation_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-16T22:33:47.470Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "comment",
+            "moments",
+            "translation"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/16/22-33-47Z_datasets",
+          "evidencePath": "2026/11/16/22-33-47Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "43b1af42c210368d3d0d11159c8fe9b18902c349c34e673082b008958dd0b812",
+          "key": "FFlagMomentsUpdateExperienceActionLabelText_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-16T22:33:47.470Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "action",
+            "experience",
+            "label",
+            "moments",
+            "text",
+            "update"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/16/22-33-47Z_datasets",
+          "evidencePath": "2026/11/16/22-33-47Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "528da1c20395868b76f65681ac58b30152de23c80c6c0a6905fa5d9f13e1f595",
+          "key": "FFlagMomentsTextOverlayV2RedesignPhase1_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-16T22:33:47.470Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "moments",
+            "overlay",
+            "phase1",
+            "redesign",
+            "text"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/16/22-33-47Z_datasets",
+          "evidencePath": "2026/11/16/22-33-47Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "e9b6ab5e8adf6f8c9ecf1b8332a6f20b6204bd6ff81b6c24efd8793d90223a87",
+          "key": "FFlagMomentsUpdateExperienceActionLabelText",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-16T22:33:47.470Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "action",
+            "experience",
+            "label",
+            "moments",
+            "text",
+            "update"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-11-16T20:24:39.099Z",
+      "lastObservedAt": "2026-11-16T22:33:47.470Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
@@ -16541,6 +16660,14 @@
           "signalIds": [
             "a8db662d4fdb152760644f9542c43ab4e864a44208881ee19d58a5c0dff2c79c",
             "e0ef7f271d1dd9e3c76cd5d2b13daa196f918bb0816e1587ce669b0ad4facdf9"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-11-16T22:33:47.470Z",
+          "signalIds": [
+            "a4f105a89ae6d9c0d66a5e2555e38f00cbca9c8a2615ad3b06fdce2e9ada11b8",
+            "e9b6ab5e8adf6f8c9ecf1b8332a6f20b6204bd6ff81b6c24efd8793d90223a87"
           ],
           "type": "staged-to-non-staged"
         }
