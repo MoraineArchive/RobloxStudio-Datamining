@@ -1,0 +1,102 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-63eb6055af4e4688",
+    "manifestFiles": 19240,
+    "packages": 34,
+    "version": "0.747.0.7471481"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "4adedec6e94cc1502bb4cb2dd49ee3afe6e92b3ba794c62099fb11054aa38bbf",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "dfe7d45f27bf96b9ad7d68c6cdae917932cb4431dc6bb3df3150e1bafd06a56d",
+      "semantic": {
+        "added": [
+          "FFlagAXSduiCatalogItemTypeIds",
+          "FFlagCloudClientWebViewForwardingParity_Staged",
+          "FFlagLuauCodegenCFrameArithmetic_Staged",
+          "FFlagLuauCodegenForwardSplitStore_Staged",
+          "FFlagLuauCodegenMetatableCache",
+          "FFlagLuauCodegenMultiLaneDot",
+          "FFlagLuauCodegenUseOptionBuilder",
+          "FFlagLuauCodegenUserdataDirect_Staged",
+          "FFlagLuauCompileLoopUnrollNegativeZero",
+          "FFlagLuauRuntimeFeedback2_Staged",
+          "FFlagTerrainEditorExpandedTerrainShutdownTeamCreate2",
+          "FFlagVoiceChatGrpcDrainOnTeardown_Staged"
+        ],
+        "changed": [
+          {
+            "after": "4a111fd7eda5d9abbee7eedc044b259cfac07eaa",
+            "before": "331efaf4a1cc412bcf77c466c4885b71460d93c8",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-16T20:35:56.303Z",
+            "before": "2026-11-16T20:24:03.287Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagUseFriendsListOrderedByIdPresenceImpressionEventsEnabled"
+          },
+          {
+            "after": "4a111fd7eda5d9abbee7eedc044b259cfac07eaa",
+            "before": "331efaf4a1cc412bcf77c466c4885b71460d93c8",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-16T20:35:56.303Z",
+            "before": "2026-11-16T20:24:03.287Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagAXSduiCatalogItemTypeIds_Staged",
+          "FFlagLuauCodegenMetatableCache_Staged",
+          "FFlagLuauCodegenMultiLaneDot_Staged",
+          "FFlagLuauCodegenUseOptionBuilder_Staged",
+          "FFlagLuauCompileLoopUnrollNegativeZero_Staged",
+          "FFlagTerrainEditorExpandedTerrainShutdownTeamCreate2_Staged",
+          "FFlagUseFriendsListOrderedByIdPresenceImpressionEventsEnabled_Staged"
+        ],
+        "unchanged": 27460
+      }
+    },
+    "Web": {
+      "current": "fd9ad0f238cbd86466cf0e33a69be34e53db73fb1c025bdaecb7e4cf630fc48f",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-050.js",
+          "assets.create.roblox.com/page-0/script-061.js",
+          "assets.create.roblox.com/page-0/script-064.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 84
+      },
+      "previous": "1c4b433cefe0aad18197d00da5f45253d72c028f1a3674007f60f0f204d90ec4",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
