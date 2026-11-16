@@ -1,0 +1,88 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-63eb6055af4e4688",
+    "manifestFiles": 19240,
+    "packages": 34,
+    "version": "0.747.0.7471481"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "4d4c292412b6e522275fd2997aabaa9db92c6a3dcef5b11eb7aa133c5b7ed70c",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "c2ad4a02c4a765468b861d9c76b17631a0d5f7911d019f3beb2529f722814b88",
+      "semantic": {
+        "added": [
+          "DFFlagAssetProviderPrewarmSkipInvalidPlaceId_Staged",
+          "DFFlagTelemetryFpsFromHeartbeat",
+          "FFlagAdjustHorizontalUserListSizeForMobile_Staged",
+          "FFlagCloudClientEligibilityReasonLogs_Staged",
+          "FFlagCloudClientForceEligibleAttachPopReport_Staged",
+          "FFlagCloudClientLibWebrtcDataChannelClose_Staged",
+          "FFlagCloudClientSessionHistoryInMemory_Staged",
+          "FFlagCloudClientSyncOfferEligibility_Staged",
+          "FFlagEnableDeeplinkCodeParamMergeBeforeSeedAndroid_Staged",
+          "FFlagExpChatMessageListScrollParity_Staged",
+          "FFlagFetchFlagLinkedIxpOnLogin_Staged",
+          "FFlagFriendsChatMessageListHeaderFade_Staged",
+          "FFlagLuauCageRealloc_Staged",
+          "FFlagLuauCodegenCFrameArithmetic",
+          "FFlagLuauCodegenForwardSplitStore",
+          "FFlagLuauCodegenUserdataDirect",
+          "FFlagLuauRuntimeFeedback2",
+          "FFlagMomentsCommentDeepLinks",
+          "FFlagMoveGamepadDisconnectHandlerToUniversalApp_Staged",
+          "FFlagProfilePlatformAboutBeforeActionClient",
+          "FFlagRbxTransportQuicPrefixAddressDecisions_Staged",
+          "FFlagRealtimeMediaDisconnectReason_Staged",
+          "FFlagVirtualInputWindowTargets_Staged",
+          "FFlagVoiceChatGrpcDrainOnTeardown",
+          "FFlagXboxMultiplayerHandlersHoldWeakSelf"
+        ],
+        "changed": [
+          {
+            "after": "93896a4569eb0226438f248feefa58aa16a178a0",
+            "before": "b1b444f50e7e8f41b05ccac2f6d14b5a5253ac59",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-16T23:13:37.861Z",
+            "before": "2026-11-16T22:30:02.256Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "93896a4569eb0226438f248feefa58aa16a178a0",
+            "before": "b1b444f50e7e8f41b05ccac2f6d14b5a5253ac59",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-16T23:13:37.861Z",
+            "before": "2026-11-16T22:30:02.256Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagTelemetryFpsFromHeartbeat_Staged",
+          "FFlagLuauCodegenCFrameArithmetic_Staged",
+          "FFlagLuauCodegenForwardSplitStore_Staged",
+          "FFlagLuauCodegenUserdataDirect_Staged",
+          "FFlagLuauRuntimeFeedback2_Staged",
+          "FFlagMomentsCommentDeepLinks_Staged",
+          "FFlagProfilePlatformAboutBeforeActionClient_Staged",
+          "FFlagVoiceChatGrpcDrainOnTeardown_Staged",
+          "FFlagXboxMultiplayerHandlersHoldWeakSelf_Staged"
+        ],
+        "unchanged": 27489
+      }
+    }
+  },
+  "schemaVersion": 1
+}
