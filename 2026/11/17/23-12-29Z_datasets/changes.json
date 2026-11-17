@@ -1,0 +1,92 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-8d7a1009c17e4ff8",
+    "manifestFiles": 19343,
+    "packages": 34,
+    "version": "0.748.0.7481526"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "3ad1b6fab116826f950a1e7c2b3c3484f99dcebe7c3d41f69724f5d4ea7d2fe7",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "4561fc3ca906c927b66a2377b56f2f0554cd7fc9cb755f5eb106ced629e131b4",
+      "semantic": {
+        "added": [
+          "DFFlagBadgeServiceReportTooManyRequests_Staged",
+          "FFlagAXItemViewportRestoreParentScrollingOnUnmount_Staged",
+          "FFlagAnimGraphUI_BreakConnections_Staged",
+          "FFlagAnimGraphUI_EditParameterizedAngle_Staged",
+          "FFlagAnimGraphUI_FixCloseReopens_Staged",
+          "FFlagDeviceSimulatorSplitEditPlayQuality_Staged",
+          "FFlagDeviceSimulatorToolbarHide_Staged",
+          "FFlagResetHoverTileOnGameLeave_Staged",
+          "FFlagSduiEdpRenderStarted_Staged",
+          "FFlagSduiLaunchExperienceCheckPlayabilityBeforeLaunch_Staged",
+          "FFlagSignalDisconnectAllClearsSlotOwners",
+          "FFlagTTITrackerDropEventsOnJoinAttempt_Staged",
+          "FFlagTexturePackUVTransform2_Staged"
+        ],
+        "changed": [
+          {
+            "after": "fd4f7cab34551b6d17133f7cffa7076d563ac3cc",
+            "before": "988ad72701f3d8a09efbe95a55f3cf768cd07ecb",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-17T23:09:00.715Z",
+            "before": "2026-11-17T22:31:47.567Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "fd4f7cab34551b6d17133f7cffa7076d563ac3cc",
+            "before": "988ad72701f3d8a09efbe95a55f3cf768cd07ecb",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-17T23:09:00.715Z",
+            "before": "2026-11-17T22:31:47.567Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagSignalDisconnectAllClearsSlotOwners_Staged"
+        ],
+        "unchanged": 27611
+      }
+    },
+    "Web": {
+      "current": "681f88cae71d611acde0b795e54cbf82fbff5e06fec8666122ad86cdcfc1bb1a",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-050.js",
+          "assets.create.roblox.com/page-0/script-061.js",
+          "assets.create.roblox.com/page-0/script-065.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 84
+      },
+      "previous": "640c9799ee0680700baac0499c51e5fa1bf0d4256d5321f71cb245b3721b0f52",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
