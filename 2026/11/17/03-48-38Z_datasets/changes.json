@@ -1,0 +1,163 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-63eb6055af4e4688",
+    "manifestFiles": 19240,
+    "packages": 34,
+    "version": "0.747.0.7471481"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "bb3bf6d621dc9a928dc870644242172c79517b393399f4cea363ef8afb4636c0",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "4d4c292412b6e522275fd2997aabaa9db92c6a3dcef5b11eb7aa133c5b7ed70c",
+      "semantic": {
+        "added": [
+          "DFFlagAssetProviderPrewarmSkipInvalidPlaceId",
+          "DFFlagDurangoGetNetworkTypeCatchWinRTException_Staged",
+          "DFFlagFixStreamingObserverSubsOOBWrite_Staged",
+          "FFlagAXItemDetailsSduiFavorite",
+          "FFlagAXItemDetailsSduiImpressionsAndExposure_Staged",
+          "FFlagAXItemDetailsSduiScrollSuppression",
+          "FFlagAXItemMediaHeaderDefaultAspectRatio_Staged",
+          "FFlagAmrFriendlyEnumNamesOnly",
+          "FFlagAppThemeBackgroundLayerSplitPaneClip_Staged",
+          "FFlagAppThemeHalloween2026",
+          "FFlagAppThemeHalloween2026BuildBackground_Staged",
+          "FFlagAppThemeHalloween2026ChatBackground_Staged",
+          "FFlagAppThemeHalloween2026FriendsBackground_Staged",
+          "FFlagAppThemeHalloween2026SettingsBackground_Staged",
+          "FFlagAssetManagerAssetVersionChanged",
+          "FFlagCleanupTenFootUiCursorEffect_Staged",
+          "FFlagDMCTTrackSharedSetterSources2_Staged",
+          "FFlagFixMechanismInterpolationParentSpace_Staged",
+          "FFlagGamepadDisconnectAutoFocusSuppression_Staged",
+          "FFlagLuaAppBottomBarInsetSurfaceBackground",
+          "FFlagMomentsCommentTranslation",
+          "FFlagMomentsUseSharedReactions_Staged",
+          "FFlagMoveForceThemeToThemeChangeEventReceiver_Staged",
+          "FFlagNetPerfAnalysisAfterSync_Staged",
+          "FFlagNetworkPerfTestClientAnalysis6_Staged",
+          "FFlagSduiAddMarketplaceItemFavoriteHydration",
+          "FFlagSduiFriendsOwnedChip",
+          "FFlagSduiLeaderboardCapability_Staged",
+          "FFlagStreamingTerrainRegionQuotaScaleEnabled",
+          "FIntStudioLoginPageRolloutPercent4_Staged"
+        ],
+        "changed": [
+          {
+            "after": "False",
+            "before": "True",
+            "name": "DFFlagEmptyMeshPartBoxFidelitySyncFix"
+          },
+          {
+            "after": "501171eaa3058f8415265da3f0b80065bfa36bc3",
+            "before": "93896a4569eb0226438f248feefa58aa16a178a0",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-17T02:37:58.729Z",
+            "before": "2026-11-16T23:13:37.861Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "501171eaa3058f8415265da3f0b80065bfa36bc3",
+            "before": "93896a4569eb0226438f248feefa58aa16a178a0",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-17T02:37:58.729Z",
+            "before": "2026-11-16T23:13:37.861Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagAssetProviderPrewarmSkipInvalidPlaceId_Staged",
+          "DFFlagEmptyMeshPartBoxFidelitySyncFix_Staged",
+          "FFlagAXItemDetailsSduiFavorite_Staged",
+          "FFlagAXItemDetailsSduiScrollSuppression_Staged",
+          "FFlagAmrFriendlyEnumNamesOnly_Staged",
+          "FFlagAppThemeHalloween2026_Staged",
+          "FFlagAssetManagerAssetVersionChanged_Staged",
+          "FFlagCloudClientLibWebrtcDataChannelClose_Staged",
+          "FFlagLuaAppBottomBarInsetSurfaceBackground_Staged",
+          "FFlagMomentsCommentTranslation_Staged",
+          "FFlagSduiAddMarketplaceItemFavoriteHydration_Staged",
+          "FFlagSduiFriendsOwnedChip_Staged",
+          "FFlagStreamingTerrainRegionQuotaScaleEnabled_Staged"
+        ],
+        "unchanged": 27500
+      }
+    },
+    "Web": {
+      "current": "873e684621b14b6fdfbf9c12b13a818ebbb131fa8c83ed2e6b4b13dab881deb9",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-010.js",
+          "assets.create.roblox.com/page-0/script-011.js",
+          "assets.create.roblox.com/page-0/script-012.js",
+          "assets.create.roblox.com/page-0/script-013.js",
+          "assets.create.roblox.com/page-0/script-014.js",
+          "assets.create.roblox.com/page-0/script-015.js",
+          "assets.create.roblox.com/page-0/script-016.js",
+          "assets.create.roblox.com/page-0/script-019.js",
+          "assets.create.roblox.com/page-0/script-020.js",
+          "assets.create.roblox.com/page-0/script-021.js",
+          "assets.create.roblox.com/page-0/script-022.js",
+          "assets.create.roblox.com/page-0/script-026.js",
+          "assets.create.roblox.com/page-0/script-027.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-031.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-043.js",
+          "assets.create.roblox.com/page-0/script-044.js",
+          "assets.create.roblox.com/page-0/script-048.js",
+          "assets.create.roblox.com/page-0/script-049.js",
+          "assets.create.roblox.com/page-0/script-050.js",
+          "assets.create.roblox.com/page-0/script-054.js",
+          "assets.create.roblox.com/page-0/script-057.js",
+          "assets.create.roblox.com/page-0/script-059.js",
+          "assets.create.roblox.com/page-0/script-060.js",
+          "assets.create.roblox.com/page-0/script-061.js",
+          "assets.create.roblox.com/page-0/script-062.js",
+          "assets.create.roblox.com/page-0/script-063.js",
+          "assets.create.roblox.com/page-0/script-064.js",
+          "assets.create.roblox.com/page-0/script-065.js",
+          "assets.create.roblox.com/page-0/script-066.js",
+          "assets.create.roblox.com/page-0/script-068.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-070.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.create.roblox.com/page-1/script-001.js",
+          "assets.create.roblox.com/page-1/script-003.js",
+          "assets.create.roblox.com/page-1/script-004.js",
+          "assets.create.roblox.com/page-1/script-011.js",
+          "assets.create.roblox.com/page-1/script-013.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 47
+      },
+      "previous": "371f1db287a3f463f754b726ec74d9fe053f9a63c8ae4b498ba36a5de4f5e0e6",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
