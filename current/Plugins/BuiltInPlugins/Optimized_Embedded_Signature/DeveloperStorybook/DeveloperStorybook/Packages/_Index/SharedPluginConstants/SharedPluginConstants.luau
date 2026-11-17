@@ -20,4 +20,5 @@ return {
 	ASSET_MANAGER = AssetManager,
 	TERRAIN = require(script.plugins.Terrain),
 	CONTENT_EDIT = require(script.plugins.ContentEdit),
+	TEXT_DOCUMENT_ASSET_EDITOR = require(script.plugins.TextDocumentAssetEditor),
 }

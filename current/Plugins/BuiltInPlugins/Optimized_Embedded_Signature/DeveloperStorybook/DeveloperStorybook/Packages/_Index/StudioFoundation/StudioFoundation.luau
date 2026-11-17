@@ -1,8 +1,10 @@
 local Dialog = require(script.Components.Dialog)
+local DialogContext = require(script.Contexts.DialogContext)
 local FoundationProviderAdapter = require(script.Components.FoundationProviderAdapter)
 local Types = require(script.Types)
 
 export type DialogAction = Types.DialogAction
+export type DialogContextType = DialogContext.DialogContextType
 export type DialogEscapeButtonAction = Types.DialogEscapeButtonAction
 export type DialogProps = Dialog.Props
 export type DialogTertiaryActionVariant = Types.DialogTertiaryActionVariant
@@ -15,6 +17,7 @@ return {
 		FoundationProviderAdapter = FoundationProviderAdapter,
 	},
 	Contexts = {
+		DialogContext = DialogContext.Context,
 		DialogDmIdContext = require(script.Contexts.DialogDmIdContext),
 		StudioThemeContextProvider = require(script.Contexts.StudioThemeContextProvider),
 		ThemeContext = require(script.Contexts.ThemeContext),
@@ -23,6 +26,7 @@ return {
 		TooltipSettingsContext = require(script.Contexts.TooltipSettingsContext),
 	},
 	SharedFlags = {
+		getFFlagStudioFoundationDialogContext = require(script.SharedFlags.getFFlagStudioFoundationDialogContext),
 		getFFlagStudioFoundationThemeContext = require(script.SharedFlags.getFFlagStudioFoundationThemeContext),
 	},
 	Hooks = {

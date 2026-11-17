@@ -42498,6 +42498,24 @@
     "sha256": "b5b3c0946660f625946e4bd78f6a3854bd6e5836048522ac699e6fd6d912b66d"
   },
   {
+    "bytes": 504,
+    "extension": "png",
+    "path": "Shared/WidgetIcons/Dark/Standard/AnimatedImage.png",
+    "sha256": "d915e6a12e9221e95e020e6f99f7211b27850bd68569b9d34299fecfcaee2191"
+  },
+  {
+    "bytes": 718,
+    "extension": "png",
+    "path": "Shared/WidgetIcons/Dark/Standard/AnimatedImage@2x.png",
+    "sha256": "6d345b31e4aa4e841c57fa041092fd173d3e46f19e64ab3d2975b02105963e3d"
+  },
+  {
+    "bytes": 1046,
+    "extension": "png",
+    "path": "Shared/WidgetIcons/Dark/Standard/AnimatedImage@3x.png",
+    "sha256": "a4fe2fce70837bad91573e249cf282221b108620d67a648ae0521d3d36b54ef8"
+  },
+  {
     "bytes": 497,
     "extension": "png",
     "path": "Shared/WidgetIcons/Dark/Standard/AnimationEditor.png",
@@ -44044,6 +44062,24 @@
     "extension": "png",
     "path": "Shared/WidgetIcons/Light/Standard/AlignTool@3x.png",
     "sha256": "29059eea6992a4d4cfde790f8e6f21afef454fb7ccc7b1809110887c683ea9cb"
+  },
+  {
+    "bytes": 522,
+    "extension": "png",
+    "path": "Shared/WidgetIcons/Light/Standard/AnimatedImage.png",
+    "sha256": "33d1ac010b63e6f1ec3f60f8dda8f6e4591d7d206f4bc4b644f814b39323f48c"
+  },
+  {
+    "bytes": 757,
+    "extension": "png",
+    "path": "Shared/WidgetIcons/Light/Standard/AnimatedImage@2x.png",
+    "sha256": "cded49ba0929155e8ff07946251d8d621b3a0a57586116a502b8d4a49e2db591"
+  },
+  {
+    "bytes": 1090,
+    "extension": "png",
+    "path": "Shared/WidgetIcons/Light/Standard/AnimatedImage@3x.png",
+    "sha256": "7481e043c85840d4efff53e8b0c37004f6ac42dde5d714aa8c6474d874a84c32"
   },
   {
     "bytes": 490,

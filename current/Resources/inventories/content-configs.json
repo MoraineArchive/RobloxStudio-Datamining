@@ -177,7 +177,7 @@
     "bytes": 252,
     "extension": "json",
     "path": "InExperiencePatchConfig/InExperiencePatchConfig.json",
-    "sha256": "dc8eceb8dda7a0eb48467f5459daee4ea3270afd4ad8d6bf54936add6ea43a66"
+    "sha256": "889eb1c92efa26bd598c87b89822ccb2c7c534f476682048037dadfb70a92a2d"
   },
   {
     "bytes": 179,
@@ -219,6 +219,6 @@
     "bytes": 253,
     "extension": "json",
     "path": "UniversalAppPatchConfig/UniversalAppPatchConfig.json",
-    "sha256": "4575a96ddefb770088a67a0f736e088dd7d611587d58d69289ec1c063cfede3c"
+    "sha256": "f28284cba27a76e03f88f9f682d5c41418a3ced332870dd09bc3117be2e7d3d6"
   }
 ]

@@ -36,6 +36,18 @@
     "sha256": "64c37fd20a5e7f5670f47f706e1fcf6f8ffe65a7a448458fa465b0f1d8db6dda"
   },
   {
+    "bytes": 4195,
+    "extension": "rbxm",
+    "path": "abilities/AvatarAbilitiesCharacter_oneLine.rbxm",
+    "sha256": "380d636645e3921c5e90380246d2abf997b88912db12aff81f9ef7c20854e677"
+  },
+  {
+    "bytes": 366,
+    "extension": "rbxm",
+    "path": "abilities/AvatarAbilitiesPlayer_oneLine.rbxm",
+    "sha256": "14c576e3eec0ec4534b92e7508d5d8cfd2ad5d06af2949109eeecbb281fca68d"
+  },
+  {
     "bytes": 756,
     "extension": "rbxm",
     "path": "abilities/AvatarAbilitiesServerScript.rbxm",
@@ -466,6 +478,18 @@
     "extension": "rbxm",
     "path": "scripts/R15MoodsV2.rbxm",
     "sha256": "9797b8eec6cfde7c755b3d8bb2f6df6183cccb6fe1ea85a07213f9ba97682744"
+  },
+  {
+    "bytes": 19509,
+    "extension": "rbxm",
+    "path": "ugcValidation/CurveAnimTemplateRigClassicR15.rbxm",
+    "sha256": "456b773d402ce0bd8a646eeb4b8c7079f17533556ab91674de7f18faea73f81d"
+  },
+  {
+    "bytes": 30241,
+    "extension": "rbxm",
+    "path": "ugcValidation/CurveAnimTemplateRigR15Plus.rbxm",
+    "sha256": "decefef02f6be234bb44bb82a83631f26688eefeb70a08397485d9600e74e259"
   },
   {
     "bytes": 8438,

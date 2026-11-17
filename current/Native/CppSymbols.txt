@@ -11,7 +11,6 @@
 ??0?$codecvt@_WDU_Mbstatet@@@std@@QEAA@_K@Z	public: __cdecl std::codecvt<wchar_t,char,struct _Mbstatet>::codecvt<wchar_t,char,struct _Mbstatet>(unsigned __int64) __ptr64
 ??0?$num_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@QEAA@_K@Z	public: __cdecl std::num_get<char,class std::istreambuf_iterator<char,struct std::char_traits<char> > >::num_get<char,class std::istreambuf_iterator<char,struct std::char_traits<char> > >(unsigned __int64) __ptr64
 ??0Connection@QMetaObject@@QEAA@$$QEAV01@@Z	public: __cdecl QMetaObject::Connection::Connection(class QMetaObject::Connection && __ptr64) __ptr64
-??0Connection@QMetaObject@@QEAA@AEBV01@@Z	public: __cdecl QMetaObject::Connection::Connection(class QMetaObject::Connection const & __ptr64) __ptr64
 ??0Connection@QMetaObject@@QEAA@XZ	public: __cdecl QMetaObject::Connection::Connection(void) __ptr64
 ??0DockDocumentPanel@Qtitan@@QEAA@PEAVDockPanelManager@1@@Z	public: __cdecl Qtitan::DockDocumentPanel::DockDocumentPanel(class Qtitan::DockPanelManager * __ptr64) __ptr64
 ??0DockPanelManager@Qtitan@@QEAA@PEAVQMainWindow@@@Z	public: __cdecl Qtitan::DockPanelManager::DockPanelManager(class QMainWindow * __ptr64) __ptr64
@@ -31,8 +30,6 @@
 ??0FbxString@fbxsdk@@QEAA@PEBD@Z	public: __cdecl fbxsdk::FbxString::FbxString(char const * __ptr64) __ptr64
 ??0FbxString@fbxsdk@@QEAA@XZ	public: __cdecl fbxsdk::FbxString::FbxString(void) __ptr64
 ??0FbxStringList@fbxsdk@@QEAA@XZ	public: __cdecl fbxsdk::FbxStringList::FbxStringList(void) __ptr64
-??0FbxSystemUnit@fbxsdk@@QEAA@NN@Z	public: __cdecl fbxsdk::FbxSystemUnit::FbxSystemUnit(double,double) __ptr64
-??0FbxSystemUnit@fbxsdk@@QEAA@XZ	public: __cdecl fbxsdk::FbxSystemUnit::FbxSystemUnit(void) __ptr64
 ??0FbxVector2@fbxsdk@@QEAA@XZ	public: __cdecl fbxsdk::FbxVector2::FbxVector2(void) __ptr64
 ??0FbxVector4@fbxsdk@@QEAA@AEBV01@@Z	public: __cdecl fbxsdk::FbxVector4::FbxVector4(class fbxsdk::FbxVector4 const & __ptr64) __ptr64
 ??0FbxVector4@fbxsdk@@QEAA@AEBV?$FbxVectorTemplate3@N@1@@Z	public: __cdecl fbxsdk::FbxVector4::FbxVector4(class fbxsdk::FbxVectorTemplate3<double> const & __ptr64) __ptr64
@@ -324,7 +321,6 @@
 ??0QTableWidget@@QEAA@PEAVQWidget@@@Z	public: __cdecl QTableWidget::QTableWidget(class QWidget * __ptr64) __ptr64
 ??0QTableWidgetItem@@QEAA@AEBVQString@@H@Z	public: __cdecl QTableWidgetItem::QTableWidgetItem(class QString const & __ptr64,int) __ptr64
 ??0QTableWidgetItem@@QEAA@H@Z	public: __cdecl QTableWidgetItem::QTableWidgetItem(int) __ptr64
-??0QTemporaryDir@@QEAA@AEBVQString@@@Z	public: __cdecl QTemporaryDir::QTemporaryDir(class QString const & __ptr64) __ptr64
 ??0QTemporaryFile@@QEAA@XZ	public: __cdecl QTemporaryFile::QTemporaryFile(void) __ptr64
 ??0QTextBlock@@QEAA@AEBV0@@Z	public: __cdecl QTextBlock::QTextBlock(class QTextBlock const & __ptr64) __ptr64
 ??0QTextBrowser@@QEAA@PEAVQWidget@@@Z	public: __cdecl QTextBrowser::QTextBrowser(class QWidget * __ptr64) __ptr64
@@ -359,7 +355,6 @@
 ??0QUrl@@QEAA@$$QEAV0@@Z	public: __cdecl QUrl::QUrl(class QUrl && __ptr64) __ptr64
 ??0QUrl@@QEAA@AEBV0@@Z	public: __cdecl QUrl::QUrl(class QUrl const & __ptr64) __ptr64
 ??0QUrl@@QEAA@AEBVQString@@W4ParsingMode@0@@Z	public: __cdecl QUrl::QUrl(class QString const & __ptr64,enum QUrl::ParsingMode) __ptr64
-??0QUrl@@QEAA@XZ	public: __cdecl QUrl::QUrl(void) __ptr64
 ??0QUrlQuery@@QEAA@AEBVQUrl@@@Z	public: __cdecl QUrlQuery::QUrlQuery(class QUrl const & __ptr64) __ptr64
 ??0QUrlQuery@@QEAA@XZ	public: __cdecl QUrlQuery::QUrlQuery(void) __ptr64
 ??0QVBoxLayout@@QEAA@PEAVQWidget@@@Z	public: __cdecl QVBoxLayout::QVBoxLayout(class QWidget * __ptr64) __ptr64
@@ -419,7 +414,6 @@
 ??1FbxStatus@fbxsdk@@QEAA@XZ	public: __cdecl fbxsdk::FbxStatus::~FbxStatus(void) __ptr64
 ??1FbxString@fbxsdk@@QEAA@XZ	public: __cdecl fbxsdk::FbxString::~FbxString(void) __ptr64
 ??1FbxStringList@fbxsdk@@UEAA@XZ	public: virtual __cdecl fbxsdk::FbxStringList::~FbxStringList(void) __ptr64
-??1FbxSystemUnit@fbxsdk@@QEAA@XZ	public: __cdecl fbxsdk::FbxSystemUnit::~FbxSystemUnit(void) __ptr64
 ??1FbxVector2@fbxsdk@@QEAA@XZ	public: __cdecl fbxsdk::FbxVector2::~FbxVector2(void) __ptr64
 ??1FbxVector4@fbxsdk@@QEAA@XZ	public: __cdecl fbxsdk::FbxVector4::~FbxVector4(void) __ptr64
 ??1IStyleThemeHelper@Qtitan@@UEAA@XZ	public: virtual __cdecl Qtitan::IStyleThemeHelper::~IStyleThemeHelper(void) __ptr64
@@ -576,7 +570,6 @@
 ??1QTableView@@UEAA@XZ	public: virtual __cdecl QTableView::~QTableView(void) __ptr64
 ??1QTableWidget@@UEAA@XZ	public: virtual __cdecl QTableWidget::~QTableWidget(void) __ptr64
 ??1QTableWidgetItem@@UEAA@XZ	public: virtual __cdecl QTableWidgetItem::~QTableWidgetItem(void) __ptr64
-??1QTemporaryDir@@QEAA@XZ	public: __cdecl QTemporaryDir::~QTemporaryDir(void) __ptr64
 ??1QTemporaryFile@@UEAA@XZ	public: virtual __cdecl QTemporaryFile::~QTemporaryFile(void) __ptr64
 ??1QTextBlockFormat@@QEAA@XZ	public: __cdecl QTextBlockFormat::~QTextBlockFormat(void) __ptr64
 ??1QTextBrowser@@UEAA@XZ	public: virtual __cdecl QTextBrowser::~QTextBrowser(void) __ptr64
@@ -622,7 +615,6 @@
 ??4FbxMatrix@fbxsdk@@QEAAAEAV01@AEBV01@@Z	public: class fbxsdk::FbxMatrix & __ptr64 __cdecl fbxsdk::FbxMatrix::operator=(class fbxsdk::FbxMatrix const & __ptr64) __ptr64
 ??4FbxProperty@fbxsdk@@QEAAAEAV01@AEBV01@@Z	public: class fbxsdk::FbxProperty & __ptr64 __cdecl fbxsdk::FbxProperty::operator=(class fbxsdk::FbxProperty const & __ptr64) __ptr64
 ??4FbxString@fbxsdk@@QEAAAEBV01@AEBV01@@Z	public: class fbxsdk::FbxString const & __ptr64 __cdecl fbxsdk::FbxString::operator=(class fbxsdk::FbxString const & __ptr64) __ptr64
-??4FbxSystemUnit@fbxsdk@@QEAAAEAV01@AEBV01@@Z	public: class fbxsdk::FbxSystemUnit & __ptr64 __cdecl fbxsdk::FbxSystemUnit::operator=(class fbxsdk::FbxSystemUnit const & __ptr64) __ptr64
 ??4FbxVector4@fbxsdk@@QEAAAEAV01@AEBV01@@Z	public: class fbxsdk::FbxVector4 & __ptr64 __cdecl fbxsdk::FbxVector4::operator=(class fbxsdk::FbxVector4 const & __ptr64) __ptr64
 ??4QByteArray@@QEAAAEAV0@$$QEAV0@@Z	public: class QByteArray & __ptr64 __cdecl QByteArray::operator=(class QByteArray && __ptr64) __ptr64
 ??4QByteArray@@QEAAAEAV0@AEBV0@@Z	public: class QByteArray & __ptr64 __cdecl QByteArray::operator=(class QByteArray const & __ptr64) __ptr64
@@ -737,7 +729,6 @@
 ??AQString@@QEAA?AVQCharRef@@H@Z	public: class QCharRef __cdecl QString::operator[](int) __ptr64
 ??AQString@@QEBA?BVQChar@@H@Z	public: class QChar const __cdecl QString::operator[](int)const __ptr64
 ??BFbxString@fbxsdk@@QEBAPEBDXZ	public: __cdecl fbxsdk::FbxString::operator char const * __ptr64(void)const __ptr64
-??BFbxVector4@fbxsdk@@QEAAPEANXZ	public: __cdecl fbxsdk::FbxVector4::operator double * __ptr64(void) __ptr64
 ??BQBrush@@QEBA?AVQVariant@@XZ	public: __cdecl QBrush::operator class QVariant(void)const __ptr64
 ??BQByteArray@@QEBAPEBDXZ	public: __cdecl QByteArray::operator char const * __ptr64(void)const __ptr64
 ??BQCharRef@@QEBA?AVQChar@@XZ	public: __cdecl QCharRef::operator class QChar(void)const __ptr64
@@ -771,8 +762,6 @@
 ?AVChannelArgs@grpc_core@@AEBV01@@Z	private: grpc_core __swift_2 grpc_core::AVChannelArgs()const __ptr64
 ?AVChannelArgs@grpc_core@@AEBV01@PEAVStatus@lts_20240116@absl@@@Z	private: grpc_core __swift_2 grpc_core::AVChannelArgs(class absl::lts_20240116::Status * __ptr64)const __ptr64
 ?AVChannelArgs@grpc_core@@V01@@Z	public: virtual 
-?AddChild@FbxNode@fbxsdk@@QEAA_NPEAV12@@Z	public: bool __cdecl fbxsdk::FbxNode::AddChild(class fbxsdk::FbxNode * __ptr64) __ptr64
-?AddMaterial@FbxNode@fbxsdk@@QEAAHPEAVFbxSurfaceMaterial@2@@Z	public: int __cdecl fbxsdk::FbxNode::AddMaterial(class fbxsdk::FbxSurfaceMaterial * __ptr64) __ptr64
 ?BA@??CreateUDPPorts@AllocationSequence@webrtc@@AEAAXXZ@	 ?? `private: void __cdecl webrtc::AllocationSequence::CreateUDPPorts(void) __ptr64'::BA
 ?BE@??GetNetworks@BasicPortAllocatorSession@webrtc@@AEAA?AV?$vector@PEBVNetwork@webrtc@@V?$allocator@PEBVNetwork@webrtc@@@std@@@std@@XZ@	 ?? `private: class std::vector<class webrtc::Network const * __ptr64,class std::allocator<class webrtc::Network const * __ptr64> > __cdecl webrtc::BasicPortAllocatorSession::GetNetworks(void) __ptr64'::BE
 ?BH@??GetNetworks@BasicPortAllocatorSession@webrtc@@AEAA?AV?$vector@PEBVNetwork@webrtc@@V?$allocator@PEBVNetwork@webrtc@@@std@@@std@@XZ@	 ?? `private: class std::vector<class webrtc::Network const * __ptr64,class std::allocator<class webrtc::Network const * __ptr64> > __cdecl webrtc::BasicPortAllocatorSession::GetNetworks(void) __ptr64'::BH
@@ -786,28 +775,17 @@
 ?ClassId@FbxFileTexture@fbxsdk@@2VFbxClassId@2@A	public: static class fbxsdk::FbxClassId fbxsdk::FbxFileTexture::ClassId
 ?ClassId@FbxNode@fbxsdk@@2VFbxClassId@2@A	public: static class fbxsdk::FbxClassId fbxsdk::FbxNode::ClassId
 ?ClassId@FbxSurfaceMaterial@fbxsdk@@2VFbxClassId@2@A	public: static class fbxsdk::FbxClassId fbxsdk::FbxSurfaceMaterial::ClassId
-?ClassId@FbxSurfacePhong@fbxsdk@@2VFbxClassId@2@A	public: static class fbxsdk::FbxClassId fbxsdk::FbxSurfacePhong::ClassId
 ?CompareNoCase@FbxString@fbxsdk@@QEBAHPEBD@Z	public: int __cdecl fbxsdk::FbxString::CompareNoCase(char const * __ptr64)const __ptr64
-?ComputeBoundingBoxMinMaxCenter@FbxScene@fbxsdk@@QEAA_NAEAVFbxVector4@2@00_NAEBVFbxTime@2@@Z	public: bool __cdecl fbxsdk::FbxScene::ComputeBoundingBoxMinMaxCenter(class fbxsdk::FbxVector4 & __ptr64,class fbxsdk::FbxVector4 & __ptr64,class fbxsdk::FbxVector4 & __ptr64,bool,class fbxsdk::FbxTime const & __ptr64) __ptr64
-?ConnectSrcObject@FbxProperty@fbxsdk@@QEAA_NPEAVFbxObject@2@W4EType@FbxConnection@2@@Z	public: bool __cdecl fbxsdk::FbxProperty::ConnectSrcObject(class fbxsdk::FbxObject * __ptr64,enum fbxsdk::FbxConnection::EType) __ptr64
 ?ConvertScene@FbxAxisSystem@fbxsdk@@QEBAXPEAVFbxScene@2@@Z	public: void __cdecl fbxsdk::FbxAxisSystem::ConvertScene(class fbxsdk::FbxScene * __ptr64)const __ptr64
-?ConvertScene@FbxSystemUnit@fbxsdk@@QEBAXPEAVFbxScene@2@AEBUConversionOptions@12@@Z	public: void __cdecl fbxsdk::FbxSystemUnit::ConvertScene(class fbxsdk::FbxScene * __ptr64,struct fbxsdk::FbxSystemUnit::ConversionOptions const & __ptr64)const __ptr64
-?Create@FbxExporter@fbxsdk@@SAPEAV12@PEAVFbxManager@2@PEBD@Z	public: static class fbxsdk::FbxExporter * __ptr64 __cdecl fbxsdk::FbxExporter::Create(class fbxsdk::FbxManager * __ptr64,char const * __ptr64)
-?Create@FbxFileTexture@fbxsdk@@SAPEAV12@PEAVFbxObject@2@PEBD@Z	public: static class fbxsdk::FbxFileTexture * __ptr64 __cdecl fbxsdk::FbxFileTexture::Create(class fbxsdk::FbxObject * __ptr64,char const * __ptr64)
 ?Create@FbxIOSettings@fbxsdk@@SAPEAV12@PEAVFbxManager@2@PEBD@Z	public: static class fbxsdk::FbxIOSettings * __ptr64 __cdecl fbxsdk::FbxIOSettings::Create(class fbxsdk::FbxManager * __ptr64,char const * __ptr64)
 ?Create@FbxImporter@fbxsdk@@SAPEAV12@PEAVFbxManager@2@PEBD@Z	public: static class fbxsdk::FbxImporter * __ptr64 __cdecl fbxsdk::FbxImporter::Create(class fbxsdk::FbxManager * __ptr64,char const * __ptr64)
 ?Create@FbxManager@fbxsdk@@SAPEAV12@XZ	public: static class fbxsdk::FbxManager * __ptr64 __cdecl fbxsdk::FbxManager::Create(void)
-?Create@FbxMesh@fbxsdk@@SAPEAV12@PEAVFbxObject@2@PEBD@Z	public: static class fbxsdk::FbxMesh * __ptr64 __cdecl fbxsdk::FbxMesh::Create(class fbxsdk::FbxObject * __ptr64,char const * __ptr64)
-?Create@FbxNode@fbxsdk@@SAPEAV12@PEAVFbxObject@2@PEBD@Z	public: static class fbxsdk::FbxNode * __ptr64 __cdecl fbxsdk::FbxNode::Create(class fbxsdk::FbxObject * __ptr64,char const * __ptr64)
 ?Create@FbxScene@fbxsdk@@SAPEAV12@PEAVFbxManager@2@PEBD@Z	public: static class fbxsdk::FbxScene * __ptr64 __cdecl fbxsdk::FbxScene::Create(class fbxsdk::FbxManager * __ptr64,char const * __ptr64)
-?Create@FbxSurfacePhong@fbxsdk@@SAPEAV12@PEAVFbxObject@2@PEBD@Z	public: static class fbxsdk::FbxSurfacePhong * __ptr64 __cdecl fbxsdk::FbxSurfacePhong::Create(class fbxsdk::FbxObject * __ptr64,char const * __ptr64)
 ?CrossProduct@FbxVector4@fbxsdk@@QEBA?AV12@AEBV12@@Z	public: class fbxsdk::FbxVector4 __cdecl fbxsdk::FbxVector4::CrossProduct(class fbxsdk::FbxVector4 const & __ptr64)const __ptr64
-?DefaultConversionOptions@FbxSystemUnit@fbxsdk@@2UConversionOptions@12@B	public: static struct fbxsdk::FbxSystemUnit::ConversionOptions const fbxsdk::FbxSystemUnit::DefaultConversionOptions
 ?Destroy@FbxObject@fbxsdk@@QEAAX_N@Z	public: void __cdecl fbxsdk::FbxObject::Destroy(bool) __ptr64
 ?Distance@FbxVector4@fbxsdk@@QEBANAEBV12@@Z	public: double __cdecl fbxsdk::FbxVector4::Distance(class fbxsdk::FbxVector4 const & __ptr64)const __ptr64
 ?DotProduct@FbxVector4@fbxsdk@@QEBANAEBV12@@Z	public: double __cdecl fbxsdk::FbxVector4::DotProduct(class fbxsdk::FbxVector4 const & __ptr64)const __ptr64
 ?EvaluateGlobalTransform@FbxNode@fbxsdk@@QEAAAEAVFbxAMatrix@2@VFbxTime@2@W4EPivotSet@12@_N2@Z	public: class fbxsdk::FbxAMatrix & __ptr64 __cdecl fbxsdk::FbxNode::EvaluateGlobalTransform(class fbxsdk::FbxTime,enum fbxsdk::FbxNode::EPivotSet,bool,bool) __ptr64
-?Export@FbxExporter@fbxsdk@@QEAA_NPEAVFbxDocument@2@_N@Z	public: bool __cdecl fbxsdk::FbxExporter::Export(class fbxsdk::FbxDocument * __ptr64,bool) __ptr64
 ?FbxSetCallocHandler@fbxsdk@@YAXP6APEAX_K0@Z@Z	void __cdecl fbxsdk::FbxSetCallocHandler(void * __ptr64 (__cdecl*)(unsigned __int64,unsigned __int64))
 ?FbxSetFreeHandler@fbxsdk@@YAXP6AXPEAX@Z@Z	void __cdecl fbxsdk::FbxSetFreeHandler(void (__cdecl*)(void * __ptr64))
 ?FbxSetMallocHandler@fbxsdk@@YAXP6APEAX_K@Z@Z	void __cdecl fbxsdk::FbxSetMallocHandler(void * __ptr64 (__cdecl*)(unsigned __int64))
@@ -854,7 +832,6 @@
 ?GetErrorString@FbxStatus@fbxsdk@@QEBAPEBDXZ	public: char const * __ptr64 __cdecl fbxsdk::FbxStatus::GetErrorString(void)const __ptr64
 ?GetFbxObject@FbxProperty@fbxsdk@@QEBAPEAVFbxObject@2@XZ	public: class fbxsdk::FbxObject * __ptr64 __cdecl fbxsdk::FbxProperty::GetFbxObject(void)const __ptr64
 ?GetFileName@FbxFileTexture@fbxsdk@@QEBAPEBDXZ	public: char const * __ptr64 __cdecl fbxsdk::FbxFileTexture::GetFileName(void)const __ptr64
-?GetFileVersion@FbxImporter@fbxsdk@@QEAAXAEAH00@Z	public: void __cdecl fbxsdk::FbxImporter::GetFileVersion(int & __ptr64,int & __ptr64,int & __ptr64) __ptr64
 ?GetFirstDescendent@FbxProperty@fbxsdk@@QEBA?AV12@XZ	public: class fbxsdk::FbxProperty __cdecl fbxsdk::FbxProperty::GetFirstDescendent(void)const __ptr64
 ?GetFirstProperty@FbxObject@fbxsdk@@QEBA?AVFbxProperty@2@XZ	public: class fbxsdk::FbxProperty __cdecl fbxsdk::FbxObject::GetFirstProperty(void)const __ptr64
 ?GetFlag@FbxProperty@fbxsdk@@QEBA_NW4EFlags@FbxPropertyFlags@2@@Z	public: bool __cdecl fbxsdk::FbxProperty::GetFlag(enum fbxsdk::FbxPropertyFlags::EFlags)const __ptr64
@@ -898,7 +875,6 @@
 ?GetRotationPivot@FbxNode@fbxsdk@@QEBAAEBVFbxVector4@2@W4EPivotSet@12@@Z	public: class fbxsdk::FbxVector4 const & __ptr64 __cdecl fbxsdk::FbxNode::GetRotationPivot(enum fbxsdk::FbxNode::EPivotSet)const __ptr64
 ?GetRow@FbxMatrix@fbxsdk@@QEBA?AVFbxVector4@2@H@Z	public: class fbxsdk::FbxVector4 __cdecl fbxsdk::FbxMatrix::GetRow(int)const __ptr64
 ?GetS@FbxAMatrix@fbxsdk@@QEBA?AVFbxVector4@2@XZ	public: class fbxsdk::FbxVector4 __cdecl fbxsdk::FbxAMatrix::GetS(void)const __ptr64
-?GetScaleFactor@FbxSystemUnit@fbxsdk@@QEBANXZ	public: double __cdecl fbxsdk::FbxSystemUnit::GetScaleFactor(void)const __ptr64
 ?GetScene@FbxObject@fbxsdk@@QEBAPEAVFbxScene@2@XZ	public: class fbxsdk::FbxScene * __ptr64 __cdecl fbxsdk::FbxObject::GetScene(void)const __ptr64
 ?GetSecondDouble@FbxTime@fbxsdk@@QEBANXZ	public: double __cdecl fbxsdk::FbxTime::GetSecondDouble(void)const __ptr64
 ?GetSrcObject@FbxProperty@fbxsdk@@QEBAPEAVFbxObject@2@AEBVFbxCriteria@2@H@Z	public: class fbxsdk::FbxObject * __ptr64 __cdecl fbxsdk::FbxProperty::GetSrcObject(class fbxsdk::FbxCriteria const & __ptr64,int)const __ptr64
@@ -906,7 +882,6 @@
 ?GetSrcObjectCount@FbxProperty@fbxsdk@@QEBAHAEBVFbxCriteria@2@@Z	public: int __cdecl fbxsdk::FbxProperty::GetSrcObjectCount(class fbxsdk::FbxCriteria const & __ptr64)const __ptr64
 ?GetSrcObjectCount@FbxProperty@fbxsdk@@QEBAHXZ	public: int __cdecl fbxsdk::FbxProperty::GetSrcObjectCount(void)const __ptr64
 ?GetStatus@FbxIOBase@fbxsdk@@QEAAAEAVFbxStatus@2@XZ	public: class fbxsdk::FbxStatus & __ptr64 __cdecl fbxsdk::FbxIOBase::GetStatus(void) __ptr64
-?GetSystemUnit@FbxGlobalSettings@fbxsdk@@QEBA?AVFbxSystemUnit@2@XZ	public: class fbxsdk::FbxSystemUnit __cdecl fbxsdk::FbxGlobalSettings::GetSystemUnit(void)const __ptr64
 ?GetT@FbxAMatrix@fbxsdk@@QEBA?AVFbxVector4@2@XZ	public: class fbxsdk::FbxVector4 __cdecl fbxsdk::FbxAMatrix::GetT(void)const __ptr64
 ?GetTimeMode@FbxGlobalSettings@fbxsdk@@QEBA?AW4EMode@FbxTime@2@XZ	public: enum fbxsdk::FbxTime::EMode __cdecl fbxsdk::FbxGlobalSettings::GetTimeMode(void)const __ptr64
 ?GetTimelineDefaultTimeSpan@FbxGlobalSettings@fbxsdk@@QEBAXAEAVFbxTimeSpan@2@@Z	public: void __cdecl fbxsdk::FbxGlobalSettings::GetTimelineDefaultTimeSpan(class fbxsdk::FbxTimeSpan & __ptr64)const __ptr64
@@ -931,7 +906,6 @@
 ?ReportUnhandledError@_ExceptionHolder@details@Concurrency@@AEAAXXZ	private: void __cdecl Concurrency::details::_ExceptionHolder::ReportUnhandledError(void) __ptr64
 ?Set@FbxProperty@fbxsdk@@IEAA_NPEBXAEBW4EFbxType@2@_N@Z	protected: bool __cdecl fbxsdk::FbxProperty::Set(void const * __ptr64,enum fbxsdk::EFbxType const & __ptr64,bool) __ptr64
 ?SetCurrentAnimationStack@FbxScene@fbxsdk@@QEAAXPEAVFbxAnimStack@2@@Z	public: void __cdecl fbxsdk::FbxScene::SetCurrentAnimationStack(class fbxsdk::FbxAnimStack * __ptr64) __ptr64
-?SetNodeAttribute@FbxNode@fbxsdk@@QEAAPEAVFbxNodeAttribute@2@PEAV32@@Z	public: class fbxsdk::FbxNodeAttribute * __ptr64 __cdecl fbxsdk::FbxNode::SetNodeAttribute(class fbxsdk::FbxNodeAttribute * __ptr64) __ptr64
 ?SetRow@FbxMatrix@fbxsdk@@QEAAXHAEBVFbxVector4@2@@Z	public: void __cdecl fbxsdk::FbxMatrix::SetRow(int,class fbxsdk::FbxVector4 const & __ptr64) __ptr64
 ?SetSecondDouble@FbxTime@fbxsdk@@QEAAXN@Z	public: void __cdecl fbxsdk::FbxTime::SetSecondDouble(double) __ptr64
 ?SetSnapOnFrameMode@FbxGlobalSettings@fbxsdk@@QEAAXW4ESnapOnFrameMode@12@@Z	public: void __cdecl fbxsdk::FbxGlobalSettings::SetSnapOnFrameMode(enum fbxsdk::FbxGlobalSettings::ESnapOnFrameMode) __ptr64
@@ -1167,7 +1141,6 @@
 ?backward@QTextBrowser@@UEAAXXZ	public: virtual void __cdecl QTextBrowser::backward(void) __ptr64
 ?baseName@QFileInfo@@QEBA?AVQString@@XZ	public: class QString __cdecl QFileInfo::baseName(void)const __ptr64
 ?baseSize@QWidget@@QEBA?AVQSize@@XZ	public: class QSize __cdecl QWidget::baseSize(void)const __ptr64
-?bcp47Name@QLocale@@QEBA?AVQString@@XZ	public: class QString __cdecl QLocale::bcp47Name(void)const __ptr64
 ?begin@QJsonArray@@QEAA?AViterator@1@XZ	public: class QJsonArray::iterator __cdecl QJsonArray::begin(void) __ptr64
 ?begin@QJsonArray@@QEBA?AVconst_iterator@1@XZ	public: class QJsonArray::const_iterator __cdecl QJsonArray::begin(void)const __ptr64
 ?begin@QJsonObject@@QEAA?AViterator@1@XZ	public: class QJsonObject::iterator __cdecl QJsonObject::begin(void) __ptr64
@@ -1566,7 +1539,6 @@
 ?devicePixelRatioF@QPaintDevice@@QEBANXZ	public: double __cdecl QPaintDevice::devicePixelRatioF(void)const __ptr64
 ?dir@QFileInfo@@QEBA?AVQDir@@XZ	public: class QDir __cdecl QFileInfo::dir(void)const __ptr64
 ?directoryChanged@QFileSystemWatcher@@QEAAXAEBVQString@@UQPrivateSignal@1@@Z	public: void __cdecl QFileSystemWatcher::directoryChanged(class QString const & __ptr64,struct QFileSystemWatcher::QPrivateSignal) __ptr64
-?directoryEntered@QFileDialog@@QEAAXAEBVQString@@@Z	public: void __cdecl QFileDialog::directoryEntered(class QString const & __ptr64) __ptr64
 ?disconnect@QObject@@SA_NAEBVConnection@QMetaObject@@@Z	public: static bool __cdecl QObject::disconnect(class QMetaObject::Connection const & __ptr64)
 ?disconnect@QObject@@SA_NPEBV1@PEBD01@Z	public: static bool __cdecl QObject::disconnect(class QObject const * __ptr64,char const * __ptr64,class QObject const * __ptr64,char const * __ptr64)
 ?disconnectImpl@QObject@@CA_NPEBV1@PEAPEAX01PEBUQMetaObject@@@Z	private: static bool __cdecl QObject::disconnectImpl(class QObject const * __ptr64,void * __ptr64 * __ptr64,class QObject const * __ptr64,void * __ptr64 * __ptr64,struct QMetaObject const * __ptr64)
@@ -2383,7 +2355,6 @@
 ?isValid@QRegularExpression@@QEBA_NXZ	public: bool __cdecl QRegularExpression::isValid(void)const __ptr64
 ?isValid@QSize@@QEBA_NXZ	public: bool __cdecl QSize::isValid(void)const __ptr64
 ?isValid@QSizeF@@QEBA_NXZ	public: bool __cdecl QSizeF::isValid(void)const __ptr64
-?isValid@QTemporaryDir@@QEBA_NXZ	public: bool __cdecl QTemporaryDir::isValid(void)const __ptr64
 ?isValid@QTextBlock@@QEBA_NXZ	public: bool __cdecl QTextBlock::isValid(void)const __ptr64
 ?isValid@QUrl@@QEBA_NXZ	public: bool __cdecl QUrl::isValid(void)const __ptr64
 ?isValid@QVariant@@QEBA_NXZ	public: bool __cdecl QVariant::isValid(void)const __ptr64
@@ -2492,7 +2463,6 @@
 ?left@QRect@@QEBAHXZ	public: int __cdecl QRect::left(void)const __ptr64
 ?left@QRectF@@QEBANXZ	public: double __cdecl QRectF::left(void)const __ptr64
 ?left@QString@@QEBA?AV1@H@Z	public: class QString __cdecl QString::left(int)const __ptr64
-?length@QHeaderView@@QEBAHXZ	public: int __cdecl QHeaderView::length(void)const __ptr64
 ?length@QTextBlock@@QEBAHXZ	public: int __cdecl QTextBlock::length(void)const __ptr64
 ?length@QTextFragment@@QEBAHXZ	public: int __cdecl QTextFragment::length(void)const __ptr64
 ?lessThan@QSortFilterProxyModel@@MEBA_NAEBVQModelIndex@@0@Z	protected: virtual bool __cdecl QSortFilterProxyModel::lessThan(class QModelIndex const & __ptr64,class QModelIndex const & __ptr64)const __ptr64
@@ -2911,7 +2881,6 @@
 ?paste@QPlainTextEdit@@QEAAXXZ	public: void __cdecl QPlainTextEdit::paste(void) __ptr64
 ?path@QDir@@QEBA?AVQString@@XZ	public: class QString __cdecl QDir::path(void)const __ptr64
 ?path@QFileInfo@@QEBA?AVQString@@XZ	public: class QString __cdecl QFileInfo::path(void)const __ptr64
-?path@QTemporaryDir@@QEBA?AVQString@@XZ	public: class QString __cdecl QTemporaryDir::path(void)const __ptr64
 ?path@QUrl@@QEBA?AVQString@@V?$QFlags@W4ComponentFormattingOption@QUrl@@@@@Z	public: class QString __cdecl QUrl::path(class QFlags<enum QUrl::ComponentFormattingOption>)const __ptr64
 ?pathFromIndex@QCompleter@@UEBA?AVQString@@AEBVQModelIndex@@@Z	public: virtual class QString __cdecl QCompleter::pathFromIndex(class QModelIndex const & __ptr64)const __ptr64
 ?pattern@QRegExp@@QEBA?AVQString@@XZ	public: class QString __cdecl QRegExp::pattern(void)const __ptr64
@@ -3211,7 +3180,6 @@
 ?releaseMouse@QWidget@@QEAAXXZ	public: void __cdecl QWidget::releaseMouse(void) __ptr64
 ?released@QAbstractButton@@QEAAXXZ	public: void __cdecl QAbstractButton::released(void) __ptr64
 ?reload@QTextBrowser@@UEAAXXZ	public: virtual void __cdecl QTextBrowser::reload(void) __ptr64
-?remainingTime@QTimer@@QEBAHXZ	public: int __cdecl QTimer::remainingTime(void)const __ptr64
 ?remove@QFile@@QEAA_NXZ	public: bool __cdecl QFile::remove(void) __ptr64
 ?remove@QFile@@SA_NAEBVQString@@@Z	public: static bool __cdecl QFile::remove(class QString const & __ptr64)
 ?remove@QListData@@QEAAXH@Z	public: void __cdecl QListData::remove(int) __ptr64
@@ -3501,7 +3469,6 @@
 ?setColorAt@QGradient@@QEAAXNAEBVQColor@@@Z	public: void __cdecl QGradient::setColorAt(double,class QColor const & __ptr64) __ptr64
 ?setColumnCount@QTableWidget@@QEAAXH@Z	public: void __cdecl QTableWidget::setColumnCount(int) __ptr64
 ?setColumnCount@QTreeWidget@@QEAAXH@Z	public: void __cdecl QTreeWidget::setColumnCount(int) __ptr64
-?setColumnHidden@QTableView@@QEAAXH_N@Z	public: void __cdecl QTableView::setColumnHidden(int,bool) __ptr64
 ?setColumnMinimumWidth@QGridLayout@@QEAAXHH@Z	public: void __cdecl QGridLayout::setColumnMinimumWidth(int,int) __ptr64
 ?setColumnStretch@QGridLayout@@QEAAXHH@Z	public: void __cdecl QGridLayout::setColumnStretch(int,int) __ptr64
 ?setColumnWidth@QTableView@@QEAAXHH@Z	public: void __cdecl QTableView::setColumnWidth(int,int) __ptr64
@@ -3602,7 +3569,6 @@
 ?setFileMode@QFileDialog@@QEAAXW4FileMode@1@@Z	public: void __cdecl QFileDialog::setFileMode(enum QFileDialog::FileMode) __ptr64
 ?setFileName@QMovie@@QEAAXAEBVQString@@@Z	public: void __cdecl QMovie::setFileName(class QString const & __ptr64) __ptr64
 ?setFileTemplate@QTemporaryFile@@QEAAXAEBVQString@@@Z	public: void __cdecl QTemporaryFile::setFileTemplate(class QString const & __ptr64) __ptr64
-?setFilter@QDir@@QEAAXV?$QFlags@W4Filter@QDir@@@@@Z	public: void __cdecl QDir::setFilter(class QFlags<enum QDir::Filter>) __ptr64
 ?setFilterCaseSensitivity@QSortFilterProxyModel@@QEAAXW4CaseSensitivity@Qt@@@Z	public: void __cdecl QSortFilterProxyModel::setFilterCaseSensitivity(enum Qt::CaseSensitivity) __ptr64
 ?setFilterFixedString@QSortFilterProxyModel@@QEAAXAEBVQString@@@Z	public: void __cdecl QSortFilterProxyModel::setFilterFixedString(class QString const & __ptr64) __ptr64
 ?setFilterKeyColumn@QSortFilterProxyModel@@QEAAXH@Z	public: void __cdecl QSortFilterProxyModel::setFilterKeyColumn(int) __ptr64
@@ -3631,7 +3597,6 @@
 ?setFont@QTextCharFormat@@QEAAXAEBVQFont@@@Z	public: void __cdecl QTextCharFormat::setFont(class QFont const & __ptr64) __ptr64
 ?setFont@QTreeWidgetItem@@QEAAXHAEBVQFont@@@Z	public: void __cdecl QTreeWidgetItem::setFont(int,class QFont const & __ptr64) __ptr64
 ?setFont@QWidget@@QEAAXAEBVQFont@@@Z	public: void __cdecl QWidget::setFont(class QFont const & __ptr64) __ptr64
-?setForeground@QTableWidgetItem@@QEAAXAEBVQBrush@@@Z	public: void __cdecl QTableWidgetItem::setForeground(class QBrush const & __ptr64) __ptr64
 ?setFormat@QTextObject@@IEAAXAEBVQTextFormat@@@Z	protected: void __cdecl QTextObject::setFormat(class QTextFormat const & __ptr64) __ptr64
 ?setFormats@QTextLayout@@QEAAXAEBV?$QVector@UFormatRange@QTextLayout@@@@@Z	public: void __cdecl QTextLayout::setFormats(class QVector<struct QTextLayout::FormatRange> const & __ptr64) __ptr64
 ?setFragment@QUrl@@QEAAXAEBVQString@@W4ParsingMode@1@@Z	public: void __cdecl QUrl::setFragment(class QString const & __ptr64,enum QUrl::ParsingMode) __ptr64
@@ -3665,7 +3630,6 @@
 ?setHidden@QTreeWidgetItem@@QEAAX_N@Z	public: void __cdecl QTreeWidgetItem::setHidden(bool) __ptr64
 ?setHidden@QWidget@@QEAAX_N@Z	public: void __cdecl QWidget::setHidden(bool) __ptr64
 ?setHighDpiScaleFactorRoundingPolicy@QGuiApplication@@SAXW4HighDpiScaleFactorRoundingPolicy@Qt@@@Z	public: static void __cdecl QGuiApplication::setHighDpiScaleFactorRoundingPolicy(enum Qt::HighDpiScaleFactorRoundingPolicy)
-?setHighlightSections@QHeaderView@@QEAAX_N@Z	public: void __cdecl QHeaderView::setHighlightSections(bool) __ptr64
 ?setHistory@QFileDialog@@QEAAXAEBVQStringList@@@Z	public: void __cdecl QFileDialog::setHistory(class QStringList const & __ptr64) __ptr64
 ?setHorizontalHeader@QTableView@@QEAAXPEAVQHeaderView@@@Z	public: void __cdecl QTableView::setHorizontalHeader(class QHeaderView * __ptr64) __ptr64
 ?setHorizontalHeaderLabels@QStandardItemModel@@QEAAXAEBVQStringList@@@Z	public: void __cdecl QStandardItemModel::setHorizontalHeaderLabels(class QStringList const & __ptr64) __ptr64
@@ -4307,7 +4271,6 @@
 ?takeTopLevelItem@QTreeWidget@@QEAAPEAVQTreeWidgetItem@@H@Z	public: class QTreeWidgetItem * __ptr64 __cdecl QTreeWidget::takeTopLevelItem(int) __ptr64
 ?tellg@?$basic_istream@DU?$char_traits@D@std@@@std@@QEAA?AV?$fpos@U_Mbstatet@@@2@XZ	public: class std::fpos<struct _Mbstatet> __cdecl std::basic_istream<char,struct std::char_traits<char> >::tellg(void) __ptr64
 ?tellp@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA?AV?$fpos@U_Mbstatet@@@2@XZ	public: class std::fpos<struct _Mbstatet> __cdecl std::basic_ostream<char,struct std::char_traits<char> >::tellp(void) __ptr64
-?tempPath@QDir@@SA?AVQString@@XZ	public: static class QString __cdecl QDir::tempPath(void)
 ?text@QAbstractButton@@QEBA?AVQString@@XZ	public: class QString __cdecl QAbstractButton::text(void)const __ptr64
 ?text@QAbstractSpinBox@@QEBA?AVQString@@XZ	public: class QString __cdecl QAbstractSpinBox::text(void)const __ptr64
 ?text@QAction@@QEBA?AVQString@@XZ	public: class QString __cdecl QAction::text(void)const __ptr64

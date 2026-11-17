@@ -6,12 +6,14 @@ local Framework = require(Packages.Framework)
 local React = require(Packages.React)
 local ReactRoblox = require(Packages.ReactRoblox)
 local Signals = require(Packages.Signals)
+local DialogContext = require(Main.Contexts.DialogContext)
 local DialogDmIdContext = require(Main.Contexts.DialogDmIdContext)
 local FoundationProviderAdapter = require(Main.Components.FoundationProviderAdapter)
 local StudioUri = require(Main.Util.StudioUri)
 local uriToTestId = require(Main.Util.uriToTestId)
 
 local FFlagDevFrameworkUsesFoundationDialog = require(Main.SharedFlags.getFFlagDevFrameworkUsesFoundationDialog)()
+local FFlagStudioFoundationDialogContext = require(Main.SharedFlags.getFFlagStudioFoundationDialogContext)()
 
 local Plugin = Framework.ContextServices.Plugin
 local e = React.createElement
@@ -130,9 +132,36 @@ local function DialogPanel(props: Props)
 		end)
 	end, { panel, props.getSize, panels, panelUri } :: { unknown })
 
+	local dialogContextValue = if FFlagStudioFoundationDialogContext
+		then React.useMemo(function(): DialogContext.DialogContextType?
+			if not panel then
+				return nil
+			end
+			return {
+				id = dialogId,
+				pluginGui = panel,
+			}
+		end, { dialogId, panel } :: { unknown })
+		else nil :: never
+
 	-- Don't render anything, including children, if the dialog is not yet created
 	if not panel then
 		return nil
+	end
+
+	if FFlagStudioFoundationDialogContext then
+		return ReactRoblox.createPortal(
+			e(
+				DialogContext.Provider,
+				{
+					value = dialogContextValue,
+				},
+				e(FoundationProviderAdapter, {
+					overlayGui = panel :: GuiBase2d,
+				}, props.children)
+			),
+			panel
+		)
 	end
 
 	return ReactRoblox.createPortal(

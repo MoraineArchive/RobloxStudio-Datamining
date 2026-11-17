@@ -10617,6 +10617,18 @@
   },
   {
     "class": "ModuleScript",
+    "name": "DialogContext",
+    "path": "DeveloperStorybook/Packages/_Index/StudioFoundation/StudioFoundation/Contexts/DialogContext",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
     "name": "DialogDmIdContext",
     "path": "DeveloperStorybook/Packages/_Index/StudioFoundation/StudioFoundation/Contexts/DialogDmIdContext",
     "properties": {
@@ -14411,6 +14423,18 @@
     "class": "ModuleScript",
     "name": "getFFlagStudioDialogManagerTertiaryButtonVariant",
     "path": "DeveloperStorybook/Packages/_Index/StudioFoundation/StudioFoundation/SharedFlags/getFFlagStudioDialogManagerTertiaryButtonVariant",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "getFFlagStudioFoundationDialogContext",
+    "path": "DeveloperStorybook/Packages/_Index/StudioFoundation/StudioFoundation/SharedFlags/getFFlagStudioFoundationDialogContext",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",
@@ -36575,6 +36599,18 @@
     "class": "ModuleScript",
     "name": "TextButton",
     "path": "DeveloperStorybook/Packages/_Index/ViewportToolingFramework/ViewportToolingFramework/Components/TextButton",
+    "properties": {
+      "AttributesSerialize": "",
+      "LinkedSource": "",
+      "ScriptGuid": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "ModuleScript",
+    "name": "TextDocumentAssetEditor",
+    "path": "DeveloperStorybook/Packages/_Index/SharedPluginConstants/SharedPluginConstants/plugins/TextDocumentAssetEditor",
     "properties": {
       "AttributesSerialize": "",
       "LinkedSource": "",

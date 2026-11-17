@@ -189,6 +189,7 @@
 .?AU?$MessageWrapper@UUpdateDialogMessage@?A0xc42e8c26@Studio@RBX@@@detail@RBX@@
 .?AU?$MessageWrapper@UUserCFrameChangedMessage@Studio@RBX@@@detail@RBX@@
 .?AU?$MessageWrapper@UUserPreferencesPropertyChangedMessage@?A0x5bd662f8@Studio@RBX@@@detail@RBX@@
+.?AU?$MessageWrapper@UUserPreferencesPropertyChangedMessage@?A0xfccce6f9@Studio@RBX@@@detail@RBX@@
 .?AU?$MessageWrapper@UVREmulatorStartUpMessage@Studio@RBX@@@detail@RBX@@
 .?AU?$MessageWrapper@UWaypointChangeMessage@?A0x283710c7@Studio@RBX@@@detail@RBX@@
 .?AU?$MessageWrapper@UWebBrowserLoadFailureMessage@Studio@RBX@@@detail@RBX@@
@@ -390,11 +391,9 @@
 .?AU?$error_info_injector@Vunknown_option@program_options@boost@@@exception_detail@boost@@
 .?AU?$error_info_injector@Vvalidation_error@program_options@boost@@@exception_detail@boost@@
 .?AU?$hook_tags_definer@V?$generic_hook@V?$circular_list_algorithms@U?$list_node_traits@PEAX@intrusive@boost@@@intrusive@boost@@UItemTag@Network@RBX@@$00$00@intrusive@boost@@$0A@@intrusive@boost@@
-.?AU?$hook_tags_definer@V?$generic_hook@V?$circular_list_algorithms@U?$list_node_traits@PEAX@intrusive@boost@@@intrusive@boost@@VMovingAssemblyStage@RBX@@$00$00@intrusive@boost@@$0A@@intrusive@boost@@
 .?AU?$hook_tags_definer@V?$generic_hook@V?$circular_list_algorithms@U?$list_node_traits@PEAX@intrusive@boost@@@intrusive@boost@@VStepJointsStage@RBX@@$00$00@intrusive@boost@@$0A@@intrusive@boost@@
 .?AU?$list_node@PEAX@intrusive@boost@@
 .?AU?$node_holder@U?$list_node@PEAX@intrusive@boost@@UItemTag@Network@RBX@@$00@intrusive@boost@@
-.?AU?$node_holder@U?$list_node@PEAX@intrusive@boost@@VMovingAssemblyStage@RBX@@$00@intrusive@boost@@
 .?AU?$node_holder@U?$list_node@PEAX@intrusive@boost@@VStepJointsStage@RBX@@$00@intrusive@boost@@
 .?AU?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@detail@algorithm@boost@@
 .?AU?$token_finderF@U?$is_from_rangeF@D@detail@algorithm@boost@@@detail@algorithm@boost@@
@@ -436,7 +435,6 @@
 .?AUBufferBase@?$DynamicBuffers@UDefaultSchema@GeoGen@RBX@@@GeoGen@RBX@@
 .?AUBufferElementCounts@GeometryGeneratorTypes@Graphics@RBX@@
 .?AUBuiltinVisitor@Compile@Luau@@
-.?AUBulkAudioLoader@RBX@@
 .?AUBuoyancyOctants@Solver@RBX@@
 .?AUCallbacks@ColorSequencePropertyWidget@PropertiesWidget@@
 .?AUCallbacks@NumberSequencePropertyWidget@PropertiesWidget@@
@@ -482,20 +480,18 @@
 .?AUCompressorETC2_RGBM@nv@@
 .?AUCompressorInterface@nv@@
 .?AUConcept@TaskRunnerContext@RBX@@
+.?AUConfigAliasShadowInstanceNode@?A0x69ceb8f0@RBX@@
 .?AUConfigResolver@Luau@@
 .?AUConflictedMergeChunk@MergeResolutionDialog@@
 .?AUConnCtx@Detail@Protocol@RbxTransport@RBX@@
 .?AUConnectionBase@QtDMConnection@QtApp@RBX@@
 .?AUConnectionBase@detail@Studio@RBX@@
-.?AUConstUpvalueVisitor@Compiler@Luau@@
 .?AUConstantVisitor@Compile@Luau@@
 .?AUContainsFunctionCall@detail@Luau@@
 .?AUContainsGenerics@Luau@@
 .?AUContainsRefinableType@Luau@@
-.?AUContainsUntestableType@?A0x1f82662e@Luau@@
 .?AUContentProviderAssetFetcher@?A0xa82c83cd@Localization@RBX@@
 .?AUCoordinatorTransitionExperienceEvent@RBX@@
-.?AUCoreComponentData@Component@RBX@@
 .?AUCostVisitor@Compile@Luau@@
 .?AUCreateBasicMeshPartOptions@CSG3@RBX@@
 .?AUCryptoCtxOwner@Impl@RbxTransport@RBX@@
@@ -560,8 +556,6 @@
 .?AUFragmentOptions@CSG3@RBX@@
 .?AUFrameStyledProps@RBX@@
 .?AUFreeTypeFinder@?A0xf9919727@Luau@@
-.?AUFreeTypeFinder_DEPRECATED@?A0xf9919727@Luau@@
-.?AUFreeTypeSearcher_DEPRECATED@Luau@@
 .?AUFreezeTypeFunctionTypes@Luau@@
 .?AUFromMmapImpl@RBX@@
 .?AUFrontendModuleResolver@Luau@@
@@ -569,7 +563,6 @@
 .?AUFunctionVisitor@Compiler@Luau@@
 .?AUGeneralResponse@LSP@RBX@@
 .?AUGenerateFragmentSitesOptions@CSG3@RBX@@
-.?AUGenericCounter_DEPRECATED@Luau@@
 .?AUGenericTypeFinder@Luau@@
 .?AUGeometryGeneratorBuffersBase@GeometryGeneratorTypes@Graphics@RBX@@
 .?AUGlobal@?1??getGlobalArena@Arena@Detail@RSL@@SAAEAV234@XZ@
@@ -594,7 +587,6 @@
 .?AUIBaseFilter@@
 .?AUICloudLocalizationTableAssetFetcher@Localization@RBX@@
 .?AUICommandError@Studio@RBX@@
-.?AUIComponentData@Component@RBX@@
 .?AUICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler@@
 .?AUICoreWebView2CallDevToolsProtocolMethodCompletedHandler@@
 .?AUICoreWebView2CreateCoreWebView2ControllerCompletedHandler@@
@@ -764,7 +756,6 @@
 .?AURecastDetourDebugDrawProxy@RBX@@
 .?AURecursionLimitException@Luau@@
 .?AUReferenceCountInitializer@Luau@@
-.?AUReferenceCountInitializer_DEPRECATED@Luau@@
 .?AUReferencesRequest@LSP@RBX@@
 .?AUReferencesResponse@LSP@RBX@@
 .?AURefineTypeScrubber@?A0xc4f674cb@Luau@@
@@ -997,7 +988,6 @@
 .?AUThumbnailFetchJob@BatchThumbnailFetcher@RBX@@
 .?AUTimerClosure@WindowsEventEngine@experimental@grpc_event_engine@@
 .?AUTrussConfig@GeoGen@RBX@@
-.?AUTypeCacher_DEPRECATED@Luau@@
 .?AUTypeFunctionEnvGlobalBinder@?A0x1befb4de@Luau@@
 .?AUTypeFunctionFinder@Luau@@
 .?AUTypeMapVisitor@Luau@@
@@ -1182,6 +1172,7 @@
 .?AV?$AsyncBinding@VITeardownHooks@RBX@@$0A@@Async@RBX@@
 .?AV?$AsyncHttpCache@UCachedRawLuaWebServiceInfo@LuaWebService@RBX@@@RBX@@
 .?AV?$AsyncParallelBinding@VIAsyncComponent@Component@RBX@@$0A@@Async@RBX@@
+.?AV?$AsyncParallelBinding@VITeardownHooks@RBX@@$0A@@Async@RBX@@
 .?AV?$AsyncPlayerCallbackQueueHandler@V?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@@RBX@@
 .?AV?$AsyncReaderInterface@VByteBuffer@grpc@@@internal@grpc@@
 .?AV?$AsyncReaderInterface@VSubscribedRoomEvent@grpc@@@internal@grpc@@
@@ -1372,6 +1363,7 @@
 .?AV?$BaseContext@VDebugExceptionUnhandledBreakContext@Studio@RBX@@@detail@Studio@RBX@@
 .?AV?$BaseContext@VDescendantsStatsContext@Studio@RBX@@@detail@Studio@RBX@@
 .?AV?$BaseContext@VDeviceEmulatorUIContext@Studio@RBX@@@detail@Studio@RBX@@
+.?AV?$BaseContext@VDeviceSimulatorToolbarHiddenContext@Studio@RBX@@@detail@Studio@RBX@@
 .?AV?$BaseContext@VDocumentContext@Studio@RBX@@@detail@Studio@RBX@@
 .?AV?$BaseContext@VDraggerModeContext@Studio@RBX@@@detail@Studio@RBX@@
 .?AV?$BaseContext@VEditContext@Studio@RBX@@@detail@Studio@RBX@@
@@ -1427,6 +1419,7 @@
 .?AV?$BasicBlockParser@UBlock@webm@@@webm@@
 .?AV?$BasicBlockParser@USimpleBlock@webm@@@webm@@
 .?AV?$BoundAsyncCallbackDesc@VAdGui@Ads@RBX@@$$A6A_NV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@@Z$00@Reflection@RBX@@
+.?AV?$BoundAsyncCallbackDesc@VAdService@Ads@RBX@@$$A6A?AV?$shared_ptr@$$CBUTuple@Reflection@RBX@@@std@@V?$shared_ptr@VPlayer@RBX@@@5@V?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@5@@Z$01@Reflection@RBX@@
 .?AV?$BoundAsyncCallbackDesc@VAdService@Ads@RBX@@$$A6A?AV?$shared_ptr@VVideoFrame@RBX@@@std@@V?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@5@@Z$00@Reflection@RBX@@
 .?AV?$BoundAsyncCallbackDesc@VBindableFunction@RBX@@$$A6A?AV?$shared_ptr@$$CBUTuple@Reflection@RBX@@@std@@V34@@Z$00@Reflection@RBX@@
 .?AV?$BoundAsyncCallbackDesc@VDataModel@RBX@@$$A6A?AV?$shared_ptr@$$CBUTuple@Reflection@RBX@@@std@@XZ$0A@@Reflection@RBX@@
@@ -1443,6 +1436,7 @@
 .?AV?$BoundAsyncCallbackDesc@VTextChatService@RBX@@$$A6A?AV?$shared_ptr@$$CBUTuple@Reflection@RBX@@@std@@V?$shared_ptr@VTextChatMessage@RBX@@@4@V?$shared_ptr@VInstance@RBX@@@4@@Z$01@Reflection@RBX@@
 .?AV?$BoundCallbackDesc@$$A6A?AV?$shared_ptr@$$CBV?$vector@V?$shared_ptr@VInstance@RBX@@@std@@V?$allocator@V?$shared_ptr@VInstance@RBX@@@std@@@2@@std@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@HV12@@Z@Reflection@RBX@@
 .?AV?$BoundCallbackDesc@$$A6AXV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@@Z@Reflection@RBX@@
+.?AV?$BoundCallbackDesc@$$A6AXV?$shared_ptr@VPlayer@RBX@@@std@@W4ShowAdResult@Ads@RBX@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@2@Z@Reflection@RBX@@
 .?AV?$BoundCallbackDesc@$$A6AXXZ@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VAccessoryDescription@RBX@@$$A6A?AV?$shared_ptr@VInstance@RBX@@@std@@XZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VAccountService@RBX@@$$A6A?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V34@@Z$0A@$00@Reflection@RBX@@
@@ -1462,9 +1456,11 @@
 .?AV?$BoundFuncDesc@VAdService@Ads@RBX@@$$A6AXV?$shared_ptr@VGuiButton@RBX@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@5@@Z$0A@$01@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VAdService@Ads@RBX@@$$A6AXV?$shared_ptr@VInstance@RBX@@@std@@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VAdService@Ads@RBX@@$$A6AXV?$shared_ptr@VInstance@RBX@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@5@@Z$0A@$01@Reflection@RBX@@
+.?AV?$BoundFuncDesc@VAdService@Ads@RBX@@$$A6AXV?$shared_ptr@VPlayer@RBX@@@std@@V?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@5@_J@Z$0A@$02@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VAdService@Ads@RBX@@$$A6AXW4AdTeleportMethod@23@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VAdService@Ads@RBX@@$$A6AXW4ShowAdResult@23@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@11@Z$0A@$03@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VAdService@Ads@RBX@@$$A6AXXZ$0A@$0A@@Reflection@RBX@@
+.?AV?$BoundFuncDesc@VAdService@Ads@RBX@@$$A6AX_J0@Z$0A@$01@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VAdService@Ads@RBX@@$$A6AX_J_N1V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z$0A@$04@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VAdService@Ads@RBX@@$$A8@@EBA?AV?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@XZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VAdService@Ads@RBX@@$$A8@@EBA_NW4AdFormat@23@@Z$0A@$00@Reflection@RBX@@
@@ -1481,7 +1477,7 @@
 .?AV?$BoundFuncDesc@VAnalyticsService@RBX@@$$A6AXV?$shared_ptr@VPlayer@RBX@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@NV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@4@@Z$0A@$03@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VAnalyticsService@RBX@@$$A6AXV?$shared_ptr@VPlayer@RBX@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@W4AnalyticsProgressionType@Enums@2@H1V?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@4@@Z$0A@$05@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VAnalyticsService@RBX@@$$A6AXV?$shared_ptr@VPlayer@RBX@@@std@@W4AnalyticsEconomyFlowType@Enums@2@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@MM22V?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@4@@Z$0A@$07@Reflection@RBX@@
-.?AV?$BoundFuncDesc@VAnimatedImageService@RBX@@$$A6A?AUEventInstance@Lua@2@VContent@2@@Z$0A@$00@Reflection@RBX@@
+.?AV?$BoundFuncDesc@VAnimationClipProvider@RBX@@$$A6A?AUEventInstance@Lua@2@VContent@2@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VAnimationClipProvider@RBX@@$$A6A?AV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@XZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VAnimationClipProvider@RBX@@$$A6A?AV?$shared_ptr@VAnimationClip@RBX@@@std@@VContentId@2@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VAnimationClipProvider@RBX@@$$A6A?AV?$shared_ptr@VAnimationClip@RBX@@@std@@_J_N@Z$0A@$01@Reflection@RBX@@
@@ -1502,6 +1498,7 @@
 .?AV?$BoundFuncDesc@VAnimationRigData@RBX@@$$A6A?AV?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@XZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VAnimationRigData@RBX@@$$A6A_NV?$shared_ptr@VInstance@RBX@@@std@@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VAnimationRigData@RBX@@$$A8@@EBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ$0A@$0A@@Reflection@RBX@@
+.?AV?$BoundFuncDesc@VAnimationRigData@RBX@@$$A8@@EBA?AV?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@XZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VAnimationRigData@RBX@@$$A8@@EBA_NXZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VAnimationStreamTrack@RBX@@$$A6A?AV?$shared_ptr@$$CBUTuple@Reflection@RBX@@@std@@XZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VAnimationStreamTrack@RBX@@$$A6AXM@Z$0A@$00@Reflection@RBX@@
@@ -1760,6 +1757,9 @@
 .?AV?$BoundFuncDesc@VBeam@RBX@@$$A6AXM@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VBillboardGui@RBX@@$$A6A?AVVariant@Reflection@2@XZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VBindableEvent@RBX@@$$A6AXV?$shared_ptr@$$CBUTuple@Reflection@RBX@@@std@@@Z$0A@$00@Reflection@RBX@@
+.?AV?$BoundFuncDesc@VBlob@RBX@@$$A6AXXZ$0A@$0A@@Reflection@RBX@@
+.?AV?$BoundFuncDesc@VBlob@RBX@@$$A8@@EBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ$0A@$0A@@Reflection@RBX@@
+.?AV?$BoundFuncDesc@VBlob@RBX@@$$A8@@EBA_JXZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VBodyPosition@RBX@@$$A6A?AVVector3@2@XZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VBodyVelocity@RBX@@$$A6A?AVVector3@2@XZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VBranchService@RBX@@$$A6A?AV?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@XZ$0A@$0A@@Reflection@RBX@@
@@ -1801,6 +1801,7 @@
 .?AV?$BoundFuncDesc@VCaptureService@RBX@@$$A6A?AV?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@XZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VCaptureService@RBX@@$$A6A?AV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@XZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VCaptureService@RBX@@$$A6A?AV?$shared_ptr@VCapture@RBX@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@@Z$0A@$00@Reflection@RBX@@
+.?AV?$BoundFuncDesc@VCaptureService@RBX@@$$A6A?AV?$shared_ptr@VSceneSnapshot@RBX@@@std@@V?$shared_ptr@$$CBV?$vector@V?$shared_ptr@VInstance@RBX@@@std@@V?$allocator@V?$shared_ptr@VInstance@RBX@@@std@@@2@@std@@@4@_N@Z$0A@$01@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VCaptureService@RBX@@$$A6AXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VCaptureService@RBX@@$$A6AXV?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@VWeakObjectRef@Lua@2@@Z$0A@$01@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VCaptureService@RBX@@$$A6AXV?$shared_ptr@VCapture@RBX@@@std@@@Z$0A@$00@Reflection@RBX@@
@@ -1836,6 +1837,7 @@
 .?AV?$BoundFuncDesc@VClientStorageService@RBX@@$$A6AXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0V?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@4@@Z$0A@$02@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VClientStorageService@RBX@@$$A6AXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VClientStorageService@RBX@@$$A6AXXZ$0A@$0A@@Reflection@RBX@@
+.?AV?$BoundFuncDesc@VCloudClientService@RBX@@$$A6AXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z$0A@$01@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VCloudClientService@RBX@@$$A6AXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VCloudClientService@RBX@@$$A6A_NV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VCloudClientService@RBX@@$$A8@@EBANXZ$0A@$0A@@Reflection@RBX@@
@@ -1903,6 +1905,7 @@
 .?AV?$BoundFuncDesc@VController@RBX@@$$A6AXW4Button@ButtonEnum@Enums@2@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VController@RBX@@$$A6AXW4Button@ButtonEnum@Enums@2@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z$0A@$01@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VController@RBX@@$$A6A_NW4Button@ButtonEnum@Enums@2@@Z$0A@$00@Reflection@RBX@@
+.?AV?$BoundFuncDesc@VControllerPartSensor@RBX@@$$A8@@EBA?AV?$tuple@VVector3@RBX@@V12@@std@@XZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VCoreGuiService@RBX@@$$A6AXXZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VCoreGuiService@RBX@@$$A6AX_NV?$shared_ptr@VInstance@RBX@@@std@@W4NormalId@2@M@Z$0A@$03@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VCoreScriptSyncService@RBX@@$$A6A?AVVariant@Reflection@2@AEBV?$shared_ptr@VInstance@RBX@@@std@@@Z$0A@$00@Reflection@RBX@@
@@ -2094,6 +2097,7 @@
 .?AV?$BoundFuncDesc@VExperienceService@RBX@@$$A6A?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@4@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VExperienceService@RBX@@$$A6A?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@4@V34@@Z$0A@$01@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VExperienceService@RBX@@$$A6A?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ$0A@$0A@@Reflection@RBX@@
+.?AV?$BoundFuncDesc@VExperienceService@RBX@@$$A6A?AV?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@XZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VExperienceService@RBX@@$$A6A?AV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@XZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VExperienceService@RBX@@$$A6A?AVScriptConnection@2@VWeakObjectRef@Lua@2@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VExperienceService@RBX@@$$A6AHXZ$0A@$0A@@Reflection@RBX@@
@@ -2103,6 +2107,7 @@
 .?AV?$BoundFuncDesc@VExperienceService@RBX@@$$A6AXV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@VWeakObjectRef@Lua@2@@Z$0A@$02@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VExperienceService@RBX@@$$A6A_JXZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VExperienceService@RBX@@$$A6A_NXZ$0A@$0A@@Reflection@RBX@@
+.?AV?$BoundFuncDesc@VExperienceService@RBX@@$$A6A_N_N@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VExperienceStateCaptureService@RBX@@$$A6AXXZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VExperienceStateCaptureService@RBX@@$$A6A_NXZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VExperienceStateRecordingService@ExperienceStateCapture@RBX@@$$A6A?AV?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@XZ$0A@$0A@@Reflection@RBX@@
@@ -2154,6 +2159,7 @@
 .?AV?$BoundFuncDesc@VFile@RBX@@$$A6A?AVContentId@2@XZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VFileManagerService@RBX@@$$A6AXW4EngineFolder@Enums@2@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VFileManagerService@RBX@@$$A6AXW4EngineFolder@Enums@2@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z$0A@$01@Reflection@RBX@@
+.?AV?$BoundFuncDesc@VFilePickerService@RBX@@$$A6A_NV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VFire@RBX@@$$A6AXH@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VFloatCurve@RBX@@$$A6A?AV?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@AEBVFloatCurveKey@2@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VFloatCurve@RBX@@$$A6AHAEBV?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@@Z$0A@$00@Reflection@RBX@@
@@ -2286,6 +2292,7 @@
 .?AV?$BoundFuncDesc@VHumanoid@RBX@@$$A8@@EBA?AV?$optional@VVector3@RBX@@@std@@V?$shared_ptr@VInstance@RBX@@@4@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VHumanoid@RBX@@$$A8@@EBA?AVVector3@2@XZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VHumanoid@RBX@@$$A8@@EBA?AW4StateType@HUMAN@2@XZ$0A@$0A@@Reflection@RBX@@
+.?AV?$BoundFuncDesc@VHumanoid@RBX@@$$A8@@EBA_NV?$shared_ptr@VBasePart@RBX@@@std@@_N@Z$0A@$01@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VHumanoidDescription@RBX@@$$A6A?AV?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@XZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VHumanoidDescription@RBX@@$$A6A?AV?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@_N@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VHumanoidDescription@RBX@@$$A6A?AV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@XZ$0A@$0A@@Reflection@RBX@@
@@ -2613,6 +2620,7 @@
 .?AV?$BoundFuncDesc@VParticipantHandle@RBX@@$$A6A?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@NN@Z$0A@$01@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VParticipantHandle@RBX@@$$A6A?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V34@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VParticipantHandle@RBX@@$$A6A?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V34@N@Z$0A@$01@Reflection@RBX@@
+.?AV?$BoundFuncDesc@VParticipantHandle@RBX@@$$A6A?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V34@V?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@4@@Z$0A@$01@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VParticipantHandle@RBX@@$$A6A?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V34@_N@Z$0A@$01@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VParticipantHandle@RBX@@$$A6A?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@4@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VParticipantHandle@RBX@@$$A6A?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ$0A@$0A@@Reflection@RBX@@
@@ -2665,6 +2673,8 @@
 .?AV?$BoundFuncDesc@VPhysicsService@RBX@@$$A6A_NV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z$0A@$01@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VPhysicsService@RBX@@$$A6A_NV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VPhysicsService@RBX@@$$A6A_NV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$shared_ptr@VBasePart@RBX@@@4@@Z$0A@$01@Reflection@RBX@@
+.?AV?$BoundFuncDesc@VPickedFile@RBX@@$$A6AXXZ$0A@$0A@@Reflection@RBX@@
+.?AV?$BoundFuncDesc@VPickedFile@RBX@@$$A8@@EBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VPinShortcutService@RBX@@$$A6AX_J0V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z$0A@$02@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VPinShortcutService@RBX@@$$A6AX_J@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VPinShortcutService@RBX@@$$A6A_NXZ$0A@$0A@@Reflection@RBX@@
@@ -2885,6 +2895,8 @@
 .?AV?$BoundFuncDesc@VSafetyService@Safety@RBX@@$$A6A?AV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@5@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VSafetyService@Safety@RBX@@$$A6AXXZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VSafetyService@Safety@RBX@@$$A6A_JV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@@Z$0A@$00@Reflection@RBX@@
+.?AV?$BoundFuncDesc@VSceneSnapshot@RBX@@$$A8@@EBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$shared_ptr@VInstance@RBX@@@4@@Z$0A@$00@Reflection@RBX@@
+.?AV?$BoundFuncDesc@VSceneSnapshot@RBX@@$$A8@@EBA?AV?$shared_ptr@$$CBV?$vector@V?$shared_ptr@VInstance@RBX@@@std@@V?$allocator@V?$shared_ptr@VInstance@RBX@@@std@@@2@@std@@@std@@XZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VScript@RBX@@$$A6A?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VScriptContext@RBX@@$$A6A?AV?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@XZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VScriptContext@RBX@@$$A6A?AV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@@Z$0A@$00@Reflection@RBX@@
@@ -3218,6 +3230,7 @@
 .?AV?$BoundFuncDesc@VUGCValidationService@RBX@@$$A6A?AV?$shared_ptr@$$CBV?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@VVariant@Reflection@RBX@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@VVariant@Reflection@RBX@@@std@@@2@@std@@@std@@V?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@4@00@Z$0A@$02@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VUGCValidationService@RBX@@$$A6A?AV?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@V?$shared_ptr@VEditableMesh@RBX@@@4@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VUGCValidationService@RBX@@$$A6A?AV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@V?$shared_ptr@VEditableMesh@RBX@@@4@@Z$0A@$00@Reflection@RBX@@
+.?AV?$BoundFuncDesc@VUGCValidationService@RBX@@$$A6A?AV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@V?$shared_ptr@VInstance@RBX@@@4@V?$shared_ptr@VModelInstance@RBX@@@4@1M@Z$0A@$03@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VUGCValidationService@RBX@@$$A6A?AV?$shared_ptr@VEditableImage@RBX@@@std@@V?$shared_ptr@VBinaryStringValue@RBX@@@4@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VUGCValidationService@RBX@@$$A6A?AV?$shared_ptr@VEditableMesh@RBX@@@std@@V?$shared_ptr@VBinaryStringValue@RBX@@@4@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundFuncDesc@VUGCValidationService@RBX@@$$A6A?AVCoordinateFrame@2@W4HumanoidRigLabel@2@V?$shared_ptr@VInstance@RBX@@@std@@@Z$0A@$01@Reflection@RBX@@
@@ -3446,13 +3459,13 @@
 .?AV?$BoundYieldFuncDesc@VAdService@Ads@RBX@@$$A6A?AW4ShowAdResult@23@_J@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VAdService@Ads@RBX@@$$A6AXV?$shared_ptr@VInstance@RBX@@@std@@V?$optional@_J@5@@Z$0A@$01@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VAnalyticsService@RBX@@$$A6A?AV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@V?$shared_ptr@VPlayer@RBX@@@4@@Z$0A@$00@Reflection@RBX@@
-.?AV?$BoundYieldFuncDesc@VAnimatedImageService@RBX@@$$A6A?AV?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@VContent@2@@Z$0A@$00@Reflection@RBX@@
-.?AV?$BoundYieldFuncDesc@VAnimatedImageService@RBX@@$$A6A?AV?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@VContent@2@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@@Z$0A@$01@Reflection@RBX@@
-.?AV?$BoundYieldFuncDesc@VAnimatedImageService@RBX@@$$A6AHVContent@2@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@N@Z$0A@$02@Reflection@RBX@@
-.?AV?$BoundYieldFuncDesc@VAnimatedImageService@RBX@@$$A6AXVContent@2@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@5@@Z$0A@$02@Reflection@RBX@@
+.?AV?$BoundYieldFuncDesc@VAnimationClipProvider@RBX@@$$A6A?AV?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@VContent@2@@Z$0A@$00@Reflection@RBX@@
+.?AV?$BoundYieldFuncDesc@VAnimationClipProvider@RBX@@$$A6A?AV?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@VContent@2@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@@Z$0A@$01@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VAnimationClipProvider@RBX@@$$A6A?AV?$shared_ptr@VAnimationClip@RBX@@@std@@VContentId@2@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VAnimationClipProvider@RBX@@$$A6A?AV?$shared_ptr@VInstance@RBX@@@std@@VUser@2@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VAnimationClipProvider@RBX@@$$A6A?AVLuaClipEvaluator@2@VContentId@2@@Z$0A@$00@Reflection@RBX@@
+.?AV?$BoundYieldFuncDesc@VAnimationClipProvider@RBX@@$$A6AHVContent@2@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@N@Z$0A@$02@Reflection@RBX@@
+.?AV?$BoundYieldFuncDesc@VAnimationClipProvider@RBX@@$$A6AXVContent@2@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@5@@Z$0A@$02@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VAnimationFromVideoCreatorService@RBX@@$$A6A?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV34@0@Z$0A@$01@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VAnimationFromVideoCreatorService@RBX@@$$A6A?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV34@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VAnimationFromVideoCreatorService@RBX@@$$A6A?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV34@VWeakObjectRef@Lua@2@@Z$0A@$01@Reflection@RBX@@
@@ -3467,6 +3480,7 @@
 .?AV?$BoundYieldFuncDesc@VAssetImportService@Studio@@$$A6A?AV?$shared_ptr@$$CBUTuple@Reflection@RBX@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@V?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@4@@Z$0A@$01@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VAssetImportService@Studio@@$$A6A?AV?$shared_ptr@$$CBUTuple@Reflection@RBX@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@V?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@4@V?$optional@VWeakObjectRef@Lua@RBX@@@4@@Z$0A@$02@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VAssetImportService@Studio@@$$A6A?AV?$shared_ptr@$$CBUTuple@Reflection@RBX@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@V?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@4@_J@Z$0A@$02@Reflection@RBX@@
+.?AV?$BoundYieldFuncDesc@VAssetImportService@Studio@@$$A6A?AV?$shared_ptr@$$CBUTuple@Reflection@RBX@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@V?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@4@_JV?$optional@VWeakObjectRef@Lua@RBX@@@4@@Z$0A@$03@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VAssetImportService@Studio@@$$A6A?AV?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VAssetImportService@Studio@@$$A6A?AV?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@XZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VAssetImportService@Studio@@$$A6A?AV?$shared_ptr@VAssetImportSession@RBX@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@@Z$0A@$00@Reflection@RBX@@
@@ -3556,6 +3570,7 @@
 .?AV?$BoundYieldFuncDesc@VBadgeService@RBX@@$$A6A_N_J@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VBasePart@RBX@@$$A6A?AV?$shared_ptr@VInstance@RBX@@@std@@V?$shared_ptr@$$CBV?$vector@V?$shared_ptr@VInstance@RBX@@@std@@V?$allocator@V?$shared_ptr@VInstance@RBX@@@std@@@2@@std@@@4@W4CollisionFidelity@2@W4RenderFidelity@2@@Z$00$02@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VBindableFunction@RBX@@$$A6A?AV?$shared_ptr@$$CBUTuple@Reflection@RBX@@@std@@V34@@Z$0A@$00@Reflection@RBX@@
+.?AV?$BoundYieldFuncDesc@VBlob@RBX@@$$A6A?AVLuauBuffer@2@V?$optional@_J@std@@0@Z$0A@$01@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VBranchService@RBX@@$$A6A?AV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@_J0V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@@Z$0A@$02@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VBranchService@RBX@@$$A6A?AV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@_JW4BranchStatus@2@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@@Z$0A@$02@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VBranchService@RBX@@$$A6A?AV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@_J_N@Z$0A@$01@Reflection@RBX@@
@@ -3622,6 +3637,7 @@
 .?AV?$BoundYieldFuncDesc@VFacialAnimationStreamingServiceV2@RBX@@$$A6AH_J@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VFeatureMatchingService@RBX@@$$A6A?AV?$shared_ptr@VFeatureMatchingSession@RBX@@@std@@VContent@2@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VFileManagerService@RBX@@$$A6A?AV?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@W4EngineFolder@Enums@2@@Z$0A@$00@Reflection@RBX@@
+.?AV?$BoundYieldFuncDesc@VFilePickerService@RBX@@$$A6A?AV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@V34@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VFluidForceSensor@RBX@@$$A6A?AV?$shared_ptr@$$CBUTuple@Reflection@RBX@@@std@@VVector3@2@0VCoordinateFrame@2@@Z$0A@$02@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VFriendService@RBX@@$$A6A?AV?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@XZ$0A@$0A@@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VGamePassService@RBX@@$$A6A_NV?$shared_ptr@VPlayer@RBX@@@std@@_J@Z$0A@$01@Reflection@RBX@@
@@ -3669,6 +3685,7 @@
 .?AV?$BoundYieldFuncDesc@VHttpService@RBX@@$$A6A?AVSecret@2@V?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VHttpService@RBX@@$$A6A?AVVariant@Reflection@2@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VHumanoid@RBX@@$$A6A?AV?$shared_ptr@$$CBUTuple@Reflection@RBX@@@std@@_J@Z$0A@$00@Reflection@RBX@@
+.?AV?$BoundYieldFuncDesc@VHumanoid@RBX@@$$A6A?AV?$shared_ptr@$$CBV?$vector@V?$shared_ptr@VInstance@RBX@@@std@@V?$allocator@V?$shared_ptr@VInstance@RBX@@@std@@@2@@std@@@std@@_J@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VHumanoid@RBX@@$$A6AXV?$shared_ptr@VHumanoidDescription@RBX@@@std@@W4AssetTypeVerification@2@@Z$0A@$01@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VHumanoid@RBX@@$$A6AXVVariant@Reflection@2@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VHumanoid@RBX@@$$A6A_NV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z$0A@$00@Reflection@RBX@@
@@ -3775,6 +3792,7 @@
 .?AV?$BoundYieldFuncDesc@VPath@RBX@@$$A6AXVVector3@2@0@Z$0A@$01@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VPathfindingService@RBX@@$$A6A?AV?$shared_ptr@VPath@RBX@@@std@@VVector3@2@0@Z$0A@$01@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VPathfindingService@RBX@@$$A6A?AV?$shared_ptr@VPath@RBX@@@std@@VVector3@2@0M@Z$0A@$02@Reflection@RBX@@
+.?AV?$BoundYieldFuncDesc@VPickedFile@RBX@@$$A6A?AV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@V34@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VPlatformCloudStorageService@RBX@@$$A6A?AV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@@Z$0A@$00@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VPlatformCloudStorageService@RBX@@$$A6AXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@4@@Z$0A@$01@Reflection@RBX@@
 .?AV?$BoundYieldFuncDesc@VPlatformFriendsService@RBX@@$$A6A?AV?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@std@@XZ$0A@$0A@@Reflection@RBX@@
@@ -4020,6 +4038,7 @@
 .?AV?$Channel@VVector2@RGL@@@RGL@@
 .?AV?$Channel@VVector3@RGL@@@RGL@@
 .?AV?$ChannelCredsFactory@Ugrpc_channel_credentials@@@grpc_core@@
+.?AV?$ChannelModel@UFileSystemEvent@Studio@RBX@@@detail@Async@RBX@@
 .?AV?$ChannelModel@UPersistTask@detail@Studio@RBX@@@detail@Async@RBX@@
 .?AV?$ChildParser@V?$BasicBlockParser@UBlock@webm@@@webm@@V
 .?AV?$ChildParser@V?$BasicBlockParser@USimpleBlock@webm@@@webm@@V
@@ -4170,6 +4189,7 @@
 .?AV?$CommandMetadata@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@UAssetPublishState@AssetAccess@Studio@RBX@@V?$allocator@UAssetPublishState@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@V?$vector@_JV?$allocator@_J@std@@@std@@@ZV1234@@Studio@RBX@@
 .?AV?$CommandMetadata@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@UAssetRequestAccessFailure@AssetAccess@Studio@RBX@@V?$allocator@UAssetRequestAccessFailure@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@V?$vector@_JV?$allocator@_J@std@@@std@@@ZV1234@@Studio@RBX@@
 .?AV?$CommandMetadata@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@UAssetSubjectFailedShare@AssetAccess@Studio@RBX@@V?$allocator@UAssetSubjectFailedShare@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@V?$vector@UAssetSubject@AssetAccess@Studio@RBX@@V?$allocator@UAssetSubject@AssetAccess@Studio@RBX@@@std@@@std@@V?$vector@_JV?$allocator@_J@std@@@8@@ZV1234@@Studio@RBX@@
+.?AV?$CommandMetadata@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@UAssetVersionPublishState@AssetAccess@Studio@RBX@@V?$allocator@UAssetVersionPublishState@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@V?$vector@UAssetPublishRequest@AssetAccess@Studio@RBX@@V?$allocator@UAssetPublishRequest@AssetAccess@Studio@RBX@@@std@@@std@@@ZV1234@@Studio@RBX@@
 .?AV?$CommandMetadata@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@_JV?$allocator@_J@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@V?$vector@UAssetPublishRequest@AssetAccess@Studio@RBX@@V?$allocator@UAssetPublishRequest@AssetAccess@Studio@RBX@@@std@@@std@@@ZV1234@@Studio@RBX@@
 .?AV?$CommandMetadata@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@_JV?$allocator@_J@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@V?$vector@_JV?$allocator@_J@std@@@std@@@ZV1234@@Studio@RBX@@
 .?AV?$CommandMetadata@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@_JV?$allocator@_J@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@XZV1234@@Studio@RBX@@
@@ -4288,6 +4308,7 @@
 .?AV?$CommandMetadata@P8PerformanceToolsBridgeProxy@Studio@RBX@@EAA?AV?$Result@NUCommandError@Studio@RBX@@@Tasks@3@XZV123@@Studio@RBX@@
 .?AV?$CommandMetadata@P8PerformanceToolsBridgeProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@XZV123@@Studio@RBX@@
 .?AV?$CommandMetadata@P8PerformanceToolsBridgeProxy@Studio@RBX@@EAA?AV?$Result@_NUCommandError@Studio@RBX@@@Tasks@3@XZV123@@Studio@RBX@@
+.?AV?$CommandMetadata@P8PlaceCloserProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCloseAllPlacesError@Studio@3@@Tasks@3@UAllPlacesCloseConfig@23@@ZV123@@Studio@RBX@@
 .?AV?$CommandMetadata@P8PlaceCloserProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UClosePlaceError@Studio@3@@Tasks@3@UPlaceCloseConfig@23@@ZV123@@Studio@RBX@@
 .?AV?$CommandMetadata@P8PlaceCloserProxy@Studio@RBX@@EAA?AV?$Result@VScriptConnection@RBX@@UCommandError@Studio@2@@Tasks@3@HVWeakObjectRef@Lua@3@@ZV123@@Studio@RBX@@
 .?AV?$CommandMetadata@P8PlaceManager@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@XZV123@@Studio@RBX@@
@@ -4313,6 +4334,7 @@
 .?AV?$CommandMetadata@P8PublishMediatorProxy@Studio@RBX@@EAA?AV?$Result@UPlacePublishResult@Studio@RBX@@UCommandError@23@@Tasks@3@USavePlaceOptions@23@@ZV123@@Studio@RBX@@
 .?AV?$CommandMetadata@P8PublishStatusManagerProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@UWebBrowserWidgetConfig@23@@ZV123@@Studio@RBX@@
 .?AV?$CommandMetadata@P8ReactDevToolsManagerProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@UWebBrowserWidgetConfig@23@@ZV123@@Studio@RBX@@
+.?AV?$CommandMetadata@P8RestartControllerBridgeProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@XZV123@@Studio@RBX@@
 .?AV?$CommandMetadata@P8RibbonConfigurationProviderProxy@Studio@RBX@@EAA?AV?$Result@URibbonDefinition@Studio@RBX@@UCommandError@23@@Tasks@3@XZV123@@Studio@RBX@@
 .?AV?$CommandMetadata@P8RibbonConfigurationProviderProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@URibbonDefinition@23@@ZV123@@Studio@RBX@@
 .?AV?$CommandMetadata@P8RidlCommandExampleProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@_J@ZV123@@Studio@RBX@@
@@ -4361,6 +4383,8 @@
 .?AV?$CommandMetadata@P8SystemCursorProxy@Studio@RBX@@EAA?AV?$Result@NUCommandError@Studio@RBX@@@Tasks@3@XZV123@@Studio@RBX@@
 .?AV?$CommandMetadata@P8SystemMenuControllerProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@V?$vector@USystemMenuDefinition@Studio@RBX@@V?$allocator@USystemMenuDefinition@Studio@RBX@@@std@@@std@@@ZV123@@Studio@RBX@@
 .?AV?$CommandMetadata@P8SystemMenuControllerProxy@Studio@RBX@@EAA?AV?$Result@V?$vector@USystemMenuDefinition@Studio@RBX@@V?$allocator@USystemMenuDefinition@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@3@XZV123@@Studio@RBX@@
+.?AV?$CommandMetadata@P8TeamTestSessionBridgeProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@H@ZV123@@Studio@RBX@@
+.?AV?$CommandMetadata@P8TeamTestSessionBridgeProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@ZV123@@Studio@RBX@@
 .?AV?$CommandMetadata@P8ToolboxManagerProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@UWebBrowserWidgetConfig@23@@ZV123@@Studio@RBX@@
 .?AV?$CommandMetadata@P8ToolsManagerProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@V?$vector@VToolState@Studio@RBX@@V?$allocator@VToolState@Studio@RBX@@@std@@@std@@V?$optional@I@7@@ZV123@@Studio@RBX@@
 .?AV?$CommandMetadata@P8ToolsManagerProxy@Studio@RBX@@EAA?AV?$Result@V?$Signal@VToolState@Studio@RBX@@@Studio@RBX@@UCommandError@23@@Tasks@3@UStudioUri@3@@ZV123@@Studio@RBX@@
@@ -4693,6 +4717,7 @@
 .?AV?$Creator@VFeatureSearchParams@RBX@@@RBX@@
 .?AV?$Creator@VFileManagerService@RBX@@@RBX@@
 .?AV?$Creator@VFileMesh@RBX@@@RBX@@
+.?AV?$Creator@VFilePickerService@RBX@@@RBX@@
 .?AV?$Creator@VFileSyncItem@RBX@@@RBX@@
 .?AV?$Creator@VFileSyncReplicationService@RBX@@@RBX@@
 .?AV?$Creator@VFire@RBX@@@RBX@@
@@ -4943,6 +4968,7 @@
 .?AV?$Creator@VRuntimeContentService@RBX@@@RBX@@
 .?AV?$Creator@VSafetyService@Safety@RBX@@@RBX@@
 .?AV?$Creator@VSceneAnalysisService@RBX@@@RBX@@
+.?AV?$Creator@VSceneSnapshot@RBX@@@RBX@@
 .?AV?$Creator@VScreenGui@RBX@@@RBX@@
 .?AV?$Creator@VScreenshotCapture@RBX@@@RBX@@
 .?AV?$Creator@VScript@RBX@@@RBX@@
@@ -4970,6 +4996,7 @@
 .?AV?$Creator@VServiceVisibilityService@RBX@@@RBX@@
 .?AV?$Creator@VSessionCheckService@RBX@@@RBX@@
 .?AV?$Creator@VSessionService@RBX@@@RBX@@
+.?AV?$Creator@VSessionStorage@RBX@@@RBX@@
 .?AV?$Creator@VSharedTableRegistry@RBX@@@RBX@@
 .?AV?$Creator@VShirt@RBX@@@RBX@@
 .?AV?$Creator@VShirtGraphic@RBX@@@RBX@@
@@ -5291,6 +5318,7 @@
 .?AV?$Described@VBaseScript@RBX@@VLuaSourceContainer@2@@RBX@@
 .?AV?$Described@VBaseWrap@RBX@@VInstance@2@@RBX@@
 .?AV?$Described@VBevelMesh@RBX@@VDataModelMesh@2@@RBX@@
+.?AV?$Described@VBlob@RBX@@VObject@2@@RBX@@
 .?AV?$Described@VBodyMover@RBX@@VInstance@2@@RBX@@
 .?AV?$Described@VBrowserService@RBX@@VServiceInstance@2@@RBX@@
 .?AV?$Described@VCacheableContentProvider@RBX@@VServiceInstance@2@@RBX@@
@@ -5753,6 +5781,7 @@
 .?AV?$DescribedCreatable@VFeatureSearchParams@RBX@@VObject@2@@RBX@@
 .?AV?$DescribedCreatable@VFileManagerService@RBX@@VServiceInstance@2@@RBX@@
 .?AV?$DescribedCreatable@VFileMesh@RBX@@VDataModelMesh@2@@RBX@@
+.?AV?$DescribedCreatable@VFilePickerService@RBX@@VServiceInstance@2@@RBX@@
 .?AV?$DescribedCreatable@VFileSyncItem@RBX@@VInstance@2@@RBX@@
 .?AV?$DescribedCreatable@VFileSyncReplicationService@RBX@@VServiceInstance@2@@RBX@@
 .?AV?$DescribedCreatable@VFire@RBX@@VInstance@2@@RBX@@
@@ -6003,6 +6032,7 @@
 .?AV?$DescribedCreatable@VRuntimeContentService@RBX@@VServiceInstance@2@@RBX@@
 .?AV?$DescribedCreatable@VSafetyService@Safety@RBX@@VServiceInstance@3@@RBX@@
 .?AV?$DescribedCreatable@VSceneAnalysisService@RBX@@VServiceInstance@2@@RBX@@
+.?AV?$DescribedCreatable@VSceneSnapshot@RBX@@VObject@2@@RBX@@
 .?AV?$DescribedCreatable@VScreenGui@RBX@@VGuiLayerCollector@2@@RBX@@
 .?AV?$DescribedCreatable@VScreenshotCapture@RBX@@VCapture@2@@RBX@@
 .?AV?$DescribedCreatable@VScript@RBX@@VBaseScript@2@@RBX@@
@@ -6030,6 +6060,7 @@
 .?AV?$DescribedCreatable@VServiceVisibilityService@RBX@@VServiceInstance@2@@RBX@@
 .?AV?$DescribedCreatable@VSessionCheckService@RBX@@VServiceInstance@2@@RBX@@
 .?AV?$DescribedCreatable@VSessionService@RBX@@VServiceInstance@2@@RBX@@
+.?AV?$DescribedCreatable@VSessionStorage@RBX@@VServiceInstance@2@@RBX@@
 .?AV?$DescribedCreatable@VSharedTableRegistry@RBX@@VServiceInstance@2@@RBX@@
 .?AV?$DescribedCreatable@VShirt@RBX@@VClothing@2@@RBX@@
 .?AV?$DescribedCreatable@VShirtGraphic@RBX@@VLegacyCharacterAppearance@2@@RBX@@
@@ -6261,10 +6292,12 @@
 .?AV?$EmbeddedArena@$0CAAA@$0BA@X@RSL@@
 .?AV?$EmbeddedArena@$0CCA@$03X@RSL@@
 .?AV?$EmbeddedArena@$0CDPA@$07X@RSL@@
+.?AV?$EmbeddedArena@$0CE@$03X@RSL@@
 .?AV?$EmbeddedArena@$0CI@$07X@RSL@@
 .?AV?$EmbeddedArena@$0CIA@$07X@RSL@@
 .?AV?$EmbeddedArena@$0CIA@$0BA@X@RSL@@
 .?AV?$EmbeddedArena@$0DA@$07X@RSL@@
+.?AV?$EmbeddedArena@$0DAA@$07X@RSL@@
 .?AV?$EmbeddedArena@$0DAA@$0BA@X@RSL@@
 .?AV?$EmbeddedArena@$0DEI@$07X@RSL@@
 .?AV?$EmbeddedArena@$0DPI@$07X@RSL@@
@@ -6275,7 +6308,6 @@
 .?AV?$EmbeddedArena@$0FA@$07X@RSL@@
 .?AV?$EmbeddedArena@$0FAA@$07X@RSL@@
 .?AV?$EmbeddedArena@$0FEA@$07X@RSL@@
-.?AV?$EmbeddedArena@$0GA@$03X@RSL@@
 .?AV?$EmbeddedArena@$0GA@$07X@RSL@@
 .?AV?$EmbeddedArena@$0GAA@$07X@RSL@@
 .?AV?$EmbeddedArena@$0GLA@$07X@RSL@@
@@ -6285,9 +6317,11 @@
 .?AV?$EmbeddedArena@$0IA@$01X@RSL@@
 .?AV?$EmbeddedArena@$0IA@$07X@RSL@@
 .?AV?$EmbeddedArena@$0JA@$03X@RSL@@
+.?AV?$EmbeddedArena@$0JA@$07X@RSL@@
 .?AV?$EmbeddedArena@$0KA@$07X@RSL@@
 .?AV?$EmbeddedArena@$0KAAA@$07X@RSL@@
-.?AV?$EmbeddedArena@$0MA@$03X@RSL@@
+.?AV?$EmbeddedArena@$0KOA@$07X@RSL@@
+.?AV?$EmbeddedArena@$0M@$03X@RSL@@
 .?AV?$EmbeddedArena@$0MA@$07X@RSL@@
 .?AV?$EmbeddedArena@$0OA@$07X@RSL@@
 .?AV?$EmbeddedArena@$0OAA@$03X@RSL@@
@@ -6412,6 +6446,7 @@
 .?AV?$EnumDesc@W4CameraMode@CameraModeEnum@Enums@RBX@@@Reflection@RBX@@
 .?AV?$EnumDesc@W4CameraNavigationModel@Enums@RBX@@@Reflection@RBX@@
 .?AV?$EnumDesc@W4CameraPanMode@CameraPanModeEnum@Enums@RBX@@@Reflection@RBX@@
+.?AV?$EnumDesc@W4CameraRotateCursorLock@Enums@RBX@@@Reflection@RBX@@
 .?AV?$EnumDesc@W4CameraSpeedAdjustBinding@Enums@RBX@@@Reflection@RBX@@
 .?AV?$EnumDesc@W4CameraType@CameraTypeEnum@Enums@RBX@@@Reflection@RBX@@
 .?AV?$EnumDesc@W4CanCollaborateError@RBX@@@Reflection@RBX@@
@@ -6616,6 +6651,7 @@
 .?AV?$EnumDesc@W4KnownWindow@WindowProtocol@RBX@@@Reflection@RBX@@
 .?AV?$EnumDesc@W4LeftRight@LeftRightEnum@Enums@RBX@@@Reflection@RBX@@
 .?AV?$EnumDesc@W4LexemeType@ExplorerFiltering@Studio@RBX@@@Reflection@RBX@@
+.?AV?$EnumDesc@W4LightAttenuationMode@RBX@@@Reflection@RBX@@
 .?AV?$EnumDesc@W4LightingStyle@RBX@@@Reflection@RBX@@
 .?AV?$EnumDesc@W4LightingTechnology@RBX@@@Reflection@RBX@@
 .?AV?$EnumDesc@W4Limb@LimbEnum@Enums@RBX@@@Reflection@RBX@@
@@ -7163,6 +7199,7 @@
 .?AV?$EnumPropDescriptor@VInputObject@RBX@@W4UserInputType@UserInputTypeEnum@Enums@2@@Reflection@RBX@@
 .?AV?$EnumPropDescriptor@VInstance@RBX@@W4PredictionMode@2@@Reflection@RBX@@
 .?AV?$EnumPropDescriptor@VInstance@RBX@@W4PropertyStatus@PropertyStatusEnum@Enums@2@@Reflection@RBX@@
+.?AV?$EnumPropDescriptor@VLighting@RBX@@W4LightAttenuationMode@2@@Reflection@RBX@@
 .?AV?$EnumPropDescriptor@VLighting@RBX@@W4LightingStyle@2@@Reflection@RBX@@
 .?AV?$EnumPropDescriptor@VLighting@RBX@@W4LightingTechnology@2@@Reflection@RBX@@
 .?AV?$EnumPropDescriptor@VLighting@RBX@@W4RolloutState@Enums@2@@Reflection@RBX@@
@@ -7277,6 +7314,7 @@
 .?AV?$EnumPropDescriptor@VStudioUserPreferences@@W4ActionOnStopSync@Enums@RBX@@@Reflection@RBX@@
 .?AV?$EnumPropDescriptor@VStudioUserPreferences@@W4AutoIndent@FormattingOptions@LSP@RBX@@@Reflection@RBX@@
 .?AV?$EnumPropDescriptor@VStudioUserPreferences@@W4CameraNavigationModel@Enums@RBX@@@Reflection@RBX@@
+.?AV?$EnumPropDescriptor@VStudioUserPreferences@@W4CameraRotateCursorLock@Enums@RBX@@@Reflection@RBX@@
 .?AV?$EnumPropDescriptor@VStudioUserPreferences@@W4CameraSpeedAdjustBinding@Enums@RBX@@@Reflection@RBX@@
 .?AV?$EnumPropDescriptor@VStudioUserPreferences@@W4CompletionAcceptanceBehavior@LSP@RBX@@@Reflection@RBX@@
 .?AV?$EnumPropDescriptor@VStudioUserPreferences@@W4DefaultScriptSyncFileType@Enums@RBX@@@Reflection@RBX@@
@@ -7498,6 +7536,7 @@
 .?AV?$EventDesc@VAuroraService@RBX@@$$A6AXNH@ZV?$signal@$$A6AXNH@Z@rbx@@PEQ12@V34@@Reflection@RBX@@
 .?AV?$EventDesc@VAuroraService@RBX@@$$A6AXXZV?$signal@$$A6AXXZ@rbx@@PEQ12@V34@@Reflection@RBX@@
 .?AV?$EventDesc@VAvatarChatService@RBX@@$$A6AXH@ZV?$remote_signal@$$A6AXH@Z@rbx@@PEQ12@V34@@Reflection@RBX@@
+.?AV?$EventDesc@VAvatarChatService@RBX@@$$A6AXV?$shared_ptr@VPlayer@RBX@@@std@@H@ZV?$signal@$$A6AXV?$shared_ptr@VPlayer@RBX@@@std@@H@Z@rbx@@PEQ12@V56@@Reflection@RBX@@
 .?AV?$EventDesc@VAvatarChatService@RBX@@$$A6AXXZV?$remote_signal@$$A6AXXZ@rbx@@PEQ12@V34@@Reflection@RBX@@
 .?AV?$EventDesc@VAvatarCreationService@RBX@@$$A6AXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@ZV?$remote_signal@$$A6AXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z@rbx@@PEQ12@V56@@Reflection@RBX@@
 .?AV?$EventDesc@VAvatarCreationService@RBX@@$$A6AXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@ZV?$signal@$$A6AXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z@rbx@@PEQ12@V56@@Reflection@RBX@@
@@ -7902,7 +7941,7 @@
 .?AV?$EventDesc@VProjectService@RBX@@$$A6AXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@ZV?$signal@$$A6AXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z@rbx@@PEQ12@V56@@Reflection@RBX@@
 .?AV?$EventDesc@VProjectService@RBX@@$$A6AXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@ZV?$signal@$$A6AXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@rbx@@PEQ12@V56@@Reflection@RBX@@
 .?AV?$EventDesc@VProjectService@RBX@@$$A6AXXZV?$signal@$$A6AXXZ@rbx@@PEQ12@V34@@Reflection@RBX@@
-.?AV?$EventDesc@VProjectService@RBX@@$$A6AX_JH0@ZV?$remote_signal@$$A6AX_JH0@Z@rbx@@PEQ12@V34@@Reflection@RBX@@
+.?AV?$EventDesc@VProjectService@RBX@@$$A6AX_J@ZV?$remote_signal@$$A6AX_J@Z@rbx@@PEQ12@V34@@Reflection@RBX@@
 .?AV?$EventDesc@VProjectService@RBX@@$$A6AX_JV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@1V?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@4@HH@ZV?$remote_signal@$$A6AX_JV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@1V?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@2@HH@Z@rbx@@PEQ12@V67@@Reflection@RBX@@
 .?AV?$EventDesc@VProjectService@RBX@@$$A6AX_JV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@4@@ZV?$remote_signal@$$A6AX_JV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@2@@Z@rbx@@PEQ12@V67@@Reflection@RBX@@
 .?AV?$EventDesc@VProjectService@RBX@@$$A6AX_JV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@4@H@ZV?$remote_signal@$$A6AX_JV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@2@H@Z@rbx@@PEQ12@V67@@Reflection@RBX@@
@@ -9115,6 +9154,7 @@
 .?AV?$GetSetImpl@P8CollaboratorProp@RBX@@EBA_NXZP812@EAAX_N@Z@?$PropDescriptor@VCollaborator@RBX@@_N@Reflection@RBX@@
 .?AV?$GetSetImpl@P8Color3ValueProp@RBX@@EBA?AVColor3@2@XZP812@EAAXV32@@Z@?$PropDescriptor@VColor3Value@RBX@@VColor3@2@@Reflection@RBX@@
 .?AV?$GetSetImpl@P8ColorCorrectionEffectProp@RBX@@EBA?AVColor3@2@XZP812@EAAXV32@@Z@?$PropDescriptor@VColorCorrectionEffect@RBX@@VColor3@2@@Reflection@RBX@@
+.?AV?$GetSetImpl@P8ColorCorrectionEffectProp@RBX@@EBAAEBVContent@2@XZP812@EAAXV32@@Z@?$PropDescriptor@VColorCorrectionEffect@RBX@@VContent@2@@Reflection@RBX@@
 .?AV?$GetSetImpl@P8ColorCorrectionEffectProp@RBX@@EBAMXZP812@EAAXM@Z@?$PropDescriptor@VColorCorrectionEffect@RBX@@M@Reflection@RBX@@
 .?AV?$GetSetImpl@P8ColorGradingEffectProp@RBX@@EBA?AW4TonemapperPreset@2@XZP812@EAAXW432@@Z@?$PropDescriptor@VColorGradingEffect@RBX@@W4TonemapperPreset@2@@Reflection@RBX@@
 .?AV?$GetSetImpl@P8CompositeValueCurveProp@RBX@@EBA?AW4CompositeValueCurveType@2@XZP812@EAAXW432@@Z@?$PropDescriptor@VCompositeValueCurve@RBX@@W4CompositeValueCurveType@2@@Reflection@RBX@@
@@ -9469,6 +9509,7 @@
 .?AV?$GetSetImpl@P8LightingProp@RBX@@EBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZP812@EAAXV34@@Z@?$PropDescriptor@VLighting@RBX@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Reflection@RBX@@
 .?AV?$GetSetImpl@P8LightingProp@RBX@@EBA?AVColor3@2@XZP812@EAAXAEBV32@@Z@?$PropDescriptor@VLighting@RBX@@VColor3@2@@Reflection@RBX@@
 .?AV?$GetSetImpl@P8LightingProp@RBX@@EBA?AVColor3@2@XZP812@EAAXV32@@Z@?$PropDescriptor@VLighting@RBX@@VColor3@2@@Reflection@RBX@@
+.?AV?$GetSetImpl@P8LightingProp@RBX@@EBA?AW4LightAttenuationMode@2@XZP812@EAAXW432@@Z@?$PropDescriptor@VLighting@RBX@@W4LightAttenuationMode@2@@Reflection@RBX@@
 .?AV?$GetSetImpl@P8LightingProp@RBX@@EBA?AW4LightingStyle@2@XZP812@EAAXW432@@Z@?$PropDescriptor@VLighting@RBX@@W4LightingStyle@2@@Reflection@RBX@@
 .?AV?$GetSetImpl@P8LightingProp@RBX@@EBA?AW4LightingTechnology@2@XZP812@EAAXW432@@Z@?$PropDescriptor@VLighting@RBX@@W4LightingTechnology@2@@Reflection@RBX@@
 .?AV?$GetSetImpl@P8LightingProp@RBX@@EBA?AW4RolloutState@Enums@2@XZP812@EAAXW4342@@Z@?$PropDescriptor@VLighting@RBX@@W4RolloutState@Enums@2@@Reflection@RBX@@
@@ -9945,6 +9986,7 @@
 .?AV?$GetSetImpl@P8StudioProp@@EBA?AW4ActionOnStopSync@Enums@RBX@@XZP81@EAAXW4234@@Z@?$PropDescriptor@VStudioUserPreferences@@W4ActionOnStopSync@Enums@RBX@@@Reflection@RBX@@
 .?AV?$GetSetImpl@P8StudioProp@@EBA?AW4AutoIndent@FormattingOptions@LSP@RBX@@XZP81@EAAXW42345@@Z@?$PropDescriptor@VStudioUserPreferences@@W4AutoIndent@FormattingOptions@LSP@RBX@@@Reflection@RBX@@
 .?AV?$GetSetImpl@P8StudioProp@@EBA?AW4CameraNavigationModel@Enums@RBX@@XZP81@EAAXW4234@@Z@?$PropDescriptor@VStudioUserPreferences@@W4CameraNavigationModel@Enums@RBX@@@Reflection@RBX@@
+.?AV?$GetSetImpl@P8StudioProp@@EBA?AW4CameraRotateCursorLock@Enums@RBX@@XZP81@EAAXW4234@@Z@?$PropDescriptor@VStudioUserPreferences@@W4CameraRotateCursorLock@Enums@RBX@@@Reflection@RBX@@
 .?AV?$GetSetImpl@P8StudioProp@@EBA?AW4CameraSpeedAdjustBinding@Enums@RBX@@XZP81@EAAXW4234@@Z@?$PropDescriptor@VStudioUserPreferences@@W4CameraSpeedAdjustBinding@Enums@RBX@@@Reflection@RBX@@
 .?AV?$GetSetImpl@P8StudioProp@@EBA?AW4CompletionAcceptanceBehavior@LSP@RBX@@XZP81@EAAXW4234@@Z@?$PropDescriptor@VStudioUserPreferences@@W4CompletionAcceptanceBehavior@LSP@RBX@@@Reflection@RBX@@
 .?AV?$GetSetImpl@P8StudioProp@@EBA?AW4DefaultScriptSyncFileType@Enums@RBX@@XZP81@EAAXW4234@@Z@?$PropDescriptor@VStudioUserPreferences@@W4DefaultScriptSyncFileType@Enums@RBX@@@Reflection@RBX@@
@@ -10650,6 +10692,7 @@
 .?AV?$MapEntry@VResolveEnvironmentRequest_VarsEntry_DoNotUse@v1@adaptiveconfigservice@3roblox@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V56@$08$08@internal@protobuf@google@@
 .?AV?$MapEntry@VResolveRevisionRequest_VarsEntry_DoNotUse@v1@adaptiveconfigservice@3roblox@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V56@$08$08@internal@protobuf@google@@
 .?AV?$MapEntry@VRobloxCtx_HeadersEntry_DoNotUse@v1@experiencesignalsingest@3roblox@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V56@$08$08@internal@protobuf@google@@
+.?AV?$MapEntry@VScreenshotMetadata_InferenceResult_DecisionResult_ScoresEntry_DoNotUse@v1@rm3evidencefilterapi@rm3evidencefilter@roblox@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@N$08$00@internal@protobuf@google@@
 .?AV?$MapEntry@VSettings_Map_NodesEntry_DoNotUse@v1@adaptiveconfigservice@3roblox@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@VSettings_Node@2334@$08$0L@@internal@protobuf@google@@
 .?AV?$MapEntry@VStruct_FieldsEntry_DoNotUse@protobuf@google@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@VValue@23@$08$0L@@internal@protobuf@google@@
 .?AV?$MapEntry@VSubscriptionsOperationResponse_FeedsErrorResponseEntry_DoNotUse@grpc@@_JV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@$02$08@internal@protobuf@google@@
@@ -11316,6 +11359,7 @@
 .?AV?$PropDescriptor@VColor3Value@RBX@@VColor3@2@@Reflection@RBX@@
 .?AV?$PropDescriptor@VColorCorrectionEffect@RBX@@M@Reflection@RBX@@
 .?AV?$PropDescriptor@VColorCorrectionEffect@RBX@@VColor3@2@@Reflection@RBX@@
+.?AV?$PropDescriptor@VColorCorrectionEffect@RBX@@VContent@2@@Reflection@RBX@@
 .?AV?$PropDescriptor@VCompressorSoundEffect@Soundscape@RBX@@M@Reflection@RBX@@
 .?AV?$PropDescriptor@VConeHandleAdornment@RBX@@M@Reflection@RBX@@
 .?AV?$PropDescriptor@VConeHandleAdornment@RBX@@_N@Reflection@RBX@@
@@ -12748,7 +12792,7 @@
 .?AV?$RemoteEventDesc@VPlayers@RBX@@$$A6AXXZV?$remote_signal@$$A6AXXZ@rbx@@PEQ12@V34@@Reflection@RBX@@
 .?AV?$RemoteEventDesc@VPlayers@RBX@@$$A6AX_J@ZV?$remote_signal@$$A6AX_J@Z@rbx@@PEQ12@V34@@Reflection@RBX@@
 .?AV?$RemoteEventDesc@VPointsService@RBX@@$$A6AX_JHHH@ZV?$remote_signal@$$A6AX_JHHH@Z@rbx@@PEQ12@V34@@Reflection@RBX@@
-.?AV?$RemoteEventDesc@VProjectService@RBX@@$$A6AX_JH0@ZV?$remote_signal@$$A6AX_JH0@Z@rbx@@PEQ12@V34@@Reflection@RBX@@
+.?AV?$RemoteEventDesc@VProjectService@RBX@@$$A6AX_J@ZV?$remote_signal@$$A6AX_J@Z@rbx@@PEQ12@V34@@Reflection@RBX@@
 .?AV?$RemoteEventDesc@VProjectService@RBX@@$$A6AX_JV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@1V?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@4@HH@ZV?$remote_signal@$$A6AX_JV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@1V?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@2@HH@Z@rbx@@PEQ12@V67@@Reflection@RBX@@
 .?AV?$RemoteEventDesc@VProjectService@RBX@@$$A6AX_JV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@4@@ZV?$remote_signal@$$A6AX_JV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@2@@Z@rbx@@PEQ12@V67@@Reflection@RBX@@
 .?AV?$RemoteEventDesc@VProjectService@RBX@@$$A6AX_JV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@4@H@ZV?$remote_signal@$$A6AX_JV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$shared_ptr@$$CBV?$vector@VVariant@Reflection@RBX@@V?$allocator@VVariant@Reflection@RBX@@@std@@@std@@@2@H@Z@rbx@@PEQ12@V67@@Reflection@RBX@@
@@ -12970,6 +13014,7 @@
 .?AV?$SetImpl@P8TerrainRegionProp@RBX@@EAAXVBinaryString@2@@Z@?$PropDescriptor@VTerrainRegion@RBX@@VBinaryString@2@@Reflection@RBX@@
 .?AV?$SetImpl@P8WorkspaceProp@RBX@@EAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@?$PropDescriptor@VWorkspace@RBX@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Reflection@RBX@@
 .?AV?$Setter@VAdService@Ads@RBX@@@?$BoundCallbackDesc@$$A6AXV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@@Z@Reflection@RBX@@
+.?AV?$Setter@VAdService@Ads@RBX@@@?$BoundCallbackDesc@$$A6AXV?$shared_ptr@VPlayer@RBX@@@std@@W4ShowAdResult@Ads@RBX@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@2@Z@Reflection@RBX@@
 .?AV?$Setter@VPlugin@RBX@@@?$BoundCallbackDesc@$$A6A?AV?$shared_ptr@$$CBV?$vector@V?$shared_ptr@VInstance@RBX@@@std@@V?$allocator@V?$shared_ptr@VInstance@RBX@@@std@@@2@@std@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@HV12@@Z@Reflection@RBX@@
 .?AV?$Setter@VPlugin@RBX@@@?$BoundCallbackDesc@$$A6AXXZ@Reflection@RBX@@
 .?AV?$SignalMetadata@$$V@Studio@RBX@@
@@ -13065,8 +13110,11 @@
 .?AV?$SmallVector@U?$pair@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_K@std@@$0CA@@RSL@@
 .?AV?$SmallVector@U?$pair@_KV?$unique_ptr@UDeferredOperation@Impl@Io@RbxTransport@RBX@@U?$default_delete@UDeferredOperation@Impl@Io@RbxTransport@RBX@@@std@@@std@@@std@@$00@RSL@@
 .?AV?$SmallVector@U?$pair@_K_K@std@@$07@RSL@@
+.?AV?$SmallVector@UAnimGraphEvent@RBX@@$01@RSL@@
+.?AV?$SmallVector@UBackdropResourceRequirements@UI@RBX@@$0M@@RSL@@
 .?AV?$SmallVector@UCallingManagerStateUpdate@CallingProtocolConstants@Calling@RBX@@$01@RSL@@
 .?AV?$SmallVector@UCoalescedPointerAction@RBX@@$03@RSL@@
+.?AV?$SmallVector@UColorLUTCandidate@Graphics@RBX@@$03@RSL@@
 .?AV?$SmallVector@UConnectionEvent@RbxTransport@RBX@@$07@RSL@@
 .?AV?$SmallVector@UContext@PollEventAggregator@Impl@Io@RbxTransport@RBX@@$0BA@@RSL@@
 .?AV?$SmallVector@UDatagramRecvSubscription@H3Connection@Http@RbxTransport@RBX@@$01@RSL@@
@@ -13082,17 +13130,21 @@
 .?AV?$SmallVector@UInputStateChangeEvent@InputRing@RBX@@$07@RSL@@
 .?AV?$SmallVector@UKeyEvent@InputRing@RBX@@$0BA@@RSL@@
 .?AV?$SmallVector@UKeyInfo@RBX@@$0BA@@RSL@@
+.?AV?$SmallVector@ULayeredStackEntry@?A0x484427ac@RBX@@$0BI@@RSL@@
 .?AV?$SmallVector@UMemoryCallback@PendingCallbacks@PerformanceControl@RBX@@$0CA@@RSL@@
 .?AV?$SmallVector@UMouseButtonEvent@InputRing@RBX@@$0BA@@RSL@@
 .?AV?$SmallVector@UMouseMoveEvent@InputRing@RBX@@$0BA@@RSL@@
+.?AV?$SmallVector@UPendingLayeredOverride@?A0x484427ac@RBX@@$08@RSL@@
 .?AV?$SmallVector@UPendingMove@MouseEventCoalescer@RBX@@$03@RSL@@
 .?AV?$SmallVector@UPendingTextBoxAction@RBX@@$01@RSL@@
 .?AV?$SmallVector@UPointerActionEvent@InputRing@RBX@@$0BA@@RSL@@
 .?AV?$SmallVector@UPollEvent@Impl@Io@RbxTransport@RBX@@$03@RSL@@
 .?AV?$SmallVector@UPoseStateMachineTransition@RBX@@$04@RSL@@
+.?AV?$SmallVector@URemovedLayeredSlot@?A0x484427ac@RBX@@$08@RSL@@
+.?AV?$SmallVector@URtDescription@UI@RBX@@$00@RSL@@
 .?AV?$SmallVector@URtDescription@UI@RBX@@$0M@@RSL@@
+.?AV?$SmallVector@URtSize@UI@RBX@@$00@RSL@@
 .?AV?$SmallVector@URtSize@UI@RBX@@$07@RSL@@
-.?AV?$SmallVector@URtSize@UI@RBX@@$0M@@RSL@@
 .?AV?$SmallVector@UStateNode@?$StateMachine@UPoseStateMachineTransition@RBX@@V?$shared_ptr@VAnimationNode@RBX@@@std@@@RBX@@$09@RSL@@
 .?AV?$SmallVector@UTextInputEvent@InputRing@RBX@@$03@RSL@@
 .?AV?$SmallVector@UTimerContext@?$TimerManager@PEAVPollEventReceiver@Impl@Io@RbxTransport@RBX@@@Impl@Io@RbxTransport@RBX@@$0BA@@RSL@@
@@ -13102,10 +13154,12 @@
 .?AV?$SmallVector@Unghttp3_nv@@$0BA@@RSL@@
 .?AV?$SmallVector@Unghttp3_settings_entry@@$03@RSL@@
 .?AV?$SmallVector@V?$Future@V?$shared_ptr@UFileMeshData@RBX@@@std@@@RSL@@$03@RSL@@
+.?AV?$SmallVector@V?$Future@V?$vector@UMemberFmd@Resources@DataModelBinding@RBX@@V?$allocator@UMemberFmd@Resources@DataModelBinding@RBX@@@std@@@std@@@RSL@@$03@RSL@@
 .?AV?$SmallVector@V?$RigidTransformT@VVector3@RBX@@@RBX@@$0IA@@RSL@@
 .?AV?$SmallVector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@$01@RSL@@
 .?AV?$SmallVector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@$03@RSL@@
 .?AV?$SmallVector@V?$shared_ptr@VAnimationNode@RBX@@@std@@$09@RSL@@
+.?AV?$SmallVector@V?$shared_ptr@VAvatarEffectDescription@RBX@@@std@@$01@RSL@@
 .?AV?$SmallVector@V?$tuple@V?$unique_function@$$A6AXVError@Io@RbxTransport@RBX@@_K@Z$0BI@$07$00@RBX@@VError@Io@RbxTransport@2@_K@std@@$07@RSL@@
 .?AV?$SmallVector@V?$unique_function@$$A6AXVError@Io@RbxTransport@RBX@@V?$ArrayView@D@4@@Z$0CA@$0BA@$0A@@RBX@@$0BA@@RSL@@
 .?AV?$SmallVector@V?$unique_function@$$A6AXXZ$0GE@$0BA@$0A@@RBX@@$0EA@@RSL@@
@@ -13116,6 +13170,7 @@
 .?AV?$SmallVector@VStringView@RBX@@$02@RSL@@
 .?AV?$SmallVector@VStringView@RBX@@$03@RSL@@
 .?AV?$SmallVector@VWeakEngineContextRef@RBX@@$02@RSL@@
+.?AV?$SmallVector@W4AccessoryType@RBX@@$08@RSL@@
 .?AV?$SmallVector@_J$01@RSL@@
 .?AV?$SmallVector@_K$01@RSL@@
 .?AV?$SmallVector@_K$03@RSL@@
@@ -13423,9 +13478,11 @@
 .?AV?$SupportsSubsystemWeakPtr@VWindowProtocolCore@WindowProtocol@RBX@@@RBX@@
 .?AV?$SyncCallbackDesc@$$A6A?AV?$shared_ptr@$$CBV?$vector@V?$shared_ptr@VInstance@RBX@@@std@@V?$allocator@V?$shared_ptr@VInstance@RBX@@@std@@@2@@std@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@HV12@@Z@Reflection@RBX@@
 .?AV?$SyncCallbackDesc@$$A6AXV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@@Z@Reflection@RBX@@
+.?AV?$SyncCallbackDesc@$$A6AXV?$shared_ptr@VPlayer@RBX@@@std@@W4ShowAdResult@Ads@RBX@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@2@Z@Reflection@RBX@@
 .?AV?$SyncCallbackDesc@$$A6AXXZ@Reflection@RBX@@
 .?AV?$SyncCallbackDescImpl@$$A6A?AV?$shared_ptr@$$CBV?$vector@V?$shared_ptr@VInstance@RBX@@@std@@V?$allocator@V?$shared_ptr@VInstance@RBX@@@std@@@2@@std@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@HV12@@Z$02@Reflection@RBX@@
 .?AV?$SyncCallbackDescImpl@$$A6AXV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@@Z$00@Reflection@RBX@@
+.?AV?$SyncCallbackDescImpl@$$A6AXV?$shared_ptr@VPlayer@RBX@@@std@@W4ShowAdResult@Ads@RBX@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@2@Z$03@Reflection@RBX@@
 .?AV?$SyncCallbackDescImpl@$$A6AXXZ$0A@@Reflection@RBX@@
 .?AV?$SysPollable@VTcpAcceptorInterface@Impl@Io@RbxTransport@RBX@@@Impl@Io@RbxTransport@RBX@@
 .?AV?$SysPollable@VTcpSocketInterface@Impl@Io@RbxTransport@RBX@@@Impl@Io@RbxTransport@RBX@@
@@ -13726,6 +13783,7 @@
 .?AV?$UIGridStyleLayoutProxy@VUIPageLayout@RBX@@@RBX@@
 .?AV?$UIGridStyleLayoutProxy@VUITableLayout@RBX@@@RBX@@
 .?AV?$UIParallelAsyncBinding@VIAsyncComponent@Component@RBX@@$0A@@Studio@RBX@@
+.?AV?$UIParallelAsyncBinding@VITeardownHooks@RBX@@$0A@@Studio@RBX@@
 .?AV?$UISerialAsyncBinding@VIAsyncComponent@Component@RBX@@$0A@@Studio@RBX@@
 .?AV?$ValueGetSet@H@FLog@@
 .?AV?$ValueGetSet@UChannel@FLog@@@FLog@@
@@ -13750,8 +13808,11 @@
 .?AV?$Vector@U?$pair@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_K@std@@@RSL@@
 .?AV?$Vector@U?$pair@_KV?$unique_ptr@UDeferredOperation@Impl@Io@RbxTransport@RBX@@U?$default_delete@UDeferredOperation@Impl@Io@RbxTransport@RBX@@@std@@@std@@@std@@@RSL@@
 .?AV?$Vector@U?$pair@_K_K@std@@@RSL@@
+.?AV?$Vector@UAnimGraphEvent@RBX@@@RSL@@
+.?AV?$Vector@UBackdropResourceRequirements@UI@RBX@@@RSL@@
 .?AV?$Vector@UCallingManagerStateUpdate@CallingProtocolConstants@Calling@RBX@@@RSL@@
 .?AV?$Vector@UCoalescedPointerAction@RBX@@@RSL@@
+.?AV?$Vector@UColorLUTCandidate@Graphics@RBX@@@RSL@@
 .?AV?$Vector@UConnectionEvent@RbxTransport@RBX@@@RSL@@
 .?AV?$Vector@UContext@PollEventAggregator@Impl@Io@RbxTransport@RBX@@@RSL@@
 .?AV?$Vector@UDatagramRecvSubscription@H3Connection@Http@RbxTransport@RBX@@@RSL@@
@@ -13766,14 +13827,17 @@
 .?AV?$Vector@UInputStateChangeEvent@InputRing@RBX@@@RSL@@
 .?AV?$Vector@UKeyEvent@InputRing@RBX@@@RSL@@
 .?AV?$Vector@UKeyInfo@RBX@@@RSL@@
+.?AV?$Vector@ULayeredStackEntry@?A0x484427ac@RBX@@@RSL@@
 .?AV?$Vector@UMemoryCallback@PendingCallbacks@PerformanceControl@RBX@@@RSL@@
 .?AV?$Vector@UMouseButtonEvent@InputRing@RBX@@@RSL@@
 .?AV?$Vector@UMouseMoveEvent@InputRing@RBX@@@RSL@@
+.?AV?$Vector@UPendingLayeredOverride@?A0x484427ac@RBX@@@RSL@@
 .?AV?$Vector@UPendingMove@MouseEventCoalescer@RBX@@@RSL@@
 .?AV?$Vector@UPendingTextBoxAction@RBX@@@RSL@@
 .?AV?$Vector@UPointerActionEvent@InputRing@RBX@@@RSL@@
 .?AV?$Vector@UPollEvent@Impl@Io@RbxTransport@RBX@@@RSL@@
 .?AV?$Vector@UPoseStateMachineTransition@RBX@@@RSL@@
+.?AV?$Vector@URemovedLayeredSlot@?A0x484427ac@RBX@@@RSL@@
 .?AV?$Vector@URtDescription@UI@RBX@@@RSL@@
 .?AV?$Vector@URtSize@UI@RBX@@@RSL@@
 .?AV?$Vector@UStateNode@?$StateMachine@UPoseStateMachineTransition@RBX@@V?$shared_ptr@VAnimationNode@RBX@@@std@@@RBX@@@RSL@@
@@ -13785,9 +13849,11 @@
 .?AV?$Vector@Unghttp3_nv@@@RSL@@
 .?AV?$Vector@Unghttp3_settings_entry@@@RSL@@
 .?AV?$Vector@V?$Future@V?$shared_ptr@UFileMeshData@RBX@@@std@@@RSL@@@RSL@@
+.?AV?$Vector@V?$Future@V?$vector@UMemberFmd@Resources@DataModelBinding@RBX@@V?$allocator@UMemberFmd@Resources@DataModelBinding@RBX@@@std@@@std@@@RSL@@@RSL@@
 .?AV?$Vector@V?$RigidTransformT@VVector3@RBX@@@RBX@@@RSL@@
 .?AV?$Vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@RSL@@
 .?AV?$Vector@V?$shared_ptr@VAnimationNode@RBX@@@std@@@RSL@@
+.?AV?$Vector@V?$shared_ptr@VAvatarEffectDescription@RBX@@@std@@@RSL@@
 .?AV?$Vector@V?$tuple@V?$unique_function@$$A6AXVError@Io@RbxTransport@RBX@@_K@Z$0BI@$07$00@RBX@@VError@Io@RbxTransport@2@_K@std@@@RSL@@
 .?AV?$Vector@V?$unique_function@$$A6AXVError@Io@RbxTransport@RBX@@V?$ArrayView@D@4@@Z$0CA@$0BA@$0A@@RBX@@@RSL@@
 .?AV?$Vector@V?$unique_function@$$A6AXXZ$0GE@$0BA@$0A@@RBX@@@RSL@@
@@ -13797,6 +13863,7 @@
 .?AV?$Vector@VRobloxTelemetryEvent@Telemetry@RBX@@@RSL@@
 .?AV?$Vector@VStringView@RBX@@@RSL@@
 .?AV?$Vector@VWeakEngineContextRef@RBX@@@RSL@@
+.?AV?$Vector@W4AccessoryType@RBX@@@RSL@@
 .?AV?$Vector@_J@RSL@@
 .?AV?$Vector@_K@RSL@@
 .?AV?$VideoEncoderFactoryTemplate@ULibvpxVp8EncoderTemplateAdapter@webrtc@@ULibvpxVp9EncoderTemplateAdapter@2@@webrtc@@
@@ -13943,6 +14010,7 @@
 .?AV?$_Ebco_base@V?$Allocator@U?$FutureState@V?$Result@V?$vector@UAssetPublishState@AssetAccess@Studio@RBX@@V?$allocator@UAssetPublishState@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@RBX@@@detail@Tasks@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@U?$FutureState@V?$Result@V?$vector@UAssetRequestAccessFailure@AssetAccess@Studio@RBX@@V?$allocator@UAssetRequestAccessFailure@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@RBX@@@detail@Tasks@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@U?$FutureState@V?$Result@V?$vector@UAssetSubjectFailedShare@AssetAccess@Studio@RBX@@V?$allocator@UAssetSubjectFailedShare@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@RBX@@@detail@Tasks@RBX@@@Detail@RSL@@$0A@@std@@
+.?AV?$_Ebco_base@V?$Allocator@U?$FutureState@V?$Result@V?$vector@UAssetVersionPublishState@AssetAccess@Studio@RBX@@V?$allocator@UAssetVersionPublishState@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@RBX@@@detail@Tasks@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@U?$FutureState@V?$Result@V?$vector@UEmulatedDeviceInfo@Studio@RBX@@V?$allocator@UEmulatedDeviceInfo@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@RBX@@@detail@Tasks@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@U?$FutureState@V?$Result@V?$vector@URegisteredSimulatorInfo@Studio@RBX@@V?$allocator@URegisteredSimulatorInfo@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@RBX@@@detail@Tasks@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@U?$FutureState@V?$Result@V?$vector@UStudioUri@RBX@@V?$allocator@UStudioUri@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@RBX@@@detail@Tasks@RBX@@@Detail@RSL@@$0A@@std@@
@@ -14031,6 +14099,7 @@
 .?AV?$_Ebco_base@V?$Allocator@U?$FutureState@V?$Result@VPackageDiffResponseModel@ConvAiPlatformOrchestrationServiceApi@OpenApi@RBX@@UHttpErrorInfo@34@@Tasks@RBX@@@detail@Tasks@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@U?$FutureState@V?$Result@VPlacePreferenceResponseModel@PlaceAnnotationsServiceApi@OpenApi@RBX@@UHttpErrorInfo@34@@Tasks@RBX@@@detail@Tasks@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@U?$FutureState@V?$Result@VPluginPermissionResponseCollectionPaginatedResponseModel@OpenApi@RBX@@UHttpErrorInfo@23@@Tasks@RBX@@@detail@Tasks@RBX@@@Detail@RSL@@$0A@@std@@
+.?AV?$_Ebco_base@V?$Allocator@U?$FutureState@V?$Result@VPollResponseModel@QueueServiceApi@OpenApi@RBX@@UHttpErrorInfo@34@@Tasks@RBX@@@detail@Tasks@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@U?$FutureState@V?$Result@VPublishResponseModel@QueueServiceApi@OpenApi@RBX@@UHttpErrorInfo@34@@Tasks@RBX@@@detail@Tasks@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@U?$FutureState@V?$Result@VQuotaResponseModel@MeshTexturingServiceApi@OpenApi@RBX@@UHttpErrorInfo@34@@Tasks@RBX@@@detail@Tasks@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@U?$FutureState@V?$Result@VRccEvaluateExperimentalConfigResponseModel@CreatorConfigsApi@OpenApi@RBX@@UHttpErrorInfo@34@@Tasks@RBX@@@detail@Tasks@RBX@@@Detail@RSL@@$0A@@std@@
@@ -14194,6 +14263,7 @@
 .?AV?$_Ebco_base@V?$Allocator@U?$MessageWrapper@UUpdateDialogMessage@?A0xc42e8c26@Studio@RBX@@@detail@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@U?$MessageWrapper@UUserCFrameChangedMessage@Studio@RBX@@@detail@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@U?$MessageWrapper@UUserPreferencesPropertyChangedMessage@?A0x5bd662f8@Studio@RBX@@@detail@RBX@@@Detail@RSL@@$0A@@std@@
+.?AV?$_Ebco_base@V?$Allocator@U?$MessageWrapper@UUserPreferencesPropertyChangedMessage@?A0xfccce6f9@Studio@RBX@@@detail@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@U?$MessageWrapper@UVREmulatorStartUpMessage@Studio@RBX@@@detail@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@U?$MessageWrapper@UWaypointChangeMessage@?A0x283710c7@Studio@RBX@@@detail@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@U?$MessageWrapper@UWebBrowserLoadFailureMessage@Studio@RBX@@@detail@RBX@@@Detail@RSL@@$0A@@std@@
@@ -14214,12 +14284,10 @@
 .?AV?$_Ebco_base@V?$Allocator@UAnimationMaskModifierData@AnimationMaskModifier@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UAssetResponse@AssetProvider@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UAsyncRequest@RBX@@@Detail@RSL@@$0A@@std@@
-.?AV?$_Ebco_base@V?$Allocator@UAudioFileInfo@BulkAudioLoader@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UAudioMetadataRequest@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UAvatarImportParams@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UAvatarMeshBundle@WrapContentProvider@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UBlockingSendState@?A0xd32917de@Detail@RBX@@@Detail@RSL@@$0A@@std@@
-.?AV?$_Ebco_base@V?$Allocator@UBulkAudioLoader@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UBundleReadStatus@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UCacheEntry@HttpCache@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UCachedBitstream@Network@RBX@@@Detail@RSL@@$0A@@std@@
@@ -14236,6 +14304,7 @@
 .?AV?$_Ebco_base@V?$Allocator@UDataFromValidation@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UDataModelClassUserData@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UDeclarationResponse@LSP@RBX@@@Detail@RSL@@$0A@@std@@
+.?AV?$_Ebco_base@V?$Allocator@UDecodedChildren@detail@CSG3@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UDeferredEphemeralSharedState@EphemeralCounter@Analytics@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UDeferredReporterSharedState@DeferredReporter@EventIngest@Analytics@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UDialogResult@?A0x49b24aa4@ScriptEditor@RBX@@@Detail@RSL@@$0A@@std@@
@@ -14294,8 +14363,10 @@
 .?AV?$_Ebco_base@V?$Allocator@UMemAllocDescriptor@Soundscape@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UMemoryProfiling@Memory@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UMeshResource@Graphics@RBX@@@Detail@RSL@@$0A@@std@@
+.?AV?$_Ebco_base@V?$Allocator@UModelBundle@MLR@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UModelUploadBatchState@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UNavigationRequest@RBX@@@Detail@RSL@@$0A@@std@@
+.?AV?$_Ebco_base@V?$Allocator@UOccludedMeshAbandonGuard@AerodynamicGeometryDetails@PreprocessAerodynamics@Aerodynamics@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UOpaqueContentUploadCoordinatorState@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UOperation@?A0x751495e2@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@UOperatorX2_cJDxTO@CorrectivesLogic@RBX@@@Detail@RSL@@$0A@@std@@
@@ -14486,6 +14557,7 @@
 .?AV?$_Ebco_base@V?$Allocator@V?$FutureState@V?$shared_ptr@UFileMeshData@RBX@@@std@@@RSL@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@V?$FutureState@V?$shared_ptr@V?$vector@V?$shared_ptr@V?$vector@V?$shared_ptr@VInstance@RBX@@@std@@V?$allocator@V?$shared_ptr@VInstance@RBX@@@std@@@2@@std@@@std@@V?$allocator@V?$shared_ptr@V?$vector@V?$shared_ptr@VInstance@RBX@@@std@@V?$allocator@V?$shared_ptr@VInstance@RBX@@@std@@@2@@std@@@std@@@2@@std@@@std@@@RSL@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@V?$FutureState@V?$shared_ptr@VHttpResponse@RBX@@@std@@@RSL@@@Detail@RSL@@$0A@@std@@
+.?AV?$_Ebco_base@V?$Allocator@V?$FutureState@V?$vector@UMemberFmd@Resources@DataModelBinding@RBX@@V?$allocator@UMemberFmd@Resources@DataModelBinding@RBX@@@std@@@std@@@RSL@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@V?$FutureState@V?$vector@VDomNode@dom@studio@roblox@@V?$allocator@VDomNode@dom@studio@roblox@@@std@@@std@@@RSL@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@V?$FutureState@X@RSL@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@V?$FutureState@_J@RSL@@@Detail@RSL@@$0A@@std@@
@@ -14509,6 +14581,7 @@
 .?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@UAssetPublishState@AssetAccess@Studio@RBX@@V?$allocator@UAssetPublishState@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@V?$vector@_JV?$allocator@_J@std@@@std@@@ZV1234@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@UAssetRequestAccessFailure@AssetAccess@Studio@RBX@@V?$allocator@UAssetRequestAccessFailure@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@V?$vector@_JV?$allocator@_J@std@@@std@@@ZV1234@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@UAssetSubjectFailedShare@AssetAccess@Studio@RBX@@V?$allocator@UAssetSubjectFailedShare@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@V?$vector@UAssetSubject@AssetAccess@Studio@RBX@@V?$allocator@UAssetSubject@AssetAccess@Studio@RBX@@@std@@@std@@V?$vector@_JV?$allocator@_J@std@@@8@@ZV1234@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
+.?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@UAssetVersionPublishState@AssetAccess@Studio@RBX@@V?$allocator@UAssetVersionPublishState@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@V?$vector@UAssetPublishRequest@AssetAccess@Studio@RBX@@V?$allocator@UAssetPublishRequest@AssetAccess@Studio@RBX@@@std@@@std@@@ZV1234@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@_JV?$allocator@_J@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@V?$vector@UAssetPublishRequest@AssetAccess@Studio@RBX@@V?$allocator@UAssetPublishRequest@AssetAccess@Studio@RBX@@@std@@@std@@@ZV1234@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@_JV?$allocator@_J@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@V?$vector@_JV?$allocator@_J@std@@@std@@@ZV1234@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@_JV?$allocator@_J@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@XZV1234@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
@@ -14627,6 +14700,7 @@
 .?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8PerformanceToolsBridgeProxy@Studio@RBX@@EAA?AV?$Result@NUCommandError@Studio@RBX@@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8PerformanceToolsBridgeProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8PerformanceToolsBridgeProxy@Studio@RBX@@EAA?AV?$Result@_NUCommandError@Studio@RBX@@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
+.?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8PlaceCloserProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCloseAllPlacesError@Studio@3@@Tasks@3@UAllPlacesCloseConfig@23@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8PlaceCloserProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UClosePlaceError@Studio@3@@Tasks@3@UPlaceCloseConfig@23@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8PlaceCloserProxy@Studio@RBX@@EAA?AV?$Result@VScriptConnection@RBX@@UCommandError@Studio@2@@Tasks@3@HVWeakObjectRef@Lua@3@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8PlaceManager@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
@@ -14652,6 +14726,7 @@
 .?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8PublishMediatorProxy@Studio@RBX@@EAA?AV?$Result@UPlacePublishResult@Studio@RBX@@UCommandError@23@@Tasks@3@USavePlaceOptions@23@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8PublishStatusManagerProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@UWebBrowserWidgetConfig@23@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8ReactDevToolsManagerProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@UWebBrowserWidgetConfig@23@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
+.?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8RestartControllerBridgeProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8RibbonConfigurationProviderProxy@Studio@RBX@@EAA?AV?$Result@URibbonDefinition@Studio@RBX@@UCommandError@23@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8RibbonConfigurationProviderProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@URibbonDefinition@23@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8RidlCommandExampleProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@_J@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
@@ -14700,6 +14775,8 @@
 .?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8SystemCursorProxy@Studio@RBX@@EAA?AV?$Result@NUCommandError@Studio@RBX@@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8SystemMenuControllerProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@V?$vector@USystemMenuDefinition@Studio@RBX@@V?$allocator@USystemMenuDefinition@Studio@RBX@@@std@@@std@@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8SystemMenuControllerProxy@Studio@RBX@@EAA?AV?$Result@V?$vector@USystemMenuDefinition@Studio@RBX@@V?$allocator@USystemMenuDefinition@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
+.?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8TeamTestSessionBridgeProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@H@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
+.?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8TeamTestSessionBridgeProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8ToolboxManagerProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@UWebBrowserWidgetConfig@23@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8ToolsManagerProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@V?$vector@VToolState@Studio@RBX@@V?$allocator@VToolState@Studio@RBX@@@std@@@std@@V?$optional@I@7@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@V?$MethodExecutor@P8ToolsManagerProxy@Studio@RBX@@EAA?AV?$Result@V?$Signal@VToolState@Studio@RBX@@@Studio@RBX@@UCommandError@23@@Tasks@3@UStudioUri@3@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@$0A@@std@@
@@ -14875,7 +14952,6 @@
 .?AV?$_Ebco_base@V?$Allocator@VAeolianWhistleDsp@Soundscape@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VAeroMeshData@Solver@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VAliasCollisionSolver@Studio@RBX@@@Detail@RSL@@$0A@@std@@
-.?AV?$_Ebco_base@V?$Allocator@VAliasRequestResult@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VAnalyticsProviderBase@LMS@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VAnalyticsProviderExperienceSignalsIngest@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VAnalyticsReporter@Tracing@RBX@@@Detail@RSL@@$0A@@std@@
@@ -14942,7 +15018,6 @@
 .?AV?$_Ebco_base@V?$Allocator@VChatMessage@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VCheckAppVersionRequest@AppBridge@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VCheckAppVersionTask@AppBridge@RBX@@@Detail@RSL@@$0A@@std@@
-.?AV?$_Ebco_base@V?$Allocator@VChunk@VideoImport@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VChunkMeshShape@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VClearUnusedLuaRefsJob@ScriptContextFacets@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VClient@JsonRpc@RBX@@@Detail@RSL@@$0A@@std@@
@@ -15092,11 +15167,13 @@
 .?AV?$_Ebco_base@V?$Allocator@VFaceAnimatorAudioServiceSink@details@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VFaceAnimatorServiceImpl@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VFbxParser@AssetImport@RBX@@@Detail@RSL@@$0A@@std@@
+.?AV?$_Ebco_base@V?$Allocator@VFilePickerBlobResource@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VFileSyncItemClient@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VFileSyncServiceManager@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VFileSyncStudioDependence@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VFireEventJob@Relay@EventBroadcast@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VFixedHandler@RBX@@@Detail@RSL@@$0A@@std@@
+.?AV?$_Ebco_base@V?$Allocator@VFloatCurveStorage@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VFlushBatch@LocalStorage@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VFmodCodecIo@?A0x52606ee3@Soundscape@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VFmodOutputCaptureDsp@Soundscape@RBX@@@Detail@RSL@@$0A@@std@@
@@ -15206,7 +15283,6 @@
 .?AV?$_Ebco_base@V?$Allocator@VModelMeshJob@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VModelSkinning@Motion@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VModelSkinningTransformsView@Motion@RBX@@@Detail@RSL@@$0A@@std@@
-.?AV?$_Ebco_base@V?$Allocator@VModelSkinning_Deprecated@Motion@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VMonoMixDsp@Soundscape@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VMp4InputFormat@RVideo@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VMp4OutputFormat@RVideo@RBX@@@Detail@RSL@@$0A@@std@@
@@ -15256,6 +15332,7 @@
 .?AV?$_Ebco_base@V?$Allocator@VPublishServiceQueueItem@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VQPixmap@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VQTimer@@@Detail@RSL@@$0A@@std@@
+.?AV?$_Ebco_base@V?$Allocator@VQueueSubscription@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VQuicSessionCrypto@Security@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VQuickOpenRateLimiter@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VQuickOpenStudioDependence@@@Detail@RSL@@$0A@@std@@
@@ -15371,6 +15448,7 @@
 .?AV?$_Ebco_base@V?$Allocator@VTexturePackPropsetUploader@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VTextureProxy@Graphics@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VTextureVulkan@Graphics@RBX@@@Detail@RSL@@$0A@@std@@
+.?AV?$_Ebco_base@V?$Allocator@VTimeCurve@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VTimeHandler@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VTimerTickerJob@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VToastNotificationsManager@RBX@@@Detail@RSL@@$0A@@std@@
@@ -15387,10 +15465,7 @@
 .?AV?$_Ebco_base@V?$Allocator@VUnappliedResultGuard@?A0x751495e2@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VUnsecuredStudioGame@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VUpdateTask@MassPackageUpdater@@@Detail@RSL@@$0A@@std@@
-.?AV?$_Ebco_base@V?$Allocator@VUploadMeshComponentRequestResult@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VUploadMeshDataRequest@AssetImport@RBX@@@Detail@RSL@@$0A@@std@@
-.?AV?$_Ebco_base@V?$Allocator@VUploadRequestResult@@@Detail@RSL@@$0A@@std@@
-.?AV?$_Ebco_base@V?$Allocator@VUploadVideoComponentRequestResult@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VUserCertManager@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VUserNotificationModel@V1@OpenCloud@RBX@@@Detail@RSL@@$0A@@std@@
 .?AV?$_Ebco_base@V?$Allocator@VUserNotification_PayloadModel@V1@OpenCloud@RBX@@@Detail@RSL@@$0A@@std@@
@@ -15873,6 +15948,7 @@
 .?AV?$_Ref_count@_K@std@@
 .?AV?$_Ref_count@_N@std@@
 .?AV?$_Ref_count_obj2@$$CBU?$TreePatch@VScopedInstanceIdentity@RBX@@UInstancePatchView@VCS@2@@VCS@RBX@@@std@@
+.?AV?$_Ref_count_obj2@$$CBUEmbeddedContentReference@Serializer@RBX@@@std@@
 .?AV?$_Ref_count_obj2@$$CBUEventRecord@?A0x36d497d1@WrapPropertySetTelemetryDebug@RBX@@@std@@
 .?AV?$_Ref_count_obj2@$$CBUImpl@Manifold@manifold@@@std@@
 .?AV?$_Ref_count_obj2@$$CBUPipelineOutputs@lm@@@std@@
@@ -15902,6 +15978,7 @@
 .?AV?$_Ref_count_obj2@$$CBVDataModelPatchDeployment@RBX@@@std@@
 .?AV?$_Ref_count_obj2@$$CBVDocument@json@RBX@@@std@@
 .?AV?$_Ref_count_obj2@$$CBVGImage@RBX@@@std@@
+.?AV?$_Ref_count_obj2@$$CBVProtectedLocationPolicy@VirtualFs@RBX@@@std@@
 .?AV?$_Ref_count_obj2@$$CBVSharedString@RBX@@@std@@
 .?AV?$_Ref_count_obj2@$$CBVTrackerData@RBX@@@std@@
 .?AV?$_Ref_count_obj2@$$CBVValueTable@Reflection@RBX@@@std@@
@@ -16033,6 +16110,7 @@
 .?AV?$_Ref_count_obj2@U?$FutureState@V?$Result@V?$vector@UAssetPublishState@AssetAccess@Studio@RBX@@V?$allocator@UAssetPublishState@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@RBX@@@detail@Tasks@RBX@@@std@@
 .?AV?$_Ref_count_obj2@U?$FutureState@V?$Result@V?$vector@UAssetRequestAccessFailure@AssetAccess@Studio@RBX@@V?$allocator@UAssetRequestAccessFailure@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@RBX@@@detail@Tasks@RBX@@@std@@
 .?AV?$_Ref_count_obj2@U?$FutureState@V?$Result@V?$vector@UAssetSubjectFailedShare@AssetAccess@Studio@RBX@@V?$allocator@UAssetSubjectFailedShare@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@RBX@@@detail@Tasks@RBX@@@std@@
+.?AV?$_Ref_count_obj2@U?$FutureState@V?$Result@V?$vector@UAssetVersionPublishState@AssetAccess@Studio@RBX@@V?$allocator@UAssetVersionPublishState@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@RBX@@@detail@Tasks@RBX@@@std@@
 .?AV?$_Ref_count_obj2@U?$FutureState@V?$Result@V?$vector@UEmulatedDeviceInfo@Studio@RBX@@V?$allocator@UEmulatedDeviceInfo@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@RBX@@@detail@Tasks@RBX@@@std@@
 .?AV?$_Ref_count_obj2@U?$FutureState@V?$Result@V?$vector@URegisteredSimulatorInfo@Studio@RBX@@V?$allocator@URegisteredSimulatorInfo@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@RBX@@@detail@Tasks@RBX@@@std@@
 .?AV?$_Ref_count_obj2@U?$FutureState@V?$Result@V?$vector@UStudioUri@RBX@@V?$allocator@UStudioUri@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@RBX@@@detail@Tasks@RBX@@@std@@
@@ -16121,6 +16199,7 @@
 .?AV?$_Ref_count_obj2@U?$FutureState@V?$Result@VPackageDiffResponseModel@ConvAiPlatformOrchestrationServiceApi@OpenApi@RBX@@UHttpErrorInfo@34@@Tasks@RBX@@@detail@Tasks@RBX@@@std@@
 .?AV?$_Ref_count_obj2@U?$FutureState@V?$Result@VPlacePreferenceResponseModel@PlaceAnnotationsServiceApi@OpenApi@RBX@@UHttpErrorInfo@34@@Tasks@RBX@@@detail@Tasks@RBX@@@std@@
 .?AV?$_Ref_count_obj2@U?$FutureState@V?$Result@VPluginPermissionResponseCollectionPaginatedResponseModel@OpenApi@RBX@@UHttpErrorInfo@23@@Tasks@RBX@@@detail@Tasks@RBX@@@std@@
+.?AV?$_Ref_count_obj2@U?$FutureState@V?$Result@VPollResponseModel@QueueServiceApi@OpenApi@RBX@@UHttpErrorInfo@34@@Tasks@RBX@@@detail@Tasks@RBX@@@std@@
 .?AV?$_Ref_count_obj2@U?$FutureState@V?$Result@VPublishResponseModel@QueueServiceApi@OpenApi@RBX@@UHttpErrorInfo@34@@Tasks@RBX@@@detail@Tasks@RBX@@@std@@
 .?AV?$_Ref_count_obj2@U?$FutureState@V?$Result@VQuotaResponseModel@MeshTexturingServiceApi@OpenApi@RBX@@UHttpErrorInfo@34@@Tasks@RBX@@@detail@Tasks@RBX@@@std@@
 .?AV?$_Ref_count_obj2@U?$FutureState@V?$Result@VRccEvaluateExperimentalConfigResponseModel@CreatorConfigsApi@OpenApi@RBX@@UHttpErrorInfo@34@@Tasks@RBX@@@detail@Tasks@RBX@@@std@@
@@ -16284,6 +16363,7 @@
 .?AV?$_Ref_count_obj2@U?$MessageWrapper@UUpdateDialogMessage@?A0xc42e8c26@Studio@RBX@@@detail@RBX@@@std@@
 .?AV?$_Ref_count_obj2@U?$MessageWrapper@UUserCFrameChangedMessage@Studio@RBX@@@detail@RBX@@@std@@
 .?AV?$_Ref_count_obj2@U?$MessageWrapper@UUserPreferencesPropertyChangedMessage@?A0x5bd662f8@Studio@RBX@@@detail@RBX@@@std@@
+.?AV?$_Ref_count_obj2@U?$MessageWrapper@UUserPreferencesPropertyChangedMessage@?A0xfccce6f9@Studio@RBX@@@detail@RBX@@@std@@
 .?AV?$_Ref_count_obj2@U?$MessageWrapper@UVREmulatorStartUpMessage@Studio@RBX@@@detail@RBX@@@std@@
 .?AV?$_Ref_count_obj2@U?$MessageWrapper@UWaypointChangeMessage@?A0x283710c7@Studio@RBX@@@detail@RBX@@@std@@
 .?AV?$_Ref_count_obj2@U?$MessageWrapper@UWebBrowserLoadFailureMessage@Studio@RBX@@@detail@RBX@@@std@@
@@ -16319,7 +16399,6 @@
 .?AV?$_Ref_count_obj2@UAsyncPhysicsDataFunctor@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UAsyncRequest@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UAsyncRunState@LuaAsyncFunctionList@RBX@@@std@@
-.?AV?$_Ref_count_obj2@UAudioFileInfo@BulkAudioLoader@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UAudioMetadataRequest@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UAvatarImportParams@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UAvatarMeshBundle@WrapContentProvider@RBX@@@std@@
@@ -16329,7 +16408,6 @@
 .?AV?$_Ref_count_obj2@UBgraOutputPool@MMFVideoDecoder@Video@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UBoxMapped@FileMeshData@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UBuildQueueWorkState@Luau@@@std@@
-.?AV?$_Ref_count_obj2@UBulkAudioLoader@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UBulletDecomp@Interop@Graphics@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UBundleReadStatus@@@std@@
 .?AV?$_Ref_count_obj2@UBurstOutcome@Impl@StunPopProbe@3RbxTransport@RBX@@@std@@
@@ -16357,6 +16435,7 @@
 .?AV?$_Ref_count_obj2@UDataModelClassUserData@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UDataStoreListTelemetry@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UDeclarationResponse@LSP@RBX@@@std@@
+.?AV?$_Ref_count_obj2@UDecodedChildren@detail@CSG3@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UDecompCacheEntry@?A0x1a6d9578@VoroCD@ConvexDecomp@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UDefaultArbiter@TaskScheduler@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UDeferredEphemeralSharedState@EphemeralCounter@Analytics@RBX@@@std@@
@@ -16387,6 +16466,8 @@
 .?AV?$_Ref_count_obj2@UExtraState@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UFacsHuffmanCodec@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UFastClusterSkeletonWait@?A0xef10b25c@RBX@@@std@@
+.?AV?$_Ref_count_obj2@UFeatureMatchLayout@RBX@@@std@@
+.?AV?$_Ref_count_obj2@UFeatureMatchNames@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UFeatureMatchingAccelerator@FeatureMatching@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UFetchCompleted@?1??updatePackagesNoLock@?A0x9615d1d8@@YAXV?$vector@V?$shared_ptr@VInstance@RBX@@@std@@V?$allocator@V?$shared_ptr@VInstance@RBX@@@std@@@2@@std@@V?$shared_ptr@VInstance@RBX@@@5@W4PackageUpdateReason@RBX@@V?$function@$$A6AXV?$shared_ptr@VInstance@RBX@@@std@@@Z@RSL@@@Z@@std@@
 .?AV?$_Ref_count_obj2@UFetchPhaseTimings@RBX@@@std@@
@@ -16401,7 +16482,7 @@
 .?AV?$_Ref_count_obj2@UFindState@?A0xa6f65fc7@FindReplace@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UFlowDef@FlowConfig@Analytics@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UFontFaceRequest@?A0x0b5e0abe@DefinitiveText@RBX@@@std@@
-.?AV?$_Ref_count_obj2@UFrame@?CI@??step@TaskSchedulerImpl@RBX@@AEAA_NXZ@@std@@
+.?AV?$_Ref_count_obj2@UFrame@?DC@??step@TaskSchedulerImpl@RBX@@AEAA_NXZ@@std@@
 .?AV?$_Ref_count_obj2@UFriendsList@FriendService@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UFromMmapImpl@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UFrontendCancellationToken@Luau@@@std@@
@@ -16491,11 +16572,13 @@
 .?AV?$_Ref_count_obj2@UNetworkPresentationState@?A0xa4cb321f@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UNewRuntimeData@KeyframeSequence@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UNormalizedType@Luau@@@std@@
+.?AV?$_Ref_count_obj2@UOccludedMeshAbandonGuard@AerodynamicGeometryDetails@PreprocessAerodynamics@Aerodynamics@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UOperatorX2_cJDxTO@CorrectivesLogic@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UOutputFile@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UPackageInfo@MassUpdateModel@@@std@@
 .?AV?$_Ref_count_obj2@UPacketLossMonitor@TeamCreateDisconnectInfo@@@std@@
 .?AV?$_Ref_count_obj2@UParticleEmitter2DRenderState@RBX@@@std@@
+.?AV?$_Ref_count_obj2@UPartyVoiceDebugStatsReply@?A0x998a6c26@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UPassthroughJitterBufferCounters@?A0xc602577b@Webrtc@RVideo@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UPasteConfiguration@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UPathData@RBX@@@std@@
@@ -16514,6 +16597,7 @@
 .?AV?$_Ref_count_obj2@UPluginMemoryData@Telemetry@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UPopLatencyGateState@?A0x44d1b16e@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UPostPollFetchState@RBX@@@std@@
+.?AV?$_Ref_count_obj2@UPrefetchState@?1??prefetchContent@detail@Local@ModelTranscoder@RBX@@YAXAEAVContentProvider@6@AEBV?$Vector@VContentId@RBX@@@RSL@@@Z@@std@@
 .?AV?$_Ref_count_obj2@UPreloadItemTextureManager@ContentProvider@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UProbeState@?A0x13fe9794@CDN@AssetProvider@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UPropsetCreationLimiter@RBX@@@std@@
@@ -16528,6 +16612,7 @@
 .?AV?$_Ref_count_obj2@UReferencesResponse@LSP@RBX@@@std@@
 .?AV?$_Ref_count_obj2@URemoteDMScriptRestoreState@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@URenderData@Humanoid@RBX@@@std@@
+.?AV?$_Ref_count_obj2@URequest@SlimTextureArrayCache@Graphics@RBX@@@std@@
 .?AV?$_Ref_count_obj2@URequireSuggester@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UResolutionBatchState@metadata@?A0x3d1a0943@@@std@@
 .?AV?$_Ref_count_obj2@UResponseWithTelemetry@?$ITransportLayer@VDocument@json@RBX@@V123@V123@V123@@RBX@@@std@@
@@ -16566,6 +16651,7 @@
 .?AV?$_Ref_count_obj2@USignatureHelpResponse@LSP@RBX@@@std@@
 .?AV?$_Ref_count_obj2@USigningInfo@SerializerBinary@RBX@@@std@@
 .?AV?$_Ref_count_obj2@USkinningRootSkeletonBuildInfo@DataModelBinding@RBX@@@std@@
+.?AV?$_Ref_count_obj2@USkinningRootWrapBuildInfo@DataModelBinding@RBX@@@std@@
 .?AV?$_Ref_count_obj2@USleepState@?A0x16a236fe@Tasks@RBX@@@std@@
 .?AV?$_Ref_count_obj2@USliceImpl@RBX@@@std@@
 .?AV?$_Ref_count_obj2@USlimChunk@Slim@RBX@@@std@@
@@ -16578,6 +16664,7 @@
 .?AV?$_Ref_count_obj2@USlotWrapper@?1???$connectAsync@Vsignal@rbx@@XHV
 .?AV?$_Ref_count_obj2@USlotWrapper@?1???$connectAsync@Vsignal@rbx@@XHW4DebuggerPauseReason@Studio@RBX@@V
 .?AV?$_Ref_count_obj2@USlotWrapper@?1???$connectAsync@Vsignal@rbx@@XPEBVPropertyDescriptor@Reflection@RBX@@V
+.?AV?$_Ref_count_obj2@USlotWrapper@?1???$connectAsync@Vsignal@rbx@@XPEBVtype_info@@V
 .?AV?$_Ref_count_obj2@USlotWrapper@?1???$connectAsync@Vsignal@rbx@@XUDialogInteraction@Studio@RBX@@V
 .?AV?$_Ref_count_obj2@USlotWrapper@?1???$connectAsync@Vsignal@rbx@@XUStudioUri@RBX@@_JV
 .?AV?$_Ref_count_obj2@USlotWrapper@?1???$connectAsync@Vsignal@rbx@@XV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$shared_ptr@VInstance@RBX@@@4@V
@@ -16626,6 +16713,7 @@
 .?AV?$_Ref_count_obj2@UTextureTranscoderClientConfig@Graphics@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UThreadData@BaseThreadPool@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UThreadPoolData@RBX@@@std@@
+.?AV?$_Ref_count_obj2@UThrottle@PluginFileAccess@VirtualFs@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UThumbnailFetchJob@BatchThumbnailFetcher@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UTileData@RBX@@@std@@
 .?AV?$_Ref_count_obj2@UTimeSyncCallbackGuard@DummyClient@DummyService@RbxTransport@RBX@@@std@@
@@ -16723,6 +16811,7 @@
 .?AV?$_Ref_count_obj2@V?$EventSignalWrapper@$$A6AX_J0W4PlacePublishType@Enums@RBX@@VVariant@Reflection@3@@ZV?$signal@$$A6AX_J0W4PlacePublishType@Enums@RBX@@VVariant@Reflection@3@@Z@rbx@@@Lua@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$EventSignalWrapper@$$A6AX_J@ZV?$signal@$$A6AX_J@Z@rbx@@@Lua@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$EventSignalWrapper@$$A6AX_N@ZV?$signal@$$A6AX_N@Z@rbx@@@Lua@RBX@@@std@@
+.?AV?$_Ref_count_obj2@V?$Expected@VFilePickerLoadedFile@RBX@@W4FilePickerLoadError@2@@RSL@@@std@@
 .?AV?$_Ref_count_obj2@V?$FunctionScriptSlotImpl@$00@Lua@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$FunctionScriptSlotImpl@$0A@@Lua@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$Future@V?$Result@V?$optional@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@UNoError@detail@Tasks@RBX@@@Tasks@RBX@@@Tasks@RBX@@@std@@
@@ -16746,6 +16835,7 @@
 .?AV?$_Ref_count_obj2@V?$MethodExecutor@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@UAssetPublishState@AssetAccess@Studio@RBX@@V?$allocator@UAssetPublishState@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@V?$vector@_JV?$allocator@_J@std@@@std@@@ZV1234@@detail@Commands@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$MethodExecutor@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@UAssetRequestAccessFailure@AssetAccess@Studio@RBX@@V?$allocator@UAssetRequestAccessFailure@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@V?$vector@_JV?$allocator@_J@std@@@std@@@ZV1234@@detail@Commands@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$MethodExecutor@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@UAssetSubjectFailedShare@AssetAccess@Studio@RBX@@V?$allocator@UAssetSubjectFailedShare@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@V?$vector@UAssetSubject@AssetAccess@Studio@RBX@@V?$allocator@UAssetSubject@AssetAccess@Studio@RBX@@@std@@@std@@V?$vector@_JV?$allocator@_J@std@@@8@@ZV1234@@detail@Commands@Studio@RBX@@@std@@
+.?AV?$_Ref_count_obj2@V?$MethodExecutor@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@UAssetVersionPublishState@AssetAccess@Studio@RBX@@V?$allocator@UAssetVersionPublishState@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@V?$vector@UAssetPublishRequest@AssetAccess@Studio@RBX@@V?$allocator@UAssetPublishRequest@AssetAccess@Studio@RBX@@@std@@@std@@@ZV1234@@detail@Commands@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$MethodExecutor@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@_JV?$allocator@_J@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@V?$vector@UAssetPublishRequest@AssetAccess@Studio@RBX@@V?$allocator@UAssetPublishRequest@AssetAccess@Studio@RBX@@@std@@@std@@@ZV1234@@detail@Commands@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$MethodExecutor@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@_JV?$allocator@_J@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@V?$vector@_JV?$allocator@_J@std@@@std@@@ZV1234@@detail@Commands@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$MethodExecutor@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@_JV?$allocator@_J@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@XZV1234@@detail@Commands@Studio@RBX@@@std@@
@@ -16864,6 +16954,7 @@
 .?AV?$_Ref_count_obj2@V?$MethodExecutor@P8PerformanceToolsBridgeProxy@Studio@RBX@@EAA?AV?$Result@NUCommandError@Studio@RBX@@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$MethodExecutor@P8PerformanceToolsBridgeProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$MethodExecutor@P8PerformanceToolsBridgeProxy@Studio@RBX@@EAA?AV?$Result@_NUCommandError@Studio@RBX@@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@@std@@
+.?AV?$_Ref_count_obj2@V?$MethodExecutor@P8PlaceCloserProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCloseAllPlacesError@Studio@3@@Tasks@3@UAllPlacesCloseConfig@23@@ZV123@@detail@Commands@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$MethodExecutor@P8PlaceCloserProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UClosePlaceError@Studio@3@@Tasks@3@UPlaceCloseConfig@23@@ZV123@@detail@Commands@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$MethodExecutor@P8PlaceCloserProxy@Studio@RBX@@EAA?AV?$Result@VScriptConnection@RBX@@UCommandError@Studio@2@@Tasks@3@HVWeakObjectRef@Lua@3@@ZV123@@detail@Commands@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$MethodExecutor@P8PlaceManager@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@@std@@
@@ -16889,6 +16980,7 @@
 .?AV?$_Ref_count_obj2@V?$MethodExecutor@P8PublishMediatorProxy@Studio@RBX@@EAA?AV?$Result@UPlacePublishResult@Studio@RBX@@UCommandError@23@@Tasks@3@USavePlaceOptions@23@@ZV123@@detail@Commands@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$MethodExecutor@P8PublishStatusManagerProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@UWebBrowserWidgetConfig@23@@ZV123@@detail@Commands@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$MethodExecutor@P8ReactDevToolsManagerProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@UWebBrowserWidgetConfig@23@@ZV123@@detail@Commands@Studio@RBX@@@std@@
+.?AV?$_Ref_count_obj2@V?$MethodExecutor@P8RestartControllerBridgeProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$MethodExecutor@P8RibbonConfigurationProviderProxy@Studio@RBX@@EAA?AV?$Result@URibbonDefinition@Studio@RBX@@UCommandError@23@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$MethodExecutor@P8RibbonConfigurationProviderProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@URibbonDefinition@23@@ZV123@@detail@Commands@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$MethodExecutor@P8RidlCommandExampleProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@_J@ZV123@@detail@Commands@Studio@RBX@@@std@@
@@ -16937,6 +17029,8 @@
 .?AV?$_Ref_count_obj2@V?$MethodExecutor@P8SystemCursorProxy@Studio@RBX@@EAA?AV?$Result@NUCommandError@Studio@RBX@@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$MethodExecutor@P8SystemMenuControllerProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@V?$vector@USystemMenuDefinition@Studio@RBX@@V?$allocator@USystemMenuDefinition@Studio@RBX@@@std@@@std@@@ZV123@@detail@Commands@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$MethodExecutor@P8SystemMenuControllerProxy@Studio@RBX@@EAA?AV?$Result@V?$vector@USystemMenuDefinition@Studio@RBX@@V?$allocator@USystemMenuDefinition@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@@std@@
+.?AV?$_Ref_count_obj2@V?$MethodExecutor@P8TeamTestSessionBridgeProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@H@ZV123@@detail@Commands@Studio@RBX@@@std@@
+.?AV?$_Ref_count_obj2@V?$MethodExecutor@P8TeamTestSessionBridgeProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@ZV123@@detail@Commands@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$MethodExecutor@P8ToolboxManagerProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@UWebBrowserWidgetConfig@23@@ZV123@@detail@Commands@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$MethodExecutor@P8ToolsManagerProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@V?$vector@VToolState@Studio@RBX@@V?$allocator@VToolState@Studio@RBX@@@std@@@std@@V?$optional@I@7@@ZV123@@detail@Commands@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$MethodExecutor@P8ToolsManagerProxy@Studio@RBX@@EAA?AV?$Result@V?$Signal@VToolState@Studio@RBX@@@Studio@RBX@@UCommandError@23@@Tasks@3@UStudioUri@3@@ZV123@@detail@Commands@Studio@RBX@@@std@@
@@ -16999,6 +17093,7 @@
 .?AV?$_Ref_count_obj2@V?$Promise@UWrapperHttpBuf@RBX@@@RSL@@@std@@
 .?AV?$_Ref_count_obj2@V?$Promise@V?$Expected@UAdsEligibility@Ads@RBX@@UAdsEligibilityCheckFailure@23@@RSL@@@RSL@@@std@@
 .?AV?$_Ref_count_obj2@V?$Promise@V?$Expected@V?$Variant@UGmaServeAdResponse@RBX@@UUnfilledServeAdResponse@2@@RSL@@UServeAdFailure@RBX@@@RSL@@@RSL@@@std@@
+.?AV?$_Ref_count_obj2@V?$Promise@V?$Result@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UCommandError@Studio@RBX@@@Tasks@RBX@@@Tasks@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$Promise@V?$Result@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UHttpErrorInfo@PlaceDataDownloadUtil@Studio@RBX@@@Tasks@RBX@@@Tasks@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$Promise@V?$Result@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@@Tasks@RBX@@@Tasks@RBX@@@std@@
 .?AV?$_Ref_count_obj2@V?$Promise@V?$Result@V?$shared_ptr@$$CBUReadOnlySharedBuffer@RBX@@@std@@UHttpErrorInfo@PlaceDataDownloadUtil@Studio@RBX@@@Tasks@RBX@@@Tasks@RBX@@@std@@
@@ -17200,7 +17295,6 @@
 .?AV?$_Ref_count_obj2@VAeroMeshData@Solver@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VAgeCheckedRCCManager@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VAliasCollisionSolver@Studio@RBX@@@std@@
-.?AV?$_Ref_count_obj2@VAliasRequestResult@@@std@@
 .?AV?$_Ref_count_obj2@VAllocatorDefault@GeoGen@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VAnalyticsProviderBase@LMS@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VAnalyticsProviderExperienceSignalsIngest@RBX@@@std@@
@@ -17220,6 +17314,7 @@
 .?AV?$_Ref_count_obj2@VAssetContentMap@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VAssetPrivacyPermissionsManager@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VAssetReadLogger@RBX@@@std@@
+.?AV?$_Ref_count_obj2@VAssetRequestHandle@AssetProvider@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VAssetUpdateNotificationSubscriber@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VAssetUploadRequestResult@AssetImport@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VAsyncHttpQueue@RBX@@@std@@
@@ -17298,6 +17393,7 @@
 .?AV?$_Ref_count_obj2@VCachedRecordV2@DataStore2@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VCall@Calling@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VCallManager@RBX@@@std@@
+.?AV?$_Ref_count_obj2@VCallOnceOrDeny@?A0xc2a19425@Studio@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VCallState@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VCallToastManager@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VCallbackAudioNode@Soundscape@RBX@@@std@@
@@ -17314,7 +17410,6 @@
 .?AV?$_Ref_count_obj2@VCheckAppVersionRequest@AppBridge@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VCheckAppVersionTask@AppBridge@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VChildEndpointIterator@?A0xbd1551f6@grpc_core@@@std@@
-.?AV?$_Ref_count_obj2@VChunk@VideoImport@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VChunkMeshShape@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VClearUnusedLuaRefsJob@ScriptContextFacets@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VClient@JsonRpc@RBX@@@std@@
@@ -17472,6 +17567,7 @@
 .?AV?$_Ref_count_obj2@VEditableMeshData@Mesh@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VEditableMeshPublishHelper@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VEditableMeshReporting@RBX@@@std@@
+.?AV?$_Ref_count_obj2@VEmbeddedContentCollection@Serializer@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VEmitter@Graphics@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VEmotesHelper@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VEmptyToolTipDelegate@@@std@@
@@ -17510,10 +17606,12 @@
 .?AV?$_Ref_count_obj2@VFileSyncStudioDependence@@@std@@
 .?AV?$_Ref_count_obj2@VFireEventJob@Relay@EventBroadcast@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VFixedHandler@RBX@@@std@@
+.?AV?$_Ref_count_obj2@VFloatCurveStorage@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VFlushBatch@LocalStorage@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VFmodCodecIo@?A0x52606ee3@Soundscape@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VFmodOutputCaptureDsp@Soundscape@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VFmodPlaybackAudioNode@Soundscape@RBX@@@std@@
+.?AV?$_Ref_count_obj2@VFocusedProbingLease@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VFocusedPromptData@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VFoliageRustleDsp@Soundscape@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VFontFace@Text@RBX@@@std@@
@@ -17695,7 +17793,6 @@
 .?AV?$_Ref_count_obj2@VModelMeshJob@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VModelSkinning@Motion@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VModelSkinningTransformsView@Motion@RBX@@@std@@
-.?AV?$_Ref_count_obj2@VModelSkinning_Deprecated@Motion@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VMonoMixDsp@Soundscape@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VMp4InputFormat@RVideo@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VMp4OutputFormat@RVideo@RBX@@@std@@
@@ -17760,6 +17857,7 @@
 .?AV?$_Ref_count_obj2@VPhysicsStepJob@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VPhysicsTouchSerializer@Network@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VPhysicsTrackerJob@detail@DataModelChangeTracking@RBX@@@std@@
+.?AV?$_Ref_count_obj2@VPinManager@RbxStorage@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VPlaceAssetIdsServiceJob@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VPlaceSessionConfiguration@@@std@@
 .?AV?$_Ref_count_obj2@VPlatformCallReceiver@?A0xee800407@RBX@@@std@@
@@ -17777,6 +17875,7 @@
 .?AV?$_Ref_count_obj2@VPlaylistSelector@RVideo@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VPluginAudioDevice@Voice@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VPluginDrag@RBX@@@std@@
+.?AV?$_Ref_count_obj2@VPluginFileAccess@VirtualFs@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VPluginInstancesSourceLuaFile@@@std@@
 .?AV?$_Ref_count_obj2@VPluginInstancesSourceModelFile@@@std@@
 .?AV?$_Ref_count_obj2@VPluginLoadingWaitGroup@detail@@@std@@
@@ -17804,6 +17903,7 @@
 .?AV?$_Ref_count_obj2@VPublishServiceQueueItem@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VQPixmap@@@std@@
 .?AV?$_Ref_count_obj2@VQTimer@@@std@@
+.?AV?$_Ref_count_obj2@VQueueSubscription@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VQuicSessionCrypto@Security@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VQuickOpenRateLimiter@@@std@@
 .?AV?$_Ref_count_obj2@VQuickOpenStudioDependence@@@std@@
@@ -18010,6 +18110,7 @@
 .?AV?$_Ref_count_obj2@VThreadsafePool@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VThumbnailVideoStream@Ads@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VTime@RBX@@@std@@
+.?AV?$_Ref_count_obj2@VTimeCurve@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VTimeHandler@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VTimerTickerJob@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VToastNotificationsManager@RBX@@@std@@
@@ -18033,10 +18134,7 @@
 .?AV?$_Ref_count_obj2@VUniverseChatMessageManager@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VUnsecuredStudioGame@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VUpdateTask@MassPackageUpdater@@@std@@
-.?AV?$_Ref_count_obj2@VUploadMeshComponentRequestResult@@@std@@
 .?AV?$_Ref_count_obj2@VUploadMeshDataRequest@AssetImport@RBX@@@std@@
-.?AV?$_Ref_count_obj2@VUploadRequestResult@@@std@@
-.?AV?$_Ref_count_obj2@VUploadVideoComponentRequestResult@@@std@@
 .?AV?$_Ref_count_obj2@VUserCertManager@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VUserNotificationModel@V1@OpenCloud@RBX@@@std@@
 .?AV?$_Ref_count_obj2@VUserNotification_PayloadModel@V1@OpenCloud@RBX@@@std@@
@@ -18245,6 +18343,7 @@
 .?AV?$_Ref_count_obj_alloc3@U?$FutureState@V?$Result@V?$vector@UAssetPublishState@AssetAccess@Studio@RBX@@V?$allocator@UAssetPublishState@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@RBX@@@detail@Tasks@RBX@@V?$Allocator@U?$FutureState@V?$Result@V?$vector@UAssetPublishState@AssetAccess@Studio@RBX@@V?$allocator@UAssetPublishState@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@RBX@@@detail@Tasks@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@U?$FutureState@V?$Result@V?$vector@UAssetRequestAccessFailure@AssetAccess@Studio@RBX@@V?$allocator@UAssetRequestAccessFailure@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@RBX@@@detail@Tasks@RBX@@V?$Allocator@U?$FutureState@V?$Result@V?$vector@UAssetRequestAccessFailure@AssetAccess@Studio@RBX@@V?$allocator@UAssetRequestAccessFailure@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@RBX@@@detail@Tasks@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@U?$FutureState@V?$Result@V?$vector@UAssetSubjectFailedShare@AssetAccess@Studio@RBX@@V?$allocator@UAssetSubjectFailedShare@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@RBX@@@detail@Tasks@RBX@@V?$Allocator@U?$FutureState@V?$Result@V?$vector@UAssetSubjectFailedShare@AssetAccess@Studio@RBX@@V?$allocator@UAssetSubjectFailedShare@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@RBX@@@detail@Tasks@RBX@@@Detail@RSL@@@std@@
+.?AV?$_Ref_count_obj_alloc3@U?$FutureState@V?$Result@V?$vector@UAssetVersionPublishState@AssetAccess@Studio@RBX@@V?$allocator@UAssetVersionPublishState@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@RBX@@@detail@Tasks@RBX@@V?$Allocator@U?$FutureState@V?$Result@V?$vector@UAssetVersionPublishState@AssetAccess@Studio@RBX@@V?$allocator@UAssetVersionPublishState@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@RBX@@@detail@Tasks@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@U?$FutureState@V?$Result@V?$vector@UEmulatedDeviceInfo@Studio@RBX@@V?$allocator@UEmulatedDeviceInfo@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@RBX@@@detail@Tasks@RBX@@V?$Allocator@U?$FutureState@V?$Result@V?$vector@UEmulatedDeviceInfo@Studio@RBX@@V?$allocator@UEmulatedDeviceInfo@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@RBX@@@detail@Tasks@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@U?$FutureState@V?$Result@V?$vector@URegisteredSimulatorInfo@Studio@RBX@@V?$allocator@URegisteredSimulatorInfo@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@RBX@@@detail@Tasks@RBX@@V?$Allocator@U?$FutureState@V?$Result@V?$vector@URegisteredSimulatorInfo@Studio@RBX@@V?$allocator@URegisteredSimulatorInfo@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@RBX@@@detail@Tasks@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@U?$FutureState@V?$Result@V?$vector@UStudioUri@RBX@@V?$allocator@UStudioUri@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@RBX@@@detail@Tasks@RBX@@V?$Allocator@U?$FutureState@V?$Result@V?$vector@UStudioUri@RBX@@V?$allocator@UStudioUri@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@RBX@@@detail@Tasks@RBX@@@Detail@RSL@@@std@@
@@ -18333,6 +18432,7 @@
 .?AV?$_Ref_count_obj_alloc3@U?$FutureState@V?$Result@VPackageDiffResponseModel@ConvAiPlatformOrchestrationServiceApi@OpenApi@RBX@@UHttpErrorInfo@34@@Tasks@RBX@@@detail@Tasks@RBX@@V?$Allocator@U?$FutureState@V?$Result@VPackageDiffResponseModel@ConvAiPlatformOrchestrationServiceApi@OpenApi@RBX@@UHttpErrorInfo@34@@Tasks@RBX@@@detail@Tasks@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@U?$FutureState@V?$Result@VPlacePreferenceResponseModel@PlaceAnnotationsServiceApi@OpenApi@RBX@@UHttpErrorInfo@34@@Tasks@RBX@@@detail@Tasks@RBX@@V?$Allocator@U?$FutureState@V?$Result@VPlacePreferenceResponseModel@PlaceAnnotationsServiceApi@OpenApi@RBX@@UHttpErrorInfo@34@@Tasks@RBX@@@detail@Tasks@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@U?$FutureState@V?$Result@VPluginPermissionResponseCollectionPaginatedResponseModel@OpenApi@RBX@@UHttpErrorInfo@23@@Tasks@RBX@@@detail@Tasks@RBX@@V?$Allocator@U?$FutureState@V?$Result@VPluginPermissionResponseCollectionPaginatedResponseModel@OpenApi@RBX@@UHttpErrorInfo@23@@Tasks@RBX@@@detail@Tasks@RBX@@@Detail@RSL@@@std@@
+.?AV?$_Ref_count_obj_alloc3@U?$FutureState@V?$Result@VPollResponseModel@QueueServiceApi@OpenApi@RBX@@UHttpErrorInfo@34@@Tasks@RBX@@@detail@Tasks@RBX@@V?$Allocator@U?$FutureState@V?$Result@VPollResponseModel@QueueServiceApi@OpenApi@RBX@@UHttpErrorInfo@34@@Tasks@RBX@@@detail@Tasks@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@U?$FutureState@V?$Result@VPublishResponseModel@QueueServiceApi@OpenApi@RBX@@UHttpErrorInfo@34@@Tasks@RBX@@@detail@Tasks@RBX@@V?$Allocator@U?$FutureState@V?$Result@VPublishResponseModel@QueueServiceApi@OpenApi@RBX@@UHttpErrorInfo@34@@Tasks@RBX@@@detail@Tasks@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@U?$FutureState@V?$Result@VQuotaResponseModel@MeshTexturingServiceApi@OpenApi@RBX@@UHttpErrorInfo@34@@Tasks@RBX@@@detail@Tasks@RBX@@V?$Allocator@U?$FutureState@V?$Result@VQuotaResponseModel@MeshTexturingServiceApi@OpenApi@RBX@@UHttpErrorInfo@34@@Tasks@RBX@@@detail@Tasks@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@U?$FutureState@V?$Result@VRccEvaluateExperimentalConfigResponseModel@CreatorConfigsApi@OpenApi@RBX@@UHttpErrorInfo@34@@Tasks@RBX@@@detail@Tasks@RBX@@V?$Allocator@U?$FutureState@V?$Result@VRccEvaluateExperimentalConfigResponseModel@CreatorConfigsApi@OpenApi@RBX@@UHttpErrorInfo@34@@Tasks@RBX@@@detail@Tasks@RBX@@@Detail@RSL@@@std@@
@@ -18496,6 +18596,7 @@
 .?AV?$_Ref_count_obj_alloc3@U?$MessageWrapper@UUpdateDialogMessage@?A0xc42e8c26@Studio@RBX@@@detail@RBX@@V?$Allocator@U?$MessageWrapper@UUpdateDialogMessage@?A0xc42e8c26@Studio@RBX@@@detail@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@U?$MessageWrapper@UUserCFrameChangedMessage@Studio@RBX@@@detail@RBX@@V?$Allocator@U?$MessageWrapper@UUserCFrameChangedMessage@Studio@RBX@@@detail@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@U?$MessageWrapper@UUserPreferencesPropertyChangedMessage@?A0x5bd662f8@Studio@RBX@@@detail@RBX@@V?$Allocator@U?$MessageWrapper@UUserPreferencesPropertyChangedMessage@?A0x5bd662f8@Studio@RBX@@@detail@RBX@@@Detail@RSL@@@std@@
+.?AV?$_Ref_count_obj_alloc3@U?$MessageWrapper@UUserPreferencesPropertyChangedMessage@?A0xfccce6f9@Studio@RBX@@@detail@RBX@@V?$Allocator@U?$MessageWrapper@UUserPreferencesPropertyChangedMessage@?A0xfccce6f9@Studio@RBX@@@detail@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@U?$MessageWrapper@UVREmulatorStartUpMessage@Studio@RBX@@@detail@RBX@@V?$Allocator@U?$MessageWrapper@UVREmulatorStartUpMessage@Studio@RBX@@@detail@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@U?$MessageWrapper@UWaypointChangeMessage@?A0x283710c7@Studio@RBX@@@detail@RBX@@V?$Allocator@U?$MessageWrapper@UWaypointChangeMessage@?A0x283710c7@Studio@RBX@@@detail@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@U?$MessageWrapper@UWebBrowserLoadFailureMessage@Studio@RBX@@@detail@RBX@@V?$Allocator@U?$MessageWrapper@UWebBrowserLoadFailureMessage@Studio@RBX@@@detail@RBX@@@Detail@RSL@@@std@@
@@ -18516,12 +18617,10 @@
 .?AV?$_Ref_count_obj_alloc3@UAnimationMaskModifierData@AnimationMaskModifier@RBX@@V?$Allocator@UAnimationMaskModifierData@AnimationMaskModifier@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UAssetResponse@AssetProvider@RBX@@V?$Allocator@UAssetResponse@AssetProvider@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UAsyncRequest@RBX@@V?$Allocator@UAsyncRequest@RBX@@@Detail@RSL@@@std@@
-.?AV?$_Ref_count_obj_alloc3@UAudioFileInfo@BulkAudioLoader@RBX@@V?$Allocator@UAudioFileInfo@BulkAudioLoader@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UAudioMetadataRequest@RBX@@V?$Allocator@UAudioMetadataRequest@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UAvatarImportParams@RBX@@V?$Allocator@UAvatarImportParams@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UAvatarMeshBundle@WrapContentProvider@RBX@@V?$Allocator@UAvatarMeshBundle@WrapContentProvider@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UBlockingSendState@?A0xd32917de@Detail@RBX@@V?$Allocator@UBlockingSendState@?A0xd32917de@Detail@RBX@@@3RSL@@@std@@
-.?AV?$_Ref_count_obj_alloc3@UBulkAudioLoader@RBX@@V?$Allocator@UBulkAudioLoader@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UBundleReadStatus@@V?$Allocator@UBundleReadStatus@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UCacheEntry@HttpCache@RBX@@V?$Allocator@UCacheEntry@HttpCache@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UCachedBitstream@Network@RBX@@V?$Allocator@UCachedBitstream@Network@RBX@@@Detail@RSL@@@std@@
@@ -18538,6 +18637,7 @@
 .?AV?$_Ref_count_obj_alloc3@UDataFromValidation@RBX@@V?$Allocator@UDataFromValidation@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UDataModelClassUserData@RBX@@V?$Allocator@UDataModelClassUserData@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UDeclarationResponse@LSP@RBX@@V?$Allocator@UDeclarationResponse@LSP@RBX@@@Detail@RSL@@@std@@
+.?AV?$_Ref_count_obj_alloc3@UDecodedChildren@detail@CSG3@RBX@@V?$Allocator@UDecodedChildren@detail@CSG3@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UDeferredEphemeralSharedState@EphemeralCounter@Analytics@RBX@@V?$Allocator@UDeferredEphemeralSharedState@EphemeralCounter@Analytics@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UDeferredReporterSharedState@DeferredReporter@EventIngest@Analytics@RBX@@V?$Allocator@UDeferredReporterSharedState@DeferredReporter@EventIngest@Analytics@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UDialogResult@?A0x49b24aa4@ScriptEditor@RBX@@V?$Allocator@UDialogResult@?A0x49b24aa4@ScriptEditor@RBX@@@Detail@RSL@@@std@@
@@ -18596,8 +18696,10 @@
 .?AV?$_Ref_count_obj_alloc3@UMemAllocDescriptor@Soundscape@RBX@@V?$Allocator@UMemAllocDescriptor@Soundscape@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UMemoryProfiling@Memory@RBX@@V?$Allocator@UMemoryProfiling@Memory@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UMeshResource@Graphics@RBX@@V?$Allocator@UMeshResource@Graphics@RBX@@@Detail@RSL@@@std@@
+.?AV?$_Ref_count_obj_alloc3@UModelBundle@MLR@RBX@@V?$Allocator@UModelBundle@MLR@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UModelUploadBatchState@RBX@@V?$Allocator@UModelUploadBatchState@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UNavigationRequest@RBX@@V?$Allocator@UNavigationRequest@RBX@@@Detail@RSL@@@std@@
+.?AV?$_Ref_count_obj_alloc3@UOccludedMeshAbandonGuard@AerodynamicGeometryDetails@PreprocessAerodynamics@Aerodynamics@RBX@@V?$Allocator@UOccludedMeshAbandonGuard@AerodynamicGeometryDetails@PreprocessAerodynamics@Aerodynamics@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UOpaqueContentUploadCoordinatorState@RBX@@V?$Allocator@UOpaqueContentUploadCoordinatorState@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UOperation@?A0x751495e2@RBX@@V?$Allocator@UOperation@?A0x751495e2@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@UOperatorX2_cJDxTO@CorrectivesLogic@RBX@@V?$Allocator@UOperatorX2_cJDxTO@CorrectivesLogic@RBX@@@Detail@RSL@@@std@@
@@ -18788,6 +18890,7 @@
 .?AV?$_Ref_count_obj_alloc3@V?$FutureState@V?$shared_ptr@UFileMeshData@RBX@@@std@@@RSL@@V?$Allocator@V?$FutureState@V?$shared_ptr@UFileMeshData@RBX@@@std@@@RSL@@@Detail@2@@std@@
 .?AV?$_Ref_count_obj_alloc3@V?$FutureState@V?$shared_ptr@V?$vector@V?$shared_ptr@V?$vector@V?$shared_ptr@VInstance@RBX@@@std@@V?$allocator@V?$shared_ptr@VInstance@RBX@@@std@@@2@@std@@@std@@V?$allocator@V?$shared_ptr@V?$vector@V?$shared_ptr@VInstance@RBX@@@std@@V?$allocator@V?$shared_ptr@VInstance@RBX@@@std@@@2@@std@@@std@@@2@@std@@@std@@@RSL@@V?$Allocator@V?$FutureState@V?$shared_ptr@V?$vector@V?$shared_ptr@V?$vector@V?$shared_ptr@VInstance@RBX@@@std@@V?$allocator@V?$shared_ptr@VInstance@RBX@@@std@@@2@@std@@@std@@V?$allocator@V?$shared_ptr@V?$vector@V?$shared_ptr@VInstance@RBX@@@std@@V?$allocator@V?$shared_ptr@VInstance@RBX@@@std@@@2@@std@@@std@@@2@@std@@@std@@@RSL@@@Detail@2@@std@@
 .?AV?$_Ref_count_obj_alloc3@V?$FutureState@V?$shared_ptr@VHttpResponse@RBX@@@std@@@RSL@@V?$Allocator@V?$FutureState@V?$shared_ptr@VHttpResponse@RBX@@@std@@@RSL@@@Detail@2@@std@@
+.?AV?$_Ref_count_obj_alloc3@V?$FutureState@V?$vector@UMemberFmd@Resources@DataModelBinding@RBX@@V?$allocator@UMemberFmd@Resources@DataModelBinding@RBX@@@std@@@std@@@RSL@@V?$Allocator@V?$FutureState@V?$vector@UMemberFmd@Resources@DataModelBinding@RBX@@V?$allocator@UMemberFmd@Resources@DataModelBinding@RBX@@@std@@@std@@@RSL@@@Detail@2@@std@@
 .?AV?$_Ref_count_obj_alloc3@V?$FutureState@V?$vector@VDomNode@dom@studio@roblox@@V?$allocator@VDomNode@dom@studio@roblox@@@std@@@std@@@RSL@@V?$Allocator@V?$FutureState@V?$vector@VDomNode@dom@studio@roblox@@V?$allocator@VDomNode@dom@studio@roblox@@@std@@@std@@@RSL@@@Detail@2@@std@@
 .?AV?$_Ref_count_obj_alloc3@V?$FutureState@X@RSL@@V?$Allocator@V?$FutureState@X@RSL@@@Detail@2@@std@@
 .?AV?$_Ref_count_obj_alloc3@V?$FutureState@_J@RSL@@V?$Allocator@V?$FutureState@_J@RSL@@@Detail@2@@std@@
@@ -18812,6 +18915,7 @@
 .?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@UAssetPublishState@AssetAccess@Studio@RBX@@V?$allocator@UAssetPublishState@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@V?$vector@_JV?$allocator@_J@std@@@std@@@ZV1234@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@UAssetPublishState@AssetAccess@Studio@RBX@@V?$allocator@UAssetPublishState@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@V?$vector@_JV?$allocator@_J@std@@@std@@@ZV1234@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@UAssetRequestAccessFailure@AssetAccess@Studio@RBX@@V?$allocator@UAssetRequestAccessFailure@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@V?$vector@_JV?$allocator@_J@std@@@std@@@ZV1234@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@UAssetRequestAccessFailure@AssetAccess@Studio@RBX@@V?$allocator@UAssetRequestAccessFailure@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@V?$vector@_JV?$allocator@_J@std@@@std@@@ZV1234@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@UAssetSubjectFailedShare@AssetAccess@Studio@RBX@@V?$allocator@UAssetSubjectFailedShare@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@V?$vector@UAssetSubject@AssetAccess@Studio@RBX@@V?$allocator@UAssetSubject@AssetAccess@Studio@RBX@@@std@@@std@@V?$vector@_JV?$allocator@_J@std@@@8@@ZV1234@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@UAssetSubjectFailedShare@AssetAccess@Studio@RBX@@V?$allocator@UAssetSubjectFailedShare@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@V?$vector@UAssetSubject@AssetAccess@Studio@RBX@@V?$allocator@UAssetSubject@AssetAccess@Studio@RBX@@@std@@@std@@V?$vector@_JV?$allocator@_J@std@@@8@@ZV1234@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
+.?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@UAssetVersionPublishState@AssetAccess@Studio@RBX@@V?$allocator@UAssetVersionPublishState@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@V?$vector@UAssetPublishRequest@AssetAccess@Studio@RBX@@V?$allocator@UAssetPublishRequest@AssetAccess@Studio@RBX@@@std@@@std@@@ZV1234@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@UAssetVersionPublishState@AssetAccess@Studio@RBX@@V?$allocator@UAssetVersionPublishState@AssetAccess@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@V?$vector@UAssetPublishRequest@AssetAccess@Studio@RBX@@V?$allocator@UAssetPublishRequest@AssetAccess@Studio@RBX@@@std@@@std@@@ZV1234@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@_JV?$allocator@_J@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@V?$vector@UAssetPublishRequest@AssetAccess@Studio@RBX@@V?$allocator@UAssetPublishRequest@AssetAccess@Studio@RBX@@@std@@@std@@@ZV1234@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@_JV?$allocator@_J@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@V?$vector@UAssetPublishRequest@AssetAccess@Studio@RBX@@V?$allocator@UAssetPublishRequest@AssetAccess@Studio@RBX@@@std@@@std@@@ZV1234@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@_JV?$allocator@_J@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@V?$vector@_JV?$allocator@_J@std@@@std@@@ZV1234@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@_JV?$allocator@_J@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@V?$vector@_JV?$allocator@_J@std@@@std@@@ZV1234@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@_JV?$allocator@_J@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@XZV1234@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8AssetAccessControllerProxy@AssetAccess@Studio@RBX@@EAA?AV?$Result@V?$vector@_JV?$allocator@_J@std@@@std@@UCommandError@Studio@RBX@@@Tasks@4@XZV1234@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
@@ -18930,6 +19034,7 @@
 .?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8PerformanceToolsBridgeProxy@Studio@RBX@@EAA?AV?$Result@NUCommandError@Studio@RBX@@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8PerformanceToolsBridgeProxy@Studio@RBX@@EAA?AV?$Result@NUCommandError@Studio@RBX@@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8PerformanceToolsBridgeProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8PerformanceToolsBridgeProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8PerformanceToolsBridgeProxy@Studio@RBX@@EAA?AV?$Result@_NUCommandError@Studio@RBX@@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8PerformanceToolsBridgeProxy@Studio@RBX@@EAA?AV?$Result@_NUCommandError@Studio@RBX@@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
+.?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8PlaceCloserProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCloseAllPlacesError@Studio@3@@Tasks@3@UAllPlacesCloseConfig@23@@ZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8PlaceCloserProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCloseAllPlacesError@Studio@3@@Tasks@3@UAllPlacesCloseConfig@23@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8PlaceCloserProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UClosePlaceError@Studio@3@@Tasks@3@UPlaceCloseConfig@23@@ZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8PlaceCloserProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UClosePlaceError@Studio@3@@Tasks@3@UPlaceCloseConfig@23@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8PlaceCloserProxy@Studio@RBX@@EAA?AV?$Result@VScriptConnection@RBX@@UCommandError@Studio@2@@Tasks@3@HVWeakObjectRef@Lua@3@@ZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8PlaceCloserProxy@Studio@RBX@@EAA?AV?$Result@VScriptConnection@RBX@@UCommandError@Studio@2@@Tasks@3@HVWeakObjectRef@Lua@3@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8PlaceManager@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8PlaceManager@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
@@ -18955,6 +19060,7 @@
 .?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8PublishMediatorProxy@Studio@RBX@@EAA?AV?$Result@UPlacePublishResult@Studio@RBX@@UCommandError@23@@Tasks@3@USavePlaceOptions@23@@ZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8PublishMediatorProxy@Studio@RBX@@EAA?AV?$Result@UPlacePublishResult@Studio@RBX@@UCommandError@23@@Tasks@3@USavePlaceOptions@23@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8PublishStatusManagerProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@UWebBrowserWidgetConfig@23@@ZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8PublishStatusManagerProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@UWebBrowserWidgetConfig@23@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8ReactDevToolsManagerProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@UWebBrowserWidgetConfig@23@@ZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8ReactDevToolsManagerProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@UWebBrowserWidgetConfig@23@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
+.?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8RestartControllerBridgeProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8RestartControllerBridgeProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8RibbonConfigurationProviderProxy@Studio@RBX@@EAA?AV?$Result@URibbonDefinition@Studio@RBX@@UCommandError@23@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8RibbonConfigurationProviderProxy@Studio@RBX@@EAA?AV?$Result@URibbonDefinition@Studio@RBX@@UCommandError@23@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8RibbonConfigurationProviderProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@URibbonDefinition@23@@ZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8RibbonConfigurationProviderProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@URibbonDefinition@23@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8RidlCommandExampleProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@_J@ZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8RidlCommandExampleProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@_J@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
@@ -19003,6 +19109,8 @@
 .?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8SystemCursorProxy@Studio@RBX@@EAA?AV?$Result@NUCommandError@Studio@RBX@@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8SystemCursorProxy@Studio@RBX@@EAA?AV?$Result@NUCommandError@Studio@RBX@@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8SystemMenuControllerProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@V?$vector@USystemMenuDefinition@Studio@RBX@@V?$allocator@USystemMenuDefinition@Studio@RBX@@@std@@@std@@@ZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8SystemMenuControllerProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@V?$vector@USystemMenuDefinition@Studio@RBX@@V?$allocator@USystemMenuDefinition@Studio@RBX@@@std@@@std@@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8SystemMenuControllerProxy@Studio@RBX@@EAA?AV?$Result@V?$vector@USystemMenuDefinition@Studio@RBX@@V?$allocator@USystemMenuDefinition@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8SystemMenuControllerProxy@Studio@RBX@@EAA?AV?$Result@V?$vector@USystemMenuDefinition@Studio@RBX@@V?$allocator@USystemMenuDefinition@Studio@RBX@@@std@@@std@@UCommandError@Studio@RBX@@@Tasks@3@XZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
+.?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8TeamTestSessionBridgeProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@H@ZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8TeamTestSessionBridgeProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@H@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
+.?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8TeamTestSessionBridgeProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@ZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8TeamTestSessionBridgeProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8ToolboxManagerProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@UWebBrowserWidgetConfig@23@@ZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8ToolboxManagerProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@UWebBrowserWidgetConfig@23@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8ToolsManagerProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@V?$vector@VToolState@Studio@RBX@@V?$allocator@VToolState@Studio@RBX@@@std@@@std@@V?$optional@I@7@@ZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8ToolsManagerProxy@Studio@RBX@@EAA?AV?$Result@UVoidType@Tasks@RBX@@UCommandError@Studio@3@@Tasks@3@V?$vector@VToolState@Studio@RBX@@V?$allocator@VToolState@Studio@RBX@@@std@@@std@@V?$optional@I@7@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@V?$MethodExecutor@P8ToolsManagerProxy@Studio@RBX@@EAA?AV?$Result@V?$Signal@VToolState@Studio@RBX@@@Studio@RBX@@UCommandError@23@@Tasks@3@UStudioUri@3@@ZV123@@detail@Commands@Studio@RBX@@V?$Allocator@V?$MethodExecutor@P8ToolsManagerProxy@Studio@RBX@@EAA?AV?$Result@V?$Signal@VToolState@Studio@RBX@@@Studio@RBX@@UCommandError@23@@Tasks@3@UStudioUri@3@@ZV123@@detail@Commands@Studio@RBX@@@Detail@RSL@@@std@@
@@ -19178,7 +19286,6 @@
 .?AV?$_Ref_count_obj_alloc3@VAeolianWhistleDsp@Soundscape@RBX@@V?$Allocator@VAeolianWhistleDsp@Soundscape@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VAeroMeshData@Solver@RBX@@V?$Allocator@VAeroMeshData@Solver@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VAliasCollisionSolver@Studio@RBX@@V?$Allocator@VAliasCollisionSolver@Studio@RBX@@@Detail@RSL@@@std@@
-.?AV?$_Ref_count_obj_alloc3@VAliasRequestResult@@V?$Allocator@VAliasRequestResult@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VAnalyticsProviderBase@LMS@RBX@@V?$Allocator@VAnalyticsProviderBase@LMS@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VAnalyticsProviderExperienceSignalsIngest@RBX@@V?$Allocator@VAnalyticsProviderExperienceSignalsIngest@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VAnalyticsReporter@Tracing@RBX@@V?$Allocator@VAnalyticsReporter@Tracing@RBX@@@Detail@RSL@@@std@@
@@ -19245,7 +19352,6 @@
 .?AV?$_Ref_count_obj_alloc3@VChatMessage@RBX@@V?$Allocator@VChatMessage@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VCheckAppVersionRequest@AppBridge@RBX@@V?$Allocator@VCheckAppVersionRequest@AppBridge@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VCheckAppVersionTask@AppBridge@RBX@@V?$Allocator@VCheckAppVersionTask@AppBridge@RBX@@@Detail@RSL@@@std@@
-.?AV?$_Ref_count_obj_alloc3@VChunk@VideoImport@RBX@@V?$Allocator@VChunk@VideoImport@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VChunkMeshShape@RBX@@V?$Allocator@VChunkMeshShape@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VClearUnusedLuaRefsJob@ScriptContextFacets@RBX@@V?$Allocator@VClearUnusedLuaRefsJob@ScriptContextFacets@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VClient@JsonRpc@RBX@@V?$Allocator@VClient@JsonRpc@RBX@@@Detail@RSL@@@std@@
@@ -19395,11 +19501,13 @@
 .?AV?$_Ref_count_obj_alloc3@VFaceAnimatorAudioServiceSink@details@RBX@@V?$Allocator@VFaceAnimatorAudioServiceSink@details@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VFaceAnimatorServiceImpl@RBX@@V?$Allocator@VFaceAnimatorServiceImpl@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VFbxParser@AssetImport@RBX@@V?$Allocator@VFbxParser@AssetImport@RBX@@@Detail@RSL@@@std@@
+.?AV?$_Ref_count_obj_alloc3@VFilePickerBlobResource@RBX@@V?$Allocator@VFilePickerBlobResource@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VFileSyncItemClient@@V?$Allocator@VFileSyncItemClient@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VFileSyncServiceManager@@V?$Allocator@VFileSyncServiceManager@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VFileSyncStudioDependence@@V?$Allocator@VFileSyncStudioDependence@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VFireEventJob@Relay@EventBroadcast@RBX@@V?$Allocator@VFireEventJob@Relay@EventBroadcast@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VFixedHandler@RBX@@V?$Allocator@VFixedHandler@RBX@@@Detail@RSL@@@std@@
+.?AV?$_Ref_count_obj_alloc3@VFloatCurveStorage@RBX@@V?$Allocator@VFloatCurveStorage@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VFlushBatch@LocalStorage@RBX@@V?$Allocator@VFlushBatch@LocalStorage@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VFmodCodecIo@?A0x52606ee3@Soundscape@RBX@@V?$Allocator@VFmodCodecIo@?A0x52606ee3@Soundscape@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VFmodOutputCaptureDsp@Soundscape@RBX@@V?$Allocator@VFmodOutputCaptureDsp@Soundscape@RBX@@@Detail@RSL@@@std@@
@@ -19509,7 +19617,6 @@
 .?AV?$_Ref_count_obj_alloc3@VModelMeshJob@RBX@@V?$Allocator@VModelMeshJob@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VModelSkinning@Motion@RBX@@V?$Allocator@VModelSkinning@Motion@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VModelSkinningTransformsView@Motion@RBX@@V?$Allocator@VModelSkinningTransformsView@Motion@RBX@@@Detail@RSL@@@std@@
-.?AV?$_Ref_count_obj_alloc3@VModelSkinning_Deprecated@Motion@RBX@@V?$Allocator@VModelSkinning_Deprecated@Motion@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VMonoMixDsp@Soundscape@RBX@@V?$Allocator@VMonoMixDsp@Soundscape@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VMp4InputFormat@RVideo@RBX@@V?$Allocator@VMp4InputFormat@RVideo@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VMp4OutputFormat@RVideo@RBX@@V?$Allocator@VMp4OutputFormat@RVideo@RBX@@@Detail@RSL@@@std@@
@@ -19559,6 +19666,7 @@
 .?AV?$_Ref_count_obj_alloc3@VPublishServiceQueueItem@RBX@@V?$Allocator@VPublishServiceQueueItem@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VQPixmap@@V?$Allocator@VQPixmap@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VQTimer@@V?$Allocator@VQTimer@@@Detail@RSL@@@std@@
+.?AV?$_Ref_count_obj_alloc3@VQueueSubscription@RBX@@V?$Allocator@VQueueSubscription@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VQuicSessionCrypto@Security@RBX@@V?$Allocator@VQuicSessionCrypto@Security@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VQuickOpenRateLimiter@@V?$Allocator@VQuickOpenRateLimiter@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VQuickOpenStudioDependence@@V?$Allocator@VQuickOpenStudioDependence@@@Detail@RSL@@@std@@
@@ -19674,6 +19782,7 @@
 .?AV?$_Ref_count_obj_alloc3@VTexturePackPropsetUploader@RBX@@V?$Allocator@VTexturePackPropsetUploader@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VTextureProxy@Graphics@RBX@@V?$Allocator@VTextureProxy@Graphics@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VTextureVulkan@Graphics@RBX@@V?$Allocator@VTextureVulkan@Graphics@RBX@@@Detail@RSL@@@std@@
+.?AV?$_Ref_count_obj_alloc3@VTimeCurve@RBX@@V?$Allocator@VTimeCurve@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VTimeHandler@RBX@@V?$Allocator@VTimeHandler@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VTimerTickerJob@RBX@@V?$Allocator@VTimerTickerJob@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VToastNotificationsManager@RBX@@V?$Allocator@VToastNotificationsManager@RBX@@@Detail@RSL@@@std@@
@@ -19690,10 +19799,7 @@
 .?AV?$_Ref_count_obj_alloc3@VUnappliedResultGuard@?A0x751495e2@RBX@@V?$Allocator@VUnappliedResultGuard@?A0x751495e2@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VUnsecuredStudioGame@RBX@@V?$Allocator@VUnsecuredStudioGame@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VUpdateTask@MassPackageUpdater@@V?$Allocator@VUpdateTask@MassPackageUpdater@@@Detail@RSL@@@std@@
-.?AV?$_Ref_count_obj_alloc3@VUploadMeshComponentRequestResult@@V?$Allocator@VUploadMeshComponentRequestResult@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VUploadMeshDataRequest@AssetImport@RBX@@V?$Allocator@VUploadMeshDataRequest@AssetImport@RBX@@@Detail@RSL@@@std@@
-.?AV?$_Ref_count_obj_alloc3@VUploadRequestResult@@V?$Allocator@VUploadRequestResult@@@Detail@RSL@@@std@@
-.?AV?$_Ref_count_obj_alloc3@VUploadVideoComponentRequestResult@@V?$Allocator@VUploadVideoComponentRequestResult@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VUserCertManager@RBX@@V?$Allocator@VUserCertManager@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VUserNotificationModel@V1@OpenCloud@RBX@@V?$Allocator@VUserNotificationModel@V1@OpenCloud@RBX@@@Detail@RSL@@@std@@
 .?AV?$_Ref_count_obj_alloc3@VUserNotification_PayloadModel@V1@OpenCloud@RBX@@V?$Allocator@VUserNotification_PayloadModel@V1@OpenCloud@RBX@@@Detail@RSL@@@std@@
@@ -19841,6 +19947,7 @@
 .?AV?$_Ref_count_resource@PEAVAuthTokenManager@RBX@@U?$default_delete@VAuthTokenManager@RBX@@@std@@@std@@
 .?AV?$_Ref_count_resource@PEAVBlend1DAnimationNode@RBX@@VDeleter@Creatable@2@@std@@
 .?AV?$_Ref_count_resource@PEAVBlend2DAnimationNode@RBX@@VDeleter@Creatable@2@@std@@
+.?AV?$_Ref_count_resource@PEAVBlob@RBX@@VDeleter@Creatable@2@@std@@
 .?AV?$_Ref_count_resource@PEAVCSGMesh@RBX@@U?$default_delete@VCSGMesh@RBX@@@std@@@std@@
 .?AV?$_Ref_count_resource@PEAVCageMeshFetchRequest@RBX@@U?$default_delete@VCageMeshFetchRequest@RBX@@@std@@@std@@
 .?AV?$_Ref_count_resource@PEAVCapture@RBX@@VDeleter@Creatable@2@@std@@
@@ -19864,6 +19971,7 @@
 .?AV?$_Ref_count_resource@PEAVExtractor@ncnn@@U?$default_delete@VExtractor@ncnn@@@std@@@std@@
 .?AV?$_Ref_count_resource@PEAVFMODPlaybackDSP@Soundscape@RBX@@V
 .?AV?$_Ref_count_resource@PEAVFMODSound@Soundscape@RBX@@V
+.?AV?$_Ref_count_resource@PEAVFeatureMatchValueNode@RBX@@VDeleter@Creatable@2@@std@@
 .?AV?$_Ref_count_resource@PEAVFeatureMatchingSession@RBX@@VDeleter@Creatable@2@@std@@
 .?AV?$_Ref_count_resource@PEAVFeatureSearchParams@RBX@@VDeleter@Creatable@2@@std@@
 .?AV?$_Ref_count_resource@PEAVFramebuffer@Graphics@RBX@@V
@@ -19903,6 +20011,7 @@
 .?AV?$_Ref_count_resource@PEAVReducedMeshAeroForceModel@Solver@RBX@@U?$default_delete@VReducedMeshAeroForceModel@Solver@RBX@@@std@@@std@@
 .?AV?$_Ref_count_resource@PEAVRobloxAudioDevice@Voice@RBX@@U?$default_delete@VRobloxAudioDevice@Voice@RBX@@@std@@@std@@
 .?AV?$_Ref_count_resource@PEAVRvFrame@RVideo@RBX@@V
+.?AV?$_Ref_count_resource@PEAVSceneSnapshot@RBX@@VDeleter@Creatable@2@@std@@
 .?AV?$_Ref_count_resource@PEAVScreenshotCapture@RBX@@VDeleter@Creatable@2@@std@@
 .?AV?$_Ref_count_resource@PEAVScriptContext@RBX@@VDeleter@Creatable@2@@std@@
 .?AV?$_Ref_count_resource@PEAVScriptMouseCommand@RBX@@VDeleter@Creatable@2@@std@@
@@ -19973,6 +20082,7 @@
 .?AV?$basic_memory_buffer@H$0BPE@V?$allocator@H@std@@@v8@fmt@@
 .?AV?$basic_memory_buffer@I$0CA@V?$allocator@I@std@@@v8@fmt@@
 .?AV?$basic_memory_buffer@_W$0BPE@V?$allocator@_W@std@@@v8@fmt@@
+.?AV?$basic_ofstream@DU?$char_traits@D@std@@@filesystem@boost@@
 .?AV?$basic_ofstream@DU?$char_traits@D@std@@@std@@
 .?AV?$basic_ostream@DU?$char_traits@D@std@@@std@@
 .?AV?$basic_ostringstream@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@
@@ -20201,7 +20311,6 @@
 .?AV?$formatbuf@V?$basic_streambuf@DU?$char_traits@D@std@@@std@@@detail@v8@fmt@@
 .?AV?$func@Uthread_function@win_iocp_io_context@detail@asio@@@win_thread@detail@asio@@
 .?AV?$generic_hook@V?$circular_list_algorithms@U?$list_node_traits@PEAX@intrusive@boost@@@intrusive@boost@@UItemTag@Network@RBX@@$00$00@intrusive@boost@@
-.?AV?$generic_hook@V?$circular_list_algorithms@U?$list_node_traits@PEAX@intrusive@boost@@@intrusive@boost@@VMovingAssemblyStage@RBX@@$00$00@intrusive@boost@@
 .?AV?$generic_hook@V?$circular_list_algorithms@U?$list_node_traits@PEAX@intrusive@boost@@@intrusive@boost@@VStepJointsStage@RBX@@$00$00@intrusive@boost@@
 .?AV?$holder@H@any@boost@@
 .?AV?$holder@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@any@boost@@
@@ -20221,7 +20330,6 @@
 .?AV?$iterator_facade@Vcommon_config_file_iterator@detail@program_options@boost@@$$CBV?$basic_option@D@34@Uforward_traversal_tag@iterators@4@AEBV534@_J@iterators@boost@@
 .?AV?$iterator_facade_base@Vcommon_config_file_iterator@detail@program_options@boost@@$$CBV?$basic_option@D@34@Uforward_traversal_tag@iterators@4@AEBV534@_J$0A@$0A@@detail@iterators@boost@@
 .?AV?$list_base_hook@U?$tag@UItemTag@Network@RBX@@@intrusive@boost@@XX@intrusive@boost@@
-.?AV?$list_base_hook@U?$tag@VMovingAssemblyStage@RBX@@@intrusive@boost@@XX@intrusive@boost@@
 .?AV?$list_base_hook@U?$tag@VStepJointsStage@RBX@@@intrusive@boost@@XX@intrusive@boost@@
 .?AV?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@Vvariable_value@program_options@boost@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@Vvariable_value@program_options@boost@@@std@@@2@@std@@
 .?AV?$nth_kday_of_month@Vdate@gregorian@boost@@@date_time@boost@@
@@ -20297,8 +20405,11 @@
 .?AV?$vector@U?$pair@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_K@std@@V?$Allocator@U?$pair@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_K@std@@@Detail@RSL@@@std@@
 .?AV?$vector@U?$pair@_KV?$unique_ptr@UDeferredOperation@Impl@Io@RbxTransport@RBX@@U?$default_delete@UDeferredOperation@Impl@Io@RbxTransport@RBX@@@std@@@std@@@std@@V?$Allocator@U?$pair@_KV?$unique_ptr@UDeferredOperation@Impl@Io@RbxTransport@RBX@@U?$default_delete@UDeferredOperation@Impl@Io@RbxTransport@RBX@@@std@@@std@@@std@@@Detail@RSL@@@std@@
 .?AV?$vector@U?$pair@_K_K@std@@V?$Allocator@U?$pair@_K_K@std@@@Detail@RSL@@@std@@
+.?AV?$vector@UAnimGraphEvent@RBX@@V?$Allocator@UAnimGraphEvent@RBX@@@Detail@RSL@@@std@@
+.?AV?$vector@UBackdropResourceRequirements@UI@RBX@@V?$Allocator@UBackdropResourceRequirements@UI@RBX@@@Detail@RSL@@@std@@
 .?AV?$vector@UCallingManagerStateUpdate@CallingProtocolConstants@Calling@RBX@@V?$Allocator@UCallingManagerStateUpdate@CallingProtocolConstants@Calling@RBX@@@Detail@RSL@@@std@@
 .?AV?$vector@UCoalescedPointerAction@RBX@@V?$Allocator@UCoalescedPointerAction@RBX@@@Detail@RSL@@@std@@
+.?AV?$vector@UColorLUTCandidate@Graphics@RBX@@V?$Allocator@UColorLUTCandidate@Graphics@RBX@@@Detail@RSL@@@std@@
 .?AV?$vector@UConnectionEvent@RbxTransport@RBX@@V?$Allocator@UConnectionEvent@RbxTransport@RBX@@@Detail@RSL@@@std@@
 .?AV?$vector@UContext@PollEventAggregator@Impl@Io@RbxTransport@RBX@@V?$Allocator@UContext@PollEventAggregator@Impl@Io@RbxTransport@RBX@@@Detail@RSL@@@std@@
 .?AV?$vector@UDatagramRecvSubscription@H3Connection@Http@RbxTransport@RBX@@V?$Allocator@UDatagramRecvSubscription@H3Connection@Http@RbxTransport@RBX@@@Detail@RSL@@@std@@
@@ -20313,14 +20424,17 @@
 .?AV?$vector@UInputStateChangeEvent@InputRing@RBX@@V?$Allocator@UInputStateChangeEvent@InputRing@RBX@@@Detail@RSL@@@std@@
 .?AV?$vector@UKeyEvent@InputRing@RBX@@V?$Allocator@UKeyEvent@InputRing@RBX@@@Detail@RSL@@@std@@
 .?AV?$vector@UKeyInfo@RBX@@V?$Allocator@UKeyInfo@RBX@@@Detail@RSL@@@std@@
+.?AV?$vector@ULayeredStackEntry@?A0x484427ac@RBX@@V?$Allocator@ULayeredStackEntry@?A0x484427ac@RBX@@@Detail@RSL@@@std@@
 .?AV?$vector@UMemoryCallback@PendingCallbacks@PerformanceControl@RBX@@V?$Allocator@UMemoryCallback@PendingCallbacks@PerformanceControl@RBX@@@Detail@RSL@@@std@@
 .?AV?$vector@UMouseButtonEvent@InputRing@RBX@@V?$Allocator@UMouseButtonEvent@InputRing@RBX@@@Detail@RSL@@@std@@
 .?AV?$vector@UMouseMoveEvent@InputRing@RBX@@V?$Allocator@UMouseMoveEvent@InputRing@RBX@@@Detail@RSL@@@std@@
+.?AV?$vector@UPendingLayeredOverride@?A0x484427ac@RBX@@V?$Allocator@UPendingLayeredOverride@?A0x484427ac@RBX@@@Detail@RSL@@@std@@
 .?AV?$vector@UPendingMove@MouseEventCoalescer@RBX@@V?$Allocator@UPendingMove@MouseEventCoalescer@RBX@@@Detail@RSL@@@std@@
 .?AV?$vector@UPendingTextBoxAction@RBX@@V?$Allocator@UPendingTextBoxAction@RBX@@@Detail@RSL@@@std@@
 .?AV?$vector@UPointerActionEvent@InputRing@RBX@@V?$Allocator@UPointerActionEvent@InputRing@RBX@@@Detail@RSL@@@std@@
 .?AV?$vector@UPollEvent@Impl@Io@RbxTransport@RBX@@V?$Allocator@UPollEvent@Impl@Io@RbxTransport@RBX@@@Detail@RSL@@@std@@
 .?AV?$vector@UPoseStateMachineTransition@RBX@@V?$Allocator@UPoseStateMachineTransition@RBX@@@Detail@RSL@@@std@@
+.?AV?$vector@URemovedLayeredSlot@?A0x484427ac@RBX@@V?$Allocator@URemovedLayeredSlot@?A0x484427ac@RBX@@@Detail@RSL@@@std@@
 .?AV?$vector@URtDescription@UI@RBX@@V?$Allocator@URtDescription@UI@RBX@@@Detail@RSL@@@std@@
 .?AV?$vector@URtSize@UI@RBX@@V?$Allocator@URtSize@UI@RBX@@@Detail@RSL@@@std@@
 .?AV?$vector@UStateNode@?$StateMachine@UPoseStateMachineTransition@RBX@@V?$shared_ptr@VAnimationNode@RBX@@@std@@@RBX@@V?$Allocator@UStateNode@?$StateMachine@UPoseStateMachineTransition@RBX@@V?$shared_ptr@VAnimationNode@RBX@@@std@@@RBX@@@Detail@RSL@@@std@@
@@ -20332,10 +20446,12 @@
 .?AV?$vector@Unghttp3_nv@@V?$Allocator@Unghttp3_nv@@@Detail@RSL@@@std@@
 .?AV?$vector@Unghttp3_settings_entry@@V?$Allocator@Unghttp3_settings_entry@@@Detail@RSL@@@std@@
 .?AV?$vector@V?$Future@V?$shared_ptr@UFileMeshData@RBX@@@std@@@RSL@@V?$Allocator@V?$Future@V?$shared_ptr@UFileMeshData@RBX@@@std@@@RSL@@@Detail@2@@std@@
+.?AV?$vector@V?$Future@V?$vector@UMemberFmd@Resources@DataModelBinding@RBX@@V?$allocator@UMemberFmd@Resources@DataModelBinding@RBX@@@std@@@std@@@RSL@@V?$Allocator@V?$Future@V?$vector@UMemberFmd@Resources@DataModelBinding@RBX@@V?$allocator@UMemberFmd@Resources@DataModelBinding@RBX@@@std@@@std@@@RSL@@@Detail@2@@std@@
 .?AV?$vector@V?$RigidTransformT@VVector3@RBX@@@RBX@@V?$Allocator@V?$RigidTransformT@VVector3@RBX@@@RBX@@@Detail@RSL@@@std@@
 .?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$Allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Detail@RSL@@@std@@
 .?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@
 .?AV?$vector@V?$shared_ptr@VAnimationNode@RBX@@@std@@V?$Allocator@V?$shared_ptr@VAnimationNode@RBX@@@std@@@Detail@RSL@@@std@@
+.?AV?$vector@V?$shared_ptr@VAvatarEffectDescription@RBX@@@std@@V?$Allocator@V?$shared_ptr@VAvatarEffectDescription@RBX@@@std@@@Detail@RSL@@@std@@
 .?AV?$vector@V?$tuple@V?$unique_function@$$A6AXVError@Io@RbxTransport@RBX@@_K@Z$0BI@$07$00@RBX@@VError@Io@RbxTransport@2@_K@std@@V?$Allocator@V?$tuple@V?$unique_function@$$A6AXVError@Io@RbxTransport@RBX@@_K@Z$0BI@$07$00@RBX@@VError@Io@RbxTransport@2@_K@std@@@Detail@RSL@@@std@@
 .?AV?$vector@V?$unique_function@$$A6AXVError@Io@RbxTransport@RBX@@V?$ArrayView@D@4@@Z$0CA@$0BA@$0A@@RBX@@V?$Allocator@V?$unique_function@$$A6AXVError@Io@RbxTransport@RBX@@V?$ArrayView@D@4@@Z$0CA@$0BA@$0A@@RBX@@@Detail@RSL@@@std@@
 .?AV?$vector@V?$unique_function@$$A6AXXZ$0GE@$0BA@$0A@@RBX@@V?$Allocator@V?$unique_function@$$A6AXXZ$0GE@$0BA@$0A@@RBX@@@Detail@RSL@@@std@@
@@ -20346,6 +20462,7 @@
 .?AV?$vector@VStringView@RBX@@V?$Allocator@VStringView@RBX@@@Detail@RSL@@@std@@
 .?AV?$vector@VWeakEngineContextRef@RBX@@V?$Allocator@VWeakEngineContextRef@RBX@@@Detail@RSL@@@std@@
 .?AV?$vector@Vpath@filesystem@boost@@V?$allocator@Vpath@filesystem@boost@@@std@@@std@@
+.?AV?$vector@W4AccessoryType@RBX@@V?$Allocator@W4AccessoryType@RBX@@@Detail@RSL@@@std@@
 .?AV?$vector@_JV?$Allocator@_J@Detail@RSL@@@std@@
 .?AV?$vector@_KV?$Allocator@_K@Detail@RSL@@@std@@
 .?AV?$win_iocp_socket_service@Vtcp@ip@asio@@@detail@asio@@
@@ -20570,6 +20687,7 @@
 .?AVActionOverrideContextProvider@Studio@RBX@@
 .?AVActionOverrideHost@Studio@RBX@@
 .?AVActionOverrideRelay@Studio@RBX@@
+.?AVActionOverrideWidgetMonitor@Studio@RBX@@
 .?AVActionTooltipView@ScriptEditor@RBX@@
 .?AVActionsBridge@Studio@RBX@@
 .?AVActionsBridgeProxy@Studio@RBX@@
@@ -20635,7 +20753,6 @@
 .?AVAggregatingPoller@Impl@Io@RbxTransport@RBX@@
 .?AVAirController@RBX@@
 .?AVAirControllerProp@RBX@@
-.?AVAliasRequestResult@@
 .?AVAlignOrientation@Constraints@RBX@@
 .?AVAlignOrientationProp@Constraints@RBX@@
 .?AVAlignPosition@Constraints@RBX@@
@@ -20673,6 +20790,7 @@
 .?AVAnimatedImagePreloadRegistry@RBX@@
 .?AVAnimatedImageService@RBX@@
 .?AVAnimatedImageServiceProp@RBX@@
+.?AVAnimatedImageSettingListener@Studio@RBX@@
 .?AVAnimatedMechanicalJoint@RBX@@
 .?AVAnimation@RBX@@
 .?AVAnimationClip@RBX@@
@@ -21074,7 +21192,6 @@
 .?AVAudioFrameQueueProxy@Video@RBX@@
 .?AVAudioGate@Soundscape@RBX@@
 .?AVAudioGateProp@Soundscape@RBX@@
-.?AVAudioImportConfirmationDialog@@
 .?AVAudioInputProcessor@RealTimeAnimation@RBX@@
 .?AVAudioLimiter@Soundscape@RBX@@
 .?AVAudioLimiterProp@Soundscape@RBX@@
@@ -21276,7 +21393,6 @@
 .?AVBaseAsyncAction@Studio@RBX@@
 .?AVBaseAsyncRequest@ServerInterface@grpc@@
 .?AVBaseBackoffPolicy@Voice@RBX@@
-.?AVBaseBulkImportDialog@@
 .?AVBaseCallData@promise_filter_detail@grpc_core@@
 .?AVBaseChannel@webrtc@@
 .?AVBaseClient@DummyService@RbxTransport@RBX@@
@@ -21386,6 +21502,8 @@
 .?AVBlend1DAnimationNode@RBX@@
 .?AVBlend2DAnimationNode@RBX@@
 .?AVBlendshapeRegression@lm@@
+.?AVBlob@RBX@@
+.?AVBlobProp@RBX@@
 .?AVBlock4x4Encoding@Etc@@
 .?AVBlock4x4Encoding_ETC1@Etc@@
 .?AVBlock4x4Encoding_R11@Etc@@
@@ -21505,16 +21623,6 @@
 .?AVBuiltinAudioProcessingBuilder@webrtc@@
 .?AVBuiltinVideoBitrateAllocatorFactory@?A0x07cc7f2e@webrtc@@
 .?AVBuiltinVideoEncoderFactory@?A0x7d7595ec@webrtc@@
-.?AVBulkImportAnalytics@@
-.?AVBulkImportController@@
-.?AVBulkImportFooter@@
-.?AVBulkImportModel@@
-.?AVBulkImportStyledItemDelegate@@
-.?AVBulkImportTitleBar@@
-.?AVBulkImportWidget@@
-.?AVBulkImporter@@
-.?AVBulkImporterImpl@@
-.?AVBulkImporterMock@@
 .?AVBulletCDResultCompressed@ConvexDecomp@RBX@@
 .?AVBulletCellContact@Collision@RBX@@
 .?AVBulletContact@Collision@RBX@@
@@ -21537,6 +21645,7 @@
 .?AVBvhCollectionPair@Collision@RBX@@
 .?AVBvhConvex@Collision@RBX@@
 .?AVBvhTreeMidPhaseCollection@Collision@RBX@@
+.?AVByIngestionTime@v1@rm3evidencefilterapi@rm3evidencefilter@roblox@@
 .?AVBye@rtcp@webrtc@@
 .?AVByeBye@v1@rtc_signaling@roblox@@
 .?AVByteBuffIo@RVideo@RBX@@
@@ -21782,7 +21891,6 @@
 .?AVChttp2ServerListener@grpc_core@@
 .?AVChunk@dcsctp@@
 .?AVChunkMeshShape@RBX@@
-.?AVChunker@VideoImport@RBX@@
 .?AVCircleRadialNormal@RBX@@
 .?AVClass@Metadata@Reflection@RBX@@
 .?AVClassDescriptor@Reflection@RBX@@
@@ -21814,6 +21922,9 @@
 .?AVClientCallTracer@grpc_core@@
 .?AVClientCallbackUnary@grpc@@
 .?AVClientCallbackUnaryImpl@internal@grpc@@
+.?AVClientCaptureMetadata@v1@rm3evidencefilterapi@rm3evidencefilter@roblox@@
+.?AVClientCaptureMetadata_ClientUiState@v1@rm3evidencefilterapi@rm3evidencefilter@roblox@@
+.?AVClientCaptureMetadata_Rm3CadenceExperiment@v1@rm3evidencefilterapi@rm3evidencefilter@roblox@@
 .?AVClientChannel@grpc_core@@
 .?AVClientChannelControlHelper@ClientChannel@grpc_core@@
 .?AVClientChannelControlHelper@ClientChannelFilter@grpc_core@@
@@ -22149,7 +22260,6 @@
 .?AVComponentId@?A0x9694bdd5@webrtc@@
 .?AVComponentParityValidator@Studio@RBX@@
 .?AVComponentSignalSource@Studio@RBX@@
-.?AVComponentStorage@detail@Component@RBX@@
 .?AVCompositeMediaEngine@webrtc@@
 .?AVCompositeValueCurve@RBX@@
 .?AVCompositeValueCurveProp@RBX@@
@@ -22359,10 +22469,6 @@
 .?AVCopyUniqueIdAction@Studio@RBX@@
 .?AVCordzHandle@cord_internal@lts_20240116@absl@@
 .?AVCordzInfo@cord_internal@lts_20240116@absl@@
-.?AVCoreComponentManager@Component@RBX@@
-.?AVCoreComponentManagerImpl@detail@Component@RBX@@
-.?AVCoreComponentManagerProxy@Component@RBX@@
-.?AVCoreComponentRegistration@Component@RBX@@
 .?AVCoreGlobalAdvancedSettings@RBX@@
 .?AVCoreGlobalBasicSettings@RBX@@
 .?AVCoreGuiConfiguration@RBX@@
@@ -22595,7 +22701,6 @@
 .?AVDataModelActionStateController@Studio@RBX@@
 .?AVDataModelAutoSaver@Studio@RBX@@
 .?AVDataModelAutoSaverTelemetry@Studio@RBX@@
-.?AVDataModelCreationKey@Studio@RBX@@
 .?AVDataModelCreator@Studio@RBX@@
 .?AVDataModelCreatorLoaderBase@Studio@RBX@@
 .?AVDataModelDiff@RBX@@
@@ -22743,6 +22848,7 @@
 .?AVDefaultAppBadgingProtocol@RBX@@
 .?AVDefaultCameraMode@?A0xcf89ba01@RBX@@
 .?AVDefaultConfigSelector@grpc_core@@
+.?AVDefaultFileAccessSelectionSource@Studio@RBX@@
 .?AVDefaultFileLogSink@?A0x4213a2f5@@
 .?AVDefaultGlobalCallbacks@?A0x3f5ed80a@grpc@@
 .?AVDefaultGlobalClientCallbacks@grpc@@
@@ -22854,7 +22960,6 @@
 .?AVDetachedSoundPlayback@Soundscape@RBX@@
 .?AVDetachedThreadTaskFactory@AssetProvider@RBX@@
 .?AVDetailTextView@ScriptEditor@RBX@@
-.?AVDetailsTableComponent@@
 .?AVDeveloperTagStatsItem@Stats@RBX@@
 .?AVDevice@Graphics@RBX@@
 .?AVDeviceBattery@v1@rtc_signaling@roblox@@
@@ -22887,6 +22992,9 @@
 .?AVDeviceLatencies_Latency@v1@rtc_signaling@roblox@@
 .?AVDeviceListModel@@
 .?AVDeviceMemory@v1@rtc_signaling@roblox@@
+.?AVDeviceOs@v1@rm3evidencefilterapi@rm3evidencefilter@roblox@@
+.?AVDeviceSimulatorToolbarHiddenContext@Studio@RBX@@
+.?AVDeviceSimulatorToolbarShowAction@Studio@RBX@@
 .?AVDeviceState@v1@rtc_signaling@roblox@@
 .?AVDeviceVR@Graphics@RBX@@
 .?AVDeviceVulkan@Graphics@RBX@@
@@ -22924,6 +23032,7 @@
 .?AVDisableToopTip@@
 .?AVDisallowedJointSurfacePair@RBX@@
 .?AVDiscEmitterShapeSampler@Graphics@RBX@@
+.?AVDiscardingDataCollector@?A0x9789c8d1@Profiler@RBX@@
 .?AVDisconnect@cloudclient@rbx@@
 .?AVDiskFile@FMOD@@
 .?AVDispatchView@Graphics@RBX@@
@@ -23372,6 +23481,7 @@
 .?AVFbxParser@AssetImport@RBX@@
 .?AVFeature@RBX@@
 .?AVFeatureActivityTracker@Studio@RBX@@
+.?AVFeatureMatchValueNode@RBX@@
 .?AVFeatureMatchingService@RBX@@
 .?AVFeatureMatchingServiceProp@RBX@@
 .?AVFeatureMatchingSession@RBX@@
@@ -23441,8 +23551,11 @@
 .?AVFileOpenAutoSavesAction@Studio@RBX@@
 .?AVFileOpenEventHandler@Studio@RBX@@
 .?AVFileOptions@protobuf@google@@
+.?AVFilePickerBlobResource@RBX@@
 .?AVFilePickerCore@RBX@@
 .?AVFilePickerPlatformCallReceiver@RBX@@
+.?AVFilePickerService@RBX@@
+.?AVFilePickerServiceProp@RBX@@
 .?AVFileProp@RBX@@
 .?AVFileReader@crashpad@@
 .?AVFileReaderInterface@crashpad@@
@@ -23638,6 +23751,7 @@
 .?AVFrostOptions@event@@
 .?AVFrustumIterator@StreamingSpatialQuery@RBX@@
 .?AVFrustumShape@StreamingSpatialQuery@RBX@@
+.?AVFsException@VirtualFs@RBX@@
 .?AVFuchsiaZoneInfoSource@?A0xeb913287@cctz@time_internal@lts_20240116@absl@@
 .?AVFull6DOFCursorProjector@RBX@@
 .?AVFullScreenAction@Studio@RBX@@
@@ -23890,6 +24004,7 @@
 .?AVGetSet@?$TypedPropertyDescriptor@W4ButtonStyle@Enums@RBX@@@Reflection@RBX@@
 .?AVGetSet@?$TypedPropertyDescriptor@W4CameraMode@CameraModeEnum@Enums@RBX@@@Reflection@RBX@@
 .?AVGetSet@?$TypedPropertyDescriptor@W4CameraNavigationModel@Enums@RBX@@@Reflection@RBX@@
+.?AVGetSet@?$TypedPropertyDescriptor@W4CameraRotateCursorLock@Enums@RBX@@@Reflection@RBX@@
 .?AVGetSet@?$TypedPropertyDescriptor@W4CameraSpeedAdjustBinding@Enums@RBX@@@Reflection@RBX@@
 .?AVGetSet@?$TypedPropertyDescriptor@W4CameraType@CameraTypeEnum@Enums@RBX@@@Reflection@RBX@@
 .?AVGetSet@?$TypedPropertyDescriptor@W4Capabilities@Security@RBX@@@Reflection@RBX@@
@@ -23992,6 +24107,7 @@
 .?AVGetSet@?$TypedPropertyDescriptor@W4ItemLineAlignment@Enums@RBX@@@Reflection@RBX@@
 .?AVGetSet@?$TypedPropertyDescriptor@W4KeyCode@RBX@@@Reflection@RBX@@
 .?AVGetSet@?$TypedPropertyDescriptor@W4LeftRight@LeftRightEnum@Enums@RBX@@@Reflection@RBX@@
+.?AVGetSet@?$TypedPropertyDescriptor@W4LightAttenuationMode@RBX@@@Reflection@RBX@@
 .?AVGetSet@?$TypedPropertyDescriptor@W4LightingStyle@RBX@@@Reflection@RBX@@
 .?AVGetSet@?$TypedPropertyDescriptor@W4LightingTechnology@RBX@@@Reflection@RBX@@
 .?AVGetSet@?$TypedPropertyDescriptor@W4LineJoinMode@Text@RBX@@@Reflection@RBX@@
@@ -24582,6 +24698,7 @@
 .?AVIBenchmarkCaptureComponent@Profiling@RBX@@
 .?AVIBenchmarkCaptureManager@Profiling@RBX@@
 .?AVIBetaFeaturesModel@@
+.?AVIBlobResource@RBX@@
 .?AVIBorderBuilder@UI@RBX@@
 .?AVIBroadPhaseTelemetrySink@Collision@RBX@@
 .?AVIBufferedInputFormat@Video@RBX@@
@@ -24627,9 +24744,6 @@
 .?AVICommandMetadata@Studio@RBX@@
 .?AVICompletionQueue@Voice@RBX@@
 .?AVIComponent@Component@RBX@@
-.?AVIComponentCreationKey@Component@RBX@@
-.?AVIComponentFetcher@detail@Component@RBX@@
-.?AVIComponentRegistration@Component@RBX@@
 .?AVICompressor@Network@RBX@@
 .?AVICompressorImpl@Soundscape@RBX@@
 .?AVIComputeExtentsPartFilter@RBX@@
@@ -24898,6 +25012,7 @@
 .?AVIPluginConnectionRouter@Studio@RBX@@
 .?AVIPluginDebuggerHost@RBX@@
 .?AVIPluginElementHost@RBX@@
+.?AVIPluginFileAccess@VirtualFs@RBX@@
 .?AVIPluginInstancesSource@RBX@@
 .?AVIPluginLegacyApi@RBX@@
 .?AVIPluginLegacyApiProvider@Studio@RBX@@
@@ -24975,6 +25090,7 @@
 .?AVIRequestOrchestratorControl@RequestOrchestration@RBX@@
 .?AVIResourceOptimizationTimer@RBX@@
 .?AVIRestartController@@
+.?AVIRestartControllerBridge@Studio@RBX@@
 .?AVIReverbImpl@Soundscape@RBX@@
 .?AVIRibbonConfigurationProvider@Studio@RBX@@
 .?AVIRibbonFileSystemHelper@Studio@RBX@@
@@ -24991,6 +25107,7 @@
 .?AVIRobloxTelemetryStat@Telemetry@RBX@@
 .?AVIRoomServiceClient@Voice@RBX@@
 .?AVIRoomServiceClientManager@Voice@RBX@@
+.?AVIRtcBackendClient@Calling@Voice@RBX@@
 .?AVIRunnableChangedPluginsSource@Studio@RBX@@
 .?AVIRunnablePluginsSource@Studio@RBX@@
 .?AVISRProfilingStatsProvider@Network@RBX@@
@@ -25024,6 +25141,7 @@
 .?AVISessionTracker@@
 .?AVISetter@?$SyncCallbackDesc@$$A6A?AV?$shared_ptr@$$CBV?$vector@V?$shared_ptr@VInstance@RBX@@@std@@V?$allocator@V?$shared_ptr@VInstance@RBX@@@std@@@2@@std@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@HV12@@Z@Reflection@RBX@@
 .?AVISetter@?$SyncCallbackDesc@$$A6AXV?$shared_ptr@$$CBVValueTable@Reflection@RBX@@@std@@@Z@Reflection@RBX@@
+.?AVISetter@?$SyncCallbackDesc@$$A6AXV?$shared_ptr@VPlayer@RBX@@@std@@W4ShowAdResult@Ads@RBX@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@2@Z@Reflection@RBX@@
 .?AVISetter@?$SyncCallbackDesc@$$A6AXXZ@Reflection@RBX@@
 .?AVISettingsBridge@Studio@RBX@@
 .?AVISettingsStore@Studio@RBX@@
@@ -25049,6 +25167,7 @@
 .?AVISoundGroupImpl@Soundscape@RBX@@
 .?AVISoundImpl@Soundscape@RBX@@
 .?AVISourceOverrideProvider@RBX@@
+.?AVISpanningRootData@RBX@@
 .?AVISpatialEmitter@Soundscape@RBX@@
 .?AVISpatialListener@Soundscape@RBX@@
 .?AVISpotlightManager@Studio@RBX@@
@@ -25100,6 +25219,7 @@
 .?AVITeamCreateSaver@Studio@RBX@@
 .?AVITeamTestManager@Studio@RBX@@
 .?AVITeamTestModeChecker@Studio@RBX@@
+.?AVITeamTestSessionBridge@Studio@RBX@@
 .?AVITeamTestWorkflowManager@Studio@RBX@@
 .?AVITeardownHooks@RBX@@
 .?AVITerrainDetail@RBX@@
@@ -25121,6 +25241,7 @@
 .?AVITrackerPostProcessor@lm@@
 .?AVITransceiver@Webrtc@RVideo@RBX@@
 .?AVITransportOnlyWebrtc@Webrtc@RVideo@RBX@@
+.?AVITransportSessionBackend@Impl@RbxTransport@RBX@@
 .?AVITreeDiff@RBX@@
 .?AVITremoloImpl@Soundscape@RBX@@
 .?AVITypesetter@RBX@@
@@ -25141,6 +25262,7 @@
 .?AVIValueGetSet@FLog@@
 .?AVIVariantDiff@Compare@Reflection@RBX@@
 .?AVIVersionControlService@RBX@@
+.?AVIVfsDriver@VirtualFs@RBX@@
 .?AVIVideoCapture@RBX@@
 .?AVIVideoCaptureEngine@RVideo@RBX@@
 .?AVIVideoCaptureInfo@RBX@@
@@ -25241,7 +25363,6 @@
 .?AVImmutableSamplerStrategy@Video@RBX@@
 .?AVImplementChannelFilterTag@grpc_core@@
 .?AVImplicitCreateSessionDescriptionObserver@SdpOfferAnswerHandler@webrtc@@
-.?AVImportCostVerificationDialog@@
 .?AVImportException@AssetImport@RBX@@
 .?AVImportSession@RBX@@
 .?AVImportSessionProp@RBX@@
@@ -25672,13 +25793,13 @@
 .?AVLoaderLogRecorder@@
 .?AVLoadingAnimation@RbxQt@@
 .?AVLoadingAnimationController@Studio@RBX@@
-.?AVLoadingScreenComponent@@
 .?AVLocalAudioSinkAdapter@webrtc@@
 .?AVLocalAudioSource@webrtc@@
 .?AVLocalDebuggerConnection@Studio@RBX@@
 .?AVLocalDebuggerConnectionProp@Studio@RBX@@
 .?AVLocalFileSaveManager@Studio@RBX@@
 .?AVLocalFileSaveManagerProxy@Studio@RBX@@
+.?AVLocalFileSystemDriver@VirtualFs@RBX@@
 .?AVLocalIxpOverrides@Ixp@RBX@@
 .?AVLocalIxpOverridesImpl@Ixp@RBX@@
 .?AVLocalIxpOverridesStub@Ixp@RBX@@
@@ -25974,9 +26095,6 @@
 .?AVMeshImportData@AssetImport@RBX@@
 .?AVMeshImportDataProp@AssetImport@RBX@@
 .?AVMeshImportException@@
-.?AVMeshImportOptionsDialog@@
-.?AVMeshImporter@@
-.?AVMeshImporterImpl@@
 .?AVMeshJob@Graphics@RBX@@
 .?AVMeshManager2@Graphics@RBX@@
 .?AVMeshManager@Graphics@RBX@@
@@ -25988,12 +26106,6 @@
 .?AVMeshSegmentationJob@RBX@@
 .?AVMeshSequentialDecoder@draco@@
 .?AVMeshSequentialEncoder@draco@@
-.?AVMeshSplitter@@
-.?AVMeshSplitterAnalytics@@
-.?AVMeshSplitterDialog@@
-.?AVMeshSplitterHelper@@
-.?AVMeshSplitterImpl@@
-.?AVMeshSplitterModel@@
 .?AVMeshStreamingRestartObserver@Studio@RBX@@
 .?AVMeshUpdater@DataModelBinding@RBX@@
 .?AVMeshVertexTargetForm@solver@WrapDeformerInternal@RBX@@
@@ -26007,7 +26119,6 @@
 .?AVMessageBusWrapperForTelemetry@AppBridge@RBX@@
 .?AVMessageDigest@webrtc@@
 .?AVMessageFactory@protobuf@google@@
-.?AVMessageLayoutComponent@@
 .?AVMessageLite@protobuf@google@@
 .?AVMessageOptions@protobuf@google@@
 .?AVMessageProp@RBX@@
@@ -26602,7 +26713,6 @@
 .?AVPeerStatsItem@Network@RBX@@
 .?AVPerTaskFiberFactory@AssetProvider@RBX@@
 .?AVPerfMonitor@Studio@RBX@@
-.?AVPerformUpload@Safety@RBX@@
 .?AVPerformanceControlService@RBX@@
 .?AVPerformanceControlServiceProp@RBX@@
 .?AVPerformanceSimulator@Studio@RBX@@
@@ -26714,7 +26824,6 @@
 .?AVPlaceSessionContext@Studio@RBX@@
 .?AVPlaceSessionContextBridge@Studio@RBX@@
 .?AVPlaceSessionContextBridgeProxy@Studio@RBX@@
-.?AVPlaceSessionCreationKey@Studio@RBX@@
 .?AVPlaceSessionDataModelListener@Studio@RBX@@
 .?AVPlaceSessionMainView@Studio@RBX@@
 .?AVPlaceSessionMainViewManager@Studio@RBX@@
@@ -26796,6 +26905,7 @@
 .?AVPlayerEmulatorServiceProp@RBX@@
 .?AVPlayerGui@RBX@@
 .?AVPlayerGuiProp@RBX@@
+.?AVPlayerHostedServerReplicator@Network@RBX@@
 .?AVPlayerHydrationService@RBX@@
 .?AVPlayerHydrationServiceProp@RBX@@
 .?AVPlayerListConfiguration@RBX@@
@@ -26828,6 +26938,7 @@
 .?AVPluginCalloutRelay@@
 .?AVPluginCapabilities@RBX@@
 .?AVPluginCapabilitiesProp@RBX@@
+.?AVPluginChangeWatcher@@
 .?AVPluginCommandsHost@@
 .?AVPluginComponentManager@Studio@RBX@@
 .?AVPluginConnection@Studio@RBX@@
@@ -26845,6 +26956,7 @@
 .?AVPluginDragEventProp@RBX@@
 .?AVPluginDragSource@@
 .?AVPluginElementHost@@
+.?AVPluginFileAccess@VirtualFs@RBX@@
 .?AVPluginFileController@@
 .?AVPluginFinishFullLoadingListener@Studio@RBX@@
 .?AVPluginGui@RBX@@
@@ -27254,8 +27366,6 @@
 .?AVQuicConnectionListener@Protocol@RbxTransport@RBX@@
 .?AVQuicCryptoClientContext@Protocol@RbxTransport@RBX@@
 .?AVQuicCryptoRpkClientContext@Protocol@RbxTransport@RBX@@
-.?AVQuicCryptoRpkServerContext@Protocol@RbxTransport@RBX@@
-.?AVQuicCryptoServerContext@Protocol@RbxTransport@RBX@@
 .?AVQuicMultiServerCryptoContext@Protocol@RbxTransport@RBX@@
 .?AVQuicMultiplexedConnection@Impl@RbxTransport@RBX@@
 .?AVQuicPacketPrefixProcessor@Protocol@RbxTransport@RBX@@
@@ -27431,8 +27541,6 @@
 .?AVRecorderSignal@lm@@
 .?AVRecordingDeviceManager@Voice@RBX@@
 .?AVRecordingDevicePermissions@Voice@RBX@@
-.?AVRecordingStarted@Safety@RBX@@
-.?AVRecordingStopped@Safety@RBX@@
 .?AVRecoveredPacketReceiver@webrtc@@
 .?AVRect2D@v1@engine@contentsafety@roblox@@
 .?AVRect2dModifierBorderBuilder@Rect2dModifier@RBX@@
@@ -27553,8 +27661,6 @@
 .?AVReportBlockDataObserver@webrtc@@
 .?AVReportIllegalContentAction@Studio@RBX@@
 .?AVReportIllegalContentContext@?A0xc69ffeae@Studio@RBX@@
-.?AVReportRecordingState@Safety@RBX@@
-.?AVReportSubmissionInProgress@Safety@RBX@@
 .?AVReportableAdInstance@Ads@RBX@@
 .?AVReporter@GetBundleDetails@AssetServiceOrchestration@RBX@@
 .?AVReporter@GetItemDetails@RequestOrchestration@AvatarEditor@RBX@@
@@ -27633,6 +27739,8 @@
 .?AVResourceWebFactory@@
 .?AVResponse@v1@experiencesignalsingest@2roblox@@
 .?AVRestartController@@
+.?AVRestartControllerBridge@Studio@RBX@@
+.?AVRestartControllerBridgeProxy@Studio@RBX@@
 .?AVRestartControllerPlaceListener@Studio@RBX@@
 .?AVRestartOfAnAssociationWithNewAddressesCause@dcsctp@@
 .?AVResultEmitter@@
@@ -27740,7 +27848,6 @@
 .?AVRobustRetargeter@Retargeting@RBX@@
 .?AVRobustRetargeterR6@Retargeting@RBX@@
 .?AVRobustThroughputEstimator@webrtc@@
-.?AVRobuxAmountLabelComponent@@
 .?AVRocket@RBX@@
 .?AVRocketPropulsionProp@RBX@@
 .?AVRodConstraint@Constraints@RBX@@
@@ -27812,6 +27919,7 @@
 .?AVRtcAppConnection@Impl@RbxTransport@RBX@@
 .?AVRtcAppListener@Impl@RbxTransport@RBX@@
 .?AVRtcAppListenerDeprecated@Impl@RbxTransport@RBX@@
+.?AVRtcBackendClient@Calling@Voice@RBX@@
 .?AVRtcEvent@webrtc@@
 .?AVRtcEventAlrState@webrtc@@
 .?AVRtcEventAudioNetworkAdaptation@webrtc@@
@@ -27850,6 +27958,7 @@
 .?AVRtcIoServerConnection@Impl@RbxTransport@RBX@@
 .?AVRtcIoServerCryptoProvider@Impl@RbxTransport@RBX@@
 .?AVRtcIoServerPrefixProcessor@Impl@RbxTransport@RBX@@
+.?AVRtcIoTransportSession@Impl@RbxTransport@RBX@@
 .?AVRtcIoWtClientConnection@Impl@RbxTransport@RBX@@
 .?AVRtcpCnameCallback@webrtc@@
 .?AVRtcpFeedbackBuffer@RtpVideoStreamReceiver2@webrtc@@
@@ -27967,6 +28076,7 @@
 .?AVSSLIdentity@webrtc@@
 .?AVSSLStreamAdapter@webrtc@@
 .?AVSackChunk@dcsctp@@
+.?AVSafeAreaInsets@cloudclient@rbx@@
 .?AVSafeIntException@@
 .?AVSafeZoneOffsetsInputWidget@@
 .?AVSafetyDialogController@Studio@RBX@@
@@ -28032,6 +28142,8 @@
 .?AVSceneAnalysisService@RBX@@
 .?AVSceneAnalysisServiceProp@RBX@@
 .?AVSceneQueries@Pathfinder@Soundscape@RBX@@
+.?AVSceneSnapshot@RBX@@
+.?AVSceneSnapshotProp@RBX@@
 .?AVSceneUpdater@Graphics@RBX@@
 .?AVScopeCheckCleanupJob@RBX@@
 .?AVScopeLogs@v1@logs@proto@opentelemetry@@
@@ -28053,6 +28165,13 @@
 .?AVScreenshotCaptureProp@RBX@@
 .?AVScreenshotHud@RBX@@
 .?AVScreenshotHudProp@RBX@@
+.?AVScreenshotImage@v1@rm3evidencefilterapi@rm3evidencefilter@roblox@@
+.?AVScreenshotMetadata@v1@rm3evidencefilterapi@rm3evidencefilter@roblox@@
+.?AVScreenshotMetadata_ClientMetadata@v1@rm3evidencefilterapi@rm3evidencefilter@roblox@@
+.?AVScreenshotMetadata_InferenceResult@v1@rm3evidencefilterapi@rm3evidencefilter@roblox@@
+.?AVScreenshotMetadata_InferenceResult_DecisionResult@v1@rm3evidencefilterapi@rm3evidencefilter@roblox@@
+.?AVScreenshotMetadata_InferenceResult_DecisionResult_ScoresEntry_DoNotUse@v1@rm3evidencefilterapi@rm3evidencefilter@roblox@@
+.?AVScreenshotSummary@v1@rm3evidencefilterapi@rm3evidencefilter@roblox@@
 .?AVScript@RBX@@
 .?AVScriptBreakpointsComponent@Studio@RBX@@
 .?AVScriptBuilder@RBX@@
@@ -28272,7 +28391,6 @@
 .?AVSeparateSelectionAction@Studio@RBX@@
 .?AVSeparateTask@RBX@@
 .?AVSeparatorWidget@@
-.?AVSeqChunker@VideoImport@RBX@@
 .?AVSequenceAnimationNode@RBX@@
 .?AVSequentialAttributeDecoder@draco@@
 .?AVSequentialAttributeDecodersController@draco@@
@@ -28379,6 +28497,8 @@
 .?AVSessionSetLocalObserver@?A0x2e96d8eb@Voice@RBX@@
 .?AVSessionSetSdpObserver@?A0x2e96d8eb@Voice@RBX@@
 .?AVSessionStatsCallback@?A0x2e96d8eb@Voice@RBX@@
+.?AVSessionStorage@RBX@@
+.?AVSessionStorageProp@RBX@@
 .?AVSessionSubscriber@RBX@@
 .?AVSessionTracker@@
 .?AVSessionTrackerPlaceListener@Studio@RBX@@
@@ -28398,6 +28518,7 @@
 .?AVSetRemoteDescriptionObserverInterface@webrtc@@
 .?AVSetRemoteSdpObserver@Voice@RBX@@
 .?AVSetResolution@cloudclient@rbx@@
+.?AVSetScreenOrientation@cloudclient@rbx@@
 .?AVSetSelfState@v1@rtc_signaling@roblox@@
 .?AVSetSessionDescriptionObserver@webrtc@@
 .?AVSetSessionDescriptionObserverAdapter@SdpOfferAnswerHandler@webrtc@@
@@ -28513,6 +28634,7 @@
 .?AVSignalRManager@Studio@RBX@@
 .?AVSignaler@webrtc@@
 .?AVSignalingDataChannelObserver@Calling@Voice@RBX@@
+.?AVSignalingInitializeState@Voice@RBX@@
 .?AVSignalingOperation@Voice@RBX@@
 .?AVSignalingPumpState@Voice@RBX@@
 .?AVSignalingReader@RVideo@RBX@@
@@ -28597,6 +28719,7 @@
 .?AVSlimLoadBalancerImpl@Graphics@RBX@@
 .?AVSlimLoader2@Graphics@RBX@@
 .?AVSlimLoader@Graphics@RBX@@
+.?AVSlimReferencePartNormalizer@RBX@@
 .?AVSlimRenderEntity@Graphics@RBX@@
 .?AVSlimReplicationService@RBX@@
 .?AVSlimReplicationServiceProp@RBX@@
@@ -28683,6 +28806,7 @@
 .?AVSpanningNode_DEPRECATED@RBX@@
 .?AVSpanningTree@RBX@@
 .?AVSpanningTreeConnectivity@RBX@@
+.?AVSpanningTreeEdge@RBX@@
 .?AVSpanningTreeNew@RBX@@
 .?AVSpanningTreeNode@RBX@@
 .?AVSparkles@RBX@@
@@ -29298,6 +29422,8 @@
 .?AVTeamTestDisconnectManager@Studio@RBX@@
 .?AVTeamTestManager@Studio@RBX@@
 .?AVTeamTestModeChecker@Studio@RBX@@
+.?AVTeamTestSessionBridge@Studio@RBX@@
+.?AVTeamTestSessionBridgeProxy@Studio@RBX@@
 .?AVTeamTestStartAction@Studio@RBX@@
 .?AVTeamTestStarter@Studio@RBX@@
 .?AVTeamTestTraceForwarder@Studio@RBX@@
@@ -29623,6 +29749,7 @@
 .?AVTransportFeedbackDemuxer@webrtc@@
 .?AVTransportForMediaChannels@MediaChannelUtil@webrtc@@
 .?AVTransportSequenceNumberFeedbackGenenerator@webrtc@@
+.?AVTransportSession@RbxTransport@RBX@@
 .?AVTrapezoidBorder@UI@RBX@@
 .?AVTreeDiff@Compare@Reflection@RBX@@
 .?AVTreeDiffWindow@DmDiffUI@RBX@@
@@ -29639,6 +29766,7 @@
 .?AVTriangleMeshPartProp@RBX@@
 .?AVTrickleIcePublishingRequest@grpc@@
 .?AVTrickleIceSubscriptionRequest@grpc@@
+.?AVTriggerSourceTracker@detail@Studio@RBX@@
 .?AVTrussPartProp@RBX@@
 .?AVTsInputFormat@Video@RBX@@
 .?AVTurbulentBroadbandDsp@Soundscape@RBX@@
@@ -29824,34 +29952,17 @@
 .?AVUpdateSourceResponse@v1@experiencesignalsingest@2roblox@@
 .?AVUpdateUIManager@@
 .?AVUpdateUIManagerPlaceListener@Studio@RBX@@
-.?AVUploadAliasRequest@@
 .?AVUploadAnimationRequest@AssetImport@RBX@@
-.?AVUploadAudioRequest@@
-.?AVUploadImageRequest@@
 .?AVUploadImageRequest@AssetImport@RBX@@
 .?AVUploadJob@Graphics@RBX@@
-.?AVUploadMeshComponentRequest@@
-.?AVUploadMeshComponentRequestResult@@
 .?AVUploadMeshDataRequest@AssetImport@RBX@@
-.?AVUploadMeshPartRequest@@
 .?AVUploadMeshPartRequest@AssetImport@RBX@@
-.?AVUploadMeshRequest@@
 .?AVUploadModelRequest@AssetImport@RBX@@
-.?AVUploadRenderMeshRequest@@
 .?AVUploadReport@CrashReportDatabase@crashpad@@
-.?AVUploadRequest@@
-.?AVUploadRequestResult@@
+.?AVUploadScreenshotRequest@v1@rm3evidencefilterapi@rm3evidencefilter@roblox@@
+.?AVUploadScreenshotRequest_ClientCaptureAuth@v1@rm3evidencefilterapi@rm3evidencefilter@roblox@@
+.?AVUploadScreenshotResponse@v1@rm3evidencefilterapi@rm3evidencefilter@roblox@@
 .?AVUploadTexturePackRequest@AssetImport@RBX@@
-.?AVUploadTextureRequest@@
-.?AVUploadVideoAbortRequest@@
-.?AVUploadVideoCompleteRequest@@
-.?AVUploadVideoComponentRequest@@
-.?AVUploadVideoComponentRequestResult@@
-.?AVUploadVideoPartCompleteRequest@@
-.?AVUploadVideoPartRequest@@
-.?AVUploadVideoPermissionRequest@@
-.?AVUploadVideoRequest@@
-.?AVUploadVideoStatusRequest@@
 .?AVUpmixConverter@webrtc@@
 .?AVUrlExternalAccountCredentials@grpc_core@@
 .?AVUsageTrackerPlaceSessionListener@Studio@Analytics@RBX@@
@@ -29975,7 +30086,6 @@
 .?AVVerifier@DigitalSignature@RBX@@
 .?AVVerifierSodium@DigitalSignature@RBX@@
 .?AVVerifyAgeAction@Studio@RBX@@
-.?AVVerifyAudioCostRequest@@
 .?AVVersionControlService@RBX@@
 .?AVVersionControlServiceProp@RBX@@
 .?AVVersionHistoryController@@
@@ -30024,7 +30134,6 @@
 .?AVVideoDecoder@webrtc@@
 .?AVVideoDecoderFactory@webrtc@@
 .?AVVideoDecoderOwner@Video@RBX@@
-.?AVVideoDetailsTableComponent@@
 .?AVVideoDeviceInput@RVideo@RBX@@
 .?AVVideoDeviceInputProp@RVideo@RBX@@
 .?AVVideoDisplay@RBX@@
@@ -30043,7 +30152,6 @@
 .?AVVideoFrameQueueProxy@Video@RBX@@
 .?AVVideoFrameSampler@webrtc@@
 .?AVVideoIdPropertyItem@PropertiesWidget@@
-.?AVVideoImportConfirmationDialog@@
 .?AVVideoInputProcessor@RealTimeAnimation@RBX@@
 .?AVVideoJitterTimingInterface@webrtc@@
 .?AVVideoJob@RBX@@
@@ -30118,6 +30226,7 @@
 .?AVViolativeDMInstances_BoundingBox@v1@engine@contentsafety@roblox@@
 .?AVViolativeDMInstances_ViolativeDetection@v1@engine@contentsafety@roblox@@
 .?AVVirtualBlockParser@webm@@
+.?AVVirtualFileSystemComponent@Studio@RBX@@
 .?AVVirtualHardwareDevice@RBX@@
 .?AVVirtualHostListIterator@XdsRouting@grpc_core@@
 .?AVVirtualInput@RBX@@
@@ -30183,7 +30292,6 @@
 .?AVWaitForRejoinedVoiceState@Voice@RBX@@
 .?AVWaitForStreamSwitchAckState@Voice@RBX@@
 .?AVWaitForTurnAuthUpdateState@Voice@RBX@@
-.?AVWaitForVideoFinalize@Safety@RBX@@
 .?AVWaitForWebrtcShutDownSignalState@Voice@RBX@@
 .?AVWaitGetRoomServerResponseState@Voice@RBX@@
 .?AVWaitHandshakeResponseState@Voice@RBX@@
@@ -30201,8 +30309,6 @@
 .?AVWaitSubscriptionCloseResponseState@Voice@RBX@@
 .?AVWaitSwitchResponseState@Voice@RBX@@
 .?AVWaitTurnAuthResponseState@Voice@RBX@@
-.?AVWaitingForRecorderStatus@Safety@RBX@@
-.?AVWaitingForReportSubmit@Safety@RBX@@
 .?AVWaitingHybridScriptsJob@ScriptContextFacets@RBX@@
 .?AVWakeable@grpc_core@@
 .?AVWarningMessagePropertyItem@PropertiesWidget@@
@@ -30830,7 +30936,6 @@
 ??0?$codecvt@_WDU_Mbstatet@@@std@@QEAA@_K@Z
 ??0?$num_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@QEAA@_K@Z
 ??0Connection@QMetaObject@@QEAA@$$QEAV01@@Z
-??0Connection@QMetaObject@@QEAA@AEBV01@@Z
 ??0Connection@QMetaObject@@QEAA@XZ
 ??0DockDocumentPanel@Qtitan@@QEAA@PEAVDockPanelManager@1@@Z
 ??0DockPanelManager@Qtitan@@QEAA@PEAVQMainWindow@@@Z
@@ -30850,8 +30955,6 @@
 ??0FbxString@fbxsdk@@QEAA@PEBD@Z
 ??0FbxString@fbxsdk@@QEAA@XZ
 ??0FbxStringList@fbxsdk@@QEAA@XZ
-??0FbxSystemUnit@fbxsdk@@QEAA@NN@Z
-??0FbxSystemUnit@fbxsdk@@QEAA@XZ
 ??0FbxVector2@fbxsdk@@QEAA@XZ
 ??0FbxVector4@fbxsdk@@QEAA@AEBV01@@Z
 ??0FbxVector4@fbxsdk@@QEAA@AEBV?$FbxVectorTemplate3@N@1@@Z
@@ -31143,7 +31246,6 @@
 ??0QTableWidget@@QEAA@PEAVQWidget@@@Z
 ??0QTableWidgetItem@@QEAA@AEBVQString@@H@Z
 ??0QTableWidgetItem@@QEAA@H@Z
-??0QTemporaryDir@@QEAA@AEBVQString@@@Z
 ??0QTemporaryFile@@QEAA@XZ
 ??0QTextBlock@@QEAA@AEBV0@@Z
 ??0QTextBrowser@@QEAA@PEAVQWidget@@@Z
@@ -31178,7 +31280,6 @@
 ??0QUrl@@QEAA@$$QEAV0@@Z
 ??0QUrl@@QEAA@AEBV0@@Z
 ??0QUrl@@QEAA@AEBVQString@@W4ParsingMode@0@@Z
-??0QUrl@@QEAA@XZ
 ??0QUrlQuery@@QEAA@AEBVQUrl@@@Z
 ??0QUrlQuery@@QEAA@XZ
 ??0QVBoxLayout@@QEAA@PEAVQWidget@@@Z
@@ -31238,7 +31339,6 @@
 ??1FbxStatus@fbxsdk@@QEAA@XZ
 ??1FbxString@fbxsdk@@QEAA@XZ
 ??1FbxStringList@fbxsdk@@UEAA@XZ
-??1FbxSystemUnit@fbxsdk@@QEAA@XZ
 ??1FbxVector2@fbxsdk@@QEAA@XZ
 ??1FbxVector4@fbxsdk@@QEAA@XZ
 ??1IStyleThemeHelper@Qtitan@@UEAA@XZ
@@ -31395,7 +31495,6 @@
 ??1QTableView@@UEAA@XZ
 ??1QTableWidget@@UEAA@XZ
 ??1QTableWidgetItem@@UEAA@XZ
-??1QTemporaryDir@@QEAA@XZ
 ??1QTemporaryFile@@UEAA@XZ
 ??1QTextBlockFormat@@QEAA@XZ
 ??1QTextBrowser@@UEAA@XZ
@@ -31441,7 +31540,6 @@
 ??4FbxMatrix@fbxsdk@@QEAAAEAV01@AEBV01@@Z
 ??4FbxProperty@fbxsdk@@QEAAAEAV01@AEBV01@@Z
 ??4FbxString@fbxsdk@@QEAAAEBV01@AEBV01@@Z
-??4FbxSystemUnit@fbxsdk@@QEAAAEAV01@AEBV01@@Z
 ??4FbxVector4@fbxsdk@@QEAAAEAV01@AEBV01@@Z
 ??4QByteArray@@QEAAAEAV0@$$QEAV0@@Z
 ??4QByteArray@@QEAAAEAV0@AEBV0@@Z
@@ -31556,7 +31654,6 @@
 ??AQString@@QEAA?AVQCharRef@@H@Z
 ??AQString@@QEBA?BVQChar@@H@Z
 ??BFbxString@fbxsdk@@QEBAPEBDXZ
-??BFbxVector4@fbxsdk@@QEAAPEANXZ
 ??BQBrush@@QEBA?AVQVariant@@XZ
 ??BQByteArray@@QEBAPEBDXZ
 ??BQCharRef@@QEBA?AVQChar@@XZ
@@ -31602,6 +31699,7 @@
 ?AVscoped_connection@signals@rbx@@PEBDAEAV?$signal@$$A6AXH@Z@8@V
 ?AVscoped_connection@signals@rbx@@PEBDAEAV?$signal@$$A6AXHW4DebuggerPauseReason@Studio@RBX@@@Z@8@V
 ?AVscoped_connection@signals@rbx@@PEBDAEAV?$signal@$$A6AXPEBVPropertyDescriptor@Reflection@RBX@@@Z@8@V
+?AVscoped_connection@signals@rbx@@PEBDAEAV?$signal@$$A6AXPEBVtype_info@@@Z@8@V
 ?AVscoped_connection@signals@rbx@@PEBDAEAV?$signal@$$A6AXUDialogInteraction@Studio@RBX@@@Z@8@V
 ?AVscoped_connection@signals@rbx@@PEBDAEAV?$signal@$$A6AXUStudioUri@RBX@@_J@Z@8@V
 ?AVscoped_connection@signals@rbx@@PEBDAEAV?$signal@$$A6AXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$shared_ptr@VInstance@RBX@@@2@@Z@8@V
@@ -31613,8 +31711,6 @@
 ?AVscoped_connection@signals@rbx@@PEBDAEAV?$signal@$$A6AXW4PlacePublishType@Enums@RBX@@_J1V?$optional@VSavePlaceNames@RBX@@@std@@@Z@8@V
 ?AVscoped_connection@signals@rbx@@PEBDAEAV?$signal@$$A6AXXZ@8@V
 ?AVscoped_connection@signals@rbx@@PEBDAEAV?$signal@$$A6AX_N@Z@8@V
-?AddChild@FbxNode@fbxsdk@@QEAA_NPEAV12@@Z
-?AddMaterial@FbxNode@fbxsdk@@QEAAHPEAVFbxSurfaceMaterial@2@@Z
 ?BA@??CreateUDPPorts@AllocationSequence@webrtc@@AEAAXXZ@
 ?BA@??CreateUDPPorts@AllocationSequence@webrtc@@AEAAXXZ@XPEAVPortInterface@4@@std@@
 ?BE@??GetNetworks@BasicPortAllocatorSession@webrtc@@AEAA?AV?$vector@PEBVNetwork@webrtc@@V?$allocator@PEBVNetwork@webrtc@@@std@@@std@@XZ@
@@ -31632,28 +31728,17 @@
 ?ClassId@FbxFileTexture@fbxsdk@@2VFbxClassId@2@A
 ?ClassId@FbxNode@fbxsdk@@2VFbxClassId@2@A
 ?ClassId@FbxSurfaceMaterial@fbxsdk@@2VFbxClassId@2@A
-?ClassId@FbxSurfacePhong@fbxsdk@@2VFbxClassId@2@A
 ?CompareNoCase@FbxString@fbxsdk@@QEBAHPEBD@Z
-?ComputeBoundingBoxMinMaxCenter@FbxScene@fbxsdk@@QEAA_NAEAVFbxVector4@2@00_NAEBVFbxTime@2@@Z
-?ConnectSrcObject@FbxProperty@fbxsdk@@QEAA_NPEAVFbxObject@2@W4EType@FbxConnection@2@@Z
 ?ConvertScene@FbxAxisSystem@fbxsdk@@QEBAXPEAVFbxScene@2@@Z
-?ConvertScene@FbxSystemUnit@fbxsdk@@QEBAXPEAVFbxScene@2@AEBUConversionOptions@12@@Z
-?Create@FbxExporter@fbxsdk@@SAPEAV12@PEAVFbxManager@2@PEBD@Z
-?Create@FbxFileTexture@fbxsdk@@SAPEAV12@PEAVFbxObject@2@PEBD@Z
 ?Create@FbxIOSettings@fbxsdk@@SAPEAV12@PEAVFbxManager@2@PEBD@Z
 ?Create@FbxImporter@fbxsdk@@SAPEAV12@PEAVFbxManager@2@PEBD@Z
 ?Create@FbxManager@fbxsdk@@SAPEAV12@XZ
-?Create@FbxMesh@fbxsdk@@SAPEAV12@PEAVFbxObject@2@PEBD@Z
-?Create@FbxNode@fbxsdk@@SAPEAV12@PEAVFbxObject@2@PEBD@Z
 ?Create@FbxScene@fbxsdk@@SAPEAV12@PEAVFbxManager@2@PEBD@Z
-?Create@FbxSurfacePhong@fbxsdk@@SAPEAV12@PEAVFbxObject@2@PEBD@Z
 ?CrossProduct@FbxVector4@fbxsdk@@QEBA?AV12@AEBV12@@Z
-?DefaultConversionOptions@FbxSystemUnit@fbxsdk@@2UConversionOptions@12@B
 ?Destroy@FbxObject@fbxsdk@@QEAAX_N@Z
 ?Distance@FbxVector4@fbxsdk@@QEBANAEBV12@@Z
 ?DotProduct@FbxVector4@fbxsdk@@QEBANAEBV12@@Z
 ?EvaluateGlobalTransform@FbxNode@fbxsdk@@QEAAAEAVFbxAMatrix@2@VFbxTime@2@W4EPivotSet@12@_N2@Z
-?Export@FbxExporter@fbxsdk@@QEAA_NPEAVFbxDocument@2@_N@Z
 ?FbxSetCallocHandler@fbxsdk@@YAXP6APEAX_K0@Z@Z
 ?FbxSetFreeHandler@fbxsdk@@YAXP6AXPEAX@Z@Z
 ?FbxSetMallocHandler@fbxsdk@@YAXP6APEAX_K@Z@Z
@@ -31700,7 +31785,6 @@
 ?GetErrorString@FbxStatus@fbxsdk@@QEBAPEBDXZ
 ?GetFbxObject@FbxProperty@fbxsdk@@QEBAPEAVFbxObject@2@XZ
 ?GetFileName@FbxFileTexture@fbxsdk@@QEBAPEBDXZ
-?GetFileVersion@FbxImporter@fbxsdk@@QEAAXAEAH00@Z
 ?GetFirstDescendent@FbxProperty@fbxsdk@@QEBA?AV12@XZ
 ?GetFirstProperty@FbxObject@fbxsdk@@QEBA?AVFbxProperty@2@XZ
 ?GetFlag@FbxProperty@fbxsdk@@QEBA_NW4EFlags@FbxPropertyFlags@2@@Z
@@ -31744,7 +31828,6 @@
 ?GetRotationPivot@FbxNode@fbxsdk@@QEBAAEBVFbxVector4@2@W4EPivotSet@12@@Z
 ?GetRow@FbxMatrix@fbxsdk@@QEBA?AVFbxVector4@2@H@Z
 ?GetS@FbxAMatrix@fbxsdk@@QEBA?AVFbxVector4@2@XZ
-?GetScaleFactor@FbxSystemUnit@fbxsdk@@QEBANXZ
 ?GetScene@FbxObject@fbxsdk@@QEBAPEAVFbxScene@2@XZ
 ?GetSecondDouble@FbxTime@fbxsdk@@QEBANXZ
 ?GetSrcObject@FbxProperty@fbxsdk@@QEBAPEAVFbxObject@2@AEBVFbxCriteria@2@H@Z
@@ -31752,7 +31835,6 @@
 ?GetSrcObjectCount@FbxProperty@fbxsdk@@QEBAHAEBVFbxCriteria@2@@Z
 ?GetSrcObjectCount@FbxProperty@fbxsdk@@QEBAHXZ
 ?GetStatus@FbxIOBase@fbxsdk@@QEAAAEAVFbxStatus@2@XZ
-?GetSystemUnit@FbxGlobalSettings@fbxsdk@@QEBA?AVFbxSystemUnit@2@XZ
 ?GetT@FbxAMatrix@fbxsdk@@QEBA?AVFbxVector4@2@XZ
 ?GetTimeMode@FbxGlobalSettings@fbxsdk@@QEBA?AW4EMode@FbxTime@2@XZ
 ?GetTimelineDefaultTimeSpan@FbxGlobalSettings@fbxsdk@@QEBAXAEAVFbxTimeSpan@2@@Z
@@ -31778,7 +31860,6 @@
 ?ReportUnhandledError@_ExceptionHolder@details@Concurrency@@AEAAXXZ
 ?Set@FbxProperty@fbxsdk@@IEAA_NPEBXAEBW4EFbxType@2@_N@Z
 ?SetCurrentAnimationStack@FbxScene@fbxsdk@@QEAAXPEAVFbxAnimStack@2@@Z
-?SetNodeAttribute@FbxNode@fbxsdk@@QEAAPEAVFbxNodeAttribute@2@PEAV32@@Z
 ?SetRow@FbxMatrix@fbxsdk@@QEAAXHAEBVFbxVector4@2@@Z
 ?SetSecondDouble@FbxTime@fbxsdk@@QEAAXN@Z
 ?SetSnapOnFrameMode@FbxGlobalSettings@fbxsdk@@QEAAXW4ESnapOnFrameMode@12@@Z
@@ -32015,7 +32096,6 @@
 ?backward@QTextBrowser@@UEAAXXZ
 ?baseName@QFileInfo@@QEBA?AVQString@@XZ
 ?baseSize@QWidget@@QEBA?AVQSize@@XZ
-?bcp47Name@QLocale@@QEBA?AVQString@@XZ
 ?begin@QJsonArray@@QEAA?AViterator@1@XZ
 ?begin@QJsonArray@@QEBA?AVconst_iterator@1@XZ
 ?begin@QJsonObject@@QEAA?AViterator@1@XZ
@@ -32414,7 +32494,6 @@
 ?devicePixelRatioF@QPaintDevice@@QEBANXZ
 ?dir@QFileInfo@@QEBA?AVQDir@@XZ
 ?directoryChanged@QFileSystemWatcher@@QEAAXAEBVQString@@UQPrivateSignal@1@@Z
-?directoryEntered@QFileDialog@@QEAAXAEBVQString@@@Z
 ?disconnect@QObject@@SA_NAEBVConnection@QMetaObject@@@Z
 ?disconnect@QObject@@SA_NPEBV1@PEBD01@Z
 ?disconnectImpl@QObject@@CA_NPEBV1@PEAPEAX01PEBUQMetaObject@@@Z
@@ -33231,7 +33310,6 @@
 ?isValid@QRegularExpression@@QEBA_NXZ
 ?isValid@QSize@@QEBA_NXZ
 ?isValid@QSizeF@@QEBA_NXZ
-?isValid@QTemporaryDir@@QEBA_NXZ
 ?isValid@QTextBlock@@QEBA_NXZ
 ?isValid@QUrl@@QEBA_NXZ
 ?isValid@QVariant@@QEBA_NXZ
@@ -33340,7 +33418,6 @@
 ?left@QRect@@QEBAHXZ
 ?left@QRectF@@QEBANXZ
 ?left@QString@@QEBA?AV1@H@Z
-?length@QHeaderView@@QEBAHXZ
 ?length@QTextBlock@@QEBAHXZ
 ?length@QTextFragment@@QEBAHXZ
 ?lessThan@QSortFilterProxyModel@@MEBA_NAEBVQModelIndex@@0@Z
@@ -33759,7 +33836,6 @@
 ?paste@QPlainTextEdit@@QEAAXXZ
 ?path@QDir@@QEBA?AVQString@@XZ
 ?path@QFileInfo@@QEBA?AVQString@@XZ
-?path@QTemporaryDir@@QEBA?AVQString@@XZ
 ?path@QUrl@@QEBA?AVQString@@V?$QFlags@W4ComponentFormattingOption@QUrl@@@@@Z
 ?pathFromIndex@QCompleter@@UEBA?AVQString@@AEBVQModelIndex@@@Z
 ?pattern@QRegExp@@QEBA?AVQString@@XZ
@@ -34059,7 +34135,6 @@
 ?releaseMouse@QWidget@@QEAAXXZ
 ?released@QAbstractButton@@QEAAXXZ
 ?reload@QTextBrowser@@UEAAXXZ
-?remainingTime@QTimer@@QEBAHXZ
 ?remove@QFile@@QEAA_NXZ
 ?remove@QFile@@SA_NAEBVQString@@@Z
 ?remove@QListData@@QEAAXH@Z
@@ -34349,7 +34424,6 @@
 ?setColorAt@QGradient@@QEAAXNAEBVQColor@@@Z
 ?setColumnCount@QTableWidget@@QEAAXH@Z
 ?setColumnCount@QTreeWidget@@QEAAXH@Z
-?setColumnHidden@QTableView@@QEAAXH_N@Z
 ?setColumnMinimumWidth@QGridLayout@@QEAAXHH@Z
 ?setColumnStretch@QGridLayout@@QEAAXHH@Z
 ?setColumnWidth@QTableView@@QEAAXHH@Z
@@ -34450,7 +34524,6 @@
 ?setFileMode@QFileDialog@@QEAAXW4FileMode@1@@Z
 ?setFileName@QMovie@@QEAAXAEBVQString@@@Z
 ?setFileTemplate@QTemporaryFile@@QEAAXAEBVQString@@@Z
-?setFilter@QDir@@QEAAXV?$QFlags@W4Filter@QDir@@@@@Z
 ?setFilterCaseSensitivity@QSortFilterProxyModel@@QEAAXW4CaseSensitivity@Qt@@@Z
 ?setFilterFixedString@QSortFilterProxyModel@@QEAAXAEBVQString@@@Z
 ?setFilterKeyColumn@QSortFilterProxyModel@@QEAAXH@Z
@@ -34479,7 +34552,6 @@
 ?setFont@QTextCharFormat@@QEAAXAEBVQFont@@@Z
 ?setFont@QTreeWidgetItem@@QEAAXHAEBVQFont@@@Z
 ?setFont@QWidget@@QEAAXAEBVQFont@@@Z
-?setForeground@QTableWidgetItem@@QEAAXAEBVQBrush@@@Z
 ?setFormat@QTextObject@@IEAAXAEBVQTextFormat@@@Z
 ?setFormats@QTextLayout@@QEAAXAEBV?$QVector@UFormatRange@QTextLayout@@@@@Z
 ?setFragment@QUrl@@QEAAXAEBVQString@@W4ParsingMode@1@@Z
@@ -34513,7 +34585,6 @@
 ?setHidden@QTreeWidgetItem@@QEAAX_N@Z
 ?setHidden@QWidget@@QEAAX_N@Z
 ?setHighDpiScaleFactorRoundingPolicy@QGuiApplication@@SAXW4HighDpiScaleFactorRoundingPolicy@Qt@@@Z
-?setHighlightSections@QHeaderView@@QEAAX_N@Z
 ?setHistory@QFileDialog@@QEAAXAEBVQStringList@@@Z
 ?setHorizontalHeader@QTableView@@QEAAXPEAVQHeaderView@@@Z
 ?setHorizontalHeaderLabels@QStandardItemModel@@QEAAXAEBVQStringList@@@Z
@@ -35155,7 +35226,6 @@
 ?takeTopLevelItem@QTreeWidget@@QEAAPEAVQTreeWidgetItem@@H@Z
 ?tellg@?$basic_istream@DU?$char_traits@D@std@@@std@@QEAA?AV?$fpos@U_Mbstatet@@@2@XZ
 ?tellp@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA?AV?$fpos@U_Mbstatet@@@2@XZ
-?tempPath@QDir@@SA?AVQString@@XZ
 ?text@QAbstractButton@@QEBA?AVQString@@XZ
 ?text@QAbstractSpinBox@@QEBA?AVQString@@XZ
 ?text@QAction@@QEBA?AVQString@@XZ

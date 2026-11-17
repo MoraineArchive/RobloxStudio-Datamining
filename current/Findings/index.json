@@ -4509,11 +4509,705 @@
             "prompt",
             "with"
           ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "04fc45a52a3018faa6d45ca0aedc8ec45a29d14b367fc62da4ead12b5ffa951d",
+          "key": "content-studio_svg_textures/Shared/WidgetIcons/Dark/Standard/AnimatedImage@3x.png",
+          "kind": "resources",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "content",
+            "dark",
+            "icons",
+            "image",
+            "shared",
+            "standard",
+            "svg",
+            "textures",
+            "widget"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "API",
+          "id": "156ef1055de605b5fd238a4e60dc904fee67cb8a7f4c4bd7c68400473fbfbaf2",
+          "key": "AnimatedImageService.Function.GetAnimatedImageClipsChangedSignal",
+          "kind": "members",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "function",
+            "image"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "19b609d4acad39f0e031d6fa786d1a102432b575d553f6919f1c9793a2771fe6",
+          "key": "content/studio_svg_textures/Shared/WidgetIcons/Dark/Standard/AnimatedImage@2x.png",
+          "kind": "files",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "content",
+            "dark",
+            "icons",
+            "image",
+            "shared",
+            "standard",
+            "svg",
+            "textures",
+            "widget"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "25ec2fed64b5ccee8d09917bf27eda944138226755f13eb81624ab67b332b8cb",
+          "key": "files/content-studio_svg_textures/Shared/WidgetIcons/Dark/Standard/AnimatedImage.png",
+          "kind": "file",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "content",
+            "dark",
+            "files",
+            "icons",
+            "image",
+            "shared",
+            "standard",
+            "svg",
+            "textures",
+            "widget"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "FastVariables",
+          "id": "268afb02becea9962134f2930edc4e244976fc36ee0cd68936295766b6f6e60a",
+          "key": "C++:FFlagAssetImportServicePickAnimatedImageFileWithPrompt",
+          "kind": "variables",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "FastVariables",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "asset",
+            "file",
+            "image",
+            "import",
+            "pick",
+            "prompt",
+            "with"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "26f9c361e380a13700dcf668a26eb5d8588718abf8358b7c2660c7daba9801fa",
+          "key": "content/studio_svg_textures/Shared/WidgetIcons/Light/Standard/AnimatedImage@3x.png",
+          "kind": "files",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "content",
+            "icons",
+            "image",
+            "light",
+            "shared",
+            "standard",
+            "svg",
+            "textures",
+            "widget"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "4a84af9bcf2310fb6ecf335946dcdec67d063572c55e272bf22fab34ca73d3a1",
+          "key": "files/content-studio_svg_textures/Shared/WidgetIcons/Light/Standard/AnimatedImage@2x.png",
+          "kind": "file",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "content",
+            "files",
+            "icons",
+            "image",
+            "light",
+            "shared",
+            "standard",
+            "svg",
+            "textures",
+            "widget"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "4bdd641d408211eb1317c71ee5217054027d2ecd8b17eb043afa79bafc1a1d4f",
+          "key": "content/studio_svg_textures/Shared/WidgetIcons/Light/Standard/AnimatedImage@2x.png",
+          "kind": "files",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "content",
+            "icons",
+            "image",
+            "light",
+            "shared",
+            "standard",
+            "svg",
+            "textures",
+            "widget"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "API",
+          "id": "5049c41551691e69aad53f21a2902a5dae21dfb286f0fd634b22d86b674a953d",
+          "key": "AnimatedImageService.Function.GetAnimatedImageClipFramesAsync",
+          "kind": "members",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "function",
+            "image"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "5692fd128a5c73d78aca13b4eb45681dde0ef968b0ca485a7ce7bee68b7dd0ce",
+          "key": "content-studio_svg_textures/Shared/WidgetIcons/Dark/Standard/AnimatedImage.png",
+          "kind": "resources",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "content",
+            "dark",
+            "icons",
+            "image",
+            "shared",
+            "standard",
+            "svg",
+            "textures",
+            "widget"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "64ad95fd5f143665258f6a89988cb30af566151848efc3b74dec73b5f66e29de",
+          "key": "content-studio_svg_textures/Shared/WidgetIcons/Light/Standard/AnimatedImage@3x.png",
+          "kind": "resources",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "content",
+            "icons",
+            "image",
+            "light",
+            "shared",
+            "standard",
+            "svg",
+            "textures",
+            "widget"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "API",
+          "id": "6768a10495b4884ff727b447093a0fd75a7f932d71da9b9e18cf95daae461eaa",
+          "key": "AnimatedImageService.Function.AddAnimatedImageClipAsync",
+          "kind": "members",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "function",
+            "image"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "6c0bc75082ada0198c522b0d1c35f54c4dec1eaa06d244bfd2de656fe262ff93",
+          "key": "content-studio_svg_textures/Shared/WidgetIcons/Light/Standard/AnimatedImage@2x.png",
+          "kind": "resources",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "content",
+            "icons",
+            "image",
+            "light",
+            "shared",
+            "standard",
+            "svg",
+            "textures",
+            "widget"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "8afe63a6669f3181a3ab6b1b5b78d1e2674c79d970674676a9146499f0068e41",
+          "key": "BuiltInPlugins/Optimized_Embedded_Signature/AnimatedImageImporter.rbxm",
+          "kind": "files",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "built",
+            "embedded",
+            "image",
+            "importer",
+            "optimized",
+            "plugins",
+            "signature"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "API",
+          "id": "9a9572afba866916eb70863cb417781997fad63f09b939825c5714d0eacc7d8f",
+          "key": "AnimatedImageService.Function.GetAnimatedImageClipsAsync",
+          "kind": "members",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "function",
+            "image"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "9f4111e4cd77fdc5748affbc9c194bac2e2441086592d0bcf42813876a16e43d",
+          "key": "content-studio_svg_textures/Shared/WidgetIcons/Dark/Standard/AnimatedImage@2x.png",
+          "kind": "resources",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "content",
+            "dark",
+            "icons",
+            "image",
+            "shared",
+            "standard",
+            "svg",
+            "textures",
+            "widget"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "a608284a07a7ee80e8aaf41ebebb3d28702c4a85e4c61e3816a9dc809c044c53",
+          "key": "files/content-studio_svg_textures/Shared/WidgetIcons/Light/Standard/AnimatedImage@3x.png",
+          "kind": "file",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "content",
+            "files",
+            "icons",
+            "image",
+            "light",
+            "shared",
+            "standard",
+            "svg",
+            "textures",
+            "widget"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "b1add282cec71726e6e5e97dba8d32d0413fc27d720be46baf7dcb9ccd2ee6e7",
+          "key": "content/studio_svg_textures/Shared/WidgetIcons/Dark/Standard/AnimatedImage@3x.png",
+          "kind": "files",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "content",
+            "dark",
+            "icons",
+            "image",
+            "shared",
+            "standard",
+            "svg",
+            "textures",
+            "widget"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "be54d30509cd44f398731fa7c55777a02e692a8c94aa87dfd52678048e2d13ee",
+          "key": "content/studio_svg_textures/Shared/WidgetIcons/Dark/Standard/AnimatedImage.png",
+          "kind": "files",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "content",
+            "dark",
+            "icons",
+            "image",
+            "shared",
+            "standard",
+            "svg",
+            "textures",
+            "widget"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Source",
+          "id": "d2d8a20180c2b1bca20a4bb8c6c562b434fb70fed89b3184fa5f8df908e099f2",
+          "key": "BuiltInPlugins/Optimized_Embedded_Signature/AnimatedImageImporter/instances.json",
+          "kind": "file",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "Plugins",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "built",
+            "embedded",
+            "image",
+            "importer",
+            "instances",
+            "optimized",
+            "plugins",
+            "signature"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "db30e450711ecd7930f0ea673d2d32760ffc84e9855511da39a2cf3f3e52d278",
+          "key": "files/content-studio_svg_textures/Shared/WidgetIcons/Dark/Standard/AnimatedImage@2x.png",
+          "kind": "file",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "content",
+            "dark",
+            "files",
+            "icons",
+            "image",
+            "shared",
+            "standard",
+            "svg",
+            "textures",
+            "widget"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "e04bc53496bb5947d17ef8619eddec9691c8c5d428f70b654dda9f30eaf99952",
+          "key": "files/content-studio_svg_textures/Shared/WidgetIcons/Dark/Standard/AnimatedImage@3x.png",
+          "kind": "file",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "content",
+            "dark",
+            "files",
+            "icons",
+            "image",
+            "shared",
+            "standard",
+            "svg",
+            "textures",
+            "widget"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "ebbdaa96803b588125de47bd763ba67816d28448db90d299145cc98fbe75a808",
+          "key": "content-studio_svg_textures/Shared/WidgetIcons/Light/Standard/AnimatedImage.png",
+          "kind": "resources",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "content",
+            "icons",
+            "image",
+            "light",
+            "shared",
+            "standard",
+            "svg",
+            "textures",
+            "widget"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "API",
+          "id": "f4d54e874310e9fb45c90252b29a36a5546515b625e8f025a06cf0061620bc06",
+          "key": "AnimatedImageService.Function.GetAnimatedImageFrameIndexAtTimeAsync",
+          "kind": "members",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "removed",
+          "surface": "API",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "function",
+            "image"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "f6fb81215581053dbe021183b81fb632378c174f54ba04fcca579ce44e3e1b9b",
+          "key": "files/content-studio_svg_textures/Shared/WidgetIcons/Light/Standard/AnimatedImage.png",
+          "kind": "file",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "content",
+            "files",
+            "icons",
+            "image",
+            "light",
+            "shared",
+            "standard",
+            "svg",
+            "textures",
+            "widget"
+          ]
+        },
+        {
+          "concepts": [
+            "animated",
+            "images"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "fcb871ea74caaa7257d8d027fc1f57ab947efd06054c545a9a6c2bb96689034b",
+          "key": "content/studio_svg_textures/Shared/WidgetIcons/Light/Standard/AnimatedImage.png",
+          "kind": "files",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "animated",
+            "content",
+            "icons",
+            "image",
+            "light",
+            "shared",
+            "standard",
+            "svg",
+            "textures",
+            "widget"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "animated-images",
-      "lastObservedAt": "2026-11-12T21:45:24.953Z",
+      "lastObservedAt": "2026-11-17T22:21:18.506Z",
       "lifecycle": [
         {
           "observedAt": "2026-11-12T21:45:24.953Z",
@@ -5833,11 +6527,227 @@
             "interface",
             "starter"
           ]
+        },
+        {
+          "concepts": [
+            "avatar",
+            "abilities"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "16dab68ab51dac65cd71a2889c59daa5a609d3cedbd7a98bec6da2ca06bea03e",
+          "key": "files/content-avatar/abilities/AvatarAbilitiesCharacter_oneLine.rbxm",
+          "kind": "file",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abilities",
+            "avatar",
+            "character",
+            "content",
+            "files",
+            "line",
+            "one"
+          ]
+        },
+        {
+          "concepts": [
+            "avatar",
+            "abilities"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "1e7b57d5661879ef5295c12d784554ae3658b66a0acc0d5a47f0567fcdfcb4cd",
+          "key": "content-avatar/abilities/AvatarAbilitiesCharacter_oneLine.rbxm",
+          "kind": "resources",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abilities",
+            "avatar",
+            "character",
+            "content",
+            "line",
+            "one"
+          ]
+        },
+        {
+          "concepts": [
+            "avatar",
+            "abilities"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Source",
+          "id": "69accfcc30d3d4058f9e3bc720a2fe432559fd90846bb30a4e653d6962b51734",
+          "key": "extracontent-scripts/PlayerScripts/StarterPlayer/PlayerModule/ControlModule/AvatarAbilitiesInterface.lua",
+          "kind": "file",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abilities",
+            "avatar",
+            "control",
+            "extracontent",
+            "interface",
+            "starter"
+          ]
+        },
+        {
+          "concepts": [
+            "avatar",
+            "abilities"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "721bf068970848ae2ebef9d096f0c5981527438cf100a22fed2ec4d1e72bc66a",
+          "key": "content/avatar/abilities/AvatarAbilitiesCharacter_oneLine.rbxm",
+          "kind": "files",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abilities",
+            "avatar",
+            "character",
+            "content",
+            "line",
+            "one"
+          ]
+        },
+        {
+          "concepts": [
+            "avatar",
+            "abilities"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "96efd396d46845aad8eae39f4ea48d9f4250a983503347aa5a41cad9dc59aa16",
+          "key": "ExtraContent/scripts/PlayerScripts/StarterPlayer/PlayerModule/ControlModule/AvatarAbilitiesInterface.lua",
+          "kind": "files",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abilities",
+            "avatar",
+            "content",
+            "control",
+            "extra",
+            "interface",
+            "starter"
+          ]
+        },
+        {
+          "concepts": [
+            "avatar",
+            "abilities"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "ab0cd440a97304ec6bcdcb23944ca03b005fc369740790a3c6889f9b9c9cf81d",
+          "key": "content-avatar/abilities/AvatarAbilitiesPlayer_oneLine.rbxm",
+          "kind": "resources",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abilities",
+            "avatar",
+            "content",
+            "line",
+            "one"
+          ]
+        },
+        {
+          "concepts": [
+            "avatar",
+            "abilities"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "b06efa18cd7a16cb5b12fc2c1ca29af1d3006625d5d99d3d27ced14c6389cfe9",
+          "key": "files/content-avatar/abilities/AvatarAbilitiesPlayer_oneLine.rbxm",
+          "kind": "file",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "Resources",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abilities",
+            "avatar",
+            "content",
+            "files",
+            "line",
+            "one"
+          ]
+        },
+        {
+          "concepts": [
+            "avatar",
+            "abilities"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Source",
+          "id": "baf618d3ddab141fbadc5010298790a60f4e03ba56742366f6cd6292e3aadd9f",
+          "key": "extracontent-scripts/PlayerScripts/StarterPlayer/PlayerModule/ControlModule/AvatarAbilitiesInterface.lua",
+          "kind": "sources",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abilities",
+            "avatar",
+            "control",
+            "extracontent",
+            "interface",
+            "starter"
+          ]
+        },
+        {
+          "concepts": [
+            "avatar",
+            "abilities"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "f3e9470037f1c6aca8cf929508798712b0cfb04749d76859eba8c7a435ee8944",
+          "key": "content/avatar/abilities/AvatarAbilitiesPlayer_oneLine.rbxm",
+          "kind": "files",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "abilities",
+            "avatar",
+            "content",
+            "line",
+            "one"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "avatar-abilities",
-      "lastObservedAt": "2026-11-10T17:49:53.656Z",
+      "lastObservedAt": "2026-11-17T22:21:18.506Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T01:54:39.846Z",
@@ -16324,11 +17234,989 @@
             "moments",
             "translation"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Source",
+          "id": "0647516f22782d10d6127c950e3a2ac491f345216a1643d0154795cc43c33a9e",
+          "key": "extracontent-luapackages/Packages/_Index/MomentScenes/MomentScenes/Builders/_Utils/applyDefaultClothing.lua",
+          "kind": "sources",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "apply",
+            "builders",
+            "clothing",
+            "default",
+            "extracontent",
+            "index",
+            "luapackages",
+            "moment",
+            "scenes",
+            "utils"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Source",
+          "id": "0ab86ebf49d8cca0cb862844a5336dfd73c4667bb051d4531ec3b73ad07e7e11",
+          "key": "extracontent-luapackages/Packages/_Index/MomentScenes/MomentScenes/Builders/_Utils/avatarRig.lua",
+          "kind": "sources",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "avatar",
+            "builders",
+            "extracontent",
+            "index",
+            "luapackages",
+            "moment",
+            "rig",
+            "scenes",
+            "utils"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "1851fc32e2e93384a952f7a3c05b956440eb7e66970491a5dd7c67f46d295aad",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentScenes/MomentScenes/Builders/_Utils/avatarRig.lua",
+          "kind": "files",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "avatar",
+            "builders",
+            "content",
+            "extra",
+            "index",
+            "moment",
+            "rig",
+            "scenes",
+            "utils"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "27af08f61898de93745478ac4990cd7bc2ae2f42704ff8023e4ca970566f00bb",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentScenes/MomentScenes/Builders/_Utils/checkApplyDefaultClothing.lua",
+          "kind": "files",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "apply",
+            "builders",
+            "check",
+            "clothing",
+            "content",
+            "default",
+            "extra",
+            "index",
+            "moment",
+            "scenes",
+            "utils"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "LiveSettings",
+          "id": "2ab0d24cf16f17d1236ff78f7141b8133eb52e85821cfeebcead79b079cb5b6e",
+          "key": "FFlagMomentsTextOverlayV2RedesignPhase1",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "moments",
+            "overlay",
+            "phase1",
+            "redesign",
+            "text"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Source",
+          "id": "2d3063a277a59ecc948b0bda121aa921c8923023169ec696d9e8f78774488983",
+          "key": "extracontent-luapackages/Packages/_Index/MomentScenes/MomentScenes/Builders/_Utils/checkApplyDefaultClothing.lua",
+          "kind": "sources",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "apply",
+            "builders",
+            "check",
+            "clothing",
+            "default",
+            "extracontent",
+            "index",
+            "luapackages",
+            "moment",
+            "scenes",
+            "utils"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "LiveSettings",
+          "id": "2e71f26b163e2fa2804b752990de871c580fc743fea4af26f883be249868b706",
+          "key": "FFlagMomentsUseSharedReactions_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "moments",
+            "reactions",
+            "shared"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Source",
+          "id": "35a3eab895dcabd90beded67311731cf826f9b94ca6ef4f4208a2e762f9a97e2",
+          "key": "extracontent-luapackages/Packages/_Index/MomentsCreationFlow/Foundation.lua",
+          "kind": "sources",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "extracontent",
+            "flow",
+            "foundation",
+            "index",
+            "luapackages",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "376caa2ce3f993bd94502fe2fe79eae8ec666380a281f1944ce7f52fd350cad8",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentsCommon/lock.toml",
+          "kind": "files",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "common",
+            "content",
+            "extra",
+            "index",
+            "lock",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Source",
+          "id": "37cf1ec6338774d97d89ccc7898a1ab7ad15a43603f04a6f1b7117f13582597f",
+          "key": "extracontent-luapackages/Packages/_Index/MomentScenes/MomentScenes/Builders/AvatarMoment/init.lua",
+          "kind": "sources",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "avatar",
+            "builders",
+            "extracontent",
+            "index",
+            "init",
+            "luapackages",
+            "moment",
+            "scenes"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Source",
+          "id": "381f36f5cc0aa09dd59392669596f3930d7c544d46ccd49f714b4f41f4ca24f4",
+          "key": "extracontent-luapackages/Packages/_Index/MomentsCommon/Foundation.lua",
+          "kind": "file",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "common",
+            "extracontent",
+            "foundation",
+            "index",
+            "luapackages",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Source",
+          "id": "3ac0d6c7d39f23e0e4b0e04c9931887eea9422df9f5d62bdd349c6273c2e7829",
+          "key": "extracontent-luapackages/Packages/_Index/MomentsCommon/Foundation.lua",
+          "kind": "sources",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "common",
+            "extracontent",
+            "foundation",
+            "index",
+            "luapackages",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Source",
+          "id": "3b112e4384cea8ba58e3f80ab134fc02b7a970ca8aa22eeb31755e930d897865",
+          "key": "extracontent-luapackages/Packages/_Index/MomentScenes/MomentScenes/init.lua",
+          "kind": "file",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "extracontent",
+            "index",
+            "init",
+            "luapackages",
+            "moment",
+            "scenes"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Source",
+          "id": "3e85ac647dce001a180a6bfd76a3d356abc162c85055309937b179383ed32e13",
+          "key": "extracontent-luapackages/Packages/_Index/MomentScenes/MomentScenes/Builders/AvatarMoment/resolveOutfit.lua",
+          "kind": "sources",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "avatar",
+            "builders",
+            "extracontent",
+            "index",
+            "luapackages",
+            "moment",
+            "outfit",
+            "resolve",
+            "scenes"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "LiveSettings",
+          "id": "5c0f51f302929b5157b1c07baddbb9ef0bffec6de91d596c7d712933ca79eb21",
+          "key": "FFlagMomentsTextOverlayV2RedesignPhase1_Staged",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "removed",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "moments",
+            "overlay",
+            "phase1",
+            "redesign",
+            "text"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "5c28de8cf747ecbbe07a0af89f7b92a25690d56ae031ca3903e32a913a331b09",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentsCommon/Foundation.lua",
+          "kind": "files",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "common",
+            "content",
+            "extra",
+            "foundation",
+            "index",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Source",
+          "id": "6957e70a47ddb10b1802326884a80edcdd1599684acc1be6cb9d32514e8f955d",
+          "key": "extracontent-luapackages/Packages/_Index/MomentScenes/MomentScenes/Builders/AvatarMoment/Flags.lua",
+          "kind": "file",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "avatar",
+            "builders",
+            "extracontent",
+            "flags",
+            "index",
+            "luapackages",
+            "moment",
+            "scenes"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "LiveSettings",
+          "id": "7182eaab8531e6ab45e6b581cbb3be07e749617c9a9871b5a61da203cd4eaa28",
+          "key": "FFlagMomentsUseSharedReactions",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "moments",
+            "reactions",
+            "shared"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "73ba6892f463331ef759babda84e8ca01430d2b85568f739a8b30e547feac23f",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentsCreationFlow/Foundation.lua",
+          "kind": "files",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "content",
+            "creation",
+            "extra",
+            "flow",
+            "foundation",
+            "index",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "74ab093747bacbfa895d26eaa782a585eb914d2021768b65e121b57f435c62ca",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentScenes/MomentScenes/Builders/_Utils/applyDefaultClothing.lua",
+          "kind": "files",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "apply",
+            "builders",
+            "clothing",
+            "content",
+            "default",
+            "extra",
+            "index",
+            "moment",
+            "scenes",
+            "utils"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Source",
+          "id": "8598ff495051179692042e01acaadad00fad7a2876f7471eeb7c9769044549f5",
+          "key": "extracontent-luapackages/Packages/_Index/MomentScenes/MomentScenes/Builders/AvatarMoment/resolveOutfit.lua",
+          "kind": "file",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "avatar",
+            "builders",
+            "extracontent",
+            "index",
+            "luapackages",
+            "moment",
+            "outfit",
+            "resolve",
+            "scenes"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "8599cca8f199da6b88d0bf82085698614dec7443049689a882b7d68e0ec5ffb7",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentScenes/MomentScenes/Builders/AvatarMoment/init.lua",
+          "kind": "files",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "avatar",
+            "builders",
+            "content",
+            "extra",
+            "index",
+            "init",
+            "moment",
+            "scenes"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "86f0d9f74874241933526e31d31ea01387b7dd9c1aaf662f61386adc38bc6307",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentScenes/MomentScenes/README.md",
+          "kind": "files",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "content",
+            "extra",
+            "index",
+            "moment",
+            "readme",
+            "scenes"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "95d7dc528eee967a6979067c5890d38b63ef25b074cf3975957fc4890885eeca",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentScenes/MomentScenes/rotriever.toml",
+          "kind": "files",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "content",
+            "extra",
+            "index",
+            "moment",
+            "rotriever",
+            "scenes"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Source",
+          "id": "9ae274835f7cef7f34077b917f7bda48e49e65ef64d8ec5f4acfa1c1218954fc",
+          "key": "extracontent-luapackages/Packages/_Index/MomentScenes/MomentScenes/README.md",
+          "kind": "file",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "extracontent",
+            "index",
+            "luapackages",
+            "moment",
+            "readme",
+            "scenes"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "9ba43b9a50d2dc3b26c52c5fbba4b7cf282836b067749eab1087fa30c25e0ec4",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentScenes/MomentScenes/Builders/AvatarMoment/resolveOutfit.lua",
+          "kind": "files",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "avatar",
+            "builders",
+            "content",
+            "extra",
+            "index",
+            "moment",
+            "outfit",
+            "resolve",
+            "scenes"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Source",
+          "id": "9bebf787f63c08a56bcda5b13a336c39e26f477f4dcd2dc36768d17864ab668a",
+          "key": "extracontent-luapackages/Packages/_Index/MomentScenes/MomentScenes/Builders/AvatarMoment/init.lua",
+          "kind": "file",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "avatar",
+            "builders",
+            "extracontent",
+            "index",
+            "init",
+            "luapackages",
+            "moment",
+            "scenes"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Source",
+          "id": "aa0ca2a39a2134364f011e02ee97dcb667b0667fffa231594adb829cd817b848",
+          "key": "extracontent-luapackages/Packages/_Index/MomentScenes/MomentScenes/init.lua",
+          "kind": "sources",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "extracontent",
+            "index",
+            "init",
+            "luapackages",
+            "moment",
+            "scenes"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Source",
+          "id": "ba3c331cd6d4628cd24864e3c02e2e34bdd260994f7d7434799a20c7521d7de9",
+          "key": "extracontent-luapackages/Packages/_Index/MomentScenes/MomentScenes/Builders/_Utils/avatarRig.lua",
+          "kind": "file",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "avatar",
+            "builders",
+            "extracontent",
+            "index",
+            "luapackages",
+            "moment",
+            "rig",
+            "scenes",
+            "utils"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Source",
+          "id": "c0bc556fc74d2e897e20f7ec8289612963299ff91f72f9e65ffef46ade1a04e5",
+          "key": "extracontent-luapackages/Packages/_Index/MomentsCreationFlow/Foundation.lua",
+          "kind": "file",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "creation",
+            "extracontent",
+            "flow",
+            "foundation",
+            "index",
+            "luapackages",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "c7cd8ecc11beff741a57908e6df102a104438cef7f9699b16b54edebe7ae0d5d",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentScenes/MomentScenes/init.lua",
+          "kind": "files",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "content",
+            "extra",
+            "index",
+            "init",
+            "moment",
+            "scenes"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Source",
+          "id": "c8ce3f98e6f009119b3307c0178c5284985ed97b07b7c12fd5b504b013008ec2",
+          "key": "extracontent-luapackages/Packages/_Index/MomentScenes/MomentScenes/Builders/AvatarMoment/Flags.lua",
+          "kind": "sources",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "avatar",
+            "builders",
+            "extracontent",
+            "flags",
+            "index",
+            "luapackages",
+            "moment",
+            "scenes"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Source",
+          "id": "c96f18466d77eb419a16314a9df1cb90eea00856c07af4902bcd78df25e1fc15",
+          "key": "extracontent-luapackages/Packages/_Index/MomentScenes/MomentScenes/Builders/_Utils/checkApplyDefaultClothing.lua",
+          "kind": "file",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "apply",
+            "builders",
+            "check",
+            "clothing",
+            "default",
+            "extracontent",
+            "index",
+            "luapackages",
+            "moment",
+            "scenes",
+            "utils"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "ccaf9c5ed1b7b73f7a29003ff3dd29f4faa708c8a77be9e13f230aa98fd6121b",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentScenes/MomentScenes/Builders/AvatarMoment/Flags.lua",
+          "kind": "files",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "avatar",
+            "builders",
+            "content",
+            "extra",
+            "flags",
+            "index",
+            "moment",
+            "scenes"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "d5824ba2ede94ed7795d050c70f89120ff38be42e5d5de683b8fb35b29d4d48b",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentsCreationFlow/lock.toml",
+          "kind": "files",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "content",
+            "creation",
+            "extra",
+            "flow",
+            "index",
+            "lock",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Distribution",
+          "id": "ddc1119e25b6cf3e3673bd149d45ceb1f9e194f6bf649b7cfc42f4b13b9228ca",
+          "key": "ExtraContent/LuaPackages/Packages/_Index/MomentScenes/lock.toml",
+          "kind": "files",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "changed",
+          "surface": "Build",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "content",
+            "extra",
+            "index",
+            "lock",
+            "moment",
+            "scenes"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8",
+          "evidencePath": "2026/11/17/22-21-18Z_build_version-8d7a1009c17e4ff8/changes.json",
+          "family": "Source",
+          "id": "de742fc68b888f11904185ff9ce14a3a7f3758a2eae1761aa76b9c26afe5a6e4",
+          "key": "extracontent-luapackages/Packages/_Index/MomentScenes/MomentScenes/Builders/_Utils/applyDefaultClothing.lua",
+          "kind": "file",
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "operation": "added",
+          "surface": "LuaPackages",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "apply",
+            "builders",
+            "clothing",
+            "default",
+            "extracontent",
+            "index",
+            "luapackages",
+            "moment",
+            "scenes",
+            "utils"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-11-17T03:48:38.206Z",
+      "lastObservedAt": "2026-11-17T22:21:18.506Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
@@ -16796,6 +18684,22 @@
           "signalIds": [
             "1bd1804db6775dab146574e6bffd0fee3ab501c7b8d57ca825c5752d7688c25f",
             "41b7112262d0ed1c3f538903d392e13544606d5bc025610e38710c822e36149a"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "signalIds": [
+            "2ab0d24cf16f17d1236ff78f7141b8133eb52e85821cfeebcead79b079cb5b6e",
+            "528da1c20395868b76f65681ac58b30152de23c80c6c0a6905fa5d9f13e1f595"
+          ],
+          "type": "staged-to-non-staged"
+        },
+        {
+          "observedAt": "2026-11-17T22:21:18.506Z",
+          "signalIds": [
+            "1a67463fd777347e449e9b20ae2a0be6175c33814c36514b316128f4d35d93c4",
+            "7182eaab8531e6ab45e6b581cbb3be07e749617c9a9871b5a61da203cd4eaa28"
           ],
           "type": "staged-to-non-staged"
         }

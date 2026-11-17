@@ -6,31 +6,31 @@
     "uncompressedSize": 388
   },
   {
-    "checksum": "29e0fffe81bc87c922e16ace6f059b17",
-    "compressedSize": 105185527,
+    "checksum": "3d878b69d1af1296b62e989d2e8225bc",
+    "compressedSize": 106319587,
     "name": "BuiltInPlugins.zip",
-    "uncompressedSize": 105305156
+    "uncompressedSize": 106445430
   },
   {
-    "checksum": "89d4e40aa2e034024b9ce8db48e47c77",
-    "compressedSize": 109953554,
+    "checksum": "712d05dc6ed7a83fcf65853694662214",
+    "compressedSize": 115218504,
     "name": "BuiltInStandalonePlugins.zip",
-    "uncompressedSize": 110082010
+    "uncompressedSize": 115350071
   },
   {
-    "checksum": "cfd9a87669f81ce3a0612ae342e64e33",
-    "compressedSize": 24878547,
+    "checksum": "3512d50cd3870c7378929bc72cd4db20",
+    "compressedSize": 25448484,
     "name": "content-api-docs.zip",
-    "uncompressedSize": 244319130
+    "uncompressedSize": 249082384
   },
   {
-    "checksum": "4bffd5926bf2ba82dc7d0c8c941a85b8",
-    "compressedSize": 436351,
+    "checksum": "c74fd8e96c204191176bbb085e74bcac",
+    "compressedSize": 459426,
     "name": "content-avatar.zip",
-    "uncompressedSize": 1826522
+    "uncompressedSize": 1880833
   },
   {
-    "checksum": "116cec6af1deadc1879fa054250c6f96",
+    "checksum": "ad9001f9b837ae1a648548ad43e19aa7",
     "compressedSize": 307051,
     "name": "content-configs.zip",
     "uncompressedSize": 1807046
@@ -48,10 +48,10 @@
     "uncompressedSize": 1413471
   },
   {
-    "checksum": "9fd6909e78afd9d3671814ba8f8de7f3",
-    "compressedSize": 458594,
+    "checksum": "369df21c7d0cef3effd0b970965388af",
+    "compressedSize": 457888,
     "name": "content-platform-dictionaries.zip",
-    "uncompressedSize": 1548125
+    "uncompressedSize": 1559106
   },
   {
     "checksum": "8f379ec2b22ff106b837d79f7fdbf0d8",
@@ -78,10 +78,10 @@
     "uncompressedSize": 499208
   },
   {
-    "checksum": "e6adaebe3515d5c0a6f00dd3eec3bea4",
-    "compressedSize": 7458825,
+    "checksum": "f55e0c10f4a3ff11d63b1206422beca9",
+    "compressedSize": 7464139,
     "name": "content-studio_svg_textures.zip",
-    "uncompressedSize": 6593530
+    "uncompressedSize": 6598167
   },
   {
     "checksum": "fe7b3ecee91e83f9fade72e8b0f4d47f",
@@ -102,22 +102,22 @@
     "uncompressedSize": 8780146
   },
   {
-    "checksum": "5a8d2816cdb71fbb2052045922afd2a4",
-    "compressedSize": 9676353,
+    "checksum": "28fd068cf2d13ee48d748c6c247da10f",
+    "compressedSize": 9788442,
     "name": "extracontent-luapackages.zip",
-    "uncompressedSize": 34775074
+    "uncompressedSize": 35315160
   },
   {
-    "checksum": "a435d58f61a069d4995a3b9d622a211e",
-    "compressedSize": 17494992,
+    "checksum": "c0cb07eb7757405960d6e30c2b1fbd40",
+    "compressedSize": 18013406,
     "name": "extracontent-models.zip",
-    "uncompressedSize": 17593484
+    "uncompressedSize": 18129424
   },
   {
-    "checksum": "ad1ec139d8dd210fab247559e6f8fdc4",
-    "compressedSize": 3363940,
+    "checksum": "cca671b07654cd5a1805aed245e9d014",
+    "compressedSize": 3414744,
     "name": "extracontent-scripts.zip",
-    "uncompressedSize": 10558724
+    "uncompressedSize": 10713816
   },
   {
     "checksum": "7efc8449f0be6c3451b9ab7e94c97209",
@@ -132,13 +132,13 @@
     "uncompressedSize": 1919259
   },
   {
-    "checksum": "dd84b9c5bfbaa76659da0d4afbb24ccb",
-    "compressedSize": 6023972,
+    "checksum": "9c2c2340a3d3a26bc176586e8fc89b8c",
+    "compressedSize": 6023967,
     "name": "Libraries.zip",
     "uncompressedSize": 14987472
   },
   {
-    "checksum": "2c5baa855300faac76e8873dfe43221e",
+    "checksum": "8f459234fbf2584cedc27001963556cc",
     "compressedSize": 8607966,
     "name": "LibrariesQt5.zip",
     "uncompressedSize": 20268032
@@ -156,22 +156,22 @@
     "uncompressedSize": 4193416
   },
   {
-    "checksum": "9f0ab7e795277b3840f650549b9be94e",
-    "compressedSize": 122345408,
+    "checksum": "97b8e07846bae48e71e272ec8feac338",
+    "compressedSize": 121733637,
     "name": "RobloxStudio.zip",
-    "uncompressedSize": 259949119
+    "uncompressedSize": 258398174
   },
   {
-    "checksum": "b7e3d1f6341ab1b52ee827fce2938e2b",
-    "compressedSize": 13872230,
+    "checksum": "d6b46648802e5373a8148387986da472",
+    "compressedSize": 14393776,
     "name": "shaders.zip",
-    "uncompressedSize": 88157049
+    "uncompressedSize": 92161509
   },
   {
-    "checksum": "ccb2cd9b1258934409f1d65cf3dd0ec5",
-    "compressedSize": 130569,
+    "checksum": "f206006dbc8b6ab10c74691ad80ab192",
+    "compressedSize": 142498,
     "name": "ssl.zip",
-    "uncompressedSize": 228725
+    "uncompressedSize": 248842
   },
   {
     "checksum": "594fefee93013b2bf001b3c7701e023f",
@@ -192,7 +192,7 @@
     "uncompressedSize": 133918371
   },
   {
-    "checksum": "fd1885e37679364f6847cfa85bd80e4e",
+    "checksum": "dc07aefe6c0c14b26af5f0999d76cddd",
     "compressedSize": 83405,
     "name": "WebView2.zip",
     "uncompressedSize": 166000

@@ -143,6 +143,26 @@
   },
   {
     "class": "Folder",
+    "name": "Localization",
+    "path": "ViewSelector/Resources/Localization",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
+    "name": "Resources",
+    "path": "ViewSelector/Resources",
+    "properties": {
+      "AttributesSerialize": "",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "Folder",
     "name": "ViewSelector",
     "path": "ViewSelector",
     "properties": {
@@ -250,6 +270,17 @@
     "class": "LocalizationTable",
     "name": "LocalizedStrings",
     "path": "ViewSelector/LocalizedStrings",
+    "properties": {
+      "AttributesSerialize": "",
+      "SourceLocaleId": "en-us",
+      "Tags": ""
+    },
+    "unreadable": []
+  },
+  {
+    "class": "LocalizationTable",
+    "name": "SourceStrings",
+    "path": "ViewSelector/Resources/Localization/SourceStrings",
     "properties": {
       "AttributesSerialize": "",
       "SourceLocaleId": "en-us",
@@ -464,8 +495,8 @@
       "AttributesSerialize": "",
       "LinkedSource": "",
       "ScriptGuid": "",
-      "SourceBytecodeBytes": "22061",
-      "SourceBytecodeSha256": "10ce7de32eea1610040da54e55eb6db6bc4fc89159da07f1d81853f1202f7625",
+      "SourceBytecodeBytes": "70846",
+      "SourceBytecodeSha256": "f704e0a1af9211500c6f8179b9506dabcef699456c8fab46baa81b74b610e2a5",
       "Tags": ""
     },
     "unreadable": [
