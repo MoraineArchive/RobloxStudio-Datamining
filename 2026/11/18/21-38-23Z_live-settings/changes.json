@@ -1,0 +1,64 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-8d7a1009c17e4ff8",
+    "manifestFiles": 19343,
+    "packages": 34,
+    "version": "0.748.0.7481526"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "7fe0c6b51095f947adaec099e3afb6e2130ac83b28395529769a8728b31786db",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "6679b741c7d6d146d2814174ecb73667b4ecfde3c2e5c58732d0cce29ebbb43f",
+      "semantic": {
+        "added": [
+          "FFlagEnableActiveFreeTrialBlueDot",
+          "FFlagEnableFreeTrialBlueDot",
+          "FFlagFreeTrialChipBuyAnimation",
+          "FFlagTrialNotificationBlueDotOnStudio",
+          "FFlagTrialNotificationTopBarChipOnStudio"
+        ],
+        "changed": [
+          {
+            "after": "666695b828dfe0d315d34f634041eecf9529b052",
+            "before": "3dded9c3f8579bc38eec29e095cd95934ef4405f",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-18T21:29:03.567Z",
+            "before": "2026-11-18T21:17:42.720Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "666695b828dfe0d315d34f634041eecf9529b052",
+            "before": "3dded9c3f8579bc38eec29e095cd95934ef4405f",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-18T21:29:03.567Z",
+            "before": "2026-11-18T21:17:42.720Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagEnableActiveFreeTrialBlueDot_Staged",
+          "FFlagEnableFreeTrialBlueDot_Staged",
+          "FFlagFreeTrialChipBuyAnimation_Staged",
+          "FFlagTrialNotificationBlueDotOnStudio_Staged",
+          "FFlagTrialNotificationTopBarChipOnStudio_Staged"
+        ],
+        "unchanged": 27673
+      }
+    }
+  },
+  "schemaVersion": 1
+}
