@@ -1,0 +1,65 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-8d7a1009c17e4ff8",
+    "manifestFiles": 19343,
+    "packages": 34,
+    "version": "0.748.0.7481526"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "5b505435af14c01d24608a12262c50af05bcccd04a880277a8ab1c151be66902",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "7fe0c6b51095f947adaec099e3afb6e2130ac83b28395529769a8728b31786db",
+      "semantic": {
+        "added": [
+          "DFFlagCLI183138Pre_Staged",
+          "FFlagAssetImportServicePickTextDocumentFileWithPrompt",
+          "FFlagLuaAppEnableGamePassFreeTrials8"
+        ],
+        "changed": [
+          {
+            "after": "b6aff9ab7debd8ca72fd395c285fd290eeb6a5ca",
+            "before": "666695b828dfe0d315d34f634041eecf9529b052",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-18T22:12:33.897Z",
+            "before": "2026-11-18T21:29:03.567Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "True",
+            "before": "False",
+            "name": "FFlagRbxTransportConnectionAuthGate"
+          },
+          {
+            "after": "b6aff9ab7debd8ca72fd395c285fd290eeb6a5ca",
+            "before": "666695b828dfe0d315d34f634041eecf9529b052",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-18T22:12:33.897Z",
+            "before": "2026-11-18T21:29:03.567Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagAssetImportServicePickTextDocumentFileWithPrompt_Staged",
+          "FFlagLuaAppEnableGamePassFreeTrials8_Staged",
+          "FFlagRbxTransportConnectionAuthGate_Staged"
+        ],
+        "unchanged": 27674
+      }
+    }
+  },
+  "schemaVersion": 1
+}
