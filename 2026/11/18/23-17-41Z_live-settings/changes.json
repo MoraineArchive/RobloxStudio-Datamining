@@ -1,0 +1,95 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-8d7a1009c17e4ff8",
+    "manifestFiles": 19343,
+    "packages": 34,
+    "version": "0.748.0.7481526"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "62084de1d8d5d16aa95b3d4ba088b4e9710a87a953226add4cee33cbf42df05a",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "5b505435af14c01d24608a12262c50af05bcccd04a880277a8ab1c151be66902",
+      "semantic": {
+        "added": [
+          "DFFlagAssetExportShadowCheckExportGltf_Staged",
+          "DFFlagSetServerMetroOnDatamodel_Staged",
+          "FFlagAXCatalogSduiDisableInSearchResults_Staged",
+          "FFlagAXCategoryMenuButtonsFromCategoryData_Staged",
+          "FFlagAXFixSplitPaneHomeTryOnReset_Staged",
+          "FFlagAXPrefetchSduiWidgetThumbnails_Staged",
+          "FFlagAXSduiCatalogTaxonomyFromServer_Staged",
+          "FFlagAXUnmountHiddenSduiCatalogFeed_Staged",
+          "FFlagAnimGraphExpressionValueNode_Staged",
+          "FFlagAppChatBlueSentBubbles",
+          "FFlagAssistantDMNetworkingLongUnreachableTimeout_Staged",
+          "FFlagAssistantMCPVideoCapture_Staged",
+          "FFlagCaptureServiceGetScreenshotCaptureObject",
+          "FFlagCleanupGenerateAndSetCollisionGeometryFunctions_Staged",
+          "FFlagDisablePlatformServiceLegacyTelemetryMetrics",
+          "FFlagEditorSourceServiceTextDocument2_Staged",
+          "FFlagFixSplitHashFullCompactionRounding_Staged",
+          "FFlagGen3dSegmentMeshAssetIdUpload_Staged",
+          "FFlagIAMPreInitProperties_Staged",
+          "FFlagLuauExpressionBoundParams_Staged",
+          "FFlagLuauExpressionNilAndEqualityMatchLuau_Staged",
+          "FFlagMCPCaptureRetention_Staged",
+          "FFlagMCPVideoCapture2_Staged",
+          "FFlagRCCMemoryDataModelAttribution_Staged",
+          "FFlagRefetchShopWidgetsAfterPassPurchase",
+          "FFlagSduiChartsAudienceFilter_Staged",
+          "FFlagSentryUserIdAsUserContextEnabled_Staged",
+          "FFlagSocialCarouselBuildPresence2_IXP",
+          "FFlagUseOverMediaOnAllFreeTrialBadges_Staged",
+          "FStringStudioAssistantPermissionsAllowListIds_Staged",
+          "SFFlagAnimGraphValueNodes2_Staged"
+        ],
+        "changed": [
+          {
+            "after": "True;388;416;25502;26143;425;25960",
+            "before": "True;388;416;25502;26143",
+            "name": "DFFlagDebugDynamicRCCMemoryLimitsIgnoreContainerLimit_DataCenterFilter"
+          },
+          {
+            "after": "a148eb085a5a6de1e862e4338dc69a425b56e8ab",
+            "before": "b6aff9ab7debd8ca72fd395c285fd290eeb6a5ca",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-18T23:17:03.959Z",
+            "before": "2026-11-18T22:12:33.897Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "a148eb085a5a6de1e862e4338dc69a425b56e8ab",
+            "before": "b6aff9ab7debd8ca72fd395c285fd290eeb6a5ca",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-18T23:17:03.959Z",
+            "before": "2026-11-18T22:12:33.897Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagAXAddPlusUpsellToBulkPurchaseExposure_IXP",
+          "FFlagAppChatBlueSentBubbles_Staged",
+          "FFlagCaptureServiceGetScreenshotCaptureObject_Staged",
+          "FFlagDisablePlatformServiceLegacyTelemetryMetrics_Staged",
+          "FFlagRefetchShopWidgetsAfterPassPurchase_Staged"
+        ],
+        "unchanged": 27672
+      }
+    }
+  },
+  "schemaVersion": 1
+}
