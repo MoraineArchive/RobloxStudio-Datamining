@@ -1,0 +1,159 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-8d7a1009c17e4ff8",
+    "manifestFiles": 19343,
+    "packages": 34,
+    "version": "0.748.0.7481526"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "8cb7b565d71d02d916266633b4859c2fbf8d5d588b52f9d793fc8fcedcb62894",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "8a0b2043cecce6a9561fa9a2752bb0557d2238202da9aae1b38f04845793ccee",
+      "semantic": {
+        "added": [
+          "DFFlagJoinInfoCheckLength",
+          "DFFlagJoinInfoJsonLimits",
+          "FFlagAXItemDetailsSduiTryOnSimpleView",
+          "FFlagAXItemViewportRestoreParentScrollingOnUnmount",
+          "FFlagAnimGraphUI_BreakConnections",
+          "FFlagAnimGraphUI_EditParameterizedAngle",
+          "FFlagAnimGraphUI_FixCloseReopens",
+          "FFlagAnimGraphUI_NoDuplicateGraphOutputOnInsert",
+          "FFlagAppPageShellScrollTelemetry",
+          "FFlagAssistantMcpCapturePerTurn",
+          "FFlagAssistantMcpCaptureUpload",
+          "FFlagAutomaticDRSUseStricterTickTarget",
+          "FFlagCloudClientOfferTypeApi",
+          "FFlagCloudClientOfferTypeApi_IXP",
+          "FFlagCommandErrorRemoveVarConstructor",
+          "FFlagComponentManagerAddCreationGraph2",
+          "FFlagDeterministicRbxmBundling",
+          "FFlagDeviceSimulatorSplitEditPlayQuality",
+          "FFlagDeviceSimulatorToolbarHide",
+          "FFlagEnableCommunitiesHttpDeepLink2",
+          "FFlagEnableExternalOriginOnlyUrlRegistration",
+          "FFlagEnableShopFlagLinkedExposureLogging",
+          "FFlagFixNavigateToCatalogMetric",
+          "FFlagFoundationFixChipAccessoryLayout",
+          "FFlagFoundationSliderRebuild2",
+          "FFlagLuaAppCloudClientPlayButtonOffer_IXP",
+          "FFlagMicroWebrtcSctpStreamReset",
+          "FFlagMigratePlatformServiceTelemetryToV2",
+          "FFlagPluginMetadataSkipBatchCallIfNoChange",
+          "FFlagResetHoverTileOnGameLeave",
+          "FFlagSduiEdpRenderStarted",
+          "FFlagSduiLaunchExperienceCheckPlayabilityBeforeLaunch",
+          "FFlagSoundscapeOpusDynamicPacketLoss",
+          "FFlagStudioMCPCaptureHook",
+          "FFlagStudioQWidgetPluginGuiCloseButtonEnabled",
+          "FFlagStudioShortcutsDialogSayResetDefaults",
+          "FFlagTTITrackerDropEventsOnJoinAttempt",
+          "FFlagTexturePackUVTransform2",
+          "FFlagUseRRServer_IXP",
+          "FFlagVideo2ControllerSetupOnDecodeThread",
+          "FStringLuaAppCloudClientPlayButtonIxpLayer_IXP"
+        ],
+        "changed": [
+          {
+            "after": "60818b0504d8f13af9f2de3bff29bdd9617a6247",
+            "before": "26047817f0119954aba40daf9d8efb2f914129e1",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-18T02:57:44.816Z",
+            "before": "2026-11-17T23:42:36.517Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "1;Engine.CloudClient;Engine.CloudClient.OfflineCheck.v3;386519265;flagbank",
+            "before": "1;Engine.CloudClient;Engine.CloudClient.OfflineCheck.v1;99957326;flagbank",
+            "name": "FFlagUseStratusServer_IXP"
+          },
+          {
+            "after": "60818b0504d8f13af9f2de3bff29bdd9617a6247",
+            "before": "26047817f0119954aba40daf9d8efb2f914129e1",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-18T02:57:44.816Z",
+            "before": "2026-11-17T23:42:36.517Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagAXItemDetailsSduiTryOnSimpleView_Staged",
+          "FFlagAXItemViewportRestoreParentScrollingOnUnmount_Staged",
+          "FFlagAnimGraphUI_BreakConnections_Staged",
+          "FFlagAnimGraphUI_EditParameterizedAngle_Staged",
+          "FFlagAnimGraphUI_FixCloseReopens_Staged",
+          "FFlagAnimGraphUI_NoDuplicateGraphOutputOnInsert_Staged",
+          "FFlagAppPageShellScrollTelemetry_Staged",
+          "FFlagAssistantMcpCapturePerTurn_Staged",
+          "FFlagAssistantMcpCaptureUpload_Staged",
+          "FFlagAutomaticDRSUseStricterTickTarget_Staged",
+          "FFlagComponentManagerAddCreationGraph2_Staged",
+          "FFlagDeterministicRbxmBundling_Staged",
+          "FFlagDeviceSimulatorSplitEditPlayQuality_Staged",
+          "FFlagDeviceSimulatorToolbarHide_Staged",
+          "FFlagEnableExternalOriginOnlyUrlRegistration_Staged",
+          "FFlagFixNavigateToCatalogMetric_Staged",
+          "FFlagFoundationFixChipAccessoryLayout_Staged",
+          "FFlagFoundationSliderRebuild2_Staged",
+          "FFlagMigratePlatformServiceTelemetryToV2_Staged",
+          "FFlagPluginMetadataSkipBatchCallIfNoChange_Staged",
+          "FFlagResetHoverTileOnGameLeave_Staged",
+          "FFlagSduiEdpRenderStarted_Staged",
+          "FFlagSduiLaunchExperienceCheckPlayabilityBeforeLaunch_Staged",
+          "FFlagSoundscapeOpusDynamicPacketLoss_Staged",
+          "FFlagStudioMCPCaptureHook_Staged",
+          "FFlagStudioQWidgetPluginGuiCloseButtonEnabled_Staged",
+          "FFlagStudioShortcutsDialogSayResetDefaults_Staged",
+          "FFlagTTITrackerDropEventsOnJoinAttempt_Staged",
+          "FFlagTexturePackUVTransform2_Staged",
+          "FFlagVideo2ControllerSetupOnDecodeThread_Staged"
+        ],
+        "unchanged": 27600
+      }
+    },
+    "Web": {
+      "current": "8e4530c2e1fb90b477409750b7dcea1afaf8259413406eace9f1a6a3f78b347a",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-007.js",
+          "assets.create.roblox.com/page-0/script-027.js",
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-033.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-036.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-050.js",
+          "assets.create.roblox.com/page-0/script-061.js",
+          "assets.create.roblox.com/page-0/script-065.js",
+          "assets.create.roblox.com/page-0/script-071.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 79
+      },
+      "previous": "b31c7a451836858ef9a2e864e3932c48d18d5dd232cedc45a9b91a1cb185a242",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
