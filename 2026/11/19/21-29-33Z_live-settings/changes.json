@@ -1,0 +1,74 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-8d7a1009c17e4ff8",
+    "manifestFiles": 19343,
+    "packages": 34,
+    "version": "0.748.0.7481526"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "d0fef106b60d9fb1b221537ca3647e6a40f0a6626399d96692f83be1ba609fa4",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "ae2439b1a8d35e67115591c9b55bcf719f7f4f2501e2dac4ec47c78f1102ddb2",
+      "semantic": {
+        "added": [
+          "FFlagAddFriendsAcceptedRequestUx",
+          "FFlagRVideoCapWebmFrameSize",
+          "FFlagRecorderSendToCaptureService_Staged",
+          "FFlagToolboxAssetConfigSaveDefaults2",
+          "FFlagUGCValidateCurveAnimRenderedFrameChecks_Staged",
+          "FFlagUGCValidateCurveAnimationRenderedFrames_Staged",
+          "FFlagUGCValidateRunValidationsOnSecondaryCurveAnimations_Staged",
+          "FFlagVideo2CapWebmFrameSize",
+          "FIntUGCValidateBodyPartTranslationMaxDistanceHundredths_Staged",
+          "FIntUGCValidateBoneTranslationMaxDistanceHundredths_Staged",
+          "FStringUGCValidateMaxAnimationMovement_Staged"
+        ],
+        "changed": [
+          {
+            "after": "True;388;416;25502;26143;425;25960;25853",
+            "before": "True;388;416;25502;26143;425;25960",
+            "name": "DFFlagDebugDynamicRCCMemoryLimitsIgnoreContainerLimit_DataCenterFilter"
+          },
+          {
+            "after": "d4d73293082bcf1ac13ed72d0ae262d9053b8b73",
+            "before": "69b799a68c45855d7a2fad690e2cd8f13b8c3bb4",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-19T21:28:02.428Z",
+            "before": "2026-11-19T20:58:34.888Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "d4d73293082bcf1ac13ed72d0ae262d9053b8b73",
+            "before": "69b799a68c45855d7a2fad690e2cd8f13b8c3bb4",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-19T21:28:02.428Z",
+            "before": "2026-11-19T20:58:34.888Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "FFlagAddFriendsAcceptedRequestUx_Staged",
+          "FFlagRVideoCapWebmFrameSize_Staged",
+          "FFlagToolboxAssetConfigSaveDefaults2_Staged",
+          "FFlagVideo2CapWebmFrameSize_Staged"
+        ],
+        "unchanged": 27779
+      }
+    }
+  },
+  "schemaVersion": 1
+}
