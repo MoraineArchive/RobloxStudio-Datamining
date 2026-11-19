@@ -1,0 +1,151 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-8d7a1009c17e4ff8",
+    "manifestFiles": 19343,
+    "packages": 34,
+    "version": "0.748.0.7481526"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "7e4bdd53bbe2f5499e0ccb7718f4b442e0a6605a1d7e8e8f165551979e1634cf",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "62084de1d8d5d16aa95b3d4ba088b4e9710a87a953226add4cee33cbf42df05a",
+      "semantic": {
+        "added": [
+          "DFFlagAssetExportShadowCheckExportGltf",
+          "DFFlagFileMeshDataTransformHardening",
+          "DFFlagSetServerMetroOnDatamodel",
+          "FFlagAXCatalogSduiDisableInSearchResults",
+          "FFlagAXCategoryMenuButtonsFromCategoryData",
+          "FFlagAXFixSplitPaneHomeTryOnReset",
+          "FFlagAXPrefetchSduiWidgetThumbnails",
+          "FFlagAXSduiCatalogTaxonomyFromServer",
+          "FFlagAXUnmountHiddenSduiCatalogFeed",
+          "FFlagAnimGraphExpressionValueNode",
+          "FFlagAnimGraphStateMachine2",
+          "FFlagAssetProviderUseAssetDeliveryV3_Staged",
+          "FFlagAssistantAvatarGenAccessoriesAfterParent",
+          "FFlagAssistantAvatarGenCompactName2",
+          "FFlagAssistantDMNetworkingLongUnreachableTimeout",
+          "FFlagAssistantJobWaitExternalMcp",
+          "FFlagAssistantMCPVideoCapture",
+          "FFlagAvatarPreviewerAvatarCreationAccessoriesAfterParent",
+          "FFlagAvatarPreviewerAvatarCreationBuildName",
+          "FFlagCleanupGenerateAndSetCollisionGeometryFunctions",
+          "FFlagEditorSourceServiceTextDocument2",
+          "FFlagFixSplitHashFullCompactionRounding",
+          "FFlagGen3dSegmentMeshAssetIdUpload",
+          "FFlagIAMPreInitProperties",
+          "FFlagLuauExpressionBoundParams",
+          "FFlagLuauExpressionNilAndEqualityMatchLuau",
+          "FFlagMCPCaptureRetention",
+          "FFlagMCPVideoCapture2",
+          "FFlagNAPUseRootLabelTranslationKey",
+          "FFlagRCCMemoryDataModelAttribution",
+          "FFlagSduiChartsAudienceFilter",
+          "FFlagSentryUserIdAsUserContextEnabled",
+          "FFlagUGCValidateTransitionMakeupBounds",
+          "FFlagUseOverMediaOnAllFreeTrialBadges",
+          "FStringStudioAssistantPermissionsAllowListIds",
+          "SFFlagAnimGraphValueNodes2"
+        ],
+        "changed": [
+          {
+            "after": "False",
+            "before": "True",
+            "name": "DFFlagCLI183138Pre"
+          },
+          {
+            "after": "47a6514a67130bb177236667630ee42ad6046c44",
+            "before": "a148eb085a5a6de1e862e4338dc69a425b56e8ab",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-19T02:37:27.335Z",
+            "before": "2026-11-18T23:17:03.959Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagEDPTTITrackingEnabled"
+          },
+          {
+            "after": "False",
+            "before": "True",
+            "name": "FFlagEnableEDPTTIManagerColdWarmDetection"
+          },
+          {
+            "after": "47a6514a67130bb177236667630ee42ad6046c44",
+            "before": "a148eb085a5a6de1e862e4338dc69a425b56e8ab",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-19T02:37:27.335Z",
+            "before": "2026-11-18T23:17:03.959Z",
+            "name": "FStringFlipTimeStampFastString"
+          }
+        ],
+        "removed": [
+          "DFFlagAssetExportShadowCheckExportGltf_Staged",
+          "DFFlagCLI183138Pre_Staged",
+          "DFFlagSetServerMetroOnDatamodel_Staged",
+          "FFlagAXCatalogSduiDisableInSearchResults_Staged",
+          "FFlagAXCategoryMenuButtonsFromCategoryData_Staged",
+          "FFlagAXFixSplitPaneHomeTryOnReset_Staged",
+          "FFlagAXPrefetchSduiWidgetThumbnails_Staged",
+          "FFlagAXSduiCatalogTaxonomyFromServer_Staged",
+          "FFlagAXUnmountHiddenSduiCatalogFeed_Staged",
+          "FFlagAnimGraphExpressionValueNode_Staged",
+          "FFlagAssistantDMNetworkingLongUnreachableTimeout_Staged",
+          "FFlagAssistantMCPVideoCapture_Staged",
+          "FFlagCleanupGenerateAndSetCollisionGeometryFunctions_Staged",
+          "FFlagEditorSourceServiceTextDocument2_Staged",
+          "FFlagFixSplitHashFullCompactionRounding_Staged",
+          "FFlagGen3dSegmentMeshAssetIdUpload_Staged",
+          "FFlagIAMPreInitProperties_Staged",
+          "FFlagLuauExpressionBoundParams_Staged",
+          "FFlagLuauExpressionNilAndEqualityMatchLuau_Staged",
+          "FFlagMCPCaptureRetention_Staged",
+          "FFlagMCPVideoCapture2_Staged",
+          "FFlagRCCMemoryDataModelAttribution_Staged",
+          "FFlagSduiChartsAudienceFilter_Staged",
+          "FFlagSentryUserIdAsUserContextEnabled_Staged",
+          "FFlagUseOverMediaOnAllFreeTrialBadges_Staged",
+          "FStringStudioAssistantPermissionsAllowListIds_Staged",
+          "SFFlagAnimGraphValueNodes2_Staged"
+        ],
+        "unchanged": 27674
+      }
+    },
+    "Web": {
+      "current": "9e5d5d12cbc55bd322216195f81405a43bb2f0b66a839527ad0d9160f81f34fa",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-1/script-001.js",
+          "assets.create.roblox.com/page-1/script-003.js",
+          "assets.create.roblox.com/page-1/script-004.js",
+          "assets.create.roblox.com/page-1/script-011.js",
+          "assets.create.roblox.com/page-1/script-013.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 89
+      },
+      "previous": "66bb080fd3facbb64b31b1d750fd220dbef7baca42e1bceeabe92d58392794ee",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}
