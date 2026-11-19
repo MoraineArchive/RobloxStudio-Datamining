@@ -1,0 +1,193 @@
+{
+  "build": {
+    "engineRevision": 1,
+    "guid": "version-8d7a1009c17e4ff8",
+    "manifestFiles": 19343,
+    "packages": 34,
+    "version": "0.748.0.7481526"
+  },
+  "datasets": {
+    "LiveSettings": {
+      "current": "ae2439b1a8d35e67115591c9b55bcf719f7f4f2501e2dac4ec47c78f1102ddb2",
+      "files": {
+        "added": [],
+        "changed": [
+          "current.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 0
+      },
+      "previous": "35890fe1e3f978ebaabf178e3ab52833b12ac661ba00dbbf17c5b91ef9831c5f",
+      "semantic": {
+        "added": [
+          "DFFlagConvexHullFailOnBrokenTopology",
+          "DFFlagMomentsServiceAvatarPost2",
+          "DFFlagMomentsServiceAvatarPostEmoteName",
+          "DFFlagRbxTransportQuicHandshakeStatsReportOnce",
+          "DFFlagRbxTransportQuicHeapReadCallbacks",
+          "DFFlagStudioOnDemandLanguageService",
+          "DFFlagValueCurveRejectPartiallyDecodedKeys",
+          "DFIntBadgeSlpInsightsClientRolloutPercentage",
+          "DFIntBadgeSlpInsightsClientRolloutPercentage_UniverseFilter",
+          "DFIntSQLiteCacheAssetDeliveryResponseTTLSeconds",
+          "FFlagAACAssetVersionPublishStates",
+          "FFlagAXItemDetailsSduiFillView_Staged",
+          "FFlagAXSduiFeedSkipScrollWithoutContent_Staged",
+          "FFlagAXTabGroupScrollOnlyWhenClipped_Staged",
+          "FFlagAddFriendsAcceptedRequestUx_Staged",
+          "FFlagAnimGraphUIEnableExpressionNodes2",
+          "FFlagAnimGraphUIEnableValueNodes",
+          "FFlagAnimGraphUI_PinOffsetsUseRenderedWidth_Staged",
+          "FFlagAnimGraphUI_PoseStateMachineNode",
+          "FFlagAssistantMcpPinSkillTools_Staged",
+          "FFlagAssistantMcpRobloxSkillToolNames_Staged",
+          "FFlagAssistantMcpSkillToolDescriptions_Staged",
+          "FFlagAssistantVideoCaptureTool",
+          "FFlagAvatarSettingsDiscardFiresRefreshLocally",
+          "FFlagBillboardGuiGestureAllocateOnHit_Staged",
+          "FFlagBulkPurchaseTestPurchaseHint",
+          "FFlagCLI235974_Staged",
+          "FFlagDMCTMigrateCollisionFidelity",
+          "FFlagEnableAccountSwitcherUncheckedBadge",
+          "FFlagEnableAudioViewportVisualizations",
+          "FFlagEnableAudioViewportVisualizationsTelemetry",
+          "FFlagExplorerStreaming4_Staged",
+          "FFlagFileMeshDataParserHardening_Staged",
+          "FFlagFriendsChatScreenExitLoadedMessageCount_Staged",
+          "FFlagHardenKTXLoader_Staged",
+          "FFlagIntegrityCheckedProcessorPlayerMetadataOncePerBatch_Staged",
+          "FFlagLeaveExperienceEndWarmAfterGameTeardown_Staged",
+          "FFlagLinuxCpuTempCacheSensorPaths_Staged",
+          "FFlagLuaAppSduiGameTileInteractionFeedback",
+          "FFlagLuauCodegenExitSyncExpectedTag",
+          "FFlagLuauCodegenFastcallAnalysisLimit",
+          "FFlagMomentsComments2",
+          "FFlagMomentsCommentsCreatorControl",
+          "FFlagMomentsCommentsIxpEnabled",
+          "FFlagMomentsCreatorAnalyticsPhase1_IXP",
+          "FFlagMomentsOverflowButtonAnalytics_IXP",
+          "FFlagMomentsPostInsightsIxpEnabled_IXP",
+          "FFlagMpScopeThreadCacheGrowOnDemand_Staged",
+          "FFlagNetworkOwnerJobReuseClientMapNodes_Staged",
+          "FFlagPCLLegacyBodyColorsUseLoadAvatarRules",
+          "FFlagPerformanceControlSizeCriticalBufferToModifications_Staged",
+          "FFlagRVideoCapWebmFrameSize_Staged",
+          "FFlagRenderGroundRings",
+          "FFlagResumeDelayedThreadsReuseQueue_Staged",
+          "FFlagSearchEmphasisViewportNonSdui",
+          "FFlagSerializerBinaryReuseZstdDecompressContext_Staged",
+          "FFlagSetAllowCustomAnimationsBeforeFirstCharacterSpawn",
+          "FFlagSimPrimalPreserveSleepBoundaryState_Staged",
+          "FFlagSimRemoveBodyFromIslandizer",
+          "FFlagStudioAssistantPermissionsLiveScopes",
+          "FFlagStudioSortDockPanelContextMenu",
+          "FFlagStudioVisualizationModesShowAudio",
+          "FFlagTextDocumentAssetAccess",
+          "FFlagToolboxAssetConfigSaveDefaults2_Staged",
+          "FFlagToolboxAvatarItemPublishDraftDependencies",
+          "FFlagUseStagnatingStateLatestInitial_Staged",
+          "FFlagVideo2CapWebmFrameSize_Staged",
+          "FFlagVoiceConnectDisconnectGrafanaMetrics",
+          "FFlagVoroCDWaitForCompletedComputatedCacheEntry",
+          "FFlagWinDeviceChangeCameraFilter",
+          "FFlagWrapDeformerLiveBodyScaleEdits",
+          "FIntUGCValidateMakeupMaxUBound",
+          "FIntUGCValidateMakeupMaxVBound",
+          "FIntUGCValidateMakeupMinUBound",
+          "FIntUGCValidateMakeupMinVBound",
+          "FStringMomentsPostInsightsIxpLayer"
+        ],
+        "changed": [
+          {
+            "after": "69b799a68c45855d7a2fad690e2cd8f13b8c3bb4",
+            "before": "30b8378156a63d3a142a7da9b6d240ddd6edb15c",
+            "name": "DFStringFlagRepoGitHashDynamicString"
+          },
+          {
+            "after": "2026-11-19T20:58:34.888Z",
+            "before": "2026-11-19T03:02:37.657Z",
+            "name": "DFStringFlipTimeStampDynamicString"
+          },
+          {
+            "after": "1;Social.Presence;Social.Friends.InGameFriendsJoinButton;836790687;dev_controlled",
+            "before": "1;Social.Friends;Social.Friends.InGameFriendsJoinButton;836790687;dev_controlled",
+            "name": "FFlagSocialCarouselInGamePlayIcon_IXP"
+          },
+          {
+            "after": "1;Social.Presence;Social.Friends.InGameFriendsJoinButton;836790687;dev_controlled",
+            "before": "1;Social.Friends;Social.Friends.InGameFriendsJoinButton;836790687;dev_controlled",
+            "name": "FFlagSocialCarouselInGameTextInstantJoin_IXP"
+          },
+          {
+            "after": "1;Social.Presence;Social.Friends.InGameFriendsJoinButton;836790687;dev_controlled",
+            "before": "1;Social.Friends;Social.Friends.InGameFriendsJoinButton;836790687;dev_controlled",
+            "name": "FFlagSocialCarouselInGameTileInstantJoin_IXP"
+          },
+          {
+            "after": "AXFilterButtonExpiredItemsTooltip,AXHDCategoryCatalogTooltip,AXFavoritePillFtuxTooltip,AXBackgroundGenerationCreateTooltip,AXBackgroundGenerationPublishTooltip,AXPhotoboothMomentsButtonFtuxTooltip",
+            "before": "AXFilterButtonExpiredItemsTooltip,AXHDCategoryCatalogTooltip,AXFavoritePillFtuxTooltip,AXBackgroundGenerationCreateTooltip,AXBackgroundGenerationPublishTooltip",
+            "name": "FStringAXTooltipAllowedTooltips"
+          },
+          {
+            "after": "69b799a68c45855d7a2fad690e2cd8f13b8c3bb4",
+            "before": "30b8378156a63d3a142a7da9b6d240ddd6edb15c",
+            "name": "FStringFlagRepoGitHashFastString"
+          },
+          {
+            "after": "2026-11-19T20:58:34.888Z",
+            "before": "2026-11-19T03:02:37.657Z",
+            "name": "FStringFlipTimeStampFastString"
+          },
+          {
+            "after": "eyJ2ZXJzaW9uU3RhcnQiOiAiMC4zMDAuMC4xIiwgInZlcnNpb25FbmQiOiAiMC43NDUuMC43NDgxNTI2IiwgInBsYXRmb3JtcyI6IFsiV2luZG93cyIsICJNYWMiXSwgIm1lc3NhZ2UiOiB7fSwgInNodXRkb3duIjogdHJ1ZSwgImZvcmNlUmV0cnlTdGFydHVwVXBkYXRlIjogdHJ1ZX0=",
+            "before": "eyJ2ZXJzaW9uU3RhcnQiOiAiMC4zMDAuMC4xIiwgInZlcnNpb25FbmQiOiAiMC43NDUuMC43NDYxMjY5IiwgInBsYXRmb3JtcyI6IFsiV2luZG93cyIsICJNYWMiXSwgIm1lc3NhZ2UiOiB7fSwgInNodXRkb3duIjogdHJ1ZSwgImZvcmNlUmV0cnlTdGFydHVwVXBkYXRlIjogdHJ1ZX0=",
+            "name": "FStringStudioEmergencyMessageV4"
+          }
+        ],
+        "removed": [
+          "FIntUGCValidateMakeupMaxUBound_PlaceFilter",
+          "FIntUGCValidateMakeupMaxVBound_PlaceFilter",
+          "FIntUGCValidateMakeupMinUBound_PlaceFilter",
+          "FIntUGCValidateMakeupMinVBound_PlaceFilter"
+        ],
+        "unchanged": 27703
+      }
+    },
+    "Web": {
+      "current": "8f3bdfe8c56cb1f1299c03d105595845afc14ce69a266b10ef6710be4f999157",
+      "files": {
+        "added": [],
+        "changed": [
+          "assets.create.roblox.com/page-0/script-028.js",
+          "assets.create.roblox.com/page-0/script-032.js",
+          "assets.create.roblox.com/page-0/script-034.js",
+          "assets.create.roblox.com/page-0/script-040.js",
+          "assets.create.roblox.com/page-0/script-050.js",
+          "assets.create.roblox.com/page-0/script-052.js",
+          "assets.create.roblox.com/page-0/script-057.js",
+          "assets.create.roblox.com/page-0/script-058.js",
+          "assets.create.roblox.com/page-0/script-059.js",
+          "assets.create.roblox.com/page-0/script-060.js",
+          "assets.create.roblox.com/page-0/script-061.js",
+          "assets.create.roblox.com/page-0/script-062.js",
+          "assets.create.roblox.com/page-0/script-063.js",
+          "assets.create.roblox.com/page-0/script-065.js",
+          "assets.create.roblox.com/page-0/script-066.js",
+          "assets.create.roblox.com/page-0/script-069.js",
+          "assets.create.roblox.com/page-0/script-073.js",
+          "assets.create.roblox.com/page-0/script-074.js",
+          "assets.create.roblox.com/page-0/script-075.js",
+          "assets.create.roblox.com/page-0/script-076.js",
+          "assets.json",
+          "metadata.json"
+        ],
+        "removed": [],
+        "unchanged": 74
+      },
+      "previous": "9cf13f3ed2424ec4f7a011337e2d213fde984873afa12057fa96dfdf4b413400",
+      "semantic": null
+    }
+  },
+  "schemaVersion": 1
+}

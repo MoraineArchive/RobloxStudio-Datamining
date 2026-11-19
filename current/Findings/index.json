@@ -18240,11 +18240,218 @@
             "scenes",
             "utils"
           ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/19/21-01-36Z_datasets",
+          "evidencePath": "2026/11/19/21-01-36Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "09042ec7a40b7093a0f9b56f74a3f74293e7fd0ebd3cff9a808848a8b367ba68",
+          "key": "FFlagMomentsCommentsIxpEnabled",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-19T21:01:36.107Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "comments",
+            "ixp",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/19/21-01-36Z_datasets",
+          "evidencePath": "2026/11/19/21-01-36Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "18fe4f982150b3ac755b4f743d3b62484e23156cd2eb87451465806099eed777",
+          "key": "FFlagMomentsPostInsightsIxpEnabled_IXP",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-19T21:01:36.107Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "insights",
+            "ixp",
+            "moments",
+            "post"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/19/21-01-36Z_datasets",
+          "evidencePath": "2026/11/19/21-01-36Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "34a735da69543b2283c20060e6fe802f7ac94f7a6468bf5567aa4a52f7f5f5f2",
+          "key": "DFFlagMomentsServiceAvatarPost2",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-19T21:01:36.107Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "avatar",
+            "moments",
+            "post2"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/19/21-01-36Z_datasets",
+          "evidencePath": "2026/11/19/21-01-36Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "5347453f8b89eae0cd08a324f416481493ee93462782cc37fc62324adcca78ee",
+          "key": "DFFlagMomentsServiceAvatarPostEmoteName",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-19T21:01:36.107Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "avatar",
+            "emote",
+            "moments",
+            "name",
+            "post"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/19/21-01-36Z_datasets",
+          "evidencePath": "2026/11/19/21-01-36Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "81ce4fe4f6039d8819331c705a6cb6634a7d69750b024b903fee2b689473014c",
+          "key": "FFlagMomentsCreatorAnalyticsPhase1_IXP",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-19T21:01:36.107Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "analytics",
+            "creator",
+            "ixp",
+            "moments",
+            "phase1"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/19/21-01-36Z_datasets",
+          "evidencePath": "2026/11/19/21-01-36Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "846d136bd6c9d02e8c2331f684fe4058ae0cb000483cb32e6a118975b5f94224",
+          "key": "FFlagMomentsOverflowButtonAnalytics_IXP",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-19T21:01:36.107Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "analytics",
+            "button",
+            "ixp",
+            "moments",
+            "overflow"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/19/21-01-36Z_datasets",
+          "evidencePath": "2026/11/19/21-01-36Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "ba786cea4e35f9b3d2abdecf8d40d0d5f5286405ec75905ba803830582ac6205",
+          "key": "FFlagMomentsComments2",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-19T21:01:36.107Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "comments2",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/19/21-01-36Z_datasets",
+          "evidencePath": "2026/11/19/21-01-36Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "d9e91f5b9aaa97be3d556df36ca7faf1a77af0ada959d1ad4d8bbb49d39f1f5c",
+          "key": "FFlagMomentsCommentsCreatorControl",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-19T21:01:36.107Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "comments",
+            "control",
+            "creator",
+            "moments"
+          ]
+        },
+        {
+          "concepts": [
+            "moments",
+            "capture",
+            "post"
+          ],
+          "eventPath": "2026/11/19/21-01-36Z_datasets",
+          "evidencePath": "2026/11/19/21-01-36Z_datasets/changes.json",
+          "family": "LiveSettings",
+          "id": "e7ba2a10469cf83041ad5eb4316dc78cd5176f2762e3c28ba4f395ced22ab40f",
+          "key": "FStringMomentsPostInsightsIxpLayer",
+          "kind": "LiveSettings",
+          "observedAt": "2026-11-19T21:01:36.107Z",
+          "operation": "added",
+          "surface": "LiveSettings",
+          "target": "WindowsStudio64",
+          "tokens": [
+            "insights",
+            "ixp",
+            "layer",
+            "moments",
+            "post"
+          ]
         }
       ],
       "firstObservedAt": "2026-09-08T23:47:55.817Z",
       "id": "moments-api",
-      "lastObservedAt": "2026-11-17T22:21:18.506Z",
+      "lastObservedAt": "2026-11-19T21:01:36.107Z",
       "lifecycle": [
         {
           "observedAt": "2026-09-09T19:49:12.343Z",
